@@ -6,7 +6,7 @@
 
 **Architecture:** Deux blocs reliés par un fichier d'export. Le backend Python orchestre collecte → pré-filtre → extraction IA → dédup/stockage SQLite → géocodage → export JSON/GeoJSON. Le frontend statique (HTML/JS + Leaflet) lit l'export et affiche une carte choroplèthe par département + des points par commune, avec filtres.
 
-**Tech Stack:** Python 3.11+, pytest, `requests`, `feedparser`, `anthropic` (SDK officiel + sorties structurées Pydantic), `pydantic`, SQLite (`sqlite3` stdlib), Base Adresse Nationale (géocodage gratuit), Leaflet (front).
+**Tech Stack:** Python 3.11+, pytest, `requests`, `feedparser`, `anthropic` (SDK officiel + sorties structurées Pydantic), `pydantic`, SQLite (`sqlite3` stdlib), Base Adresse Nationale (géocodage gratuit), MapLibre GL JS (front, sans token).
 
 ## Global Constraints
 
@@ -1405,21 +1405,105 @@ git commit -m "feat: orchestrateur pipeline + point d'entrée run.py"
 
 ---
 
-### Task 12: Frontend (carte Leaflet + filtres)
+### Task 12: Frontend MapLibre GL (choroplèthe départements + filtres)
+
+> **Révisé** : le front utilise **MapLibre GL JS** (open-source, sans token) au lieu de Leaflet, pour un rendu vectoriel, des **zones départementales colorées (choroplèthe)** et des filtres personnalisables.
 
 **Files:**
+- Create: `backend/geojson.py`
+- Create: `tests/test_geojson.py`
 - Create: `frontend/index.html`
 - Create: `frontend/app.js`
 - Create: `frontend/style.css`
 - Create: `tests/test_frontend_smoke.py`
+- Modify: `run.py` (appeler `ensure_departements_geojson()`)
 
 **Interfaces:**
-- Consumes: `data/export/data.json` (produit par Task 11).
-- Produces: une page web statique qui charge `data.json`, affiche une carte Leaflet de France avec un marqueur par closure géolocalisée et une liste filtrable (banque, type, statut, fiabilité min, département). Clic sur un marqueur/élément → détail + lien source.
+- `backend/geojson.py` :
+  - `ensure_departements_geojson(path=config.GEOJSON_PATH, fetch=...) -> Path` : si le fichier GeoJSON des départements est absent, le télécharge (version simplifiée) vers `GEOJSON_PATH` ; idempotent (ne re-télécharge pas si présent) ; `fetch` injectable `(url) -> str`. Les features portent `properties.code` (code département) et `properties.nom`.
+- Frontend (statique, MapLibre GL via CDN, sans token) : charge `data.json` + `departements.geojson`. Affiche une **choroplèthe** (calque `fill` coloré selon le nombre de fermetures par département) + un calque de **points** par closure géolocalisée (couleur selon le type) + une **liste filtrable**. Filtres : banque, type, statut, fiabilité min, département — appliqués aux deux calques. Popup au clic sur un point.
 
-> Le test côté Python est un simple smoke-test de présence/structure des fichiers (pas de runner JS). La vérification visuelle réelle se fait en ouvrant la page dans un navigateur après un `run.py`.
+> Le test côté Python est un smoke-test de présence/structure des fichiers (pas de runner JS). La vérification visuelle réelle se fait dans un navigateur après `run.py`.
 
-- [ ] **Step 1: Écrire le smoke-test**
+- [ ] **Step 1: Écrire le test backend GeoJSON**
+
+```python
+# tests/test_geojson.py
+import json
+from backend import geojson
+
+SAMPLE = ('{"type":"FeatureCollection","features":[{"type":"Feature",'
+          '"properties":{"code":"35","nom":"Ille-et-Vilaine"},'
+          '"geometry":{"type":"Polygon","coordinates":[]}}]}')
+
+def test_telecharge_si_absent(tmp_path):
+    p = tmp_path / "dep.geojson"
+    appels = []
+    def fetch(url):
+        appels.append(url)
+        return SAMPLE
+    res = geojson.ensure_departements_geojson(path=p, fetch=fetch)
+    assert res == p
+    assert p.exists()
+    data = json.loads(p.read_text(encoding="utf-8"))
+    assert data["features"][0]["properties"]["code"] == "35"
+    assert len(appels) == 1
+
+def test_idempotent_si_present(tmp_path):
+    p = tmp_path / "dep.geojson"
+    p.write_text(SAMPLE, encoding="utf-8")
+    def fetch(url):
+        raise AssertionError("ne doit pas re-télécharger")
+    geojson.ensure_departements_geojson(path=p, fetch=fetch)
+    assert p.exists()
+```
+
+- [ ] **Step 2: Lancer le test backend, vérifier l'échec**
+
+Run: `python -m pytest tests/test_geojson.py -v`
+Expected: FAIL avec `ModuleNotFoundError: No module named 'backend.geojson'`
+
+- [ ] **Step 3: Écrire `backend/geojson.py`**
+
+```python
+# backend/geojson.py
+from pathlib import Path
+import requests
+import config
+
+# GeoJSON simplifié des départements français (france-geojson, G. David).
+SOURCE_URL = (
+    "https://raw.githubusercontent.com/gregoiredavid/france-geojson/"
+    "master/departements-version-simplifiee.geojson"
+)
+
+
+def _default_fetch(url: str) -> str:
+    resp = requests.get(url, timeout=60, headers={"User-Agent": "veille-presse/1.0"})
+    resp.raise_for_status()
+    return resp.text
+
+
+def ensure_departements_geojson(path=config.GEOJSON_PATH, fetch=_default_fetch) -> Path:
+    path = Path(path)
+    if path.exists():
+        return path
+    contenu = fetch(SOURCE_URL)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(contenu, encoding="utf-8")
+    return path
+```
+
+- [ ] **Step 4: Lancer le test backend, vérifier le succès**
+
+Run: `python -m pytest tests/test_geojson.py -v`
+Expected: PASS (2 tests)
+
+- [ ] **Step 5: Câbler `run.py`**
+
+Dans `run.py`, importer `geojson` et appeler `geojson.ensure_departements_geojson()` (par ex. juste avant `export.export_json(...)`), afin que le GeoJSON soit présent dans `data/export/` pour le front. Ajouter `from backend import store, export, geocode, geojson` (ajouter `geojson` à l'import existant) et la ligne `geojson.ensure_departements_geojson()`.
+
+- [ ] **Step 6: Écrire le smoke-test frontend**
 
 ```python
 # tests/test_frontend_smoke.py
@@ -1433,23 +1517,24 @@ def test_fichiers_presents():
     assert (FRONT / "app.js").exists()
     assert (FRONT / "style.css").exists()
 
-def test_index_reference_leaflet_et_app():
+def test_index_reference_maplibre_et_app():
     html = (FRONT / "index.html").read_text(encoding="utf-8")
-    assert "leaflet" in html.lower()
+    assert "maplibre" in html.lower()
     assert "app.js" in html
 
-def test_app_charge_data_json():
+def test_app_charge_donnees():
     js = (FRONT / "app.js").read_text(encoding="utf-8")
     assert "data.json" in js
-    assert "L.map" in js
+    assert "departements.geojson" in js
+    assert "maplibregl.Map" in js
 ```
 
-- [ ] **Step 2: Lancer le test pour vérifier l'échec**
+- [ ] **Step 7: Lancer le smoke-test, vérifier l'échec**
 
 Run: `python -m pytest tests/test_frontend_smoke.py -v`
 Expected: FAIL avec `AssertionError` (fichiers absents)
 
-- [ ] **Step 3: Écrire les fichiers frontend**
+- [ ] **Step 8: Écrire les fichiers frontend**
 
 ```html
 <!-- frontend/index.html -->
@@ -1459,7 +1544,7 @@ Expected: FAIL avec `AssertionError` (fichiers absents)
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Veille — Fermetures d'agences bancaires</title>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -1489,13 +1574,14 @@ Expected: FAIL avec `AssertionError` (fichiers absents)
           <option value="5">5</option>
         </select>
       </label>
+      <label>Département <select id="f-dep"><option value="">Tous</option></select></label>
     </div>
   </header>
   <main>
     <div id="map"></div>
     <aside id="liste"></aside>
   </main>
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
@@ -1507,7 +1593,7 @@ Expected: FAIL avec `AssertionError` (fichiers absents)
 body { margin: 0; font-family: system-ui, sans-serif; color: #1a1a1a; }
 header { padding: 12px 16px; border-bottom: 1px solid #ddd; }
 h1 { font-size: 1.2rem; margin: 0 0 8px; }
-#filtres { display: flex; gap: 12px; flex-wrap: wrap; font-size: .85rem; }
+#filtres { display: flex; gap: 12px; flex-wrap: wrap; font-size: .85rem; align-items: center; }
 #filtres select { margin-left: 4px; }
 main { display: flex; height: calc(100vh - 96px); }
 #map { flex: 2; }
@@ -1519,105 +1605,195 @@ main { display: flex; height: calc(100vh - 96px); }
 .badge { display: inline-block; padding: 1px 6px; border-radius: 8px; font-size: .7rem; }
 .badge.fermeture { background: #fde2e1; color: #a11; }
 .badge.fusion { background: #e1ecfd; color: #1450a0; }
+.maplibregl-popup-content { font-size: .82rem; line-height: 1.35; }
 ```
 
 ```javascript
 // frontend/app.js
-let DONNEES = { closures: [] };
-let map, couche;
+const STYLE = {
+  version: 8,
+  sources: {
+    osm: {
+      type: "raster",
+      tiles: [
+        "https://a.tile.openstreetmap.org/{z}/{x}/{y}.png",
+        "https://b.tile.openstreetmap.org/{z}/{x}/{y}.png",
+      ],
+      tileSize: 256,
+      attribution: "© OpenStreetMap",
+    },
+  },
+  layers: [{ id: "osm", type: "raster", source: "osm" }],
+};
+
+let DONNEES = { closures: [], departements: {} };
+let DEPTS = null;
+let map;
 
 async function init() {
-  map = L.map("map").setView([46.6, 2.5], 6);
-  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    attribution: "© OpenStreetMap",
-  }).addTo(map);
-  couche = L.layerGroup().addTo(map);
+  map = new maplibregl.Map({
+    container: "map",
+    style: STYLE,
+    center: [2.5, 46.6],
+    zoom: 5,
+  });
+  map.addControl(new maplibregl.NavigationControl(), "top-right");
 
-  const resp = await fetch("../data/export/data.json");
-  DONNEES = await resp.json();
+  const [d1, d2] = await Promise.all([
+    fetch("../data/export/data.json").then((r) => r.json()),
+    fetch("../data/export/departements.geojson").then((r) => r.json()),
+  ]);
+  DONNEES = d1;
+  DEPTS = d2;
 
-  remplirBanques();
-  ["f-banque", "f-type", "f-statut", "f-fiab"].forEach((id) =>
-    document.getElementById(id).addEventListener("change", rafraichir)
-  );
-  rafraichir();
-}
+  map.on("load", () => {
+    map.addSource("departements", { type: "geojson", data: deptsAvecCompte(filtrer()) });
+    map.addLayer({
+      id: "dep-fill", type: "fill", source: "departements",
+      paint: {
+        "fill-color": [
+          "interpolate", ["linear"], ["get", "count"],
+          0, "#f2f0f7", 1, "#cbc9e2", 3, "#9e9ac8", 6, "#756bb1", 12, "#54278f",
+        ],
+        "fill-opacity": 0.55,
+      },
+    });
+    map.addLayer({
+      id: "dep-line", type: "line", source: "departements",
+      paint: { "line-color": "#777", "line-width": 0.4 },
+    });
+    map.addSource("closures", { type: "geojson", data: pointsClosures(filtrer()) });
+    map.addLayer({
+      id: "points", type: "circle", source: "closures",
+      paint: {
+        "circle-radius": 6,
+        "circle-color": ["match", ["get", "type"], "fermeture", "#d6336c", "fusion", "#1c7ed6", "#888"],
+        "circle-stroke-width": 1, "circle-stroke-color": "#fff",
+      },
+    });
+    map.on("click", "points", (e) => {
+      new maplibregl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML(popupHtml(e.features[0].properties))
+        .addTo(map);
+    });
+    map.on("mouseenter", "points", () => { map.getCanvas().style.cursor = "pointer"; });
+    map.on("mouseleave", "points", () => { map.getCanvas().style.cursor = ""; });
 
-function remplirBanques() {
-  const set = [...new Set(DONNEES.closures.map((c) => c.banque))].sort();
-  const sel = document.getElementById("f-banque");
-  set.forEach((b) => {
-    const o = document.createElement("option");
-    o.value = b; o.textContent = b; sel.appendChild(o);
+    remplirSelecteurs();
+    ["f-banque", "f-type", "f-statut", "f-fiab", "f-dep"].forEach((id) =>
+      document.getElementById(id).addEventListener("change", rafraichir)
+    );
+    rafraichir();
   });
 }
 
+function val(id) { return document.getElementById(id).value; }
+
 function filtrer() {
-  const banque = document.getElementById("f-banque").value;
-  const type = document.getElementById("f-type").value;
-  const statut = document.getElementById("f-statut").value;
-  const fiab = parseInt(document.getElementById("f-fiab").value, 10);
+  const banque = val("f-banque"), type = val("f-type"), statut = val("f-statut"), dep = val("f-dep");
+  const fiab = parseInt(val("f-fiab"), 10);
   return DONNEES.closures.filter((c) =>
     (!banque || c.banque === banque) &&
     (!type || c.type === type) &&
     (!statut || c.statut === statut) &&
+    (!dep || c.departement === dep) &&
     (c.fiabilite || 0) >= fiab
   );
 }
 
+function deptsAvecCompte(items) {
+  const compte = {};
+  items.forEach((c) => { if (c.departement) compte[c.departement] = (compte[c.departement] || 0) + 1; });
+  const fc = JSON.parse(JSON.stringify(DEPTS));
+  fc.features.forEach((f) => { f.properties.count = compte[f.properties.code] || 0; });
+  return fc;
+}
+
+function pointsClosures(items) {
+  return {
+    type: "FeatureCollection",
+    features: items
+      .filter((c) => c.lat != null && c.lon != null)
+      .map((c) => ({
+        type: "Feature",
+        geometry: { type: "Point", coordinates: [c.lon, c.lat] },
+        properties: {
+          banque: c.banque, commune: c.commune, departement: c.departement || "",
+          type: c.type, statut: c.statut, fiabilite: c.fiabilite,
+          citation: c.citation || "", sources: JSON.stringify(c.sources || []),
+        },
+      })),
+  };
+}
+
 function rafraichir() {
   const items = filtrer();
-  couche.clearLayers();
+  if (map.getSource("departements")) map.getSource("departements").setData(deptsAvecCompte(items));
+  if (map.getSource("closures")) map.getSource("closures").setData(pointsClosures(items));
   const liste = document.getElementById("liste");
   liste.innerHTML = `<p>${items.length} résultat(s)</p>`;
-
   items.forEach((c) => {
-    if (c.lat != null && c.lon != null) {
-      const m = L.marker([c.lat, c.lon]).addTo(couche);
-      m.bindPopup(popupHtml(c));
-    }
     const div = document.createElement("div");
     div.className = "item";
     div.innerHTML = `<h3>${c.banque} — ${c.commune}</h3>
       <span class="badge ${c.type}">${c.type}</span>
       <div class="meta">${c.departement || "?"} · ${c.statut} · fiab ${c.fiabilite}</div>`;
     div.addEventListener("click", () => {
-      if (c.lat != null) map.setView([c.lat, c.lon], 12);
+      if (c.lon != null && c.lat != null) map.flyTo({ center: [c.lon, c.lat], zoom: 11 });
     });
     liste.appendChild(div);
   });
 }
 
-function popupHtml(c) {
-  const src = (c.sources || [])
+function remplirSelecteurs() {
+  const banques = [...new Set(DONNEES.closures.map((c) => c.banque))].sort();
+  const selB = document.getElementById("f-banque");
+  banques.forEach((b) => {
+    const o = document.createElement("option");
+    o.value = b; o.textContent = b; selB.appendChild(o);
+  });
+  const deps = [...new Set(DONNEES.closures.map((c) => c.departement).filter(Boolean))].sort();
+  const selD = document.getElementById("f-dep");
+  deps.forEach((d) => {
+    const nom = (DONNEES.departements[d] && DONNEES.departements[d].nom) || d;
+    const o = document.createElement("option");
+    o.value = d; o.textContent = `${d} — ${nom}`; selD.appendChild(o);
+  });
+}
+
+function popupHtml(p) {
+  let sources = [];
+  try { sources = JSON.parse(p.sources || "[]"); } catch (e) { sources = []; }
+  const src = sources
     .filter((s) => s.url && !s.url.startsWith("acpr://"))
     .map((s) => `<a href="${s.url}" target="_blank" rel="noopener">${s.source || "source"}</a>`)
     .join(" · ");
-  return `<strong>${c.banque}</strong><br>${c.commune} (${c.departement || "?"})<br>
-    ${c.type} · ${c.statut} · fiabilité ${c.fiabilite}<br>
-    <em>${c.citation || ""}</em><br>${src}`;
+  return `<strong>${p.banque}</strong><br>${p.commune} (${p.departement || "?"})<br>
+    ${p.type} · ${p.statut} · fiabilité ${p.fiabilite}<br>
+    <em>${p.citation || ""}</em><br>${src}`;
 }
 
 init();
 ```
 
-- [ ] **Step 4: Lancer le smoke-test, vérifier le succès**
+- [ ] **Step 9: Lancer le smoke-test, vérifier le succès**
 
 Run: `python -m pytest tests/test_frontend_smoke.py -v`
 Expected: PASS (3 tests)
 
-- [ ] **Step 5: Vérification visuelle + commit**
+- [ ] **Step 10: Vérification visuelle + commit**
 
-Vérification manuelle (après avoir produit un `data.json`, ou avec un `data.json` factice) :
+Vérification manuelle (après un `run.py` ou avec un `data.json` + `departements.geojson` factices) :
 ```bash
 python -m http.server 8000
 # Ouvrir http://localhost:8000/frontend/index.html
 ```
-Confirmer : la carte de France s'affiche, les filtres se peuplent, un clic sur un point ouvre le détail avec le lien source.
+Confirmer : la carte vectorielle de France s'affiche, les départements se colorent selon le nombre de fermetures, les points apparaissent, les filtres (dont département) mettent à jour carte + liste, un clic sur un point ouvre la popup avec le lien source.
 
 ```bash
-git add frontend/ tests/test_frontend_smoke.py
-git commit -m "feat: frontend Leaflet (carte + liste filtrable)"
+git add backend/geojson.py tests/test_geojson.py frontend/ tests/test_frontend_smoke.py run.py
+git commit -m "feat: frontend MapLibre GL (choroplèthe départements + filtres) + geojson backend"
 ```
 
 ---
