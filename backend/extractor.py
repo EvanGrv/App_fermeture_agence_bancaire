@@ -40,7 +40,7 @@ def extract(article: dict, client, model: str = config.ANTHROPIC_MODEL) -> Optio
         model=model,
         max_tokens=1024,
         messages=build_messages(article),
-        output_config={"format": Extraction},
+        output_format=Extraction,
     )
     data: Extraction = response.parsed_output
     if data is None or not data.concerne_banque:
