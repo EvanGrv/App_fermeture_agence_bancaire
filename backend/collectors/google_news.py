@@ -1,6 +1,7 @@
 import urllib.parse
 import feedparser
 import requests
+import config
 
 # Le scoping par département du flux RSS Google News est inopérant (il renvoie
 # un même lot national dupliqué). On interroge donc par requêtes nationales
@@ -15,6 +16,9 @@ QUERIES = [
 
 
 def _feed_url(query: str) -> str:
+    fenetre = getattr(config, "GOOGLE_NEWS_WHEN", "")
+    if fenetre:
+        query = f"{query} when:{fenetre}"
     q = urllib.parse.quote(query)
     return f"https://news.google.com/rss/search?q={q}&hl=fr&gl=FR&ceid=FR:fr"
 

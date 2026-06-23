@@ -1,15 +1,37 @@
+import time
 import urllib.parse
 import requests
 
 _BASE = "https://api-adresse.data.gouv.fr/search/"
 
 
+def _departement(citycode: str, postcode: str):
+    src = (citycode or postcode or "").strip()
+    if not src:
+        return None
+    if src[:2] in ("97", "98"):            # DROM (971-976)
+        return src[:3]
+    if src[:2].upper() in ("2A", "2B"):    # Corse (code INSEE)
+        return src[:2].upper()
+    return src[:2] if src[:2].isdigit() else None
+
+
 def parse_ban(payload: dict):
+    """Renvoie {lat, lon, code_insee, departement} de la 1re feature, ou None."""
     features = payload.get("features") or []
     if not features:
         return None
-    lon, lat = features[0]["geometry"]["coordinates"]
-    return (lat, lon)
+    f = features[0]
+    lon, lat = f["geometry"]["coordinates"]
+    props = f.get("properties", {}) or {}
+    citycode = props.get("citycode") or ""
+    postcode = props.get("postcode") or ""
+    return {
+        "lat": lat,
+        "lon": lon,
+        "code_insee": citycode or None,
+        "departement": _departement(citycode, postcode),
+    }
 
 
 def _url(commune: str, departement) -> str:
@@ -25,18 +47,23 @@ def _default_fetch(url: str) -> dict:
     return resp.json()
 
 
-def geocode_commune(commune, departement=None, fetch=_default_fetch, cache=None):
+def geocode_commune(commune, departement=None, fetch=_default_fetch, cache=None, retries=2):
     if not commune:
         return None
     cle = f"{commune}|{departement or ''}"
     if cache is not None and cle in cache:
         return cache[cle]
-    try:
-        payload = fetch(_url(commune, departement))
-        coords = parse_ban(payload)
-    except Exception as exc:
-        print(f"[geocode] {commune}: erreur {exc}")
-        coords = None
+    resultat = None
+    for tentative in range(retries + 1):
+        try:
+            resultat = parse_ban(fetch(_url(commune, departement)))
+            break
+        except Exception as exc:
+            if tentative < retries:
+                time.sleep(0.5)
+                continue
+            print(f"[geocode] {commune}: erreur {exc}")
+            resultat = None
     if cache is not None:
-        cache[cle] = coords
-    return coords
+        cache[cle] = resultat
+    return resultat

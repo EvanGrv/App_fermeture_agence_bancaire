@@ -30,9 +30,14 @@ def run_pipeline(conn, collectors, extractor_fn, geocoder_fn) -> dict:
             if resultat is None:
                 continue
             recap["extraits"] += 1
-            coords = geocoder_fn(resultat["commune"], resultat.get("departement"))
-            if coords:
-                resultat["lat"], resultat["lon"] = coords
+            geo = geocoder_fn(resultat["commune"], resultat.get("departement"))
+            if geo:
+                resultat["lat"] = geo.get("lat")
+                resultat["lon"] = geo.get("lon")
+                if not resultat.get("departement"):
+                    resultat["departement"] = geo.get("departement")
+                if not resultat.get("code_insee"):
+                    resultat["code_insee"] = geo.get("code_insee")
             store.upsert_closure(conn, resultat)
             store.add_source(conn, resultat["id"], {
                 "url": url, "titre": art.get("titre"),

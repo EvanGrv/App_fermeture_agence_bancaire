@@ -11,6 +11,11 @@ GEOJSON_PATH = EXPORT_DIR / "departements.geojson"
 # Modèle IA d'extraction (le plus capable par défaut). claude-haiku-4-5 = option moins chère pour le volume.
 ANTHROPIC_MODEL = "claude-opus-4-8"
 
+# Fenêtre de récence appliquée aux requêtes Google News (opérateur `when:`).
+# ATTENTION aux unités Google News : h=heures, d=jours, y=années (m=MINUTES, pas mois).
+# Donc 1 mois = "30d", 2 semaines = "14d", 6 mois = "180d", 1 an = "1y".
+GOOGLE_NEWS_WHEN = "30d"
+
 ENSEIGNES = [
     "Crédit Agricole", "BNP", "Société Générale", "Banque Populaire",
     "Caisse d'Épargne", "Crédit Mutuel", "CIC", "LCL",
