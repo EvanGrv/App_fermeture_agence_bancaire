@@ -132,12 +132,23 @@ def _parse_avec_retries(client, *, model: str, messages: list[dict], sleep_fn=ti
 def extract(article: dict, client, model: str = config.ANTHROPIC_MODEL,
             aujourdhui: Optional[str] = None) -> Optional[dict]:
     aujourdhui = aujourdhui or date.today().isoformat()
-    response = _parse_avec_retries(
-        client,
-        model=model,
-        messages=build_messages(article, aujourdhui),
-    )
-    data: Extraction = response.parsed_output
+    try:
+        response = _parse_avec_retries(
+            client,
+            model=model,
+            messages=build_messages(article, aujourdhui),
+        )
+        data: Extraction = response.parsed_output
+    except Exception as exc:
+        if (
+            _status_code(exc) in _RETRY_STATUS_CODES
+            and os.environ.get("OPENAI_API_KEY")
+            and os.environ.get("OPENAI_FALLBACK_ENABLED", "1") != "0"
+        ):
+            from backend.openai_fallback import extract_openai
+            data = extract_openai(article, aujourdhui)
+        else:
+            raise
     if data is None or not data.concerne_banque:
         return None
     # On ne garde que les fermetures à venir : on écarte celles déjà effectives.

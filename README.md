@@ -96,6 +96,13 @@ Variables d'environnement optionnelles :
 - `ANTHROPIC_MAX_RETRIES`, `ANTHROPIC_RETRY_BASE_SECONDS`,
   `ANTHROPIC_RETRY_MAX_SECONDS` pilotent les retries sur erreurs transitoires
   Anthropic (`429`, `500`, `504`, `529`).
+- `OPENAI_API_KEY` active un fallback OpenAI quand Anthropic échoue encore sur
+  une erreur transitoire après retries.
+- `OPENAI_BUDGET_EUR` plafonne l'estimation de coût OpenAI (défaut : `1.0`).
+  Le suivi est stocké dans `data/cache/openai_budget.json`.
+- `OPENAI_FALLBACK_MODEL` vaut `gpt-5.4-nano` par défaut ; les prix estimés
+  suivent les tarifs standard publics du modèle (`OPENAI_INPUT_EUR_PER_M`,
+  `OPENAI_OUTPUT_EUR_PER_M` permettent de surcharger ces valeurs).
 - `LEGIFRANCE_CLIENT_ID` / `LEGIFRANCE_CLIENT_SECRET` pour activer Légifrance via PISTE.
 - `LEGIFRANCE_ENV=sandbox` pour utiliser les URLs sandbox PISTE ; par défaut,
   le collecteur utilise la production (`oauth.piste.gouv.fr` / `api.piste.gouv.fr`).

@@ -75,6 +75,7 @@ def test_extract_retry_erreur_anthropic_transitoire(monkeypatch):
 
 def test_extract_ne_retry_pas_erreur_non_transitoire(monkeypatch):
     monkeypatch.setenv("ANTHROPIC_MAX_RETRIES", "2")
+    monkeypatch.delenv("OPENAI_API_KEY", raising=False)
     client = FlakyClient(_extraction(), [FakeTransientError(401)])
     try:
         extract(_article(), client=client, aujourdhui=AUJ)
@@ -82,6 +83,20 @@ def test_extract_ne_retry_pas_erreur_non_transitoire(monkeypatch):
         pass
     else:
         assert False, "l'erreur non transitoire doit remonter"
+    assert client.messages.calls == 1
+
+def test_extract_fallback_openai_apres_erreur_transitoire(monkeypatch):
+    monkeypatch.setenv("ANTHROPIC_MAX_RETRIES", "0")
+    monkeypatch.setenv("OPENAI_API_KEY", "sk-test")
+    client = FlakyClient(_extraction(), [FakeTransientError(529)])
+    attendu = _extraction(banque="BNP")
+
+    def fake_openai(article, aujourdhui):
+        return attendu
+
+    monkeypatch.setattr("backend.openai_fallback.extract_openai", fake_openai)
+    res = extract(_article(), client=client, aujourdhui=AUJ)
+    assert res["banque"] == "BNP Paribas"
     assert client.messages.calls == 1
 
 def test_extract_rejette_hors_sujet():
