@@ -1,4 +1,6 @@
 from datetime import date
+import os
+import time
 from typing import Literal, Optional
 from pydantic import BaseModel, Field
 import config
@@ -17,6 +19,10 @@ _INSTRUCTIONS = (
     "date_fermeture: date prévue ISO YYYY-MM-DD si connue. "
     "citation: la phrase exacte de l'article qui justifie la fermeture/fusion."
 )
+_RETRY_STATUS_CODES = {429, 500, 504, 529}
+_DEFAULT_MAX_RETRIES = 3
+_DEFAULT_RETRY_BASE_SECONDS = 2.0
+_DEFAULT_RETRY_MAX_SECONDS = 30.0
 
 # Formes canoniques des principales enseignes (clé = forme normalisée).
 _CANON = {
@@ -80,14 +86,56 @@ def _est_passee(date_fermeture: Optional[str], aujourdhui: str) -> bool:
         return False
 
 
+def _int_env(name: str, default: int) -> int:
+    try:
+        return int(os.environ.get(name, default))
+    except (TypeError, ValueError):
+        return default
+
+
+def _float_env(name: str, default: float) -> float:
+    try:
+        return float(os.environ.get(name, default))
+    except (TypeError, ValueError):
+        return default
+
+
+def _status_code(exc: Exception) -> int | None:
+    status = getattr(exc, "status_code", None)
+    if status is not None:
+        return status
+    response = getattr(exc, "response", None)
+    return getattr(response, "status_code", None)
+
+
+def _parse_avec_retries(client, *, model: str, messages: list[dict], sleep_fn=time.sleep):
+    max_retries = max(0, _int_env("ANTHROPIC_MAX_RETRIES", _DEFAULT_MAX_RETRIES))
+    base = max(0.0, _float_env("ANTHROPIC_RETRY_BASE_SECONDS", _DEFAULT_RETRY_BASE_SECONDS))
+    plafond = max(base, _float_env("ANTHROPIC_RETRY_MAX_SECONDS", _DEFAULT_RETRY_MAX_SECONDS))
+    for tentative in range(max_retries + 1):
+        try:
+            return client.messages.parse(
+                model=model,
+                max_tokens=1024,
+                messages=messages,
+                output_format=Extraction,
+            )
+        except Exception as exc:
+            status = _status_code(exc)
+            if status not in _RETRY_STATUS_CODES or tentative >= max_retries:
+                raise
+            attente = min(plafond, base * (2 ** tentative))
+            print(f"[extractor] Anthropic {status} — nouvelle tentative dans {attente:g}s")
+            sleep_fn(attente)
+
+
 def extract(article: dict, client, model: str = config.ANTHROPIC_MODEL,
             aujourdhui: Optional[str] = None) -> Optional[dict]:
     aujourdhui = aujourdhui or date.today().isoformat()
-    response = client.messages.parse(
+    response = _parse_avec_retries(
+        client,
         model=model,
-        max_tokens=1024,
         messages=build_messages(article, aujourdhui),
-        output_format=Extraction,
     )
     data: Extraction = response.parsed_output
     if data is None or not data.concerne_banque:

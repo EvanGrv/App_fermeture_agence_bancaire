@@ -93,6 +93,9 @@ et le modèle IA (`ANTHROPIC_MODEL`, par défaut `claude-opus-4-8` ;
 
 Variables d'environnement optionnelles :
 
+- `ANTHROPIC_MAX_RETRIES`, `ANTHROPIC_RETRY_BASE_SECONDS`,
+  `ANTHROPIC_RETRY_MAX_SECONDS` pilotent les retries sur erreurs transitoires
+  Anthropic (`429`, `500`, `504`, `529`).
 - `LEGIFRANCE_CLIENT_ID` / `LEGIFRANCE_CLIENT_SECRET` pour activer Légifrance via PISTE.
 - `LEGIFRANCE_ENV=sandbox` pour utiliser les URLs sandbox PISTE ; par défaut,
   le collecteur utilise la production (`oauth.piste.gouv.fr` / `api.piste.gouv.fr`).

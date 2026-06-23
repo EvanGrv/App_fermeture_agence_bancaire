@@ -16,6 +16,26 @@ class FakeClient:
     def __init__(self, parsed):
         self.messages = FakeMessages(parsed)
 
+class FakeTransientError(Exception):
+    def __init__(self, status_code):
+        super().__init__(f"status {status_code}")
+        self.status_code = status_code
+
+class FlakyMessages:
+    def __init__(self, parsed, failures):
+        self._parsed = parsed
+        self._failures = list(failures)
+        self.calls = 0
+    def parse(self, **kw):
+        self.calls += 1
+        if self._failures:
+            raise self._failures.pop(0)
+        return FakeResp(self._parsed)
+
+class FlakyClient:
+    def __init__(self, parsed, failures):
+        self.messages = FlakyMessages(parsed, failures)
+
 def _article():
     return {"titre": "La Société Générale ferme son agence de Rennes",
             "texte": "L'agence fermera le 30 juin 2026.",
@@ -44,6 +64,25 @@ def test_extract_article_pertinent():
     assert res["date_annonce"] == "2026-01-10"
     assert len(res["id"]) == 16
     assert res["lat"] is None and res["code_insee"] is None
+
+def test_extract_retry_erreur_anthropic_transitoire(monkeypatch):
+    monkeypatch.setenv("ANTHROPIC_MAX_RETRIES", "2")
+    monkeypatch.setenv("ANTHROPIC_RETRY_BASE_SECONDS", "0")
+    client = FlakyClient(_extraction(), [FakeTransientError(529)])
+    res = extract(_article(), client=client, aujourdhui=AUJ)
+    assert res["banque"] == "Société Générale"
+    assert client.messages.calls == 2
+
+def test_extract_ne_retry_pas_erreur_non_transitoire(monkeypatch):
+    monkeypatch.setenv("ANTHROPIC_MAX_RETRIES", "2")
+    client = FlakyClient(_extraction(), [FakeTransientError(401)])
+    try:
+        extract(_article(), client=client, aujourdhui=AUJ)
+    except FakeTransientError:
+        pass
+    else:
+        assert False, "l'erreur non transitoire doit remonter"
+    assert client.messages.calls == 1
 
 def test_extract_rejette_hors_sujet():
     parsed = _extraction(concerne_banque=False)
