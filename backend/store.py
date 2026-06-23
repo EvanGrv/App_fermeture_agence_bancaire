@@ -42,6 +42,13 @@ CREATE TABLE IF NOT EXISTS referentiel (
     source TEXT,
     created_at TEXT NOT NULL
 );
+CREATE TABLE IF NOT EXISTS controles_sirene (
+    closure_id TEXT PRIMARY KEY REFERENCES closures(id),
+    etat_administratif TEXT,
+    siret TEXT,
+    source TEXT,
+    checked_at TEXT NOT NULL
+);
 """
 
 
@@ -120,3 +127,24 @@ def upsert_referentiel(conn: sqlite3.Connection, branche: dict) -> str:
     )
     conn.commit()
     return branche["osm_id"]
+
+
+def upsert_controle_sirene(conn: sqlite3.Connection, closure_id: str, controle: dict) -> None:
+    conn.execute(
+        """INSERT INTO controles_sirene
+           (closure_id, etat_administratif, siret, source, checked_at)
+           VALUES (?,?,?,?,?)
+           ON CONFLICT(closure_id) DO UPDATE SET
+             etat_administratif=excluded.etat_administratif,
+             siret=excluded.siret,
+             source=excluded.source,
+             checked_at=excluded.checked_at""",
+        (
+            closure_id,
+            controle.get("etat_administratif"),
+            controle.get("siret"),
+            controle.get("source", "SIRENE"),
+            datetime.now(timezone.utc).isoformat(),
+        ),
+    )
+    conn.commit()

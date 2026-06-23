@@ -1,7 +1,7 @@
 # run.py
 import anthropic
 import config
-from backend import store, export, geocode, geojson, referentiel
+from backend import store, export, geocode, geojson, referentiel, controle
 from backend.pipeline import run_pipeline, ingest_closures
 from backend.extractor import extract
 from backend.collectors import google_news, gdelt, legifrance, local_feeds, official, sg_locator
@@ -35,11 +35,17 @@ def main():
     branches = referentiel.fetch_osm_banques()
     for branche in branches:
         store.upsert_referentiel(conn, branche)
+    controles = 0
+    for cid, banque, commune in conn.execute("SELECT id, banque, commune FROM closures"):
+        statut_sirene = controle.confirmer_fermeture(banque, commune)
+        store.upsert_controle_sirene(conn, cid, statut_sirene)
+        controles += 1
     geojson.ensure_departements_geojson()
     export.export_json(conn, config.DATA_JSON)
     print("Récapitulatif presse:", recap)
     print("Fermetures SG vérifiées ingérées:", n_sg)
     print("Agences du référentiel OSM ingérées:", len(branches))
+    print("Contrôles SIRENE effectués:", controles)
     print("Export écrit dans", config.DATA_JSON)
 
 

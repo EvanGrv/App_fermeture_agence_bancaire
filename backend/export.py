@@ -20,6 +20,16 @@ def build_payload(conn) -> dict:
         cl["sources"] = [
             {"url": u, "titre": t, "source": s, "date": d} for (u, t, s, d) in srcs
         ]
+        controle = conn.execute(
+            "SELECT etat_administratif, siret, source FROM controles_sirene WHERE closure_id=?",
+            (cl["id"],),
+        ).fetchone()
+        if controle:
+            cl["controle_sirene"] = {
+                "etat_administratif": controle[0],
+                "siret": controle[1],
+                "source": controle[2],
+            }
         closures.append(cl)
         dep = cl["departement"]
         if dep:

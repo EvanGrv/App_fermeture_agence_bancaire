@@ -13,7 +13,7 @@ def test_init_cree_tables(tmp_path):
     conn = store.init_db(tmp_path / "t.db")
     noms = {r[0] for r in conn.execute(
         "SELECT name FROM sqlite_master WHERE type='table'")}
-    assert {"closures", "sources", "seen_urls", "referentiel"} <= noms
+    assert {"closures", "sources", "seen_urls", "referentiel", "controles_sirene"} <= noms
 
 def test_upsert_puis_lecture(tmp_path):
     conn = store.init_db(tmp_path / "t.db")
@@ -50,3 +50,17 @@ def test_cache_urls(tmp_path):
     assert store.is_url_seen(conn, "http://a") is False
     store.mark_url_seen(conn, "http://a")
     assert store.is_url_seen(conn, "http://a") is True
+
+def test_upsert_controle_sirene(tmp_path):
+    conn = store.init_db(tmp_path / "t.db")
+    store.upsert_closure(conn, _closure())
+    store.upsert_controle_sirene(conn, "abc123", {
+        "etat_administratif": "A", "siret": "123", "source": "SIRENE",
+    })
+    store.upsert_controle_sirene(conn, "abc123", {
+        "etat_administratif": "F", "siret": "456", "source": "SIRENE",
+    })
+    row = conn.execute(
+        "SELECT etat_administratif, siret, source FROM controles_sirene WHERE closure_id='abc123'"
+    ).fetchone()
+    assert row == ("F", "456", "SIRENE")
