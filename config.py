@@ -12,7 +12,7 @@ GEOJSON_PATH = EXPORT_DIR / "departements.geojson"
 ANTHROPIC_MODEL = "claude-opus-4-8"
 
 ENSEIGNES = [
-    "Crédit Agricole", "BNP Paribas", "Société Générale", "Banque Populaire",
+    "Crédit Agricole", "BNP Paribas", "BNP", "Société Générale", "Banque Populaire",
     "Caisse d'Épargne", "Crédit Mutuel", "CIC", "LCL", "La Banque Postale",
     "Crédit du Nord", "HSBC", "Boursorama", "Banque Postale",
 ]
