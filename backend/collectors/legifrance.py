@@ -1,4 +1,5 @@
 import os
+import re
 import time
 
 import requests
@@ -13,13 +14,14 @@ BASE_URL = "https://www.legifrance.gouv.fr"
 
 
 def _queries() -> list[str]:
-    termes = "(fermeture OR PSE OR restructuration OR suppression agences)"
-    return [f"{banque} {termes}" for banque in config.ENSEIGNES]
+    termes = ["fermeture agence", "PSE restructuration", "suppression agences"]
+    return [f"{banque} {terme}" for banque in config.ENSEIGNES for terme in termes]
 
 
 QUERIES = _queries()
 DEFAULT_THROTTLE_SECONDS = 2.0
 DEFAULT_MAX_QUERIES = 8
+DEFAULT_PAGE_SIZE = 5
 
 
 def _default_fetch(url: str, **kwargs) -> dict:
@@ -72,6 +74,49 @@ def _token(fetch, client_id: str, client_secret: str, token_url: str) -> str | N
     return payload.get("access_token")
 
 
+def _search_payload(query: str) -> dict:
+    criteres = _criteres(query)
+    return {
+        "fond": "ALL",
+        "recherche": {
+            "champs": [{
+                "typeChamp": "ALL",
+                "operateur": "ET",
+                "criteres": criteres,
+            }],
+            "operateur": "ET",
+            "pageNumber": 1,
+            "pageSize": max(1, min(100, _int_env("LEGIFRANCE_PAGE_SIZE", DEFAULT_PAGE_SIZE))),
+            "sort": "PERTINENCE",
+            "typePagination": "DEFAUT",
+        },
+    }
+
+
+def _criteres(query: str) -> list[dict]:
+    for banque in sorted(config.ENSEIGNES, key=len, reverse=True):
+        prefix = f"{banque} "
+        if query.lower().startswith(prefix.lower()):
+            reste = query[len(prefix):].strip()
+            criteres = [{
+                "valeur": banque,
+                "operateur": "ET",
+                "typeRecherche": "EXACTE",
+            }]
+            if reste:
+                criteres.append({
+                    "valeur": reste,
+                    "operateur": "ET",
+                    "typeRecherche": "TOUS_LES_MOTS_DANS_UN_CHAMP",
+                })
+            return criteres
+    return [{
+        "valeur": query,
+        "operateur": "ET",
+        "typeRecherche": "TOUS_LES_MOTS_DANS_UN_CHAMP",
+    }]
+
+
 def _float_env(name: str, default: float) -> float:
     try:
         return float(os.environ.get(name, default))
@@ -94,7 +139,21 @@ def _titre(item: dict) -> str:
 
 
 def _texte(item: dict) -> str:
-    return item.get("text") or item.get("content") or item.get("summary") or ""
+    morceaux = []
+    for key in ("text", "content", "summary", "descriptionFusionHtml"):
+        if item.get(key):
+            morceaux.append(item[key])
+    for key in ("resumePrincipal", "autreResume", "motsCles"):
+        if item.get(key):
+            morceaux.extend(item[key])
+    for section in item.get("sections") or []:
+        for extract in section.get("extracts") or []:
+            morceaux.extend(extract.get("values") or [])
+    return _nettoie_html(" ".join(str(m) for m in morceaux if m))
+
+
+def _nettoie_html(texte: str) -> str:
+    return re.sub(r"<[^>]+>", "", texte or "").strip()
 
 
 def _date(item: dict) -> str:
@@ -104,7 +163,10 @@ def _date(item: dict) -> str:
 def _url(item: dict) -> str:
     if item.get("url"):
         return item["url"]
+    titles = item.get("titles") or []
     ident = item.get("id") or item.get("cid")
+    if not ident and titles and isinstance(titles[0], dict):
+        ident = titles[0].get("id") or titles[0].get("cid")
     return f"{BASE_URL}/jorf/id/{ident}" if ident else BASE_URL
 
 
@@ -147,7 +209,7 @@ def collect(fetch=_default_fetch, queries=QUERIES) -> list[dict]:
     throttle = max(0.0, _float_env("LEGIFRANCE_THROTTLE_SECONDS", DEFAULT_THROTTLE_SECONDS))
     for query in list(queries)[:max_queries]:
         try:
-            payload = fetch(search_url, headers=headers, json={"query": query})
+            payload = fetch(search_url, headers=headers, json=_search_payload(query))
         except Exception as exc:
             print(f"[legifrance] requête '{query}': erreur {exc}")
             continue

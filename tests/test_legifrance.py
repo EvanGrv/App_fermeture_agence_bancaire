@@ -23,6 +23,15 @@ def test_collect_parse_articles(monkeypatch):
         if url == legifrance.TOKEN_URL:
             return {"access_token": "tok"}
         assert kwargs["headers"]["Authorization"] == "Bearer tok"
+        assert kwargs["json"]["fond"] == "ALL"
+        assert kwargs["json"]["recherche"]["typePagination"] == "DEFAUT"
+        assert kwargs["json"]["recherche"]["sort"] == "PERTINENCE"
+        criteres = kwargs["json"]["recherche"]["champs"][0]["criteres"]
+        assert criteres[0] == {
+            "valeur": "Banque Populaire",
+            "operateur": "ET",
+            "typeRecherche": "EXACTE",
+        }
         return json.loads(FIXT.read_text(encoding="utf-8"))
 
     articles = legifrance.collect(fetch=fetch, queries=["Banque Populaire fermeture agence"])
@@ -61,8 +70,22 @@ def test_collect_plafonne_les_requetes(monkeypatch):
     def fetch(url, **kwargs):
         if url == legifrance.TOKEN_URL:
             return {"access_token": "tok"}
-        recherches.append(kwargs["json"]["query"])
+        criteres = kwargs["json"]["recherche"]["champs"][0]["criteres"]
+        recherches.append(criteres[0]["valeur"])
         return {"results": []}
 
     assert legifrance.collect(fetch=fetch, queries=["q1", "q2"]) == []
     assert recherches == ["q1"]
+
+
+def test_articles_recupere_extraits_sections():
+    payload = {
+        "results": [{
+            "titles": [{"id": "JORFTEXT1", "title": "Accord test"}],
+            "sections": [{"extracts": [{"values": ["<mark>fermeture</mark> agence"]}]}],
+        }]
+    }
+    articles = legifrance._articles(payload)
+    assert articles[0]["titre"] == "Accord test"
+    assert articles[0]["texte"] == "fermeture agence"
+    assert articles[0]["url"].endswith("/JORFTEXT1")
