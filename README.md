@@ -94,5 +94,7 @@ et le modèle IA (`ANTHROPIC_MODEL`, par défaut `claude-opus-4-8` ;
 Variables d'environnement optionnelles :
 
 - `LEGIFRANCE_CLIENT_ID` / `LEGIFRANCE_CLIENT_SECRET` pour activer Légifrance via PISTE.
+- `LEGIFRANCE_ENV=sandbox` pour utiliser les URLs sandbox PISTE ; par défaut,
+  le collecteur utilise la production (`oauth.piste.gouv.fr` / `api.piste.gouv.fr`).
 - `FACTIVA_API_KEY`, `LEXISNEXIS_API_KEY`, `TAGADAY_API_KEY` réservées au scaffold
   presse pro, sans appel réel à ce stade.
