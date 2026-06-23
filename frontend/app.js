@@ -77,6 +77,12 @@ async function init() {
   });
 }
 
+function esc(s) {
+  return String(s == null ? "" : s).replace(/[&<>"']/g, (ch) => (
+    { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[ch]
+  ));
+}
+
 function val(id) { return document.getElementById(id).value; }
 
 function filtrer() {
@@ -125,9 +131,9 @@ function rafraichir() {
   items.forEach((c) => {
     const div = document.createElement("div");
     div.className = "item";
-    div.innerHTML = `<h3>${c.banque} — ${c.commune}</h3>
-      <span class="badge ${c.type}">${c.type}</span>
-      <div class="meta">${c.departement || "?"} · ${c.statut} · fiab ${c.fiabilite}</div>`;
+    div.innerHTML = `<h3>${esc(c.banque)} — ${esc(c.commune)}</h3>
+      <span class="badge ${esc(c.type)}">${esc(c.type)}</span>
+      <div class="meta">${esc(c.departement || "?")} · ${esc(c.statut)} · fiab ${esc(c.fiabilite)}</div>`;
     div.addEventListener("click", () => {
       if (c.lon != null && c.lat != null) map.flyTo({ center: [c.lon, c.lat], zoom: 11 });
     });
@@ -156,11 +162,11 @@ function popupHtml(p) {
   try { sources = JSON.parse(p.sources || "[]"); } catch (e) { sources = []; }
   const src = sources
     .filter((s) => s.url && !s.url.startsWith("acpr://"))
-    .map((s) => `<a href="${s.url}" target="_blank" rel="noopener">${s.source || "source"}</a>`)
+    .map((s) => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.source || "source")}</a>`)
     .join(" · ");
-  return `<strong>${p.banque}</strong><br>${p.commune} (${p.departement || "?"})<br>
-    ${p.type} · ${p.statut} · fiabilité ${p.fiabilite}<br>
-    <em>${p.citation || ""}</em><br>${src}`;
+  return `<strong>${esc(p.banque)}</strong><br>${esc(p.commune)} (${esc(p.departement || "?")})<br>
+    ${esc(p.type)} · ${esc(p.statut)} · fiabilité ${esc(p.fiabilite)}<br>
+    <em>${esc(p.citation || "")}</em><br>${src}`;
 }
 
 init();

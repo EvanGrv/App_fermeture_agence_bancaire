@@ -8,12 +8,12 @@ DB_PATH = DATA_DIR / "press.db"
 DATA_JSON = EXPORT_DIR / "data.json"
 GEOJSON_PATH = EXPORT_DIR / "departements.geojson"
 
-# Modèle IA d'extraction. claude-haiku-4-5 = moins cher pour le volume.
+# Modèle IA d'extraction (le plus capable par défaut). claude-haiku-4-5 = option moins chère pour le volume.
 ANTHROPIC_MODEL = "claude-opus-4-8"
 
 ENSEIGNES = [
-    "Crédit Agricole", "BNP Paribas", "BNP", "Société Générale", "Banque Populaire",
-    "Caisse d'Épargne", "Crédit Mutuel", "CIC", "LCL", "La Banque Postale",
+    "Crédit Agricole", "BNP", "Société Générale", "Banque Populaire",
+    "Caisse d'Épargne", "Crédit Mutuel", "CIC", "LCL",
     "Crédit du Nord", "HSBC", "Boursorama", "Banque Postale",
 ]
 
