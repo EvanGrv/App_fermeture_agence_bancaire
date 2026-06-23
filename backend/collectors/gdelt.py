@@ -44,13 +44,14 @@ def collect(fetch=_default_fetch, retries=4, base_wait=6.0) -> list[dict]:
         try:
             return parse_response(fetch(_url()))
         except requests.exceptions.HTTPError as exc:
-            status = getattr(getattr(exc, "response", None), "status_code", None)
+            response = getattr(exc, "response", None)
+            status = getattr(response, "status_code", None)
             if tentative >= retries:
                 print(f"[gdelt] abandon après {retries} tentatives (HTTP {status})")
                 return []
             pause = wait
             if status == 429:
-                ra = exc.response.headers.get("Retry-After", "") if exc.response else ""
+                ra = response.headers.get("Retry-After", "") if response is not None else ""
                 if ra.isdigit():
                     pause = max(float(ra), _MIN_INTERVAL)
                 print(f"[gdelt] 429 rate-limit — attente {pause:.0f}s (tentative {tentative + 1}/{retries})")
