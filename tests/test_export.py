@@ -21,6 +21,8 @@ def test_build_payload(tmp_path):
     cl = p["closures"][0]
     assert cl["banque"] == "BNP"
     assert cl["sources"][0]["url"] == "http://x"
+    # plans nationaux non nominatifs présents et distincts des closures
+    assert any(pl["banque"] == "Société Générale" for pl in p["plans"])
 
 def test_export_json_ecrit_fichier(tmp_path):
     conn = store.init_db(tmp_path / "t.db")

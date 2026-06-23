@@ -41,6 +41,11 @@ def _url(commune: str, departement) -> str:
     return f"{_BASE}?{urllib.parse.urlencode(params)}"
 
 
+def _url_adresse(adresse: str) -> str:
+    # Géocodage à l'adresse complète (plus précis que la commune).
+    return f"{_BASE}?{urllib.parse.urlencode({'q': adresse, 'limit': '1'})}"
+
+
 def _default_fetch(url: str) -> dict:
     resp = requests.get(url, timeout=30, headers={"User-Agent": "veille-presse/1.0"})
     resp.raise_for_status()
@@ -66,4 +71,26 @@ def geocode_commune(commune, departement=None, fetch=_default_fetch, cache=None,
             resultat = None
     if cache is not None:
         cache[cle] = resultat
+    return resultat
+
+
+def geocode_adresse(adresse, fetch=_default_fetch, cache=None, retries=2):
+    """Géocode une adresse complète -> {lat, lon, code_insee, departement} | None."""
+    if not adresse:
+        return None
+    if cache is not None and adresse in cache:
+        return cache[adresse]
+    resultat = None
+    for tentative in range(retries + 1):
+        try:
+            resultat = parse_ban(fetch(_url_adresse(adresse)))
+            break
+        except Exception as exc:
+            if tentative < retries:
+                time.sleep(0.5)
+                continue
+            print(f"[geocode] {adresse}: erreur {exc}")
+            resultat = None
+    if cache is not None:
+        cache[adresse] = resultat
     return resultat

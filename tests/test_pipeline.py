@@ -43,6 +43,26 @@ def test_pipeline_enrichit_departement_si_absent(tmp_path):
     row = conn.execute("SELECT departement, code_insee FROM closures WHERE id='abc123'").fetchone()
     assert row == ("69", "69123")
 
+def test_ingest_closures_geocode_adresse(tmp_path):
+    conn = store.init_db(tmp_path / "t.db")
+    closures = [{
+        "id": "sg0000000000001", "banque": "Société Générale", "commune": "Bernin",
+        "code_insee": None, "departement": "38", "type": "fermeture",
+        "date_annonce": None, "date_fermeture": "2026-07-16", "statut": "confirmé",
+        "fiabilite": 5, "lat": None, "lon": None, "citation": "transfère ses activités",
+        "_adresse": "ZAC Les Michellières, 38190 Bernin",
+        "_source_url": "https://agences.sg.fr/",
+    }]
+    n = pipeline.ingest_closures(
+        conn, closures,
+        lambda adr: {"lat": 45.27, "lon": 5.86, "code_insee": "38045", "departement": "38"},
+    )
+    assert n == 1
+    row = conn.execute("SELECT lat, lon, code_insee FROM closures WHERE id='sg0000000000001'").fetchone()
+    assert row == (45.27, 5.86, "38045")
+    src = conn.execute("SELECT source FROM sources WHERE closure_id='sg0000000000001'").fetchone()
+    assert src[0] == "SG (localisateur officiel)"
+
 def test_pipeline_idempotent(tmp_path):
     conn = store.init_db(tmp_path / "t.db")
     collectors = [lambda: [_article("http://1")]]

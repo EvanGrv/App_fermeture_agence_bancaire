@@ -40,3 +40,21 @@ def test_geocode_utilise_cache():
 def test_geocode_echec_retourne_none():
     res = geocode.geocode_commune("Xyz", "99", fetch=lambda url: BAN_VIDE, cache={})
     assert res is None
+
+
+def test_geocode_adresse():
+    r = geocode.geocode_adresse("11 rue des Alliés, 24360 Piégut-Pluviers",
+                                fetch=lambda url: BAN_OK, cache={})
+    assert r["lat"] == 48.1173 and r["lon"] == -1.6778
+    assert r["departement"] == "35"  # dérivé du citycode de la réponse simulée
+
+
+def test_geocode_adresse_cache():
+    appels = []
+    def fetch(url):
+        appels.append(url)
+        return BAN_OK
+    cache = {}
+    geocode.geocode_adresse("1 rue X", fetch=fetch, cache=cache)
+    geocode.geocode_adresse("1 rue X", fetch=fetch, cache=cache)
+    assert len(appels) == 1

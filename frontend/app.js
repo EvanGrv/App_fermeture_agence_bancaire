@@ -34,6 +34,7 @@ async function init() {
   ]);
   DONNEES = d1;
   DEPTS = d2;
+  renderPlans();
 
   map.on("load", () => {
     map.addSource("departements", { type: "geojson", data: deptsAvecCompte(filtrer()) });
@@ -139,6 +140,17 @@ function rafraichir() {
     });
     liste.appendChild(div);
   });
+}
+
+function renderPlans() {
+  const el = document.getElementById("plans");
+  if (!el) return;
+  const plans = DONNEES.plans || [];
+  if (!plans.length) { el.innerHTML = ""; return; }
+  const items = plans
+    .map((p) => `<strong>${esc(p.banque)}</strong> ~${esc(p.volume)} (${esc(p.echeance)})`)
+    .join(" · ");
+  el.innerHTML = `<span class="plans-label">Plans nationaux annoncés (non nominatifs, hors carte) :</span> ${items}`;
 }
 
 function remplirSelecteurs() {

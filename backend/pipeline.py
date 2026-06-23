@@ -2,6 +2,31 @@
 from backend import prefilter, store
 
 
+def ingest_closures(conn, closures, geocoder_adresse_fn) -> int:
+    """Stocke des fermetures déjà structurées (ex. seed localisateur SG),
+    géocodées à l'ADRESSE précise. Retourne le nombre stocké."""
+    n = 0
+    for c in closures:
+        adresse = c.pop("_adresse", None)
+        source_url = c.pop("_source_url", None)
+        geo = geocoder_adresse_fn(adresse) if adresse else None
+        if geo:
+            c["lat"] = geo.get("lat")
+            c["lon"] = geo.get("lon")
+            if not c.get("code_insee"):
+                c["code_insee"] = geo.get("code_insee")
+            if not c.get("departement"):
+                c["departement"] = geo.get("departement")
+        store.upsert_closure(conn, c)
+        if source_url:
+            store.add_source(conn, c["id"], {
+                "url": source_url, "titre": c.get("citation"),
+                "source": "SG (localisateur officiel)", "date": c.get("date_fermeture"),
+            })
+        n += 1
+    return n
+
+
 def run_pipeline(conn, collectors, extractor_fn, geocoder_fn) -> dict:
     recap = {"articles": 0, "filtres": 0, "extraits": 0, "fermetures": 0}
     for collect in collectors:

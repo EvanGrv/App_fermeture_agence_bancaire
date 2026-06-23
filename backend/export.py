@@ -1,6 +1,7 @@
 import json
 from datetime import datetime, timezone
 import config
+from backend.plans import PLANS
 
 _CLOSURE_COLS = ["id", "banque", "commune", "code_insee", "departement", "type",
                  "date_annonce", "date_fermeture", "statut", "fiabilite",
@@ -31,6 +32,7 @@ def build_payload(conn) -> dict:
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "departements": departements,
         "closures": closures,
+        "plans": PLANS,
     }
 
 
