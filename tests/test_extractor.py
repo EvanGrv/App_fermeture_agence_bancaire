@@ -63,6 +63,12 @@ def test_normalise_banque():
     assert normalise_banque("Banque Postale") == "La Banque Postale"
     assert normalise_banque("Inconnue SA") == "Inconnue SA"
 
+def test_normalise_banque_variantes_regionales():
+    assert normalise_banque("Crédit Agricole Loire Haute-Loire") == "Crédit Agricole"
+    assert normalise_banque("SG SMC") == "Société Générale"
+    assert normalise_banque("BPGO") == "Banque Populaire"
+    assert normalise_banque("CEBPL") == "Caisse d'Épargne"
+
 def test_extract_normalise_banque():
     parsed = _extraction(banque="crédit agricole")
     res = extract(_article(), client=FakeClient(parsed), aujourdhui=AUJ)

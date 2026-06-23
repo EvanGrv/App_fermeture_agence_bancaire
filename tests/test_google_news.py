@@ -13,6 +13,13 @@ def test_feed_url_contient_query():
 def test_queries_non_vide():
     assert len(google_news.QUERIES) >= 3
 
+def test_queries_contient_variantes_regionales():
+    requetes = " ".join(google_news.QUERIES)
+    assert "Crédit Agricole Loire Haute-Loire fermeture agence" in requetes
+    assert "SG SMC fermeture agence" in requetes
+    assert "BPGO fermeture agence" in requetes
+    assert "CEBPL fermeture agence" in requetes
+
 
 def test_parse_feed():
     arts = google_news.parse_feed(FIXT.read_text(encoding="utf-8"))

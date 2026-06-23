@@ -35,6 +35,9 @@ _CANON = {
     "credit du nord": "Crédit du Nord",
     "hsbc": "HSBC",
 }
+for _groupe, _variantes in getattr(config, "MARQUES_REGIONALES", {}).items():
+    for _variante in _variantes:
+        _CANON[normalise_cle(_variante)] = _groupe
 
 
 def normalise_banque(nom: str) -> str:

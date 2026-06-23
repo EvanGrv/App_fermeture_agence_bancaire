@@ -21,7 +21,12 @@ _PAR_ENSEIGNE = (
     [f"{e} fermeture agence" for e in config.ENSEIGNES]
     + [f"{e} ferme agence" for e in config.ENSEIGNES]
 )
-QUERIES = _THEMATIQUES + _PAR_ENSEIGNE
+_MARQUES_REGIONALES = [
+    f"{variante} fermeture agence"
+    for variantes in getattr(config, "MARQUES_REGIONALES", {}).values()
+    for variante in variantes
+]
+QUERIES = list(dict.fromkeys(_THEMATIQUES + _PAR_ENSEIGNE + _MARQUES_REGIONALES))
 
 
 def _feed_url(query: str) -> str:
