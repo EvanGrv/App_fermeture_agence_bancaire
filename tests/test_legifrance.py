@@ -50,3 +50,19 @@ def test_collect_supporte_sandbox(monkeypatch):
 
     assert legifrance.collect(fetch=fetch, queries=["CCF PSE"]) == []
     assert urls == [legifrance.SANDBOX_TOKEN_URL, legifrance.SANDBOX_SEARCH_URL]
+
+
+def test_collect_plafonne_les_requetes(monkeypatch):
+    monkeypatch.setenv("LEGIFRANCE_CLIENT_ID", "id")
+    monkeypatch.setenv("LEGIFRANCE_CLIENT_SECRET", "secret")
+    monkeypatch.setenv("LEGIFRANCE_MAX_QUERIES", "1")
+    recherches = []
+
+    def fetch(url, **kwargs):
+        if url == legifrance.TOKEN_URL:
+            return {"access_token": "tok"}
+        recherches.append(kwargs["json"]["query"])
+        return {"results": []}
+
+    assert legifrance.collect(fetch=fetch, queries=["q1", "q2"]) == []
+    assert recherches == ["q1"]

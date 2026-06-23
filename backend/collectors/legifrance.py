@@ -18,6 +18,8 @@ def _queries() -> list[str]:
 
 
 QUERIES = _queries()
+DEFAULT_THROTTLE_SECONDS = 2.0
+DEFAULT_MAX_QUERIES = 8
 
 
 def _default_fetch(url: str, **kwargs) -> dict:
@@ -30,6 +32,22 @@ def _default_fetch(url: str, **kwargs) -> dict:
         headers=kwargs.get("headers"),
         timeout=30,
     )
+    if resp.status_code == 429:
+        retry_after = resp.headers.get("Retry-After")
+        try:
+            attente = min(float(retry_after), 60) if retry_after else 30
+        except ValueError:
+            attente = 30
+        print(f"[legifrance] quota atteint — attente {attente:g}s")
+        time.sleep(attente)
+        resp = requests.request(
+            method,
+            url,
+            json=kwargs.get("json"),
+            data=kwargs.get("data"),
+            headers=kwargs.get("headers"),
+            timeout=30,
+        )
     resp.raise_for_status()
     return resp.json()
 
@@ -52,6 +70,20 @@ def _token(fetch, client_id: str, client_secret: str, token_url: str) -> str | N
         },
     )
     return payload.get("access_token")
+
+
+def _float_env(name: str, default: float) -> float:
+    try:
+        return float(os.environ.get(name, default))
+    except (TypeError, ValueError):
+        return default
+
+
+def _int_env(name: str, default: int) -> int:
+    try:
+        return int(os.environ.get(name, default))
+    except (TypeError, ValueError):
+        return default
 
 
 def _titre(item: dict) -> str:
@@ -111,7 +143,9 @@ def collect(fetch=_default_fetch, queries=QUERIES) -> list[dict]:
     headers = {"Authorization": f"Bearer {token}", "Content-Type": "application/json"}
     resultats = []
     vus = set()
-    for query in queries:
+    max_queries = max(0, _int_env("LEGIFRANCE_MAX_QUERIES", DEFAULT_MAX_QUERIES))
+    throttle = max(0.0, _float_env("LEGIFRANCE_THROTTLE_SECONDS", DEFAULT_THROTTLE_SECONDS))
+    for query in list(queries)[:max_queries]:
         try:
             payload = fetch(search_url, headers=headers, json={"query": query})
         except Exception as exc:
@@ -125,5 +159,5 @@ def collect(fetch=_default_fetch, queries=QUERIES) -> list[dict]:
                 vus.add(url)
             resultats.append(art)
         if fetch is _default_fetch:
-            time.sleep(1)
+            time.sleep(throttle)
     return resultats

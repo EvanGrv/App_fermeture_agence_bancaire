@@ -96,5 +96,9 @@ Variables d'environnement optionnelles :
 - `LEGIFRANCE_CLIENT_ID` / `LEGIFRANCE_CLIENT_SECRET` pour activer Légifrance via PISTE.
 - `LEGIFRANCE_ENV=sandbox` pour utiliser les URLs sandbox PISTE ; par défaut,
   le collecteur utilise la production (`oauth.piste.gouv.fr` / `api.piste.gouv.fr`).
+- `LEGIFRANCE_MAX_QUERIES` plafonne le nombre de recherches par run (défaut : 8).
+- `LEGIFRANCE_THROTTLE_SECONDS` temporise les appels Légifrance (défaut : 2 s).
+  Conserver ces valeurs sous les quotas affichés dans PISTE (`Actions` →
+  `Consulter les quotas`).
 - `FACTIVA_API_KEY`, `LEXISNEXIS_API_KEY`, `TAGADAY_API_KEY` réservées au scaffold
   presse pro, sans appel réel à ce stade.
