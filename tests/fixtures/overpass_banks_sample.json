@@ -1,0 +1,51 @@
+{
+  "elements": [
+    {
+      "type": "node",
+      "id": 101,
+      "lat": 48.8566,
+      "lon": 2.3522,
+      "tags": {
+        "amenity": "bank",
+        "brand": "BNP Paribas",
+        "addr:city": "Paris",
+        "addr:postcode": "75002"
+      }
+    },
+    {
+      "type": "node",
+      "id": 102,
+      "lat": 45.764,
+      "lon": 4.8357,
+      "tags": {
+        "office": "financial",
+        "operator": "Crédit Agricole Centre-Est",
+        "addr:city": "Lyon",
+        "addr:postcode": "69003"
+      }
+    },
+    {
+      "type": "node",
+      "id": 103,
+      "lat": 43.6047,
+      "lon": 1.4442,
+      "tags": {
+        "amenity": "bank",
+        "name": "La Banque Postale",
+        "addr:city": "Toulouse",
+        "addr:postcode": "31000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 204,
+      "center": {"lat": 48.3904, "lon": -4.4861},
+      "tags": {
+        "amenity": "bank",
+        "name": "CMB",
+        "addr:city": "Brest",
+        "addr:postcode": "29200"
+      }
+    }
+  ]
+}

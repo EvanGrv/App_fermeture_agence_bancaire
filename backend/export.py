@@ -24,8 +24,18 @@ def build_payload(conn) -> dict:
         dep = cl["departement"]
         if dep:
             compteur[dep] = compteur.get(dep, 0) + 1
+    agences = {
+        dep: total
+        for dep, total in conn.execute(
+            "SELECT departement, COUNT(*) FROM referentiel WHERE departement IS NOT NULL GROUP BY departement"
+        )
+    }
     departements = {
-        code: {"nom": config.DEPARTEMENTS.get(code, code), "count": compteur.get(code, 0)}
+        code: {
+            "nom": config.DEPARTEMENTS.get(code, code),
+            "count": compteur.get(code, 0),
+            "total_agences": agences.get(code, 0),
+        }
         for code in config.DEPARTEMENTS
     }
     return {

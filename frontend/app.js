@@ -67,8 +67,16 @@ async function init() {
         .setHTML(popupHtml(e.features[0].properties))
         .addTo(map);
     });
+    map.on("click", "dep-fill", (e) => {
+      new maplibregl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML(departementPopupHtml(e.features[0].properties))
+        .addTo(map);
+    });
     map.on("mouseenter", "points", () => { map.getCanvas().style.cursor = "pointer"; });
     map.on("mouseleave", "points", () => { map.getCanvas().style.cursor = ""; });
+    map.on("mouseenter", "dep-fill", () => { map.getCanvas().style.cursor = "pointer"; });
+    map.on("mouseleave", "dep-fill", () => { map.getCanvas().style.cursor = ""; });
 
     remplirSelecteurs();
     ["f-banque", "f-type", "f-statut", "f-fiab", "f-dep"].forEach((id) =>
@@ -102,7 +110,13 @@ function deptsAvecCompte(items) {
   const compte = {};
   items.forEach((c) => { if (c.departement) compte[c.departement] = (compte[c.departement] || 0) + 1; });
   const fc = JSON.parse(JSON.stringify(DEPTS));
-  fc.features.forEach((f) => { f.properties.count = compte[f.properties.code] || 0; });
+  fc.features.forEach((f) => {
+    const code = f.properties.code;
+    const dep = DONNEES.departements[code] || {};
+    f.properties.count = compte[code] || 0;
+    f.properties.total_agences = dep.total_agences || 0;
+    f.properties.nom = dep.nom || f.properties.nom || code;
+  });
   return fc;
 }
 
@@ -179,6 +193,16 @@ function popupHtml(p) {
   return `<strong>${esc(p.banque)}</strong><br>${esc(p.commune)} (${esc(p.departement || "?")})<br>
     ${esc(p.type)} · ${esc(p.statut)} · fiabilité ${esc(p.fiabilite)}<br>
     <em>${esc(p.citation || "")}</em><br>${src}`;
+}
+
+function departementPopupHtml(p) {
+  const count = Number(p.count || 0);
+  const total = Number(p.total_agences || 0);
+  const ratio = total ? ` · ${esc(((count / total) * 100).toFixed(1))} %` : "";
+  const agences = total ? `${esc(total)} agences référencées` : "référentiel non peuplé";
+  return `<strong>${esc(p.code)} — ${esc(p.nom || "")}</strong><br>
+    ${esc(count)} fermeture(s) filtrée(s)<br>
+    ${agences}${ratio}`;
 }
 
 init();

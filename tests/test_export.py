@@ -14,9 +14,18 @@ def _seed(conn):
 def test_build_payload(tmp_path):
     conn = store.init_db(tmp_path / "t.db")
     _seed(conn)
+    store.upsert_referentiel(conn, dict(
+        osm_id="node/1", banque="BNP", commune="Lyon", code_postal="69003",
+        departement="69", lat=45.76, lon=4.85, source="OSM",
+    ))
+    store.upsert_referentiel(conn, dict(
+        osm_id="node/2", banque="LCL", commune="Lyon", code_postal="69006",
+        departement="69", lat=45.77, lon=4.84, source="OSM",
+    ))
     p = export.build_payload(conn)
     assert "generated_at" in p
     assert p["departements"]["69"]["count"] == 1
+    assert p["departements"]["69"]["total_agences"] == 2
     assert p["departements"]["69"]["nom"] == "Rhône"
     cl = p["closures"][0]
     assert cl["banque"] == "BNP"

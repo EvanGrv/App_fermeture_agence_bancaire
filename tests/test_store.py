@@ -13,7 +13,7 @@ def test_init_cree_tables(tmp_path):
     conn = store.init_db(tmp_path / "t.db")
     noms = {r[0] for r in conn.execute(
         "SELECT name FROM sqlite_master WHERE type='table'")}
-    assert {"closures", "sources", "seen_urls"} <= noms
+    assert {"closures", "sources", "seen_urls", "referentiel"} <= noms
 
 def test_upsert_puis_lecture(tmp_path):
     conn = store.init_db(tmp_path / "t.db")

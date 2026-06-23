@@ -1,7 +1,7 @@
 # run.py
 import anthropic
 import config
-from backend import store, export, geocode, geojson
+from backend import store, export, geocode, geojson, referentiel
 from backend.pipeline import run_pipeline, ingest_closures
 from backend.extractor import extract
 from backend.collectors import google_news, gdelt, local_feeds, official, sg_locator
@@ -26,10 +26,14 @@ def main():
     sg_records = sg_locator.seed_closures() + sg_locator.crawled_closures(
         config.CACHE_DIR / "sg_crawl.json")
     n_sg = ingest_closures(conn, sg_records, geo_adr)
+    branches = referentiel.fetch_osm_banques()
+    for branche in branches:
+        store.upsert_referentiel(conn, branche)
     geojson.ensure_departements_geojson()
     export.export_json(conn, config.DATA_JSON)
     print("Récapitulatif presse:", recap)
     print("Fermetures SG vérifiées ingérées:", n_sg)
+    print("Agences du référentiel OSM ingérées:", len(branches))
     print("Export écrit dans", config.DATA_JSON)
 
 
