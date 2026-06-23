@@ -1,0 +1,48 @@
+<!-- frontend/index.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Veille — Fermetures d'agences bancaires</title>
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Fermetures &amp; fusions d'agences bancaires</h1>
+    <div id="filtres">
+      <label>Banque <select id="f-banque"><option value="">Toutes</option></select></label>
+      <label>Type
+        <select id="f-type">
+          <option value="">Tous</option>
+          <option value="fermeture">Fermeture</option>
+          <option value="fusion">Fusion</option>
+        </select>
+      </label>
+      <label>Statut
+        <select id="f-statut">
+          <option value="">Tous</option>
+          <option value="confirmé">Confirmé</option>
+          <option value="projet">Projet</option>
+          <option value="rumeur">Rumeur</option>
+        </select>
+      </label>
+      <label>Fiabilité min
+        <select id="f-fiab">
+          <option value="1">1+</option><option value="2">2+</option>
+          <option value="3">3+</option><option value="4">4+</option>
+          <option value="5">5</option>
+        </select>
+      </label>
+      <label>Département <select id="f-dep"><option value="">Tous</option></select></label>
+    </div>
+  </header>
+  <main>
+    <div id="map"></div>
+    <aside id="liste"></aside>
+  </main>
+  <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
