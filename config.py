@@ -19,8 +19,11 @@ GOOGLE_NEWS_WHEN = "180d"
 ENSEIGNES = [
     "Crédit Agricole", "BNP", "Société Générale", "Banque Populaire",
     "Caisse d'Épargne", "Crédit Mutuel", "CIC", "LCL",
-    "Crédit du Nord", "HSBC", "Boursorama", "Banque Postale",
+    "Crédit du Nord", "HSBC", "CCF",
 ]
+
+# Enseignes explicitement exclues du suivi (formes normalisées).
+EXCLURE_BANQUES = ["la banque postale", "banque postale"]
 
 TERMES_FERMETURE = [
     "fermeture", "ferme", "fermer", "fermé", "fusion", "fusionne",

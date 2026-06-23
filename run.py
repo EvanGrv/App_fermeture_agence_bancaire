@@ -22,10 +22,10 @@ def main():
     )
     # Fermetures SG nominativement vérifiées (localisateur officiel), géocodées
     # à l'adresse précise — Niveau 1, sans appel IA.
-    n_sg = ingest_closures(
-        conn, sg_locator.seed_closures(),
-        lambda adr: geocode.geocode_adresse(adr, cache=cache_geo),
-    )
+    geo_adr = lambda adr: geocode.geocode_adresse(adr, cache=cache_geo)
+    sg_records = sg_locator.seed_closures() + sg_locator.crawled_closures(
+        config.CACHE_DIR / "sg_crawl.json")
+    n_sg = ingest_closures(conn, sg_records, geo_adr)
     geojson.ensure_departements_geojson()
     export.export_json(conn, config.DATA_JSON)
     print("Récapitulatif presse:", recap)

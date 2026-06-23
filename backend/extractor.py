@@ -95,6 +95,9 @@ def extract(article: dict, client, model: str = config.ANTHROPIC_MODEL,
     if _est_passee(data.date_fermeture, aujourdhui):
         return None
     banque = normalise_banque(data.banque)
+    # Enseignes exclues du suivi (ex. La Banque Postale).
+    if normalise_cle(banque) in getattr(config, "EXCLURE_BANQUES", []):
+        return None
     return {
         "id": closure_id(banque, data.commune, data.type),
         "banque": banque,

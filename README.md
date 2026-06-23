@@ -34,7 +34,20 @@ La carte utilise MapLibre GL JS pour afficher une visualisation par département
 
 ## Sources & limites
 
-- **Google News** (presse) — source principale des fermetures d'agences.
+- **Périmètre enseignes** : toutes les grandes banques de réseau **sauf La Banque
+  Postale** (exclue via `config.EXCLURE_BANQUES`) — Crédit Agricole, BNP, Société
+  Générale, Banque Populaire, Caisse d'Épargne, Crédit Mutuel, CIC, LCL, Crédit du
+  Nord, HSBC, CCF.
+- **Localisateur Société Générale** — ✅ la seule enseigne dont le localisateur
+  public affiche un message d'avance (« à compter du… transfère ses activités »).
+  6 fermetures nominatives vérifiées sont fournies en seed (`sg_locator.SEED`),
+  géocodées à l'adresse précise. Crawl complet : `tools/locator_crawl_sg.py`
+  (navigateur headless requis — fiches rendues en JS ; à lancer sur ta machine ;
+  sortie ingérée automatiquement par `run.py`).
+  ⚠️ **Les autres réseaux n'exposent PAS** d'annonce de fermeture sur leur
+  localisateur (vérifié) → pour eux, la presse est la source.
+- **Google News** (presse) — source principale des fermetures, **par enseigne**
+  (couvre toutes les banques du périmètre).
 - **Flux RSS locaux directs** — Actu.fr, Ouest-France, Ici et La Dépêche. Ces
   flux publics complètent Google News sur les dernières publications et sont
   configurables dans `config.LOCAL_RSS_FEEDS`.

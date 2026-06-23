@@ -67,3 +67,7 @@ def test_extract_normalise_banque():
     parsed = _extraction(banque="crédit agricole")
     res = extract(_article(), client=FakeClient(parsed), aujourdhui=AUJ)
     assert res["banque"] == "Crédit Agricole"
+
+def test_extract_exclut_banque_postale():
+    parsed = _extraction(banque="La Banque Postale")
+    assert extract(_article(), client=FakeClient(parsed), aujourdhui=AUJ) is None
