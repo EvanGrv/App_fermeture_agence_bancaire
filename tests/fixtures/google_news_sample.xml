@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<rss version="2.0"><channel>
+<item>
+  <title>La Société Générale ferme son agence de Rennes</title>
+  <link>https://exemple.fr/article-1</link>
+  <pubDate>Wed, 10 Jan 2026 08:00:00 GMT</pubDate>
+  <description>L'agence va fermer.</description>
+</item>
+<item>
+  <title>BNP Paribas regroupe deux agences à Lyon</title>
+  <link>https://exemple.fr/article-2</link>
+  <pubDate>Thu, 11 Jan 2026 09:00:00 GMT</pubDate>
+  <description>Regroupement annoncé.</description>
+</item>
+</channel></rss>
