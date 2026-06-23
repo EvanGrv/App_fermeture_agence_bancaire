@@ -15,6 +15,7 @@ def test_collect_sans_credentials_retourne_vide(monkeypatch):
 def test_collect_parse_articles(monkeypatch):
     monkeypatch.setenv("LEGIFRANCE_CLIENT_ID", "id")
     monkeypatch.setenv("LEGIFRANCE_CLIENT_SECRET", "secret")
+    monkeypatch.delenv("LEGIFRANCE_ENV", raising=False)
     appels = []
 
     def fetch(url, **kwargs):
@@ -33,3 +34,19 @@ def test_collect_parse_articles(monkeypatch):
     assert articles[0]["source"] == "Légifrance"
     assert articles[0]["departement"] is None
     assert len(appels) == 2
+
+
+def test_collect_supporte_sandbox(monkeypatch):
+    monkeypatch.setenv("LEGIFRANCE_CLIENT_ID", "id")
+    monkeypatch.setenv("LEGIFRANCE_CLIENT_SECRET", "secret")
+    monkeypatch.setenv("LEGIFRANCE_ENV", "sandbox")
+    urls = []
+
+    def fetch(url, **kwargs):
+        urls.append(url)
+        if url == legifrance.SANDBOX_TOKEN_URL:
+            return {"access_token": "tok"}
+        return {"results": []}
+
+    assert legifrance.collect(fetch=fetch, queries=["CCF PSE"]) == []
+    assert urls == [legifrance.SANDBOX_TOKEN_URL, legifrance.SANDBOX_SEARCH_URL]

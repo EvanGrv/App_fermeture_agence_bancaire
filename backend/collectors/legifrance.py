@@ -7,6 +7,8 @@ import config
 
 TOKEN_URL = "https://oauth.piste.gouv.fr/api/oauth/token"
 SEARCH_URL = "https://api.piste.gouv.fr/dila/legifrance/lf-engine-app/search"
+SANDBOX_TOKEN_URL = "https://sandbox-oauth.piste.gouv.fr/api/oauth/token"
+SANDBOX_SEARCH_URL = "https://sandbox-api.piste.gouv.fr/dila/legifrance/lf-engine-app/search"
 BASE_URL = "https://www.legifrance.gouv.fr"
 
 
@@ -32,9 +34,16 @@ def _default_fetch(url: str, **kwargs) -> dict:
     return resp.json()
 
 
-def _token(fetch, client_id: str, client_secret: str) -> str | None:
+def _urls() -> tuple[str, str]:
+    env = os.environ.get("LEGIFRANCE_ENV", "prod").strip().lower()
+    if env == "sandbox":
+        return SANDBOX_TOKEN_URL, SANDBOX_SEARCH_URL
+    return TOKEN_URL, SEARCH_URL
+
+
+def _token(fetch, client_id: str, client_secret: str, token_url: str) -> str | None:
     payload = fetch(
-        TOKEN_URL,
+        token_url,
         data={
             "grant_type": "client_credentials",
             "client_id": client_id,
@@ -89,8 +98,9 @@ def collect(fetch=_default_fetch, queries=QUERIES) -> list[dict]:
         print("[legifrance] credentials absents, collecteur désactivé")
         return []
 
+    token_url, search_url = _urls()
     try:
-        token = _token(fetch, client_id, client_secret)
+        token = _token(fetch, client_id, client_secret, token_url)
     except Exception as exc:
         print(f"[legifrance] authentification en erreur: {exc}")
         return []
@@ -103,7 +113,7 @@ def collect(fetch=_default_fetch, queries=QUERIES) -> list[dict]:
     vus = set()
     for query in queries:
         try:
-            payload = fetch(SEARCH_URL, headers=headers, json={"query": query})
+            payload = fetch(search_url, headers=headers, json={"query": query})
         except Exception as exc:
             print(f"[legifrance] requête '{query}': erreur {exc}")
             continue
