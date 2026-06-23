@@ -27,6 +27,15 @@ TERMES_FERMETURE = [
     "regroupement", "regroupe", "supprime", "suppression", "transfert",
 ]
 
+# Flux RSS publics de presse/radio locale. Ils complètent Google News en
+# captant directement les dernières publications des grands réseaux régionaux.
+LOCAL_RSS_FEEDS = [
+    {"label": "Actu.fr", "url": "https://actu.fr/rss.xml"},
+    {"label": "Ouest-France", "url": "https://www.ouest-france.fr/rss/france"},
+    {"label": "Ici", "url": "https://www.ici.fr/rss/infos.xml"},
+    {"label": "La Dépêche", "url": "https://www.ladepeche.fr/rss.xml"},
+]
+
 # Codes département → nom (métropole + DROM). Liste complète requise.
 DEPARTEMENTS = {
     "01": "Ain", "02": "Aisne", "03": "Allier", "04": "Alpes-de-Haute-Provence",

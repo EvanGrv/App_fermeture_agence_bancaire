@@ -35,6 +35,9 @@ La carte utilise MapLibre GL JS pour afficher une visualisation par département
 ## Sources & limites
 
 - **Google News** (presse) — source principale des fermetures d'agences.
+- **Flux RSS locaux directs** — Actu.fr, Ouest-France, Ici et La Dépêche. Ces
+  flux publics complètent Google News sur les dernières publications et sont
+  configurables dans `config.LOCAL_RSS_FEEDS`.
 - **GDELT** — agrégateur ; rate-limité à 1 requête / 5 s (le collecteur respecte
   la limite et applique un backoff). Best-effort.
 - **REGAFI / ACPR** — ⚠️ **au niveau de l'établissement agréé uniquement** (entité

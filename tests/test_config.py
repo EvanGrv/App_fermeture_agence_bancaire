@@ -10,5 +10,7 @@ def test_modele_par_defaut():
 def test_listes_non_vides():
     assert len(config.ENSEIGNES) >= 5
     assert "fermeture" in [t.lower() for t in config.TERMES_FERMETURE]
+    assert len(config.LOCAL_RSS_FEEDS) >= 3
+    assert all(feed["label"] and feed["url"].startswith("https://") for feed in config.LOCAL_RSS_FEEDS)
     assert config.DEPARTEMENTS["35"] == "Ille-et-Vilaine"
     assert len(config.DEPARTEMENTS) >= 96
