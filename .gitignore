@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+data/press.db
+data/export/
+data/cache/
+.env
+.venv/
