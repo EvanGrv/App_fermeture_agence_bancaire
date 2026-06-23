@@ -32,10 +32,18 @@ La carte utilise MapLibre GL JS pour afficher une visualisation par département
 (choroplèthe vectorielle) avec filtres interactifs : banque, type de changement
 (fermeture/fusion), statut (confirmé/projet/rumeur) et fiabilité des sources.
 
-## Source officielle (optionnelle)
+## Sources & limites
 
-Déposer un export REGAFI dans `data/cache/regafi.csv`
-(colonnes : denomination, commune, code_postal, statut).
+- **Google News** (presse) — source principale des fermetures d'agences.
+- **GDELT** — agrégateur ; rate-limité à 1 requête / 5 s (le collecteur respecte
+  la limite et applique un backoff). Best-effort.
+- **REGAFI / ACPR** — ⚠️ **au niveau de l'établissement agréé uniquement** (entité
+  + siège social), **pas au niveau des agences** : ni adresse d'agence, ni date de
+  fermeture d'agence. REGAFI **ne fournit donc pas** « les agences qui ferment ».
+  Le collecteur `official.py` reste un ingesteur générique de CSV
+  (`data/cache/regafi.csv`, colonnes denomination, commune, code_postal, statut)
+  pour toute liste d'agences au bon niveau que tu obtiendrais par ailleurs.
+- **PQR directe** (Ouest-France, etc.) — payante / anti-scraping, non automatisable.
 
 ## Tests
 

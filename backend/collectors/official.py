@@ -1,5 +1,14 @@
-# Le registre REGAFI (ACPR/Banque de France) se télécharge manuellement
-# depuis https://www.regafi.fr puis se dépose dans data/cache/regafi.csv.
+# IMPORTANT — limite vérifiée : le registre REGAFI (ACPR/Banque de France) est
+# au niveau de l'ÉTABLISSEMENT agréé (entité + siège), PAS au niveau des agences
+# individuelles. Il ne contient ni adresse d'agence, ni date de fermeture
+# d'agence. REGAFI ne peut donc PAS fournir « les agences qui ferment ».
+# (API: developer.regafi.banque-france.fr — données entités, inscription requise.)
+#
+# Ce collecteur reste un ingesteur GÉNÉRIQUE de CSV structuré (colonnes
+# denomination, commune, code_postal, statut) : utile si tu obtiens un jour une
+# liste d'agences au bon niveau (source interne, dataset tiers). Dépose-la dans
+# data/cache/regafi.csv. Les fermetures d'agences restent sinon couvertes par la
+# presse (Google News / GDELT).
 import csv
 import io
 import config
