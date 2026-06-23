@@ -49,6 +49,20 @@ CREATE TABLE IF NOT EXISTS controles_sirene (
     source TEXT,
     checked_at TEXT NOT NULL
 );
+CREATE TABLE IF NOT EXISTS vigilances (
+    id TEXT PRIMARY KEY,
+    banque TEXT,
+    departement TEXT,
+    titre TEXT,
+    extrait TEXT,
+    url TEXT,
+    source TEXT,
+    date TEXT,
+    score INTEGER,
+    raison TEXT,
+    created_at TEXT NOT NULL,
+    UNIQUE(url)
+);
 """
 
 
@@ -148,3 +162,23 @@ def upsert_controle_sirene(conn: sqlite3.Connection, closure_id: str, controle: 
         ),
     )
     conn.commit()
+
+
+def upsert_vigilance(conn: sqlite3.Connection, vigilance: dict) -> str:
+    conn.execute(
+        """INSERT INTO vigilances
+           (id, banque, departement, titre, extrait, url, source, date, score, raison, created_at)
+           VALUES (:id,:banque,:departement,:titre,:extrait,:url,:source,:date,:score,:raison,:created_at)
+           ON CONFLICT(id) DO UPDATE SET
+             banque=COALESCE(excluded.banque, banque),
+             departement=COALESCE(excluded.departement, departement),
+             titre=excluded.titre,
+             extrait=excluded.extrait,
+             source=excluded.source,
+             date=excluded.date,
+             score=MAX(score, excluded.score),
+             raison=excluded.raison""",
+        {**vigilance, "created_at": datetime.now(timezone.utc).isoformat()},
+    )
+    conn.commit()
+    return vigilance["id"]

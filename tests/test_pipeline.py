@@ -71,3 +71,22 @@ def test_pipeline_idempotent(tmp_path):
     assert recap["filtres"] == 0  # URL déjà vue -> ignorée
     n = conn.execute("SELECT COUNT(*) FROM closures").fetchone()[0]
     assert n == 1
+
+def test_pipeline_stocke_vigilance_si_extraction_non_publiable(tmp_path):
+    conn = store.init_db(tmp_path / "t.db")
+    collectors = [lambda: [_article("http://v")]]
+    vus = []
+
+    def vigilance_fn(article, raison):
+        vus.append((article["url"], raison))
+        return "v1"
+
+    recap = pipeline.run_pipeline(
+        conn,
+        collectors,
+        extractor_fn=lambda art: None,
+        geocoder_fn=_geo,
+        vigilance_fn=vigilance_fn,
+    )
+    assert recap["vigilances"] == 1
+    assert vus == [("http://v", "article pertinent sans fermeture publiable")]

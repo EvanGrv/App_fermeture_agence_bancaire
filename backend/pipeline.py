@@ -27,8 +27,8 @@ def ingest_closures(conn, closures, geocoder_adresse_fn) -> int:
     return n
 
 
-def run_pipeline(conn, collectors, extractor_fn, geocoder_fn) -> dict:
-    recap = {"articles": 0, "filtres": 0, "extraits": 0, "fermetures": 0}
+def run_pipeline(conn, collectors, extractor_fn, geocoder_fn, vigilance_fn=None) -> dict:
+    recap = {"articles": 0, "filtres": 0, "extraits": 0, "fermetures": 0, "vigilances": 0}
     for collect in collectors:
         try:
             articles = collect()
@@ -53,6 +53,8 @@ def run_pipeline(conn, collectors, extractor_fn, geocoder_fn) -> dict:
             if url:
                 store.mark_url_seen(conn, url)
             if resultat is None:
+                if vigilance_fn and vigilance_fn(art, "article pertinent sans fermeture publiable"):
+                    recap["vigilances"] += 1
                 continue
             recap["extraits"] += 1
             geo = geocoder_fn(resultat["commune"], resultat.get("departement"))

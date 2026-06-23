@@ -41,7 +41,14 @@
   </header>
   <main>
     <div id="map"></div>
-    <aside id="liste"></aside>
+    <aside id="panneau">
+      <div id="tabs">
+        <button id="tab-closures" class="active" type="button">Carte</button>
+        <button id="tab-vigilances" type="button">Vigilance</button>
+      </div>
+      <div id="liste"></div>
+      <div id="vigilances" hidden></div>
+    </aside>
   </main>
   <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
   <script src="app.js"></script>

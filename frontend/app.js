@@ -15,7 +15,7 @@ const STYLE = {
   layers: [{ id: "osm", type: "raster", source: "osm" }],
 };
 
-let DONNEES = { closures: [], departements: {} };
+let DONNEES = { closures: [], departements: {}, vigilances: [] };
 let DEPTS = null;
 let map;
 
@@ -82,6 +82,8 @@ async function init() {
     ["f-banque", "f-type", "f-statut", "f-fiab", "f-dep"].forEach((id) =>
       document.getElementById(id).addEventListener("change", rafraichir)
     );
+    document.getElementById("tab-closures").addEventListener("click", () => setTab("closures"));
+    document.getElementById("tab-vigilances").addEventListener("click", () => setTab("vigilances"));
     rafraichir();
   });
 }
@@ -153,6 +155,38 @@ function rafraichir() {
       if (c.lon != null && c.lat != null) map.flyTo({ center: [c.lon, c.lat], zoom: 11 });
     });
     liste.appendChild(div);
+  });
+  renderVigilances();
+}
+
+function setTab(tab) {
+  const liste = document.getElementById("liste");
+  const vig = document.getElementById("vigilances");
+  const a = document.getElementById("tab-closures");
+  const b = document.getElementById("tab-vigilances");
+  const showVigilances = tab === "vigilances";
+  liste.hidden = showVigilances;
+  vig.hidden = !showVigilances;
+  a.classList.toggle("active", !showVigilances);
+  b.classList.toggle("active", showVigilances);
+}
+
+function renderVigilances() {
+  const el = document.getElementById("vigilances");
+  const items = DONNEES.vigilances || [];
+  el.innerHTML = `<p>${items.length} signal(aux)</p>`;
+  items.forEach((v) => {
+    const div = document.createElement("div");
+    div.className = "item vigilance";
+    const source = v.url
+      ? `<a href="${esc(v.url)}" target="_blank" rel="noopener">${esc(v.source || "source")}</a>`
+      : esc(v.source || "");
+    div.innerHTML = `<h3>${esc(v.banque || "Banque non isolée")}</h3>
+      <span class="badge vigilance">score ${esc(v.score || "?")}</span>
+      <div class="meta">${esc(v.date || "")} · ${source}</div>
+      <div class="reason">${esc(v.raison || "signal faible")}</div>
+      <p>${esc(v.extrait || v.titre || "")}</p>`;
+    el.appendChild(div);
   });
 }
 

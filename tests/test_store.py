@@ -13,7 +13,9 @@ def test_init_cree_tables(tmp_path):
     conn = store.init_db(tmp_path / "t.db")
     noms = {r[0] for r in conn.execute(
         "SELECT name FROM sqlite_master WHERE type='table'")}
-    assert {"closures", "sources", "seen_urls", "referentiel", "controles_sirene"} <= noms
+    assert {
+        "closures", "sources", "seen_urls", "referentiel", "controles_sirene", "vigilances",
+    } <= noms
 
 def test_upsert_puis_lecture(tmp_path):
     conn = store.init_db(tmp_path / "t.db")
@@ -64,3 +66,13 @@ def test_upsert_controle_sirene(tmp_path):
         "SELECT etat_administratif, siret, source FROM controles_sirene WHERE closure_id='abc123'"
     ).fetchone()
     assert row == ("F", "456", "SIRENE")
+
+def test_upsert_vigilance(tmp_path):
+    conn = store.init_db(tmp_path / "t.db")
+    v = dict(id="v1", banque="BNP", departement="69", titre="Plan social",
+             extrait="fermetures possibles", url="http://v", source="Légifrance",
+             date="2026-01-10", score=2, raison="signal")
+    store.upsert_vigilance(conn, v)
+    store.upsert_vigilance(conn, {**v, "score": 4, "titre": "Plan social actualisé"})
+    row = conn.execute("SELECT titre, score FROM vigilances WHERE id='v1'").fetchone()
+    assert row == ("Plan social actualisé", 4)

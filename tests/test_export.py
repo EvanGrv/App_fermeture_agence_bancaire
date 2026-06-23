@@ -13,6 +13,11 @@ def _seed(conn):
     store.upsert_controle_sirene(conn, "abc123", {
         "etat_administratif": "F", "siret": "12345678900010", "source": "SIRENE",
     })
+    store.upsert_vigilance(conn, dict(
+        id="v1", banque="BNP", departement="69", titre="Accord PSE",
+        extrait="restructuration et fermeture agences", url="http://v",
+        source="Légifrance", date="2026-02-01", score=4, raison="signal faible",
+    ))
 
 def test_build_payload(tmp_path):
     conn = store.init_db(tmp_path / "t.db")
@@ -34,6 +39,7 @@ def test_build_payload(tmp_path):
     assert cl["banque"] == "BNP"
     assert cl["sources"][0]["url"] == "http://x"
     assert cl["controle_sirene"]["etat_administratif"] == "F"
+    assert p["vigilances"][0]["titre"] == "Accord PSE"
     # plans nationaux non nominatifs présents et distincts des closures
     assert any(pl["banque"] == "Société Générale" for pl in p["plans"])
 

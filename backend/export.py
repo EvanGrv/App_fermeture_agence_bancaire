@@ -6,6 +6,8 @@ from backend.plans import PLANS
 _CLOSURE_COLS = ["id", "banque", "commune", "code_insee", "departement", "type",
                  "date_annonce", "date_fermeture", "statut", "fiabilite",
                  "lat", "lon", "citation", "created_at"]
+_VIGILANCE_COLS = ["id", "banque", "departement", "titre", "extrait", "url",
+                   "source", "date", "score", "raison", "created_at"]
 
 
 def build_payload(conn) -> dict:
@@ -48,10 +50,17 @@ def build_payload(conn) -> dict:
         }
         for code in config.DEPARTEMENTS
     }
+    vigilances = [
+        dict(zip(_VIGILANCE_COLS, row))
+        for row in conn.execute(
+            f"SELECT {','.join(_VIGILANCE_COLS)} FROM vigilances ORDER BY score DESC, date DESC"
+        )
+    ]
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "departements": departements,
         "closures": closures,
+        "vigilances": vigilances,
         "plans": PLANS,
     }
 
