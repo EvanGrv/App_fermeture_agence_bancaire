@@ -1,0 +1,35 @@
+import json
+from pathlib import Path
+
+from backend.collectors import legifrance
+
+FIXT = Path(__file__).parent / "fixtures" / "legifrance_search_sample.json"
+
+
+def test_collect_sans_credentials_retourne_vide(monkeypatch):
+    monkeypatch.delenv("LEGIFRANCE_CLIENT_ID", raising=False)
+    monkeypatch.delenv("LEGIFRANCE_CLIENT_SECRET", raising=False)
+    assert legifrance.collect(fetch=lambda *a, **kw: {}) == []
+
+
+def test_collect_parse_articles(monkeypatch):
+    monkeypatch.setenv("LEGIFRANCE_CLIENT_ID", "id")
+    monkeypatch.setenv("LEGIFRANCE_CLIENT_SECRET", "secret")
+    appels = []
+
+    def fetch(url, **kwargs):
+        appels.append((url, kwargs))
+        if url == legifrance.TOKEN_URL:
+            return {"access_token": "tok"}
+        assert kwargs["headers"]["Authorization"] == "Bearer tok"
+        return json.loads(FIXT.read_text(encoding="utf-8"))
+
+    articles = legifrance.collect(fetch=fetch, queries=["Banque Populaire fermeture agence"])
+    assert len(articles) == 2
+    assert articles[0]["titre"] == "Accord relatif au PSE de Banque Populaire Grand Ouest"
+    assert "fermeture" in articles[0]["texte"]
+    assert articles[0]["url"].startswith("https://www.legifrance.gouv.fr")
+    assert articles[0]["date"] == "2026-03-15"
+    assert articles[0]["source"] == "Légifrance"
+    assert articles[0]["departement"] is None
+    assert len(appels) == 2

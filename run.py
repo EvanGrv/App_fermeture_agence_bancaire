@@ -4,7 +4,7 @@ import config
 from backend import store, export, geocode, geojson, referentiel
 from backend.pipeline import run_pipeline, ingest_closures
 from backend.extractor import extract
-from backend.collectors import google_news, gdelt, local_feeds, official, sg_locator
+from backend.collectors import google_news, gdelt, legifrance, local_feeds, official, sg_locator
 
 
 def main():
@@ -12,7 +12,13 @@ def main():
     client = anthropic.Anthropic()  # lit ANTHROPIC_API_KEY
     cache_geo = {}
 
-    collectors = [google_news.collect, local_feeds.collect, gdelt.collect, official.collect]
+    collectors = [
+        google_news.collect,
+        local_feeds.collect,
+        gdelt.collect,
+        official.collect,
+        legifrance.collect,
+    ]
     recap = run_pipeline(
         conn,
         collectors,
