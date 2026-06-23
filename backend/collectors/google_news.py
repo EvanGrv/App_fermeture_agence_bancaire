@@ -4,15 +4,24 @@ import requests
 import config
 
 # Le scoping par département du flux RSS Google News est inopérant (il renvoie
-# un même lot national dupliqué). On interroge donc par requêtes nationales
-# thématiques ; l'extraction IA déduit ensuite le département de chaque article.
-QUERIES = [
+# un même lot national dupliqué). On interroge donc par requêtes nationales :
+# des requêtes thématiques + une requête par enseigne (chaque flux plafonne à
+# ~100 résultats, donc multiplier les angles maximise la couverture). L'extraction
+# IA déduit ensuite le département de chaque article ; la dédup se fait par URL.
+_THEMATIQUES = [
     "fermeture agence bancaire",
     "banque ferme agence",
     "fusion agences bancaires",
     "agence bancaire ferme ses portes",
     "regroupement agences bancaires",
+    "fermeture agence banque",
+    "désert bancaire fermeture agence",
 ]
+_PAR_ENSEIGNE = (
+    [f"{e} fermeture agence" for e in config.ENSEIGNES]
+    + [f"{e} ferme agence" for e in config.ENSEIGNES]
+)
+QUERIES = _THEMATIQUES + _PAR_ENSEIGNE
 
 
 def _feed_url(query: str) -> str:
