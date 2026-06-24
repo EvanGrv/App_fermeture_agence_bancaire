@@ -76,7 +76,8 @@ jobs:
             echo "No public export changes to commit."
           else
             git commit -m "chore(data): update public exports"
-            git push
+            git pull --rebase origin "$GITHUB_REF_NAME"
+            git push origin "HEAD:$GITHUB_REF_NAME"
           fi
 
       - name: Save pipeline state
