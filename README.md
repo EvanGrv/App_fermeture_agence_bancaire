@@ -20,6 +20,22 @@ python run.py
 
 Produit `data/export/data.json` et `data/export/departements.geojson`.
 
+Pour élargir la collecte à partir d'une date donnée :
+
+```bash
+python run.py --since 2025-01-01
+```
+
+Alternatives pratiques :
+
+```bash
+python run.py --lookback-months 18
+python run.py --lookback-days 540
+```
+
+La date de départ élargit les fenêtres des collecteurs compatibles
+(`Google News`, `GDELT`) et filtre les articles antérieurs avant extraction.
+
 ## Voir la carte
 
 ```bash
@@ -28,9 +44,51 @@ python -m http.server 8000
 
 Puis ouvrir http://localhost:8000/frontend/index.html
 
+Pour utiliser depuis l'interface le bouton de relance du pipeline, lancer plutôt :
+
+```bash
+python app_server.py 8010
+```
+
+Puis ouvrir http://127.0.0.1:8010/frontend/index.html
+
 La carte utilise MapLibre GL JS pour afficher une visualisation par département
 (choroplèthe vectorielle) avec filtres interactifs : banque, type de changement
 (fermeture/fusion), statut (confirmé/projet/rumeur) et fiabilité des sources.
+
+## Hébergement gratuit
+
+Le mode recommandé est **Vercel Hobby + GitHub Actions** :
+
+- Vercel sert le frontend statique et les exports publics (`frontend/`,
+  `data/export/data.json`, `data/export/departements.geojson`).
+- GitHub Actions exécute `run.py`, met à jour `data/export/`, commit les exports
+  publics, puis Vercel redéploie automatiquement.
+- La base SQLite (`data/press.db`) et le cache (`data/cache/`) restent hors Git ;
+  le workflow les conserve avec le cache GitHub Actions.
+
+Déploiement Vercel :
+
+1. Connecter le dépôt GitHub dans Vercel.
+2. Garder le build command vide ou désactivé : le projet est statique côté Vercel.
+3. Garder le output directory à la racine du dépôt. `vercel.json` redirige `/`
+   vers `frontend/index.html`.
+
+Secrets GitHub Actions à créer dans `Settings > Secrets and variables > Actions` :
+
+- `ANTHROPIC_API_KEY` obligatoire.
+- `OPENAI_API_KEY` optionnel pour le fallback.
+- `LEGIFRANCE_CLIENT_ID` et `LEGIFRANCE_CLIENT_SECRET` optionnels.
+
+Variables GitHub Actions optionnelles :
+
+- `OPENAI_BUDGET_EUR` (défaut `1.0`).
+- `GOOGLE_NEWS_WHEN` (défaut `180d`).
+- `GDELT_THROTTLE_SECONDS` (défaut `12`).
+
+Le workflow `.github/workflows/update-data.yml` se lance tous les jours à
+03:17 UTC et peut aussi être lancé manuellement avec une date `since` ou une
+fenêtre `lookback_months`.
 
 ## Sources & limites
 
@@ -106,9 +164,12 @@ Variables d'environnement optionnelles :
 - `LEGIFRANCE_CLIENT_ID` / `LEGIFRANCE_CLIENT_SECRET` pour activer Légifrance via PISTE.
 - `LEGIFRANCE_ENV=sandbox` pour utiliser les URLs sandbox PISTE ; par défaut,
   le collecteur utilise la production (`oauth.piste.gouv.fr` / `api.piste.gouv.fr`).
+- `LEGIFRANCE_SCOPE` vaut `openid searchUsingPOST` par défaut, car le collecteur
+  utilise l'endpoint de recherche Légifrance.
 - `LEGIFRANCE_MAX_QUERIES` plafonne le nombre de recherches par run (défaut : 8).
 - `LEGIFRANCE_THROTTLE_SECONDS` temporise les appels Légifrance (défaut : 2 s).
-  Conserver ces valeurs sous les quotas affichés dans PISTE (`Actions` →
-  `Consulter les quotas`).
+  Les quotas PISTE fournis indiquent notamment `2` messages/seconde pour
+  `searchUsingPOST`; `0.6` seconde entre deux requêtes reste volontairement
+  sous cette limite.
 - `FACTIVA_API_KEY`, `LEXISNEXIS_API_KEY`, `TAGADAY_API_KEY` réservées au scaffold
   presse pro, sans appel réel à ce stade.

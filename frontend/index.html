@@ -4,53 +4,418 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Veille — Fermetures d'agences bancaires</title>
+  <title>Fermetures Agences Bancaires</title>
   <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="/frontend/style.css" />
 </head>
 <body>
-  <header>
-    <h1>Fermetures &amp; fusions d'agences bancaires <small>(annoncées / à venir)</small></h1>
-    <div id="plans"></div>
-    <div id="filtres">
-      <label>Banque <select id="f-banque"><option value="">Toutes</option></select></label>
-      <label>Type
-        <select id="f-type">
-          <option value="">Tous</option>
-          <option value="fermeture">Fermeture</option>
-          <option value="fusion">Fusion</option>
-        </select>
-      </label>
-      <label>Statut
-        <select id="f-statut">
-          <option value="">Tous</option>
-          <option value="confirmé">Confirmé</option>
-          <option value="projet">Projet</option>
-          <option value="rumeur">Rumeur</option>
-        </select>
-      </label>
-      <label>Fiabilité min
-        <select id="f-fiab">
-          <option value="1">1+</option><option value="2">2+</option>
-          <option value="3">3+</option><option value="4">4+</option>
-          <option value="5">5</option>
-        </select>
-      </label>
-      <label>Département <select id="f-dep"><option value="">Tous</option></select></label>
-    </div>
-  </header>
-  <main>
-    <div id="map"></div>
-    <aside id="panneau">
-      <div id="tabs">
-        <button id="tab-closures" class="active" type="button">Carte</button>
-        <button id="tab-vigilances" type="button">Vigilance</button>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Navigation principale">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">⌂</div>
+        <strong>Fermetures<br />Agences Bancaires</strong>
       </div>
-      <div id="liste"></div>
-      <div id="vigilances" hidden></div>
+      <nav class="side-nav">
+        <button class="nav-link" data-view="home" type="button"><span>⌂</span>Accueil</button>
+        <button class="nav-link active" data-view="map" type="button"><span>⌖</span>Carte</button>
+        <button class="nav-link" data-view="agencies" type="button"><span>▥</span>Agences</button>
+        <button class="nav-link" data-view="articles" type="button"><span>▤</span>Articles</button>
+        <button class="nav-link" data-view="departments" type="button"><span>▦</span>Départements</button>
+        <button class="nav-link" data-view="timeline" type="button"><span>◷</span>Évolution</button>
+        <button class="nav-link" data-view="sources" type="button"><span>◎</span>Sources</button>
+        <button class="nav-link" data-view="alerts" type="button"><span>◴</span>Alertes</button>
+      </nav>
+      <div class="sidebar-footer">
+        <button class="nav-link" data-view="settings" type="button"><span>⚙</span>Paramètres</button>
+      </div>
     </aside>
-  </main>
+
+    <section class="workspace">
+      <header class="topbar">
+        <label class="searchbox">
+          <span>⌕</span>
+          <input id="f-search" type="search" placeholder="Rechercher une banque, une agence, une ville, un département..." />
+        </label>
+        <div class="top-actions" aria-label="Actions">
+          <button type="button" title="Aide">?</button>
+          <button type="button" title="Notifications">◴</button>
+        </div>
+      </header>
+
+      <div id="plans" class="plans-strip"></div>
+
+      <section class="filterbar" aria-label="Filtres">
+        <label>Banque <select id="f-banque"><option value="">Toutes</option></select></label>
+        <label class="filter-statut">Statut
+          <select id="f-statut">
+            <option value="">Tous</option>
+            <option value="confirmé">Confirmé</option>
+            <option value="projet">Projet</option>
+            <option value="rumeur">Rumeur</option>
+          </select>
+        </label>
+        <label>Type
+          <select id="f-type">
+            <option value="">Tous</option>
+            <option value="fermeture">Fermeture</option>
+            <option value="fusion">Fusion</option>
+          </select>
+        </label>
+        <label>Fiabilité min.
+          <select id="f-fiab">
+            <option value="1">1+</option>
+            <option value="2">2+</option>
+            <option value="3">3+</option>
+            <option value="4">4+</option>
+            <option value="5">5</option>
+          </select>
+        </label>
+        <label class="filter-dep">Département <select id="f-dep"><option value="">Tous</option></select></label>
+        <label>Période
+          <select id="f-period">
+            <option value="all">Toutes</option>
+            <option value="6m">6 derniers mois</option>
+            <option value="12m">12 derniers mois</option>
+            <option value="selected">Mois sélectionné</option>
+          </select>
+        </label>
+        <button id="reset-filters" class="ghost-btn" type="button">Réinitialiser</button>
+        <button id="download-excel" class="primary-btn" type="button">Télécharger Excel</button>
+      </section>
+
+      <main class="pages">
+        <section id="view-home" class="page">
+          <div class="page-heading">
+            <p>Accueil</p>
+            <h1>Vue synthétique des fermetures et fusions d'agences bancaires</h1>
+          </div>
+          <div id="home-stats" class="stats-grid"></div>
+          <div class="split-grid">
+            <article class="panel">
+              <h2>Derniers résultats</h2>
+              <div id="home-results" class="stack-list"></div>
+            </article>
+            <article class="panel">
+              <h2>Signaux de vigilance</h2>
+              <div id="home-alerts" class="stack-list"></div>
+            </article>
+          </div>
+        </section>
+
+        <section id="view-map" class="page active">
+          <div id="map-stats" class="stats-grid overlay-stats"></div>
+          <div class="map-layout">
+            <div class="map-stage">
+              <div id="map-host-map" class="map-host"><div id="map"></div></div>
+              <div class="map-legend">
+                <strong>Types d'événements</strong>
+                <span><i class="dot red"></i>Fermeture confirmée</span>
+                <span><i class="dot orange"></i>Projet de fermeture</span>
+                <span><i class="dot purple"></i>Fusion / Rapprochement</span>
+              </div>
+              <div class="basemap-switch" data-basemap-switch>
+                <button class="active" type="button" data-basemap="plan">Plan</button>
+                <button type="button" data-basemap="satellite">Satellite</button>
+                <button type="button" data-basemap="relief">Relief</button>
+              </div>
+            </div>
+            <aside class="result-panel">
+              <div class="panel-title">
+                <h2>Sélection / Résultats</h2>
+                <span id="result-count" class="pill">0</span>
+              </div>
+              <div id="map-results" class="stack-list"></div>
+            </aside>
+          </div>
+        </section>
+
+        <section id="view-agencies" class="page">
+          <div class="page-heading">
+            <p>Agences</p>
+            <h1>Liste qualifiée des agences détectées</h1>
+          </div>
+          <div id="agencies-list" class="table-panel"></div>
+        </section>
+
+        <section id="view-articles" class="page">
+          <div class="page-heading compact">
+            <p>Veille & articles</p>
+            <h1>Suivez les articles liés aux fermetures, projets et fusions d'agences bancaires.</h1>
+          </div>
+          <div class="articles-top">
+            <div class="articles-side">
+              <article class="kpi-card">
+                <span class="kpi-icon red">▤</span>
+                <strong id="articles-total">0</strong>
+                <p>Articles détectés</p>
+                <small id="articles-total-delta" class="kpi-delta">+0 ce mois</small>
+              </article>
+              <article class="kpi-card">
+                <span class="kpi-icon purple">▦</span>
+                <strong id="articles-deps">0</strong>
+                <p>Départements<br />couverts</p>
+                <small id="articles-deps-total" class="kpi-muted">sur 101</small>
+              </article>
+            </div>
+            <div class="articles-main">
+              <div class="articles-sort">
+                <label>Trier par :
+                  <select id="articles-sort">
+                    <option value="articles-desc">Articles (déc.)</option>
+                    <option value="articles-asc">Articles (croiss.)</option>
+                    <option value="deps-desc">Départements (déc.)</option>
+                    <option value="name-asc">Nom (A-Z)</option>
+                  </select>
+                </label>
+              </div>
+              <div id="articles-regions" class="region-grid"></div>
+            </div>
+          </div>
+          <div class="article-layout">
+            <div class="map-stage articles-map">
+              <div id="map-host-articles" class="map-host"></div>
+              <div class="map-legend articles-legend">
+                <strong>Articles par département</strong>
+                <span class="legend-note">Chaque bulle indique le nombre d'articles détectés.</span>
+                <span><i class="dot red"></i>50 et +</span>
+                <span><i class="dot red soft"></i>20 à 49</span>
+                <span><i class="dot orange"></i>5 à 19</span>
+                <span><i class="dot purple"></i>1 à 4</span>
+                <span><i class="dot grey"></i>0</span>
+              </div>
+              <div class="basemap-switch" data-basemap-switch>
+                <button class="active" type="button" data-basemap="plan">Plan</button>
+                <button type="button" data-basemap="relief">Relief</button>
+                <button type="button" data-basemap="satellite">Satellite</button>
+              </div>
+            </div>
+            <aside class="result-panel articles-panel">
+              <div class="panel-title">
+                <h2>Départements les plus couverts</h2>
+              </div>
+              <div id="articles-list" class="stack-list dep-coverage"></div>
+              <a id="articles-see-all" class="panel-footer-link" href="#departments">Voir tous les départements (<span id="articles-dep-total">96</span>) →</a>
+            </aside>
+          </div>
+        </section>
+
+        <section id="view-departments" class="page">
+          <div class="page-heading compact">
+            <p>Vue département</p>
+            <h1 id="department-title">Départements impactés</h1>
+          </div>
+          <div class="department-layout">
+            <div class="map-stage departments-map">
+              <div id="map-host-departments" class="map-host"></div>
+              <div class="map-tools">
+                <button type="button" data-map-tool="zoom-in">Zoomer</button>
+                <button type="button" data-map-tool="zoom-out">Dézoomer</button>
+                <button type="button" data-map-tool="recenter">Recentrer</button>
+                <button type="button" data-map-tool="legend">Légende</button>
+              </div>
+              <div class="map-legend departments-legend">
+                <strong>Types d'événements</strong>
+                <span><i class="dot red"></i>Fermeture confirmée</span>
+                <span><i class="dot orange"></i>Projet de fermeture</span>
+                <span><i class="dot purple"></i>Fusion / Rapprochement</span>
+                <span><i class="dot blue"></i>Maintien / Autre</span>
+              </div>
+              <div class="basemap-switch" data-basemap-switch>
+                <button class="active" type="button" data-basemap="plan">Plan</button>
+                <button type="button" data-basemap="satellite">Satellite</button>
+                <button type="button" data-basemap="relief">Relief</button>
+              </div>
+            </div>
+            <aside class="department-panels">
+              <div id="department-summary" class="panel"></div>
+              <div id="department-banks" class="panel"></div>
+              <div id="department-watch" class="panel"></div>
+            </aside>
+          </div>
+        </section>
+
+        <section id="view-timeline" class="page">
+          <div class="page-heading compact">
+            <p>Évolution temporelle</p>
+            <h1>Chronologie des fermetures, projets et fusions</h1>
+          </div>
+          <div id="timeline-stats" class="stats-grid"></div>
+          <div class="timeline-layout">
+            <div class="map-stage timeline-map">
+              <div id="map-host-timeline" class="map-host"></div>
+              <div class="basemap-switch" data-basemap-switch>
+                <button class="active" type="button" data-basemap="plan">Plan</button>
+                <button type="button" data-basemap="satellite">Satellite</button>
+                <button type="button" data-basemap="relief">Relief</button>
+              </div>
+            </div>
+            <aside class="result-panel">
+              <div class="panel-title">
+                <h2>Nouvelles fermetures</h2>
+                <span id="timeline-count" class="pill">0</span>
+              </div>
+              <div id="timeline-results" class="stack-list"></div>
+            </aside>
+          </div>
+          <div id="timeline-control" class="timeline-card"></div>
+        </section>
+
+        <section id="view-alerts" class="page">
+          <div class="page-heading">
+            <p>Alertes</p>
+            <h1>Signaux faibles à vérifier</h1>
+          </div>
+          <div id="alerts-list" class="table-panel"></div>
+        </section>
+
+        <section id="view-sources" class="page">
+          <div class="page-heading">
+            <p>Sources</p>
+            <h1>D'où viennent les données et comment elles sont traitées</h1>
+          </div>
+
+          <div class="sources-layout">
+            <article class="panel source-intro">
+              <h2>Principe général</h2>
+              <p>
+                L'application consolide des annonces publiques de fermetures, fusions ou transferts
+                d'agences bancaires. Les sources qui nomment précisément une agence alimentent la
+                carte; les sources moins précises sont conservées comme signaux de vigilance.
+              </p>
+              <p>
+                Les données affichées viennent de l'export local <strong>data/export/data.json</strong>,
+                généré par le pipeline Python du projet. Les chiffres nationaux non nominatifs sont
+                indiqués à part et ne créent pas de points sur la carte.
+              </p>
+            </article>
+
+            <article class="panel">
+              <h2>Sources exploitées</h2>
+              <div class="source-grid">
+                <div class="source-card">
+                  <strong>Google News</strong>
+                  <span>Presse locale et nationale, requêtée par enseigne et mots-clés de fermeture ou fusion.</span>
+                  <small>Source principale des articles détectant des agences nommées.</small>
+                </div>
+                <div class="source-card">
+                  <strong>Flux RSS locaux</strong>
+                  <span>Actu.fr, Ouest-France, Ici, La Dépêche et autres flux publics configurés.</span>
+                  <small>Complément pour les derniers articles de presse locale.</small>
+                </div>
+                <div class="source-card">
+                  <strong>GDELT</strong>
+                  <span>Agrégateur d'actualités utilisé en recherche large sur les six derniers mois.</span>
+                  <small>Best-effort, avec limitation de débit.</small>
+                </div>
+                <div class="source-card">
+                  <strong>Localisateur officiel SG</strong>
+                  <span>Fermetures Société Générale vérifiées nominativement quand le localisateur annonce un transfert.</span>
+                  <small>Géocodage à l'adresse précise quand disponible.</small>
+                </div>
+                <div class="source-card">
+                  <strong>Légifrance / PISTE</strong>
+                  <span>Accords, décisions et textes pouvant signaler des réorganisations ou suppressions d'agences.</span>
+                  <small>Souvent classé en vigilance si aucune agence nominative n'est isolée.</small>
+                </div>
+                <div class="source-card">
+                  <strong>OSM / Overpass</strong>
+                  <span>Référentiel libre des agences bancaires existantes, utilisé comme dénominateur par département.</span>
+                  <small>Ne crée jamais une fermeture à lui seul.</small>
+                </div>
+                <div class="source-card">
+                  <strong>SIRENE</strong>
+                  <span>Contrôle a posteriori du statut administratif quand une agence ou commune est identifiée.</span>
+                  <small>Source de validation, pas de détection.</small>
+                </div>
+                <div class="source-card">
+                  <strong>REGAFI / ACPR</strong>
+                  <span>Registre au niveau établissement agréé ou siège, pas au niveau agence.</span>
+                  <small>Conservé comme connecteur officiel générique, mais ne fournit pas les agences qui ferment.</small>
+                </div>
+                <div class="source-card">
+                  <strong>Presse pro</strong>
+                  <span>Factiva, LexisNexis, Tagaday sont prévus dans le scaffold si des clés API sont disponibles.</span>
+                  <small>Non actif sans configuration dédiée.</small>
+                </div>
+              </div>
+            </article>
+
+            <article class="panel flow-panel">
+              <h2>Schéma de traitement</h2>
+              <div class="flow-steps" aria-label="Pipeline de données">
+                <div><strong>1</strong><span>Collecte</span><small>Articles, RSS, sources officielles, localisateur SG.</small></div>
+                <div><strong>2</strong><span>Préfiltre</span><small>Suppression des articles hors sujet et URLs déjà vues.</small></div>
+                <div><strong>3</strong><span>Extraction IA</span><small>Banque, commune, type, statut, dates, citation, fiabilité.</small></div>
+                <div><strong>4</strong><span>Géocodage</span><small>Coordonnées, code INSEE et département quand l'agence est localisée.</small></div>
+                <div><strong>5</strong><span>Contrôles</span><small>SIRENE, sources attachées, signaux de vigilance.</small></div>
+                <div><strong>6</strong><span>Export</span><small>JSON front, carte, fiches agence, tableaux et fichier Excel.</small></div>
+              </div>
+            </article>
+
+            <article class="panel">
+              <h2>Limites assumées</h2>
+              <ul class="source-notes">
+                <li>Une annonce nationale sans liste nominative ne crée pas de point sur la carte.</li>
+                <li>Les articles ambigus ou trop génériques restent en vigilance plutôt qu'en fermeture confirmée.</li>
+                <li>OSM, SIRENE et REGAFI servent au contrôle ou au dénombrement, pas à prédire une fermeture.</li>
+                <li>La fiabilité reflète la qualité des sources et la précision de l'agence identifiée.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section id="view-settings" class="page">
+          <div class="page-heading">
+            <p>Paramètres</p>
+            <h1>Configuration locale</h1>
+          </div>
+          <div class="settings-grid">
+            <article class="panel">
+              <h2>Données chargées</h2>
+              <p id="settings-copy"></p>
+            </article>
+            <article class="panel pipeline-panel">
+              <h2>Relancer la collecte</h2>
+              <p>
+                Choisissez une date de départ. Le pipeline élargira les fenêtres des collecteurs,
+                filtrera les articles avant cette date, puis régénérera l'export de l'application.
+              </p>
+              <div class="pipeline-presets">
+                <button class="selected" type="button" data-lookback-months="6">6 mois</button>
+                <button type="button" data-lookback-months="18">18 mois</button>
+                <button type="button" data-lookback-months="24">24 mois</button>
+                <button type="button" data-lookback-months="36">3 ans</button>
+              </div>
+              <label class="date-field">Date de départ
+                <input id="pipeline-since" type="date" />
+              </label>
+              <button id="run-pipeline" class="primary-btn" type="button">Relancer le pipeline</button>
+              <div class="pipeline-progress" aria-label="Progression de la collecte">
+                <div class="pipeline-progress-head">
+                  <span id="pipeline-progress-label">Communication backend : en attente</span>
+                  <strong id="pipeline-progress-value">0%</strong>
+                </div>
+                <div class="pipeline-progress-track">
+                  <span id="pipeline-progress-bar" style="width: 0%"></span>
+                </div>
+              </div>
+              <pre id="pipeline-status" class="pipeline-status">En attente.</pre>
+            </article>
+          </div>
+        </section>
+      </main>
+    </section>
+  </div>
+
+  <section id="agency-sheet" class="sheet" hidden aria-label="Fiche agence">
+    <div class="sheet-backdrop" data-close-sheet></div>
+    <aside class="sheet-panel">
+      <button class="sheet-close" data-close-sheet type="button" title="Fermer">×</button>
+      <div id="agency-sheet-content"></div>
+    </aside>
+  </section>
+
   <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
-  <script src="app.js"></script>
+  <script src="/frontend/app.js"></script>
 </body>
 </html>

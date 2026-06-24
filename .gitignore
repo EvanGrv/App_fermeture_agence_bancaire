@@ -1,7 +1,6 @@
 __pycache__/
 *.pyc
-data/press.db
-data/export/
+data/*.db
 data/cache/
 .env
 .venv/
