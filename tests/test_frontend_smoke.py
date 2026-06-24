@@ -5,9 +5,14 @@ ROOT = Path(__file__).resolve().parents[1]
 FRONT = ROOT / "frontend"
 
 def test_fichiers_presents():
+    assert (ROOT / "index.html").exists()
     assert (FRONT / "index.html").exists()
     assert (FRONT / "app.js").exists()
     assert (FRONT / "style.css").exists()
+
+def test_index_racine_redirige_vers_frontend():
+    html = (ROOT / "index.html").read_text(encoding="utf-8")
+    assert "/frontend" in html
 
 def test_index_reference_maplibre_et_app():
     html = (FRONT / "index.html").read_text(encoding="utf-8")
@@ -47,7 +52,7 @@ def test_deploiement_vercel_github_actions_configure():
     workflow = (root / ".github" / "workflows" / "update-data.yml").read_text(encoding="utf-8")
     gitignore = (root / ".gitignore").read_text(encoding="utf-8")
 
-    assert "/frontend/index.html" in vercel
+    assert "data/export" in vercel
     assert "python run.py" in workflow
     assert "data/export" in workflow
     assert "ANTHROPIC_API_KEY" in workflow
