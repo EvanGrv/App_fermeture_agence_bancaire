@@ -20,6 +20,14 @@ def test_queries_contient_variantes_regionales():
     assert "BPGO fermeture agence" in requetes
     assert "CEBPL fermeture agence" in requetes
 
+def test_queries_couvrent_regions_departements_et_presse_regionale():
+    requetes = " ".join(google_news.QUERIES)
+    assert "fermeture agence bancaire Normandie" in requetes
+    assert "Crédit Agricole fermeture agence Bourgogne-Franche-Comté" in requetes
+    assert "fermeture agence bancaire Indre" in requetes
+    assert "site:ouest-france.fr fermeture agence bancaire" in requetes
+    assert "site:actu.fr fermeture agence bancaire" in requetes
+
 
 def test_parse_feed():
     arts = google_news.parse_feed(FIXT.read_text(encoding="utf-8"))

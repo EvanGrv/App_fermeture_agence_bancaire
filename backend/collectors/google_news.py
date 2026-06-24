@@ -26,7 +26,61 @@ _MARQUES_REGIONALES = [
     for variantes in getattr(config, "MARQUES_REGIONALES", {}).values()
     for variante in variantes
 ]
-QUERIES = list(dict.fromkeys(_THEMATIQUES + _PAR_ENSEIGNE + _MARQUES_REGIONALES))
+_REGIONS = [
+    "Auvergne-Rhône-Alpes",
+    "Bourgogne-Franche-Comté",
+    "Bretagne",
+    "Centre-Val de Loire",
+    "Corse",
+    "Grand Est",
+    "Hauts-de-France",
+    "Île-de-France",
+    "Normandie",
+    "Nouvelle-Aquitaine",
+    "Occitanie",
+    "Pays de la Loire",
+    "Provence-Alpes-Côte d'Azur",
+]
+_PAR_REGION = [
+    f"{theme} {region}"
+    for region in _REGIONS
+    for theme in (
+        "fermeture agence bancaire",
+        "Crédit Agricole fermeture agence",
+        "Société Générale fermeture agence",
+        "BNP Paribas fermeture agence",
+        "Caisse d'Épargne fermeture agence",
+    )
+]
+_PAR_DEPARTEMENT = [
+    f"fermeture agence bancaire {nom}"
+    for nom in getattr(config, "DEPARTEMENTS", {}).values()
+]
+_PRESSE_REGIONALE = [
+    f"site:{domaine} fermeture agence bancaire"
+    for domaine in (
+        "actu.fr",
+        "ouest-france.fr",
+        "ladepeche.fr",
+        "ledauphine.com",
+        "estrepublicain.fr",
+        "republicain-lorrain.fr",
+        "sudouest.fr",
+        "lanouvellerepublique.fr",
+        "paris-normandie.fr",
+        "lavoixdunord.fr",
+        "francebleu.fr",
+        "ici.fr",
+    )
+]
+QUERIES = list(dict.fromkeys(
+    _THEMATIQUES
+    + _PAR_ENSEIGNE
+    + _MARQUES_REGIONALES
+    + _PAR_REGION
+    + _PAR_DEPARTEMENT
+    + _PRESSE_REGIONALE
+))
 
 
 def _feed_url(query: str) -> str:

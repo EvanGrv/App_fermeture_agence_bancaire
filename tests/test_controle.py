@@ -1,6 +1,8 @@
 import json
 from pathlib import Path
 
+import requests
+
 from backend import controle
 
 FIXTURES = Path(__file__).parent / "fixtures"
@@ -38,3 +40,31 @@ def test_confirmer_fermeture_introuvable():
         "Banque inconnue", "Nulle part", fetch=_fetch_fixture("sirene_vide.json")
     )
     assert statut == {"etat_administratif": None, "siret": None, "source": "SIRENE"}
+
+
+def test_confirmer_fermeture_retry_429(monkeypatch):
+    payload = json.loads((FIXTURES / "sirene_actif.json").read_text(encoding="utf-8"))
+    calls = {"n": 0}
+    sleeps = []
+
+    def fake_sleep(seconds):
+        sleeps.append(seconds)
+
+    def fetch(url, **kwargs):
+        calls["n"] += 1
+        if calls["n"] == 1:
+            response = requests.Response()
+            response.status_code = 429
+            response.headers["Retry-After"] = "3"
+            raise requests.exceptions.HTTPError(response=response)
+        return payload
+
+    monkeypatch.setattr(controle.time, "sleep", fake_sleep)
+    monkeypatch.setenv("SIRENE_RETRY_SECONDS", "1")
+    controle._CACHE.clear()
+
+    statut = controle.confirmer_fermeture("BNP Paribas", "Retryville", fetch=fetch)
+
+    assert statut["etat_administratif"] == "A"
+    assert calls["n"] == 2
+    assert sleeps == [3.0]

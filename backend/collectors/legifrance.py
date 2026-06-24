@@ -1,6 +1,7 @@
 import os
 import re
 import time
+from base64 import b64encode
 
 import requests
 
@@ -22,6 +23,8 @@ QUERIES = _queries()
 DEFAULT_THROTTLE_SECONDS = 2.0
 DEFAULT_MAX_QUERIES = 8
 DEFAULT_PAGE_SIZE = 5
+DEFAULT_SCOPE = "openid searchUsingPOST"
+_AUTH_DISABLED_REASON = None
 
 
 def _default_fetch(url: str, **kwargs) -> dict:
@@ -62,16 +65,63 @@ def _urls() -> tuple[str, str]:
 
 
 def _token(fetch, client_id: str, client_secret: str, token_url: str) -> str | None:
-    payload = fetch(
-        token_url,
-        data={
-            "grant_type": "client_credentials",
-            "client_id": client_id,
-            "client_secret": client_secret,
-            "scope": "openid",
+    scope = os.environ.get("LEGIFRANCE_SCOPE", DEFAULT_SCOPE).strip() or DEFAULT_SCOPE
+    basic_auth = "Basic " + b64encode(f"{client_id}:{client_secret}".encode("utf-8")).decode("ascii")
+    attempts = [
+        {
+            "data": {
+                "grant_type": "client_credentials",
+                "client_id": client_id,
+                "client_secret": client_secret,
+                "scope": scope,
+            },
         },
-    )
-    return payload.get("access_token")
+        {
+            "data": {
+                "grant_type": "client_credentials",
+                "client_id": client_id,
+                "client_secret": client_secret,
+                "scope": "openid",
+            },
+        },
+        {
+            "data": {
+                "grant_type": "client_credentials",
+                "client_id": client_id,
+                "client_secret": client_secret,
+            },
+        },
+        {
+            "data": {"grant_type": "client_credentials", "scope": scope},
+            "headers": {"Authorization": basic_auth},
+        },
+        {
+            "data": {"grant_type": "client_credentials", "scope": "openid"},
+            "headers": {"Authorization": basic_auth},
+        },
+        {
+            "data": {"grant_type": "client_credentials"},
+            "headers": {"Authorization": basic_auth},
+        },
+    ]
+    last_error = None
+    for attempt in attempts:
+        try:
+            payload = fetch(token_url, **attempt)
+            token = payload.get("access_token")
+            if token:
+                return token
+        except requests.exceptions.HTTPError as exc:
+            status = getattr(getattr(exc, "response", None), "status_code", None)
+            last_error = exc
+            if status not in {400, 401, 403}:
+                raise
+        except Exception as exc:
+            last_error = exc
+            raise
+    if last_error:
+        raise last_error
+    return None
 
 
 def _search_payload(query: str) -> dict:
@@ -186,20 +236,34 @@ def _articles(payload: dict) -> list[dict]:
 
 
 def collect(fetch=_default_fetch, queries=QUERIES) -> list[dict]:
+    global _AUTH_DISABLED_REASON
+    if _AUTH_DISABLED_REASON:
+        print(f"[legifrance] collecteur désactivé: {_AUTH_DISABLED_REASON}")
+        return []
     client_id = os.environ.get("LEGIFRANCE_CLIENT_ID")
     client_secret = os.environ.get("LEGIFRANCE_CLIENT_SECRET")
     if not client_id or not client_secret:
-        print("[legifrance] credentials absents, collecteur désactivé")
+        _AUTH_DISABLED_REASON = "credentials absents"
+        print(f"[legifrance] collecteur désactivé: {_AUTH_DISABLED_REASON}")
         return []
 
     token_url, search_url = _urls()
     try:
         token = _token(fetch, client_id, client_secret, token_url)
     except Exception as exc:
-        print(f"[legifrance] authentification en erreur: {exc}")
+        status = getattr(getattr(exc, "response", None), "status_code", None)
+        if status in {400, 401, 403}:
+            _AUTH_DISABLED_REASON = (
+                f"credentials PISTE refusés (HTTP {status}); vérifier LEGIFRANCE_ENV, "
+                "LEGIFRANCE_CLIENT_ID et LEGIFRANCE_CLIENT_SECRET"
+            )
+            print(f"[legifrance] collecteur désactivé: {_AUTH_DISABLED_REASON}")
+        else:
+            print(f"[legifrance] authentification indisponible: {exc}")
         return []
     if not token:
-        print("[legifrance] authentification sans token, collecteur désactivé")
+        _AUTH_DISABLED_REASON = "authentification sans token"
+        print(f"[legifrance] collecteur désactivé: {_AUTH_DISABLED_REASON}")
         return []
 
     headers = {"Authorization": f"Bearer {token}", "Content-Type": "application/json"}

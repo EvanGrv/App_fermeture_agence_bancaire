@@ -1,4 +1,5 @@
 import json
+import csv
 import backend.store as store
 from backend import export
 
@@ -50,3 +51,19 @@ def test_export_json_ecrit_fichier(tmp_path):
     export.export_json(conn, out)
     data = json.loads(out.read_text(encoding="utf-8"))
     assert len(data["closures"]) == 1
+
+def test_export_fermetures_csv_excel(tmp_path):
+    conn = store.init_db(tmp_path / "t.db")
+    _seed(conn)
+    out = tmp_path / "fermetures.csv"
+
+    export.export_fermetures_csv(conn, out)
+
+    rows = list(csv.DictReader(out.read_text(encoding="utf-8-sig").splitlines()))
+    assert rows[0]["Banque"] == "BNP"
+    assert rows[0]["Commune"] == "Lyon"
+    assert rows[0]["Département"] == "69"
+    assert rows[0]["Région"] == "Auvergne-Rhône-Alpes"
+    assert rows[0]["Source"] == "OF"
+    assert rows[0]["URL"] == "http://x"
+    assert rows[0]["À vérifier"] == "oui"

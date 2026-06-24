@@ -1,6 +1,9 @@
+import os
 from pathlib import Path
+from backend.env import load_dotenv
 
 ROOT = Path(__file__).resolve().parent
+load_dotenv(ROOT / ".env")
 DATA_DIR = ROOT / "data"
 EXPORT_DIR = DATA_DIR / "export"
 CACHE_DIR = DATA_DIR / "cache"
@@ -14,7 +17,7 @@ ANTHROPIC_MODEL = "claude-opus-4-8"
 # Fenêtre de récence appliquée aux requêtes Google News (opérateur `when:`).
 # ATTENTION aux unités Google News : h=heures, d=jours, y=années (m=MINUTES, pas mois).
 # Donc 1 mois = "30d", 2 semaines = "14d", 6 mois = "180d", 1 an = "1y".
-GOOGLE_NEWS_WHEN = "180d"
+GOOGLE_NEWS_WHEN = os.getenv("GOOGLE_NEWS_WHEN", "180d")
 
 ENSEIGNES = [
     "Crédit Agricole", "BNP", "Société Générale", "Banque Populaire",

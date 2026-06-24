@@ -1,18 +1,22 @@
 import json
 from pathlib import Path
 
+import requests
+
 from backend.collectors import legifrance
 
 FIXT = Path(__file__).parent / "fixtures" / "legifrance_search_sample.json"
 
 
 def test_collect_sans_credentials_retourne_vide(monkeypatch):
+    legifrance._AUTH_DISABLED_REASON = None
     monkeypatch.delenv("LEGIFRANCE_CLIENT_ID", raising=False)
     monkeypatch.delenv("LEGIFRANCE_CLIENT_SECRET", raising=False)
     assert legifrance.collect(fetch=lambda *a, **kw: {}) == []
 
 
 def test_collect_parse_articles(monkeypatch):
+    legifrance._AUTH_DISABLED_REASON = None
     monkeypatch.setenv("LEGIFRANCE_CLIENT_ID", "id")
     monkeypatch.setenv("LEGIFRANCE_CLIENT_SECRET", "secret")
     monkeypatch.delenv("LEGIFRANCE_ENV", raising=False)
@@ -21,6 +25,7 @@ def test_collect_parse_articles(monkeypatch):
     def fetch(url, **kwargs):
         appels.append((url, kwargs))
         if url == legifrance.TOKEN_URL:
+            assert kwargs["data"]["scope"] == "openid searchUsingPOST"
             return {"access_token": "tok"}
         assert kwargs["headers"]["Authorization"] == "Bearer tok"
         assert kwargs["json"]["fond"] == "ALL"
@@ -46,6 +51,7 @@ def test_collect_parse_articles(monkeypatch):
 
 
 def test_collect_supporte_sandbox(monkeypatch):
+    legifrance._AUTH_DISABLED_REASON = None
     monkeypatch.setenv("LEGIFRANCE_CLIENT_ID", "id")
     monkeypatch.setenv("LEGIFRANCE_CLIENT_SECRET", "secret")
     monkeypatch.setenv("LEGIFRANCE_ENV", "sandbox")
@@ -61,9 +67,50 @@ def test_collect_supporte_sandbox(monkeypatch):
     assert urls == [legifrance.SANDBOX_TOKEN_URL, legifrance.SANDBOX_SEARCH_URL]
 
 
-def test_collect_plafonne_les_requetes(monkeypatch):
+def test_token_fallback_sans_scope(monkeypatch):
+    legifrance._AUTH_DISABLED_REASON = None
     monkeypatch.setenv("LEGIFRANCE_CLIENT_ID", "id")
     monkeypatch.setenv("LEGIFRANCE_CLIENT_SECRET", "secret")
+    monkeypatch.setenv("LEGIFRANCE_ENV", "prod")
+    calls = []
+
+    def fetch(url, **kwargs):
+        calls.append(kwargs)
+        if url == legifrance.TOKEN_URL and "scope" in kwargs["data"]:
+            response = requests.Response()
+            response.status_code = 400
+            raise requests.exceptions.HTTPError(response=response)
+        if url == legifrance.TOKEN_URL:
+            return {"access_token": "tok"}
+        return {"results": []}
+
+    assert legifrance.collect(fetch=fetch, queries=["CCF PSE"]) == []
+    assert len([call for call in calls if call.get("data", {}).get("grant_type") == "client_credentials"]) == 3
+
+
+def test_token_scope_configurable(monkeypatch):
+    legifrance._AUTH_DISABLED_REASON = None
+    monkeypatch.setenv("LEGIFRANCE_CLIENT_ID", "id")
+    monkeypatch.setenv("LEGIFRANCE_CLIENT_SECRET", "secret")
+    monkeypatch.setenv("LEGIFRANCE_ENV", "prod")
+    monkeypatch.setenv("LEGIFRANCE_SCOPE", "openid crossSearchUsingPOST")
+    scopes = []
+
+    def fetch(url, **kwargs):
+        if url == legifrance.TOKEN_URL:
+            scopes.append(kwargs["data"]["scope"])
+            return {"access_token": "tok"}
+        return {"results": []}
+
+    assert legifrance.collect(fetch=fetch, queries=["CCF PSE"]) == []
+    assert scopes == ["openid crossSearchUsingPOST"]
+
+
+def test_collect_plafonne_les_requetes(monkeypatch):
+    legifrance._AUTH_DISABLED_REASON = None
+    monkeypatch.setenv("LEGIFRANCE_CLIENT_ID", "id")
+    monkeypatch.setenv("LEGIFRANCE_CLIENT_SECRET", "secret")
+    monkeypatch.setenv("LEGIFRANCE_ENV", "prod")
     monkeypatch.setenv("LEGIFRANCE_MAX_QUERIES", "1")
     recherches = []
 

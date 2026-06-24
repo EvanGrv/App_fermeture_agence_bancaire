@@ -90,3 +90,58 @@ def test_pipeline_stocke_vigilance_si_extraction_non_publiable(tmp_path):
     )
     assert recap["vigilances"] == 1
     assert vus == [("http://v", "article pertinent sans fermeture publiable")]
+
+def test_pipeline_rejette_commune_inconnue_ou_non_nominative(tmp_path):
+    conn = store.init_db(tmp_path / "t.db")
+    collectors = [lambda: [{
+        "titre": "Une grande première: suppressions de postes et fermetures d'agences",
+        "texte": "Les salariés du Crédit Agricole sont appelés à la grève, sans commune d'agence citée.",
+        "url": "http://bfmtv-test",
+        "date": "2026-01-13",
+        "source": "Google News",
+        "departement": None,
+    }]]
+    vus = []
+
+    def extractor(_article):
+        result = _extractor(_article)
+        result["commune"] = "inconnu"
+        result["departement"] = None
+        return result
+
+    def vigilance_fn(article, raison):
+        vus.append((article["url"], raison))
+        return "v1"
+
+    recap = pipeline.run_pipeline(
+        conn,
+        collectors,
+        extractor_fn=extractor,
+        geocoder_fn=lambda commune, dept: None,
+        vigilance_fn=vigilance_fn,
+    )
+
+    assert recap["fermetures"] == 0
+    assert recap["rejets_validation"] == 1
+    assert recap["vigilances"] == 1
+    assert "commune" in vus[0][1]
+    assert conn.execute("SELECT COUNT(*) FROM closures").fetchone()[0] == 0
+
+def test_pipeline_rejette_territoire_pris_pour_commune(tmp_path):
+    conn = store.init_db(tmp_path / "t.db")
+
+    def extractor(_article):
+        result = _extractor(_article)
+        result["commune"] = "Franche-Comté"
+        result["departement"] = None
+        return result
+
+    recap = pipeline.run_pipeline(
+        conn,
+        [lambda: [_article("http://franche-comte")]],
+        extractor_fn=extractor,
+        geocoder_fn=lambda commune, dept: {"lat": 47.0, "lon": 6.0, "code_insee": "25000", "departement": "25"},
+    )
+
+    assert recap["fermetures"] == 0
+    assert recap["rejets_validation"] == 1

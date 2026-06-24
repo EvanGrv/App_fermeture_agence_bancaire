@@ -111,6 +111,10 @@ def test_extract_rejette_date_passee():
     parsed = _extraction(statut_temporel="inconnu", date_fermeture="2025-01-15")
     assert extract(_article(), client=FakeClient(parsed), aujourdhui=AUJ) is None
 
+def test_extract_rejette_temporalite_inconnue_sans_date():
+    parsed = _extraction(statut_temporel="inconnu", date_fermeture=None)
+    assert extract(_article(), client=FakeClient(parsed), aujourdhui=AUJ) is None
+
 def test_normalise_banque():
     assert normalise_banque("Crédit agricole") == "Crédit Agricole"
     assert normalise_banque("BNP") == "BNP Paribas"
@@ -131,3 +135,12 @@ def test_extract_normalise_banque():
 def test_extract_exclut_banque_postale():
     parsed = _extraction(banque="La Banque Postale")
     assert extract(_article(), client=FakeClient(parsed), aujourdhui=AUJ) is None
+
+def test_build_messages_demande_agence_nominative():
+    message = build_messages({
+        "titre": "Suppressions de postes et fermetures d'agences au Crédit Agricole",
+        "texte": "Les salariés sont appelés à la grève, sans liste de communes.",
+        "departement": None,
+    }, aujourdhui=AUJ)[0]["content"]
+    assert "commune précise" in message
+    assert "N'invente jamais de commune" in message

@@ -9,8 +9,13 @@ from backend.dedup import closure_id, normalise_cle
 _INSTRUCTIONS = (
     "Tu analyses un article de presse français. Détermine s'il annonce la "
     "FERMETURE ou la FUSION/REGROUPEMENT d'une agence bancaire physique en France. "
-    "Si oui, renvoie les informations structurées. Si l'article ne concerne pas "
-    "une fermeture/fusion d'agence bancaire, mets concerne_banque=false. "
+    "Si oui, renvoie les informations structurées UNIQUEMENT si l'article nomme une "
+    "commune précise d'agence concernée. Si l'article parle d'un plan national, d'une "
+    "grève, de suppressions de postes, d'un volume global d'agences, d'une région ou "
+    "d'un département sans lister au moins une commune d'agence, mets concerne_banque=false. "
+    "N'invente jamais de commune: n'utilise pas 'inconnu', une région, un département, "
+    "une caisse régionale ou un territoire comme commune. Si l'article ne concerne pas "
+    "une fermeture/fusion d'agence bancaire nominative, mets concerne_banque=false. "
     "IMPORTANT : on ne s'intéresse QU'AUX fermetures à VENIR (annoncées, pas encore "
     "effectives à la date du jour indiquée). Classe statut_temporel : 'a_venir' si la "
     "fermeture n'a pas encore eu lieu à la date du jour, 'deja_fermee' si elle est déjà "
@@ -155,6 +160,8 @@ def extract(article: dict, client, model: str = config.ANTHROPIC_MODEL,
     if data.statut_temporel == "deja_fermee":
         return None
     if _est_passee(data.date_fermeture, aujourdhui):
+        return None
+    if data.statut_temporel == "inconnu" and not data.date_fermeture:
         return None
     banque = normalise_banque(data.banque)
     # Enseignes exclues du suivi (ex. La Banque Postale).
