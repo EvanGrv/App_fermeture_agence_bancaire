@@ -145,3 +145,65 @@ def test_pipeline_rejette_territoire_pris_pour_commune(tmp_path):
 
     assert recap["fermetures"] == 0
     assert recap["rejets_validation"] == 1
+
+
+def test_article_court_est_enrichi_avant_extraction(tmp_path):
+    conn = store.init_db(tmp_path / "t.db")
+    # Article court (< 400 chars) qui passe le préfiltre
+    article_court = {
+        "titre": "Crédit Agricole ferme son agence",
+        "texte": "ferme",  # très court, < 400 chars
+        "url": "http://exemple.com/article-credit-agricole",
+        "date": "2026-01-10",
+        "source": "GN",
+        "departement": None,
+    }
+    arts_recus = []
+
+    def extractor_espion(art):
+        arts_recus.append(dict(art))
+        return None  # pas de fermeture, on teste juste l'enrichissement
+
+    enrich_fn = lambda url: "AGENCE DE TestCommune, détails supplémentaires sur la fermeture."
+
+    pipeline.run_pipeline(
+        conn,
+        [lambda: [article_court]],
+        extractor_fn=extractor_espion,
+        geocoder_fn=lambda commune, dept: None,
+        enrich_fn=enrich_fn,
+        since_date=None,
+    )
+
+    assert len(arts_recus) == 1, "L'extracteur doit avoir été appelé une fois"
+    assert "AGENCE DE TestCommune" in arts_recus[0]["texte"], \
+        "Le texte enrichi doit contenir le sentinel de l'enrich_fn"
+
+
+def test_article_long_n_est_pas_enrichi(tmp_path):
+    conn = store.init_db(tmp_path / "t.db")
+    texte_long = "Crédit Agricole ferme son agence. " * 15  # > 400 chars
+    article_long = {
+        "titre": "Crédit Agricole ferme son agence",
+        "texte": texte_long,
+        "url": "http://exemple.com/article-long",
+        "date": "2026-01-10",
+        "source": "GN",
+        "departement": None,
+    }
+    enrich_appels = []
+
+    def enrich_espion(url):
+        enrich_appels.append(url)
+        return "texte additionnel"
+
+    pipeline.run_pipeline(
+        conn,
+        [lambda: [article_long]],
+        extractor_fn=lambda art: None,
+        geocoder_fn=lambda commune, dept: None,
+        enrich_fn=enrich_espion,
+        since_date=None,
+    )
+
+    assert len(enrich_appels) == 0, "enrich_fn ne doit pas être appelée pour un texte long"

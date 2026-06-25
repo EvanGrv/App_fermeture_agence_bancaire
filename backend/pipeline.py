@@ -2,6 +2,7 @@
 from datetime import date, datetime, timezone
 from email.utils import parsedate_to_datetime
 from backend import prefilter, store, validation
+from backend.fulltext import fetch_text
 
 
 def _parse_article_date(value: str):
@@ -57,6 +58,7 @@ def run_pipeline(
     extractor_fn,
     geocoder_fn,
     vigilance_fn=None,
+    enrich_fn=None,
     since_date: str | None = None,
     progress_fn=None,
 ) -> dict:
@@ -103,6 +105,16 @@ def run_pipeline(
                     store.mark_url_seen(conn, url)
                 continue
             recap["filtres"] += 1
+            _enrich = enrich_fn if enrich_fn is not None else fetch_text
+            texte = art.get("texte") or ""
+            _url = art.get("url") or ""
+            if _url and len(texte) < 400:
+                try:
+                    texte_complet = _enrich(_url)
+                    if texte_complet:
+                        art["texte"] = (texte + "\n\n" + texte_complet)[:6000]
+                except Exception:
+                    pass
             try:
                 resultat = extractor_fn(art)
             except Exception as exc:
