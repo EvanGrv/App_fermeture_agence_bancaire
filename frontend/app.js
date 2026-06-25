@@ -990,8 +990,12 @@ function telechargerExcel(singleId = "") {
   a.download = singleId ? `fiche-agence-${singleId}.xlsx` : `agences-bancaires-fermetures-${date}.xlsx`;
   document.body.appendChild(a);
   a.click();
-  window.setTimeout(() => URL.revokeObjectURL(a.href), 1000);
-  a.remove();
+  // Safari/Excel peuvent lire le blob après le clic avec un léger délai. On
+  // garde donc l'URL en vie assez longtemps pour éviter les fichiers vides.
+  window.setTimeout(() => {
+    URL.revokeObjectURL(a.href);
+    a.remove();
+  }, 30000);
 }
 
 function exportRow(c) {
