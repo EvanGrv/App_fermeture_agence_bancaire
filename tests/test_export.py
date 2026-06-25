@@ -107,7 +107,7 @@ def test_export_csv_temporalite_mapping(tmp_path):
 
 
 def test_build_payload_source_tier(tmp_path):
-    """Each source in build_payload's output carries a 'tier' field."""
+    """Each source in build_payload's output carries a 'tier' field and original keys."""
     conn = store.init_db(tmp_path / "t.db")
     _seed(conn)
     p = export.build_payload(conn)
@@ -116,3 +116,6 @@ def test_build_payload_source_tier(tmp_path):
     src = cl["sources"][0]
     assert "tier" in src, "'tier' key missing from source dict"
     assert src["tier"] in {"A", "B", "C", "D", "E"}, f"unexpected tier value: {src['tier']!r}"
+    # Original source keys must still be present (Fix D: regression guard)
+    for key in ("url", "titre", "source", "date"):
+        assert key in src, f"original source key '{key}' missing from source dict"

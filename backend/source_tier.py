@@ -27,7 +27,7 @@ A_DOMAINS: frozenset[str] = frozenset({
     "fortuneo.fr",
     "monabanq.com",
     "hellobank.fr",
-    "caissedesDepots.fr",
+    "caissedesdepots.fr",
     "mairie.fr",
 })
 
@@ -71,6 +71,7 @@ B_DOMAINS: frozenset[str] = frozenset({
 C_DOMAINS: frozenset[str] = frozenset({
     "francetvinfo.fr",
     "france3-regions.francetvinfo.fr",
+    "france3.fr",
     "ici.fr",
     "francebleu.fr",
     "actu.fr",
@@ -161,8 +162,15 @@ def tier(url: str) -> str:
     if _matches(host, E_DOMAINS):
         return "E"
     # Google maps/reviews → E; news.google.com → D (aggregator)
-    if host.startswith("maps.google.") or "google." in host and any(
-        k in url for k in ("maps", "avis", "reviews", "business")
+    # Only classify as E when the keyword appears in the URL PATH (not query),
+    # or the host is maps.google.*
+    if host.startswith("maps.google.") or (
+        "google." in host
+        and host != "news.google.com"
+        and any(
+            k in urlparse(url).path.lower()
+            for k in ("maps", "avis", "reviews", "business")
+        )
     ):
         return "E"
 
