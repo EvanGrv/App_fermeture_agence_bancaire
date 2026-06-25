@@ -57,3 +57,12 @@ def test_seed_closures_structure():
     assert c["_adresse"]            # adresse pour géocodage précis
     assert len(c["id"]) == 16
     assert "transfère ses activités" in c["citation"]
+
+
+def test_seed_closures_sont_a_venir():
+    """Toutes les fermetures seed SG sont des transferts futurs confirmés → statut_temporel='a_venir'."""
+    cl = sg_locator.seed_closures()
+    for c in cl:
+        assert c.get("statut_temporel") == "a_venir", (
+            f"Fermeture SG {c['commune']} a statut_temporel={c.get('statut_temporel')!r}, attendu 'a_venir'"
+        )

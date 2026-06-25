@@ -87,6 +87,7 @@ def _record_to_closure(a: dict) -> dict:
         "date_fermeture": a.get("date_fermeture"),
         "statut": "confirmé",
         "fiabilite": 5,  # Niveau 1 : confirmé officiel
+        "statut_temporel": "a_venir",
         "lat": None,
         "lon": None,
         "citation": citation,
