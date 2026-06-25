@@ -1,185 +1,5 @@
 [
   {
-    "severity": "error",
-    "type": "closure_non_publiable",
-    "id": "5dd2b6d4485087a4",
-    "banque": "Société Générale",
-    "commune": "",
-    "departement": null,
-    "code_insee": null,
-    "message": "commune absente, générique ou non nominative"
-  },
-  {
-    "severity": "error",
-    "type": "closure_non_publiable",
-    "id": "d1953a49410fbeda",
-    "banque": "BNP Paribas",
-    "commune": "Coëtquidan",
-    "departement": "Morbihan",
-    "code_insee": null,
-    "message": "commune non géocodée"
-  },
-  {
-    "severity": "error",
-    "type": "closure_non_publiable",
-    "id": "ce18af806d97dc42",
-    "banque": "Crédit Agricole",
-    "commune": "La Capelle-lès-Boulogne",
-    "departement": "Pas-de-Calais",
-    "code_insee": "62908",
-    "message": "département non codé (Pas-de-Calais)"
-  },
-  {
-    "severity": "error",
-    "type": "closure_non_publiable",
-    "id": "4e92cbc15f677cec",
-    "banque": "Crédit Agricole",
-    "commune": "",
-    "departement": "Franche-Comté",
-    "code_insee": null,
-    "message": "commune absente, générique ou non nominative"
-  },
-  {
-    "severity": "warning",
-    "type": "citation_suspecte",
-    "id": "4e92cbc15f677cec",
-    "banque": "Crédit Agricole",
-    "commune": "",
-    "departement": "Franche-Comté",
-    "code_insee": null,
-    "message": "citation/source évoque grève, postes, PSE ou plan national"
-  },
-  {
-    "severity": "error",
-    "type": "closure_non_publiable",
-    "id": "f50be4c0190389d2",
-    "banque": "Crédit Agricole",
-    "commune": "null",
-    "departement": "Franche-Comté",
-    "code_insee": "76479",
-    "message": "département non codé (Franche-Comté)"
-  },
-  {
-    "severity": "error",
-    "type": "closure_non_publiable",
-    "id": "fa8f4699e368ab96",
-    "banque": "BNP Paribas",
-    "commune": "",
-    "departement": null,
-    "code_insee": null,
-    "message": "commune absente, générique ou non nominative"
-  },
-  {
-    "severity": "error",
-    "type": "closure_non_publiable",
-    "id": "27f044ff2028ff60",
-    "banque": "Crédit Agricole",
-    "commune": "Chateauponsac",
-    "departement": "Haute-Vienne",
-    "code_insee": "87041",
-    "message": "département non codé (Haute-Vienne)"
-  },
-  {
-    "severity": "warning",
-    "type": "date_fermeture_absente",
-    "id": "27f044ff2028ff60",
-    "banque": "Crédit Agricole",
-    "commune": "Chateauponsac",
-    "departement": "Haute-Vienne",
-    "code_insee": "87041",
-    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
-  },
-  {
-    "severity": "error",
-    "type": "closure_non_publiable",
-    "id": "15def8cdb1a68f10",
-    "banque": "Crédit Agricole",
-    "commune": ".",
-    "departement": null,
-    "code_insee": null,
-    "message": "commune absente, générique ou non nominative"
-  },
-  {
-    "severity": "warning",
-    "type": "date_fermeture_absente",
-    "id": "15def8cdb1a68f10",
-    "banque": "Crédit Agricole",
-    "commune": ".",
-    "departement": null,
-    "code_insee": null,
-    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
-  },
-  {
-    "severity": "error",
-    "type": "closure_non_publiable",
-    "id": "2f07a4a5c53533b1",
-    "banque": "Crédit Agricole",
-    "commune": "Lauzun",
-    "departement": "Lot-et-Garonne",
-    "code_insee": "47142",
-    "message": "département non codé (Lot-et-Garonne)"
-  },
-  {
-    "severity": "warning",
-    "type": "date_fermeture_absente",
-    "id": "2f07a4a5c53533b1",
-    "banque": "Crédit Agricole",
-    "commune": "Lauzun",
-    "departement": "Lot-et-Garonne",
-    "code_insee": "47142",
-    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
-  },
-  {
-    "severity": "error",
-    "type": "closure_non_publiable",
-    "id": "5742688777c6b7f5",
-    "banque": "Crédit Mutuel",
-    "commune": "Saint-Cyr-sur-Loire",
-    "departement": "Indre-et-Loire",
-    "code_insee": "37214",
-    "message": "département non codé (Indre-et-Loire)"
-  },
-  {
-    "severity": "error",
-    "type": "closure_non_publiable",
-    "id": "48a66f44e717d017",
-    "banque": "Crédit Mutuel",
-    "commune": "Diebling",
-    "departement": "Moselle",
-    "code_insee": "57176",
-    "message": "département non codé (Moselle)"
-  },
-  {
-    "severity": "error",
-    "type": "closure_non_publiable",
-    "id": "8444c448faed3394",
-    "banque": "Crédit Agricole",
-    "commune": "Vieux-Berquin",
-    "departement": "Nord",
-    "code_insee": "59615",
-    "message": "département non codé (Nord)"
-  },
-  {
-    "severity": "error",
-    "type": "closure_non_publiable",
-    "id": "3587ca0e79cefb2e",
-    "banque": "Caisse d'épargne Loire-Centre",
-    "commune": "",
-    "departement": null,
-    "code_insee": null,
-    "message": "commune absente, générique ou non nominative"
-  },
-  {
-    "severity": "error",
-    "type": "closure_non_publiable",
-    "id": "69ef10c241a76fab",
-    "banque": "",
-    "commune": "",
-    "departement": "Rhône",
-    "code_insee": null,
-    "message": "commune absente, générique ou non nominative"
-  },
-  {
     "severity": "warning",
     "type": "date_fermeture_absente",
     "id": "fdc3827d9912f892",
@@ -187,106 +7,6 @@
     "commune": "Panissières",
     "departement": "42",
     "code_insee": "42165",
-    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
-  },
-  {
-    "severity": "warning",
-    "type": "date_fermeture_absente",
-    "id": "714472c508a55526",
-    "banque": "Crédit Agricole",
-    "commune": "Criel-sur-Mer",
-    "departement": "76",
-    "code_insee": "76192",
-    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
-  },
-  {
-    "severity": "warning",
-    "type": "date_fermeture_absente",
-    "id": "2867653ec87132bd",
-    "banque": "Crédit Agricole",
-    "commune": "Saint-Georges-du-Vièvre",
-    "departement": "27",
-    "code_insee": "27542",
-    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
-  },
-  {
-    "severity": "warning",
-    "type": "date_fermeture_absente",
-    "id": "e951e09b59947666",
-    "banque": "BNP Paribas",
-    "commune": "La Talaudière",
-    "departement": "42",
-    "code_insee": "42305",
-    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
-  },
-  {
-    "severity": "warning",
-    "type": "date_fermeture_absente",
-    "id": "878018f0ac603f53",
-    "banque": "Crédit Agricole",
-    "commune": "Écueillé",
-    "departement": "36",
-    "code_insee": "36069",
-    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
-  },
-  {
-    "severity": "warning",
-    "type": "date_fermeture_absente",
-    "id": "15c2fd39c6c32b41",
-    "banque": "Crédit Agricole",
-    "commune": "Luzech",
-    "departement": "46",
-    "code_insee": "46182",
-    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
-  },
-  {
-    "severity": "warning",
-    "type": "date_fermeture_absente",
-    "id": "b6e0adaef016bb42",
-    "banque": "Crédit Agricole",
-    "commune": "Saint-Germain-Laprade",
-    "departement": "43",
-    "code_insee": "43190",
-    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
-  },
-  {
-    "severity": "warning",
-    "type": "date_fermeture_absente",
-    "id": "9961978ce6d8e6b4",
-    "banque": "Crédit Agricole",
-    "commune": "Lempdes-sur-Allagnon",
-    "departement": "43",
-    "code_insee": "43120",
-    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
-  },
-  {
-    "severity": "warning",
-    "type": "date_fermeture_absente",
-    "id": "70a46255dfbdd872",
-    "banque": "Crédit Agricole",
-    "commune": "Limogne-en-Quercy",
-    "departement": "46",
-    "code_insee": "46173",
-    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
-  },
-  {
-    "severity": "warning",
-    "type": "date_fermeture_absente",
-    "id": "d6f3fb1df2179c7e",
-    "banque": "Crédit Agricole",
-    "commune": "Condat-sur-Vienne",
-    "departement": "87",
-    "code_insee": "87048",
-    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
-  },
-  {
-    "severity": "warning",
-    "type": "date_fermeture_absente",
-    "id": "2784b9c7b7b8a187",
-    "banque": "Crédit Agricole",
-    "commune": "Lantriac",
-    "departement": "43",
-    "code_insee": "43113",
     "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
   },
   {
@@ -302,11 +22,31 @@
   {
     "severity": "warning",
     "type": "date_fermeture_absente",
-    "id": "1f5052eccf5fbe16",
+    "id": "d6f3fb1df2179c7e",
+    "banque": "Crédit Agricole",
+    "commune": "Condat-sur-Vienne",
+    "departement": "87",
+    "code_insee": "87048",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "e951e09b59947666",
     "banque": "BNP Paribas",
-    "commune": "Aire-sur-la-Lys",
-    "departement": "62",
-    "code_insee": "62014",
+    "commune": "La Talaudière",
+    "departement": "42",
+    "code_insee": "42305",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "2f07a4a5c53533b1",
+    "banque": "Crédit Agricole",
+    "commune": "Lauzun",
+    "departement": "47",
+    "code_insee": "47142",
     "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
   },
   {
@@ -322,49 +62,19 @@
   {
     "severity": "warning",
     "type": "date_fermeture_absente",
-    "id": "6a1b447afe3a587a",
-    "banque": "Caisse d'Épargne",
-    "commune": "Nogent-sur-Vernisson",
-    "departement": "45",
-    "code_insee": "45229",
-    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
-  },
-  {
-    "severity": "warning",
-    "type": "date_fermeture_absente",
-    "id": "4b911a4b783ba002",
-    "banque": "Crédit Mutuel",
-    "commune": "Villersexel",
-    "departement": "70",
-    "code_insee": "70561",
-    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
-  },
-  {
-    "severity": "warning",
-    "type": "date_fermeture_absente",
-    "id": "ff814cd1942d9638",
+    "id": "9961978ce6d8e6b4",
     "banque": "Crédit Agricole",
-    "commune": "Campagne-lès-Hesdin",
-    "departement": "62",
-    "code_insee": "62204",
+    "commune": "Lempdes-sur-Allagnon",
+    "departement": "43",
+    "code_insee": "43120",
     "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
   },
   {
     "severity": "warning",
     "type": "date_fermeture_absente",
-    "id": "f832d5b9a0d688f7",
+    "id": "25fd42e304678520",
     "banque": "Crédit Agricole",
-    "commune": "Arnèke",
-    "departement": "59",
-    "code_insee": "59018",
-    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
-  },
-  {
-    "severity": "warning",
-    "type": "date_fermeture_absente",
-    "id": "d46ccaac8ce4b69d",
-    "banque": "Crédit Agricole",
-    "commune": "Saint-Martin-d'Estréaux",
+    "commune": "Saint-Martin-d’Estréaux",
     "departement": "42",
     "code_insee": "42257",
     "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
@@ -382,11 +92,21 @@
   {
     "severity": "warning",
     "type": "date_fermeture_absente",
-    "id": "d350b46dbb4ec4b1",
+    "id": "878018f0ac603f53",
     "banque": "Crédit Agricole",
-    "commune": "Reuilly",
+    "commune": "Écueillé",
     "departement": "36",
-    "code_insee": "36171",
+    "code_insee": "36069",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "f832d5b9a0d688f7",
+    "banque": "Crédit Agricole",
+    "commune": "Arnèke",
+    "departement": "59",
+    "code_insee": "59018",
     "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
   },
   {
@@ -400,13 +120,23 @@
     "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
   },
   {
-    "severity": "info",
-    "type": "communes_proches",
-    "id": "ce18af806d97dc42|b2d026a254bcd0b7",
-    "banque": "Crédit Agricole / Crédit Agricole",
-    "commune": "La Capelle-lès-Boulogne / La Capelle",
-    "departement": "Pas-de-Calais / 02",
-    "code_insee": "62908 / 02141",
-    "message": "noms proches mais localisations distinctes à vérifier visuellement"
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "70a46255dfbdd872",
+    "banque": "Crédit Agricole",
+    "commune": "Limogne-en-Quercy",
+    "departement": "46",
+    "code_insee": "46173",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "4b911a4b783ba002",
+    "banque": "Crédit Mutuel",
+    "commune": "Villersexel",
+    "departement": "70",
+    "code_insee": "70561",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
   }
 ]
