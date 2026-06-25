@@ -10,6 +10,7 @@ from backend import store, export, geocode, geojson, referentiel, controle, vigi
 from backend.pipeline import run_pipeline, ingest_closures
 from backend.extractor import extract
 from backend.collectors import google_news, gdelt, legifrance, local_feeds, official, sg_locator
+from backend import drilldown
 
 
 def progress(label: str, percent: int) -> None:
@@ -64,6 +65,18 @@ def main(since_date: str | None = None):
     cache_geo = {}
 
     progress("Collecte presse et extraction IA", 15)
+    # Passe descendante : détecter les articles de plan multi-agences et générer des
+    # requêtes ciblées commune par commune. Guarded : une erreur ici ne bloque pas le run.
+    drill_queries: list[str] = []
+    try:
+        geo_commune = lambda c, d=None: geocode.geocode_commune(c, d, cache=cache_geo)
+        plan_articles = google_news.collect(queries=drilldown.PLAN_SCAN_QUERIES)
+        drill_queries = drilldown.requetes_depuis_articles(
+            plan_articles, lambda c: geo_commune(c)
+        )
+    except Exception as _drill_exc:
+        print(f"[drilldown] scan échoué, passage sans drill-down : {_drill_exc}")
+
     collectors = [
         google_news.collect,
         local_feeds.collect,
@@ -71,6 +84,8 @@ def main(since_date: str | None = None):
         official.collect,
         legifrance.collect,
     ]
+    if drill_queries:
+        collectors.insert(1, lambda: google_news.collect(queries=drill_queries))
     recap = run_pipeline(
         conn,
         collectors,
