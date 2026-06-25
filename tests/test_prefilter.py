@@ -16,3 +16,18 @@ def test_rejette_sans_terme_fermeture():
 def test_insensible_accents_casse():
     art = {"titre": "CREDIT MUTUEL", "texte": "agence fermee a Brest"}
     assert is_relevant(art) is True
+
+def test_marque_regionale_avec_euphemisme_est_pertinente():
+    # "Banque Kolb" est une marque SG régionale ; "rideau" est un nouvel euphémisme
+    art = {"titre": "La Banque Kolb baisse le rideau à Saint-Dié", "texte": ""}
+    assert is_relevant(art) is True
+
+def test_euphemisme_cesse_activite_est_pertinent():
+    # "cesse" est un nouvel euphémisme ; Société Générale est une enseigne nationale
+    art = {"titre": "La Société Générale cesse son activité dans cette agence", "texte": ""}
+    assert is_relevant(art) is True
+
+def test_article_hors_sujet_reste_rejete():
+    # Aucune enseigne, aucun terme de fermeture => doit rester rejeté
+    art = {"titre": "Le marché aux fleurs ouvre ce week-end", "texte": ""}
+    assert is_relevant(art) is False

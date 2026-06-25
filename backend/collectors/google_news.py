@@ -16,6 +16,9 @@ _THEMATIQUES = [
     "regroupement agences bancaires",
     "fermeture agence banque",
     "désert bancaire fermeture agence",
+    "banque cesse son activité agence",
+    "agence bancaire transférée",
+    "réorganisation réseau bancaire agence",
 ]
 _PAR_ENSEIGNE = (
     [f"{e} fermeture agence" for e in config.ENSEIGNES]

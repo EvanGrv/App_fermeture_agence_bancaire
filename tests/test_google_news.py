@@ -45,3 +45,9 @@ def test_collect_injecte_fetch_dedupe():
     arts = google_news.collect(fetch=lambda url: xml)
     assert len(arts) == 2
     assert all(a["departement"] is None for a in arts)
+
+def test_queries_contiennent_requetes_euphemismes():
+    requetes = google_news.QUERIES
+    assert "banque cesse son activité agence" in requetes
+    assert "agence bancaire transférée" in requetes
+    assert "réorganisation réseau bancaire agence" in requetes

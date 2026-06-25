@@ -10,7 +10,10 @@ def _normalise(texte: str) -> str:
     return sans_accents.lower()
 
 
-_ENSEIGNES_N = [_normalise(e) for e in config.ENSEIGNES]
+_VARIANTES = config.ENSEIGNES + [
+    v for vs in getattr(config, "MARQUES_REGIONALES", {}).values() for v in vs
+]
+_ENSEIGNES_N = [_normalise(e) for e in _VARIANTES]
 _TERMES_N = [_normalise(t) for t in config.TERMES_FERMETURE]
 
 
