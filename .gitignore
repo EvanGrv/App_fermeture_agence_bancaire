@@ -4,3 +4,6 @@ data/*.db
 data/cache/
 .env
 .venv/
+
+# Claude Code (ne jamais committer)
+.claude/
