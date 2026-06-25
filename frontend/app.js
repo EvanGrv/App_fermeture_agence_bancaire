@@ -101,11 +101,20 @@ async function init() {
 
 async function loadData() {
   const [d1, d2] = await Promise.all([
-    fetch("../data/export/data.json").then((r) => r.json()),
-    fetch("../data/export/departements.geojson").then((r) => r.json()),
+    fetch("/data/export/data.json").then((r) => r.json()),
+    fetch("/data/export/departements.geojson").then((r) => r.json()),
   ]);
   DONNEES = d1;
   DEPTS = d2;
+}
+
+async function reloadPublicData() {
+  const data = await fetch(`/data/export/data.json?ts=${Date.now()}`, { cache: "no-store" }).then((r) => {
+    if (!r.ok) throw new Error(`Impossible de charger data.json (${r.status})`);
+    return r.json();
+  });
+  DONNEES = data;
+  return data;
 }
 
 function bindUi() {
@@ -972,10 +981,15 @@ function focusClosureOnly(id) {
   map.flyTo({ center: [c.lon, c.lat], zoom: 12, essential: true });
 }
 
-function telechargerExcel(singleId = "") {
+async function telechargerExcel(singleId = "") {
+  const data = await dataForExcel(singleId);
   const closures = singleId
-    ? DONNEES.closures.filter((c) => c.id === singleId)
-    : DONNEES.closures.slice().sort(compareClosuresForExport);
+    ? data.closures.filter((c) => c.id === singleId)
+    : data.closures.slice().sort(compareClosuresForExport);
+  if (!closures.length) {
+    window.alert("Aucune donnée à exporter. Recharge la page puis réessaie.");
+    return;
+  }
   const headers = [
     "Banque", "Commune", "Département", "Région", "Type", "Statut",
     "Fiabilité", "À vérifier", "Date fermeture", "Date annonce",
@@ -996,6 +1010,14 @@ function telechargerExcel(singleId = "") {
     URL.revokeObjectURL(a.href);
     a.remove();
   }, 30000);
+}
+
+async function dataForExcel(singleId = "") {
+  const closures = Array.isArray(DONNEES.closures) ? DONNEES.closures : [];
+  if (!closures.length || (singleId && !closures.some((c) => c.id === singleId))) {
+    return reloadPublicData();
+  }
+  return DONNEES;
 }
 
 function exportRow(c) {
