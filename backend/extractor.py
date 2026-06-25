@@ -7,22 +7,22 @@ import config
 from backend.dedup import closure_id, normalise_cle
 
 _INSTRUCTIONS = (
-    "Tu analyses un article de presse français. Détermine s'il annonce la "
-    "FERMETURE ou la FUSION/REGROUPEMENT d'une agence bancaire physique en France. "
-    "Si oui, renvoie les informations structurées UNIQUEMENT si l'article nomme une "
-    "commune précise d'agence concernée. Si l'article parle d'un plan national, d'une "
-    "grève, de suppressions de postes, d'un volume global d'agences, d'une région ou "
-    "d'un département sans lister au moins une commune d'agence, mets concerne_banque=false. "
-    "N'invente jamais de commune: n'utilise pas 'inconnu', une région, un département, "
-    "une caisse régionale ou un territoire comme commune. Si l'article ne concerne pas "
-    "une fermeture/fusion d'agence bancaire nominative, mets concerne_banque=false. "
-    "IMPORTANT : on ne s'intéresse QU'AUX fermetures à VENIR (annoncées, pas encore "
-    "effectives à la date du jour indiquée). Classe statut_temporel : 'a_venir' si la "
-    "fermeture n'a pas encore eu lieu à la date du jour, 'deja_fermee' si elle est déjà "
-    "effective (l'agence a déjà fermé), 'inconnu' si l'article ne permet pas de trancher. "
+    "Tu analyses un article de presse français. Détermine s'il annonce ou rapporte "
+    "la FERMETURE ou la FUSION/REGROUPEMENT d'une agence bancaire physique en France. "
+    "Renvoie les informations structurées UNIQUEMENT si l'article nomme une commune "
+    "précise d'agence concernée. Sinon concerne_banque=false. "
+    "N'invente jamais de commune (pas de région, département, caisse régionale). "
+    "On s'intéresse aux fermetures DÉJÀ EFFECTIVES comme À VENIR. Classe statut_temporel : "
+    "'a_venir' si la fermeture n'a pas encore eu lieu à la date du jour, 'deja_fermee' si "
+    "elle est déjà effective, 'inconnu' sinon. "
+    "date_fermeture: date effective ISO YYYY-MM-DD. Si l'article ne donne qu'une PÉRIODE "
+    "(ex. 'courant 2025', 'au printemps 2025', 'fin 2025'), renvoie une date approchée "
+    "dans cette période et mets date_fermeture_approx=true. Si AUCUNE date ni période "
+    "exploitable pour une fermeture déjà effective, laisse date_fermeture vide. "
+    "EXCLURE (concerne_banque=false) : fermeture temporaire, travaux, simple suppression "
+    "de distributeur (DAB), déménagement dans la MÊME commune, changement d'horaires. "
     "fiabilite: 1 (rumeur vague) à 5 (annonce officielle confirmée). "
-    "date_fermeture: date prévue ISO YYYY-MM-DD si connue. "
-    "citation: la phrase exacte de l'article qui justifie la fermeture/fusion."
+    "citation: la phrase exacte qui justifie la fermeture/fusion."
 )
 _RETRY_STATUS_CODES = {429, 500, 504, 529}
 _DEFAULT_MAX_RETRIES = 3
@@ -65,6 +65,10 @@ class Extraction(BaseModel):
     type: Literal["fermeture", "fusion"]
     statut_temporel: Literal["a_venir", "deja_fermee", "inconnu"] = "inconnu"
     date_fermeture: Optional[str] = Field(default=None, description="ISO YYYY-MM-DD si connue")
+    date_fermeture_approx: bool = Field(
+        default=False,
+        description="True si la date est approximée depuis une période (ex. 'courant 2025')",
+    )
     statut: Literal["confirmé", "projet", "rumeur"]
     fiabilite: int = Field(ge=0, le=5)
     citation: str
@@ -82,14 +86,30 @@ def build_messages(article: dict, aujourdhui: Optional[str] = None) -> list[dict
     return [{"role": "user", "content": corps}]
 
 
-def _est_passee(date_fermeture: Optional[str], aujourdhui: str) -> bool:
-    """True si la date de fermeture ISO est strictement antérieure à aujourd'hui."""
+def _retenir_fermeture(statut_temporel: str, date_fermeture: Optional[str],
+                       floor: Optional[str], aujourdhui: str) -> bool:
+    """True si la fermeture entre dans le périmètre temporel de la veille.
+
+    - a_venir : toujours conservée (prévisionnel), même sans date.
+    - deja_fermee / inconnu : conservée seulement si une date effective est
+      connue ET >= plancher `floor`. Sans date exploitable -> non conservée
+      (le pipeline la routera en vigilance).
+    """
+    if statut_temporel == "a_venir":
+        return True
     if not date_fermeture:
         return False
     try:
-        return date.fromisoformat(date_fermeture[:10]) < date.fromisoformat(aujourdhui)
+        eff = date.fromisoformat(date_fermeture[:10])
     except ValueError:
         return False
+    if floor:
+        try:
+            if eff < date.fromisoformat(floor[:10]):
+                return False
+        except ValueError:
+            pass
+    return True
 
 
 def _int_env(name: str, default: int) -> int:
@@ -136,7 +156,7 @@ def _parse_avec_retries(client, *, model: str, messages: list[dict], sleep_fn=ti
 
 
 def extract(article: dict, client, model: str = config.ANTHROPIC_MODEL,
-            aujourdhui: Optional[str] = None) -> Optional[dict]:
+            aujourdhui: Optional[str] = None, floor: Optional[str] = None) -> Optional[dict]:
     aujourdhui = aujourdhui or date.today().isoformat()
     try:
         response = _parse_avec_retries(
@@ -157,15 +177,9 @@ def extract(article: dict, client, model: str = config.ANTHROPIC_MODEL,
             raise
     if data is None or not data.concerne_banque:
         return None
-    # On ne garde que les fermetures à venir : on écarte celles déjà effectives.
-    if data.statut_temporel == "deja_fermee":
-        return None
-    if _est_passee(data.date_fermeture, aujourdhui):
-        return None
-    if data.statut_temporel == "inconnu" and not data.date_fermeture:
+    if not _retenir_fermeture(data.statut_temporel, data.date_fermeture, floor, aujourdhui):
         return None
     banque = normalise_banque(data.banque)
-    # Enseignes exclues du suivi (ex. La Banque Postale).
     if normalise_cle(banque) in getattr(config, "EXCLURE_BANQUES", []):
         return None
     return {
@@ -178,6 +192,8 @@ def extract(article: dict, client, model: str = config.ANTHROPIC_MODEL,
         "date_annonce": article.get("date") or None,
         "date_fermeture": data.date_fermeture,
         "statut": data.statut,
+        "statut_temporel": data.statut_temporel,
+        "date_fermeture_approx": 1 if data.date_fermeture_approx else 0,
         "fiabilite": data.fiabilite,
         "lat": None,
         "lon": None,

@@ -1,5 +1,6 @@
+from datetime import date, timedelta
 import config
-from backend.extractor import extract, build_messages, Extraction, normalise_banque
+from backend.extractor import extract, build_messages, Extraction, normalise_banque, _retenir_fermeture
 
 AUJ = "2026-06-01"  # date du jour fixe pour des tests déterministes
 
@@ -65,6 +66,9 @@ def test_extract_article_pertinent():
     assert res["date_annonce"] == "2026-01-10"
     assert len(res["id"]) == 16
     assert res["lat"] is None and res["code_insee"] is None
+    # nouveaux champs de phase 1
+    assert res["statut_temporel"] == "a_venir"
+    assert res["date_fermeture_approx"] == 0
 
 def test_extract_retry_erreur_anthropic_transitoire(monkeypatch):
     monkeypatch.setenv("ANTHROPIC_MAX_RETRIES", "2")
@@ -104,13 +108,41 @@ def test_extract_rejette_hors_sujet():
     parsed = _extraction(concerne_banque=False)
     assert extract(_article(), client=FakeClient(parsed), aujourdhui=AUJ) is None
 
-def test_extract_rejette_deja_fermee():
-    parsed = _extraction(statut_temporel="deja_fermee")
+def test_extract_retient_deja_fermee_dans_fenetre():
+    # deja_fermee avec date dans la fenêtre (pas de floor) -> on garde
+    parsed = _extraction(statut_temporel="deja_fermee", date_fermeture="2025-06-01")
+    res = extract(_article(), client=FakeClient(parsed), aujourdhui=AUJ)
+    assert res is not None
+    assert res["statut_temporel"] == "deja_fermee"
+
+
+def test_extract_rejette_deja_fermee_trop_ancienne():
+    # deja_fermee avec date < floor -> rejeté (-> vigilance)
+    parsed = _extraction(statut_temporel="deja_fermee", date_fermeture="2024-03-01")
+    res = extract(_article(), client=FakeClient(parsed), aujourdhui=AUJ, floor="2025-01-01")
+    assert res is None
+
+
+def test_extract_rejette_deja_fermee_sans_date():
+    # deja_fermee sans date -> rejeté (-> vigilance), indépendamment du floor
+    parsed = _extraction(statut_temporel="deja_fermee", date_fermeture=None)
     assert extract(_article(), client=FakeClient(parsed), aujourdhui=AUJ) is None
 
-def test_extract_rejette_date_passee():
+
+def test_extract_retient_inconnu_avec_date_recente():
+    # inconnu avec date récente et pas de floor -> on garde
     parsed = _extraction(statut_temporel="inconnu", date_fermeture="2025-01-15")
-    assert extract(_article(), client=FakeClient(parsed), aujourdhui=AUJ) is None
+    res = extract(_article(), client=FakeClient(parsed), aujourdhui=AUJ)
+    assert res is not None
+    assert res["statut_temporel"] == "inconnu"
+
+
+def test_extract_rejette_inconnu_avec_date_trop_ancienne():
+    # inconnu avec date < floor -> rejeté
+    parsed = _extraction(statut_temporel="inconnu", date_fermeture="2025-01-15")
+    res = extract(_article(), client=FakeClient(parsed), aujourdhui=AUJ, floor="2025-06-01")
+    assert res is None
+
 
 def test_extract_rejette_temporalite_inconnue_sans_date():
     parsed = _extraction(statut_temporel="inconnu", date_fermeture=None)
@@ -158,3 +190,32 @@ def test_la_banque_postale_est_suivie():
 def test_credit_cooperatif_canonique():
     assert "Crédit Coopératif" in config.ENSEIGNES
     assert normalise_banque("crédit coopératif") == "Crédit Coopératif"
+
+
+# ---------------------------------------------------------------------------
+# Tests pour _retenir_fermeture (Step 1 TDD)
+# ---------------------------------------------------------------------------
+
+def test_passee_recente_est_retenue():
+    # déjà fermée mais dans la fenêtre -> on garde
+    ok = _retenir_fermeture("deja_fermee", "2025-06-01", floor="2025-01-01",
+                            aujourdhui="2026-06-25")
+    assert ok is True
+
+
+def test_passee_trop_ancienne_est_rejetee():
+    ok = _retenir_fermeture("deja_fermee", "2024-03-01", floor="2025-01-01",
+                            aujourdhui="2026-06-25")
+    assert ok is False
+
+
+def test_passee_sans_date_est_rejetee():
+    ok = _retenir_fermeture("deja_fermee", None, floor="2025-01-01",
+                            aujourdhui="2026-06-25")
+    assert ok is False
+
+
+def test_a_venir_est_retenue_sans_date():
+    ok = _retenir_fermeture("a_venir", None, floor="2025-01-01",
+                            aujourdhui="2026-06-25")
+    assert ok is True
