@@ -295,49 +295,91 @@
                 <div class="source-card">
                   <strong>Google News</strong>
                   <span>Presse locale et nationale, requêtée par enseigne et mots-clés de fermeture ou fusion.</span>
-                  <small>Source principale des articles détectant des agences nommées.</small>
+                  <small>Actif · Détection presse principale.</small>
                 </div>
                 <div class="source-card">
                   <strong>Flux RSS locaux</strong>
                   <span>Actu.fr, Ouest-France, Ici, La Dépêche et autres flux publics configurés.</span>
-                  <small>Complément pour les derniers articles de presse locale.</small>
+                  <small>Actif · Complément sur les publications récentes.</small>
                 </div>
                 <div class="source-card">
                   <strong>GDELT</strong>
-                  <span>Agrégateur d'actualités utilisé en recherche large sur les six derniers mois.</span>
-                  <small>Best-effort, avec limitation de débit.</small>
+                  <span>Agrégateur d'actualités utilisé en recherche large sur la fenêtre configurée du pipeline.</span>
+                  <small>Actif · Best-effort avec limitation de débit.</small>
                 </div>
                 <div class="source-card">
                   <strong>Localisateur officiel SG</strong>
                   <span>Fermetures Société Générale vérifiées nominativement quand le localisateur annonce un transfert.</span>
-                  <small>Géocodage à l'adresse précise quand disponible.</small>
+                  <small>Actif · Source officielle nominative.</small>
                 </div>
                 <div class="source-card">
                   <strong>Légifrance / PISTE</strong>
                   <span>Accords, décisions et textes pouvant signaler des réorganisations ou suppressions d'agences.</span>
-                  <small>Souvent classé en vigilance si aucune agence nominative n'est isolée.</small>
+                  <small>Actif si identifiants PISTE fournis · Souvent en vigilance.</small>
                 </div>
                 <div class="source-card">
                   <strong>OSM / Overpass</strong>
                   <span>Référentiel libre des agences bancaires existantes, utilisé comme dénominateur par département.</span>
-                  <small>Ne crée jamais une fermeture à lui seul.</small>
+                  <small>Contrôle · Ne crée jamais une fermeture.</small>
                 </div>
                 <div class="source-card">
                   <strong>SIRENE</strong>
                   <span>Contrôle a posteriori du statut administratif quand une agence ou commune est identifiée.</span>
-                  <small>Source de validation, pas de détection.</small>
+                  <small>Contrôle · Validation après détection.</small>
                 </div>
                 <div class="source-card">
-                  <strong>REGAFI / ACPR</strong>
-                  <span>Registre au niveau établissement agréé ou siège, pas au niveau agence.</span>
-                  <small>Conservé comme connecteur officiel générique, mais ne fournit pas les agences qui ferment.</small>
+                  <strong>CSV officiel / ACPR</strong>
+                  <span>Ingestion optionnelle de fichiers CSV déposés dans le cache, par exemple un extrait REGAFI ou ACPR.</span>
+                  <small>Optionnel · Utilisable seulement si le fichier est au bon niveau agence.</small>
                 </div>
                 <div class="source-card">
                   <strong>Presse pro</strong>
                   <span>Factiva, LexisNexis, Tagaday sont prévus dans le scaffold si des clés API sont disponibles.</span>
-                  <small>Non actif sans configuration dédiée.</small>
+                  <small>Scaffold · Non actif sans connecteur dédié.</small>
                 </div>
               </div>
+            </article>
+
+            <article class="panel">
+              <h2>Grille de fiabilité</h2>
+              <p class="method-copy">
+                La note synthétise la solidité de l'annonce publiée : précision de l'agence,
+                statut annoncé, présence d'une date, caractère officiel de la source et
+                cohérence avec les contrôles de localisation. Elle ne mesure pas la popularité
+                d'un média.
+              </p>
+              <div class="reliability-grid" aria-label="Grille de fiabilité des fermetures">
+                <div>
+                  <strong>1/5</strong>
+                  <span>Signal faible</span>
+                  <small>Rumeur, formulation vague, agence non clairement isolée ou annonce très indirecte.</small>
+                </div>
+                <div>
+                  <strong>2/5</strong>
+                  <span>Hypothèse documentée</span>
+                  <small>Risque ou projet évoqué, mais source indirecte, statut incertain ou éléments incomplets.</small>
+                </div>
+                <div>
+                  <strong>3/5</strong>
+                  <span>Annonce plausible</span>
+                  <small>Commune ou agence identifiable, mais date, statut ou confirmation encore partiels.</small>
+                </div>
+                <div>
+                  <strong>4/5</strong>
+                  <span>Annonce solide</span>
+                  <small>Article sérieux, agence ou commune nommée, fermeture/fusion claire et information vérifiable.</small>
+                </div>
+                <div>
+                  <strong>5/5</strong>
+                  <span>Confirmation officielle</span>
+                  <small>Source bancaire ou officielle, agence nominative, date claire et cohérence géographique.</small>
+                </div>
+              </div>
+              <ul class="source-notes">
+                <li>Une fermeture avec une note inférieure à 4 reste affichable seulement si elle passe les contrôles de commune, département et géocodage.</li>
+                <li>Quand plusieurs sources décrivent la même agence, l'application conserve la meilleure fiabilité observée.</li>
+                <li>Dans les exports, une ligne est marquée « À vérifier » si la note est inférieure à 4, si la date manque ou si le statut n'est pas confirmé.</li>
+              </ul>
             </article>
 
             <article class="panel flow-panel">
@@ -345,7 +387,7 @@
               <div class="flow-steps" aria-label="Pipeline de données">
                 <div><strong>1</strong><span>Collecte</span><small>Articles, RSS, sources officielles, localisateur SG.</small></div>
                 <div><strong>2</strong><span>Préfiltre</span><small>Suppression des articles hors sujet et URLs déjà vues.</small></div>
-                <div><strong>3</strong><span>Extraction IA</span><small>Banque, commune, type, statut, dates, citation, fiabilité.</small></div>
+                <div><strong>3</strong><span>Structuration</span><small>Banque, commune, type, statut, dates, citation et fiabilité.</small></div>
                 <div><strong>4</strong><span>Géocodage</span><small>Coordonnées, code INSEE et département quand l'agence est localisée.</small></div>
                 <div><strong>5</strong><span>Contrôles</span><small>SIRENE, sources attachées, signaux de vigilance.</small></div>
                 <div><strong>6</strong><span>Export</span><small>JSON front, carte, fiches agence, tableaux et fichier Excel.</small></div>
@@ -357,7 +399,7 @@
               <ul class="source-notes">
                 <li>Une annonce nationale sans liste nominative ne crée pas de point sur la carte.</li>
                 <li>Les articles ambigus ou trop génériques restent en vigilance plutôt qu'en fermeture confirmée.</li>
-                <li>OSM, SIRENE et REGAFI servent au contrôle ou au dénombrement, pas à prédire une fermeture.</li>
+                <li>OSM, SIRENE et les fichiers officiels importés servent au contrôle ou au dénombrement, pas à prédire une fermeture.</li>
                 <li>La fiabilité reflète la qualité des sources et la précision de l'agence identifiée.</li>
               </ul>
             </article>

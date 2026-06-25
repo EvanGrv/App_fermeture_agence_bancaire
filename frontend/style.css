@@ -719,6 +719,59 @@ a { color: #0b63f6; text-decoration: none; font-weight: 700; }
   font-weight: 800;
 }
 
+.method-copy {
+  max-width: 920px;
+  margin: 12px 0 0;
+  color: #475569;
+  line-height: 1.55;
+}
+
+.reliability-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(150px, 1fr));
+  gap: 0;
+  margin-top: 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.reliability-grid div {
+  display: grid;
+  gap: 8px;
+  min-height: 170px;
+  padding: 16px;
+  border-right: 1px solid var(--line);
+}
+
+.reliability-grid div:last-child {
+  border-right: 0;
+}
+
+.reliability-grid strong {
+  display: inline-grid;
+  place-items: center;
+  width: fit-content;
+  min-width: 48px;
+  height: 32px;
+  padding: 0 10px;
+  border-radius: 999px;
+  color: #fff;
+  background: #0b63f6;
+  font-size: 0.88rem;
+}
+
+.reliability-grid span {
+  color: #0f172a;
+  font-weight: 900;
+}
+
+.reliability-grid small {
+  color: #64748b;
+  line-height: 1.38;
+}
+
 .flow-panel {
   overflow: hidden;
 }
@@ -1472,6 +1525,10 @@ td span {
   .articles-side { grid-template-columns: 1fr 1fr; }
   .card-row { grid-template-columns: repeat(2, 1fr); }
   .source-grid { grid-template-columns: repeat(2, 1fr); }
+  .reliability-grid { grid-template-columns: repeat(2, minmax(180px, 1fr)); }
+  .reliability-grid div { border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .reliability-grid div:nth-child(2n) { border-right: 0; }
+  .reliability-grid div:last-child { border-bottom: 0; }
   .flow-steps { grid-template-columns: repeat(2, minmax(180px, 1fr)); }
   .flow-steps div:nth-child(2n) { border-right: 0; }
   .settings-grid { grid-template-columns: 1fr; }
@@ -1496,7 +1553,9 @@ td span {
   .filterbar, .plans-strip, .page { padding-left: 14px; padding-right: 14px; }
   .filterbar label { flex: 1 1 180px; }
   .stats-grid, .split-grid, .card-row { grid-template-columns: 1fr; }
-  .source-grid, .flow-steps { grid-template-columns: 1fr; }
+  .source-grid, .reliability-grid, .flow-steps { grid-template-columns: 1fr; }
+  .reliability-grid div { border-right: 0; border-bottom: 1px solid var(--line); }
+  .reliability-grid div:last-child { border-bottom: 0; }
   .flow-steps div { border-right: 0; border-bottom: 1px solid var(--line); }
   .flow-steps div:last-child { border-bottom: 0; }
   .flow-steps div::after { top: auto; right: 18px; bottom: -9px; transform: rotate(90deg); }
