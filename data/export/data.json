@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T09:01:35.891800+00:00",
+  "generated_at": "2026-06-25T15:10:52.441024+00:00",
   "departements": {
     "01": {
       "nom": "Ain",
@@ -23,7 +23,7 @@
       "nom": "Alpes-de-Haute-Provence",
       "region": "Provence-Alpes-Côte d'Azur",
       "count": 0,
-      "total_agences": 17
+      "total_agences": 18
     },
     "05": {
       "nom": "Hautes-Alpes",
@@ -35,7 +35,7 @@
       "nom": "Alpes-Maritimes",
       "region": "Provence-Alpes-Côte d'Azur",
       "count": 0,
-      "total_agences": 24
+      "total_agences": 25
     },
     "07": {
       "nom": "Ardèche",
@@ -47,7 +47,7 @@
       "nom": "Ardennes",
       "region": "Grand Est",
       "count": 0,
-      "total_agences": 15
+      "total_agences": 16
     },
     "09": {
       "nom": "Ariège",
@@ -65,7 +65,7 @@
       "nom": "Aude",
       "region": "Occitanie",
       "count": 0,
-      "total_agences": 18
+      "total_agences": 20
     },
     "12": {
       "nom": "Aveyron",
@@ -77,13 +77,13 @@
       "nom": "Bouches-du-Rhône",
       "region": "Provence-Alpes-Côte d'Azur",
       "count": 0,
-      "total_agences": 70
+      "total_agences": 72
     },
     "14": {
       "nom": "Calvados",
       "region": "Normandie",
       "count": 1,
-      "total_agences": 16
+      "total_agences": 17
     },
     "15": {
       "nom": "Cantal",
@@ -149,7 +149,7 @@
       "nom": "Dordogne",
       "region": "Nouvelle-Aquitaine",
       "count": 1,
-      "total_agences": 18
+      "total_agences": 19
     },
     "25": {
       "nom": "Doubs",
@@ -185,13 +185,13 @@
       "nom": "Gard",
       "region": "Occitanie",
       "count": 0,
-      "total_agences": 63
+      "total_agences": 64
     },
     "31": {
       "nom": "Haute-Garonne",
       "region": "Occitanie",
       "count": 0,
-      "total_agences": 50
+      "total_agences": 52
     },
     "32": {
       "nom": "Gers",
@@ -209,13 +209,13 @@
       "nom": "Hérault",
       "region": "Occitanie",
       "count": 0,
-      "total_agences": 113
+      "total_agences": 116
     },
     "35": {
       "nom": "Ille-et-Vilaine",
       "region": "Bretagne",
       "count": 0,
-      "total_agences": 101
+      "total_agences": 103
     },
     "36": {
       "nom": "Indre",
@@ -227,7 +227,7 @@
       "nom": "Indre-et-Loire",
       "region": "Centre-Val de Loire",
       "count": 0,
-      "total_agences": 47
+      "total_agences": 48
     },
     "38": {
       "nom": "Isère",
@@ -239,13 +239,13 @@
       "nom": "Jura",
       "region": "Bourgogne-Franche-Comté",
       "count": 0,
-      "total_agences": 10
+      "total_agences": 11
     },
     "40": {
       "nom": "Landes",
       "region": "Nouvelle-Aquitaine",
       "count": 0,
-      "total_agences": 58
+      "total_agences": 59
     },
     "41": {
       "nom": "Loir-et-Cher",
@@ -275,7 +275,7 @@
       "nom": "Loiret",
       "region": "Centre-Val de Loire",
       "count": 1,
-      "total_agences": 135
+      "total_agences": 138
     },
     "46": {
       "nom": "Lot",
@@ -287,7 +287,7 @@
       "nom": "Lot-et-Garonne",
       "region": "Nouvelle-Aquitaine",
       "count": 0,
-      "total_agences": 7
+      "total_agences": 8
     },
     "48": {
       "nom": "Lozère",
@@ -317,13 +317,13 @@
       "nom": "Haute-Marne",
       "region": "Grand Est",
       "count": 0,
-      "total_agences": 4
+      "total_agences": 5
     },
     "53": {
       "nom": "Mayenne",
       "region": "Pays de la Loire",
       "count": 0,
-      "total_agences": 17
+      "total_agences": 18
     },
     "54": {
       "nom": "Meurthe-et-Moselle",
@@ -335,7 +335,7 @@
       "nom": "Meuse",
       "region": "Grand Est",
       "count": 0,
-      "total_agences": 15
+      "total_agences": 17
     },
     "56": {
       "nom": "Morbihan",
@@ -347,7 +347,7 @@
       "nom": "Moselle",
       "region": "Grand Est",
       "count": 0,
-      "total_agences": 43
+      "total_agences": 44
     },
     "58": {
       "nom": "Nièvre",
@@ -359,13 +359,13 @@
       "nom": "Nord",
       "region": "Hauts-de-France",
       "count": 2,
-      "total_agences": 85
+      "total_agences": 86
     },
     "60": {
       "nom": "Oise",
       "region": "Hauts-de-France",
       "count": 0,
-      "total_agences": 30
+      "total_agences": 31
     },
     "61": {
       "nom": "Orne",
@@ -377,7 +377,7 @@
       "nom": "Pas-de-Calais",
       "region": "Hauts-de-France",
       "count": 4,
-      "total_agences": 70
+      "total_agences": 71
     },
     "63": {
       "nom": "Puy-de-Dôme",
@@ -389,7 +389,7 @@
       "nom": "Pyrénées-Atlantiques",
       "region": "Nouvelle-Aquitaine",
       "count": 0,
-      "total_agences": 57
+      "total_agences": 58
     },
     "65": {
       "nom": "Hautes-Pyrénées",
@@ -407,7 +407,7 @@
       "nom": "Bas-Rhin",
       "region": "Grand Est",
       "count": 1,
-      "total_agences": 169
+      "total_agences": 171
     },
     "68": {
       "nom": "Haut-Rhin",
@@ -419,7 +419,7 @@
       "nom": "Rhône",
       "region": "Auvergne-Rhône-Alpes",
       "count": 0,
-      "total_agences": 49
+      "total_agences": 51
     },
     "70": {
       "nom": "Haute-Saône",
@@ -443,7 +443,7 @@
       "nom": "Savoie",
       "region": "Auvergne-Rhône-Alpes",
       "count": 0,
-      "total_agences": 34
+      "total_agences": 37
     },
     "74": {
       "nom": "Haute-Savoie",
@@ -455,7 +455,7 @@
       "nom": "Paris",
       "region": "Île-de-France",
       "count": 1,
-      "total_agences": 136
+      "total_agences": 138
     },
     "76": {
       "nom": "Seine-Maritime",
@@ -485,7 +485,7 @@
       "nom": "Somme",
       "region": "Hauts-de-France",
       "count": 0,
-      "total_agences": 19
+      "total_agences": 20
     },
     "81": {
       "nom": "Tarn",
@@ -497,13 +497,13 @@
       "nom": "Tarn-et-Garonne",
       "region": "Occitanie",
       "count": 0,
-      "total_agences": 16
+      "total_agences": 17
     },
     "83": {
       "nom": "Var",
       "region": "Provence-Alpes-Côte d'Azur",
       "count": 0,
-      "total_agences": 70
+      "total_agences": 74
     },
     "84": {
       "nom": "Vaucluse",
@@ -527,7 +527,7 @@
       "nom": "Haute-Vienne",
       "region": "Nouvelle-Aquitaine",
       "count": 1,
-      "total_agences": 28
+      "total_agences": 29
     },
     "88": {
       "nom": "Vosges",
@@ -539,7 +539,7 @@
       "nom": "Yonne",
       "region": "Bourgogne-Franche-Comté",
       "count": 0,
-      "total_agences": 20
+      "total_agences": 21
     },
     "90": {
       "nom": "Territoire de Belfort",
@@ -557,19 +557,19 @@
       "nom": "Hauts-de-Seine",
       "region": "Île-de-France",
       "count": 0,
-      "total_agences": 59
+      "total_agences": 60
     },
     "93": {
       "nom": "Seine-Saint-Denis",
       "region": "Île-de-France",
       "count": 0,
-      "total_agences": 46
+      "total_agences": 47
     },
     "94": {
       "nom": "Val-de-Marne",
       "region": "Île-de-France",
       "count": 0,
-      "total_agences": 62
+      "total_agences": 63
     },
     "95": {
       "nom": "Val-d'Oise",
@@ -593,13 +593,13 @@
       "nom": "Guyane",
       "region": "Guyane",
       "count": 0,
-      "total_agences": 5
+      "total_agences": 6
     },
     "974": {
       "nom": "La Réunion",
       "region": "La Réunion",
       "count": 0,
-      "total_agences": 31
+      "total_agences": 41
     },
     "976": {
       "nom": "Mayotte",
@@ -659,6 +659,21 @@
       "nb_departements": 3
     },
     {
+      "region": "Nouvelle-Aquitaine",
+      "articles": 4,
+      "fermetures": 2,
+      "projets": 0,
+      "fusions": 0,
+      "types": [
+        "Fermeture"
+      ],
+      "departements": [
+        "24",
+        "87"
+      ],
+      "nb_departements": 2
+    },
+    {
       "region": "Occitanie",
       "articles": 4,
       "fermetures": 3,
@@ -670,21 +685,6 @@
       "departements": [
         "12",
         "46"
-      ],
-      "nb_departements": 2
-    },
-    {
-      "region": "Nouvelle-Aquitaine",
-      "articles": 3,
-      "fermetures": 2,
-      "projets": 0,
-      "fusions": 0,
-      "types": [
-        "Fermeture"
-      ],
-      "departements": [
-        "24",
-        "87"
       ],
       "nb_departements": 2
     },
@@ -772,6 +772,8 @@
       "date_annonce": "Thu, 12 Feb 2026 08:00:00 GMT",
       "date_fermeture": "2026-12-31",
       "statut": "projet",
+      "statut_temporel": "inconnu",
+      "date_fermeture_approx": 0,
       "fiabilite": 2,
       "lat": null,
       "lon": null,
@@ -782,13 +784,15 @@
           "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQR09JUVFJeG1pTVNjVlJBbXBUTHpmU0YyZjZlQk5kWWhCaW40X3VGUjF5b2RSQ2YybWctRGJzVEx4WTltS0p4UzNvQUxHZGE0RkNvSlNSWWc2QlMxeFptNk51cjdMSUd5Z1VRNkxCRVZRZWhSTkQ1ZWIyY1FrNU1KUmtCaWh2VnJGbHc?oc=5",
           "titre": "Fin annoncée pour la Société Générale : la banque prévoit la fermeture de plusieurs agences d’ici 2026 - Le Tribunal du Net",
           "source": "Google News",
-          "date": "Thu, 12 Feb 2026 08:00:00 GMT"
+          "date": "Thu, 12 Feb 2026 08:00:00 GMT",
+          "tier": "D"
         },
         {
           "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPcDNwTVdCVXp3RkNsZVhvWWM0NmRLcUphWEx1UnlyOWZDUjZSN2tVTmlGS2N2aGh4VXdzb0Ixd01hWlV6VzM3NzlkdHJqWms2RU5zdENhV0lTTWhtZlVWSVBJMnNPWFZ6eDRoaDRMSy10MGgxTUZYdFdNQ1hwNWljY2preTZUWUFYRXc4NDc3WXJYQlFpaVdEMEdhb0ZKREtYT2hkeDJKTmFHbEQzeFVldTA3ZWZHc2twSThhc1lMNjhGemhyZHc?oc=5",
           "titre": "Clap de fin pour la Société Générale, votre banque prévoit de fermer ces agences en 2026 - NextPlz",
           "source": "Google News",
-          "date": "Thu, 22 Jan 2026 08:00:00 GMT"
+          "date": "Thu, 22 Jan 2026 08:00:00 GMT",
+          "tier": "D"
         }
       ],
       "controle_sirene": {
@@ -808,6 +812,8 @@
       "date_annonce": "Fri, 05 Jun 2026 07:00:00 GMT",
       "date_fermeture": "2026-06-30",
       "statut": "confirmé",
+      "statut_temporel": "inconnu",
+      "date_fermeture_approx": 0,
       "fiabilite": 4,
       "lat": null,
       "lon": null,
@@ -818,7 +824,8 @@
           "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOSTB0VmZSUm5Eb1dHLXk3TlRGZ2lIZTF5Z2lFc3NIMHdVcHVrd2Y3WlJmN3dDdkNHSG94WkR2dzJYb2hSUGxSY19DX21jUHRkMkZtc2tzU2lzb0xvMHpzM3pybHVWMUJkZTdVMnpnTGhaUEJGZDBsLVVfSEluODBVdVV6NTlEODh6NGRhRzR6RTBSSm1OMnhKUXl6VzdQUThVcFlmVnNpTTZDVEdBTkRzbXpDLUJteDJaem1KWnV0N2hzaFRWTnVMdTB2ZmxfdVlOd1NoWUdNX3pNbUdETXc5dFBKaWQ1Zzh0S1lQSTl3?oc=5",
           "titre": "À Coëtquidan, l’agence bancaire BNP Paribas ferme ses portes fin juin 2026 - Ouest-France",
           "source": "Google News",
-          "date": "Fri, 05 Jun 2026 07:00:00 GMT"
+          "date": "Fri, 05 Jun 2026 07:00:00 GMT",
+          "tier": "D"
         }
       ],
       "controle_sirene": {
@@ -838,6 +845,8 @@
       "date_annonce": "Sat, 23 May 2026 13:08:00 GMT",
       "date_fermeture": null,
       "statut": "confirmé",
+      "statut_temporel": "inconnu",
+      "date_fermeture_approx": 0,
       "fiabilite": 4,
       "lat": 50.72821,
       "lon": 1.702803,
@@ -848,31 +857,36 @@
           "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNbHFQaEJCUHZUeTF5eFNZbkZLT1ZGc0tySGhXZ3VNMkRQSkFCSElLbEU4NUs2YWVOemphcWw2cG5URzIweGJobHZZeFV5d2h1ZkRLNl9zTHY3RTd2QWRnWnZyUlJpVWhsc3pFbHdya21PenpIYnhEY0FldWJHTnhTNDRkUy1MQ3hhdTZkMGRGS0xwRklBQmNSSGpUZUUwZG5RVnF1VGtrUVlUYkI2VUFiQXdtaWtIQVM0MklCX3RYUy1NYXNmZGNTaHdqUFJmMzBq?oc=5",
           "titre": "L’agence du Crédit agricole à la Capelle-lès-Boulogne fermera finalement plus tard que prévu… - La Voix du Nord",
           "source": "Google News",
-          "date": "Wed, 27 May 2026 07:00:00 GMT"
+          "date": "Wed, 27 May 2026 07:00:00 GMT",
+          "tier": "D"
         },
         {
           "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQa2p6NFphLTliRXRLZFV5RllPdWRZQmNkNDI4OFl2ZmllcXdEYlV5TzBaZlVLR21MY3Z1dHFaYXhKQ2FKc3RxeXM0WWxlQjBpZ3ZzOXBkQlgtcmxNTVBLWWVzeENmV1l4dDRFUGE0QnpFc0pxMTEzV1ZfYWw1MlpCOVJlWHZpOEw5emwwYk9KT29WQXVPQ1JjTXZEaUdNb2g0Rndvc3RyOUU5Tms1SXVLZEt3UXhGdDJ6d0llWkF6aGFqRnFWNVRFbkt6UkRYRjhG?oc=5",
           "titre": "La Capelle-lès-Boulogne: le Crédit Agricole annonce sa fermeture, élus et des habitants inquiets - radio6.fr",
           "source": "Google News",
-          "date": "Fri, 29 May 2026 07:00:00 GMT"
+          "date": "Fri, 29 May 2026 07:00:00 GMT",
+          "tier": "D"
         },
         {
           "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQY09UQlIzd3lJcl9YWGRtdkh2b2tfSzVXeXU5U1R1a1k1ZGxBRmdjNTRpbml0cXJia0Nvb0lrMmo3b1h0aHU5QnJ4MzJSTXI5S1NlcmhVd1gybEY1QzN2bEZYTUJ6VUw4bV9vcVo5aEhES3Y4Y000dTFsME40V2dmQXVCblRWRjQ0dVh3Mg?oc=5",
           "titre": "La Capelle-lès-Boulogne : fermeture de l'agence Crédit Agricole... - Delta FM",
           "source": "Google News",
-          "date": "Sat, 23 May 2026 13:08:00 GMT"
+          "date": "Sat, 23 May 2026 13:08:00 GMT",
+          "tier": "D"
         },
         {
           "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOZnZxS1IzbkZ0WWQ3SUZUYW8zMUc2RUlYa3FhT3RkM2phcjBZRXd4YnBvOXZaWEJuRk00WmIwbXZnNzFyT3VxUWtjWW1GUThZZDFDSnI5QzVwOVNIdkZHXzJVcHlGdWJJZXV4V0FiQkRCV2NpWXdxOThuUU1OeWN4MEZ2V0wyR3RHdzJhaXRhQTZiSk1kc0lqLTlEMUZiU0ptUnBTUG01TVFaektVWXQxQUlQY010XzZ6UDI4NzdwYVhDdmdFanZVMy1MZ2RUZzA?oc=5",
           "titre": "« Les usages bancaires ont changé » : pourquoi le Crédit Agricole ferme à La Capelle-lès-Boulogne - Nord Littoral",
           "source": "Google News",
-          "date": "Thu, 28 May 2026 07:00:00 GMT"
+          "date": "Thu, 28 May 2026 07:00:00 GMT",
+          "tier": "D"
         },
         {
           "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPeGViUjdQOUk4N1FUU2dVMlBBdFFta1RteHFVTWZmNFRiOFk0RXh5ZGUxOGVleHp2ZHU1cEY2Z21MTVNoUEdOWlNZT1V1dkFHaWt2cjNGeHZuNG85WkNFbXVBX3F6SlQ0dXVpeFNGXzZralh4cUtGMnllNkFDZlZuck9XSEhoekVqamtYckdkUmRaQ3N6WUh6T05xbEp4cWJCQmlmOHpBZS1nekUyYUU4RWhPcnJtOERNaVE0TG9JU0ItUGtWYWdxZFEzRURidkk?oc=5",
           "titre": "Fermeture du Crédit Agricole à La Capelle-lès-Boulogne : élus et habitants unis pour défendre leur agence - Nord Littoral",
           "source": "Google News",
-          "date": "Wed, 27 May 2026 07:00:00 GMT"
+          "date": "Wed, 27 May 2026 07:00:00 GMT",
+          "tier": "D"
         }
       ],
       "controle_sirene": {
@@ -892,6 +906,8 @@
       "date_annonce": "Wed, 17 Jun 2026 15:48:53 GMT",
       "date_fermeture": null,
       "statut": "projet",
+      "statut_temporel": "inconnu",
+      "date_fermeture_approx": 0,
       "fiabilite": 3,
       "lat": null,
       "lon": null,
@@ -902,43 +918,50 @@
           "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQdHJra0hvZHhJOXZveUdEbkIzemh0MkFvQ21HcDdrcnJNMGRyUmdlX0FBVGtBcG44SkxBakFMZXhlZ2ljYVlFdThucXFkMF9lSWpraTF6eU5lUlhzNktSaUtPbXM1OFQ3dV9GWVBtMWxnU0hseE9KNXZnbjVkY3c2RF9nT0xxS2dUVUxRSERMMWthZnBiU3ViWkwxdmJqQl9lWGM4V3dDSHVOaElCaWYwNXBrbHQxQ3ZWa0tEdDE0YkFsajBvUklCZko5RVVLWC00cDE0YnpUdE1DNVlLU0hxX0lsX0ljMEdtNHlKWlFSNnd4b2JhbWJzUWdn?oc=5",
           "titre": "\"C’est dramatique\" : la fermeture de quatre agences Crédit agricole plonge les maires de l’Indre dans la colère - lanouvellerepublique.fr",
           "source": "Google News",
-          "date": "Thu, 22 Jan 2026 08:00:00 GMT"
+          "date": "Thu, 22 Jan 2026 08:00:00 GMT",
+          "tier": "D"
         },
         {
           "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNTHhZeUNlNHVCQ3F4aTZJdXBWMEtBMFBaOF9kY0ZUU0lCdUVjcVE5ay1yelU0TjNKSHJ0amhFLThLQjVBYVJIeHZ3b0xKdE11a2pSMjNOQzVRc1lhU2JPNVRGM21qeVdHN3FUdHVNVDdMTWl2TUhyeVRsMEFaYTRZc0FqdU90RFV6MlhiQ0lybHZWdGt0R2lHN3ZvQjVUVzM2Rm9uTzRGcGpZdUZ0Q2pnY2wyOXdHNjNDbU9FWm5GaHI5VGhOUUw2NTQ4U19EODloVFE?oc=5",
           "titre": "Grève au Crédit Agricole : les salariés craignent des suppressions de postes et fermetures d’agences - Paris Normandie",
           "source": "Google News",
-          "date": "Thu, 22 Jan 2026 08:00:00 GMT"
+          "date": "Thu, 22 Jan 2026 08:00:00 GMT",
+          "tier": "D"
         },
         {
           "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNdm8tTHVEb3d5XzNMdUxRRWtKRzBhVUpYSXI4Q2NlV2hvd29yVWUtQWI4Nkc4NF9vaTlJMTBHbkw1LXU2VEt5V2R0LUc4UkJFanpCYVg1bXl5TDkxQXNjOVlyWWpMYncwVDBNaGRMTEFzVUM3RTJlUFg0ZTN3RGJpUzBiQklNNlVDcng2R0hsUUJkMFZNOU1HMGlrZkdjSXltVGZrT0o3ZVBmcnNIS1RIQXYtU0tJbkJEUURoTTVxLU4xZWQyRkI4Ym43TWFrMUFaV200?oc=5",
           "titre": "Haute-Loire. Grève inédite au Crédit agricole : incertitudes, suppressions de postes et fermetures d’agences - Le Progrès",
           "source": "Google News",
-          "date": "Thu, 22 Jan 2026 08:00:00 GMT"
+          "date": "Thu, 22 Jan 2026 08:00:00 GMT",
+          "tier": "D"
         },
         {
           "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNQThCWGtxdnI0SFQtYldndUUzY0hRT3FpOFNuM29vRnF2d1dNZm1lR2t5SUFQZTVfTXhySHFHdWhfbzRmd01YQzNmZkpBR0FjLWtILWRUSk1UY1J1anItWC1FNUJOYUdzY1pLenpSMVlVaHNiOHBNR1dLR2FrVk1DaW9ucnAxQlNQRDNfTGtqSEdIU3U2bXVMSkNkUlB5ZG45WHZrMTJTXzQ1SXpXc05aSExfSVJ4ZnJnTGZHR2NlRllfS2pweVQyTXNHRmlwMEJrcWNQanB0REpWbktvaXJBRQ?oc=5",
           "titre": "Suppressions de poste, fermetures d'agences... Un appel à la grève pour le 22 janvier au Crédit Agricole - MoneyVox",
           "source": "Google News",
-          "date": "Tue, 13 Jan 2026 08:00:00 GMT"
+          "date": "Tue, 13 Jan 2026 08:00:00 GMT",
+          "tier": "D"
         },
         {
           "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOdmRhTDlqVWRJU3JWd0cxM3hvSlE3M2dDeWFrYVVRS1RXaDZSYXZqSlVVcENtRmFWb2FCNWc2N2otVFBqNjJJNmQ5LUxvaldWU19HYzZHcFktazlNeE5VN0c5M2QxUHd0aElRZUpNeDVQTkgtMGVhRmk0VG14bnprSDdmUFM1NGFjRFFOb3BOMjFxckQxdmFSbWhScUlQblFiYXREU2lPeGhiaDhKaERmLV9pcTJKbWNYWGg4eTl5aWN6RHlVWUZYemFwQWRkdk16Z0JVbldpRmxsNUY5VTd5OU40OHdJUXM?oc=5",
           "titre": "Grève au Crédit Agricole : les syndicats craignent des fermetures d'agences et des suppressions de postes - ici.fr",
           "source": "Google News",
-          "date": "Thu, 22 Jan 2026 08:00:00 GMT"
+          "date": "Thu, 22 Jan 2026 08:00:00 GMT",
+          "tier": "D"
         },
         {
           "url": "https://news.google.com/rss/articles/CBMiugJBVV95cUxPWUx0S3MyLTBXRUI4SG1Mc0hPdFlGeEhSc2xycG1Rd2pjak5HWjdwbDFOT1dubjVuc1BVaHo2SHFFTmEzWnZkTnlfMkdKS2RzMDdNRy1yT0NxejM4dGVUYVJXZUlGa3R2SzRXQS1ETGhITWo4WWU3blVsWlBjcUVSVk9fVUFBQWxCdHd6Q2lBeGxVR3JOTmFMeEdEeWM5TWVXUVVsSnU1cXdjLWgzWGhfdEx5Qm14c1JCREQ3Y0dmYnUzbVJGOExUWUI4NzZBVi16cFRMdjg4NlAySjZOR1BZdS1YNDcyUlc2MFlqaUdNWXlkUFIwZ0hTQzE4Q2pITEI0OTVmMXlKSjFHdU80d3pKZVN5TFdVWXFGT1Y1RVk4a2tmdFVlSVVQN0N2cjV4WUs2bTlsNkU1UUlCUQ?oc=5",
           "titre": "\"La ruralité demande de ne pas être abandonnée\" : la colère des maires face à la fermeture de 10 agences Crédit Agricole en Franche-Comté - France 3 Régions",
           "source": "Google News",
-          "date": "Wed, 17 Jun 2026 15:48:53 GMT"
+          "date": "Wed, 17 Jun 2026 15:48:53 GMT",
+          "tier": "D"
         },
         {
           "url": "https://news.google.com/rss/articles/CBMivwJBVV95cUxPZUtuTTlMcE1KT1BTNTM4eWhyZzVLZ2h5blVBRWRSOFVVU2VlVzZ2dmFGQ1l5eFNVcndQUG81cEg2cmx6bW5JQmN3S1pwRVZIVHdFVEdYYTlINDNVVWFKdHBZSHNld0xFVUFpbERoQ0FnRGFEU29Wb3EtT0xQaVJ4N1FMckdYeFNrbjlGejRyMFVyRUc0VWJ1ZFFtZ3RPeFFlM19DYi1wVThUV2UxR1h5bDI0bC1QeFlzSGJmOXdjaTJXS2g1NFYwYUl4OHZvYXo2MlNYZnVvNm1MSkMyTjZ0VzczNm1aeWcyYmxWa0xvMnlOYl84amZHWXR6M0Z2bEhQU292azBqWGJlYlNES21aRVFsMFI5ZGhDWnNETzNuR1M2YzJDanNMRXJmNHJCaFJfcFowQ1FyZlB0ZkFXd3Fz?oc=5",
           "titre": "\"Une grande première\": entre suppressions de postes et fermetures d'agences, les salariés du Crédit Agricole appelés à la grève le 22 janvier - BFM",
           "source": "Google News",
-          "date": "Tue, 13 Jan 2026 08:00:00 GMT"
+          "date": "Tue, 13 Jan 2026 08:00:00 GMT",
+          "tier": "D"
         }
       ],
       "controle_sirene": {
@@ -958,6 +981,8 @@
       "date_annonce": "Fri, 12 Jun 2026 07:00:00 GMT",
       "date_fermeture": null,
       "statut": "projet",
+      "statut_temporel": "inconnu",
+      "date_fermeture_approx": 0,
       "fiabilite": 4,
       "lat": 49.769386,
       "lon": 1.641298,
@@ -968,7 +993,8 @@
           "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOZG91a09GYXJ0R213RjFwX3lBVWRiTzVOa3ZVdHdqRVlCeHZfNWtGNklTSVgxVHFjVnVWR2pTcHdaN1luY1dDRVRDSXVOakl4Tll3aXExaTgzd184VG90ckZTc1BMb0UtRzJPdFpodFhiZXpQZTFVVVVFZ1gzdVVRRmZnZnJSYURpTmRXOXpDcUtMai1xSVAzNS1YS0xVUWZZYjFhR2gzdzAzcmR5U3VwUDczZ3pyLWN2QjNvUjNGMkVuU0RRcXZVeENIaV94WVU3M2Ntcnk1Wjl6ZUNQS0JnWTJBR1F0SThxYmYwQ0Y0U0w?oc=5",
           "titre": "Le Crédit Agricole va fermer dix agences bancaires en Franche-Comté, certaines mairies se mobilisent - ici.fr",
           "source": "Google News",
-          "date": "Fri, 12 Jun 2026 07:00:00 GMT"
+          "date": "Fri, 12 Jun 2026 07:00:00 GMT",
+          "tier": "D"
         }
       ],
       "controle_sirene": {
@@ -988,6 +1014,8 @@
       "date_annonce": "Mon, 13 Apr 2026 07:00:00 GMT",
       "date_fermeture": null,
       "statut": "rumeur",
+      "statut_temporel": "inconnu",
+      "date_fermeture_approx": 0,
       "fiabilite": 1,
       "lat": null,
       "lon": null,
@@ -998,7 +1026,8 @@
           "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxPdTJLRjhaU29ISmtIOVhzTEJpQkRrN3FKMHhtejN3QlBZSjhzWTc0Vm1WWlM1MTAxaUh3SDZqc2xyUV9jX3E5aDc1QVhGcE1fa0tFX1FBN3d1eHoxUHN2cHhVYmJrRFpRRzR5Tm03YTctYlpXWXMxU1VtaC04UWNMWVF6Y0UxWnAzbjFGMHNrRDlBNTVQanJiOGtFdUNLMk40eFhiWFNRcWxzQk9kbGZrRnNURkZKTWwxWXQtVkIxRy1QZ1czOUkwLXZJMzhEcGNQU0tMQ1VkVTVXdl9xc21iX2tEYmdOc0JvY1RFaXhNSEZHRGhabzRvMGpWLTNHSldfMk9Qa2pQc2g4aGJMT1k2azVHTmRvLWpCTUZ3?oc=5",
           "titre": "« Le sujet, ce n'est pas de fermer des agences pour fermer des agences » : BNP Paribas accélère sa réorganisation face aux néobanques - Les Echos",
           "source": "Google News",
-          "date": "Mon, 13 Apr 2026 07:00:00 GMT"
+          "date": "Mon, 13 Apr 2026 07:00:00 GMT",
+          "tier": "D"
         }
       ],
       "controle_sirene": {
@@ -1018,6 +1047,8 @@
       "date_annonce": "Fri, 23 Jan 2026 08:00:00 GMT",
       "date_fermeture": null,
       "statut": "confirmé",
+      "statut_temporel": "inconnu",
+      "date_fermeture_approx": 0,
       "fiabilite": 4,
       "lat": 46.131111,
       "lon": 1.284389,
@@ -1028,7 +1059,8 @@
           "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPZXowM0xtTlVxMlUxdFNFdFJXN3MwRTk2amRlWDhOcjRzTGIwMXJxWmNycDNTTmVtNlR6dl9pb3IycjRCd0QwQ01fcVZrNUpDUHhTYWxBeFlSUXBRc19pZDZhVmJ6bUVoUC1DNk9YX1dRT3A2S3hNNmttWlhYOTFBUVhkc0c1TU93dFc4dkJVSGJlVkkzUnM5ZkJIQ2Z4VFVWdkEzazBEUjN0SEhMT2hVZUZsT2hPY0hEbnAyN0lHN0YxaG1veEIweUxpRlBTTEZEWjlBc0FrVGsyMERLVXp4bjROVDhGZHh1anItTUJXYkJ0OTRqMDlsdHozZE9ZbVdxVmt2Y2M2RmM?oc=5",
           "titre": "Sept fermetures d'agences du Crédit Agricole en Haute-Vienne : \"c'est inadmissible\" pour le maire de Chateauponsac - ici.fr",
           "source": "Google News",
-          "date": "Fri, 23 Jan 2026 08:00:00 GMT"
+          "date": "Fri, 23 Jan 2026 08:00:00 GMT",
+          "tier": "D"
         }
       ],
       "controle_sirene": {
@@ -1048,6 +1080,8 @@
       "date_annonce": "Wed, 21 Jan 2026 08:00:00 GMT",
       "date_fermeture": null,
       "statut": "rumeur",
+      "statut_temporel": "inconnu",
+      "date_fermeture_approx": 0,
       "fiabilite": 2,
       "lat": null,
       "lon": null,
@@ -1058,7 +1092,8 @@
           "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPaV9FaXpRajkxN2NabFc1Z1VlWmhxUE5DYTdmeW10cF91Y3hnRVIyT24ySWY3NGcxLXc2MGdObFNsTjlYLVJ5MHA2N1pyNVdhVTJIOFE3S1BtdkdqcEJHZDlsOXhrOWpFMEpfZ0dWcEFSb0J6bjVKT1lrZWFVdV9ISVZqNFRZb01MdE9OZG1Jb2hwV2p0Vk04LVNsaGpGanMzSzNDSU1uM1FaMWNPU3lYRjNwWkUwMXBJcXE4VXdwZno3cmFTaUtpQkI4TWMzbzEzWG8wYThDckZkdWVSZHJoY3Bsa2JmRng3NTNGRjFfQk1kREZsUGhYV0wwWQ?oc=5",
           "titre": "\"Nous craignons des fermetures d'agences\" : les 1.500 salariés lorrains du Crédit agricole appelés à débrayer ce jeudi - ici.fr",
           "source": "Google News",
-          "date": "Wed, 21 Jan 2026 08:00:00 GMT"
+          "date": "Wed, 21 Jan 2026 08:00:00 GMT",
+          "tier": "D"
         }
       ],
       "controle_sirene": {
@@ -1078,6 +1113,8 @@
       "date_annonce": "Fri, 06 Feb 2026 08:00:00 GMT",
       "date_fermeture": null,
       "statut": "confirmé",
+      "statut_temporel": "inconnu",
+      "date_fermeture_approx": 0,
       "fiabilite": 4,
       "lat": 44.639318,
       "lon": 0.465633,
@@ -1088,13 +1125,15 @@
           "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQNllaLXBEdk96SjdjUkhybkJic1ZBdFVHOElYd090V0dGaDU3T1lmbFlDSUJyOGd0VDRWUTBKYjZPU1Qyci1zVktqUkFwOEl2Zm9Nb01LWTJfazhtRWdYeDZTaENOTlZocGtDWEZZTGpTRE16aUhGNnVMQUhZMUJjcUctWUhVaktxWEI3dHRuQXlJOE5ncGR3NHoxUWQtMXoyQVUyUUtoRllUbGk0M1NUTUFsT2hmU3I5bjc5V0FGSm5xOE1rcG16b21WUVcxZ3RSNnZOanc5NFdmeTZmNXRFR25OQk5wbnZ1SURZVDBjY0kzYTJ5WWpmZg?oc=5",
           "titre": "Municipales 2026 : la fermeture de l’agence du Crédit Agricole se transforme en affaire politique à Lauzun - Actu.fr",
           "source": "Google News",
-          "date": "Wed, 04 Feb 2026 08:00:00 GMT"
+          "date": "Wed, 04 Feb 2026 08:00:00 GMT",
+          "tier": "D"
         },
         {
           "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxQN2F5N282YTExcjJnTUJhV29jYWpIcmtBdTRQUjZxcDFKVm1aNXNneFZ3Ulh1cWNJSnNVTWdnT29DWTZUYzR5QUxJekFlV3BHOFpZZjJOU0xrZDdCRW5pRHlsOTNUSjhRcHB4azFRV05YLUplMy1VUUtMQTVXcW5lV1VFdV9UNEZYWnhnMExnSlh5czRhX0hBSVdUNUZkOHJTZmJmdTdmbHlhenNHSUY5QUZIQi1HT0g4TGU0dnNyNHZTWlhLS3FxT3pOWkI0a1h5dWdGbnF6S2tQMUN1bnVaTmFmSUN4TzYxbEx0ZTc3d3BSaXl1el9EUlU4eE9PTUc2RlUtcEx0VHBQdE9o?oc=5",
           "titre": "« Un affront pour nous, élus locaux » : le Crédit agricole ferme son agence de Lauzun à quelques jours des élections municipales - Sud Ouest",
           "source": "Google News",
-          "date": "Fri, 06 Feb 2026 08:00:00 GMT"
+          "date": "Fri, 06 Feb 2026 08:00:00 GMT",
+          "tier": "D"
         }
       ],
       "controle_sirene": {
@@ -1114,6 +1153,8 @@
       "date_annonce": "Thu, 21 May 2026 07:00:00 GMT",
       "date_fermeture": null,
       "statut": "rumeur",
+      "statut_temporel": "inconnu",
+      "date_fermeture_approx": 0,
       "fiabilite": 4,
       "lat": 49.977877,
       "lon": 3.902862,
@@ -1124,19 +1165,22 @@
           "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOaUlJNm9TNDNkcC1STndpc0ZWakhEbzg4VVotMHZPOW9GWWpqc0FHZ3Ntc3VSWXZOSFcxUFQyalZDeTRucEZtSWRISnVERnpwbmlKemhSWTRWeUp3TzZORTNpM0RndmhHREZRQ0pnd0xrUjk3a2I2X0l2cVoxZHR2SUl3dFhrQ3VWekd6WGVfSElJaWRwZ2F5N0hTN1VZNm5DQl9RWDlycnk2aE9zaW9ZUUVWYkFrNVNJcVlfOXA5dXAxSmI1a1hydG5QazYwdTRC?oc=5",
           "titre": "Fermeture du Crédit agricole, « un coup dur pour le centre de La Capelle mais aussi Pernes, Conteville, Baincthun… - La Voix du Nord",
           "source": "Google News",
-          "date": "Thu, 21 May 2026 07:00:00 GMT"
+          "date": "Thu, 21 May 2026 07:00:00 GMT",
+          "tier": "D"
         },
         {
           "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxOSFF5TUZ2RXFlWnNfY0o5bUpoWHVEc0F2S2lxMkVwazlDbllWME4ybE9HVGRHVWhGVmJLaFRNcVBmS2F3cmN6bVpOSWhpaS1wNkd2bFJVUHhaZC1QZzY4UV9OSk56eFB5VU16QzZDUFhCQnY2Um9QNXIwSi1wSllqWU13UkdyVE1vdGNZNEFNRlZkb1JHZ0F2UTBycmlOREhndlNNY2JWZmRuNlpvUXZjLTZJbVljWUlfbUJvVXZEVVVUa21SbnZqV0RyTjBEbkx5N2dOcWNaVnIzeUxOb3phem9peVpia0JlYXg0RlpHMWE1YVBXMjVBbmFFMkQ4WlEyaUVaWUhzVlc2b3l3RkVBdW1uZnhOVjdxMVJ3?oc=5",
           "titre": "Fermeture du Crédit Agricole à La Capelle: \"il y a un distributeur à Auchan\", tempère le responsable des agences boulonnaises, d'autres solutions à l'étude - radio6.fr",
           "source": "Google News",
-          "date": "Mon, 08 Jun 2026 07:00:00 GMT"
+          "date": "Mon, 08 Jun 2026 07:00:00 GMT",
+          "tier": "D"
         },
         {
           "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOWXVpTDVEUENuQlZNTUxYZVVzVTFVR2Y1MVNFdVNVZ25qcktiUU8wc3VIekNOMVhVaXlrajhmajktQ2FFal9RSmpLbkNXdVhNSEp6bl9BT1ZqamlhRXlrUG85LW1fTl90WU5DSXhaMTJZcDMxNHRTN2Y1Z0o0NzlFY2duNjIxV0FfcUMzcUZka0hfYlh1aU5JOGcxQ3ZWQTZ1U1lYcWJEQ1l6a1dSSzdmdU5mbTliVHJ0RktwcGk5ejdvTTJLNjMzMG53?oc=5",
           "titre": "Fermeture du Crédit agricole à La Capelle : « pour une banque qui dit défendre la ruralité, ce n’est pas correct - La Voix du Nord",
           "source": "Google News",
-          "date": "Thu, 21 May 2026 07:00:00 GMT"
+          "date": "Thu, 21 May 2026 07:00:00 GMT",
+          "tier": "D"
         }
       ],
       "controle_sirene": {
@@ -1156,6 +1200,8 @@
       "date_annonce": "Fri, 05 Jun 2026 07:00:00 GMT",
       "date_fermeture": null,
       "statut": "confirmé",
+      "statut_temporel": "inconnu",
+      "date_fermeture_approx": 0,
       "fiabilite": 4,
       "lat": 47.416945,
       "lon": 0.657995,
@@ -1166,7 +1212,8 @@
           "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOZ2pQekt4RW5WUERhT1RRdG1uamFIVVdsQTZhOXFhTHQ2ZW1va2tGU1U0YVB1ZWpaQ2N5SG83T0dZOGZBMlNFTGRvZzhjd0dJZ1Vkc0w4NTM1WFRkcWhHcVJObnV0N0FKQW5jTEtfV2w1ZUs1ZERCM3VZYUlqRjFUU1MybjRPSXJjOW5WODJDRjRiSVhnbHZUM00xMFg3MW9ZNTlqNFg0R0JkTFIzMVExMC1YNWxqajVfZUtqdkdxWHN5TkpWQkdNWFdRb1RSdFdtdXprcHlBdnd1X2dZTlF4aDVZQU5fWmN6dmZ2N1lvNnlmeHpHcjVXTmNVWGNSUEtDdUNJ?oc=5",
           "titre": "L’agence du Crédit mutuel va fermer ses portes définitivement à Saint-Cyr-sur-Loire - lanouvellerepublique.fr",
           "source": "Google News",
-          "date": "Fri, 05 Jun 2026 07:00:00 GMT"
+          "date": "Fri, 05 Jun 2026 07:00:00 GMT",
+          "tier": "D"
         }
       ],
       "controle_sirene": {
@@ -1186,6 +1233,8 @@
       "date_annonce": "Thu, 23 Apr 2026 07:00:00 GMT",
       "date_fermeture": null,
       "statut": "confirmé",
+      "statut_temporel": "inconnu",
+      "date_fermeture_approx": 0,
       "fiabilite": 4,
       "lat": 50.712174,
       "lon": 1.57873,
@@ -1196,7 +1245,8 @@
           "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQSHEzNTFBaVh6TVpQOXpPWTZ2cWJRMTNNaHJISlptb3htWnBWRW10OHZjVFdQVE5WQzdiRE1mOWVtSi1OTUhCTDZDM3hjLXRUb1NrbXk2SjFDbDVBWlFIQTY1aVctNV8yVWFPaDU3WGlrV2RnX2k0NXRRa21ZakhhOFZHbUEyRjBCUjFTamVBbU1TR2J6S2RBVHRBVDZ5b3pFc0FkUXQ4Uy1RRnJHdE9Nay12cHFxbVBKWEtOMEdQc0g0MDI1YlpkMTQzSQ?oc=5",
           "titre": "Le Portel : la direction de la BNP-Paribas s’explique sur la fermeture de l’agence de la rue Carnot - La Voix du Nord",
           "source": "Google News",
-          "date": "Thu, 23 Apr 2026 07:00:00 GMT"
+          "date": "Thu, 23 Apr 2026 07:00:00 GMT",
+          "tier": "D"
         }
       ],
       "controle_sirene": {
@@ -1216,6 +1266,8 @@
       "date_annonce": "Mon, 26 Jan 2026 08:00:00 GMT",
       "date_fermeture": "2026-06-29",
       "statut": "confirmé",
+      "statut_temporel": "inconnu",
+      "date_fermeture_approx": 0,
       "fiabilite": 4,
       "lat": 49.108972,
       "lon": 6.938861,
@@ -1226,7 +1278,8 @@
           "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPZXFDQ3JJVTJpQ2Q2c21OSEJtSE8ycHdMcXZvMGRoUmJyRUtkcS1LX01lUFhWZUUtZXZiZjFlQy1YZ0I0cGdUeGlhVnREd1dzRTlNTVNmd1NROFhKekkyN2toZld6SHRfU0duLTROSU1qcXNvSVd5Wl9GaWp4UllsN3dfMG93emRpQUhoazJkZG9XVF95aW9mLWM4b3UybmJCSWNPRml5WlpZZw?oc=5",
           "titre": "Diebling. Crédit Mutuel : plus que cinq jours avant la fermeture - Le Republicain Lorrain",
           "source": "Google News",
-          "date": "Mon, 26 Jan 2026 08:00:00 GMT"
+          "date": "Mon, 26 Jan 2026 08:00:00 GMT",
+          "tier": "D"
         }
       ],
       "controle_sirene": {
@@ -1246,6 +1299,8 @@
       "date_annonce": "Tue, 16 Jun 2026 14:09:00 GMT",
       "date_fermeture": null,
       "statut": "confirmé",
+      "statut_temporel": "inconnu",
+      "date_fermeture_approx": 0,
       "fiabilite": 4,
       "lat": 50.69676,
       "lon": 2.622522,
@@ -1256,7 +1311,8 @@
           "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPbEpNbHlIZVZfS0xNelljaTBNZkg3Y2pPQWpKU1psUVNsdUdiRzBkZzFzWnI4cVJ3aks4Tk9DM3dtbDJNSGM0RFRvUTc1ZTM0ME9hUWtDS1Y5QU5MczgxcjVkNmFjbkVJSGM5aWk5WWQxR193YUVlVTdIZzBPUTRsS0l0VkEya1R1a2lzWjBrR2FuOGpFTWtvckNvQmNZWGlkQURSUXh6OUNUbjg4dXRtSTcwWmlFdEt6Q1dSUHBLVW5haGJMcXlWenJHbC1HSWpo?oc=5",
           "titre": "Le Crédit agricole de Vieux-Berquin ferme, « on cherche une solution » pour les retraits - La Voix du Nord",
           "source": "Google News",
-          "date": "Tue, 16 Jun 2026 14:09:00 GMT"
+          "date": "Tue, 16 Jun 2026 14:09:00 GMT",
+          "tier": "D"
         }
       ],
       "controle_sirene": {
@@ -1276,6 +1332,8 @@
       "date_annonce": "Wed, 29 Apr 2026 07:00:00 GMT",
       "date_fermeture": null,
       "statut": "rumeur",
+      "statut_temporel": "inconnu",
+      "date_fermeture_approx": 0,
       "fiabilite": 2,
       "lat": null,
       "lon": null,
@@ -1286,7 +1344,8 @@
           "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxNMEFTSGxqV1R3d3dtbUFBb3pjOEx0RHZrcF8tZm5YSC11dC1CbEhkWllJNUhWclV6TjdRTURDbGJBZ1oydnBFWDlqUENIRU5JX3laRGx1WGJadEE2aENHREVxa1lUajdhcndiQ0MzS3lHcnZOamR3cXhqZlZOZ1Qza1RUb01raGFRUldmS05SejctMDI0QkFXZUIzTi0wYzZwSWkxc25Rd3pObWJxUG45a2l2WFlGS2FOckZQZFRNT2l1VHRVUkY4bGpOSG0tcXZSTEpiQTdoWUFKeUVINWJIZ3k5YzFnVkIxRTM4NlNRY0FORWlXdEVybUZHelhONVdEZ3pCZkVUMktNaXBrNDM1OUppQQ?oc=5",
           "titre": "Un bon bilan 2025 pour la Caisse d'épargne Loire-Centre, marqué par de bonnes nouvelles et des fermetures - L’Écho Républicain",
           "source": "Google News",
-          "date": "Wed, 29 Apr 2026 07:00:00 GMT"
+          "date": "Wed, 29 Apr 2026 07:00:00 GMT",
+          "tier": "D"
         }
       ],
       "controle_sirene": {
@@ -1306,6 +1365,8 @@
       "date_annonce": null,
       "date_fermeture": null,
       "statut": "projet",
+      "statut_temporel": "inconnu",
+      "date_fermeture_approx": 0,
       "fiabilite": 2,
       "lat": null,
       "lon": null,
@@ -1316,7 +1377,8 @@
           "url": "https://www.legifrance.gouv.fr/jorf/id/ACCOTEXT000043392608",
           "titre": "Accord collectif relatif à la mise en place d'un dispositif d'activité partielle de longue durée",
           "source": "Légifrance",
-          "date": ""
+          "date": "",
+          "tier": "A"
         }
       ],
       "controle_sirene": {
@@ -1336,6 +1398,8 @@
       "date_annonce": null,
       "date_fermeture": "2026-06-23",
       "statut": "confirmé",
+      "statut_temporel": "inconnu",
+      "date_fermeture_approx": 0,
       "fiabilite": 5,
       "lat": 49.204618,
       "lon": -0.330295,
@@ -1346,7 +1410,8 @@
           "url": "https://agences.sg.fr/",
           "titre": "À compter du 2026-06-23, l'agence SG de Hérouville-Saint-Clair (320 quartier du Val, 14200 Hérouville-Saint-Clair) transfère ses activités vers Caen Côte de Nacre. [TRANSFERT_TOTAL — localisateur officiel SG]",
           "source": "SG (localisateur officiel)",
-          "date": "2026-06-23"
+          "date": "2026-06-23",
+          "tier": "A"
         }
       ],
       "controle_sirene": {
@@ -1366,6 +1431,8 @@
       "date_annonce": null,
       "date_fermeture": "2026-07-07",
       "statut": "confirmé",
+      "statut_temporel": "inconnu",
+      "date_fermeture_approx": 0,
       "fiabilite": 5,
       "lat": 45.623012,
       "lon": 0.688994,
@@ -1376,7 +1443,8 @@
           "url": "https://agences.sg.fr/",
           "titre": "À compter du 2026-07-07, l'agence SG de Piégut-Pluviers (11 rue des Alliés, 24360 Piégut-Pluviers) transfère ses activités vers Nontron. [TRANSFERT_TOTAL — localisateur officiel SG]",
           "source": "SG (localisateur officiel)",
-          "date": "2026-07-07"
+          "date": "2026-07-07",
+          "tier": "A"
         }
       ],
       "controle_sirene": {
@@ -1396,6 +1464,8 @@
       "date_annonce": null,
       "date_fermeture": "2026-07-07",
       "statut": "confirmé",
+      "statut_temporel": "inconnu",
+      "date_fermeture_approx": 0,
       "fiabilite": 5,
       "lat": 48.553434,
       "lon": 7.744777,
@@ -1406,7 +1476,8 @@
           "url": "https://agences.sg.fr/",
           "titre": "À compter du 2026-07-07, l'agence SG de Strasbourg (267 avenue de Colmar, 67100 Strasbourg) transfère ses activités vers Strasbourg Esplanade. [TRANSFERT_TOTAL — localisateur officiel SG]",
           "source": "SG (localisateur officiel)",
-          "date": "2026-07-07"
+          "date": "2026-07-07",
+          "tier": "A"
         }
       ],
       "controle_sirene": {
@@ -1426,6 +1497,8 @@
       "date_annonce": null,
       "date_fermeture": "2026-07-09",
       "statut": "confirmé",
+      "statut_temporel": "inconnu",
+      "date_fermeture_approx": 0,
       "fiabilite": 5,
       "lat": 49.840185,
       "lon": 3.48914,
@@ -1436,7 +1509,8 @@
           "url": "https://agences.sg.fr/",
           "titre": "À compter du 2026-07-09, l'agence SG de Origny-Sainte-Benoite (89 rue Pasteur, 02390 Origny-Sainte-Benoite) transfère ses activités vers Saint-Quentin Centre. [TRANSFERT_TOTAL — localisateur officiel SG]",
           "source": "SG (localisateur officiel)",
-          "date": "2026-07-09"
+          "date": "2026-07-09",
+          "tier": "A"
         }
       ],
       "controle_sirene": {
@@ -1456,6 +1530,8 @@
       "date_annonce": null,
       "date_fermeture": "2026-07-16",
       "statut": "confirmé",
+      "statut_temporel": "inconnu",
+      "date_fermeture_approx": 0,
       "fiabilite": 5,
       "lat": 45.269935,
       "lon": 5.864612,
@@ -1466,7 +1542,8 @@
           "url": "https://agences.sg.fr/",
           "titre": "À compter du 2026-07-16, l'agence SG de Bernin (ZAC Les Michellières, 38190 Bernin) transfère ses activités vers Saint-Ismier. [TRANSFERT_TOTAL — localisateur officiel SG]",
           "source": "SG (localisateur officiel)",
-          "date": "2026-07-16"
+          "date": "2026-07-16",
+          "tier": "A"
         }
       ],
       "controle_sirene": {
@@ -1486,6 +1563,8 @@
       "date_annonce": null,
       "date_fermeture": "2026-07-21",
       "statut": "confirmé",
+      "statut_temporel": "inconnu",
+      "date_fermeture_approx": 0,
       "fiabilite": 5,
       "lat": 48.880169,
       "lon": 2.390665,
@@ -1496,7 +1575,8 @@
           "url": "https://agences.sg.fr/",
           "titre": "À compter du 2026-07-21, l'agence SG de Paris 19e (Botzaris) (1 rue de Mouzaïa, 75019 Paris) transfère ses activités vers Paris Manin / Paris Jourdain. [TRANSFERT_TOTAL — localisateur officiel SG]",
           "source": "SG (localisateur officiel)",
-          "date": "2026-07-21"
+          "date": "2026-07-21",
+          "tier": "A"
         }
       ],
       "controle_sirene": {
@@ -1516,6 +1596,8 @@
       "date_annonce": "Fri, 06 Sep 2024 07:00:00 GMT",
       "date_fermeture": null,
       "statut": "confirmé",
+      "statut_temporel": "inconnu",
+      "date_fermeture_approx": 0,
       "fiabilite": 4,
       "lat": 45.788973,
       "lon": 4.34189,
@@ -1526,7 +1608,8 @@
           "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNU3N1NFFmeVV1YWNWQ2JIWm5uc2VITkRwbHk4WnFPQnl2WFhYekFEMkJTR0xpVWNLLUdoc1ZnbzZueVB0TkZQcV9qb21zei1yNHhiOHBuWnZJYVpDOTdxZ2l2VjRuMmJ1UHJlc0RLb3ZQallzSXV5dnRneHVEUnJFTm9EOGhyT1R3X2VycFNYR2JWNzVMdGdkZkdFaU1lQy1hZzczdXh4QlNpeE9G?oc=5",
           "titre": "Panissières. Le CIC va fermer, des centaines d’habitants signent une pétition - Le Progrès",
           "source": "Google News",
-          "date": "Fri, 06 Sep 2024 07:00:00 GMT"
+          "date": "Fri, 06 Sep 2024 07:00:00 GMT",
+          "tier": "D"
         }
       ],
       "controle_sirene": {
@@ -1546,6 +1629,8 @@
       "date_annonce": "Mon, 17 Mar 2025 07:00:00 GMT",
       "date_fermeture": null,
       "statut": "confirmé",
+      "statut_temporel": "inconnu",
+      "date_fermeture_approx": 0,
       "fiabilite": 4,
       "lat": 50.026911,
       "lon": 1.317182,
@@ -1556,13 +1641,15 @@
           "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPVUxDYk41X3VMVjREaVJmX2RxZG53SnBEeFp0Z1M1cWdBMmNyUXdhSXRYcUI2WHNGY2NHeFl0Qm1wcDJuY0l0OTJfaXJCbzNKd19heENNcXdVYTZSLUh1TW9jbVhnRlFEa1Z6cjl2c25pTzFIeTNSTnBIR2JpLTdBMkdLTll2WUpsT1RZM2hwYmpKdkVGOFlhVi1hUFZpNjVKNVlkRlVCWjB4MDk0bl9ZeTlHOGlCWFp0SHhpUlBmVXhlVGxUaVp4YUczRnFfdWUwanVmaQ?oc=5",
           "titre": "À Criel-sur-Mer, où retirer des espèces après la prochaine fermeture de l’agence du Crédit Agricole - Paris Normandie",
           "source": "Google News",
-          "date": "Thu, 20 Mar 2025 07:00:00 GMT"
+          "date": "Thu, 20 Mar 2025 07:00:00 GMT",
+          "tier": "D"
         },
         {
           "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQN1cwUjNHNkh6dmUzZ2RLYTRhemRrWnZ4Yk4wdEhwRTlKRlJnNlFyTlJrc19JNlVYaW9GczF3emp0QTJmM09CWjc4XzlPdUFCTC1kME5oTFhOaTZZT25hc0RlQnBsSUoxMy1Xd1hjc2x2cHFpWTg5ay1wZE1fU2hVc1hFdFhQaG92QUF3cWRMUUNXVTRxZjZYdWNPdGdQR1dEY25NRHZxWHFReXF2R2duMU83V2JCaW5KZFo4WXZB?oc=5",
           "titre": "Criel-sur-Mer : L'agence du Crédit Agricole va fermer ses portes - Actu.fr",
           "source": "Google News",
-          "date": "Mon, 17 Mar 2025 07:00:00 GMT"
+          "date": "Mon, 17 Mar 2025 07:00:00 GMT",
+          "tier": "D"
         }
       ],
       "controle_sirene": {
@@ -1582,6 +1669,8 @@
       "date_annonce": "Fri, 14 Feb 2025 08:00:00 GMT",
       "date_fermeture": null,
       "statut": "confirmé",
+      "statut_temporel": "inconnu",
+      "date_fermeture_approx": 0,
       "fiabilite": 4,
       "lat": 49.242647,
       "lon": 0.580539,
@@ -1592,7 +1681,8 @@
           "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOZkZfbHJUT3E3M0Z6VnQtYUFYdW5jUENsdHBhTXI3UHpMQ3FQR0N2c2dESE1xRlZkaTQ1LUkyR2xBUzd0eUI2UDRtZ2hpemVrUExvb01EZ2YzbzJfckN1YTNENjNRVUtzbjdVM2M4dVBjYkRBS0ZyUUwzOVZZNVZDYzB4Z3ZZemVRaU5SaV92SGdnenVHdWhybWdhUjBTY2JUOGc0cXRzYXgtM3NZUGVwMGlhQmFFcW5BNGNZYXMxdFRBbU52RGlIWnppTHZMQVFsaUxyU0ZTVlJETDQ?oc=5",
           "titre": "À Saint-Georges-du-Vièvre, le Crédit Agricole va fermer ses portes en juin - Actu.fr",
           "source": "Google News",
-          "date": "Fri, 14 Feb 2025 08:00:00 GMT"
+          "date": "Fri, 14 Feb 2025 08:00:00 GMT",
+          "tier": "D"
         }
       ],
       "controle_sirene": {
@@ -1612,6 +1702,8 @@
       "date_annonce": "Sun, 05 Oct 2025 07:00:00 GMT",
       "date_fermeture": null,
       "statut": "confirmé",
+      "statut_temporel": "inconnu",
+      "date_fermeture_approx": 0,
       "fiabilite": 4,
       "lat": 45.477646,
       "lon": 4.429392,
@@ -1622,7 +1714,8 @@
           "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9HNHY5Nm84TVJ2bEdEN01fb2Q5VDBjRTlFeXRJeE9CQzYzbnB2cHhCektXVV9vOHdodS1paUNMUkY1RnFzUER3X1NZTDNSRU1odVJhZnRlbHR3R3lfS3JrR0FPUFdQY1hiMWVIN1p0OGFmRjZBVHNDdFZBWnQ0dkk?oc=5",
           "titre": "Loire. L'agence BNP va fermer à La Talaudière : agacement et incompréhension chez les clients - Le Progrès",
           "source": "Google News",
-          "date": "Sun, 05 Oct 2025 07:00:00 GMT"
+          "date": "Sun, 05 Oct 2025 07:00:00 GMT",
+          "tier": "D"
         }
       ],
       "controle_sirene": {
@@ -1642,6 +1735,8 @@
       "date_annonce": "Fri, 03 Oct 2025 07:00:00 GMT",
       "date_fermeture": null,
       "statut": "confirmé",
+      "statut_temporel": "inconnu",
+      "date_fermeture_approx": 0,
       "fiabilite": 4,
       "lat": 47.082867,
       "lon": 1.33796,
@@ -1652,7 +1747,8 @@
           "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOQTNISl9BekdSYV9uXzNWYktSaDEySnEtWXFSMVk0eFNQdEMwdU9iMC1uUXVLYmtHN3dXWlJDZHRLbElyTHNYWmxvVnRvb0lCMHQxdFJMMjdtc19oQ1ljR0FCaVdRQzdoQUx3NVQxVHV1YTRHeld1ODhlNHhKRVFXWEtha1kwRnRTOFE2bFp2NjJwSVNKS1FoSzdaUXd5d2lDdUdkdHllRUJSQnAzdTd3V2FjWklvOEF4Y3AyaFVKRFFSNTQ5bjFsai1EbUQ5TFVHbVE?oc=5",
           "titre": "Dans l’Indre, l’agence du Crédit agricole d’Écueillé bientôt fermée - lanouvellerepublique.fr",
           "source": "Google News",
-          "date": "Fri, 03 Oct 2025 07:00:00 GMT"
+          "date": "Fri, 03 Oct 2025 07:00:00 GMT",
+          "tier": "D"
         }
       ],
       "controle_sirene": {
@@ -1672,6 +1768,8 @@
       "date_annonce": "Tue, 06 Aug 2024 07:00:00 GMT",
       "date_fermeture": null,
       "statut": "confirmé",
+      "statut_temporel": "inconnu",
+      "date_fermeture_approx": 0,
       "fiabilite": 4,
       "lat": 44.48158,
       "lon": 1.276823,
@@ -1682,7 +1780,8 @@
           "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOeFhVSVdmNFBmbnpiOUxua19zUWowZGU5Tno2Ull6RGlxRXk5eF9yQ3JUWExLYXNXelV6OENNZ3ZFam5oYUxQQ05nNVBzU0hqaWlKb2RGVzJEMzRLM2hGNjhmdkNDWWJQckxjTVpteDNlLWdRemVDQ2dTWHAtX1UycGhzMm1MQzgtajRSeHd0aFA2eEtOenFwQ296c0ZzUjA5b28xMEgtV1hXaldfYXZNWnJXOVo1LTAxaXZ3?oc=5",
           "titre": "Luzech : La mise au point du Crédit Agricole suite à la manifestation contre la fermeture de l’agence - Medialot",
           "source": "Google News",
-          "date": "Tue, 06 Aug 2024 07:00:00 GMT"
+          "date": "Tue, 06 Aug 2024 07:00:00 GMT",
+          "tier": "D"
         }
       ],
       "controle_sirene": {
@@ -1702,6 +1801,8 @@
       "date_annonce": "Sat, 26 Jul 2025 07:00:00 GMT",
       "date_fermeture": null,
       "statut": "confirmé",
+      "statut_temporel": "inconnu",
+      "date_fermeture_approx": 0,
       "fiabilite": 4,
       "lat": 45.035461,
       "lon": 3.980146,
@@ -1712,7 +1813,8 @@
           "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPcWdST2RqalJRVzMwNmRPQ1NDd2FYOUFwdkFEZ0lUWXl1ZW93RWxMaWNKaFBLWHFWU3QzU0ZRM0JKOERlenpYVmJxZXpGN2lMRzFVdVB4ZVM3RjdaZlFteUN0TTdkeUZEMGNEMnh2b1VWUDc1QXIwcEJCSmtxVHNUTlhCVWJnZmtVbTJrbXlrNlItejlxNC1HZ1FLaUUteUNpcDZRdUJrMDl3YjZCQWNxQmNsMUI4T2QtMnJxeTJMdEc3NnlfRzBOSkQzTTR2dk5hakRFUDBkX0xhLWVFb3ZuWlI3a3o5VDNaVEJQZm4zcGRrdlE?oc=5",
           "titre": "Fermeture de l'agence Crédit Agricole à Saint-Germain-Laprade : deux solutions sont envisagées - L’Éveil de la Haute-Loire",
           "source": "Google News",
-          "date": "Sat, 26 Jul 2025 07:00:00 GMT"
+          "date": "Sat, 26 Jul 2025 07:00:00 GMT",
+          "tier": "D"
         }
       ],
       "controle_sirene": {
@@ -1732,6 +1834,8 @@
       "date_annonce": "Tue, 22 Jul 2025 07:00:00 GMT",
       "date_fermeture": null,
       "statut": "projet",
+      "statut_temporel": "inconnu",
+      "date_fermeture_approx": 0,
       "fiabilite": 4,
       "lat": 45.378096,
       "lon": 3.2746,
@@ -1742,7 +1846,8 @@
           "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPbXcyMENRWVptSnpBSVpoS19JYmdkNGhNQlFydEx3YXR1SThxN2tqZ1pRYmE0ZUd4VmlqdGlaOXhEVV9iWFB5a1p5ZDd3UEVtSkF5VlR3SU1aYzJnS3VzUktKZ0swR29MaXRNcjV2dGo5Ul83RjVORnRzbVVJeFpORjZDNGZ2NmF0eUxXWjE0SWUwOTJiTERFVVhvT2FHU1JfMVRDWEVuQlR5R09mUWdhODBhNHhDRmQ1cWlFVkw1OERmZ1p4b3pKdC1jV1J2TWRrdUtRRmJvY0k5UFNJRVU2WllKRkV6eWtZdjFRc0JJSEFyRzFoSUp2MkRwQ1JBQQ?oc=5",
           "titre": "À Lempdes-sur-Allagnon, habitants et élus mobilisés contre la fermeture de l'agence du Crédit agricole - L’Éveil de la Haute-Loire",
           "source": "Google News",
-          "date": "Tue, 22 Jul 2025 07:00:00 GMT"
+          "date": "Tue, 22 Jul 2025 07:00:00 GMT",
+          "tier": "D"
         }
       ],
       "controle_sirene": {
@@ -1762,6 +1867,8 @@
       "date_annonce": "Mon, 22 Jul 2024 07:00:00 GMT",
       "date_fermeture": null,
       "statut": "confirmé",
+      "statut_temporel": "inconnu",
+      "date_fermeture_approx": 0,
       "fiabilite": 4,
       "lat": 44.394057,
       "lon": 1.789993,
@@ -1772,13 +1879,15 @@
           "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNbDZVaGh4SHo0YU56Q0tFZFVmLU1pQjFrS1R4cW42RjEycUpBa0w0OE53WV9BNXhwUl91SXZYVXc3MW12bHlwbEo0NVJBMHBNSDUzZUxKZ1VIVVl6SGtjWDZmTXRxVVl4NmRJa005SXhyTkFqUWpodXpTcU0xYTlQbTVXNy1EX2JBcl9BQnpEVkc5dDRTalNvVTBtV3dyTW5vTmtmWlhzTzg2dFVsRlg4bTJlMHlZZDNyM3VqdDlhWlJKREhxSm5ISGJpOGhEUWhCU1E?oc=5",
           "titre": "Après l’annonce de la fermeture de l’agence du Crédit Agricole, le maire de Limogne réagit - ladepeche.fr",
           "source": "Google News",
-          "date": "Mon, 08 Jul 2024 07:00:00 GMT"
+          "date": "Mon, 08 Jul 2024 07:00:00 GMT",
+          "tier": "D"
         },
         {
           "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOX0ppaV9xV0lLVlRZM0NPY2oxWU5ieURZbWhtYlI3V0JROXltOFI1RFQ5NjZ6MnVJNUFYWER6dlBUakNJYkYzbkFTN3FxZG11OXRiTUxhckstdzBLZ0VhSVp6YmFHTUpKaWlCajR2OFh2b0s3eDY3YzgzWFEyRHlmUU5OcURCcGZRd2haTnlfdC11U2djTGh6SldSdE93R2J0R1NMOUloZF96VmVsVzh5azhkSFpRWGVvcUhnekN6SmgwcjFPVGxST3l1MER5c3dvUEtQYjNTUUprdXdKYVlaakduTUljN0IxOUZhOE55RjFrQQ?oc=5",
           "titre": "Lot : 140 personnes manifestent contre la fermeture de l'agence Crédit Agricole à Limogne-en-Quercy - Actu.fr",
           "source": "Google News",
-          "date": "Mon, 22 Jul 2024 07:00:00 GMT"
+          "date": "Mon, 22 Jul 2024 07:00:00 GMT",
+          "tier": "D"
         }
       ],
       "controle_sirene": {
@@ -1798,6 +1907,8 @@
       "date_annonce": "Sat, 04 Oct 2025 07:00:00 GMT",
       "date_fermeture": null,
       "statut": "confirmé",
+      "statut_temporel": "inconnu",
+      "date_fermeture_approx": 0,
       "fiabilite": 4,
       "lat": 45.785706,
       "lon": 1.24509,
@@ -1805,16 +1916,25 @@
       "created_at": "2026-06-25T08:51:57.364129+00:00",
       "sources": [
         {
+          "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPTnZidDR3ZWRrSnRWMDEzcVpiN2JIS2d3SndPWDctMzZJbV9aeHFXd1Q0NHd4ZU9PVzd4M2pvVFlMYUtBWUlRN0ZIN1RDQzZOdEF1SlFRTi0xZlpleFBTY1lPQnpVMmx6ZV9UWnBBQjhIZHBfRjBuZHV2ZERFWmUyTm9CYUNZYzBlSExocWtiV3d4SjNkWTAtWnJRZ3JCRXRvZllNbjVqYkV6ZDI3c0gzSzdKNDZWNVRXVmRoWXNiVVkzdEhyOWxxdFV0U0lQSENKQTM3eW1rUVQ1Z0dMMGVqWkRIekwwbEc3VmVSdzJmTzcwckVyN1E?oc=5",
+          "titre": "Condat-sur-Vienne se mobilise contre la fermeture annoncée de son agence du Crédit Agricole - Le Populaire du Centre",
+          "source": "Google News",
+          "date": "Tue, 07 Oct 2025 07:00:00 GMT",
+          "tier": "D"
+        },
+        {
           "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxPbXJYVlA0amdDdzdpMWh6SkpDRG5rUmpodW9IamlxR2RRQjZsR25wbWFlVHFaVk9FMWlZa3dNRUtNalF3b252NEJIOTEwRXo0OHRqcHFPb0NvMmNWSHhCSVhjVzBQdlJlZTdTOVRzMnFycmRqRFREemlBQzFtNEZqSFdPOWJTWWoyMUYzemtrWURHdzhBQjlsSjRfYm1xSkVQZERBbWhnQTFRbFZQR2FhR3k3LS15RW1FT1QxUlV5RWZ4VkVxZXB2VW83TThzU0lvMGlkbl9yUmlSazNnT0M0NHVjbGc1ME1rclZKSDJoTGs0RGRBNG5FRV96U0hJX1VmdEdKOE9zQ1lzMVNDZzZUNDI3VHRFcUM5eDJR?oc=5",
           "titre": "Le Crédit agricole va fermer son agence de Condat-sur-Vienne, \"c'est rageant\" pour la maire déterminée à se battre - ici.fr",
           "source": "Google News",
-          "date": "Fri, 03 Oct 2025 07:00:00 GMT"
+          "date": "Fri, 03 Oct 2025 07:00:00 GMT",
+          "tier": "D"
         },
         {
           "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPSUUxelBNR0t1QWk2cFNqOENfZVZQMEpmVDBuYlhhbm9IRm9jdG8tSXVKaC1KdHA1bTlCRG5RSHNLMTBodTV4MnhkNGloNlowNHdLcHh2azhhMHYzTTNyTDJkNnV3V3FPZTV4TEZCVFFKU3RWdmMwd1ZrbXVRZmlMUFpJM3VucXRScC1uUmJWU2pfcjlQU1lFeElNOEhmOUpKR1UxNkdQZzk5UW43eS1LZHYtZHdrS3ZVR3BxUjY0Rm5sREhjdkw0YVIxY18?oc=5",
           "titre": "Une quatrième agence du Crédit agricole va fermer à Condat-sur-Vienne - ici.fr",
           "source": "Google News",
-          "date": "Sat, 04 Oct 2025 07:00:00 GMT"
+          "date": "Sat, 04 Oct 2025 07:00:00 GMT",
+          "tier": "D"
         }
       ],
       "controle_sirene": {
@@ -1834,6 +1954,8 @@
       "date_annonce": "Fri, 11 Jul 2025 07:00:00 GMT",
       "date_fermeture": null,
       "statut": "confirmé",
+      "statut_temporel": "inconnu",
+      "date_fermeture_approx": 0,
       "fiabilite": 4,
       "lat": 44.99037,
       "lon": 4.001364,
@@ -1844,7 +1966,8 @@
           "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPNmE0TFN0b2xsWWI4cFRLOGJteFVXWXYwRldhTndicVRxQzlDNDhYNW5IT2IyWG8zV2VlMElLaWR6clV5Nkt6d2c4NUlsVEI2TnV3QTF2SE9uMHdLVmJlblV3MGxfVTVIZkxNbmRYSXdVeDl6VVRWdVN6MHRoNlJ5N2NNTmtnRzQwVUlrN21yOFZnUlVCcEpTdHFmXzlyZDRveTVPSTFDZ1FDb3R3UjVyNnFHNTJINjF6VjBmX0tLWWtKSWwxZlJ2cXJBcGtCNGdMMnd5Q243ZFNpNWYzMjlVVW90VVNUdWs?oc=5",
           "titre": "Fermetures d'agences Crédit Agricole : la mobilisation et la grogne à Lantriac et au Mazet-Saint-Voy - La Commère 43",
           "source": "Google News",
-          "date": "Fri, 11 Jul 2025 07:00:00 GMT"
+          "date": "Fri, 11 Jul 2025 07:00:00 GMT",
+          "tier": "D"
         }
       ],
       "controle_sirene": {
@@ -1864,6 +1987,8 @@
       "date_annonce": "Thu, 05 Sep 2024 07:00:00 GMT",
       "date_fermeture": null,
       "statut": "confirmé",
+      "statut_temporel": "inconnu",
+      "date_fermeture_approx": 0,
       "fiabilite": 4,
       "lat": 44.536575,
       "lon": 2.317078,
@@ -1874,7 +1999,8 @@
           "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOMGxnRXoyYlFtZnlRS3FyZ1lCM1hyTlc0RUZaUkd2THQ3NmVCRUVIZ083R2hFWEdZZ1A2b2Z6bkFWNnVaZ0ozdkdXU3ZWb1BTZDFBM2Z3M0hVTFZnemdMcmFTSzBIek9MOUdQeDRpNkZlYXNFdFNmVGhQUFpvd01RRUNJYlpuU3FGVEUtVjQtcFE0X004YUFaN3BXR1FkVVhsWVEwbXowUzRYM1pFZ1hleDgwcFdDbEtRbXdCVm1iTHZTYy1ISC1raVg0eWZZa1NJaGtPUS1hcmVxMXNhTmVfNnVHQWN2czVUcUN0WWphb0ZUUHl0X2h4Z3JRTkxiQQ?oc=5",
           "titre": "\"On se bagarre pour maintenir les services de proximité\"… les élus et la CGT contre la fermeture du Crédit Agricole à Firmi - ladepeche.fr",
           "source": "Google News",
-          "date": "Thu, 05 Sep 2024 07:00:00 GMT"
+          "date": "Thu, 05 Sep 2024 07:00:00 GMT",
+          "tier": "D"
         }
       ],
       "controle_sirene": {
@@ -1894,6 +2020,8 @@
       "date_annonce": "Tue, 18 Feb 2025 08:00:00 GMT",
       "date_fermeture": null,
       "statut": "confirmé",
+      "statut_temporel": "inconnu",
+      "date_fermeture_approx": 0,
       "fiabilite": 4,
       "lat": 50.643784,
       "lon": 2.403358,
@@ -1904,7 +2032,8 @@
           "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPenBDRTVaNE5MWHVXMlhSUWwtZVJxbHZnMnU2Y0RrOHpTM05YOXNBTVY4MHdzd250TUhERFR6cktzSm1oQk94YVdmeGJsZktVNWx5TWhZRlRsbmZ0TUt6WlozUkJxQWJ6TEFWVXpXZzExSmJKbFU2b3kxWnBWVU1kRU5iMVlSOUxsWEVNalVQMEVrSGVzV3ZKRk5MR051cXNpaXdad21rMnBVTGd3N0hBLUZn?oc=5",
           "titre": "BNP Paribas va fermer son agence à Aire-sur-la-Lys en avril - La Voix du Nord",
           "source": "Google News",
-          "date": "Tue, 18 Feb 2025 08:00:00 GMT"
+          "date": "Tue, 18 Feb 2025 08:00:00 GMT",
+          "tier": "D"
         }
       ],
       "controle_sirene": {
@@ -1924,6 +2053,8 @@
       "date_annonce": "Thu, 26 Jun 2025 07:00:00 GMT",
       "date_fermeture": null,
       "statut": "confirmé",
+      "statut_temporel": "inconnu",
+      "date_fermeture_approx": 0,
       "fiabilite": 4,
       "lat": 50.330067,
       "lon": 3.528053,
@@ -1934,7 +2065,8 @@
           "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNTkstdzNnbXRCU3RXTWlPU1l5eDFvM3NDV2hNY0tRMWhVejRKRG9CaGFLX0FzdHlxLUVpaDNCdnRrc0RaeVhhTC1LWWgxQ2JMazk0MzV6Zm1PY3FXZFZla2ZKUnFUTUEtTlFMMlZ6YmJmU3JtMDVMM1NWaGxsR0N4a0JfYkNLQnJOek1aY1RXcWhMTkFwOWhIOWFuZm1pMHpuZHdoaWhLVUJqN0xHMjFjcTRKRlhhMUJFV3VhdkluUTVMV2xVMmg1SldaV3M?oc=5",
           "titre": "L’agence BNP Paribas d’Aulnoy-lez-Valenciennes va fermer, le conseil municipal adopte une motion - La Voix du Nord",
           "source": "Google News",
-          "date": "Thu, 26 Jun 2025 07:00:00 GMT"
+          "date": "Thu, 26 Jun 2025 07:00:00 GMT",
+          "tier": "D"
         }
       ],
       "controle_sirene": {
@@ -1954,6 +2086,8 @@
       "date_annonce": "Mon, 12 Aug 2024 07:00:00 GMT",
       "date_fermeture": null,
       "statut": "confirmé",
+      "statut_temporel": "inconnu",
+      "date_fermeture_approx": 0,
       "fiabilite": 4,
       "lat": 47.835908,
       "lon": 2.73731,
@@ -1964,7 +2098,8 @@
           "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOQnAzakJKNDFsNE1wSUJzbVU2TEhYRWxtSE81OE9EUFRDMjRnRExGeV90SmMtOXNtSXRzY05UT3o1amFFMnd6SFh6MXR6cEdtRUNuS25SbkFQY0tIU29ESWktNjZoa1I0N2EyTjMzZU14VnQ0V3g3ME9kdjhHYzRZQjc4MjJVajZBbklubVNRaTRVN1Nwb1N4V2RycHhUSnRGdVZGSC0yNllzMVBJdy13RC1VZEpPcHUzUjA1dGtORFhKSW1oSmk3Y2hMZ2NyRDBLNGh1LThoMTFfbVREN0VhS0pSS3lyTURBV2tqRVZ1UEF0UVk?oc=5",
           "titre": "Le maire et les habitants de Nogent-sur-Vernisson s'alarment de la fermeture d'un guichet de la Caisse d'Épargne - ici.fr",
           "source": "Google News",
-          "date": "Mon, 12 Aug 2024 07:00:00 GMT"
+          "date": "Mon, 12 Aug 2024 07:00:00 GMT",
+          "tier": "D"
         }
       ],
       "controle_sirene": {
@@ -1984,6 +2119,8 @@
       "date_annonce": "Fri, 05 Dec 2025 08:00:00 GMT",
       "date_fermeture": null,
       "statut": "projet",
+      "statut_temporel": "inconnu",
+      "date_fermeture_approx": 0,
       "fiabilite": 3,
       "lat": 47.551621,
       "lon": 6.433516,
@@ -1994,7 +2131,8 @@
           "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQazdrWk5aNUVhcExhLXVYMElBQ0N2NmFRZnFXZnJfMWJLYTEwQVg3ZFdyZUVjdmFqVi1jWlBLTUppbGtKRWg1d1hZR0d5bGRFUGRBaXdNeFNpQ2VhcnM2b0xlUjk0TkFEWERKVFQyZV9zMlBGeTdwRjRvcUJLdDJrRlpNUTFzSGJPUzhLZEpvMHczSVl3UURpMFpjVHJ0YnRsVVlLV2V6ejBKdHFw?oc=5",
           "titre": "Villersexel : Ils se mobilisent contre la fermeture du Crédit Mutuel - Les Affiches de la Haute-Saône",
           "source": "Google News",
-          "date": "Fri, 05 Dec 2025 08:00:00 GMT"
+          "date": "Fri, 05 Dec 2025 08:00:00 GMT",
+          "tier": "D"
         }
       ],
       "controle_sirene": {
@@ -2014,6 +2152,8 @@
       "date_annonce": "Fri, 14 Feb 2025 08:00:00 GMT",
       "date_fermeture": "2027-02-28",
       "statut": "confirmé",
+      "statut_temporel": "inconnu",
+      "date_fermeture_approx": 0,
       "fiabilite": 4,
       "lat": 48.207978,
       "lon": -4.076463,
@@ -2024,7 +2164,8 @@
           "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNXy1Ra2dPanRBUnRiRS1KRHZyS0NzMU1PSUIzZnp5RElrOWpfaFNXNlhDM3phdk5QQ3lMRlBXb1k5cDduSUE4andXRVgtUlJJbFNUTzhpaGVqUmZtQ3JhYkRPRWo1ZmxpRjhmX1gxdXhqZ25GcF8yU1VPZXU2SzcxYzdtWi14c25RX1VkU2JwYk9iLTB2QkVfNy1rcU5CcTE2RzBXdWhobHZEWFQwbWdPVUNEQkFDd1U?oc=5",
           "titre": "À Châteaulin, l’agence du CIC va fermer fin février - Le Télégramme",
           "source": "Google News",
-          "date": "Fri, 14 Feb 2025 08:00:00 GMT"
+          "date": "Fri, 14 Feb 2025 08:00:00 GMT",
+          "tier": "D"
         }
       ],
       "controle_sirene": {
@@ -2044,6 +2185,8 @@
       "date_annonce": "Sun, 06 Apr 2025 07:00:00 GMT",
       "date_fermeture": null,
       "statut": "confirmé",
+      "statut_temporel": "inconnu",
+      "date_fermeture_approx": 0,
       "fiabilite": 4,
       "lat": 50.401769,
       "lon": 1.872062,
@@ -2054,7 +2197,8 @@
           "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPdng1dHE0UTRUTG5KcFlCalo5SWpRQlo3YVhpeWZ0VTBJMjJNN2lkellydDE1VEREc3NuRW9seERKQ0tDSHc1VjJQZHdKMm1IWU5Ub0d0Z2d4Z2Y1VkRva19rNVhvQ3JJVU95NmZFR0V6NldxWURsS2dTeWtKZWJqck1jN3FySDNaRVY5dEhFUHNNQkhtTnRxQ21jSm5FU2pZemlsU1M0R0wtZm81OFBiY01VNE1CQTV0ZnNiQVFJNkEwajZmVmVjTkljNkMwdw?oc=5",
           "titre": "Campagne-lès-Hesdin : l’agence bancaire du Crédit Agricole fermera ses portes en mai - La Voix du Nord",
           "source": "Google News",
-          "date": "Sun, 06 Apr 2025 07:00:00 GMT"
+          "date": "Sun, 06 Apr 2025 07:00:00 GMT",
+          "tier": "D"
         }
       ],
       "controle_sirene": {
@@ -2074,6 +2218,8 @@
       "date_annonce": "Mon, 20 Oct 2025 07:00:00 GMT",
       "date_fermeture": null,
       "statut": "confirmé",
+      "statut_temporel": "inconnu",
+      "date_fermeture_approx": 0,
       "fiabilite": 4,
       "lat": 50.835546,
       "lon": 2.418094,
@@ -2084,7 +2230,8 @@
           "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPbkI0MlJEamN2aXhGb1dzTi1sMUNTMTdrQ2p2OUVjZFJlaE4xRzlxVVEzaGpoRS03OVV1RTZPWWpXbERYRWJxVXUtOVM5MW8yT3JpbE1BOWpuM083SGdYemNfbHVDTkN4MEZ6ZTdFdkd3R2J0OU1tZjhNbUlqUVo3dlJvTkt4N2JlWFFEVElKRmNwazFWc3R5OWsxSWZSb25sMUY0M2YxMERkcW1LOVc1U3YwWTBBNzNEdWJsNg?oc=5",
           "titre": "Le Crédit agricole d’Arnèke va fermer, « un coup dur pour le village » - La Voix du Nord",
           "source": "Google News",
-          "date": "Mon, 20 Oct 2025 07:00:00 GMT"
+          "date": "Mon, 20 Oct 2025 07:00:00 GMT",
+          "tier": "D"
         }
       ],
       "controle_sirene": {
@@ -2104,6 +2251,8 @@
       "date_annonce": "Thu, 24 Jul 2025 07:00:00 GMT",
       "date_fermeture": null,
       "statut": "confirmé",
+      "statut_temporel": "inconnu",
+      "date_fermeture_approx": 0,
       "fiabilite": 4,
       "lat": 46.203059,
       "lon": 3.808981,
@@ -2114,7 +2263,8 @@
           "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNRE8wS21JdXpPNVNkU0lMOFYzci13eVczTGtFSHdsVmx0ZzJzdndyd21CVlNsUHA5dTdYUm1jdW8ybUdxSW4ySUN5dk9PM1NwdlFXeVlOLXYtR2pkc1BDSmJfeVlDbGRkaTBxZUNlUzc3VS1tMVpDM0I1YjJDekV5aC1nVkljVWc3UkxULVNhbVhEMDE4Nzl1bE9Idw?oc=5",
           "titre": "Saint-Martin-d’Estréaux. Le Crédit agricole va fermer : un point vert en projet pour les retraits d'argent - Le Progrès",
           "source": "Google News",
-          "date": "Thu, 24 Jul 2025 07:00:00 GMT"
+          "date": "Thu, 24 Jul 2025 07:00:00 GMT",
+          "tier": "D"
         }
       ],
       "controle_sirene": {
@@ -2134,6 +2284,8 @@
       "date_annonce": "Tue, 15 Jul 2025 07:00:00 GMT",
       "date_fermeture": null,
       "statut": "confirmé",
+      "statut_temporel": "inconnu",
+      "date_fermeture_approx": 0,
       "fiabilite": 4,
       "lat": 45.357552,
       "lon": 4.260246,
@@ -2144,7 +2296,8 @@
           "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQc1d1SkZNQ1R4ZFBYOG9FQldOeEZncXd3ZjJMVTNYUUhfUG44WENxc1RxNFdRQzdtazFvUjFPTFc1QTloaS0xQk9tSmR2YWpNSFRJa3FNVmYtZUcwTGxqOGNvWHRORnNUeTI1ajZnVm5yZ2hDRGtMb2JEQUlSalQ5MVA4anRYamthUVlLQVNpZDN1Vk9NbWJ1TzZkaktSdkVGdWFrZGcxc3JOTHA2MzFhQjdTanpyM0xtNHNzcnAxN0o0SV85eHQtSWFIUW1MbjliVmlRNnZxQlA2WGdLTzEycG9DbHV4djNa?oc=5",
           "titre": "Saint-Ferréol-d’Auroure : l’agence du Crédit Agricole va fermer… mais pas le distributeur de billets - La Commère 43",
           "source": "Google News",
-          "date": "Tue, 15 Jul 2025 07:00:00 GMT"
+          "date": "Tue, 15 Jul 2025 07:00:00 GMT",
+          "tier": "D"
         }
       ],
       "controle_sirene": {
@@ -2164,6 +2317,8 @@
       "date_annonce": "Wed, 08 Oct 2025 07:00:00 GMT",
       "date_fermeture": null,
       "statut": "projet",
+      "statut_temporel": "inconnu",
+      "date_fermeture_approx": 0,
       "fiabilite": 3,
       "lat": 47.084619,
       "lon": 2.037058,
@@ -2174,7 +2329,8 @@
           "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxPdDR2Y1Y3a0ozQmpfeGR6YWlMMjhlWXhVSk5QZ2xUSHFIMGMtR2JIemIxV3FDREk0MWNxYUVvOW9oYmhtdFo4aWF4NklqQmduU29aZmFFOHBfQWJSZGh4eTlReDRwNHJJSlRlNVhhdFd0OVJ6blpiX3hiekNSXzNJbngtRlZYdk9KaUZzdVNrbHhzR29lMmlLOWRieDBaMUpsUnQ2dGV0NU5PdlVaTVYyWUJsOHFQQVU5THZIejZkYVM5aVkyWkVvQS1nQ2h4a2V3NkVDNDRFa0l0UUpKdGVjcDVYRVpkMUx0Sk83SERrN1BscWg3ZXpESjRER1ZaWFQxekhyUmVCMA?oc=5",
           "titre": "Reuilly se mobilise contre la fermeture du Crédit agricole : près de 600 signatures récoltées sur la pétition - lanouvellerepublique.fr",
           "source": "Google News",
-          "date": "Wed, 08 Oct 2025 07:00:00 GMT"
+          "date": "Wed, 08 Oct 2025 07:00:00 GMT",
+          "tier": "D"
         }
       ],
       "controle_sirene": {
@@ -2194,6 +2350,8 @@
       "date_annonce": "Sun, 26 Oct 2025 07:00:00 GMT",
       "date_fermeture": null,
       "statut": "confirmé",
+      "statut_temporel": "inconnu",
+      "date_fermeture_approx": 0,
       "fiabilite": 4,
       "lat": 50.468828,
       "lon": 2.739898,
@@ -2204,7 +2362,8 @@
           "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNdFp5eExEYUVVVHZRM09lN2hGOUMwR0Fua21SLUtOQ2dxZ1hvV3E3RWRaRE02SVFSLVdtcFQ2RndrQ0lHNkFXTzJQZHhBeEZVWmFTVTBFMkNCWlRoNEcxWnN2a05FVlpsTnhkeS1yOFczVzBlQTZUUFZUU0hTUDRfOVFZVlpxQU45SmhOT0V5Mmd3S1ZLSmx5TXQwcG85RmdQcDZHLTR3N3NwYXBLZFFXblNCSHIwUVRQ?oc=5",
           "titre": "Le Crédit agricole fermera ses portes prochainement à Mazingarbe - La Voix du Nord",
           "source": "Google News",
-          "date": "Sun, 26 Oct 2025 07:00:00 GMT"
+          "date": "Sun, 26 Oct 2025 07:00:00 GMT",
+          "tier": "D"
         }
       ],
       "controle_sirene": {
@@ -2241,6 +2400,19 @@
       "score": 4,
       "raison": "signal faible Légifrance sans agence nominative validée",
       "created_at": "2026-06-24T14:07:47.295722+00:00"
+    },
+    {
+      "id": "2aa2301ee6deb319",
+      "banque": "Crédit Agricole",
+      "departement": null,
+      "titre": "Accord sur les mesures d'accompagnement social des projets de réorganisation impliquant la <mark>suppression</mark> d'au moins deux postes dans une même entité <mark>(agence</mark> ou service) au sein de la Caisse régionale de <mark>Crédit Agricole</mark> Charente-Maritime Deux-Sèvres",
+      "extrait": "[...] PROJETS DE REORGANISATION IMPLIQUANT LA SUPPRESSION D’AU MOINS DEUX POSTES DANS UNE MEME ENTITE (AGENCE OU SERVICE) AU SEIN DE LA CAISSE REGIONALE DE CREDIT AGRICOLE MUTUEL CHARENTE-MARITIME DEUX-SEVRES [...] DEUX-SEVRES _________________________________ Préambule La Caisse Régionale de Crédit Agricole Mutuel Charente-Maritime Deux-Sèvres exprime sa volonté de trouver par l’affectation interne, des solutions satisfaisantes [...] CAISSE REG CREDIT AGRICOLE MUTUEL 17-7",
+      "url": "https://www.legifrance.gouv.fr/jorf/id/ACCOTEXT000041865878",
+      "source": "Légifrance",
+      "date": "",
+      "score": 4,
+      "raison": "signal faible Légifrance sans agence nominative validée",
+      "created_at": "2026-06-24T14:08:08.501141+00:00"
     },
     {
       "id": "0d0ba25cd81ec96b",
@@ -2451,6 +2623,19 @@
       "created_at": "2026-06-25T08:53:56.763329+00:00"
     },
     {
+      "id": "224dde03c371ffc5",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Ouvert ou fermé pour la Saint-Jean? - TVA Nouvelles",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMifkFVX3lxTFA3NU9FMFdnRDdEWkJacUdISGZSWE5zYmRKS25WLVUxVlZLNFFBTTRXX1N1ZVJEM24wbDBVS1FXdzZDNE1tRjVHaXNqbjFseEFzeU1Pc1RQb2VxbVlnUGtZanNjUFFjbVpaNkZKQlYzU2xkVFdrSTJ5dEM4LWl6dw?oc=5\" target=\"_blank\">Ouvert ou fermé pour la Saint-Jean?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">TVA Nouvelles</font>",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFA3NU9FMFdnRDdEWkJacUdISGZSWE5zYmRKS25WLVUxVlZLNFFBTTRXX1N1ZVJEM24wbDBVS1FXdzZDNE1tRjVHaXNqbjFseEFzeU1Pc1RQb2VxbVlnUGtZanNjUFFjbVpaNkZKQlYzU2xkVFdrSTJ5dEM4LWl6dw?oc=5",
+      "source": "Google News",
+      "date": "Wed, 18 Jun 2025 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-06-25T15:03:49.293900+00:00"
+    },
+    {
       "id": "223e12851f8d37b8",
       "banque": "CCF",
       "departement": null,
@@ -2503,6 +2688,19 @@
       "created_at": "2026-06-25T08:53:08.948744+00:00"
     },
     {
+      "id": "7ad930d7c258a140",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Journée nationale des patriotes: voici les commerces et services qui seront ouverts ou fermés le 19 mai 2025 - Salut Bonjour",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMi3wFBVV95cUxPVzhwQWR5MV9rQWZBTDJXMFNnX1lna0JLaDgzY1BtTXJxdlFGTzBsaWpPaWc3eGFzdUliT1kwRVF2a0RBWGZaUURBX0FzRXdRMUxxczBvRWdXVXlJN0pITEZZYU53SG1TSUwxV2NkWHEwenl1NVU0OWd0ZEZMUDVjRVBxOEhJNkpJSWZtc0JHZjV4Q0VqWFJWbUdmNWV5VFZuV0dEQzBSWHA4ak5Bb2hqTFhGQW5jVU5YSXRreGJVb0NiMWt4Q1Iyam1wdUxZR1p5SEw5alhtT1pfOHR1WFpj?oc=5\" target=\"_blank\">Journée nationale des patriotes: voici les commerces et services qui seront ouverts ou fermés le 19 mai 2025</a>&nbsp;&nbsp;<fo",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPVzhwQWR5MV9rQWZBTDJXMFNnX1lna0JLaDgzY1BtTXJxdlFGTzBsaWpPaWc3eGFzdUliT1kwRVF2a0RBWGZaUURBX0FzRXdRMUxxczBvRWdXVXlJN0pITEZZYU53SG1TSUwxV2NkWHEwenl1NVU0OWd0ZEZMUDVjRVBxOEhJNkpJSWZtc0JHZjV4Q0VqWFJWbUdmNWV5VFZuV0dEQzBSWHA4ak5Bb2hqTFhGQW5jVU5YSXRreGJVb0NiMWt4Q1Iyam1wdUxZR1p5SEw5alhtT1pfOHR1WFpj?oc=5",
+      "source": "Google News",
+      "date": "Wed, 14 May 2025 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-06-25T15:03:45.831528+00:00"
+    },
+    {
       "id": "b2f20fee46751f91",
       "banque": "Crédit Agricole",
       "departement": null,
@@ -2540,6 +2738,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T08:49:16.752398+00:00"
+    },
+    {
+      "id": "4939f1284737cd53",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Fermeture d'ING en France: les démarches à faire si vous êtes client de la banque - Challenges",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMi2AFBVV95cUxOZTdOOGREX3RkQTNSVDBhTkVKSUNFMnNkRl9jSGlJWWs5QlE4bm1RZTBXWVkzRU83Tk8zaTNaTG9oUzMwYXlobm5iSlUxVHZCY3JWeFVqN0Y4Xy0tMWpiYnJtQWtrZkdLc3JJVmUyVTFhR0wyYkJ3SXVPYkhsZ2FwaTVoLVNNRm5mcURKOWtkbjZTZ0V0SWlMTkFQSnZPVW5TaWRUOVhOb0ViYWUyaE0yaXBpaEs0QXktRk1NM2VVQ2NYWUVCektlTTZ3dy1hMFVfcVItd3FOcmc?oc=5\" target=\"_blank\">Fermeture d'ING en France: les démarches à faire si vous êtes client de la banque</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Challenges</font>",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOZTdOOGREX3RkQTNSVDBhTkVKSUNFMnNkRl9jSGlJWWs5QlE4bm1RZTBXWVkzRU83Tk8zaTNaTG9oUzMwYXlobm5iSlUxVHZCY3JWeFVqN0Y4Xy0tMWpiYnJtQWtrZkdLc3JJVmUyVTFhR0wyYkJ3SXVPYkhsZ2FwaTVoLVNNRm5mcURKOWtkbjZTZ0V0SWlMTkFQSnZPVW5TaWRUOVhOb0ViYWUyaE0yaXBpaEs0QXktRk1NM2VVQ2NYWUVCektlTTZ3dy1hMFVfcVItd3FOcmc?oc=5",
+      "source": "Google News",
+      "date": "Wed, 11 Dec 2024 08:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-06-25T15:03:30.405730+00:00"
     },
     {
       "id": "8e093d005308ab94",
@@ -2592,6 +2803,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T08:48:49.245533+00:00"
+    },
+    {
+      "id": "9cc3219998078e86",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "A Orléans, le crédit municipal va fermer définitivement en juin 2025 - ici.fr",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMitwFBVV95cUxOaDlTLVMxeEtVQ05sTjR6SVZtbE5BSGdIYThHTFIzRHJBOTVJU3JLZlhqRS1WdHJvajI4Zi1XTFU2M0Y2RFk0eTdneXpoUXVpc3ZJaHJxektjemVYUnRBbEk1S3gxb1dkU3M2T2NGSUNMeU9wY2NPQUtPRVBaaUZxVW1lT3lhNTUtSWNZQ1ZLQThqQnR6Wi1ySjJaQzlPdlI3MTdiS2x4Q2sxR2FsNkRRVGVhZ1dDb00?oc=5\" target=\"_blank\">A Orléans, le crédit municipal va fermer définitivement en juin 2025</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">ici.fr</font>",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOaDlTLVMxeEtVQ05sTjR6SVZtbE5BSGdIYThHTFIzRHJBOTVJU3JLZlhqRS1WdHJvajI4Zi1XTFU2M0Y2RFk0eTdneXpoUXVpc3ZJaHJxektjemVYUnRBbEk1S3gxb1dkU3M2T2NGSUNMeU9wY2NPQUtPRVBaaUZxVW1lT3lhNTUtSWNZQ1ZLQThqQnR6Wi1ySjJaQzlPdlI3MTdiS2x4Q2sxR2FsNkRRVGVhZ1dDb00?oc=5",
+      "source": "Google News",
+      "date": "Wed, 06 Nov 2024 08:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-06-25T15:03:19.995035+00:00"
     },
     {
       "id": "eab0e4f08cc4f5a6",
@@ -2750,6 +2974,19 @@
       "created_at": "2026-06-25T08:49:58.640639+00:00"
     },
     {
+      "id": "456fc501939ed9a7",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Togo : Orabank annonce la fermeture de 2 autres agences en mars - Togo Daily News",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE02b1NsRTdBVWFtRU5XZVU1VF83VXA2LXhCZWtDTUpDQjhwUnBMMnE3cXRLNG52c1hEUXZJaklNX1U2SGhKbUk3OXdqSld2ajZpZ2h5V2J2SDRNdw?oc=5\" target=\"_blank\">Togo : Orabank annonce la fermeture de 2 autres agences en mars</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Togo Daily News</font>",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE02b1NsRTdBVWFtRU5XZVU1VF83VXA2LXhCZWtDTUpDQjhwUnBMMnE3cXRLNG52c1hEUXZJaklNX1U2SGhKbUk3OXdqSld2ajZpZ2h5V2J2SDRNdw?oc=5",
+      "source": "Google News",
+      "date": "Tue, 18 Feb 2025 08:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-06-25T15:03:38.532558+00:00"
+    },
+    {
       "id": "9ed3039a0b005c3d",
       "banque": "Caisse d'Épargne",
       "departement": null,
@@ -2854,6 +3091,19 @@
       "created_at": "2026-06-25T08:53:11.685610+00:00"
     },
     {
+      "id": "992d2e8fa14dffbd",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "La Banque postale : la date de fermeture de sa banque en ligne se précise - MoneyVox",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMiyAFBVV95cUxOQTUxV2drUGVZTHZOU1E4eUhENUd5dDNvQVRneGs0bFVvYXBNRnRDUzdkazBpazZfTkxjTVQteUVFR1JSZ3pGakJxMnU0a24wV0kyY1ZyNFFIUDlvWWZSaGxxYldLSF9XRXRuSnRKOFBnSEVMdmlZb01WVmIzSnFYZFhFUEtNblhGT3BfYlRWejNfUllDS2pCSzk1V1JxQUVhbGRUTm5oZHQxRlhKMVY5T29nV2JzUkYxMVh1V2RDaUtrU1pqaTVoOA?oc=5\" target=\"_blank\">La Banque postale : la date de fermeture de sa banque en ligne se précise</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MoneyVox</font>",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOQTUxV2drUGVZTHZOU1E4eUhENUd5dDNvQVRneGs0bFVvYXBNRnRDUzdkazBpazZfTkxjTVQteUVFR1JSZ3pGakJxMnU0a24wV0kyY1ZyNFFIUDlvWWZSaGxxYldLSF9XRXRuSnRKOFBnSEVMdmlZb01WVmIzSnFYZFhFUEtNblhGT3BfYlRWejNfUllDS2pCSzk1V1JxQUVhbGRUTm5oZHQxRlhKMVY5T29nV2JzUkYxMVh1V2RDaUtrU1pqaTVoOA?oc=5",
+      "source": "Google News",
+      "date": "Thu, 27 Feb 2025 08:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-06-25T15:03:35.862726+00:00"
+    },
+    {
       "id": "96edd370eaee7539",
       "banque": "LCL",
       "departement": null,
@@ -2956,6 +3206,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-24T14:01:53.546013+00:00"
+    },
+    {
+      "id": "d246e7fda262eb0b",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Carte avalée et agence fermée : La justice condamne une banque à verser 5.000 DH à un client - Hespress Français - Actualités du Maroc",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMixAFBVV95cUxNRi1FdERLdVRZZU9KZ2ZESXR5Q3dwNXBKSlBVLUdYOXEwWWNBWkdHLUJ0U1Y3QTBacEJHakVYYjIxbFVFVUNmZW5zQjREd0NmVkowcVF2S21jdDItZDBnX3Z5UWlkUjdxTm9EX2d1Zk9vNkxad3JnQXE1TEk1eWlDd3VrZW9FMVpQd2dzZUtRQ3Rfbmo0TUU1cF9abk9FYUVsMU5QMW5xZm1EZmRBd01JTU5ubzVpbk9aeTY3SGFFTDBkZDZX?oc=5\" target=\"_blank\">Carte avalée et agence fermée : La justice condamne une banque à verser 5.000 DH à un client</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Hespress Français - Actualités du",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNRi1FdERLdVRZZU9KZ2ZESXR5Q3dwNXBKSlBVLUdYOXEwWWNBWkdHLUJ0U1Y3QTBacEJHakVYYjIxbFVFVUNmZW5zQjREd0NmVkowcVF2S21jdDItZDBnX3Z5UWlkUjdxTm9EX2d1Zk9vNkxad3JnQXE1TEk1eWlDd3VrZW9FMVpQd2dzZUtRQ3Rfbmo0TUU1cF9abk9FYUVsMU5QMW5xZm1EZmRBd01JTU5ubzVpbk9aeTY3SGFFTDBkZDZX?oc=5",
+      "source": "Google News",
+      "date": "Thu, 20 Nov 2025 08:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-06-25T15:02:58.998494+00:00"
     },
     {
       "id": "16cd9c9dfd7e9435",
@@ -3322,6 +3585,19 @@
       "created_at": "2026-06-25T08:56:01.169897+00:00"
     },
     {
+      "id": "5299e7e46e325dd3",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Fermetures de caisses et de banques: le Québec bat des records - Le Journal de Montréal",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMiqgFBVV95cUxNRGlUek1rSGxxeC1ZQzgtczdSRTZhc0R2ejJrcTczbTFnM3VaZElEQlJQbkVFWlJwbTZFWnNxenN6U2ZFTWV4Vlg3Z0w2Mlh5ZWM5QkR6alh5YU0yeU5UU0liRU1sTmtvSGZFNmtxbzFpU2NYbUxOeEZNOGpkbkV2VjYyVU8xSXZGRjZkY2x2WC1ETDQzM05kMTJCUGVoSWZQeUxrWXhiSkxfQQ?oc=5\" target=\"_blank\">Fermetures de caisses et de banques: le Québec bat des records</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Le Journal de Montréal</font>",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNRGlUek1rSGxxeC1ZQzgtczdSRTZhc0R2ejJrcTczbTFnM3VaZElEQlJQbkVFWlJwbTZFWnNxenN6U2ZFTWV4Vlg3Z0w2Mlh5ZWM5QkR6alh5YU0yeU5UU0liRU1sTmtvSGZFNmtxbzFpU2NYbUxOeEZNOGpkbkV2VjYyVU8xSXZGRjZkY2x2WC1ETDQzM05kMTJCUGVoSWZQeUxrWXhiSkxfQQ?oc=5",
+      "source": "Google News",
+      "date": "Sat, 21 Sep 2024 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-06-25T15:02:56.457722+00:00"
+    },
+    {
       "id": "af323f0da87e6069",
       "banque": "Crédit Mutuel",
       "departement": null,
@@ -3517,6 +3793,32 @@
       "created_at": "2026-06-25T08:54:11.460498+00:00"
     },
     {
+      "id": "b4ffc425aa493b7a",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Aid Al-Adha : Les banques fermées le 29 mai - L'Economiste",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMiigFBVV95cUxOWmNLWnZ6QXllem42MldMc05WLS1BV2U3VXFkem5xN0lYVjA3M2JNMUdkYVIyLVA2SjhmSGRDS2p5TjNMdTZLSUNXOEkzS0lhb1ExZThGTklMUkl5UjJXTXQwbUM1dmxDRG5DSGE3ZjFaT0EycWNSelVnejdZRDVYSllubzMwT3VSR2c?oc=5\" target=\"_blank\">Aid Al-Adha : Les banques fermées le 29 mai</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">L'Economiste</font>",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOWmNLWnZ6QXllem42MldMc05WLS1BV2U3VXFkem5xN0lYVjA3M2JNMUdkYVIyLVA2SjhmSGRDS2p5TjNMdTZLSUNXOEkzS0lhb1ExZThGTklMUkl5UjJXTXQwbUM1dmxDRG5DSGE3ZjFaT0EycWNSelVnejdZRDVYSllubzMwT3VSR2c?oc=5",
+      "source": "Google News",
+      "date": "Mon, 25 May 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-06-25T15:03:02.081176+00:00"
+    },
+    {
+      "id": "caefe35b75cb3dd9",
+      "banque": "HSBC",
+      "departement": null,
+      "titre": "HSBC compte fermer les comptes de plus de 1 000 clients riches du Moyen-Orient, dont des Libanais - L'Orient-Le Jour",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMi4AFBVV95cUxPWDNibzUzMmRuZGdRME15aTFtb2d2Ul9YVC1ieGRUaVI1ZzJKM1M4bWFGc3NoT1ZBbFJxSm41NVR5dTVxcjg4V3N2eWJNckVtUXVUbEV1MDlnQWtLcEZXVGFidGRxNzVVVkhNQ1RTWmNZOGhITjNiVGxYVjJHeVQ5dU05enJVYzNiSS12Yl9DMmFUY2JXTzFNdjA3OVVwT3gza1VQYWxIbUZzV2Q0NVpKQjNqblp4REhVTVc5UzhjUExocVAwNUluWDJ6NndEcUxuSGs1cGtLb1RGbUJtY254SQ?oc=5\" target=\"_blank\">HSBC compte fermer les comptes de plus de 1 000 clients riches du Moyen-Orient, dont des Libanais</a>&nbsp;&nbsp;<font color=",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPWDNibzUzMmRuZGdRME15aTFtb2d2Ul9YVC1ieGRUaVI1ZzJKM1M4bWFGc3NoT1ZBbFJxSm41NVR5dTVxcjg4V3N2eWJNckVtUXVUbEV1MDlnQWtLcEZXVGFidGRxNzVVVkhNQ1RTWmNZOGhITjNiVGxYVjJHeVQ5dU05enJVYzNiSS12Yl9DMmFUY2JXTzFNdjA3OVVwT3gza1VQYWxIbUZzV2Q0NVpKQjNqblp4REhVTVc5UzhjUExocVAwNUluWDJ6NndEcUxuSGs1cGtLb1RGbUJtY254SQ?oc=5",
+      "source": "Google News",
+      "date": "Mon, 25 Aug 2025 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-06-25T15:03:51.704410+00:00"
+    },
+    {
       "id": "4bc5a502419255ac",
       "banque": "BNP Paribas",
       "departement": null,
@@ -3541,6 +3843,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T08:53:16.925013+00:00"
+    },
+    {
+      "id": "e4cd3b9778893c0b",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Les banques Crelan et Axa sont la cible d'une alerte à la bombe et sont fermées par mesure de sécurité, notamment à Ans - L'Avenir",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMipAJBVV95cUxNVlA2bFQ5dTRtV1p3VmJmV0F4c25zZzJHZUdrVTZWMnpUNXhZem5PVFFQclRDN21xZ1lPSlZyeXRDeU0yRVEzM1NZWXV1eTZCOVdiOGZsVWFSQXNvVzN5NzNrSGlITkg3dk53aWZRN293a0R0anlLRWxEampJc043YXhSeWFBejBPWlhxR2U2a1RmMm1ES0x5aldDamdjVm1PcjVxOVUzVG1NcnU2Y3daTGswbDNWUWlUUzlvaWtxRlNBVFo4VWdySGxNSWlMZ1dqNGpVaE5KX3kxRTNKTl9XaGt3WGZnRnlrckw4a05vN05MbW1YWVhIQzRZaTBpVlVheUI5VURmUE5BbXFXMUhsZHV1RmpEOHRwemxpcmhrWFZYNkU4?oc=5\" target=\"_blank\">Les banques Crelan et Axa sont la c",
+      "url": "https://news.google.com/rss/articles/CBMipAJBVV95cUxNVlA2bFQ5dTRtV1p3VmJmV0F4c25zZzJHZUdrVTZWMnpUNXhZem5PVFFQclRDN21xZ1lPSlZyeXRDeU0yRVEzM1NZWXV1eTZCOVdiOGZsVWFSQXNvVzN5NzNrSGlITkg3dk53aWZRN293a0R0anlLRWxEampJc043YXhSeWFBejBPWlhxR2U2a1RmMm1ES0x5aldDamdjVm1PcjVxOVUzVG1NcnU2Y3daTGswbDNWUWlUUzlvaWtxRlNBVFo4VWdySGxNSWlMZ1dqNGpVaE5KX3kxRTNKTl9XaGt3WGZnRnlrckw4a05vN05MbW1YWVhIQzRZaTBpVlVheUI5VURmUE5BbXFXMUhsZHV1RmpEOHRwemxpcmhrWFZYNkU4?oc=5",
+      "source": "Google News",
+      "date": "Mon, 19 Aug 2024 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-06-25T15:03:16.812199+00:00"
     },
     {
       "id": "23446a22e7647f22",
@@ -3619,6 +3934,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T08:52:52.798275+00:00"
+    },
+    {
+      "id": "502e88588e7f7164",
+      "banque": "BNP Paribas",
+      "departement": null,
+      "titre": "Les agences BNP du Rœulx et Morlanwelz vont fusionner pour s’installer… à Houdeng : « Il va être plus difficile d’avoir rendez-vous à la banque que chez un médecin spécialiste » - Sudinfo",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMiyAFBVV95cUxPSGVqOXZDUDJJaFpWclpQdTQtZWpCVzQwN2NkcGotZGFxeFdZRWhIb1BvV0NDdWNIVXZDaV9jYXZmU3JPMjJCanh5cnBDRHhkYVgyYmxHczhnaG5heEFhUzdMcmlxWkVjWUJyUjRNVmxEY2JsMWxaVHg1R0ZlQ3poTFFYeVlRX2FMZ2ktajZTLWRoSXo1SS1KMWVzZU4xeGhqUkNKaXN2Z2NPRnVGUFlDZU1FRUhpTHVIYnpuT2NDUm15VHpZZGtJRA?oc=5\" target=\"_blank\">Les agences BNP du Rœulx et Morlanwelz vont fusionner pour s’installer… à Houdeng : « Il va être plus difficile d’avoir rendez-vous à la banque que chez un m",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPSGVqOXZDUDJJaFpWclpQdTQtZWpCVzQwN2NkcGotZGFxeFdZRWhIb1BvV0NDdWNIVXZDaV9jYXZmU3JPMjJCanh5cnBDRHhkYVgyYmxHczhnaG5heEFhUzdMcmlxWkVjWUJyUjRNVmxEY2JsMWxaVHg1R0ZlQ3poTFFYeVlRX2FMZ2ktajZTLWRoSXo1SS1KMWVzZU4xeGhqUkNKaXN2Z2NPRnVGUFlDZU1FRUhpTHVIYnpuT2NDUm15VHpZZGtJRA?oc=5",
+      "source": "Google News",
+      "date": "Mon, 04 Nov 2024 08:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-06-25T15:03:23.786247+00:00"
     },
     {
       "id": "852a355cb39d0f45",
@@ -4011,6 +4339,19 @@
       "created_at": "2026-06-25T08:50:37.574108+00:00"
     },
     {
+      "id": "5a3bef8e4ee1f827",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "C'est officiel, La Poste va fermer de nombreuses agences : voici lesquelles - Pleine Vie",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMizwFBVV95cUxNbGlTVVdsMkZRWTFWVUlXS3NHUE5oVnEyMERPbVRkY1FzeERtZmlabTZpdnJyQy1xUVpPQ2I1VGNGY29NOHNPcTIzYlRYd2FxbFQ2SnhOdGRnd01sWHRmbUhJWThETVNNejVfdkNsTVBfZmNOYU9BUG1DbHY0Zy1ZV2tLc3pMUml1cWRtZnVndWVpVFlKY1Nob1RRQzJDb2xmanFUTXJYSUszaUJDQUNtSGQ3RENxTVhqTlp5WFBzLThfbVAtbWN1VFZ5UUhBZFU?oc=5\" target=\"_blank\">C'est officiel, La Poste va fermer de nombreuses agences : voici lesquelles</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Pleine Vie</font>",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNbGlTVVdsMkZRWTFWVUlXS3NHUE5oVnEyMERPbVRkY1FzeERtZmlabTZpdnJyQy1xUVpPQ2I1VGNGY29NOHNPcTIzYlRYd2FxbFQ2SnhOdGRnd01sWHRmbUhJWThETVNNejVfdkNsTVBfZmNOYU9BUG1DbHY0Zy1ZV2tLc3pMUml1cWRtZnVndWVpVFlKY1Nob1RRQzJDb2xmanFUTXJYSUszaUJDQUNtSGQ3RENxTVhqTlp5WFBzLThfbVAtbWN1VFZ5UUhBZFU?oc=5",
+      "source": "Google News",
+      "date": "Fri, 04 Apr 2025 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-06-25T15:03:41.174478+00:00"
+    },
+    {
       "id": "187412b70a354748",
       "banque": "Crédit Agricole",
       "departement": null,
@@ -4037,6 +4378,19 @@
       "created_at": "2026-06-24T14:04:28.215224+00:00"
     },
     {
+      "id": "58f776d93ad91f86",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Un homme condamné à 18 mois de prison ferme après le braquage d'une banque à Ille-sur-Têt - ici.fr",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMi2wFBVV95cUxQcy12SjMySUpsOGw4MDB1NzlfeVJ2SzZoODdTd3F3UUdIRTZDUXlIRW9JWFAtREZ2OTc2TGgyYXVjaTJaQV82MVN0QXl4ZmNQelE1R1RSbkpubVZmbmhCWFdacG8zcjZncGdMaXZ6UTZpUGEzcmpTN05nZFQtWjhzS29xR1lTa0hwME5OeF9ReThoZHB0WXIzenNjaGlVeUZWejhjcjl3R0xCRUlnQmtZYzl4dmJTMWdHdG5LaEtldXdyS0dKY1hLSGFvdU0zM09wbFVPd0Z6TUxDUzQ?oc=5\" target=\"_blank\">Un homme condamné à 18 mois de prison ferme après le braquage d'une banque à Ille-sur-Têt</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">ici.f",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQcy12SjMySUpsOGw4MDB1NzlfeVJ2SzZoODdTd3F3UUdIRTZDUXlIRW9JWFAtREZ2OTc2TGgyYXVjaTJaQV82MVN0QXl4ZmNQelE1R1RSbkpubVZmbmhCWFdacG8zcjZncGdMaXZ6UTZpUGEzcmpTN05nZFQtWjhzS29xR1lTa0hwME5OeF9ReThoZHB0WXIzenNjaGlVeUZWejhjcjl3R0xCRUlnQmtZYzl4dmJTMWdHdG5LaEtldXdyS0dKY1hLSGFvdU0zM09wbFVPd0Z6TUxDUzQ?oc=5",
+      "source": "Google News",
+      "date": "Fri, 02 Aug 2024 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-06-25T15:03:10.887877+00:00"
+    },
+    {
       "id": "f211fa828a6785a4",
       "banque": "Crédit Agricole",
       "departement": null,
@@ -4048,19 +4402,6 @@
       "score": 3,
       "raison": "signal faible Légifrance sans agence nominative validée",
       "created_at": "2026-06-24T14:08:05.651756+00:00"
-    },
-    {
-      "id": "2aa2301ee6deb319",
-      "banque": "Crédit Agricole",
-      "departement": null,
-      "titre": "Accord sur les mesures d'accompagnement social des projets de réorganisation impliquant la <mark>suppression</mark> d'au moins deux postes dans une même entité <mark>(agence</mark> ou service) au sein de la Caisse régionale de <mark>Crédit Agricole</mark> Charente-Maritime Deux-Sèvres",
-      "extrait": "[...] PROJETS DE REORGANISATION IMPLIQUANT LA SUPPRESSION D’AU MOINS DEUX POSTES DANS UNE MEME ENTITE (AGENCE OU SERVICE) AU SEIN DE LA CAISSE REGIONALE DE CREDIT AGRICOLE MUTUEL CHARENTE-MARITIME DEUX-SEVRES [...] DEUX-SEVRES _________________________________ Préambule La Caisse Régionale de Crédit Agricole Mutuel Charente-Maritime Deux-Sèvres exprime sa volonté de trouver par l’affectation interne, des solutions satisfaisantes [...] CAISSE REG CREDIT AGRICOLE MUTUEL 17-7",
-      "url": "https://www.legifrance.gouv.fr/jorf/id/ACCOTEXT000041865878",
-      "source": "Légifrance",
-      "date": "",
-      "score": 3,
-      "raison": "signal faible Légifrance sans agence nominative validée",
-      "created_at": "2026-06-24T14:08:08.501141+00:00"
     },
     {
       "id": "c301c70eba4f40b4",
@@ -4230,6 +4571,19 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T08:55:29.574944+00:00"
+    },
+    {
+      "id": "d4407f85cbfb18a0",
+      "banque": "CCF",
+      "departement": null,
+      "titre": "Banque : CCF va supprimer 1.400 postes - La Tribune",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMipAFBVV95cUxPNW00d1d1YzVDOEJ4RDdmSjdYajdBd1dNdkQtdm5FcUJIZWd5UEcwczVocG5ERDRzY0ZCUXdaWVpva0RFbmhab2ViOUhFWHZoSWg0RDdRNlVnMGZ2MVRJMzByZHBmRE8wajFTRDA2Y2tid2FKS1Q3OVhNb2VTaHNfZkY5MG4wdjZGQU5vVFgxVTU5cUl1OE4xRUFZR1luMGlZNi1yZw?oc=5\" target=\"_blank\">Banque : CCF va supprimer 1.400 postes</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">La Tribune</font>",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPNW00d1d1YzVDOEJ4RDdmSjdYajdBd1dNdkQtdm5FcUJIZWd5UEcwczVocG5ERDRzY0ZCUXdaWVpva0RFbmhab2ViOUhFWHZoSWg0RDdRNlVnMGZ2MVRJMzByZHBmRE8wajFTRDA2Y2tid2FKS1Q3OVhNb2VTaHNfZkY5MG4wdjZGQU5vVFgxVTU5cUl1OE4xRUFZR1luMGlZNi1yZw?oc=5",
+      "source": "Google News",
+      "date": "Wed, 04 Dec 2024 08:00:00 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-06-25T15:03:27.765274+00:00"
     },
     {
       "id": "4f4cb0e203d40548",
@@ -4503,6 +4857,19 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T08:50:13.131907+00:00"
+    },
+    {
+      "id": "9a50d30336bc4b5e",
+      "banque": "CCF",
+      "departement": null,
+      "titre": "\"Pour les salariés, c'est un gâchis\" : la banque CCF veut réduire d'un tiers ses effectifs et supprimer plus de 80 agences - franceinfo",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMilAJBVV95cUxQSW5SNDl3TUNYaWJpZUJ3ZHZRb0Z2TDNFZl9EcTd1MkMwT2NJQ0Z3QkpUczcxWElOVlRYZjRlNVNOd2pzZEgxTExSUGpJWjlOaS1neHgyenh4cEZpQTgxbnM4a1JCM1JlUV9pcGtFYnM1M3RfY1VDSDhBa2R6SS1pTzBzOG9JSUlLQVc5SS1CVmlaeHFuSzVoUTloNWdjTHhMaE5qWVlaQTQ0aUNfMm5mTjRBUS1pS0RhNG5XNnh2Z1ZMTlpWRGY5dHJNVEpIRU5ZQ2ZlWkRyT0U1R1dudTRtMllEc1gxalo5dW1ES0J2SHpoaGJtTGdORjhqTkJsX1I5alpWZDNNSUhZYTZPVWhTUFdfbjc?oc=5\" target=\"_blank\">\"Pour les salariés, c'est un gâchis\" : la banque CCF veu",
+      "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxQSW5SNDl3TUNYaWJpZUJ3ZHZRb0Z2TDNFZl9EcTd1MkMwT2NJQ0Z3QkpUczcxWElOVlRYZjRlNVNOd2pzZEgxTExSUGpJWjlOaS1neHgyenh4cEZpQTgxbnM4a1JCM1JlUV9pcGtFYnM1M3RfY1VDSDhBa2R6SS1pTzBzOG9JSUlLQVc5SS1CVmlaeHFuSzVoUTloNWdjTHhMaE5qWVlaQTQ0aUNfMm5mTjRBUS1pS0RhNG5XNnh2Z1ZMTlpWRGY5dHJNVEpIRU5ZQ2ZlWkRyT0U1R1dudTRtMllEc1gxalo5dW1ES0J2SHpoaGJtTGdORjhqTkJsX1I5alpWZDNNSUhZYTZPVWhTUFdfbjc?oc=5",
+      "source": "Google News",
+      "date": "Fri, 27 Dec 2024 08:00:00 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-06-25T15:03:33.002213+00:00"
     },
     {
       "id": "b6769bfdd65cd533",
