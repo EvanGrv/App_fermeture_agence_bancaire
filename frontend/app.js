@@ -999,34 +999,244 @@ function telechargerExcel(singleId = "") {
     (c.sources || []).map((s) => `${s.source || "source"}: ${s.titre || ""} ${s.url || ""}`).join("\n"),
     c.controle_sirene ? `${c.controle_sirene.etat_administratif || ""} ${c.controle_sirene.siret || ""} ${c.controle_sirene.source || ""}`.trim() : "",
   ]);
-  const xml = excelXml(headers, body);
-  const blob = new Blob([xml], { type: "application/vnd.ms-excel;charset=utf-8" });
+  const blob = buildXlsx(headers, body, singleId ? "Fiche agence" : "Fermetures");
   const a = document.createElement("a");
   const date = new Date().toISOString().slice(0, 10);
   a.href = URL.createObjectURL(blob);
-  a.download = singleId ? `fiche-agence-${singleId}.xls` : `agences-bancaires-fermetures-${date}.xls`;
+  a.download = singleId ? `fiche-agence-${singleId}.xlsx` : `agences-bancaires-fermetures-${date}.xlsx`;
   document.body.appendChild(a);
   a.click();
-  URL.revokeObjectURL(a.href);
+  window.setTimeout(() => URL.revokeObjectURL(a.href), 1000);
   a.remove();
 }
 
-function excelXml(headers, rows) {
-  const cell = (value) => `<Cell><Data ss:Type="String">${xmlEsc(value == null ? "" : value)}</Data></Cell>`;
-  const row = (values) => `<Row>${values.map(cell).join("")}</Row>`;
-  return `<?xml version="1.0" encoding="UTF-8"?>
-<?mso-application progid="Excel.Sheet"?>
-<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
- xmlns:o="urn:schemas-microsoft-com:office:office"
- xmlns:x="urn:schemas-microsoft-com:office:excel"
- xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet">
- <Worksheet ss:Name="Agences">
-  <Table>
-   ${row(headers)}
-   ${rows.map(row).join("")}
-  </Table>
- </Worksheet>
-</Workbook>`;
+function buildXlsx(headers, rows, sheetName) {
+  const files = {
+    "[Content_Types].xml": contentTypesXml(),
+    "_rels/.rels": packageRelsXml(),
+    "docProps/app.xml": appPropsXml(sheetName),
+    "docProps/core.xml": corePropsXml(),
+    "xl/workbook.xml": workbookXml(sheetName),
+    "xl/_rels/workbook.xml.rels": workbookRelsXml(),
+    "xl/styles.xml": stylesXml(),
+    "xl/worksheets/sheet1.xml": worksheetXml(headers, rows),
+  };
+  return zipFiles(files, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
+}
+
+function worksheetXml(headers, rows) {
+  const allRows = [headers, ...rows];
+  const lastCol = colName(headers.length);
+  const lastRow = Math.max(1, allRows.length);
+  const widths = [24, 20, 20, 14, 14, 22, 14, 14, 12, 16, 16, 12, 12, 54, 64, 32];
+  const cols = widths.map((width, i) => `<col min="${i + 1}" max="${i + 1}" width="${width}" customWidth="1"/>`).join("");
+  const sheetData = allRows.map((values, rowIndex) => {
+    const r = rowIndex + 1;
+    const cells = values.map((value, colIndex) => xlsxCell(value, colIndex + 1, r, rowIndex === 0)).join("");
+    return `<row r="${r}" spans="1:${headers.length}">${cells}</row>`;
+  }).join("");
+  return `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"
+ xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+ <sheetViews>
+  <sheetView workbookViewId="0">
+   <pane ySplit="1" topLeftCell="A2" activePane="bottomLeft" state="frozen"/>
+  </sheetView>
+ </sheetViews>
+ <cols>${cols}</cols>
+ <sheetData>${sheetData}</sheetData>
+ <autoFilter ref="A1:${lastCol}${lastRow}"/>
+</worksheet>`;
+}
+
+function xlsxCell(value, col, row, isHeader) {
+  const ref = `${colName(col)}${row}`;
+  if (isHeader) {
+    return `<c r="${ref}" t="inlineStr" s="1"><is><t>${xmlEsc(value)}</t></is></c>`;
+  }
+  if (typeof value === "number" && Number.isFinite(value)) {
+    return `<c r="${ref}" s="2"><v>${value}</v></c>`;
+  }
+  const text = value == null ? "" : String(value);
+  return `<c r="${ref}" t="inlineStr" s="2"><is><t>${xmlEsc(text)}</t></is></c>`;
+}
+
+function colName(index) {
+  let name = "";
+  while (index > 0) {
+    const rem = (index - 1) % 26;
+    name = String.fromCharCode(65 + rem) + name;
+    index = Math.floor((index - 1) / 26);
+  }
+  return name;
+}
+
+function contentTypesXml() {
+  return `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types">
+ <Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/>
+ <Default Extension="xml" ContentType="application/xml"/>
+ <Override PartName="/docProps/app.xml" ContentType="application/vnd.openxmlformats-officedocument.extended-properties+xml"/>
+ <Override PartName="/docProps/core.xml" ContentType="application/vnd.openxmlformats-package.core-properties+xml"/>
+ <Override PartName="/xl/workbook.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml"/>
+ <Override PartName="/xl/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.styles+xml"/>
+ <Override PartName="/xl/worksheets/sheet1.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/>
+</Types>`;
+}
+
+function packageRelsXml() {
+  return `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+ <Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="xl/workbook.xml"/>
+ <Relationship Id="rId2" Type="http://schemas.openxmlformats.org/package/2006/relationships/metadata/core-properties" Target="docProps/core.xml"/>
+ <Relationship Id="rId3" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/extended-properties" Target="docProps/app.xml"/>
+</Relationships>`;
+}
+
+function workbookXml(sheetName) {
+  return `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<workbook xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"
+ xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+ <sheets>
+  <sheet name="${xmlEsc(sheetName).slice(0, 31)}" sheetId="1" r:id="rId1"/>
+ </sheets>
+</workbook>`;
+}
+
+function workbookRelsXml() {
+  return `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+ <Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet1.xml"/>
+ <Relationship Id="rId2" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles" Target="styles.xml"/>
+</Relationships>`;
+}
+
+function stylesXml() {
+  return `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<styleSheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
+ <fonts count="2">
+  <font><sz val="11"/><color theme="1"/><name val="Calibri"/></font>
+  <font><b/><sz val="11"/><color rgb="FFFFFFFF"/><name val="Calibri"/></font>
+ </fonts>
+ <fills count="3">
+  <fill><patternFill patternType="none"/></fill>
+  <fill><patternFill patternType="gray125"/></fill>
+  <fill><patternFill patternType="solid"><fgColor rgb="FF0B63F6"/><bgColor indexed="64"/></patternFill></fill>
+ </fills>
+ <borders count="2">
+  <border><left/><right/><top/><bottom/><diagonal/></border>
+  <border><left style="thin"><color rgb="FFD9E2EC"/></left><right style="thin"><color rgb="FFD9E2EC"/></right><top style="thin"><color rgb="FFD9E2EC"/></top><bottom style="thin"><color rgb="FFD9E2EC"/></bottom><diagonal/></border>
+ </borders>
+ <cellStyleXfs count="1"><xf numFmtId="0" fontId="0" fillId="0" borderId="0"/></cellStyleXfs>
+ <cellXfs count="3">
+  <xf numFmtId="0" fontId="0" fillId="0" borderId="0" xfId="0"/>
+  <xf numFmtId="0" fontId="1" fillId="2" borderId="1" xfId="0" applyFont="1" applyFill="1" applyBorder="1"><alignment vertical="center"/></xf>
+  <xf numFmtId="0" fontId="0" fillId="0" borderId="1" xfId="0" applyBorder="1"><alignment vertical="top" wrapText="1"/></xf>
+ </cellXfs>
+ <cellStyles count="1"><cellStyle name="Normal" xfId="0" builtinId="0"/></cellStyles>
+</styleSheet>`;
+}
+
+function appPropsXml(sheetName) {
+  return `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Properties xmlns="http://schemas.openxmlformats.org/officeDocument/2006/extended-properties"
+ xmlns:vt="http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes">
+ <Application>Veille fermetures agences bancaires</Application>
+ <TitlesOfParts><vt:vector size="1" baseType="lpstr"><vt:lpstr>${xmlEsc(sheetName)}</vt:lpstr></vt:vector></TitlesOfParts>
+</Properties>`;
+}
+
+function corePropsXml() {
+  const now = new Date().toISOString();
+  return `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cp:coreProperties xmlns:cp="http://schemas.openxmlformats.org/package/2006/metadata/core-properties"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:dcterms="http://purl.org/dc/terms/"
+ xmlns:dcmitype="http://purl.org/dc/dcmitype/"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <dc:title>Fermetures agences bancaires</dc:title>
+ <dc:creator>Veille presse</dc:creator>
+ <cp:lastModifiedBy>Veille presse</cp:lastModifiedBy>
+ <dcterms:created xsi:type="dcterms:W3CDTF">${now}</dcterms:created>
+ <dcterms:modified xsi:type="dcterms:W3CDTF">${now}</dcterms:modified>
+</cp:coreProperties>`;
+}
+
+function zipFiles(files, mimeType) {
+  const encoder = new TextEncoder();
+  const entries = Object.entries(files).map(([name, content]) => ({
+    name,
+    nameBytes: encoder.encode(name),
+    data: encoder.encode(content),
+  }));
+  let offset = 0;
+  const localParts = [];
+  const centralParts = [];
+  for (const entry of entries) {
+    const crc = crc32(entry.data);
+    entry.offset = offset;
+    const local = concatBytes(
+      u32(0x04034b50), u16(20), u16(0x0800), u16(0), u16(0), u16(0),
+      u32(crc), u32(entry.data.length), u32(entry.data.length),
+      u16(entry.nameBytes.length), u16(0), entry.nameBytes, entry.data
+    );
+    localParts.push(local);
+    offset += local.length;
+    centralParts.push(concatBytes(
+      u32(0x02014b50), u16(20), u16(20), u16(0x0800), u16(0), u16(0), u16(0),
+      u32(crc), u32(entry.data.length), u32(entry.data.length),
+      u16(entry.nameBytes.length), u16(0), u16(0), u16(0), u16(0), u32(0),
+      u32(entry.offset), entry.nameBytes
+    ));
+  }
+  const central = concatBytes(...centralParts);
+  const end = concatBytes(
+    u32(0x06054b50), u16(0), u16(0), u16(entries.length), u16(entries.length),
+    u32(central.length), u32(offset), u16(0)
+  );
+  return new Blob([concatBytes(...localParts, central, end)], { type: mimeType });
+}
+
+function u16(value) {
+  const out = new Uint8Array(2);
+  out[0] = value & 0xff;
+  out[1] = (value >>> 8) & 0xff;
+  return out;
+}
+
+function u32(value) {
+  const out = new Uint8Array(4);
+  out[0] = value & 0xff;
+  out[1] = (value >>> 8) & 0xff;
+  out[2] = (value >>> 16) & 0xff;
+  out[3] = (value >>> 24) & 0xff;
+  return out;
+}
+
+function concatBytes(...parts) {
+  const size = parts.reduce((sum, part) => sum + part.length, 0);
+  const out = new Uint8Array(size);
+  let offset = 0;
+  for (const part of parts) {
+    out.set(part, offset);
+    offset += part.length;
+  }
+  return out;
+}
+
+function crc32(bytes) {
+  if (!crc32.table) {
+    crc32.table = Array.from({ length: 256 }, (_, n) => {
+      let c = n;
+      for (let k = 0; k < 8; k += 1) c = c & 1 ? 0xedb88320 ^ (c >>> 1) : c >>> 1;
+      return c >>> 0;
+    });
+  }
+  let crc = 0xffffffff;
+  for (const byte of bytes) {
+    crc = crc32.table[(crc ^ byte) & 0xff] ^ (crc >>> 8);
+  }
+  return (crc ^ 0xffffffff) >>> 0;
 }
 
 function xmlEsc(value) {

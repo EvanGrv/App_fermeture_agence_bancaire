@@ -43,6 +43,17 @@ def test_relance_pipeline_presets_et_api():
     assert "GitHub Actions" in js
     assert "isHostedDeployment" in js
 
+def test_telechargement_excel_genere_un_vrai_xlsx():
+    js = (FRONT / "app.js").read_text(encoding="utf-8")
+
+    assert ".xlsx" in js
+    assert ".xls`" not in js
+    assert "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" in js
+    assert "[Content_Types].xml" in js
+    assert "xl/worksheets/sheet1.xml" in js
+    assert "autoFilter" in js
+    assert "state=\"frozen\"" in js
+
 def test_deploiement_vercel_github_actions_configure():
     root = ROOT
     assert (root / "vercel.json").exists()
