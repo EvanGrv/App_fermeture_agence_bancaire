@@ -68,10 +68,24 @@ CREATE TABLE IF NOT EXISTS vigilances (
 """
 
 
+def _ensure_closures_columns(conn: sqlite3.Connection) -> None:
+    """Idempotent migration: add temporal columns to a pre-existing closures table."""
+    existing = {r[1] for r in conn.execute("PRAGMA table_info(closures)")}
+    if "statut_temporel" not in existing:
+        conn.execute(
+            "ALTER TABLE closures ADD COLUMN statut_temporel TEXT DEFAULT 'inconnu'"
+        )
+    if "date_fermeture_approx" not in existing:
+        conn.execute(
+            "ALTER TABLE closures ADD COLUMN date_fermeture_approx INTEGER DEFAULT 0"
+        )
+
+
 def init_db(path) -> sqlite3.Connection:
     conn = sqlite3.connect(str(path))
     conn.execute("PRAGMA foreign_keys = ON")
     conn.executescript(_SCHEMA)
+    _ensure_closures_columns(conn)
     conn.commit()
     return conn
 

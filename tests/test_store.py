@@ -77,6 +77,56 @@ def test_upsert_vigilance(tmp_path):
     row = conn.execute("SELECT titre, score FROM vigilances WHERE id='v1'").fetchone()
     assert row == ("Plan social actualisé", 4)
 
+def test_migration_legacy_db_ajoute_colonnes_temporelles(tmp_path):
+    """init_db doit ajouter statut_temporel et date_fermeture_approx à une DB
+    existante qui ne les possède pas (migration idempotente)."""
+    import sqlite3
+    db_path = tmp_path / "legacy.db"
+    # Créer une DB legacy sans les deux nouvelles colonnes
+    legacy = sqlite3.connect(str(db_path))
+    legacy.execute("""CREATE TABLE closures (
+        id TEXT PRIMARY KEY,
+        banque TEXT NOT NULL,
+        commune TEXT NOT NULL,
+        code_insee TEXT,
+        departement TEXT,
+        type TEXT NOT NULL,
+        date_annonce TEXT,
+        date_fermeture TEXT,
+        statut TEXT,
+        fiabilite INTEGER,
+        lat REAL,
+        lon REAL,
+        citation TEXT,
+        created_at TEXT NOT NULL
+    )""")
+    legacy.commit()
+    legacy.close()
+
+    # init_db doit migrer la DB existante
+    conn = store.init_db(db_path)
+    cols = {r[1] for r in conn.execute("PRAGMA table_info(closures)")}
+    assert "statut_temporel" in cols, "statut_temporel manquant après migration"
+    assert "date_fermeture_approx" in cols, "date_fermeture_approx manquant après migration"
+
+    # upsert_closure doit fonctionner et les defaults doivent être corrects
+    from datetime import datetime, timezone
+    conn.execute(
+        """INSERT INTO closures
+           (id, banque, commune, code_insee, departement, type, date_annonce,
+            date_fermeture, statut, fiabilite, lat, lon, citation,
+            statut_temporel, date_fermeture_approx, created_at)
+           VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
+        ("leg1", "BNP", "Paris", None, "75", "fermeture", None, None, "projet",
+         3, None, None, "x", "inconnu", 0, datetime.now(timezone.utc).isoformat()),
+    )
+    conn.commit()
+    row = conn.execute(
+        "SELECT statut_temporel, date_fermeture_approx FROM closures WHERE id='leg1'"
+    ).fetchone()
+    assert row == ("inconnu", 0), f"Defaults incorrects: {row}"
+
+
 def test_closure_persiste_statut_temporel(tmp_path):
     conn = store.init_db(tmp_path / "t.db")
     store.upsert_closure(conn, {
