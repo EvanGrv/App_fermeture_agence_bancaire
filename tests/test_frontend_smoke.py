@@ -46,6 +46,8 @@ def test_relance_pipeline_presets_et_api():
 def test_telechargement_excel_genere_un_vrai_xlsx():
     js = (FRONT / "app.js").read_text(encoding="utf-8")
 
+    assert 'addEventListener("click", () => telechargerExcel())' in js
+    assert 'singleId = typeof singleId === "string" ? singleId : ""' in js
     assert ".xlsx" in js
     assert ".xls`" not in js
     assert "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" in js

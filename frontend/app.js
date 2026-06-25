@@ -138,7 +138,7 @@ function bindUi() {
     selectedMonth = "";
     rafraichir();
   });
-  document.getElementById("download-excel").addEventListener("click", telechargerExcel);
+  document.getElementById("download-excel").addEventListener("click", () => telechargerExcel());
   document.querySelectorAll("[data-close-sheet]").forEach((el) => {
     el.addEventListener("click", closeAgencySheet);
   });
@@ -982,6 +982,7 @@ function focusClosureOnly(id) {
 }
 
 async function telechargerExcel(singleId = "") {
+  singleId = typeof singleId === "string" ? singleId : "";
   const data = await dataForExcel(singleId);
   const closures = singleId
     ? data.closures.filter((c) => c.id === singleId)
