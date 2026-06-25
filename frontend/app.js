@@ -973,32 +973,16 @@ function focusClosureOnly(id) {
 }
 
 function telechargerExcel(singleId = "") {
-  const rows = singleId
+  const closures = singleId
     ? DONNEES.closures.filter((c) => c.id === singleId)
-    : DONNEES.closures.slice();
+    : DONNEES.closures.slice().sort(compareClosuresForExport);
   const headers = [
-    "ID", "Banque", "Commune", "Code INSEE", "Département", "Nom département",
-    "Type", "Statut", "Fiabilité", "Date annonce", "Date fermeture",
-    "Latitude", "Longitude", "Citation", "Sources", "Contrôle SIRENE",
+    "Banque", "Commune", "Département", "Région", "Type", "Statut",
+    "Fiabilité", "À vérifier", "Date fermeture", "Date annonce",
+    "Source principale", "URL principale", "Citation", "Latitude", "Longitude",
+    "Code INSEE", "ID", "Toutes les sources", "Contrôle SIRENE",
   ];
-  const body = rows.map((c) => [
-    c.id,
-    c.banque,
-    c.commune,
-    c.code_insee,
-    c.departement,
-    depNom(c.departement),
-    c.type,
-    c.statut,
-    c.fiabilite,
-    c.date_annonce,
-    c.date_fermeture,
-    c.lat,
-    c.lon,
-    c.citation,
-    (c.sources || []).map((s) => `${s.source || "source"}: ${s.titre || ""} ${s.url || ""}`).join("\n"),
-    c.controle_sirene ? `${c.controle_sirene.etat_administratif || ""} ${c.controle_sirene.siret || ""} ${c.controle_sirene.source || ""}`.trim() : "",
-  ]);
+  const body = closures.map(exportRow);
   const blob = buildXlsx(headers, body, singleId ? "Fiche agence" : "Fermetures");
   const a = document.createElement("a");
   const date = new Date().toISOString().slice(0, 10);
@@ -1008,6 +992,108 @@ function telechargerExcel(singleId = "") {
   a.click();
   window.setTimeout(() => URL.revokeObjectURL(a.href), 1000);
   a.remove();
+}
+
+function exportRow(c) {
+  const source = sourcePrincipale(c);
+  return [
+    exportText(c.banque),
+    exportText(communeExport(c)),
+    exportText(departementExport(c)),
+    exportText(regionExport(c)),
+    exportText(c.type),
+    exportText(c.statut),
+    c.fiabilite == null ? "" : Number(c.fiabilite),
+    closureNeedsReview(c) ? "oui" : "non",
+    exportText(c.date_fermeture),
+    exportText(c.date_annonce),
+    exportText(source.source),
+    exportText(source.url),
+    exportText(c.citation),
+    numericOrBlank(c.lat),
+    numericOrBlank(c.lon),
+    exportText(c.code_insee),
+    exportText(c.id),
+    exportText((c.sources || []).map((s) => `${s.source || "source"}: ${s.titre || ""} ${s.url || ""}`).join("\n")),
+    exportText(c.controle_sirene ? `${c.controle_sirene.etat_administratif || ""} ${c.controle_sirene.siret || ""} ${c.controle_sirene.source || ""}`.trim() : ""),
+  ];
+}
+
+function compareClosuresForExport(a, b) {
+  const score = (c) => [
+    meaningfulCommune(c.commune) ? 1 : 0,
+    c.departement ? 1 : 0,
+    c.date_fermeture ? 1 : 0,
+    c.statut === "confirmé" ? 1 : 0,
+    Number(c.fiabilite || 0),
+  ];
+  const sa = score(a);
+  const sb = score(b);
+  for (let i = 0; i < sa.length; i += 1) {
+    if (sa[i] !== sb[i]) return sb[i] - sa[i];
+  }
+  return String(a.banque || "").localeCompare(String(b.banque || ""), "fr");
+}
+
+function closureNeedsReview(c) {
+  return (
+    !meaningfulCommune(c.commune)
+    || !c.date_fermeture
+    || Number(c.fiabilite || 0) < 4
+    || c.statut !== "confirmé"
+  );
+}
+
+function sourcePrincipale(c) {
+  return (c.sources || []).find((s) => s.url || s.source || s.titre) || {};
+}
+
+function communeExport(c) {
+  return meaningfulCommune(c.commune) ? c.commune : "Non renseignée";
+}
+
+function departementExport(c) {
+  const info = departementInfo(c.departement);
+  if (!info.value) return "Non renseigné";
+  return info.code && info.nom ? `${info.code} - ${info.nom}` : info.value;
+}
+
+function regionExport(c) {
+  const info = departementInfo(c.departement);
+  return c.region || info.region || regionOf(c) || "Non renseignée";
+}
+
+function departementInfo(value) {
+  const raw = String(value ?? "").trim();
+  if (!raw) return { value: "" };
+  const direct = DONNEES.departements?.[raw];
+  if (direct) {
+    return { value: raw, code: raw, nom: direct.nom || raw, region: direct.region || "" };
+  }
+  const wanted = normalize(raw);
+  const match = Object.entries(DONNEES.departements || {}).find(([, dep]) => normalize(dep.nom) === wanted);
+  if (match) {
+    const [code, dep] = match;
+    return { value: raw, code, nom: dep.nom || raw, region: dep.region || "" };
+  }
+  return { value: raw };
+}
+
+function meaningfulCommune(value) {
+  const raw = String(value ?? "").trim();
+  if (!raw) return false;
+  const key = normalize(raw);
+  return !["null", "undefined", ".", "-", "inconnu", "inconnue", "non renseignee", "non renseigne"].includes(key);
+}
+
+function exportText(value) {
+  const raw = String(value ?? "").trim();
+  return raw ? raw : "";
+}
+
+function numericOrBlank(value) {
+  const n = Number(value);
+  return Number.isFinite(n) ? n : "";
 }
 
 function buildXlsx(headers, rows, sheetName) {
@@ -1028,8 +1114,8 @@ function worksheetXml(headers, rows) {
   const allRows = [headers, ...rows];
   const lastCol = colName(headers.length);
   const lastRow = Math.max(1, allRows.length);
-  const widths = [24, 20, 20, 14, 14, 22, 14, 14, 12, 16, 16, 12, 12, 54, 64, 32];
-  const cols = widths.map((width, i) => `<col min="${i + 1}" max="${i + 1}" width="${width}" customWidth="1"/>`).join("");
+  const widths = [22, 24, 24, 22, 14, 14, 12, 12, 16, 22, 22, 58, 64, 12, 12, 14, 22, 72, 32];
+  const cols = headers.map((_, i) => `<col min="${i + 1}" max="${i + 1}" width="${widths[i] || 18}" customWidth="1"/>`).join("");
   const sheetData = allRows.map((values, rowIndex) => {
     const r = rowIndex + 1;
     const cells = values.map((value, colIndex) => xlsxCell(value, colIndex + 1, r, rowIndex === 0)).join("");
@@ -1038,6 +1124,7 @@ function worksheetXml(headers, rows) {
   return `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"
  xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+ <dimension ref="A1:${lastCol}${lastRow}"/>
  <sheetViews>
   <sheetView workbookViewId="0">
    <pane ySplit="1" topLeftCell="A2" activePane="bottomLeft" state="frozen"/>
