@@ -180,6 +180,226 @@
     "message": "commune absente, générique ou non nominative"
   },
   {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "fdc3827d9912f892",
+    "banque": "CIC",
+    "commune": "Panissières",
+    "departement": "42",
+    "code_insee": "42165",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "714472c508a55526",
+    "banque": "Crédit Agricole",
+    "commune": "Criel-sur-Mer",
+    "departement": "76",
+    "code_insee": "76192",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "2867653ec87132bd",
+    "banque": "Crédit Agricole",
+    "commune": "Saint-Georges-du-Vièvre",
+    "departement": "27",
+    "code_insee": "27542",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "e951e09b59947666",
+    "banque": "BNP Paribas",
+    "commune": "La Talaudière",
+    "departement": "42",
+    "code_insee": "42305",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "878018f0ac603f53",
+    "banque": "Crédit Agricole",
+    "commune": "Écueillé",
+    "departement": "36",
+    "code_insee": "36069",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "15c2fd39c6c32b41",
+    "banque": "Crédit Agricole",
+    "commune": "Luzech",
+    "departement": "46",
+    "code_insee": "46182",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "b6e0adaef016bb42",
+    "banque": "Crédit Agricole",
+    "commune": "Saint-Germain-Laprade",
+    "departement": "43",
+    "code_insee": "43190",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "9961978ce6d8e6b4",
+    "banque": "Crédit Agricole",
+    "commune": "Lempdes-sur-Allagnon",
+    "departement": "43",
+    "code_insee": "43120",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "70a46255dfbdd872",
+    "banque": "Crédit Agricole",
+    "commune": "Limogne-en-Quercy",
+    "departement": "46",
+    "code_insee": "46173",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "d6f3fb1df2179c7e",
+    "banque": "Crédit Agricole",
+    "commune": "Condat-sur-Vienne",
+    "departement": "87",
+    "code_insee": "87048",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "2784b9c7b7b8a187",
+    "banque": "Crédit Agricole",
+    "commune": "Lantriac",
+    "departement": "43",
+    "code_insee": "43113",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "340b37b2128c9c0e",
+    "banque": "Crédit Agricole",
+    "commune": "Firmi",
+    "departement": "12",
+    "code_insee": "12100",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "1f5052eccf5fbe16",
+    "banque": "BNP Paribas",
+    "commune": "Aire-sur-la-Lys",
+    "departement": "62",
+    "code_insee": "62014",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "4f9afd8a7e4e0a00",
+    "banque": "BNP Paribas",
+    "commune": "Aulnoy-lez-Valenciennes",
+    "departement": "59",
+    "code_insee": "59032",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "6a1b447afe3a587a",
+    "banque": "Caisse d'Épargne",
+    "commune": "Nogent-sur-Vernisson",
+    "departement": "45",
+    "code_insee": "45229",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "4b911a4b783ba002",
+    "banque": "Crédit Mutuel",
+    "commune": "Villersexel",
+    "departement": "70",
+    "code_insee": "70561",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "ff814cd1942d9638",
+    "banque": "Crédit Agricole",
+    "commune": "Campagne-lès-Hesdin",
+    "departement": "62",
+    "code_insee": "62204",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "f832d5b9a0d688f7",
+    "banque": "Crédit Agricole",
+    "commune": "Arnèke",
+    "departement": "59",
+    "code_insee": "59018",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "d46ccaac8ce4b69d",
+    "banque": "Crédit Agricole",
+    "commune": "Saint-Martin-d'Estréaux",
+    "departement": "42",
+    "code_insee": "42257",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "33f889feebdd2c26",
+    "banque": "Crédit Agricole",
+    "commune": "Saint-Ferréol-d'Auroure",
+    "departement": "43",
+    "code_insee": "43184",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "d350b46dbb4ec4b1",
+    "banque": "Crédit Agricole",
+    "commune": "Reuilly",
+    "departement": "36",
+    "code_insee": "36171",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "9e37991903456bbc",
+    "banque": "Crédit Agricole",
+    "commune": "Mazingarbe",
+    "departement": "62",
+    "code_insee": "62563",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
     "severity": "info",
     "type": "communes_proches",
     "id": "ce18af806d97dc42|b2d026a254bcd0b7",
