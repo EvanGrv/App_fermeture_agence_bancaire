@@ -1,3 +1,4 @@
+import config
 from backend.extractor import extract, build_messages, Extraction, normalise_banque
 
 AUJ = "2026-06-01"  # date du jour fixe pour des tests déterministes
@@ -132,9 +133,11 @@ def test_extract_normalise_banque():
     res = extract(_article(), client=FakeClient(parsed), aujourdhui=AUJ)
     assert res["banque"] == "Crédit Agricole"
 
-def test_extract_exclut_banque_postale():
+def test_extract_inclut_banque_postale():
     parsed = _extraction(banque="La Banque Postale")
-    assert extract(_article(), client=FakeClient(parsed), aujourdhui=AUJ) is None
+    res = extract(_article(), client=FakeClient(parsed), aujourdhui=AUJ)
+    assert res is not None
+    assert res["banque"] == "La Banque Postale"
 
 def test_build_messages_demande_agence_nominative():
     message = build_messages({
@@ -144,3 +147,14 @@ def test_build_messages_demande_agence_nominative():
     }, aujourdhui=AUJ)[0]["content"]
     assert "commune précise" in message
     assert "N'invente jamais de commune" in message
+
+
+def test_la_banque_postale_est_suivie():
+    assert "La Banque Postale" in config.ENSEIGNES
+    assert config.EXCLURE_BANQUES == []
+    assert normalise_banque("La Banque Postale") == "La Banque Postale"
+
+
+def test_credit_cooperatif_canonique():
+    assert "Crédit Coopératif" in config.ENSEIGNES
+    assert normalise_banque("crédit coopératif") == "Crédit Coopératif"

@@ -45,6 +45,7 @@ _CANON = {
     "cic": "CIC",
     "credit du nord": "Crédit du Nord",
     "hsbc": "HSBC",
+    "credit cooperatif": "Crédit Coopératif",
 }
 for _groupe, _variantes in getattr(config, "MARQUES_REGIONALES", {}).items():
     for _variante in _variantes:

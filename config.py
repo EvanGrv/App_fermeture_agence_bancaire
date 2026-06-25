@@ -26,7 +26,7 @@ LOOKBACK_MONTHS_DEFAULT = int(os.getenv("LOOKBACK_MONTHS_DEFAULT", "18"))
 ENSEIGNES = [
     "Crédit Agricole", "BNP", "Société Générale", "Banque Populaire",
     "Caisse d'Épargne", "Crédit Mutuel", "CIC", "LCL",
-    "Crédit du Nord", "HSBC", "CCF",
+    "Crédit du Nord", "HSBC", "CCF", "La Banque Postale", "Crédit Coopératif",
 ]
 
 # Principales marques régionales ou anciennes dénominations utiles pour la
@@ -114,7 +114,7 @@ MARQUES_REGIONALES = {
 }
 
 # Enseignes explicitement exclues du suivi (formes normalisées).
-EXCLURE_BANQUES = ["la banque postale", "banque postale"]
+EXCLURE_BANQUES = []
 
 TERMES_FERMETURE = [
     "fermeture", "ferme", "fermer", "fermé", "fusion", "fusionne",

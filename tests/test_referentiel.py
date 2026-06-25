@@ -13,21 +13,23 @@ def _fetch_overpass(url, **kwargs):
     return json.loads(FIXT.read_text(encoding="utf-8"))
 
 
-def test_fetch_osm_banques_parse_et_exclut_banque_postale():
+def test_fetch_osm_banques_parse_et_inclut_banque_postale():
     branches = referentiel.fetch_osm_banques(fetch=_fetch_overpass)
-    assert len(branches) == 3
+    assert len(branches) == 4
     assert branches[0]["osm_id"] == "node/101"
     assert branches[0]["banque"] == "BNP Paribas"
     assert branches[0]["departement"] == "75"
     assert branches[1]["banque"] == "Crédit Agricole Centre-Est"
-    assert branches[2]["osm_id"] == "way/204"
+    assert branches[2]["banque"] == "La Banque Postale"
+    assert branches[2]["departement"] == "31"
+    assert branches[3]["osm_id"] == "way/204"
     assert {b["source"] for b in branches} == {"OSM"}
-    assert all(b["banque"] != "La Banque Postale" for b in branches)
+    assert any(b["banque"] == "La Banque Postale" for b in branches)
 
 
 def test_compter_par_departement():
     branches = referentiel.fetch_osm_banques(fetch=_fetch_overpass)
-    assert referentiel.compter_par_departement(branches) == {"75": 1, "69": 1, "29": 1}
+    assert referentiel.compter_par_departement(branches) == {"75": 1, "69": 1, "31": 1, "29": 1}
 
 
 def test_upsert_referentiel(tmp_path):
