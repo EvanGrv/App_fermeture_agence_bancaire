@@ -9,7 +9,7 @@ import config
 from backend import store, export, geocode, geojson, referentiel, controle, vigilance, audit
 from backend.pipeline import run_pipeline, ingest_closures
 from backend.extractor import extract
-from backend.collectors import google_news, gdelt, legifrance, local_feeds, official, sg_locator
+from backend.collectors import google_news, gdelt, legifrance, local_feeds, official, sg_locator, web_search
 from backend import drilldown
 
 
@@ -83,6 +83,7 @@ def main(since_date: str | None = None):
         gdelt.collect,
         official.collect,
         legifrance.collect,
+        web_search.collect,
     ]
     if drill_queries:
         collectors.insert(1, lambda: google_news.collect(queries=drill_queries))
