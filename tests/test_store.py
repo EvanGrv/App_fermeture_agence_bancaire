@@ -76,3 +76,18 @@ def test_upsert_vigilance(tmp_path):
     store.upsert_vigilance(conn, {**v, "score": 4, "titre": "Plan social actualisé"})
     row = conn.execute("SELECT titre, score FROM vigilances WHERE id='v1'").fetchone()
     assert row == ("Plan social actualisé", 4)
+
+def test_closure_persiste_statut_temporel(tmp_path):
+    conn = store.init_db(tmp_path / "t.db")
+    store.upsert_closure(conn, {
+        "id": "abc", "banque": "BNP Paribas", "commune": "Lyon",
+        "code_insee": None, "departement": "69", "type": "fermeture",
+        "date_annonce": None, "date_fermeture": "2025-03-01",
+        "statut": "confirmé", "fiabilite": 5, "lat": None, "lon": None,
+        "citation": "x", "statut_temporel": "deja_fermee",
+        "date_fermeture_approx": 1,
+    })
+    row = conn.execute(
+        "SELECT statut_temporel, date_fermeture_approx FROM closures WHERE id='abc'"
+    ).fetchone()
+    assert row == ("deja_fermee", 1)

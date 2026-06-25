@@ -17,6 +17,8 @@ CREATE TABLE IF NOT EXISTS closures (
     lat REAL,
     lon REAL,
     citation TEXT,
+    statut_temporel TEXT DEFAULT 'inconnu',
+    date_fermeture_approx INTEGER DEFAULT 0,
     created_at TEXT NOT NULL
 );
 CREATE TABLE IF NOT EXISTS sources (
@@ -83,10 +85,17 @@ def upsert_closure(conn: sqlite3.Connection, closure: dict) -> str:
         conn.execute(
             """INSERT INTO closures
             (id, banque, commune, code_insee, departement, type, date_annonce,
-             date_fermeture, statut, fiabilite, lat, lon, citation, created_at)
+             date_fermeture, statut, fiabilite, lat, lon, citation,
+             statut_temporel, date_fermeture_approx, created_at)
             VALUES (:id,:banque,:commune,:code_insee,:departement,:type,:date_annonce,
-                    :date_fermeture,:statut,:fiabilite,:lat,:lon,:citation,:created_at)""",
-            {**closure, "created_at": datetime.now(timezone.utc).isoformat()},
+                    :date_fermeture,:statut,:fiabilite,:lat,:lon,:citation,
+                    :statut_temporel,:date_fermeture_approx,:created_at)""",
+            {
+                "statut_temporel": "inconnu",
+                "date_fermeture_approx": 0,
+                **closure,
+                "created_at": datetime.now(timezone.utc).isoformat(),
+            },
         )
     else:
         fiab_max = max(existing[0] or 0, closure.get("fiabilite") or 0)
