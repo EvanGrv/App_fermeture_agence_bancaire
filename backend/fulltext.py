@@ -27,7 +27,7 @@ _HEADERS = {
 
 
 def _default_fetch(url: str) -> str:
-    resp = requests.get(url, timeout=20, headers=_HEADERS)
+    resp = requests.get(url, timeout=10, headers=_HEADERS)
     resp.raise_for_status()
     return resp.text
 

@@ -31,3 +31,18 @@ def test_article_hors_sujet_reste_rejete():
     # Aucune enseigne, aucun terme de fermeture => doit rester rejeté
     art = {"titre": "Le marché aux fleurs ouvre ce week-end", "texte": ""}
     assert is_relevant(art) is False
+
+
+# --- Fix 1: tighten over-broad prefilter stems ---
+
+def test_quitte_fonctions_non_pertinent():
+    # Le bare stem "quitte" captait des départs de dirigeants sans lien avec une fermeture.
+    # Après le fix, seule la forme précise "quitte la commune" reste pertinente.
+    art = {"titre": "Le directeur de la BNP quitte ses fonctions", "texte": ""}
+    assert is_relevant(art) is False
+
+
+def test_quittera_la_commune_reste_pertinent():
+    # La forme précise "quittera la commune" (euphémisme de fermeture) doit rester capturée.
+    art = {"titre": "Le Crédit Agricole quittera la commune de Tulle", "texte": ""}
+    assert is_relevant(art) is True

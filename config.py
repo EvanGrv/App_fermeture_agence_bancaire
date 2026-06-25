@@ -120,8 +120,9 @@ TERMES_FERMETURE = [
     "fermeture", "ferme", "fermer", "fermé", "fusion", "fusionne",
     "regroupement", "regroupe", "supprime", "suppression", "transfert",
     "rideau", "cesse", "cessation", "rattach", "réorganis", "reorganis",
-    "libre-service", "libre service", "quitte", "quittera",
-    "ferme ses portes", "point de vente", "n'accueillera",
+    "libre-service", "libre service",
+    "ferme ses portes", "n'accueillera",
+    "quittera la commune", "quitte la commune",
 ]
 
 # Flux RSS publics de presse/radio locale. Ils complètent Google News en

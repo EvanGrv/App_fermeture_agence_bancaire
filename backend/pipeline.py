@@ -107,10 +107,9 @@ def run_pipeline(
             recap["filtres"] += 1
             _enrich = enrich_fn if enrich_fn is not None else fetch_text
             texte = art.get("texte") or ""
-            _url = art.get("url") or ""
-            if _url and len(texte) < 400:
+            if url and len(texte) < 400:
                 try:
-                    texte_complet = _enrich(_url)
+                    texte_complet = _enrich(url)
                     if texte_complet:
                         art["texte"] = (texte + "\n\n" + texte_complet)[:6000]
                 except Exception:
