@@ -20,17 +20,13 @@ python run.py
 
 Produit `data/export/data.json` et `data/export/departements.geojson`.
 
-Pour élargir la collecte à partir d'une date donnée :
+La fenêtre par défaut est **18 mois glissants** (rétrospectif + prévisionnel), élargissable
+via `--lookback-months` ou `--since`. La date de fin est toujours aujourd'hui.
 
 ```bash
+python run.py --lookback-months 24
+python run.py --lookback-months 30
 python run.py --since 2025-01-01
-```
-
-Alternatives pratiques :
-
-```bash
-python run.py --lookback-months 18
-python run.py --lookback-days 540
 ```
 
 La date de départ élargit les fenêtres des collecteurs compatibles
@@ -92,10 +88,15 @@ manuellement avec une date `since` ou une fenêtre `lookback_months`.
 
 ## Sources & limites
 
-- **Périmètre enseignes** : toutes les grandes banques de réseau **sauf La Banque
-  Postale** (exclue via `config.EXCLURE_BANQUES`) — Crédit Agricole, BNP, Société
-  Générale, Banque Populaire, Caisse d'Épargne, Crédit Mutuel, CIC, LCL, Crédit du
-  Nord, HSBC, CCF.
+- **Périmètre enseignes** : toutes les grandes banques de réseau (liste complète dans
+  `config.ENSEIGNES`) — Crédit Agricole, BNP, Société Générale, Banque Populaire,
+  Caisse d'Épargne, Crédit Mutuel, CIC, LCL, Crédit du Nord, HSBC, CCF, La Banque
+  Postale, Crédit Coopératif.
+- **Fenêtre temporelle** : par défaut 18 mois glissants couvrant le rétrospectif
+  (depuis ~6 mois) et le prévisionnel (~12 mois à venir). Les fermetures déjà
+  effectives depuis le plancher (`since`) sont conservées et affichées (avec
+  `statut_temporel == "deja_fermee"`). Une fermeture sans date/période
+  exploitable est signalée en vigilance plutôt qu'en fermeture confirmée.
 - **Localisateur Société Générale** — ✅ la seule enseigne dont le localisateur
   public affiche un message d'avance (« à compter du… transfère ses activités »).
   6 fermetures nominatives vérifiées sont fournies en seed (`sg_locator.SEED`),

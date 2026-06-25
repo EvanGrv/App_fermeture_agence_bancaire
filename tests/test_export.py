@@ -98,9 +98,6 @@ def test_export_csv_temporalite_mapping(tmp_path):
     store.upsert_closure(conn, {**base, "id": "d3", "statut_temporel": None, "date_fermeture_approx": None})
     out = tmp_path / "fermetures.csv"
     export.export_fermetures_csv(conn, out)
-    rows = {r["Banque"] + r["Commune"] + r["Date fermeture"]: r
-            for r in csv.DictReader(out.read_text(encoding="utf-8-sig").splitlines())}
-    by_id = {r["Commune"]: r for r in csv.DictReader(out.read_text(encoding="utf-8-sig").splitlines())}
     # Use a fresh read keyed by row order
     all_rows = list(csv.DictReader(out.read_text(encoding="utf-8-sig").splitlines()))
     temp_vals = {r["Temporalité"] for r in all_rows}
