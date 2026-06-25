@@ -19,6 +19,10 @@ ANTHROPIC_MODEL = "claude-opus-4-8"
 # Donc 1 mois = "30d", 2 semaines = "14d", 6 mois = "180d", 1 an = "1y".
 GOOGLE_NEWS_WHEN = os.getenv("GOOGLE_NEWS_WHEN", "180d")
 
+# Fenêtre de veille par défaut : 18 mois glissants (couvre le rétrospectif
+# depuis ~début 2025 + le prévisionnel). Élargissable via --lookback-months.
+LOOKBACK_MONTHS_DEFAULT = int(os.getenv("LOOKBACK_MONTHS_DEFAULT", "18"))
+
 ENSEIGNES = [
     "Crédit Agricole", "BNP", "Société Générale", "Banque Populaire",
     "Caisse d'Épargne", "Crédit Mutuel", "CIC", "LCL",

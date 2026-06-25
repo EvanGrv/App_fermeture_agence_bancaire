@@ -31,7 +31,7 @@ def _since_from_args(args) -> str | None:
         if args.lookback_months < 1:
             raise SystemExit("--lookback-months doit être positif.")
         return (date.today() - timedelta(days=args.lookback_months * 30)).isoformat()
-    return None
+    return (date.today() - timedelta(days=config.LOOKBACK_MONTHS_DEFAULT * 30)).isoformat()
 
 
 def _configure_collection_window(since_date: str | None) -> dict:
