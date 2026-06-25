@@ -121,7 +121,7 @@ function bindUi() {
   document.querySelectorAll(".nav-link[data-view]").forEach((button) => {
     button.addEventListener("click", () => setView(button.dataset.view));
   });
-  ["f-banque", "f-type", "f-statut", "f-fiab", "f-dep", "f-period", "f-search"].forEach((id) => {
+  ["f-banque", "f-type", "f-statut", "f-fiab", "f-dep", "f-period", "f-temporel", "f-search"].forEach((id) => {
     document.getElementById(id).addEventListener(id === "f-search" ? "input" : "change", () => {
       if (id === "f-period" && val("f-period") === "all") selectedMonth = "";
       rafraichir();
@@ -135,6 +135,7 @@ function bindUi() {
     document.getElementById("f-fiab").value = "1";
     document.getElementById("f-dep").value = "";
     document.getElementById("f-period").value = "all";
+    document.getElementById("f-temporel").value = "";
     selectedMonth = "";
     rafraichir();
   });
@@ -384,6 +385,7 @@ function filtrer(applyPeriod = true) {
   const banque = val("f-banque");
   const type = val("f-type");
   const statut = val("f-statut");
+  const temporel = val("f-temporel");
   const dep = val("f-dep");
   const fiab = parseInt(val("f-fiab"), 10);
   const q = normalize(val("f-search"));
@@ -393,6 +395,7 @@ function filtrer(applyPeriod = true) {
     return (!banque || c.banque === banque) &&
       (!type || c.type === type) &&
       (!statut || c.statut === statut) &&
+      (!temporel || c.statut_temporel === temporel) &&
       (!dep || c.departement === dep) &&
       (c.fiabilite || 0) >= fiab &&
       (!q || haystack.includes(q)) &&

@@ -56,6 +56,14 @@ def test_telechargement_excel_genere_un_vrai_xlsx():
     assert "autoFilter" in js
     assert "state=\"frozen\"" in js
 
+def test_filtre_temporel_present():
+    html = Path("frontend/index.html").read_text(encoding="utf-8")
+    assert 'id="f-temporel"' in html
+    js = Path("frontend/app.js").read_text(encoding="utf-8")
+    assert "f-temporel" in js
+    assert "statut_temporel" in js
+
+
 def test_deploiement_vercel_github_actions_configure():
     root = ROOT
     assert (root / "vercel.json").exists()
