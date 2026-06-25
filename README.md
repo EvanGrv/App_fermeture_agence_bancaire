@@ -83,12 +83,12 @@ Secrets GitHub Actions à créer dans `Settings > Secrets and variables > Action
 Variables GitHub Actions optionnelles :
 
 - `OPENAI_BUDGET_EUR` (défaut `1.0`).
-- `GOOGLE_NEWS_WHEN` (défaut `180d`).
+- `GOOGLE_NEWS_WHEN` (défaut `720d`, soit environ 24 mois pour le workflow hébergé).
 - `GDELT_THROTTLE_SECONDS` (défaut `12`).
 
 Le workflow `.github/workflows/update-data.yml` se lance tous les jours à
-03:17 UTC et peut aussi être lancé manuellement avec une date `since` ou une
-fenêtre `lookback_months`.
+03:17 UTC avec une fenêtre par défaut de 24 mois. Il peut aussi être lancé
+manuellement avec une date `since` ou une fenêtre `lookback_months`.
 
 ## Sources & limites
 

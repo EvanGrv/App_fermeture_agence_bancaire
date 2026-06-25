@@ -9,7 +9,7 @@ on:
       lookback_months:
         description: "Nombre de mois à remonter"
         required: false
-        default: "6"
+        default: "24"
   schedule:
     - cron: "17 3 * * *"
 
@@ -30,7 +30,7 @@ jobs:
       LEGIFRANCE_CLIENT_ID: ${{ secrets.LEGIFRANCE_CLIENT_ID }}
       LEGIFRANCE_CLIENT_SECRET: ${{ secrets.LEGIFRANCE_CLIENT_SECRET }}
       OPENAI_BUDGET_EUR: ${{ vars.OPENAI_BUDGET_EUR || '1.0' }}
-      GOOGLE_NEWS_WHEN: ${{ vars.GOOGLE_NEWS_WHEN || '180d' }}
+      GOOGLE_NEWS_WHEN: ${{ vars.GOOGLE_NEWS_WHEN || '720d' }}
       GDELT_THROTTLE_SECONDS: ${{ vars.GDELT_THROTTLE_SECONDS || '12' }}
 
     steps:
@@ -61,10 +61,12 @@ jobs:
 
       - name: Run pipeline
         run: |
-          if [ -n "${{ github.event.inputs.since }}" ]; then
-            python run.py --since "${{ github.event.inputs.since }}"
+          SINCE="${{ github.event.inputs.since }}"
+          LOOKBACK_MONTHS="${{ github.event.inputs.lookback_months || '24' }}"
+          if [ -n "$SINCE" ]; then
+            python run.py --since "$SINCE"
           else
-            python run.py --lookback-months "${{ github.event.inputs.lookback_months || '6' }}"
+            python run.py --lookback-months "$LOOKBACK_MONTHS"
           fi
 
       - name: Commit public exports
