@@ -88,7 +88,7 @@ def _schema() -> dict:
         "additionalProperties": False,
         "required": [
             "concerne_banque", "banque", "commune", "departement", "type",
-            "statut_temporel", "date_fermeture", "statut", "fiabilite", "citation",
+            "statut_temporel", "date_fermeture", "date_fermeture_approx", "statut", "fiabilite", "citation",
         ],
         "properties": {
             "concerne_banque": {"type": "boolean"},
@@ -101,6 +101,7 @@ def _schema() -> dict:
                 "enum": ["a_venir", "deja_fermee", "inconnu"],
             },
             "date_fermeture": {"type": ["string", "null"]},
+            "date_fermeture_approx": {"type": "boolean"},
             "statut": {"type": "string", "enum": ["confirmé", "projet", "rumeur"]},
             "fiabilite": {"type": "integer", "minimum": 0, "maximum": 5},
             "citation": {"type": "string"},

@@ -67,3 +67,12 @@ def test_extract_openai_bloque_budget_avant_appel(tmp_path, monkeypatch):
         openai_fallback.extract_openai(
             _article(), "2026-06-01", fetch=fetch, budget_path=budget_path
         )
+
+
+def test_schema_inclut_date_approx():
+    from backend.openai_fallback import _schema
+
+    s = _schema()
+    assert "date_fermeture_approx" in s["properties"]
+    assert s["properties"]["date_fermeture_approx"] == {"type": "boolean"}
+    assert "date_fermeture_approx" in s["required"]
