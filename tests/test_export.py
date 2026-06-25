@@ -104,3 +104,15 @@ def test_export_csv_temporalite_mapping(tmp_path):
     assert "Déjà fermée" in temp_vals
     assert "À venir" in temp_vals
     assert "Inconnu" in temp_vals
+
+
+def test_build_payload_source_tier(tmp_path):
+    """Each source in build_payload's output carries a 'tier' field."""
+    conn = store.init_db(tmp_path / "t.db")
+    _seed(conn)
+    p = export.build_payload(conn)
+    cl = p["closures"][0]
+    assert cl["sources"], "fixture must have at least one source"
+    src = cl["sources"][0]
+    assert "tier" in src, "'tier' key missing from source dict"
+    assert src["tier"] in {"A", "B", "C", "D", "E"}, f"unexpected tier value: {src['tier']!r}"

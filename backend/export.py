@@ -3,6 +3,7 @@ import json
 from datetime import datetime, timezone
 import config
 from backend.plans import PLANS
+from backend.source_tier import tier as _source_tier
 
 _CLOSURE_COLS = ["id", "banque", "commune", "code_insee", "departement", "type",
                  "date_annonce", "date_fermeture", "statut", "statut_temporel",
@@ -42,7 +43,8 @@ def build_payload(conn) -> dict:
             (cl["id"],),
         ).fetchall()
         cl["sources"] = [
-            {"url": u, "titre": t, "source": s, "date": d} for (u, t, s, d) in srcs
+            {"url": u, "titre": t, "source": s, "date": d, "tier": _source_tier(u or "")}
+            for (u, t, s, d) in srcs
         ]
         controle = conn.execute(
             "SELECT etat_administratif, siret, source FROM controles_sirene WHERE closure_id=?",
