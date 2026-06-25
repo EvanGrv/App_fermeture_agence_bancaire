@@ -43,6 +43,12 @@ class TestEstPlan:
         texte = "Une dizaine d'agences seront supprimées d'ici fin 2025."
         assert drilldown.est_plan(texte) is True
 
+    def test_une_seule_agence_n_est_pas_plan(self):
+        # "1 agences" is grammatically odd but was previously matched by \d+;
+        # single-quantity digit must not trigger plan detection.
+        texte = "La banque ferme 1 agences de Tulle"
+        assert drilldown.est_plan(texte) is False
+
     def test_false_single_closure(self):
         texte = "Le Crédit Agricole ferme son agence de Tulle."
         assert drilldown.est_plan(texte) is False

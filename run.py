@@ -72,7 +72,7 @@ def main(since_date: str | None = None):
         geo_commune = lambda c, d=None: geocode.geocode_commune(c, d, cache=cache_geo)
         plan_articles = google_news.collect(queries=drilldown.PLAN_SCAN_QUERIES)
         drill_queries = drilldown.requetes_depuis_articles(
-            plan_articles, lambda c: geo_commune(c)
+            plan_articles, geo_commune
         )
     except Exception as _drill_exc:
         print(f"[drilldown] scan échoué, passage sans drill-down : {_drill_exc}")

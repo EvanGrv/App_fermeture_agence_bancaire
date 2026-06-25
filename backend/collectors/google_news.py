@@ -92,9 +92,6 @@ QUERIES = list(dict.fromkeys(
 _BIG_BANKS_NATIONAL = [
     q for q in _PAR_ENSEIGNE
     if any(q.startswith(enseigne) for enseigne in ("Crédit Agricole", "Société Générale", "BNP"))
-    and not any(marque in q for marque in (
-        # exclure les marques régionales longues qui sont déjà peu volumineuses
-    ))
 ]
 _DENSE: set[str] = set(_THEMATIQUES) | set(_BIG_BANKS_NATIONAL)
 

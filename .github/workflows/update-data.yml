@@ -11,7 +11,10 @@ on:
         required: false
         default: "24"
   schedule:
+    # Incrémental quotidien : fenêtre 60 jours (cumulative — le DB n'est jamais purgé).
     - cron: "17 3 * * *"
+    # Profond hebdomadaire (lundi) : fenêtre 24 mois pour rattraper les articles anciens.
+    - cron: "17 4 * * 1"
 
 permissions:
   contents: write
@@ -60,13 +63,25 @@ jobs:
         run: python -m pytest -q
 
       - name: Run pipeline
+        env:
+          EVENT_SCHEDULE: ${{ github.event.schedule }}
         run: |
+          # Precedence:
+          # 1. Manual --since (workflow_dispatch input)
+          # 2. Manual --lookback-months (workflow_dispatch input, non-empty)
+          # 3. Weekly schedule (Monday 04:17) → 24 months deep
+          # 4. Daily schedule (03:17) or any other → 60 days incremental
           SINCE="${{ github.event.inputs.since }}"
           LOOKBACK_MONTHS="${{ github.event.inputs.lookback_months || '24' }}"
+          LOOKBACK_MONTHS_RAW="${{ github.event.inputs.lookback_months }}"
           if [ -n "$SINCE" ]; then
             python run.py --since "$SINCE"
-          else
+          elif [ -n "$LOOKBACK_MONTHS_RAW" ]; then
             python run.py --lookback-months "$LOOKBACK_MONTHS"
+          elif [ "$EVENT_SCHEDULE" = "17 4 * * 1" ]; then
+            python run.py --lookback-months 24
+          else
+            python run.py --lookback-days 60
           fi
 
       - name: Commit public exports

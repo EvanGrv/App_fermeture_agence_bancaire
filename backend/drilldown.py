@@ -43,7 +43,7 @@ def _normalise(texte: str) -> str:
 # Pattern : (nombre ≥ 2 ou mot-nombre) suivi de jusqu'à ~40 chars avant "agences"
 # On utilise .{0,40} (lazy) pour gérer les apostrophes (d'agences, vingtaine d'agences…).
 _PLAN_QUANTITE = re.compile(
-    r"(?:\d+|deux|trois|quatre|cinq|six|sept|huit|neuf|dix|douze|quinze|vingt"
+    r"(?:(?:[2-9]|\d{2,})|deux|trois|quatre|cinq|six|sept|huit|neuf|dix|douze|quinze|vingt"
     r"|plusieurs|une\s+vingtaine|une\s+dizaine)"
     r".{0,40}agences",
     re.IGNORECASE,
