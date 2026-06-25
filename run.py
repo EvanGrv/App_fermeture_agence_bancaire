@@ -74,7 +74,7 @@ def main(since_date: str | None = None):
     recap = run_pipeline(
         conn,
         collectors,
-        extractor_fn=lambda art: extract(art, client=client),
+        extractor_fn=lambda art: extract(art, client=client, floor=since_date),
         geocoder_fn=lambda commune, dept: geocode.geocode_commune(
             commune, dept, cache=cache_geo),
         vigilance_fn=lambda art, raison: store.upsert_vigilance(

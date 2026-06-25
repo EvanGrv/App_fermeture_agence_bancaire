@@ -5,8 +5,9 @@ import config
 from backend.plans import PLANS
 
 _CLOSURE_COLS = ["id", "banque", "commune", "code_insee", "departement", "type",
-                 "date_annonce", "date_fermeture", "statut", "fiabilite",
-                 "lat", "lon", "citation", "created_at"]
+                 "date_annonce", "date_fermeture", "statut", "statut_temporel",
+                 "date_fermeture_approx", "fiabilite", "lat", "lon", "citation",
+                 "created_at"]
 _VIGILANCE_COLS = ["id", "banque", "departement", "titre", "extrait", "url",
                    "source", "date", "score", "raison", "created_at"]
 _REGIONS = {
@@ -163,6 +164,7 @@ def export_fermetures_csv(conn, path) -> None:
     payload = build_payload(conn)
     fields = [
         "Banque", "Commune", "Département", "Région", "Type d'information",
+        "Temporalité",
         "Date annonce", "Date fermeture", "Source", "URL", "Fiabilité",
         "À vérifier", "Citation",
     ]
@@ -182,6 +184,8 @@ def export_fermetures_csv(conn, path) -> None:
                 "Département": closure.get("departement") or "",
                 "Région": _region(closure.get("departement")),
                 "Type d'information": closure.get("type") or "",
+                "Temporalité": {"deja_fermee": "Déjà fermée", "a_venir": "À venir"}
+                    .get(closure.get("statut_temporel"), "Inconnu"),
                 "Date annonce": closure.get("date_annonce") or "",
                 "Date fermeture": closure.get("date_fermeture") or "",
                 "Source": source.get("source") or "",
