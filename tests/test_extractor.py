@@ -1,6 +1,6 @@
 from datetime import date, timedelta
 import config
-from backend.extractor import extract, build_messages, Extraction, normalise_banque, _retenir_fermeture
+from backend.extractor import extract, build_messages, Extraction, normalise_banque, _retenir_fermeture, banque_connue
 
 AUJ = "2026-06-01"  # date du jour fixe pour des tests déterministes
 
@@ -219,3 +219,33 @@ def test_a_venir_est_retenue_sans_date():
     ok = _retenir_fermeture("a_venir", None, floor="2025-01-01",
                             aujourdhui="2026-06-25")
     assert ok is True
+
+
+# ---------------------------------------------------------------------------
+# Task 16 — Part 1: robust bank normalization
+# ---------------------------------------------------------------------------
+
+def test_normalise_banque_gere_tiret():
+    """BNP-Paribas (avec tiret) doit être canonisé en BNP Paribas."""
+    assert normalise_banque("BNP-Paribas") == "BNP Paribas"
+
+
+def test_normalise_banque_regionale_tiret():
+    """Caisse d'Épargne Loire Centre avec tiret → enseigne canonique.
+    Variante utilisée : 'Caisse d'épargne Loire-Centre' (tiret dans Loire-Centre)
+    qui doit mapper sur 'Caisse d'Épargne Loire Centre' dans MARQUES_REGIONALES
+    et retourner le canonical 'Caisse d'Épargne'.
+    """
+    assert normalise_banque("Caisse d'épargne Loire-Centre") == "Caisse d'Épargne"
+
+
+def test_banque_connue():
+    assert banque_connue("BNP Paribas") is True
+    assert banque_connue("") is False
+    assert banque_connue("BforBank") is False
+
+
+def test_extract_rejette_banque_inconnue():
+    """extract() doit retourner None si la banque n'est pas dans le périmètre."""
+    parsed = _extraction(banque="", concerne_banque=True)
+    assert extract(_article(), client=FakeClient(parsed), aujourdhui=AUJ) is None

@@ -1,5 +1,6 @@
 from datetime import date
 import os
+import re
 import time
 from typing import Literal, Optional
 from pydantic import BaseModel, Field
@@ -53,8 +54,20 @@ for _groupe, _variantes in getattr(config, "MARQUES_REGIONALES", {}).items():
 
 
 def normalise_banque(nom: str) -> str:
-    canon = _CANON.get(normalise_cle(nom or ""))
+    cle = normalise_cle(nom or "")
+    canon = _CANON.get(cle)
+    if canon is None:
+        # Try collapsing hyphens so "BNP-Paribas" → "bnp paribas" hits _CANON
+        collapsed = re.sub(r"\s+", " ", cle.replace("-", " ")).strip()
+        canon = _CANON.get(collapsed)
     return canon if canon else (nom or "").strip()
+
+
+KNOWN_BANKS: set[str] = set(_CANON.values()) | set(config.ENSEIGNES)
+
+
+def banque_connue(banque: str) -> bool:
+    return banque in KNOWN_BANKS
 
 
 class Extraction(BaseModel):
@@ -181,6 +194,8 @@ def extract(article: dict, client, model: str = config.ANTHROPIC_MODEL,
         return None
     banque = normalise_banque(data.banque)
     if normalise_cle(banque) in getattr(config, "EXCLURE_BANQUES", []):
+        return None
+    if not banque_connue(banque):
         return None
     return {
         "id": closure_id(banque, data.commune, data.type),
