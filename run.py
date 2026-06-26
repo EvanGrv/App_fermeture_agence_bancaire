@@ -147,10 +147,15 @@ def main(since_date: str | None = None):
     if config.VIGILANCE_REVIEW_ENABLED:
         progress("Revue arborescente des vigilances", 82)
         try:
+            review_extractor = (
+                (lambda art: extract(art, client=client, floor=since_date))
+                if config.VIGILANCE_REVIEW_AI_ENABLED
+                else None
+            )
             review_recap = vigilance_review.reviser_vigilances(
                 conn,
                 search_fn=search_registry.search,
-                extractor_fn=lambda art: extract(art, client=client, floor=since_date),
+                extractor_fn=review_extractor,
                 geocode_fn=geo_commune,
             )
         except Exception as exc:

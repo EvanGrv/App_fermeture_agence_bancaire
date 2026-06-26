@@ -30,9 +30,15 @@ LOOKBACK_MONTHS_DEFAULT = int(os.getenv("LOOKBACK_MONTHS_DEFAULT", "18"))
 # devient le point de départ d'une recherche secondaire ciblée (Phase 2).
 VIGILANCE_REVIEW_ENABLED = os.getenv("VIGILANCE_REVIEW_ENABLED", "1") != "0"
 VIGILANCE_REVIEW_MIN_SCORE = int(os.getenv("VIGILANCE_REVIEW_MIN_SCORE", "3"))
-VIGILANCE_REVIEW_MAX_PER_RUN = int(os.getenv("VIGILANCE_REVIEW_MAX_PER_RUN", "50"))
+# Par défaut on passe toute la file qualifiée en revue. Le coût IA est contrôlé
+# séparément par VIGILANCE_REVIEW_AI_ENABLED.
+VIGILANCE_REVIEW_MAX_PER_RUN = int(os.getenv("VIGILANCE_REVIEW_MAX_PER_RUN", "1000"))
 VIGILANCE_REVIEW_MAX_QUERIES_PER_ITEM = int(
     os.getenv("VIGILANCE_REVIEW_MAX_QUERIES_PER_ITEM", "8"))
+# Solution économique : la revue exploite d'abord titre/source/géocodage et ne
+# consomme pas Anthropic par défaut. Activer ponctuellement avec
+# VIGILANCE_REVIEW_AI_ENABLED=1 pour une campagne IA complète.
+VIGILANCE_REVIEW_AI_ENABLED = os.getenv("VIGILANCE_REVIEW_AI_ENABLED", "0") == "1"
 # Intervalle minimal avant de re-réviser une même vigilance (jours).
 VIGILANCE_REVIEW_COOLDOWN_DAYS = int(os.getenv("VIGILANCE_REVIEW_COOLDOWN_DAYS", "7"))
 

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T14:26:55.815897+00:00",
+  "generated_at": "2026-06-26T15:21:44.093692+00:00",
   "departements": {
     "01": {
       "nom": "Ain",
@@ -106,7 +106,7 @@
     "18": {
       "nom": "Cher",
       "region": "Centre-Val de Loire",
-      "count": 0,
+      "count": 1,
       "total_agences": 23
     },
     "19": {
@@ -286,7 +286,7 @@
     "47": {
       "nom": "Lot-et-Garonne",
       "region": "Nouvelle-Aquitaine",
-      "count": 0,
+      "count": 1,
       "total_agences": 8
     },
     "48": {
@@ -645,6 +645,22 @@
       "nb_departements": 3
     },
     {
+      "region": "Normandie",
+      "articles": 8,
+      "fermetures": 5,
+      "projets": 0,
+      "fusions": 0,
+      "types": [
+        "Fermeture"
+      ],
+      "departements": [
+        "14",
+        "27",
+        "76"
+      ],
+      "nb_departements": 3
+    },
+    {
       "region": "Bretagne",
       "articles": 7,
       "fermetures": 6,
@@ -657,22 +673,6 @@
         "22",
         "29",
         "56"
-      ],
-      "nb_departements": 3
-    },
-    {
-      "region": "Normandie",
-      "articles": 7,
-      "fermetures": 5,
-      "projets": 0,
-      "fusions": 0,
-      "types": [
-        "Fermeture"
-      ],
-      "departements": [
-        "14",
-        "27",
-        "76"
       ],
       "nb_departements": 3
     },
@@ -695,33 +695,37 @@
     },
     {
       "region": "Nouvelle-Aquitaine",
-      "articles": 4,
+      "articles": 5,
       "fermetures": 2,
-      "projets": 0,
+      "projets": 1,
       "fusions": 0,
       "types": [
-        "Fermeture"
+        "Fermeture",
+        "Projet"
       ],
       "departements": [
         "24",
+        "47",
         "87"
       ],
-      "nb_departements": 2
+      "nb_departements": 3
     },
     {
       "region": "Centre-Val de Loire",
-      "articles": 4,
+      "articles": 5,
       "fermetures": 4,
-      "projets": 0,
+      "projets": 1,
       "fusions": 0,
       "types": [
-        "Fermeture"
+        "Fermeture",
+        "Projet"
       ],
       "departements": [
+        "18",
         "36",
         "37"
       ],
-      "nb_departements": 2
+      "nb_departements": 3
     },
     {
       "region": "Grand Est",
@@ -1183,6 +1187,13 @@
           "titre": "Criel-sur-Mer : L'agence du Crédit Agricole va fermer ses portes - Actu.fr",
           "source": "Google News",
           "date": "Mon, 17 Mar 2025 07:00:00 GMT",
+          "tier": "D"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOZk1EZm9DWFd1bjR6VDE2MTFhUlNlbXFhcjZwUTZINXNTUy1EYmhjN2c2MFR5dEktbU1VOF9Fc1ZGWjJ1cndkZllzWk8zT0NzQ1ZOUDZOcmxFaS1uVkk0eDB0U1BvN2g2aVJwODR5MFpQaUtyMXQ4ZllrLUZ5dEtVYVZ0RUFTVFdtOTBUWEtxdFRybk0ycEdSclFPVi1fOG9fTEgxd2ZMREdzY195RjJxcmZRZU4tcGZfX0M1eFRqTXNhUkk?oc=5",
+          "titre": "Criel-sur-Mer : la fermeture de l’agence du Crédit Agricole confirmée - Courrier picard",
+          "source": "Google News",
+          "date": "Wed, 19 Mar 2025 07:00:00 GMT",
           "tier": "D"
         }
       ],
@@ -2342,6 +2353,68 @@
         }
       ],
       "region": "Bourgogne-Franche-Comté"
+    },
+    {
+      "id": "2f07a4a5c53533b1",
+      "banque": "Crédit Agricole",
+      "commune": "Lauzun",
+      "code_insee": "47142",
+      "departement": "47",
+      "type": "fermeture",
+      "date_annonce": "Wed, 04 Feb 2026 08:00:00 GMT",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "date_fermeture_approx": 0,
+      "fiabilite": 3,
+      "lat": 44.639318,
+      "lon": 0.465633,
+      "citation": "Municipales 2026 : la fermeture de l’agence du Crédit Agricole se transforme en affaire politique à Lauzun - Actu.fr",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "created_at": "2026-06-26T15:21:20.923072+00:00",
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQNllaLXBEdk96SjdjUkhybkJic1ZBdFVHOElYd090V0dGaDU3T1lmbFlDSUJyOGd0VDRWUTBKYjZPU1Qyci1zVktqUkFwOEl2Zm9Nb01LWTJfazhtRWdYeDZTaENOTlZocGtDWEZZTGpTRE16aUhGNnVMQUhZMUJjcUctWUhVaktxWEI3dHRuQXlJOE5ncGR3NHoxUWQtMXoyQVUyUUtoRllUbGk0M1NUTUFsT2hmU3I5bjc5V0FGSm5xOE1rcG16b21WUVcxZ3RSNnZOanc5NFdmeTZmNXRFR25OQk5wbnZ1SURZVDBjY0kzYTJ5WWpmZg?oc=5",
+          "titre": "Municipales 2026 : la fermeture de l’agence du Crédit Agricole se transforme en affaire politique à Lauzun - Actu.fr",
+          "source": "Google News",
+          "date": "Wed, 04 Feb 2026 08:00:00 GMT",
+          "tier": "D"
+        }
+      ],
+      "region": "Nouvelle-Aquitaine"
+    },
+    {
+      "id": "2968baba09060258",
+      "banque": "Caisse d'Épargne",
+      "commune": "Dun-sur-Auron",
+      "code_insee": "18087",
+      "departement": "18",
+      "type": "fermeture",
+      "date_annonce": "Thu, 27 Mar 2025 07:00:00 GMT",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "date_fermeture_approx": 0,
+      "fiabilite": 3,
+      "lat": 46.892867,
+      "lon": 2.554566,
+      "citation": "Dun-sur-Auron. L'agence Caisse d'épargne ferme définitivement - echoduberry.fr",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "created_at": "2026-06-26T15:21:23.628193+00:00",
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPeUMtZUNaU1dzOWNFdmFtWjhOZjdaYk5EbEtZY19fdFlPbjJmLWRJby1uU3NyVFF2bXlCSVdWQ1Bjc0xzMFFNcHRETG9fMklhRmlSZGR2NGZ3bzIyeUhpRThpWlBhUnZYU2RjTzExUkktUDllVjdyTEFfMjZSTGY5d0YwTVhyMVZWc2pvaUtPclU3N291VEgwNHU0LU1YdlRxOVZOS1pn?oc=5",
+          "titre": "Dun-sur-Auron. L'agence Caisse d'épargne ferme définitivement - echoduberry.fr",
+          "source": "Google News",
+          "date": "Thu, 27 Mar 2025 07:00:00 GMT",
+          "tier": "D"
+        }
+      ],
+      "region": "Centre-Val de Loire"
     }
   ],
   "vigilances": [

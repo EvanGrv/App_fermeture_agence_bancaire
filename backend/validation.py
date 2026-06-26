@@ -29,7 +29,11 @@ _TERRITOIRES_NON_COMMUNES = {
 } | {
     "franche comte",
     "bourgogne franche comte",
+    "centre val",
     "haute loire",
+    "haute vienne",
+    "antilles guyane",
+    "regions",
     "loire haute loire",
     "normandie",
     "nouvelle aquitaine",
@@ -53,14 +57,21 @@ _MEDIAS_ET_SOURCES = {
     "la nouvelle republique", "nouvelle republique", "le bien public",
     "bien public", "info chalon", "delta fm", "europe says", "europesays",
     "dna", "ici", "actu", "le progres", "le dauphine", "sud ouest",
-    "la voix du nord", "france bleu", "radio france", "le republicain lorrain",
+    "la voix", "la voix du nord", "france bleu", "radio france", "le republicain lorrain",
     "republicain lorrain", "paris normandie", "la depeche", "le telegramme",
-    "le parisien", "le monde", "le figaro", "afp", "reuters",
+    "le parisien", "le monde", "le figaro", "la montagne", "l eveil",
+    "eveil", "l echo republicain", "echo republicain", "le berry republicain",
+    "berry republicain", "la commere", "nord littoral", "france 3 regions",
+    "centre presse aveyron", "le populaire", "le populaire du centre",
+    "outre mer la", "outre mer", "paris norm", "afp", "reuters",
 }
 _GENERIQUES = {
     "l agence", "agence", "la banque", "banque", "le", "la", "les", "un",
     "une", "des", "du", "de", "en", "au", "aux", "dans", "cette", "ce",
     "ces", "son", "sa", "ses", "et", "ou", "mais", "ledit", "selon",
+    "apres", "après", "pourquoi", "sept", "trois", "fermeture",
+    "fermetures", "centre", "sud", "pays", "hexagone", "caisse",
+    "epargne", "épargne", "tout", "vers", "six",
 }
 _FAUX_CANDIDATS = _MEDIAS_ET_SOURCES | _GENERIQUES
 

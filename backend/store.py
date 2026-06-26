@@ -292,6 +292,17 @@ _LIEU_DANS_TITRE = re.compile(
     r"|(?:\bà|\bde|\bdes|\baux?)\s+[A-ZÀ-Ý][a-zà-ÿ'’]{2,}",
 )
 
+_FERMETURE_AGENCE = re.compile(
+    r"\b(fermeture|fermetures|ferme|fermer|fermera|fermeront|fermé|fermée|"
+    r"suppression|supprime|regroupement)\b.{0,90}"
+    r"\b(agence|agences|banque|bancaire|guichet|succursale)\b"
+    r"|"
+    r"\b(agence|agences|banque|bancaire|guichet|succursale)\b.{0,90}"
+    r"\b(fermeture|fermetures|ferme|fermer|fermera|fermeront|fermé|fermée|"
+    r"suppression|supprime|regroupement)\b",
+    re.IGNORECASE | re.DOTALL,
+)
+
 
 def _source_est_pqr(source: str | None) -> bool:
     s = (source or "").lower()
@@ -314,6 +325,9 @@ def _priorite_revue(vig: dict) -> int:
     if _source_est_legifrance(source):
         priorite -= 40
     titre = vig.get("titre") or ""
+    texte = f"{titre} {vig.get('extrait','')}"
+    if _FERMETURE_AGENCE.search(texte):
+        priorite += 45
     if est_plan(f"{titre} {vig.get('extrait','')}"):
         priorite += 30
     if _LIEU_DANS_TITRE.search(titre):

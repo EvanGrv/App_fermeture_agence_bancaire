@@ -88,5 +88,25 @@
     "departement": "76",
     "code_insee": "76540",
     "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "2f07a4a5c53533b1",
+    "banque": "Crédit Agricole",
+    "commune": "Lauzun",
+    "departement": "47",
+    "code_insee": "47142",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "2968baba09060258",
+    "banque": "Caisse d'Épargne",
+    "commune": "Dun-sur-Auron",
+    "departement": "18",
+    "code_insee": "18087",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
   }
 ]

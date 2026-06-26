@@ -148,6 +148,13 @@ La revue arborescente des vigilances (`backend/vigilance_review.py`) peut
 interroger des providers de recherche web. **Tous sont optionnels et best-effort** :
 le pipeline reste pleinement fonctionnel si aucun n'est configuré.
 
+Par défaut, toute la file qualifiée est revue en mode économique
+(`VIGILANCE_REVIEW_MAX_PER_RUN=1000`, `VIGILANCE_REVIEW_AI_ENABLED=0`) : le
+pipeline exploite les titres, URLs, sources et le géocodage pour publier
+uniquement les cas mono-commune très explicites. Pour une campagne exhaustive
+avec Anthropic, activer ponctuellement `VIGILANCE_REVIEW_AI_ENABLED=1` ; Haiku
+reste le modèle principal et Sonnet le fallback.
+
 - **Brave Search** — activé uniquement si `BRAVE_SEARCH_API_KEY` est défini.
   Sans clé → `[]`. ⚠️ L'offre gratuite Brave est limitée/non garantie dans le
   temps ; ne pas en dépendre pour le run quotidien.
