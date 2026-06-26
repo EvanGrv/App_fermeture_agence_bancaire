@@ -1,7 +1,7 @@
 # backend/pipeline.py
 from datetime import date, datetime, timezone
 from email.utils import parsedate_to_datetime
-from backend import prefilter, store, validation
+from backend import commune_normalize, prefilter, store, validation
 from backend.fulltext import fetch_text
 
 
@@ -134,6 +134,9 @@ def run_pipeline(
                     resultat["departement"] = geo.get("departement")
                 if not resultat.get("code_insee"):
                     resultat["code_insee"] = geo.get("code_insee")
+                # Rattache à la commune administrative (BAN) et conserve la
+                # localisation d'agence d'origine (ex. Coëtquidan -> Guer).
+                resultat = commune_normalize.appliquer(resultat, geo)
             publiable, raison = validation.fermeture_publiable(resultat, geo)
             if not publiable:
                 recap["rejets_validation"] += 1

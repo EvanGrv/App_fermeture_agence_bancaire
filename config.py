@@ -11,8 +11,11 @@ DB_PATH = DATA_DIR / "press.db"
 DATA_JSON = EXPORT_DIR / "data.json"
 GEOJSON_PATH = EXPORT_DIR / "departements.geojson"
 
-# Modèle IA d'extraction (le plus capable par défaut). claude-haiku-4-5 = option moins chère pour le volume.
-ANTHROPIC_MODEL = "claude-opus-4-8"
+# Modèles IA d'extraction : Haiku traite le volume, Sonnet sert de filet pour
+# les cas ambigus. Surcharge possible via .env.
+ANTHROPIC_MODEL = os.getenv("ANTHROPIC_MODEL", "claude-haiku-4-5")
+ANTHROPIC_FALLBACK_MODEL = os.getenv("ANTHROPIC_FALLBACK_MODEL", "claude-sonnet-4-6")
+ANTHROPIC_FALLBACK_ENABLED = os.getenv("ANTHROPIC_FALLBACK_ENABLED", "1") != "0"
 
 # Fenêtre de récence appliquée aux requêtes Google News (opérateur `when:`).
 # ATTENTION aux unités Google News : h=heures, d=jours, y=années (m=MINUTES, pas mois).
@@ -23,11 +26,39 @@ GOOGLE_NEWS_WHEN = os.getenv("GOOGLE_NEWS_WHEN", "180d")
 # depuis ~début 2025 + le prévisionnel). Élargissable via --lookback-months.
 LOOKBACK_MONTHS_DEFAULT = int(os.getenv("LOOKBACK_MONTHS_DEFAULT", "18"))
 
+# Revue arborescente des vigilances : chaque vigilance d'un score suffisant
+# devient le point de départ d'une recherche secondaire ciblée (Phase 2).
+VIGILANCE_REVIEW_ENABLED = os.getenv("VIGILANCE_REVIEW_ENABLED", "1") != "0"
+VIGILANCE_REVIEW_MIN_SCORE = int(os.getenv("VIGILANCE_REVIEW_MIN_SCORE", "3"))
+VIGILANCE_REVIEW_MAX_PER_RUN = int(os.getenv("VIGILANCE_REVIEW_MAX_PER_RUN", "50"))
+VIGILANCE_REVIEW_MAX_QUERIES_PER_ITEM = int(
+    os.getenv("VIGILANCE_REVIEW_MAX_QUERIES_PER_ITEM", "8"))
+# Intervalle minimal avant de re-réviser une même vigilance (jours).
+VIGILANCE_REVIEW_COOLDOWN_DAYS = int(os.getenv("VIGILANCE_REVIEW_COOLDOWN_DAYS", "7"))
+
+# Éclatement des articles "plan multi-agences" en fermetures individuelles (Phase 3).
+PLAN_EXPLOSION_ENABLED = os.getenv("PLAN_EXPLOSION_ENABLED", "1") != "0"
+PLAN_EXPLOSION_MAX_COMMUNES = int(os.getenv("PLAN_EXPLOSION_MAX_COMMUNES", "30"))
+
+# Provider local_sitemap (Phase 6.3) : découverte web sans clé via sitemaps/feeds.
+# Coûteux (multi-fetch HTTP) et non encore optimisé -> DÉSACTIVÉ par défaut pour
+# le run quotidien. À activer ponctuellement (LOCAL_SITEMAP_ENABLED=1) pour des
+# campagnes ciblées. Timeout court + cache + plafond de domaines par requête.
+LOCAL_SITEMAP_ENABLED = os.getenv("LOCAL_SITEMAP_ENABLED", "0") != "0"
+LOCAL_SITEMAP_TIMEOUT = int(os.getenv("LOCAL_SITEMAP_TIMEOUT", "5"))
+LOCAL_SITEMAP_MAX_DOMAINS = int(os.getenv("LOCAL_SITEMAP_MAX_DOMAINS", "2"))
+
 ENSEIGNES = [
     "Crédit Agricole", "BNP", "Société Générale", "Banque Populaire",
     "Caisse d'Épargne", "Crédit Mutuel", "CIC", "LCL",
     "Crédit du Nord", "HSBC", "CCF", "La Banque Postale", "Crédit Coopératif",
 ]
+
+# Périmètre optionnel : le Crédit Municipal (ex. Dijon) n'est pas suivi par
+# défaut. Activable via INCLUDE_CREDIT_MUNICIPAL=1 (Phase 9).
+INCLUDE_CREDIT_MUNICIPAL = os.getenv("INCLUDE_CREDIT_MUNICIPAL", "0") != "0"
+if INCLUDE_CREDIT_MUNICIPAL:
+    ENSEIGNES.append("Crédit Municipal")
 
 # Principales marques régionales ou anciennes dénominations utiles pour la
 # presse locale. Elles sont rattachées à une enseigne canonique dans l'extracteur.
@@ -44,6 +75,7 @@ MARQUES_REGIONALES = {
         "Crédit Agricole Charente-Maritime Deux-Sèvres",
         "Crédit Agricole des Savoie",
         "Crédit Agricole Finistère",
+        "Crédit Agricole de Franche-Comté",
         "Crédit Agricole Franche-Comté",
         "Crédit Agricole Ille-et-Vilaine",
         "Crédit Agricole Languedoc",

@@ -78,6 +78,10 @@ Secrets GitHub Actions à créer dans `Settings > Secrets and variables > Action
 
 Variables GitHub Actions optionnelles :
 
+- `ANTHROPIC_MODEL` (défaut `claude-haiku-4-5`) pour l'extraction de volume.
+- `ANTHROPIC_FALLBACK_MODEL` (défaut `claude-sonnet-4-6`) pour les articles
+  que le modèle primaire ne transforme pas en fermeture exploitable.
+- `ANTHROPIC_FALLBACK_ENABLED=0` pour désactiver ce fallback Sonnet.
 - `OPENAI_BUDGET_EUR` (défaut `1.0`).
 - `GOOGLE_NEWS_WHEN` (défaut `720d`, soit environ 24 mois pour le workflow hébergé).
 - `GDELT_THROTTLE_SECONDS` (défaut `12`).
@@ -138,6 +142,65 @@ manuellement avec une date `since` ou une fenêtre `lookback_months`.
 Les sources de contrôle (OSM/Overpass, SIRENE, INSEE/BPE si ajoutée plus tard)
 servent au dénombrement ou à la validation, jamais à anticiper une fermeture.
 
+## Recherche web secondaire (providers optionnels)
+
+La revue arborescente des vigilances (`backend/vigilance_review.py`) peut
+interroger des providers de recherche web. **Tous sont optionnels et best-effort** :
+le pipeline reste pleinement fonctionnel si aucun n'est configuré.
+
+- **Brave Search** — activé uniquement si `BRAVE_SEARCH_API_KEY` est défini.
+  Sans clé → `[]`. ⚠️ L'offre gratuite Brave est limitée/non garantie dans le
+  temps ; ne pas en dépendre pour le run quotidien.
+- **Bing Web Search** — activé uniquement si `BING_SEARCH_API_KEY` est défini.
+  Sans clé → `[]`. ⚠️ **Important** : l'API Bing Web Search v7 classique est en
+  voie de retrait et **Bing Grounding (Azure AI Agents)** n'est **pas** la même
+  chose — c'est un service de *grounding* facturé, conditionné à l'éligibilité
+  Azure, qui ne donne **pas** un accès brut simple aux résultats de recherche et
+  n'est **pas** une source gratuite garantie. Ne jamais supposer que Bing est
+  disponible gratuitement.
+- **`local_sitemap`** — découverte sans clé via les sitemaps/flux RSS de la
+  presse régionale. **Désactivé par défaut** (`LOCAL_SITEMAP_ENABLED=0`) car
+  coûteux en I/O et non encore optimisé : à n'activer que pour des campagnes
+  ciblées. Sécurisé par un timeout court (`LOCAL_SITEMAP_TIMEOUT`, défaut 5 s),
+  un cache par domaine/path entre appels, et un plafond de domaines interrogés
+  par requête (`LOCAL_SITEMAP_MAX_DOMAINS`, défaut 2).
+
+Sélection des providers via `WEB_SEARCH_PROVIDERS` (défaut
+`brave,bing,local_sitemap` ; `local_sitemap` reste inerte tant que
+`LOCAL_SITEMAP_ENABLED=0`).
+
+## Mode « seed URLs » (ingestion directe)
+
+Pour reproduire la couverture d'une base externe sans dépendre d'un moteur de
+recherche, on peut ingérer directement une liste d'URLs curées :
+
+```bash
+# Liste .txt (une URL par ligne), .csv (colonne « Lien source »/« url ») ou .xlsx
+python run.py --seed-urls chemin/vers/urls.csv
+
+# Réutilise l'Excel de référence comme source d'URLs ET comme base de comparaison
+python run.py --seed-excel "agences_bancaires_fermetures_2026_pqr_mairies_complete.xlsx"
+```
+
+Chaque URL devient un article `{titre, texte, url, date, source}`, passe par
+`fulltext.fetch_text` → extraction IA → géocodage (avec repli lieu-dit, ex.
+Coëtquidan → Guer) → normalisation de la commune administrative → validation →
+upsert closure/source. Le préfiltre n'est pas appliqué (URLs explicitement
+fournies). `--seed-excel` affiche en fin de run la comparaison avec la référence.
+
+## Diagnostic de couverture
+
+```bash
+python -m tools.compare_expected_closures reference.xlsx data/export/data.json
+```
+
+Classe chaque ligne attendue : `present_closure`, `missing_date`,
+`present_vigilance`, `plan_not_exploded`, `bad_commune_normalization`,
+`present_malformed`, `absent`. Reconnaît les en-têtes français de l'Excel
+(`Banque`, `Agence / localisation`, `Commune`, `Date de fermeture`,
+`Lien source`, `Score de confiance`…) et tolère les dates en texte
+(« Semaine précédant le 23/06/2026 »).
+
 ## Tests
 
 ```bash
@@ -147,14 +210,16 @@ python -m pytest -v
 ## Configuration
 
 Tout se règle dans `config.py` : enseignes suivies, mots-clés, départements,
-et le modèle IA (`ANTHROPIC_MODEL`, par défaut `claude-opus-4-8` ;
-`claude-haiku-4-5` pour réduire le coût en volume).
+et les modèles IA. Par défaut, `ANTHROPIC_MODEL=claude-haiku-4-5` traite le
+volume et `ANTHROPIC_FALLBACK_MODEL=claude-sonnet-4-6` sert de filet pour les
+articles que Haiku ne transforme pas en fermeture exploitable.
 
 Variables d'environnement optionnelles :
 
 - `ANTHROPIC_MAX_RETRIES`, `ANTHROPIC_RETRY_BASE_SECONDS`,
   `ANTHROPIC_RETRY_MAX_SECONDS` pilotent les retries sur erreurs transitoires
   Anthropic (`429`, `500`, `504`, `529`).
+- `ANTHROPIC_FALLBACK_ENABLED=0` désactive le fallback Sonnet.
 - `OPENAI_API_KEY` active un fallback OpenAI quand Anthropic échoue encore sur
   une erreur transitoire après retries.
 - `OPENAI_BUDGET_EUR` plafonne l'estimation de coût OpenAI (défaut : `1.0`).

@@ -45,6 +45,26 @@ _TERRITOIRES_NON_COMMUNES = {
 }
 
 
+# Faux candidats fréquents extraits du texte d'un article : noms de médias /
+# journaux, génériques ("L'agence"), articles ou mots-outils en tête de phrase.
+# Ils ne doivent jamais partir en géocodage BAN comme s'ils étaient des communes.
+_MEDIAS_ET_SOURCES = {
+    "ouest france", "est republicain", "l est republicain",
+    "la nouvelle republique", "nouvelle republique", "le bien public",
+    "bien public", "info chalon", "delta fm", "europe says", "europesays",
+    "dna", "ici", "actu", "le progres", "le dauphine", "sud ouest",
+    "la voix du nord", "france bleu", "radio france", "le republicain lorrain",
+    "republicain lorrain", "paris normandie", "la depeche", "le telegramme",
+    "le parisien", "le monde", "le figaro", "afp", "reuters",
+}
+_GENERIQUES = {
+    "l agence", "agence", "la banque", "banque", "le", "la", "les", "un",
+    "une", "des", "du", "de", "en", "au", "aux", "dans", "cette", "ce",
+    "ces", "son", "sa", "ses", "et", "ou", "mais", "ledit", "selon",
+}
+_FAUX_CANDIDATS = _MEDIAS_ET_SOURCES | _GENERIQUES
+
+
 def _nettoie_commune(commune: str | None) -> str:
     return re.sub(r"\s+", " ", (commune or "").strip())
 
@@ -55,7 +75,12 @@ def commune_publiable(commune: str | None) -> bool:
     cle = _cle_commune(commune)
     if cle in _COMMUNES_INVALIDES or cle in _TERRITOIRES_NON_COMMUNES:
         return False
-    if len(commune) < 2:
+    if cle in _FAUX_CANDIDATS:
+        return False
+    # Mots-outils / fragments trop courts (≤2 lettres, hors quelques communes
+    # réelles très courtes qui restent gérées par le géocodage en aval) : on
+    # exige une longueur minimale pour un candidat extrait du texte brut.
+    if len(commune) < 3:
         return False
     if re.search(r"\d+\s+(grandes?\s+)?villes?\b", cle):
         return False

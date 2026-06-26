@@ -1,15 +1,10 @@
 ﻿severity,type,id,banque,commune,departement,code_insee,message
 warning,date_fermeture_absente,fdc3827d9912f892,CIC,Panissières,42,42165,article ancien sans date de fermeture explicite; à confirmer ou archiver
-warning,date_fermeture_absente,340b37b2128c9c0e,Crédit Agricole,Firmi,12,12100,article ancien sans date de fermeture explicite; à confirmer ou archiver
 warning,date_fermeture_absente,d6f3fb1df2179c7e,Crédit Agricole,Condat-sur-Vienne,87,87048,article ancien sans date de fermeture explicite; à confirmer ou archiver
 warning,date_fermeture_absente,e951e09b59947666,BNP Paribas,La Talaudière,42,42305,article ancien sans date de fermeture explicite; à confirmer ou archiver
-warning,date_fermeture_absente,2f07a4a5c53533b1,Crédit Agricole,Lauzun,47,47142,article ancien sans date de fermeture explicite; à confirmer ou archiver
 warning,date_fermeture_absente,4f9afd8a7e4e0a00,BNP Paribas,Aulnoy-lez-Valenciennes,59,59032,article ancien sans date de fermeture explicite; à confirmer ou archiver
-warning,date_fermeture_absente,9961978ce6d8e6b4,Crédit Agricole,Lempdes-sur-Allagnon,43,43120,article ancien sans date de fermeture explicite; à confirmer ou archiver
-warning,date_fermeture_absente,25fd42e304678520,Crédit Agricole,Saint-Martin-d’Estréaux,42,42257,article ancien sans date de fermeture explicite; à confirmer ou archiver
+warning,date_fermeture_absente,d46ccaac8ce4b69d,Crédit Agricole,Saint-Martin-d'Estréaux,42,42257,article ancien sans date de fermeture explicite; à confirmer ou archiver
 warning,date_fermeture_absente,33f889feebdd2c26,Crédit Agricole,Saint-Ferréol-d'Auroure,43,43184,article ancien sans date de fermeture explicite; à confirmer ou archiver
 warning,date_fermeture_absente,878018f0ac603f53,Crédit Agricole,Écueillé,36,36069,article ancien sans date de fermeture explicite; à confirmer ou archiver
 warning,date_fermeture_absente,f832d5b9a0d688f7,Crédit Agricole,Arnèke,59,59018,article ancien sans date de fermeture explicite; à confirmer ou archiver
-warning,date_fermeture_absente,9e37991903456bbc,Crédit Agricole,Mazingarbe,62,62563,article ancien sans date de fermeture explicite; à confirmer ou archiver
-warning,date_fermeture_absente,70a46255dfbdd872,Crédit Agricole,Limogne-en-Quercy,46,46173,article ancien sans date de fermeture explicite; à confirmer ou archiver
-warning,date_fermeture_absente,4b911a4b783ba002,Crédit Mutuel,Villersexel,70,70561,article ancien sans date de fermeture explicite; à confirmer ou archiver
+warning,date_fermeture_absente,d8dcb0b6524fbd9d,Crédit Agricole,Rouen,76,76540,article ancien sans date de fermeture explicite; à confirmer ou archiver

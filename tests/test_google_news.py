@@ -32,6 +32,14 @@ def test_queries_couvrent_regions_departements_et_presse_regionale():
     assert "site:actu.fr fermeture agence bancaire" in requetes
 
 
+def test_queries_couvrent_domaines_pqr_de_la_reference():
+    """Les domaines observés dans l'Excel de référence sont ciblés en site:."""
+    requetes = " ".join(google_news.QUERIES)
+    for domaine in ("dna.fr", "info-chalon.com", "deltafm.fr",
+                    "europesays.com", "bienpublic.com"):
+        assert f"site:{domaine} fermeture agence bancaire" in requetes
+
+
 def test_parse_feed():
     arts = google_news.parse_feed(FIXT.read_text(encoding="utf-8"))
     assert len(arts) == 2

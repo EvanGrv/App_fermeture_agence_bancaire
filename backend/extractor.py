@@ -52,6 +52,10 @@ for _groupe, _variantes in getattr(config, "MARQUES_REGIONALES", {}).items():
     for _variante in _variantes:
         _CANON[normalise_cle(_variante)] = _groupe
 
+# Périmètre optionnel : Crédit Municipal suivi uniquement si activé (Phase 9).
+if getattr(config, "INCLUDE_CREDIT_MUNICIPAL", False):
+    _CANON["credit municipal"] = "Crédit Municipal"
+
 
 def normalise_banque(nom: str) -> str:
     cle = normalise_cle(nom or "")
@@ -168,26 +172,22 @@ def _parse_avec_retries(client, *, model: str, messages: list[dict], sleep_fn=ti
             sleep_fn(attente)
 
 
-def extract(article: dict, client, model: str = config.ANTHROPIC_MODEL,
-            aujourdhui: Optional[str] = None, floor: Optional[str] = None) -> Optional[dict]:
-    aujourdhui = aujourdhui or date.today().isoformat()
-    try:
-        response = _parse_avec_retries(
-            client,
-            model=model,
-            messages=build_messages(article, aujourdhui),
-        )
-        data: Extraction = response.parsed_output
-    except Exception as exc:
-        if (
-            _status_code(exc) in _RETRY_STATUS_CODES
-            and os.environ.get("OPENAI_API_KEY")
-            and os.environ.get("OPENAI_FALLBACK_ENABLED", "1") != "0"
-        ):
-            from backend.openai_fallback import extract_openai
-            data = extract_openai(article, aujourdhui)
-        else:
-            raise
+def _fallback_model(model: str) -> str | None:
+    fallback = getattr(config, "ANTHROPIC_FALLBACK_MODEL", "")
+    if not getattr(config, "ANTHROPIC_FALLBACK_ENABLED", True):
+        return None
+    if not fallback or fallback == model:
+        return None
+    return fallback
+
+
+def _resultat_depuis_extraction(
+    data: Extraction | None,
+    article: dict,
+    *,
+    floor: Optional[str],
+    aujourdhui: str,
+) -> Optional[dict]:
     if data is None or not data.concerne_banque:
         return None
     if not _retenir_fermeture(data.statut_temporel, data.date_fermeture, floor, aujourdhui):
@@ -214,3 +214,55 @@ def extract(article: dict, client, model: str = config.ANTHROPIC_MODEL,
         "lon": None,
         "citation": data.citation,
     }
+
+
+def extract(article: dict, client, model: str = config.ANTHROPIC_MODEL,
+            aujourdhui: Optional[str] = None, floor: Optional[str] = None) -> Optional[dict]:
+    aujourdhui = aujourdhui or date.today().isoformat()
+    messages = build_messages(article, aujourdhui)
+    fallback_model = _fallback_model(model)
+    try:
+        response = _parse_avec_retries(
+            client,
+            model=model,
+            messages=messages,
+        )
+        data: Extraction = response.parsed_output
+    except Exception as exc:
+        if _status_code(exc) in _RETRY_STATUS_CODES and fallback_model:
+            response = _parse_avec_retries(
+                client,
+                model=fallback_model,
+                messages=messages,
+            )
+            data = response.parsed_output
+        elif (
+            _status_code(exc) in _RETRY_STATUS_CODES
+            and os.environ.get("OPENAI_API_KEY")
+            and os.environ.get("OPENAI_FALLBACK_ENABLED", "1") != "0"
+        ):
+            from backend.openai_fallback import extract_openai
+            data = extract_openai(article, aujourdhui)
+        else:
+            raise
+    result = _resultat_depuis_extraction(data, article, floor=floor, aujourdhui=aujourdhui)
+    if result is not None or not fallback_model:
+        return result
+    try:
+        response = _parse_avec_retries(
+            client,
+            model=fallback_model,
+            messages=messages,
+        )
+        data = response.parsed_output
+    except Exception as exc:
+        if (
+            _status_code(exc) in _RETRY_STATUS_CODES
+            and os.environ.get("OPENAI_API_KEY")
+            and os.environ.get("OPENAI_FALLBACK_ENABLED", "1") != "0"
+        ):
+            from backend.openai_fallback import extract_openai
+            data = extract_openai(article, aujourdhui)
+        else:
+            raise
+    return _resultat_depuis_extraction(data, article, floor=floor, aujourdhui=aujourdhui)

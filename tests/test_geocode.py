@@ -58,3 +58,56 @@ def test_geocode_adresse_cache():
     geocode.geocode_adresse("1 rue X", fetch=fetch, cache=cache)
     geocode.geocode_adresse("1 rue X", fetch=fetch, cache=cache)
     assert len(appels) == 1
+
+
+# --- Fallback municipality -> recherche large (Coëtquidan -> Guer) -----------
+
+BAN_GUER = {"features": [
+    {"geometry": {"coordinates": [-2.1167, 47.9167]},
+     "properties": {"name": "Coëtquidan", "city": "Guer",
+                    "citycode": "56075", "postcode": "56380"}}
+]}
+
+
+def _fetch_coetquidan(url):
+    # La recherche municipality échoue (Coëtquidan n'est pas une commune),
+    # mais la recherche large rattache à la commune administrative Guer.
+    if "type=municipality" in url:
+        return BAN_VIDE
+    return BAN_GUER
+
+
+def test_geocode_commune_ou_lieu_fallback_rattache_commune_administrative():
+    geo = geocode.geocode_commune_ou_lieu(
+        "Coëtquidan", "56", fetch=_fetch_coetquidan, cache={})
+    assert geo is not None
+    assert geo["commune"] == "Guer"
+    assert geo["code_insee"] == "56075"
+    assert geo["departement"] == "56"
+
+
+def test_geocode_commune_ou_lieu_municipality_prioritaire():
+    # Quand la commune existe en municipality, pas de fallback.
+    appels = []
+    def fetch(url):
+        appels.append(url)
+        return BAN_OK
+    geo = geocode.geocode_commune_ou_lieu("Rennes", "35", fetch=fetch, cache={})
+    assert geo["commune"] == "Rennes"
+    assert all("type=municipality" in u for u in appels)
+
+
+def test_geocode_commune_ou_lieu_tente_prefixe_prudent_avant_recherche_large():
+    appels = []
+
+    def fetch(url):
+        appels.append(url)
+        if "q=Guer" in url and "type=municipality" in url:
+            return BAN_GUER
+        return BAN_VIDE
+
+    geo = geocode.geocode_commune_ou_lieu("Guer-Coëtquidan", "56", fetch=fetch, cache={})
+    assert geo["commune"] == "Guer"
+    assert any("q=Guer" in url and "type=municipality" in url for url in appels)
+    assert not any("q=Guer-Co" in url and "limit=1" in url and "type=municipality" not in url
+                   for url in appels)

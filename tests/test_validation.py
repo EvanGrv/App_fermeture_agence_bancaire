@@ -15,6 +15,13 @@ def test_commune_publiable_accepte_communes_homonymes():
     assert validation.commune_publiable("La Capelle-lès-Boulogne") is True
 
 
+def test_commune_publiable_rejette_medias_et_generiques():
+    for faux in ["En", "L'agence", "Ouest-France", "L'Est Républicain",
+                 "ICI", "Actu", "La Nouvelle République", "Le Bien Public",
+                 "Delta FM", "Info-Chalon"]:
+        assert validation.commune_publiable(faux) is False, faux
+
+
 def test_fermeture_publiable_exige_geocodage_insee():
     closure = {"commune": "Rennes", "departement": "35"}
     assert validation.fermeture_publiable(closure, None)[0] is False
