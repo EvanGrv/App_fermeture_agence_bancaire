@@ -18,6 +18,18 @@ class FakeClient:
     def __init__(self, parsed):
         self.messages = FakeMessages(parsed)
 
+class SequenceMessages:
+    def __init__(self, parsed_outputs):
+        self._parsed_outputs = list(parsed_outputs)
+        self.models = []
+    def parse(self, **kw):
+        self.models.append(kw.get("model"))
+        return FakeResp(self._parsed_outputs.pop(0))
+
+class SequenceClient:
+    def __init__(self, parsed_outputs):
+        self.messages = SequenceMessages(parsed_outputs)
+
 class FakeTransientError(Exception):
     def __init__(self, status_code):
         super().__init__(f"status {status_code}")
@@ -93,6 +105,7 @@ def test_extract_ne_retry_pas_erreur_non_transitoire(monkeypatch):
 def test_extract_fallback_openai_apres_erreur_transitoire(monkeypatch):
     monkeypatch.setenv("ANTHROPIC_MAX_RETRIES", "0")
     monkeypatch.setenv("OPENAI_API_KEY", "sk-test")
+    monkeypatch.setattr(config, "ANTHROPIC_FALLBACK_ENABLED", False)
     client = FlakyClient(_extraction(), [FakeTransientError(529)])
     attendu = _extraction(banque="BNP")
 
@@ -103,6 +116,25 @@ def test_extract_fallback_openai_apres_erreur_transitoire(monkeypatch):
     res = extract(_article(), client=client, aujourdhui=AUJ)
     assert res["banque"] == "BNP Paribas"
     assert client.messages.calls == 1
+
+def test_extract_fallback_sonnet_si_haiku_non_publiable(monkeypatch):
+    monkeypatch.setattr(config, "ANTHROPIC_FALLBACK_ENABLED", True)
+    monkeypatch.setattr(config, "ANTHROPIC_FALLBACK_MODEL", "claude-sonnet-test")
+    client = SequenceClient([
+        _extraction(concerne_banque=False),
+        _extraction(banque="BNP"),
+    ])
+    res = extract(_article(), client=client, model="claude-haiku-test", aujourdhui=AUJ)
+    assert res["banque"] == "BNP Paribas"
+    assert client.messages.models == ["claude-haiku-test", "claude-sonnet-test"]
+
+def test_extract_ne_fallback_pas_si_haiku_suffit(monkeypatch):
+    monkeypatch.setattr(config, "ANTHROPIC_FALLBACK_ENABLED", True)
+    monkeypatch.setattr(config, "ANTHROPIC_FALLBACK_MODEL", "claude-sonnet-test")
+    client = SequenceClient([_extraction()])
+    res = extract(_article(), client=client, model="claude-haiku-test", aujourdhui=AUJ)
+    assert res["banque"] == "Société Générale"
+    assert client.messages.models == ["claude-haiku-test"]
 
 def test_extract_rejette_hors_sujet():
     parsed = _extraction(concerne_banque=False)

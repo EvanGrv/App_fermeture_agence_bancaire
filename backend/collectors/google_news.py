@@ -75,6 +75,12 @@ _PRESSE_REGIONALE = [
         "lavoixdunord.fr",
         "francebleu.fr",
         "ici.fr",
+        # Domaines observés dans la base de référence élargie (Excel mairies/PQR).
+        "dna.fr",
+        "info-chalon.com",
+        "deltafm.fr",
+        "europesays.com",
+        "bienpublic.com",
     )
 ]
 QUERIES = list(dict.fromkeys(

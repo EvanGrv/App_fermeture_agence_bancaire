@@ -14,6 +14,7 @@ import unicodedata
 from typing import Callable
 
 import config
+from backend.dedup import closure_id
 from backend.extractor import normalise_banque
 
 # ---------------------------------------------------------------------------
@@ -92,7 +93,8 @@ _END = re.compile(r"[.!?;:\n]")
 # Exemples : "Bessines", "Saint-Junien", "La Rochelle", "Le Mont-Saint-Michel"
 _PROPER_NAME = re.compile(
     r"^([A-ZÀÂÄÉÈÊËÏÎÔÙÛÜÆŒÇ][a-zA-ZÀ-ÖØ-öø-ÿ'\-]+"
-    r"(?:\s+[A-ZÀÂÄÉÈÊËÏÎÔÙÛÜÆŒÇ][a-zA-ZÀ-ÖØ-öø-ÿ'\-]+)*)"
+    r"(?:(?:\s+(?:de|du|des|d'|d’|le|la|les|lès|sur|sous|au|aux)\s+|\s+)"
+    r"[A-ZÀÂÄÉÈÊËÏÎÔÙÛÜÆŒÇ][a-zA-ZÀ-ÖØ-öø-ÿ'\-]+)*)"
 )
 
 
@@ -192,6 +194,123 @@ def _detecter_banque(texte: str) -> str | None:
 def requetes_communes(banque: str, communes: list[str]) -> list[str]:
     """Construit une requête ciblée pour chaque commune."""
     return [f"{banque} fermeture agence {commune}" for commune in communes]
+
+
+# ---------------------------------------------------------------------------
+# Éclatement d'un plan en fermetures individuelles (Phase 3)
+# ---------------------------------------------------------------------------
+
+_MOIS = {
+    "janvier": 1, "fevrier": 2, "mars": 3, "avril": 4, "mai": 5, "juin": 6,
+    "juillet": 7, "aout": 8, "septembre": 9, "octobre": 10, "novembre": 11,
+    "decembre": 12,
+}
+
+_DATE_PLAN = re.compile(
+    r"(\d{1,2})\s*(?:er)?\s+(" + "|".join(_MOIS) + r")\s+(\d{4})",
+    re.IGNORECASE,
+)
+
+
+def date_commune_du_plan(texte: str) -> str | None:
+    """Extrait la date commune d'un plan ("1er septembre 2026" -> "2026-09-01")."""
+    m = _DATE_PLAN.search(_normalise(texte or ""))
+    if not m:
+        return None
+    jour = int(m.group(1))
+    mois = _MOIS[m.group(2)]
+    annee = int(m.group(3))
+    try:
+        from datetime import date
+        return date(annee, mois, jour).isoformat()
+    except ValueError:
+        return None
+
+
+def valider_communes_geo(
+    candidates: list[str],
+    geocode_fn: Callable[[str], dict | None],
+    max_communes: int,
+) -> list[tuple[str, dict]]:
+    """Valide les candidats via BAN et retourne (commune, geo) pour ceux retenus."""
+    seen: set[str] = set()
+    valides: list[tuple[str, dict]] = []
+    for candidate in candidates:
+        cle = _normalise(candidate)
+        if cle in seen:
+            continue
+        seen.add(cle)
+        try:
+            geo = geocode_fn(candidate)
+        except Exception:
+            continue
+        if geo and geo.get("code_insee"):
+            valides.append((candidate, geo))
+        if len(valides) >= max_communes:
+            break
+    return valides
+
+
+def fermetures_depuis_plan(
+    article: dict,
+    geocode_fn: Callable[[str], dict | None],
+    max_communes: int | None = None,
+    fetch_fn: Callable[[str], str] | None = None,
+) -> list[dict]:
+    """Transforme un article "plan multi-agences" en N fermetures (une par commune).
+
+    Best-effort : retourne [] si l'article n'est pas un plan, si la banque n'est
+    pas identifiable, ou si aucune commune ne se valide via la BAN.
+    """
+    if max_communes is None:
+        max_communes = config.PLAN_EXPLOSION_MAX_COMMUNES
+
+    titre = article.get("titre", "") or ""
+    texte = article.get("texte", "") or ""
+    url = article.get("url", "") or ""
+    # Forcer le fulltext si le snippet est trop court pour repérer la liste.
+    if fetch_fn and url and len(texte) < 400:
+        try:
+            complet = fetch_fn(url)
+            if complet:
+                texte = (texte + "\n\n" + complet)[:6000]
+        except Exception:
+            pass
+    contenu = f"{titre} {texte}"
+
+    if not est_plan(contenu):
+        return []
+    banque = _detecter_banque(contenu)
+    if banque is None:
+        return []
+
+    date_f = date_commune_du_plan(contenu)
+    candidates = communes_candidates(contenu)
+    valides = valider_communes_geo(candidates, geocode_fn, max_communes)
+    if not valides:
+        return []
+
+    citation = titre.strip() or contenu[:200]
+    closures: list[dict] = []
+    for commune, geo in valides:
+        closures.append({
+            "id": closure_id(banque, commune, "fermeture"),
+            "banque": banque,
+            "commune": commune,
+            "code_insee": geo.get("code_insee"),
+            "departement": geo.get("departement"),
+            "type": "fermeture",
+            "date_annonce": article.get("date") or None,
+            "date_fermeture": date_f,
+            "statut": "projet",
+            "statut_temporel": "a_venir",
+            "date_fermeture_approx": 0,
+            "fiabilite": 3,
+            "lat": geo.get("lat"),
+            "lon": geo.get("lon"),
+            "citation": citation,
+        })
+    return closures
 
 
 # ---------------------------------------------------------------------------

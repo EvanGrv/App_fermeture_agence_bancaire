@@ -8,6 +8,7 @@ from backend.source_tier import tier as _source_tier
 _CLOSURE_COLS = ["id", "banque", "commune", "code_insee", "departement", "type",
                  "date_annonce", "date_fermeture", "statut", "statut_temporel",
                  "date_fermeture_approx", "fiabilite", "lat", "lon", "citation",
+                 "adresse", "agence_localisation", "commune_originale",
                  "created_at"]
 _VIGILANCE_COLS = ["id", "banque", "departement", "titre", "extrait", "url",
                    "source", "date", "score", "raison", "created_at"]

@@ -5,7 +5,9 @@ def test_chemins_sous_racine():
     assert config.DATA_JSON == config.EXPORT_DIR / "data.json"
 
 def test_modele_par_defaut():
-    assert config.ANTHROPIC_MODEL == "claude-opus-4-8"
+    assert config.ANTHROPIC_MODEL == "claude-haiku-4-5"
+    assert config.ANTHROPIC_FALLBACK_MODEL == "claude-sonnet-4-6"
+    assert config.ANTHROPIC_FALLBACK_ENABLED is True
 
 def test_listes_non_vides():
     assert len(config.ENSEIGNES) >= 5
