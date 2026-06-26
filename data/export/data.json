@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T15:52:46.813681+00:00",
+  "generated_at": "2026-06-26T07:13:20.910840+00:00",
   "departements": {
     "01": {
       "nom": "Ain",
@@ -2176,6 +2176,19 @@
       "created_at": "2026-06-25T15:44:06.808081+00:00"
     },
     {
+      "id": "a1a2b68215993110",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Officiel: Holmarcom prendra le contrôle de la BMCI et la fusionnera avec Crédit du Maroc - Medias24",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMixwFBVV95cUxQc2I3SGpZaGt3c3QtOE1GSDJTeVl1N1BuRGpkU2lGZGU3WjN6V0pOdHhQM0tNUG1BbVcwbWt6ZDB0bjdKXzZZWEVDTjVzZmxGcHhBaHNuZWhQaHZsTVRSMHg1WDhZRUNJUWdoT0NpNXZwSklWcE9RdHMxNkRzRGpYNEV1LTd3MnlvTXhuZ1hZS0t1MkVRc3JnN1doLUNiWkRjdUZ5aGpIZUdsemEtWjEtdnVER01CWWlvNjlGY3JNWW05b2FEZGpF?oc=5\" target=\"_blank\">Officiel: Holmarcom prendra le contrôle de la BMCI et la fusionnera avec Crédit du Maroc</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Medias24</font>",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQc2I3SGpZaGt3c3QtOE1GSDJTeVl1N1BuRGpkU2lGZGU3WjN6V0pOdHhQM0tNUG1BbVcwbWt6ZDB0bjdKXzZZWEVDTjVzZmxGcHhBaHNuZWhQaHZsTVRSMHg1WDhZRUNJUWdoT0NpNXZwSklWcE9RdHMxNkRzRGpYNEV1LTd3MnlvTXhuZ1hZS0t1MkVRc3JnN1doLUNiWkRjdUZ5aGpIZUdsemEtWjEtdnVER01CWWlvNjlGY3JNWW05b2FEZGpF?oc=5",
+      "source": "Google News",
+      "date": "Wed, 29 Apr 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-06-26T07:07:21.610364+00:00"
+    },
+    {
       "id": "26bca3dc3d62fd16",
       "banque": "Crédit Agricole",
       "departement": null,
@@ -2774,6 +2787,19 @@
       "created_at": "2026-06-25T15:26:41.845289+00:00"
     },
     {
+      "id": "0b986877c8c69202",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Après la fermeture de l'unité d'hospitalisation pédopsychiatrique de Gentilly, l'Agence régionale de santé rend son rapport définitif - Citoyens.com",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMigAJBVV95cUxNZktxbFNmUTk0UlRfMGZQNV93cVVlc29sRlgzVUZpZ0ctLTVqcWZkcTFNeUhreWRJSmpuVVhEbTRYNFI5ck10NTljQUIyVUZkNTk4cE1Ya3J1RjJKb3doUXJibHdNZ3dfNmwzN01EMjV3Q3djcjJEOXlUN0k3TEQ5OGFCenZJX3JtWkRTVjdXdVJkUy1lVnJLSG5keW8wWEM0SXdkVnVNMFgwbG4wMDFJU2V4RlFhQ3ZuR04xU2VLS25xNlVKMV9lc0ZPWVVnQjZ0TFltOV8xNkhmMmEzdDZUZXlqdTRJbFNIUmJIR1kwQzRCemVVV1BBSVlvTFREOURs?oc=5\" target=\"_blank\">Après la fermeture de l'unité d'hospitalisation pédopsychiatrique de Gentilly, l'Ag",
+      "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNZktxbFNmUTk0UlRfMGZQNV93cVVlc29sRlgzVUZpZ0ctLTVqcWZkcTFNeUhreWRJSmpuVVhEbTRYNFI5ck10NTljQUIyVUZkNTk4cE1Ya3J1RjJKb3doUXJibHdNZ3dfNmwzN01EMjV3Q3djcjJEOXlUN0k3TEQ5OGFCenZJX3JtWkRTVjdXdVJkUy1lVnJLSG5keW8wWEM0SXdkVnVNMFgwbG4wMDFJU2V4RlFhQ3ZuR04xU2VLS25xNlVKMV9lc0ZPWVVnQjZ0TFltOV8xNkhmMmEzdDZUZXlqdTRJbFNIUmJIR1kwQzRCemVVV1BBSVlvTFREOURs?oc=5",
+      "source": "Google News",
+      "date": "Wed, 06 May 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-06-26T07:07:56.575054+00:00"
+    },
+    {
       "id": "fb9960484274f355",
       "banque": "Société Générale",
       "departement": null,
@@ -3149,6 +3175,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:44:43.901694+00:00"
+    },
+    {
+      "id": "a983bf2c42c313f7",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Eat Salad fermé après 19 jours dans le centre-ville de Brive : quelles suites désormais ? - Le Populaire du Centre",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMi7AFBVV95cUxQaXlIMGRZY1plQzZILVFoYXdNak5hQ3lveExLM0FneUVqWXJUay1PZk1mUnZKSVN6WS03OGNiaUFOUDVyTHIzMDVnSVptMzFJakZtZHJQV0RKWkp5cUM3cEx4X0Fva2tnS0JjbXNFVXhFOEFwa1E3SlRMb0xfSGh1Yll4WHNTdXZ4bHNzYWZYdFVIcUZidGtwSElCTDJ6RnhLbVdqVkFIaXlscXZsd2FwdEtWNFNFRXk2RWZGc3UzX3hvVGlISGVwVmtiNVQ0dlBXQ3IzNFZvckJ0QktJXzR0YlNBWWVJUVJHcFNLdw?oc=5\" target=\"_blank\">Eat Salad fermé après 19 jours dans le centre-ville de Brive : quelles suites désormais ?</a>&nbsp;&nbsp;<fon",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQaXlIMGRZY1plQzZILVFoYXdNak5hQ3lveExLM0FneUVqWXJUay1PZk1mUnZKSVN6WS03OGNiaUFOUDVyTHIzMDVnSVptMzFJakZtZHJQV0RKWkp5cUM3cEx4X0Fva2tnS0JjbXNFVXhFOEFwa1E3SlRMb0xfSGh1Yll4WHNTdXZ4bHNzYWZYdFVIcUZidGtwSElCTDJ6RnhLbVdqVkFIaXlscXZsd2FwdEtWNFNFRXk2RWZGc3UzX3hvVGlISGVwVmtiNVQ0dlBXQ3IzNFZvckJ0QktJXzR0YlNBWWVJUVJHcFNLdw?oc=5",
+      "source": "Google News",
+      "date": "Tue, 19 May 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-06-26T07:07:52.498901+00:00"
     },
     {
       "id": "456fc501939ed9a7",
@@ -3528,6 +3567,19 @@
       "created_at": "2026-06-25T15:34:29.895552+00:00"
     },
     {
+      "id": "065e65dcfa90af29",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "BGFIBank Gabon : fermeture exceptionnelle des points de vente ce 30 avril 2026 - Gabon Media Time",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMipwFBVV95cUxOZ1RQQW45M2h5RTF4NHkwMHpvVVN0OVZoVUZPbC1Eckl0amZpUFc2NXJLUUU0R19QWGczNUNMcHc4VzFWQXNIdHl4ejZERGp1c0k1cDBMYWZUN0RTUnRFWm81Q2ZXZnBHWE1mY3hHZVFEUjNsZEVxaFJiM1NZSGdpdGd0aXVILXctTFUza09fZDd4S0FfOW1xSzFPQXUzWTNHeE5uUzUtVQ?oc=5\" target=\"_blank\">BGFIBank Gabon : fermeture exceptionnelle des points de vente ce 30 avril 2026</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Gabon Media Time</font>",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOZ1RQQW45M2h5RTF4NHkwMHpvVVN0OVZoVUZPbC1Eckl0amZpUFc2NXJLUUU0R19QWGczNUNMcHc4VzFWQXNIdHl4ejZERGp1c0k1cDBMYWZUN0RTUnRFWm81Q2ZXZnBHWE1mY3hHZVFEUjNsZEVxaFJiM1NZSGdpdGd0aXVILXctTFUza09fZDd4S0FfOW1xSzFPQXUzWTNHeE5uUzUtVQ?oc=5",
+      "source": "Google News",
+      "date": "Thu, 30 Apr 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-06-26T07:07:17.418776+00:00"
+    },
+    {
       "id": "b99b29e2bb922ef2",
       "banque": "Société Générale",
       "departement": null,
@@ -3552,6 +3604,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:25:59.689209+00:00"
+    },
+    {
+      "id": "5bd7ce6e82b94d5c",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "À Auray, Pro-Fermetures fête ses trente ans et regarde de l’avant - Ouest-France",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMi4wFBVV95cUxOc3dTT0ozdjMtQkY3c0ROLW9kYVNNSE9wdFNsclg3TE8tTWpOUjRVNzZySGc2RlI4dnpCWGh0T09kOTRqRVZ2a0RHSUdCdVNCbkZmVGRJc2RodDJuRXgwYy12a3htWDNvMnZJSWZ2WFNNSXJlM3dhdFRGNlh0NjY1TTByLTdkM05EMnBGcVRxMk5YOERKOHZMVzcteEJRX0hUOVRrcFVDcTZJWV9fb2l3ZFR4MzBjMlJ3Sm5RdklHR0RZSkdsNGRBdUlvck9iVlN4NTBPaGVCQi1JQ3B5b1l2X0ZHTQ?oc=5\" target=\"_blank\">À Auray, Pro-Fermetures fête ses trente ans et regarde de l’avant</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Ouest-France</font",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOc3dTT0ozdjMtQkY3c0ROLW9kYVNNSE9wdFNsclg3TE8tTWpOUjRVNzZySGc2RlI4dnpCWGh0T09kOTRqRVZ2a0RHSUdCdVNCbkZmVGRJc2RodDJuRXgwYy12a3htWDNvMnZJSWZ2WFNNSXJlM3dhdFRGNlh0NjY1TTByLTdkM05EMnBGcVRxMk5YOERKOHZMVzcteEJRX0hUOVRrcFVDcTZJWV9fb2l3ZFR4MzBjMlJ3Sm5RdklHR0RZSkdsNGRBdUlvck9iVlN4NTBPaGVCQi1JQ3B5b1l2X0ZHTQ?oc=5",
+      "source": "Google News",
+      "date": "Thu, 28 May 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-06-26T07:07:40.315286+00:00"
     },
     {
       "id": "42c4aabe4546f110",
@@ -3656,6 +3721,32 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:44:32.028871+00:00"
+    },
+    {
+      "id": "1213a02fa87dfaef",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Le centre de détention de migrants «Alcatraz des alligators» a fermé - Le Devoir",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMisgFBVV95cUxPSk45d0JlYlZaaG01SGN0VjFtNFdaUkRIX2lSdGJxdUZlcHBwM0hPRjh4eDJEaWlqQXAzZ09femNMd0trajB0TWFzUlFWMmY0NjdpMl9rQkNxQm9vTUY2YnBIVzlJQ2pWaHhESjREZWI5RmR2RXdiNjltLVY0M1pUNXRZOW1JZ2F0NGx5bGxwZnRJeFptdjdoU0Q4M0JxOVltR0dJdTY2ajZHcGRJc01nQ2hR?oc=5\" target=\"_blank\">Le centre de détention de migrants «Alcatraz des alligators» a fermé</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Le Devoir</font>",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPSk45d0JlYlZaaG01SGN0VjFtNFdaUkRIX2lSdGJxdUZlcHBwM0hPRjh4eDJEaWlqQXAzZ09femNMd0trajB0TWFzUlFWMmY0NjdpMl9rQkNxQm9vTUY2YnBIVzlJQ2pWaHhESjREZWI5RmR2RXdiNjltLVY0M1pUNXRZOW1JZ2F0NGx5bGxwZnRJeFptdjdoU0Q4M0JxOVltR0dJdTY2ajZHcGRJc01nQ2hR?oc=5",
+      "source": "Google News",
+      "date": "Thu, 25 Jun 2026 18:46:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-06-26T07:07:42.419736+00:00"
+    },
+    {
+      "id": "53307fac28313d6f",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Canicule rouge dans le Bas-Rhin : le château du Haut-Koenigsbourg fermé jusqu'à dimanche - info.fr",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMihAFBVV95cUxPRXRpXzZlUHA3NXVnMjhETnFwbnNYSFVxSnl2M01VNkNwalI5NzZSSHJvOGQ4SGMzaHNyOVZNbi1rYnpOM3RiNnhkb09KNzhxREZNc3d3bzM1YlNqd2NCMzRQa1FoQUtqZkMxUW9KNDJLY0dNWDFLNEtOekdRRjZIZnkzWTE?oc=5\" target=\"_blank\">Canicule rouge dans le Bas-Rhin : le château du Haut-Koenigsbourg fermé jusqu'à dimanche</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">info.fr</font>",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPRXRpXzZlUHA3NXVnMjhETnFwbnNYSFVxSnl2M01VNkNwalI5NzZSSHJvOGQ4SGMzaHNyOVZNbi1rYnpOM3RiNnhkb09KNzhxREZNc3d3bzM1YlNqd2NCMzRQa1FoQUtqZkMxUW9KNDJLY0dNWDFLNEtOekdRRjZIZnkzWTE?oc=5",
+      "source": "Google News",
+      "date": "Thu, 25 Jun 2026 17:19:22 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-06-26T07:07:33.741540+00:00"
     },
     {
       "id": "37b29144081c8ffd",
@@ -4243,6 +4334,19 @@
       "created_at": "2026-06-25T15:45:32.536393+00:00"
     },
     {
+      "id": "b5dd38b44a2f9cc0",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Au Monténégro, Sveti Stefan, l’île-hôtel des stars, rouvre après cinq ans de fermeture - Le Figaro",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMiywFBVV95cUxNd1BIRkFVb3RweTNXSWo3WTFhS3FIZ2lPLXdqZ0xXeGh1cnZGN183WWpMbThQS1RVMEZ0RHFQVm5DRWhWNHZHb1B2bV9Mbl9XdEM3WkFnaGhnbEh3UmFQaHZoaFpYMjdyMUp5VjNETHBMdDltdlg4eVJ0X1dqWGxmazZFWlB2aXhNcWI4NndXOEttVEwyaHJhNnBydHJpUTRFSDhPeHRWSG9JVFZtb2JXRDZBNV9mT2M3YWlJT25aZWMwVWtTaHMwNmg2QQ?oc=5\" target=\"_blank\">Au Monténégro, Sveti Stefan, l’île-hôtel des stars, rouvre après cinq ans de fermeture</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Le Figaro</font>",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNd1BIRkFVb3RweTNXSWo3WTFhS3FIZ2lPLXdqZ0xXeGh1cnZGN183WWpMbThQS1RVMEZ0RHFQVm5DRWhWNHZHb1B2bV9Mbl9XdEM3WkFnaGhnbEh3UmFQaHZoaFpYMjdyMUp5VjNETHBMdDltdlg4eVJ0X1dqWGxmazZFWlB2aXhNcWI4NndXOEttVEwyaHJhNnBydHJpUTRFSDhPeHRWSG9JVFZtb2JXRDZBNV9mT2M3YWlJT25aZWMwVWtTaHMwNmg2QQ?oc=5",
+      "source": "Google News",
+      "date": "Thu, 07 May 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-06-26T07:07:58.664939+00:00"
+    },
+    {
       "id": "e026aeb5d54161e0",
       "banque": "Caisse d'Épargne",
       "departement": null,
@@ -4514,6 +4618,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:43:15.600365+00:00"
+    },
+    {
+      "id": "fe3afe58633863fa",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Reichshoffen. Une agence communale va remplacer le bureau de poste fermé - DNA",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMinwFBVV95cUxNS0pWZWNLWWEzWnY3OXEyNnFPSGJqa0dtTEtvU3NRS0tTQUMzZkZOMWFDZmtOYzdnMjFvRVNZOEYwdzJlTnpSdzdrM1pyODJVRGM3dk1QeWg3RkVvRFZ0cUtqT1lUaXA1bXNBQUt2MmVoN1NBY0tncGZRVXkycExNSEFrQ0ExLXZEV1ZVUEpYRjYtTEhKQ2d6QTYxdTZnVGs?oc=5\" target=\"_blank\">Reichshoffen. Une agence communale va remplacer le bureau de poste fermé</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">DNA</font>",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNS0pWZWNLWWEzWnY3OXEyNnFPSGJqa0dtTEtvU3NRS0tTQUMzZkZOMWFDZmtOYzdnMjFvRVNZOEYwdzJlTnpSdzdrM1pyODJVRGM3dk1QeWg3RkVvRFZ0cUtqT1lUaXA1bXNBQUt2MmVoN1NBY0tncGZRVXkycExNSEFrQ0ExLXZEV1ZVUEpYRjYtTEhKQ2d6QTYxdTZnVGs?oc=5",
+      "source": "Google News",
+      "date": "Sun, 14 Jun 2026 05:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-06-26T07:07:35.845588+00:00"
     },
     {
       "id": "0a8e1ae05ae3ad51",
@@ -4958,6 +5075,19 @@
       "created_at": "2026-06-25T15:44:59.612193+00:00"
     },
     {
+      "id": "7350b620de213135",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Saint-Clément-des-Levées. Une possible fermeture de La Poste - Ma Ville",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMiwAFBVV95cUxNdXp0TURLaU13aXNsVkRkX0w0MDduMHozV2lQazA1NVVwSXVUVDVNUXBmLWdOeTAtX2M5ZFIxRmJzU1J3QUdFUFlnSlZuTm1RazBTM1RQZW9FS3laWVJIWi1aLWljSGRvTkg5UWZGMnFCWGhUenl6R1lsWGtkTVB3cHptYnJwajRuUFRYYlRDQVNhZ3ZGb2laSXRyWEFwRmpIdmR4aG91UDhHMG91a2JybnMtWGZiSW5rWnFOMEhtaDU?oc=5\" target=\"_blank\">Saint-Clément-des-Levées. Une possible fermeture de La Poste</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Ma Ville</font>",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNdXp0TURLaU13aXNsVkRkX0w0MDduMHozV2lQazA1NVVwSXVUVDVNUXBmLWdOeTAtX2M5ZFIxRmJzU1J3QUdFUFlnSlZuTm1RazBTM1RQZW9FS3laWVJIWi1aLWljSGRvTkg5UWZGMnFCWGhUenl6R1lsWGtkTVB3cHptYnJwajRuUFRYYlRDQVNhZ3ZGb2laSXRyWEFwRmpIdmR4aG91UDhHMG91a2JybnMtWGZiSW5rWnFOMEhtaDU?oc=5",
+      "source": "Google News",
+      "date": "Sat, 06 Jun 2026 03:39:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-06-26T07:08:00.590259+00:00"
+    },
+    {
       "id": "61e8aeee02a9644e",
       "banque": "Crédit Agricole",
       "departement": null,
@@ -5125,6 +5255,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:38:48.773511+00:00"
+    },
+    {
+      "id": "1440696cc105583e",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Fermeture du portail ants.gouv.fr pour maintenance - Actualités locales - Actualités - Les services de l'État en Vendée - Les services de l'État en Vendée",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMiqwFBVV95cUxQMlZnQVY4NU5lTGVnQXNsY04xMzBwRURVdWRudVYyZmJtYlAzci1fbW8wU3ZGSGdNQzFXbXh1Uk5UaDJ0bXE0VVl0ZGhta1cwMERCclBwUTRWaElnZWFEUHJTM3ZaeEtYVG1fcldlbGNiQlJ6bktEamY3ckZLZm1VcEE1QTNLU0JyWGttR2hxMjNUdTM0Z3pqNHVNcXk4MFduWUpDYTYybkhiZHc?oc=5\" target=\"_blank\">Fermeture du portail ants.gouv.fr pour maintenance - Actualités locales - Actualités - Les services de l'État en Vendée</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Les services de l'État en Vendée</font>",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQMlZnQVY4NU5lTGVnQXNsY04xMzBwRURVdWRudVYyZmJtYlAzci1fbW8wU3ZGSGdNQzFXbXh1Uk5UaDJ0bXE0VVl0ZGhta1cwMERCclBwUTRWaElnZWFEUHJTM3ZaeEtYVG1fcldlbGNiQlJ6bktEamY3ckZLZm1VcEE1QTNLU0JyWGttR2hxMjNUdTM0Z3pqNHVNcXk4MFduWUpDYTYybkhiZHc?oc=5",
+      "source": "Google News",
+      "date": "Mon, 27 Apr 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-06-26T07:07:38.227261+00:00"
     },
     {
       "id": "9723314283106b54",
@@ -5660,6 +5803,19 @@
       "created_at": "2026-06-25T15:40:58.530512+00:00"
     },
     {
+      "id": "872bb659de1f2caa",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "25.000 euros en billets de 50 : à Vichy, deux bars-tabacs fermés après des contrôles de police - La Montagne",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMi6gFBVV95cUxNMFpmYkxUempyUXNzVkptSGFRZ3RFcnl1RnNwbV9BeXVRMHYxVTQxLTNvb2tsZGhfS0t5aVFpbVJ2UGNEMHFQbEFJWEdCaHY2bHpkZ2JjNFBja0FPRHZobnhMR1NCcnNRd1ZnZy1scHJhNG5Tel9kMlZ6RW5IcnlreVhVSFByd2E4YTZlOGdqVGNuaGxmOEprMl9BRm1hR05KalpnSGdnMV9mS3h1V0pGVUJOZTk4WkZwWklLZFM5UFJGLUpQWGd5Rm5PN2VjeUMzcjduWlYxd2xGemMtWUpvOWI5U3F0ZGx5MkE?oc=5\" target=\"_blank\">25.000 euros en billets de 50 : à Vichy, deux bars-tabacs fermés après des contrôles de police</a>&nbsp;&nbsp;<f",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNMFpmYkxUempyUXNzVkptSGFRZ3RFcnl1RnNwbV9BeXVRMHYxVTQxLTNvb2tsZGhfS0t5aVFpbVJ2UGNEMHFQbEFJWEdCaHY2bHpkZ2JjNFBja0FPRHZobnhMR1NCcnNRd1ZnZy1scHJhNG5Tel9kMlZ6RW5IcnlreVhVSFByd2E4YTZlOGdqVGNuaGxmOEprMl9BRm1hR05KalpnSGdnMV9mS3h1V0pGVUJOZTk4WkZwWklLZFM5UFJGLUpQWGd5Rm5PN2VjeUMzcjduWlYxd2xGemMtWUpvOWI5U3F0ZGx5MkE?oc=5",
+      "source": "Google News",
+      "date": "Fri, 29 May 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-06-26T07:08:05.093805+00:00"
+    },
+    {
       "id": "257613ac25ad72d9",
       "banque": "Crédit Mutuel",
       "departement": null,
@@ -5710,6 +5866,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:30:43.641126+00:00"
+    },
+    {
+      "id": "8557478e2432c1f7",
+      "banque": "LCL",
+      "departement": null,
+      "titre": "Les syndicats s’opposent à la fermeture de structures psychiatriques - www.lamarseillaise.fr",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMitwFBVV95cUxPNS03YzVHMmJFYzhraXd1akc0U3FkOUpoU1JJS3dXeV9BbDVrQkwtVWJOcTJETnZLclJRaW11VTdjTk5GSVhfRHY0RkU2d2hLSXoyQ3p2V3dzRV96czJBNjJ1SWZqblhMeWRwNUdQbjA2cm5hcWVRU19TeWtuclRTc0wzRHBYekJ3NUFlcnY0R1NpR0xGbm0xdlIxbl9neFRhejZlTXhsSHhUeG8zWHdzdTRxN2lJQjA?oc=5\" target=\"_blank\">Les syndicats s’opposent à la fermeture de structures psychiatriques</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">www.lamarseillaise.fr</font>",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPNS03YzVHMmJFYzhraXd1akc0U3FkOUpoU1JJS3dXeV9BbDVrQkwtVWJOcTJETnZLclJRaW11VTdjTk5GSVhfRHY0RkU2d2hLSXoyQ3p2V3dzRV96czJBNjJ1SWZqblhMeWRwNUdQbjA2cm5hcWVRU19TeWtuclRTc0wzRHBYekJ3NUFlcnY0R1NpR0xGbm0xdlIxbl9neFRhejZlTXhsSHhUeG8zWHdzdTRxN2lJQjA?oc=5",
+      "source": "Google News",
+      "date": "Fri, 26 Jun 2026 05:25:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-06-26T07:07:49.798816+00:00"
     },
     {
       "id": "619e6da3299802fa",
@@ -6102,6 +6271,19 @@
       "created_at": "2026-06-25T15:38:16.501073+00:00"
     },
     {
+      "id": "ee5cbcb07e360b74",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Lot : une convention in extremis sauve la Clinique du Quercy de la fermeture - info.fr",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMifEFVX3lxTFBkdFFuUnJyQkxHNnlSaTViSGdWNGVJV1ZCOHdrQzFGWTZOMDdSSERfTUt0ckNTX0dPN2tMV3E1Vkh2YUJRSTVLLVRIaGh0UE5sXzlkQUVVN3dDMWc1clVMVnJsa2dOTGNHMEZlOHRLY1JGTk10SlgzT1kzelA?oc=5\" target=\"_blank\">Lot : une convention in extremis sauve la Clinique du Quercy de la fermeture</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">info.fr</font>",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBkdFFuUnJyQkxHNnlSaTViSGdWNGVJV1ZCOHdrQzFGWTZOMDdSSERfTUt0ckNTX0dPN2tMV3E1Vkh2YUJRSTVLLVRIaGh0UE5sXzlkQUVVN3dDMWc1clVMVnJsa2dOTGNHMEZlOHRLY1JGTk10SlgzT1kzelA?oc=5",
+      "source": "Google News",
+      "date": "Fri, 12 Jun 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-06-26T07:08:02.843977+00:00"
+    },
+    {
       "id": "c2ce6b1af9e419c6",
       "banque": "Crédit Agricole",
       "departement": null,
@@ -6414,6 +6596,19 @@
       "created_at": "2026-06-25T15:27:24.304080+00:00"
     },
     {
+      "id": "490ae13ec6b39ed1",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Gaza : Washington dément la fermeture du centre de coordination du cessez-le-feu à Kiryat Gat - i24NEWS",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMi6gFBVV95cUxNR3c0SGpqR0dyQ0pjd2hQUjQ2TkFuOGRmTVhXQWxFVzB1MlJSUGtIby1HOTZVOEhKSE1XZXRHWWpoVWdQU1FjTUxZUTN2ZGZIdDR5V21nUVRESDJlMGtDZElZUFEwM1padGhTNDhBWEszRXhFY0RpNmxZZ3hZcm1WZi1fMWxGVHRvZS1zeXFpRkRZRm9CQkJ1QkpkRWt1SGNDeTAxeDdFY2pYT0lQZm1hM0Q4bEE0S01fNGxsREh1TmpXVGpvaEJxT0x4NGpIMGtrekZVMU1jZllQVFBkSUlqLU5xTjFFeFRSSlE?oc=5\" target=\"_blank\">Gaza : Washington dément la fermeture du centre de coordination du cessez-le-feu à Kiryat Gat</a>&nbsp;&nbsp;<fo",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNR3c0SGpqR0dyQ0pjd2hQUjQ2TkFuOGRmTVhXQWxFVzB1MlJSUGtIby1HOTZVOEhKSE1XZXRHWWpoVWdQU1FjTUxZUTN2ZGZIdDR5V21nUVRESDJlMGtDZElZUFEwM1padGhTNDhBWEszRXhFY0RpNmxZZ3hZcm1WZi1fMWxGVHRvZS1zeXFpRkRZRm9CQkJ1QkpkRWt1SGNDeTAxeDdFY2pYT0lQZm1hM0Q4bEE0S01fNGxsREh1TmpXVGpvaEJxT0x4NGpIMGtrekZVMU1jZllQVFBkSUlqLU5xTjFFeFRSSlE?oc=5",
+      "source": "Google News",
+      "date": "Fri, 01 May 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-06-26T07:07:54.403031+00:00"
+    },
+    {
       "id": "a6f9e7827b9631ac",
       "banque": "Société Générale",
       "departement": null,
@@ -6490,6 +6685,19 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:35:31.739153+00:00"
+    },
+    {
+      "id": "5e7d7ae4961a706d",
+      "banque": "LCL",
+      "departement": null,
+      "titre": "Gironde. L'ARS tente de supprimer 160 000€ au Planning Familial puis rétropédale face à la contestation - Revolution Permanente",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMixgFBVV95cUxPQk9DNGY1UUpGYXFWZ0FxZkJjNWw5RGE4MHNFdHpfZ1pIakpvSVhrT0YwMTdlRkJBblNsazloYTU3ZTJ3S3VTZ1doaVpvajFGU1hDT0FzYVB5N3p4all3R05kZ3dKcXlIeGp4NHBTMkNBTzNqc0ZvdW9UNi0ya2t4V0h2TW5HWEd0S0ZQazFiMUtXUk5JbmlLWU5hT2ZZeXdtRlJlSXRiWjZVekc5eUxZc000QnhKWDZGV3BzX05qUktWYXJnQlHSAc4BQVVfeXFMTnd3SmFlMTFQX3dHR3pWZDRJbzhtNEEzWFg5SVNRZEtiOXBtaFB3S0NCNTNlSWxYRENwTkNtNTk0Mm5CdWk4SVhHX042WmE2UDVhMk51RGJfSnlRQ0dZMldVbTJGTTVWUk56UThVNmJKOE5lVEpaanNVUWY1RFlhSTAzU0hveV",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPQk9DNGY1UUpGYXFWZ0FxZkJjNWw5RGE4MHNFdHpfZ1pIakpvSVhrT0YwMTdlRkJBblNsazloYTU3ZTJ3S3VTZ1doaVpvajFGU1hDT0FzYVB5N3p4all3R05kZ3dKcXlIeGp4NHBTMkNBTzNqc0ZvdW9UNi0ya2t4V0h2TW5HWEd0S0ZQazFiMUtXUk5JbmlLWU5hT2ZZeXdtRlJlSXRiWjZVekc5eUxZc000QnhKWDZGV3BzX05qUktWYXJnQlHSAc4BQVVfeXFMTnd3SmFlMTFQX3dHR3pWZDRJbzhtNEEzWFg5SVNRZEtiOXBtaFB3S0NCNTNlSWxYRENwTkNtNTk0Mm5CdWk4SVhHX042WmE2UDVhMk51RGJfSnlRQ0dZMldVbTJGTTVWUk56UThVNmJKOE5lVEpaanNVUWY1RFlhSTAzU0hveVdLbmhmdldoc0ZLdmJVRnN3a09XTjF1V3pYYXMwemc4YUNERUFtV2M4RmJFZ3dwUFl2dmExUGd1RklCLUZCUEtjWUxvaEhzUVE?oc=5",
+      "source": "Google News",
+      "date": "Wed, 24 Jun 2026 20:13:01 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-06-26T07:07:46.395142+00:00"
     },
     {
       "id": "72ddca5618dd9a6d",
@@ -6594,6 +6802,19 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:36:14.316472+00:00"
+    },
+    {
+      "id": "57f2d74c358140d1",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Intesa Sanpaolo lance son offre sur MPS, fusion prévue en décembre 2026 - MSN",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMi0AFBVV95cUxQOWZ1YjRZVWZhYTQyVDV6Q3g5M1p6Y1B5ekFQSlM3T2lTNXpJSG1xNXQwODFvYjhtUnM5R0xXTTE5NDVoNmRxUDNNRUo2Q3pjb1dWaEc0S1Q2V1hsN3ZJWjlXV3NXVktFMkhrd0VNcGFiODdFWWJ1MWE3NlBacU5OTmpzWGJKdDl4dnZTM0hmdENuM2JJVzV4YWNWNHNXMTNBekhwRGppUmdLRjdVQkJaOEI2cjh3eS1ad3RMMlNtZXlaSlI2VldhdkV5ZmVHd1dI?oc=5\" target=\"_blank\">Intesa Sanpaolo lance son offre sur MPS, fusion prévue en décembre 2026</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MSN</font>",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQOWZ1YjRZVWZhYTQyVDV6Q3g5M1p6Y1B5ekFQSlM3T2lTNXpJSG1xNXQwODFvYjhtUnM5R0xXTTE5NDVoNmRxUDNNRUo2Q3pjb1dWaEc0S1Q2V1hsN3ZJWjlXV3NXVktFMkhrd0VNcGFiODdFWWJ1MWE3NlBacU5OTmpzWGJKdDl4dnZTM0hmdENuM2JJVzV4YWNWNHNXMTNBekhwRGppUmdLRjdVQkJaOEI2cjh3eS1ad3RMMlNtZXlaSlI2VldhdkV5ZmVHd1dI?oc=5",
+      "source": "Google News",
+      "date": "Wed, 17 Jun 2026 06:18:20 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-06-26T07:07:31.210060+00:00"
     },
     {
       "id": "eb91e735286dc56d",
