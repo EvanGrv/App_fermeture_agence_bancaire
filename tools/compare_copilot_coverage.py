@@ -14,6 +14,7 @@ import math
 from pathlib import Path
 
 from backend.dedup import normalise_cle
+from backend.drilldown import est_plan
 from tools.compare_expected_closures import _cle_banque, _cle_commune
 import config
 
@@ -182,3 +183,77 @@ def apply_reliability(row: dict, overrides: dict) -> dict:
     if not result.get("source_reliability"):
         result["source_reliability"] = "medium" if has_url else "low"
     return result
+
+
+COVERAGE_STATUSES = ["present_on_map", "present_unlocated", "present_department",
+                     "needs_research", "rejected_with_reason", "confirmed_missing"]
+
+RECORD_FIELDS = [
+    "banque", "agence_localisation", "commune", "departement", "adresse",
+    "lat", "lon", "source", "url", "score_copilot", "statut_copilot",
+    "matched_pipeline", "match_type", "pipeline_id", "pipeline_status",
+    "status", "missing_reason", "next_action", "source_reliability", "source_flag",
+]
+
+_NEXT_ACTION_BY_STATUS = {
+    "present_on_map": "Aucune — déjà sur la carte ; contrôler la fiabilité de la source.",
+    "present_unlocated": "Géocoder à l'adresse précise pour publication carte.",
+    "present_department": "Identifier l'agence/commune précise pour faire monter le signal départemental.",
+    "rejected_with_reason": "Voir missing_reason ; ne pas publier.",
+    "confirmed_missing": "Voir missing_reason ; intégrer si une source fiable est retrouvée.",
+}
+
+
+def default_next_action_queries(row: dict) -> str:
+    banque, commune = row.get("banque", ""), row.get("commune", "")
+    requetes = [
+        f'"{banque}" "{commune}" "fermeture agence"',
+        f'"{banque}" "{commune}" "agence ferme"',
+        f'"{banque}" "{commune}" "regroupement agence"',
+        f'"{commune}" "banque ferme"',
+    ]
+    contexte = " ".join(filter(None, [row.get("agence_localisation"),
+                                      row.get("statut_copilot"), row.get("commentaires")]))
+    if est_plan(contexte):
+        requetes.append(f'"{banque}" "plan" "fermeture" "agences"')
+    return " | ".join(requetes[:5])
+
+
+def build_record(row: dict, payload: dict, overrides: dict) -> dict:
+    cov = classify_coverage(row, payload)
+    rel = apply_reliability(row, overrides)
+
+    status = rel.get("status")
+    if not status:
+        if cov["status"] == "needs_research" and rel.get("_source_default_status"):
+            status = rel["_source_default_status"]
+        else:
+            status = cov["status"]
+
+    next_action = rel.get("next_action") or rel.get("_source_default_next_action")
+    if not next_action:
+        next_action = (default_next_action_queries(row) if status == "needs_research"
+                       else _NEXT_ACTION_BY_STATUS.get(status, "À qualifier."))
+
+    return {
+        "banque": row.get("banque", ""),
+        "agence_localisation": row.get("agence_localisation", ""),
+        "commune": row.get("commune", ""),
+        "departement": row.get("departement", ""),
+        "adresse": row.get("adresse", ""),
+        "lat": row.get("lat", ""),
+        "lon": row.get("lon", ""),
+        "source": row.get("source", ""),
+        "url": row.get("url", ""),
+        "score_copilot": row.get("score", ""),
+        "statut_copilot": row.get("statut_copilot", ""),
+        "matched_pipeline": "oui" if cov["match_type"] != "aucun" else "non",
+        "match_type": cov["match_type"],
+        "pipeline_id": cov["pipeline_id"],
+        "pipeline_status": cov["pipeline_status"],
+        "status": status,
+        "missing_reason": rel.get("missing_reason", ""),
+        "next_action": next_action,
+        "source_reliability": rel["source_reliability"],
+        "source_flag": rel.get("source_flag", ""),
+    }
