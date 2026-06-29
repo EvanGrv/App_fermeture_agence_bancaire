@@ -10,6 +10,7 @@ Ne modifie jamais le pipeline. Produit data/export/copilot_coverage.{csv,json}.
 from __future__ import annotations
 
 import json
+import math
 from pathlib import Path
 
 from backend.dedup import normalise_cle
@@ -71,3 +72,70 @@ def load_overrides(path) -> dict:
         return {"sources": [], "rows": []}
     data = json.loads(Path(path).read_text(encoding="utf-8"))
     return {"sources": data.get("sources") or [], "rows": data.get("rows") or []}
+
+
+def _haversine_m(lat1, lon1, lat2, lon2) -> float:
+    r = 6371000.0
+    dlat = math.radians(lat2 - lat1)
+    dlon = math.radians(lon2 - lon1)
+    a = (math.sin(dlat / 2) ** 2
+         + math.cos(math.radians(lat1)) * math.cos(math.radians(lat2)) * math.sin(dlon / 2) ** 2)
+    return 2 * r * math.asin(math.sqrt(a))
+
+
+def _row_matches_closure(banque_cle: str, commune_cle: str, cl: dict) -> bool:
+    if not commune_cle or _cle_banque(cl.get("banque")) != banque_cle:
+        return False
+    for champ in ("commune", "agence_localisation", "commune_originale"):
+        if _cle_commune(cl.get(champ)) == commune_cle:
+            return True
+    return False
+
+
+def _as_float(v):
+    try:
+        if v in (None, ""):
+            return None
+        return float(v)
+    except (TypeError, ValueError):
+        return None
+
+
+def _has_department_signal(banque_cle: str, dept_code: str, payload: dict) -> bool:
+    for v in payload.get("vigilances") or []:
+        if v.get("departement") == dept_code and _cle_banque(v.get("banque")) == banque_cle:
+            return True
+    est = (payload.get("department_estimates") or {}).get(dept_code)
+    if est:
+        for sig in est.get("signals") or []:
+            if _cle_banque(sig.get("banque")) == banque_cle:
+                return True
+    return False
+
+
+def classify_coverage(row: dict, payload: dict) -> dict:
+    banque_cle = _cle_banque(row.get("banque"))
+    commune_cle = _cle_commune(row.get("commune"))
+    for cl in payload.get("closures") or []:
+        if not _row_matches_closure(banque_cle, commune_cle, cl):
+            continue
+        cl_lat, cl_lon = _as_float(cl.get("lat")), _as_float(cl.get("lon"))
+        has_geo = cl_lat is not None and cl_lon is not None
+        statut = cl.get("statut") or cl.get("statut_temporel") or ""
+        if not has_geo:
+            return {"status": "present_unlocated", "match_type": "commune",
+                    "pipeline_id": cl.get("id", ""), "pipeline_status": statut}
+        match_type = "commune"
+        row_lat, row_lon = _as_float(row.get("lat")), _as_float(row.get("lon"))
+        if row_lat is not None and row_lon is not None:
+            if _haversine_m(row_lat, row_lon, cl_lat, cl_lon) < 500:
+                match_type = "exact"
+        return {"status": "present_on_map", "match_type": match_type,
+                "pipeline_id": cl.get("id", ""), "pipeline_status": statut}
+
+    dept_code = dept_name_to_code(row.get("departement"))
+    if dept_code and _has_department_signal(banque_cle, dept_code, payload):
+        return {"status": "present_department", "match_type": "département",
+                "pipeline_id": "", "pipeline_status": ""}
+    return {"status": "needs_research", "match_type": "aucun",
+            "pipeline_id": "", "pipeline_status": ""}

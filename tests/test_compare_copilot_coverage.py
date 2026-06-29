@@ -4,10 +4,19 @@ from pathlib import Path
 from openpyxl import Workbook
 
 from tools.compare_copilot_coverage import (
+    classify_coverage,
     dept_name_to_code,
     load_copilot_rows,
     load_overrides,
 )
+
+
+def _row(banque="BNP Paribas", commune="Lyon", departement="Rhône", lat="", lon="",
+         agence_localisation="", source="V2", url=""):
+    return {"banque": banque, "commune": commune, "departement": departement,
+            "lat": lat, "lon": lon, "agence_localisation": agence_localisation,
+            "commune_originale": "", "source": source, "url": url,
+            "statut_copilot": "", "commentaires": "", "score": ""}
 
 
 def _make_xlsx(path: Path, rows: list[list]) -> Path:
@@ -71,3 +80,44 @@ def test_load_overrides_reads_sections(tmp_path):
     ov = load_overrides(p)
     assert ov["sources"] == [{"match_source": "moneyvox"}]
     assert ov["rows"] == []
+
+
+def test_present_on_map_exact_via_geo():
+    payload = {"closures": [{"id": "abc", "banque": "BNP Paribas", "commune": "Lyon",
+                             "lat": 45.75, "lon": 4.85, "statut": "confirmé"}]}
+    cov = classify_coverage(_row(commune="Lyon", lat=45.751, lon=4.851), payload)
+    assert cov["status"] == "present_on_map"
+    assert cov["match_type"] == "exact"
+    assert cov["pipeline_id"] == "abc"
+    assert cov["pipeline_status"] == "confirmé"
+
+
+def test_present_on_map_commune_when_geo_far():
+    payload = {"closures": [{"id": "abc", "banque": "BNP Paribas", "commune": "Lyon",
+                             "lat": 45.75, "lon": 4.85}]}
+    cov = classify_coverage(_row(commune="Lyon", lat=48.85, lon=2.35), payload)
+    assert cov["status"] == "present_on_map"
+    assert cov["match_type"] == "commune"
+
+
+def test_present_unlocated_when_closure_has_no_geo():
+    payload = {"closures": [{"id": "abc", "banque": "BNP Paribas", "commune": "Lyon",
+                             "lat": None, "lon": None}]}
+    cov = classify_coverage(_row(commune="Lyon"), payload)
+    assert cov["status"] == "present_unlocated"
+    assert cov["match_type"] == "commune"
+
+
+def test_present_department_via_vigilance():
+    payload = {"closures": [],
+               "vigilances": [{"banque": "BNP Paribas", "departement": "69"}]}
+    cov = classify_coverage(_row(commune="Lyon", departement="Rhône"), payload)
+    assert cov["status"] == "present_department"
+    assert cov["match_type"] == "département"
+
+
+def test_needs_research_when_nothing_matches():
+    cov = classify_coverage(_row(commune="Lyon", departement="Rhône"), {"closures": []})
+    assert cov["status"] == "needs_research"
+    assert cov["match_type"] == "aucun"
+    assert cov["pipeline_id"] == ""
