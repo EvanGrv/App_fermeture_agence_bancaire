@@ -139,3 +139,46 @@ def classify_coverage(row: dict, payload: dict) -> dict:
                 "pipeline_id": "", "pipeline_status": ""}
     return {"status": "needs_research", "match_type": "aucun",
             "pipeline_id": "", "pipeline_status": ""}
+
+
+_ROW_OVERRIDE_FIELDS = ("status", "missing_reason", "next_action",
+                        "source_reliability", "source_flag")
+
+
+def apply_reliability(row: dict, overrides: dict) -> dict:
+    result: dict = {}
+    src = _norm(row.get("source"))
+    has_url = bool((row.get("url") or "").strip())
+
+    # 1. Règles par motif de source.
+    for rule in overrides.get("sources") or []:
+        if _norm(rule.get("match_source")) not in src:
+            continue
+        if rule.get("require_no_url") and has_url:
+            continue
+        for k in ("source_reliability", "source_flag"):
+            if rule.get(k):
+                result[k] = rule[k]
+        if rule.get("default_status_if_uncovered"):
+            result["_source_default_status"] = rule["default_status_if_uncovered"]
+        if rule.get("default_next_action"):
+            result["_source_default_next_action"] = rule["default_next_action"]
+
+    # 2. Règles par ligne (priment sur les règles de source).
+    banque_cle = _cle_banque(row.get("banque"))
+    commune_cle = _cle_commune(row.get("commune"))
+    for rule in overrides.get("rows") or []:
+        m = rule.get("match") or {}
+        if _cle_banque(m.get("banque")) != banque_cle or _cle_commune(m.get("commune")) != commune_cle:
+            continue
+        al = m.get("agence_localisation")
+        if al and _cle_commune(al) != _cle_commune(row.get("agence_localisation")):
+            continue
+        for k in _ROW_OVERRIDE_FIELDS:
+            if rule.get(k) is not None:
+                result[k] = rule[k]
+
+    # 3. Heuristique de fiabilité par défaut.
+    if not result.get("source_reliability"):
+        result["source_reliability"] = "medium" if has_url else "low"
+    return result

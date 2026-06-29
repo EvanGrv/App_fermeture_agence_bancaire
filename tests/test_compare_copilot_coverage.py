@@ -4,6 +4,7 @@ from pathlib import Path
 from openpyxl import Workbook
 
 from tools.compare_copilot_coverage import (
+    apply_reliability,
     classify_coverage,
     dept_name_to_code,
     load_copilot_rows,
@@ -121,3 +122,49 @@ def test_needs_research_when_nothing_matches():
     assert cov["status"] == "needs_research"
     assert cov["match_type"] == "aucun"
     assert cov["pipeline_id"] == ""
+
+
+_OV = {
+    "sources": [
+        {"match_source": "moneyvox", "source_reliability": "medium",
+         "source_flag": "article_list_secondary"},
+        {"match_source": "fichier principal v2", "require_no_url": True,
+         "source_reliability": "low", "source_flag": "inherited_source_to_trace",
+         "default_status_if_uncovered": "needs_research",
+         "default_next_action": "Tracer la source primaire."},
+    ],
+    "rows": [
+        {"match": {"banque": "Crédit Agricole Centre Ouest", "commune": "Reuilly"},
+         "source_reliability": "high", "source_flag": "confirmed"},
+    ],
+}
+
+
+def test_reliability_source_rule_moneyvox():
+    rel = apply_reliability(_row(source="MoneyVox, 06/06/2025", url="http://x"), _OV)
+    assert rel["source_reliability"] == "medium"
+    assert rel["source_flag"] == "article_list_secondary"
+
+
+def test_reliability_v2_requires_no_url():
+    rel = apply_reliability(_row(source="Fichier principal V2", url=""), _OV)
+    assert rel["source_reliability"] == "low"
+    assert rel["source_flag"] == "inherited_source_to_trace"
+    assert rel["_source_default_status"] == "needs_research"
+    # Une ligne V2 AVEC une url ne déclenche pas la règle (require_no_url).
+    rel2 = apply_reliability(_row(source="Fichier principal V2", url="http://x"), _OV)
+    assert rel2["source_reliability"] == "medium"  # heuristique URL présente
+    assert rel2.get("source_flag") in (None, "")
+
+
+def test_reliability_row_rule_reuilly():
+    rel = apply_reliability(
+        _row(banque="Crédit Agricole Centre Ouest", commune="Reuilly",
+             source="ICI Centre-Val de Loire", url="http://x"), _OV)
+    assert rel["source_reliability"] == "high"
+    assert rel["source_flag"] == "confirmed"
+
+
+def test_reliability_default_heuristic():
+    assert apply_reliability(_row(source="Inconnu", url="http://x"), _OV)["source_reliability"] == "medium"
+    assert apply_reliability(_row(source="Inconnu", url=""), _OV)["source_reliability"] == "low"
