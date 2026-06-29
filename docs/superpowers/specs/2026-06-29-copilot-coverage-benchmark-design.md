@@ -105,20 +105,43 @@ comportement ni ses tests.
 2. **`data/export/data.json`** (paramétrable `--payload`) : `closures`,
    `department_estimates`, `departements`, `vigilances`.
 
-3. **`tools/copilot_overrides.yaml`** (optionnel, versionné). Liste de verdicts
-   humains. Chaque entrée :
+3. **`tools/copilot_overrides.yaml`** (optionnel, versionné). Capitalise les
+   verdicts humains déjà audités. **Deux sections**, toutes deux facultatives ;
+   chaque champ d'un override est facultatif (l'auto-classification remplit ce que
+   l'override ne fixe pas) :
+
    ```yaml
-   - match:            # clé stable d'identification de la ligne Copilot
-       banque: "BNP Paribas"
-       commune: "Chalon-sur-Saône"
-       agence_localisation: "Chalon-sur-Saône - avenue de Paris"  # optionnel
-     status: rejected_with_reason   # ou confirmed_missing / present_*
-     missing_reason: "ADCF sans URL — non vérifiable avant publication carte"
-     next_action: "Rechercher source primaire commune avant toute publication"
+   # Règles par MOTIF DE SOURCE — couvrent toutes les lignes d'une même source.
+   sources:
+     - match_source: "moneyvox"          # sous-chaîne normalisée de "Source principale"
+       source_reliability: medium
+       source_flag: article_list_secondary
+       note: "Article-liste secondaire fiable ; chaque commune citée doit être retrouvée/expliquée."
+     - match_source: "fichier principal v2"
+       require_no_url: true
+       source_reliability: low
+       source_flag: inherited_source_to_trace
+       note: "Source héritée sans URL ; fiable seulement si on retrouve une source primaire/secondaire."
+
+   # Verdicts par LIGNE précise — forcent le status de couverture et/ou un flag.
+   rows:
+     - match:
+         banque: "Crédit Agricole Centre-Loire"
+         commune: "Reuilly"
+       source_reliability: high
+       source_flag: confirmed
    ```
-   La clé de match est normalisée via `_cle_banque`/`_cle_commune`. Si
-   `agence_localisation` est fourni il précise le match ; sinon `banque`+`commune`
-   suffisent. Les overrides **forcent** `status`/`missing_reason`/`next_action`.
+
+   - `sources[].match_source` : sous-chaîne normalisée de la colonne « Source
+     principale ». `require_no_url: true` restreint aux lignes sans « Lien source ».
+     Peut fixer `source_reliability`, `source_flag`, et un `status`/`next_action`
+     par défaut pour les lignes **non couvertes**.
+   - `rows[].match` : clé normalisée via `_cle_banque`/`_cle_commune` (+
+     `agence_localisation` optionnel pour préciser). Peut fixer n'importe quel
+     sous-ensemble de `status` / `missing_reason` / `next_action` /
+     `source_reliability` / `source_flag`.
+   - Un override **n'écrase jamais** la couverture auto si son `status` est absent :
+     la couverture reste dérivée de `data.json`, la fiabilité vient de l'override.
 
 ## Sorties
 
@@ -136,9 +159,17 @@ Champs émis par ligne :
 | `match_type` | exact / commune / département / aucun |
 | `pipeline_id` | id de la closure matchée, sinon vide |
 | `pipeline_status` | `statut`/`statut_temporel` de la closure matchée |
-| `status` | un des 6 (voir ci-dessous) |
+| `status` | un des 6 — **axe couverture** (voir ci-dessous) |
 | `missing_reason` | raison textuelle (auto ou override) |
 | `next_action` | action concrète (requêtes ciblées pour `needs_research`) |
+| `source_reliability` | **axe fiabilité** : high / medium / low (overrides + heuristique URL) |
+| `source_flag` | drapeau de provenance : `inherited_source_to_trace`, `article_list_secondary`, `confirmed`, `announced_contested`, `weak_no_url`, … (facultatif) |
+
+**Deux axes distincts** : `status` répond à « l'a-t-on dans notre base, que faire ? » ;
+`source_reliability`/`source_flag` répond à « la source Copilot est-elle fiable ? ».
+Une ligne `present_on_map` peut être `medium`/`article_list_secondary` (MoneyVox) ;
+une ligne `needs_research` peut être `low`/`inherited_source_to_trace` (V2 sans URL).
+Aucune ligne ne sort sans **status ET next_action ET source_reliability**.
 
 ## Cascade de classification
 
@@ -164,6 +195,25 @@ Les **overrides s'appliquent d'abord** ; sinon auto-classification depuis
 Garantie : tout `status` ∈ {present_on_map, present_unlocated, present_department,
 needs_research, rejected_with_reason, confirmed_missing}. Pas de valeur vide.
 
+## Préremplissage des overrides (cas déjà audités)
+
+Le fichier `tools/copilot_overrides.yaml` est livré **prérempli** avec les
+verdicts déjà vérifiés (capitalisation, pas de redémarrage à zéro). Couvre les
+76 lignes par 6 règles :
+
+| Source (motif) | Lignes | Fiabilité | Flag | Verdict / note |
+|---|---|---|---|---|
+| `moneyvox` | 35 | medium | `article_list_secondary` | Article-liste secondaire fiable ; chaque commune citée doit être retrouvée ou expliquée. Couverture auto par ligne. |
+| `fichier principal v2` (sans URL) | 30 | low | `inherited_source_to_trace` | Fiable seulement si on retrouve une source primaire/secondaire. `next_action` par défaut si non couverte : tracer la source primaire. |
+| `adcf` (sans URL) | 6 | low | `weak_no_url` | Faible ; `needs_research` ; non publiable carte sans confirmation indépendante. |
+| `nouvelle république` | 3 | medium | `to_revalidate` | Probable mais accès direct bloqué ; signal fort à revalider. |
+| ligne Reuilly (ICI) | 1 | high | `confirmed` | Fiable / confirmé. |
+| ligne Pleudihen-sur-Rance (ICI) | 1 | high | `announced_contested` | Source fiable mais statut annoncé/contesté, pas fermeture certaine. |
+
+Heuristique de fiabilité par défaut (lignes non couvertes par un override) :
+présence d'une URL + source PQR/agrégateur reconnu → `medium`, sinon `low`.
+Les overrides priment toujours sur l'heuristique.
+
 ## Matching — détails
 
 - Banque : `_cle_banque` (normalise enseignes, Crédit Municipal).
@@ -184,10 +234,16 @@ needs_research, rejected_with_reason, confirmed_missing}. Pas de valeur vide.
 4. Row → `present_department` quand seul un department_estimate matche.
 5. Row → `needs_research` quand rien ne matche, avec `next_action` non vide
    contenant des requêtes.
-6. Override → force `rejected_with_reason` + `missing_reason`.
-7. **Invariant clé** : sur un échantillon, aucune ligne sans `status`
-   (aucune ligne inexpliquée).
-8. Chargement de l'Excel réel : 76 lignes, toutes classées.
+6. Override de ligne → force `rejected_with_reason` + `missing_reason`.
+7. Override de source (`match_source: moneyvox`) → applique `medium` +
+   `article_list_secondary` à toutes les lignes MoneyVox sans toucher leur
+   couverture auto.
+8. Override `require_no_url` (V2) → `low` + `inherited_source_to_trace` seulement
+   sur les lignes sans URL.
+9. **Invariant clé** : sur un échantillon, aucune ligne sans `status`, sans
+   `next_action`, ni sans `source_reliability`.
+10. Chargement de l'Excel réel + overrides préremplis : 76 lignes, toutes
+    classées, 0 inexpliquée.
 
 Fixtures : un petit `.xlsx` généré (openpyxl) + un `data.json` minimal couvrant
 les 6 cas + un `copilot_overrides.yaml` minimal.
