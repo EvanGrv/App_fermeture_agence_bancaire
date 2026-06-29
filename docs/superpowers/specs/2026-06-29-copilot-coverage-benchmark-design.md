@@ -67,8 +67,16 @@ Pour **chaque** ligne du fichier Copilot, produire une explication non ambiguë 
 sa présence/absence dans le pipeline, avec une action suivante concrète. C'est le
 baromètre permanent « battre Copilot ».
 
-Fichier de référence : `liste_agences_bancaires_fermetures_a_partir_2026_v4_CE_complement.xlsx`
-(racine du dépôt). 76 lignes de données, 17 colonnes.
+Fichier de référence : `liste_agences_bancaires_fermetures_a_partir_2026_v4_CE_complement.xlsx`.
+76 lignes de données, 17 colonnes.
+
+**Versionnement de l'Excel** (pas de dépendance implicite non versionnée) :
+- l'Excel de référence est **committé** à la racine du dépôt (benchmark
+  reproductible, ~23 Ko, non ignoré par `.gitignore`) ;
+- le CLI accepte **n'importe quel chemin** en argument positionnel (un Excel
+  externe/local peut être passé sans committer) ;
+- les **tests n'utilisent jamais le fichier réel** : ils génèrent une fixture
+  xlsx minimale via openpyxl. Aucun test ne dépend de l'Excel committé.
 
 ## Architecture
 
@@ -105,43 +113,56 @@ comportement ni ses tests.
 2. **`data/export/data.json`** (paramétrable `--payload`) : `closures`,
    `department_estimates`, `departements`, `vigilances`.
 
-3. **`tools/copilot_overrides.yaml`** (optionnel, versionné). Capitalise les
-   verdicts humains déjà audités. **Deux sections**, toutes deux facultatives ;
-   chaque champ d'un override est facultatif (l'auto-classification remplit ce que
-   l'override ne fixe pas) :
+3. **`tools/copilot_overrides.json`** (versionné, livré prérempli). Capitalise les
+   verdicts humains déjà audités. **Format JSON** (et non YAML) pour éviter toute
+   nouvelle dépendance — PyYAML n'est pas installé et le dépôt n'utilise que
+   JSON/CSV. **Deux sections**, toutes deux facultatives ; chaque champ d'un
+   override est facultatif (l'auto-classification remplit ce que l'override ne
+   fixe pas) :
 
-   ```yaml
-   # Règles par MOTIF DE SOURCE — couvrent toutes les lignes d'une même source.
-   sources:
-     - match_source: "moneyvox"          # sous-chaîne normalisée de "Source principale"
-       source_reliability: medium
-       source_flag: article_list_secondary
-       note: "Article-liste secondaire fiable ; chaque commune citée doit être retrouvée/expliquée."
-     - match_source: "fichier principal v2"
-       require_no_url: true
-       source_reliability: low
-       source_flag: inherited_source_to_trace
-       note: "Source héritée sans URL ; fiable seulement si on retrouve une source primaire/secondaire."
-
-   # Verdicts par LIGNE précise — forcent le status de couverture et/ou un flag.
-   rows:
-     - match:
-         banque: "Crédit Agricole Centre-Loire"
-         commune: "Reuilly"
-       source_reliability: high
-       source_flag: confirmed
+   ```json
+   {
+     "sources": [
+       {
+         "match_source": "moneyvox",
+         "source_reliability": "medium",
+         "source_flag": "article_list_secondary",
+         "note": "Article-liste secondaire fiable ; chaque commune citée doit être retrouvée/expliquée."
+       },
+       {
+         "match_source": "fichier principal v2",
+         "require_no_url": true,
+         "source_reliability": "low",
+         "source_flag": "inherited_source_to_trace",
+         "default_status_if_uncovered": "needs_research",
+         "default_next_action": "Tracer la source primaire/secondaire avant toute publication carte.",
+         "note": "Source héritée sans URL ; fiable seulement si on retrouve une source primaire/secondaire."
+       }
+     ],
+     "rows": [
+       {
+         "match": { "banque": "Crédit Agricole Centre Ouest", "commune": "Reuilly" },
+         "source_reliability": "high",
+         "source_flag": "confirmed"
+       }
+     ]
+   }
    ```
 
    - `sources[].match_source` : sous-chaîne normalisée de la colonne « Source
      principale ». `require_no_url: true` restreint aux lignes sans « Lien source ».
-     Peut fixer `source_reliability`, `source_flag`, et un `status`/`next_action`
-     par défaut pour les lignes **non couvertes**.
+     Peut fixer `source_reliability`, `source_flag`, et (pour les lignes **non
+     couvertes** uniquement) `default_status_if_uncovered` / `default_next_action`.
    - `rows[].match` : clé normalisée via `_cle_banque`/`_cle_commune` (+
      `agence_localisation` optionnel pour préciser). Peut fixer n'importe quel
      sous-ensemble de `status` / `missing_reason` / `next_action` /
      `source_reliability` / `source_flag`.
-   - Un override **n'écrase jamais** la couverture auto si son `status` est absent :
-     la couverture reste dérivée de `data.json`, la fiabilité vient de l'override.
+   - Un override **n'écrase jamais** la couverture auto si son `status`
+     (ou `default_status_if_uncovered`) est absent : la couverture reste dérivée
+     de `data.json`, la fiabilité vient de l'override.
+   - **Libellés réels vérifiés** dans l'Excel pour que les règles de ligne
+     s'appliquent : Reuilly → `Crédit Agricole Centre Ouest` ;
+     Pleudihen-sur-Rance → `Crédit Mutuel de Bretagne`.
 
 ## Sorties
 
@@ -197,7 +218,7 @@ needs_research, rejected_with_reason, confirmed_missing}. Pas de valeur vide.
 
 ## Préremplissage des overrides (cas déjà audités)
 
-Le fichier `tools/copilot_overrides.yaml` est livré **prérempli** avec les
+Le fichier `tools/copilot_overrides.json` est livré **prérempli** avec les
 verdicts déjà vérifiés (capitalisation, pas de redémarrage à zéro). Couvre les
 76 lignes par 6 règles :
 
@@ -254,7 +275,7 @@ les 6 cas + un `copilot_overrides.yaml` minimal.
 python -m tools.compare_copilot_coverage \
     liste_agences_bancaires_fermetures_a_partir_2026_v4_CE_complement.xlsx \
     --payload data/export/data.json \
-    --overrides tools/copilot_overrides.yaml \
+    --overrides tools/copilot_overrides.json \
     --out-dir data/export
 ```
 
