@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T07:59:06.536862+00:00",
+  "generated_at": "2026-06-29T08:36:59.669351+00:00",
   "departements": {
     "01": {
       "nom": "Ain",
@@ -3919,6 +3919,19 @@
       "created_at": "2026-06-25T15:27:22.031587+00:00"
     },
     {
+      "id": "77ed73d676736a6a",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Vague de fermetures de banques rurales en Chine - epochtimes.fr",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMijwFBVV95cUxPNGdxTU1WM1hENjhrVk5qUm81Y0w2ZHVOWUZQVlptVW9QY3A5MjZSQkQtNUtGWkt0SGtMTDgwY1hfeGc3dEFQZW94X2RLX2VDNFRQYXNqc2d5T1VJcDBTZkczRF9uaTd1WGJadFBsTTNFaHItQnN5YU1xTkRUSHBDV0E5REwwYjZnOUJlWFRCQQ?oc=5\" target=\"_blank\">Vague de fermetures de banques rurales en Chine</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">epochtimes.fr</font>",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPNGdxTU1WM1hENjhrVk5qUm81Y0w2ZHVOWUZQVlptVW9QY3A5MjZSQkQtNUtGWkt0SGtMTDgwY1hfeGc3dEFQZW94X2RLX2VDNFRQYXNqc2d5T1VJcDBTZkczRF9uaTd1WGJadFBsTTNFaHItQnN5YU1xTkRUSHBDV0E5REwwYjZnOUJlWFRCQQ?oc=5",
+      "source": "Google News",
+      "date": "Tue, 05 May 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-06-29T08:29:46.895276+00:00"
+    },
+    {
       "id": "cfa8f00d37cee839",
       "banque": "Société Générale",
       "departement": null,
@@ -5219,6 +5232,19 @@
       "created_at": "2026-06-25T15:42:53.260213+00:00"
     },
     {
+      "id": "025fd184ad443a0e",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "PSG-Arsenal : plusieurs stations de métro fermées ce samedi à partir de 17 h à Paris - Le Figaro",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMixgFBVV95cUxQalNrcUZCYUwzUWF3OVRUX2pneHRjeEVWOHc0aTQtSmhnQ0FPcFpBT0xyMU1yTHVoUFJkYlJLaVhUM0VlOEpmaV92NVZzV0VwTEJRZmt2NXJMWjlwUzRnak1mZzJsMVZscHZJSk1VQkF0anBoV1c1WUZCdlBhelE5ZXpiWS1WTVh1WjVZQ01Eb2N1ZG9maUdZeFBIX054Y2ZyaWh5enZoUGNRMEFPcFpneXByaEVaalJrRlB3M1VqeFJnVkhoVHc?oc=5\" target=\"_blank\">PSG-Arsenal : plusieurs stations de métro fermées ce samedi à partir de 17 h à Paris</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Le Figaro</font>",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQalNrcUZCYUwzUWF3OVRUX2pneHRjeEVWOHc0aTQtSmhnQ0FPcFpBT0xyMU1yTHVoUFJkYlJLaVhUM0VlOEpmaV92NVZzV0VwTEJRZmt2NXJMWjlwUzRnak1mZzJsMVZscHZJSk1VQkF0anBoV1c1WUZCdlBhelE5ZXpiWS1WTVh1WjVZQ01Eb2N1ZG9maUdZeFBIX054Y2ZyaWh5enZoUGNRMEFPcFpneXByaEVaalJrRlB3M1VqeFJnVkhoVHc?oc=5",
+      "source": "Google News",
+      "date": "Sat, 30 May 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-06-29T08:30:00.733578+00:00"
+    },
+    {
       "id": "ccb3451213f4ec8c",
       "banque": "Société Générale",
       "departement": null,
@@ -5258,6 +5284,19 @@
       "created_at": "2026-06-25T15:46:13.346992+00:00"
     },
     {
+      "id": "aaa0e16610af0057",
+      "banque": "Crédit Agricole",
+      "departement": null,
+      "titre": "Fougerolles-Saint-Valbert. Fermeture de l’agence du Crédit Agricole : le maire dénonce ce départ - L'Est Républicain",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMiuAFBVV95cUxNVkVRTU91S3dvdEw4OUZrSjJoLUNiT2NuOUZMRW4wN3hFWEdBMktGU3FYUjRxZlg2UDZ4bVhIT0R4T2RhNWtXR0YyYzJtUHdNSTBTLV80QzN0SlRjdVhRQ1VVT2RjQ3F6emgzWTRCSWdqWEZfbTc5ZnN4MVZwT29TODZFUFg2dUx3Tmk2Rkt5bm15RDJTTGJucGQ3amtHX0MzU0daZm5HLXViYUVNQUZqb2ptQ0h1WHFL?oc=5\" target=\"_blank\">Fougerolles-Saint-Valbert. Fermeture de l’agence du Crédit Agricole : le maire dénonce ce départ</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">L'Est Républicain</font>",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNVkVRTU91S3dvdEw4OUZrSjJoLUNiT2NuOUZMRW4wN3hFWEdBMktGU3FYUjRxZlg2UDZ4bVhIT0R4T2RhNWtXR0YyYzJtUHdNSTBTLV80QzN0SlRjdVhRQ1VVT2RjQ3F6emgzWTRCSWdqWEZfbTc5ZnN4MVZwT29TODZFUFg2dUx3Tmk2Rkt5bm15RDJTTGJucGQ3amtHX0MzU0daZm5HLXViYUVNQUZqb2ptQ0h1WHFL?oc=5",
+      "source": "Google News",
+      "date": "Sat, 27 Jun 2026 18:04:09 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-06-29T08:29:43.052247+00:00"
+    },
+    {
       "id": "7b5f941005b0b8a1",
       "banque": "BNP Paribas",
       "departement": null,
@@ -5269,6 +5308,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-27T06:41:03.907995+00:00"
+    },
+    {
+      "id": "c87ad3e800ef32c7",
+      "banque": "BNP Paribas",
+      "departement": null,
+      "titre": "« J’ai aimé travailler ici » : après soixante ans de présence, BNP ferme son agence à La Chartre - - Le Mans.maville.com",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMi5AFBVV95cUxQcnExVWU0LTNTMDRJb081TjBHSE9uc3pYNHR4YnJWSWJTOUNiOXUzV2JIWHdFTlBBM0FVTnJtaVBERkk3ekNMUGQ1b1RUeGlaTmczZkpONDhFZUJabmQ2dWlqSkRyR19uZ1dHZWR3VzZiS0ZrWFprMDlvMXpsb1Iya0lGeV9pM2tGajZmTktWMFd2eTZrUVdCeEFmVWtBb2ZjX3R5Ulk4SEV5MmJMa0JxX0tZdnJQUHp1b2hzOGhVVERBbGI5ejZMZDlJSl93Vmp0WWdkOGt2d1ZITG9JZVl1WTVLUlc?oc=5\" target=\"_blank\">« J’ai aimé travailler ici » : après soixante ans de présence, BNP ferme son agence à La Chartre</a>&nbsp;&nbsp;<font co",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQcnExVWU0LTNTMDRJb081TjBHSE9uc3pYNHR4YnJWSWJTOUNiOXUzV2JIWHdFTlBBM0FVTnJtaVBERkk3ekNMUGQ1b1RUeGlaTmczZkpONDhFZUJabmQ2dWlqSkRyR19uZ1dHZWR3VzZiS0ZrWFprMDlvMXpsb1Iya0lGeV9pM2tGajZmTktWMFd2eTZrUVdCeEFmVWtBb2ZjX3R5Ulk4SEV5MmJMa0JxX0tZdnJQUHp1b2hzOGhVVERBbGI5ejZMZDlJSl93Vmp0WWdkOGt2d1ZITG9JZVl1WTVLUlc?oc=5",
+      "source": "Google News",
+      "date": "Sat, 27 Jun 2026 06:31:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-06-29T08:29:50.898441+00:00"
     },
     {
       "id": "903deebdbc436130",
@@ -5412,6 +5464,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:38:26.806127+00:00"
+    },
+    {
+      "id": "006f363b008c3c3e",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "La ferme d’Auriol fermée après de « nombreux » cas de shigellose - - Gomet'",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMihAFBVV95cUxQN19OZzY4OHZYZU9zVXE0T29VeTlWZEtwaVN6N1JHczJvNTl4TkN2NllmamJkUThFSGJ6TXdGVEVXMW8wVmZyWTNueVVsMVhiRHBEUlVWandybktvbWxQTFlIV3phOU9ISGhQNElGV2tCazVGdXMweFlmbUVRLXdGZGVEZ2w?oc=5\" target=\"_blank\">La ferme d’Auriol fermée après de « nombreux » cas de shigellose</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">- Gomet'</font>",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQN19OZzY4OHZYZU9zVXE0T29VeTlWZEtwaVN6N1JHczJvNTl4TkN2NllmamJkUThFSGJ6TXdGVEVXMW8wVmZyWTNueVVsMVhiRHBEUlVWandybktvbWxQTFlIV3phOU9ISGhQNElGV2tCazVGdXMweFlmbUVRLXdGZGVEZ2w?oc=5",
+      "source": "Google News",
+      "date": "Sat, 20 Jun 2026 04:54:32 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-06-29T08:30:05.000525+00:00"
     },
     {
       "id": "af323f0da87e6069",
@@ -5999,6 +6064,19 @@
       "created_at": "2026-06-25T15:42:59.771424+00:00"
     },
     {
+      "id": "204ae0d40b0db203",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "FAQ suite à la fermeture du portail de l’ANTS en maintenance - pas-de-calais.gouv.fr",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMitwFBVV95cUxNbzExeDZWUXdwSUFLSU5EdG5LbWYyTTZOVVBqREVnU0xJY0lfYWtVR2ZOZzBSRm9hZjN0SHEwZnlXZkxkX2c0eFp2T3kwZzZyNGc3OWE3bFJnTDQ0Z2p2SjNGa1IzTTdWRUVjcGRMU0lqMUlkcFhwYmVRcldXbUU1YzducjlaZjlsNi1nX1EyYUFmVTNXeFNQQTh2Y2VwRFFKakxaZnpLb1JQX2xfWVNyMVIxa05KSGs?oc=5\" target=\"_blank\">FAQ suite à la fermeture du portail de l’ANTS en maintenance</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">pas-de-calais.gouv.fr</font>",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNbzExeDZWUXdwSUFLSU5EdG5LbWYyTTZOVVBqREVnU0xJY0lfYWtVR2ZOZzBSRm9hZjN0SHEwZnlXZkxkX2c0eFp2T3kwZzZyNGc3OWE3bFJnTDQ0Z2p2SjNGa1IzTTdWRUVjcGRMU0lqMUlkcFhwYmVRcldXbUU1YzducjlaZjlsNi1nX1EyYUFmVTNXeFNQQTh2Y2VwRFFKakxaZnpLb1JQX2xfWVNyMVIxa05KSGs?oc=5",
+      "source": "Google News",
+      "date": "Mon, 18 May 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-06-29T08:29:58.071442+00:00"
+    },
+    {
       "id": "40f8ec6de15de7ed",
       "banque": "Société Générale",
       "departement": null,
@@ -6257,6 +6335,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:28:03.695740+00:00"
+    },
+    {
+      "id": "b7b8492632ffae05",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Cappelle-la-Grande : après plus de cinq mois de fermeture, le PLUS vient de rouvrir ses portes - Nord Littoral",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMizwFBVV95cUxNd2trVTZnR09WbUx2Y1pod0N3Q3haUjhsRGlXV3B0NlNnM2wwX2VfM21GaXZ5ZUg3c1NyeWItVzBBdEU0WVVNeXZnbzJRLUl5OUE3UmRxZFZFMklieWs4NjZZMmtDeWRQNC1GbnBXVlpJR0cwalZkQWt0OXBwTmFacU84TWE0TmN2YTJhRlZYMHJYTnRaTVJTeVhaTkV0b3cxcllOdWl0MEFGTkd0aFloNVlxUmZzVlhwUEduSWRCZGxyMGxSM3c4RTNDSG42czA?oc=5\" target=\"_blank\">Cappelle-la-Grande : après plus de cinq mois de fermeture, le PLUS vient de rouvrir ses portes</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Nord Littoral</f",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNd2trVTZnR09WbUx2Y1pod0N3Q3haUjhsRGlXV3B0NlNnM2wwX2VfM21GaXZ5ZUg3c1NyeWItVzBBdEU0WVVNeXZnbzJRLUl5OUE3UmRxZFZFMklieWs4NjZZMmtDeWRQNC1GbnBXVlpJR0cwalZkQWt0OXBwTmFacU84TWE0TmN2YTJhRlZYMHJYTnRaTVJTeVhaTkV0b3cxcllOdWl0MEFGTkd0aFloNVlxUmZzVlhwUEduSWRCZGxyMGxSM3c4RTNDSG42czA?oc=5",
+      "source": "Google News",
+      "date": "Mon, 04 May 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-06-29T08:30:09.103828+00:00"
     },
     {
       "id": "852a355cb39d0f45",
@@ -8103,6 +8194,19 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:39:06.106358+00:00"
+    },
+    {
+      "id": "a01223f7808593ad",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "A Cernier, la banque Raiffeisen Neuchâtel et Vallées matérialise sa fusion - ArcInfo",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMi-gFBVV95cUxOQWVFZ0ZmLUN5aGtlWlRxVHcxUWpPcWx4VUVsY000aGI0X05tTUQxeTBrczFrTjdoZUhCWGZiN2hkMEZwa2Vwa2VacktjdEpNZlpNaUxNQ0dLMlJtTzhjMHFtVkItejg3YnVfTDlyTDk0SUVibmF4Rno3YThhN2xWT0d1VENJSG9QTndFMm9kN3JTRmlqeElObGJsMVNDbDZuSnM0R1dUdElyV2pJbDZ1Sml3UUZEdENUS3o3cFdwMEtVbmtyb2w5Y3lrNGJtWFNmMUkwNEpoNDFvNjlEVnd6WF8zeWppeWhmNXdCR2hIX3hLdjFhY0JxZDZn?oc=5\" target=\"_blank\">A Cernier, la banque Raiffeisen Neuchâtel et Vallées matérialise sa fusion</a>&nbsp;&nbsp;<",
+      "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOQWVFZ0ZmLUN5aGtlWlRxVHcxUWpPcWx4VUVsY000aGI0X05tTUQxeTBrczFrTjdoZUhCWGZiN2hkMEZwa2Vwa2VacktjdEpNZlpNaUxNQ0dLMlJtTzhjMHFtVkItejg3YnVfTDlyTDk0SUVibmF4Rno3YThhN2xWT0d1VENJSG9QTndFMm9kN3JTRmlqeElObGJsMVNDbDZuSnM0R1dUdElyV2pJbDZ1Sml3UUZEdENUS3o3cFdwMEtVbmtyb2w5Y3lrNGJtWFNmMUkwNEpoNDFvNjlEVnd6WF8zeWppeWhmNXdCR2hIX3hLdjFhY0JxZDZn?oc=5",
+      "source": "Google News",
+      "date": "Sun, 28 Jun 2026 07:17:05 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-06-29T08:29:55.021464+00:00"
     },
     {
       "id": "0a62b6441f84bc69",
