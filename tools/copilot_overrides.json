@@ -1,0 +1,49 @@
+{
+  "_doc": "Verdicts humains audités sur les lignes du fichier de référence Copilot. Lu par tools/compare_copilot_coverage.py. Format JSON (pas de dépendance YAML). 'sources' = règles par motif de Source principale ; 'rows' = verdicts par ligne précise. Chaque champ est facultatif : l'auto-classification depuis data.json comble le reste. Un override n'écrase la couverture que si 'status' (ou 'default_status_if_uncovered') est présent ; sinon il ne fixe que la fiabilité.",
+  "sources": [
+    {
+      "match_source": "moneyvox",
+      "source_reliability": "medium",
+      "source_flag": "article_list_secondary",
+      "note": "Article-liste secondaire fiable (Caisse d'Épargne). Chaque commune citée doit être retrouvée ou expliquée ; couverture dérivée par ligne."
+    },
+    {
+      "match_source": "fichier principal v2",
+      "require_no_url": true,
+      "source_reliability": "low",
+      "source_flag": "inherited_source_to_trace",
+      "default_status_if_uncovered": "needs_research",
+      "default_next_action": "Tracer une source primaire/secondaire (presse locale, commune, banque) avant toute publication carte.",
+      "note": "Source héritée sans URL. Fiable seulement si on retrouve une source primaire/secondaire."
+    },
+    {
+      "match_source": "adcf",
+      "require_no_url": true,
+      "source_reliability": "low",
+      "source_flag": "weak_no_url",
+      "default_status_if_uncovered": "needs_research",
+      "default_next_action": "Confirmation indépendante requise ; non publiable carte sans source vérifiable.",
+      "note": "ADCF / presse agrégée sans URL : faible, non publiable carte sans confirmation indépendante."
+    },
+    {
+      "match_source": "nouvelle republique",
+      "source_reliability": "medium",
+      "source_flag": "to_revalidate",
+      "note": "La Nouvelle République (Indre) : probable mais accès direct bloqué ; signal fort à revalider."
+    }
+  ],
+  "rows": [
+    {
+      "match": { "banque": "Crédit Agricole Centre Ouest", "commune": "Reuilly" },
+      "source_reliability": "high",
+      "source_flag": "confirmed",
+      "note": "ICI Centre-Val de Loire / Radio France : fiable, confirmé."
+    },
+    {
+      "match": { "banque": "Crédit Mutuel de Bretagne", "commune": "Pleudihen-sur-Rance" },
+      "source_reliability": "high",
+      "source_flag": "announced_contested",
+      "note": "ICI Armorique : source fiable mais statut annoncé/contesté, pas fermeture certaine."
+    }
+  ]
+}
