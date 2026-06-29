@@ -9,8 +9,12 @@ Ne modifie jamais le pipeline. Produit data/export/copilot_coverage.{csv,json}.
 """
 from __future__ import annotations
 
+import argparse
+import csv
 import json
 import math
+import sys
+from datetime import datetime, timezone
 from pathlib import Path
 
 from backend.dedup import normalise_cle
@@ -257,3 +261,84 @@ def build_record(row: dict, payload: dict, overrides: dict) -> dict:
         "source_reliability": rel["source_reliability"],
         "source_flag": rel.get("source_flag", ""),
     }
+
+
+DEFAULT_PAYLOAD = "data/export/data.json"
+DEFAULT_OVERRIDES = "tools/copilot_overrides.json"
+DEFAULT_OUT_DIR = "data/export"
+
+
+def compare(rows: list[dict], payload: dict, overrides: dict) -> list[dict]:
+    return [build_record(row, payload, overrides) for row in rows]
+
+
+def summarize(records: list[dict]) -> dict:
+    summary = {status: 0 for status in COVERAGE_STATUSES}
+    reliability = {"high": 0, "medium": 0, "low": 0}
+    for r in records:
+        summary[r["status"]] = summary.get(r["status"], 0) + 1
+        reliability[r["source_reliability"]] = reliability.get(r["source_reliability"], 0) + 1
+    matched = sum(1 for r in records if r["matched_pipeline"] == "oui")
+    total = len(records)
+    return {
+        **summary,
+        "total": total,
+        "matched_pipeline": matched,
+        "coverage_pct": round(100 * matched / total, 1) if total else 0.0,
+        "reliability": reliability,
+        "unexplained": sum(1 for r in records
+                           if not (r["status"] and r["next_action"] and r["source_reliability"])),
+    }
+
+
+def write_csv(records: list[dict], path) -> None:
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", encoding="utf-8", newline="") as fh:
+        writer = csv.DictWriter(fh, fieldnames=RECORD_FIELDS)
+        writer.writeheader()
+        for r in records:
+            writer.writerow({k: r.get(k, "") for k in RECORD_FIELDS})
+
+
+def write_json(records: list[dict], summary: dict, path) -> None:
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    payload = {
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "summary": summary,
+        "records": records,
+    }
+    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+def main(argv=None) -> int:
+    parser = argparse.ArgumentParser(description="Benchmark de couverture Copilot (read-only).")
+    parser.add_argument("reference", help="Excel de référence Copilot (.xlsx)")
+    parser.add_argument("--payload", default=DEFAULT_PAYLOAD, help="Chemin vers data.json")
+    parser.add_argument("--overrides", default=DEFAULT_OVERRIDES, help="Chemin vers copilot_overrides.json")
+    parser.add_argument("--out-dir", default=DEFAULT_OUT_DIR, help="Répertoire de sortie")
+    args = parser.parse_args(argv)
+
+    rows = load_copilot_rows(args.reference)
+    payload = json.loads(Path(args.payload).read_text(encoding="utf-8")) if Path(args.payload).exists() else {}
+    overrides = load_overrides(args.overrides)
+    records = compare(rows, payload, overrides)
+    summary = summarize(records)
+
+    out_dir = Path(args.out_dir)
+    write_csv(records, out_dir / "copilot_coverage.csv")
+    write_json(records, summary, out_dir / "copilot_coverage.json")
+
+    print("--- Couverture Copilot ---")
+    for status in COVERAGE_STATUSES:
+        print(f"{status:<22} {summary[status]}")
+    print(f"{'total':<22} {summary['total']}")
+    print(f"{'matched (%)':<22} {summary['matched_pipeline']} ({summary['coverage_pct']}%)")
+    print(f"{'fiabilité':<22} {summary['reliability']}")
+    print(f"{'lignes inexpliquées':<22} {summary['unexplained']}")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
