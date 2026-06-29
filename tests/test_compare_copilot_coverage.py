@@ -3,16 +3,23 @@ from pathlib import Path
 
 from openpyxl import Workbook
 
+import csv as _csv
+
 from tools.compare_copilot_coverage import (
     COVERAGE_STATUSES,
     RECORD_FIELDS,
     apply_reliability,
     build_record,
     classify_coverage,
+    compare,
     default_next_action_queries,
     dept_name_to_code,
     load_copilot_rows,
     load_overrides,
+    main,
+    summarize,
+    write_csv,
+    write_json,
 )
 
 
@@ -218,3 +225,45 @@ def test_build_record_row_override_forces_rejected():
     rec = build_record(_row(commune="Lyon", source="x", url=""), {"closures": []}, ov)
     assert rec["status"] == "rejected_with_reason"
     assert rec["missing_reason"] == "hors périmètre"
+
+
+def test_compare_and_summarize():
+    rows = [_row(commune="Lyon"), _row(commune="Nulpart")]
+    payload = {"closures": [{"id": "abc", "banque": "BNP Paribas", "commune": "Lyon",
+                             "lat": 45.75, "lon": 4.85}]}
+    recs = compare(rows, payload, {"sources": [], "rows": []})
+    assert len(recs) == 2
+    summ = summarize(recs)
+    assert summ["present_on_map"] == 1
+    assert summ["needs_research"] == 1
+
+
+def test_write_csv_json_have_all_columns(tmp_path):
+    recs = compare([_row(commune="Lyon")], {"closures": []}, {"sources": [], "rows": []})
+    summ = summarize(recs)
+    csv_path = tmp_path / "out.csv"
+    json_path = tmp_path / "out.json"
+    write_csv(recs, csv_path)
+    write_json(recs, summ, json_path)
+    with csv_path.open(encoding="utf-8") as fh:
+        header = next(_csv.reader(fh))
+    assert "status" in header and "source_reliability" in header and "next_action" in header
+    payload = json.loads(json_path.read_text(encoding="utf-8"))
+    assert payload["summary"]["needs_research"] == 1
+    assert len(payload["records"]) == 1
+
+
+def test_main_writes_outputs(tmp_path):
+    ref = _make_xlsx(tmp_path / "ref.xlsx", [
+        ["BNP Paribas", "", "", "Lyon", "Rhône", "", "", "", "", "", "V2", "", "", "", "90", "Confirmé", ""],
+    ])
+    payload_path = tmp_path / "data.json"
+    payload_path.write_text(json.dumps({"closures": []}), encoding="utf-8")
+    rc = main([str(ref), "--payload", str(payload_path), "--out-dir", str(tmp_path)])
+    assert rc == 0
+    assert (tmp_path / "copilot_coverage.csv").exists()
+    assert (tmp_path / "copilot_coverage.json").exists()
+    out = json.loads((tmp_path / "copilot_coverage.json").read_text(encoding="utf-8"))
+    # Invariant : aucune ligne sans status/next_action/source_reliability.
+    for r in out["records"]:
+        assert r["status"] and r["next_action"] and r["source_reliability"]
