@@ -9,7 +9,12 @@ Ne modifie jamais le pipeline. Produit data/export/copilot_coverage.{csv,json}.
 """
 from __future__ import annotations
 
+import json
 from pathlib import Path
+
+from backend.dedup import normalise_cle
+from tools.compare_expected_closures import _cle_banque, _cle_commune
+import config
 
 # Mapping positionnel des colonnes de l'Excel Copilot (en-tête banque = "²").
 COPILOT_COLS: dict[str, int] = {
@@ -46,3 +51,23 @@ def load_copilot_rows(path) -> list[dict]:
                 row[champ] = "" if v is None else str(v).strip()
         out.append(row)
     return out
+
+
+# Table inverse {nom normalisé du département -> code}.
+_DEPT_NAME_TO_CODE = {normalise_cle(nom): code for code, nom in config.DEPARTEMENTS.items()}
+
+
+def _norm(s) -> str:
+    return normalise_cle(s or "")
+
+
+def dept_name_to_code(name) -> str | None:
+    return _DEPT_NAME_TO_CODE.get(normalise_cle(name or "")) or None
+
+
+def load_overrides(path) -> dict:
+    """Charge tools/copilot_overrides.json. Fichier absent/None -> sections vides."""
+    if not path or not Path(path).exists():
+        return {"sources": [], "rows": []}
+    data = json.loads(Path(path).read_text(encoding="utf-8"))
+    return {"sources": data.get("sources") or [], "rows": data.get("rows") or []}
