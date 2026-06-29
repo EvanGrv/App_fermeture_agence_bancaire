@@ -4,8 +4,12 @@ from pathlib import Path
 from openpyxl import Workbook
 
 from tools.compare_copilot_coverage import (
+    COVERAGE_STATUSES,
+    RECORD_FIELDS,
     apply_reliability,
+    build_record,
     classify_coverage,
+    default_next_action_queries,
     dept_name_to_code,
     load_copilot_rows,
     load_overrides,
@@ -168,3 +172,49 @@ def test_reliability_row_rule_reuilly():
 def test_reliability_default_heuristic():
     assert apply_reliability(_row(source="Inconnu", url="http://x"), _OV)["source_reliability"] == "medium"
     assert apply_reliability(_row(source="Inconnu", url=""), _OV)["source_reliability"] == "low"
+
+
+def test_next_action_queries_non_empty():
+    q = default_next_action_queries(_row(banque="BNP Paribas", commune="Lyon"))
+    assert "BNP Paribas" in q and "Lyon" in q and "fermeture agence" in q
+
+
+def test_build_record_invariant_always_filled():
+    rec = build_record(_row(commune="Nowhere", source="Inconnu", url=""),
+                       {"closures": []}, {"sources": [], "rows": []})
+    assert rec["status"] in COVERAGE_STATUSES
+    assert rec["next_action"].strip() != ""
+    assert rec["source_reliability"] in {"high", "medium", "low"}
+    assert set(RECORD_FIELDS).issubset(rec.keys())
+
+
+def test_build_record_present_on_map_matched_oui():
+    payload = {"closures": [{"id": "abc", "banque": "BNP Paribas", "commune": "Lyon",
+                             "lat": 45.75, "lon": 4.85, "statut": "confirmé"}]}
+    rec = build_record(_row(commune="Lyon", lat=45.751, lon=4.851), payload,
+                       {"sources": [], "rows": []})
+    assert rec["status"] == "present_on_map"
+    assert rec["matched_pipeline"] == "oui"
+    assert rec["pipeline_id"] == "abc"
+
+
+def test_build_record_v2_uncovered_uses_source_default_status():
+    ov = {"sources": [{"match_source": "fichier principal v2", "require_no_url": True,
+                       "source_reliability": "low", "source_flag": "inherited_source_to_trace",
+                       "default_status_if_uncovered": "needs_research",
+                       "default_next_action": "Tracer la source primaire."}], "rows": []}
+    rec = build_record(_row(commune="Nulpart", source="Fichier principal V2", url=""),
+                       {"closures": []}, ov)
+    assert rec["status"] == "needs_research"
+    assert rec["source_flag"] == "inherited_source_to_trace"
+    assert rec["next_action"] == "Tracer la source primaire."
+
+
+def test_build_record_row_override_forces_rejected():
+    ov = {"sources": [], "rows": [
+        {"match": {"banque": "BNP Paribas", "commune": "Lyon"},
+         "status": "rejected_with_reason", "missing_reason": "hors périmètre",
+         "source_reliability": "low"}]}
+    rec = build_record(_row(commune="Lyon", source="x", url=""), {"closures": []}, ov)
+    assert rec["status"] == "rejected_with_reason"
+    assert rec["missing_reason"] == "hors périmètre"
