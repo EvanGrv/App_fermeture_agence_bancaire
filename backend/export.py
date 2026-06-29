@@ -1,9 +1,12 @@
 import csv
 import json
+import re
 from datetime import datetime, timezone
 import config
 from backend.plans import PLANS
 from backend.source_tier import tier as _source_tier
+from backend.dedup import normalise_cle
+from backend.vigilance_review import candidats_communes, signal_fermeture_agence
 
 _CLOSURE_COLS = ["id", "banque", "commune", "code_insee", "departement", "type",
                  "date_annonce", "date_fermeture", "statut", "statut_temporel",
@@ -83,14 +86,108 @@ def build_payload(conn) -> dict:
             f"SELECT {','.join(_VIGILANCE_COLS)} FROM vigilances ORDER BY score DESC, date DESC"
         )
     ]
+    department_estimates = _build_department_estimates(closures, vigilances)
+    for code, dep in departements.items():
+        estimate = department_estimates.get(code, {})
+        dep["precise_count"] = estimate.get("precise_count", dep["count"])
+        dep["unlocated_count"] = estimate.get("unlocated_count", 0)
+        dep["estimated_count"] = estimate.get("estimated_count", dep["count"])
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "departements": departements,
+        "department_estimates": department_estimates,
         "regions": _build_regions(closures),
         "closures": closures,
         "vigilances": vigilances,
         "plans": PLANS,
     }
+
+
+_VAGUE_SIGNAL_RE = re.compile(
+    r"\b(\d+|plusieurs|des|ces|les)\s+agences?\b|"
+    r"\bfermetures?\s+d[’']agences\b|"
+    r"\b(r[ée]seau|région|region|département|departement|national|"
+    r"france|plan|restructuration|suppressions?\s+de\s+postes)\b",
+    re.IGNORECASE,
+)
+
+
+def _signal_departemental(v: dict, represented: set[tuple[str, str]]) -> dict | None:
+    """Signal comptable mais non pointable précisément, très conservateur.
+
+    On exclut volontairement les annonces de volume ("10 agences ferment dans
+    l'Aude") et on ne retient qu'un signal local singulier, déjà rattaché à un
+    département et avec une commune/localisation nommée dans le titre/extrait.
+    """
+    dep = str(v.get("departement") or "").strip()
+    banque = v.get("banque")
+    if dep not in config.DEPARTEMENTS or not banque:
+        return None
+    texte = f"{v.get('titre') or ''} {v.get('extrait') or ''}"
+    if not signal_fermeture_agence(texte) or _VAGUE_SIGNAL_RE.search(texte):
+        return None
+    communes = candidats_communes(texte, banque)
+    if len(communes) != 1:
+        return None
+    commune = communes[0]
+    key = (normalise_cle(banque), normalise_cle(commune))
+    if key in represented:
+        return None
+    return {
+        "id": v.get("id"),
+        "banque": banque,
+        "commune": commune,
+        "departement": dep,
+        "titre": v.get("titre") or "",
+        "source": v.get("source") or "",
+        "url": v.get("url") or "",
+        "score": v.get("score") or 0,
+        "precision": "departement",
+        "reason": "signal local non pointé précisément",
+    }
+
+
+def _build_department_estimates(closures: list[dict], vigilances: list[dict]) -> dict:
+    estimates: dict[str, dict] = {}
+    represented = {
+        (normalise_cle(c.get("banque") or ""), normalise_cle(c.get("commune") or ""))
+        for c in closures
+        if c.get("banque") and c.get("commune")
+    }
+    for cl in closures:
+        dep = cl.get("departement")
+        if dep not in config.DEPARTEMENTS:
+            continue
+        bucket = estimates.setdefault(dep, {
+            "departement": dep,
+            "nom": config.DEPARTEMENTS.get(dep, dep),
+            "precise_count": 0,
+            "unlocated_count": 0,
+            "estimated_count": 0,
+            "signals": [],
+        })
+        bucket["precise_count"] += 1
+    seen_signals: set[str] = set()
+    for vig in vigilances:
+        signal = _signal_departemental(vig, represented)
+        if not signal or signal["id"] in seen_signals:
+            continue
+        seen_signals.add(signal["id"])
+        dep = signal["departement"]
+        bucket = estimates.setdefault(dep, {
+            "departement": dep,
+            "nom": config.DEPARTEMENTS.get(dep, dep),
+            "precise_count": 0,
+            "unlocated_count": 0,
+            "estimated_count": 0,
+            "signals": [],
+        })
+        bucket["signals"].append(signal)
+        bucket["unlocated_count"] += 1
+    for bucket in estimates.values():
+        bucket["estimated_count"] = bucket["precise_count"] + bucket["unlocated_count"]
+        bucket["signals"].sort(key=lambda item: (-(item.get("score") or 0), item.get("banque") or ""))
+    return estimates
 
 
 def _build_regions(closures: list[dict]) -> list[dict]:

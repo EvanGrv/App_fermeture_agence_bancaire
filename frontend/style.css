@@ -670,6 +670,24 @@ a { color: #0b63f6; text-decoration: none; font-weight: 700; }
   align-content: start;
 }
 
+.department-note {
+  margin: 12px 0 0;
+  color: #64748b;
+  font-size: 0.84rem;
+  line-height: 1.45;
+}
+
+.department-signal-card {
+  border-style: dashed;
+  background: #fff7ed;
+}
+
+.department-signal-card a {
+  color: #9a3412;
+  font-weight: 800;
+  text-decoration: none;
+}
+
 .sources-layout {
   display: grid;
   gap: 18px;

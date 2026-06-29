@@ -64,6 +64,15 @@ def test_filtre_temporel_present():
     assert "statut_temporel" in js
 
 
+def test_vue_departement_masque_les_points_et_utilise_estimation():
+    js = Path("frontend/app.js").read_text(encoding="utf-8")
+    assert "department_estimates" in js
+    assert 'const pointVis = view === "departments" ? "none" : "visible"' in js
+    assert '"points-halo", "points", "points-selected"' in js
+    assert "Estimation départementale" in js
+    assert "Signaux non pointés" in js
+
+
 def test_deploiement_vercel_github_actions_configure():
     root = ROOT
     assert (root / "vercel.json").exists()

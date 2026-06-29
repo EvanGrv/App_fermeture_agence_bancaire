@@ -119,3 +119,34 @@ def test_build_payload_source_tier(tmp_path):
     # Original source keys must still be present (Fix D: regression guard)
     for key in ("url", "titre", "source", "date"):
         assert key in src, f"original source key '{key}' missing from source dict"
+
+
+def test_build_payload_department_estimates(tmp_path):
+    conn = store.init_db(tmp_path / "t.db")
+    store.upsert_closure(conn, {
+        "id": "c1", "banque": "BNP Paribas", "commune": "Lyon",
+        "code_insee": "69123", "departement": "69", "type": "fermeture",
+        "date_annonce": None, "date_fermeture": None, "statut": "projet",
+        "fiabilite": 3, "lat": 45.76, "lon": 4.85, "citation": "x",
+    })
+    store.upsert_vigilance(conn, dict(
+        id="v-local", banque="Crédit Agricole", departement="69",
+        titre="L'agence du Crédit Agricole de Tarare va fermer",
+        extrait="", url="http://local", source="PQR", date="2026-01-01",
+        score=3, raison="article pertinent sans fermeture publiable",
+    ))
+    store.upsert_vigilance(conn, dict(
+        id="v-vague", banque="Crédit Agricole", departement="69",
+        titre="10 agences ferment dans le Rhône",
+        extrait="", url="http://vague", source="PQR", date="2026-01-01",
+        score=3, raison="plan vague",
+    ))
+
+    payload = export.build_payload(conn)
+
+    estimate = payload["department_estimates"]["69"]
+    assert estimate["precise_count"] == 1
+    assert estimate["unlocated_count"] == 1
+    assert estimate["estimated_count"] == 2
+    assert estimate["signals"][0]["commune"] == "Tarare"
+    assert payload["departements"]["69"]["estimated_count"] == 2
