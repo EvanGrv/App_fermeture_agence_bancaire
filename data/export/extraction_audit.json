@@ -12,16 +12,6 @@
   {
     "severity": "warning",
     "type": "date_fermeture_absente",
-    "id": "340b37b2128c9c0e",
-    "banque": "Crédit Agricole",
-    "commune": "Firmi",
-    "departement": "12",
-    "code_insee": "12100",
-    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
-  },
-  {
-    "severity": "warning",
-    "type": "date_fermeture_absente",
     "id": "d6f3fb1df2179c7e",
     "banque": "Crédit Agricole",
     "commune": "Condat-sur-Vienne",
@@ -42,16 +32,6 @@
   {
     "severity": "warning",
     "type": "date_fermeture_absente",
-    "id": "2f07a4a5c53533b1",
-    "banque": "Crédit Agricole",
-    "commune": "Lauzun",
-    "departement": "47",
-    "code_insee": "47142",
-    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
-  },
-  {
-    "severity": "warning",
-    "type": "date_fermeture_absente",
     "id": "4f9afd8a7e4e0a00",
     "banque": "BNP Paribas",
     "commune": "Aulnoy-lez-Valenciennes",
@@ -62,19 +42,9 @@
   {
     "severity": "warning",
     "type": "date_fermeture_absente",
-    "id": "9961978ce6d8e6b4",
+    "id": "d46ccaac8ce4b69d",
     "banque": "Crédit Agricole",
-    "commune": "Lempdes-sur-Allagnon",
-    "departement": "43",
-    "code_insee": "43120",
-    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
-  },
-  {
-    "severity": "warning",
-    "type": "date_fermeture_absente",
-    "id": "25fd42e304678520",
-    "banque": "Crédit Agricole",
-    "commune": "Saint-Martin-d’Estréaux",
+    "commune": "Saint-Martin-d'Estréaux",
     "departement": "42",
     "code_insee": "42257",
     "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
@@ -112,31 +82,21 @@
   {
     "severity": "warning",
     "type": "date_fermeture_absente",
-    "id": "9e37991903456bbc",
+    "id": "d8dcb0b6524fbd9d",
     "banque": "Crédit Agricole",
-    "commune": "Mazingarbe",
-    "departement": "62",
-    "code_insee": "62563",
+    "commune": "Rouen",
+    "departement": "76",
+    "code_insee": "76540",
     "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
   },
   {
     "severity": "warning",
     "type": "date_fermeture_absente",
-    "id": "70a46255dfbdd872",
+    "id": "2f07a4a5c53533b1",
     "banque": "Crédit Agricole",
-    "commune": "Limogne-en-Quercy",
-    "departement": "46",
-    "code_insee": "46173",
-    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
-  },
-  {
-    "severity": "warning",
-    "type": "date_fermeture_absente",
-    "id": "4b911a4b783ba002",
-    "banque": "Crédit Mutuel",
-    "commune": "Villersexel",
-    "departement": "70",
-    "code_insee": "70561",
+    "commune": "Lauzun",
+    "departement": "47",
+    "code_insee": "47142",
     "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
   },
   {
@@ -192,11 +152,11 @@
   {
     "severity": "warning",
     "type": "date_fermeture_absente",
-    "id": "13eb7a2d74f0ffa5",
+    "id": "70a46255dfbdd872",
     "banque": "Crédit Agricole",
-    "commune": "Faches-Thumesnil",
-    "departement": "59",
-    "code_insee": "59220",
+    "commune": "Limogne-en-Quercy",
+    "departement": "46",
+    "code_insee": "46173",
     "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
   },
   {
