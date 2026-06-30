@@ -16,7 +16,7 @@
 - **Cacher `closure` et `none`** comme hits définitifs ; **jamais** `error`.
 - **`error` ré-essayable** : colonnes `error_type`/`attempts`/`retry_after`, backoff.
 - **Clé du cache d'extraction** : `PRIMARY KEY(content_hash, extraction_version, model)`.
-- **Compat** : `fetch_text(url, ...) -> str` conservé pour les appelants production (qui n'appellent qu'avec l'URL) ; `cache_dir` retiré (sans objet sous SQLite) ; le `fetch` injectable renvoie désormais `FetchResult(text, url)`.
+- **Compat** : `fetch_text(url, fetch=None, cache_dir=None, conn=None) -> str` conservé ; `cache_dir` est accepté mais **ignoré/déprécié** (sans objet sous SQLite) pour ne casser aucun ancien appelant/test. Le `fetch` injectable peut renvoyer **plusieurs formes** : `FetchResult(text, url)`, un objet type `requests.Response` (`.text`/`.url`), un `dict {"text","url"}`, ou simplement une **chaîne HTML**.
 - **Pas de changement du schéma d'extraction IA** (réservé 2c).
 - Constantes : `EXTRACTION_VERSION=1`, `EXTRACTION_MAX_ATTEMPTS=3`, `EXTRACTION_RETRY_BASE_MIN=60`.
 
@@ -205,8 +205,8 @@ git commit -m "feat(2a): tables SQLite articles + extractions + CRUD"
 - Consumes: `store.get_article`, `store.upsert_article`, `store.init_db`, `config.DB_PATH`.
 - Produces:
   - `FetchResult = namedtuple("FetchResult", ["text", "url"])`.
-  - `fetch_article(url, fetch=None, conn=None) -> dict` (clés = `_ARTICLE_COLS`).
-  - `fetch_text(url, fetch=None, conn=None) -> str`.
+  - `fetch_article(url, fetch=None, conn=None) -> dict` (clés = `_ARTICLE_COLS`) ; accepte un `fetch` renvoyant `FetchResult` / `requests.Response` / `dict` / `str`.
+  - `fetch_text(url, fetch=None, cache_dir=None, conn=None) -> str` (`cache_dir` ignoré/déprécié).
 
 - [ ] **Step 1: Réécrire le test (nouveau contrat)**
 
@@ -263,6 +263,34 @@ def test_fetch_text_renvoie_le_corps(tmp_path):
     conn = store.init_db(tmp_path / "t.db")
     txt = fetch_text("https://ex.com/t", fetch=_fetch_ok, conn=conn)
     assert isinstance(txt, str) and "Crédit Agricole" in txt
+
+
+def test_fetch_text_accepte_cache_dir_deprecie(tmp_path):
+    """cache_dir est accepté (ignoré) pour compat ascendante."""
+    conn = store.init_db(tmp_path / "t.db")
+    txt = fetch_text("https://ex.com/cd", fetch=_fetch_ok, cache_dir=tmp_path, conn=conn)
+    assert "Crédit Agricole" in txt
+
+
+def test_fetch_article_accepte_fetch_str(tmp_path):
+    """Un fetch renvoyant une simple chaîne HTML est accepté."""
+    conn = store.init_db(tmp_path / "t.db")
+    row = fetch_article("https://ex.com/str", fetch=lambda u: _ARTICLE_HTML, conn=conn)
+    assert row["fetch_status"] == "ok"
+    assert "Crédit Agricole" in row["fulltext"]
+    assert row["final_url"] == "https://ex.com/str"  # final_url retombe sur l'url demandée
+
+
+def test_fetch_article_accepte_fetch_dict(tmp_path):
+    """Un fetch renvoyant un dict {'text','url'} est accepté."""
+    conn = store.init_db(tmp_path / "t.db")
+    row = fetch_article(
+        "https://ex.com/d",
+        fetch=lambda u: {"text": _ARTICLE_HTML, "url": "https://ex.com/d/final"},
+        conn=conn,
+    )
+    assert row["fetch_status"] == "ok"
+    assert row["final_url"] == "https://ex.com/d/final"
 
 
 def test_fetch_article_echec_status_error_refetchable(tmp_path):
@@ -339,6 +367,19 @@ def _now_iso() -> str:
     return datetime.now(timezone.utc).isoformat()
 
 
+def _coerce_fetch(res, url: str) -> tuple[str, str]:
+    """Normalise le retour d'un fetch en (html, final_url).
+
+    Accepte : str HTML, dict {"text","url"}, ou tout objet exposant .text/.url
+    (FetchResult, requests.Response).
+    """
+    if isinstance(res, str):
+        return res, url
+    if isinstance(res, dict):
+        return res.get("text") or "", res.get("url") or url
+    return (getattr(res, "text", "") or ""), (getattr(res, "url", None) or url)
+
+
 def fetch_article(url: str, fetch=None, conn=None) -> dict:
     fetch = fetch or _default_fetch
     conn = conn or _get_default_conn()
@@ -349,9 +390,7 @@ def fetch_article(url: str, fetch=None, conn=None) -> dict:
 
     fetched_at = _now_iso()
     try:
-        res = fetch(url)
-        html = res.text
-        final_url = res.url or url
+        html, final_url = _coerce_fetch(fetch(url), url)
     except Exception:
         row = {"raw_url": url, "final_url": None, "canonical_url": None, "title": None,
                "source_domain": None, "published_at": None, "fetched_at": fetched_at,
@@ -390,7 +429,8 @@ def fetch_article(url: str, fetch=None, conn=None) -> dict:
     return row
 
 
-def fetch_text(url: str, fetch=None, conn=None) -> str:
+def fetch_text(url: str, fetch=None, cache_dir=None, conn=None) -> str:
+    # cache_dir : accepté mais ignoré (déprécié, compat ascendante).
     return fetch_article(url, fetch=fetch, conn=conn).get("fulltext") or ""
 ```
 
