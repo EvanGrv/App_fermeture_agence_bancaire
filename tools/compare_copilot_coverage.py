@@ -234,7 +234,9 @@ def build_record(row: dict, payload: dict, overrides: dict) -> dict:
         else:
             status = cov["status"]
 
-    next_action = rel.get("next_action") or rel.get("_source_default_next_action")
+    next_action = rel.get("next_action")
+    if not next_action and cov["status"] == "needs_research":
+        next_action = rel.get("_source_default_next_action")
     if not next_action:
         next_action = (default_next_action_queries(row) if status == "needs_research"
                        else _NEXT_ACTION_BY_STATUS.get(status, "À qualifier."))
