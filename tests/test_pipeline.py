@@ -1,6 +1,8 @@
 # tests/test_pipeline.py
 import backend.store as store
 from backend import pipeline
+from backend.extraction_cache import content_hash
+import config
 
 def _article(url, pertinent=True):
     if pertinent:
@@ -219,3 +221,29 @@ def test_pipeline_extraction_cachee_pas_de_2e_appel_ia(tmp_path):
     pipeline.run_pipeline(conn, collectors, extractor_compteur, _geo,
                           enrich_fn=lambda u: "")
     assert len(appels) == 1, "le cache d'extraction évite le 2e appel IA"
+
+
+def test_pipeline_ne_marque_pas_seen_apres_erreur_ia_retryable(tmp_path):
+    conn = store.init_db(tmp_path / "t.db")
+    appels = []
+    url = "http://retry-ia"
+
+    def extractor_retry(art):
+        appels.append(art["url"])
+        if len(appels) == 1:
+            raise RuntimeError("API 529")
+        return None
+
+    collectors = [lambda: [_article(url)]]
+    pipeline.run_pipeline(conn, collectors, extractor_retry, _geo, enrich_fn=lambda u: "")
+    assert len(appels) == 1
+    assert not store.is_url_seen(conn, url), "une erreur IA réessayable ne doit pas marquer l'URL seen"
+    row = store.get_extraction(conn, content_hash(_article(url)), config.EXTRACTION_VERSION,
+                               config.ANTHROPIC_MODEL)
+    assert row["status"] == "error"
+
+    row["retry_after"] = "2000-01-01T00:00:00+00:00"
+    store.upsert_extraction(conn, row)
+    pipeline.run_pipeline(conn, collectors, extractor_retry, _geo, enrich_fn=lambda u: "")
+    assert len(appels) == 2
+    assert store.is_url_seen(conn, url), "après extraction réussie en none, l'URL peut être marquée seen"

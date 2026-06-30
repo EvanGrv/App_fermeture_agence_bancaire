@@ -3,7 +3,7 @@ from datetime import date, datetime, timezone
 from email.utils import parsedate_to_datetime
 from backend import commune_normalize, prefilter, store, validation
 from backend.fulltext import fetch_text, fetch_article
-from backend.extraction_cache import extract_cached
+from backend.extraction_cache import extract_cached_with_status
 
 
 def _parse_article_date(value: str):
@@ -117,9 +117,11 @@ def run_pipeline(
                 except Exception:
                     pass
             try:
-                resultat = extract_cached(art, extractor_fn, conn)
+                resultat, extraction_status = extract_cached_with_status(art, extractor_fn, conn)
             except Exception as exc:
                 print(f"[pipeline] extraction en erreur ({url}): {exc}")
+                continue
+            if extraction_status in {"error", "error_skip"}:
                 continue
             if url:
                 store.mark_url_seen(conn, url)

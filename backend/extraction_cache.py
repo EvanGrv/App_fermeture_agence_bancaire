@@ -36,7 +36,7 @@ def _error_bloque(row: dict, now: datetime) -> bool:
     return False
 
 
-def extract_cached(article, extract_fn, conn, *, model=None, version=None, now_fn=None):
+def extract_cached_with_status(article, extract_fn, conn, *, model=None, version=None, now_fn=None):
     model = model or config.ANTHROPIC_MODEL
     version = config.EXTRACTION_VERSION if version is None else version
     now_fn = now_fn or _now
@@ -45,11 +45,11 @@ def extract_cached(article, extract_fn, conn, *, model=None, version=None, now_f
     row = store.get_extraction(conn, chash, version, model)
     if row:
         if row["status"] == "closure":
-            return json.loads(row["result_json"])
+            return json.loads(row["result_json"]), "closure"
         if row["status"] == "none":
-            return None
+            return None, "none"
         if row["status"] == "error" and _error_bloque(row, now_fn()):
-            return None
+            return None, "error_skip"
         # status == 'error' non bloqué -> on retombe sur un nouvel essai
 
     now_iso = now_fn().isoformat()
@@ -66,7 +66,7 @@ def extract_cached(article, extract_fn, conn, *, model=None, version=None, now_f
             "retry_after": (now_fn() + timedelta(minutes=backoff)).isoformat(),
             "created_at": created_at, "updated_at": now_iso,
         })
-        return None
+        return None, "error"
 
     store.upsert_extraction(conn, {
         "content_hash": chash, "extraction_version": version, "model": model,
@@ -75,4 +75,11 @@ def extract_cached(article, extract_fn, conn, *, model=None, version=None, now_f
         "error_type": None, "attempts": (row.get("attempts") if row else 0) or 0,
         "retry_after": None, "created_at": created_at, "updated_at": now_iso,
     })
+    return result, "closure" if result is not None else "none"
+
+
+def extract_cached(article, extract_fn, conn, *, model=None, version=None, now_fn=None):
+    result, _status = extract_cached_with_status(
+        article, extract_fn, conn, model=model, version=version, now_fn=now_fn
+    )
     return result

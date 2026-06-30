@@ -2,7 +2,7 @@ from datetime import datetime, timedelta, timezone
 
 import backend.store as store
 import config
-from backend.extraction_cache import content_hash, extract_cached
+from backend.extraction_cache import content_hash, extract_cached, extract_cached_with_status
 
 _ART = {"titre": "BNP ferme", "texte": "agence fermée à Lyon"}
 
@@ -87,6 +87,21 @@ def test_error_reessayable_apres_retry_after(tmp_path):
     plus_tard = t0 + timedelta(minutes=config.EXTRACTION_RETRY_BASE_MIN + 1)
     assert extract_cached(_ART, extract_boom, conn, now_fn=lambda: plus_tard) is None
     assert len(appels) == 2
+
+
+def test_extract_cached_with_status_signale_error_et_soft_skip(tmp_path):
+    conn = _conn(tmp_path)
+    t0 = datetime(2026, 6, 30, tzinfo=timezone.utc)
+
+    def extract_boom(art):
+        raise RuntimeError("API 529")
+
+    result, status = extract_cached_with_status(_ART, extract_boom, conn, now_fn=lambda: t0)
+    assert result is None
+    assert status == "error"
+    result, status = extract_cached_with_status(_ART, extract_boom, conn, now_fn=lambda: t0)
+    assert result is None
+    assert status == "error_skip"
 
 
 def test_error_bloque_apres_max_attempts(tmp_path):
