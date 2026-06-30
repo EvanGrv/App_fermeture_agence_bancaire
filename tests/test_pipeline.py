@@ -180,16 +180,13 @@ def test_article_court_est_enrichi_avant_extraction(tmp_path):
         "Le texte enrichi doit contenir le sentinel de l'enrich_fn"
 
 
-def test_article_long_n_est_pas_enrichi(tmp_path):
+def test_fulltext_systematique_enrichit_meme_les_articles_longs(tmp_path):
     conn = store.init_db(tmp_path / "t.db")
     texte_long = "Crédit Agricole ferme son agence. " * 15  # > 400 chars
     article_long = {
-        "titre": "Crédit Agricole ferme son agence",
-        "texte": texte_long,
-        "url": "http://exemple.com/article-long",
-        "date": "2026-01-10",
-        "source": "GN",
-        "departement": None,
+        "titre": "Crédit Agricole ferme son agence", "texte": texte_long,
+        "url": "http://exemple.com/article-long", "date": "2026-01-10",
+        "source": "GN", "departement": None,
     }
     enrich_appels = []
 
@@ -198,12 +195,27 @@ def test_article_long_n_est_pas_enrichi(tmp_path):
         return "texte additionnel"
 
     pipeline.run_pipeline(
-        conn,
-        [lambda: [article_long]],
+        conn, [lambda: [article_long]],
         extractor_fn=lambda art: None,
         geocoder_fn=lambda commune, dept: None,
-        enrich_fn=enrich_espion,
-        since_date=None,
+        enrich_fn=enrich_espion, since_date=None,
     )
+    assert len(enrich_appels) == 1, "fulltext systématique : l'article long est aussi enrichi"
 
-    assert len(enrich_appels) == 0, "enrich_fn ne doit pas être appelée pour un texte long"
+
+def test_pipeline_extraction_cachee_pas_de_2e_appel_ia(tmp_path):
+    conn = store.init_db(tmp_path / "t.db")
+    appels = []
+
+    def extractor_compteur(art):
+        appels.append(art["url"])
+        return None  # 'none' doit être caché
+
+    collectors = [lambda: [_article("http://cache-ia")]]
+    pipeline.run_pipeline(conn, collectors, extractor_compteur, _geo,
+                          enrich_fn=lambda u: "")
+    # On efface seen_urls pour forcer le 2e passage jusqu'à l'extraction
+    conn.execute("DELETE FROM seen_urls"); conn.commit()
+    pipeline.run_pipeline(conn, collectors, extractor_compteur, _geo,
+                          enrich_fn=lambda u: "")
+    assert len(appels) == 1, "le cache d'extraction évite le 2e appel IA"

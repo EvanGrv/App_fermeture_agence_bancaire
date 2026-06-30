@@ -2,7 +2,8 @@
 from datetime import date, datetime, timezone
 from email.utils import parsedate_to_datetime
 from backend import commune_normalize, prefilter, store, validation
-from backend.fulltext import fetch_text
+from backend.fulltext import fetch_text, fetch_article
+from backend.extraction_cache import extract_cached
 
 
 def _parse_article_date(value: str):
@@ -105,9 +106,10 @@ def run_pipeline(
                     store.mark_url_seen(conn, url)
                 continue
             recap["filtres"] += 1
-            _enrich = enrich_fn if enrich_fn is not None else fetch_text
+            _enrich = enrich_fn if enrich_fn is not None else (
+                lambda u: fetch_article(u, conn=conn).get("fulltext") or "")
             texte = art.get("texte") or ""
-            if url and len(texte) < 400:
+            if url:
                 try:
                     texte_complet = _enrich(url)
                     if texte_complet:
@@ -115,7 +117,7 @@ def run_pipeline(
                 except Exception:
                     pass
             try:
-                resultat = extractor_fn(art)
+                resultat = extract_cached(art, extractor_fn, conn)
             except Exception as exc:
                 print(f"[pipeline] extraction en erreur ({url}): {exc}")
                 continue
