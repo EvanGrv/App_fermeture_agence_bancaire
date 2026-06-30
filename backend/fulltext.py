@@ -1,74 +1,116 @@
-"""Module de récupération du texte intégral d'un article web.
+"""Récupération du fulltext + métadonnées, cache-first en SQLite.
 
 API publique :
-    fetch_text(url, fetch=None, cache_dir=None) -> str
+    fetch_article(url, fetch=None, conn=None) -> dict   (clés = store._ARTICLE_COLS)
+    fetch_text(url, fetch=None, cache_dir=None, conn=None) -> str  (thin wrapper, compat)
 
-Comportement :
-- Télécharge le HTML via `fetch` (injectable pour les tests).
-- Extrait le corps de l'article avec trafilatura.
-- Mise en cache disque (hash SHA-256 de l'URL, 16 premiers caractères).
-- Best-effort : toute exception → retourne "" sans propager.
-- Seuls les résultats non vides sont mis en cache ; les échecs transitoires
-  (site indisponible, anti-bot) peuvent ainsi être retentés lors du prochain run.
+Best-effort : aucune exception ne se propage ; un échec produit fetch_status='error'.
+Cache-first : une URL déjà en base avec fetch_status='ok' n'est jamais refetchée.
+Le `fetch` injectable peut renvoyer : FetchResult(text, url), un requests.Response
+(.text/.url), un dict {"text","url"}, ou simplement une chaîne HTML.
 """
 from __future__ import annotations
 
 import hashlib
-from pathlib import Path
+from collections import namedtuple
+from datetime import datetime, timezone
+from urllib.parse import urlparse
 
 import requests
 import trafilatura
 
 import config
+from backend import store
 
-_HEADERS = {
-    "User-Agent": "veille-presse/1.0",
-}
+FetchResult = namedtuple("FetchResult", ["text", "url"])
+
+_HEADERS = {"User-Agent": "veille-presse/1.0"}
+_default_conn = None
 
 
-def _default_fetch(url: str) -> str:
+def _get_default_conn():
+    global _default_conn
+    if _default_conn is None:
+        _default_conn = store.init_db(config.DB_PATH)
+    return _default_conn
+
+
+def _default_fetch(url: str) -> FetchResult:
     resp = requests.get(url, timeout=10, headers=_HEADERS)
     resp.raise_for_status()
-    return resp.text
+    return FetchResult(text=resp.text, url=resp.url)
 
 
-def _cache_path(url: str, cache_dir: Path) -> Path:
-    key = hashlib.sha256(url.encode()).hexdigest()[:16]
-    return cache_dir / f"{key}.txt"
+def _hash16(s: str) -> str:
+    return hashlib.sha256(s.encode("utf-8")).hexdigest()[:16]
 
 
-def fetch_text(url: str, fetch=None, cache_dir=None) -> str:
-    """Retourne le texte principal de l'article à `url`.
+def _now_iso() -> str:
+    return datetime.now(timezone.utc).isoformat()
 
-    Paramètres
-    ----------
-    url       : URL de l'article à télécharger.
-    fetch     : callable (url) -> str (HTML brut). Par défaut : requests.get.
-    cache_dir : répertoire de cache. Par défaut : config.CACHE_DIR / "fulltext".
 
-    Retourne une chaîne vide en cas d'échec (best-effort).
+def _coerce_fetch(res, url: str) -> tuple[str, str]:
+    """Normalise le retour d'un fetch en (html, final_url).
+
+    Accepte : str HTML, dict {"text","url"}, ou tout objet exposant .text/.url
+    (FetchResult, requests.Response).
     """
-    if fetch is None:
-        fetch = _default_fetch
-    if cache_dir is None:
-        cache_dir = config.CACHE_DIR / "fulltext"
+    if isinstance(res, str):
+        return res, url
+    if isinstance(res, dict):
+        return res.get("text") or "", res.get("url") or url
+    return (getattr(res, "text", "") or ""), (getattr(res, "url", None) or url)
 
-    cache_dir = Path(cache_dir)
-    cache_dir.mkdir(parents=True, exist_ok=True)
 
-    path = _cache_path(url, cache_dir)
-    if path.exists():
-        return path.read_text(encoding="utf-8")
+def fetch_article(url: str, fetch=None, conn=None) -> dict:
+    fetch = fetch or _default_fetch
+    conn = conn or _get_default_conn()
+
+    cached = store.get_article(conn, url)
+    if cached and cached.get("fetch_status") == "ok":
+        return cached
+
+    fetched_at = _now_iso()
+    try:
+        html, final_url = _coerce_fetch(fetch(url), url)
+    except Exception:
+        row = {"raw_url": url, "final_url": None, "canonical_url": None, "title": None,
+               "source_domain": None, "published_at": None, "fetched_at": fetched_at,
+               "fulltext": "", "fulltext_hash": None, "fetch_status": "error"}
+        store.upsert_article(conn, row)
+        return row
 
     try:
-        html = fetch(url)
-        text = trafilatura.extract(html) or ""
+        fulltext = trafilatura.extract(html) or ""
     except Exception:
-        return ""
+        fulltext = ""
 
-    # On ne met en cache que les extractions non vides pour permettre le retry
-    # en cas d'échec transitoire (anti-bot, timeout, etc.).
-    if text:
-        path.write_text(text, encoding="utf-8")
+    title = published_at = canonical_url = None
+    try:
+        md = trafilatura.extract_metadata(html)
+        if md is not None:
+            title = md.title
+            published_at = md.date
+            canonical_url = md.url
+    except Exception:
+        pass
 
-    return text
+    row = {
+        "raw_url": url,
+        "final_url": final_url,
+        "canonical_url": canonical_url,
+        "title": title,
+        "source_domain": urlparse(final_url).netloc or None,
+        "published_at": published_at,
+        "fetched_at": fetched_at,
+        "fulltext": fulltext,
+        "fulltext_hash": _hash16(fulltext) if fulltext else None,
+        "fetch_status": "ok" if fulltext else "empty",
+    }
+    store.upsert_article(conn, row)
+    return row
+
+
+def fetch_text(url: str, fetch=None, cache_dir=None, conn=None) -> str:
+    # cache_dir : accepté mais ignoré (déprécié, compat ascendante).
+    return fetch_article(url, fetch=fetch, conn=conn).get("fulltext") or ""
