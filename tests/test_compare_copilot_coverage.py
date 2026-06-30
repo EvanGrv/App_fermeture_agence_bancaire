@@ -217,6 +217,20 @@ def test_build_record_v2_uncovered_uses_source_default_status():
     assert rec["next_action"] == "Tracer la source primaire."
 
 
+def test_build_record_v2_covered_keeps_coverage_next_action():
+    ov = {"sources": [{"match_source": "fichier principal v2", "require_no_url": True,
+                       "source_reliability": "low", "source_flag": "inherited_source_to_trace",
+                       "default_status_if_uncovered": "needs_research",
+                       "default_next_action": "Tracer la source primaire."}], "rows": []}
+    payload = {"closures": [{"id": "abc", "banque": "BNP Paribas", "commune": "Lyon",
+                             "lat": 45.75, "lon": 4.85, "statut": "confirmé"}]}
+    rec = build_record(_row(commune="Lyon", source="Fichier principal V2", url=""),
+                       payload, ov)
+    assert rec["status"] == "present_on_map"
+    assert rec["source_flag"] == "inherited_source_to_trace"
+    assert rec["next_action"] == "Aucune — déjà sur la carte ; contrôler la fiabilité de la source."
+
+
 def test_build_record_row_override_forces_rejected():
     ov = {"sources": [], "rows": [
         {"match": {"banque": "BNP Paribas", "commune": "Lyon"},
