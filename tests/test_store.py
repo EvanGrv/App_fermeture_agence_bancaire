@@ -141,3 +141,45 @@ def test_closure_persiste_statut_temporel(tmp_path):
         "SELECT statut_temporel, date_fermeture_approx FROM closures WHERE id='abc'"
     ).fetchone()
     assert row == ("deja_fermee", 1)
+
+
+def test_init_db_cree_tables_articles_extractions(tmp_path):
+    conn = store.init_db(tmp_path / "t.db")
+    noms = {r[0] for r in conn.execute(
+        "SELECT name FROM sqlite_master WHERE type='table'")}
+    assert "articles" in noms
+    assert "extractions" in noms
+
+
+def test_upsert_get_article_round_trip(tmp_path):
+    conn = store.init_db(tmp_path / "t.db")
+    art = {"raw_url": "http://a", "final_url": "http://a/final", "canonical_url": None,
+           "title": "T", "source_domain": "a", "published_at": "2026-06-25",
+           "fetched_at": "2026-06-30T00:00:00+00:00", "fulltext": "corps",
+           "fulltext_hash": "deadbeef", "fetch_status": "ok"}
+    store.upsert_article(conn, art)
+    got = store.get_article(conn, "http://a")
+    assert got["fulltext"] == "corps"
+    assert got["fetch_status"] == "ok"
+    assert got["final_url"] == "http://a/final"
+    art["fetch_status"] = "empty"
+    store.upsert_article(conn, art)
+    assert conn.execute("SELECT COUNT(*) FROM articles").fetchone()[0] == 1
+    assert store.get_article(conn, "http://a")["fetch_status"] == "empty"
+    assert store.get_article(conn, "http://absent") is None
+
+
+def test_upsert_get_extraction_round_trip(tmp_path):
+    conn = store.init_db(tmp_path / "t.db")
+    row = {"content_hash": "h1", "extraction_version": 1, "model": "claude-haiku-4-5",
+           "status": "none", "result_json": None, "error_type": None,
+           "attempts": 0, "retry_after": None,
+           "created_at": "2026-06-30T00:00:00+00:00", "updated_at": "2026-06-30T00:00:00+00:00"}
+    store.upsert_extraction(conn, row)
+    got = store.get_extraction(conn, "h1", 1, "claude-haiku-4-5")
+    assert got["status"] == "none"
+    assert store.get_extraction(conn, "h1", 1, "claude-sonnet-4-6") is None
+    row["status"] = "closure"; row["result_json"] = "{}"
+    store.upsert_extraction(conn, row)
+    assert conn.execute("SELECT COUNT(*) FROM extractions").fetchone()[0] == 1
+    assert store.get_extraction(conn, "h1", 1, "claude-haiku-4-5")["status"] == "closure"

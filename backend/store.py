@@ -77,6 +77,31 @@ CREATE TABLE IF NOT EXISTS vigilance_reviews (
     new_urls_found INTEGER DEFAULT 0,
     closures_created INTEGER DEFAULT 0
 );
+CREATE TABLE IF NOT EXISTS articles (
+    raw_url        TEXT PRIMARY KEY,
+    final_url      TEXT,
+    canonical_url  TEXT,
+    title          TEXT,
+    source_domain  TEXT,
+    published_at   TEXT,
+    fetched_at     TEXT NOT NULL,
+    fulltext       TEXT,
+    fulltext_hash  TEXT,
+    fetch_status   TEXT NOT NULL
+);
+CREATE TABLE IF NOT EXISTS extractions (
+    content_hash       TEXT NOT NULL,
+    extraction_version INTEGER NOT NULL,
+    model              TEXT NOT NULL,
+    status             TEXT NOT NULL,
+    result_json        TEXT,
+    error_type         TEXT,
+    attempts           INTEGER NOT NULL DEFAULT 0,
+    retry_after        TEXT,
+    created_at         TEXT NOT NULL,
+    updated_at         TEXT NOT NULL,
+    PRIMARY KEY (content_hash, extraction_version, model)
+);
 """
 
 
@@ -103,6 +128,55 @@ def init_db(path) -> sqlite3.Connection:
     _ensure_closures_columns(conn)
     conn.commit()
     return conn
+
+
+_ARTICLE_COLS = ["raw_url", "final_url", "canonical_url", "title", "source_domain",
+                 "published_at", "fetched_at", "fulltext", "fulltext_hash", "fetch_status"]
+_EXTRACTION_COLS = ["content_hash", "extraction_version", "model", "status",
+                    "result_json", "error_type", "attempts", "retry_after",
+                    "created_at", "updated_at"]
+
+
+def upsert_article(conn: sqlite3.Connection, article: dict) -> None:
+    cols = ",".join(_ARTICLE_COLS)
+    placeholders = ",".join(f":{c}" for c in _ARTICLE_COLS)
+    updates = ",".join(f"{c}=excluded.{c}" for c in _ARTICLE_COLS if c != "raw_url")
+    conn.execute(
+        f"INSERT INTO articles ({cols}) VALUES ({placeholders}) "
+        f"ON CONFLICT(raw_url) DO UPDATE SET {updates}",
+        {c: article.get(c) for c in _ARTICLE_COLS},
+    )
+    conn.commit()
+
+
+def get_article(conn: sqlite3.Connection, raw_url: str) -> dict | None:
+    row = conn.execute(
+        f"SELECT {','.join(_ARTICLE_COLS)} FROM articles WHERE raw_url=?", (raw_url,)
+    ).fetchone()
+    return dict(zip(_ARTICLE_COLS, row)) if row else None
+
+
+def upsert_extraction(conn: sqlite3.Connection, row: dict) -> None:
+    cols = ",".join(_EXTRACTION_COLS)
+    placeholders = ",".join(f":{c}" for c in _EXTRACTION_COLS)
+    key = ("content_hash", "extraction_version", "model")
+    updates = ",".join(f"{c}=excluded.{c}" for c in _EXTRACTION_COLS if c not in key)
+    conn.execute(
+        f"INSERT INTO extractions ({cols}) VALUES ({placeholders}) "
+        f"ON CONFLICT(content_hash, extraction_version, model) DO UPDATE SET {updates}",
+        {c: row.get(c) for c in _EXTRACTION_COLS},
+    )
+    conn.commit()
+
+
+def get_extraction(conn: sqlite3.Connection, content_hash: str,
+                   extraction_version: int, model: str) -> dict | None:
+    row = conn.execute(
+        f"SELECT {','.join(_EXTRACTION_COLS)} FROM extractions "
+        "WHERE content_hash=? AND extraction_version=? AND model=?",
+        (content_hash, extraction_version, model),
+    ).fetchone()
+    return dict(zip(_EXTRACTION_COLS, row)) if row else None
 
 
 def upsert_closure(conn: sqlite3.Connection, closure: dict) -> str:
