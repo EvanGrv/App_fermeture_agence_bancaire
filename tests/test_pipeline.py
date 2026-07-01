@@ -21,10 +21,24 @@ def _article(url, pertinent=True):
             "departement": None}
 
 def _extractor(article):
-    return {"id": "abc123", "banque": "BNP", "commune": "Lyon", "code_insee": None,
-            "departement": "69", "type": "fermeture", "date_annonce": "2026-01-10",
-            "date_fermeture": None, "statut": "projet", "fiabilite": 3,
-            "lat": None, "lon": None, "citation": "agence fermée à Lyon"}
+    return {
+        "article_type": "single_closure",
+        "closures": [{
+            "bank": "BNP", "agency_label": "", "commune": "Lyon",
+            "departement": "69", "region": None, "address": "",
+            "closure_date": None, "date_precision": "unknown",
+            "status": "announced", "closure_type": "closure",
+            "is_physical_agency": True, "confidence": 0.6,
+            "evidence": "agence fermée à Lyon",
+        }],
+        "department_signals": [], "vague_signals": [], "confidence": 0.6,
+        "needs_sonnet": False, "reason": "",
+    }
+
+def _structured(**closure_over):
+    result = _extractor({})
+    result["closures"][0].update(closure_over)
+    return result
 
 def _geo(commune, dept):
     return {"lat": 45.76, "lon": 4.85, "code_insee": "69123", "departement": "69"}
@@ -41,17 +55,17 @@ def test_pipeline_complet(tmp_path):
     assert recap["filtres"] == 1   # seul l'article pertinent passe le pré-filtre
     assert recap["extraits"] == 1
     assert recap["fermetures"] == 1
-    row = conn.execute("SELECT lat, lon FROM closures WHERE id='abc123'").fetchone()
+    row = conn.execute("SELECT lat, lon FROM closures WHERE commune='Lyon'").fetchone()
     assert row == (45.76, 4.85)
 
 def test_pipeline_enrichit_departement_si_absent(tmp_path):
     conn = store.init_db(tmp_path / "t.db")
     def extractor_sans_dept(article):
-        r = _extractor(article); r["departement"] = None; r["code_insee"] = None
+        r = _extractor(article); r["closures"][0]["departement"] = None
         return r
     collectors = [lambda: [_article("http://1")]]
     pipeline.run_pipeline(conn, collectors, extractor_sans_dept, _geo)
-    row = conn.execute("SELECT departement, code_insee FROM closures WHERE id='abc123'").fetchone()
+    row = conn.execute("SELECT departement, code_insee FROM closures WHERE commune='Lyon'").fetchone()
     assert row == ("69", "69123")
 
 def test_ingest_closures_geocode_adresse(tmp_path):
@@ -115,10 +129,7 @@ def test_pipeline_rejette_commune_inconnue_ou_non_nominative(tmp_path):
     vus = []
 
     def extractor(_article):
-        result = _extractor(_article)
-        result["commune"] = "inconnu"
-        result["departement"] = None
-        return result
+        return _structured(commune="inconnu", departement=None)
 
     def vigilance_fn(article, raison):
         vus.append((article["url"], raison))
@@ -142,10 +153,7 @@ def test_pipeline_rejette_territoire_pris_pour_commune(tmp_path):
     conn = store.init_db(tmp_path / "t.db")
 
     def extractor(_article):
-        result = _extractor(_article)
-        result["commune"] = "Franche-Comté"
-        result["departement"] = None
-        return result
+        return _structured(commune="Franche-Comté", departement=None)
 
     recap = pipeline.run_pipeline(
         conn,
@@ -300,3 +308,68 @@ def test_pipeline_ne_marque_pas_seen_apres_erreur_ia_retryable(tmp_path):
     pipeline.run_pipeline(conn, collectors, extractor_retry, _geo, enrich_fn=lambda u: "")
     assert len(appels) == 2
     assert store.is_url_seen(conn, url), "après extraction réussie en none, l'URL peut être marquée seen"
+
+
+def test_pipeline_list_closures_explose_en_n_fermetures(tmp_path):
+    conn = store.init_db(tmp_path / "t.db")
+
+    def extractor(_a):
+        base = _extractor(_a)["closures"][0]
+
+        def item(commune):
+            c = dict(base)
+            c["commune"] = commune
+            c["departement"] = "19"
+            return c
+
+        return {
+            "article_type": "list_closures",
+            "closures": [item("Bessines"), item("Tulle"), item("Guéret")],
+            "department_signals": [], "vague_signals": [], "confidence": 0.6,
+            "needs_sonnet": False, "reason": "",
+        }
+
+    geo = lambda commune, dept: {
+        "lat": 45.0, "lon": 2.0, "code_insee": "00000", "departement": "19",
+    }
+    recap = pipeline.run_pipeline(
+        conn, [lambda: [_article("http://list")]], extractor, geo,
+        enrich_fn=lambda u: "",
+    )
+    assert recap["fermetures"] == 3
+    assert conn.execute("SELECT COUNT(*) FROM closures").fetchone()[0] == 3
+
+
+def test_pipeline_department_signal_route_vigilance(tmp_path):
+    conn = store.init_db(tmp_path / "t.db")
+
+    def extractor(_a):
+        return {
+            "article_type": "department_signal",
+            "closures": [],
+            "department_signals": [{
+                "bank": "BNP", "departement": "18", "count": 10,
+                "communes_mentioned": ["Bourges"], "confidence": 0.6,
+                "evidence": "10 agences dans le Cher",
+            }],
+            "vague_signals": [], "confidence": 0.6,
+            "needs_sonnet": False, "reason": "",
+        }
+
+    recap = pipeline.run_pipeline(
+        conn, [lambda: [_article("http://dep")]], extractor, _geo,
+        enrich_fn=lambda u: "",
+    )
+    assert recap["fermetures"] == 0
+    assert conn.execute("SELECT COUNT(*) FROM closures").fetchone()[0] == 0
+    assert conn.execute("SELECT COUNT(*) FROM vigilances").fetchone()[0] == 1
+
+
+def test_pipeline_persiste_json_riche(tmp_path):
+    conn = store.init_db(tmp_path / "t.db")
+    pipeline.run_pipeline(
+        conn, [lambda: [_article("http://rich")]], _extractor, _geo,
+        enrich_fn=lambda u: "",
+    )
+    row = conn.execute("SELECT result_json FROM extractions").fetchone()
+    assert row is not None and "article_type" in row[0]

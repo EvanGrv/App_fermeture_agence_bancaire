@@ -1,6 +1,18 @@
 from datetime import date, timedelta
 import config
-from backend.extractor import extract, build_messages, Extraction, normalise_banque, _retenir_fermeture, banque_connue
+from backend.extractor import (
+    ClosureItem,
+    DeptSignal,
+    Extraction,
+    ExtractionResult,
+    VagueSignal,
+    build_messages,
+    extract,
+    extract_structured,
+    normalise_banque,
+    _retenir_fermeture,
+    banque_connue,
+)
 
 AUJ = "2026-06-01"  # date du jour fixe pour des tests déterministes
 
@@ -34,6 +46,21 @@ class FakeTransientError(Exception):
     def __init__(self, status_code):
         super().__init__(f"status {status_code}")
         self.status_code = status_code
+
+class StructuredSequenceMessages:
+    def __init__(self, results):
+        self._results = list(results)
+        self.calls = []
+    def parse(self, **kw):
+        self.calls.append(kw)
+        result = self._results.pop(0)
+        if isinstance(result, Exception):
+            raise result
+        return FakeResp(result)
+
+class StructuredSequenceClient:
+    def __init__(self, results):
+        self.messages = StructuredSequenceMessages(results)
 
 class FlakyMessages:
     def __init__(self, parsed, failures):
@@ -211,6 +238,85 @@ def test_build_messages_demande_agence_nominative():
     }, aujourdhui=AUJ)[0]["content"]
     assert "commune précise" in message
     assert "N'invente jamais de commune" in message
+
+
+def _closure_item(**kw):
+    base = dict(
+        bank="BNP",
+        commune="Lyon",
+        status="announced",
+        closure_type="closure",
+        confidence=0.7,
+        evidence="L'agence de Lyon fermera.",
+    )
+    base.update(kw)
+    return ClosureItem(**base)
+
+
+def test_extraction_result_listes_typees():
+    out = ExtractionResult.model_validate({
+        "article_type": "department_signal",
+        "closures": [_closure_item().model_dump()],
+        "department_signals": [{
+            "bank": "BNP",
+            "departement": "69",
+            "communes_mentioned": ["Lyon"],
+            "confidence": 0.6,
+        }],
+        "vague_signals": [{
+            "bank": "BNP",
+            "scope": "regional",
+            "confidence": 0.4,
+        }],
+    })
+    assert isinstance(out.closures[0], ClosureItem)
+    assert isinstance(out.department_signals[0], DeptSignal)
+    assert isinstance(out.vague_signals[0], VagueSignal)
+    assert out.department_signals[0].communes_mentioned == ["Lyon"]
+
+
+def test_extract_structured_single_closure():
+    result = ExtractionResult(article_type="single_closure", closures=[_closure_item()])
+    client = StructuredSequenceClient([result])
+    out = extract_structured(_article(), client=client, aujourdhui=AUJ)
+    assert out.article_type == "single_closure"
+    assert len(out.closures) == 1
+    assert out.closures[0].commune == "Lyon"
+    assert client.messages.calls[0]["output_format"].__name__ == "ExtractionResult"
+    assert client.messages.calls[0]["max_tokens"] == 2048
+
+
+def test_extract_structured_list_closures():
+    result = ExtractionResult(
+        article_type="list_closures",
+        closures=[
+            _closure_item(commune="Bessines"),
+            _closure_item(commune="Tulle"),
+            _closure_item(commune="Guéret"),
+        ],
+    )
+    out = extract_structured(_article(), client=StructuredSequenceClient([result]), aujourdhui=AUJ)
+    assert len(out.closures) == 3
+
+
+def test_extract_structured_out_of_scope_non_none():
+    result = ExtractionResult(article_type="out_of_scope")
+    out = extract_structured(_article(), client=StructuredSequenceClient([result]), aujourdhui=AUJ)
+    assert out is not None
+    assert out.closures == []
+    assert out.department_signals == []
+
+
+def test_extract_structured_fallback_sonnet_sur_erreur(monkeypatch):
+    monkeypatch.setenv("ANTHROPIC_MAX_RETRIES", "0")
+    monkeypatch.setattr(config, "ANTHROPIC_FALLBACK_ENABLED", True)
+    monkeypatch.setattr(config, "ANTHROPIC_FALLBACK_MODEL", "claude-sonnet-test")
+    result = ExtractionResult(article_type="single_closure", closures=[_closure_item()])
+    client = StructuredSequenceClient([FakeTransientError(529), result])
+    out = extract_structured(_article(), client=client, model="claude-haiku-test", aujourdhui=AUJ)
+    assert len(out.closures) == 1
+    assert client.messages.calls[0]["model"] == "claude-haiku-test"
+    assert client.messages.calls[1]["model"] == "claude-sonnet-test"
 
 
 def test_la_banque_postale_est_suivie():
