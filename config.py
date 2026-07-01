@@ -20,9 +20,15 @@ ANTHROPIC_FALLBACK_ENABLED = os.getenv("ANTHROPIC_FALLBACK_ENABLED", "1") != "0"
 # Cache d'extraction IA (Cycle 2a) : ne jamais relancer l'IA sur un contenu déjà
 # extrait pour (content_hash, extraction_version, model). Bump EXTRACTION_VERSION
 # quand le prompt ou le schéma d'extraction change (invalidation propre).
-EXTRACTION_VERSION = int(os.getenv("EXTRACTION_VERSION", "2"))
+EXTRACTION_VERSION = int(os.getenv("EXTRACTION_VERSION", "3"))
 EXTRACTION_MAX_ATTEMPTS = int(os.getenv("EXTRACTION_MAX_ATTEMPTS", "3"))
 EXTRACTION_RETRY_BASE_MIN = int(os.getenv("EXTRACTION_RETRY_BASE_MIN", "60"))
+STRUCTURED_SONNET_ESCALATION_ENABLED = (
+    os.getenv("STRUCTURED_SONNET_ESCALATION_ENABLED", "1") != "0"
+)
+STRUCTURED_SONNET_MIN_CONFIDENCE = float(
+    os.getenv("STRUCTURED_SONNET_MIN_CONFIDENCE", "0.65")
+)
 
 # Fenêtre de récence appliquée aux requêtes Google News (opérateur `when:`).
 # ATTENTION aux unités Google News : h=heures, d=jours, y=années (m=MINUTES, pas mois).
