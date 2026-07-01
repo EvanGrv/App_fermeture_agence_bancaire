@@ -108,8 +108,8 @@ rétention/filtrage temporel sont faites au **mapping**, pas dans l'extracteur).
 
 ## Mapping (`backend/ingest_map.py`)
 
-`map_result(result: dict, article: dict, aujourdhui: str) -> tuple[list[dict], list[dict]]`
-→ `(closures_internes, vigilances)`.
+`map_result(result: dict, article: dict, aujourdhui: str) -> tuple[list[dict], dict | None]`
+→ `(closures_internes, vigilance_agrégée_ou_None)`.
 
 **closures[] → dict closure interne** (uniquement si `is_physical_agency` et `commune`) :
 
@@ -135,19 +135,24 @@ réutilisant `extractor._retenir_fermeture(statut_temporel, date_fermeture, floo
 aujourdhui)` et `validation.fermeture_publiable(...)` : un closure non retenu /
 non publiable est routé en **vigilance** (jamais perdu), pas jeté.
 
-**department_signals[] et vague_signals[] → dict vigilance** (routés en vigilances,
-rien ne se perd) :
+**department_signals[] et vague_signals[] → UNE vigilance agrégée par article.**
+La table `vigilances` porte un `UNIQUE(url)` : on ne peut pas y écrire plusieurs
+lignes pour un même article. Donc `map_result` agrège tous les signaux d'un
+article en **une** vigilance (url brute de l'article). Le détail complet par
+signal reste dans `extractions.result_json` (Cycle 3-ready) — rien n'est perdu.
 
-| champ vigilance | dept_signal | vague_signal |
-|---|---|---|
-| `id` | hash(url+bank+departement+"dept") | hash(url+bank+scope+"vague") |
-| `banque` | `normalise_banque(bank)` | idem |
-| `departement` | `departement` | `None` |
-| `titre` | `article.titre` | `article.titre` |
-| `extrait` | `evidence` | `evidence` |
-| `url`/`source`/`date` | article | article |
-| `score` | `round(confidence*5)` | `round(confidence*5)` |
-| `raison` | `"signal départemental (count=…, communes=…)"` | `"signal vague ({scope}, count=…)"` |
+Vigilance agrégée (si au moins un dept/vague signal) :
+
+| champ | valeur |
+|---|---|
+| `id` | `hash(url)[:16]` (stable par article) |
+| `banque` | banque du 1er signal (`normalise_banque`) ou `None` |
+| `departement` | departement du 1er dept_signal, sinon `None` |
+| `titre` | `article.titre` |
+| `extrait` | concaténation courte des `evidence` (plafonnée) |
+| `url`/`source`/`date` | article |
+| `score` | `round(max(confidence des signaux)*5)` |
+| `raison` | `"signaux: dept(banque,dep,count)…; vague(banque,scope,count)…"` |
 
 ## Intégration pipeline (`run_pipeline`)
 
@@ -158,19 +163,21 @@ result = extract_cached(art, structured_extractor_fn, conn)   # dict ExtractionR
 if result is None:
     vigilance_fn(art, "extraction indisponible")   # comme aujourd'hui
     continue
-closures, vigilances = ingest_map.map_result(result, art, aujourdhui)
-for v in vigilances:
-    store.upsert_vigilance(conn, v); recap["vigilances"] += 1
-if not closures:
-    # department/regional/national/social/out_of_scope : signaux déjà routés
-    continue
+closures, sig_vig = ingest_map.map_result(result, art, aujourdhui)
+n_pub = 0
 for c in closures:
     if not extractor._retenir_fermeture(c["statut_temporel"], c.get("date_fermeture"), floor, aujourdhui):
-        vigilance_fn(art, "fermeture hors fenêtre temporelle"); recap["vigilances"] += 1; continue
+        continue   # non retenu : capté dans extractions.result_json + vigilance article ci-dessous
     # géocodage + validation + commune_normalize + upsert : logique EXISTANTE, par closure
-    # (si non publiable -> vigilance, comme aujourd'hui)
     ...
-    recap["fermetures"] += 1
+    if publiable:
+        store.upsert_closure(conn, c); store.add_source(conn, c["id"], {...}); recap["fermetures"] += 1; n_pub += 1
+# Au plus UNE vigilance par article (contrainte UNIQUE(url)) :
+if sig_vig:
+    store.upsert_vigilance(conn, sig_vig); recap["vigilances"] += 1
+elif n_pub == 0:
+    if vigilance_fn and vigilance_fn(art, "article pertinent sans fermeture publiable"):
+        recap["vigilances"] += 1
 ```
 
 `structured_extractor_fn = lambda art: extract_structured(art, client=client, floor=…).model_dump()`
