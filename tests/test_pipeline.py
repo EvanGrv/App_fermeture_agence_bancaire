@@ -255,6 +255,7 @@ def test_pipeline_score_bas_route_vigilance_sans_ia(tmp_path):
                           enrich_fn=lambda u: "")
     assert appels_ia == [], "score bas -> aucun appel IA"
     assert vus and "score" in vus[0]
+    assert store.is_url_seen(conn, "http://rh"), "l'URL skippée doit être marquée seen"
 
 
 def test_pipeline_envoie_contexte_compact_a_l_ia(tmp_path):

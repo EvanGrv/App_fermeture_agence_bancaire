@@ -105,3 +105,24 @@ def test_is_relevant_toujours_present():
     assert analyse and callable(analyse)
     from backend.prefilter import is_relevant
     assert is_relevant({"titre": "Société Générale ferme", "texte": "agence"}) is True
+
+
+# --- Fix A: word-boundary department detection ---
+
+def test_analyse_departements_word_boundary():
+    # "Saint-Denis" must NOT yield "01" (Ain contains "ain" substring of "Saint")
+    # "demain" must NOT yield "01" (Ain would match as substring)
+    r = analyse({"titre": "À Saint-Denis, on agit demain",
+                 "texte": "La BNP ferme son agence. Rendez-vous demain à Saint-Denis."})
+    assert "01" not in r.departements, f"false positive Ain via substring: {r.departements}"
+
+    # "La Réunion" should yield "974"
+    r2 = analyse({"titre": "Société Générale ferme à La Réunion",
+                  "texte": "L'agence de Saint-Denis de La Réunion ferme."})
+    assert "974" in r2.departements, f"974 not found: {r2.departements}"
+
+    # parenthesised 3-digit DOM code "(974)" should yield "974"
+    r3 = analyse({"titre": "Fermetures d'agences BNP",
+                  "texte": "Les agences (974) et (59) sont concernées."})
+    assert "59" in r3.departements, f"59 not found: {r3.departements}"
+    assert "974" in r3.departements, f"974 not found via code: {r3.departements}"

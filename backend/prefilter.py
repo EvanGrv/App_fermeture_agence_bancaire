@@ -43,19 +43,19 @@ _ADDRESS_RE = re.compile(
     r".{0,60}",
     re.IGNORECASE,
 )
-_DEPT_CODE_RE = re.compile(r"\((\d{2}[ab]?|2[ab])\)", re.IGNORECASE)
+_DEPT_CODE_RE = re.compile(r"\((\d{2,3}[ab]?|2[ab])\)", re.IGNORECASE)
 _SENT_SPLIT = re.compile(r"[.!?\n]+")
 
 
 @dataclass
 class PrefilterResult:
     score: int
-    banks: list = field(default_factory=list)
-    communes: list = field(default_factory=list)
-    departements: list = field(default_factory=list)
-    dates: list = field(default_factory=list)
-    addresses: list = field(default_factory=list)
-    relevant_sentences: list = field(default_factory=list)
+    banks: list[str] = field(default_factory=list)
+    communes: list[str] = field(default_factory=list)
+    departements: list[str] = field(default_factory=list)
+    dates: list[str] = field(default_factory=list)
+    addresses: list[str] = field(default_factory=list)
+    relevant_sentences: list[str] = field(default_factory=list)
     compact_context: str = ""
 
 
@@ -70,7 +70,8 @@ def _detect_banks(contenu_norm: str) -> list:
 def _detect_departements(contenu: str, contenu_norm: str) -> list:
     deps: list = []
     for code, nom in config.DEPARTEMENTS.items():
-        if _normalise(nom) in contenu_norm and code not in deps:
+        nom_norm = _normalise(nom)
+        if re.search(r"\b" + re.escape(nom_norm) + r"\b", contenu_norm) and code not in deps:
             deps.append(code)
     for m in _DEPT_CODE_RE.finditer(contenu):
         code = m.group(1)

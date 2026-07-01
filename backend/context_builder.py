@@ -10,9 +10,13 @@ import config
 from backend.prefilter import _ENSEIGNES_N, _TERMES_N, _normalise, _split_sentences
 
 
-def _est_pertinent(unite: str) -> bool:
+def _est_pertinent(unite: str, communes_norm: list[str] | None = None) -> bool:
     n = _normalise(unite)
-    return any(e in n for e in _ENSEIGNES_N) or any(t in n for t in _TERMES_N)
+    if any(e in n for e in _ENSEIGNES_N) or any(t in n for t in _TERMES_N):
+        return True
+    if communes_norm:
+        return any(c in n for c in communes_norm)
+    return False
 
 
 def _entete(article: dict) -> str:
@@ -51,7 +55,8 @@ def build_compact_context(article: dict, result, max_chars: int | None = None) -
         unites = _split_sentences(texte)
         sep = " "
 
-    gardees = [u for u in unites if _est_pertinent(u)]
+    communes_norm = [_normalise(c) for c in (result.communes if result else [])]
+    gardees = [u for u in unites if _est_pertinent(u, communes_norm)]
     corps = sep.join(gardees) if gardees else texte  # repli : texte brut
 
     return _tronquer(entete + corps, max_chars)
