@@ -177,6 +177,9 @@ RH_TERMS = [
     "syndicat", "greve", "salaries",
 ]
 
+# Contexte compact envoyé à l'IA (Cycle 2b) : plafond de caractères.
+PREFILTER_CONTEXT_MAX_CHARS = int(os.getenv("PREFILTER_CONTEXT_MAX_CHARS", "8000"))
+
 # Flux RSS publics de presse/radio locale. Ils complètent Google News en
 # captant directement les dernières publications des grands réseaux régionaux.
 LOCAL_RSS_FEEDS = [
