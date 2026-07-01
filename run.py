@@ -8,7 +8,7 @@ import anthropic
 import config
 from backend import store, export, geocode, geojson, referentiel, controle, vigilance, audit
 from backend.pipeline import run_pipeline, ingest_closures
-from backend.extractor import extract
+from backend.extractor import extract, extract_structured
 from backend.collectors import google_news, gdelt, legifrance, local_feeds, official, sg_locator, web_search
 from backend import drilldown, vigilance_review, seed
 from backend.fulltext import fetch_text
@@ -93,7 +93,7 @@ def main(since_date: str | None = None):
     recap = run_pipeline(
         conn,
         collectors,
-        extractor_fn=lambda art: extract(art, client=client, floor=since_date),
+        extractor_fn=lambda art: extract_structured(art, client=client).model_dump(),
         geocoder_fn=lambda commune, dept: geocode.geocode_commune_ou_lieu(
             commune, dept, cache=cache_geo),
         vigilance_fn=lambda art, raison: store.upsert_vigilance(

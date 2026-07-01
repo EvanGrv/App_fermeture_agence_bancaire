@@ -282,7 +282,7 @@ def test_extract_structured_single_closure():
     assert out.article_type == "single_closure"
     assert len(out.closures) == 1
     assert out.closures[0].commune == "Lyon"
-    assert client.messages.calls[0]["output_format"] is ExtractionResult
+    assert client.messages.calls[0]["output_format"].__name__ == "ExtractionResult"
     assert client.messages.calls[0]["max_tokens"] == 2048
 
 

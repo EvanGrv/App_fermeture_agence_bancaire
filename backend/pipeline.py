@@ -2,7 +2,7 @@
 import config
 from datetime import date, datetime, timezone
 from email.utils import parsedate_to_datetime
-from backend import commune_normalize, context_builder, prefilter, store, validation
+from backend import commune_normalize, context_builder, extractor, ingest_map, prefilter, store, validation
 from backend.fulltext import fetch_text, fetch_article
 from backend.extraction_cache import extract_cached_with_status
 
@@ -52,6 +52,31 @@ def ingest_closures(conn, closures, geocoder_adresse_fn) -> int:
             })
         n += 1
     return n
+
+
+def _ingest_closure(conn, resultat, art, url, geocoder_fn, recap):
+    geo = geocoder_fn(resultat["commune"], resultat.get("departement"))
+    if geo:
+        resultat["lat"] = geo.get("lat")
+        resultat["lon"] = geo.get("lon")
+        if not validation.departement_valide(resultat.get("departement")):
+            resultat["departement"] = geo.get("departement")
+        if not resultat.get("code_insee"):
+            resultat["code_insee"] = geo.get("code_insee")
+        # Rattache à la commune administrative (BAN) et conserve la
+        # localisation d'agence d'origine (ex. Coëtquidan -> Guer).
+        resultat = commune_normalize.appliquer(resultat, geo)
+    publiable, raison = validation.fermeture_publiable(resultat, geo)
+    if not publiable:
+        recap["rejets_validation"] += 1
+        return False, raison
+    store.upsert_closure(conn, resultat)
+    store.add_source(conn, resultat["id"], {
+        "url": url, "titre": art.get("titre"),
+        "source": art.get("source"), "date": art.get("date"),
+    })
+    recap["fermetures"] += 1
+    return True, None
 
 
 def run_pipeline(
@@ -139,30 +164,35 @@ def run_pipeline(
                 if vigilance_fn and vigilance_fn(art, "article pertinent sans fermeture publiable"):
                     recap["vigilances"] += 1
                 continue
-            recap["extraits"] += 1
-            geo = geocoder_fn(resultat["commune"], resultat.get("departement"))
-            if geo:
-                resultat["lat"] = geo.get("lat")
-                resultat["lon"] = geo.get("lon")
-                if not validation.departement_valide(resultat.get("departement")):
-                    resultat["departement"] = geo.get("departement")
-                if not resultat.get("code_insee"):
-                    resultat["code_insee"] = geo.get("code_insee")
-                # Rattache à la commune administrative (BAN) et conserve la
-                # localisation d'agence d'origine (ex. Coëtquidan -> Guer).
-                resultat = commune_normalize.appliquer(resultat, geo)
-            publiable, raison = validation.fermeture_publiable(resultat, geo)
-            if not publiable:
-                recap["rejets_validation"] += 1
-                if vigilance_fn and vigilance_fn(art, f"fermeture non publiée: {raison}"):
+            aujourdhui = date.today().isoformat()
+            closures_map, signal_vigilance = ingest_map.map_result(resultat, art, aujourdhui)
+            publications = 0
+            rejets = []
+            for closure in closures_map:
+                if not extractor._retenir_fermeture(
+                    closure["statut_temporel"],
+                    closure.get("date_fermeture"),
+                    since_date,
+                    aujourdhui,
+                ):
+                    rejets.append("hors fenêtre temporelle")
+                    continue
+                recap["extraits"] += 1
+                ok, raison = _ingest_closure(conn, closure, art, url, geocoder_fn, recap)
+                if ok:
+                    publications += 1
+                elif raison:
+                    rejets.append(raison)
+            if signal_vigilance:
+                store.upsert_vigilance(conn, signal_vigilance)
+                recap["vigilances"] += 1
+            elif publications == 0:
+                raison = (
+                    "fermeture non publiée: " + "; ".join(r for r in rejets if r)
+                    if rejets else "article pertinent sans fermeture publiable"
+                )
+                if vigilance_fn and vigilance_fn(art, raison):
                     recap["vigilances"] += 1
-                continue
-            store.upsert_closure(conn, resultat)
-            store.add_source(conn, resultat["id"], {
-                "url": url, "titre": art.get("titre"),
-                "source": art.get("source"), "date": art.get("date"),
-            })
-            recap["fermetures"] += 1
         if progress_fn:
             progress_fn(f"{collector_name}: terminé", end_pct)
     return recap
