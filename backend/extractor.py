@@ -166,6 +166,13 @@ _INSTRUCTIONS_STRUCTURED = (
     "evidence: courte citation textuelle justifiant."
 )
 
+_SONNET_REVIEW_INSTRUCTIONS = (
+    "\n\nRELIS L'ARTICLE AVEC PLUS DE PRÉCISION. Haiku a signalé un cas "
+    "ambigu ou peu fiable. Résous les ambiguïtés si possible, extrais TOUTES "
+    "les agences bancaires physiques nommées, n'invente jamais de commune ni "
+    "d'adresse, et mets needs_sonnet=false sauf si l'ambiguïté persiste."
+)
+
 
 def build_messages(article: dict, aujourdhui: Optional[str] = None) -> list[dict]:
     aujourdhui = aujourdhui or date.today().isoformat()
@@ -189,6 +196,32 @@ def build_messages_structured(article: dict, aujourdhui: Optional[str] = None) -
         f"DÉPARTEMENT (indice): {article.get('departement')}"
     )
     return [{"role": "user", "content": corps}]
+
+
+def build_messages_structured_sonnet(article: dict, aujourdhui: Optional[str] = None) -> list[dict]:
+    messages = build_messages_structured(article, aujourdhui)
+    return [{
+        **messages[0],
+        "content": f"{messages[0]['content']}{_SONNET_REVIEW_INSTRUCTIONS}",
+    }]
+
+
+def should_escalate_structured(result: ExtractionResult) -> bool:
+    """True quand un résultat Haiku structuré mérite une relecture Sonnet."""
+    if not getattr(config, "STRUCTURED_SONNET_ESCALATION_ENABLED", True):
+        return False
+    if result.needs_sonnet:
+        return True
+    if result.article_type == "ambiguous":
+        return True
+    threshold = getattr(config, "STRUCTURED_SONNET_MIN_CONFIDENCE", 0.65)
+    if result.confidence < threshold:
+        return True
+    if result.article_type == "list_closures" and not result.closures:
+        return True
+    if result.article_type == "department_signal" and not result.department_signals:
+        return True
+    return False
 
 
 def _retenir_fermeture(statut_temporel: str, date_fermeture: Optional[str],
@@ -381,7 +414,7 @@ def extract_structured(
             output_format=ExtractionResult,
             max_tokens=2048,
         )
-        return response.parsed_output
+        result = response.parsed_output
     except Exception as exc:
         if _status_code(exc) in _RETRY_STATUS_CODES and fallback_model:
             response = _parse_avec_retries(
@@ -400,3 +433,16 @@ def extract_structured(
             from backend.openai_fallback import extract_openai_structured
             return extract_openai_structured(article, aujourdhui)
         raise
+    if fallback_model and should_escalate_structured(result):
+        try:
+            response = _parse_avec_retries(
+                client,
+                model=fallback_model,
+                messages=build_messages_structured_sonnet(article, aujourdhui),
+                output_format=ExtractionResult,
+                max_tokens=2048,
+            )
+            return response.parsed_output
+        except Exception:
+            return result
+    return result

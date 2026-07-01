@@ -10,6 +10,7 @@ from backend.extractor import (
     extract,
     extract_structured,
     normalise_banque,
+    should_escalate_structured,
     _retenir_fermeture,
     banque_connue,
 )
@@ -317,6 +318,69 @@ def test_extract_structured_fallback_sonnet_sur_erreur(monkeypatch):
     assert len(out.closures) == 1
     assert client.messages.calls[0]["model"] == "claude-haiku-test"
     assert client.messages.calls[1]["model"] == "claude-sonnet-test"
+
+
+def test_should_escalate_structured_signaux_contenu():
+    assert should_escalate_structured(
+        ExtractionResult(article_type="single_closure", confidence=0.9, needs_sonnet=True)
+    )
+    assert should_escalate_structured(
+        ExtractionResult(article_type="ambiguous", confidence=0.9)
+    )
+    assert should_escalate_structured(
+        ExtractionResult(article_type="single_closure", confidence=0.4)
+    )
+    assert should_escalate_structured(
+        ExtractionResult(article_type="list_closures", confidence=0.9, closures=[])
+    )
+    assert should_escalate_structured(
+        ExtractionResult(article_type="department_signal", confidence=0.9, department_signals=[])
+    )
+    assert not should_escalate_structured(
+        ExtractionResult(article_type="single_closure", confidence=0.9, closures=[_closure_item()])
+    )
+
+
+def test_extract_structured_escalade_sonnet_sur_ambigu(monkeypatch):
+    monkeypatch.setattr(config, "ANTHROPIC_FALLBACK_ENABLED", True)
+    monkeypatch.setattr(config, "ANTHROPIC_FALLBACK_MODEL", "claude-sonnet-test")
+    monkeypatch.setattr(config, "STRUCTURED_SONNET_ESCALATION_ENABLED", True)
+    haiku = ExtractionResult(article_type="ambiguous", confidence=0.4, needs_sonnet=True)
+    sonnet = ExtractionResult(
+        article_type="single_closure",
+        confidence=0.9,
+        closures=[_closure_item(commune="Rennes")],
+    )
+    client = StructuredSequenceClient([haiku, sonnet])
+    out = extract_structured(_article(), client=client, model="claude-haiku-test", aujourdhui=AUJ)
+    assert out.article_type == "single_closure"
+    assert out.confidence == 0.9
+    assert client.messages.calls[0]["model"] == "claude-haiku-test"
+    assert client.messages.calls[1]["model"] == "claude-sonnet-test"
+    assert "RELIS" in client.messages.calls[1]["messages"][0]["content"]
+
+
+def test_extract_structured_pas_escalade_si_desactive(monkeypatch):
+    monkeypatch.setattr(config, "ANTHROPIC_FALLBACK_ENABLED", True)
+    monkeypatch.setattr(config, "ANTHROPIC_FALLBACK_MODEL", "claude-sonnet-test")
+    monkeypatch.setattr(config, "STRUCTURED_SONNET_ESCALATION_ENABLED", False)
+    haiku = ExtractionResult(article_type="ambiguous", confidence=0.4, needs_sonnet=True)
+    client = StructuredSequenceClient([haiku])
+    out = extract_structured(_article(), client=client, model="claude-haiku-test", aujourdhui=AUJ)
+    assert out is haiku
+    assert len(client.messages.calls) == 1
+
+
+def test_extract_structured_garde_haiku_si_sonnet_contenu_echoue(monkeypatch):
+    monkeypatch.setenv("ANTHROPIC_MAX_RETRIES", "0")
+    monkeypatch.setattr(config, "ANTHROPIC_FALLBACK_ENABLED", True)
+    monkeypatch.setattr(config, "ANTHROPIC_FALLBACK_MODEL", "claude-sonnet-test")
+    monkeypatch.setattr(config, "STRUCTURED_SONNET_ESCALATION_ENABLED", True)
+    haiku = ExtractionResult(article_type="ambiguous", confidence=0.4, needs_sonnet=True)
+    client = StructuredSequenceClient([haiku, FakeTransientError(529)])
+    out = extract_structured(_article(), client=client, model="claude-haiku-test", aujourdhui=AUJ)
+    assert out is haiku
+    assert len(client.messages.calls) == 2
 
 
 def test_la_banque_postale_est_suivie():
