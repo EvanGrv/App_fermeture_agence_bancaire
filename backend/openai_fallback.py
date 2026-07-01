@@ -6,7 +6,12 @@ import requests
 from pydantic import ValidationError
 
 import config
-from backend.extractor import Extraction, build_messages
+from backend.extractor import (
+    Extraction,
+    ExtractionResult,
+    build_messages,
+    build_messages_structured,
+)
 
 OPENAI_CHAT_URL = "https://api.openai.com/v1/chat/completions"
 DEFAULT_MODEL = "gpt-5.4-nano"
@@ -109,6 +114,129 @@ def _schema() -> dict:
     }
 
 
+def _schema_structured() -> dict:
+    closure = {
+        "type": "object",
+        "additionalProperties": False,
+        "required": [
+            "bank",
+            "agency_label",
+            "commune",
+            "departement",
+            "region",
+            "address",
+            "closure_date",
+            "date_precision",
+            "status",
+            "closure_type",
+            "is_physical_agency",
+            "confidence",
+            "evidence",
+        ],
+        "properties": {
+            "bank": {"type": "string"},
+            "agency_label": {"type": "string"},
+            "commune": {"type": "string"},
+            "departement": {"type": ["string", "null"]},
+            "region": {"type": ["string", "null"]},
+            "address": {"type": "string"},
+            "closure_date": {"type": ["string", "null"]},
+            "date_precision": {
+                "type": "string",
+                "enum": ["exact", "month", "year", "approximate", "unknown"],
+            },
+            "status": {
+                "type": "string",
+                "enum": ["confirmed", "announced", "contested", "threatened", "unclear"],
+            },
+            "closure_type": {
+                "type": "string",
+                "enum": [
+                    "closure",
+                    "regroupement",
+                    "transfer",
+                    "merge",
+                    "threatened_closure",
+                ],
+            },
+            "is_physical_agency": {"type": "boolean"},
+            "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+            "evidence": {"type": "string"},
+        },
+    }
+    dept = {
+        "type": "object",
+        "additionalProperties": False,
+        "required": [
+            "bank",
+            "departement",
+            "count",
+            "communes_mentioned",
+            "confidence",
+            "evidence",
+        ],
+        "properties": {
+            "bank": {"type": "string"},
+            "departement": {"type": ["string", "null"]},
+            "count": {"type": ["integer", "null"]},
+            "communes_mentioned": {"type": "array", "items": {"type": "string"}},
+            "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+            "evidence": {"type": "string"},
+        },
+    }
+    vague = {
+        "type": "object",
+        "additionalProperties": False,
+        "required": ["bank", "scope", "count", "confidence", "evidence"],
+        "properties": {
+            "bank": {"type": "string"},
+            "scope": {"type": "string", "enum": ["regional", "national", "unknown"]},
+            "count": {"type": ["integer", "null"]},
+            "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+            "evidence": {"type": "string"},
+        },
+    }
+    return {
+        "type": "object",
+        "additionalProperties": False,
+        "required": [
+            "article_type",
+            "source_reliability",
+            "closures",
+            "department_signals",
+            "vague_signals",
+            "confidence",
+            "needs_sonnet",
+            "reason",
+        ],
+        "properties": {
+            "article_type": {
+                "type": "string",
+                "enum": [
+                    "single_closure",
+                    "list_closures",
+                    "department_signal",
+                    "regional_signal",
+                    "national_signal",
+                    "social_hr",
+                    "out_of_scope",
+                    "ambiguous",
+                ],
+            },
+            "source_reliability": {
+                "type": "string",
+                "enum": ["primary", "local_press", "national_press", "aggregator", "weak"],
+            },
+            "closures": {"type": "array", "items": closure},
+            "department_signals": {"type": "array", "items": dept},
+            "vague_signals": {"type": "array", "items": vague},
+            "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+            "needs_sonnet": {"type": "boolean"},
+            "reason": {"type": "string"},
+        },
+    }
+
+
 def extract_openai(article: dict, aujourdhui: str, fetch=None, budget_path=None) -> Extraction:
     api_key = os.environ.get("OPENAI_API_KEY")
     if not api_key:
@@ -148,6 +276,49 @@ def extract_openai(article: dict, aujourdhui: str, fetch=None, budget_path=None)
         return Extraction.model_validate_json(content)
     except ValidationError:
         return Extraction.model_validate(json.loads(content))
+
+
+def extract_openai_structured(
+    article: dict,
+    aujourdhui: str,
+    fetch=None,
+    budget_path=None,
+) -> ExtractionResult:
+    api_key = os.environ.get("OPENAI_API_KEY")
+    if not api_key:
+        raise RuntimeError("OPENAI_API_KEY absente")
+
+    fetch = fetch or _post
+    model = os.environ.get("OPENAI_FALLBACK_MODEL", DEFAULT_MODEL)
+    max_output = int(_float_env("OPENAI_MAX_OUTPUT_TOKENS", DEFAULT_MAX_OUTPUT_TOKENS))
+    messages = build_messages_structured(article, aujourdhui)
+    input_estimate = _token_estimate(messages)
+    _assert_budget(input_estimate, max_output, budget_path)
+
+    payload = {
+        "model": model,
+        "messages": messages,
+        "max_completion_tokens": max_output,
+        "response_format": {
+            "type": "json_schema",
+            "json_schema": {
+                "name": "extraction_structuree",
+                "strict": True,
+                "schema": _schema_structured(),
+            },
+        },
+    }
+    response = fetch(OPENAI_CHAT_URL, api_key, payload)
+    usage = response.get("usage") or {}
+    input_tokens = usage.get("prompt_tokens") or usage.get("input_tokens") or input_estimate
+    output_tokens = (
+        usage.get("completion_tokens")
+        or usage.get("output_tokens")
+        or max_output
+    )
+    _record_usage(int(input_tokens), int(output_tokens), budget_path)
+    content = response["choices"][0]["message"]["content"]
+    return ExtractionResult.model_validate_json(content)
 
 
 def _post(url: str, api_key: str, payload: dict) -> dict:
