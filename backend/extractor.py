@@ -91,10 +91,98 @@ class Extraction(BaseModel):
     citation: str
 
 
+class ClosureItem(BaseModel):
+    bank: str
+    agency_label: str = ""
+    commune: str
+    departement: Optional[str] = None
+    region: Optional[str] = None
+    address: str = ""
+    closure_date: Optional[str] = None
+    date_precision: Literal["exact", "month", "year", "approximate", "unknown"] = "unknown"
+    status: Literal["confirmed", "announced", "contested", "threatened", "unclear"]
+    closure_type: Literal["closure", "regroupement", "transfer", "merge", "threatened_closure"]
+    is_physical_agency: bool = True
+    confidence: float = Field(ge=0.0, le=1.0)
+    evidence: str = ""
+
+
+class DeptSignal(BaseModel):
+    bank: str
+    departement: Optional[str] = None
+    count: Optional[int] = None
+    communes_mentioned: list[str] = Field(default_factory=list)
+    confidence: float = Field(ge=0.0, le=1.0, default=0.0)
+    evidence: str = ""
+
+
+class VagueSignal(BaseModel):
+    bank: str = ""
+    scope: Literal["regional", "national", "unknown"] = "unknown"
+    count: Optional[int] = None
+    confidence: float = Field(ge=0.0, le=1.0, default=0.0)
+    evidence: str = ""
+
+
+class ExtractionResult(BaseModel):
+    article_type: Literal[
+        "single_closure",
+        "list_closures",
+        "department_signal",
+        "regional_signal",
+        "national_signal",
+        "social_hr",
+        "out_of_scope",
+        "ambiguous",
+    ]
+    source_reliability: Literal[
+        "primary",
+        "local_press",
+        "national_press",
+        "aggregator",
+        "weak",
+    ] = "weak"
+    closures: list[ClosureItem] = Field(default_factory=list)
+    department_signals: list[DeptSignal] = Field(default_factory=list)
+    vague_signals: list[VagueSignal] = Field(default_factory=list)
+    confidence: float = Field(ge=0.0, le=1.0, default=0.0)
+    needs_sonnet: bool = False
+    reason: str = ""
+
+
+_INSTRUCTIONS_STRUCTURED = (
+    "Tu analyses un article de presse français sur d'éventuelles fermetures, "
+    "regroupements ou transferts d'agences BANCAIRES physiques en France. "
+    "Classe l'article dans article_type. Pour chaque agence NOMMÉE (commune précise), "
+    "ajoute un élément à closures[] ; si l'article cite plusieurs agences (article-liste), "
+    "renvoie-les TOUTES. N'invente jamais de commune. "
+    "Un signal départemental chiffré sans communes précises (ex. '10 agences dans le Cher') "
+    "va dans department_signals[]. Un signal régional/national vague va dans vague_signals[]. "
+    "is_physical_agency=false pour distributeur (DAB), service en ligne ou hors agence. "
+    "closure_type: closure|regroupement|transfer|merge|threatened_closure. "
+    "status: confirmed|announced|contested|threatened|unclear. "
+    "date_precision et closure_date (ISO) si connues. "
+    "confidence (0..1) par closure ET global. needs_sonnet=true si ambigu/complexe. "
+    "evidence: courte citation textuelle justifiant."
+)
+
+
 def build_messages(article: dict, aujourdhui: Optional[str] = None) -> list[dict]:
     aujourdhui = aujourdhui or date.today().isoformat()
     corps = (
         f"{_INSTRUCTIONS}\n\n"
+        f"DATE DU JOUR: {aujourdhui}\n"
+        f"TITRE: {article.get('titre','')}\n"
+        f"TEXTE: {article.get('texte','')}\n"
+        f"DÉPARTEMENT (indice): {article.get('departement')}"
+    )
+    return [{"role": "user", "content": corps}]
+
+
+def build_messages_structured(article: dict, aujourdhui: Optional[str] = None) -> list[dict]:
+    aujourdhui = aujourdhui or date.today().isoformat()
+    corps = (
+        f"{_INSTRUCTIONS_STRUCTURED}\n\n"
         f"DATE DU JOUR: {aujourdhui}\n"
         f"TITRE: {article.get('titre','')}\n"
         f"TEXTE: {article.get('texte','')}\n"
@@ -151,7 +239,15 @@ def _status_code(exc: Exception) -> int | None:
     return getattr(response, "status_code", None)
 
 
-def _parse_avec_retries(client, *, model: str, messages: list[dict], sleep_fn=time.sleep):
+def _parse_avec_retries(
+    client,
+    *,
+    model: str,
+    messages: list[dict],
+    sleep_fn=time.sleep,
+    output_format=Extraction,
+    max_tokens: int = 1024,
+):
     max_retries = max(0, _int_env("ANTHROPIC_MAX_RETRIES", _DEFAULT_MAX_RETRIES))
     base = max(0.0, _float_env("ANTHROPIC_RETRY_BASE_SECONDS", _DEFAULT_RETRY_BASE_SECONDS))
     plafond = max(base, _float_env("ANTHROPIC_RETRY_MAX_SECONDS", _DEFAULT_RETRY_MAX_SECONDS))
@@ -159,9 +255,9 @@ def _parse_avec_retries(client, *, model: str, messages: list[dict], sleep_fn=ti
         try:
             return client.messages.parse(
                 model=model,
-                max_tokens=1024,
+                max_tokens=max_tokens,
                 messages=messages,
-                output_format=Extraction,
+                output_format=output_format,
             )
         except Exception as exc:
             status = _status_code(exc)
@@ -266,3 +362,41 @@ def extract(article: dict, client, model: str = config.ANTHROPIC_MODEL,
         else:
             raise
     return _resultat_depuis_extraction(data, article, floor=floor, aujourdhui=aujourdhui)
+
+
+def extract_structured(
+    article: dict,
+    client,
+    model: str = config.ANTHROPIC_MODEL,
+    aujourdhui: Optional[str] = None,
+) -> ExtractionResult:
+    aujourdhui = aujourdhui or date.today().isoformat()
+    messages = build_messages_structured(article, aujourdhui)
+    fallback_model = _fallback_model(model)
+    try:
+        response = _parse_avec_retries(
+            client,
+            model=model,
+            messages=messages,
+            output_format=ExtractionResult,
+            max_tokens=2048,
+        )
+        return response.parsed_output
+    except Exception as exc:
+        if _status_code(exc) in _RETRY_STATUS_CODES and fallback_model:
+            response = _parse_avec_retries(
+                client,
+                model=fallback_model,
+                messages=messages,
+                output_format=ExtractionResult,
+                max_tokens=2048,
+            )
+            return response.parsed_output
+        if (
+            _status_code(exc) in _RETRY_STATUS_CODES
+            and os.environ.get("OPENAI_API_KEY")
+            and os.environ.get("OPENAI_FALLBACK_ENABLED", "1") != "0"
+        ):
+            from backend.openai_fallback import extract_openai_structured
+            return extract_openai_structured(article, aujourdhui)
+        raise
