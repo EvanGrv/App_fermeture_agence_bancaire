@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T07:13:16.049474+00:00",
+  "generated_at": "2026-07-01T08:01:19.634683+00:00",
   "departements": {
     "01": {
       "nom": "Ain",
@@ -194,7 +194,7 @@
       "nom": "Côte-d'Or",
       "region": "Bourgogne-Franche-Comté",
       "count": 1,
-      "total_agences": 25,
+      "total_agences": 26,
       "precise_count": 1,
       "unlocated_count": 0,
       "estimated_count": 1
@@ -689,7 +689,7 @@
       "nom": "Seine-Maritime",
       "region": "Normandie",
       "count": 1,
-      "total_agences": 179,
+      "total_agences": 178,
       "precise_count": 1,
       "unlocated_count": 0,
       "estimated_count": 1
@@ -698,7 +698,7 @@
       "nom": "Seine-et-Marne",
       "region": "Île-de-France",
       "count": 0,
-      "total_agences": 104,
+      "total_agences": 105,
       "precise_count": 0,
       "unlocated_count": 0,
       "estimated_count": 0
@@ -3048,6 +3048,19 @@
   ],
   "vigilances": [
     {
+      "id": "65310dd2b512582f",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Fermeture des derniers services de la Poste dans cette petite ville du littoral, « on ne va pas lâcher l’affaire » - Actu.fr",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMi_gFBVV95cUxNVklPX21aN3BaRUt1WGJFQnl1akJfeUhTbXVrUnkteldzNWJuS2oxZVpXZ2djSTJST2FVeUtmdi1sY3gzODd3NXVWMG45U19VTTZFdGRYYzNoYjk4SG81TUx3OUhlV2R3V2FrakdjYm5Cc215VHN2Y2tpWmJCYXJPSEVSTHY0Z1U4cHJBUDZlZzR5SHdYSGhLMXd2TVI5S1Frcy1BZGRxUTQ2ZTN2MkQxQWhaTmZ1Y1VJeDhhUXFQNGcxZUhRWWxTNDZvWE95b01tbm1fLTJ6cTUwZDhicmk5YTZvX1E5NUZCZFFSSGxJbE5TZ0RwUGdCME5hWUJxdw?oc=5\" target=\"_blank\">Fermeture des derniers services de la Poste dans cette petite ville du littoral, « on",
+      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNVklPX21aN3BaRUt1WGJFQnl1akJfeUhTbXVrUnkteldzNWJuS2oxZVpXZ2djSTJST2FVeUtmdi1sY3gzODd3NXVWMG45U19VTTZFdGRYYzNoYjk4SG81TUx3OUhlV2R3V2FrakdjYm5Cc215VHN2Y2tpWmJCYXJPSEVSTHY0Z1U4cHJBUDZlZzR5SHdYSGhLMXd2TVI5S1Frcy1BZGRxUTQ2ZTN2MkQxQWhaTmZ1Y1VJeDhhUXFQNGcxZUhRWWxTNDZvWE95b01tbm1fLTJ6cTUwZDhicmk5YTZvX1E5NUZCZFFSSGxJbE5TZ0RwUGdCME5hWUJxdw?oc=5",
+      "source": "Google News",
+      "date": "Wed, 03 Jun 2026 07:00:00 GMT",
+      "score": 4,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-01T07:54:16.966192+00:00"
+    },
+    {
       "id": "c1b470250bca05f1",
       "banque": "Société Générale",
       "departement": null,
@@ -3358,6 +3371,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:27:02.153679+00:00"
+    },
+    {
+      "id": "08f355ef26bfddf4",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "De l’amiante dans l’ancienne école qui abrite aujourd’hui la garderie et le périscolaire : le bâtiment bientôt fermé - Ouest-France",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMisgJBVV95cUxNUVJFenZlbmJzdGg0N09jS3U2VEQ1ODFYTHlKSmdaeUx0cW8wckd6S1o5V2xzSjczQWhhdVEwTFpESC0wSGo4SW92S05UOEc0dmxmdnB5eWJTaDJxQmRjci0wQTlieDFJSGdFendfdmVWV3ZoUGU4TE5hZ1NRNFpwRzhZSWZ5a1dmaUtMNUdGUjNseTZ5MjhPNFdHeWlDQ1A5MC1UNkwxMld2cVFvRHBZYjg2WGdvMlQxbUxCamFwUzRfY1ZxbE9teUFMSDN2UUl0ekVod0tnSDdpeHNkWnpjQVZLbHI0QlN6S3BIWHJSajRLNkdfQmNYWDE4UUoxekdTZE1iWGxzbDVWeG9GbUJYRm9iS0NNS2thODBCcEpFdkpmUXNRRlJBNDZDenhocnFZSkE?oc=5\" target=\"_blank\">De l’amiante dan",
+      "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxNUVJFenZlbmJzdGg0N09jS3U2VEQ1ODFYTHlKSmdaeUx0cW8wckd6S1o5V2xzSjczQWhhdVEwTFpESC0wSGo4SW92S05UOEc0dmxmdnB5eWJTaDJxQmRjci0wQTlieDFJSGdFendfdmVWV3ZoUGU4TE5hZ1NRNFpwRzhZSWZ5a1dmaUtMNUdGUjNseTZ5MjhPNFdHeWlDQ1A5MC1UNkwxMld2cVFvRHBZYjg2WGdvMlQxbUxCamFwUzRfY1ZxbE9teUFMSDN2UUl0ekVod0tnSDdpeHNkWnpjQVZLbHI0QlN6S3BIWHJSajRLNkdfQmNYWDE4UUoxekdTZE1iWGxzbDVWeG9GbUJYRm9iS0NNS2thODBCcEpFdkpmUXNRRlJBNDZDenhocnFZSkE?oc=5",
+      "source": "Google News",
+      "date": "Wed, 24 Jun 2026 13:04:51 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-01T07:54:21.512420+00:00"
     },
     {
       "id": "9c2f9fdb6ce434e4",
@@ -4166,6 +4192,45 @@
       "created_at": "2026-06-29T09:13:57.653286+00:00"
     },
     {
+      "id": "980f07598deee7c8",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Valdoie. Fermeture définitive de l’agence postale communale le 1er octobre - L'Est Républicain",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMiwwFBVV95cUxNNDRELThTc0ZkV2ZDckphVzRKcG9zSWFRakRlVTBWU2QxVkxqUGYxME8xOFpVTXlPWlM4c0tZU3FTV2Y1ZWw2SHh5MW5aREtFSU85d2VOSUNlMV9sR1ZpR280SGRXdk91M1VoVk9KN05WaDNOVzNWZHBqV1VhTnhyOFVtOWdUV0liN1UtejlJLVpBLXVzQmFhUTdnd2xMS1pHbXU5WHp6bFhMbFZURUdaYnFEYVlUMWtGV05BSi1EM29lZ1E?oc=5\" target=\"_blank\">Valdoie. Fermeture définitive de l’agence postale communale le 1er octobre</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">L'Est Républicain</font>",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNNDRELThTc0ZkV2ZDckphVzRKcG9zSWFRakRlVTBWU2QxVkxqUGYxME8xOFpVTXlPWlM4c0tZU3FTV2Y1ZWw2SHh5MW5aREtFSU85d2VOSUNlMV9sR1ZpR280SGRXdk91M1VoVk9KN05WaDNOVzNWZHBqV1VhTnhyOFVtOWdUV0liN1UtejlJLVpBLXVzQmFhUTdnd2xMS1pHbXU5WHp6bFhMbFZURUdaYnFEYVlUMWtGV05BSi1EM29lZ1E?oc=5",
+      "source": "Google News",
+      "date": "Tue, 30 Jun 2026 16:57:25 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-01T07:54:00.442010+00:00"
+    },
+    {
+      "id": "50c0cd6974315ffc",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Furet du Nord et Decitre annoncent la fermeture de onze librairies, jusqu’à 163 postes touchés - Ma Ville",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMi7wFBVV95cUxPQnBfWHlLR1E2V1Btb2FlNlZBb2xxOUlUMUgxVVVDd1dvakJaeUZWb0hpSkFUaExySGduZUkzSlctU0RJenI2YUhabXBzUVd1NmFnV1ptdlRERnFHVm9DSElBU3ZfTUtraDl4bi0xN2dGVEpmNnRnMnI2azVHUnRqSnBFYkUtTFFwUTVUNDRrbDJDQTBFMC1OLWFuSVF2elFNREFNTnBXNUpTdG9NZDdDcUhkUlhwNTFkTkVNUUJ1Vkt0SWhEZzNYWjNGZWwtdVdmMW9yRjEzTkM0ZmRnQUxkakRUeGU0X3FsZm14ZWprTQ?oc=5\" target=\"_blank\">Furet du Nord et Decitre annoncent la fermeture de onze librairies, jusqu’à 163 postes touchés</a>&nbsp;&",
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPQnBfWHlLR1E2V1Btb2FlNlZBb2xxOUlUMUgxVVVDd1dvakJaeUZWb0hpSkFUaExySGduZUkzSlctU0RJenI2YUhabXBzUVd1NmFnV1ptdlRERnFHVm9DSElBU3ZfTUtraDl4bi0xN2dGVEpmNnRnMnI2azVHUnRqSnBFYkUtTFFwUTVUNDRrbDJDQTBFMC1OLWFuSVF2elFNREFNTnBXNUpTdG9NZDdDcUhkUlhwNTFkTkVNUUJ1Vkt0SWhEZzNYWjNGZWwtdVdmMW9yRjEzTkM0ZmRnQUxkakRUeGU0X3FsZm14ZWprTQ?oc=5",
+      "source": "Google News",
+      "date": "Tue, 30 Jun 2026 15:50:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-01T07:54:13.419075+00:00"
+    },
+    {
+      "id": "2ead53fdd18c47f1",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Le regroupement de toutes les élections locales, une solution à la crise démocratique ? - Banque des Territoires",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMi2wJBVV95cUxOQW1ydHlqNGxmcm9TZE5BdFRTNm5sX3ozSjduNkgyeFg1S0ZRclltTlRCaVk0OURKNEM0S2RKaHJiZUh1amVEVzl1ZHpEbXNuMHExTVhoaEVHbTNyVFNaSGNGZUVfZjdoVE9CS1M3d0NxemNibjhjaTZwV1cxVXhsdUZUMFVmbjV1R0t5c3NObk5vdTJKNVFYQnB6REN2YlJEaHhEUlZ1UkJ1Q01yanBoMmtpb0hEMGlNNnhsckVNRWNYdHd3NWlXWElaeEEtQVJWbVRtYzdxdWR4MU0zM1BXVDZ3b2p1amRoM2pvOXBJNTJnNlFDamNkNDMybDVCeGY0am1tX2RWQjItNmNpRGRVNUw4bGxQVzdHQnd1UnprWm9WZGQ5YXZZUVE2X2I3UEN0ZjNuTTktS3UyUG8taXJ2UmM2RDUyOEllb1E4SEsyMD",
+      "url": "https://news.google.com/rss/articles/CBMi2wJBVV95cUxOQW1ydHlqNGxmcm9TZE5BdFRTNm5sX3ozSjduNkgyeFg1S0ZRclltTlRCaVk0OURKNEM0S2RKaHJiZUh1amVEVzl1ZHpEbXNuMHExTVhoaEVHbTNyVFNaSGNGZUVfZjdoVE9CS1M3d0NxemNibjhjaTZwV1cxVXhsdUZUMFVmbjV1R0t5c3NObk5vdTJKNVFYQnB6REN2YlJEaHhEUlZ1UkJ1Q01yanBoMmtpb0hEMGlNNnhsckVNRWNYdHd3NWlXWElaeEEtQVJWbVRtYzdxdWR4MU0zM1BXVDZ3b2p1amRoM2pvOXBJNTJnNlFDamNkNDMybDVCeGY0am1tX2RWQjItNmNpRGRVNUw4bGxQVzdHQnd1UnprWm9WZGQ5YXZZUVE2X2I3UEN0ZjNuTTktS3UyUG8taXJ2UmM2RDUyOEllb1E4SEsyMDVwY2x5bS1kbk5iTQ?oc=5",
+      "source": "Google News",
+      "date": "Tue, 30 Jun 2026 15:38:56 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-01T07:53:46.972669+00:00"
+    },
+    {
       "id": "abd561b1fa7b904d",
       "banque": "Société Générale",
       "departement": null,
@@ -4424,6 +4489,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-26T07:07:52.498901+00:00"
+    },
+    {
+      "id": "65bc2a82ddff03a2",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Moret : accueil, parcours, accessibilité... le bureau de poste ferme trois semaines pour se moderniser - Actu.fr",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMi_AFBVV95cUxNSEN0RXVSOHVjV1RQV2ZUcGVHYXVXVTBMdnBBUTNCMHUzOG50T1NtclpfUkxEX0lKVjIwdUxHTzYtUlF4ZzFQWGJNQUdiZGR1OG1VNllHSUlpYjZ2RlEzRnR2MDl6Mmh3YlhhTEtHMkMzWWxHNURxYmJjODl2aHdEOWNzNlVHLTNfMWNsUmw0WDg0S1c1LVczdXhfV0ZHb05WUWdMc3REeV9LNHlDOE1JSEkxRXRubHgyYnRINjF0ODdQX1lhUWp6clBaRW1LRlZsSG8xWmtZQm1BckxRNEZVQ1YwOWRyQ1h0TmJhNk1TYWtjeU9oZ0x2VGlQU1o?oc=5\" target=\"_blank\">Moret : accueil, parcours, accessibilité... le bureau de poste ferme trois semaines pour",
+      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNSEN0RXVSOHVjV1RQV2ZUcGVHYXVXVTBMdnBBUTNCMHUzOG50T1NtclpfUkxEX0lKVjIwdUxHTzYtUlF4ZzFQWGJNQUdiZGR1OG1VNllHSUlpYjZ2RlEzRnR2MDl6Mmh3YlhhTEtHMkMzWWxHNURxYmJjODl2aHdEOWNzNlVHLTNfMWNsUmw0WDg0S1c1LVczdXhfV0ZHb05WUWdMc3REeV9LNHlDOE1JSEkxRXRubHgyYnRINjF0ODdQX1lhUWp6clBaRW1LRlZsSG8xWmtZQm1BckxRNEZVQ1YwOWRyQ1h0TmJhNk1TYWtjeU9oZ0x2VGlQU1o?oc=5",
+      "source": "Google News",
+      "date": "Tue, 19 May 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-01T07:53:55.623702+00:00"
     },
     {
       "id": "456fc501939ed9a7",
@@ -6686,6 +6764,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:36:32.483346+00:00"
+    },
+    {
+      "id": "6b8dfd72c733b064",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "« Il y a un besoin réel » : la fermeture des urgences de nuit de Magny-en-Vexin refusée par les autorités de santé - Le Parisien",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMimgJBVV95cUxQMllLdV9aXy12d0xYS0tSemtMNEE2Q0pmczV0X3pISkdiRE5MdGxoVEhHa2FJLU52MHNTd0hmeUp2cXBIUGdiTEotWVBRbGt6YmcwdG1tclZSTFpSdW1kcnF5Tmxndi1HWk1BeU42Y3pJMDJlXy1tSUkzeV80akloQVpvalAxTzJRN05IMVlOV2xISEtTaEctSGVseTVmR2R2WXFGTGxzRmhXSmlNVWRpMHEyZ2NNUnM0cE43UGhfcmc1b2JMOEJySnNSNjdseDJmeWJGRmRISVk0cXVOd3kwRHVVZjkzOTlfR056MTdKdnVfQU9IOHJuOS1kcHFmT2ZTVElxd0VRS3g2QmVYRmJjT0sweWtlOExvM0E?oc=5\" target=\"_blank\">« Il y a un besoin réel » : la fermeture des urg",
+      "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxQMllLdV9aXy12d0xYS0tSemtMNEE2Q0pmczV0X3pISkdiRE5MdGxoVEhHa2FJLU52MHNTd0hmeUp2cXBIUGdiTEotWVBRbGt6YmcwdG1tclZSTFpSdW1kcnF5Tmxndi1HWk1BeU42Y3pJMDJlXy1tSUkzeV80akloQVpvalAxTzJRN05IMVlOV2xISEtTaEctSGVseTVmR2R2WXFGTGxzRmhXSmlNVWRpMHEyZ2NNUnM0cE43UGhfcmc1b2JMOEJySnNSNjdseDJmeWJGRmRISVk0cXVOd3kwRHVVZjkzOTlfR056MTdKdnVfQU9IOHJuOS1kcHFmT2ZTVElxd0VRS3g2QmVYRmJjT0sweWtlOExvM0E?oc=5",
+      "source": "Google News",
+      "date": "Sat, 02 May 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-01T07:54:08.853520+00:00"
     },
     {
       "id": "c0c3d0492e124744",
@@ -9741,6 +9832,19 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:34:58.219521+00:00"
+    },
+    {
+      "id": "a175eccf362f3216",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Une pétition pour que les banques suppriment « les taxes sur la mort » - 20 Minutes",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMixwFBVV95cUxNNVJDeUNQT3dHaVUxT0h1SWNYR2RLd1p1QXR3dkdjT2JCSDFZRk5FNmdSVm9zSG51VWZuLW1MN1Q0aUhuQkZpa1Q3cWJfY2Q1eHlvUnphY0p1bXF1cXhOMDFBMWExZW5pTWwwUU5hRmpJLXVMV001cE9SR1g1RDIzejVlMk1zb1NVbi03eDVfU1AwVTZYVFU1NzBnX1hTWWR4OU5Bd2l4Q3VZRzFtd2ptX1QtMzJfQnh1SzJNSnBlTzhrbGx3eUJj?oc=5\" target=\"_blank\">Une pétition pour que les banques suppriment « les taxes sur la mort »</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">20 Minutes</font>",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNNVJDeUNQT3dHaVUxT0h1SWNYR2RLd1p1QXR3dkdjT2JCSDFZRk5FNmdSVm9zSG51VWZuLW1MN1Q0aUhuQkZpa1Q3cWJfY2Q1eHlvUnphY0p1bXF1cXhOMDFBMWExZW5pTWwwUU5hRmpJLXVMV001cE9SR1g1RDIzejVlMk1zb1NVbi03eDVfU1AwVTZYVFU1NzBnX1hTWWR4OU5Bd2l4Q3VZRzFtd2ptX1QtMzJfQnh1SzJNSnBlTzhrbGx3eUJj?oc=5",
+      "source": "Google News",
+      "date": "Fri, 26 Jun 2026 14:47:00 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-01T07:54:04.746725+00:00"
     },
     {
       "id": "b6769bfdd65cd533",
