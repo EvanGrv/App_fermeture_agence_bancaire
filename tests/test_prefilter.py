@@ -46,3 +46,62 @@ def test_quittera_la_commune_reste_pertinent():
     # La forme précise "quittera la commune" (euphémisme de fermeture) doit rester capturée.
     art = {"titre": "Le Crédit Agricole quittera la commune de Tulle", "texte": ""}
     assert is_relevant(art) is True
+
+
+# --- Cycle 2b: analyse() — scoring + entité-detection ---
+
+from backend.prefilter import analyse, PrefilterResult
+
+
+def test_analyse_titre_banque_fermeture_score_haut():
+    r = analyse({"titre": "La Société Générale ferme son agence de Rennes",
+                 "texte": "L'agence de Rennes fermera le 30 juin 2026."})
+    assert isinstance(r, PrefilterResult)
+    assert r.score >= 3
+    assert r.banks  # au moins une banque détectée
+    assert r.compact_context == ""  # rempli plus tard par le pipeline
+
+
+def test_analyse_phrase_banque_commune_fermeture():
+    r = analyse({"titre": "Réseau bancaire",
+                 "texte": "Le Crédit Agricole va fermer son agence de Tulle cet été."})
+    assert r.score >= 3
+    assert any("Tulle" in c for c in r.communes)
+
+
+def test_analyse_liste_communes_bonus():
+    r = analyse({"titre": "Crédit Agricole réorganise",
+                 "texte": "Les agences de Bessines, Saint-Junien et Tulle vont fermer."})
+    assert len(r.communes) >= 2
+    assert r.score >= 2
+
+
+def test_analyse_date_detectee():
+    r = analyse({"titre": "BNP ferme une agence",
+                 "texte": "La fermeture est prévue pour le 1er septembre 2026 à Lyon."})
+    assert r.dates
+    assert r.score >= 2
+
+
+def test_analyse_adresse_detectee():
+    r = analyse({"titre": "LCL ferme",
+                 "texte": "L'agence LCL du 12 rue de la République, 69001 Lyon fermera."})
+    assert r.addresses
+
+
+def test_analyse_rh_sans_agence_penalise():
+    r = analyse({"titre": "Plan social à la BNP",
+                 "texte": "Suppression de postes et licenciements ; grève des salariés."})
+    assert r.score <= -2, f"score={r.score}"
+
+
+def test_analyse_hors_sujet_penalise():
+    r = analyse({"titre": "Le marché aux fleurs ouvre", "texte": "Beau temps ce week-end."})
+    assert r.score <= -3
+
+
+def test_is_relevant_toujours_present():
+    # compat : le booléen historique reste exposé et inchangé
+    assert analyse and callable(analyse)
+    from backend.prefilter import is_relevant
+    assert is_relevant({"titre": "Société Générale ferme", "texte": "agence"}) is True
