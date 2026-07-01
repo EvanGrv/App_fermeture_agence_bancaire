@@ -180,6 +180,10 @@ RH_TERMS = [
 # Contexte compact envoyé à l'IA (Cycle 2b) : plafond de caractères.
 PREFILTER_CONTEXT_MAX_CHARS = int(os.getenv("PREFILTER_CONTEXT_MAX_CHARS", "8000"))
 
+# Gate de préfiltre : on ne saute l'IA que si le score est <= ce seuil (conservateur).
+# Les articles sautés sont routés en vigilance (jamais perdus).
+PREFILTER_MIN_SCORE = int(os.getenv("PREFILTER_MIN_SCORE", "-2"))
+
 # Flux RSS publics de presse/radio locale. Ils complètent Google News en
 # captant directement les dernières publications des grands réseaux régionaux.
 LOCAL_RSS_FEEDS = [

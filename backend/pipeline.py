@@ -1,7 +1,8 @@
 # backend/pipeline.py
+import config
 from datetime import date, datetime, timezone
 from email.utils import parsedate_to_datetime
-from backend import commune_normalize, prefilter, store, validation
+from backend import commune_normalize, context_builder, prefilter, store, validation
 from backend.fulltext import fetch_text, fetch_article
 from backend.extraction_cache import extract_cached_with_status
 
@@ -113,9 +114,18 @@ def run_pipeline(
                 try:
                     texte_complet = _enrich(url)
                     if texte_complet:
-                        art["texte"] = (texte + "\n\n" + texte_complet)[:6000]
+                        art["texte"] = (texte + "\n\n" + texte_complet)[:20000]
                 except Exception:
                     pass
+            pf = prefilter.analyse(art)
+            pf.compact_context = context_builder.build_compact_context(art, pf)
+            if pf.score <= config.PREFILTER_MIN_SCORE:
+                if url:
+                    store.mark_url_seen(conn, url)
+                if vigilance_fn and vigilance_fn(art, f"score préfiltre bas ({pf.score})"):
+                    recap["vigilances"] += 1
+                continue
+            art["texte"] = pf.compact_context
             try:
                 resultat, extraction_status = extract_cached_with_status(art, extractor_fn, conn)
             except Exception as exc:
