@@ -121,14 +121,15 @@ def _aggregate_vigilance(
             evidences.append(signal["evidence"])
         scores.append(_fiabilite(signal.get("confidence")))
 
-    key = article.get("url") or f"{article.get('titre') or ''}|{article.get('date') or ''}"
+    url = article.get("url") or None
+    key = url or f"{article.get('titre') or ''}|{article.get('date') or ''}"
     return {
         "id": hashlib.sha256(key.encode("utf-8")).hexdigest()[:16],
         "banque": banque,
         "departement": departement,
         "titre": article.get("titre"),
         "extrait": " | ".join(evidences)[:500],
-        "url": article.get("url") or "",
+        "url": url,
         "source": article.get("source"),
         "date": article.get("date"),
         "score": max(scores) if scores else 0,

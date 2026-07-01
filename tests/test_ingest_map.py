@@ -130,3 +130,20 @@ def test_vague_signal_vers_vigilance_sans_departement():
     assert closures == []
     assert vig is not None and vig["departement"] is None
     assert "vague" in vig["raison"]
+
+
+def test_vigilance_sans_url_garde_url_null_pour_unique_sqlite():
+    article = {**_art(), "url": ""}
+    res = _res(
+        article_type="department_signal",
+        department_signals=[{
+            "bank": "BNP",
+            "departement": "18",
+            "count": 1,
+            "communes_mentioned": [],
+            "confidence": 0.6,
+            "evidence": "signal",
+        }],
+    )
+    _, vig = map_result(res, article, _TODAY)
+    assert vig["url"] is None
