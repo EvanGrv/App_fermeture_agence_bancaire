@@ -65,12 +65,19 @@ def test_filtre_temporel_present():
 
 
 def test_vue_departement_masque_les_points_et_utilise_estimation():
+    html = Path("frontend/index.html").read_text(encoding="utf-8")
     js = Path("frontend/app.js").read_text(encoding="utf-8")
+    assert "Lecture départementale" in html
     assert "department_estimates" in js
+    assert "closures_unlocated" in js
+    assert "department_signals" in js
+    assert "department_signal_count" in js
     assert 'const pointVis = view === "departments" ? "none" : "visible"' in js
     assert '"points-halo", "points", "points-selected"' in js
     assert "Estimation départementale" in js
     assert "Signaux non pointés" in js
+    assert "Annonces départementales" in js
+    assert "Agence sans point précis" in js
 
 
 def test_deploiement_vercel_github_actions_configure():

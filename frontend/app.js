@@ -51,7 +51,16 @@ const COLORS = {
   autre: "#3b82f6",
 };
 
-let DONNEES = { closures: [], departements: {}, department_estimates: {}, vigilances: [], plans: [] };
+let DONNEES = {
+  closures: [],
+  closures_unlocated: [],
+  department_signals: [],
+  vague_signals: [],
+  departements: {},
+  department_estimates: {},
+  vigilances: [],
+  plans: [],
+};
 let DEPTS = null;
 let map;
 let currentView = "map";
@@ -253,14 +262,14 @@ function setupMapLayers() {
     layout: { visibility: currentView === "departments" ? "visible" : "none" },
     paint: {
       "fill-color": [
-        "interpolate", ["linear"], ["get", "count"],
+        "interpolate", ["linear"], ["get", "estimated_count"],
         0, "#ffffff", 1, "#fee2e2", 3, "#fecaca", 6, "#fca5a5", 12, "#fb7185",
       ],
       "fill-opacity": [
         "case",
         ["boolean", ["feature-state", "hover"], false],
-        ["case", [">", ["get", "count"], 0], 0.55, 0.28],
-        ["case", [">", ["get", "count"], 0], 0.34, 0.08],
+        ["case", [">", ["get", "estimated_count"], 0], 0.55, 0.28],
+        ["case", [">", ["get", "estimated_count"], 0], 0.34, 0.08],
       ],
     },
   });
@@ -660,6 +669,7 @@ function renderDepartments(items) {
       ${metric("Estimation départementale", estimate.estimated_count, "red")}
       ${metric("Points précis X/Y", estimate.precise_count, "blue")}
       ${metric("Signaux non pointés", estimate.unlocated_count, "orange")}
+      ${metric("Annonces départementales", estimate.department_signal_count, "purple")}
       ${metric("Fusions / Rapprochements", fusions, "purple")}
     </div>
     <p class="department-note">La vue Département ne place aucun point sur la carte : elle agrège les agences précisément localisées et les signaux locaux comptables sans adresse/coordonnée fiable.</p>`;
@@ -682,19 +692,29 @@ function renderDepartments(items) {
 
 function departmentEstimate(code, items = filtrer()) {
   if (!code) {
-    return Object.values(DONNEES.departements || {}).reduce((acc, dep, _, all) => {
-      acc.precise_count += Number(dep.precise_count || dep.count || 0);
-      acc.unlocated_count += Number(dep.unlocated_count || 0);
-      acc.estimated_count += Number(dep.estimated_count || dep.count || 0);
+    const estimates = DONNEES.department_estimates || {};
+    return Object.keys(DONNEES.departements || {}).reduce((acc, depCode) => {
+      const dep = DONNEES.departements[depCode] || {};
+      const estimate = estimates[depCode] || {};
+      acc.precise_count += Number(estimate.precise_count ?? dep.precise_count ?? dep.count ?? 0);
+      acc.unlocated_count += Number(estimate.unlocated_count ?? dep.unlocated_count ?? 0);
+      acc.department_signal_count += Number(estimate.department_signal_count ?? dep.department_signal_count ?? 0);
+      acc.estimated_count += Number(estimate.estimated_count ?? dep.estimated_count ?? dep.count ?? 0);
       return acc;
-    }, { precise_count: 0, unlocated_count: 0, estimated_count: 0 });
+    }, { precise_count: 0, unlocated_count: 0, department_signal_count: 0, estimated_count: 0 });
   }
   const dep = DONNEES.departements?.[code] || {};
+  const estimate = DONNEES.department_estimates?.[code] || {};
   const preciseFiltered = items.filter((c) => c.departement === code).length;
+  const basePrecise = Number(estimate.precise_count ?? dep.precise_count ?? dep.count ?? 0);
+  const unlocated = Number(estimate.unlocated_count ?? dep.unlocated_count ?? 0);
+  const deptSignalCount = Number(estimate.department_signal_count ?? dep.department_signal_count ?? 0);
+  const precise = preciseFiltered || basePrecise;
   return {
-    precise_count: preciseFiltered || Number(dep.precise_count || dep.count || 0),
-    unlocated_count: Number(dep.unlocated_count || 0),
-    estimated_count: (preciseFiltered || Number(dep.precise_count || dep.count || 0)) + Number(dep.unlocated_count || 0),
+    precise_count: precise,
+    unlocated_count: unlocated,
+    department_signal_count: deptSignalCount,
+    estimated_count: precise + unlocated + deptSignalCount,
   };
 }
 
@@ -706,14 +726,19 @@ function topDepartmentEstimates(items = filtrer()) {
 }
 
 function departmentSignalCard(signal) {
+  const label = signal.precision === "commune_non_geocodee"
+    ? "Agence sans point précis"
+    : signal.precision === "departement"
+      ? "Signal départemental"
+      : "Signal à vérifier";
   return `<article class="result-card department-signal-card">
     <div class="card-head">
       <span class="event-dot orange"></span>
       <strong>${esc(signal.commune || "Localisation non pointée")}</strong>
     </div>
-    <p>${esc(signal.banque || "Banque non isolée")} · signal départemental</p>
+    <p>${esc(signal.banque || "Banque non isolée")} · ${esc(label)}</p>
     <div class="meta">${esc(signal.source || "Source")} · score ${esc(signal.score || "?")}/5</div>
-    <p>${esc(signal.titre || "")}</p>
+    <p>${esc(signal.reason || signal.titre || "")}</p>
     ${signal.url ? `<a href="${esc(signal.url)}" target="_blank" rel="noopener">Ouvrir la source →</a>` : ""}
   </article>`;
 }
