@@ -1,8 +1,17 @@
 # tests/test_pipeline.py
 import backend.store as store
-from backend import pipeline
+from backend import pipeline, prefilter, context_builder
 from backend.extraction_cache import content_hash
 import config
+
+def _compact_hash(art):
+    """Compute the content hash as the pipeline does: after prefilter + compact context."""
+    pf = prefilter.analyse(art)
+    pf.compact_context = context_builder.build_compact_context(art, pf)
+    art_ia = dict(art)
+    art_ia["texte"] = pf.compact_context
+    return content_hash(art_ia)
+
 
 def _article(url, pertinent=True):
     if pertinent:
@@ -223,6 +232,49 @@ def test_pipeline_extraction_cachee_pas_de_2e_appel_ia(tmp_path):
     assert len(appels) == 1, "le cache d'extraction évite le 2e appel IA"
 
 
+def test_pipeline_score_bas_route_vigilance_sans_ia(tmp_path):
+    conn = store.init_db(tmp_path / "t.db")
+    # Article RH/social sans "agence" mais avec banque+terme (passe is_relevant),
+    # score <= PREFILTER_MIN_SCORE -> pas d'IA, vigilance.
+    art = {"titre": "Plan social à la Société Générale",
+           "texte": "Suppression de postes, licenciements et grève des salariés.",
+           "url": "http://rh", "date": "2026-01-10", "source": "GN", "departement": None}
+    appels_ia = []
+    vus = []
+
+    def extractor_espion(a):
+        appels_ia.append(a["url"])
+        return None
+
+    def vigilance_fn(a, raison):
+        vus.append(raison)
+        return "v1"
+
+    pipeline.run_pipeline(conn, [lambda: [art]], extractor_espion,
+                          lambda c, d: None, vigilance_fn=vigilance_fn,
+                          enrich_fn=lambda u: "")
+    assert appels_ia == [], "score bas -> aucun appel IA"
+    assert vus and "score" in vus[0]
+
+
+def test_pipeline_envoie_contexte_compact_a_l_ia(tmp_path):
+    conn = store.init_db(tmp_path / "t.db")
+    art = {"titre": "Société Générale ferme son agence de Rennes",
+           "texte": "L'agence de Rennes fermera le 30 juin 2026.",
+           "url": "http://ok", "date": "2026-01-10", "source": "GN", "departement": "35"}
+    recu = []
+
+    def extractor_espion(a):
+        recu.append(a["texte"])
+        return None
+
+    pipeline.run_pipeline(conn, [lambda: [art]], extractor_espion,
+                          lambda c, d: None, enrich_fn=lambda u: "")
+    assert len(recu) == 1
+    assert recu[0].startswith("TITRE:")  # contexte compact, pas le texte brut
+    assert "Rennes" in recu[0]
+
+
 def test_pipeline_ne_marque_pas_seen_apres_erreur_ia_retryable(tmp_path):
     conn = store.init_db(tmp_path / "t.db")
     appels = []
@@ -238,7 +290,7 @@ def test_pipeline_ne_marque_pas_seen_apres_erreur_ia_retryable(tmp_path):
     pipeline.run_pipeline(conn, collectors, extractor_retry, _geo, enrich_fn=lambda u: "")
     assert len(appels) == 1
     assert not store.is_url_seen(conn, url), "une erreur IA réessayable ne doit pas marquer l'URL seen"
-    row = store.get_extraction(conn, content_hash(_article(url)), config.EXTRACTION_VERSION,
+    row = store.get_extraction(conn, _compact_hash(_article(url)), config.EXTRACTION_VERSION,
                                config.ANTHROPIC_MODEL)
     assert row["status"] == "error"
 
