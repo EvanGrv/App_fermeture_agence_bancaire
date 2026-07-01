@@ -111,7 +111,8 @@ def test_extract_structured_out_of_scope_non_none():
     assert out is not None and out.closures == [] and out.department_signals == []
 
 
-def test_extract_structured_fallback_sonnet_sur_erreur():
+def test_extract_structured_fallback_sonnet_sur_erreur(monkeypatch):
+    monkeypatch.setenv("ANTHROPIC_MAX_RETRIES", "0")
     res = ExtractionResult(article_type="single_closure", closures=[_item()])
     client = _FakeClient([_ApiErr(529), res])  # 1er appel échoue, fallback réussit
     out = extract_structured(_art(), client=client)
@@ -150,7 +151,7 @@ class DeptSignal(BaseModel):
     bank: str
     departement: Optional[str] = None
     count: Optional[int] = None
-    communes_mentioned: list = Field(default_factory=list)
+    communes_mentioned: list[str] = Field(default_factory=list)
     confidence: float = Field(ge=0.0, le=1.0, default=0.0)
     evidence: str = ""
 
@@ -169,9 +170,9 @@ class ExtractionResult(BaseModel):
                           "out_of_scope", "ambiguous"]
     source_reliability: Literal["primary", "local_press", "national_press",
                                 "aggregator", "weak"] = "weak"
-    closures: list = Field(default_factory=list)
-    department_signals: list = Field(default_factory=list)
-    vague_signals: list = Field(default_factory=list)
+    closures: list[ClosureItem] = Field(default_factory=list)
+    department_signals: list[DeptSignal] = Field(default_factory=list)
+    vague_signals: list[VagueSignal] = Field(default_factory=list)
     confidence: float = Field(ge=0.0, le=1.0, default=0.0)
     needs_sonnet: bool = False
     reason: str = ""
