@@ -17,6 +17,13 @@ def test_init_cree_tables(tmp_path):
         "closures", "sources", "seen_urls", "referentiel", "controles_sirene", "vigilances",
     } <= noms
 
+
+def test_init_cree_tables_multiniveaux(tmp_path):
+    conn = store.init_db(tmp_path / "t.db")
+    noms = {r[0] for r in conn.execute(
+        "SELECT name FROM sqlite_master WHERE type='table'")}
+    assert {"closures_unlocated", "department_signals", "vague_signals"} <= noms
+
 def test_upsert_puis_lecture(tmp_path):
     conn = store.init_db(tmp_path / "t.db")
     cid = store.upsert_closure(conn, _closure())
@@ -76,6 +83,32 @@ def test_upsert_vigilance(tmp_path):
     store.upsert_vigilance(conn, {**v, "score": 4, "titre": "Plan social actualisé"})
     row = conn.execute("SELECT titre, score FROM vigilances WHERE id='v1'").fetchone()
     assert row == ("Plan social actualisé", 4)
+
+
+def test_upsert_closure_unlocated_et_signaux(tmp_path):
+    conn = store.init_db(tmp_path / "t.db")
+    store.upsert_closure_unlocated(conn, {
+        "id": "u1", "banque": "BNP Paribas", "commune": "Tarare",
+        "departement": "69", "type": "fermeture", "statut": "projet",
+        "fiabilite": 3, "citation": "preuve", "url": "http://u",
+        "titre": "Agence BNP", "source": "PQR", "date": "2026-01-01",
+        "raison": "non géocodée",
+    })
+    store.upsert_department_signal(conn, {
+        "id": "d1", "banque": "BNP Paribas", "departement": "69",
+        "count": 3, "communes_mentioned": "Tarare, Lyon", "confidence": 0.7,
+        "evidence": "3 agences", "url": "http://d", "titre": "Plan",
+        "source": "PQR", "date": "2026-01-01",
+    })
+    store.upsert_vague_signal(conn, {
+        "id": "g1", "banque": "BNP Paribas", "scope": "national",
+        "count": 10, "confidence": 0.4, "evidence": "plan national",
+        "url": "http://g", "titre": "Plan", "source": "PQR",
+        "date": "2026-01-01",
+    })
+    assert conn.execute("SELECT COUNT(*) FROM closures_unlocated").fetchone()[0] == 1
+    assert conn.execute("SELECT COUNT(*) FROM department_signals").fetchone()[0] == 1
+    assert conn.execute("SELECT COUNT(*) FROM vague_signals").fetchone()[0] == 1
 
 def test_migration_legacy_db_ajoute_colonnes_temporelles(tmp_path):
     """init_db doit ajouter statut_temporel et date_fermeture_approx à une DB

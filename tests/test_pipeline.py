@@ -363,6 +363,33 @@ def test_pipeline_department_signal_route_vigilance(tmp_path):
     assert recap["fermetures"] == 0
     assert conn.execute("SELECT COUNT(*) FROM closures").fetchone()[0] == 0
     assert conn.execute("SELECT COUNT(*) FROM vigilances").fetchone()[0] == 1
+    assert conn.execute("SELECT COUNT(*) FROM department_signals").fetchone()[0] == 1
+
+
+def test_pipeline_non_geocode_stocke_closure_unlocated(tmp_path):
+    conn = store.init_db(tmp_path / "t.db")
+    vus = []
+
+    def vigilance_fn(article, raison):
+        vus.append(raison)
+        return "v1"
+
+    recap = pipeline.run_pipeline(
+        conn, [lambda: [_article("http://nogeo")]], _extractor,
+        geocoder_fn=lambda commune, dept: None,
+        vigilance_fn=vigilance_fn,
+        enrich_fn=lambda u: "",
+    )
+
+    assert recap["fermetures"] == 0
+    assert recap["rejets_validation"] == 1
+    assert recap["vigilances"] == 1
+    row = conn.execute(
+        "SELECT banque, commune, raison FROM closures_unlocated WHERE url='http://nogeo'"
+    ).fetchone()
+    assert row[0] == "BNP Paribas"
+    assert row[1] == "Lyon"
+    assert "commune non géocodée" in row[2]
 
 
 def test_pipeline_persiste_json_riche(tmp_path):
