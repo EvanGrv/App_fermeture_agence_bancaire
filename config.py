@@ -170,6 +170,13 @@ TERMES_FERMETURE = [
     "quittera la commune", "quitte la commune",
 ]
 
+# Termes RH/social : servent au malus de préfiltre (-2) quand ils apparaissent
+# SANS le mot "agence" (article social sans fermeture d'agence identifiée).
+RH_TERMS = [
+    "licenciement", "plan social", "pse", "suppression de postes", "emplois",
+    "syndicat", "greve", "salaries",
+]
+
 # Flux RSS publics de presse/radio locale. Ils complètent Google News en
 # captant directement les dernières publications des grands réseaux régionaux.
 LOCAL_RSS_FEEDS = [
