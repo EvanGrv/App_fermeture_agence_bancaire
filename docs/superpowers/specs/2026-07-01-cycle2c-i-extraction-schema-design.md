@@ -73,7 +73,7 @@ class DeptSignal(BaseModel):
     bank: str
     departement: str | None = None
     count: int | None = None
-    communes_mentioned: list[str] = []
+    communes_mentioned: list[str] = Field(default_factory=list)
     confidence: float = Field(ge=0.0, le=1.0, default=0.0)
     evidence: str = ""
 
@@ -81,6 +81,7 @@ class VagueSignal(BaseModel):
     bank: str = ""
     scope: Literal["regional","national","unknown"] = "unknown"
     count: int | None = None
+    confidence: float = Field(ge=0.0, le=1.0, default=0.0)
     evidence: str = ""
 
 class ExtractionResult(BaseModel):
@@ -88,18 +89,22 @@ class ExtractionResult(BaseModel):
                           "regional_signal","national_signal","social_hr",
                           "out_of_scope","ambiguous"]
     source_reliability: Literal["primary","local_press","national_press","aggregator","weak"] = "weak"
-    closures: list[ClosureItem] = []
-    department_signals: list[DeptSignal] = []
-    vague_signals: list[VagueSignal] = []
+    closures: list[ClosureItem] = Field(default_factory=list)
+    department_signals: list[DeptSignal] = Field(default_factory=list)
+    vague_signals: list[VagueSignal] = Field(default_factory=list)
+    confidence: float = Field(ge=0.0, le=1.0, default=0.0)   # confiance globale (nécessaire à 2c-ii)
     needs_sonnet: bool = False
     reason: str = ""
 ```
 
+**Toutes les listes Pydantic utilisent `Field(default_factory=list)`** (jamais `= []`).
+
 `extract_structured(article, client, model=config.ANTHROPIC_MODEL, aujourdhui=None,
 floor=None) -> ExtractionResult` : Haiku primaire via `client.messages.parse`
 (retries transitoires existants), fallback Sonnet **sur erreur API** (comme
-aujourd'hui). Renvoie l'`ExtractionResult` (les décisions de rétention/filtrage
-temporel sont faites au **mapping**, pas dans l'extracteur).
+aujourd'hui) ; fallback profond OpenAI → `extract_openai_structured` (et non le
+legacy `extract_openai`). Renvoie l'`ExtractionResult` (les décisions de
+rétention/filtrage temporel sont faites au **mapping**, pas dans l'extracteur).
 
 ## Mapping (`backend/ingest_map.py`)
 
@@ -141,7 +146,7 @@ rien ne se perd) :
 | `titre` | `article.titre` | `article.titre` |
 | `extrait` | `evidence` | `evidence` |
 | `url`/`source`/`date` | article | article |
-| `score` | `round(confidence*5)` | 1 |
+| `score` | `round(confidence*5)` | `round(confidence*5)` |
 | `raison` | `"signal départemental (count=…, communes=…)"` | `"signal vague ({scope}, count=…)"` |
 
 ## Intégration pipeline (`run_pipeline`)
@@ -171,11 +176,23 @@ for c in closures:
 `structured_extractor_fn = lambda art: extract_structured(art, client=client, floor=…).model_dump()`
 (le `.model_dump()` rend le résultat JSON-sérialisable pour le cache).
 
+**Câblage `run.py`** : le pipeline principal doit brancher le nouvel extracteur
+structuré — remplacer `extractor_fn=lambda art: extract(art, client=client, floor=since_date)`
+par `extractor_fn=lambda art: extract_structured(art, client=client, floor=since_date).model_dump()`.
+Le chemin `vigilance_review` (run.py) **garde** `extract` (legacy) — non migré en 2c-i.
+
 ## `openai_fallback`
 
-`_schema()` et le parsing passent au nouveau schéma `ExtractionResult` (sinon le
-fallback profond OpenAI, déclenché sur erreur Anthropic persistante, renverrait un
-format incompatible). Mécanique : nouveau JSON schema + `ExtractionResult.model_validate`.
+**Ne pas remplacer** `extract_openai()` legacy — il reste le fallback profond de
+l'ancien `extract()` (utilisé par `vigilance_review`). On **ajoute** à côté :
+- `_schema_structured()` : JSON schema dédié pour `ExtractionResult` ;
+- `extract_openai_structured(article, aujourdhui, ...) -> ExtractionResult` :
+  même logique (budget, usage, POST) que `extract_openai` mais avec le schéma
+  structuré et `ExtractionResult.model_validate`.
+
+Ainsi les deux chemins coexistent : `extract()` → `extract_openai` (legacy),
+`extract_structured()` → `extract_openai_structured` (nouveau). Aucune régression
+sur le fallback existant.
 
 ## Gestion d'erreurs
 
@@ -210,7 +227,8 @@ format incompatible). Mécanique : nouveau JSON schema + `ExtractionResult.model
     contient `article_type` (lecture directe de la table).
 
 `tests/test_openai_fallback.py` (étendre) :
-14. `_schema()` produit le nouveau format ; parsing d'un `ExtractionResult`.
+14. `extract_openai_structured` (POST mocké) parse un `ExtractionResult` ; le
+    legacy `extract_openai`/`_schema()` reste inchangé (test existant vert).
 
 Fixtures : `ExtractionResult` en clair ; clients mockés ; conn `:memory:`.
 
