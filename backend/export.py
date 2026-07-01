@@ -15,6 +15,15 @@ _CLOSURE_COLS = ["id", "banque", "commune", "code_insee", "departement", "type",
                  "created_at"]
 _VIGILANCE_COLS = ["id", "banque", "departement", "titre", "extrait", "url",
                    "source", "date", "score", "raison", "created_at"]
+_UNLOCATED_COLS = ["id", "banque", "commune", "departement", "type",
+                   "date_fermeture", "statut", "statut_temporel", "fiabilite",
+                   "citation", "url", "titre", "source", "date", "raison",
+                   "created_at"]
+_DEPT_SIGNAL_COLS = ["id", "banque", "departement", "count", "communes_mentioned",
+                     "confidence", "evidence", "url", "titre", "source", "date",
+                     "created_at"]
+_VAGUE_SIGNAL_COLS = ["id", "banque", "scope", "count", "confidence", "evidence",
+                      "url", "titre", "source", "date", "created_at"]
 _REGIONS = {
     "Auvergne-Rhône-Alpes": {"01", "03", "07", "15", "26", "38", "42", "43", "63", "69", "73", "74"},
     "Bourgogne-Franche-Comté": {"21", "25", "39", "58", "70", "71", "89", "90"},
@@ -86,7 +95,26 @@ def build_payload(conn) -> dict:
             f"SELECT {','.join(_VIGILANCE_COLS)} FROM vigilances ORDER BY score DESC, date DESC"
         )
     ]
-    department_estimates = _build_department_estimates(closures, vigilances)
+    closures_unlocated = [
+        dict(zip(_UNLOCATED_COLS, row))
+        for row in conn.execute(
+            f"SELECT {','.join(_UNLOCATED_COLS)} FROM closures_unlocated ORDER BY date DESC"
+        )
+    ]
+    department_signals = [
+        dict(zip(_DEPT_SIGNAL_COLS, row))
+        for row in conn.execute(
+            f"SELECT {','.join(_DEPT_SIGNAL_COLS)} FROM department_signals ORDER BY date DESC"
+        )
+    ]
+    vague_signals = [
+        dict(zip(_VAGUE_SIGNAL_COLS, row))
+        for row in conn.execute(
+            f"SELECT {','.join(_VAGUE_SIGNAL_COLS)} FROM vague_signals ORDER BY date DESC"
+        )
+    ]
+    department_estimates = _build_department_estimates(
+        closures, vigilances, closures_unlocated, department_signals)
     for code, dep in departements.items():
         estimate = department_estimates.get(code, {})
         dep["precise_count"] = estimate.get("precise_count", dep["count"])
@@ -98,6 +126,9 @@ def build_payload(conn) -> dict:
         "department_estimates": department_estimates,
         "regions": _build_regions(closures),
         "closures": closures,
+        "closures_unlocated": closures_unlocated,
+        "department_signals": department_signals,
+        "vague_signals": vague_signals,
         "vigilances": vigilances,
         "plans": PLANS,
     }
@@ -147,8 +178,15 @@ def _signal_departemental(v: dict, represented: set[tuple[str, str]]) -> dict | 
     }
 
 
-def _build_department_estimates(closures: list[dict], vigilances: list[dict]) -> dict:
+def _build_department_estimates(
+    closures: list[dict],
+    vigilances: list[dict],
+    closures_unlocated: list[dict] | None = None,
+    department_signals: list[dict] | None = None,
+) -> dict:
     estimates: dict[str, dict] = {}
+    closures_unlocated = closures_unlocated or []
+    department_signals = department_signals or []
     represented = {
         (normalise_cle(c.get("banque") or ""), normalise_cle(c.get("commune") or ""))
         for c in closures
@@ -164,9 +202,62 @@ def _build_department_estimates(closures: list[dict], vigilances: list[dict]) ->
             "precise_count": 0,
             "unlocated_count": 0,
             "estimated_count": 0,
+            "department_signal_count": 0,
             "signals": [],
         })
         bucket["precise_count"] += 1
+    for candidate in closures_unlocated:
+        dep = candidate.get("departement")
+        if dep not in config.DEPARTEMENTS:
+            continue
+        bucket = estimates.setdefault(dep, {
+            "departement": dep,
+            "nom": config.DEPARTEMENTS.get(dep, dep),
+            "precise_count": 0,
+            "unlocated_count": 0,
+            "estimated_count": 0,
+            "department_signal_count": 0,
+            "signals": [],
+        })
+        bucket["unlocated_count"] += 1
+        bucket["signals"].append({
+            "id": candidate.get("id"),
+            "banque": candidate.get("banque"),
+            "commune": candidate.get("commune"),
+            "departement": dep,
+            "titre": candidate.get("titre") or "",
+            "source": candidate.get("source") or "",
+            "url": candidate.get("url") or "",
+            "score": candidate.get("fiabilite") or 0,
+            "precision": "commune_non_geocodee",
+            "reason": candidate.get("raison") or "fermeture non pointée précisément",
+        })
+    for signal in department_signals:
+        dep = signal.get("departement")
+        if dep not in config.DEPARTEMENTS:
+            continue
+        bucket = estimates.setdefault(dep, {
+            "departement": dep,
+            "nom": config.DEPARTEMENTS.get(dep, dep),
+            "precise_count": 0,
+            "unlocated_count": 0,
+            "estimated_count": 0,
+            "department_signal_count": 0,
+            "signals": [],
+        })
+        bucket["department_signal_count"] += int(signal.get("count") or 0)
+        bucket["signals"].append({
+            "id": signal.get("id"),
+            "banque": signal.get("banque"),
+            "commune": "",
+            "departement": dep,
+            "titre": signal.get("titre") or "",
+            "source": signal.get("source") or "",
+            "url": signal.get("url") or "",
+            "score": round(float(signal.get("confidence") or 0) * 5),
+            "precision": "departement",
+            "reason": signal.get("evidence") or "signal départemental",
+        })
     seen_signals: set[str] = set()
     for vig in vigilances:
         signal = _signal_departemental(vig, represented)
@@ -180,12 +271,17 @@ def _build_department_estimates(closures: list[dict], vigilances: list[dict]) ->
             "precise_count": 0,
             "unlocated_count": 0,
             "estimated_count": 0,
+            "department_signal_count": 0,
             "signals": [],
         })
         bucket["signals"].append(signal)
         bucket["unlocated_count"] += 1
     for bucket in estimates.values():
-        bucket["estimated_count"] = bucket["precise_count"] + bucket["unlocated_count"]
+        bucket["estimated_count"] = (
+            bucket["precise_count"]
+            + bucket["unlocated_count"]
+            + bucket.get("department_signal_count", 0)
+        )
         bucket["signals"].sort(key=lambda item: (-(item.get("score") or 0), item.get("banque") or ""))
     return estimates
 

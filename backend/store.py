@@ -77,6 +77,54 @@ CREATE TABLE IF NOT EXISTS vigilance_reviews (
     new_urls_found INTEGER DEFAULT 0,
     closures_created INTEGER DEFAULT 0
 );
+CREATE TABLE IF NOT EXISTS closures_unlocated (
+    id TEXT PRIMARY KEY,
+    banque TEXT,
+    commune TEXT,
+    departement TEXT,
+    type TEXT,
+    date_fermeture TEXT,
+    statut TEXT,
+    statut_temporel TEXT,
+    fiabilite INTEGER,
+    citation TEXT,
+    url TEXT,
+    titre TEXT,
+    source TEXT,
+    date TEXT,
+    raison TEXT,
+    created_at TEXT NOT NULL,
+    UNIQUE(url, banque, commune)
+);
+CREATE TABLE IF NOT EXISTS department_signals (
+    id TEXT PRIMARY KEY,
+    banque TEXT,
+    departement TEXT,
+    count INTEGER,
+    communes_mentioned TEXT,
+    confidence REAL,
+    evidence TEXT,
+    url TEXT,
+    titre TEXT,
+    source TEXT,
+    date TEXT,
+    created_at TEXT NOT NULL,
+    UNIQUE(url, banque, departement)
+);
+CREATE TABLE IF NOT EXISTS vague_signals (
+    id TEXT PRIMARY KEY,
+    banque TEXT,
+    scope TEXT,
+    count INTEGER,
+    confidence REAL,
+    evidence TEXT,
+    url TEXT,
+    titre TEXT,
+    source TEXT,
+    date TEXT,
+    created_at TEXT NOT NULL,
+    UNIQUE(url, banque, scope)
+);
 CREATE TABLE IF NOT EXISTS articles (
     raw_url        TEXT PRIMARY KEY,
     final_url      TEXT,
@@ -135,6 +183,14 @@ _ARTICLE_COLS = ["raw_url", "final_url", "canonical_url", "title", "source_domai
 _EXTRACTION_COLS = ["content_hash", "extraction_version", "model", "status",
                     "result_json", "error_type", "attempts", "retry_after",
                     "created_at", "updated_at"]
+_UNLOCATED_COLS = ["id", "banque", "commune", "departement", "type",
+                   "date_fermeture", "statut", "statut_temporel", "fiabilite",
+                   "citation", "url", "titre", "source", "date", "raison", "created_at"]
+_DEPT_SIGNAL_COLS = ["id", "banque", "departement", "count", "communes_mentioned",
+                     "confidence", "evidence", "url", "titre", "source", "date",
+                     "created_at"]
+_VAGUE_SIGNAL_COLS = ["id", "banque", "scope", "count", "confidence", "evidence",
+                      "url", "titre", "source", "date", "created_at"]
 
 
 def upsert_article(conn: sqlite3.Connection, article: dict) -> None:
@@ -304,6 +360,35 @@ def upsert_vigilance(conn: sqlite3.Connection, vigilance: dict) -> str:
     )
     conn.commit()
     return vigilance["id"]
+
+
+def _insert_update(conn: sqlite3.Connection, table: str, cols: list[str],
+                   row: dict, key_cols: tuple[str, ...] = ("id",)) -> str:
+    placeholders = ",".join(f":{c}" for c in cols)
+    updates = ",".join(f"{c}=excluded.{c}" for c in cols if c not in key_cols)
+    conn.execute(
+        f"INSERT INTO {table} ({','.join(cols)}) VALUES ({placeholders}) "
+        f"ON CONFLICT(id) DO UPDATE SET {updates}",
+        {
+            **{c: None for c in cols},
+            **row,
+            "created_at": row.get("created_at") or datetime.now(timezone.utc).isoformat(),
+        },
+    )
+    conn.commit()
+    return row["id"]
+
+
+def upsert_closure_unlocated(conn: sqlite3.Connection, closure: dict) -> str:
+    return _insert_update(conn, "closures_unlocated", _UNLOCATED_COLS, closure)
+
+
+def upsert_department_signal(conn: sqlite3.Connection, signal: dict) -> str:
+    return _insert_update(conn, "department_signals", _DEPT_SIGNAL_COLS, signal)
+
+
+def upsert_vague_signal(conn: sqlite3.Connection, signal: dict) -> str:
+    return _insert_update(conn, "vague_signals", _VAGUE_SIGNAL_COLS, signal)
 
 
 _VIGILANCE_SELECT_COLS = ["id", "banque", "departement", "titre", "extrait",

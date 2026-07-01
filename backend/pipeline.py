@@ -1,4 +1,5 @@
 # backend/pipeline.py
+import hashlib
 import config
 from datetime import date, datetime, timezone
 from email.utils import parsedate_to_datetime
@@ -77,6 +78,74 @@ def _ingest_closure(conn, resultat, art, url, geocoder_fn, recap):
     })
     recap["fermetures"] += 1
     return True, None
+
+
+def _persist_unlocated_closure(conn, closure, art, url, raison):
+    key = "|".join([
+        url or "",
+        closure.get("banque") or "",
+        closure.get("commune") or "",
+        closure.get("type") or "",
+    ])
+    store.upsert_closure_unlocated(conn, {
+        "id": hashlib.sha256(key.encode("utf-8")).hexdigest()[:16],
+        "banque": closure.get("banque"),
+        "commune": closure.get("commune"),
+        "departement": closure.get("departement"),
+        "type": closure.get("type"),
+        "date_fermeture": closure.get("date_fermeture"),
+        "statut": closure.get("statut"),
+        "statut_temporel": closure.get("statut_temporel"),
+        "fiabilite": closure.get("fiabilite"),
+        "citation": closure.get("citation"),
+        "url": url or None,
+        "titre": art.get("titre"),
+        "source": art.get("source"),
+        "date": art.get("date"),
+        "raison": raison,
+    })
+
+
+def _persist_structured_signals(conn, result, art, url):
+    for signal in result.get("department_signals") or []:
+        key = "|".join([
+            url or "",
+            signal.get("bank") or "",
+            signal.get("departement") or "",
+            str(signal.get("count") or ""),
+        ])
+        store.upsert_department_signal(conn, {
+            "id": hashlib.sha256(key.encode("utf-8")).hexdigest()[:16],
+            "banque": signal.get("bank"),
+            "departement": signal.get("departement"),
+            "count": signal.get("count"),
+            "communes_mentioned": ", ".join(signal.get("communes_mentioned") or []),
+            "confidence": signal.get("confidence"),
+            "evidence": signal.get("evidence"),
+            "url": url or None,
+            "titre": art.get("titre"),
+            "source": art.get("source"),
+            "date": art.get("date"),
+        })
+    for signal in result.get("vague_signals") or []:
+        key = "|".join([
+            url or "",
+            signal.get("bank") or "",
+            signal.get("scope") or "",
+            str(signal.get("count") or ""),
+        ])
+        store.upsert_vague_signal(conn, {
+            "id": hashlib.sha256(key.encode("utf-8")).hexdigest()[:16],
+            "banque": signal.get("bank"),
+            "scope": signal.get("scope"),
+            "count": signal.get("count"),
+            "confidence": signal.get("confidence"),
+            "evidence": signal.get("evidence"),
+            "url": url or None,
+            "titre": art.get("titre"),
+            "source": art.get("source"),
+            "date": art.get("date"),
+        })
 
 
 def run_pipeline(
@@ -165,6 +234,7 @@ def run_pipeline(
                     recap["vigilances"] += 1
                 continue
             aujourdhui = date.today().isoformat()
+            _persist_structured_signals(conn, resultat, art, url)
             closures_map, signal_vigilance = ingest_map.map_result(resultat, art, aujourdhui)
             publications = 0
             rejets = []
@@ -176,6 +246,7 @@ def run_pipeline(
                     aujourdhui,
                 ):
                     rejets.append("hors fenêtre temporelle")
+                    _persist_unlocated_closure(conn, closure, art, url, "hors fenêtre temporelle")
                     continue
                 recap["extraits"] += 1
                 ok, raison = _ingest_closure(conn, closure, art, url, geocoder_fn, recap)
@@ -183,6 +254,7 @@ def run_pipeline(
                     publications += 1
                 elif raison:
                     rejets.append(raison)
+                    _persist_unlocated_closure(conn, closure, art, url, raison)
             if signal_vigilance:
                 store.upsert_vigilance(conn, signal_vigilance)
                 recap["vigilances"] += 1

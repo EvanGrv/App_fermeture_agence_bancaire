@@ -150,3 +150,36 @@ def test_build_payload_department_estimates(tmp_path):
     assert estimate["estimated_count"] == 2
     assert estimate["signals"][0]["commune"] == "Tarare"
     assert payload["departements"]["69"]["estimated_count"] == 2
+
+
+def test_build_payload_expose_tiers_multiniveaux(tmp_path):
+    conn = store.init_db(tmp_path / "t.db")
+    store.upsert_closure(conn, {
+        "id": "c1", "banque": "BNP Paribas", "commune": "Lyon",
+        "code_insee": "69123", "departement": "69", "type": "fermeture",
+        "date_annonce": None, "date_fermeture": None, "statut": "projet",
+        "fiabilite": 3, "lat": 45.76, "lon": 4.85, "citation": "x",
+    })
+    store.upsert_closure_unlocated(conn, {
+        "id": "u1", "banque": "BNP Paribas", "commune": "Tarare",
+        "departement": "69", "type": "fermeture", "statut": "projet",
+        "fiabilite": 3, "citation": "preuve", "url": "http://u",
+        "titre": "Agence BNP", "source": "PQR", "date": "2026-01-01",
+        "raison": "non géocodée",
+    })
+    store.upsert_department_signal(conn, {
+        "id": "d1", "banque": "BNP Paribas", "departement": "69",
+        "count": 2, "communes_mentioned": "Tarare, Lyon", "confidence": 0.7,
+        "evidence": "2 agences dans le Rhône", "url": "http://d",
+        "titre": "Plan Rhône", "source": "PQR", "date": "2026-01-01",
+    })
+
+    payload = export.build_payload(conn)
+
+    assert payload["closures_unlocated"][0]["commune"] == "Tarare"
+    assert payload["department_signals"][0]["count"] == 2
+    estimate = payload["department_estimates"]["69"]
+    assert estimate["precise_count"] == 1
+    assert estimate["unlocated_count"] == 1
+    assert estimate["department_signal_count"] == 2
+    assert estimate["estimated_count"] == 4
