@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T08:01:19.634683+00:00",
+  "generated_at": "2026-07-02T07:02:03.362821+00:00",
   "departements": {
     "01": {
       "nom": "Ain",
@@ -918,6 +918,7 @@
       "precise_count": 3,
       "unlocated_count": 0,
       "estimated_count": 3,
+      "department_signal_count": 0,
       "signals": []
     },
     "12": {
@@ -926,6 +927,7 @@
       "precise_count": 1,
       "unlocated_count": 0,
       "estimated_count": 1,
+      "department_signal_count": 0,
       "signals": []
     },
     "62": {
@@ -934,6 +936,7 @@
       "precise_count": 6,
       "unlocated_count": 0,
       "estimated_count": 6,
+      "department_signal_count": 0,
       "signals": []
     },
     "87": {
@@ -942,6 +945,7 @@
       "precise_count": 1,
       "unlocated_count": 0,
       "estimated_count": 1,
+      "department_signal_count": 0,
       "signals": []
     },
     "36": {
@@ -950,6 +954,7 @@
       "precise_count": 3,
       "unlocated_count": 0,
       "estimated_count": 3,
+      "department_signal_count": 0,
       "signals": []
     },
     "47": {
@@ -958,6 +963,7 @@
       "precise_count": 1,
       "unlocated_count": 0,
       "estimated_count": 1,
+      "department_signal_count": 0,
       "signals": []
     },
     "55": {
@@ -966,6 +972,7 @@
       "precise_count": 1,
       "unlocated_count": 0,
       "estimated_count": 1,
+      "department_signal_count": 0,
       "signals": []
     },
     "45": {
@@ -974,6 +981,7 @@
       "precise_count": 1,
       "unlocated_count": 0,
       "estimated_count": 1,
+      "department_signal_count": 0,
       "signals": []
     },
     "29": {
@@ -982,6 +990,7 @@
       "precise_count": 3,
       "unlocated_count": 0,
       "estimated_count": 3,
+      "department_signal_count": 0,
       "signals": []
     },
     "37": {
@@ -990,6 +999,7 @@
       "precise_count": 1,
       "unlocated_count": 0,
       "estimated_count": 1,
+      "department_signal_count": 0,
       "signals": []
     },
     "27": {
@@ -998,6 +1008,7 @@
       "precise_count": 1,
       "unlocated_count": 0,
       "estimated_count": 1,
+      "department_signal_count": 0,
       "signals": []
     },
     "76": {
@@ -1006,6 +1017,7 @@
       "precise_count": 1,
       "unlocated_count": 0,
       "estimated_count": 1,
+      "department_signal_count": 0,
       "signals": []
     },
     "59": {
@@ -1014,6 +1026,7 @@
       "precise_count": 4,
       "unlocated_count": 0,
       "estimated_count": 4,
+      "department_signal_count": 0,
       "signals": []
     },
     "43": {
@@ -1022,6 +1035,7 @@
       "precise_count": 3,
       "unlocated_count": 0,
       "estimated_count": 3,
+      "department_signal_count": 0,
       "signals": []
     },
     "46": {
@@ -1030,6 +1044,7 @@
       "precise_count": 1,
       "unlocated_count": 0,
       "estimated_count": 1,
+      "department_signal_count": 0,
       "signals": []
     },
     "70": {
@@ -1038,6 +1053,7 @@
       "precise_count": 1,
       "unlocated_count": 0,
       "estimated_count": 1,
+      "department_signal_count": 0,
       "signals": []
     },
     "68": {
@@ -1046,6 +1062,7 @@
       "precise_count": 1,
       "unlocated_count": 0,
       "estimated_count": 1,
+      "department_signal_count": 0,
       "signals": []
     },
     "57": {
@@ -1054,6 +1071,7 @@
       "precise_count": 1,
       "unlocated_count": 0,
       "estimated_count": 1,
+      "department_signal_count": 0,
       "signals": []
     },
     "14": {
@@ -1062,6 +1080,7 @@
       "precise_count": 2,
       "unlocated_count": 0,
       "estimated_count": 2,
+      "department_signal_count": 0,
       "signals": []
     },
     "24": {
@@ -1070,6 +1089,7 @@
       "precise_count": 1,
       "unlocated_count": 0,
       "estimated_count": 1,
+      "department_signal_count": 0,
       "signals": []
     },
     "67": {
@@ -1078,6 +1098,7 @@
       "precise_count": 1,
       "unlocated_count": 0,
       "estimated_count": 1,
+      "department_signal_count": 0,
       "signals": []
     },
     "02": {
@@ -1086,6 +1107,7 @@
       "precise_count": 1,
       "unlocated_count": 0,
       "estimated_count": 1,
+      "department_signal_count": 0,
       "signals": []
     },
     "38": {
@@ -1094,6 +1116,7 @@
       "precise_count": 1,
       "unlocated_count": 0,
       "estimated_count": 1,
+      "department_signal_count": 0,
       "signals": []
     },
     "75": {
@@ -1102,6 +1125,7 @@
       "precise_count": 1,
       "unlocated_count": 0,
       "estimated_count": 1,
+      "department_signal_count": 0,
       "signals": []
     },
     "18": {
@@ -1110,6 +1134,7 @@
       "precise_count": 1,
       "unlocated_count": 0,
       "estimated_count": 1,
+      "department_signal_count": 0,
       "signals": []
     },
     "72": {
@@ -1118,6 +1143,7 @@
       "precise_count": 1,
       "unlocated_count": 0,
       "estimated_count": 1,
+      "department_signal_count": 0,
       "signals": []
     },
     "56": {
@@ -1126,6 +1152,7 @@
       "precise_count": 1,
       "unlocated_count": 0,
       "estimated_count": 1,
+      "department_signal_count": 0,
       "signals": []
     },
     "21": {
@@ -1134,6 +1161,7 @@
       "precise_count": 1,
       "unlocated_count": 0,
       "estimated_count": 1,
+      "department_signal_count": 0,
       "signals": []
     },
     "25": {
@@ -1142,6 +1170,7 @@
       "precise_count": 1,
       "unlocated_count": 0,
       "estimated_count": 1,
+      "department_signal_count": 0,
       "signals": []
     }
   },
@@ -3046,6 +3075,28 @@
       "region": "Bourgogne-Franche-Comté"
     }
   ],
+  "closures_unlocated": [
+    {
+      "id": "5834994d24f7cadd",
+      "banque": "BNP Paribas",
+      "commune": "Chalon-sur-Saône",
+      "departement": "Saône-et-Loire",
+      "type": "fermeture",
+      "date_fermeture": "2026-06-30",
+      "statut": "confirmé",
+      "statut_temporel": "deja_fermee",
+      "fiabilite": 5,
+      "citation": "L'agence BNP Paribas Chalon-sur-Saône Avenue de Paris fermera fin juin",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOMGJUS0JvTHJ5bHoySm1KRjNTSEVoMFpqV0tZdTZfUXRNZnlubU9WVHFzUWVsaFZjZi1xU0UybnRvNHNkQmI3a3Zia2pFNHRneXdWREM0aWNETm81UEoxZDdhellNUGI4YUZPWXlPN3k1T1duSzU3aGZHelFoNDlDRElBVXltV0JCUGk2cFJOZktCRUREcVJJYU9PMlBIMHFPTlJOWUwtNWZaXzFHa1cyejRfN1hrZC15dHo1cVpneHB5akdT?oc=5",
+      "titre": "L'agence BNP Paribas Chalon-sur-Saône Avenue de Paris fermera fin juin - Info-Chalon.com",
+      "source": "Google News",
+      "date": "Sun, 24 May 2026 07:00:00 GMT",
+      "raison": "commune non géocodée",
+      "created_at": "2026-07-02T06:55:01.642225+00:00"
+    }
+  ],
+  "department_signals": [],
+  "vague_signals": [],
   "vigilances": [
     {
       "id": "65310dd2b512582f",
@@ -4502,6 +4553,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-07-01T07:53:55.623702+00:00"
+    },
+    {
+      "id": "3e7aacf90ca74dbd",
+      "banque": "BNP Paribas",
+      "departement": null,
+      "titre": "La fermeture d’un centre de distribution de La Poste en Sarthe mobilise les élus - Ouest-France",
+      "extrait": "TITRE: La fermeture d’un centre de distribution de La Poste en Sarthe mobilise les élus - Ouest-France SOURCE: Google News DATE: Tue, 19 May 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMihAJBVV95cUxNdERzM1ZzbC1LSE54bnp0VHVKNzVCbkhwbnF3SlVxNTI3X1NPSWlVQXhNZ0t6YzRxZXMtazdXQlM5b21MZ3RqNnQ3VUdtZTM4MUhyZ05ScmM5S3RlNlU1RFZtdzlUaW93b0JrOHdzdVQ4NHUwUGRKSmhQTFNsZmxzczhXQW4xYWJKRUUzcWZGT2RMNDRqQ2JjS1pzWWxCUWoyNmxiOUljZi1fNHFqb29GeTR4aHNlcUJwVnJoNGhhc1k3Tm02WjVrMTNFRlFWTzlwQnlCWkU4WEFYcEd",
+      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxNdERzM1ZzbC1LSE54bnp0VHVKNzVCbkhwbnF3SlVxNTI3X1NPSWlVQXhNZ0t6YzRxZXMtazdXQlM5b21MZ3RqNnQ3VUdtZTM4MUhyZ05ScmM5S3RlNlU1RFZtdzlUaW93b0JrOHdzdVQ4NHUwUGRKSmhQTFNsZmxzczhXQW4xYWJKRUUzcWZGT2RMNDRqQ2JjS1pzWWxCUWoyNmxiOUljZi1fNHFqb29GeTR4aHNlcUJwVnJoNGhhc1k3Tm02WjVrMTNFRlFWTzlwQnlCWkU4WEFYcEdTTGtNSzVrVmphTThyaTBuS0trZjBoX0d0U2FpaDlMZVY3b0V0cDFHLQ?oc=5",
+      "source": "Google News",
+      "date": "Tue, 19 May 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-02T06:55:07.604071+00:00"
     },
     {
       "id": "456fc501939ed9a7",
@@ -6049,6 +6113,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:40:09.906960+00:00"
+    },
+    {
+      "id": "9990f1267d52c7da",
+      "banque": "BNP Paribas",
+      "departement": null,
+      "titre": "L'agence BNP Paribas Chalon-sur-Saône Avenue de Paris fermera fin juin - Info-Chalon.com",
+      "extrait": "TITRE: L'agence BNP Paribas Chalon-sur-Saône Avenue de Paris fermera fin juin - Info-Chalon.com SOURCE: Google News DATE: Sun, 24 May 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMixAFBVV95cUxOMGJUS0JvTHJ5bHoySm1KRjNTSEVoMFpqV0tZdTZfUXRNZnlubU9WVHFzUWVsaFZjZi1xU0UybnRvNHNkQmI3a3Zia2pFNHRneXdWREM0aWNETm81UEoxZDdhellNUGI4YUZPWXlPN3k1T1duSzU3aGZHelFoNDlDRElBVXltV0JCUGk2cFJOZktCRUREcVJJYU9PMlBIMHFPTlJOWUwtNWZaXzFHa1cyejRfN1hrZC15dHo1cVpneHB5akdT?oc=5 <a href=\"https://news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOMGJUS0JvTHJ5bHoySm1KRjNTSEVoMFpqV0tZdTZfUXRNZnlubU9WVHFzUWVsaFZjZi1xU0UybnRvNHNkQmI3a3Zia2pFNHRneXdWREM0aWNETm81UEoxZDdhellNUGI4YUZPWXlPN3k1T1duSzU3aGZHelFoNDlDRElBVXltV0JCUGk2cFJOZktCRUREcVJJYU9PMlBIMHFPTlJOWUwtNWZaXzFHa1cyejRfN1hrZC15dHo1cVpneHB5akdT?oc=5",
+      "source": "Google News",
+      "date": "Sun, 24 May 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "fermeture non publiée: commune non géocodée",
+      "created_at": "2026-07-02T06:55:01.646635+00:00"
     },
     {
       "id": "8b9405167f96ee18",
@@ -8883,6 +8960,19 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:38:40.965338+00:00"
+    },
+    {
+      "id": "a242de31cae79ea3",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Nigeria : Providus Bank et Unity Bank achèvent leur fusion - AGENCE ECOFIN",
+      "extrait": "TITRE: Nigeria : Providus Bank et Unity Bank achèvent leur fusion - AGENCE ECOFIN SOURCE: Google News DATE: Wed, 01 Jul 2026 08:52:00 GMT URL: https://news.google.com/rss/articles/CBMitwFBVV95cUxQM2hqUkJ3LW9vbFpmQndqRzJDRC02UHFVOE9HWlBpaklDLXh1ZmUxRGxCY3pGSVNVMi1kNHhhYmpQbDFXRzRSdkV5d3F1TlB6MHR5MzU3S0IwR0hZTnNjX1Q0ZjZHYm1RRE9yUDlSbkE2QkhUSkx4Y1d4ZzZsbTV4ZXlubEQ0V3ZPa0lFeHRENXdZWVpoSGVJaVBtVnYtMXl4RGpqekZFYm5rbEFsbW8xeTBXd1Zjck0?oc=5 <a href=\"https://news.google.com/rss/articles/CBMitwFBVV95cUxQM",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQM2hqUkJ3LW9vbFpmQndqRzJDRC02UHFVOE9HWlBpaklDLXh1ZmUxRGxCY3pGSVNVMi1kNHhhYmpQbDFXRzRSdkV5d3F1TlB6MHR5MzU3S0IwR0hZTnNjX1Q0ZjZHYm1RRE9yUDlSbkE2QkhUSkx4Y1d4ZzZsbTV4ZXlubEQ0V3ZPa0lFeHRENXdZWVpoSGVJaVBtVnYtMXl4RGpqekZFYm5rbEFsbW8xeTBXd1Zjck0?oc=5",
+      "source": "Google News",
+      "date": "Wed, 01 Jul 2026 08:52:00 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-02T06:55:04.194934+00:00"
     },
     {
       "id": "e7a2de571778afcf",
