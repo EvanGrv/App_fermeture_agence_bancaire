@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T07:02:03.362821+00:00",
+  "generated_at": "2026-07-02T13:04:19.723370+00:00",
   "departements": {
     "01": {
       "nom": "Ain",
@@ -3077,6 +3077,42 @@
   ],
   "closures_unlocated": [
     {
+      "id": "64f61aa76bdac5fa",
+      "banque": "Crédit Mutuel",
+      "commune": "Saint-Brieuc",
+      "departement": "Côtes-d'Armor",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "a_venir",
+      "fiabilite": 4,
+      "citation": "«la fermeture du Crédit mutuel ne passe pas à Saint-Brieuc»",
+      "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxPelktd0o2M3Zrc25qUW9tOG5lSUZ2TWxIWDFRMUxkREtkbkk0dW5LcnVVNU5BRnB1M1JjZ3hSVzVkQi1FVW56NkVyZ2hOVjk0aG9XeFR3VFp0WXJwc0FPbVgzWHRLYXlObERBSlVKeDhKeWs0RFhlNHRsbm45TU9fUmdKYzk0VjBwUWs2WmdNM1FNcnVzZTFiWFBrNFVuTWpHUGJwcVhmTldEclctVHJGWXltUk9icldFV2xOckd3cnFiWG1YSV9QNmc5UVZWdGFydTg0SUl5THN6X0NlREVTd2dVdVE0NTQ5RE9DQWNBNWVad1FpdFZlRlRZX3pOZFliOXhmYlg2MHhRUTBmQ1AxaGtwNXFWQQ?oc=5",
+      "titre": "«Une banque, ça fait vivre un quartier» : la fermeture du Crédit mutuel ne passe pas à Saint-Brieuc - Ouest-France",
+      "source": "Google News",
+      "date": "Wed, 16 Apr 2025 07:00:00 GMT",
+      "raison": "commune non géocodée",
+      "created_at": "2026-07-02T07:06:51.581364+00:00"
+    },
+    {
+      "id": "2e18a19a75d4e699",
+      "banque": "BNP Paribas",
+      "commune": "Carcassonne",
+      "departement": "Aude",
+      "type": "fermeture",
+      "date_fermeture": "2025-01-01",
+      "statut": "confirmé",
+      "statut_temporel": "deja_fermee",
+      "fiabilite": 5,
+      "citation": "l'agence de la banque BNP-Paribas de la place Carnot ferme définitivement à partir de janvier 2025",
+      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPMDh3UlhMa0syeEJySlh0cUFHSldabEJ4b3I2LVd0bnJaMG5tVldCUVd2NGpLUXl1djZtX0Q5aUo3akl4dGpac2xjRk4zQkg1eV8zYmhDRUJEbnNoYlZKa0VuZlhrbVcwMWVVMmtaRGRnbU9EMVBBd3VpR2Vndzk1MUFOdFlZdUJkQ1ZNcjZqcHl0SFBZUG9fTGVGc3JCMGp3U2dCZzVENFNYeGRzVTJjN2NwNzllZUs5OWxrbHdNTW4yWE8tclZvS0Q2cXJXcHRuTU9yWGcyVnVUX0hIakFST2hrRHpURXd1TEFOcTg0UktGV1l5eWc?oc=5",
+      "titre": "A Carcassonne, l’agence de la banque BNP-Paribas de la place Carnot ferme définitivement à partir de janvier 2025 - L'Indépendant",
+      "source": "Google News",
+      "date": "Tue, 19 Nov 2024 08:00:00 GMT",
+      "raison": "commune non géocodée",
+      "created_at": "2026-07-02T07:07:29.709160+00:00"
+    },
+    {
       "id": "5834994d24f7cadd",
       "banque": "BNP Paribas",
       "commune": "Chalon-sur-Saône",
@@ -3093,11 +3129,142 @@
       "date": "Sun, 24 May 2026 07:00:00 GMT",
       "raison": "commune non géocodée",
       "created_at": "2026-07-02T06:55:01.642225+00:00"
+    },
+    {
+      "id": "f022b150b7207c5f",
+      "banque": "Crédit Municipal",
+      "commune": "Auxerre",
+      "departement": null,
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "confirmé",
+      "statut_temporel": "inconnu",
+      "fiabilite": 4,
+      "citation": "Fermeture du Crédit municipal : à Auxerre, la ville va créer une permanence de prêt sur gage",
+      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPdVpVSEFPNmdadVpoUFJvVEU4aWpheGQ2Mm9JM2ZxS1F6aTNaUnpzelM2UjVmYzUxenB1TkFseTE0Qkx3R1N1VGhxYkhJTTFUQ3RiOVI5MG13ZDZEUVF1QWFfU2xBeDFEQXVvNnZBeTFhQlB5QjVFdENNYzRlWnpTQk1WLTNqTmpKS1RlS0NYRUs1V3Y4cGRtYXZQR2k3cEFMd2NONlhmdDZEcUpLTE5Ld3ZQSkpKWjZHNkJCelI3YXIzaFp4X2txakdvY202RHZVcEY0WGpyVEZsLThSZ2o5SDFyYVg3bnBDTFM5MDJtMTFlc3JWcm5GSmI1X1U1cmVzX0NKUQ?oc=5",
+      "titre": "Fermeture du Crédit municipal : à Auxerre, la ville va créer une permanence de prêt sur gage - France 3 Régions",
+      "source": "Google News",
+      "date": "Mon, 30 Jun 2025 07:00:00 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-07-02T07:07:34.755358+00:00"
+    },
+    {
+      "id": "cad5126193c3d7d2",
+      "banque": "Crédit Agricole",
+      "commune": "Fonsala",
+      "departement": null,
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "confirmé",
+      "statut_temporel": "inconnu",
+      "fiabilite": 4,
+      "citation": "Fermeture du Crédit Agricole à Fonsala : « La satisfaction des clients ne semble pas être la priorité de la banque »",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQTjd1LWVyVzhjQ2xYYWtZLVkzZXdFdktYZ0xaM2FNTHp0dE45TFRsWUJrTWRmTWtsMzB2UnN3OXhZUHpFZ3BBM2xYaUFnVDQySWtMc0RiU3I4TEFGczkwOEtvWjZwY3NzWmxXRDkzMGxGS19SMFZEU0Z6OWZpc0pSNnhiVHZLMDJGc1ItWDVZSkh2R0JQSl9hai1iNVdjNVgwOC1zYXIyUmxzV0lqS05rYjVaMTJISlpreGx4aGRHWXZPeklKbUZiZVNGcWs5YlZZek9sUjBsT1VDcGR4TWhQYmphNVZyTGhJUUE?oc=5",
+      "titre": "Fermeture du Crédit Agricole à Fonsala : « La satisfaction des clients ne semble pas être la priorité de la banque » - Le Progrès",
+      "source": "Google News",
+      "date": "Fri, 25 Jul 2025 07:00:00 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-07-02T12:58:47.063400+00:00"
     }
   ],
-  "department_signals": [],
-  "vague_signals": [],
+  "department_signals": [
+    {
+      "id": "8cfff0ab1ae60b7a",
+      "banque": "Crédit Agricole",
+      "departement": "Haute-Loire",
+      "count": 12,
+      "communes_mentioned": "",
+      "confidence": 0.85,
+      "evidence": "la fermeture annoncée de 12 agences du Crédit Agricole",
+      "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxQbHlJMS1uamJhOUZ4U204b0dSRk1QX0I4cEZNd3ZTbjJpTFhPUjE4M3h3NDJEbEdmbWZCQ0l6ZmcxcE9KWVUyazVZSlZzRzQxVm5jMUx5N0NMbFZVUGpqeXRBWnhkZEhyeDQ4dEp3V3NWUXVnX0xNU3NpanNUaWZFS2pfaWE0SjJOMVZxSy14QnoyS3Rpa2M0czVNc3VOYzNBa01RdjRtSm5ISXNLYU9rVm5nOXVyRFRjV1VGdHB5Q0VWenl1Wlo1NXJfbUpYX05JZHZoOF81YkFWWUdobEJYc0JsbTNRRHBtNVYwQmNkTnktNFRuS1k0MGo0MUJRT25LR0dBTjg1bUZ2LUxhWEJPWDFORlk0bXVpRDBfRXlmdEVZZmpVaVBlaHZtMlY3UjA?oc=5",
+      "titre": "\"Aujourd'hui, le bon sens, il a foutu le camp\" : la Haute-Loire mobilisée contre la fermeture annoncée de 12 agences du Crédit Agricole - La Montagne",
+      "source": "Google News",
+      "date": "Wed, 16 Jul 2025 07:00:00 GMT",
+      "created_at": "2026-07-02T07:06:57.567096+00:00"
+    },
+    {
+      "id": "49ae8e9de41c16d0",
+      "banque": "Crédit Agricole",
+      "departement": "Lot",
+      "count": null,
+      "communes_mentioned": "",
+      "confidence": 0.7,
+      "evidence": "Panique, les agences du Crédit Agricole ferment les unes après les autres",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOUFZnbVRJcmprZngwaWw5VmxUZkQ3dGVfU1d2eWdjVy04eVhPWGM5UVppNGVVVy13QmR1ZWEwN2xmT2JsZ2JIRjhrQWVhVUNHSEZhMDI0WmpmWWN3Wm10Zkx2SXJhbHk2TVJUT1lVUGhZa01ROUNoV2hVQzJoeEJjMjlKOGY3Qkc3M1lEX3I1eEpaYWZMRFJVMGdKOWM5NThGYTc3WEE5Q0ZqT1czdVRSTVBWelVpdw?oc=5",
+      "titre": "Lot. Panique, les agences du Crédit Agricole ferment les unes après les autres - Actu.fr",
+      "source": "Google News",
+      "date": "Fri, 09 Aug 2024 07:00:00 GMT",
+      "created_at": "2026-07-02T07:06:46.864415+00:00"
+    }
+  ],
+  "vague_signals": [
+    {
+      "id": "febe1a37af1f69c6",
+      "banque": "Caisse d'Épargne Loire-Centre",
+      "scope": "regional",
+      "count": null,
+      "confidence": 0.6,
+      "evidence": "Un bon bilan 2025 pour la Caisse d'épargne Loire-Centre, marqué par de bonnes nouvelles et des fermetures",
+      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPSHYwOVJQVy14QnlxaThvN3FpZ2w0UVNqcEtHR01oLW9Ga3U4bDBLaFpYMklxZFExUC1ISVBTWEw0cnhPLS1sb0NjdUFaUE5FTjRlTkl3QVhuaHI5c2Vna2ppSTBsSEpYY2QzSUppSExkVzh5Nm5yREdfUlY2OXpnLWJZckh2NF9tY0MyS05rdzNrYWl5enBNUTFHRGRFS1VObDlnbVZEZUItaldKQkpHTVhUSDA1RXRPWlVlUU81bjdYWk9QMFJqcGtQV1F0cE5qWjVVQ0RXRmFaY2dDekx5RzQ5U205WDJrX0YtblpEenJrOEdHMENTRnBnTHROQUJ5WlVvdg?oc=5",
+      "titre": "Un bon bilan 2025 pour la Caisse d'épargne Loire-Centre, marqué par de bonnes nouvelles et des fermetures - La République du Centre",
+      "source": "Google News",
+      "date": "Wed, 29 Apr 2026 07:00:00 GMT",
+      "created_at": "2026-07-02T07:08:04.199284+00:00"
+    },
+    {
+      "id": "854f2619b8e800c8",
+      "banque": "Société Générale",
+      "scope": "national",
+      "count": null,
+      "confidence": 0.4,
+      "evidence": "suppression de 1 800 postes en France d'ici fin 2027, selon la CGT",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOLVIxcWZXM1BSUWNtV0Zab3VOSGJoUVVQeUF0UFh6U25uS2JjMmIycUZ3YzZWTDV2bFFkSjNnZXo0a3ZuRXQ4ZnNDVnFETFNXVWMtaDZrRW55VXB2b2VyemFJbzkwbHc5Y1ZheXZPaEozdW5zemRDS2JtX2NXOENtZjBMcnY2SzlGNlEtRGNXeHpZc2ltU253RnZJQnMtYU4yVl9waHlQU2pjbzVxcVNWSG81cW5FdUlJbkpEelhTaXFhWTJRRlJvaWlSZlR3YnFBVDBKaW13?oc=5",
+      "titre": "Société Générale : suppression de 1 800 postes en France d’ici fin 2027, selon la CGT - La Croix",
+      "source": "Google News",
+      "date": "Wed, 21 Jan 2026 08:00:00 GMT",
+      "created_at": "2026-07-02T07:07:20.568231+00:00"
+    },
+    {
+      "id": "59fecaf7bad39c82",
+      "banque": "Crédit Agricole",
+      "scope": "regional",
+      "count": null,
+      "confidence": 0.7,
+      "evidence": "Plusieurs agences du Crédit Agricole pourraient fermer en Haute-Vienne, une pétition a été lancée",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNRzhZeHBDVU9taTRCX1JjcVRnRXl0eDU3QWlESUEzRWdqZlFSV012dWdyVEhDeGItWklnR0U3WmRqdUN5TTJMYTkyNlNRUzdCVWV4WV9sMjR4QU9ULTRubHh6emt5eUNzd3AtZ0RIMGF2Y3lwa2JHejdaaUd1R2U5SDFrMnJHSjZGMi1JWDRLMjZjMXdCWWxRWk1DQ2hwcUtBZi1IcjVlSHdXYWVERFV5YzRCZ1d5UUlCalZJVV9hM0VZa1J4NWVEeWh3ZC1BdEc1ejJfSnlzcURmVnJlTWV0RUExMEtQMkM3QUxZUU5pUW9GUXlD?oc=5",
+      "titre": "Plusieurs agences du Crédit Agricole pourraient fermer en Haute-Vienne, une pétition a été lancée - Le Populaire du Centre",
+      "source": "Google News",
+      "date": "Thu, 11 Sep 2025 07:00:00 GMT",
+      "created_at": "2026-07-02T07:06:54.924852+00:00"
+    },
+    {
+      "id": "f7f44a86a8bbdc4d",
+      "banque": "Crédit Agricole",
+      "scope": "regional",
+      "count": null,
+      "confidence": 0.4,
+      "evidence": "La réorganisation du Crédit Agricole en projet",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPSWNMNy1fOG45VS1VVm9pcDVTbmE2RFA4MmRCVmZFZTEyX084bEtiMjVyeWtNczN5LUpjOVA2SHUyeGRXOEwteW04TVpOTWU5SXJGY1pFYktFc1BYVjlYVG1tR2VYTVFHUjlzRU16YXlYTDZGT1cxOFJ2Rk5oSmFiQWZYY25YbUkxVWkyeTlJQ0UzOE15dmI1ZlFNcw?oc=5",
+      "titre": "La réorganisation du Crédit Agricole en projet - PetitBleu.fr",
+      "source": "Google News",
+      "date": "Fri, 27 Feb 2026 08:00:00 GMT",
+      "created_at": "2026-07-02T07:07:47.122916+00:00"
+    }
+  ],
   "vigilances": [
+    {
+      "id": "0b53238a3c63be1c",
+      "banque": "Crédit Agricole",
+      "departement": "Haute-Loire",
+      "titre": "\"Aujourd'hui, le bon sens, il a foutu le camp\" : la Haute-Loire mobilisée contre la fermeture annoncée de 12 agences du Crédit Agricole - La Montagne",
+      "extrait": "la fermeture annoncée de 12 agences du Crédit Agricole",
+      "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxQbHlJMS1uamJhOUZ4U204b0dSRk1QX0I4cEZNd3ZTbjJpTFhPUjE4M3h3NDJEbEdmbWZCQ0l6ZmcxcE9KWVUyazVZSlZzRzQxVm5jMUx5N0NMbFZVUGpqeXRBWnhkZEhyeDQ4dEp3V3NWUXVnX0xNU3NpanNUaWZFS2pfaWE0SjJOMVZxSy14QnoyS3Rpa2M0czVNc3VOYzNBa01RdjRtSm5ISXNLYU9rVm5nOXVyRFRjV1VGdHB5Q0VWenl1Wlo1NXJfbUpYX05JZHZoOF81YkFWWUdobEJYc0JsbTNRRHBtNVYwQmNkTnktNFRuS1k0MGo0MUJRT25LR0dBTjg1bUZ2LUxhWEJPWDFORlk0bXVpRDBfRXlmdEVZZmpVaVBlaHZtMlY3UjA?oc=5",
+      "source": "Google News",
+      "date": "Wed, 16 Jul 2025 07:00:00 GMT",
+      "score": 4,
+      "raison": "signaux: dept(Crédit Agricole,Haute-Loire,count=12,communes=)",
+      "created_at": "2026-07-02T07:06:57.568029+00:00"
+    },
     {
       "id": "65310dd2b512582f",
       "banque": "Société Générale",
@@ -3138,6 +3305,19 @@
       "created_at": "2026-06-25T15:27:16.551314+00:00"
     },
     {
+      "id": "dcfb61288beff251",
+      "banque": "Crédit Agricole",
+      "departement": null,
+      "titre": "Plusieurs agences du Crédit Agricole pourraient fermer en Haute-Vienne, une pétition a été lancée - Le Populaire du Centre",
+      "extrait": "Plusieurs agences du Crédit Agricole pourraient fermer en Haute-Vienne, une pétition a été lancée",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNRzhZeHBDVU9taTRCX1JjcVRnRXl0eDU3QWlESUEzRWdqZlFSV012dWdyVEhDeGItWklnR0U3WmRqdUN5TTJMYTkyNlNRUzdCVWV4WV9sMjR4QU9ULTRubHh6emt5eUNzd3AtZ0RIMGF2Y3lwa2JHejdaaUd1R2U5SDFrMnJHSjZGMi1JWDRLMjZjMXdCWWxRWk1DQ2hwcUtBZi1IcjVlSHdXYWVERFV5YzRCZ1d5UUlCalZJVV9hM0VZa1J4NWVEeWh3ZC1BdEc1ejJfSnlzcURmVnJlTWV0RUExMEtQMkM3QUxZUU5pUW9GUXlD?oc=5",
+      "source": "Google News",
+      "date": "Thu, 11 Sep 2025 07:00:00 GMT",
+      "score": 4,
+      "raison": "signaux: vague(Crédit Agricole,regional,count=None)",
+      "created_at": "2026-07-02T07:06:54.925711+00:00"
+    },
+    {
       "id": "849e050677d47494",
       "banque": "Société Générale",
       "departement": null,
@@ -3175,6 +3355,19 @@
       "score": 4,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:46:15.416309+00:00"
+    },
+    {
+      "id": "c240325cf2243de9",
+      "banque": "Crédit Agricole",
+      "departement": "Lot",
+      "titre": "Lot. Panique, les agences du Crédit Agricole ferment les unes après les autres - Actu.fr",
+      "extrait": "Panique, les agences du Crédit Agricole ferment les unes après les autres",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOUFZnbVRJcmprZngwaWw5VmxUZkQ3dGVfU1d2eWdjVy04eVhPWGM5UVppNGVVVy13QmR1ZWEwN2xmT2JsZ2JIRjhrQWVhVUNHSEZhMDI0WmpmWWN3Wm10Zkx2SXJhbHk2TVJUT1lVUGhZa01ROUNoV2hVQzJoeEJjMjlKOGY3Qkc3M1lEX3I1eEpaYWZMRFJVMGdKOWM5NThGYTc3WEE5Q0ZqT1czdVRSTVBWelVpdw?oc=5",
+      "source": "Google News",
+      "date": "Fri, 09 Aug 2024 07:00:00 GMT",
+      "score": 4,
+      "raison": "signaux: dept(Crédit Agricole,Lot,count=None,communes=)",
+      "created_at": "2026-07-02T07:06:46.865370+00:00"
     },
     {
       "id": "e8348433b37789aa",
@@ -3294,6 +3487,19 @@
       "created_at": "2026-06-25T15:43:48.730818+00:00"
     },
     {
+      "id": "666a1737fe6759d1",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Fermeture de la SFG : les ouvriers de Bernaville manifestent à La Défense ce mercredi 29 octobre - Actu.fr",
+      "extrait": "TITRE: Fermeture de la SFG : les ouvriers de Bernaville manifestent à La Défense ce mercredi 29 octobre - Actu.fr SOURCE: Google News DATE: Wed, 29 Oct 2025 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMi7gFBVV95cUxPNy10b0lpVGtSenN1ejVPZ0VvVVIta3E3dVpSX05NREx6alRvYnluODltNTI1LU9EdmREQjVSTy1GR1ZEQ05FQUhFUHNpOXJkWGo5cjVSMFJiUUlFZi1NMmViVFZBMlJ4cFp1eGxHQl9kclAtTVZjT25EVXE3cjBxTmdJb19nZWJIQ3p3WTRrbjZZS0hIT3BNVUhVOU5ibldlMWszLW1KNzllc3doQWJRRDVnSGhJUnQyRUh5WmVNZE9TQ1R6dWxaQVZGRHFiVWxxNWhf",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPNy10b0lpVGtSenN1ejVPZ0VvVVIta3E3dVpSX05NREx6alRvYnluODltNTI1LU9EdmREQjVSTy1GR1ZEQ05FQUhFUHNpOXJkWGo5cjVSMFJiUUlFZi1NMmViVFZBMlJ4cFp1eGxHQl9kclAtTVZjT25EVXE3cjBxTmdJb19nZWJIQ3p3WTRrbjZZS0hIT3BNVUhVOU5ibldlMWszLW1KNzllc3doQWJRRDVnSGhJUnQyRUh5WmVNZE9TQ1R6dWxaQVZGRHFiVWxxNWhfTk5qMDdpVkV0ZGF5Tks0ZVYtS3lORlFDOFhn?oc=5",
+      "source": "Google News",
+      "date": "Wed, 29 Oct 2025 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-02T07:08:19.417701+00:00"
+    },
+    {
       "id": "307568f9c07bdf51",
       "banque": "Caisse d'Épargne",
       "departement": null,
@@ -3331,6 +3537,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-26T07:07:21.610364+00:00"
+    },
+    {
+      "id": "8c6e5f5c80c359f2",
+      "banque": "Caisse d'Épargne",
+      "departement": null,
+      "titre": "Un bon bilan 2025 pour la Caisse d'épargne Loire-Centre, marqué par de bonnes nouvelles et des fermetures - La République du Centre",
+      "extrait": "Un bon bilan 2025 pour la Caisse d'épargne Loire-Centre, marqué par de bonnes nouvelles et des fermetures",
+      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPSHYwOVJQVy14QnlxaThvN3FpZ2w0UVNqcEtHR01oLW9Ga3U4bDBLaFpYMklxZFExUC1ISVBTWEw0cnhPLS1sb0NjdUFaUE5FTjRlTkl3QVhuaHI5c2Vna2ppSTBsSEpYY2QzSUppSExkVzh5Nm5yREdfUlY2OXpnLWJZckh2NF9tY0MyS05rdzNrYWl5enBNUTFHRGRFS1VObDlnbVZEZUItaldKQkpHTVhUSDA1RXRPWlVlUU81bjdYWk9QMFJqcGtQV1F0cE5qWjVVQ0RXRmFaY2dDekx5RzQ5U205WDJrX0YtblpEenJrOEdHMENTRnBnTHROQUJ5WlVvdg?oc=5",
+      "source": "Google News",
+      "date": "Wed, 29 Apr 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "signaux: vague(Caisse d'Épargne,regional,count=None)",
+      "created_at": "2026-07-02T07:08:04.200373+00:00"
     },
     {
       "id": "26bca3dc3d62fd16",
@@ -3580,6 +3799,19 @@
       "created_at": "2026-06-25T15:30:28.476868+00:00"
     },
     {
+      "id": "d261525ab8d8a2d2",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Santander UK va fermer 95 agences, mettant en danger 750 emplois en raison du virage vers la banque numérique - Investing.com France",
+      "extrait": "TITRE: Santander UK va fermer 95 agences, mettant en danger 750 emplois en raison du virage vers la banque numérique - Investing.com France SOURCE: Google News DATE: Wed, 19 Mar 2025 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMi_gFBVV95cUxOZ0d1bzdTY3lGUFp3NmFPNjZVWFJSM1BGOGQtVnVTSE11RkhRR0pCc0NBbndBOHVscXl5MnRqQjVHZjNDNFZSR0VzSUZ2bVNqZ3IycXpZelBJMVlDeFp2Q0dwRi1WSGYwV3pjbHpWam1yU245QzNFdHgtRmdWV2JsamRfQUJXdFE2VFE4YzI3eW4xSVF1dndfejZkNUFFRDM5bFFMbHJGNlNIMVBYaVFxNXQ1cFAyLUVpWElLbWVLZE",
+      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOZ0d1bzdTY3lGUFp3NmFPNjZVWFJSM1BGOGQtVnVTSE11RkhRR0pCc0NBbndBOHVscXl5MnRqQjVHZjNDNFZSR0VzSUZ2bVNqZ3IycXpZelBJMVlDeFp2Q0dwRi1WSGYwV3pjbHpWam1yU245QzNFdHgtRmdWV2JsamRfQUJXdFE2VFE4YzI3eW4xSVF1dndfejZkNUFFRDM5bFFMbHJGNlNIMVBYaVFxNXQ1cFAyLUVpWElLbWVLZEdZcEpQb3NSajEwZVhsa2NHOHRhX1FMZzNYalVFbkJFbUIyVkxmeHY3VFh1OGFER1RfaE5PLTZlLU9BQUFhZw?oc=5",
+      "source": "Google News",
+      "date": "Wed, 19 Mar 2025 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-02T07:07:32.007821+00:00"
+    },
+    {
       "id": "02513c790b35210c",
       "banque": "Crédit Mutuel",
       "departement": null,
@@ -3723,6 +3955,19 @@
       "created_at": "2026-06-25T15:37:08.982502+00:00"
     },
     {
+      "id": "42907e5fd87a38d4",
+      "banque": "Crédit Mutuel",
+      "departement": null,
+      "titre": "«Une banque, ça fait vivre un quartier» : la fermeture du Crédit mutuel ne passe pas à Saint-Brieuc - Ouest-France",
+      "extrait": "TITRE: «Une banque, ça fait vivre un quartier» : la fermeture du Crédit mutuel ne passe pas à Saint-Brieuc - Ouest-France SOURCE: Google News DATE: Wed, 16 Apr 2025 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMilgJBVV95cUxPelktd0o2M3Zrc25qUW9tOG5lSUZ2TWxIWDFRMUxkREtkbkk0dW5LcnVVNU5BRnB1M1JjZ3hSVzVkQi1FVW56NkVyZ2hOVjk0aG9XeFR3VFp0WXJwc0FPbVgzWHRLYXlObERBSlVKeDhKeWs0RFhlNHRsbm45TU9fUmdKYzk0VjBwUWs2WmdNM1FNcnVzZTFiWFBrNFVuTWpHUGJwcVhmTldEclctVHJGWXltUk9icldFV2xOckd3cnFiWG1YSV9QNmc5UVZW",
+      "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxPelktd0o2M3Zrc25qUW9tOG5lSUZ2TWxIWDFRMUxkREtkbkk0dW5LcnVVNU5BRnB1M1JjZ3hSVzVkQi1FVW56NkVyZ2hOVjk0aG9XeFR3VFp0WXJwc0FPbVgzWHRLYXlObERBSlVKeDhKeWs0RFhlNHRsbm45TU9fUmdKYzk0VjBwUWs2WmdNM1FNcnVzZTFiWFBrNFVuTWpHUGJwcVhmTldEclctVHJGWXltUk9icldFV2xOckd3cnFiWG1YSV9QNmc5UVZWdGFydTg0SUl5THN6X0NlREVTd2dVdVE0NTQ5RE9DQWNBNWVad1FpdFZlRlRZX3pOZFliOXhmYlg2MHhRUTBmQ1AxaGtwNXFWQQ?oc=5",
+      "source": "Google News",
+      "date": "Wed, 16 Apr 2025 07:00:00 GMT",
+      "score": 3,
+      "raison": "fermeture non publiée: commune non géocodée",
+      "created_at": "2026-07-02T07:06:51.585412+00:00"
+    },
+    {
       "id": "7b43147db6625b82",
       "banque": "Société Générale",
       "departement": null,
@@ -3851,6 +4096,32 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-29T09:14:19.446642+00:00"
+    },
+    {
+      "id": "68a4382552104ac4",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Le groupe américain MoneyGram, spécialiste des transferts d'argent, va fermer toutes ses agences en propre et licencier ses effectifs en France - Nice-Matin",
+      "extrait": "TITRE: Le groupe américain MoneyGram, spécialiste des transferts d'argent, va fermer toutes ses agences en propre et licencier ses effectifs en France - Nice-Matin SOURCE: Google News DATE: Wed, 11 Jun 2025 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMimgJBVV95cUxNSWRuWEVQamVuVkRsQnFuQ29CeTVWbnZsVXFHcU02MkxQWG12S25VSXk5M1d0NjZHNUVhbzVFdEJGbUNlVzlIRHBkOVZ5cXpKalFlRE9wbkNZckhKX1REMlVzbXFqRHRWMmxFT1UxVWR4OElsRFFMNFU0RVJkbGNoTWNzblF5WmJmdVFyRjFCeXpvaUZ0b09xMUc5ZXl0UG44dzNaUEpVSzVud1VtUz",
+      "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxNSWRuWEVQamVuVkRsQnFuQ29CeTVWbnZsVXFHcU02MkxQWG12S25VSXk5M1d0NjZHNUVhbzVFdEJGbUNlVzlIRHBkOVZ5cXpKalFlRE9wbkNZckhKX1REMlVzbXFqRHRWMmxFT1UxVWR4OElsRFFMNFU0RVJkbGNoTWNzblF5WmJmdVFyRjFCeXpvaUZ0b09xMUc5ZXl0UG44dzNaUEpVSzVud1VtUzBNVXJudGdhUWtpdTVTV2o2MkNzcGpIMEluSG0tQmNIempwcnhFSmlPaTU4RnhpbmVqQU9xNU5NMXRCdzFfMXk0SWR5T1dCRDhrY3JVS1RMbFo3QkdkR2ZnWDJXRlpXbzV5THc3bXRERHdFUlE?oc=5",
+      "source": "Google News",
+      "date": "Wed, 11 Jun 2025 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-02T12:59:05.412979+00:00"
+    },
+    {
+      "id": "84bd0c2d03222a34",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Après le cambriolage, l’agence de la Poste à Guégon fermée le temps d’effectuer les réparations - Ouest-France",
+      "extrait": "TITRE: Après le cambriolage, l’agence de la Poste à Guégon fermée le temps d’effectuer les réparations - Ouest-France SOURCE: Google News DATE: Wed, 11 Feb 2026 08:00:00 GMT URL: https://news.google.com/rss/articles/CBMiiwJBVV95cUxPVS1JX1JfQWFIV0VzLTdFRU44Uk9JTDdQXzkzM0NiOTJ2SHE5eXZxQkZSRzhISGxnWnVFWjRiX1JDV3JKaXpYbjJFU3d1OHF3SlhkWGNRU2ZFOWZ6emFpN3BiV0pFcVRmcDF5Z2hySXFSRkNiaXEwSk1acm9Xd0gtMEZlNGVLR1pDWnMwMVZnS18xS0Y1REs0Rm9TSE1tMEZKTHJocHFfVGQ5ZE5YdHF0NDlkRW01amE3YWxxWUNlZzJOREtubEY3cVZLRVhRT0df",
+      "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPVS1JX1JfQWFIV0VzLTdFRU44Uk9JTDdQXzkzM0NiOTJ2SHE5eXZxQkZSRzhISGxnWnVFWjRiX1JDV3JKaXpYbjJFU3d1OHF3SlhkWGNRU2ZFOWZ6emFpN3BiV0pFcVRmcDF5Z2hySXFSRkNiaXEwSk1acm9Xd0gtMEZlNGVLR1pDWnMwMVZnS18xS0Y1REs0Rm9TSE1tMEZKTHJocHFfVGQ5ZE5YdHF0NDlkRW01amE3YWxxWUNlZzJOREtubEY3cVZLRVhRT0dfN0VCbVF5LTVVQzZHd0ZNTE96TThHRTJGYU1RTlA2QnJiT04taHRPdWY5eHZxQ2ZmQ2JoQ1VWSS04LXM?oc=5",
+      "source": "Google News",
+      "date": "Wed, 11 Feb 2026 08:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-02T07:07:57.203039+00:00"
     },
     {
       "id": "4939f1284737cd53",
@@ -4360,6 +4631,19 @@
       "created_at": "2026-06-25T15:21:28.619705+00:00"
     },
     {
+      "id": "05f50a3c11d70d52",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Carte scolaire : 26 fermetures de classes prévues dans le Calaisis, 15 pour la ville de Calais - La Voix du Nord",
+      "extrait": "TITRE: Carte scolaire : 26 fermetures de classes prévues dans le Calaisis, 15 pour la ville de Calais - La Voix du Nord SOURCE: Google News DATE: Tue, 25 Feb 2025 08:00:00 GMT URL: https://news.google.com/rss/articles/CBMiywFBVV95cUxPYk9CNXBVMl9CbTNWeGVrN0UwSml0aURWaVg4dEp3X0kwQkFSdkNaa2VGaExKWU1ZNzBKLWNfWUU4M1Jmbk8yNnZTekpkQ2pXY2lSVmRPVDFETTJzaDZNWUZLZTZqYmtTMC1iRlFUT2xBbmtqcGlHZVoyUHVicUZReUs1NkJRVTlxNXpMTFpPYkpFLW5La2FYSGg4QzJYUm1USy00Q3RBVDAtdVhXRW5pdTh0VThDclJCWU9BMm84d3p4a3pOWGFHY09rNA?oc=",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPYk9CNXBVMl9CbTNWeGVrN0UwSml0aURWaVg4dEp3X0kwQkFSdkNaa2VGaExKWU1ZNzBKLWNfWUU4M1Jmbk8yNnZTekpkQ2pXY2lSVmRPVDFETTJzaDZNWUZLZTZqYmtTMC1iRlFUT2xBbmtqcGlHZVoyUHVicUZReUs1NkJRVTlxNXpMTFpPYkpFLW5La2FYSGg4QzJYUm1USy00Q3RBVDAtdVhXRW5pdTh0VThDclJCWU9BMm84d3p4a3pOWGFHY09rNA?oc=5",
+      "source": "Google News",
+      "date": "Tue, 25 Feb 2025 08:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-02T07:08:24.773893+00:00"
+    },
+    {
       "id": "555199031063e814",
       "banque": "Crédit Agricole",
       "departement": null,
@@ -4529,6 +4813,19 @@
       "created_at": "2026-06-25T15:44:43.901694+00:00"
     },
     {
+      "id": "58b0232da4003cdb",
+      "banque": "BNP Paribas",
+      "departement": null,
+      "titre": "A Carcassonne, l’agence de la banque BNP-Paribas de la place Carnot ferme définitivement à partir de janvier 2025 - L'Indépendant",
+      "extrait": "TITRE: A Carcassonne, l’agence de la banque BNP-Paribas de la place Carnot ferme définitivement à partir de janvier 2025 - L'Indépendant SOURCE: Google News DATE: Tue, 19 Nov 2024 08:00:00 GMT URL: https://news.google.com/rss/articles/CBMi9gFBVV95cUxPMDh3UlhMa0syeEJySlh0cUFHSldabEJ4b3I2LVd0bnJaMG5tVldCUVd2NGpLUXl1djZtX0Q5aUo3akl4dGpac2xjRk4zQkg1eV8zYmhDRUJEbnNoYlZKa0VuZlhrbVcwMWVVMmtaRGRnbU9EMVBBd3VpR2Vndzk1MUFOdFlZdUJkQ1ZNcjZqcHl0SFBZUG9fTGVGc3JCMGp3U2dCZzVENFNYeGRzVTJjN2NwNzllZUs5OWxrbHdNTW4yW",
+      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPMDh3UlhMa0syeEJySlh0cUFHSldabEJ4b3I2LVd0bnJaMG5tVldCUVd2NGpLUXl1djZtX0Q5aUo3akl4dGpac2xjRk4zQkg1eV8zYmhDRUJEbnNoYlZKa0VuZlhrbVcwMWVVMmtaRGRnbU9EMVBBd3VpR2Vndzk1MUFOdFlZdUJkQ1ZNcjZqcHl0SFBZUG9fTGVGc3JCMGp3U2dCZzVENFNYeGRzVTJjN2NwNzllZUs5OWxrbHdNTW4yWE8tclZvS0Q2cXJXcHRuTU9yWGcyVnVUX0hIakFST2hrRHpURXd1TEFOcTg0UktGV1l5eWc?oc=5",
+      "source": "Google News",
+      "date": "Tue, 19 Nov 2024 08:00:00 GMT",
+      "score": 3,
+      "raison": "fermeture non publiée: commune non géocodée",
+      "created_at": "2026-07-02T07:07:29.713718+00:00"
+    },
+    {
       "id": "a983bf2c42c313f7",
       "banque": "Société Générale",
       "departement": null,
@@ -4618,6 +4915,32 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:23:32.094406+00:00"
+    },
+    {
+      "id": "cf1f6eb39d75960e",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Intoxications alimentaires au Burger King de Lure : le préfet ordonne la fermeture administrative du restaurant - ici.fr",
+      "extrait": "TITRE: Intoxications alimentaires au Burger King de Lure : le préfet ordonne la fermeture administrative du restaurant - ici.fr SOURCE: Google News DATE: Tue, 16 Sep 2025 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMiiwJBVV95cUxOTzBiZ09Mb0pmRHFWb1M0YmhlUVZXTzVpaFY1bGJTcVJXamdjLXFNRTFjcjNUWTJocGtNcmk0QTRrMFJSWTVIOC1tcVVtMTU2TnN4b3BFUS03SmJDTDVuaXNEaWxUcDJVRmNzeTVRZjZUalhnajJ6VmhnVW9XNGthZ0QyblMyQUhSUnpUMUpwOWdfNDMxRXd6T1dsdmdMWkt6Z2ZRYTZVRWFtMzFIUWxfSFcta0ZxZzNmZXJ4ejZHWjMzd2lHT202MV",
+      "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxOTzBiZ09Mb0pmRHFWb1M0YmhlUVZXTzVpaFY1bGJTcVJXamdjLXFNRTFjcjNUWTJocGtNcmk0QTRrMFJSWTVIOC1tcVVtMTU2TnN4b3BFUS03SmJDTDVuaXNEaWxUcDJVRmNzeTVRZjZUalhnajJ6VmhnVW9XNGthZ0QyblMyQUhSUnpUMUpwOWdfNDMxRXd6T1dsdmdMWkt6Z2ZRYTZVRWFtMzFIUWxfSFcta0ZxZzNmZXJ4ejZHWjMzd2lHT202MVVwcXBsb3Z3T3BwQTJFdDczSGVNQUlON0d2SE5FM0lwWDFNY1B6SkF0elVNd3YyUHVlTXZ3eU1kRnkyMUY5SjJVSlE?oc=5",
+      "source": "Google News",
+      "date": "Tue, 16 Sep 2025 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-02T07:08:26.960900+00:00"
+    },
+    {
+      "id": "b0f850a07e4aba41",
+      "banque": "LCL",
+      "departement": null,
+      "titre": "« Odeurs nauséabondes », « intoxications alimentaires »… Un Burger King doit fermer ses portes - Ouest-France",
+      "extrait": "TITRE: « Odeurs nauséabondes », « intoxications alimentaires »… Un Burger King doit fermer ses portes - Ouest-France SOURCE: Google News DATE: Tue, 16 Sep 2025 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMijwJBVV95cUxPZEpqZW1KdVpaWkVOOEw4dEtSeFhiRlNOVlFWcG82SjdkQm5Ea01pOE80eDF6MXZfZTVjdl8zUnd4NUozOXAyV1pPb2tiREdvc3ZqOXFtWWFmVDhaeTlCbXMxcnlBc0RSdmJsUWQ4SlplMTczMEVfQmZTVjBLLW1zcjVhSWRCWmR0alVRdkxySE9TbGtDZVQzT1Vab3hYd0pWWEk0QzFFVGF1NlhGZHNCTVE5cDJOMXNDT3JINlQ1S3lCLUx0cGtrUzVCbGRHT2VKV",
+      "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxPZEpqZW1KdVpaWkVOOEw4dEtSeFhiRlNOVlFWcG82SjdkQm5Ea01pOE80eDF6MXZfZTVjdl8zUnd4NUozOXAyV1pPb2tiREdvc3ZqOXFtWWFmVDhaeTlCbXMxcnlBc0RSdmJsUWQ4SlplMTczMEVfQmZTVjBLLW1zcjVhSWRCWmR0alVRdkxySE9TbGtDZVQzT1Vab3hYd0pWWEk0QzFFVGF1NlhGZHNCTVE5cDJOMXNDT3JINlQ1S3lCLUx0cGtrUzVCbGRHT2VKVHBSZVlYMXdET1dTY2NuSjN6Y1I2UzlndmJNak94UDlOWGk2ZVBfeDUxTzctRnctX0JtalNxc3BGSHVYUXJB?oc=5",
+      "source": "Google News",
+      "date": "Tue, 16 Sep 2025 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-02T12:59:12.976649+00:00"
     },
     {
       "id": "4c5126be20514727",
@@ -4891,6 +5214,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:42:22.869118+00:00"
+    },
+    {
+      "id": "cfe55cdfaad009c2",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Orléans : le bureau de poste des Blossières fermera définitivement le 31 octobre - ici.fr",
+      "extrait": "TITRE: Orléans : le bureau de poste des Blossières fermera définitivement le 31 octobre - ici.fr SOURCE: Google News DATE: Tue, 03 Sep 2024 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMixgFBVV95cUxQamZhRjl2Y0VrTktyV0U0aDM4N1NudEc0d25TZkM0RlNNekpnN2ZsZUhWbVY1c2M4cHN5SGxwVVJicVZoTUtHNUppdXJ6Y2FKREszd1JuMTV1NV96Si1hLUVNenMyOUxnTHhOQjk3TGdKY3FZcjI2ZjNuYzNrXzdZdGZmOC1tVF80cGhUNE1PSTZZMzlhV2MwRkpDWi1hQ3pNS3pmcFdRM05SUktub2ZrQk9mQVh4QlhwSDJuVzBrYXNMSFFzS0E?oc=5 <a href=\"https://news.google",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQamZhRjl2Y0VrTktyV0U0aDM4N1NudEc0d25TZkM0RlNNekpnN2ZsZUhWbVY1c2M4cHN5SGxwVVJicVZoTUtHNUppdXJ6Y2FKREszd1JuMTV1NV96Si1hLUVNenMyOUxnTHhOQjk3TGdKY3FZcjI2ZjNuYzNrXzdZdGZmOC1tVF80cGhUNE1PSTZZMzlhV2MwRkpDWi1hQ3pNS3pmcFdRM05SUktub2ZrQk9mQVh4QlhwSDJuVzBrYXNMSFFzS0E?oc=5",
+      "source": "Google News",
+      "date": "Tue, 03 Sep 2024 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-02T07:08:16.457848+00:00"
     },
     {
       "id": "230a44e9128629e3",
@@ -5569,6 +5905,19 @@
       "created_at": "2026-06-25T15:40:33.966636+00:00"
     },
     {
+      "id": "8d2b6a44639dcdac",
+      "banque": "BNP Paribas",
+      "departement": null,
+      "titre": "À Saint-Malo, l’accueil de la CPAM va être fermé quelques jours pour des travaux de rénovation - Ouest-France",
+      "extrait": "TITRE: À Saint-Malo, l’accueil de la CPAM va être fermé quelques jours pour des travaux de rénovation - Ouest-France SOURCE: Google News DATE: Thu, 17 Oct 2024 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMikAJBVV95cUxNbHlQREFfTjNCc1R2MjZ2amRwN2EwbXZxYXRQZ3NBLTczWjN5X1pnTG5OZjF5dzNqbnprY1BkSlhWTXNXbWJjVjBVa2ViVUludDM5bWw3bGtIR1VGRGhMS0ZPMHNpMThpYnVMcWx3NW13cThPZW9ubTR4VGUxT1VMNmVqclBQUEU5d2p4WWlKcVlGTU1BaFJJMWZaRlNHOEpjaUJOVEJvZWtIOGw1ZURCWkVVNE1PcTJLUWdMR1RJM25PRFo2SzNOSTB1UU94aUFYQ",
+      "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxNbHlQREFfTjNCc1R2MjZ2amRwN2EwbXZxYXRQZ3NBLTczWjN5X1pnTG5OZjF5dzNqbnprY1BkSlhWTXNXbWJjVjBVa2ViVUludDM5bWw3bGtIR1VGRGhMS0ZPMHNpMThpYnVMcWx3NW13cThPZW9ubTR4VGUxT1VMNmVqclBQUEU5d2p4WWlKcVlGTU1BaFJJMWZaRlNHOEpjaUJOVEJvZWtIOGw1ZURCWkVVNE1PcTJLUWdMR1RJM25PRFo2SzNOSTB1UU94aUFYQ3pGbUhtNUV4d25Od0RQbl9vbUEzZlNuS251ckZfa0JBSlg0NXVXN3FlOEFtLXE2NjZYUVppYndxQmZQUFhOUg?oc=5",
+      "source": "Google News",
+      "date": "Thu, 17 Oct 2024 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-02T07:08:22.346757+00:00"
+    },
+    {
       "id": "20c5b47cbecb52c6",
       "banque": "Crédit Agricole",
       "departement": null,
@@ -6102,6 +6451,19 @@
       "created_at": "2026-06-25T15:45:34.555556+00:00"
     },
     {
+      "id": "8220f8f10a0f4cc9",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Lyon. Cette commerçante ferme son magasin après 65 ans : \"La ville a été fermée\" - Actu.fr",
+      "extrait": "TITRE: Lyon. Cette commerçante ferme son magasin après 65 ans : \"La ville a été fermée\" - Actu.fr SOURCE: Google News DATE: Sun, 25 Jan 2026 08:00:00 GMT URL: https://news.google.com/rss/articles/CBMi0wFBVV95cUxNQ2x5bEhFWTgtZDhhcnhSV0x0LUNScWVnSTB6N3J3UnRONnF2Q2VLOFZqTHlROXFwTTVKbnJRUUdpQmRuMTJjendDTFUzcW9jTU5ZZ2ZnbHptMnBhZHg3ZTN3bGdTRHFrZUVMOWlwV0JkZmR6QTlZUEFzZlpaRlpxVjAzT2szWmRJOEh5NkpJTHdaUDIwb0NRaWFieWwwMm1Ra2pvZG5nNkZtb0ZCd0ttbTJYZFdSSkJYTFQwSGdCbXVxTzJuZHlqaFZEUThONFgtbFVV?oc=5 <a href=\"h",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNQ2x5bEhFWTgtZDhhcnhSV0x0LUNScWVnSTB6N3J3UnRONnF2Q2VLOFZqTHlROXFwTTVKbnJRUUdpQmRuMTJjendDTFUzcW9jTU5ZZ2ZnbHptMnBhZHg3ZTN3bGdTRHFrZUVMOWlwV0JkZmR6QTlZUEFzZlpaRlpxVjAzT2szWmRJOEh5NkpJTHdaUDIwb0NRaWFieWwwMm1Ra2pvZG5nNkZtb0ZCd0ttbTJYZFdSSkJYTFQwSGdCbXVxTzJuZHlqaFZEUThONFgtbFVV?oc=5",
+      "source": "Google News",
+      "date": "Sun, 25 Jan 2026 08:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-02T07:08:14.093206+00:00"
+    },
+    {
       "id": "4d6282f304b694f8",
       "banque": "Crédit Agricole",
       "departement": null,
@@ -6126,6 +6488,19 @@
       "score": 3,
       "raison": "fermeture non publiée: commune non géocodée",
       "created_at": "2026-07-02T06:55:01.646635+00:00"
+    },
+    {
+      "id": "d56c59fd0ff4a6b5",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "La Banque Centrale d'Égypte ferme ses banques du 26 au 31 mai pour l'Aïd Al-Adha - Lepetitjournal.com",
+      "extrait": "TITRE: La Banque Centrale d'Égypte ferme ses banques du 26 au 31 mai pour l'Aïd Al-Adha - Lepetitjournal.com SOURCE: Google News DATE: Sun, 24 May 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMizAFBVV95cUxNNWJJMEhEUU93SjRKbndaZXJZMVA0ZGlrNWFGcDVYRWJadUN3ZXFxY18yMW9fTVJsNFZ2M2dVc1lHMkNYT0N4SHAzbWgzS21aX3JhRUY1SGR3ekhFeXhDeXV5VklmRGs4bEVZNVFDRUVTWURPejE5ZFlpa3BZWmZpOFVrYmhBSVVRYXI5VXlRSEF3WnJMMGhTWEtpUHFlTlZGZW5LSW45UVVkNXB3SHJmSTMxb051Q0N5dFJIR2xYejdzRHBGTGRZUU1JdlE?oc=5 <a href=",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNNWJJMEhEUU93SjRKbndaZXJZMVA0ZGlrNWFGcDVYRWJadUN3ZXFxY18yMW9fTVJsNFZ2M2dVc1lHMkNYT0N4SHAzbWgzS21aX3JhRUY1SGR3ekhFeXhDeXV5VklmRGs4bEVZNVFDRUVTWURPejE5ZFlpa3BZWmZpOFVrYmhBSVVRYXI5VXlRSEF3WnJMMGhTWEtpUHFlTlZGZW5LSW45UVVkNXB3SHJmSTMxb051Q0N5dFJIR2xYejdzRHBGTGRZUU1JdlE?oc=5",
+      "source": "Google News",
+      "date": "Sun, 24 May 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-02T12:58:54.043180+00:00"
     },
     {
       "id": "8b9405167f96ee18",
@@ -6661,6 +7036,19 @@
       "created_at": "2026-06-25T15:27:29.241309+00:00"
     },
     {
+      "id": "671d19f7f9a21557",
+      "banque": "LCL",
+      "departement": null,
+      "titre": "« On nous a laissés tomber » : plus de 100 élèves privés de permis avec la fermeture brutale d’une auto-école - Le Dauphiné Libéré",
+      "extrait": "TITRE: « On nous a laissés tomber » : plus de 100 élèves privés de permis avec la fermeture brutale d’une auto-école - Le Dauphiné Libéré SOURCE: Google News DATE: Sat, 16 May 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMi4wFBVV95cUxQVW43VzdIanhNWU5NLTJOVkpUWFBqRUJnS2xxaTlOUzVGVlk3ODUwUGxmNEZlclgzY1RmbmoycDBlWTl4OEFEN3hKeXdQZnJpSDdJYUhQZG9oWFluZjBVVXhkaTZHdzhIc3hSQkRmV0NSMzV1YXBBVjVxckVBa0lGVElvRlZFb0REdTlJSGNwSFFKTG5Ld1FQczJVNWJZN2NKa0JUUVZaTmg4QVh2Sk85ZGxURjhXdUZ3MEFHS0k0M205",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQVW43VzdIanhNWU5NLTJOVkpUWFBqRUJnS2xxaTlOUzVGVlk3ODUwUGxmNEZlclgzY1RmbmoycDBlWTl4OEFEN3hKeXdQZnJpSDdJYUhQZG9oWFluZjBVVXhkaTZHdzhIc3hSQkRmV0NSMzV1YXBBVjVxckVBa0lGVElvRlZFb0REdTlJSGNwSFFKTG5Ld1FQczJVNWJZN2NKa0JUUVZaTmg4QVh2Sk85ZGxURjhXdUZ3MEFHS0k0M205NEN3ZjM1SGlVVm1ldHdTU19vTm1TSXBaNE5hMDVtcTFSQQ?oc=5",
+      "source": "Google News",
+      "date": "Sat, 16 May 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-02T12:58:56.305276+00:00"
+    },
+    {
       "id": "19b84526cf84f73c",
       "banque": "Crédit Agricole",
       "departement": null,
@@ -6908,6 +7296,19 @@
       "created_at": "2026-06-25T15:30:46.292445+00:00"
     },
     {
+      "id": "895413f649a63197",
+      "banque": "Crédit Municipal",
+      "departement": null,
+      "titre": "Fermeture du Crédit municipal : à Auxerre, la ville va créer une permanence de prêt sur gage - France 3 Régions",
+      "extrait": "TITRE: Fermeture du Crédit municipal : à Auxerre, la ville va créer une permanence de prêt sur gage - France 3 Régions SOURCE: Google News DATE: Mon, 30 Jun 2025 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMihAJBVV95cUxPdVpVSEFPNmdadVpoUFJvVEU4aWpheGQ2Mm9JM2ZxS1F6aTNaUnpzelM2UjVmYzUxenB1TkFseTE0Qkx3R1N1VGhxYkhJTTFUQ3RiOVI5MG13ZDZEUVF1QWFfU2xBeDFEQXVvNnZBeTFhQlB5QjVFdENNYzRlWnpTQk1WLTNqTmpKS1RlS0NYRUs1V3Y4cGRtYXZQR2k3cEFMd2NONlhmdDZEcUpLTE5Ld3ZQSkpKWjZHNkJCelI3YXIzaFp4X2txakdvY202RHZ",
+      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPdVpVSEFPNmdadVpoUFJvVEU4aWpheGQ2Mm9JM2ZxS1F6aTNaUnpzelM2UjVmYzUxenB1TkFseTE0Qkx3R1N1VGhxYkhJTTFUQ3RiOVI5MG13ZDZEUVF1QWFfU2xBeDFEQXVvNnZBeTFhQlB5QjVFdENNYzRlWnpTQk1WLTNqTmpKS1RlS0NYRUs1V3Y4cGRtYXZQR2k3cEFMd2NONlhmdDZEcUpLTE5Ld3ZQSkpKWjZHNkJCelI3YXIzaFp4X2txakdvY202RHZVcEY0WGpyVEZsLThSZ2o5SDFyYVg3bnBDTFM5MDJtMTFlc3JWcm5GSmI1X1U1cmVzX0NKUQ?oc=5",
+      "source": "Google News",
+      "date": "Mon, 30 Jun 2025 07:00:00 GMT",
+      "score": 3,
+      "raison": "fermeture non publiée: hors fenêtre temporelle",
+      "created_at": "2026-07-02T07:07:34.758888+00:00"
+    },
+    {
       "id": "58a0aeaba2d04e67",
       "banque": "BNP Paribas",
       "departement": null,
@@ -7088,6 +7489,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:42:34.059267+00:00"
+    },
+    {
+      "id": "00ae3f116437e241",
+      "banque": "BNP Paribas",
+      "departement": null,
+      "titre": "Rœschwoog. Le guichet de La Poste ferme, les secrétaires de mairie prennent le relais - DNA",
+      "extrait": "TITRE: Rœschwoog. Le guichet de La Poste ferme, les secrétaires de mairie prennent le relais - DNA SOURCE: Google News DATE: Mon, 23 Feb 2026 08:00:00 GMT URL: https://news.google.com/rss/articles/CBMiswFBVV95cUxNeUthM0VSLWZJMVpCMWVRd2hxRkpYWDNMcXM1UHoxTTh1aWlBeUM5ZGtVOGtxOE1PQi1xVTFDT2JVbVAzWS1uOE9JNmlzSXU5aDExMktTQmhZYkEzVUVId1p0M0JXRFVyNldBcURRU2dWcEpubkp0VnZwaDdQNERaU2JSTW1TTFJNVkxXM3ByU2pKa1k1Snl0bnpfU1E2X2pWcFBlRlZ4d2xCeEFPeUVIRnY1aw?oc=5 <a href=\"https://news.google.com/rss/articles/CBMis",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNeUthM0VSLWZJMVpCMWVRd2hxRkpYWDNMcXM1UHoxTTh1aWlBeUM5ZGtVOGtxOE1PQi1xVTFDT2JVbVAzWS1uOE9JNmlzSXU5aDExMktTQmhZYkEzVUVId1p0M0JXRFVyNldBcURRU2dWcEpubkp0VnZwaDdQNERaU2JSTW1TTFJNVkxXM3ByU2pKa1k1Snl0bnpfU1E2X2pWcFBlRlZ4d2xCeEFPeUVIRnY1aw?oc=5",
+      "source": "Google News",
+      "date": "Mon, 23 Feb 2026 08:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-02T07:07:37.277731+00:00"
     },
     {
       "id": "93bb7c68bfe96aa7",
@@ -7701,6 +8115,19 @@
       "created_at": "2026-06-25T15:46:24.133589+00:00"
     },
     {
+      "id": "d957c8192b8ed60f",
+      "banque": "Crédit Agricole",
+      "departement": null,
+      "titre": "Fermeture du Crédit Agricole à Fonsala : « La satisfaction des clients ne semble pas être la priorité de la banque » - Le Progrès",
+      "extrait": "TITRE: Fermeture du Crédit Agricole à Fonsala : « La satisfaction des clients ne semble pas être la priorité de la banque » - Le Progrès SOURCE: Google News DATE: Fri, 25 Jul 2025 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMi6gFBVV95cUxQTjd1LWVyVzhjQ2xYYWtZLVkzZXdFdktYZ0xaM2FNTHp0dE45TFRsWUJrTWRmTWtsMzB2UnN3OXhZUHpFZ3BBM2xYaUFnVDQySWtMc0RiU3I4TEFGczkwOEtvWjZwY3NzWmxXRDkzMGxGS19SMFZEU0Z6OWZpc0pSNnhiVHZLMDJGc1ItWDVZSkh2R0JQSl9hai1iNVdjNVgwOC1zYXIyUmxzV0lqS05rYjVaMTJISlpreGx4aGRHWXZPe",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQTjd1LWVyVzhjQ2xYYWtZLVkzZXdFdktYZ0xaM2FNTHp0dE45TFRsWUJrTWRmTWtsMzB2UnN3OXhZUHpFZ3BBM2xYaUFnVDQySWtMc0RiU3I4TEFGczkwOEtvWjZwY3NzWmxXRDkzMGxGS19SMFZEU0Z6OWZpc0pSNnhiVHZLMDJGc1ItWDVZSkh2R0JQSl9hai1iNVdjNVgwOC1zYXIyUmxzV0lqS05rYjVaMTJISlpreGx4aGRHWXZPeklKbUZiZVNGcWs5YlZZek9sUjBsT1VDcGR4TWhQYmphNVZyTGhJUUE?oc=5",
+      "source": "Google News",
+      "date": "Fri, 25 Jul 2025 07:00:00 GMT",
+      "score": 3,
+      "raison": "fermeture non publiée: hors fenêtre temporelle",
+      "created_at": "2026-07-02T12:58:47.067213+00:00"
+    },
+    {
       "id": "7c063ebe96f9ab8b",
       "banque": "Crédit Mutuel",
       "departement": null,
@@ -7816,6 +8243,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:43:13.291104+00:00"
+    },
+    {
+      "id": "419b4636818cca1a",
+      "banque": "Crédit Coopératif",
+      "departement": null,
+      "titre": "Le Crédit Coopératif ferme le compte bancaire de l’Union Juive pour la Paix - Le Club de Mediapart",
+      "extrait": "TITRE: Le Crédit Coopératif ferme le compte bancaire de l’Union Juive pour la Paix - Le Club de Mediapart SOURCE: Google News DATE: Fri, 22 Aug 2025 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMiywFBVV95cUxNUlp4aUZWUTNyTVZOTTVEbHhVcm5weEdSb0d3RWRlaFFwSkdOVUFsV0VWNThJV0xWU2l0Q0kxNFZtVUF0c3R2RjY0UFQ0UE5FRjRvMFhVMGNDSk54VTlEektVSWpTc3I0Qno1ZGo2dUhEZzRRdnUzZFlRQmM0amNvRzlmUEh4T3Jwb2FQRXQzZGVzVkFGOTlSdHJYdF9aRDM5SmUzeTdwVGZTVWthN2I0VVd1ZlNIb1VEbkRVaDA2dDh5RlM5X3daTElKSQ?oc=5 <a href=\"htt",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNUlp4aUZWUTNyTVZOTTVEbHhVcm5weEdSb0d3RWRlaFFwSkdOVUFsV0VWNThJV0xWU2l0Q0kxNFZtVUF0c3R2RjY0UFQ0UE5FRjRvMFhVMGNDSk54VTlEektVSWpTc3I0Qno1ZGo2dUhEZzRRdnUzZFlRQmM0amNvRzlmUEh4T3Jwb2FQRXQzZGVzVkFGOTlSdHJYdF9aRDM5SmUzeTdwVGZTVWthN2I0VVd1ZlNIb1VEbkRVaDA2dDh5RlM5X3daTElKSQ?oc=5",
+      "source": "Google News",
+      "date": "Fri, 22 Aug 2025 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-02T07:07:50.183603+00:00"
     },
     {
       "id": "f86f1694630cae2d",
@@ -8154,6 +8594,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:37:21.267572+00:00"
+    },
+    {
+      "id": "ecd1cbdc98c8b031",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Fermeture des urgences à Laval : un « triste record » à prévoir en septembre ? - Ouest-France",
+      "extrait": "TITRE: Fermeture des urgences à Laval : un « triste record » à prévoir en septembre ? - Ouest-France SOURCE: Google News DATE: Fri, 09 Aug 2024 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMi9wFBVV95cUxNbGlzUDN1b1F5SU1UNDFIU2h1MWRBZFh1ZmVRTHBHWXFOVHVKY2tXRXB0QmZGNnlfc0pVcU9KanBkTnByZlhHbjFuTE96TzJET0tQbWZCTGxXRXdVWG1jMWRWbEJ5OGRDMmxhVUpGNXZUZThucnFyY3VCOGl4LVFLdmdNS3FZS3ZhZHFXSGxOVUxZU1RMTmRVaFNUVTNzbUc5a3VyYkNnZzdjU0cxV1pTQ0JKaFR3RlU1U3Atd29XcWctVmJJcnlMMVJmVW5leUQyU1FsM2NDT09CMzNlR",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNbGlzUDN1b1F5SU1UNDFIU2h1MWRBZFh1ZmVRTHBHWXFOVHVKY2tXRXB0QmZGNnlfc0pVcU9KanBkTnByZlhHbjFuTE96TzJET0tQbWZCTGxXRXdVWG1jMWRWbEJ5OGRDMmxhVUpGNXZUZThucnFyY3VCOGl4LVFLdmdNS3FZS3ZhZHFXSGxOVUxZU1RMTmRVaFNUVTNzbUc5a3VyYkNnZzdjU0cxV1pTQ0JKaFR3RlU1U3Atd29XcWctVmJJcnlMMVJmVW5leUQyU1FsM2NDT09CMzNlR0pfZm1hYlNKZzlPbl9paUxTRmZ6ZlcyeThF?oc=5",
+      "source": "Google News",
+      "date": "Fri, 09 Aug 2024 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-02T12:59:08.164791+00:00"
     },
     {
       "id": "937e0b4c84217a29",
@@ -8622,6 +9075,19 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:41:11.554978+00:00"
+    },
+    {
+      "id": "c6496c7884fd3791",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Société Générale : suppression de 1 800 postes en France d’ici fin 2027, selon la CGT - La Croix",
+      "extrait": "suppression de 1 800 postes en France d'ici fin 2027, selon la CGT",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOLVIxcWZXM1BSUWNtV0Zab3VOSGJoUVVQeUF0UFh6U25uS2JjMmIycUZ3YzZWTDV2bFFkSjNnZXo0a3ZuRXQ4ZnNDVnFETFNXVWMtaDZrRW55VXB2b2VyemFJbzkwbHc5Y1ZheXZPaEozdW5zemRDS2JtX2NXOENtZjBMcnY2SzlGNlEtRGNXeHpZc2ltU253RnZJQnMtYU4yVl9waHlQU2pjbzVxcVNWSG81cW5FdUlJbkpEelhTaXFhWTJRRlJvaWlSZlR3YnFBVDBKaW13?oc=5",
+      "source": "Google News",
+      "date": "Wed, 21 Jan 2026 08:00:00 GMT",
+      "score": 2,
+      "raison": "signaux: vague(Société Générale,national,count=None)",
+      "created_at": "2026-07-02T07:07:20.569041+00:00"
     },
     {
       "id": "e5031d95637620f1",
@@ -9508,6 +9974,19 @@
       "created_at": "2026-06-29T09:13:31.229214+00:00"
     },
     {
+      "id": "0bd1237a78aec9a8",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "« Le réseau d'agences n'est pas concerné » : SG prévoit 1 800 suppressions de postes en France d'ici 2027 - MoneyVox",
+      "extrait": "TITRE: « Le réseau d'agences n'est pas concerné » : SG prévoit 1 800 suppressions de postes en France d'ici 2027 - MoneyVox SOURCE: Google News DATE: Thu, 22 Jan 2026 08:00:00 GMT URL: https://news.google.com/rss/articles/CBMi3AFBVV95cUxQeEU2QnIzbXFFbjJ5YTU5Si1NejU2U19jRWktYlQ5Z05ZcDMxQW1KMTkzc05IdGNnWFhDeWxOem1sV0g0dzNGU2RBczU2ZXgzNUpZclFJZE9qYWJMRC1oUERqTFQ2SWpFc0FOUzNSQ3BFWGtNQnJrUnpyX1JPUl9fY1B1THhEcU9GU3c4V3YyUGRsWmJyX0tyOVlnUGJTN282NGZZRUpBZUVnTi0zdUlsaTFrdjNXNkZqS1ZBVXhCU2JSN014UTRtSGJMRk",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQeEU2QnIzbXFFbjJ5YTU5Si1NejU2U19jRWktYlQ5Z05ZcDMxQW1KMTkzc05IdGNnWFhDeWxOem1sV0g0dzNGU2RBczU2ZXgzNUpZclFJZE9qYWJMRC1oUERqTFQ2SWpFc0FOUzNSQ3BFWGtNQnJrUnpyX1JPUl9fY1B1THhEcU9GU3c4V3YyUGRsWmJyX0tyOVlnUGJTN282NGZZRUpBZUVnTi0zdUlsaTFrdjNXNkZqS1ZBVXhCU2JSN014UTRtSGJMRkdfa0twaU9FelVpR2ttR3FY?oc=5",
+      "source": "Google News",
+      "date": "Thu, 22 Jan 2026 08:00:00 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-02T07:07:39.811150+00:00"
+    },
+    {
       "id": "d84670f387901918",
       "banque": "Crédit Agricole",
       "departement": null,
@@ -9571,6 +10050,32 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:35:45.042571+00:00"
+    },
+    {
+      "id": "740bdf7b4d5e86b1",
+      "banque": "Crédit Mutuel",
+      "departement": null,
+      "titre": "Le Crédit Mutuel mise sur la fusion nucléaire via son dividende sociétal - L'Agefi",
+      "extrait": "TITRE: Le Crédit Mutuel mise sur la fusion nucléaire via son dividende sociétal - L'Agefi SOURCE: Google News DATE: Thu, 06 Mar 2025 08:00:00 GMT URL: https://news.google.com/rss/articles/CBMiuwFBVV95cUxPQVpKUU5lc0JfQ1NZeDAwekhILTh3azJySGQ4Q0RfeC1lUnQtdHV3QkluN1ZGN1pjT2NzNGVyYWlKYnJqZnFQaFVibTNoeGpWLTNsOV9qbVY1UmZyQ1RfYXdlb0tkeVdiZFlobjVraXZveThJUFVLTWJsWU5oZnZKVFZYMVV6SGxUY0pwZXFBZWtvcGtILUpZQ1RfcWo1SHRCNlZ6NkZDRmY4Y0h4YS04SFVZVEFLVGRDMXpF?oc=5 <a href=\"https://news.google.com/rss/articles/CBMi",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPQVpKUU5lc0JfQ1NZeDAwekhILTh3azJySGQ4Q0RfeC1lUnQtdHV3QkluN1ZGN1pjT2NzNGVyYWlKYnJqZnFQaFVibTNoeGpWLTNsOV9qbVY1UmZyQ1RfYXdlb0tkeVdiZFlobjVraXZveThJUFVLTWJsWU5oZnZKVFZYMVV6SGxUY0pwZXFBZWtvcGtILUpZQ1RfcWo1SHRCNlZ6NkZDRmY4Y0h4YS04SFVZVEFLVGRDMXpF?oc=5",
+      "source": "Google News",
+      "date": "Thu, 06 Mar 2025 08:00:00 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-02T07:07:00.174178+00:00"
+    },
+    {
+      "id": "cf5a58d8c39c0b3d",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Rio Tinto et Glencore abandonnent à nouveau leur projet de mégafusion - Les Echos",
+      "extrait": "TITRE: Rio Tinto et Glencore abandonnent à nouveau leur projet de mégafusion - Les Echos SOURCE: Google News DATE: Thu, 05 Feb 2026 08:00:00 GMT URL: https://news.google.com/rss/articles/CBMi0gFBVV95cUxPWTZEOVdhZHNPT2xzaGRJR2daTXBZQU1zX2pLNXB4a1BTWG1jU1VxMjdob2J4QWp6eVhTNENIR05VWDlhRHZLT0tMRmdZYnMtQlhKQml5ZHNEaW1XaDZTd3RQSEpYX2hDS2hlZHdwaHJaNms4ZjV2Y2FTQjVjTlpMWmFlR3BjTmNTSWY0RGc2V2tjaks2b3I5OGN3VmMtVXVyQlY5WWp4bGdSalVXZWxIdEhjdmtob1M1UGF3V05jb29VWTRNODVHSGtvQlAyV0NUNnc?oc=5 <a href=\"https://new",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPWTZEOVdhZHNPT2xzaGRJR2daTXBZQU1zX2pLNXB4a1BTWG1jU1VxMjdob2J4QWp6eVhTNENIR05VWDlhRHZLT0tMRmdZYnMtQlhKQml5ZHNEaW1XaDZTd3RQSEpYX2hDS2hlZHdwaHJaNms4ZjV2Y2FTQjVjTlpMWmFlR3BjTmNTSWY0RGc2V2tjaks2b3I5OGN3VmMtVXVyQlY5WWp4bGdSalVXZWxIdEhjdmtob1M1UGF3V05jb29VWTRNODVHSGtvQlAyV0NUNnc?oc=5",
+      "source": "Google News",
+      "date": "Thu, 05 Feb 2026 08:00:00 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-02T07:07:25.069355+00:00"
     },
     {
       "id": "a8f2bb142d2a02af",
@@ -9846,6 +10351,19 @@
       "created_at": "2026-06-29T09:11:56.877876+00:00"
     },
     {
+      "id": "7b7c8df40e549e49",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Coupe de France. Récompenses aux amateurs, Prix petit poucet, diffusion TV : ce qui pourrait changer - Ouest-France",
+      "extrait": "TITRE: Coupe de France. Récompenses aux amateurs, Prix petit poucet, diffusion TV : ce qui pourrait changer - Ouest-France SOURCE: Google News DATE: Mon, 03 Nov 2025 08:00:00 GMT URL: https://news.google.com/rss/articles/CBMimwJBVV95cUxOcHctUTR2MHRHeUJZMmhLaGFWLTJoQzQtWmU5WU9GWnl6YXVKWGkzN0diVDdReGJHaEdoR1BkN08zYnBjT3pfTFhydktJcHFZbXUzLUtJOXh2Z19nSGN2ZG54Nno5ZFludmxNRllQel9Zb1A0M0ZocWNqYlZWdE53c3ZUaW1jZkFsaDJuVnR2U2lPQV81SHVFeWVONnd4S05ic19yRG5ZV3FHWnVkS2hDd2tWWU40TW1wUU1aaFRfXzFfcXBWYl9FTWN6VzN",
+      "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxOcHctUTR2MHRHeUJZMmhLaGFWLTJoQzQtWmU5WU9GWnl6YXVKWGkzN0diVDdReGJHaEdoR1BkN08zYnBjT3pfTFhydktJcHFZbXUzLUtJOXh2Z19nSGN2ZG54Nno5ZFludmxNRllQel9Zb1A0M0ZocWNqYlZWdE53c3ZUaW1jZkFsaDJuVnR2U2lPQV81SHVFeWVONnd4S05ic19yRG5ZV3FHWnVkS2hDd2tWWU40TW1wUU1aaFRfXzFfcXBWYl9FTWN6VzNuUENkY2phMHpaUExPTDM5S3FnS1hMaEJaUVNVUjlpcENfOVJFOFhVVmVTQzlQVXgyR3NIOGdBMmIxc3BxcTFENndOcmJxSXFGUEVwWTQw?oc=5",
+      "source": "Google News",
+      "date": "Mon, 03 Nov 2025 08:00:00 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-02T07:08:29.459209+00:00"
+    },
+    {
       "id": "25ea6d3fb5d7ea9e",
       "banque": "CCF",
       "departement": null,
@@ -9896,6 +10414,19 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:32:33.824252+00:00"
+    },
+    {
+      "id": "013f8c2d5be88ea0",
+      "banque": "Crédit Agricole",
+      "departement": null,
+      "titre": "La réorganisation du Crédit Agricole en projet - PetitBleu.fr",
+      "extrait": "La réorganisation du Crédit Agricole en projet",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPSWNMNy1fOG45VS1VVm9pcDVTbmE2RFA4MmRCVmZFZTEyX084bEtiMjVyeWtNczN5LUpjOVA2SHUyeGRXOEwteW04TVpOTWU5SXJGY1pFYktFc1BYVjlYVG1tR2VYTVFHUjlzRU16YXlYTDZGT1cxOFJ2Rk5oSmFiQWZYY25YbUkxVWkyeTlJQ0UzOE15dmI1ZlFNcw?oc=5",
+      "source": "Google News",
+      "date": "Fri, 27 Feb 2026 08:00:00 GMT",
+      "score": 2,
+      "raison": "signaux: vague(Crédit Agricole,regional,count=None)",
+      "created_at": "2026-07-02T07:07:47.123707+00:00"
     },
     {
       "id": "9a50d30336bc4b5e",
@@ -10013,6 +10544,32 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-29T09:11:08.656991+00:00"
+    },
+    {
+      "id": "f4d86ff9dd00a34d",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Revolut abandonne son projet de fusion avec une banque américaine pour rechercher une licence indépendante - CoinDesk",
+      "extrait": "TITRE: Revolut abandonne son projet de fusion avec une banque américaine pour rechercher une licence indépendante - CoinDesk SOURCE: Google News DATE: Fri, 23 Jan 2026 08:00:00 GMT URL: https://news.google.com/rss/articles/CBMisgFBVV95cUxPaGpqRzB4enRDa3pHTThxQXNIQ29DM0MwY1REdG5vVFkyazNzbHJRdi1nS1FwRmpNeWRNQmhrU3VVd2lvVlJ2NkRkMFJ6UWhXQllSZllabGtpeDJwNWFoZHdYQUFKYlA1dENIYXQxUS1lTkhuVXZFYklnMEVxMG5JX2dsUFYyVExicEtwZEVNU3BNdFJOVjJxV0plc0FHNlBXWEtmOUpxNHJnSzFmWTNBY1RR?oc=5 <a href=\"https://news.googl",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPaGpqRzB4enRDa3pHTThxQXNIQ29DM0MwY1REdG5vVFkyazNzbHJRdi1nS1FwRmpNeWRNQmhrU3VVd2lvVlJ2NkRkMFJ6UWhXQllSZllabGtpeDJwNWFoZHdYQUFKYlA1dENIYXQxUS1lTkhuVXZFYklnMEVxMG5JX2dsUFYyVExicEtwZEVNU3BNdFJOVjJxV0plc0FHNlBXWEtmOUpxNHJnSzFmWTNBY1RR?oc=5",
+      "source": "Google News",
+      "date": "Fri, 23 Jan 2026 08:00:00 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-02T07:07:03.088804+00:00"
+    },
+    {
+      "id": "45d572574058558d",
+      "banque": "BNP Paribas",
+      "departement": null,
+      "titre": "BNP Paribas prévoit jusqu'à 1.200 suppressions d'emplois après l'acquisition d'Axa IM - La Libre.be",
+      "extrait": "TITRE: BNP Paribas prévoit jusqu'à 1.200 suppressions d'emplois après l'acquisition d'Axa IM - La Libre.be SOURCE: Google News DATE: Fri, 23 Jan 2026 08:00:00 GMT URL: https://news.google.com/rss/articles/CBMigAJBVV95cUxQRU5lZFBKTmpmOHFrWVAyVDlwYk8zT1l4TkpSSmIwX3kwLVo1N2hfYzhGdXpTQTdUb0ZlNU1vVkl1NExRdFAwQ2x0ZDF4X2dwSGdnSXFZVktFbDNHUXF0d3k4dC1FTEExTUlXUV8xZ0RpbEtVb2xuRl9YM1hHWWRuN0ZrdWxPajVSdkc1OXJHMjNBWHBFUXBrVkRSbmExM1lRbGVmNWZhaDB2M3hRcVFEM3BxcnBibmhFWG52X3lta2l3RlFYSjZBQnkxSnBBTXBuTlZLdWEyS1Z",
+      "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQRU5lZFBKTmpmOHFrWVAyVDlwYk8zT1l4TkpSSmIwX3kwLVo1N2hfYzhGdXpTQTdUb0ZlNU1vVkl1NExRdFAwQ2x0ZDF4X2dwSGdnSXFZVktFbDNHUXF0d3k4dC1FTEExTUlXUV8xZ0RpbEtVb2xuRl9YM1hHWWRuN0ZrdWxPajVSdkc1OXJHMjNBWHBFUXBrVkRSbmExM1lRbGVmNWZhaDB2M3hRcVFEM3BxcnBibmhFWG52X3lta2l3RlFYSjZBQnkxSnBBTXBuTlZLdWEyS1ZZakhqU1NxSktSS2NOYl9qcFFUa01BdXNHSnNKWWpVYWxnVzJ1Z3BT?oc=5",
+      "source": "Google News",
+      "date": "Fri, 23 Jan 2026 08:00:00 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-02T07:07:23.175458+00:00"
     },
     {
       "id": "4e16c86ae51becbb",
