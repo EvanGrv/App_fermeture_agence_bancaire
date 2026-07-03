@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T13:04:19.723370+00:00",
+  "generated_at": "2026-07-03T06:53:08.119050+00:00",
   "departements": {
     "01": {
       "nom": "Ain",
@@ -3131,6 +3131,24 @@
       "created_at": "2026-07-02T06:55:01.642225+00:00"
     },
     {
+      "id": "40e46b46cc8ba7a4",
+      "banque": "BNP Paribas",
+      "commune": "La Chartre",
+      "departement": "Sarthe",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "confirmé",
+      "statut_temporel": "inconnu",
+      "fiabilite": 5,
+      "citation": "après soixante ans de présence, BNP ferme son agence à La Chartre",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQWDdlU3BKQUMtcmZzZXI0cEhObUJLZlU2bFpqOF94YjlmT0hVcWwtckJiWlNXOHNLeFJvWFJuRnVmem1lYUExdklKdXhMUVVpOE9mdXBMakVkVVR3a1p4akNxUnhWMjh3enVnWmpDd0ZYdDgzcDhQV0VUZDNFMjd2aTVwc0F6YTNJbVJOTDFHakZFVmFPczM3OVl4dFVRSWZGTEhIOXhJUkdkNlNBTkxzNWF6MElsVDI0NkVzNDBVRXVKWlFYaGs0SURhWTlzRktJaGFCQlQyOXpISFhzSTRtVzNzTWRGZVk?oc=5",
+      "titre": "« J’ai aimé travailler ici » : après soixante ans de présence, BNP ferme son agence à La Chartre - - Le Mans.maville.com",
+      "source": "Google News",
+      "date": "Sat, 27 Jun 2026 06:31:00 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-07-03T06:46:20.426638+00:00"
+    },
+    {
       "id": "f022b150b7207c5f",
       "banque": "Crédit Municipal",
       "commune": "Auxerre",
@@ -5086,6 +5104,19 @@
       "created_at": "2026-06-25T15:37:12.961288+00:00"
     },
     {
+      "id": "ba76fb41c23c8b26",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Fermeture brutale du cabaret Le Showbizz à Magalas : que s’est-il passé ? - Midi Libre",
+      "extrait": "TITRE: Fermeture brutale du cabaret Le Showbizz à Magalas : que s’est-il passé ? - Midi Libre SOURCE: Google News DATE: Tue, 09 Jun 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMiuAFBVV95cUxPUTBGcjZId3hBSXN0eHo3Qi1tN3RkOEhQZ0haTDZpYjhxRDlxMXlQSnpudXdGMER2LTV4NHNvLWV2Z0Y0c3RJVmZ6dnk2UFdHbkFDMmlsMmx1ZmJLSHhOa2hVeUpDdGVIYkE5T3R1RHk1SGR1Q0VsbWFPalZWU2EycXRnRmRUNjB4ZVhOT1Y0WW92QVdyd0gwdU9GOFZ6T0ZBV0lndEFJOTl6Y1pONVVYU2h4ajlIUFJq?oc=5 <a href=\"https://news.google.com/rss/articles/CBMi",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPUTBGcjZId3hBSXN0eHo3Qi1tN3RkOEhQZ0haTDZpYjhxRDlxMXlQSnpudXdGMER2LTV4NHNvLWV2Z0Y0c3RJVmZ6dnk2UFdHbkFDMmlsMmx1ZmJLSHhOa2hVeUpDdGVIYkE5T3R1RHk1SGR1Q0VsbWFPalZWU2EycXRnRmRUNjB4ZVhOT1Y0WW92QVdyd0gwdU9GOFZ6T0ZBV0lndEFJOTl6Y1pONVVYU2h4ajlIUFJq?oc=5",
+      "source": "Google News",
+      "date": "Tue, 09 Jun 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-03T06:46:23.038970+00:00"
+    },
+    {
       "id": "404af3a7565bd007",
       "banque": "Société Générale",
       "departement": null,
@@ -6386,6 +6417,32 @@
       "created_at": "2026-06-25T15:21:48.617890+00:00"
     },
     {
+      "id": "841d184dfbef992a",
+      "banque": "BNP Paribas",
+      "departement": null,
+      "titre": "Fauverney. Fermeture de l’agence postale - Le Bien Public",
+      "extrait": "TITRE: Fauverney. Fermeture de l’agence postale - Le Bien Public SOURCE: Google News DATE: Thu, 02 Jul 2026 04:45:23 GMT URL: https://news.google.com/rss/articles/CBMif0FVX3lxTE5lYTlOUllyLWtzVE9JVTRTMlA2ODAyYUFyZ29xUXFyVDNfbC1rVU9YMUg1Y2NJXzBUMUY4VmgyMzJMd0tNbnB0Vl90aTJmdnl5VmFoZ0JDN3QzV1hPOFBObnppTEZ1ZE5XRzdPQmVhLWhkTGdzRXFmbHlLb2hNOWs?oc=5 <a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE5lYTlOUllyLWtzVE9JVTRTMlA2ODAyYUFyZ29xUXFyVDNfbC1rVU9YMUg1Y2NJXzBUMUY4VmgyMzJMd0tNbnB0Vl90aTJmdn",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5lYTlOUllyLWtzVE9JVTRTMlA2ODAyYUFyZ29xUXFyVDNfbC1rVU9YMUg1Y2NJXzBUMUY4VmgyMzJMd0tNbnB0Vl90aTJmdnl5VmFoZ0JDN3QzV1hPOFBObnppTEZ1ZE5XRzdPQmVhLWhkTGdzRXFmbHlLb2hNOWs?oc=5",
+      "source": "Google News",
+      "date": "Thu, 02 Jul 2026 04:45:23 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-03T06:46:27.951985+00:00"
+    },
+    {
+      "id": "5484de04a1796a62",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Docelles. L’agence postale rouvre après deux mois de fermeture - Vosges Matin",
+      "extrait": "TITRE: Docelles. L’agence postale rouvre après deux mois de fermeture - Vosges Matin SOURCE: Google News DATE: Thu, 02 Jul 2026 03:33:09 GMT URL: https://news.google.com/rss/articles/CBMioAFBVV95cUxOUHFSNDdTQUc1dFBHUmNOdGYwNlBjaDVqbWNJdEx3b3JjN2d3eXFob3hGWGQtREQxVmhtcUJCSDJBXy1wM0hGaTgwWVBGYV80akZiV1FtRXN2alNfYVhGVXlYbmJFOGVac2xmMHFZRVJhXzdyVGRPek9sSUZneHB2MlVGc2duTDRVYkRfNnRDN1hfM1BXOHRNSnFfdnNZTmkw?oc=5 <a href=\"https://news.google.com/rss/articles/CBMioAFBVV95cUxOUHFSNDdTQUc1dFBHUmNOdGYwNlBja",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOUHFSNDdTQUc1dFBHUmNOdGYwNlBjaDVqbWNJdEx3b3JjN2d3eXFob3hGWGQtREQxVmhtcUJCSDJBXy1wM0hGaTgwWVBGYV80akZiV1FtRXN2alNfYVhGVXlYbmJFOGVac2xmMHFZRVJhXzdyVGRPek9sSUZneHB2MlVGc2duTDRVYkRfNnRDN1hfM1BXOHRNSnFfdnNZTmkw?oc=5",
+      "source": "Google News",
+      "date": "Thu, 02 Jul 2026 03:33:09 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-03T06:46:25.561939+00:00"
+    },
+    {
       "id": "fe594b501050ecf9",
       "banque": "Société Générale",
       "departement": null,
@@ -6839,6 +6896,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-29T08:29:50.898441+00:00"
+    },
+    {
+      "id": "d043ece975448ba8",
+      "banque": "BNP Paribas",
+      "departement": null,
+      "titre": "« J’ai aimé travailler ici » : après soixante ans de présence, BNP ferme son agence à La Chartre - - Le Mans.maville.com",
+      "extrait": "TITRE: « J’ai aimé travailler ici » : après soixante ans de présence, BNP ferme son agence à La Chartre - - Le Mans.maville.com SOURCE: Google News DATE: Sat, 27 Jun 2026 06:31:00 GMT URL: https://news.google.com/rss/articles/CBMi5wFBVV95cUxQWDdlU3BKQUMtcmZzZXI0cEhObUJLZlU2bFpqOF94YjlmT0hVcWwtckJiWlNXOHNLeFJvWFJuRnVmem1lYUExdklKdXhMUVVpOE9mdXBMakVkVVR3a1p4akNxUnhWMjh3enVnWmpDd0ZYdDgzcDhQV0VUZDNFMjd2aTVwc0F6YTNJbVJOTDFHakZFVmFPczM3OVl4dFVRSWZGTEhIOXhJUkdkNlNBTkxzNWF6MElsVDI0NkVzNDBVRXVKWlFYaGs0SU",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQWDdlU3BKQUMtcmZzZXI0cEhObUJLZlU2bFpqOF94YjlmT0hVcWwtckJiWlNXOHNLeFJvWFJuRnVmem1lYUExdklKdXhMUVVpOE9mdXBMakVkVVR3a1p4akNxUnhWMjh3enVnWmpDd0ZYdDgzcDhQV0VUZDNFMjd2aTVwc0F6YTNJbVJOTDFHakZFVmFPczM3OVl4dFVRSWZGTEhIOXhJUkdkNlNBTkxzNWF6MElsVDI0NkVzNDBVRXVKWlFYaGs0SURhWTlzRktJaGFCQlQyOXpISFhzSTRtVzNzTWRGZVk?oc=5",
+      "source": "Google News",
+      "date": "Sat, 27 Jun 2026 06:31:00 GMT",
+      "score": 3,
+      "raison": "fermeture non publiée: hors fenêtre temporelle",
+      "created_at": "2026-07-03T06:46:20.431086+00:00"
     },
     {
       "id": "903deebdbc436130",
