@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03T06:53:08.119050+00:00",
+  "generated_at": "2026-07-04T06:39:42.958881+00:00",
   "departements": {
     "01": {
       "nom": "Ain",
@@ -7158,6 +7158,19 @@
       "created_at": "2026-06-25T15:25:02.809158+00:00"
     },
     {
+      "id": "b7a7bf963e0c52cb",
+      "banque": "BNP Paribas",
+      "departement": null,
+      "titre": "Les distributeurs BNP Paribas Fortis d’Andenne ferment le 15 juin, un point CASH Batopin est désormais accessible - Sudinfo",
+      "extrait": "TITRE: Les distributeurs BNP Paribas Fortis d’Andenne ferment le 15 juin, un point CASH Batopin est désormais accessible - Sudinfo SOURCE: Google News DATE: Sat, 13 Jun 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMiygFBVV95cUxQd0FFRDVsSFh6US0xNll3X3NfS1ZrTnJTVnZXSTQ5QmozdDM1VEM0YmVEaGhwYThfMG8tUTJta18yZFhfU3hQVnc3R3ZWazFyQ3hNazNXLXl2QW5ZVmVkeEpjcS1Jcy1RM1hSVk9FVDBTU3BFSndONGN5S1hVa2paQmpfdFpqRERXMkd0ZGh2anNNaDhfYnRfR01kNGhwOHVudXdFTFplY1h2SGpETDFXeE1rUkFsWmZ2cDZPcERqR3dJSTU5aUV",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQd0FFRDVsSFh6US0xNll3X3NfS1ZrTnJTVnZXSTQ5QmozdDM1VEM0YmVEaGhwYThfMG8tUTJta18yZFhfU3hQVnc3R3ZWazFyQ3hNazNXLXl2QW5ZVmVkeEpjcS1Jcy1RM1hSVk9FVDBTU3BFSndONGN5S1hVa2paQmpfdFpqRERXMkd0ZGh2anNNaDhfYnRfR01kNGhwOHVudXdFTFplY1h2SGpETDFXeE1rUkFsWmZ2cDZPcERqR3dJSTU5aUVtbXNn?oc=5",
+      "source": "Google News",
+      "date": "Sat, 13 Jun 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-04T06:33:43.116096+00:00"
+    },
+    {
       "id": "0f349bae5783465a",
       "banque": "Société Générale",
       "departement": null,
@@ -7286,6 +7299,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:23:00.402561+00:00"
+    },
+    {
+      "id": "3d165889254483bd",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "La fermeture, samedi, de la succursale n° 4 du Centre d'administration publique a surpris. - Vietnam.vn",
+      "extrait": "TITRE: La fermeture, samedi, de la succursale n° 4 du Centre d'administration publique a surpris. - Vietnam.vn SOURCE: Google News DATE: Sat, 04 Jul 2026 06:15:11 GMT URL: https://news.google.com/rss/articles/CBMisgFBVV95cUxQU1N5cDVMR3dhRU5sb0ZLQWNfdmxnZ0VmQl9qRDVlWHdtS1cxcGhDTTdmZ1E4UThiRlVSNmdvYWlfYUVDSk9IQ0NVcEZManJPOTRHV1hTbHBUNGh4RV9PalVqcVhqblo1UC1XUE0wRTJaNldoR3E4czNWQi01azY0VkxGRnZFYmZQRS1OUXBCS0JGSVdoUFB0WWR0bUhSLUtvVG9lZm1maHNBMzZiR09Mbnh3?oc=5 <a href=\"https://news.google.com/rss/arti",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQU1N5cDVMR3dhRU5sb0ZLQWNfdmxnZ0VmQl9qRDVlWHdtS1cxcGhDTTdmZ1E4UThiRlVSNmdvYWlfYUVDSk9IQ0NVcEZManJPOTRHV1hTbHBUNGh4RV9PalVqcVhqblo1UC1XUE0wRTJaNldoR3E4czNWQi01azY0VkxGRnZFYmZQRS1OUXBCS0JGSVdoUFB0WWR0bUhSLUtvVG9lZm1maHNBMzZiR09Mbnh3?oc=5",
+      "source": "Google News",
+      "date": "Sat, 04 Jul 2026 06:15:11 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-04T06:33:41.148020+00:00"
     },
     {
       "id": "207df9f769b1db20",
@@ -8859,6 +8885,32 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:37:10.986830+00:00"
+    },
+    {
+      "id": "e13e82bec5af4439",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "« Cet Ehpad n’a jamais évolué en 50 ans, il faut le repenser » : la maire de Signy-le-Petit réagit à la fermeture - L'Ardennais",
+      "extrait": "TITRE: « Cet Ehpad n’a jamais évolué en 50 ans, il faut le repenser » : la maire de Signy-le-Petit réagit à la fermeture - L'Ardennais SOURCE: Google News DATE: Fri, 03 Jul 2026 16:05:00 GMT URL: https://news.google.com/rss/articles/CBMiywFBVV95cUxNeklIWnZNaEh4OUlrTE9jcUZWTkhsWVNEQ2dwQlFJOG9sa2loZUxJTS0xelJqTFNaazkzN3V4eU9tbm1YUjRyUkRvX0ZSSG1mWl9lYlNib1pIQnljLXRnN0JQSHlDWnBNUU9Sb29yZmFTekprWDFmX1RyRmVRWk11dzZPSkt5QmZIYVVnc196NzViUWZCVW52MlhwTEtFaTBvek5LeS1zQnFFWU9nUWIxeEZmRDJJVmExV091NnczVGtsVFB",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNeklIWnZNaEh4OUlrTE9jcUZWTkhsWVNEQ2dwQlFJOG9sa2loZUxJTS0xelJqTFNaazkzN3V4eU9tbm1YUjRyUkRvX0ZSSG1mWl9lYlNib1pIQnljLXRnN0JQSHlDWnBNUU9Sb29yZmFTekprWDFmX1RyRmVRWk11dzZPSkt5QmZIYVVnc196NzViUWZCVW52MlhwTEtFaTBvek5LeS1zQnFFWU9nUWIxeEZmRDJJVmExV091NnczVGtsVFB1TldtZFo0SQ?oc=5",
+      "source": "Google News",
+      "date": "Fri, 03 Jul 2026 16:05:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-04T06:33:38.561151+00:00"
+    },
+    {
+      "id": "31df808d2b371f6f",
+      "banque": "BNP Paribas",
+      "departement": null,
+      "titre": "Canicule à la maternité, fermeture inédite de l'opéra de Paris... l’info à midi en Île-de-France - Actu.fr",
+      "extrait": "TITRE: Canicule à la maternité, fermeture inédite de l'opéra de Paris... l’info à midi en Île-de-France - Actu.fr SOURCE: Google News DATE: Fri, 03 Jul 2026 10:01:33 GMT URL: https://news.google.com/rss/articles/CBMiygFBVV95cUxPRC1XZEF4QVRCQTN1ckd6M0s0LTM5bHVBbnpXNTc4d0RMVFUzbjFGYVVxa0QyaE9YS21rRmxIUzdVWUpsLVF3aUw3WW1CbHAxbkVaQ0NPWjVyVUNzUjJqYm5rZUpvcG4zVnlJQXJZS1h3cVV0UzRFSEFGNHpCVHVNaktLN214NlRjWTR3dGdzV3hhVDhJYXA3bHNwSWJaUktqNlh1V1YtdGQwLW41OWVITXZ2RDd2QXNjMXRhOUFZdmh5cDVnb3hoSERR?oc=5 <a hre",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPRC1XZEF4QVRCQTN1ckd6M0s0LTM5bHVBbnpXNTc4d0RMVFUzbjFGYVVxa0QyaE9YS21rRmxIUzdVWUpsLVF3aUw3WW1CbHAxbkVaQ0NPWjVyVUNzUjJqYm5rZUpvcG4zVnlJQXJZS1h3cVV0UzRFSEFGNHpCVHVNaktLN214NlRjWTR3dGdzV3hhVDhJYXA3bHNwSWJaUktqNlh1V1YtdGQwLW41OWVITXZ2RDd2QXNjMXRhOUFZdmh5cDVnb3hoSERR?oc=5",
+      "source": "Google News",
+      "date": "Fri, 03 Jul 2026 10:01:33 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-04T06:33:44.887407+00:00"
     },
     {
       "id": "ddcb50c091991047",
