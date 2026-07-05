@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-04T06:39:42.958881+00:00",
+  "generated_at": "2026-07-05T07:03:09.443612+00:00",
   "departements": {
     "01": {
       "nom": "Ain",
@@ -3147,6 +3147,24 @@
       "date": "Sat, 27 Jun 2026 06:31:00 GMT",
       "raison": "hors fenêtre temporelle",
       "created_at": "2026-07-03T06:46:20.426638+00:00"
+    },
+    {
+      "id": "9a8ef3179893cc6b",
+      "banque": "CIC",
+      "commune": "Neuf-Brisach",
+      "departement": null,
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "confirmé",
+      "statut_temporel": "inconnu",
+      "fiabilite": 5,
+      "citation": "L'agenge CIC a définitivement fermé ses portes",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOYThoZHJnczM0XzdNSnZGQkNRME42aFVEOXNFaFM2ZDhlZHdwekNyb0dMMl9WZ2ZfZVpOSWlSenZqVlRrRjZLc1BXV2U2MkdkSndwcUFmNmk4RWg0bjJJMTdIcEgwekRUTjBNMzBVbFBuOWN5ZVFKc3VfUEkzdWREQ2pCamdxMmRoang4OTFn?oc=5",
+      "titre": "Neuf-Brisach. L'agenge CIC a définitivement fermé ses portes - DNA",
+      "source": "Google News",
+      "date": "Sat, 04 Jul 2026 03:02:23 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-07-05T06:54:45.147129+00:00"
     },
     {
       "id": "f022b150b7207c5f",
@@ -6599,6 +6617,19 @@
       "created_at": "2026-06-30T07:07:12.809527+00:00"
     },
     {
+      "id": "1644c91f759c4a75",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Canicule : écoles fermées, horaires aménagés, oral du bac reporté… à quoi doivent s’attendre élèves et parents ce lundi - Actu.fr",
+      "extrait": "TITRE: Canicule : écoles fermées, horaires aménagés, oral du bac reporté… à quoi doivent s’attendre élèves et parents ce lundi - Actu.fr SOURCE: Google News DATE: Sun, 21 Jun 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMi5wFBVV95cUxOX3NyZmxPMHQwQ2E1Ql9mMXhzVFRTZkVIOG1TY1NOYTZqTXRONVBvREVMM2xUd1lnYncyVXpNOGZITDNyTXNSbDRKSGhQcWdsdmtHaWs5VnhDMHRsWmxjNklZWVVuM01iWE42alRxTU9HajJ6YTRkaEZJRWw2RFlrZUIxUUxMa29DSy14QzFDcjlPQzR2UVJIbWliWHZWeDZBNUJNcG5rdTRBVUZhQ0ZrRUJrQTlCS2xYbmJzaW80clpjU",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOX3NyZmxPMHQwQ2E1Ql9mMXhzVFRTZkVIOG1TY1NOYTZqTXRONVBvREVMM2xUd1lnYncyVXpNOGZITDNyTXNSbDRKSGhQcWdsdmtHaWs5VnhDMHRsWmxjNklZWVVuM01iWE42alRxTU9HajJ6YTRkaEZJRWw2RFlrZUIxUUxMa29DSy14QzFDcjlPQzR2UVJIbWliWHZWeDZBNUJNcG5rdTRBVUZhQ0ZrRUJrQTlCS2xYbmJzaW80clpjUHliMlRPS0JfbkVneUZTN3plUG51SlM3RjZHQ1ljNkxQMHh5WFU?oc=5",
+      "source": "Google News",
+      "date": "Sun, 21 Jun 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-05T06:54:50.404937+00:00"
+    },
+    {
       "id": "73272085fc7d66fc",
       "banque": "Société Générale",
       "departement": null,
@@ -7301,6 +7332,19 @@
       "created_at": "2026-06-25T15:23:00.402561+00:00"
     },
     {
+      "id": "5eb12b8933bb6d81",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "RN : des députés dénoncent la fermeture de leurs comptes bancaires après leur élection - MSN",
+      "extrait": "TITRE: RN : des députés dénoncent la fermeture de leurs comptes bancaires après leur élection - MSN SOURCE: Google News DATE: Sat, 04 Jul 2026 19:26:45 GMT URL: https://news.google.com/rss/articles/CBMiqgJBVV95cUxNejZMSFh3SGZZUXdBZzJrczYtLXpqOThYUkRNdXlBUnNVY0ZBXzY0bjdmaU5vTU5YOWlNMzB2TmJyUzRqaGdqTG93VGxLZFotWEFwTWJUNTlURHZCYm1PS3Y3aVdveDA1R3BlaUZ6STRsd3hySWJKUHBCZHdwczNsSncwaUtMZTJIVHktaDEwVGVKODJhQmtra29PZmo2akY3NEJVa01OQWhWSEtOSmtWUnZuZF9lampkZUFhUUk0cDM5eUpyZjV4emdUV2UxaURIdEJtR1dvWTBickpaek",
+      "url": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxNejZMSFh3SGZZUXdBZzJrczYtLXpqOThYUkRNdXlBUnNVY0ZBXzY0bjdmaU5vTU5YOWlNMzB2TmJyUzRqaGdqTG93VGxLZFotWEFwTWJUNTlURHZCYm1PS3Y3aVdveDA1R3BlaUZ6STRsd3hySWJKUHBCZHdwczNsSncwaUtMZTJIVHktaDEwVGVKODJhQmtra29PZmo2akY3NEJVa01OQWhWSEtOSmtWUnZuZF9lampkZUFhUUk0cDM5eUpyZjV4emdUV2UxaURIdEJtR1dvWTBickpaek93UEotbDJsUVlwSXpXS25VaHR2UnVIUFhKSFFPVTdsU0FER3IzQWM2aENQd1dIY184cFNBMGxrU0E1aUtXZ2hQZUtJX1dqa2cwNVhn?oc=5",
+      "source": "Google News",
+      "date": "Sat, 04 Jul 2026 19:26:45 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-05T06:54:54.676926+00:00"
+    },
+    {
       "id": "3d165889254483bd",
       "banque": "Société Générale",
       "departement": null,
@@ -7312,6 +7356,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-07-04T06:33:41.148020+00:00"
+    },
+    {
+      "id": "1f5a6f5253de32e4",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "Neuf-Brisach. L'agenge CIC a définitivement fermé ses portes - DNA",
+      "extrait": "TITRE: Neuf-Brisach. L'agenge CIC a définitivement fermé ses portes - DNA SOURCE: Google News DATE: Sat, 04 Jul 2026 03:02:23 GMT URL: https://news.google.com/rss/articles/CBMijgFBVV95cUxOYThoZHJnczM0XzdNSnZGQkNRME42aFVEOXNFaFM2ZDhlZHdwekNyb0dMMl9WZ2ZfZVpOSWlSenZqVlRrRjZLc1BXV2U2MkdkSndwcUFmNmk4RWg0bjJJMTdIcEgwekRUTjBNMzBVbFBuOWN5ZVFKc3VfUEkzdWREQ2pCamdxMmRoang4OTFn?oc=5 <a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxOYThoZHJnczM0XzdNSnZGQkNRME42aFVEOXNFaFM2ZDhlZHdwekNyb0dMMl9WZ2Zf",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOYThoZHJnczM0XzdNSnZGQkNRME42aFVEOXNFaFM2ZDhlZHdwekNyb0dMMl9WZ2ZfZVpOSWlSenZqVlRrRjZLc1BXV2U2MkdkSndwcUFmNmk4RWg0bjJJMTdIcEgwekRUTjBNMzBVbFBuOWN5ZVFKc3VfUEkzdWREQ2pCamdxMmRoang4OTFn?oc=5",
+      "source": "Google News",
+      "date": "Sat, 04 Jul 2026 03:02:23 GMT",
+      "score": 3,
+      "raison": "fermeture non publiée: hors fenêtre temporelle",
+      "created_at": "2026-07-05T06:54:45.150637+00:00"
     },
     {
       "id": "207df9f769b1db20",
@@ -7884,6 +7941,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:39:58.926133+00:00"
+    },
+    {
+      "id": "effa335d8b516366",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "\"Les économies d'une vie\" : la banque ferme son Livret A ouvert par ses parents en 1975, il voit son argent partir en fumée - Marie France, magazine féminin",
+      "extrait": "TITRE: \"Les économies d'une vie\" : la banque ferme son Livret A ouvert par ses parents en 1975, il voit son argent partir en fumée - Marie France, magazine féminin SOURCE: Google News DATE: Mon, 11 May 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMiwAFBVV95cUxOamNEc3ktZ3BZWTFjMnp2SnFiaGZfRnY0d2h0RjNPZmhoNjZUcVpBT2QtM3gzdEU1RXlSekpkR0Y5bXJjajI2RnhSOGNwb1M0M0U0Vndxai1jdmJPb2JpRkZrN1dLcWhYdWZMeEJEQlRsT2JENmtBeU1naVQyblR3SGNJS0tKcXJKY1N0Z0hMQzVVVWw2MUhaeXV3QS00SE9tRHNFeDRqVGx5Wks2bX",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOamNEc3ktZ3BZWTFjMnp2SnFiaGZfRnY0d2h0RjNPZmhoNjZUcVpBT2QtM3gzdEU1RXlSekpkR0Y5bXJjajI2RnhSOGNwb1M0M0U0Vndxai1jdmJPb2JpRkZrN1dLcWhYdWZMeEJEQlRsT2JENmtBeU1naVQyblR3SGNJS0tKcXJKY1N0Z0hMQzVVVWw2MUhaeXV3QS00SE9tRHNFeDRqVGx5Wks2bXh5TWttYmc2bFVkRlhUeDBGdFY?oc=5",
+      "source": "Google News",
+      "date": "Mon, 11 May 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-05T06:54:52.649861+00:00"
     },
     {
       "id": "986f2e5901874b8a",
