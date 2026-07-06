@@ -131,6 +131,24 @@ def test_present_unlocated_via_unlocated_tier():
     assert cov["pipeline_status"] == "projet"
 
 
+def test_present_on_map_via_agence_localisation_attendue():
+    payload = {"closures": [{
+        "id": "abc",
+        "banque": "Caisse d'Épargne",
+        "commune": "Hesdigneul-lès-Boulogne",
+        "agence_localisation": "Pont-de-Briques",
+        "lat": 50.6,
+        "lon": 1.6,
+    }]}
+    cov = classify_coverage(
+        _row(banque="Caisse d’Épargne", commune="Saint-Étienne-au-Mont",
+             agence_localisation="Pont-de-Briques - rue du Docteur-Brousse"),
+        payload,
+    )
+    assert cov["status"] == "present_on_map"
+    assert cov["match_type"] == "commune"
+
+
 def test_present_department_via_vigilance():
     payload = {"closures": [],
                "vigilances": [{"banque": "BNP Paribas", "departement": "69"}]}

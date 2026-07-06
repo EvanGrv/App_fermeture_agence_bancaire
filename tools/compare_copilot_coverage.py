@@ -88,11 +88,19 @@ def _haversine_m(lat1, lon1, lat2, lon2) -> float:
     return 2 * r * math.asin(math.sqrt(a))
 
 
-def _row_matches_closure(banque_cle: str, commune_cle: str, cl: dict) -> bool:
-    if not commune_cle or _cle_banque(cl.get("banque")) != banque_cle:
+def _row_matches_closure(banque_cle: str, commune_cle: str, agence_cle: str, cl: dict) -> bool:
+    if not (commune_cle or agence_cle) or _cle_banque(cl.get("banque")) != banque_cle:
         return False
-    for champ in ("commune", "agence_localisation", "commune_originale"):
+    for champ in ("commune", "commune_originale"):
         if _cle_commune(cl.get(champ)) == commune_cle:
+            return True
+    closure_agence = _cle_commune(cl.get("agence_localisation"))
+    if closure_agence and agence_cle:
+        if closure_agence == agence_cle:
+            return True
+        if len(closure_agence) >= 8 and (
+            closure_agence in agence_cle or agence_cle in closure_agence
+        ):
             return True
     return False
 
@@ -125,8 +133,9 @@ def _has_department_signal(banque_cle: str, dept_code: str, payload: dict) -> bo
 def classify_coverage(row: dict, payload: dict) -> dict:
     banque_cle = _cle_banque(row.get("banque"))
     commune_cle = _cle_commune(row.get("commune"))
+    agence_cle = _cle_commune(row.get("agence_localisation"))
     for cl in payload.get("closures") or []:
-        if not _row_matches_closure(banque_cle, commune_cle, cl):
+        if not _row_matches_closure(banque_cle, commune_cle, agence_cle, cl):
             continue
         cl_lat, cl_lon = _as_float(cl.get("lat")), _as_float(cl.get("lon"))
         has_geo = cl_lat is not None and cl_lon is not None
@@ -143,7 +152,7 @@ def classify_coverage(row: dict, payload: dict) -> dict:
                 "pipeline_id": cl.get("id", ""), "pipeline_status": statut}
 
     for cl in payload.get("closures_unlocated") or []:
-        if not _row_matches_closure(banque_cle, commune_cle, cl):
+        if not _row_matches_closure(banque_cle, commune_cle, agence_cle, cl):
             continue
         statut = cl.get("statut") or cl.get("statut_temporel") or ""
         return {"status": "present_unlocated", "match_type": "commune",
