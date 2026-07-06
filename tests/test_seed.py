@@ -58,6 +58,25 @@ def test_load_xlsx_colonne_lien_source(tmp_path):
     assert arts[0]["agence_localisation"] == "Coëtquidan"
 
 
+def test_load_xlsx_copilot_header_positionnel_banque(tmp_path):
+    openpyxl = pytest.importorskip("openpyxl")
+    p = tmp_path / "copilot.xlsx"
+    wb = openpyxl.Workbook()
+    ws = wb.active
+    ws.append(["²", "Agence / localisation", "Adresse", "Commune", "Département",
+               "Région", "Latitude", "Longitude", "Date de fermeture",
+               "Précision date", "Source principale", "Lien source"])
+    ws.append(["Caisse d'Épargne", "Bannalec", "", "Bannalec", "Finistère",
+               "", "", "", "2026-12-31", "", "MoneyVox",
+               "https://moneyvox.fr/liste"])
+    wb.save(p)
+
+    arts = seed.load_articles(p)
+    assert len(arts) == 1
+    assert arts[0]["source"] == "MoneyVox"
+    assert arts[0]["seed_targets"][0]["banque"] == "Caisse d'Épargne"
+
+
 def test_load_deduplique_les_urls(tmp_path):
     p = tmp_path / "urls.txt"
     p.write_text("https://x.fr/a\nhttps://x.fr/a\n", encoding="utf-8")

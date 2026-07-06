@@ -99,6 +99,10 @@ def _row_from_mapping(raw: dict) -> dict:
         champ = _HEADER_ALIASES.get(_norm_header(k))
         if champ and champ not in canon:
             canon[champ] = "" if v is None else str(v).strip()
+    if not canon.get("banque") and raw:
+        # L'Excel Copilot historique utilise "²" comme en-tête de banque.
+        first_value = next(iter(raw.values()))
+        canon["banque"] = "" if first_value is None else str(first_value).strip()
 
     # Le plan multi-agences n'a pas de colonne dédiée dans l'Excel : on le déduit
     # des champs textuels ("dix agences", "plan de fermeture"...).

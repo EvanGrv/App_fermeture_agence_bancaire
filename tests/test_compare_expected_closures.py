@@ -91,6 +91,22 @@ def test_load_expected_xlsx_entetes_francais(tmp_path):
     assert rows[1]["plan"] is True
 
 
+def test_load_expected_xlsx_copilot_header_banque_positionnel(tmp_path):
+    openpyxl = pytest.importorskip("openpyxl")
+    path = tmp_path / "copilot.xlsx"
+    wb = openpyxl.Workbook()
+    ws = wb.active
+    ws.append(["²", "Agence / localisation", "Adresse", "Commune", "Département",
+               "Région", "Latitude", "Longitude", "Date de fermeture"])
+    ws.append(["Caisse d'Épargne", "Bannalec", "", "Bannalec", "Finistère",
+               "", "", "", "2026-12-31"])
+    wb.save(path)
+
+    rows = cmp.load_expected(path)
+    assert rows[0]["banque"] == "Caisse d'Épargne"
+    assert rows[0]["commune"] == "Bannalec"
+
+
 # --- classify ---------------------------------------------------------------
 
 def test_classify_present_closure():

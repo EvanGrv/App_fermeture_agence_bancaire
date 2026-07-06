@@ -33,7 +33,7 @@ _BANQUE_HEADERS = {"banque"}
 _COMMUNE_HEADERS = {"commune"}
 _LOC_HEADERS = {"agence localisation", "agence / localisation", "localisation"}
 _DATE_HEADERS = {"date", "date de fermeture", "date_fermeture"}
-_SOURCE_HEADERS = {"source"}
+_SOURCE_HEADERS = {"source", "source principale"}
 _DEPT_HEADERS = {"departement"}
 _ELEMENTS_HEADERS = {"elements retenus", "elements"}
 
@@ -114,6 +114,11 @@ def _row_to_article(mapping: dict) -> dict | None:
     if not url:
         return None
     banque = _first(mapping, _BANQUE_HEADERS)
+    if not banque and mapping:
+        # L'Excel Copilot historique a un en-tête banque invalide ("²").
+        # Le mapping conserve l'ordre des colonnes : la banque est en position 0.
+        first_value = next(iter(mapping.values()))
+        banque = "" if first_value is None else str(first_value).strip()
     commune = _first(mapping, _COMMUNE_HEADERS)
     loc = _first(mapping, _LOC_HEADERS)
     elements = _first(mapping, _ELEMENTS_HEADERS)
