@@ -16,6 +16,10 @@ on:
       copilot_reference:
         description: "Excel Copilot à comparer après export"
         required: false
+      skip_pipeline:
+        description: "Si true, saute le scan presse et lance seulement seed/coverage/export"
+        required: false
+        default: "false"
   schedule:
     # Incrémental quotidien : fenêtre 60 jours (cumulative — le DB n'est jamais purgé).
     - cron: "17 3 * * *"
@@ -80,6 +84,7 @@ jobs:
         run: python -m pytest -q
 
       - name: Run pipeline
+        if: ${{ github.event.inputs.skip_pipeline != 'true' }}
         env:
           EVENT_SCHEDULE: ${{ github.event.schedule }}
         run: |
