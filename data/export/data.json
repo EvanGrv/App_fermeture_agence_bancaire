@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-05T07:03:09.443612+00:00",
+  "generated_at": "2026-07-06T08:07:01.809590+00:00",
   "departements": {
     "01": {
       "nom": "Ain",
@@ -562,11 +562,11 @@
     "62": {
       "nom": "Pas-de-Calais",
       "region": "Hauts-de-France",
-      "count": 6,
+      "count": 7,
       "total_agences": 71,
-      "precise_count": 6,
+      "precise_count": 7,
       "unlocated_count": 0,
-      "estimated_count": 6
+      "estimated_count": 7
     },
     "63": {
       "nom": "Puy-de-Dôme",
@@ -933,9 +933,9 @@
     "62": {
       "departement": "62",
       "nom": "Pas-de-Calais",
-      "precise_count": 6,
+      "precise_count": 7,
       "unlocated_count": 0,
-      "estimated_count": 6,
+      "estimated_count": 7,
       "department_signal_count": 0,
       "signals": []
     },
@@ -1177,9 +1177,9 @@
   "regions": [
     {
       "region": "Hauts-de-France",
-      "articles": 13,
+      "articles": 14,
       "fermetures": 8,
-      "projets": 3,
+      "projets": 4,
       "fusions": 0,
       "types": [
         "Fermeture",
@@ -3073,6 +3073,42 @@
         "source": "SIRENE"
       },
       "region": "Bourgogne-Franche-Comté"
+    },
+    {
+      "id": "9e1f51b7ba832563",
+      "banque": "Crédit Agricole",
+      "commune": "Wizernes",
+      "code_insee": "62902",
+      "departement": "62",
+      "type": "fermeture",
+      "date_annonce": "Sun, 05 Jul 2026 10:14:00 GMT",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 3,
+      "lat": 50.710728,
+      "lon": 2.232719,
+      "citation": "L’agence du Crédit Agricole de Wizernes va fermer en décembre - La Voix du Nord",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "created_at": "2026-07-06T08:05:11.833712+00:00",
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOTl85bUlvdno4UHd5VVZHU0F0cXBhU0dDUF96aGdObkFxZTJSQUdWSFZ5c3BQZG9LT3Nhb2VhSF9uUVNqYlAteXpnQjdIaUpTVjBpbkZUbHNIOVJsX3JWYjlacGVLa2tjQk0yd0hqOUdkekpQZmlTeGZPY3dQdFEwbUlKaHRkQmlGZzY5VldMMmtpUnZ5MzZfNzQ3V2c0WGVjTHpsQm9hQ2JvcGlOTWRVY1kwbER2b1E?oc=5",
+          "titre": "L’agence du Crédit Agricole de Wizernes va fermer en décembre - La Voix du Nord",
+          "source": "Google News",
+          "date": "Sun, 05 Jul 2026 10:14:00 GMT",
+          "tier": "D"
+        }
+      ],
+      "controle_sirene": {
+        "etat_administratif": null,
+        "siret": null,
+        "source": "SIRENE"
+      },
+      "region": "Hauts-de-France"
     }
   ],
   "closures_unlocated": [
@@ -3129,6 +3165,24 @@
       "date": "Sun, 24 May 2026 07:00:00 GMT",
       "raison": "commune non géocodée",
       "created_at": "2026-07-02T06:55:01.642225+00:00"
+    },
+    {
+      "id": "e4a783ccb47e84c4",
+      "banque": "Crédit Agricole",
+      "commune": "Wizernes",
+      "departement": "Pas-de-Calais",
+      "type": "fermeture",
+      "date_fermeture": "2026-12-31",
+      "statut": "projet",
+      "statut_temporel": "a_venir",
+      "fiabilite": 5,
+      "citation": "L'agence du Crédit Agricole de Wizernes va fermer en décembre",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOTl85bUlvdno4UHd5VVZHU0F0cXBhU0dDUF96aGdObkFxZTJSQUdWSFZ5c3BQZG9LT3Nhb2VhSF9uUVNqYlAteXpnQjdIaUpTVjBpbkZUbHNIOVJsX3JWYjlacGVLa2tjQk0yd0hqOUdkekpQZmlTeGZPY3dQdFEwbUlKaHRkQmlGZzY5VldMMmtpUnZ5MzZfNzQ3V2c0WGVjTHpsQm9hQ2JvcGlOTWRVY1kwbER2b1E?oc=5",
+      "titre": "L’agence du Crédit Agricole de Wizernes va fermer en décembre - La Voix du Nord",
+      "source": "Google News",
+      "date": "Sun, 05 Jul 2026 10:14:00 GMT",
+      "raison": "commune non géocodée",
+      "created_at": "2026-07-06T08:00:02.127798+00:00"
     },
     {
       "id": "40e46b46cc8ba7a4",
@@ -6771,6 +6825,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-29T09:10:57.753483+00:00"
+    },
+    {
+      "id": "57e968a7bd8b6532",
+      "banque": "Crédit Agricole",
+      "departement": null,
+      "titre": "L’agence du Crédit Agricole de Wizernes va fermer en décembre - La Voix du Nord",
+      "extrait": "TITRE: L’agence du Crédit Agricole de Wizernes va fermer en décembre - La Voix du Nord SOURCE: Google News DATE: Sun, 05 Jul 2026 10:14:00 GMT URL: https://news.google.com/rss/articles/CBMitwFBVV95cUxOTl85bUlvdno4UHd5VVZHU0F0cXBhU0dDUF96aGdObkFxZTJSQUdWSFZ5c3BQZG9LT3Nhb2VhSF9uUVNqYlAteXpnQjdIaUpTVjBpbkZUbHNIOVJsX3JWYjlacGVLa2tjQk0yd0hqOUdkekpQZmlTeGZPY3dQdFEwbUlKaHRkQmlGZzY5VldMMmtpUnZ5MzZfNzQ3V2c0WGVjTHpsQm9hQ2JvcGlOTWRVY1kwbER2b1E?oc=5 <a href=\"https://news.google.com/rss/articles/CBMitwFBVV95",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOTl85bUlvdno4UHd5VVZHU0F0cXBhU0dDUF96aGdObkFxZTJSQUdWSFZ5c3BQZG9LT3Nhb2VhSF9uUVNqYlAteXpnQjdIaUpTVjBpbkZUbHNIOVJsX3JWYjlacGVLa2tjQk0yd0hqOUdkekpQZmlTeGZPY3dQdFEwbUlKaHRkQmlGZzY5VldMMmtpUnZ5MzZfNzQ3V2c0WGVjTHpsQm9hQ2JvcGlOTWRVY1kwbER2b1E?oc=5",
+      "source": "Google News",
+      "date": "Sun, 05 Jul 2026 10:14:00 GMT",
+      "score": 3,
+      "raison": "fermeture non publiée: commune non géocodée",
+      "created_at": "2026-07-06T08:00:02.131899+00:00"
     },
     {
       "id": "018b23aa00b2445c",
