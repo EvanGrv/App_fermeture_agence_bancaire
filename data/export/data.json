@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T12:04:53.669647+00:00",
+  "generated_at": "2026-07-06T12:15:29.961810+00:00",
   "departements": {
     "01": {
       "nom": "Ain",
@@ -202,11 +202,11 @@
     "22": {
       "nom": "Côtes-d'Armor",
       "region": "Bretagne",
-      "count": 3,
+      "count": 4,
       "total_agences": 34,
-      "precise_count": 3,
+      "precise_count": 4,
       "unlocated_count": 0,
-      "estimated_count": 3
+      "estimated_count": 4
     },
     "23": {
       "nom": "Creuse",
@@ -1207,9 +1207,9 @@
     "22": {
       "departement": "22",
       "nom": "Côtes-d'Armor",
-      "precise_count": 3,
+      "precise_count": 4,
       "unlocated_count": 0,
-      "estimated_count": 3,
+      "estimated_count": 4,
       "department_signal_count": 0,
       "signals": []
     },
@@ -1282,9 +1282,9 @@
     },
     {
       "region": "Bretagne",
-      "articles": 15,
+      "articles": 16,
       "fermetures": 10,
-      "projets": 4,
+      "projets": 5,
       "fusions": 0,
       "types": [
         "Fermeture",
@@ -4610,6 +4610,37 @@
         }
       ],
       "region": "Centre-Val de Loire"
+    },
+    {
+      "id": "eba8069327578b13",
+      "banque": "Crédit Mutuel",
+      "commune": "Pleudihen-sur-Rance",
+      "code_insee": "22197",
+      "departement": "22",
+      "type": "fermeture",
+      "date_annonce": "2026-01-24",
+      "date_fermeture": "2026-01-24",
+      "statut": "projet",
+      "statut_temporel": "deja_fermee",
+      "date_fermeture_approx": 0,
+      "fiabilite": 5,
+      "lat": 48.515635,
+      "lon": -1.944122,
+      "citation": "Fermeture annoncée le 24 janvier. Un collectif et des élus se mobilisent pour contester cette fermeture. Le CMB assure que la fermeture s'appuie sur une baisse de fréquentation et des contraintes de sécurité.",
+      "adresse": "Bourg, à côté de l'église",
+      "agence_localisation": "Agence de Pleudihen-sur-Rance",
+      "commune_originale": null,
+      "created_at": "2026-07-06T12:15:28.745036+00:00",
+      "sources": [
+        {
+          "url": "https://www.ici.fr/emissions/l-info-d-ici-de-7h30-ici-armorique/a-pleudihen-sur-rance-les-societaires-se-mobilisent-pour-sauver-leur-agence-du-credit-mutuel-de-bretagne-7852300",
+          "titre": "Crédit Mutuel de Bretagne Pleudihen-sur-Rance fermeture agence",
+          "source": "ICI Armorique / France 3 Bretagne / Ouest-France via Maville",
+          "date": "2026-01-24",
+          "tier": "C"
+        }
+      ],
+      "region": "Bretagne"
     }
   ],
   "closures_unlocated": [
@@ -4846,6 +4877,60 @@
       "date": "Fri, 25 Jul 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
       "created_at": "2026-07-02T12:58:47.063400+00:00"
+    },
+    {
+      "id": "819d9270c7054786",
+      "banque": "Crédit Agricole",
+      "commune": "Reuilly",
+      "departement": "Indre",
+      "type": "fermeture",
+      "date_fermeture": "2026-01-24",
+      "statut": "confirmé",
+      "statut_temporel": "deja_fermee",
+      "fiabilite": 5,
+      "citation": "L'agence du Crédit agricole de Reuilly ferme ses portes ce vendredi (24 janvier 2026), transférée à Issoudun. Annonce officielle du 7 octobre 2025.",
+      "url": "https://www.ici.fr/centre-val-de-loire/indre-36/reuilly/l-agence-bancaire-credit-agricole-de-reuilly-dans-l-indre-ferme-ses-portes-ce-vendredi-5175020",
+      "titre": "Crédit Agricole Centre Ouest Reuilly fermeture agence",
+      "source": "ICI Centre-Val de Loire / Radio France",
+      "date": "2026-01-23",
+      "raison": "commune non géocodée",
+      "created_at": "2026-07-06T12:15:23.225906+00:00"
+    },
+    {
+      "id": "6f9d16f7e207151c",
+      "banque": "Crédit Agricole",
+      "commune": "Écueillé",
+      "departement": "Indre",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "confirmé",
+      "statut_temporel": "inconnu",
+      "fiabilite": 4,
+      "citation": "Parmi les agences qui ferment dans l'Indre et la Haute-Vienne selon Pierre Bertin du syndicat Sudcam. Quatre fermetures dans l'Indre dont Reuilly, Écueillé et Villedieu-sur-Indre.",
+      "url": "https://www.ici.fr/centre-val-de-loire/indre-36/reuilly/l-agence-bancaire-credit-agricole-de-reuilly-dans-l-indre-ferme-ses-portes-ce-vendredi-5175020",
+      "titre": "Crédit Agricole Centre Ouest Reuilly fermeture agence",
+      "source": "ICI Centre-Val de Loire / Radio France",
+      "date": "2026-01-23",
+      "raison": "commune non géocodée",
+      "created_at": "2026-07-06T12:15:23.980433+00:00"
+    },
+    {
+      "id": "a6e298acf76116e6",
+      "banque": "Crédit Agricole",
+      "commune": "Villedieu-sur-Indre",
+      "departement": "Indre",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "confirmé",
+      "statut_temporel": "inconnu",
+      "fiabilite": 4,
+      "citation": "Parmi les agences qui ferment dans l'Indre et la Haute-Vienne selon Pierre Bertin du syndicat Sudcam. Quatre fermetures dans l'Indre dont Reuilly, Écueillé et Villedieu-sur-Indre.",
+      "url": "https://www.ici.fr/centre-val-de-loire/indre-36/reuilly/l-agence-bancaire-credit-agricole-de-reuilly-dans-l-indre-ferme-ses-portes-ce-vendredi-5175020",
+      "titre": "Crédit Agricole Centre Ouest Reuilly fermeture agence",
+      "source": "ICI Centre-Val de Loire / Radio France",
+      "date": "2026-01-23",
+      "raison": "commune non géocodée",
+      "created_at": "2026-07-06T12:15:25.144870+00:00"
     }
   ],
   "department_signals": [
@@ -4918,6 +5003,20 @@
       "source": "ICI Centre-Val de Loire / Radio France",
       "date": "2026-01-23",
       "created_at": "2026-07-06T12:04:47.620282+00:00"
+    },
+    {
+      "id": "dc38514e99f41233",
+      "banque": "Crédit Agricole",
+      "departement": "Haute-Vienne",
+      "count": 7,
+      "communes_mentioned": "",
+      "confidence": 0.9,
+      "evidence": "Sur l'Indre et la Haute-Vienne, 11 agences qui ferment : quatre sur l'Indre et sept sur la Haute-Vienne, soit 15% des agences de la caisse régionale Centre-Ouest.",
+      "url": "https://www.ici.fr/centre-val-de-loire/indre-36/reuilly/l-agence-bancaire-credit-agricole-de-reuilly-dans-l-indre-ferme-ses-portes-ce-vendredi-5175020",
+      "titre": "Crédit Agricole Centre Ouest Reuilly fermeture agence",
+      "source": "ICI Centre-Val de Loire / Radio France",
+      "date": "2026-01-23",
+      "created_at": "2026-07-06T12:15:22.527943+00:00"
     }
   ],
   "vague_signals": [
@@ -5043,14 +5142,14 @@
     {
       "id": "7493d6acfb4b2885",
       "banque": "Crédit Agricole",
-      "departement": "36",
+      "departement": "Haute-Vienne",
       "titre": "Crédit Agricole Centre Ouest Reuilly fermeture agence",
-      "extrait": "quatre fermetures d'agences dans l'Indre sur 11 agences fermées au total en Indre et Haute-Vienne, soit 15% des agences",
+      "extrait": "Sur l'Indre et la Haute-Vienne, 11 agences qui ferment : quatre sur l'Indre et sept sur la Haute-Vienne, soit 15% des agences de la caisse régionale Centre-Ouest.",
       "url": "https://www.ici.fr/centre-val-de-loire/indre-36/reuilly/l-agence-bancaire-credit-agricole-de-reuilly-dans-l-indre-ferme-ses-portes-ce-vendredi-5175020",
       "source": "ICI Centre-Val de Loire / Radio France",
       "date": "2026-01-23",
       "score": 5,
-      "raison": "signaux: dept(Crédit Agricole,36,count=4,communes=Reuilly, Écueillé, Villedieu-sur-Indre)",
+      "raison": "signaux: dept(Crédit Agricole,Haute-Vienne,count=7,communes=)",
       "created_at": "2026-07-06T10:46:37.963586+00:00"
     },
     {
