@@ -228,5 +228,15 @@
     "departement": "25",
     "code_insee": "25390",
     "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "2b3c02eac49ee643",
+    "banque": "Crédit Agricole",
+    "commune": "Saint-Saturnin-lès-Avignon",
+    "departement": "84",
+    "code_insee": "84119",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
   }
 ]
