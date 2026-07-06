@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T10:46:44.938183+00:00",
+  "generated_at": "2026-07-06T12:04:53.669647+00:00",
   "departements": {
     "01": {
       "nom": "Ain",
@@ -157,11 +157,11 @@
     "18": {
       "nom": "Cher",
       "region": "Centre-Val de Loire",
-      "count": 1,
+      "count": 2,
       "total_agences": 23,
-      "precise_count": 1,
+      "precise_count": 2,
       "unlocated_count": 0,
-      "estimated_count": 1
+      "estimated_count": 2
     },
     "19": {
       "nom": "Corrèze",
@@ -202,11 +202,11 @@
     "22": {
       "nom": "Côtes-d'Armor",
       "region": "Bretagne",
-      "count": 1,
+      "count": 3,
       "total_agences": 34,
-      "precise_count": 1,
+      "precise_count": 3,
       "unlocated_count": 0,
-      "estimated_count": 1
+      "estimated_count": 3
     },
     "23": {
       "nom": "Creuse",
@@ -256,20 +256,20 @@
     "28": {
       "nom": "Eure-et-Loir",
       "region": "Centre-Val de Loire",
-      "count": 0,
+      "count": 5,
       "total_agences": 27,
-      "precise_count": 0,
+      "precise_count": 5,
       "unlocated_count": 0,
-      "estimated_count": 0
+      "estimated_count": 5
     },
     "29": {
       "nom": "Finistère",
       "region": "Bretagne",
-      "count": 3,
+      "count": 8,
       "total_agences": 69,
-      "precise_count": 3,
+      "precise_count": 8,
       "unlocated_count": 0,
-      "estimated_count": 3
+      "estimated_count": 8
     },
     "30": {
       "nom": "Gard",
@@ -319,29 +319,29 @@
     "35": {
       "nom": "Ille-et-Vilaine",
       "region": "Bretagne",
-      "count": 0,
+      "count": 1,
       "total_agences": 103,
-      "precise_count": 0,
+      "precise_count": 1,
       "unlocated_count": 0,
-      "estimated_count": 0
+      "estimated_count": 1
     },
     "36": {
       "nom": "Indre",
       "region": "Centre-Val de Loire",
-      "count": 5,
+      "count": 11,
       "total_agences": 6,
-      "precise_count": 5,
+      "precise_count": 11,
       "unlocated_count": 0,
-      "estimated_count": 9
+      "estimated_count": 15
     },
     "37": {
       "nom": "Indre-et-Loire",
       "region": "Centre-Val de Loire",
-      "count": 1,
+      "count": 4,
       "total_agences": 48,
-      "precise_count": 1,
+      "precise_count": 4,
       "unlocated_count": 0,
-      "estimated_count": 1
+      "estimated_count": 4
     },
     "38": {
       "nom": "Isère",
@@ -373,11 +373,11 @@
     "41": {
       "nom": "Loir-et-Cher",
       "region": "Centre-Val de Loire",
-      "count": 0,
+      "count": 2,
       "total_agences": 7,
-      "precise_count": 0,
+      "precise_count": 2,
       "unlocated_count": 0,
-      "estimated_count": 0
+      "estimated_count": 2
     },
     "42": {
       "nom": "Loire",
@@ -400,20 +400,20 @@
     "44": {
       "nom": "Loire-Atlantique",
       "region": "Pays de la Loire",
-      "count": 0,
+      "count": 3,
       "total_agences": 77,
-      "precise_count": 0,
+      "precise_count": 3,
       "unlocated_count": 0,
-      "estimated_count": 0
+      "estimated_count": 3
     },
     "45": {
       "nom": "Loiret",
       "region": "Centre-Val de Loire",
-      "count": 1,
+      "count": 8,
       "total_agences": 138,
-      "precise_count": 1,
+      "precise_count": 8,
       "unlocated_count": 0,
-      "estimated_count": 1
+      "estimated_count": 8
     },
     "46": {
       "nom": "Lot",
@@ -445,11 +445,11 @@
     "49": {
       "nom": "Maine-et-Loire",
       "region": "Pays de la Loire",
-      "count": 0,
+      "count": 3,
       "total_agences": 48,
-      "precise_count": 0,
+      "precise_count": 3,
       "unlocated_count": 0,
-      "estimated_count": 0
+      "estimated_count": 3
     },
     "50": {
       "nom": "Manche",
@@ -508,11 +508,11 @@
     "56": {
       "nom": "Morbihan",
       "region": "Bretagne",
-      "count": 1,
+      "count": 2,
       "total_agences": 56,
-      "precise_count": 1,
+      "precise_count": 2,
       "unlocated_count": 0,
-      "estimated_count": 1
+      "estimated_count": 2
     },
     "57": {
       "nom": "Moselle",
@@ -951,9 +951,9 @@
     "36": {
       "departement": "36",
       "nom": "Indre",
-      "precise_count": 5,
+      "precise_count": 11,
       "unlocated_count": 0,
-      "estimated_count": 9,
+      "estimated_count": 15,
       "department_signal_count": 4,
       "signals": [
         {
@@ -961,12 +961,12 @@
           "banque": "Crédit Agricole",
           "commune": "",
           "departement": "36",
-          "titre": "Reuilly fermeture agence",
-          "source": "Seed URL",
+          "titre": "Crédit Agricole Centre Ouest Reuilly fermeture agence",
+          "source": "ICI Centre-Val de Loire / Radio France",
           "url": "https://www.ici.fr/centre-val-de-loire/indre-36/reuilly/l-agence-bancaire-credit-agricole-de-reuilly-dans-l-indre-ferme-ses-portes-ce-vendredi-5175020",
-          "score": 5,
+          "score": 4,
           "precision": "departement",
-          "reason": "Sur l'Indre et la Haute-Vienne, on a 11 agences qui ferment, quatre sur l'Indre et sept sur la Haute-Vienne. Ça représente 15% de nos agences"
+          "reason": "quatre fermetures d'agences dans l'Indre sur 11 agences fermées au total en Indre et Haute-Vienne, soit 15% des agences"
         }
       ]
     },
@@ -991,27 +991,27 @@
     "45": {
       "departement": "45",
       "nom": "Loiret",
-      "precise_count": 1,
+      "precise_count": 8,
       "unlocated_count": 0,
-      "estimated_count": 1,
+      "estimated_count": 8,
       "department_signal_count": 0,
       "signals": []
     },
     "29": {
       "departement": "29",
       "nom": "Finistère",
-      "precise_count": 3,
+      "precise_count": 8,
       "unlocated_count": 0,
-      "estimated_count": 3,
+      "estimated_count": 8,
       "department_signal_count": 0,
       "signals": []
     },
     "37": {
       "departement": "37",
       "nom": "Indre-et-Loire",
-      "precise_count": 1,
+      "precise_count": 4,
       "unlocated_count": 0,
-      "estimated_count": 1,
+      "estimated_count": 4,
       "department_signal_count": 0,
       "signals": []
     },
@@ -1144,9 +1144,9 @@
     "18": {
       "departement": "18",
       "nom": "Cher",
-      "precise_count": 1,
+      "precise_count": 2,
       "unlocated_count": 0,
-      "estimated_count": 1,
+      "estimated_count": 2,
       "department_signal_count": 0,
       "signals": []
     },
@@ -1162,9 +1162,9 @@
     "56": {
       "departement": "56",
       "nom": "Morbihan",
-      "precise_count": 1,
+      "precise_count": 2,
       "unlocated_count": 0,
-      "estimated_count": 1,
+      "estimated_count": 2,
       "department_signal_count": 0,
       "signals": []
     },
@@ -1207,14 +1207,97 @@
     "22": {
       "departement": "22",
       "nom": "Côtes-d'Armor",
+      "precise_count": 3,
+      "unlocated_count": 0,
+      "estimated_count": 3,
+      "department_signal_count": 0,
+      "signals": []
+    },
+    "44": {
+      "departement": "44",
+      "nom": "Loire-Atlantique",
+      "precise_count": 3,
+      "unlocated_count": 0,
+      "estimated_count": 3,
+      "department_signal_count": 0,
+      "signals": []
+    },
+    "49": {
+      "departement": "49",
+      "nom": "Maine-et-Loire",
+      "precise_count": 3,
+      "unlocated_count": 0,
+      "estimated_count": 3,
+      "department_signal_count": 0,
+      "signals": []
+    },
+    "35": {
+      "departement": "35",
+      "nom": "Ille-et-Vilaine",
       "precise_count": 1,
       "unlocated_count": 0,
       "estimated_count": 1,
       "department_signal_count": 0,
       "signals": []
+    },
+    "41": {
+      "departement": "41",
+      "nom": "Loir-et-Cher",
+      "precise_count": 2,
+      "unlocated_count": 0,
+      "estimated_count": 2,
+      "department_signal_count": 0,
+      "signals": []
+    },
+    "28": {
+      "departement": "28",
+      "nom": "Eure-et-Loir",
+      "precise_count": 5,
+      "unlocated_count": 0,
+      "estimated_count": 5,
+      "department_signal_count": 0,
+      "signals": []
     }
   },
   "regions": [
+    {
+      "region": "Centre-Val de Loire",
+      "articles": 35,
+      "fermetures": 31,
+      "projets": 1,
+      "fusions": 0,
+      "types": [
+        "Fermeture",
+        "Projet"
+      ],
+      "departements": [
+        "18",
+        "28",
+        "36",
+        "37",
+        "41",
+        "45"
+      ],
+      "nb_departements": 6
+    },
+    {
+      "region": "Bretagne",
+      "articles": 15,
+      "fermetures": 10,
+      "projets": 4,
+      "fusions": 0,
+      "types": [
+        "Fermeture",
+        "Projet"
+      ],
+      "departements": [
+        "22",
+        "29",
+        "35",
+        "56"
+      ],
+      "nb_departements": 4
+    },
     {
       "region": "Hauts-de-France",
       "articles": 14,
@@ -1231,24 +1314,6 @@
         "62"
       ],
       "nb_departements": 3
-    },
-    {
-      "region": "Centre-Val de Loire",
-      "articles": 11,
-      "fermetures": 7,
-      "projets": 1,
-      "fusions": 0,
-      "types": [
-        "Fermeture",
-        "Projet"
-      ],
-      "departements": [
-        "18",
-        "36",
-        "37",
-        "45"
-      ],
-      "nb_departements": 4
     },
     {
       "region": "Auvergne-Rhône-Alpes",
@@ -1268,19 +1333,19 @@
       "nb_departements": 3
     },
     {
-      "region": "Bretagne",
-      "articles": 6,
-      "fermetures": 2,
-      "projets": 3,
+      "region": "Pays de la Loire",
+      "articles": 7,
+      "fermetures": 6,
+      "projets": 1,
       "fusions": 0,
       "types": [
         "Fermeture",
         "Projet"
       ],
       "departements": [
-        "22",
-        "29",
-        "56"
+        "44",
+        "49",
+        "72"
       ],
       "nb_departements": 3
     },
@@ -1379,20 +1444,6 @@
       ],
       "departements": [
         "75"
-      ],
-      "nb_departements": 1
-    },
-    {
-      "region": "Pays de la Loire",
-      "articles": 1,
-      "fermetures": 0,
-      "projets": 1,
-      "fusions": 0,
-      "types": [
-        "Projet"
-      ],
-      "departements": [
-        "72"
       ],
       "nb_departements": 1
     },
@@ -3350,6 +3401,1215 @@
         }
       ],
       "region": "Bretagne"
+    },
+    {
+      "id": "1de9e3f0dbb9a51f",
+      "banque": "Caisse d’Épargne",
+      "commune": "Plonéour-Lanvern",
+      "code_insee": "29174",
+      "departement": "29",
+      "type": "fermeture",
+      "date_annonce": "2026-01-01",
+      "date_fermeture": "2026-01-01",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 4,
+      "lat": 47.905758,
+      "lon": -4.265707,
+      "citation": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "created_at": "2026-07-06T12:04:40.837328+00:00",
+      "sources": [
+        {
+          "url": "https://www.moneyvox.fr/banque/actualites/103734/caisse-epargne-decouvrez-quelles-agences-vont-fermer-leurs-portes",
+          "titre": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+          "source": "MoneyVox, 06/06/2025, maj 22/08/2025",
+          "date": "2026-01-01",
+          "tier": "D"
+        }
+      ],
+      "region": "Bretagne"
+    },
+    {
+      "id": "c2285ce8073e19a4",
+      "banque": "Caisse d’Épargne",
+      "commune": "Bannalec",
+      "code_insee": "29004",
+      "departement": "29",
+      "type": "fermeture",
+      "date_annonce": "2026-01-01",
+      "date_fermeture": "2026-01-01",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 4,
+      "lat": 47.939387,
+      "lon": -3.685963,
+      "citation": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "created_at": "2026-07-06T12:04:40.840653+00:00",
+      "sources": [
+        {
+          "url": "https://www.moneyvox.fr/banque/actualites/103734/caisse-epargne-decouvrez-quelles-agences-vont-fermer-leurs-portes",
+          "titre": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+          "source": "MoneyVox, 06/06/2025, maj 22/08/2025",
+          "date": "2026-01-01",
+          "tier": "D"
+        }
+      ],
+      "region": "Bretagne"
+    },
+    {
+      "id": "214173eb33726399",
+      "banque": "Caisse d’Épargne",
+      "commune": "Nogent-sur-Vernisson",
+      "code_insee": "45229",
+      "departement": "45",
+      "type": "fermeture",
+      "date_annonce": "2026-01-01",
+      "date_fermeture": "2026-01-01",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 4,
+      "lat": 47.835908,
+      "lon": 2.73731,
+      "citation": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "created_at": "2026-07-06T12:04:40.842250+00:00",
+      "sources": [
+        {
+          "url": "https://www.moneyvox.fr/banque/actualites/103734/caisse-epargne-decouvrez-quelles-agences-vont-fermer-leurs-portes",
+          "titre": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+          "source": "MoneyVox, 06/06/2025, maj 22/08/2025",
+          "date": "2026-01-01",
+          "tier": "D"
+        }
+      ],
+      "region": "Centre-Val de Loire"
+    },
+    {
+      "id": "569c2beaaf790b75",
+      "banque": "Caisse d’Épargne",
+      "commune": "Nantes",
+      "code_insee": "44109",
+      "departement": "44",
+      "type": "fermeture",
+      "date_annonce": "2026-01-01",
+      "date_fermeture": "2026-01-01",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 4,
+      "lat": 47.239367,
+      "lon": -1.555335,
+      "citation": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+      "adresse": null,
+      "agence_localisation": "Nantes Pont-Morand",
+      "commune_originale": "Nantes Pont-Morand",
+      "created_at": "2026-07-06T12:04:40.844874+00:00",
+      "sources": [
+        {
+          "url": "https://www.moneyvox.fr/banque/actualites/103734/caisse-epargne-decouvrez-quelles-agences-vont-fermer-leurs-portes",
+          "titre": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+          "source": "MoneyVox, 06/06/2025, maj 22/08/2025",
+          "date": "2026-01-01",
+          "tier": "D"
+        }
+      ],
+      "region": "Pays de la Loire"
+    },
+    {
+      "id": "e854f69b6fc3abcd",
+      "banque": "Caisse d’Épargne",
+      "commune": "Artenay",
+      "code_insee": "45008",
+      "departement": "45",
+      "type": "fermeture",
+      "date_annonce": "2026-01-01",
+      "date_fermeture": "2026-01-01",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 4,
+      "lat": 48.07644,
+      "lon": 1.876771,
+      "citation": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "created_at": "2026-07-06T12:04:40.846466+00:00",
+      "sources": [
+        {
+          "url": "https://www.moneyvox.fr/banque/actualites/103734/caisse-epargne-decouvrez-quelles-agences-vont-fermer-leurs-portes",
+          "titre": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+          "source": "MoneyVox, 06/06/2025, maj 22/08/2025",
+          "date": "2026-01-01",
+          "tier": "D"
+        }
+      ],
+      "region": "Centre-Val de Loire"
+    },
+    {
+      "id": "fad755c7a41a4e37",
+      "banque": "Caisse d’Épargne",
+      "commune": "Avoine",
+      "code_insee": "37011",
+      "departement": "37",
+      "type": "fermeture",
+      "date_annonce": "2026-01-01",
+      "date_fermeture": "2026-01-01",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 4,
+      "lat": 47.212201,
+      "lon": 0.185875,
+      "citation": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "created_at": "2026-07-06T12:04:40.848438+00:00",
+      "sources": [
+        {
+          "url": "https://www.moneyvox.fr/banque/actualites/103734/caisse-epargne-decouvrez-quelles-agences-vont-fermer-leurs-portes",
+          "titre": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+          "source": "MoneyVox, 06/06/2025, maj 22/08/2025",
+          "date": "2026-01-01",
+          "tier": "D"
+        }
+      ],
+      "region": "Centre-Val de Loire"
+    },
+    {
+      "id": "98d3451f43904e59",
+      "banque": "Caisse d’Épargne",
+      "commune": "Vatan",
+      "code_insee": "36230",
+      "departement": "36",
+      "type": "fermeture",
+      "date_annonce": "2026-01-01",
+      "date_fermeture": "2026-01-01",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 4,
+      "lat": 47.062353,
+      "lon": 1.821849,
+      "citation": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "created_at": "2026-07-06T12:04:40.850068+00:00",
+      "sources": [
+        {
+          "url": "https://www.moneyvox.fr/banque/actualites/103734/caisse-epargne-decouvrez-quelles-agences-vont-fermer-leurs-portes",
+          "titre": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+          "source": "MoneyVox, 06/06/2025, maj 22/08/2025",
+          "date": "2026-01-01",
+          "tier": "D"
+        }
+      ],
+      "region": "Centre-Val de Loire"
+    },
+    {
+      "id": "3769341420488a7d",
+      "banque": "Caisse d’Épargne",
+      "commune": "Quimperlé",
+      "code_insee": "29233",
+      "departement": "29",
+      "type": "fermeture",
+      "date_annonce": "2026-01-01",
+      "date_fermeture": "2026-01-01",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 4,
+      "lat": 47.861737,
+      "lon": -3.559902,
+      "citation": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+      "adresse": null,
+      "agence_localisation": "Quimperlé Saint-Michel / Coat Kaer",
+      "commune_originale": "Quimperlé Saint-Michel / Coat Kaer",
+      "created_at": "2026-07-06T12:04:40.852266+00:00",
+      "sources": [
+        {
+          "url": "https://www.moneyvox.fr/banque/actualites/103734/caisse-epargne-decouvrez-quelles-agences-vont-fermer-leurs-portes",
+          "titre": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+          "source": "MoneyVox, 06/06/2025, maj 22/08/2025",
+          "date": "2026-01-01",
+          "tier": "D"
+        }
+      ],
+      "region": "Bretagne"
+    },
+    {
+      "id": "e812a07555546a1f",
+      "banque": "Caisse d’Épargne",
+      "commune": "Bubry",
+      "code_insee": "56026",
+      "departement": "56",
+      "type": "fermeture",
+      "date_annonce": "2026-01-01",
+      "date_fermeture": "2026-01-01",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 4,
+      "lat": 47.971017,
+      "lon": -3.171959,
+      "citation": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "created_at": "2026-07-06T12:04:40.853758+00:00",
+      "sources": [
+        {
+          "url": "https://www.moneyvox.fr/banque/actualites/103734/caisse-epargne-decouvrez-quelles-agences-vont-fermer-leurs-portes",
+          "titre": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+          "source": "MoneyVox, 06/06/2025, maj 22/08/2025",
+          "date": "2026-01-01",
+          "tier": "D"
+        }
+      ],
+      "region": "Bretagne"
+    },
+    {
+      "id": "b265787b297dfd2b",
+      "banque": "Caisse d’Épargne",
+      "commune": "Quimperlé",
+      "code_insee": "29233",
+      "departement": "29",
+      "type": "fermeture",
+      "date_annonce": "2026-01-01",
+      "date_fermeture": "2026-01-01",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 4,
+      "lat": 47.861737,
+      "lon": -3.559902,
+      "citation": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+      "adresse": null,
+      "agence_localisation": "Quimperlé Brémond d'Ars",
+      "commune_originale": "Quimperlé Brémond d'Ars",
+      "created_at": "2026-07-06T12:04:40.855825+00:00",
+      "sources": [
+        {
+          "url": "https://www.moneyvox.fr/banque/actualites/103734/caisse-epargne-decouvrez-quelles-agences-vont-fermer-leurs-portes",
+          "titre": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+          "source": "MoneyVox, 06/06/2025, maj 22/08/2025",
+          "date": "2026-01-01",
+          "tier": "D"
+        }
+      ],
+      "region": "Bretagne"
+    },
+    {
+      "id": "b3f4f766a2a981d9",
+      "banque": "Caisse d’Épargne",
+      "commune": "Durtal",
+      "code_insee": "49127",
+      "departement": "49",
+      "type": "fermeture",
+      "date_annonce": "2026-01-01",
+      "date_fermeture": "2026-01-01",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 4,
+      "lat": 47.680898,
+      "lon": -0.257065,
+      "citation": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "created_at": "2026-07-06T12:04:40.857298+00:00",
+      "sources": [
+        {
+          "url": "https://www.moneyvox.fr/banque/actualites/103734/caisse-epargne-decouvrez-quelles-agences-vont-fermer-leurs-portes",
+          "titre": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+          "source": "MoneyVox, 06/06/2025, maj 22/08/2025",
+          "date": "2026-01-01",
+          "tier": "D"
+        }
+      ],
+      "region": "Pays de la Loire"
+    },
+    {
+      "id": "2fdbf9c3f79f33a0",
+      "banque": "Caisse d’Épargne",
+      "commune": "Rennes",
+      "code_insee": "35238",
+      "departement": "35",
+      "type": "fermeture",
+      "date_annonce": "2026-01-01",
+      "date_fermeture": "2026-01-01",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 4,
+      "lat": 48.110899,
+      "lon": -1.68365,
+      "citation": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+      "adresse": null,
+      "agence_localisation": "Rennes Kennedy",
+      "commune_originale": "Rennes Kennedy",
+      "created_at": "2026-07-06T12:04:40.859892+00:00",
+      "sources": [
+        {
+          "url": "https://www.moneyvox.fr/banque/actualites/103734/caisse-epargne-decouvrez-quelles-agences-vont-fermer-leurs-portes",
+          "titre": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+          "source": "MoneyVox, 06/06/2025, maj 22/08/2025",
+          "date": "2026-01-01",
+          "tier": "D"
+        }
+      ],
+      "region": "Bretagne"
+    },
+    {
+      "id": "c87baaf219324b71",
+      "banque": "Caisse d’Épargne",
+      "commune": "Morée",
+      "code_insee": "41154",
+      "departement": "41",
+      "type": "fermeture",
+      "date_annonce": "2026-01-01",
+      "date_fermeture": "2026-01-01",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 4,
+      "lat": 47.906409,
+      "lon": 1.251639,
+      "citation": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "created_at": "2026-07-06T12:04:40.861624+00:00",
+      "sources": [
+        {
+          "url": "https://www.moneyvox.fr/banque/actualites/103734/caisse-epargne-decouvrez-quelles-agences-vont-fermer-leurs-portes",
+          "titre": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+          "source": "MoneyVox, 06/06/2025, maj 22/08/2025",
+          "date": "2026-01-01",
+          "tier": "D"
+        }
+      ],
+      "region": "Centre-Val de Loire"
+    },
+    {
+      "id": "635413b05d29c482",
+      "banque": "Caisse d’Épargne",
+      "commune": "Guilers",
+      "code_insee": "29069",
+      "departement": "29",
+      "type": "fermeture",
+      "date_annonce": "2026-01-01",
+      "date_fermeture": "2026-01-01",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 4,
+      "lat": 48.420019,
+      "lon": -4.559732,
+      "citation": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "created_at": "2026-07-06T12:04:40.863847+00:00",
+      "sources": [
+        {
+          "url": "https://www.moneyvox.fr/banque/actualites/103734/caisse-epargne-decouvrez-quelles-agences-vont-fermer-leurs-portes",
+          "titre": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+          "source": "MoneyVox, 06/06/2025, maj 22/08/2025",
+          "date": "2026-01-01",
+          "tier": "D"
+        }
+      ],
+      "region": "Bretagne"
+    },
+    {
+      "id": "91f120aea8268551",
+      "banque": "Caisse d’Épargne",
+      "commune": "Châtillon-sur-Loire",
+      "code_insee": "45087",
+      "departement": "45",
+      "type": "fermeture",
+      "date_annonce": "2026-01-01",
+      "date_fermeture": "2026-01-01",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 4,
+      "lat": 47.571226,
+      "lon": 2.743192,
+      "citation": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "created_at": "2026-07-06T12:04:40.865620+00:00",
+      "sources": [
+        {
+          "url": "https://www.moneyvox.fr/banque/actualites/103734/caisse-epargne-decouvrez-quelles-agences-vont-fermer-leurs-portes",
+          "titre": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+          "source": "MoneyVox, 06/06/2025, maj 22/08/2025",
+          "date": "2026-01-01",
+          "tier": "D"
+        }
+      ],
+      "region": "Centre-Val de Loire"
+    },
+    {
+      "id": "2de887823af53943",
+      "banque": "Caisse d’Épargne",
+      "commune": "Orléans",
+      "code_insee": "45234",
+      "departement": "45",
+      "type": "fermeture",
+      "date_annonce": "2026-01-01",
+      "date_fermeture": "2026-01-01",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 4,
+      "lat": 47.873569,
+      "lon": 1.911358,
+      "citation": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+      "adresse": null,
+      "agence_localisation": "Orléans Grand Villiers",
+      "commune_originale": "Orléans Grand Villiers",
+      "created_at": "2026-07-06T12:04:40.867842+00:00",
+      "sources": [
+        {
+          "url": "https://www.moneyvox.fr/banque/actualites/103734/caisse-epargne-decouvrez-quelles-agences-vont-fermer-leurs-portes",
+          "titre": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+          "source": "MoneyVox, 06/06/2025, maj 22/08/2025",
+          "date": "2026-01-01",
+          "tier": "D"
+        }
+      ],
+      "region": "Centre-Val de Loire"
+    },
+    {
+      "id": "0956f155ae2c92c7",
+      "banque": "Caisse d’Épargne",
+      "commune": "Illiers-Combray",
+      "code_insee": "28196",
+      "departement": "28",
+      "type": "fermeture",
+      "date_annonce": "2026-01-01",
+      "date_fermeture": "2026-01-01",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 4,
+      "lat": 48.300896,
+      "lon": 1.224246,
+      "citation": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "created_at": "2026-07-06T12:04:40.869528+00:00",
+      "sources": [
+        {
+          "url": "https://www.moneyvox.fr/banque/actualites/103734/caisse-epargne-decouvrez-quelles-agences-vont-fermer-leurs-portes",
+          "titre": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+          "source": "MoneyVox, 06/06/2025, maj 22/08/2025",
+          "date": "2026-01-01",
+          "tier": "D"
+        }
+      ],
+      "region": "Centre-Val de Loire"
+    },
+    {
+      "id": "6516a4a5eb8585a9",
+      "banque": "Caisse d’Épargne",
+      "commune": "Richelieu",
+      "code_insee": "37196",
+      "departement": "37",
+      "type": "fermeture",
+      "date_annonce": "2026-01-01",
+      "date_fermeture": "2026-01-01",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 4,
+      "lat": 47.015347,
+      "lon": 0.316886,
+      "citation": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "created_at": "2026-07-06T12:04:40.871813+00:00",
+      "sources": [
+        {
+          "url": "https://www.moneyvox.fr/banque/actualites/103734/caisse-epargne-decouvrez-quelles-agences-vont-fermer-leurs-portes",
+          "titre": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+          "source": "MoneyVox, 06/06/2025, maj 22/08/2025",
+          "date": "2026-01-01",
+          "tier": "D"
+        }
+      ],
+      "region": "Centre-Val de Loire"
+    },
+    {
+      "id": "4a51b67be9d7c25d",
+      "banque": "Caisse d’Épargne",
+      "commune": "Donges",
+      "code_insee": "44052",
+      "departement": "44",
+      "type": "fermeture",
+      "date_annonce": "2026-01-01",
+      "date_fermeture": "2026-01-01",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 4,
+      "lat": 47.345752,
+      "lon": -2.066722,
+      "citation": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "created_at": "2026-07-06T12:04:40.873300+00:00",
+      "sources": [
+        {
+          "url": "https://www.moneyvox.fr/banque/actualites/103734/caisse-epargne-decouvrez-quelles-agences-vont-fermer-leurs-portes",
+          "titre": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+          "source": "MoneyVox, 06/06/2025, maj 22/08/2025",
+          "date": "2026-01-01",
+          "tier": "D"
+        }
+      ],
+      "region": "Pays de la Loire"
+    },
+    {
+      "id": "a1827f061f8de758",
+      "banque": "Caisse d’Épargne",
+      "commune": "Tours",
+      "code_insee": "37261",
+      "departement": "37",
+      "type": "fermeture",
+      "date_annonce": "2026-01-01",
+      "date_fermeture": "2026-01-01",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 4,
+      "lat": 47.395476,
+      "lon": 0.695848,
+      "citation": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+      "adresse": null,
+      "agence_localisation": "Tours Beaujardin",
+      "commune_originale": "Tours Beaujardin",
+      "created_at": "2026-07-06T12:04:40.877925+00:00",
+      "sources": [
+        {
+          "url": "https://www.moneyvox.fr/banque/actualites/103734/caisse-epargne-decouvrez-quelles-agences-vont-fermer-leurs-portes",
+          "titre": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+          "source": "MoneyVox, 06/06/2025, maj 22/08/2025",
+          "date": "2026-01-01",
+          "tier": "D"
+        }
+      ],
+      "region": "Centre-Val de Loire"
+    },
+    {
+      "id": "2066f1ec33c2411e",
+      "banque": "Caisse d’Épargne",
+      "commune": "Le Pellerin",
+      "code_insee": "44120",
+      "departement": "44",
+      "type": "fermeture",
+      "date_annonce": "2026-01-01",
+      "date_fermeture": "2026-01-01",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 4,
+      "lat": 47.196289,
+      "lon": -1.785427,
+      "citation": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "created_at": "2026-07-06T12:04:40.879627+00:00",
+      "sources": [
+        {
+          "url": "https://www.moneyvox.fr/banque/actualites/103734/caisse-epargne-decouvrez-quelles-agences-vont-fermer-leurs-portes",
+          "titre": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+          "source": "MoneyVox, 06/06/2025, maj 22/08/2025",
+          "date": "2026-01-01",
+          "tier": "D"
+        }
+      ],
+      "region": "Pays de la Loire"
+    },
+    {
+      "id": "1226082e1c144aad",
+      "banque": "Caisse d’Épargne",
+      "commune": "Chabris",
+      "code_insee": "36034",
+      "departement": "36",
+      "type": "fermeture",
+      "date_annonce": "2026-01-01",
+      "date_fermeture": "2026-01-01",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 4,
+      "lat": 47.253947,
+      "lon": 1.666058,
+      "citation": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "created_at": "2026-07-06T12:04:40.881669+00:00",
+      "sources": [
+        {
+          "url": "https://www.moneyvox.fr/banque/actualites/103734/caisse-epargne-decouvrez-quelles-agences-vont-fermer-leurs-portes",
+          "titre": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+          "source": "MoneyVox, 06/06/2025, maj 22/08/2025",
+          "date": "2026-01-01",
+          "tier": "D"
+        }
+      ],
+      "region": "Centre-Val de Loire"
+    },
+    {
+      "id": "7bc46be6b4476480",
+      "banque": "Caisse d’Épargne",
+      "commune": "Senonches",
+      "code_insee": "28373",
+      "departement": "28",
+      "type": "fermeture",
+      "date_annonce": "2026-01-01",
+      "date_fermeture": "2026-01-01",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 4,
+      "lat": 48.561143,
+      "lon": 1.043811,
+      "citation": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "created_at": "2026-07-06T12:04:40.883275+00:00",
+      "sources": [
+        {
+          "url": "https://www.moneyvox.fr/banque/actualites/103734/caisse-epargne-decouvrez-quelles-agences-vont-fermer-leurs-portes",
+          "titre": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+          "source": "MoneyVox, 06/06/2025, maj 22/08/2025",
+          "date": "2026-01-01",
+          "tier": "D"
+        }
+      ],
+      "region": "Centre-Val de Loire"
+    },
+    {
+      "id": "2681dcfbe3e84d28",
+      "banque": "Caisse d’Épargne",
+      "commune": "Dun-sur-Auron",
+      "code_insee": "18087",
+      "departement": "18",
+      "type": "fermeture",
+      "date_annonce": "2026-01-01",
+      "date_fermeture": "2026-01-01",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 4,
+      "lat": 46.891545,
+      "lon": 2.55278,
+      "citation": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "created_at": "2026-07-06T12:04:40.885381+00:00",
+      "sources": [
+        {
+          "url": "https://www.moneyvox.fr/banque/actualites/103734/caisse-epargne-decouvrez-quelles-agences-vont-fermer-leurs-portes",
+          "titre": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+          "source": "MoneyVox, 06/06/2025, maj 22/08/2025",
+          "date": "2026-01-01",
+          "tier": "D"
+        }
+      ],
+      "region": "Centre-Val de Loire"
+    },
+    {
+      "id": "568fdfcac470fabf",
+      "banque": "Caisse d’Épargne",
+      "commune": "Cléry-Saint-André",
+      "code_insee": "45098",
+      "departement": "45",
+      "type": "fermeture",
+      "date_annonce": "2026-01-01",
+      "date_fermeture": "2026-01-01",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 4,
+      "lat": 47.8285,
+      "lon": 1.7668,
+      "citation": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "created_at": "2026-07-06T12:04:40.887100+00:00",
+      "sources": [
+        {
+          "url": "https://www.moneyvox.fr/banque/actualites/103734/caisse-epargne-decouvrez-quelles-agences-vont-fermer-leurs-portes",
+          "titre": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+          "source": "MoneyVox, 06/06/2025, maj 22/08/2025",
+          "date": "2026-01-01",
+          "tier": "D"
+        }
+      ],
+      "region": "Centre-Val de Loire"
+    },
+    {
+      "id": "71d7c603fe256817",
+      "banque": "Caisse d’Épargne",
+      "commune": "Merdrignac",
+      "code_insee": "22147",
+      "departement": "22",
+      "type": "fermeture",
+      "date_annonce": "2026-01-01",
+      "date_fermeture": "2026-01-01",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 4,
+      "lat": 48.197535,
+      "lon": -2.400334,
+      "citation": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "created_at": "2026-07-06T12:04:40.889301+00:00",
+      "sources": [
+        {
+          "url": "https://www.moneyvox.fr/banque/actualites/103734/caisse-epargne-decouvrez-quelles-agences-vont-fermer-leurs-portes",
+          "titre": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+          "source": "MoneyVox, 06/06/2025, maj 22/08/2025",
+          "date": "2026-01-01",
+          "tier": "D"
+        }
+      ],
+      "region": "Bretagne"
+    },
+    {
+      "id": "315049620bdef518",
+      "banque": "Caisse d’Épargne",
+      "commune": "Blois",
+      "code_insee": "41018",
+      "departement": "41",
+      "type": "fermeture",
+      "date_annonce": "2026-01-01",
+      "date_fermeture": "2026-01-01",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 4,
+      "lat": 47.581406,
+      "lon": 1.316533,
+      "citation": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+      "adresse": null,
+      "agence_localisation": "Blois Centre",
+      "commune_originale": "Blois Centre",
+      "created_at": "2026-07-06T12:04:40.891486+00:00",
+      "sources": [
+        {
+          "url": "https://www.moneyvox.fr/banque/actualites/103734/caisse-epargne-decouvrez-quelles-agences-vont-fermer-leurs-portes",
+          "titre": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+          "source": "MoneyVox, 06/06/2025, maj 22/08/2025",
+          "date": "2026-01-01",
+          "tier": "D"
+        }
+      ],
+      "region": "Centre-Val de Loire"
+    },
+    {
+      "id": "10b4789fad1370f8",
+      "banque": "Caisse d’Épargne",
+      "commune": "Dordives",
+      "code_insee": "45127",
+      "departement": "45",
+      "type": "fermeture",
+      "date_annonce": "2026-01-01",
+      "date_fermeture": "2026-01-01",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 4,
+      "lat": 48.146038,
+      "lon": 2.78159,
+      "citation": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "created_at": "2026-07-06T12:04:40.893808+00:00",
+      "sources": [
+        {
+          "url": "https://www.moneyvox.fr/banque/actualites/103734/caisse-epargne-decouvrez-quelles-agences-vont-fermer-leurs-portes",
+          "titre": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+          "source": "MoneyVox, 06/06/2025, maj 22/08/2025",
+          "date": "2026-01-01",
+          "tier": "D"
+        }
+      ],
+      "region": "Centre-Val de Loire"
+    },
+    {
+      "id": "b38bf26452a7b5bd",
+      "banque": "Caisse d’Épargne",
+      "commune": "Cholet",
+      "code_insee": "49099",
+      "departement": "49",
+      "type": "fermeture",
+      "date_annonce": "2026-01-01",
+      "date_fermeture": "2026-01-01",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 4,
+      "lat": 47.036408,
+      "lon": -0.875399,
+      "citation": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+      "adresse": null,
+      "agence_localisation": "Cholet Mocrat",
+      "commune_originale": "Cholet Mocrat",
+      "created_at": "2026-07-06T12:04:40.895381+00:00",
+      "sources": [
+        {
+          "url": "https://www.moneyvox.fr/banque/actualites/103734/caisse-epargne-decouvrez-quelles-agences-vont-fermer-leurs-portes",
+          "titre": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+          "source": "MoneyVox, 06/06/2025, maj 22/08/2025",
+          "date": "2026-01-01",
+          "tier": "D"
+        }
+      ],
+      "region": "Pays de la Loire"
+    },
+    {
+      "id": "533dde1b17bbb300",
+      "banque": "Caisse d’Épargne",
+      "commune": "Saint-Gaultier",
+      "code_insee": "36192",
+      "departement": "36",
+      "type": "fermeture",
+      "date_annonce": "2026-01-01",
+      "date_fermeture": "2026-01-01",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 4,
+      "lat": 46.637399,
+      "lon": 1.424594,
+      "citation": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "created_at": "2026-07-06T12:04:40.897791+00:00",
+      "sources": [
+        {
+          "url": "https://www.moneyvox.fr/banque/actualites/103734/caisse-epargne-decouvrez-quelles-agences-vont-fermer-leurs-portes",
+          "titre": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+          "source": "MoneyVox, 06/06/2025, maj 22/08/2025",
+          "date": "2026-01-01",
+          "tier": "D"
+        }
+      ],
+      "region": "Centre-Val de Loire"
+    },
+    {
+      "id": "896d80636332a784",
+      "banque": "Caisse d’Épargne",
+      "commune": "Châlette-sur-Loing",
+      "code_insee": "45068",
+      "departement": "45",
+      "type": "fermeture",
+      "date_annonce": "2026-01-01",
+      "date_fermeture": "2026-01-01",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 4,
+      "lat": 48.019121,
+      "lon": 2.720474,
+      "citation": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+      "adresse": null,
+      "agence_localisation": "Châlette Vésines",
+      "commune_originale": "Châlette Vésines",
+      "created_at": "2026-07-06T12:04:40.899348+00:00",
+      "sources": [
+        {
+          "url": "https://www.moneyvox.fr/banque/actualites/103734/caisse-epargne-decouvrez-quelles-agences-vont-fermer-leurs-portes",
+          "titre": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+          "source": "MoneyVox, 06/06/2025, maj 22/08/2025",
+          "date": "2026-01-01",
+          "tier": "D"
+        }
+      ],
+      "region": "Centre-Val de Loire"
+    },
+    {
+      "id": "cef9c1ea22af0733",
+      "banque": "Caisse d’Épargne",
+      "commune": "Châteaudun",
+      "code_insee": "28088",
+      "departement": "28",
+      "type": "fermeture",
+      "date_annonce": "2026-01-01",
+      "date_fermeture": "2026-01-01",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 4,
+      "lat": 48.074295,
+      "lon": 1.323986,
+      "citation": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+      "adresse": null,
+      "agence_localisation": "Châteaudun Cours Vincent",
+      "commune_originale": "Châteaudun Cours Vincent",
+      "created_at": "2026-07-06T12:04:40.901513+00:00",
+      "sources": [
+        {
+          "url": "https://www.moneyvox.fr/banque/actualites/103734/caisse-epargne-decouvrez-quelles-agences-vont-fermer-leurs-portes",
+          "titre": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+          "source": "MoneyVox, 06/06/2025, maj 22/08/2025",
+          "date": "2026-01-01",
+          "tier": "D"
+        }
+      ],
+      "region": "Centre-Val de Loire"
+    },
+    {
+      "id": "e31e78943523cc2f",
+      "banque": "Caisse d’Épargne",
+      "commune": "Cholet",
+      "code_insee": "49099",
+      "departement": "49",
+      "type": "fermeture",
+      "date_annonce": "2026-01-01",
+      "date_fermeture": "2026-01-01",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 4,
+      "lat": 47.036408,
+      "lon": -0.875399,
+      "citation": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+      "adresse": null,
+      "agence_localisation": "Cholet Clairefontaine",
+      "commune_originale": "Cholet Clairefontaine",
+      "created_at": "2026-07-06T12:04:40.903028+00:00",
+      "sources": [
+        {
+          "url": "https://www.moneyvox.fr/banque/actualites/103734/caisse-epargne-decouvrez-quelles-agences-vont-fermer-leurs-portes",
+          "titre": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+          "source": "MoneyVox, 06/06/2025, maj 22/08/2025",
+          "date": "2026-01-01",
+          "tier": "D"
+        }
+      ],
+      "region": "Pays de la Loire"
+    },
+    {
+      "id": "e0dff46d7dcb3765",
+      "banque": "Caisse d’Épargne",
+      "commune": "Chartres",
+      "code_insee": "28085",
+      "departement": "28",
+      "type": "fermeture",
+      "date_annonce": "2026-01-01",
+      "date_fermeture": "2026-01-01",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 4,
+      "lat": 48.446525,
+      "lon": 1.502286,
+      "citation": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+      "adresse": null,
+      "agence_localisation": "Chartres Les Petits Clos",
+      "commune_originale": "Chartres Les Petits Clos",
+      "created_at": "2026-07-06T12:04:40.905109+00:00",
+      "sources": [
+        {
+          "url": "https://www.moneyvox.fr/banque/actualites/103734/caisse-epargne-decouvrez-quelles-agences-vont-fermer-leurs-portes",
+          "titre": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+          "source": "MoneyVox, 06/06/2025, maj 22/08/2025",
+          "date": "2026-01-01",
+          "tier": "D"
+        }
+      ],
+      "region": "Centre-Val de Loire"
+    },
+    {
+      "id": "0d512303a2a1c232",
+      "banque": "Caisse d’Épargne",
+      "commune": "Gallardon",
+      "code_insee": "28168",
+      "departement": "28",
+      "type": "fermeture",
+      "date_annonce": "2026-01-01",
+      "date_fermeture": "2026-01-01",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 4,
+      "lat": 48.527883,
+      "lon": 1.685905,
+      "citation": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "created_at": "2026-07-06T12:04:40.906923+00:00",
+      "sources": [
+        {
+          "url": "https://www.moneyvox.fr/banque/actualites/103734/caisse-epargne-decouvrez-quelles-agences-vont-fermer-leurs-portes",
+          "titre": "Caisse d’Épargne Plonéour-Lanvern fermeture agence\nCaisse d’Épargne Bannalec fermeture agence\nCaisse d’Épargne Nogent-sur-Vernisson fermeture agence\nCaisse d’Épargne Nantes Pont-Morand fermeture agence\nCaisse d’Épargne Artenay fermeture agence\nCaisse d’Épargne Avoine fermeture agence\nCaisse d’Épargne Vatan fermeture agence\nCaisse d’Épargne Quimperlé Saint-Michel / Coat Kaer fermeture agence\nCaisse d’Épargne Bubry fermeture agence\nCaisse d’Épargne Quimperlé Brémond d'Ars fermeture agence\nCaisse d’Épargne Durtal fermeture agence\nCaisse d’Épargne Rennes Kennedy fermeture agence\nCaisse d’Épargne Morée fermeture agence\nCaisse d’Épargne Guilers fermeture agence\nCaisse d’Épargne Châtillon-sur-Loire fermeture agence\nCaisse d’Épargne Orléans Grand Villiers fermeture agence\nCaisse d’Épargne Illiers-Combray fermeture agence\nCaisse d’Épargne Richelieu fermeture agence\nCaisse d’Épargne Donges fermeture agence\nCaisse d’Épargne Tours Beaujardin fermeture agence\nCaisse d’Épargne Le Pellerin fermeture agence\nCaisse d’Épargne Chabris fermeture agence\nCaisse d’Épargne Senonches fermeture agence\nCaisse d’Épargne Dun-sur-Auron fermeture agence\nCaisse d’Épargne Cléry-Saint-André fermeture agence\nCaisse d’Épargne Merdrignac fermeture agence\nCaisse d’Épargne Blois Centre fermeture agence\nCaisse d’Épargne Dordives fermeture agence\nCaisse d’Épargne Cholet Mocrat fermeture agence\nCaisse d’Épargne Saint-Gaultier fermeture agence\nCaisse d’Épargne Châlette Vésines fermeture agence\nCaisse d’Épargne Châteaudun Cours Vincent fermeture agence\nCaisse d’Épargne Cholet Clairefontaine fermeture agence\nCaisse d’Épargne Chartres Les Petits Clos fermeture agence\nCaisse d’Épargne Gallardon fermeture agence",
+          "source": "MoneyVox, 06/06/2025, maj 22/08/2025",
+          "date": "2026-01-01",
+          "tier": "D"
+        }
+      ],
+      "region": "Centre-Val de Loire"
+    },
+    {
+      "id": "cc68bece367d93ff",
+      "banque": "Crédit Mutuel",
+      "commune": "Pleudihen-sur-Rance",
+      "code_insee": "22197",
+      "departement": "22",
+      "type": "fermeture",
+      "date_annonce": "2026-01-24",
+      "date_fermeture": "2026-01-24",
+      "statut": "projet",
+      "statut_temporel": "deja_fermee",
+      "date_fermeture_approx": 0,
+      "fiabilite": 5,
+      "lat": 48.515635,
+      "lon": -1.944122,
+      "citation": "agence du Crédit Mutuel de Bretagne, menacée de fermeture le 24 janvier",
+      "adresse": "bourg, juste à côté de l'église",
+      "agence_localisation": null,
+      "commune_originale": null,
+      "created_at": "2026-07-06T12:04:52.920178+00:00",
+      "sources": [
+        {
+          "url": "https://www.ici.fr/emissions/l-info-d-ici-de-7h30-ici-armorique/a-pleudihen-sur-rance-les-societaires-se-mobilisent-pour-sauver-leur-agence-du-credit-mutuel-de-bretagne-7852300",
+          "titre": "Crédit Mutuel de Bretagne Pleudihen-sur-Rance fermeture agence",
+          "source": "ICI Armorique / France 3 Bretagne / Ouest-France via Maville",
+          "date": "2026-01-24",
+          "tier": "C"
+        }
+      ],
+      "region": "Bretagne"
+    },
+    {
+      "id": "bee6f519134d4b04",
+      "banque": "Crédit Agricole Centre Ouest",
+      "commune": "Écueillé",
+      "code_insee": "36069",
+      "departement": "36",
+      "type": "fermeture",
+      "date_annonce": "2026-01-01",
+      "date_fermeture": "2026-01-01",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 4,
+      "lat": 47.082867,
+      "lon": 1.33796,
+      "citation": "Crédit Agricole Centre Ouest Écueillé fermeture agence\nCrédit Agricole Centre Ouest Villedieu-sur-Indre fermeture agence\nCrédit Agricole Centre Ouest Châteauroux - Les Marins fermeture agence",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "created_at": "2026-07-06T12:04:53.651192+00:00",
+      "sources": [
+        {
+          "url": "https://www.lanouvellerepublique.fr/chateauroux/indre-quatre-agences-credit-agricole-ferment-leurs-portes-1759828934",
+          "titre": "Crédit Agricole Centre Ouest Écueillé fermeture agence\nCrédit Agricole Centre Ouest Villedieu-sur-Indre fermeture agence\nCrédit Agricole Centre Ouest Châteauroux - Les Marins fermeture agence",
+          "source": "La Nouvelle République, 07/10/2025",
+          "date": "2026-01-01",
+          "tier": "B"
+        }
+      ],
+      "region": "Centre-Val de Loire"
+    },
+    {
+      "id": "0bef3718984951ba",
+      "banque": "Crédit Agricole Centre Ouest",
+      "commune": "Villedieu-sur-Indre",
+      "code_insee": "36241",
+      "departement": "36",
+      "type": "fermeture",
+      "date_annonce": "2026-01-01",
+      "date_fermeture": "2026-01-01",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 4,
+      "lat": 46.837662,
+      "lon": 1.52115,
+      "citation": "Crédit Agricole Centre Ouest Écueillé fermeture agence\nCrédit Agricole Centre Ouest Villedieu-sur-Indre fermeture agence\nCrédit Agricole Centre Ouest Châteauroux - Les Marins fermeture agence",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "created_at": "2026-07-06T12:04:53.653324+00:00",
+      "sources": [
+        {
+          "url": "https://www.lanouvellerepublique.fr/chateauroux/indre-quatre-agences-credit-agricole-ferment-leurs-portes-1759828934",
+          "titre": "Crédit Agricole Centre Ouest Écueillé fermeture agence\nCrédit Agricole Centre Ouest Villedieu-sur-Indre fermeture agence\nCrédit Agricole Centre Ouest Châteauroux - Les Marins fermeture agence",
+          "source": "La Nouvelle République, 07/10/2025",
+          "date": "2026-01-01",
+          "tier": "B"
+        }
+      ],
+      "region": "Centre-Val de Loire"
+    },
+    {
+      "id": "603169430571d500",
+      "banque": "Crédit Agricole Centre Ouest",
+      "commune": "Châteauroux",
+      "code_insee": "36044",
+      "departement": "36",
+      "type": "fermeture",
+      "date_annonce": "2026-01-01",
+      "date_fermeture": "2026-01-01",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 4,
+      "lat": 46.804353,
+      "lon": 1.692994,
+      "citation": "Crédit Agricole Centre Ouest Écueillé fermeture agence\nCrédit Agricole Centre Ouest Villedieu-sur-Indre fermeture agence\nCrédit Agricole Centre Ouest Châteauroux - Les Marins fermeture agence",
+      "adresse": null,
+      "agence_localisation": "Châteauroux - Les Marins",
+      "commune_originale": "Châteauroux - Les Marins",
+      "created_at": "2026-07-06T12:04:53.655012+00:00",
+      "sources": [
+        {
+          "url": "https://www.lanouvellerepublique.fr/chateauroux/indre-quatre-agences-credit-agricole-ferment-leurs-portes-1759828934",
+          "titre": "Crédit Agricole Centre Ouest Écueillé fermeture agence\nCrédit Agricole Centre Ouest Villedieu-sur-Indre fermeture agence\nCrédit Agricole Centre Ouest Châteauroux - Les Marins fermeture agence",
+          "source": "La Nouvelle République, 07/10/2025",
+          "date": "2026-01-01",
+          "tier": "B"
+        }
+      ],
+      "region": "Centre-Val de Loire"
     }
   ],
   "closures_unlocated": [
@@ -3424,6 +4684,24 @@
       "date": "Tue, 15 Apr 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
       "created_at": "2026-07-06T08:45:45.105684+00:00"
+    },
+    {
+      "id": "1f749ce7f78da805",
+      "banque": "Société Générale",
+      "commune": "Vidauban",
+      "departement": "Var",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "confirmé",
+      "statut_temporel": "inconnu",
+      "fiabilite": 5,
+      "citation": "Fermeture de l'agence Société Générale à Vidauban",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNUEotaDBxTk5vRnhfMGhKaldTaC0tbV9wdDBZSEpzNGtnYXA4WVI3Uk5wcXEwZElZY3g2RmZSS0JrN0lVWUZ2bmZ0UmYxSjVUaHVHWUFuaE50YjNKT2lWM1ZBUlZUS1RfLTMxcWxXRjJuVDh2VGhYMXA2UVZpU2VaYkR5NlA0QzNxeTV2TVJRcFFSTFhyYlFfRnpfOE1yV0RHOTRNLTJEU1djUmp6VjhGMHhOVzNUWGt1ZzZLaWdNeUs5QQ?oc=5",
+      "titre": "Fermeture de l’agence Société Générale à Vidauban : des transferts imposés et une communication tardive - Var Actu",
+      "source": "Google News",
+      "date": "Tue, 15 Apr 2025 07:00:00 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-07-06T11:51:53.068652+00:00"
     },
     {
       "id": "eafb9515791cf2bd",
@@ -3633,13 +4911,13 @@
       "departement": "36",
       "count": 4,
       "communes_mentioned": "Reuilly, Écueillé, Villedieu-sur-Indre",
-      "confidence": 0.95,
-      "evidence": "Sur l'Indre et la Haute-Vienne, on a 11 agences qui ferment, quatre sur l'Indre et sept sur la Haute-Vienne. Ça représente 15% de nos agences",
+      "confidence": 0.85,
+      "evidence": "quatre fermetures d'agences dans l'Indre sur 11 agences fermées au total en Indre et Haute-Vienne, soit 15% des agences",
       "url": "https://www.ici.fr/centre-val-de-loire/indre-36/reuilly/l-agence-bancaire-credit-agricole-de-reuilly-dans-l-indre-ferme-ses-portes-ce-vendredi-5175020",
-      "titre": "Reuilly fermeture agence",
-      "source": "Seed URL",
+      "titre": "Crédit Agricole Centre Ouest Reuilly fermeture agence",
+      "source": "ICI Centre-Val de Loire / Radio France",
       "date": "2026-01-23",
-      "created_at": "2026-07-06T10:46:36.375013+00:00"
+      "created_at": "2026-07-06T12:04:47.620282+00:00"
     }
   ],
   "vague_signals": [
@@ -3766,13 +5044,13 @@
       "id": "7493d6acfb4b2885",
       "banque": "Crédit Agricole",
       "departement": "36",
-      "titre": "Reuilly fermeture agence",
-      "extrait": "Sur l'Indre et la Haute-Vienne, on a 11 agences qui ferment, quatre sur l'Indre et sept sur la Haute-Vienne. Ça représente 15% de nos agences | Sur l'Indre et la Haute-Vienne, on a 11 agences qui ferment, quatre sur l'Indre et sept sur la Haute-Vienne",
+      "titre": "Crédit Agricole Centre Ouest Reuilly fermeture agence",
+      "extrait": "quatre fermetures d'agences dans l'Indre sur 11 agences fermées au total en Indre et Haute-Vienne, soit 15% des agences",
       "url": "https://www.ici.fr/centre-val-de-loire/indre-36/reuilly/l-agence-bancaire-credit-agricole-de-reuilly-dans-l-indre-ferme-ses-portes-ce-vendredi-5175020",
-      "source": "Seed URL",
+      "source": "ICI Centre-Val de Loire / Radio France",
       "date": "2026-01-23",
       "score": 5,
-      "raison": "signaux: dept(Crédit Agricole,36,count=4,communes=Reuilly, Écueillé, Villedieu-sur-Indre); vague(Crédit Agricole,regional,count=11)",
+      "raison": "signaux: dept(Crédit Agricole,36,count=4,communes=Reuilly, Écueillé, Villedieu-sur-Indre)",
       "created_at": "2026-07-06T10:46:37.963586+00:00"
     },
     {
@@ -4242,6 +5520,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:46:21.999679+00:00"
+    },
+    {
+      "id": "1de6daa4f5cd9b4e",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "\"Le monde du business s'est largement désensibilisé de la politique\": les fusions et acquisitions en France ont augmenté de 12% en un an pour un montant de 91 milliards d'euros - BFM",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMi1wJBVV95cUxPYlVHX1ZQVktIZXc4RUYxaGNUUU5YZXVFR3FQNENQcHZRRkRNaGl0NmphRXpPMmJQNkRQS0dscVA2dGZmLVNqWElFSzFISGdiYndkbnBzc0RNZjBEdkxWczlVRFFmZlZucThiX1VPVGE1UDVaVFhqMGk2dHdEV2dqUzRFSzBPSE03YVIwb1hVdlVoN3BDdjFocm1JeEJGTURuai1vUl9LNFBRYkFSSHVvaHZ1dmMwYXRXNEExYlQ1cGU2aFk4aDNnbml6MjNWbjhhQ0dlMUxhUEhOb2xPblJob2ItZnhMSmhjVEFTRDFZaHY5WXBDdmFsZVFKV3o3Q3BYTGtMeDdTZVU2SGdRV2h3WUd4MkdVS09OczgyTWQ4V3hkYndwQnFWUWRqeTBlZDBUX2VxRTZxQXFZTHk4WUdkaXFUV19WVHJSVmtkQS1leG",
+      "url": "https://news.google.com/rss/articles/CBMi1wJBVV95cUxPYlVHX1ZQVktIZXc4RUYxaGNUUU5YZXVFR3FQNENQcHZRRkRNaGl0NmphRXpPMmJQNkRQS0dscVA2dGZmLVNqWElFSzFISGdiYndkbnBzc0RNZjBEdkxWczlVRFFmZlZucThiX1VPVGE1UDVaVFhqMGk2dHdEV2dqUzRFSzBPSE03YVIwb1hVdlVoN3BDdjFocm1JeEJGTURuai1vUl9LNFBRYkFSSHVvaHZ1dmMwYXRXNEExYlQ1cGU2aFk4aDNnbml6MjNWbjhhQ0dlMUxhUEhOb2xPblJob2ItZnhMSmhjVEFTRDFZaHY5WXBDdmFsZVFKV3o3Q3BYTGtMeDdTZVU2SGdRV2h3WUd4MkdVS09OczgyTWQ4V3hkYndwQnFWUWRqeTBlZDBUX2VxRTZxQXFZTHk4WUdkaXFUV19WVHJSVmtkQS1leGlSQkJlcVpv?oc=5",
+      "source": "Google News",
+      "date": "Wed, 24 Dec 2025 08:00:00 GMT",
+      "score": 3,
+      "raison": "score préfiltre bas (-2)",
+      "created_at": "2026-07-06T11:51:51.107854+00:00"
     },
     {
       "id": "d6389dae2c0d7593",
@@ -5620,6 +6911,19 @@
       "score": 3,
       "raison": "fermeture non publiée: hors fenêtre temporelle",
       "created_at": "2026-07-06T08:45:45.108946+00:00"
+    },
+    {
+      "id": "67ca52800da80467",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Fermeture de l’agence Société Générale à Vidauban : des transferts imposés et une communication tardive - Var Actu",
+      "extrait": "TITRE: Fermeture de l’agence Société Générale à Vidauban : des transferts imposés et une communication tardive - Var Actu SOURCE: Google News DATE: Tue, 15 Apr 2025 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMiwgFBVV95cUxNUEotaDBxTk5vRnhfMGhKaldTaC0tbV9wdDBZSEpzNGtnYXA4WVI3Uk5wcXEwZElZY3g2RmZSS0JrN0lVWUZ2bmZ0UmYxSjVUaHVHWUFuaE50YjNKT2lWM1ZBUlZUS1RfLTMxcWxXRjJuVDh2VGhYMXA2UVZpU2VaYkR5NlA0QzNxeTV2TVJRcFFSTFhyYlFfRnpfOE1yV0RHOTRNLTJEU1djUmp6VjhGMHhOVzNUWGt1ZzZLaWdNeUs5QQ?oc=5 <a href=",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNUEotaDBxTk5vRnhfMGhKaldTaC0tbV9wdDBZSEpzNGtnYXA4WVI3Uk5wcXEwZElZY3g2RmZSS0JrN0lVWUZ2bmZ0UmYxSjVUaHVHWUFuaE50YjNKT2lWM1ZBUlZUS1RfLTMxcWxXRjJuVDh2VGhYMXA2UVZpU2VaYkR5NlA0QzNxeTV2TVJRcFFSTFhyYlFfRnpfOE1yV0RHOTRNLTJEU1djUmp6VjhGMHhOVzNUWGt1ZzZLaWdNeUs5QQ?oc=5",
+      "source": "Google News",
+      "date": "Tue, 15 Apr 2025 07:00:00 GMT",
+      "score": 3,
+      "raison": "fermeture non publiée: hors fenêtre temporelle",
+      "created_at": "2026-07-06T11:51:53.073430+00:00"
     },
     {
       "id": "92bffbdfe218ab87",
@@ -10120,6 +11424,19 @@
       "created_at": "2026-06-25T15:35:50.464767+00:00"
     },
     {
+      "id": "b1b0998a2d2036cd",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Avec Bureau Veritas et SGS, une fusion inédite et risquée se profile dans la certification - L'Agefi",
+      "extrait": "TITRE: Avec Bureau Veritas et SGS, une fusion inédite et risquée se profile dans la certification - L'Agefi SOURCE: Google News DATE: Wed, 15 Jan 2025 08:00:00 GMT URL: https://news.google.com/rss/articles/CBMixgFBVV95cUxPcVNFNnFKSnNlblZ3RTR4YzI3OS1rT09aMER2cVlNRlQwVEdIMlQweW5feHBYbFhzZXB6YlJWZHRDSUx5b2p2Q0p4Nk9SZE91LTFfZ2xQRV8xTmtsbkdNWk9IRER3bVkxMGNJelJROV9hUEk5UnQ5VXVfRUNUakNkVEVKa20zS0puMnQ2eWFNcGh5d0k5ZE5aTnNtX1c3NEFhbFY3blo1eEU3dzN5cm81dmt4MHBiamwyM2Q5Z3huTUx6RlN6MkE?oc=5 <a href=\"https://",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPcVNFNnFKSnNlblZ3RTR4YzI3OS1rT09aMER2cVlNRlQwVEdIMlQweW5feHBYbFhzZXB6YlJWZHRDSUx5b2p2Q0p4Nk9SZE91LTFfZ2xQRV8xTmtsbkdNWk9IRER3bVkxMGNJelJROV9hUEk5UnQ5VXVfRUNUakNkVEVKa20zS0puMnQ2eWFNcGh5d0k5ZE5aTnNtX1c3NEFhbFY3blo1eEU3dzN5cm81dmt4MHBiamwyM2Q5Z3huTUx6RlN6MkE?oc=5",
+      "source": "Google News",
+      "date": "Wed, 15 Jan 2025 08:00:00 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-06T11:51:41.927320+00:00"
+    },
+    {
       "id": "69ff170a10d664b4",
       "banque": "HSBC",
       "departement": null,
@@ -10521,6 +11838,19 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:30:09.859337+00:00"
+    },
+    {
+      "id": "4aef82cf79c9090c",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "SG Courtois en passe de réussir le pari de sa fusion des deux banques - ladepeche.fr",
+      "extrait": "TITRE: SG Courtois en passe de réussir le pari de sa fusion des deux banques - ladepeche.fr SOURCE: Google News DATE: Tue, 11 Feb 2025 08:00:00 GMT URL: https://news.google.com/rss/articles/CBMiugFBVV95cUxNN04xeVhsUTZtTVdPUzlESUtQZHQyYkVmek1DdlVvZ3BnMmRiM29waF9zUXdKbG15VnBVdldQOHYzNmdpTmIzNmZyQTJWLWZHejNNaEx6YmpEdy1XREVqdThmQU9IVWJqMEY3TG5aUENqRmRXbFBqby0yTm9BTjd1VHRNWUFIeWlFVy1TUUdTUlFqWS1iaVhCN3IwRHpXRkxITWZSZllwbEx4ZGZRNDJrVXNPTzRfeVBYd1E?oc=5 <a href=\"https://news.google.com/rss/articles/CBM",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNN04xeVhsUTZtTVdPUzlESUtQZHQyYkVmek1DdlVvZ3BnMmRiM29waF9zUXdKbG15VnBVdldQOHYzNmdpTmIzNmZyQTJWLWZHejNNaEx6YmpEdy1XREVqdThmQU9IVWJqMEY3TG5aUENqRmRXbFBqby0yTm9BTjd1VHRNWUFIeWlFVy1TUUdTUlFqWS1iaVhCN3IwRHpXRkxITWZSZllwbEx4ZGZRNDJrVXNPTzRfeVBYd1E?oc=5",
+      "source": "Google News",
+      "date": "Tue, 11 Feb 2025 08:00:00 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-06T11:51:50.738838+00:00"
     },
     {
       "id": "a5025eeb2065a908",
