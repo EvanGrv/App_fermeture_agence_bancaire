@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T13:36:04.534994+00:00",
+  "generated_at": "2026-07-06T13:45:06.739826+00:00",
   "departements": {
     "01": {
       "nom": "Ain",
@@ -966,7 +966,7 @@
           "url": "https://www.ici.fr/centre-val-de-loire/indre-36/reuilly/l-agence-bancaire-credit-agricole-de-reuilly-dans-l-indre-ferme-ses-portes-ce-vendredi-5175020",
           "score": 5,
           "precision": "departement",
-          "reason": "Quatre fermetures d'agences dans l'Indre"
+          "reason": "quatre sur l'Indre et sept sur la Haute-Vienne. Ça représente 15% de nos agences"
         }
       ]
     },
@@ -1897,7 +1897,7 @@
       "departement": "62",
       "type": "fermeture",
       "date_annonce": "Wed, 27 May 2026 07:00:00 GMT",
-      "date_fermeture": null,
+      "date_fermeture": "2026-07-31",
       "statut": "confirmé",
       "statut_temporel": "a_venir",
       "date_fermeture_approx": 0,
@@ -5348,7 +5348,7 @@
       "lon": 1.226087,
       "citation": "L'agence du Crédit Agricole des Grandes-Ventes va fermer ses portes le 31 décembre 2026. Une fermeture progressive débutera à partir de juillet 2026.",
       "adresse": null,
-      "agence_localisation": null,
+      "agence_localisation": "Les Grandes-Ventes",
       "commune_originale": null,
       "created_at": "2026-07-06T13:36:00.234822+00:00",
       "sources": [
@@ -5748,12 +5748,12 @@
       "count": 4,
       "communes_mentioned": "Reuilly, Écueillé, Villedieu-sur-Indre",
       "confidence": 0.95,
-      "evidence": "Quatre fermetures d'agences dans l'Indre",
+      "evidence": "quatre sur l'Indre et sept sur la Haute-Vienne. Ça représente 15% de nos agences",
       "url": "https://www.ici.fr/centre-val-de-loire/indre-36/reuilly/l-agence-bancaire-credit-agricole-de-reuilly-dans-l-indre-ferme-ses-portes-ce-vendredi-5175020",
       "titre": "Crédit Agricole Reuilly fermeture agence",
       "source": "ICI Centre-Val de Loire / Radio France, janvier 2026",
       "date": "2026-01-23",
-      "created_at": "2026-07-06T13:35:01.046048+00:00"
+      "created_at": "2026-07-06T13:44:15.298395+00:00"
     },
     {
       "id": "dc38514e99f41233",
@@ -5895,7 +5895,7 @@
       "banque": "Crédit Agricole",
       "departement": "36",
       "titre": "Crédit Agricole Reuilly fermeture agence",
-      "extrait": "Quatre fermetures d'agences dans l'Indre",
+      "extrait": "quatre sur l'Indre et sept sur la Haute-Vienne. Ça représente 15% de nos agences",
       "url": "https://www.ici.fr/centre-val-de-loire/indre-36/reuilly/l-agence-bancaire-credit-agricole-de-reuilly-dans-l-indre-ferme-ses-portes-ce-vendredi-5175020",
       "source": "ICI Centre-Val de Loire / Radio France, janvier 2026",
       "date": "2026-01-23",
