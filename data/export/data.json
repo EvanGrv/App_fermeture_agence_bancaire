@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T12:15:29.961810+00:00",
+  "generated_at": "2026-07-06T12:21:26.332624+00:00",
   "departements": {
     "01": {
       "nom": "Ain",
@@ -328,11 +328,11 @@
     "36": {
       "nom": "Indre",
       "region": "Centre-Val de Loire",
-      "count": 11,
+      "count": 14,
       "total_agences": 6,
-      "precise_count": 11,
+      "precise_count": 14,
       "unlocated_count": 0,
-      "estimated_count": 15
+      "estimated_count": 18
     },
     "37": {
       "nom": "Indre-et-Loire",
@@ -951,9 +951,9 @@
     "36": {
       "departement": "36",
       "nom": "Indre",
-      "precise_count": 11,
+      "precise_count": 14,
       "unlocated_count": 0,
-      "estimated_count": 15,
+      "estimated_count": 18,
       "department_signal_count": 4,
       "signals": [
         {
@@ -966,7 +966,7 @@
           "url": "https://www.ici.fr/centre-val-de-loire/indre-36/reuilly/l-agence-bancaire-credit-agricole-de-reuilly-dans-l-indre-ferme-ses-portes-ce-vendredi-5175020",
           "score": 4,
           "precision": "departement",
-          "reason": "quatre fermetures d'agences dans l'Indre sur 11 agences fermées au total en Indre et Haute-Vienne, soit 15% des agences"
+          "reason": "Quatre fermetures d'agences dans l'Indre, Sur l'Indre et la Haute-Vienne, on a 11 agences qui ferment, quatre sur l'Indre"
         }
       ]
     },
@@ -1262,8 +1262,8 @@
   "regions": [
     {
       "region": "Centre-Val de Loire",
-      "articles": 35,
-      "fermetures": 31,
+      "articles": 38,
+      "fermetures": 34,
       "projets": 1,
       "fusions": 0,
       "types": [
@@ -4641,6 +4641,99 @@
         }
       ],
       "region": "Bretagne"
+    },
+    {
+      "id": "6183b8caae15f0e1",
+      "banque": "Crédit Agricole",
+      "commune": "Écueillé",
+      "code_insee": "36069",
+      "departement": "36",
+      "type": "fermeture",
+      "date_annonce": "2026-01-01",
+      "date_fermeture": "2026-01-01",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 4,
+      "lat": 47.082867,
+      "lon": 1.33796,
+      "citation": "Crédit Agricole Centre Ouest Écueillé fermeture agence\nCrédit Agricole Centre Ouest Villedieu-sur-Indre fermeture agence\nCrédit Agricole Centre Ouest Châteauroux - Les Marins fermeture agence",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "created_at": "2026-07-06T12:21:26.312883+00:00",
+      "sources": [
+        {
+          "url": "https://www.lanouvellerepublique.fr/chateauroux/indre-quatre-agences-credit-agricole-ferment-leurs-portes-1759828934",
+          "titre": "Crédit Agricole Centre Ouest Écueillé fermeture agence\nCrédit Agricole Centre Ouest Villedieu-sur-Indre fermeture agence\nCrédit Agricole Centre Ouest Châteauroux - Les Marins fermeture agence",
+          "source": "La Nouvelle République, 07/10/2025",
+          "date": "2026-01-01",
+          "tier": "B"
+        }
+      ],
+      "region": "Centre-Val de Loire"
+    },
+    {
+      "id": "c52f5ddb6a845206",
+      "banque": "Crédit Agricole",
+      "commune": "Villedieu-sur-Indre",
+      "code_insee": "36241",
+      "departement": "36",
+      "type": "fermeture",
+      "date_annonce": "2026-01-01",
+      "date_fermeture": "2026-01-01",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 4,
+      "lat": 46.837662,
+      "lon": 1.52115,
+      "citation": "Crédit Agricole Centre Ouest Écueillé fermeture agence\nCrédit Agricole Centre Ouest Villedieu-sur-Indre fermeture agence\nCrédit Agricole Centre Ouest Châteauroux - Les Marins fermeture agence",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "created_at": "2026-07-06T12:21:26.315639+00:00",
+      "sources": [
+        {
+          "url": "https://www.lanouvellerepublique.fr/chateauroux/indre-quatre-agences-credit-agricole-ferment-leurs-portes-1759828934",
+          "titre": "Crédit Agricole Centre Ouest Écueillé fermeture agence\nCrédit Agricole Centre Ouest Villedieu-sur-Indre fermeture agence\nCrédit Agricole Centre Ouest Châteauroux - Les Marins fermeture agence",
+          "source": "La Nouvelle République, 07/10/2025",
+          "date": "2026-01-01",
+          "tier": "B"
+        }
+      ],
+      "region": "Centre-Val de Loire"
+    },
+    {
+      "id": "54e3ce5f438b956e",
+      "banque": "Crédit Agricole",
+      "commune": "Châteauroux",
+      "code_insee": "36044",
+      "departement": "36",
+      "type": "fermeture",
+      "date_annonce": "2026-01-01",
+      "date_fermeture": "2026-01-01",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 4,
+      "lat": 46.804353,
+      "lon": 1.692994,
+      "citation": "Crédit Agricole Centre Ouest Écueillé fermeture agence\nCrédit Agricole Centre Ouest Villedieu-sur-Indre fermeture agence\nCrédit Agricole Centre Ouest Châteauroux - Les Marins fermeture agence",
+      "adresse": null,
+      "agence_localisation": "Châteauroux - Les Marins",
+      "commune_originale": "Châteauroux - Les Marins",
+      "created_at": "2026-07-06T12:21:26.317712+00:00",
+      "sources": [
+        {
+          "url": "https://www.lanouvellerepublique.fr/chateauroux/indre-quatre-agences-credit-agricole-ferment-leurs-portes-1759828934",
+          "titre": "Crédit Agricole Centre Ouest Écueillé fermeture agence\nCrédit Agricole Centre Ouest Villedieu-sur-Indre fermeture agence\nCrédit Agricole Centre Ouest Châteauroux - Les Marins fermeture agence",
+          "source": "La Nouvelle République, 07/10/2025",
+          "date": "2026-01-01",
+          "tier": "B"
+        }
+      ],
+      "region": "Centre-Val de Loire"
     }
   ],
   "closures_unlocated": [
@@ -4996,13 +5089,13 @@
       "departement": "36",
       "count": 4,
       "communes_mentioned": "Reuilly, Écueillé, Villedieu-sur-Indre",
-      "confidence": 0.85,
-      "evidence": "quatre fermetures d'agences dans l'Indre sur 11 agences fermées au total en Indre et Haute-Vienne, soit 15% des agences",
+      "confidence": 0.9,
+      "evidence": "Quatre fermetures d'agences dans l'Indre, Sur l'Indre et la Haute-Vienne, on a 11 agences qui ferment, quatre sur l'Indre",
       "url": "https://www.ici.fr/centre-val-de-loire/indre-36/reuilly/l-agence-bancaire-credit-agricole-de-reuilly-dans-l-indre-ferme-ses-portes-ce-vendredi-5175020",
       "titre": "Crédit Agricole Centre Ouest Reuilly fermeture agence",
       "source": "ICI Centre-Val de Loire / Radio France",
       "date": "2026-01-23",
-      "created_at": "2026-07-06T12:04:47.620282+00:00"
+      "created_at": "2026-07-06T12:21:18.931860+00:00"
     },
     {
       "id": "dc38514e99f41233",
@@ -5142,14 +5235,14 @@
     {
       "id": "7493d6acfb4b2885",
       "banque": "Crédit Agricole",
-      "departement": "Haute-Vienne",
+      "departement": "36",
       "titre": "Crédit Agricole Centre Ouest Reuilly fermeture agence",
-      "extrait": "Sur l'Indre et la Haute-Vienne, 11 agences qui ferment : quatre sur l'Indre et sept sur la Haute-Vienne, soit 15% des agences de la caisse régionale Centre-Ouest.",
+      "extrait": "Quatre fermetures d'agences dans l'Indre, Sur l'Indre et la Haute-Vienne, on a 11 agences qui ferment, quatre sur l'Indre",
       "url": "https://www.ici.fr/centre-val-de-loire/indre-36/reuilly/l-agence-bancaire-credit-agricole-de-reuilly-dans-l-indre-ferme-ses-portes-ce-vendredi-5175020",
       "source": "ICI Centre-Val de Loire / Radio France",
       "date": "2026-01-23",
       "score": 5,
-      "raison": "signaux: dept(Crédit Agricole,Haute-Vienne,count=7,communes=)",
+      "raison": "signaux: dept(Crédit Agricole,36,count=4,communes=Reuilly, Écueillé, Villedieu-sur-Indre)",
       "created_at": "2026-07-06T10:46:37.963586+00:00"
     },
     {
