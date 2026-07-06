@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T08:55:31.238924+00:00",
+  "generated_at": "2026-07-06T10:46:44.938183+00:00",
   "departements": {
     "01": {
       "nom": "Ain",
@@ -202,11 +202,11 @@
     "22": {
       "nom": "Côtes-d'Armor",
       "region": "Bretagne",
-      "count": 0,
+      "count": 1,
       "total_agences": 34,
-      "precise_count": 0,
+      "precise_count": 1,
       "unlocated_count": 0,
-      "estimated_count": 0
+      "estimated_count": 1
     },
     "23": {
       "nom": "Creuse",
@@ -328,11 +328,11 @@
     "36": {
       "nom": "Indre",
       "region": "Centre-Val de Loire",
-      "count": 3,
+      "count": 5,
       "total_agences": 6,
-      "precise_count": 3,
+      "precise_count": 5,
       "unlocated_count": 0,
-      "estimated_count": 3
+      "estimated_count": 9
     },
     "37": {
       "nom": "Indre-et-Loire",
@@ -951,11 +951,24 @@
     "36": {
       "departement": "36",
       "nom": "Indre",
-      "precise_count": 3,
+      "precise_count": 5,
       "unlocated_count": 0,
-      "estimated_count": 3,
-      "department_signal_count": 0,
-      "signals": []
+      "estimated_count": 9,
+      "department_signal_count": 4,
+      "signals": [
+        {
+          "id": "4c4057e9319024c0",
+          "banque": "Crédit Agricole",
+          "commune": "",
+          "departement": "36",
+          "titre": "Reuilly fermeture agence",
+          "source": "Seed URL",
+          "url": "https://www.ici.fr/centre-val-de-loire/indre-36/reuilly/l-agence-bancaire-credit-agricole-de-reuilly-dans-l-indre-ferme-ses-portes-ce-vendredi-5175020",
+          "score": 5,
+          "precision": "departement",
+          "reason": "Sur l'Indre et la Haute-Vienne, on a 11 agences qui ferment, quatre sur l'Indre et sept sur la Haute-Vienne. Ça représente 15% de nos agences"
+        }
+      ]
     },
     "47": {
       "departement": "47",
@@ -1190,6 +1203,15 @@
       "estimated_count": 1,
       "department_signal_count": 0,
       "signals": []
+    },
+    "22": {
+      "departement": "22",
+      "nom": "Côtes-d'Armor",
+      "precise_count": 1,
+      "unlocated_count": 0,
+      "estimated_count": 1,
+      "department_signal_count": 0,
+      "signals": []
     }
   },
   "regions": [
@@ -1211,6 +1233,24 @@
       "nb_departements": 3
     },
     {
+      "region": "Centre-Val de Loire",
+      "articles": 11,
+      "fermetures": 7,
+      "projets": 1,
+      "fusions": 0,
+      "types": [
+        "Fermeture",
+        "Projet"
+      ],
+      "departements": [
+        "18",
+        "36",
+        "37",
+        "45"
+      ],
+      "nb_departements": 4
+    },
+    {
       "region": "Auvergne-Rhône-Alpes",
       "articles": 7,
       "fermetures": 5,
@@ -1228,22 +1268,21 @@
       "nb_departements": 3
     },
     {
-      "region": "Centre-Val de Loire",
-      "articles": 7,
-      "fermetures": 5,
-      "projets": 1,
+      "region": "Bretagne",
+      "articles": 6,
+      "fermetures": 2,
+      "projets": 3,
       "fusions": 0,
       "types": [
         "Fermeture",
         "Projet"
       ],
       "departements": [
-        "18",
-        "36",
-        "37",
-        "45"
+        "22",
+        "29",
+        "56"
       ],
-      "nb_departements": 4
+      "nb_departements": 3
     },
     {
       "region": "Normandie",
@@ -1278,22 +1317,6 @@
         "87"
       ],
       "nb_departements": 3
-    },
-    {
-      "region": "Bretagne",
-      "articles": 5,
-      "fermetures": 2,
-      "projets": 2,
-      "fusions": 0,
-      "types": [
-        "Fermeture",
-        "Projet"
-      ],
-      "departements": [
-        "29",
-        "56"
-      ],
-      "nb_departements": 2
     },
     {
       "region": "Occitanie",
@@ -1602,7 +1625,7 @@
       "statut": "confirmé",
       "statut_temporel": "a_venir",
       "date_fermeture_approx": 1,
-      "fiabilite": 4,
+      "fiabilite": 5,
       "lat": 47.084619,
       "lon": 2.037058,
       "citation": "l'agence du Crédit agricole de Reuilly, dans l'Indre, qui ferme ses portes ce vendredi",
@@ -1624,6 +1647,13 @@
           "source": "Google News",
           "date": "Wed, 08 Oct 2025 07:00:00 GMT",
           "tier": "D"
+        },
+        {
+          "url": "https://www.ici.fr/centre-val-de-loire/indre-36/reuilly/l-agence-bancaire-credit-agricole-de-reuilly-dans-l-indre-ferme-ses-portes-ce-vendredi-5175020",
+          "titre": "Reuilly fermeture agence",
+          "source": "Seed URL",
+          "date": "2026-01-23",
+          "tier": "C"
         }
       ],
       "controle_sirene": {
@@ -2228,6 +2258,13 @@
           "source": "Google News",
           "date": "Fri, 03 Oct 2025 07:00:00 GMT",
           "tier": "D"
+        },
+        {
+          "url": "https://www.ici.fr/centre-val-de-loire/indre-36/reuilly/l-agence-bancaire-credit-agricole-de-reuilly-dans-l-indre-ferme-ses-portes-ce-vendredi-5175020",
+          "titre": "Reuilly fermeture agence",
+          "source": "Seed URL",
+          "date": "2026-01-23",
+          "tier": "C"
         }
       ],
       "controle_sirene": {
@@ -3215,6 +3252,104 @@
         "source": "SIRENE"
       },
       "region": "Provence-Alpes-Côte d'Azur"
+    },
+    {
+      "id": "5e5cb2087a38cb61",
+      "banque": "Caisse d'Épargne",
+      "commune": "Saint-Gaultier",
+      "code_insee": "36192",
+      "departement": "36",
+      "type": "fermeture",
+      "date_annonce": "Tue, 03 Dec 2024 08:00:00 GMT",
+      "date_fermeture": null,
+      "statut": "rumeur",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 1,
+      "fiabilite": 4,
+      "lat": 46.637399,
+      "lon": 1.424594,
+      "citation": "Une mobilisation contre la fermeture de la Caisse d'épargne de Saint-Gaultier",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "created_at": "2026-07-06T10:33:34.834448+00:00",
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQZ0NQLU5RUEtEUGR1c3RDakRWMzF6eUVGWXFMaHVVaXpXMXpRSnowd3N0cUF3SGY4bzJxaHJ3Z3M1TkxTZnpCdDBGemFtOHluQWpwUXhiT0I3bUhUQ1NOOEpUM19GTDRISlo4S3E3NkIzWUtaWmR5dTZ4cG9wZEZhcjNhU0h5a1pMZElrdWRXZHkwVVV5aWtjZXFKd253M1Y5S0U3WHBlZFNzZWZzSV9GQ1lxWEhucV91VG9ycjBXaHZoN3F1NWNCZDg0VWNqWUJRanpVRkRoeXZ6QQ?oc=5",
+          "titre": "Une mobilisation contre la fermeture de la Caisse d’épargne de Saint-Gaultier - lanouvellerepublique.fr",
+          "source": "Google News",
+          "date": "Tue, 03 Dec 2024 08:00:00 GMT",
+          "tier": "D"
+        }
+      ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
+      "region": "Centre-Val de Loire"
+    },
+    {
+      "id": "71252e975c353ff8",
+      "banque": "Crédit Agricole",
+      "commune": "Villedieu-sur-Indre",
+      "code_insee": "36241",
+      "departement": "36",
+      "type": "fermeture",
+      "date_annonce": "2026-01-23",
+      "date_fermeture": null,
+      "statut": "confirmé",
+      "statut_temporel": "inconnu",
+      "date_fermeture_approx": 1,
+      "fiabilite": 4,
+      "lat": 46.837662,
+      "lon": 1.52115,
+      "citation": "Reuilly ferme, mais également Écueillé et Villedieu-sur-Indre. 4 fermetures en Indre.",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "created_at": "2026-07-06T10:46:37.961743+00:00",
+      "sources": [
+        {
+          "url": "https://www.ici.fr/centre-val-de-loire/indre-36/reuilly/l-agence-bancaire-credit-agricole-de-reuilly-dans-l-indre-ferme-ses-portes-ce-vendredi-5175020",
+          "titre": "Reuilly fermeture agence",
+          "source": "Seed URL",
+          "date": "2026-01-23",
+          "tier": "C"
+        }
+      ],
+      "region": "Centre-Val de Loire"
+    },
+    {
+      "id": "4c259d0cbd00dbf6",
+      "banque": "Crédit Mutuel",
+      "commune": "Pleudihen-sur-Rance",
+      "code_insee": "22197",
+      "departement": "22",
+      "type": "fermeture",
+      "date_annonce": "2026-01-24",
+      "date_fermeture": "2026-01-24",
+      "statut": "projet",
+      "statut_temporel": "deja_fermee",
+      "date_fermeture_approx": 0,
+      "fiabilite": 5,
+      "lat": 48.515635,
+      "lon": -1.944122,
+      "citation": "agence du Crédit Mutuel de Bretagne, menacée de fermeture le 24 janvier",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "created_at": "2026-07-06T10:46:42.016695+00:00",
+      "sources": [
+        {
+          "url": "https://www.ici.fr/emissions/l-info-d-ici-de-7h30-ici-armorique/a-pleudihen-sur-rance-les-societaires-se-mobilisent-pour-sauver-leur-agence-du-credit-mutuel-de-bretagne-7852300",
+          "titre": "Pleudihen-sur-Rance fermeture agence",
+          "source": "Seed URL",
+          "date": "2026-01-24",
+          "tier": "C"
+        }
+      ],
+      "region": "Bretagne"
     }
   ],
   "closures_unlocated": [
@@ -3491,6 +3626,20 @@
       "source": "Google News",
       "date": "Fri, 09 Aug 2024 07:00:00 GMT",
       "created_at": "2026-07-02T07:06:46.864415+00:00"
+    },
+    {
+      "id": "4c4057e9319024c0",
+      "banque": "Crédit Agricole",
+      "departement": "36",
+      "count": 4,
+      "communes_mentioned": "Reuilly, Écueillé, Villedieu-sur-Indre",
+      "confidence": 0.95,
+      "evidence": "Sur l'Indre et la Haute-Vienne, on a 11 agences qui ferment, quatre sur l'Indre et sept sur la Haute-Vienne. Ça représente 15% de nos agences",
+      "url": "https://www.ici.fr/centre-val-de-loire/indre-36/reuilly/l-agence-bancaire-credit-agricole-de-reuilly-dans-l-indre-ferme-ses-portes-ce-vendredi-5175020",
+      "titre": "Reuilly fermeture agence",
+      "source": "Seed URL",
+      "date": "2026-01-23",
+      "created_at": "2026-07-06T10:46:36.375013+00:00"
     }
   ],
   "vague_signals": [
@@ -3597,9 +3746,35 @@
       "source": "Google News",
       "date": "Fri, 27 Feb 2026 08:00:00 GMT",
       "created_at": "2026-07-02T07:07:47.122916+00:00"
+    },
+    {
+      "id": "18258b9352813301",
+      "banque": "Crédit Agricole",
+      "scope": "regional",
+      "count": 11,
+      "confidence": 0.9,
+      "evidence": "Sur l'Indre et la Haute-Vienne, on a 11 agences qui ferment, quatre sur l'Indre et sept sur la Haute-Vienne",
+      "url": "https://www.ici.fr/centre-val-de-loire/indre-36/reuilly/l-agence-bancaire-credit-agricole-de-reuilly-dans-l-indre-ferme-ses-portes-ce-vendredi-5175020",
+      "titre": "Reuilly fermeture agence",
+      "source": "Seed URL",
+      "date": "2026-01-23",
+      "created_at": "2026-07-06T10:46:36.375901+00:00"
     }
   ],
   "vigilances": [
+    {
+      "id": "7493d6acfb4b2885",
+      "banque": "Crédit Agricole",
+      "departement": "36",
+      "titre": "Reuilly fermeture agence",
+      "extrait": "Sur l'Indre et la Haute-Vienne, on a 11 agences qui ferment, quatre sur l'Indre et sept sur la Haute-Vienne. Ça représente 15% de nos agences | Sur l'Indre et la Haute-Vienne, on a 11 agences qui ferment, quatre sur l'Indre et sept sur la Haute-Vienne",
+      "url": "https://www.ici.fr/centre-val-de-loire/indre-36/reuilly/l-agence-bancaire-credit-agricole-de-reuilly-dans-l-indre-ferme-ses-portes-ce-vendredi-5175020",
+      "source": "Seed URL",
+      "date": "2026-01-23",
+      "score": 5,
+      "raison": "signaux: dept(Crédit Agricole,36,count=4,communes=Reuilly, Écueillé, Villedieu-sur-Indre); vague(Crédit Agricole,regional,count=11)",
+      "created_at": "2026-07-06T10:46:37.963586+00:00"
+    },
     {
       "id": "0b53238a3c63be1c",
       "banque": "Crédit Agricole",

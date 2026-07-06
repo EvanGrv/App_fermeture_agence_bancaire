@@ -238,5 +238,15 @@
     "departement": "84",
     "code_insee": "84119",
     "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "5e5cb2087a38cb61",
+    "banque": "Caisse d'Épargne",
+    "commune": "Saint-Gaultier",
+    "departement": "36",
+    "code_insee": "36192",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
   }
 ]
