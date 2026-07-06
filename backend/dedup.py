@@ -4,6 +4,7 @@ import unicodedata
 
 
 def normalise_cle(valeur: str) -> str:
+    valeur = (valeur or "").replace("’", "'").replace("‘", "'")
     sans_accents = "".join(
         c for c in unicodedata.normalize("NFD", valeur)
         if unicodedata.category(c) != "Mn"

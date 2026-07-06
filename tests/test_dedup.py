@@ -20,6 +20,8 @@ def test_id_distinct_si_type_differe():
 
 def test_normalise_cle():
     assert normalise_cle("  Société  Générale ") == "societe generale"
+    assert normalise_cle("Caisse d’Épargne") == "caisse d'epargne"
+    assert normalise_cle("Caisse d'Épargne") == "caisse d'epargne"
 
 
 # ---------------------------------------------------------------------------
