@@ -305,7 +305,7 @@ def test_ingest_seed_structure_sans_closure_retombe_sur_target_unique(tmp_path):
                         geocode_fn=geocode_fn, fetch_fn=None)
     assert recap["fermetures"] == 1
     row = conn.execute("SELECT banque, commune FROM closures").fetchone()
-    assert row == ("Crédit Agricole Centre Ouest", "Reuilly")
+    assert row == ("Crédit Agricole", "Reuilly")
 
 
 def test_ingest_extraction_vide_compte_vigilance(tmp_path):

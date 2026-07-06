@@ -91,6 +91,7 @@ MARQUES_REGIONALES = {
         "Crédit Agricole Centre-Est",
         "Crédit Agricole Centre France",
         "Crédit Agricole Centre Loire",
+        "Crédit Agricole Centre Ouest",
         "Crédit Agricole Charente-Maritime Deux-Sèvres",
         "Crédit Agricole des Savoie",
         "Crédit Agricole Finistère",
