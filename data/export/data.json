@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T12:21:26.332624+00:00",
+  "generated_at": "2026-07-06T13:36:04.534994+00:00",
   "departements": {
     "01": {
       "nom": "Ain",
@@ -193,20 +193,20 @@
     "21": {
       "nom": "Côte-d'Or",
       "region": "Bourgogne-Franche-Comté",
-      "count": 1,
+      "count": 2,
       "total_agences": 26,
-      "precise_count": 1,
+      "precise_count": 2,
       "unlocated_count": 0,
-      "estimated_count": 1
+      "estimated_count": 2
     },
     "22": {
       "nom": "Côtes-d'Armor",
       "region": "Bretagne",
-      "count": 4,
+      "count": 6,
       "total_agences": 34,
-      "precise_count": 4,
+      "precise_count": 6,
       "unlocated_count": 0,
-      "estimated_count": 4
+      "estimated_count": 6
     },
     "23": {
       "nom": "Creuse",
@@ -229,11 +229,11 @@
     "25": {
       "nom": "Doubs",
       "region": "Bourgogne-Franche-Comté",
-      "count": 1,
+      "count": 7,
       "total_agences": 41,
-      "precise_count": 1,
+      "precise_count": 7,
       "unlocated_count": 0,
-      "estimated_count": 1
+      "estimated_count": 7
     },
     "26": {
       "nom": "Drôme",
@@ -337,11 +337,11 @@
     "37": {
       "nom": "Indre-et-Loire",
       "region": "Centre-Val de Loire",
-      "count": 4,
+      "count": 5,
       "total_agences": 48,
-      "precise_count": 4,
+      "precise_count": 5,
       "unlocated_count": 0,
-      "estimated_count": 4
+      "estimated_count": 5
     },
     "38": {
       "nom": "Isère",
@@ -355,11 +355,11 @@
     "39": {
       "nom": "Jura",
       "region": "Bourgogne-Franche-Comté",
-      "count": 0,
+      "count": 1,
       "total_agences": 11,
-      "precise_count": 0,
+      "precise_count": 1,
       "unlocated_count": 0,
-      "estimated_count": 0
+      "estimated_count": 1
     },
     "40": {
       "nom": "Landes",
@@ -499,20 +499,20 @@
     "55": {
       "nom": "Meuse",
       "region": "Grand Est",
-      "count": 1,
+      "count": 2,
       "total_agences": 17,
-      "precise_count": 1,
+      "precise_count": 2,
       "unlocated_count": 0,
-      "estimated_count": 1
+      "estimated_count": 2
     },
     "56": {
       "nom": "Morbihan",
       "region": "Bretagne",
-      "count": 2,
+      "count": 3,
       "total_agences": 56,
-      "precise_count": 2,
+      "precise_count": 3,
       "unlocated_count": 0,
-      "estimated_count": 2
+      "estimated_count": 3
     },
     "57": {
       "nom": "Moselle",
@@ -562,11 +562,11 @@
     "62": {
       "nom": "Pas-de-Calais",
       "region": "Hauts-de-France",
-      "count": 7,
+      "count": 8,
       "total_agences": 71,
-      "precise_count": 7,
+      "precise_count": 8,
       "unlocated_count": 0,
-      "estimated_count": 7
+      "estimated_count": 8
     },
     "63": {
       "nom": "Puy-de-Dôme",
@@ -616,11 +616,11 @@
     "68": {
       "nom": "Haut-Rhin",
       "region": "Grand Est",
-      "count": 1,
+      "count": 2,
       "total_agences": 32,
-      "precise_count": 1,
+      "precise_count": 2,
       "unlocated_count": 0,
-      "estimated_count": 1
+      "estimated_count": 2
     },
     "69": {
       "nom": "Rhône",
@@ -634,20 +634,20 @@
     "70": {
       "nom": "Haute-Saône",
       "region": "Bourgogne-Franche-Comté",
-      "count": 1,
+      "count": 3,
       "total_agences": 8,
-      "precise_count": 1,
+      "precise_count": 3,
       "unlocated_count": 0,
-      "estimated_count": 1
+      "estimated_count": 3
     },
     "71": {
       "nom": "Saône-et-Loire",
       "region": "Bourgogne-Franche-Comté",
-      "count": 0,
+      "count": 1,
       "total_agences": 33,
-      "precise_count": 0,
+      "precise_count": 1,
       "unlocated_count": 0,
-      "estimated_count": 0
+      "estimated_count": 1
     },
     "72": {
       "nom": "Sarthe",
@@ -688,11 +688,11 @@
     "76": {
       "nom": "Seine-Maritime",
       "region": "Normandie",
-      "count": 1,
+      "count": 2,
       "total_agences": 178,
-      "precise_count": 1,
+      "precise_count": 2,
       "unlocated_count": 0,
-      "estimated_count": 1
+      "estimated_count": 2
     },
     "77": {
       "nom": "Seine-et-Marne",
@@ -814,11 +814,11 @@
     "90": {
       "nom": "Territoire de Belfort",
       "region": "Bourgogne-Franche-Comté",
-      "count": 0,
+      "count": 1,
       "total_agences": 5,
-      "precise_count": 0,
+      "precise_count": 1,
       "unlocated_count": 0,
-      "estimated_count": 0
+      "estimated_count": 1
     },
     "91": {
       "nom": "Essonne",
@@ -933,9 +933,9 @@
     "62": {
       "departement": "62",
       "nom": "Pas-de-Calais",
-      "precise_count": 7,
+      "precise_count": 8,
       "unlocated_count": 0,
-      "estimated_count": 7,
+      "estimated_count": 8,
       "department_signal_count": 0,
       "signals": []
     },
@@ -961,12 +961,12 @@
           "banque": "Crédit Agricole",
           "commune": "",
           "departement": "36",
-          "titre": "Crédit Agricole Centre Ouest Reuilly fermeture agence",
-          "source": "ICI Centre-Val de Loire / Radio France",
+          "titre": "Crédit Agricole Reuilly fermeture agence",
+          "source": "ICI Centre-Val de Loire / Radio France, janvier 2026",
           "url": "https://www.ici.fr/centre-val-de-loire/indre-36/reuilly/l-agence-bancaire-credit-agricole-de-reuilly-dans-l-indre-ferme-ses-portes-ce-vendredi-5175020",
-          "score": 4,
+          "score": 5,
           "precision": "departement",
-          "reason": "Quatre fermetures d'agences dans l'Indre, Sur l'Indre et la Haute-Vienne, on a 11 agences qui ferment, quatre sur l'Indre"
+          "reason": "Quatre fermetures d'agences dans l'Indre"
         }
       ]
     },
@@ -982,9 +982,9 @@
     "55": {
       "departement": "55",
       "nom": "Meuse",
-      "precise_count": 1,
+      "precise_count": 2,
       "unlocated_count": 0,
-      "estimated_count": 1,
+      "estimated_count": 2,
       "department_signal_count": 0,
       "signals": []
     },
@@ -1009,9 +1009,9 @@
     "37": {
       "departement": "37",
       "nom": "Indre-et-Loire",
-      "precise_count": 4,
+      "precise_count": 5,
       "unlocated_count": 0,
-      "estimated_count": 4,
+      "estimated_count": 5,
       "department_signal_count": 0,
       "signals": []
     },
@@ -1027,9 +1027,9 @@
     "76": {
       "departement": "76",
       "nom": "Seine-Maritime",
-      "precise_count": 1,
+      "precise_count": 2,
       "unlocated_count": 0,
-      "estimated_count": 1,
+      "estimated_count": 2,
       "department_signal_count": 0,
       "signals": []
     },
@@ -1063,18 +1063,18 @@
     "70": {
       "departement": "70",
       "nom": "Haute-Saône",
-      "precise_count": 1,
+      "precise_count": 3,
       "unlocated_count": 0,
-      "estimated_count": 1,
+      "estimated_count": 3,
       "department_signal_count": 0,
       "signals": []
     },
     "68": {
       "departement": "68",
       "nom": "Haut-Rhin",
-      "precise_count": 1,
+      "precise_count": 2,
       "unlocated_count": 0,
-      "estimated_count": 1,
+      "estimated_count": 2,
       "department_signal_count": 0,
       "signals": []
     },
@@ -1162,27 +1162,27 @@
     "56": {
       "departement": "56",
       "nom": "Morbihan",
-      "precise_count": 2,
+      "precise_count": 3,
       "unlocated_count": 0,
-      "estimated_count": 2,
+      "estimated_count": 3,
       "department_signal_count": 0,
       "signals": []
     },
     "21": {
       "departement": "21",
       "nom": "Côte-d'Or",
-      "precise_count": 1,
+      "precise_count": 2,
       "unlocated_count": 0,
-      "estimated_count": 1,
+      "estimated_count": 2,
       "department_signal_count": 0,
       "signals": []
     },
     "25": {
       "departement": "25",
       "nom": "Doubs",
-      "precise_count": 1,
+      "precise_count": 7,
       "unlocated_count": 0,
-      "estimated_count": 1,
+      "estimated_count": 7,
       "department_signal_count": 0,
       "signals": []
     },
@@ -1207,9 +1207,9 @@
     "22": {
       "departement": "22",
       "nom": "Côtes-d'Armor",
-      "precise_count": 4,
+      "precise_count": 6,
       "unlocated_count": 0,
-      "estimated_count": 4,
+      "estimated_count": 6,
       "department_signal_count": 0,
       "signals": []
     },
@@ -1257,13 +1257,40 @@
       "estimated_count": 5,
       "department_signal_count": 0,
       "signals": []
+    },
+    "71": {
+      "departement": "71",
+      "nom": "Saône-et-Loire",
+      "precise_count": 1,
+      "unlocated_count": 0,
+      "estimated_count": 1,
+      "department_signal_count": 0,
+      "signals": []
+    },
+    "90": {
+      "departement": "90",
+      "nom": "Territoire de Belfort",
+      "precise_count": 1,
+      "unlocated_count": 0,
+      "estimated_count": 1,
+      "department_signal_count": 0,
+      "signals": []
+    },
+    "39": {
+      "departement": "39",
+      "nom": "Jura",
+      "precise_count": 1,
+      "unlocated_count": 0,
+      "estimated_count": 1,
+      "department_signal_count": 0,
+      "signals": []
     }
   },
   "regions": [
     {
       "region": "Centre-Val de Loire",
-      "articles": 38,
-      "fermetures": 34,
+      "articles": 39,
+      "fermetures": 35,
       "projets": 1,
       "fusions": 0,
       "types": [
@@ -1282,8 +1309,8 @@
     },
     {
       "region": "Bretagne",
-      "articles": 16,
-      "fermetures": 10,
+      "articles": 19,
+      "fermetures": 13,
       "projets": 5,
       "fusions": 0,
       "types": [
@@ -1300,8 +1327,8 @@
     },
     {
       "region": "Hauts-de-France",
-      "articles": 14,
-      "fermetures": 8,
+      "articles": 16,
+      "fermetures": 9,
       "projets": 4,
       "fusions": 0,
       "types": [
@@ -1314,6 +1341,26 @@
         "62"
       ],
       "nb_departements": 3
+    },
+    {
+      "region": "Bourgogne-Franche-Comté",
+      "articles": 15,
+      "fermetures": 12,
+      "projets": 3,
+      "fusions": 0,
+      "types": [
+        "Fermeture",
+        "Projet"
+      ],
+      "departements": [
+        "21",
+        "25",
+        "39",
+        "70",
+        "71",
+        "90"
+      ],
+      "nb_departements": 6
     },
     {
       "region": "Auvergne-Rhône-Alpes",
@@ -1329,6 +1376,23 @@
         "38",
         "42",
         "43"
+      ],
+      "nb_departements": 3
+    },
+    {
+      "region": "Normandie",
+      "articles": 7,
+      "fermetures": 4,
+      "projets": 1,
+      "fusions": 0,
+      "types": [
+        "Fermeture",
+        "Projet"
+      ],
+      "departements": [
+        "14",
+        "27",
+        "76"
       ],
       "nb_departements": 3
     },
@@ -1350,21 +1414,21 @@
       "nb_departements": 3
     },
     {
-      "region": "Normandie",
+      "region": "Grand Est",
       "articles": 6,
-      "fermetures": 3,
-      "projets": 1,
+      "fermetures": 6,
+      "projets": 0,
       "fusions": 0,
       "types": [
-        "Fermeture",
-        "Projet"
+        "Fermeture"
       ],
       "departements": [
-        "14",
-        "27",
-        "76"
+        "55",
+        "57",
+        "67",
+        "68"
       ],
-      "nb_departements": 3
+      "nb_departements": 4
     },
     {
       "region": "Nouvelle-Aquitaine",
@@ -1397,39 +1461,6 @@
         "12",
         "46",
         "82"
-      ],
-      "nb_departements": 3
-    },
-    {
-      "region": "Grand Est",
-      "articles": 4,
-      "fermetures": 4,
-      "projets": 0,
-      "fusions": 0,
-      "types": [
-        "Fermeture"
-      ],
-      "departements": [
-        "55",
-        "57",
-        "67",
-        "68"
-      ],
-      "nb_departements": 4
-    },
-    {
-      "region": "Bourgogne-Franche-Comté",
-      "articles": 3,
-      "fermetures": 0,
-      "projets": 3,
-      "fusions": 0,
-      "types": [
-        "Projet"
-      ],
-      "departements": [
-        "21",
-        "25",
-        "70"
       ],
       "nb_departements": 3
     },
@@ -1870,7 +1901,7 @@
       "statut": "confirmé",
       "statut_temporel": "a_venir",
       "date_fermeture_approx": 0,
-      "fiabilite": 4,
+      "fiabilite": 5,
       "lat": 50.72821,
       "lon": 1.702803,
       "citation": "L’agence du Crédit agricole à la Capelle-lès-Boulogne fermera finalement plus tard que prévu…",
@@ -1891,6 +1922,13 @@
           "titre": "La Capelle-lès-Boulogne: le Crédit Agricole annonce sa fermeture, élus et des habitants inquiets - radio6.fr",
           "source": "Google News",
           "date": "Fri, 29 May 2026 07:00:00 GMT",
+          "tier": "D"
+        },
+        {
+          "url": "https://www.deltafm.fr/la-capelle-les-boulogne-fermeture-de-l-agence-credit-agricole",
+          "titre": "Crédit Agricole La Capelle-lès-Boulogne fermeture agence",
+          "source": "Delta FM, 23/05/2026",
+          "date": "2026-07-31",
           "tier": "D"
         }
       ],
@@ -4734,6 +4772,626 @@
         }
       ],
       "region": "Centre-Val de Loire"
+    },
+    {
+      "id": "c82532b364652faf",
+      "banque": "Crédit Mutuel",
+      "commune": "Pleudihen-sur-Rance",
+      "code_insee": "22197",
+      "departement": "22",
+      "type": "fermeture",
+      "date_annonce": "2026-01-24",
+      "date_fermeture": "2026-01-24",
+      "statut": "rumeur",
+      "statut_temporel": "deja_fermee",
+      "date_fermeture_approx": 0,
+      "fiabilite": 5,
+      "lat": 48.515635,
+      "lon": -1.944122,
+      "citation": "Fermeture annoncée au 24 janvier 2026, avec mobilisation locale signalée ; collectif de sociétaires et d'élus appelle à rassemblement ce samedi 17 janvier pour protester contre sa fermeture annoncée le 24 janvier. Une décision contestée.",
+      "adresse": "bourg, près de l'église",
+      "agence_localisation": "Agence de Pleudihen-sur-Rance",
+      "commune_originale": null,
+      "created_at": "2026-07-06T13:35:09.301312+00:00",
+      "sources": [
+        {
+          "url": "https://www.ici.fr/emissions/l-info-d-ici-de-7h30-ici-armorique/a-pleudihen-sur-rance-les-societaires-se-mobilisent-pour-sauver-leur-agence-du-credit-mutuel-de-bretagne-7852300",
+          "titre": "Crédit Mutuel de Bretagne Pleudihen-sur-Rance - bourg, près de l'église fermeture agence",
+          "source": "ICI / Radio France, janvier 2026",
+          "date": "2026-01-24",
+          "tier": "C"
+        }
+      ],
+      "region": "Bretagne"
+    },
+    {
+      "id": "a9a049c5ea378e3d",
+      "banque": "Crédit Mutuel",
+      "commune": "Plouguenast-Langast",
+      "code_insee": "22219",
+      "departement": "22",
+      "type": "fermeture",
+      "date_annonce": "2026-03-31",
+      "date_fermeture": "2026-03-31",
+      "statut": "confirmé",
+      "statut_temporel": "deja_fermee",
+      "date_fermeture_approx": 0,
+      "fiabilite": 5,
+      "lat": 48.279199,
+      "lon": -2.691672,
+      "citation": "L'agence bancaire du Crédit Mutuel de Bretagne (CMB) à Plouguenast, près de Loudéac (Côtes-d'Armor), a fermé, en cette fin mars 2026... depuis mardi 31 mars 2026, il ne reste plus rien pour identifier l'agence locale du CMB à Plouguenast",
+      "adresse": "rue du Général-de-Gaulle",
+      "agence_localisation": "Plouguenast",
+      "commune_originale": "Plouguenast",
+      "created_at": "2026-07-06T13:35:13.722077+00:00",
+      "sources": [
+        {
+          "url": "https://actu.fr/bretagne/plouguenast-langast_22219/cotes-darmor-la-banque-ferme-dans-cette-commune_64085338.html",
+          "titre": "Crédit Mutuel de Bretagne Plouguenast fermeture agence",
+          "source": "Actu.fr, 01/04/2026",
+          "date": "2026-03-31",
+          "tier": "C"
+        }
+      ],
+      "region": "Bretagne"
+    },
+    {
+      "id": "d96a282e7b1c4cad",
+      "banque": "BNP Paribas",
+      "commune": "Bar-le-Duc",
+      "code_insee": "55029",
+      "departement": "55",
+      "type": "fermeture",
+      "date_annonce": "2026-04-02",
+      "date_fermeture": "2026-04-02",
+      "statut": "confirmé",
+      "statut_temporel": "deja_fermee",
+      "date_fermeture_approx": 0,
+      "fiabilite": 5,
+      "lat": 48.773944,
+      "lon": 5.165032,
+      "citation": "L'agence BNP Paribas fermera définitivement ses portes à la fin du mois de mars. La Région BNP Paribas Grand-Est « a décidé de fermer l'agence de Bar-le-Duc le 2 avril 2026 »",
+      "adresse": "rue Jean-Jacques Rousseau",
+      "agence_localisation": null,
+      "commune_originale": null,
+      "created_at": "2026-07-06T13:35:18.492567+00:00",
+      "sources": [
+        {
+          "url": "https://www.estrepublicain.fr/economie/2026/03/06/l-agence-bnp-paribas-fermera-definitivement-ses-portes-a-la-fin-du-mois-de-mars",
+          "titre": "BNP Paribas Bar-le-Duc - rue Jean-Jacques Rousseau fermeture agence",
+          "source": "L'Est Républicain, 06/03/2026",
+          "date": "2026-04-02",
+          "tier": "B"
+        }
+      ],
+      "region": "Grand Est"
+    },
+    {
+      "id": "6f6d4516fab95424",
+      "banque": "Crédit Agricole",
+      "commune": "Colmar",
+      "code_insee": "68066",
+      "departement": "68",
+      "type": "fermeture",
+      "date_annonce": "2026-06-03",
+      "date_fermeture": "2026-04-20",
+      "statut": "confirmé",
+      "statut_temporel": "deja_fermee",
+      "date_fermeture_approx": 0,
+      "fiabilite": 5,
+      "lat": 48.081779,
+      "lon": 7.352569,
+      "citation": "L'agence du Crédit Agricole située Grand'rue allait fermer ses portes « à partir du 20 avril 2026 »",
+      "adresse": "Grand'rue",
+      "agence_localisation": null,
+      "commune_originale": null,
+      "created_at": "2026-07-06T13:35:23.108766+00:00",
+      "sources": [
+        {
+          "url": "https://www.dna.fr/economie/2026/05/11/le-credit-agricole-de-la-grand-rue-fermera-definitivement-le-3-juin",
+          "titre": "Crédit Agricole Colmar - Grand'rue fermeture agence",
+          "source": "DNA, 11/05/2026",
+          "date": "2026-06-03",
+          "tier": "B"
+        }
+      ],
+      "region": "Grand Est"
+    },
+    {
+      "id": "5d865dd24eb9f610",
+      "banque": "Crédit Mutuel",
+      "commune": "Saint-Cyr-sur-Loire",
+      "code_insee": "37214",
+      "departement": "37",
+      "type": "fermeture",
+      "date_annonce": "2026-06-20",
+      "date_fermeture": "2026-06-20",
+      "statut": "confirmé",
+      "statut_temporel": "deja_fermee",
+      "date_fermeture_approx": 0,
+      "fiabilite": 5,
+      "lat": 47.416945,
+      "lon": 0.657995,
+      "citation": "agence du Crédit Mutuel située rue de la République sera fermée définitivement le 20 juin 2026",
+      "adresse": "rue de la République",
+      "agence_localisation": null,
+      "commune_originale": null,
+      "created_at": "2026-07-06T13:35:25.543162+00:00",
+      "sources": [
+        {
+          "url": "https://www.lanouvellerepublique.fr/indre-et-loire/commune/saint-cyr-sur-loire/l-agence-du-credit-mutuel-va-fermer-ses-portes-definitivement-a-saint-cyr-sur-loire-1780677380",
+          "titre": "Crédit Mutuel Saint-Cyr-sur-Loire - rue de la République fermeture agence",
+          "source": "La Nouvelle République, 05/06/2026",
+          "date": "2026-06-20",
+          "tier": "B"
+        }
+      ],
+      "region": "Centre-Val de Loire"
+    },
+    {
+      "id": "629fd0ffd1c91aae",
+      "banque": "Caisse d'Épargne",
+      "commune": "Hesdigneul-lès-Boulogne",
+      "code_insee": "62446",
+      "departement": "62",
+      "type": "fermeture",
+      "date_annonce": "Semaine précédant le 23/06/2026",
+      "date_fermeture": "2026-06-16",
+      "statut": "confirmé",
+      "statut_temporel": "deja_fermee",
+      "date_fermeture_approx": 1,
+      "fiabilite": 5,
+      "lat": 50.660248,
+      "lon": 1.663061,
+      "citation": "fermeture soudaine, la semaine dernière, de l'agence bancaire Caisse d'Épargne rue du Docteur-Brousse, a du mal à passer pour les Stéphanois",
+      "adresse": "rue du Docteur-Brousse",
+      "agence_localisation": "Pont-de-Briques",
+      "commune_originale": "Pont-de-Briques",
+      "created_at": "2026-07-06T13:35:34.330940+00:00",
+      "sources": [
+        {
+          "url": "https://www.europesays.com/fr/1020111/",
+          "titre": "Caisse d'Épargne Pont-de-Briques - rue du Docteur-Brousse fermeture agence",
+          "source": "EuropeSays / reprise d'actualité, 23/06/2026",
+          "date": "Semaine précédant le 23/06/2026",
+          "tier": "D"
+        }
+      ],
+      "region": "Hauts-de-France"
+    },
+    {
+      "id": "a7581c0e4d0cc0c7",
+      "banque": "BNP Paribas",
+      "commune": "Chalon-sur-Saône",
+      "code_insee": "71076",
+      "departement": "71",
+      "type": "fermeture",
+      "date_annonce": "2026-06-26",
+      "date_fermeture": "2026-06-26",
+      "statut": "confirmé",
+      "statut_temporel": "deja_fermee",
+      "date_fermeture_approx": 0,
+      "fiabilite": 5,
+      "lat": 46.7917,
+      "lon": 4.845526,
+      "citation": "L'agence BNP Paribas Chalon-sur-Saône Avenue de Paris fermera fin juin. Cette agence cessera son activité le 26 juin 2026. Les clients seront désormais accueillis à l'agence BNP Paribas Chalon-sur-Saône République.",
+      "adresse": "141 Avenue de Paris",
+      "agence_localisation": "Chalon-sur-Saône Avenue de Paris",
+      "commune_originale": null,
+      "created_at": "2026-07-06T13:35:39.733014+00:00",
+      "sources": [
+        {
+          "url": "https://www.info-chalon.com/articles/2026/05/24/110511/l-agence-bnp-paribas-chalon-sur-saone-avenue-de-paris-fermera-fin-juin/",
+          "titre": "BNP Paribas Chalon-sur-Saône - 141 avenue de Paris fermeture agence",
+          "source": "Info-Chalon, 24/05/2026",
+          "date": "2026-06-26",
+          "tier": "D"
+        }
+      ],
+      "region": "Bourgogne-Franche-Comté"
+    },
+    {
+      "id": "41edf54ac0f821c3",
+      "banque": "BNP Paribas",
+      "commune": "Guer",
+      "code_insee": "56075",
+      "departement": "56",
+      "type": "fermeture",
+      "date_annonce": "2026-06-27",
+      "date_fermeture": "2026-06-27",
+      "statut": "confirmé",
+      "statut_temporel": "deja_fermee",
+      "date_fermeture_approx": 0,
+      "fiabilite": 5,
+      "lat": 47.905015,
+      "lon": -2.128326,
+      "citation": "L'agence BNP Paribas de Guer-Coëtquidan fermera définitivement ses portes le 27 juin 2026",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "created_at": "2026-07-06T13:35:43.632547+00:00",
+      "sources": [
+        {
+          "url": "https://www.ouest-france.fr/bretagne/guer-56380/a-coetquidan-lagence-bancaire-bnp-paribas-ferme-ses-portes-fin-juin-2026-c3a03822-602f-11f1-a909-bec873b306e3",
+          "titre": "BNP Paribas Guer-Coëtquidan / Coëtquidan fermeture agence",
+          "source": "Ouest-France, 05/06/2026",
+          "date": "2026-06-27",
+          "tier": "B"
+        }
+      ],
+      "region": "Bretagne"
+    },
+    {
+      "id": "1eceacd73fdb4d70",
+      "banque": "Crédit Agricole",
+      "commune": "Beaucourt",
+      "code_insee": "90009",
+      "departement": "90",
+      "type": "fermeture",
+      "date_annonce": "2026-09-01",
+      "date_fermeture": "2026-09-01",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 4,
+      "lat": 47.487073,
+      "lon": 6.920877,
+      "citation": "Crédit Agricole de Franche-Comté Beaucourt fermeture agence\nCrédit Agricole de Franche-Comté Besançon - Montrapon fermeture agence\nCrédit Agricole de Franche-Comté Charquemont fermeture agence\nCrédit Agricole de Franche-Comté Fougerolles fermeture agence\nCrédit Agricole de Franche-Comté Hérimoncourt fermeture agence\nCrédit Agricole de Franche-Comté Mandeure fermeture agence\nCrédit Agricole de Franche-Comté Pays de Clerval fermeture agence\nCrédit Agricole de Franche-Comté Pays de Montbenoît fermeture agence\nCrédit Agricole de Franche-Comté Saint-Julien-sur-Suran fermeture agence\nCrédit Agricole de Franche-Comté Vauvillers fermeture agence",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "created_at": "2026-07-06T13:35:54.391121+00:00",
+      "sources": [
+        {
+          "url": "https://www.ici.fr/bourgogne-franche-comte/doubs-25/le-credit-agricole-va-fermer-dix-agences-bancaires-en-franche-comte-certaines-mairies-se-mobilisent-4080877",
+          "titre": "Crédit Agricole de Franche-Comté Beaucourt fermeture agence\nCrédit Agricole de Franche-Comté Besançon - Montrapon fermeture agence\nCrédit Agricole de Franche-Comté Charquemont fermeture agence\nCrédit Agricole de Franche-Comté Fougerolles fermeture agence\nCrédit Agricole de Franche-Comté Hérimoncourt fermeture agence\nCrédit Agricole de Franche-Comté Mandeure fermeture agence\nCrédit Agricole de Franche-Comté Pays de Clerval fermeture agence\nCrédit Agricole de Franche-Comté Pays de Montbenoît fermeture agence\nCrédit Agricole de Franche-Comté Saint-Julien-sur-Suran fermeture agence\nCrédit Agricole de Franche-Comté Vauvillers fermeture agence",
+          "source": "ICI Besançon / ICI Belfort-Montbéliard, 12/06/2026",
+          "date": "2026-09-01",
+          "tier": "C"
+        }
+      ],
+      "region": "Bourgogne-Franche-Comté"
+    },
+    {
+      "id": "645c2b0d2af44b32",
+      "banque": "Crédit Agricole",
+      "commune": "Besançon",
+      "code_insee": "25056",
+      "departement": "25",
+      "type": "fermeture",
+      "date_annonce": "2026-09-01",
+      "date_fermeture": "2026-09-01",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 4,
+      "lat": 47.251938,
+      "lon": 6.001699,
+      "citation": "Crédit Agricole de Franche-Comté Beaucourt fermeture agence\nCrédit Agricole de Franche-Comté Besançon - Montrapon fermeture agence\nCrédit Agricole de Franche-Comté Charquemont fermeture agence\nCrédit Agricole de Franche-Comté Fougerolles fermeture agence\nCrédit Agricole de Franche-Comté Hérimoncourt fermeture agence\nCrédit Agricole de Franche-Comté Mandeure fermeture agence\nCrédit Agricole de Franche-Comté Pays de Clerval fermeture agence\nCrédit Agricole de Franche-Comté Pays de Montbenoît fermeture agence\nCrédit Agricole de Franche-Comté Saint-Julien-sur-Suran fermeture agence\nCrédit Agricole de Franche-Comté Vauvillers fermeture agence",
+      "adresse": null,
+      "agence_localisation": "Besançon - Montrapon",
+      "commune_originale": "Besançon - Montrapon",
+      "created_at": "2026-07-06T13:35:54.393248+00:00",
+      "sources": [
+        {
+          "url": "https://www.ici.fr/bourgogne-franche-comte/doubs-25/le-credit-agricole-va-fermer-dix-agences-bancaires-en-franche-comte-certaines-mairies-se-mobilisent-4080877",
+          "titre": "Crédit Agricole de Franche-Comté Beaucourt fermeture agence\nCrédit Agricole de Franche-Comté Besançon - Montrapon fermeture agence\nCrédit Agricole de Franche-Comté Charquemont fermeture agence\nCrédit Agricole de Franche-Comté Fougerolles fermeture agence\nCrédit Agricole de Franche-Comté Hérimoncourt fermeture agence\nCrédit Agricole de Franche-Comté Mandeure fermeture agence\nCrédit Agricole de Franche-Comté Pays de Clerval fermeture agence\nCrédit Agricole de Franche-Comté Pays de Montbenoît fermeture agence\nCrédit Agricole de Franche-Comté Saint-Julien-sur-Suran fermeture agence\nCrédit Agricole de Franche-Comté Vauvillers fermeture agence",
+          "source": "ICI Besançon / ICI Belfort-Montbéliard, 12/06/2026",
+          "date": "2026-09-01",
+          "tier": "C"
+        }
+      ],
+      "region": "Bourgogne-Franche-Comté"
+    },
+    {
+      "id": "274ce068f0cd48a9",
+      "banque": "Crédit Agricole",
+      "commune": "Charquemont",
+      "code_insee": "25127",
+      "departement": "25",
+      "type": "fermeture",
+      "date_annonce": "2026-09-01",
+      "date_fermeture": "2026-09-01",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 4,
+      "lat": 47.20178,
+      "lon": 6.840985,
+      "citation": "Crédit Agricole de Franche-Comté Beaucourt fermeture agence\nCrédit Agricole de Franche-Comté Besançon - Montrapon fermeture agence\nCrédit Agricole de Franche-Comté Charquemont fermeture agence\nCrédit Agricole de Franche-Comté Fougerolles fermeture agence\nCrédit Agricole de Franche-Comté Hérimoncourt fermeture agence\nCrédit Agricole de Franche-Comté Mandeure fermeture agence\nCrédit Agricole de Franche-Comté Pays de Clerval fermeture agence\nCrédit Agricole de Franche-Comté Pays de Montbenoît fermeture agence\nCrédit Agricole de Franche-Comté Saint-Julien-sur-Suran fermeture agence\nCrédit Agricole de Franche-Comté Vauvillers fermeture agence",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "created_at": "2026-07-06T13:35:54.394824+00:00",
+      "sources": [
+        {
+          "url": "https://www.ici.fr/bourgogne-franche-comte/doubs-25/le-credit-agricole-va-fermer-dix-agences-bancaires-en-franche-comte-certaines-mairies-se-mobilisent-4080877",
+          "titre": "Crédit Agricole de Franche-Comté Beaucourt fermeture agence\nCrédit Agricole de Franche-Comté Besançon - Montrapon fermeture agence\nCrédit Agricole de Franche-Comté Charquemont fermeture agence\nCrédit Agricole de Franche-Comté Fougerolles fermeture agence\nCrédit Agricole de Franche-Comté Hérimoncourt fermeture agence\nCrédit Agricole de Franche-Comté Mandeure fermeture agence\nCrédit Agricole de Franche-Comté Pays de Clerval fermeture agence\nCrédit Agricole de Franche-Comté Pays de Montbenoît fermeture agence\nCrédit Agricole de Franche-Comté Saint-Julien-sur-Suran fermeture agence\nCrédit Agricole de Franche-Comté Vauvillers fermeture agence",
+          "source": "ICI Besançon / ICI Belfort-Montbéliard, 12/06/2026",
+          "date": "2026-09-01",
+          "tier": "C"
+        }
+      ],
+      "region": "Bourgogne-Franche-Comté"
+    },
+    {
+      "id": "809574db5ef187c6",
+      "banque": "Crédit Agricole",
+      "commune": "Fougerolles-Saint-Valbert",
+      "code_insee": "70245",
+      "departement": "70",
+      "type": "fermeture",
+      "date_annonce": "2026-09-01",
+      "date_fermeture": "2026-09-01",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 4,
+      "lat": 47.892252,
+      "lon": 6.413278,
+      "citation": "Crédit Agricole de Franche-Comté Beaucourt fermeture agence\nCrédit Agricole de Franche-Comté Besançon - Montrapon fermeture agence\nCrédit Agricole de Franche-Comté Charquemont fermeture agence\nCrédit Agricole de Franche-Comté Fougerolles fermeture agence\nCrédit Agricole de Franche-Comté Hérimoncourt fermeture agence\nCrédit Agricole de Franche-Comté Mandeure fermeture agence\nCrédit Agricole de Franche-Comté Pays de Clerval fermeture agence\nCrédit Agricole de Franche-Comté Pays de Montbenoît fermeture agence\nCrédit Agricole de Franche-Comté Saint-Julien-sur-Suran fermeture agence\nCrédit Agricole de Franche-Comté Vauvillers fermeture agence",
+      "adresse": null,
+      "agence_localisation": "Fougerolles",
+      "commune_originale": "Fougerolles",
+      "created_at": "2026-07-06T13:35:54.837487+00:00",
+      "sources": [
+        {
+          "url": "https://www.ici.fr/bourgogne-franche-comte/doubs-25/le-credit-agricole-va-fermer-dix-agences-bancaires-en-franche-comte-certaines-mairies-se-mobilisent-4080877",
+          "titre": "Crédit Agricole de Franche-Comté Beaucourt fermeture agence\nCrédit Agricole de Franche-Comté Besançon - Montrapon fermeture agence\nCrédit Agricole de Franche-Comté Charquemont fermeture agence\nCrédit Agricole de Franche-Comté Fougerolles fermeture agence\nCrédit Agricole de Franche-Comté Hérimoncourt fermeture agence\nCrédit Agricole de Franche-Comté Mandeure fermeture agence\nCrédit Agricole de Franche-Comté Pays de Clerval fermeture agence\nCrédit Agricole de Franche-Comté Pays de Montbenoît fermeture agence\nCrédit Agricole de Franche-Comté Saint-Julien-sur-Suran fermeture agence\nCrédit Agricole de Franche-Comté Vauvillers fermeture agence",
+          "source": "ICI Besançon / ICI Belfort-Montbéliard, 12/06/2026",
+          "date": "2026-09-01",
+          "tier": "C"
+        }
+      ],
+      "region": "Bourgogne-Franche-Comté"
+    },
+    {
+      "id": "c798bb37107872f2",
+      "banque": "Crédit Agricole",
+      "commune": "Hérimoncourt",
+      "code_insee": "25304",
+      "departement": "25",
+      "type": "fermeture",
+      "date_annonce": "2026-09-01",
+      "date_fermeture": "2026-09-01",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 4,
+      "lat": 47.438508,
+      "lon": 6.884327,
+      "citation": "Crédit Agricole de Franche-Comté Beaucourt fermeture agence\nCrédit Agricole de Franche-Comté Besançon - Montrapon fermeture agence\nCrédit Agricole de Franche-Comté Charquemont fermeture agence\nCrédit Agricole de Franche-Comté Fougerolles fermeture agence\nCrédit Agricole de Franche-Comté Hérimoncourt fermeture agence\nCrédit Agricole de Franche-Comté Mandeure fermeture agence\nCrédit Agricole de Franche-Comté Pays de Clerval fermeture agence\nCrédit Agricole de Franche-Comté Pays de Montbenoît fermeture agence\nCrédit Agricole de Franche-Comté Saint-Julien-sur-Suran fermeture agence\nCrédit Agricole de Franche-Comté Vauvillers fermeture agence",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "created_at": "2026-07-06T13:35:54.839899+00:00",
+      "sources": [
+        {
+          "url": "https://www.ici.fr/bourgogne-franche-comte/doubs-25/le-credit-agricole-va-fermer-dix-agences-bancaires-en-franche-comte-certaines-mairies-se-mobilisent-4080877",
+          "titre": "Crédit Agricole de Franche-Comté Beaucourt fermeture agence\nCrédit Agricole de Franche-Comté Besançon - Montrapon fermeture agence\nCrédit Agricole de Franche-Comté Charquemont fermeture agence\nCrédit Agricole de Franche-Comté Fougerolles fermeture agence\nCrédit Agricole de Franche-Comté Hérimoncourt fermeture agence\nCrédit Agricole de Franche-Comté Mandeure fermeture agence\nCrédit Agricole de Franche-Comté Pays de Clerval fermeture agence\nCrédit Agricole de Franche-Comté Pays de Montbenoît fermeture agence\nCrédit Agricole de Franche-Comté Saint-Julien-sur-Suran fermeture agence\nCrédit Agricole de Franche-Comté Vauvillers fermeture agence",
+          "source": "ICI Besançon / ICI Belfort-Montbéliard, 12/06/2026",
+          "date": "2026-09-01",
+          "tier": "C"
+        }
+      ],
+      "region": "Bourgogne-Franche-Comté"
+    },
+    {
+      "id": "bd8eb8c779732e1a",
+      "banque": "Crédit Agricole",
+      "commune": "Mandeure",
+      "code_insee": "25367",
+      "departement": "25",
+      "type": "fermeture",
+      "date_annonce": "2026-09-01",
+      "date_fermeture": "2026-09-01",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 4,
+      "lat": 47.435564,
+      "lon": 6.820572,
+      "citation": "Crédit Agricole de Franche-Comté Beaucourt fermeture agence\nCrédit Agricole de Franche-Comté Besançon - Montrapon fermeture agence\nCrédit Agricole de Franche-Comté Charquemont fermeture agence\nCrédit Agricole de Franche-Comté Fougerolles fermeture agence\nCrédit Agricole de Franche-Comté Hérimoncourt fermeture agence\nCrédit Agricole de Franche-Comté Mandeure fermeture agence\nCrédit Agricole de Franche-Comté Pays de Clerval fermeture agence\nCrédit Agricole de Franche-Comté Pays de Montbenoît fermeture agence\nCrédit Agricole de Franche-Comté Saint-Julien-sur-Suran fermeture agence\nCrédit Agricole de Franche-Comté Vauvillers fermeture agence",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "created_at": "2026-07-06T13:35:54.842090+00:00",
+      "sources": [
+        {
+          "url": "https://www.ici.fr/bourgogne-franche-comte/doubs-25/le-credit-agricole-va-fermer-dix-agences-bancaires-en-franche-comte-certaines-mairies-se-mobilisent-4080877",
+          "titre": "Crédit Agricole de Franche-Comté Beaucourt fermeture agence\nCrédit Agricole de Franche-Comté Besançon - Montrapon fermeture agence\nCrédit Agricole de Franche-Comté Charquemont fermeture agence\nCrédit Agricole de Franche-Comté Fougerolles fermeture agence\nCrédit Agricole de Franche-Comté Hérimoncourt fermeture agence\nCrédit Agricole de Franche-Comté Mandeure fermeture agence\nCrédit Agricole de Franche-Comté Pays de Clerval fermeture agence\nCrédit Agricole de Franche-Comté Pays de Montbenoît fermeture agence\nCrédit Agricole de Franche-Comté Saint-Julien-sur-Suran fermeture agence\nCrédit Agricole de Franche-Comté Vauvillers fermeture agence",
+          "source": "ICI Besançon / ICI Belfort-Montbéliard, 12/06/2026",
+          "date": "2026-09-01",
+          "tier": "C"
+        }
+      ],
+      "region": "Bourgogne-Franche-Comté"
+    },
+    {
+      "id": "66f59a01a00bf289",
+      "banque": "Crédit Agricole",
+      "commune": "Pays-de-Clerval",
+      "code_insee": "25156",
+      "departement": "25",
+      "type": "fermeture",
+      "date_annonce": "2026-09-01",
+      "date_fermeture": "2026-09-01",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 4,
+      "lat": 47.389455,
+      "lon": 6.499961,
+      "citation": "Crédit Agricole de Franche-Comté Beaucourt fermeture agence\nCrédit Agricole de Franche-Comté Besançon - Montrapon fermeture agence\nCrédit Agricole de Franche-Comté Charquemont fermeture agence\nCrédit Agricole de Franche-Comté Fougerolles fermeture agence\nCrédit Agricole de Franche-Comté Hérimoncourt fermeture agence\nCrédit Agricole de Franche-Comté Mandeure fermeture agence\nCrédit Agricole de Franche-Comté Pays de Clerval fermeture agence\nCrédit Agricole de Franche-Comté Pays de Montbenoît fermeture agence\nCrédit Agricole de Franche-Comté Saint-Julien-sur-Suran fermeture agence\nCrédit Agricole de Franche-Comté Vauvillers fermeture agence",
+      "adresse": null,
+      "agence_localisation": "Pays de Clerval",
+      "commune_originale": "Pays de Clerval",
+      "created_at": "2026-07-06T13:35:55.353460+00:00",
+      "sources": [
+        {
+          "url": "https://www.ici.fr/bourgogne-franche-comte/doubs-25/le-credit-agricole-va-fermer-dix-agences-bancaires-en-franche-comte-certaines-mairies-se-mobilisent-4080877",
+          "titre": "Crédit Agricole de Franche-Comté Beaucourt fermeture agence\nCrédit Agricole de Franche-Comté Besançon - Montrapon fermeture agence\nCrédit Agricole de Franche-Comté Charquemont fermeture agence\nCrédit Agricole de Franche-Comté Fougerolles fermeture agence\nCrédit Agricole de Franche-Comté Hérimoncourt fermeture agence\nCrédit Agricole de Franche-Comté Mandeure fermeture agence\nCrédit Agricole de Franche-Comté Pays de Clerval fermeture agence\nCrédit Agricole de Franche-Comté Pays de Montbenoît fermeture agence\nCrédit Agricole de Franche-Comté Saint-Julien-sur-Suran fermeture agence\nCrédit Agricole de Franche-Comté Vauvillers fermeture agence",
+          "source": "ICI Besançon / ICI Belfort-Montbéliard, 12/06/2026",
+          "date": "2026-09-01",
+          "tier": "C"
+        }
+      ],
+      "region": "Bourgogne-Franche-Comté"
+    },
+    {
+      "id": "3e429207726ed1d2",
+      "banque": "Crédit Agricole",
+      "commune": "Pays-de-Montbenoît",
+      "code_insee": "25390",
+      "departement": "25",
+      "type": "fermeture",
+      "date_annonce": "2026-09-01",
+      "date_fermeture": "2026-09-01",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 4,
+      "lat": 47.00009,
+      "lon": 6.470842,
+      "citation": "Crédit Agricole de Franche-Comté Beaucourt fermeture agence\nCrédit Agricole de Franche-Comté Besançon - Montrapon fermeture agence\nCrédit Agricole de Franche-Comté Charquemont fermeture agence\nCrédit Agricole de Franche-Comté Fougerolles fermeture agence\nCrédit Agricole de Franche-Comté Hérimoncourt fermeture agence\nCrédit Agricole de Franche-Comté Mandeure fermeture agence\nCrédit Agricole de Franche-Comté Pays de Clerval fermeture agence\nCrédit Agricole de Franche-Comté Pays de Montbenoît fermeture agence\nCrédit Agricole de Franche-Comté Saint-Julien-sur-Suran fermeture agence\nCrédit Agricole de Franche-Comté Vauvillers fermeture agence",
+      "adresse": null,
+      "agence_localisation": "Pays de Montbenoît",
+      "commune_originale": "Pays de Montbenoît",
+      "created_at": "2026-07-06T13:35:56.030921+00:00",
+      "sources": [
+        {
+          "url": "https://www.ici.fr/bourgogne-franche-comte/doubs-25/le-credit-agricole-va-fermer-dix-agences-bancaires-en-franche-comte-certaines-mairies-se-mobilisent-4080877",
+          "titre": "Crédit Agricole de Franche-Comté Beaucourt fermeture agence\nCrédit Agricole de Franche-Comté Besançon - Montrapon fermeture agence\nCrédit Agricole de Franche-Comté Charquemont fermeture agence\nCrédit Agricole de Franche-Comté Fougerolles fermeture agence\nCrédit Agricole de Franche-Comté Hérimoncourt fermeture agence\nCrédit Agricole de Franche-Comté Mandeure fermeture agence\nCrédit Agricole de Franche-Comté Pays de Clerval fermeture agence\nCrédit Agricole de Franche-Comté Pays de Montbenoît fermeture agence\nCrédit Agricole de Franche-Comté Saint-Julien-sur-Suran fermeture agence\nCrédit Agricole de Franche-Comté Vauvillers fermeture agence",
+          "source": "ICI Besançon / ICI Belfort-Montbéliard, 12/06/2026",
+          "date": "2026-09-01",
+          "tier": "C"
+        }
+      ],
+      "region": "Bourgogne-Franche-Comté"
+    },
+    {
+      "id": "59a7568471b7cf67",
+      "banque": "Crédit Agricole",
+      "commune": "Val Suran",
+      "code_insee": "39485",
+      "departement": "39",
+      "type": "fermeture",
+      "date_annonce": "2026-09-01",
+      "date_fermeture": "2026-09-01",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 4,
+      "lat": 46.394614,
+      "lon": 5.453554,
+      "citation": "Crédit Agricole de Franche-Comté Beaucourt fermeture agence\nCrédit Agricole de Franche-Comté Besançon - Montrapon fermeture agence\nCrédit Agricole de Franche-Comté Charquemont fermeture agence\nCrédit Agricole de Franche-Comté Fougerolles fermeture agence\nCrédit Agricole de Franche-Comté Hérimoncourt fermeture agence\nCrédit Agricole de Franche-Comté Mandeure fermeture agence\nCrédit Agricole de Franche-Comté Pays de Clerval fermeture agence\nCrédit Agricole de Franche-Comté Pays de Montbenoît fermeture agence\nCrédit Agricole de Franche-Comté Saint-Julien-sur-Suran fermeture agence\nCrédit Agricole de Franche-Comté Vauvillers fermeture agence",
+      "adresse": null,
+      "agence_localisation": "Saint-Julien-sur-Suran",
+      "commune_originale": "Saint-Julien-sur-Suran",
+      "created_at": "2026-07-06T13:35:56.621640+00:00",
+      "sources": [
+        {
+          "url": "https://www.ici.fr/bourgogne-franche-comte/doubs-25/le-credit-agricole-va-fermer-dix-agences-bancaires-en-franche-comte-certaines-mairies-se-mobilisent-4080877",
+          "titre": "Crédit Agricole de Franche-Comté Beaucourt fermeture agence\nCrédit Agricole de Franche-Comté Besançon - Montrapon fermeture agence\nCrédit Agricole de Franche-Comté Charquemont fermeture agence\nCrédit Agricole de Franche-Comté Fougerolles fermeture agence\nCrédit Agricole de Franche-Comté Hérimoncourt fermeture agence\nCrédit Agricole de Franche-Comté Mandeure fermeture agence\nCrédit Agricole de Franche-Comté Pays de Clerval fermeture agence\nCrédit Agricole de Franche-Comté Pays de Montbenoît fermeture agence\nCrédit Agricole de Franche-Comté Saint-Julien-sur-Suran fermeture agence\nCrédit Agricole de Franche-Comté Vauvillers fermeture agence",
+          "source": "ICI Besançon / ICI Belfort-Montbéliard, 12/06/2026",
+          "date": "2026-09-01",
+          "tier": "C"
+        }
+      ],
+      "region": "Bourgogne-Franche-Comté"
+    },
+    {
+      "id": "4b179ea09d4499fa",
+      "banque": "Crédit Agricole",
+      "commune": "Vauvillers",
+      "code_insee": "70526",
+      "departement": "70",
+      "type": "fermeture",
+      "date_annonce": "2026-09-01",
+      "date_fermeture": "2026-09-01",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 4,
+      "lat": 47.921391,
+      "lon": 6.098597,
+      "citation": "Crédit Agricole de Franche-Comté Beaucourt fermeture agence\nCrédit Agricole de Franche-Comté Besançon - Montrapon fermeture agence\nCrédit Agricole de Franche-Comté Charquemont fermeture agence\nCrédit Agricole de Franche-Comté Fougerolles fermeture agence\nCrédit Agricole de Franche-Comté Hérimoncourt fermeture agence\nCrédit Agricole de Franche-Comté Mandeure fermeture agence\nCrédit Agricole de Franche-Comté Pays de Clerval fermeture agence\nCrédit Agricole de Franche-Comté Pays de Montbenoît fermeture agence\nCrédit Agricole de Franche-Comté Saint-Julien-sur-Suran fermeture agence\nCrédit Agricole de Franche-Comté Vauvillers fermeture agence",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "created_at": "2026-07-06T13:35:56.624496+00:00",
+      "sources": [
+        {
+          "url": "https://www.ici.fr/bourgogne-franche-comte/doubs-25/le-credit-agricole-va-fermer-dix-agences-bancaires-en-franche-comte-certaines-mairies-se-mobilisent-4080877",
+          "titre": "Crédit Agricole de Franche-Comté Beaucourt fermeture agence\nCrédit Agricole de Franche-Comté Besançon - Montrapon fermeture agence\nCrédit Agricole de Franche-Comté Charquemont fermeture agence\nCrédit Agricole de Franche-Comté Fougerolles fermeture agence\nCrédit Agricole de Franche-Comté Hérimoncourt fermeture agence\nCrédit Agricole de Franche-Comté Mandeure fermeture agence\nCrédit Agricole de Franche-Comté Pays de Clerval fermeture agence\nCrédit Agricole de Franche-Comté Pays de Montbenoît fermeture agence\nCrédit Agricole de Franche-Comté Saint-Julien-sur-Suran fermeture agence\nCrédit Agricole de Franche-Comté Vauvillers fermeture agence",
+          "source": "ICI Besançon / ICI Belfort-Montbéliard, 12/06/2026",
+          "date": "2026-09-01",
+          "tier": "C"
+        }
+      ],
+      "region": "Bourgogne-Franche-Comté"
+    },
+    {
+      "id": "f8e7bd3fbe80ad86",
+      "banque": "Crédit Agricole",
+      "commune": "Les Grandes-Ventes",
+      "code_insee": "76321",
+      "departement": "76",
+      "type": "fermeture",
+      "date_annonce": "2026-12-31",
+      "date_fermeture": "2026-12-31",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 5,
+      "lat": 49.782006,
+      "lon": 1.226087,
+      "citation": "L'agence du Crédit Agricole des Grandes-Ventes va fermer ses portes le 31 décembre 2026. Une fermeture progressive débutera à partir de juillet 2026.",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "created_at": "2026-07-06T13:36:00.234822+00:00",
+      "sources": [
+        {
+          "url": "https://actu.fr/normandie/les-grandes-ventes_76321/fermeture-du-credit-agricole-aux-grandes-ventes-la-municipalite-agit-pour-ne-pas-perdre-son-distributeur_63305731.html",
+          "titre": "Crédit Agricole Les Grandes-Ventes fermeture agence",
+          "source": "Actu.fr / Le Réveil de Neufchâtel, 16/10/2025 et 04/05/2026",
+          "date": "2026-12-31",
+          "tier": "C"
+        }
+      ],
+      "region": "Normandie"
+    },
+    {
+      "id": "a39161cc79f29c33",
+      "banque": "Crédit Municipal de Bordeaux / agence bancaire de Dijon",
+      "commune": "Dijon",
+      "code_insee": "21231",
+      "departement": "21",
+      "type": "fermeture",
+      "date_annonce": "2026-12-31",
+      "date_fermeture": "2026-12-31",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 4,
+      "lat": 47.331953,
+      "lon": 5.033601,
+      "citation": "Crédit Municipal de Bordeaux / agence bancaire de Dijon Dijon - place de la République fermeture agence",
+      "adresse": null,
+      "agence_localisation": "Dijon - place de la République",
+      "commune_originale": "Dijon - place de la République",
+      "created_at": "2026-07-06T13:36:04.520716+00:00",
+      "sources": [
+        {
+          "url": "https://www.ici.fr/infos/economie-social/l-agence-bancaire-du-credit-municipal-de-dijon-fermera-ses-portes-fin-2026-6715185",
+          "titre": "Crédit Municipal de Bordeaux / agence bancaire de Dijon Dijon - place de la République fermeture agence",
+          "source": "ICI Bourgogne, 03/12/2024 ; Le Bien Public, 12/12/2024",
+          "date": "2026-12-31",
+          "tier": "C"
+        }
+      ],
+      "region": "Bourgogne-Franche-Comté"
     }
   ],
   "closures_unlocated": [
@@ -5089,13 +5747,13 @@
       "departement": "36",
       "count": 4,
       "communes_mentioned": "Reuilly, Écueillé, Villedieu-sur-Indre",
-      "confidence": 0.9,
-      "evidence": "Quatre fermetures d'agences dans l'Indre, Sur l'Indre et la Haute-Vienne, on a 11 agences qui ferment, quatre sur l'Indre",
+      "confidence": 0.95,
+      "evidence": "Quatre fermetures d'agences dans l'Indre",
       "url": "https://www.ici.fr/centre-val-de-loire/indre-36/reuilly/l-agence-bancaire-credit-agricole-de-reuilly-dans-l-indre-ferme-ses-portes-ce-vendredi-5175020",
-      "titre": "Crédit Agricole Centre Ouest Reuilly fermeture agence",
-      "source": "ICI Centre-Val de Loire / Radio France",
+      "titre": "Crédit Agricole Reuilly fermeture agence",
+      "source": "ICI Centre-Val de Loire / Radio France, janvier 2026",
       "date": "2026-01-23",
-      "created_at": "2026-07-06T12:21:18.931860+00:00"
+      "created_at": "2026-07-06T13:35:01.046048+00:00"
     },
     {
       "id": "dc38514e99f41233",
@@ -5236,10 +5894,10 @@
       "id": "7493d6acfb4b2885",
       "banque": "Crédit Agricole",
       "departement": "36",
-      "titre": "Crédit Agricole Centre Ouest Reuilly fermeture agence",
-      "extrait": "Quatre fermetures d'agences dans l'Indre, Sur l'Indre et la Haute-Vienne, on a 11 agences qui ferment, quatre sur l'Indre",
+      "titre": "Crédit Agricole Reuilly fermeture agence",
+      "extrait": "Quatre fermetures d'agences dans l'Indre",
       "url": "https://www.ici.fr/centre-val-de-loire/indre-36/reuilly/l-agence-bancaire-credit-agricole-de-reuilly-dans-l-indre-ferme-ses-portes-ce-vendredi-5175020",
-      "source": "ICI Centre-Val de Loire / Radio France",
+      "source": "ICI Centre-Val de Loire / Radio France, janvier 2026",
       "date": "2026-01-23",
       "score": 5,
       "raison": "signaux: dept(Crédit Agricole,36,count=4,communes=Reuilly, Écueillé, Villedieu-sur-Indre)",
