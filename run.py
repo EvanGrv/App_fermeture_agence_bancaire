@@ -220,7 +220,7 @@ def seed_main(path: str, *, reference: str | None = None):
     progress(f"Ingestion seed ({len(articles)} URLs)", 30)
     recap = seed.ingest(
         conn, articles,
-        extractor_fn=lambda art: extract(art, client=client),
+        extractor_fn=lambda art: extract_structured(art, client=client).model_dump(),
         geocode_fn=lambda c, d=None: geocode.geocode_commune_ou_lieu(c, d, cache=cache_geo),
         fetch_fn=fetch_text,
     )

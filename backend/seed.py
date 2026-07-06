@@ -21,7 +21,7 @@ import unicodedata
 from datetime import date, timedelta
 from pathlib import Path
 
-from backend import commune_normalize, store, validation
+from backend import commune_normalize, ingest_map, store, validation
 from backend.dedup import closure_id
 from backend.extractor import normalise_banque
 
@@ -242,9 +242,7 @@ def _closures_depuis_targets(article: dict, geocode_fn, *, allow_single: bool = 
         commune = target.get("commune")
         if not banque or not commune:
             continue
-        geo = geocode_fn(commune, target.get("departement"))
-        if not geo or not geo.get("code_insee"):
-            continue
+        geo = geocode_fn(commune, target.get("departement")) or {}
         agence_loc = target.get("agence_localisation")
         closure = {
             "id": closure_id(banque, commune, "fermeture", adresse=agence_loc),
@@ -277,6 +275,122 @@ def _closures_depuis_targets(article: dict, geocode_fn, *, allow_single: bool = 
     return out
 
 
+def _persist_unlocated(conn, closure: dict, article: dict, url: str, raison: str) -> None:
+    store.upsert_closure_unlocated(conn, {
+        "id": closure_id(
+            closure.get("banque") or "",
+            closure.get("commune") or "",
+            closure.get("type") or "fermeture",
+            adresse=f"{url}|{closure.get('agence_localisation') or ''}",
+        ),
+        "banque": closure.get("banque"),
+        "commune": closure.get("commune"),
+        "departement": closure.get("departement"),
+        "type": closure.get("type"),
+        "date_fermeture": closure.get("date_fermeture"),
+        "statut": closure.get("statut"),
+        "statut_temporel": closure.get("statut_temporel"),
+        "fiabilite": closure.get("fiabilite"),
+        "citation": closure.get("citation"),
+        "url": url or None,
+        "titre": article.get("titre"),
+        "source": article.get("source"),
+        "date": article.get("date"),
+        "raison": raison,
+    })
+
+
+def _publish_or_unlocated(conn, closure: dict, article: dict, url: str, geocode_fn) -> bool:
+    try:
+        geo = geocode_fn(closure["commune"], closure.get("departement"))
+    except Exception:
+        geo = None
+    if geo:
+        closure["lat"] = closure.get("lat") or geo.get("lat")
+        closure["lon"] = closure.get("lon") or geo.get("lon")
+        if not validation.departement_valide(closure.get("departement")):
+            closure["departement"] = geo.get("departement")
+        if not closure.get("code_insee"):
+            closure["code_insee"] = geo.get("code_insee")
+        closure = commune_normalize.appliquer(closure, geo)
+    publiable, raison = validation.fermeture_publiable(closure, geo)
+    if not publiable:
+        _persist_unlocated(conn, closure, article, url, raison)
+        return False
+    store.upsert_closure(conn, closure)
+    store.add_source(conn, closure["id"], {
+        "url": url, "titre": article.get("titre"),
+        "source": article.get("source"), "date": article.get("date"),
+    })
+    return True
+
+
+def _persist_structured_signals(conn, result: dict, article: dict, url: str) -> int:
+    count = 0
+    for signal in result.get("department_signals") or []:
+        banque = normalise_banque(signal.get("bank") or "") if signal.get("bank") else None
+        store.upsert_department_signal(conn, {
+            "id": closure_id(
+                banque or "",
+                signal.get("departement") or "",
+                "department_signal",
+                adresse=f"{url}|{signal.get('count') or ''}",
+            ),
+            "banque": banque,
+            "departement": signal.get("departement") or article.get("departement"),
+            "count": signal.get("count"),
+            "communes_mentioned": ", ".join(signal.get("communes_mentioned") or []),
+            "confidence": signal.get("confidence"),
+            "evidence": signal.get("evidence"),
+            "url": url or None,
+            "titre": article.get("titre"),
+            "source": article.get("source"),
+            "date": article.get("date"),
+        })
+        count += 1
+    for signal in result.get("vague_signals") or []:
+        banque = normalise_banque(signal.get("bank") or "") if signal.get("bank") else None
+        store.upsert_vague_signal(conn, {
+            "id": closure_id(
+                banque or "",
+                signal.get("scope") or "",
+                "vague_signal",
+                adresse=f"{url}|{signal.get('count') or ''}",
+            ),
+            "banque": banque,
+            "scope": signal.get("scope"),
+            "count": signal.get("count"),
+            "confidence": signal.get("confidence"),
+            "evidence": signal.get("evidence"),
+            "url": url or None,
+            "titre": article.get("titre"),
+            "source": article.get("source"),
+            "date": article.get("date"),
+        })
+        count += 1
+    return count
+
+
+def _is_structured_result(resultat: dict) -> bool:
+    return any(k in resultat for k in ("closures", "department_signals", "vague_signals", "article_type"))
+
+
+def _ingest_structured_result(conn, resultat: dict, article: dict, url: str, geocode_fn) -> tuple[int, int, int]:
+    """Stocke un résultat ExtractionResult : carte stricte, base large."""
+    signals = _persist_structured_signals(conn, resultat, article, url)
+    closures_map, vigilance = ingest_map.map_result(resultat, article, date.today().isoformat())
+    published = rejected = 0
+    for closure in closures_map:
+        if _publish_or_unlocated(conn, closure, article, url, geocode_fn):
+            published += 1
+        else:
+            rejected += 1
+    if vigilance:
+        store.upsert_vigilance(conn, vigilance)
+        signals += 1
+    return published, rejected, signals
+
+
 def ingest(
     conn,
     articles: list[dict],
@@ -307,12 +421,10 @@ def ingest(
         plan_closures = _closures_depuis_targets(art, geocode_fn)
         if plan_closures:
             for closure in plan_closures:
-                store.upsert_closure(conn, closure)
-                store.add_source(conn, closure["id"], {
-                    "url": url, "titre": art.get("titre"),
-                    "source": art.get("source"), "date": art.get("date"),
-                })
-                recap["fermetures"] += 1
+                if _publish_or_unlocated(conn, closure, art, url, geocode_fn):
+                    recap["fermetures"] += 1
+                else:
+                    recap["rejets"] += 1
             if url:
                 store.mark_url_seen(conn, url)
             continue
@@ -322,12 +434,10 @@ def ingest(
             print(f"[seed] extraction en erreur ({url}): {exc}")
             fallback = _closures_depuis_targets(art, geocode_fn, allow_single=True)
             for closure in fallback:
-                store.upsert_closure(conn, closure)
-                store.add_source(conn, closure["id"], {
-                    "url": url, "titre": art.get("titre"),
-                    "source": art.get("source"), "date": art.get("date"),
-                })
-                recap["fermetures"] += 1
+                if _publish_or_unlocated(conn, closure, art, url, geocode_fn):
+                    recap["fermetures"] += 1
+                else:
+                    recap["rejets"] += 1
             if fallback and url:
                 store.mark_url_seen(conn, url)
             continue
@@ -336,17 +446,22 @@ def ingest(
         if resultat is None:
             fallback = _closures_depuis_targets(art, geocode_fn, allow_single=True)
             for closure in fallback:
-                store.upsert_closure(conn, closure)
-                store.add_source(conn, closure["id"], {
-                    "url": url, "titre": art.get("titre"),
-                    "source": art.get("source"), "date": art.get("date"),
-                })
-                recap["fermetures"] += 1
+                if _publish_or_unlocated(conn, closure, art, url, geocode_fn):
+                    recap["fermetures"] += 1
+                else:
+                    recap["rejets"] += 1
             if fallback:
                 continue
             recap["vigilances"] += 1
             continue
         recap["extraits"] += 1
+        if isinstance(resultat, dict) and _is_structured_result(resultat):
+            published, rejected, signals = _ingest_structured_result(
+                conn, resultat, art, url, geocode_fn)
+            recap["fermetures"] += published
+            recap["rejets"] += rejected
+            recap["vigilances"] += signals
+            continue
         try:
             expected_commune = art.get("commune_attendue")
             if expected_commune:
@@ -368,6 +483,7 @@ def ingest(
             resultat = commune_normalize.appliquer(resultat, geo)
         publiable, raison = validation.fermeture_publiable(resultat, geo)
         if not publiable:
+            _persist_unlocated(conn, resultat, art, url, raison)
             recap["rejets"] += 1
             continue
         store.upsert_closure(conn, resultat)

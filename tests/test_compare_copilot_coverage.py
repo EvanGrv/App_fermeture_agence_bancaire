@@ -120,12 +120,33 @@ def test_present_unlocated_when_closure_has_no_geo():
     assert cov["match_type"] == "commune"
 
 
+def test_present_unlocated_via_unlocated_tier():
+    payload = {"closures": [],
+               "closures_unlocated": [{"id": "u1", "banque": "BNP Paribas",
+                                        "commune": "Lyon", "statut": "projet"}]}
+    cov = classify_coverage(_row(commune="Lyon"), payload)
+    assert cov["status"] == "present_unlocated"
+    assert cov["match_type"] == "commune"
+    assert cov["pipeline_id"] == "u1"
+    assert cov["pipeline_status"] == "projet"
+
+
 def test_present_department_via_vigilance():
     payload = {"closures": [],
                "vigilances": [{"banque": "BNP Paribas", "departement": "69"}]}
     cov = classify_coverage(_row(commune="Lyon", departement="Rhône"), payload)
     assert cov["status"] == "present_department"
     assert cov["match_type"] == "département"
+
+
+def test_present_department_via_department_estimates_list():
+    payload = {"closures": [], "vigilances": [],
+               "department_estimates": [{
+                   "departement": "69",
+                   "signals": [{"banque": "BNP Paribas"}],
+               }]}
+    cov = classify_coverage(_row(commune="Lyon", departement="Rhône"), payload)
+    assert cov["status"] == "present_department"
 
 
 def test_needs_research_when_nothing_matches():

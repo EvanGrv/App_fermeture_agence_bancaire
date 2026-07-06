@@ -110,7 +110,11 @@ def _has_department_signal(banque_cle: str, dept_code: str, payload: dict) -> bo
     for v in payload.get("vigilances") or []:
         if v.get("departement") == dept_code and _cle_banque(v.get("banque")) == banque_cle:
             return True
-    est = (payload.get("department_estimates") or {}).get(dept_code)
+    estimates = payload.get("department_estimates") or {}
+    if isinstance(estimates, list):
+        est = next((item for item in estimates if item.get("departement") == dept_code), None)
+    else:
+        est = estimates.get(dept_code)
     if est:
         for sig in est.get("signals") or []:
             if _cle_banque(sig.get("banque")) == banque_cle:
@@ -136,6 +140,13 @@ def classify_coverage(row: dict, payload: dict) -> dict:
             if _haversine_m(row_lat, row_lon, cl_lat, cl_lon) < 500:
                 match_type = "exact"
         return {"status": "present_on_map", "match_type": match_type,
+                "pipeline_id": cl.get("id", ""), "pipeline_status": statut}
+
+    for cl in payload.get("closures_unlocated") or []:
+        if not _row_matches_closure(banque_cle, commune_cle, cl):
+            continue
+        statut = cl.get("statut") or cl.get("statut_temporel") or ""
+        return {"status": "present_unlocated", "match_type": "commune",
                 "pipeline_id": cl.get("id", ""), "pipeline_status": statut}
 
     dept_code = dept_name_to_code(row.get("departement"))

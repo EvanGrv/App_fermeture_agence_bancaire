@@ -181,6 +181,74 @@ def test_ingest_seed_plan_eclate_plusieurs_communes(tmp_path):
     assert communes == {"Beaucourt", "Mandeure", "Vauvillers"}
 
 
+def test_ingest_seed_plan_conserve_commune_non_geocodee(tmp_path):
+    conn = store.init_db(tmp_path / "t.db")
+    article = {"titre": "La Caisse d'Épargne ferme plusieurs agences",
+               "texte": "", "url": "https://moneyvox.fr/liste", "date": "2026-06-01",
+               "source": "MoneyVox", "departement": None,
+               "seed_targets": [
+                   {"banque": "Caisse d'Épargne", "commune": "Bannalec",
+                    "departement": "29", "date_fermeture": "2026-12-31"},
+                   {"banque": "Caisse d'Épargne", "commune": "Commune Introuvable",
+                    "departement": "45", "date_fermeture": "2026-12-31"},
+               ]}
+
+    def geocode_fn(commune, departement=None):
+        if commune == "Bannalec":
+            return {"lat": 47.9, "lon": -3.7, "code_insee": "29004",
+                    "departement": "29", "commune": commune}
+        return None
+
+    recap = seed.ingest(conn, [article], extractor_fn=lambda _art: None,
+                        geocode_fn=geocode_fn, fetch_fn=lambda _url: "")
+    assert recap["fermetures"] == 1
+    assert recap["rejets"] == 1
+    assert conn.execute("SELECT COUNT(*) FROM closures").fetchone()[0] == 1
+    row = conn.execute(
+        "SELECT banque, commune, departement, url FROM closures_unlocated"
+    ).fetchone()
+    assert row == ("Caisse d'Épargne", "Commune Introuvable", "45",
+                   "https://moneyvox.fr/liste")
+
+
+def test_ingest_seed_resultat_structure_article_liste(tmp_path):
+    conn = store.init_db(tmp_path / "t.db")
+    article = {"titre": "La Caisse d'Épargne liste ses agences fermées",
+               "texte": "Bannalec et Plonéour-Lanvern sont citées.",
+               "url": "https://moneyvox.fr/liste", "date": "2026-06-01",
+               "source": "MoneyVox", "departement": None}
+
+    def extractor_fn(_art):
+        return {
+            "article_type": "list_closures",
+            "closures": [
+                {"bank": "Caisse d'Épargne", "commune": "Bannalec",
+                 "departement": "29", "closure_type": "closure",
+                 "status": "confirmed", "confidence": 0.8,
+                 "evidence": "Bannalec est citée"},
+                {"bank": "Caisse d'Épargne", "commune": "Plonéour-Lanvern",
+                 "departement": "29", "closure_type": "closure",
+                 "status": "confirmed", "confidence": 0.8,
+                 "evidence": "Plonéour-Lanvern est citée"},
+            ],
+            "department_signals": [],
+            "vague_signals": [],
+            "confidence": 0.8,
+            "needs_sonnet": False,
+        }
+
+    def geocode_fn(commune, departement=None):
+        return {"lat": 47.9, "lon": -3.7, "code_insee": f"29{len(commune):03d}",
+                "departement": "29", "commune": commune}
+
+    recap = seed.ingest(conn, [article], extractor_fn=extractor_fn,
+                        geocode_fn=geocode_fn, fetch_fn=None)
+    assert recap["extraits"] == 1
+    assert recap["fermetures"] == 2
+    communes = {r[0] for r in conn.execute("SELECT commune FROM closures")}
+    assert communes == {"Bannalec", "Plonéour-Lanvern"}
+
+
 def test_ingest_extraction_vide_compte_vigilance(tmp_path):
     conn = store.init_db(tmp_path / "t.db")
     article = {"titre": "t", "texte": "x" * 500, "url": "https://x.fr/a",

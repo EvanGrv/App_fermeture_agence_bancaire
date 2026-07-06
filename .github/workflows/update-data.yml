@@ -10,6 +10,12 @@ on:
         description: "Nombre de mois à remonter"
         required: false
         default: "24"
+      seed_reference:
+        description: "Fichier .txt/.csv/.xlsx à ingérer en seed après la pipeline"
+        required: false
+      copilot_reference:
+        description: "Excel Copilot à comparer après export"
+        required: false
   schedule:
     # Incrémental quotidien : fenêtre 60 jours (cumulative — le DB n'est jamais purgé).
     - cron: "17 3 * * *"
@@ -38,13 +44,14 @@ jobs:
       INCLUDE_CREDIT_MUNICIPAL: ${{ vars.INCLUDE_CREDIT_MUNICIPAL || '1' }}
       VIGILANCE_REVIEW_ENABLED: ${{ vars.VIGILANCE_REVIEW_ENABLED || '1' }}
       VIGILANCE_REVIEW_MAX_PER_RUN: ${{ vars.VIGILANCE_REVIEW_MAX_PER_RUN || '1000' }}
-      VIGILANCE_REVIEW_AI_ENABLED: ${{ vars.VIGILANCE_REVIEW_AI_ENABLED || '0' }}
+      VIGILANCE_REVIEW_AI_ENABLED: ${{ vars.VIGILANCE_REVIEW_AI_ENABLED || '1' }}
       WEB_SEARCH_PROVIDERS: ${{ vars.WEB_SEARCH_PROVIDERS || 'brave,bing,local_sitemap' }}
       BRAVE_SEARCH_API_KEY: ${{ secrets.BRAVE_SEARCH_API_KEY }}
       BING_SEARCH_API_KEY: ${{ secrets.BING_SEARCH_API_KEY }}
       LOCAL_SITEMAP_ENABLED: ${{ vars.LOCAL_SITEMAP_ENABLED || '0' }}
       LOCAL_SITEMAP_TIMEOUT: ${{ vars.LOCAL_SITEMAP_TIMEOUT || '5' }}
       LOCAL_SITEMAP_MAX_DOMAINS: ${{ vars.LOCAL_SITEMAP_MAX_DOMAINS || '2' }}
+      LOCAL_SITEMAP_DOMAINS: ${{ vars.LOCAL_SITEMAP_DOMAINS || 'moneyvox.fr,lanouvellerepublique.fr,ici.fr,francebleu.fr,ouest-france.fr,dna.fr,info-chalon.com,deltafm.fr,bienpublic.com,actu.fr,estrepublicain.fr' }}
 
     steps:
       - name: Checkout
@@ -92,6 +99,24 @@ jobs:
             python run.py --lookback-months 24
           else
             python run.py --lookback-days 60
+          fi
+
+      - name: Run seed reference
+        run: |
+          SEED_REFERENCE="${{ github.event.inputs.seed_reference }}"
+          if [ -n "$SEED_REFERENCE" ]; then
+            python run.py --seed-excel "$SEED_REFERENCE"
+          else
+            echo "No seed_reference provided."
+          fi
+
+      - name: Recompute Copilot coverage
+        run: |
+          COPILOT_REFERENCE="${{ github.event.inputs.copilot_reference }}"
+          if [ -n "$COPILOT_REFERENCE" ]; then
+            python -m tools.compare_copilot_coverage "$COPILOT_REFERENCE"
+          else
+            echo "No copilot_reference provided."
           fi
 
       - name: Commit public exports
