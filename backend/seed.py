@@ -463,6 +463,13 @@ def ingest(
         if isinstance(resultat, dict) and _is_structured_result(resultat):
             published, rejected, signals = _ingest_structured_result(
                 conn, resultat, art, url, geocode_fn)
+            if published == 0 and rejected == 0:
+                fallback = _closures_depuis_targets(art, geocode_fn, allow_single=True)
+                for closure in fallback:
+                    if _publish_or_unlocated(conn, closure, art, url, geocode_fn):
+                        published += 1
+                    else:
+                        rejected += 1
             recap["fermetures"] += published
             recap["rejets"] += rejected
             recap["vigilances"] += signals

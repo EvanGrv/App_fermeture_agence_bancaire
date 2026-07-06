@@ -268,6 +268,46 @@ def test_ingest_seed_resultat_structure_article_liste(tmp_path):
     assert communes == {"Bannalec", "Plonéour-Lanvern"}
 
 
+def test_ingest_seed_structure_sans_closure_retombe_sur_target_unique(tmp_path):
+    conn = store.init_db(tmp_path / "t.db")
+    article = {"titre": "Crédit Agricole Reuilly fermeture agence",
+               "texte": "", "url": "https://ici.fr/reuilly", "date": "2026-06-01",
+               "source": "ICI", "departement": "36",
+               "seed_targets": [{
+                   "banque": "Crédit Agricole Centre Ouest",
+                   "commune": "Reuilly",
+                   "departement": "36",
+                   "date_fermeture": "2026-02-01",
+               }]}
+
+    def extractor_fn(_art):
+        return {
+            "article_type": "department_signal",
+            "closures": [],
+            "department_signals": [{
+                "bank": "Crédit Agricole Centre Ouest",
+                "departement": "36",
+                "count": 1,
+                "communes_mentioned": ["Reuilly"],
+                "confidence": 0.7,
+                "evidence": "Reuilly est mentionnée",
+            }],
+            "vague_signals": [],
+            "confidence": 0.7,
+            "needs_sonnet": False,
+        }
+
+    def geocode_fn(commune, departement=None):
+        return {"lat": 47.0, "lon": 2.0, "code_insee": "36173",
+                "departement": "36", "commune": commune}
+
+    recap = seed.ingest(conn, [article], extractor_fn=extractor_fn,
+                        geocode_fn=geocode_fn, fetch_fn=None)
+    assert recap["fermetures"] == 1
+    row = conn.execute("SELECT banque, commune FROM closures").fetchone()
+    assert row == ("Crédit Agricole Centre Ouest", "Reuilly")
+
+
 def test_ingest_extraction_vide_compte_vigilance(tmp_path):
     conn = store.init_db(tmp_path / "t.db")
     article = {"titre": "t", "texte": "x" * 500, "url": "https://x.fr/a",
