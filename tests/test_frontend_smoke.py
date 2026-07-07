@@ -98,7 +98,7 @@ def test_articles_exploration_region_puis_departement_sans_navigation():
     assert ".dep-folder" in css
 
 
-def test_vue_departement_masque_les_points_et_utilise_estimation():
+def test_vue_departement_affiche_points_et_stats_sans_filtre():
     html = Path("frontend/index.html").read_text(encoding="utf-8")
     js = Path("frontend/app.js").read_text(encoding="utf-8")
     assert "Lecture départementale" in html
@@ -106,12 +106,30 @@ def test_vue_departement_masque_les_points_et_utilise_estimation():
     assert "closures_unlocated" in js
     assert "department_signals" in js
     assert "department_signal_count" in js
-    assert 'const pointVis = view === "departments" ? "none" : "visible"' in js
-    assert '"points-halo", "points", "points-selected"' in js
+    # Les points restent affichés dans la vue Départements (plus de masquage)
+    assert "const pointVis" not in js
+    # Le clic sur un département sélectionne localement, sans toucher au filtre
+    assert "depSelectionne" in js
+    assert "choisirDepartement" in js
+    assert 'document.getElementById("f-dep").value = dep' not in js
+    assert 'document.getElementById("f-dep").value = code' not in js
+    # Surbrillance au survol et sélection visible
+    assert '"feature-state", "hover"' in js
+    assert '"feature-state", "selected"' in js
     assert "Estimation départementale" in js
     assert "Signaux non pointés" in js
     assert "Annonces départementales" in js
     assert "Agence sans point précis" in js
+
+
+def test_popup_point_citation_tronquee_et_annee_fermeture():
+    js = Path("frontend/app.js").read_text(encoding="utf-8")
+    # La citation du popup est bornée pour laisser le bouton fiche accessible
+    assert "CITATION_MAX" in js
+    assert "extraitCitation" in js
+    # L'année de fermeture est exposée au popup
+    assert "date_fermeture: c.date_fermeture" in js
+    assert "anneeFermeture" in js
 
 
 def test_deploiement_vercel_github_actions_configure():

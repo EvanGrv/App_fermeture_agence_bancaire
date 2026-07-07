@@ -306,7 +306,9 @@ a { color: #0b63f6; text-decoration: none; font-weight: 700; }
   align-items: stretch;
 }
 
-.department-layout { grid-template-columns: minmax(0, 1fr) 340px; }
+/* La carte ne doit pas s'étirer à la hauteur des panneaux de stats : elle
+   reste à hauteur d'écran et suit le défilement (sticky). */
+.department-layout { grid-template-columns: minmax(0, 1fr) 340px; align-items: start; }
 
 .map-stage {
   position: relative;
@@ -319,7 +321,12 @@ a { color: #0b63f6; text-decoration: none; font-weight: 700; }
 }
 
 .articles-map { min-height: 650px; }
-.departments-map { min-height: 660px; }
+.departments-map {
+  min-height: min(660px, calc(100vh - 120px));
+  height: min(660px, calc(100vh - 120px));
+  position: sticky;
+  top: 16px;
+}
 .timeline-map { min-height: 620px; }
 
 .map-host, #map {
@@ -1479,6 +1486,16 @@ td span {
   color: #0b63f6;
   background: transparent;
   font-weight: 900;
+}
+
+.popup-year {
+  display: inline-block;
+  margin: 4px 0;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #fff1f2;
+  color: #9f1239;
+  font-size: 0.78rem;
 }
 
 .sheet[hidden] { display: none; }
