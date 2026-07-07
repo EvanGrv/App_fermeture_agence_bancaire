@@ -68,6 +68,11 @@ let selectedMonth = "";
 let playTimer = null;
 let selectedClosureId = "";
 let hoveredDeptId = null;
+// Département sélectionné dans la vue Départements : pilote uniquement les
+// panneaux de stats à côté de la carte, jamais le filtre global f-dep.
+let depSelectionne = "";
+// Longueur maximale de l'extrait de citation dans les popups de points.
+const CITATION_MAX = 180;
 // Exploration in-page de la vue Articles : région ouverte, puis département ouvert.
 let articlesExplore = { region: "", dep: "" };
 
@@ -204,15 +209,11 @@ function setBasemap(key) {
 
 function applyMapMode(view) {
   // Seul l'onglet « Départements » affiche le découpage départemental et la
-  // surbrillance au survol. L'onglet « Carte » reste une carte de points.
+  // surbrillance au survol. Les points restent affichés dans toutes les vues.
   if (!map || !map.getLayer("dep-fill")) return;
   const depVis = view === "departments" ? "visible" : "none";
-  const pointVis = view === "departments" ? "none" : "visible";
   map.setLayoutProperty("dep-fill", "visibility", depVis);
   map.setLayoutProperty("dep-line", "visibility", depVis);
-  ["points-halo", "points", "points-selected"].forEach((id) => {
-    if (map.getLayer(id)) map.setLayoutProperty(id, "visibility", pointVis);
-  });
   if (view !== "departments" && hoveredDeptId !== null) {
     map.setFeatureState({ source: "departements", id: hoveredDeptId }, { hover: false });
     hoveredDeptId = null;
@@ -281,10 +282,13 @@ function setupMapLayers() {
       ],
       "fill-opacity": [
         "case",
+        ["boolean", ["feature-state", "selected"], false],
+        ["case", [">", ["get", "estimated_count"], 0], 0.62, 0.35],
         ["boolean", ["feature-state", "hover"], false],
         ["case", [">", ["get", "estimated_count"], 0], 0.55, 0.28],
         ["case", [">", ["get", "estimated_count"], 0], 0.34, 0.08],
       ],
+      "fill-opacity-transition": { duration: 220 },
     },
   });
   map.addLayer({
@@ -293,9 +297,21 @@ function setupMapLayers() {
     source: "departements",
     layout: { visibility: currentView === "departments" ? "visible" : "none" },
     paint: {
-      "line-color": ["case", ["boolean", ["feature-state", "hover"], false], "#f43f5e", "#94a3b8"],
-      "line-width": ["case", ["boolean", ["feature-state", "hover"], false], 2.2, 1],
+      "line-color": [
+        "case",
+        ["boolean", ["feature-state", "selected"], false], "#e11d48",
+        ["boolean", ["feature-state", "hover"], false], "#f43f5e",
+        "#64748b",
+      ],
+      "line-width": [
+        "case",
+        ["boolean", ["feature-state", "selected"], false], 2.8,
+        ["boolean", ["feature-state", "hover"], false], 2.2,
+        1.3,
+      ],
       "line-opacity": ["case", ["boolean", ["feature-state", "hover"], false], 1, 0.95],
+      "line-color-transition": { duration: 220 },
+      "line-width-transition": { duration: 220 },
     },
   });
   map.addSource("closures", { type: "geojson", data: pointsClosures(filtrer()) });
@@ -346,10 +362,9 @@ function setupMapLayers() {
     }
     const onDept = map.queryRenderedFeatures(e.point, { layers: ["dep-fill"] });
     if (onDept.length) {
-      const dep = onDept[0].properties.code;
-      document.getElementById("f-dep").value = dep;
-      if (currentView !== "departments") setView("departments");
-      else rafraichir();
+      // Sélection locale : on affiche les stats du département à côté de la
+      // carte, sans poser de filtre global ni recharger les données carte.
+      choisirDepartement(onDept[0].properties.code);
     }
   });
 
@@ -464,6 +479,7 @@ function pointsClosures(items) {
           statut: c.statut || "",
           fiabilite: c.fiabilite || "",
           date: c.date_fermeture || c.date_annonce || "",
+          date_fermeture: c.date_fermeture || "",
           citation: c.citation || "",
           sources: JSON.stringify(c.sources || []),
         },
@@ -762,7 +778,7 @@ function setText(id, value) {
 }
 
 function renderDepartments(items) {
-  const selected = val("f-dep") || (topDepartmentEstimates(items)[0] && topDepartmentEstimates(items)[0][0]) || "";
+  const selected = depSelectionne || val("f-dep") || (topDepartmentEstimates(items)[0] && topDepartmentEstimates(items)[0][0]) || "";
   const depItems = selected ? items.filter((c) => c.departement === selected) : items;
   const dep = selected ? `${depNom(selected)} (${selected})` : "Départements impactés";
   const estimate = departmentEstimate(selected, items);
@@ -780,7 +796,7 @@ function renderDepartments(items) {
       ${metric("Annonces départementales", estimate.department_signal_count, "purple")}
       ${metric("Fusions / Rapprochements", fusions, "purple")}
     </div>
-    <p class="department-note">La vue Département ne place aucun point sur la carte : elle agrège les agences précisément localisées et les signaux locaux comptables sans adresse/coordonnée fiable.</p>`;
+    <p class="department-note">Cliquez un département sur la carte pour afficher ses statistiques ici, sans filtrer les données. L'estimation agrège les points affichés et les signaux locaux sans coordonnée fiable.</p>`;
   const bankRows = Object.entries(groupCount(depItems, (c) => c.banque || "Non isolée"))
     .sort((a, b) => b[1] - a[1]).slice(0, 6);
   document.getElementById("department-banks").innerHTML = `<h2>Top banques touchées</h2>${bankRows.map(([name, count]) => {
@@ -1095,10 +1111,20 @@ function focusClosure(id) {
   openAgencySheet(id);
 }
 
+function choisirDepartement(code) {
+  if (map && map.getSource("departements") && depSelectionne && depSelectionne !== code) {
+    map.setFeatureState({ source: "departements", id: depSelectionne }, { selected: false });
+  }
+  depSelectionne = code || "";
+  if (map && map.getSource("departements") && depSelectionne) {
+    map.setFeatureState({ source: "departements", id: depSelectionne }, { selected: true });
+  }
+  renderDepartments(filtrer());
+}
+
 function selectDepartment(code) {
-  document.getElementById("f-dep").value = code;
   setView("departments");
-  rafraichir();
+  choisirDepartement(code);
 }
 
 function bankLogo(banque) {
@@ -1622,6 +1648,18 @@ function toggleTimelinePlay() {
   renderAll();
 }
 
+// Extrait borné de la citation : le popup ne doit jamais afficher l'article
+// entier, sous peine de repousser le bouton « Ouvrir la fiche complète ».
+function extraitCitation(texte) {
+  const t = String(texte || "").trim();
+  return t.length > CITATION_MAX ? `${t.slice(0, CITATION_MAX).trimEnd()}…` : t;
+}
+
+function anneeFermeture(p) {
+  const t = parseDate(p.date_fermeture);
+  return t ? String(new Date(t).getFullYear()) : "";
+}
+
 function popupHtml(p) {
   let sources = [];
   try { sources = JSON.parse(p.sources || "[]"); } catch (e) { sources = []; }
@@ -1630,9 +1668,11 @@ function popupHtml(p) {
     .slice(0, 3)
     .map((s) => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.source || "source")}</a>`)
     .join(" · ");
+  const annee = anneeFermeture(p);
   return `<strong>${esc(p.banque)}</strong><br>${esc(p.commune)} ${p.departement ? `(${esc(p.departement)})` : ""}<br>
     ${esc(p.type)} · ${esc(p.statut)} · fiabilité ${esc(p.fiabilite)}/5<br>
-    <em>${esc(p.citation || "")}</em><br>${src}<br>
+    <span class="popup-year">Année de fermeture : <strong>${annee ? esc(annee) : "non précisée"}</strong></span><br>
+    <em>${esc(extraitCitation(p.citation))}</em><br>${src}<br>
     <button type="button" class="popup-action" onclick="openAgencySheet('${esc(p.id)}')">Ouvrir la fiche complète</button>`;
 }
 
