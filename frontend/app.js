@@ -484,17 +484,32 @@ function renderAll() {
 function renderStats(id, items) {
   const el = document.getElementById(id);
   if (!el) return;
-  const confirmed = items.filter((c) => c.type !== "fusion" && c.statut === "confirmé").length;
-  const projects = items.filter((c) => c.statut === "projet").length;
-  const fusions = items.filter((c) => c.type === "fusion").length;
+  const confirmed = items.filter((c) => c.type !== "fusion" && c.statut === "confirmé");
+  const projects = items.filter((c) => c.statut === "projet");
+  const fusions = items.filter((c) => c.type === "fusion");
   const deps = new Set(items.map((c) => c.departement).filter(Boolean)).size;
   const totalDeps = Object.keys(DONNEES.departements || {}).length || 0;
   el.innerHTML = [
-    statCard("Confirmées", confirmed, "+12 ce mois", "red"),
-    statCard("Projets", projects, "+23 ce mois", "orange"),
-    statCard("Fusions", fusions, "+3 ce mois", "purple"),
-    statCard("Départements impactés", `${deps} / ${totalDeps}`, "+5 ce mois", "blue"),
+    statCard("Confirmées", confirmed.length, `+${addedThisMonth(confirmed)} ce mois`, "red"),
+    statCard("Projets", projects.length, `+${addedThisMonth(projects)} ce mois`, "orange"),
+    statCard("Fusions", fusions.length, `+${addedThisMonth(fusions)} ce mois`, "purple"),
+    statCard("Départements impactés", `${deps} / ${totalDeps}`, `+${newDepartmentsThisMonth(items)} ce mois`, "blue"),
   ].join("");
+}
+
+function createdThisMonth(c) {
+  return Boolean(c.created_at) && monthKey(parseDate(c.created_at)) === monthKey(new Date());
+}
+
+function addedThisMonth(items) {
+  return items.filter(createdThisMonth).length;
+}
+
+function newDepartmentsThisMonth(items) {
+  // Départements dont la première fermeture connue a été ajoutée ce mois-ci.
+  const before = new Set(items.filter((c) => !createdThisMonth(c)).map((c) => c.departement).filter(Boolean));
+  const all = new Set(items.map((c) => c.departement).filter(Boolean));
+  return [...all].filter((d) => !before.has(d)).length;
 }
 
 function statCard(label, value, delta, color) {

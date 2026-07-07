@@ -64,6 +64,18 @@ def test_filtre_temporel_present():
     assert "statut_temporel" in js
 
 
+def test_stats_deltas_mensuels_calcules_depuis_created_at():
+    js = (FRONT / "app.js").read_text(encoding="utf-8")
+    # Plus de deltas codés en dur dans les tuiles de stats
+    assert '"+12 ce mois"' not in js
+    assert '"+23 ce mois"' not in js
+    assert '"+3 ce mois"' not in js
+    assert '"+5 ce mois"' not in js
+    # Calcul réel basé sur la date d'ajout en base
+    assert "addedThisMonth" in js
+    assert "newDepartmentsThisMonth" in js
+
+
 def test_vue_departement_masque_les_points_et_utilise_estimation():
     html = Path("frontend/index.html").read_text(encoding="utf-8")
     js = Path("frontend/app.js").read_text(encoding="utf-8")
