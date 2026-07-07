@@ -1189,6 +1189,103 @@ button:disabled {
 
 .region-folder:hover .region-arrow { background: #fff1f2; color: var(--red); }
 
+.region-folder.is-open {
+  border-color: #fda4af;
+  box-shadow: 0 22px 50px rgba(244, 63, 94, 0.18);
+}
+
+.region-folder.is-open .region-arrow { background: #fff1f2; color: var(--red); }
+
+.region-subpanel {
+  grid-column: 1 / -1;
+  display: grid;
+  gap: 14px;
+  padding: 16px 18px 18px;
+  border: 1px solid #fecdd3;
+  border-radius: 14px;
+  background: #fff8f8;
+}
+
+.subpanel-title {
+  margin: 0;
+  color: #9f1239;
+  font-size: 0.82rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.dep-folder-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 14px 12px;
+}
+
+.dep-folder {
+  position: relative;
+  display: grid;
+  gap: 4px;
+  margin-top: 6px;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  background: var(--panel);
+  text-align: left;
+  transition: transform 140ms ease, box-shadow 140ms ease, border-color 140ms ease;
+}
+
+.dep-folder::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 12px;
+  width: 44px;
+  height: 10px;
+  border-radius: 8px 8px 0 0;
+  background: #ffe1e5;
+  border: 1px solid var(--line);
+  border-bottom: 0;
+}
+
+.dep-folder:hover {
+  transform: translateY(-2px);
+  border-color: #fecdd3;
+  box-shadow: 0 14px 30px rgba(244, 63, 94, 0.14);
+}
+
+.dep-folder.is-open {
+  border-color: #fda4af;
+  background: #fff1f2;
+}
+
+.dep-folder strong { font-size: 0.92rem; }
+.dep-folder span { color: #94a3b8; font-size: 0.82rem; font-weight: 700; }
+
+.article-file-list {
+  display: grid;
+  gap: 8px;
+  padding-top: 12px;
+  border-top: 1px solid #fecdd3;
+}
+
+.article-file {
+  display: grid;
+  gap: 2px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--panel);
+  text-align: left;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 140ms ease, background 140ms ease;
+}
+
+.article-file:hover { border-color: #fecdd3; background: #fff8f8; }
+.article-file strong { font-size: 0.92rem; line-height: 1.35; }
+.article-file span { color: #64748b; font-size: 0.82rem; font-weight: 700; }
+.article-file small { color: #94a3b8; font-size: 0.78rem; }
+
 .articles-panel { grid-template-rows: auto minmax(0, 1fr) auto; }
 
 .dep-coverage { gap: 0; padding: 6px 6px; }
