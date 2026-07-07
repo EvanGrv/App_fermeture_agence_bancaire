@@ -76,6 +76,28 @@ def test_stats_deltas_mensuels_calcules_depuis_created_at():
     assert "newDepartmentsThisMonth" in js
 
 
+def test_articles_exploration_region_puis_departement_sans_navigation():
+    js = (FRONT / "app.js").read_text(encoding="utf-8")
+    # Exploration in-page : région -> dossiers départements -> liste d'articles
+    assert "exploreRegion" in js
+    assert "exploreDep" in js
+    assert "articlesExplore" in js
+    assert "region-subpanel" in js
+    assert "dep-folder" in js
+    assert "article-file" in js
+    # Délégation d'événements, plus de navigation forcée vers la vue départements
+    assert 'data-region="' in js
+    assert 'data-dep="' in js
+    assert "selectRegion" not in js
+    assert 'onclick="selectDepartment' not in js
+    # La carte de la vue Articles suit le niveau exploré (région ou département)
+    assert "itemsPourCarte" in js
+
+    css = (FRONT / "style.css").read_text(encoding="utf-8")
+    assert ".region-subpanel" in css
+    assert ".dep-folder" in css
+
+
 def test_vue_departement_masque_les_points_et_utilise_estimation():
     html = Path("frontend/index.html").read_text(encoding="utf-8")
     js = Path("frontend/app.js").read_text(encoding="utf-8")

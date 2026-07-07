@@ -68,6 +68,8 @@ let selectedMonth = "";
 let playTimer = null;
 let selectedClosureId = "";
 let hoveredDeptId = null;
+// Exploration in-page de la vue Articles : région ouverte, puis département ouvert.
+let articlesExplore = { region: "", dep: "" };
 
 async function init() {
   await loadData();
@@ -168,6 +170,18 @@ function bindUi() {
     button.addEventListener("click", () => handleMapTool(button.dataset.mapTool));
   });
   document.getElementById("articles-sort").addEventListener("change", () => renderArticles(filtrer()));
+  // Exploration Articles : délégation pour rester sur la page (pas de setView).
+  ["articles-regions", "articles-list"].forEach((id) => {
+    document.getElementById(id).addEventListener("click", (e) => {
+      const depBtn = e.target.closest("[data-dep]");
+      if (depBtn) {
+        exploreDep(depBtn.dataset.dep);
+        return;
+      }
+      const regionBtn = e.target.closest("[data-region]");
+      if (regionBtn) exploreRegion(regionBtn.dataset.region);
+    });
+  });
 }
 
 function setBasemap(key) {
@@ -458,7 +472,7 @@ function pointsClosures(items) {
 }
 
 function rafraichir() {
-  const items = filtrer();
+  const items = itemsPourCarte();
   if (map && map.getSource("departements")) map.getSource("departements").setData(deptsAvecCompte(items));
   if (map && map.getSource("closures")) map.getSource("closures").setData(pointsClosures(items));
   renderAll();
@@ -569,21 +583,71 @@ function renderArticles(items) {
   setText("articles-total-delta", `+${articlesThisMonth(withRegion)} ce mois`);
   setText("articles-dep-total", totalDeps);
 
+  const regions = sortRegions(buildRegions(withRegion));
+  // Si la région / le département explorés ne correspondent plus aux filtres,
+  // on referme l'exploration pour rester cohérent avec la carte.
+  if (articlesExplore.region && !regions.some((r) => r.region === articlesExplore.region)) {
+    articlesExplore = { region: "", dep: "" };
+  }
+  if (articlesExplore.dep && !withRegion.some((c) => c.departement === articlesExplore.dep)) {
+    articlesExplore = { region: articlesExplore.region, dep: "" };
+  }
   document.getElementById("articles-regions").innerHTML =
-    sortRegions(buildRegions(withRegion)).map(regionFolderCard).join("") ||
+    regions.map((r) => regionFolderCard(r) + (r.region === articlesExplore.region ? regionSubpanel(r, withRegion) : "")).join("") ||
     emptyState("Aucune fermeture avec article pour ces filtres.");
 
   const topDeps = topDepartments(withRegion);
   document.getElementById("articles-list").innerHTML = topDeps.slice(0, 12).map(([code]) => {
     const depItems = withRegion.filter((c) => c.departement === code);
     const count = depItems.reduce((acc, c) => acc + articleCountFor(c), 0);
-    return `<button type="button" class="dep-coverage-row" onclick="selectDepartment('${esc(code)}')">
+    return `<button type="button" class="dep-coverage-row" data-dep="${esc(code)}">
       <span class="dep-code">${esc(code)}</span>
       <span class="dep-name">${esc(depNom(code))}</span>
       <span class="dep-count">${esc(count)}</span>
       <span class="dep-link">Voir les articles</span>
     </button>`;
   }).join("") || emptyState("Aucun département couvert pour ces filtres.");
+}
+
+function regionSubpanel(r, withRegion) {
+  const regionItems = withRegion.filter((c) => regionOf(c) === r.region);
+  const folders = topDepartments(regionItems).map(([code]) => {
+    const depItems = regionItems.filter((c) => c.departement === code);
+    const count = depItems.reduce((acc, c) => acc + articleCountFor(c), 0);
+    const open = code === articlesExplore.dep;
+    return `<button type="button" class="dep-folder${open ? " is-open" : ""}" data-dep="${esc(code)}">
+      <strong>${esc(depNom(code))} (${esc(code)})</strong>
+      <span>${esc(count)} article${count > 1 ? "s" : ""}</span>
+    </button>`;
+  }).join("");
+  const articles = articlesExplore.dep ? depArticlesList(articlesExplore.dep, regionItems) : "";
+  return `<div class="region-subpanel">
+    <p class="subpanel-title">Départements couverts — ${esc(r.region)}</p>
+    <div class="dep-folder-grid">${folders || emptyState("Aucun département couvert.")}</div>
+    ${articles}
+  </div>`;
+}
+
+function depArticlesList(code, items) {
+  const rows = [];
+  items.filter((c) => c.departement === code).forEach((c) => {
+    const sources = (c.sources || []).filter((s) => s.url || s.titre);
+    if (!sources.length) sources.push({ titre: c.citation || "Article non accessible", source: "Fiche", date: c.date_annonce });
+    sources.forEach((s) => rows.push({ c, s }));
+  });
+  rows.sort((a, b) => parseDate(b.s.date) - parseDate(a.s.date));
+  const list = rows.map(({ c, s }) => {
+    const body = `<strong>${esc(s.titre || s.url || "Article")}</strong>
+      <span>${esc(c.banque || "Banque non isolée")} · ${esc(c.commune || "Commune non isolée")}</span>
+      <small>${esc(s.source || "Source")} · ${esc(formatDate(s.date))}</small>`;
+    return s.url
+      ? `<a class="article-file" href="${esc(s.url)}" target="_blank" rel="noopener">${body}</a>`
+      : `<button type="button" class="article-file" onclick="openAgencySheet('${esc(c.id)}')">${body}</button>`;
+  }).join("");
+  return `<div class="article-file-list">
+    <p class="subpanel-title">Articles — ${esc(depNom(code))} (${esc(code)})</p>
+    ${list || emptyState("Aucun article pour ce département.")}
+  </div>`;
 }
 
 function sortRegions(regions) {
@@ -632,13 +696,14 @@ function regionFolderCard(r) {
   const typesHtml = types
     .map((t) => `<span>${esc(t.label)}</span>`)
     .join(`<span class="sep">•</span>`);
-  return `<button type="button" class="region-folder" onclick="selectRegion('${esc(r.region)}')">
+  const open = r.region === articlesExplore.region;
+  return `<button type="button" class="region-folder${open ? " is-open" : ""}" data-region="${esc(r.region)}">
     <h3>${esc(r.region)}</h3>
     <p class="region-count"><strong>${esc(r.articles)}</strong> articles</p>
     <div class="region-types"><i class="dot ${lead}"></i>${typesHtml}</div>
     <div class="region-foot">
       <span>${esc(r.nb_departements)} département${r.nb_departements > 1 ? "s" : ""}</span>
-      <span class="region-arrow">→</span>
+      <span class="region-arrow">${open ? "▾" : "→"}</span>
     </div>
   </button>`;
 }
@@ -651,16 +716,44 @@ function articlesThisMonth(items) {
     .reduce((acc, c) => acc + articleCountFor(c), 0);
 }
 
-function selectRegion(region) {
-  const deps = Object.entries(DONNEES.departements || {})
-    .filter(([, d]) => d.region === region)
-    .map(([code]) => code);
-  const first = topDepartments(filtrer().filter((c) => regionOf(c) === region))[0];
-  if (first) {
-    selectDepartment(first[0]);
-  } else if (deps.length) {
-    selectDepartment(deps[0]);
+function exploreRegion(region) {
+  articlesExplore = articlesExplore.region === region
+    ? { region: "", dep: "" }
+    : { region, dep: "" };
+  rafraichirExploration();
+}
+
+function exploreDep(code) {
+  articlesExplore = articlesExplore.dep === code
+    ? { region: articlesExplore.region, dep: "" }
+    : { region: depRegion(code) || articlesExplore.region, dep: code };
+  rafraichirExploration();
+}
+
+function rafraichirExploration() {
+  renderArticles(filtrer());
+  const items = itemsPourCarte();
+  if (map && map.getSource("closures")) map.getSource("closures").setData(pointsClosures(items));
+  if (map && map.getSource("departements")) map.getSource("departements").setData(deptsAvecCompte(items));
+  fitToFiltered();
+}
+
+// Éléments affichés sur la carte : dans la vue Articles, la carte suit le
+// niveau d'exploration (région ou département ouvert) ; ailleurs, les filtres.
+function itemsPourCarte() {
+  const items = filtrer();
+  if (currentView !== "articles") return items;
+  // Un changement de filtres peut rendre l'exploration obsolète : on la
+  // referme ici, avant d'alimenter la carte (rafraichir passe avant renderAll).
+  if (articlesExplore.region && !items.some((c) => regionOf(c) === articlesExplore.region)) {
+    articlesExplore = { region: "", dep: "" };
   }
+  if (articlesExplore.dep && !items.some((c) => c.departement === articlesExplore.dep)) {
+    articlesExplore = { region: articlesExplore.region, dep: "" };
+  }
+  if (articlesExplore.dep) return items.filter((c) => c.departement === articlesExplore.dep);
+  if (articlesExplore.region) return items.filter((c) => regionOf(c) === articlesExplore.region);
+  return items;
 }
 
 function setText(id, value) {
@@ -1549,7 +1642,7 @@ function fitToFiltered() {
     map.fitBounds([[-5.4, 41.1], [9.8, 51.3]], { padding: 45, duration: 450 });
     return;
   }
-  const pts = filtrer().filter((c) => c.lat != null && c.lon != null);
+  const pts = itemsPourCarte().filter((c) => c.lat != null && c.lon != null);
   if (!pts.length) return;
   const bounds = pts.reduce((b, c) => b.extend([c.lon, c.lat]), new maplibregl.LngLatBounds([pts[0].lon, pts[0].lat], [pts[0].lon, pts[0].lat]));
   map.fitBounds(bounds, { padding: 90, maxZoom: currentView === "departments" ? 9 : 6.2, duration: 450 });
@@ -1677,7 +1770,6 @@ window.focusClosure = focusClosure;
 window.focusClosureOnly = focusClosureOnly;
 window.openAgencySheet = openAgencySheet;
 window.selectDepartment = selectDepartment;
-window.selectRegion = selectRegion;
 window.selectTimelineMonth = selectTimelineMonth;
 window.resetPeriod = resetPeriod;
 window.toggleTimelinePlay = toggleTimelinePlay;
