@@ -67,6 +67,7 @@ let currentView = "map";
 let selectedMonth = "";
 let playTimer = null;
 let selectedClosureId = "";
+let popupSelection = null;
 let hoveredDeptId = null;
 // Département sélectionné dans la vue Départements : pilote uniquement les
 // panneaux de stats à côté de la carte, jamais le filtre global f-dep.
@@ -394,11 +395,33 @@ function selectClosurePoint(p, lngLat) {
   if (map.getLayer("points-selected")) {
     map.setFilter("points-selected", ["==", ["get", "id"], selectedClosureId]);
   }
+  if (popupSelection) {
+    // Détaché avant remove() pour que son "close" ne défasse pas la nouvelle sélection
+    const precedent = popupSelection;
+    popupSelection = null;
+    precedent.remove();
+  }
   document.querySelectorAll(".maplibregl-popup").forEach((el) => el.remove());
-  new maplibregl.Popup({ closeButton: true, closeOnClick: false })
+  const popup = new maplibregl.Popup({ closeButton: true, closeOnClick: false })
     .setLngLat(lngLat)
     .setHTML(popupHtml(p))
     .addTo(map);
+  popupSelection = popup;
+  popup.on("close", () => {
+    if (popupSelection !== popup) return;
+    popupSelection = null;
+    deselectClosurePoint();
+  });
+  renderResults(filtrer());
+}
+
+// Fermer le popup restaure la liste filtrée complète dans Sélection / Résultats
+function deselectClosurePoint() {
+  selectedClosureId = "";
+  if (map.getLayer("points-selected")) {
+    map.setFilter("points-selected", ["==", ["get", "id"], ""]);
+  }
+  renderResults(filtrer());
 }
 
 function pointColorExpression() {
@@ -563,8 +586,12 @@ function statCard(label, value, delta, color) {
 }
 
 function renderResults(items) {
-  document.getElementById("result-count").textContent = items.length;
-  document.getElementById("map-results").innerHTML = items.slice(0, 12).map(resultCard).join("") || emptyState("Aucun résultat filtré.");
+  // Un bureau sélectionné sur la carte occupe seul le panneau ; s'il sort du
+  // filtre courant, on retombe sur la liste complète sans casser la sélection.
+  const selection = selectedClosureId ? items.filter((c) => String(c.id) === String(selectedClosureId)) : [];
+  const shown = selection.length ? selection : items;
+  document.getElementById("result-count").textContent = shown.length;
+  document.getElementById("map-results").innerHTML = shown.slice(0, 12).map(resultCard).join("") || emptyState("Aucun résultat filtré.");
 }
 
 function resultCard(c) {
@@ -1667,11 +1694,6 @@ function extraitCitation(texte) {
   return t.length > CITATION_MAX ? `${t.slice(0, CITATION_MAX).trimEnd()}…` : t;
 }
 
-function anneeFermeture(p) {
-  const t = parseDate(p.date_fermeture);
-  return t ? String(new Date(t).getFullYear()) : "";
-}
-
 function popupHtml(p) {
   let sources = [];
   try { sources = JSON.parse(p.sources || "[]"); } catch (e) { sources = []; }
@@ -1680,10 +1702,9 @@ function popupHtml(p) {
     .slice(0, 3)
     .map((s) => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.source || "source")}</a>`)
     .join(" · ");
-  const annee = anneeFermeture(p);
   return `<strong>${esc(p.banque)}</strong><br>${esc(p.commune)} ${p.departement ? `(${esc(p.departement)})` : ""}<br>
     ${esc(p.type)} · ${esc(p.statut)} · fiabilité ${esc(p.fiabilite)}/5<br>
-    <span class="popup-year">Année de fermeture : <strong>${annee ? esc(annee) : "non précisée"}</strong></span><br>
+    <span class="popup-date">Fermeture prévue : <strong>${p.date_fermeture ? esc(formatDate(p.date_fermeture)) : "non précisée"}</strong></span><br>
     <em>${esc(extraitCitation(p.citation))}</em><br>${src}<br>
     <button type="button" class="popup-action" onclick="openAgencySheet('${esc(p.id)}')">Ouvrir la fiche complète</button>`;
 }
