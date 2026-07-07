@@ -131,14 +131,26 @@ def test_vue_departement_affiche_points_et_stats_sans_filtre():
     assert "Agence sans point précis" in js
 
 
-def test_popup_point_citation_tronquee_et_annee_fermeture():
+def test_popup_point_citation_tronquee_et_date_fermeture_complete():
     js = Path("frontend/app.js").read_text(encoding="utf-8")
     # La citation du popup est bornée pour laisser le bouton fiche accessible
     assert "CITATION_MAX" in js
     assert "extraitCitation" in js
-    # L'année de fermeture est exposée au popup
+    # Le popup affiche la date de fermeture complète, plus seulement l'année
     assert "date_fermeture: c.date_fermeture" in js
-    assert "anneeFermeture" in js
+    assert "anneeFermeture" not in js
+    assert "formatDate(p.date_fermeture)" in js
+    css = Path("frontend/style.css").read_text(encoding="utf-8")
+    assert ".popup-date" in css
+
+
+def test_selection_resultats_affiche_seulement_le_bureau_clique():
+    js = Path("frontend/app.js").read_text(encoding="utf-8")
+    # Un clic sur un point réduit le panneau Sélection / Résultats au seul
+    # bureau cliqué ; fermer le popup restaure la liste filtrée complète
+    assert "String(c.id) === String(selectedClosureId)" in js
+    assert "deselectClosurePoint" in js
+    assert 'popup.on("close"' in js
 
 
 def test_deploiement_vercel_github_actions_configure():
