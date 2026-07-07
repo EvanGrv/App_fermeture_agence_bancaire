@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T13:45:06.739826+00:00",
+  "generated_at": "2026-07-07T07:09:25.908120+00:00",
   "departements": {
     "01": {
       "nom": "Ain",
@@ -751,11 +751,11 @@
     "83": {
       "nom": "Var",
       "region": "Provence-Alpes-Côte d'Azur",
-      "count": 0,
+      "count": 1,
       "total_agences": 74,
-      "precise_count": 0,
+      "precise_count": 1,
       "unlocated_count": 0,
-      "estimated_count": 0
+      "estimated_count": 1
     },
     "84": {
       "nom": "Vaucluse",
@@ -1284,6 +1284,15 @@
       "estimated_count": 1,
       "department_signal_count": 0,
       "signals": []
+    },
+    "83": {
+      "departement": "83",
+      "nom": "Var",
+      "precise_count": 1,
+      "unlocated_count": 0,
+      "estimated_count": 1,
+      "department_signal_count": 0,
+      "signals": []
     }
   },
   "regions": [
@@ -1465,6 +1474,21 @@
       "nb_departements": 3
     },
     {
+      "region": "Provence-Alpes-Côte d'Azur",
+      "articles": 2,
+      "fermetures": 0,
+      "projets": 2,
+      "fusions": 0,
+      "types": [
+        "Projet"
+      ],
+      "departements": [
+        "83",
+        "84"
+      ],
+      "nb_departements": 2
+    },
+    {
       "region": "Île-de-France",
       "articles": 1,
       "fermetures": 1,
@@ -1475,20 +1499,6 @@
       ],
       "departements": [
         "75"
-      ],
-      "nb_departements": 1
-    },
-    {
-      "region": "Provence-Alpes-Côte d'Azur",
-      "articles": 1,
-      "fermetures": 0,
-      "projets": 1,
-      "fusions": 0,
-      "types": [
-        "Projet"
-      ],
-      "departements": [
-        "84"
       ],
       "nb_departements": 1
     }
@@ -3407,6 +3417,11 @@
           "tier": "C"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Centre-Val de Loire"
     },
     {
@@ -3438,6 +3453,11 @@
           "tier": "C"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Bretagne"
     },
     {
@@ -3469,6 +3489,11 @@
           "tier": "D"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Bretagne"
     },
     {
@@ -3500,6 +3525,11 @@
           "tier": "D"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Bretagne"
     },
     {
@@ -3531,6 +3561,11 @@
           "tier": "D"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Centre-Val de Loire"
     },
     {
@@ -3562,6 +3597,11 @@
           "tier": "D"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Pays de la Loire"
     },
     {
@@ -3593,6 +3633,11 @@
           "tier": "D"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Centre-Val de Loire"
     },
     {
@@ -3624,6 +3669,11 @@
           "tier": "D"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Centre-Val de Loire"
     },
     {
@@ -3655,6 +3705,11 @@
           "tier": "D"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Centre-Val de Loire"
     },
     {
@@ -3686,6 +3741,11 @@
           "tier": "D"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Bretagne"
     },
     {
@@ -3717,6 +3777,11 @@
           "tier": "D"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Bretagne"
     },
     {
@@ -3748,6 +3813,11 @@
           "tier": "D"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Bretagne"
     },
     {
@@ -3779,6 +3849,11 @@
           "tier": "D"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Pays de la Loire"
     },
     {
@@ -3810,6 +3885,11 @@
           "tier": "D"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "C",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Bretagne"
     },
     {
@@ -3841,6 +3921,11 @@
           "tier": "D"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Centre-Val de Loire"
     },
     {
@@ -3872,6 +3957,11 @@
           "tier": "D"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Bretagne"
     },
     {
@@ -3903,6 +3993,11 @@
           "tier": "D"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Centre-Val de Loire"
     },
     {
@@ -3934,6 +4029,11 @@
           "tier": "D"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Centre-Val de Loire"
     },
     {
@@ -3965,6 +4065,11 @@
           "tier": "D"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Centre-Val de Loire"
     },
     {
@@ -3996,6 +4101,11 @@
           "tier": "D"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Centre-Val de Loire"
     },
     {
@@ -4027,6 +4137,11 @@
           "tier": "D"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Pays de la Loire"
     },
     {
@@ -4058,6 +4173,11 @@
           "tier": "D"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "C",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Centre-Val de Loire"
     },
     {
@@ -4089,6 +4209,11 @@
           "tier": "D"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Pays de la Loire"
     },
     {
@@ -4120,6 +4245,11 @@
           "tier": "D"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Centre-Val de Loire"
     },
     {
@@ -4151,6 +4281,11 @@
           "tier": "D"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Centre-Val de Loire"
     },
     {
@@ -4182,6 +4317,11 @@
           "tier": "D"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Centre-Val de Loire"
     },
     {
@@ -4213,6 +4353,11 @@
           "tier": "D"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Centre-Val de Loire"
     },
     {
@@ -4244,6 +4389,11 @@
           "tier": "D"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Bretagne"
     },
     {
@@ -4275,6 +4425,11 @@
           "tier": "D"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "C",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Centre-Val de Loire"
     },
     {
@@ -4306,6 +4461,11 @@
           "tier": "D"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Centre-Val de Loire"
     },
     {
@@ -4337,6 +4497,11 @@
           "tier": "D"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "C",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Pays de la Loire"
     },
     {
@@ -4368,6 +4533,11 @@
           "tier": "D"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Centre-Val de Loire"
     },
     {
@@ -4399,6 +4569,11 @@
           "tier": "D"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Centre-Val de Loire"
     },
     {
@@ -4430,6 +4605,11 @@
           "tier": "D"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "C",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Centre-Val de Loire"
     },
     {
@@ -4461,6 +4641,11 @@
           "tier": "D"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "C",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Pays de la Loire"
     },
     {
@@ -4492,6 +4677,11 @@
           "tier": "D"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "C",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Centre-Val de Loire"
     },
     {
@@ -4523,6 +4713,11 @@
           "tier": "D"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Centre-Val de Loire"
     },
     {
@@ -4554,6 +4749,11 @@
           "tier": "C"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Bretagne"
     },
     {
@@ -4585,6 +4785,11 @@
           "tier": "B"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": null,
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Centre-Val de Loire"
     },
     {
@@ -4616,6 +4821,11 @@
           "tier": "B"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Centre-Val de Loire"
     },
     {
@@ -4647,6 +4857,11 @@
           "tier": "B"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Centre-Val de Loire"
     },
     {
@@ -4678,6 +4893,11 @@
           "tier": "C"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Bretagne"
     },
     {
@@ -4709,6 +4929,11 @@
           "tier": "B"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Centre-Val de Loire"
     },
     {
@@ -4740,6 +4965,11 @@
           "tier": "B"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Centre-Val de Loire"
     },
     {
@@ -4771,6 +5001,11 @@
           "tier": "B"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Centre-Val de Loire"
     },
     {
@@ -4802,6 +5037,11 @@
           "tier": "C"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Bretagne"
     },
     {
@@ -4833,6 +5073,11 @@
           "tier": "C"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Bretagne"
     },
     {
@@ -4864,6 +5109,11 @@
           "tier": "B"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Grand Est"
     },
     {
@@ -4895,6 +5145,11 @@
           "tier": "B"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Grand Est"
     },
     {
@@ -4926,6 +5181,11 @@
           "tier": "B"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Centre-Val de Loire"
     },
     {
@@ -4957,6 +5217,11 @@
           "tier": "D"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": null,
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Hauts-de-France"
     },
     {
@@ -4988,6 +5253,11 @@
           "tier": "D"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Bourgogne-Franche-Comté"
     },
     {
@@ -5019,6 +5289,11 @@
           "tier": "B"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Bretagne"
     },
     {
@@ -5050,6 +5325,11 @@
           "tier": "C"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Bourgogne-Franche-Comté"
     },
     {
@@ -5081,6 +5361,11 @@
           "tier": "C"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Bourgogne-Franche-Comté"
     },
     {
@@ -5112,6 +5397,11 @@
           "tier": "C"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Bourgogne-Franche-Comté"
     },
     {
@@ -5143,6 +5433,11 @@
           "tier": "C"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Bourgogne-Franche-Comté"
     },
     {
@@ -5174,6 +5469,11 @@
           "tier": "C"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Bourgogne-Franche-Comté"
     },
     {
@@ -5205,6 +5505,11 @@
           "tier": "C"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Bourgogne-Franche-Comté"
     },
     {
@@ -5236,6 +5541,11 @@
           "tier": "C"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Bourgogne-Franche-Comté"
     },
     {
@@ -5267,6 +5577,11 @@
           "tier": "C"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": null,
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Bourgogne-Franche-Comté"
     },
     {
@@ -5298,6 +5613,11 @@
           "tier": "C"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Bourgogne-Franche-Comté"
     },
     {
@@ -5329,6 +5649,11 @@
           "tier": "C"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Bourgogne-Franche-Comté"
     },
     {
@@ -5360,6 +5685,11 @@
           "tier": "C"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Normandie"
     },
     {
@@ -5391,7 +5721,48 @@
           "tier": "C"
         }
       ],
+      "controle_sirene": {
+        "etat_administratif": null,
+        "siret": null,
+        "source": "SIRENE"
+      },
       "region": "Bourgogne-Franche-Comté"
+    },
+    {
+      "id": "409e0f97a0d56d60",
+      "banque": "Société Générale",
+      "commune": "Vidauban",
+      "code_insee": "83148",
+      "departement": "83",
+      "type": "fermeture",
+      "date_annonce": "Tue, 15 Apr 2025 07:00:00 GMT",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "date_fermeture_approx": 0,
+      "fiabilite": 3,
+      "lat": 43.405143,
+      "lon": 6.423046,
+      "citation": "Fermeture de l’agence Société Générale à Vidauban : des transferts imposés et une communication tardive - Var Actu",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "created_at": "2026-07-07T07:05:31.637883+00:00",
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNUEotaDBxTk5vRnhfMGhKaldTaC0tbV9wdDBZSEpzNGtnYXA4WVI3Uk5wcXEwZElZY3g2RmZSS0JrN0lVWUZ2bmZ0UmYxSjVUaHVHWUFuaE50YjNKT2lWM1ZBUlZUS1RfLTMxcWxXRjJuVDh2VGhYMXA2UVZpU2VaYkR5NlA0QzNxeTV2TVJRcFFSTFhyYlFfRnpfOE1yV0RHOTRNLTJEU1djUmp6VjhGMHhOVzNUWGt1ZzZLaWdNeUs5QQ?oc=5",
+          "titre": "Fermeture de l’agence Société Générale à Vidauban : des transferts imposés et une communication tardive - Var Actu",
+          "source": "Google News",
+          "date": "Tue, 15 Apr 2025 07:00:00 GMT",
+          "tier": "D"
+        }
+      ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
+      "region": "Provence-Alpes-Côte d'Azur"
     }
   ],
   "closures_unlocated": [
@@ -7683,6 +8054,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:40:37.180781+00:00"
+    },
+    {
+      "id": "7233a2b8c7ed9f78",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "La consommation de bio à la hausse, mais le nombre de fermes engagées recule - Reporterre, le média de l'écologie",
+      "extrait": "TITRE: La consommation de bio à la hausse, mais le nombre de fermes engagées recule - Reporterre, le média de l'écologie SOURCE: Google News DATE: Tue, 16 Jun 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMinwFBVV95cUxOQ0dwLTZYbVk3MGdCbXlIVFlCXzctVVhwYVY2R1loempLNU9jS3NsUG4wbFlzNW95VE9aYmVFUnY1ck9kSnVSRXZodDh0ZnJpblRJQ1pBWUZQM0ZOc2w2alNDeGtub0U4SFQyNU92Tm96N3hiQjBsYlpDNXA1a3Jsdm1UTTdnOTZ0SGI3OUF0Nk1ILXFWUHc0WjVSWEdwd0U?oc=5 <a href=\"https://news.google.com/rss/articles/CBMinwFBVV",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOQ0dwLTZYbVk3MGdCbXlIVFlCXzctVVhwYVY2R1loempLNU9jS3NsUG4wbFlzNW95VE9aYmVFUnY1ck9kSnVSRXZodDh0ZnJpblRJQ1pBWUZQM0ZOc2w2alNDeGtub0U4SFQyNU92Tm96N3hiQjBsYlpDNXA1a3Jsdm1UTTdnOTZ0SGI3OUF0Nk1ILXFWUHc0WjVSWEdwd0U?oc=5",
+      "source": "Google News",
+      "date": "Tue, 16 Jun 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-07T06:59:51.014792+00:00"
     },
     {
       "id": "f3ca59006adc7ffb",

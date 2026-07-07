@@ -248,5 +248,25 @@
     "departement": "36",
     "code_insee": "36192",
     "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "71252e975c353ff8",
+    "banque": "Crédit Agricole",
+    "commune": "Villedieu-sur-Indre",
+    "departement": "36",
+    "code_insee": "36241",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "409e0f97a0d56d60",
+    "banque": "Société Générale",
+    "commune": "Vidauban",
+    "departement": "83",
+    "code_insee": "83148",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
   }
 ]

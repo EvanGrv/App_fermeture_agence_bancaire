@@ -24,3 +24,5 @@ error,closure_non_publiable,74de4e1871f2ede9,BNP Paribas,Pays,25,25390,"commune 
 warning,date_fermeture_absente,74de4e1871f2ede9,BNP Paribas,Pays,25,25390,article ancien sans date de fermeture explicite; à confirmer ou archiver
 warning,date_fermeture_absente,2b3c02eac49ee643,Crédit Agricole,Saint-Saturnin-lès-Avignon,84,84119,article ancien sans date de fermeture explicite; à confirmer ou archiver
 warning,date_fermeture_absente,5e5cb2087a38cb61,Caisse d'Épargne,Saint-Gaultier,36,36192,article ancien sans date de fermeture explicite; à confirmer ou archiver
+warning,date_fermeture_absente,71252e975c353ff8,Crédit Agricole,Villedieu-sur-Indre,36,36241,article ancien sans date de fermeture explicite; à confirmer ou archiver
+warning,date_fermeture_absente,409e0f97a0d56d60,Société Générale,Vidauban,83,83148,article ancien sans date de fermeture explicite; à confirmer ou archiver
