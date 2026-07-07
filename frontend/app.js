@@ -423,6 +423,18 @@ function normalize(s) {
   return String(s || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
 }
 
+// Statut temporel recalculé à la date du jour : le champ statut_temporel est
+// figé au moment de l'extraction et devient obsolète dès que la date de
+// fermeture passe. Une fermeture datée d'aujourd'hui compte encore « à venir ».
+// Sans date de fermeture connue, on retombe sur le statut extrait de l'article.
+function statutTemporelEffectif(c) {
+  const t = parseDate(c.date_fermeture);
+  if (!t) return c.statut_temporel || "inconnu";
+  const debutJour = new Date();
+  debutJour.setHours(0, 0, 0, 0);
+  return t >= debutJour.getTime() ? "a_venir" : "deja_fermee";
+}
+
 function filtrer(applyPeriod = true) {
   const banque = val("f-banque");
   const type = val("f-type");
@@ -437,7 +449,7 @@ function filtrer(applyPeriod = true) {
     return (!banque || c.banque === banque) &&
       (!type || c.type === type) &&
       (!statut || c.statut === statut) &&
-      (!temporel || c.statut_temporel === temporel) &&
+      (!temporel || statutTemporelEffectif(c) === temporel) &&
       (!dep || c.departement === dep) &&
       (c.fiabilite || 0) >= fiab &&
       (!q || haystack.includes(q)) &&

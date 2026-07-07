@@ -64,6 +64,15 @@ def test_filtre_temporel_present():
     assert "statut_temporel" in js
 
 
+def test_filtre_temporel_base_sur_la_date_du_jour():
+    js = Path("frontend/app.js").read_text(encoding="utf-8")
+    # Le statut temporel est recalculé depuis date_fermeture vs aujourd'hui,
+    # pas lu depuis le champ figé à l'extraction
+    assert "statutTemporelEffectif" in js
+    assert "c.statut_temporel === temporel" not in js
+    assert "statutTemporelEffectif(c) === temporel" in js
+
+
 def test_stats_deltas_mensuels_calcules_depuis_created_at():
     js = (FRONT / "app.js").read_text(encoding="utf-8")
     # Plus de deltas codés en dur dans les tuiles de stats
