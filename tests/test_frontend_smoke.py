@@ -166,6 +166,14 @@ def test_selection_resultats_affiche_seulement_le_bureau_clique():
     assert 'popup.on("close"' in js
 
 
+def test_analytics_vercel_web_analytics_present():
+    html = (FRONT / "index.html").read_text(encoding="utf-8")
+    # Web Analytics Vercel pour un site statique : script first-party servi
+    # depuis l'origine (/_vercel/insights/script.js), sans bundler ni npm.
+    assert "/_vercel/insights/script.js" in html
+    assert "defer" in html
+
+
 def test_deploiement_vercel_github_actions_configure():
     root = ROOT
     assert (root / "vercel.json").exists()
