@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T07:09:25.908120+00:00",
+  "generated_at": "2026-07-08T06:19:22.633648+00:00",
   "departements": {
     "01": {
       "nom": "Ain",
@@ -608,7 +608,7 @@
       "nom": "Bas-Rhin",
       "region": "Grand Est",
       "count": 1,
-      "total_agences": 171,
+      "total_agences": 169,
       "precise_count": 1,
       "unlocated_count": 0,
       "estimated_count": 1
@@ -6834,6 +6834,19 @@
       "created_at": "2026-06-25T15:25:50.348075+00:00"
     },
     {
+      "id": "4930edf62ace5d15",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Les habitants de Thiat se mobilisent après la fermeture de La Poste - Le Populaire du Centre",
+      "extrait": "TITRE: Les habitants de Thiat se mobilisent après la fermeture de La Poste - Le Populaire du Centre SOURCE: Google News DATE: Wed, 20 May 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMi3AFBVV95cUxPUXlMUkdicDZkSEFWa1Vvc0lJQzVDaHRWMVZtUmoyTTVMTkNDWUhlNzVJUWZ5MU16SE9BZThYcUxqdVg5eGthU2llSDJ2ekNCaXZrVVBIeXVQWGt4VUQ1Zk1tUm1SVDhDbUUwWU01ZDJpTDJEQ1NNcXlTSGFlaGFhS2FlWnBncE8zOW5RS2ZMY25SbzgxSkZ5S0hCVzVkTkhLRXVPVWMzSTF6VDE1NUhYY0tJR0NnT2Y0WnRIeU05bjlrM1c2MVZtSDJNOHduMTVkVTVncHplb2ZBUlo3?o",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPUXlMUkdicDZkSEFWa1Vvc0lJQzVDaHRWMVZtUmoyTTVMTkNDWUhlNzVJUWZ5MU16SE9BZThYcUxqdVg5eGthU2llSDJ2ekNCaXZrVVBIeXVQWGt4VUQ1Zk1tUm1SVDhDbUUwWU01ZDJpTDJEQ1NNcXlTSGFlaGFhS2FlWnBncE8zOW5RS2ZMY25SbzgxSkZ5S0hCVzVkTkhLRXVPVWMzSTF6VDE1NUhYY0tJR0NnT2Y0WnRIeU05bjlrM1c2MVZtSDJNOHduMTVkVTVncHplb2ZBUlo3?oc=5",
+      "source": "Google News",
+      "date": "Wed, 20 May 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-08T06:10:46.742197+00:00"
+    },
+    {
       "id": "20aff9c05faf202d",
       "banque": "BNP Paribas",
       "departement": null,
@@ -7549,6 +7562,19 @@
       "created_at": "2026-06-25T15:45:01.952867+00:00"
     },
     {
+      "id": "1e294e8c2f0589f6",
+      "banque": "BNP Paribas",
+      "departement": null,
+      "titre": "Crise des déchets Abidjan: Ecoti.sa et Eco Éburnie face au robinet à moitié fermé de l’ANAGED - Connectionivoirienne",
+      "extrait": "TITRE: Crise des déchets Abidjan: Ecoti.sa et Eco Éburnie face au robinet à moitié fermé de l’ANAGED - Connectionivoirienne SOURCE: Google News DATE: Wed, 03 Jun 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMi0gFBVV95cUxOTFg1b2JsWFpFYnhzRVhoaGlzSjFWRjZObnpNb0VMN3FlQVIwZDczWmtKZVQ3Skl3cGVsQ0lZN0p2dEhZNlctVGoyT0JkY1FCZjZkc3I0OVNqLTRLMjFIV2pGWTlBLThKSW8zWGFTSWVLN0tLeUFiZUkyY2E4ZjQtcE5Ta1V3QnJXNHl0LXlITWtZaW05WmtWQkFtM214aVhzNl9OWVFwOVBSd3RlbW1vTHFFM0JkLUpscU56ekRXczVnSm1aRGhKTGlmSW",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOTFg1b2JsWFpFYnhzRVhoaGlzSjFWRjZObnpNb0VMN3FlQVIwZDczWmtKZVQ3Skl3cGVsQ0lZN0p2dEhZNlctVGoyT0JkY1FCZjZkc3I0OVNqLTRLMjFIV2pGWTlBLThKSW8zWGFTSWVLN0tLeUFiZUkyY2E4ZjQtcE5Ta1V3QnJXNHl0LXlITWtZaW05WmtWQkFtM214aVhzNl9OWVFwOVBSd3RlbW1vTHFFM0JkLUpscU56ekRXczVnSm1aRGhKTGlmSWQ0TTVRTXc?oc=5",
+      "source": "Google News",
+      "date": "Wed, 03 Jun 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-08T06:10:44.348127+00:00"
+    },
+    {
       "id": "4a9689f7f8ad38dd",
       "banque": "Société Générale",
       "departement": null,
@@ -7963,6 +7989,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-07-02T06:55:07.604071+00:00"
+    },
+    {
+      "id": "f7cfbd07a633eb2e",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Eat Salad fermé après 19 jours dans le centre-ville de Brive : quelles suites désormais ? - La Montagne",
+      "extrait": "TITRE: Eat Salad fermé après 19 jours dans le centre-ville de Brive : quelles suites désormais ? - La Montagne SOURCE: Google News DATE: Tue, 19 May 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMi6wFBVV95cUxOeGJ5RlN2eTZPOW1wVTBRbVNBdG9rTnVheE9jblpVNVZUSDBjby02NW5IcnBzWDI1VU1TQWktRzR5dnF1ejN3TUU2SVJuNlVFczhTWUV5ZE9oSG9wOENjVWRvUGQ1aVdvcVYzNFJrREU4TzQxalF6OU90M1Y4MTEwTng4LU1DdWladXYwZk41ZUc2ODRlVzNuYll4VVNpbldPM1ZyWkdaRDlEa3daX3psdFd6aGk3eFZ2ZHdlamxhcXNFRXFENnQtTWJLeXJRcXBYTGE0bUp",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOeGJ5RlN2eTZPOW1wVTBRbVNBdG9rTnVheE9jblpVNVZUSDBjby02NW5IcnBzWDI1VU1TQWktRzR5dnF1ejN3TUU2SVJuNlVFczhTWUV5ZE9oSG9wOENjVWRvUGQ1aVdvcVYzNFJrREU4TzQxalF6OU90M1Y4MTEwTng4LU1DdWladXYwZk41ZUc2ODRlVzNuYll4VVNpbldPM1ZyWkdaRDlEa3daX3psdFd6aGk3eFZ2ZHdlamxhcXNFRXFENnQtTWJLeXJRcXBYTGE0bUpTc1NPZFNkV3RMcGk5N29waVJ3NHYw?oc=5",
+      "source": "Google News",
+      "date": "Tue, 19 May 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-08T06:10:51.608297+00:00"
     },
     {
       "id": "456fc501939ed9a7",
@@ -10095,6 +10134,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-29T08:30:00.733578+00:00"
+    },
+    {
+      "id": "62d2e571f65bef3d",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "« Des familles entières se demandent ce qu’elles vont devenir » : la fermeture de la maternité de la Polyclinique de Pau annoncée pour le 14 septembre - Sud Ouest",
+      "extrait": "TITRE: « Des familles entières se demandent ce qu’elles vont devenir » : la fermeture de la maternité de la Polyclinique de Pau annoncée pour le 14 septembre - Sud Ouest SOURCE: Google News DATE: Sat, 30 May 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMimgJBVV95cUxOVW1HS3hWeC1xb0RES1NIbHg0ZnNCVFhNanFBTnRCY2tGWVZpQ203S3lFUkVYOXZVTmJkdE5FclI2LV9zWlVfcDRoS2ZINm1Mc3dVMERSb2dmZnh1YW5kSFRWNlZmWkNsUW82RGUzOGRnY3FEeGk5cy1HTGF6VUs2RFNkaWVlTUNwZlBpZkZySXpxcXE0d1A1UHhJanJFSGlnbEJTbWFSR2tL",
+      "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxOVW1HS3hWeC1xb0RES1NIbHg0ZnNCVFhNanFBTnRCY2tGWVZpQ203S3lFUkVYOXZVTmJkdE5FclI2LV9zWlVfcDRoS2ZINm1Mc3dVMERSb2dmZnh1YW5kSFRWNlZmWkNsUW82RGUzOGRnY3FEeGk5cy1HTGF6VUs2RFNkaWVlTUNwZlBpZkZySXpxcXE0d1A1UHhJanJFSGlnbEJTbWFSR2tLdHlqeVpyYnBjeW1TdkhFc2ZIR09zQmt6TjZxZ1JNSDhiN0dTeGJ0VnVCdU9OWmtqajBNRHlzTFJsbFBPaExXdzVFY3RQTnhaWGhYOGY0bDVLZUNzM1VleTlfdmdoZk4xZ1BDSjdiNExFOFlWWmRwVkE?oc=5",
+      "source": "Google News",
+      "date": "Sat, 30 May 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-08T06:10:48.708411+00:00"
     },
     {
       "id": "ccb3451213f4ec8c",
@@ -13100,6 +13152,19 @@
       "created_at": "2026-06-25T15:35:06.233438+00:00"
     },
     {
+      "id": "d2207b2131202e27",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Fusion Sanlam-Allianz : marché, réseau, RH… Yahya Chraïbi détaille les ambitions du nouvel ensemble - Medias24",
+      "extrait": "TITRE: Fusion Sanlam-Allianz : marché, réseau, RH… Yahya Chraïbi détaille les ambitions du nouvel ensemble - Medias24 SOURCE: Google News DATE: Tue, 07 Jul 2026 13:32:00 GMT URL: https://news.google.com/rss/articles/CBMi0AFBVV95cUxPYk8yTjVUMWUtak52QkxQTTZ4WFBhc3F2cHp2QjJZUXlKT1VtQWtkSHA2OUxLS3dCZGRvaUFKSjJCcHdFbkYxczJDa0FwV29rcjRwWE1oWGdpYWo5R0hMZzBTRHZjeFI4R0dteTJmQlFSZS1VS1hhQXR3N0syT2FhVHdsZ0N1c2VLSjZyV0wzd0doM1NfZkw1VkFBM1Y1R0VRRTdlOU9Jb3dDTkJJSFJkb0F4UkoxNnlLeEJ3ZHd1MUpqbm5lQ25IbE9USGlmUldy",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPYk8yTjVUMWUtak52QkxQTTZ4WFBhc3F2cHp2QjJZUXlKT1VtQWtkSHA2OUxLS3dCZGRvaUFKSjJCcHdFbkYxczJDa0FwV29rcjRwWE1oWGdpYWo5R0hMZzBTRHZjeFI4R0dteTJmQlFSZS1VS1hhQXR3N0syT2FhVHdsZ0N1c2VLSjZyV0wzd0doM1NfZkw1VkFBM1Y1R0VRRTdlOU9Jb3dDTkJJSFJkb0F4UkoxNnlLeEJ3ZHd1MUpqbm5lQ25IbE9USGlmUldy?oc=5",
+      "source": "Google News",
+      "date": "Tue, 07 Jul 2026 13:32:00 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-08T06:10:41.551579+00:00"
+    },
+    {
       "id": "cf4a49498413b47e",
       "banque": "Crédit Mutuel",
       "departement": null,
@@ -13722,6 +13787,19 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:36:25.319542+00:00"
+    },
+    {
+      "id": "d81f7879d0bb7beb",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "L'italienne Banco BPM invite MPS à entamer des discussions de fusion - TradingView",
+      "extrait": "TITRE: L'italienne Banco BPM invite MPS à entamer des discussions de fusion - TradingView SOURCE: Google News DATE: Sun, 07 Jun 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMiY0FVX3lxTE9KbmNZLUlibmRRZFVCT29FZ0FkTV9ZOER0YW0xVG5LU3B3WVVpbnBsMnZSc3ZDcHNNRkJVLXVlS0FWeW1xTmJINXI2RlJzay1KSGdob2Fmb2Z3TVNrdGRRN0RHRQ?oc=5 <a href=\"https://news.google.com/rss/articles/CBMiY0FVX3lxTE9KbmNZLUlibmRRZFVCT29FZ0FkTV9ZOER0YW0xVG5LU3B3WVVpbnBsMnZSc3ZDcHNNRkJVLXVlS0FWeW1xTmJINXI2RlJzay1KSGdob2Fmb2",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9KbmNZLUlibmRRZFVCT29FZ0FkTV9ZOER0YW0xVG5LU3B3WVVpbnBsMnZSc3ZDcHNNRkJVLXVlS0FWeW1xTmJINXI2RlJzay1KSGdob2Fmb2Z3TVNrdGRRN0RHRQ?oc=5",
+      "source": "Google News",
+      "date": "Sun, 07 Jun 2026 07:00:00 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-08T06:10:38.870736+00:00"
     },
     {
       "id": "8e3761c030d9dd69",
