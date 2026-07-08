@@ -107,6 +107,19 @@ def test_articles_exploration_region_puis_departement_sans_navigation():
     assert ".dep-folder" in css
 
 
+def test_articles_departement_regroupe_les_articles_par_bureau():
+    js = (FRONT / "app.js").read_text(encoding="utf-8")
+    # Niveau supplémentaire d'exploration : région -> département -> bureau -> articles
+    assert "exploreBureau" in js
+    assert "bureauKey" in js
+    assert "data-bureau=" in js
+    assert "bureau-folder" in js
+    # L'état d'exploration porte désormais le bureau sélectionné
+    assert "bureau:" in js
+    css = (FRONT / "style.css").read_text(encoding="utf-8")
+    assert ".bureau-folder" in css
+
+
 def test_vue_departement_affiche_points_et_stats_sans_filtre():
     html = Path("frontend/index.html").read_text(encoding="utf-8")
     js = Path("frontend/app.js").read_text(encoding="utf-8")

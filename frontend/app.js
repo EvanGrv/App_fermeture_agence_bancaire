@@ -75,7 +75,7 @@ let depSelectionne = "";
 // Longueur maximale de l'extrait de citation dans les popups de points.
 const CITATION_MAX = 180;
 // Exploration in-page de la vue Articles : région ouverte, puis département ouvert.
-let articlesExplore = { region: "", dep: "" };
+let articlesExplore = { region: "", dep: "", bureau: "" };
 
 async function init() {
   await loadData();
@@ -179,6 +179,11 @@ function bindUi() {
   // Exploration Articles : délégation pour rester sur la page (pas de setView).
   ["articles-regions", "articles-list"].forEach((id) => {
     document.getElementById(id).addEventListener("click", (e) => {
+      const bureauBtn = e.target.closest("[data-bureau]");
+      if (bureauBtn) {
+        exploreBureau(bureauBtn.dataset.bureau);
+        return;
+      }
       const depBtn = e.target.closest("[data-dep]");
       if (depBtn) {
         exploreDep(depBtn.dataset.dep);
@@ -642,10 +647,10 @@ function renderArticles(items) {
   // Si la région / le département explorés ne correspondent plus aux filtres,
   // on referme l'exploration pour rester cohérent avec la carte.
   if (articlesExplore.region && !regions.some((r) => r.region === articlesExplore.region)) {
-    articlesExplore = { region: "", dep: "" };
+    articlesExplore = { region: "", dep: "", bureau: "" };
   }
   if (articlesExplore.dep && !withRegion.some((c) => c.departement === articlesExplore.dep)) {
-    articlesExplore = { region: articlesExplore.region, dep: "" };
+    articlesExplore = { region: articlesExplore.region, dep: "", bureau: "" };
   }
   document.getElementById("articles-regions").innerHTML =
     regions.map((r) => regionFolderCard(r) + (r.region === articlesExplore.region ? regionSubpanel(r, withRegion) : "")).join("") ||
@@ -675,17 +680,58 @@ function regionSubpanel(r, withRegion) {
       <span>${esc(count)} article${count > 1 ? "s" : ""}</span>
     </button>`;
   }).join("");
-  const articles = articlesExplore.dep ? depArticlesList(articlesExplore.dep, regionItems) : "";
+  const bureaux = articlesExplore.dep ? depBureauxList(articlesExplore.dep, regionItems) : "";
   return `<div class="region-subpanel">
     <p class="subpanel-title">Départements couverts — ${esc(r.region)}</p>
     <div class="dep-folder-grid">${folders || emptyState("Aucun département couvert.")}</div>
-    ${articles}
+    ${bureaux}
   </div>`;
 }
 
-function depArticlesList(code, items) {
+// Clé de regroupement d'un « bureau » : une agence est identifiée par sa banque
+// et sa commune. Deux annonces (projet puis confirmation) d'une même agence se
+// retrouvent ainsi sous le même bureau.
+function bureauKey(c) {
+  return `${c.banque || "?"}||${c.commune || "?"}`;
+}
+
+function bureauLabel(c) {
+  return `${c.banque || "Banque non isolée"} · ${c.commune || "Commune non isolée"}`;
+}
+
+// Au niveau département, les articles sont regroupés par bureau : chaque bureau
+// est un dossier repliable qui déplie ses articles au clic.
+function depBureauxList(code, items) {
+  const depItems = items.filter((c) => c.departement === code);
+  const groups = new Map();
+  depItems.forEach((c) => {
+    const key = bureauKey(c);
+    if (!groups.has(key)) groups.set(key, { key, label: bureauLabel(c), items: [] });
+    groups.get(key).items.push(c);
+  });
+  // Bureau ouvert devenu obsolète (filtres) : on le referme silencieusement.
+  if (articlesExplore.bureau && !groups.has(articlesExplore.bureau)) {
+    articlesExplore = { ...articlesExplore, bureau: "" };
+  }
+  const bureaux = [...groups.values()]
+    .map((g) => ({ ...g, articles: g.items.reduce((acc, c) => acc + articleCountFor(c), 0) }))
+    .sort((a, b) => b.articles - a.articles || a.label.localeCompare(b.label));
+  const folders = bureaux.map((g) => {
+    const open = g.key === articlesExplore.bureau;
+    return `<button type="button" class="bureau-folder${open ? " is-open" : ""}" data-bureau="${esc(g.key)}">
+      <strong>${esc(g.label)}</strong>
+      <span>${esc(g.articles)} article${g.articles > 1 ? "s" : ""}</span>
+    </button>` + (open ? bureauArticlesList(g) : "");
+  }).join("");
+  return `<div class="article-file-list">
+    <p class="subpanel-title">Bureaux — ${esc(depNom(code))} (${esc(code)})</p>
+    <div class="bureau-folder-grid">${folders || emptyState("Aucun bureau pour ce département.")}</div>
+  </div>`;
+}
+
+function bureauArticlesList(g) {
   const rows = [];
-  items.filter((c) => c.departement === code).forEach((c) => {
+  g.items.forEach((c) => {
     const sources = (c.sources || []).filter((s) => s.url || s.titre);
     if (!sources.length) sources.push({ titre: c.citation || "Article non accessible", source: "Fiche", date: c.date_annonce });
     sources.forEach((s) => rows.push({ c, s }));
@@ -699,10 +745,7 @@ function depArticlesList(code, items) {
       ? `<a class="article-file" href="${esc(s.url)}" target="_blank" rel="noopener">${body}</a>`
       : `<button type="button" class="article-file" onclick="openAgencySheet('${esc(c.id)}')">${body}</button>`;
   }).join("");
-  return `<div class="article-file-list">
-    <p class="subpanel-title">Articles — ${esc(depNom(code))} (${esc(code)})</p>
-    ${list || emptyState("Aucun article pour ce département.")}
-  </div>`;
+  return `<div class="bureau-articles">${list || emptyState("Aucun article pour ce bureau.")}</div>`;
 }
 
 function sortRegions(regions) {
@@ -773,15 +816,25 @@ function articlesThisMonth(items) {
 
 function exploreRegion(region) {
   articlesExplore = articlesExplore.region === region
-    ? { region: "", dep: "" }
-    : { region, dep: "" };
+    ? { region: "", dep: "", bureau: "" }
+    : { region, dep: "", bureau: "" };
   rafraichirExploration();
 }
 
 function exploreDep(code) {
+  // Changer de département referme le bureau ouvert (le regroupement par bureau
+  // n'a de sens qu'à l'intérieur d'un même département).
   articlesExplore = articlesExplore.dep === code
-    ? { region: articlesExplore.region, dep: "" }
-    : { region: depRegion(code) || articlesExplore.region, dep: code };
+    ? { region: articlesExplore.region, dep: "", bureau: "" }
+    : { region: depRegion(code) || articlesExplore.region, dep: code, bureau: "" };
+  rafraichirExploration();
+}
+
+function exploreBureau(key) {
+  articlesExplore = {
+    ...articlesExplore,
+    bureau: articlesExplore.bureau === key ? "" : key,
+  };
   rafraichirExploration();
 }
 
@@ -801,10 +854,10 @@ function itemsPourCarte() {
   // Un changement de filtres peut rendre l'exploration obsolète : on la
   // referme ici, avant d'alimenter la carte (rafraichir passe avant renderAll).
   if (articlesExplore.region && !items.some((c) => regionOf(c) === articlesExplore.region)) {
-    articlesExplore = { region: "", dep: "" };
+    articlesExplore = { region: "", dep: "", bureau: "" };
   }
   if (articlesExplore.dep && !items.some((c) => c.departement === articlesExplore.dep)) {
-    articlesExplore = { region: articlesExplore.region, dep: "" };
+    articlesExplore = { region: articlesExplore.region, dep: "", bureau: "" };
   }
   if (articlesExplore.dep) return items.filter((c) => c.departement === articlesExplore.dep);
   if (articlesExplore.region) return items.filter((c) => regionOf(c) === articlesExplore.region);
