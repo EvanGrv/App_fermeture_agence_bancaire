@@ -1275,6 +1275,56 @@ button:disabled {
   border-top: 1px solid #fecdd3;
 }
 
+.bureau-folder-grid {
+  display: grid;
+  gap: 10px;
+}
+
+.bureau-folder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 11px 14px;
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  background: var(--panel);
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 140ms ease, background 140ms ease, box-shadow 140ms ease;
+}
+
+.bureau-folder:hover {
+  border-color: #fecdd3;
+  box-shadow: 0 10px 24px rgba(244, 63, 94, 0.12);
+}
+
+.bureau-folder.is-open {
+  border-color: #fda4af;
+  background: #fff1f2;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.bureau-folder strong { font-size: 0.92rem; }
+.bureau-folder span {
+  flex: none;
+  color: #9f1239;
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.bureau-articles {
+  display: grid;
+  gap: 8px;
+  margin: -10px 0 4px;
+  padding: 12px 12px 12px;
+  border: 1px solid #fda4af;
+  border-top: 0;
+  border-radius: 0 0 11px 11px;
+  background: #fff8f8;
+}
+
 .article-file {
   display: grid;
   gap: 2px;
