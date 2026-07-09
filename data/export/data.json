@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T06:19:22.633648+00:00",
+  "generated_at": "2026-07-09T07:09:28.664512+00:00",
   "departements": {
     "01": {
       "nom": "Ain",
@@ -643,11 +643,11 @@
     "71": {
       "nom": "Saône-et-Loire",
       "region": "Bourgogne-Franche-Comté",
-      "count": 1,
+      "count": 2,
       "total_agences": 33,
-      "precise_count": 1,
+      "precise_count": 2,
       "unlocated_count": 0,
-      "estimated_count": 1
+      "estimated_count": 2
     },
     "72": {
       "nom": "Sarthe",
@@ -671,7 +671,7 @@
       "nom": "Haute-Savoie",
       "region": "Auvergne-Rhône-Alpes",
       "count": 0,
-      "total_agences": 123,
+      "total_agences": 124,
       "precise_count": 0,
       "unlocated_count": 0,
       "estimated_count": 0
@@ -1261,9 +1261,9 @@
     "71": {
       "departement": "71",
       "nom": "Saône-et-Loire",
-      "precise_count": 1,
+      "precise_count": 2,
       "unlocated_count": 0,
-      "estimated_count": 1,
+      "estimated_count": 2,
       "department_signal_count": 0,
       "signals": []
     },
@@ -1353,8 +1353,8 @@
     },
     {
       "region": "Bourgogne-Franche-Comté",
-      "articles": 15,
-      "fermetures": 12,
+      "articles": 16,
+      "fermetures": 13,
       "projets": 3,
       "fusions": 0,
       "types": [
@@ -5763,6 +5763,42 @@
         "source": "SIRENE"
       },
       "region": "Provence-Alpes-Côte d'Azur"
+    },
+    {
+      "id": "f8e27f800b02f248",
+      "banque": "BNP Paribas",
+      "commune": "Chalon-sur-Saône",
+      "code_insee": "71076",
+      "departement": "71",
+      "type": "fermeture",
+      "date_annonce": "Sun, 24 May 2026 07:00:00 GMT",
+      "date_fermeture": "2026-06-30",
+      "statut": "confirmé",
+      "statut_temporel": "deja_fermee",
+      "date_fermeture_approx": 1,
+      "fiabilite": 4,
+      "lat": 46.7917,
+      "lon": 4.845526,
+      "citation": "L'agence BNP Paribas Chalon-sur-Saône Avenue de Paris fermera fin juin",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "created_at": "2026-07-09T07:05:24.549529+00:00",
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOMGJUS0JvTHJ5bHoySm1KRjNTSEVoMFpqV0tZdTZfUXRNZnlubU9WVHFzUWVsaFZjZi1xU0UybnRvNHNkQmI3a3Zia2pFNHRneXdWREM0aWNETm81UEoxZDdhellNUGI4YUZPWXlPN3k1T1duSzU3aGZHelFoNDlDRElBVXltV0JCUGk2cFJOZktCRUREcVJJYU9PMlBIMHFPTlJOWUwtNWZaXzFHa1cyejRfN1hrZC15dHo1cVpneHB5akdT?oc=5",
+          "titre": "L'agence BNP Paribas Chalon-sur-Saône Avenue de Paris fermera fin juin - Info-Chalon.com",
+          "source": "Google News",
+          "date": "Sun, 24 May 2026 07:00:00 GMT",
+          "tier": "D"
+        }
+      ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
+      "region": "Bourgogne-Franche-Comté"
     }
   ],
   "closures_unlocated": [
@@ -7575,6 +7611,19 @@
       "created_at": "2026-07-08T06:10:44.348127+00:00"
     },
     {
+      "id": "f0d71bc14ee4c2df",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "La fermeture de Toner’s laisse un vide à Grand-Sault - Radio-Canada",
+      "extrait": "TITRE: La fermeture de Toner’s laisse un vide à Grand-Sault - Radio-Canada SOURCE: Google News DATE: Wed, 03 Jun 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMilgFBVV95cUxQb1dYTU9HVlQ2SGhGOUZmX2pkTFlnU0luTzNfYk52R2J1VUhYdDNvd05PYUtMMjh6NzREZVpoU2puWExZSXNLUUZnVmVPMGpZMkhOdlFub19wbEVubmdVdkplVjBDcmNrdXlIRGtnSFhxMzVRal8wU0FaYVcwVlkwaVBmQXAtMG5Pa1Uzdm9NcklQYXlWVGc?oc=5 <a href=\"https://news.google.com/rss/articles/CBMilgFBVV95cUxQb1dYTU9HVlQ2SGhGOUZmX2pkTFlnU0luTzNfYk52R2J1VUhYdDNv",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQb1dYTU9HVlQ2SGhGOUZmX2pkTFlnU0luTzNfYk52R2J1VUhYdDNvd05PYUtMMjh6NzREZVpoU2puWExZSXNLUUZnVmVPMGpZMkhOdlFub19wbEVubmdVdkplVjBDcmNrdXlIRGtnSFhxMzVRal8wU0FaYVcwVlkwaVBmQXAtMG5Pa1Uzdm9NcklQYXlWVGc?oc=5",
+      "source": "Google News",
+      "date": "Wed, 03 Jun 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-09T06:59:19.122178+00:00"
+    },
+    {
       "id": "4a9689f7f8ad38dd",
       "banque": "Société Générale",
       "departement": null,
@@ -9354,6 +9403,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:20:51.741633+00:00"
+    },
+    {
+      "id": "779fc37e0b4ee041",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Rénovation énergétique : le gérant d’une société aux pratiques frauduleuses condamné à une peine de prison ferme - economie.gouv.fr",
+      "extrait": "TITRE: Rénovation énergétique : le gérant d’une société aux pratiques frauduleuses condamné à une peine de prison ferme - economie.gouv.fr SOURCE: Google News DATE: Thu, 11 Jun 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMi8wFBVV95cUxQQldPaDBPbmQ0Q0RrOVhFLXFvSGhla2lhX2lJaWZQaHZkNEtfSUk1a0JGMV9abDg1a2Iyb1FLSDJ6X2d0MUZ2eG50S0M5d0NMQ1BYa1JkWW9iZWEyRVJjY3NOV1JHTlpaaTF2aDhpSVFhWG9fXzNmVDNUTG9RNFFSZW81aFVtOEw5c0ExYVdjenRQMHp6LXNSRG9UdkxVLU9MM2R4RXB6aEYyUDNBSmp5Q01JdC1JZjc5ajlGYUtybUF",
+      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQQldPaDBPbmQ0Q0RrOVhFLXFvSGhla2lhX2lJaWZQaHZkNEtfSUk1a0JGMV9abDg1a2Iyb1FLSDJ6X2d0MUZ2eG50S0M5d0NMQ1BYa1JkWW9iZWEyRVJjY3NOV1JHTlpaaTF2aDhpSVFhWG9fXzNmVDNUTG9RNFFSZW81aFVtOEw5c0ExYVdjenRQMHp6LXNSRG9UdkxVLU9MM2R4RXB6aEYyUDNBSmp5Q01JdC1JZjc5ajlGYUtybUFSdzY3SktNYkxESG5sbmZuOTJWZ2dDbGZiLW9ISEFRdGpBa0MwYVJNRVc1MXB6R19laDg?oc=5",
+      "source": "Google News",
+      "date": "Thu, 11 Jun 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-09T06:59:16.490811+00:00"
     },
     {
       "id": "f995850adefa07e6",
@@ -12073,6 +12135,19 @@
       "created_at": "2026-06-26T07:08:02.843977+00:00"
     },
     {
+      "id": "ed0f7431995fb6a8",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Agde : « La table de la mer » fermée 4 mois pour détention de stupéfiants - info.fr",
+      "extrait": "TITRE: Agde : « La table de la mer » fermée 4 mois pour détention de stupéfiants - info.fr SOURCE: Google News DATE: Fri, 12 Jun 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMijgFBVV95cUxPd3dJR0hMNkRvOEZ4a25LLW5zYllEZnQ4SzJPWEt0RTdNOEhON05vZ25mRUxXOTZiQVNwelZDQkx4emw4VjEtWmg5NXRqNVA0TzJmSG82WEtBM2tPV3NNRTBFTXNWTm53YWhfV3FrQk0tSzA2R09HMWlNVEpKTzcxRHRiMDV3REVnOWoyRmRB?oc=5 <a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxPd3dJR0hMNkRvOEZ4a25LLW5zYllEZnQ4SzJPWEt0RTdNOEh",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPd3dJR0hMNkRvOEZ4a25LLW5zYllEZnQ4SzJPWEt0RTdNOEhON05vZ25mRUxXOTZiQVNwelZDQkx4emw4VjEtWmg5NXRqNVA0TzJmSG82WEtBM2tPV3NNRTBFTXNWTm53YWhfV3FrQk0tSzA2R09HMWlNVEpKTzcxRHRiMDV3REVnOWoyRmRB?oc=5",
+      "source": "Google News",
+      "date": "Fri, 12 Jun 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-09T06:59:24.764280+00:00"
+    },
+    {
       "id": "c2ce6b1af9e419c6",
       "banque": "Crédit Agricole",
       "departement": null,
@@ -12331,6 +12406,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-07-04T06:33:44.887407+00:00"
+    },
+    {
+      "id": "f3805f7a48777c35",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Burkina Faso : fermeture du bureau du haut-commissariat de l’ONU aux droits de l’homme - MSN",
+      "extrait": "TITRE: Burkina Faso : fermeture du bureau du haut-commissariat de l’ONU aux droits de l’homme - MSN SOURCE: Google News DATE: Fri, 03 Jul 2026 02:17:38 GMT URL: https://news.google.com/rss/articles/CBMilgJBVV95cUxNMFk5cncyeFVnODBUNlZ3b3MwVkpPVEJOSHFfMkNGdkFhSUJrdFNIS1lFTmpKeEFTRWZBdC1JVFFwZTNZUzRoRnhaaGNudVIwUGxyZ0RZcTRuN0RSTlhucFVvQmZ6WUJkbkZZNDU1Z2N1MWl4RUIyci04SGFsR0plOHBJVWdQTDd6dlY3QXl6OHpXZC1iZDFRaGJuU1JKN29tSjdmU3ZOSDBwbEVjUlgxNkRwU0Z1cF9pV1NhM3NuUkFIOVlkVy1JSG1fY0UweVRPWklab1paUG8yMUZPZk",
+      "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxNMFk5cncyeFVnODBUNlZ3b3MwVkpPVEJOSHFfMkNGdkFhSUJrdFNIS1lFTmpKeEFTRWZBdC1JVFFwZTNZUzRoRnhaaGNudVIwUGxyZ0RZcTRuN0RSTlhucFVvQmZ6WUJkbkZZNDU1Z2N1MWl4RUIyci04SGFsR0plOHBJVWdQTDd6dlY3QXl6OHpXZC1iZDFRaGJuU1JKN29tSjdmU3ZOSDBwbEVjUlgxNkRwU0Z1cF9pV1NhM3NuUkFIOVlkVy1JSG1fY0UweVRPWklab1paUG8yMUZPZkNDVnZONHRvQjJGVEM3c1VHclBWeTFZczZNOUlkclZEVUdGSXlKcDdDR1ZrSjRWYnl6cFZsZDBGQQ?oc=5",
+      "source": "Google News",
+      "date": "Fri, 03 Jul 2026 02:17:38 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-09T06:59:22.588211+00:00"
     },
     {
       "id": "ddcb50c091991047",
