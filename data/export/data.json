@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T07:09:28.664512+00:00",
+  "generated_at": "2026-07-10T07:10:12.416764+00:00",
   "departements": {
     "01": {
       "nom": "Ain",
@@ -104,7 +104,7 @@
       "nom": "Aveyron",
       "region": "Occitanie",
       "count": 1,
-      "total_agences": 17,
+      "total_agences": 19,
       "precise_count": 1,
       "unlocated_count": 0,
       "estimated_count": 1
@@ -122,7 +122,7 @@
       "nom": "Calvados",
       "region": "Normandie",
       "count": 2,
-      "total_agences": 17,
+      "total_agences": 16,
       "precise_count": 2,
       "unlocated_count": 0,
       "estimated_count": 2
@@ -1372,6 +1372,23 @@
       "nb_departements": 6
     },
     {
+      "region": "Pays de la Loire",
+      "articles": 8,
+      "fermetures": 6,
+      "projets": 1,
+      "fusions": 0,
+      "types": [
+        "Fermeture",
+        "Projet"
+      ],
+      "departements": [
+        "44",
+        "49",
+        "72"
+      ],
+      "nb_departements": 3
+    },
+    {
       "region": "Auvergne-Rhône-Alpes",
       "articles": 7,
       "fermetures": 5,
@@ -1402,23 +1419,6 @@
         "14",
         "27",
         "76"
-      ],
-      "nb_departements": 3
-    },
-    {
-      "region": "Pays de la Loire",
-      "articles": 7,
-      "fermetures": 6,
-      "projets": 1,
-      "fusions": 0,
-      "types": [
-        "Fermeture",
-        "Projet"
-      ],
-      "departements": [
-        "44",
-        "49",
-        "72"
       ],
       "nb_departements": 3
     },
@@ -2892,11 +2892,11 @@
       "departement": "72",
       "type": "fermeture",
       "date_annonce": "Sat, 27 Jun 2026 06:31:02 GMT",
-      "date_fermeture": null,
+      "date_fermeture": "2026-06-27",
       "statut": "projet",
       "statut_temporel": "inconnu",
       "date_fermeture_approx": 0,
-      "fiabilite": 3,
+      "fiabilite": 5,
       "lat": 47.729581,
       "lon": 0.580089,
       "citation": "« J’ai aimé travailler ici » : après soixante ans de présence, BNP ferme son agence à La Chartre - Ouest-France",
@@ -2905,6 +2905,13 @@
       "commune_originale": null,
       "created_at": "2026-06-27T07:40:08.706534+00:00",
       "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQWDdlU3BKQUMtcmZzZXI0cEhObUJLZlU2bFpqOF94YjlmT0hVcWwtckJiWlNXOHNLeFJvWFJuRnVmem1lYUExdklKdXhMUVVpOE9mdXBMakVkVVR3a1p4akNxUnhWMjh3enVnWmpDd0ZYdDgzcDhQV0VUZDNFMjd2aTVwc0F6YTNJbVJOTDFHakZFVmFPczM3OVl4dFVRSWZGTEhIOXhJUkdkNlNBTkxzNWF6MElsVDI0NkVzNDBVRXVKWlFYaGs0SURhWTlzRktJaGFCQlQyOXpISFhzSTRtVzNzTWRGZVk?oc=5",
+          "titre": "« J’ai aimé travailler ici » : après soixante ans de présence, BNP ferme son agence à La Chartre - - Le Mans.maville.com",
+          "source": "Google News",
+          "date": "Sat, 27 Jun 2026 06:31:00 GMT",
+          "tier": "D"
+        },
         {
           "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxQNEZPOVNEbkZEd3NpdVp2eUt3NlN0aEVSdE5VUWxpT0MyVEsxUmFBdjlmMTgtZXU1V29YbFhNS3BCQW9pdG5ZeTlDSzR3d0drV0RFMF90VjBaUGVzNWh6NXdlNlp5TFo4WmFDYkJRZXU5QWlXV0lKTzEtLWNrZ3pGSFl0MVBWNmdfZzhjU3RQdE9uSm5WbGJOODAwNmVKR253Q0Y0S0NJb0tVN3VSUV9sQ2ZDT2hnc194UEZiV25scmljUno1em9fbHdlY0E2ZGJlMkh2N0NSbFlkV2hLMTNYLWZxWG9RSmxsbTRjc2djSlllOHBfQlZNUTFpNlFiVmo4MVc0c3gxVmVZQQ?oc=5",
           "titre": "« J’ai aimé travailler ici » : après soixante ans de présence, BNP ferme son agence à La Chartre - Ouest-France",
@@ -11457,6 +11464,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:45:43.340471+00:00"
+    },
+    {
+      "id": "67348b86868b43e0",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Confrontée à une baisse de fréquentation, La Poste de Pleubian risque de fermer - Maville.com Saint Brieuc",
+      "extrait": "TITRE: Confrontée à une baisse de fréquentation, La Poste de Pleubian risque de fermer - Maville.com Saint Brieuc SOURCE: Google News DATE: Mon, 06 Jul 2026 17:11:00 GMT URL: https://news.google.com/rss/articles/CBMi3AFBVV95cUxOTzA5RFQ3WE9UOEZEVWI2N0NLVER6emF3bzZUNEE1ZC1kQ1E3cGZWZjB4ZzgtalNLaEZIdEpRV29mZV9mZ2RDclZXSjBrREhFbW1WaFlMSlA2Q2tQRFcxOVgzamdkYlBYMk1EZTdpMDJHVmtaSTZOT3VkUkZsUlZpcW0tRWlDWmF0T1g4OUpnSlJXcFdMcGZyV2UxWlNMYmRGTlYzQzlRem9pOXRxeTZmaHpaTDlUQ0RocHhwYzh5NGFFcXk1MnIxTEVLSGpYNXZyZ0ZM",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOTzA5RFQ3WE9UOEZEVWI2N0NLVER6emF3bzZUNEE1ZC1kQ1E3cGZWZjB4ZzgtalNLaEZIdEpRV29mZV9mZ2RDclZXSjBrREhFbW1WaFlMSlA2Q2tQRFcxOVgzamdkYlBYMk1EZTdpMDJHVmtaSTZOT3VkUkZsUlZpcW0tRWlDWmF0T1g4OUpnSlJXcFdMcGZyV2UxWlNMYmRGTlYzQzlRem9pOXRxeTZmaHpaTDlUQ0RocHhwYzh5NGFFcXk1MnIxTEVLSGpYNXZyZ0ZMdlNrWWZIaEwt?oc=5",
+      "source": "Google News",
+      "date": "Mon, 06 Jul 2026 17:11:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-10T06:58:54.623864+00:00"
     },
     {
       "id": "3a33226ab8cac0cb",
