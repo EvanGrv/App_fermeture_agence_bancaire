@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T07:10:12.416764+00:00",
+  "generated_at": "2026-07-11T06:06:19.372246+00:00",
   "departements": {
     "01": {
       "nom": "Ain",
@@ -698,7 +698,7 @@
       "nom": "Seine-et-Marne",
       "region": "Île-de-France",
       "count": 0,
-      "total_agences": 105,
+      "total_agences": 106,
       "precise_count": 0,
       "unlocated_count": 0,
       "estimated_count": 0
@@ -7046,6 +7046,19 @@
       "created_at": "2026-06-25T15:41:24.548474+00:00"
     },
     {
+      "id": "d671a99274abc589",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Côte d'Ivoire : 65 milliards FCFA d'amendes à payer par des agences de voyages et 05 ans de prison ferme requis contre leurs dirigeants « Indiens - koaci.com",
+      "extrait": "TITRE: Côte d'Ivoire : 65 milliards FCFA d'amendes à payer par des agences de voyages et 05 ans de prison ferme requis contre leurs dirigeants « Indiens - koaci.com SOURCE: Google News DATE: Wed, 17 Jun 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMixgJBVV95cUxQY285R1lkNEtyZEE3UGF5UDdRVDZ1VVlaU2RuLWZvSGJIT2FaWmlRWkh5elNYRHRjVGJHOWtOb3l0M2s3M1prbml1UWNVazNHUy0ydzhqeWZqTjk0RU84dmZVMjI2UXM5TGlFV0dBU0hVYjZfeGc3TGR1ZzB4YXVrU1F2MWpSNU4wamVPem5vRHdvUmlqODBURUFGc3JsYW44dTNzSkIxdUhKcU55V",
+      "url": "https://news.google.com/rss/articles/CBMixgJBVV95cUxQY285R1lkNEtyZEE3UGF5UDdRVDZ1VVlaU2RuLWZvSGJIT2FaWmlRWkh5elNYRHRjVGJHOWtOb3l0M2s3M1prbml1UWNVazNHUy0ydzhqeWZqTjk0RU84dmZVMjI2UXM5TGlFV0dBU0hVYjZfeGc3TGR1ZzB4YXVrU1F2MWpSNU4wamVPem5vRHdvUmlqODBURUFGc3JsYW44dTNzSkIxdUhKcU55V2VfOFNjNm9EM3NGeDBBTmVrQXh6dVJMSXhPOTRtSk5oYnlSMDdpUWpLMExMM3dHaXJGQTJsS3dWX2F0SHpMNHFVM3FmUDA5emdmbWxEZG9IX21UMHlVMWFqVG1xcFc1UlYzb3Y0RGx2a3VpR2VJTzJval8xTFF2Q21hRUVfUGtMRmY2YVF0WUIyWVMtU0RXR3U3dUhVaWJXdw?oc=5",
+      "source": "Google News",
+      "date": "Wed, 17 Jun 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-11T05:57:05.031801+00:00"
+    },
+    {
       "id": "3b6d314acf3a367b",
       "banque": "Crédit Agricole",
       "departement": null,
@@ -8162,6 +8175,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-07-07T06:59:51.014792+00:00"
+    },
+    {
+      "id": "5817c2faf1e0fac1",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "« On ne parle pas du tout d’une fermeture » : que se passe-t-il à l’Ehpad de Signy-le-Petit ? - L'Ardennais",
+      "extrait": "TITRE: « On ne parle pas du tout d’une fermeture » : que se passe-t-il à l’Ehpad de Signy-le-Petit ? - L'Ardennais SOURCE: Google News DATE: Tue, 16 Jun 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMizAFBVV95cUxOTXI4NDdWV01XN1JlWXdlMkFfTjlkVnVRMFNUMk1YNkp2cmE5UGp3bmxvYXY1dng5VkV4X19KVlFHLWFwajRRTTByVjAzczNfVDd6RWxNeEdtRzZ4cW8wRkRiUllJZXMzM3llRTk5LU10VXVHeV93bU5EUVdhUXZoYTMxYUM3ZHBhbm9HUXRVcFExMG5kbVFGS3NTNkRRYm5QRThhSXNiem5adlN3SGpVTHhjWHVLOXo0UEVBaDhfSGEtTEdCM2xaWmsyTWU?oc=5 <a",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOTXI4NDdWV01XN1JlWXdlMkFfTjlkVnVRMFNUMk1YNkp2cmE5UGp3bmxvYXY1dng5VkV4X19KVlFHLWFwajRRTTByVjAzczNfVDd6RWxNeEdtRzZ4cW8wRkRiUllJZXMzM3llRTk5LU10VXVHeV93bU5EUVdhUXZoYTMxYUM3ZHBhbm9HUXRVcFExMG5kbVFGS3NTNkRRYm5QRThhSXNiem5adlN3SGpVTHhjWHVLOXo0UEVBaDhfSGEtTEdCM2xaWmsyTWU?oc=5",
+      "source": "Google News",
+      "date": "Tue, 16 Jun 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-11T05:57:09.711641+00:00"
     },
     {
       "id": "f3ca59006adc7ffb",
@@ -11427,6 +11453,19 @@
       "created_at": "2026-06-25T15:40:31.507976+00:00"
     },
     {
+      "id": "1e7eafe4ff09f8fa",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Fermeture de plusieurs agences de paiement D’EDM-SA : Les abonnés contraints à de longs déplacements - Maliweb",
+      "extrait": "TITRE: Fermeture de plusieurs agences de paiement D’EDM-SA : Les abonnés contraints à de longs déplacements - Maliweb SOURCE: Google News DATE: Mon, 08 Jun 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMi8AFBVV95cUxOUFotdDF0Z2EtOC1DRFhZbUdVWlZseWllR2JhdlZfcUJZREk5WWhXMzdVMmowWEVTYmo0dUhKUWF0aDI2cDdqRGUxVE1sVnlLY2wtbUJrbDZ3WE1BUDJYTWs0WmhOQ2dkdjg5NW5ORWZpNEppa2hNWGZ0dzk2dzh5M0tFS1c3VU9pQkZIa1VTeEFYdEw4cXFEeC05Q2VnaGxwaVB5aFZwbWFMeFI5aU41MnRraFAxZWEzYk1XU3NJb2k0THp6a1lfSGZnanpZU2s2",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOUFotdDF0Z2EtOC1DRFhZbUdVWlZseWllR2JhdlZfcUJZREk5WWhXMzdVMmowWEVTYmo0dUhKUWF0aDI2cDdqRGUxVE1sVnlLY2wtbUJrbDZ3WE1BUDJYTWs0WmhOQ2dkdjg5NW5ORWZpNEppa2hNWGZ0dzk2dzh5M0tFS1c3VU9pQkZIa1VTeEFYdEw4cXFEeC05Q2VnaGxwaVB5aFZwbWFMeFI5aU41MnRraFAxZWEzYk1XU3NJb2k0THp6a1lfSGZnanpZU2s2WmNENDROdVVFYzVhQWdkSV9TSDJONFhNeWZhNWo3S0M?oc=5",
+      "source": "Google News",
+      "date": "Mon, 08 Jun 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-11T05:57:07.517760+00:00"
+    },
+    {
       "id": "ca6adce1fd5935ab",
       "banque": "Crédit Agricole",
       "departement": null,
@@ -12168,6 +12207,32 @@
       "created_at": "2026-07-09T06:59:24.764280+00:00"
     },
     {
+      "id": "9f924c431cda3f53",
+      "banque": "CCF",
+      "departement": null,
+      "titre": "Fermeture temporaire de l’établissement pour personnes âgées à Sousse pour danger imminent - tuniscope.com",
+      "extrait": "TITRE: Fermeture temporaire de l’établissement pour personnes âgées à Sousse pour danger imminent - tuniscope.com SOURCE: Google News DATE: Fri, 12 Jun 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMi7gFBVV95cUxQSzlDdVdvWnFMUERJU2VnZ2RRckFXZHNCVEg0NUtUOGhoazJLUWEtWk1CcFVaM3UtYVFSV3gxTDlpeEhETVVmcmtTZC1xSXZtbjZqQkVQTUVSZ1had2E1MXpkQTMybkhMT1hFWHoweVZJdUZucUxGYUVjY2dfVlg1QTFsYmpBZUhVTFRmV28tY3FMcmR5UHFXRWg5OVpHRGtHX2FIQndqNGVobTRGSFNLdDcweDFFcDlQai1lMHhYaEQyaWhJUFRMNktRV2NhNzF5dDRv",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQSzlDdVdvWnFMUERJU2VnZ2RRckFXZHNCVEg0NUtUOGhoazJLUWEtWk1CcFVaM3UtYVFSV3gxTDlpeEhETVVmcmtTZC1xSXZtbjZqQkVQTUVSZ1had2E1MXpkQTMybkhMT1hFWHoweVZJdUZucUxGYUVjY2dfVlg1QTFsYmpBZUhVTFRmV28tY3FMcmR5UHFXRWg5OVpHRGtHX2FIQndqNGVobTRGSFNLdDcweDFFcDlQai1lMHhYaEQyaWhJUFRMNktRV2NhNzF5dDRvSUl1bTFWeDd2MkV3SHpwVXd3WTVMWU1weFBB?oc=5",
+      "source": "Google News",
+      "date": "Fri, 12 Jun 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-11T05:56:54.705503+00:00"
+    },
+    {
+      "id": "f05fcfd725d564a8",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Lux. Après des mois de fermeture, l’agence postale a rouvert avec des changements - Le JSL",
+      "extrait": "TITRE: Lux. Après des mois de fermeture, l’agence postale a rouvert avec des changements - Le JSL SOURCE: Google News DATE: Fri, 12 Jun 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMiugFBVV95cUxOT0h6Ry1mOENuRUwydXg4MW0tMmppa21uLTE4d0dqUnRvSUZ1RVBUSmdPV2hYRDV6aWx6amREbS1IRWRvSTlUeFJZaWVnVC1aaUJ1eHFScjFMYktLMGVmdHF3cWs4SVdQSEVxbldYejFwbmZ2d25oXzN1bVo0eXYyaXVTNjFYbE8wbkpvRWI2YllpOS1xM0lUSHJiODlPRWhoR1J2SGNDeENKOFJnYnRIM2dhQ0NXTm84bXc?oc=5 <a href=\"https://news.google.com/rss/articl",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOT0h6Ry1mOENuRUwydXg4MW0tMmppa21uLTE4d0dqUnRvSUZ1RVBUSmdPV2hYRDV6aWx6amREbS1IRWRvSTlUeFJZaWVnVC1aaUJ1eHFScjFMYktLMGVmdHF3cWs4SVdQSEVxbldYejFwbmZ2d25oXzN1bVo0eXYyaXVTNjFYbE8wbkpvRWI2YllpOS1xM0lUSHJiODlPRWhoR1J2SGNDeENKOFJnYnRIM2dhQ0NXTm84bXc?oc=5",
+      "source": "Google News",
+      "date": "Fri, 12 Jun 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-11T05:57:03.000236+00:00"
+    },
+    {
       "id": "c2ce6b1af9e419c6",
       "banque": "Crédit Agricole",
       "departement": null,
@@ -12205,6 +12270,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:37:21.267572+00:00"
+    },
+    {
+      "id": "df53afdafc1e2a34",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Ferme des Caps en Côtes-d’Armor : de l’élevage bovin à la brasserie paysanne - Actu.fr",
+      "extrait": "TITRE: Ferme des Caps en Côtes-d’Armor : de l’élevage bovin à la brasserie paysanne - Actu.fr SOURCE: Google News DATE: Fri, 10 Jul 2026 16:08:01 GMT URL: https://news.google.com/rss/articles/CBMiwwFBVV95cUxNVklzMlFLNS01TU9JblR5X3FPRUpqSzVBZC1LVlhzazhGZjBKbS1SZVdmSkZLeWhxWlo0SURSZUJteksxVlU4V0NNR3UzcTRvbVNRbGJIbEktam1iNS1nbVdtcUgwTnpJZURYSExaNmdaYmExWFJoNXI0UnN3TWM5YnM5OVZTZUt6SGpLS2hZWmhhR2FFd1ZSbW43bGNmUWIwc2J2YTZ2S3ZoWHhTMHc5djBpc1hmTkc0eGtKaEJLT0hBTTg?oc=5 <a href=\"https://news.google.com/rs",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNVklzMlFLNS01TU9JblR5X3FPRUpqSzVBZC1LVlhzazhGZjBKbS1SZVdmSkZLeWhxWlo0SURSZUJteksxVlU4V0NNR3UzcTRvbVNRbGJIbEktam1iNS1nbVdtcUgwTnpJZURYSExaNmdaYmExWFJoNXI0UnN3TWM5YnM5OVZTZUt6SGpLS2hZWmhhR2FFd1ZSbW43bGNmUWIwc2J2YTZ2S3ZoWHhTMHc5djBpc1hmTkc0eGtKaEJLT0hBTTg?oc=5",
+      "source": "Google News",
+      "date": "Fri, 10 Jul 2026 16:08:01 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-11T05:57:00.938993+00:00"
     },
     {
       "id": "ecd1cbdc98c8b031",
