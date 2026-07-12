@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T06:06:19.372246+00:00",
+  "generated_at": "2026-07-12T06:26:11.000033+00:00",
   "departements": {
     "01": {
       "nom": "Ain",
@@ -10619,6 +10619,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:43:39.493367+00:00"
+    },
+    {
+      "id": "12559f1ddc0fda49",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "\"Ça n'a aucun sens\" : en Haute-Vienne, des habitants mobilisés contre la fermeture de leur bureau de poste - ici.fr",
+      "extrait": "TITRE: \"Ça n'a aucun sens\" : en Haute-Vienne, des habitants mobilisés contre la fermeture de leur bureau de poste - ici.fr SOURCE: Google News DATE: Sat, 11 Jul 2026 15:38:52 GMT URL: https://news.google.com/rss/articles/CBMi8AFBVV95cUxOWXZENlRqbkVSRE9nN29VN1ZRdmxWRGZhOGxBRkEteFRTVlYzcEtMNEJFclRYOVM2Ykd4WUtxc0tiZExBT0Q1d0tNWUJOOTBqM3N5M0dCTUVzNEdfS1FMUXFXV0duMXIzNWJmT0NHZURoei1JVU54eWZ1cWx6Vjc5WDZYMi1uRU4wdzRwaWZPSnVnMEpnYXNiUlNmSElUVWx5UjRhMDYyR1M3WVMxckJ1OV9IN21Gdnk2N0Y0STI4VW5TRlVvbkw5LXhWc1J",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOWXZENlRqbkVSRE9nN29VN1ZRdmxWRGZhOGxBRkEteFRTVlYzcEtMNEJFclRYOVM2Ykd4WUtxc0tiZExBT0Q1d0tNWUJOOTBqM3N5M0dCTUVzNEdfS1FMUXFXV0duMXIzNWJmT0NHZURoei1JVU54eWZ1cWx6Vjc5WDZYMi1uRU4wdzRwaWZPSnVnMEpnYXNiUlNmSElUVWx5UjRhMDYyR1M3WVMxckJ1OV9IN21Gdnk2N0Y0STI4VW5TRlVvbkw5LXhWc1Jhd1YzU19pb0lxaVl5TkZ3ZnVGSGZpV25GZ2F5M1R4eURGYXo?oc=5",
+      "source": "Google News",
+      "date": "Sat, 11 Jul 2026 15:38:52 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-12T06:17:38.137231+00:00"
     },
     {
       "id": "f140b51784691dd3",
