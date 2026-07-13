@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T06:26:11.000033+00:00",
+  "generated_at": "2026-07-13T07:16:55.528969+00:00",
   "departements": {
     "01": {
       "nom": "Ain",
@@ -193,11 +193,11 @@
     "21": {
       "nom": "Côte-d'Or",
       "region": "Bourgogne-Franche-Comté",
-      "count": 2,
+      "count": 3,
       "total_agences": 26,
-      "precise_count": 2,
+      "precise_count": 3,
       "unlocated_count": 0,
-      "estimated_count": 2
+      "estimated_count": 3
     },
     "22": {
       "nom": "Côtes-d'Armor",
@@ -508,11 +508,11 @@
     "56": {
       "nom": "Morbihan",
       "region": "Bretagne",
-      "count": 3,
+      "count": 4,
       "total_agences": 56,
-      "precise_count": 3,
+      "precise_count": 4,
       "unlocated_count": 0,
-      "estimated_count": 3
+      "estimated_count": 4
     },
     "57": {
       "nom": "Moselle",
@@ -581,7 +581,7 @@
       "nom": "Pyrénées-Atlantiques",
       "region": "Nouvelle-Aquitaine",
       "count": 0,
-      "total_agences": 58,
+      "total_agences": 59,
       "precise_count": 0,
       "unlocated_count": 0,
       "estimated_count": 0
@@ -616,11 +616,11 @@
     "68": {
       "nom": "Haut-Rhin",
       "region": "Grand Est",
-      "count": 2,
+      "count": 3,
       "total_agences": 32,
-      "precise_count": 2,
+      "precise_count": 3,
       "unlocated_count": 0,
-      "estimated_count": 2
+      "estimated_count": 3
     },
     "69": {
       "nom": "Rhône",
@@ -1072,9 +1072,9 @@
     "68": {
       "departement": "68",
       "nom": "Haut-Rhin",
-      "precise_count": 2,
+      "precise_count": 3,
       "unlocated_count": 0,
-      "estimated_count": 2,
+      "estimated_count": 3,
       "department_signal_count": 0,
       "signals": []
     },
@@ -1162,18 +1162,18 @@
     "56": {
       "departement": "56",
       "nom": "Morbihan",
-      "precise_count": 3,
+      "precise_count": 4,
       "unlocated_count": 0,
-      "estimated_count": 3,
+      "estimated_count": 4,
       "department_signal_count": 0,
       "signals": []
     },
     "21": {
       "departement": "21",
       "nom": "Côte-d'Or",
-      "precise_count": 2,
+      "precise_count": 3,
       "unlocated_count": 0,
-      "estimated_count": 2,
+      "estimated_count": 3,
       "department_signal_count": 0,
       "signals": []
     },
@@ -1318,8 +1318,8 @@
     },
     {
       "region": "Bretagne",
-      "articles": 19,
-      "fermetures": 13,
+      "articles": 20,
+      "fermetures": 14,
       "projets": 5,
       "fusions": 0,
       "types": [
@@ -1336,7 +1336,7 @@
     },
     {
       "region": "Hauts-de-France",
-      "articles": 16,
+      "articles": 17,
       "fermetures": 9,
       "projets": 4,
       "fusions": 0,
@@ -1353,8 +1353,8 @@
     },
     {
       "region": "Bourgogne-Franche-Comté",
-      "articles": 16,
-      "fermetures": 13,
+      "articles": 17,
+      "fermetures": 14,
       "projets": 3,
       "fusions": 0,
       "types": [
@@ -1406,6 +1406,23 @@
       "nb_departements": 3
     },
     {
+      "region": "Grand Est",
+      "articles": 7,
+      "fermetures": 7,
+      "projets": 0,
+      "fusions": 0,
+      "types": [
+        "Fermeture"
+      ],
+      "departements": [
+        "55",
+        "57",
+        "67",
+        "68"
+      ],
+      "nb_departements": 4
+    },
+    {
       "region": "Normandie",
       "articles": 7,
       "fermetures": 4,
@@ -1421,23 +1438,6 @@
         "76"
       ],
       "nb_departements": 3
-    },
-    {
-      "region": "Grand Est",
-      "articles": 6,
-      "fermetures": 6,
-      "projets": 0,
-      "fusions": 0,
-      "types": [
-        "Fermeture"
-      ],
-      "departements": [
-        "55",
-        "57",
-        "67",
-        "68"
-      ],
-      "nb_departements": 4
     },
     {
       "region": "Nouvelle-Aquitaine",
@@ -2094,7 +2094,7 @@
         }
       ],
       "controle_sirene": {
-        "etat_administratif": "A",
+        "etat_administratif": null,
         "siret": null,
         "source": "SIRENE"
       },
@@ -3263,7 +3263,7 @@
       "statut": "projet",
       "statut_temporel": "a_venir",
       "date_fermeture_approx": 0,
-      "fiabilite": 3,
+      "fiabilite": 4,
       "lat": 50.710728,
       "lon": 2.232719,
       "citation": "L’agence du Crédit Agricole de Wizernes va fermer en décembre - La Voix du Nord",
@@ -3272,6 +3272,13 @@
       "commune_originale": null,
       "created_at": "2026-07-06T08:05:11.833712+00:00",
       "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOSnRYQ25kU0pNcExPcFc0c2hLQ1hpN3MyMWZGdUU2TzVYNlNUOU53RXQyUXBHcUNpTzFxdmhEa2xhY1RhN01ULW1IRDNHNXlZQ2syTy1PcmdzOTlxMHBqNmpPeEVXYnNRVzBTNFF6OTl4U2g3X2pqUlhFUlp3SEpGU3dRTG5NcE1DRFhhMUNjWlZaSzlrdWxNT09JMjNvR0dQak9uTmlyaTQzLXJUSmZLaXpNSkZ6aXM3VkxhY1kxaHJuQWktVDEzdWljZU9mNDkx?oc=5",
+          "titre": "Les élus de Wizernes sont mécontents de la fermeture annoncée du Crédit Agricole dans la commune - La Voix du Nord",
+          "source": "Google News",
+          "date": "Sun, 12 Jul 2026 12:53:32 GMT",
+          "tier": "D"
+        },
         {
           "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOTl85bUlvdno4UHd5VVZHU0F0cXBhU0dDUF96aGdObkFxZTJSQUdWSFZ5c3BQZG9LT3Nhb2VhSF9uUVNqYlAteXpnQjdIaUpTVjBpbkZUbHNIOVJsX3JWYjlacGVLa2tjQk0yd0hqOUdkekpQZmlTeGZPY3dQdFEwbUlKaHRkQmlGZzY5VldMMmtpUnZ5MzZfNzQ3V2c0WGVjTHpsQm9hQ2JvcGlOTWRVY1kwbER2b1E?oc=5",
           "titre": "L’agence du Crédit Agricole de Wizernes va fermer en décembre - La Voix du Nord",
@@ -5806,6 +5813,114 @@
         "source": "SIRENE"
       },
       "region": "Bourgogne-Franche-Comté"
+    },
+    {
+      "id": "d1953a49410fbeda",
+      "banque": "BNP Paribas",
+      "commune": "Coëtquidan",
+      "code_insee": "56226",
+      "departement": "56",
+      "type": "fermeture",
+      "date_annonce": "Fri, 05 Jun 2026 07:00:00 GMT",
+      "date_fermeture": "2026-06-30",
+      "statut": "confirmé",
+      "statut_temporel": "deja_fermee",
+      "date_fermeture_approx": 1,
+      "fiabilite": 4,
+      "lat": 47.951055,
+      "lon": -2.150881,
+      "citation": "À Coëtquidan, l'agence bancaire BNP Paribas ferme ses portes fin juin 2026",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "created_at": "2026-07-13T06:50:57.512479+00:00",
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOSTB0VmZSUm5Eb1dHLXk3TlRGZ2lIZTF5Z2lFc3NIMHdVcHVrd2Y3WlJmN3dDdkNHSG94WkR2dzJYb2hSUGxSY19DX21jUHRkMkZtc2tzU2lzb0xvMHpzM3pybHVWMUJkZTdVMnpnTGhaUEJGZDBsLVVfSEluODBVdVV6NTlEODh6NGRhRzR6RTBSSm1OMnhKUXl6VzdQUThVcFlmVnNpTTZDVEdBTkRzbXpDLUJteDJaem1KWnV0N2hzaFRWTnVMdTB2ZmxfdVlOd1NoWUdNX3pNbUdETXc5dFBKaWQ1Zzh0S1lQSTl3?oc=5",
+          "titre": "À Coëtquidan, l’agence bancaire BNP Paribas ferme ses portes fin juin 2026 - Ouest-France",
+          "source": "Google News",
+          "date": "Fri, 05 Jun 2026 07:00:00 GMT",
+          "tier": "D"
+        }
+      ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
+      "region": "Bretagne"
+    },
+    {
+      "id": "e2f8216461e27295",
+      "banque": "Crédit Municipal",
+      "commune": "Dijon",
+      "code_insee": "21231",
+      "departement": "21",
+      "type": "fermeture",
+      "date_annonce": "Thu, 12 Dec 2024 08:00:00 GMT",
+      "date_fermeture": "2026-12-31",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 1,
+      "fiabilite": 4,
+      "lat": 47.331953,
+      "lon": 5.033601,
+      "citation": "L'agence bancaire du Crédit municipal fermera fin 2026, mais pas le service de prêt sur gages",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "created_at": "2026-07-13T06:53:52.964067+00:00",
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNQmw1N3k1aGZ5MUkzbW5GQ1g5VUdnbkctN0VZNW9xSkZ1N1NZSjR6Rk83aVg2WXhYTGRkUjV0TS1QX1o1cXZGd05rOFNZZENna0Z0d2ROTkpHWGlLMlIyNzJ3dWl2dTdGY0V5M0FDVHRTSGFDY0U0aXNmc0RscEszd25GY2ZiV3lyWnBPM3Yza1d5MnEtR0RPTWdaejljd1cwYVJ6dFN4RzZHSjN5eVA3eGEzREthTlNBMDNXSC1ua3BuWHE5Y2p3eFpNUlhpeFljUmhUSHRR?oc=5",
+          "titre": "Dijon. L’agence bancaire du Crédit municipal fermera fin 2026, mais pas le service de prêt sur gages - Le Bien Public",
+          "source": "Google News",
+          "date": "Thu, 12 Dec 2024 08:00:00 GMT",
+          "tier": "D"
+        }
+      ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
+      "region": "Bourgogne-Franche-Comté"
+    },
+    {
+      "id": "f56382069e48ffaf",
+      "banque": "CIC",
+      "commune": "Neuf-Brisach",
+      "code_insee": "68231",
+      "departement": "68",
+      "type": "fermeture",
+      "date_annonce": "Sat, 04 Jul 2026 03:02:23 GMT",
+      "date_fermeture": "2026-07-04",
+      "statut": "confirmé",
+      "statut_temporel": "deja_fermee",
+      "date_fermeture_approx": 0,
+      "fiabilite": 5,
+      "lat": 48.017387,
+      "lon": 7.527629,
+      "citation": "L'agenge CIC a définitivement fermé ses portes",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "created_at": "2026-07-13T07:02:05.547958+00:00",
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOYThoZHJnczM0XzdNSnZGQkNRME42aFVEOXNFaFM2ZDhlZHdwekNyb0dMMl9WZ2ZfZVpOSWlSenZqVlRrRjZLc1BXV2U2MkdkSndwcUFmNmk4RWg0bjJJMTdIcEgwekRUTjBNMzBVbFBuOWN5ZVFKc3VfUEkzdWREQ2pCamdxMmRoang4OTFn?oc=5",
+          "titre": "Neuf-Brisach. L'agenge CIC a définitivement fermé ses portes - DNA",
+          "source": "Google News",
+          "date": "Sat, 04 Jul 2026 03:02:23 GMT",
+          "tier": "D"
+        }
+      ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
+      "region": "Grand Est"
     }
   ],
   "closures_unlocated": [
@@ -10075,6 +10190,32 @@
       "created_at": "2026-06-25T15:23:34.778589+00:00"
     },
     {
+      "id": "8805adf138120361",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Nouvelles frappes dans le Golfe après l'annonce de la fermeture d'Ormuz par l'Iran - Boursorama",
+      "extrait": "TITRE: Nouvelles frappes dans le Golfe après l'annonce de la fermeture d'Ormuz par l'Iran - Boursorama SOURCE: Google News DATE: Sun, 12 Jul 2026 18:45:57 GMT URL: https://news.google.com/rss/articles/CBMiigJBVV95cUxPaXhWRGFYcjZ5c2dzYXpXRWhqUWlVNUxHTWZvRkFFcjF5SGs0V1VIaEdqMXVDVW5HZTR6MzBIZDgxX2ZMMWY0WV91azF6OXMxdVIwbFRBZHdKNHlZd0VQVTJxU1JRTUFuZUNGdTh4TkJGZUVKZ2pYOWpTRFN3S3RuNS1ZN09FbnBxYmRLTHVZaGJlbDF4TG1RN3VXT1c3YlUya1R3c0FWR09FNGtFaGN5TXNQU3J6T2tJT25iWEhSRWI5ckt4cnZZR2lESy15a0g3UG9OX2liVVFYNW5",
+      "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxPaXhWRGFYcjZ5c2dzYXpXRWhqUWlVNUxHTWZvRkFFcjF5SGs0V1VIaEdqMXVDVW5HZTR6MzBIZDgxX2ZMMWY0WV91azF6OXMxdVIwbFRBZHdKNHlZd0VQVTJxU1JRTUFuZUNGdTh4TkJGZUVKZ2pYOWpTRFN3S3RuNS1ZN09FbnBxYmRLTHVZaGJlbDF4TG1RN3VXT1c3YlUya1R3c0FWR09FNGtFaGN5TXNQU3J6T2tJT25iWEhSRWI5ckt4cnZZR2lESy15a0g3UG9OX2liVVFYNW5Gci1fVVFwSnA2NmNUZjNCUXYydlRWLThwNXlGWWtiaDhBOFdKUWRoT0hJT3dGd9IBigJBVV95cUxPaXhWRGFYcjZ5c2dzYXpXRWhqUWlVNUxHTWZvRkFFcjF5SGs0V1VIaEdqMXVDVW5HZTR6MzBIZDgxX2ZMMWY0WV91azF6OXMxdVIwbFRBZHdKNHlZd0VQVTJxU1JRTUFuZUNGdTh4TkJGZUVKZ2pYOWpTRFN3S3RuNS1ZN09FbnBxYmRLTHVZaGJlbDF4TG1RN3VXT1c3YlUya1R3c0FWR09FNGtFaGN5TXNQU3J6T2tJT25iWEhSRWI5ckt4cnZZR2lESy15a0g3UG9OX2liVVFYNW5Gci1fVVFwSnA2NmNUZjNCUXYydlRWLThwNXlGWWtiaDhBOFdKUWRoT0hJT3dGdw?oc=5",
+      "source": "Google News",
+      "date": "Sun, 12 Jul 2026 18:45:57 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-13T06:35:26.924136+00:00"
+    },
+    {
+      "id": "87fd825eeb771c00",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Nouvelles frappes dans le Golfe après l'annonce de la fermeture d'Ormuz par l'Iran - La République des Pyrénées",
+      "extrait": "TITRE: Nouvelles frappes dans le Golfe après l'annonce de la fermeture d'Ormuz par l'Iran - La République des Pyrénées SOURCE: Google News DATE: Sun, 12 Jul 2026 05:03:22 GMT URL: https://news.google.com/rss/articles/CBMi3AFBVV95cUxOSGNqNkVvZ2RQTXh6YVNoSEk5TW5fbjRaTE5MNGE2S3NNZlZpQndNVzRpNjRzUk93MlZ6UEo1VnVubF9POXk4VWxiZWpDdUllVE8zcU9mZTBmYlB3d3drd25GSjBYamNfY1dkdW5fSjZlcy1fWC1zRndfSzh4SjVXSzZ6OHhJQktLeFYxc1BUNlFPdkNXa3F4alNnVTM2TTgzM08tNDV3NHBzWHhSeTVfUkQtaG13Y0o4eVNsVjFqTGlIdGdqd205Nl9NUGV2T0F",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOSGNqNkVvZ2RQTXh6YVNoSEk5TW5fbjRaTE5MNGE2S3NNZlZpQndNVzRpNjRzUk93MlZ6UEo1VnVubF9POXk4VWxiZWpDdUllVE8zcU9mZTBmYlB3d3drd25GSjBYamNfY1dkdW5fSjZlcy1fWC1zRndfSzh4SjVXSzZ6OHhJQktLeFYxc1BUNlFPdkNXa3F4alNnVTM2TTgzM08tNDV3NHBzWHhSeTVfUkQtaG13Y0o4eVNsVjFqTGlIdGdqd205Nl9NUGV2T0F2MXNpMmotc2NBaFBD?oc=5",
+      "source": "Google News",
+      "date": "Sun, 12 Jul 2026 05:03:22 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-13T06:35:29.382896+00:00"
+    },
+    {
       "id": "072e1f560711514d",
       "banque": "Société Générale",
       "departement": null,
@@ -11659,6 +11800,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-26T07:08:05.093805+00:00"
+    },
+    {
+      "id": "ac8b414721c8a6d6",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Santé : Une bonne nouvelle pour le Conflent... On sait quand vont rouvrir les thermes de Vernet-les-Bains, fermés depuis le 21 avril - L'Indépendant",
+      "extrait": "TITRE: Santé : Une bonne nouvelle pour le Conflent... On sait quand vont rouvrir les thermes de Vernet-les-Bains, fermés depuis le 21 avril - L'Indépendant SOURCE: Google News DATE: Fri, 29 May 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMiigJBVV95cUxNWEY3UzdZbllaeTJINTFVdHU3NUtNT2R5YmxzVzhxWXZIeEtoM3hfRDFGVlpSMWlnVVo1SGo3OWpiZnN4dXZ5VDlqbHdFRThnc1pvMENpaEtpenBmYVJ4Zi1DQlhvSEhVX1hvb2xRTW1qSmZRbmFpUHVaRzFPYVNrR2hrNXNUZW4wNkRxR01fN3R4Wlg1LXIxNzdLOW0zLUtOWnFSbmhnRW5lbnJPemFwTmg2dk",
+      "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxNWEY3UzdZbllaeTJINTFVdHU3NUtNT2R5YmxzVzhxWXZIeEtoM3hfRDFGVlpSMWlnVVo1SGo3OWpiZnN4dXZ5VDlqbHdFRThnc1pvMENpaEtpenBmYVJ4Zi1DQlhvSEhVX1hvb2xRTW1qSmZRbmFpUHVaRzFPYVNrR2hrNXNUZW4wNkRxR01fN3R4Wlg1LXIxNzdLOW0zLUtOWnFSbmhnRW5lbnJPemFwTmg2dk5WSW5LR0VxVVJJRV94d05JZEdLbDhnZHFKVjdYR2ZKS0RzUERkaFcwQklmRlNmNTdRWHFDTU4wcGQ5X09CYjhWNDFzZ0tPSWtWNmF3N3FPSnhkc3pTUQ?oc=5",
+      "source": "Google News",
+      "date": "Fri, 29 May 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-13T06:35:24.814208+00:00"
     },
     {
       "id": "257613ac25ad72d9",
