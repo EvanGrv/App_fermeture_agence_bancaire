@@ -268,5 +268,15 @@
     "departement": "83",
     "code_insee": "83148",
     "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "35f76e5c4932a58c",
+    "banque": "Crédit Agricole",
+    "commune": "Changy",
+    "departement": "42",
+    "code_insee": "42049",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
   }
 ]
