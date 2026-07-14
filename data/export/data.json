@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-13T07:50:32.514608+00:00",
+  "generated_at": "2026-07-14T05:56:39.396634+00:00",
   "departements": {
     "01": {
       "nom": "Ain",
@@ -3266,7 +3266,7 @@
       "departement": "62",
       "type": "fermeture",
       "date_annonce": "Sun, 05 Jul 2026 10:14:00 GMT",
-      "date_fermeture": null,
+      "date_fermeture": "2026-12-31",
       "statut": "projet",
       "statut_temporel": "a_venir",
       "date_fermeture_approx": 0,
