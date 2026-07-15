@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14T05:56:39.396634+00:00",
+  "generated_at": "2026-07-15T05:53:29.138997+00:00",
   "departements": {
     "01": {
       "nom": "Ain",
@@ -11050,6 +11050,19 @@
       "created_at": "2026-06-25T15:44:59.612193+00:00"
     },
     {
+      "id": "015d3157597b8e47",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Saint-Clément-des-Levées. Une possible fermeture de La Poste | Courrier de l'Ouest - Ouest-France",
+      "extrait": "TITRE: Saint-Clément-des-Levées. Une possible fermeture de La Poste | Courrier de l'Ouest - Ouest-France SOURCE: Google News DATE: Sat, 06 Jun 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMiggJBVV95cUxPT0RjcndkeHA1azdEQ1ZjMFhieE9aUE5tXzBZV0dDdEg1Szd4UzN1UDNXQlctVndkQ0NHYXZXWmtnRElFSmlUMHlQRUs0T1gxSzYtVGpVUFpXQTd5THVTMjNDMzJxeFg2MlRGOUJEWk9yNm04R2IxalRadktJV01hdnVObXNkV055Zld6ZFpHaExqUHFhbWotRU1CMl9JTGtYTlgycVZqUVpXMFlMT1ZzVHhJeG1zSnlmMzJWbGJFVXdEbk1LWUxKWVo4SGRkN2MxQ21EV25CU3g2T",
+      "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPT0RjcndkeHA1azdEQ1ZjMFhieE9aUE5tXzBZV0dDdEg1Szd4UzN1UDNXQlctVndkQ0NHYXZXWmtnRElFSmlUMHlQRUs0T1gxSzYtVGpVUFpXQTd5THVTMjNDMzJxeFg2MlRGOUJEWk9yNm04R2IxalRadktJV01hdnVObXNkV055Zld6ZFpHaExqUHFhbWotRU1CMl9JTGtYTlgycVZqUVpXMFlMT1ZzVHhJeG1zSnlmMzJWbGJFVXdEbk1LWUxKWVo4SGRkN2MxQ21EV25CU3g2TmFCeTZNVlVvY0JtSnYwdktIaHhjMF9iWm4zcnB6eWFKUWN2eWR5bVE?oc=5",
+      "source": "Google News",
+      "date": "Sat, 06 Jun 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-15T05:46:16.776998+00:00"
+    },
+    {
       "id": "7350b620de213135",
       "banque": "Société Générale",
       "departement": null,
@@ -13752,6 +13765,19 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:35:55.739212+00:00"
+    },
+    {
+      "id": "f06a075fdf2ff3f0",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Les bénéfices de Goldman bondissent grâce à l'essor des activités de transactions et à la vague de fusions-acq - Boursorama",
+      "extrait": "TITRE: Les bénéfices de Goldman bondissent grâce à l'essor des activités de transactions et à la vague de fusions-acq - Boursorama SOURCE: Google News DATE: Tue, 14 Jul 2026 11:27:44 GMT URL: https://news.google.com/rss/articles/CBMiqAJBVV95cUxQTHUyb1NOQXhDQ3R4NTJDeWNIM3VFaVpqRFFONFh0X3FZWkloZVpCY240blNpbDNPdnFQVVg5cFJ5R1V5SDc0b3VmWGphQWotdlJ5WHV0eUJUMmFQSHB1Vy1kWkRzQlpIWXhMNFlCbU5fVDVOTEVRdVNGNTBYeG81ZW80VmdHZzRCb25GRjNpdlRndUVaZHNVQmRqUU5oaWE0aDFSc0dmYU1CRHBZME5DcDlxeXczSVd0anlhMmVtT3lKR1hvcnV",
+      "url": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxQTHUyb1NOQXhDQ3R4NTJDeWNIM3VFaVpqRFFONFh0X3FZWkloZVpCY240blNpbDNPdnFQVVg5cFJ5R1V5SDc0b3VmWGphQWotdlJ5WHV0eUJUMmFQSHB1Vy1kWkRzQlpIWXhMNFlCbU5fVDVOTEVRdVNGNTBYeG81ZW80VmdHZzRCb25GRjNpdlRndUVaZHNVQmRqUU5oaWE0aDFSc0dmYU1CRHBZME5DcDlxeXczSVd0anlhMmVtT3lKR1hvcnVFYmpXS1FpTGYwanZnMVMwck9tc3pSLTVmMjVOY1dQbUtKSG9Pb3RRU3k1TmtHbDZRMzRwdHh4QmVoZEJ3blo2TDNTdWlzNEZ0Tmh5eldwLTZHZ3hnQmZHV3lnWDhONlRwU9IBqAJBVV95cUxQTHUyb1NOQXhDQ3R4NTJDeWNIM3VFaVpqRFFONFh0X3FZWkloZVpCY240blNpbDNPdnFQVVg5cFJ5R1V5SDc0b3VmWGphQWotdlJ5WHV0eUJUMmFQSHB1Vy1kWkRzQlpIWXhMNFlCbU5fVDVOTEVRdVNGNTBYeG81ZW80VmdHZzRCb25GRjNpdlRndUVaZHNVQmRqUU5oaWE0aDFSc0dmYU1CRHBZME5DcDlxeXczSVd0anlhMmVtT3lKR1hvcnVFYmpXS1FpTGYwanZnMVMwck9tc3pSLTVmMjVOY1dQbUtKSG9Pb3RRU3k1TmtHbDZRMzRwdHh4QmVoZEJ3blo2TDNTdWlzNEZ0Tmh5eldwLTZHZ3hnQmZHV3lnWDhONlRwUw?oc=5",
+      "source": "Google News",
+      "date": "Tue, 14 Jul 2026 11:27:44 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-15T05:46:14.232285+00:00"
     },
     {
       "id": "f3e4bdde8d9346d4",
