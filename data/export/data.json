@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T05:53:29.138997+00:00",
+  "generated_at": "2026-07-16T06:13:08.568860+00:00",
   "departements": {
     "01": {
       "nom": "Ain",
@@ -589,11 +589,11 @@
     "65": {
       "nom": "Hautes-Pyrénées",
       "region": "Occitanie",
-      "count": 0,
+      "count": 2,
       "total_agences": 11,
-      "precise_count": 0,
+      "precise_count": 2,
       "unlocated_count": 0,
-      "estimated_count": 0
+      "estimated_count": 2
     },
     "66": {
       "nom": "Pyrénées-Orientales",
@@ -1293,6 +1293,15 @@
       "estimated_count": 1,
       "department_signal_count": 0,
       "signals": []
+    },
+    "65": {
+      "departement": "65",
+      "nom": "Hautes-Pyrénées",
+      "precise_count": 2,
+      "unlocated_count": 0,
+      "estimated_count": 2,
+      "department_signal_count": 0,
+      "signals": []
     }
   },
   "regions": [
@@ -1440,6 +1449,25 @@
       "nb_departements": 3
     },
     {
+      "region": "Occitanie",
+      "articles": 6,
+      "fermetures": 1,
+      "projets": 2,
+      "fusions": 2,
+      "types": [
+        "Fermeture",
+        "Projet",
+        "Fusion"
+      ],
+      "departements": [
+        "12",
+        "46",
+        "65",
+        "82"
+      ],
+      "nb_departements": 4
+    },
+    {
       "region": "Nouvelle-Aquitaine",
       "articles": 5,
       "fermetures": 2,
@@ -1453,23 +1481,6 @@
         "24",
         "47",
         "87"
-      ],
-      "nb_departements": 3
-    },
-    {
-      "region": "Occitanie",
-      "articles": 4,
-      "fermetures": 0,
-      "projets": 2,
-      "fusions": 1,
-      "types": [
-        "Projet",
-        "Fusion"
-      ],
-      "departements": [
-        "12",
-        "46",
-        "82"
       ],
       "nb_departements": 3
     },
@@ -5964,6 +5975,78 @@
         "source": "SIRENE"
       },
       "region": "Auvergne-Rhône-Alpes"
+    },
+    {
+      "id": "fdb3bfba8d8fe977",
+      "banque": "Société Générale",
+      "commune": "Séméac",
+      "code_insee": "65417",
+      "departement": "65",
+      "type": "fermeture",
+      "date_annonce": "Thu, 16 Jul 2026 04:03:00 GMT",
+      "date_fermeture": "2026-07-16",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 1,
+      "fiabilite": 5,
+      "lat": 43.225324,
+      "lon": 0.104643,
+      "citation": "la banque de Séméac ferme, ses clients redirigés vers Tarbes et Odos",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "created_at": "2026-07-16T06:02:24.444860+00:00",
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQUXRsTkhweUNpQ19CQ2FPNDF1S1QzUDVPSDhOMURhRUh2eEUzMkRoMWY3dFZjOGs2cjNQX24xWDVJZ011SVliN3VlQXhXZDB3MTZ2bU1hWkFXeUQ5M0o5bjAyWEJ5bWhKLWRQRjVQQnlUVFMxMTFJUFRZX0V4VXQ2NGhHSkJGY1huYVFFeDNMWC1HUXY2SHZOTGRTd3NralkxaVFQbVNFTy1paXlSNWxXM2htWHFsZ3M?oc=5",
+          "titre": "SG Courtois : la banque de Séméac ferme, ses clients redirigés vers Tarbes et Odos ! - La Semaine des Pyrénées",
+          "source": "Google News",
+          "date": "Thu, 16 Jul 2026 04:03:00 GMT",
+          "tier": "D"
+        }
+      ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
+      "region": "Occitanie"
+    },
+    {
+      "id": "68ffcacb494cdc0a",
+      "banque": "Crédit Agricole",
+      "commune": "Tarbes",
+      "code_insee": "65440",
+      "departement": "65",
+      "type": "fusion",
+      "date_annonce": "Thu, 16 Jul 2026 03:58:00 GMT",
+      "date_fermeture": "2026-07-16",
+      "statut": "confirmé",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 5,
+      "lat": 43.239349,
+      "lon": 0.06402,
+      "citation": "Le Crédit Agricole ferme son agence de la place de Verdun et regroupe ses équipes à l'Arsenal",
+      "adresse": "place de Verdun",
+      "agence_localisation": null,
+      "commune_originale": null,
+      "created_at": "2026-07-16T06:02:28.705655+00:00",
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQVndlSlhxZkIycEQ3aVhVRUZqLWU0Z180TTRHNzRzcXBFUkcxRmg0RG0tSVBKbHp1YXNSeWxiY3hWbF93SDJBUlpjRlpZX09aWUp4cGVlTUZtSlg0RzlxdFpWODRtd0NZUFVtY0NILW8tcUliOGh2SXNmV1RMdDZXRktXdk42VnJEQnVFT3FTRFpremNpZkVwanpfdHBfcG5wcjFYZVp0d0RZX1c1bzRwanZsdGowSFZHMmlQekstamRXY1BEUlNxM3pkSWdOUTJLSWc?oc=5",
+          "titre": "Tarbes - Le Crédit Agricole ferme son agence de la place de Verdun et regroupe ses équipes à l'Arsenal - La Semaine des Pyrénées",
+          "source": "Google News",
+          "date": "Thu, 16 Jul 2026 03:58:00 GMT",
+          "tier": "D"
+        }
+      ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
+      "region": "Occitanie"
     }
   ],
   "closures_unlocated": [
@@ -14714,6 +14797,19 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-29T09:10:49.960758+00:00"
+    },
+    {
+      "id": "9f396a548a76c1b9",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "« C’est un service public vital pour notre village » : une manifestation organisée pour empêcher la suppression du bureau de poste dans le centre Var - Nice-Matin",
+      "extrait": "TITRE: « C’est un service public vital pour notre village » : une manifestation organisée pour empêcher la suppression du bureau de poste dans le centre Var - Nice-Matin SOURCE: Google News DATE: Mon, 13 Jul 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMingJBVV95cUxQUHVBSWV0eVhvNXZrRjFvRFRHMjZ1bkdKbk91allLNTA1T3ltVHYyMlJ0SnhDdERUWUlseGtXTnJ1YjN6NVM0OGpBNm5FTnNxR0tuRjR6RjhUV2FTQTdxZ1dYeUlzS19fYUlyWnE3Sm5iR1JPV05CZVBfVG1BSGM3aWxCVURTVmxhLXRrN3pYQ2taZHFTTXR6R0RMR3FXM3lSMUQ0TUdOTnZi",
+      "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxQUHVBSWV0eVhvNXZrRjFvRFRHMjZ1bkdKbk91allLNTA1T3ltVHYyMlJ0SnhDdERUWUlseGtXTnJ1YjN6NVM0OGpBNm5FTnNxR0tuRjR6RjhUV2FTQTdxZ1dYeUlzS19fYUlyWnE3Sm5iR1JPV05CZVBfVG1BSGM3aWxCVURTVmxhLXRrN3pYQ2taZHFTTXR6R0RMR3FXM3lSMUQ0TUdOTnZiUUdlaDQ5MTNSUERyVTJrdDhSYkdRcEMzRWFrM0FVX2diNlBvenBvaTlVNTFXRGFNVWI5VW1SUElQSS01S1B6TTVJaUVrRkdTOFF5X3F0bTNqVE51dldWZG5VZ01JREFQSnZTV1ZNYURQS3lvaElwSFFpcW5B?oc=5",
+      "source": "Google News",
+      "date": "Mon, 13 Jul 2026 07:00:00 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-16T06:02:31.412147+00:00"
     },
     {
       "id": "df92455a5ed8e8fd",
