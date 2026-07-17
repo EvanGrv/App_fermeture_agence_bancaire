@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-16T06:13:08.568860+00:00",
+  "generated_at": "2026-07-17T06:10:08.940851+00:00",
   "departements": {
     "01": {
       "nom": "Ain",
       "region": "Auvergne-Rhône-Alpes",
       "count": 0,
-      "total_agences": 12,
+      "total_agences": 13,
       "precise_count": 0,
       "unlocated_count": 0,
       "estimated_count": 0
@@ -311,7 +311,7 @@
       "nom": "Hérault",
       "region": "Occitanie",
       "count": 0,
-      "total_agences": 116,
+      "total_agences": 117,
       "precise_count": 0,
       "unlocated_count": 0,
       "estimated_count": 0
@@ -320,7 +320,7 @@
       "nom": "Ille-et-Vilaine",
       "region": "Bretagne",
       "count": 1,
-      "total_agences": 103,
+      "total_agences": 102,
       "precise_count": 1,
       "unlocated_count": 0,
       "estimated_count": 1
@@ -401,7 +401,7 @@
       "nom": "Loire-Atlantique",
       "region": "Pays de la Loire",
       "count": 3,
-      "total_agences": 77,
+      "total_agences": 76,
       "precise_count": 3,
       "unlocated_count": 0,
       "estimated_count": 3
@@ -491,7 +491,7 @@
       "nom": "Meurthe-et-Moselle",
       "region": "Grand Est",
       "count": 0,
-      "total_agences": 11,
+      "total_agences": 12,
       "precise_count": 0,
       "unlocated_count": 0,
       "estimated_count": 0
@@ -554,7 +554,7 @@
       "nom": "Orne",
       "region": "Normandie",
       "count": 0,
-      "total_agences": 8,
+      "total_agences": 7,
       "precise_count": 0,
       "unlocated_count": 0,
       "estimated_count": 0
@@ -626,7 +626,7 @@
       "nom": "Rhône",
       "region": "Auvergne-Rhône-Alpes",
       "count": 0,
-      "total_agences": 51,
+      "total_agences": 52,
       "precise_count": 0,
       "unlocated_count": 0,
       "estimated_count": 0
@@ -842,7 +842,7 @@
       "nom": "Seine-Saint-Denis",
       "region": "Île-de-France",
       "count": 0,
-      "total_agences": 47,
+      "total_agences": 48,
       "precise_count": 0,
       "unlocated_count": 0,
       "estimated_count": 0
@@ -3630,7 +3630,7 @@
         }
       ],
       "controle_sirene": {
-        "etat_administratif": "A",
+        "etat_administratif": null,
         "siret": null,
         "source": "SIRENE"
       },
@@ -8260,6 +8260,19 @@
       "created_at": "2026-06-25T15:44:29.651763+00:00"
     },
     {
+      "id": "e1aa11311c56e33b",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Les établissements \"Kat As\" et \"Chez Philippe\" fermés administrativement pour un mois par la préfecture - guadeloupe.franceantilles.fr",
+      "extrait": "TITRE: Les établissements \"Kat As\" et \"Chez Philippe\" fermés administrativement pour un mois par la préfecture - guadeloupe.franceantilles.fr SOURCE: Google News DATE: Tue, 23 Jun 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMi_wFBVV95cUxPSUdUM0swQmRUWmJkTjFFVmwtczN0SmJhR0x6Vk1HZk5zUGZ6TGh5VnoyRnllT2tYQlBvVWhENTZOcmIwWVFORlhubXdwMUt1djNmR0RKV3lnTUc4QWFzc2lQN2lMN2I4WnZkQ0JKWE4yeUc2aXdGT0pVbnVmTjRrZkdiMmxiTEs5Qnhqb1BIaVBBaURkSGgwTHBWcm9Jc05EQTZTejZYQ0EzYXhweTVINTFxbUE5ZExMRWxuYVpo",
+      "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPSUdUM0swQmRUWmJkTjFFVmwtczN0SmJhR0x6Vk1HZk5zUGZ6TGh5VnoyRnllT2tYQlBvVWhENTZOcmIwWVFORlhubXdwMUt1djNmR0RKV3lnTUc4QWFzc2lQN2lMN2I4WnZkQ0JKWE4yeUc2aXdGT0pVbnVmTjRrZkdiMmxiTEs5Qnhqb1BIaVBBaURkSGgwTHBWcm9Jc05EQTZTejZYQ0EzYXhweTVINTFxbUE5ZExMRWxuYVpoYm10cnBUUjV4Ympva3A0YU03dXh1WURFQlVCb3BWYmJRaGg4T0VSZ05UN0JCOTc1Z2dCRExGMkF2YVJ0a1VOa28?oc=5",
+      "source": "Google News",
+      "date": "Tue, 23 Jun 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-17T05:59:34.929366+00:00"
+    },
+    {
       "id": "315e870b6e0174fb",
       "banque": "BNP Paribas",
       "departement": null,
@@ -8559,6 +8572,19 @@
       "created_at": "2026-07-11T05:57:09.711641+00:00"
     },
     {
+      "id": "439874ccf650e943",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Après le centre de distribution, le bureau de Poste de cette commune de la Sarthe va-t-il lui aussi fermer ? - Actu.fr",
+      "extrait": "TITRE: Après le centre de distribution, le bureau de Poste de cette commune de la Sarthe va-t-il lui aussi fermer ? - Actu.fr SOURCE: Google News DATE: Tue, 16 Jun 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMiigJBVV95cUxQWFBkRFhWSEl6cjQtQVJGUThqSkdjNDd6MTJ4Wi1RenRpWENNb2tvakFPdXhLRVJMbEE5M1pFUHJPZ0RGazZnZ2liaFFmbHBwLWFRN2lGbW9Bd0dfeXZMNmNfeUNqcTdFdi03aW5CLTBFZGlQa3h5NWNTUFZEZDZWYUdtS2NEaVUzYTlWeGVqcHNwbkF1c0JCR1BBZVFqYzhhbW13QlNhOVloLXlHWW90djRPR2dLTEZMSGRVOEctZ0ZyNEd0dC1STnJO",
+      "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxQWFBkRFhWSEl6cjQtQVJGUThqSkdjNDd6MTJ4Wi1RenRpWENNb2tvakFPdXhLRVJMbEE5M1pFUHJPZ0RGazZnZ2liaFFmbHBwLWFRN2lGbW9Bd0dfeXZMNmNfeUNqcTdFdi03aW5CLTBFZGlQa3h5NWNTUFZEZDZWYUdtS2NEaVUzYTlWeGVqcHNwbkF1c0JCR1BBZVFqYzhhbW13QlNhOVloLXlHWW90djRPR2dLTEZMSGRVOEctZ0ZyNEd0dC1STnJORy05WWdPcFZHVmpTb09nUWFibzVkZDNfdG5QMjY2N1lvUGNxaWZDRjhtbmIwVU96Y0JLT09mcU1BNmVIMGxJUQ?oc=5",
+      "source": "Google News",
+      "date": "Tue, 16 Jun 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-17T05:59:32.621228+00:00"
+    },
+    {
       "id": "f3ca59006adc7ffb",
       "banque": "Société Générale",
       "departement": null,
@@ -8739,6 +8765,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-07-03T06:46:23.038970+00:00"
+    },
+    {
+      "id": "ea25f58a7fde0857",
+      "banque": "BNP Paribas",
+      "departement": null,
+      "titre": "« C'est lamentable ! » : face à la fermeture de bureaux de Poste au Havre, la résistance s'organise - Actu.fr",
+      "extrait": "TITRE: « C'est lamentable ! » : face à la fermeture de bureaux de Poste au Havre, la résistance s'organise - Actu.fr SOURCE: Google News DATE: Tue, 09 Jun 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMi6AFBVV95cUxOa05oaWg5cnJzMVN6RTV0a2k4eVQ3MzFKTHVfcEhQQlhoVHRrZkExYllxMUhjbTRmX1pBYXM5SldPZy1DVjcyT1pjTGFfY2FRcDMtcnlBMUFnbkctOTNqbnpFcFZqbnNJT2VKQkJ5djdZeWJ0SGNaWjFhQ1czXzlocGdxWVFIZVlkNE1pdW8tWE94Mm9XSThZMDNMNWcySFNTZmRqbU5LZVhycnJZYnB3SDFUZS1zTEVtTU40ODFjdlZ3NTlVb0FDNHAxQlhRc1VLS",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOa05oaWg5cnJzMVN6RTV0a2k4eVQ3MzFKTHVfcEhQQlhoVHRrZkExYllxMUhjbTRmX1pBYXM5SldPZy1DVjcyT1pjTGFfY2FRcDMtcnlBMUFnbkctOTNqbnpFcFZqbnNJT2VKQkJ5djdZeWJ0SGNaWjFhQ1czXzlocGdxWVFIZVlkNE1pdW8tWE94Mm9XSThZMDNMNWcySFNTZmRqbU5LZVhycnJZYnB3SDFUZS1zTEVtTU40ODFjdlZ3NTlVb0FDNHAxQlhRc1VLSzFwb3BOcEQ1bUFnYmxhRDUyUkRLaktF?oc=5",
+      "source": "Google News",
+      "date": "Tue, 09 Jun 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-17T05:59:37.856719+00:00"
     },
     {
       "id": "404af3a7565bd007",
@@ -10676,6 +10715,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-07-08T06:10:48.708411+00:00"
+    },
+    {
+      "id": "3a242941ef35039f",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Morbihan : après deux mois de fermeture pour cambriolage cette poste rouvre ses portes - Actu.fr",
+      "extrait": "TITRE: Morbihan : après deux mois de fermeture pour cambriolage cette poste rouvre ses portes - Actu.fr SOURCE: Google News DATE: Sat, 30 May 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMi5AFBVV95cUxOV09VRXlkd1MybFY1NkVqWnFNM1ozNW1Yc0IxYVU5NThIVUJKakZseHQ3Z1JHYkZBZUpva0F6UkxucmlFZGxOb1hFanlGeUNBTWxQa3U4dHFsOUd1YkFkSzljbWJLWVZ0VGg4UGJhdVNkaXd1MHZJZHN3T0dqTEoyOTdmRmRIWXRZMGxaY0hJelRnRGhUS3pOS0t5TXQ0TXdNbkx1QXR4Qk13RnNrclB4aGI4QXRuTWhVRmxFczNVUmVDVGk2WlAtMEE4SGxQb2xVRmtVNExaRVFpcX",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOV09VRXlkd1MybFY1NkVqWnFNM1ozNW1Yc0IxYVU5NThIVUJKakZseHQ3Z1JHYkZBZUpva0F6UkxucmlFZGxOb1hFanlGeUNBTWxQa3U4dHFsOUd1YkFkSzljbWJLWVZ0VGg4UGJhdVNkaXd1MHZJZHN3T0dqTEoyOTdmRmRIWXRZMGxaY0hJelRnRGhUS3pOS0t5TXQ0TXdNbkx1QXR4Qk13RnNrclB4aGI4QXRuTWhVRmxFczNVUmVDVGk2WlAtMEE4SGxQb2xVRmtVNExaRVFpcXYxSWRaUjIzTXc?oc=5",
+      "source": "Google News",
+      "date": "Sat, 30 May 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-17T05:59:27.439251+00:00"
     },
     {
       "id": "ccb3451213f4ec8c",
@@ -14602,6 +14654,19 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-07-08T06:10:38.870736+00:00"
+    },
+    {
+      "id": "b4d2dac5593fca1f",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Risque : Banco BPM propose une fusion avec MPS pour créer un tiers, mais Intesa et BPER lancent une contre-offre - firstonline.info",
+      "extrait": "TITRE: Risque : Banco BPM propose une fusion avec MPS pour créer un tiers, mais Intesa et BPER lancent une contre-offre - firstonline.info SOURCE: Google News DATE: Sun, 07 Jun 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMiqwJBVV95cUxQNzVxX2pDdWNlMm9pOUtGb2l5VDhaVWQtLVgtVTFFdWlVcElnZGlQQkttODh2b3F2WWluSS1kaTNhNjRzVG5ZVm1PSnE2clVRc0s5b1BjUlFhbkFvU2pST3FpRUlSYmx3clVILUdWSlY0QWdSSUVDWC0zWUI1RmF2ZFZVRzFFLWZfanBrV0lYbk55U3VDbFNBeXROcHVpY2pTdWNud2IwRVczNlh3Y2d4Vk00cWs0cjBENnJ2VGRLUkR",
+      "url": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxQNzVxX2pDdWNlMm9pOUtGb2l5VDhaVWQtLVgtVTFFdWlVcElnZGlQQkttODh2b3F2WWluSS1kaTNhNjRzVG5ZVm1PSnE2clVRc0s5b1BjUlFhbkFvU2pST3FpRUlSYmx3clVILUdWSlY0QWdSSUVDWC0zWUI1RmF2ZFZVRzFFLWZfanBrV0lYbk55U3VDbFNBeXROcHVpY2pTdWNud2IwRVczNlh3Y2d4Vk00cWs0cjBENnJ2VGRLUkR5Y0NDbndLVnB1MGhfcVM0d21aV1FIRkQ3WHl1a1hkZmNVSXFGN3g5X0E0Z2t5ZTBFeTRWQ00wbkJwVExDTzJMVXpUaTJ0ajNYSG1IT0lxZGxZOHpydE0yQ09HUWZMOUc2SkQxUjByWEo5TQ?oc=5",
+      "source": "Google News",
+      "date": "Sun, 07 Jun 2026 07:00:00 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-17T05:59:30.174117+00:00"
     },
     {
       "id": "8e3761c030d9dd69",
