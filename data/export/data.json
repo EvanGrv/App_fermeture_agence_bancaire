@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-17T06:10:08.940851+00:00",
+  "generated_at": "2026-07-18T05:52:39.871641+00:00",
   "departements": {
     "01": {
       "nom": "Ain",
       "region": "Auvergne-Rhône-Alpes",
       "count": 0,
-      "total_agences": 13,
+      "total_agences": 14,
       "precise_count": 0,
       "unlocated_count": 0,
       "estimated_count": 0
@@ -535,11 +535,11 @@
     "59": {
       "nom": "Nord",
       "region": "Hauts-de-France",
-      "count": 4,
+      "count": 5,
       "total_agences": 86,
-      "precise_count": 4,
+      "precise_count": 5,
       "unlocated_count": 0,
-      "estimated_count": 4
+      "estimated_count": 5
     },
     "60": {
       "nom": "Oise",
@@ -1036,9 +1036,9 @@
     "59": {
       "departement": "59",
       "nom": "Nord",
-      "precise_count": 4,
+      "precise_count": 5,
       "unlocated_count": 0,
-      "estimated_count": 4,
+      "estimated_count": 5,
       "department_signal_count": 0,
       "signals": []
     },
@@ -1345,9 +1345,9 @@
     },
     {
       "region": "Hauts-de-France",
-      "articles": 17,
+      "articles": 18,
       "fermetures": 9,
-      "projets": 4,
+      "projets": 5,
       "fusions": 0,
       "types": [
         "Fermeture",
@@ -3630,7 +3630,7 @@
         }
       ],
       "controle_sirene": {
-        "etat_administratif": null,
+        "etat_administratif": "A",
         "siret": null,
         "source": "SIRENE"
       },
@@ -4746,7 +4746,7 @@
         }
       ],
       "controle_sirene": {
-        "etat_administratif": "A",
+        "etat_administratif": null,
         "siret": null,
         "source": "SIRENE"
       },
@@ -5034,7 +5034,7 @@
         }
       ],
       "controle_sirene": {
-        "etat_administratif": "A",
+        "etat_administratif": null,
         "siret": null,
         "source": "SIRENE"
       },
@@ -6047,6 +6047,42 @@
         "source": "SIRENE"
       },
       "region": "Occitanie"
+    },
+    {
+      "id": "1c2f0bf5f46303c5",
+      "banque": "Crédit Agricole",
+      "commune": "Marcoing",
+      "code_insee": "59377",
+      "departement": "59",
+      "type": "fermeture",
+      "date_annonce": "Fri, 17 Jul 2026 07:06:53 GMT",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 1,
+      "fiabilite": 4,
+      "lat": 50.120588,
+      "lon": 3.177081,
+      "citation": "L'agence du Crédit Agricole va fermer à Marcoing",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "created_at": "2026-07-18T05:40:03.224714+00:00",
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQLVYwajdLNUxYcVJkRXZtMG9ERC1pUHJGRzE4Vnp4TmlyLXBLQjhkekZDaFhRZEVUUFhJb1FKeldzanBzT0ZiaVJtY2FUU1FMdnBOT1JLZko3clpDOWdTMXIxdndLTzYxeS1Kb2o5a1dZeGpRWVNOVTh4eDVVZkpiNE10YXRnSU1hMVlveEFkbG5SRTNWMHRfMy1kS1lsU0xydEY3bkcwRG5RYnR1VFd0MGdPZW9CU0NuS0d3anhJWTRJVF9aNXlQZXNXdkNmOXNX?oc=5",
+          "titre": "L’agence du Crédit Agricole va fermer à Marcoing, les élus votent une motion contre - La Voix du Nord",
+          "source": "Google News",
+          "date": "Fri, 17 Jul 2026 07:06:53 GMT",
+          "tier": "D"
+        }
+      ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
+      "region": "Hauts-de-France"
     }
   ],
   "closures_unlocated": [
@@ -9742,6 +9778,19 @@
       "created_at": "2026-06-25T15:23:46.790389+00:00"
     },
     {
+      "id": "a7b46186c7f15aed",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Savoie : les salariés de l'usine Hafner se mobilisent contre la fermeture du site et les 168 licenciements - Revolution Permanente",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMizAFBVV95cUxNZzlyYUNJRkxuQVhWc2lYamM1bVhCR3d3RTNyUWh0RTNzMkRHa2tNV3Y1Zk1YXzZZU0s3M0owNzZ6QmI3M0ZJQjZNMWs3anp1RFBLLVlwdlFUdU1KTWY5bzh5dEptRXQ2eHM4Ymp0VkdMcWh0MlRlVDZOUFh1VEZPM0FLTUNFUHhVZ015VGRaVWtZa0trU2d6UWdQQW5GcVhwa0RodG9FNEJ4dEtGMHM0cjVzYWVkUmhCZEFvSTBGNDAwWlpTMk84eG8za0HSAdQBQVVfeXFMTjlkWVUwUl9nSEtTQjIwVnBvYnozTWNLQjNka3B4Y25uZ0RsdGdqQ05IbDFxQ0pueUpjTS1IUjJVWlRVeHNqQ1M4eDA4TmdfRUZ2dVBkRm55dlAxRVIxOGZRTk1sdk5kdVdKMDRwSmZZVWRPVVAxT0IyazRIUGIxck",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNZzlyYUNJRkxuQVhWc2lYamM1bVhCR3d3RTNyUWh0RTNzMkRHa2tNV3Y1Zk1YXzZZU0s3M0owNzZ6QmI3M0ZJQjZNMWs3anp1RFBLLVlwdlFUdU1KTWY5bzh5dEptRXQ2eHM4Ymp0VkdMcWh0MlRlVDZOUFh1VEZPM0FLTUNFUHhVZ015VGRaVWtZa0trU2d6UWdQQW5GcVhwa0RodG9FNEJ4dEtGMHM0cjVzYWVkUmhCZEFvSTBGNDAwWlpTMk84eG8za0HSAdQBQVVfeXFMTjlkWVUwUl9nSEtTQjIwVnBvYnozTWNLQjNka3B4Y25uZ0RsdGdqQ05IbDFxQ0pueUpjTS1IUjJVWlRVeHNqQ1M4eDA4TmdfRUZ2dVBkRm55dlAxRVIxOGZRTk1sdk5kdVdKMDRwSmZZVWRPVVAxT0IyazRIUGIxckRGZDZSeU9GbG12NXpBZVdtUUp2TTVwcVBHRWNvLVIzbjIzZ1VKN3pVcGJEVE92U3JidU5oRVg2cDU5YUVaSGhleEZrQWUxVS1URWZINlFQRkJyR3c?oc=5",
+      "source": "Google News",
+      "date": "Thu, 16 Jul 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "score préfiltre bas (-2)",
+      "created_at": "2026-07-18T05:40:10.173021+00:00"
+    },
+    {
       "id": "ae1e46a88bc53b86",
       "banque": "Société Générale",
       "departement": null,
@@ -10065,6 +10114,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:45:49.506438+00:00"
+    },
+    {
+      "id": "1c727d08596d1c07",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "À Sablé-sur-Sarthe, le bureau de La Poste va fermer plusieurs semaines : on vous explique comment vous organiser - Actu.fr",
+      "extrait": "TITRE: À Sablé-sur-Sarthe, le bureau de La Poste va fermer plusieurs semaines : on vous explique comment vous organiser - Actu.fr SOURCE: Google News DATE: Thu, 04 Jun 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMimgJBVV95cUxOd2RSOVNKNTFBbjVibE1zVTBlZjJCUEZHNl9pUDVxdFlESUxhODlrMU5GZkl3U005Ymh3OXh2eG55WXdNY0JMZUs2SFc1TzNMX09ocU5laTRTQS10aWI2aF8zUm43ekYzWkEteVRXZE83V2J5THJZeG9jRFJEM0RvYjVqS1NvaXhEYmUwa2hFTURHeHdrWmNrNE9FOHc5aVhoRmVVODBiY2kwTE1PRmlRMTVoQXhTRV9Rb2RrZGZHZldJYUhwYVFM",
+      "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxOd2RSOVNKNTFBbjVibE1zVTBlZjJCUEZHNl9pUDVxdFlESUxhODlrMU5GZkl3U005Ymh3OXh2eG55WXdNY0JMZUs2SFc1TzNMX09ocU5laTRTQS10aWI2aF8zUm43ekYzWkEteVRXZE83V2J5THJZeG9jRFJEM0RvYjVqS1NvaXhEYmUwa2hFTURHeHdrWmNrNE9FOHc5aVhoRmVVODBiY2kwTE1PRmlRMTVoQXhTRV9Rb2RrZGZHZldJYUhwYVFMQ3ZYOXRuWkZqY1g3Tm9zSG9BYVV3TGQ4dE04VEJzc1FhbTBMbUE3Q1owajFZajgwLXNnOUIwams5Yl9YcDc5UFdYNnd4ZUE3OFZ3dFU1Y0F6QUE?oc=5",
+      "source": "Google News",
+      "date": "Thu, 04 Jun 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-18T05:40:19.853186+00:00"
     },
     {
       "id": "1b03b38d13c263cd",
@@ -12654,6 +12716,19 @@
       "created_at": "2026-06-25T15:37:34.097781+00:00"
     },
     {
+      "id": "091051dae1ac92fe",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Incompréhension face à la fermeture temporaire de La Poste, à Scaër - Le Télégramme",
+      "extrait": "TITRE: Incompréhension face à la fermeture temporaire de La Poste, à Scaër - Le Télégramme SOURCE: Google News DATE: Fri, 17 Jul 2026 14:37:15 GMT URL: https://news.google.com/rss/articles/CBMixwFBVV95cUxQajVvRlFGWFhZNTIwS0pnaUFhODRUY2k5ZnFBTHlSMEJCNEJOQUt5YVlGX29hNFBGM0gtN1VOc2Y1THhBMzhzLURmZ3g4TnFmNU9BcHJiUzExa3VLZ1VsYmpfNnBJb0NHb0FyMTBjLWFuMjFxdFhmb0Z1LXRGUjhBaXdyNmFLRXV0Z2N3Z2psMVU2OTdqSFQtWU5KVEJUdkZKV3dtVjR1UDN0a3VlbDhtbWRudUJqakVLYWt3UmlhVHBUS0RlSG9r?oc=5 <a href=\"https://news.google.com/",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQajVvRlFGWFhZNTIwS0pnaUFhODRUY2k5ZnFBTHlSMEJCNEJOQUt5YVlGX29hNFBGM0gtN1VOc2Y1THhBMzhzLURmZ3g4TnFmNU9BcHJiUzExa3VLZ1VsYmpfNnBJb0NHb0FyMTBjLWFuMjFxdFhmb0Z1LXRGUjhBaXdyNmFLRXV0Z2N3Z2psMVU2OTdqSFQtWU5KVEJUdkZKV3dtVjR1UDN0a3VlbDhtbWRudUJqakVLYWt3UmlhVHBUS0RlSG9r?oc=5",
+      "source": "Google News",
+      "date": "Fri, 17 Jul 2026 14:37:15 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-18T05:40:09.787536+00:00"
+    },
+    {
       "id": "df4e1f2a17228f44",
       "banque": "Caisse d'Épargne",
       "departement": null,
@@ -13016,6 +13091,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:27:10.725808+00:00"
+    },
+    {
+      "id": "d756d24e66c5bb3d",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Sablé-sur-Sarthe : le bureau de poste va fermer plusieurs semaines pour des travaux de modernisation - Angers Info",
+      "extrait": "TITRE: Sablé-sur-Sarthe : le bureau de poste va fermer plusieurs semaines pour des travaux de modernisation - Angers Info SOURCE: Google News DATE: Fri, 05 Jun 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMizwFBVV95cUxQeXNwVTY5OEphQ2VybklQa3ZBRS1MRjd1dkNLWF8zXzBDM1J3NHJEMEdKalRaa0lDSGt6NVM5clJWQXh1blZ5OTF4by1sakV6MXdqM3JNV0xsZUVNajI1a0dpSHg2amx6QUkzRk9aempEWHF2N2p5ZXF5RXkxUFktUWNGZGpQQjFHMVJleEUyLTFvb1c0b3JxMTU5SnIzT19wbTZqVXVWUW56WS1GNVJhdFFIRHBLOHJ1czFGSENMTnNBOFBSSjFLVmJPaFdY",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQeXNwVTY5OEphQ2VybklQa3ZBRS1MRjd1dkNLWF8zXzBDM1J3NHJEMEdKalRaa0lDSGt6NVM5clJWQXh1blZ5OTF4by1sakV6MXdqM3JNV0xsZUVNajI1a0dpSHg2amx6QUkzRk9aempEWHF2N2p5ZXF5RXkxUFktUWNGZGpQQjFHMVJleEUyLTFvb1c0b3JxMTU5SnIzT19wbTZqVXVWUW56WS1GNVJhdFFIRHBLOHJ1czFGSENMTnNBOFBSSjFLVmJPaFdYa0XSAdQBQVVfeXFMTkNaRXJHcDFGbUM4LXotODlvbW1BZ0NMeHZXczRZQTI0WG4zeDJsMUk2M2Y2YjFodlJVYUEyUy1WQ21PcjlYT1R3ckxoTDA0bmdNQ095ZkhDUDE1WkYxMEdMY0hMdjh1MFhBTHZjcEprX0JiM21mVkhLa3htOVdScmtzQjhUWEQ5RllDNmZoaDBOYTc0Mk5BMmRETFFpWWx4bGlIWDJOV3I5MlZwaVc0YjgzUmw4U0czRk9xWWxndTZYVWZqd21ZLXpWajJHRzBLSmJpanc?oc=5",
+      "source": "Google News",
+      "date": "Fri, 05 Jun 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-18T05:40:12.663657+00:00"
     },
     {
       "id": "89e0f713c1390ffc",
@@ -15187,6 +15275,19 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:35:20.814562+00:00"
+    },
+    {
+      "id": "32fc14496bf7690a",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Fusion Ethias et Belfius : la taille n’est pas une stratégie - Trends-Tendances",
+      "extrait": "TITRE: Fusion Ethias et Belfius : la taille n’est pas une stratégie - Trends-Tendances SOURCE: Google News DATE: Fri, 17 Jul 2026 06:58:07 GMT URL: https://news.google.com/rss/articles/CBMipAFBVV95cUxPVENyT2ZRTk9NRnNCWl9ldVJhWGVvT05EbzBLYkF1LU01RjcxNXNmWVBuNUVuOHI0UzZoT1lVU2pURHZSY21fcVI5Qk9sbDRxeTE5cE5QM0V3ZGZYMTF1UHR0VFFkMXFsY29NZGp1U2pqNWlmY2wxMEJHcmdLWDFpNWthbGp4bVNLeF9LSGpIVUVrdk1STW1keW9wdWhKRVJzQVJjQg?oc=5 <a href=\"https://news.google.com/rss/articles/CBMipAFBVV95cUxPVENyT2ZRTk9NRnNCWl9ld",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPVENyT2ZRTk9NRnNCWl9ldVJhWGVvT05EbzBLYkF1LU01RjcxNXNmWVBuNUVuOHI0UzZoT1lVU2pURHZSY21fcVI5Qk9sbDRxeTE5cE5QM0V3ZGZYMTF1UHR0VFFkMXFsY29NZGp1U2pqNWlmY2wxMEJHcmdLWDFpNWthbGp4bVNLeF9LSGpIVUVrdk1STW1keW9wdWhKRVJzQVJjQg?oc=5",
+      "source": "Google News",
+      "date": "Fri, 17 Jul 2026 06:58:07 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-18T05:40:07.008101+00:00"
     },
     {
       "id": "fde04dacaca3a237",
