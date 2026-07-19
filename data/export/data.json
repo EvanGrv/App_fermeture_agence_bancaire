@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18T05:52:39.871641+00:00",
+  "generated_at": "2026-07-19T06:27:10.718221+00:00",
   "departements": {
     "01": {
       "nom": "Ain",
@@ -608,7 +608,7 @@
       "nom": "Bas-Rhin",
       "region": "Grand Est",
       "count": 1,
-      "total_agences": 169,
+      "total_agences": 170,
       "precise_count": 1,
       "unlocated_count": 0,
       "estimated_count": 1
@@ -4746,7 +4746,7 @@
         }
       ],
       "controle_sirene": {
-        "etat_administratif": null,
+        "etat_administratif": "A",
         "siret": null,
         "source": "SIRENE"
       },
@@ -5034,7 +5034,7 @@
         }
       ],
       "controle_sirene": {
-        "etat_administratif": null,
+        "etat_administratif": "A",
         "siret": null,
         "source": "SIRENE"
       },
@@ -7553,6 +7553,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:44:27.578966+00:00"
+    },
+    {
+      "id": "7db9278961021767",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "« Une contamination bactériologique » : cette piscine de Maine-et-Loire ferme pour la quatrième fois en quelques jours - Ouest-France",
+      "extrait": "TITRE: « Une contamination bactériologique » : cette piscine de Maine-et-Loire ferme pour la quatrième fois en quelques jours - Ouest-France SOURCE: Google News DATE: Wed, 15 Jul 2026 08:35:01 GMT URL: https://news.google.com/rss/articles/CBMipAJBVV95cUxNdEVTWVJ4QnNXUzIzc1dhN2NhT2V0ZTZlU2c1X3ZWYVpnRUdPLWtJN3hId2pKaHhLaDNFV3U5b2Z1THVIQ1B2XzMtOE43OEVRRG41WG5vTTR3U1d1S2FQenFmYWFsUkZ4R1VSbTdocGxUZWE4dkwzLW1aUVU0bzFKWkV1TlE4cHBMZ3djRnZDejJ2MXNldElLTk9lTm1sdWxPSHZDdmFHQXhWTDZqV09WVS1TcWR0SHJPOXpQQ3pGb",
+      "url": "https://news.google.com/rss/articles/CBMipAJBVV95cUxNdEVTWVJ4QnNXUzIzc1dhN2NhT2V0ZTZlU2c1X3ZWYVpnRUdPLWtJN3hId2pKaHhLaDNFV3U5b2Z1THVIQ1B2XzMtOE43OEVRRG41WG5vTTR3U1d1S2FQenFmYWFsUkZ4R1VSbTdocGxUZWE4dkwzLW1aUVU0bzFKWkV1TlE4cHBMZ3djRnZDejJ2MXNldElLTk9lTm1sdWxPSHZDdmFHQXhWTDZqV09WVS1TcWR0SHJPOXpQQ3pGbWtRVGh0c1ZTeW9Tc015aXB5MzhlQW9pUl9adFVwNjJ6c3Q0b1NHS2N6YzVGTkJNSG9WSHdidzZzTnM0YkVjRmlTaERmWmhuU0dzeUY4bzByM1YzVm1aSm5jWjZaTXktT3c3Y21B?oc=5",
+      "source": "Google News",
+      "date": "Wed, 15 Jul 2026 08:35:01 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-19T06:16:58.616739+00:00"
     },
     {
       "id": "52c1055c80b1875a",
@@ -11689,6 +11702,19 @@
       "created_at": "2026-06-25T15:45:51.564998+00:00"
     },
     {
+      "id": "fc4dcf82485f62ce",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Vigilance rouge canicule dans le Tarn : onze communes ferment leurs écoles, les examens du brevet et du bac sont bien maintenus - ladepeche.fr",
+      "extrait": "TITRE: Vigilance rouge canicule dans le Tarn : onze communes ferment leurs écoles, les examens du brevet et du bac sont bien maintenus - ladepeche.fr SOURCE: Google News DATE: Mon, 22 Jun 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMigwJBVV95cUxNWUdvQ2JsMWg5SVVRTGlmSmFlbkRzZzdpWFFfdmhtQTdxcHllR1hlVC1lelZEcHNUbU5hX1dhU1lEMHpPQ0p5ZEdoUnFzOU1kd08yUmdGaVBEWTRfM2tsbkEwNGYxcmxHYW9lalNMSG5PVERIMEFkMmljNlpfUlRSWkgtYmV2T2ZNc3FYeEZETXhLQTV2REZ3TVUyN2hFa3pvTTBPY1J6UTVVOU5HTUZCVHdFSzhkN1dS",
+      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNWUdvQ2JsMWg5SVVRTGlmSmFlbkRzZzdpWFFfdmhtQTdxcHllR1hlVC1lelZEcHNUbU5hX1dhU1lEMHpPQ0p5ZEdoUnFzOU1kd08yUmdGaVBEWTRfM2tsbkEwNGYxcmxHYW9lalNMSG5PVERIMEFkMmljNlpfUlRSWkgtYmV2T2ZNc3FYeEZETXhLQTV2REZ3TVUyN2hFa3pvTTBPY1J6UTVVOU5HTUZCVHdFSzhkN1dSWllMTXY5TE5WS0t2RVhJN0F5MUg1eXhnTkxkc1RDTlBHb2NFLWlSRmdZancybjZJSUE3QkhzUHFXWVpjZzdfWkl1QlZvRFY4SUtz?oc=5",
+      "source": "Google News",
+      "date": "Mon, 22 Jun 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-19T06:17:01.328853+00:00"
+    },
+    {
       "id": "4bc5a502419255ac",
       "banque": "BNP Paribas",
       "departement": null,
@@ -12714,6 +12740,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:37:34.097781+00:00"
+    },
+    {
+      "id": "54066b625c99ec72",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "À Amboise, la piscine de l’île d’Or contrainte à la fermeture pour raison sanitaire - lanouvellerepublique.fr",
+      "extrait": "TITRE: À Amboise, la piscine de l’île d’Or contrainte à la fermeture pour raison sanitaire - lanouvellerepublique.fr SOURCE: Google News DATE: Fri, 17 Jul 2026 15:44:46 GMT URL: https://news.google.com/rss/articles/CBMi0wFBVV95cUxQN0Zac2h5U1A5ZkhQa2k5Z0ZQdkVjcmdwYVdZMmdFb2xsZk5jdk52d2NxNFc5V2lESkY0V3NFZ2hhMTFRREZRLXNTNDFWMmhxX0VxblFxRGo4TWVMUV9BdEgydXZFS0EzbU9EM09TaE9HN0tQTldmZ2F5VnZZU2U3alIzQ3Z3QVJ5SWtDSDJFUEF5Mjdva0htQW04UFRUN1RrSGZGZHlTbFJSdEpFM0xpc05lRzFTYzBkYzhMZnNhM1h1ODhhTmtvTkJIZWUxMEFIe",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQN0Zac2h5U1A5ZkhQa2k5Z0ZQdkVjcmdwYVdZMmdFb2xsZk5jdk52d2NxNFc5V2lESkY0V3NFZ2hhMTFRREZRLXNTNDFWMmhxX0VxblFxRGo4TWVMUV9BdEgydXZFS0EzbU9EM09TaE9HN0tQTldmZ2F5VnZZU2U3alIzQ3Z3QVJ5SWtDSDJFUEF5Mjdva0htQW04UFRUN1RrSGZGZHlTbFJSdEpFM0xpc05lRzFTYzBkYzhMZnNhM1h1ODhhTmtvTkJIZWUxMEFIeEM0?oc=5",
+      "source": "Google News",
+      "date": "Fri, 17 Jul 2026 15:44:46 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-19T06:16:50.992407+00:00"
     },
     {
       "id": "091051dae1ac92fe",
@@ -14703,6 +14742,19 @@
       "score": 2,
       "raison": "fermeture non publiée: hors fenêtre temporelle",
       "created_at": "2026-07-13T07:40:44.452129+00:00"
+    },
+    {
+      "id": "504ea9ac44eb0840",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "L'opération de fusion-acquisition étant presque finalisée, SHB dispose de nouvelles perspectives de croissance. - Vietnam.vn",
+      "extrait": "TITRE: L'opération de fusion-acquisition étant presque finalisée, SHB dispose de nouvelles perspectives de croissance. - Vietnam.vn SOURCE: Google News DATE: Sun, 19 Jul 2026 00:47:39 GMT URL: https://news.google.com/rss/articles/CBMijgFBVV95cUxPdmVrLUdtczAwUG5zWWItWmV5TnhzS1g4Nk5FQldVanM3SG5uQlQyaVhaTUxSQ2pGN1lVSmxnaU1IdVRGcmxkaWQ3X19hdVRXay1NSC00cTM4ZHVUTkhhVy1tcC0zZ0Myd1VJUmF3a2VXWXJ1V1JXZ0FiNjBTOUI2WWw0LU9jVzdsa3hzSWVn?oc=5 <a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxPdmVrLU",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPdmVrLUdtczAwUG5zWWItWmV5TnhzS1g4Nk5FQldVanM3SG5uQlQyaVhaTUxSQ2pGN1lVSmxnaU1IdVRGcmxkaWQ3X19hdVRXay1NSC00cTM4ZHVUTkhhVy1tcC0zZ0Myd1VJUmF3a2VXWXJ1V1JXZ0FiNjBTOUI2WWw0LU9jVzdsa3hzSWVn?oc=5",
+      "source": "Google News",
+      "date": "Sun, 19 Jul 2026 00:47:39 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-19T06:16:45.674999+00:00"
     },
     {
       "id": "e2a8c0671de0bcde",
