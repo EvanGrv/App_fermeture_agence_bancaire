@@ -223,6 +223,145 @@ def test_fallback_bureau_de_poste_publie_lbp_mono_commune():
     assert closure["statut"] == "projet"
 
 
+def test_fallback_postal_extrait_date_du_titre_et_infere_annee():
+    article = {
+        "titre": "Orléans : le bureau de poste fermera définitivement le 31 octobre",
+        "texte": "",
+        "date": "2024-09-03",
+        "source": "PQR",
+        "score": 5,
+    }
+
+    def geocode(commune, departement=None):
+        if vr._cle(commune) == "orleans":
+            return {
+                "commune": "Orléans", "lat": 47.9, "lon": 1.9,
+                "code_insee": "45234", "departement": "45",
+            }
+        return None
+
+    closure = vr.fermeture_depuis_signal(
+        article, banque="La Banque Postale", geocode_fn=geocode)
+    assert closure is not None
+    assert closure["date_fermeture"] == "2024-10-31"
+    assert closure["date_fermeture_approx"] == 1
+    assert closure["statut"] == "confirmé"
+    assert closure["statut_temporel"] == "deja_fermee"
+    assert closure["service_impact"] == "fermeture_lbp_complete"
+    assert closure["evidence_level"] == "titre+presse"
+
+
+def test_fallback_postal_date_fermeture_passee_approximee_par_publication():
+    article = {
+        "titre": "Marnay : fermé définitivement, le bureau de poste ne rouvrira pas",
+        "texte": "",
+        "date": "2025-05-15",
+        "score": 4,
+    }
+
+    def geocode(commune, departement=None):
+        if vr._cle(commune) == "marnay":
+            return {
+                "commune": "Marnay", "lat": 47.3, "lon": 5.8,
+                "code_insee": "70334", "departement": "70",
+            }
+        return None
+
+    closure = vr.fermeture_depuis_signal(
+        article, banque="La Banque Postale", geocode_fn=geocode)
+    assert closure is not None
+    assert closure["date_fermeture"] == "2025-05-15"
+    assert closure["date_fermeture_approx"] == 1
+    assert closure["statut"] == "confirmé"
+
+
+def test_fallback_postal_identifie_conversion_en_agence_communale():
+    article = {
+        "titre": "Reichshoffen : une agence communale va remplacer le bureau de poste fermé",
+        "texte": "",
+        "date": "2026-06-14",
+        "score": 5,
+    }
+
+    def geocode(commune, departement=None):
+        if vr._cle(commune) == "reichshoffen":
+            return {
+                "commune": "Reichshoffen", "lat": 48.9, "lon": 7.7,
+                "code_insee": "67388", "departement": "67",
+            }
+        return None
+
+    closure = vr.fermeture_depuis_signal(
+        article, banque="La Banque Postale", geocode_fn=geocode)
+    assert closure is not None
+    assert closure["service_impact"] == "conversion_ap"
+    assert closure["point_postal_apres"] == "Agence postale communale"
+
+
+def test_fallback_postal_ne_confond_pas_commune_et_nom_du_bureau():
+    article = {
+        "titre": "Strasbourg. Les bureaux de poste des Halles et de la Porte Blanche "
+                 "ferment définitivement le 28 juin",
+        "texte": "",
+        "date": "2025-06-16",
+        "score": 5,
+    }
+    geocodes = {
+        "strasbourg": ("Strasbourg", "67482", "67"),
+        "halles": ("Halles-sous-les-Côtes", "55225", "55"),
+        "porte blanche": ("La Noë-Blanche", "35202", "35"),
+    }
+
+    def geocode(commune, departement=None):
+        found = geocodes.get(vr._cle(commune))
+        if not found:
+            return None
+        return {
+            "commune": found[0], "code_insee": found[1],
+            "departement": found[2], "lat": 48.5, "lon": 7.7,
+        }
+
+    closure = vr.fermeture_depuis_signal(
+        article, banque="La Banque Postale", geocode_fn=geocode)
+    assert closure is not None
+    assert closure["commune"] == "Strasbourg"
+    assert closure["code_insee"] == "67482"
+    closures = vr.fermetures_depuis_signal(
+        article, banque="La Banque Postale", geocode_fn=geocode)
+    assert [c["agence_localisation"] for c in closures] == [
+        "Halles", "Porte Blanche",
+    ]
+    assert len({c["id"] for c in closures}) == 2
+
+
+def test_fallback_postal_priorise_commune_apres_bureau_de_poste_de():
+    article = {
+        "titre": "Haute-Saône. Fermé définitivement, le bureau de poste de Marnay "
+                 "est transféré dans les locaux de France Services",
+        "texte": "",
+        "date": "2025-05-15",
+        "score": 5,
+    }
+
+    def geocode(commune, departement=None):
+        if vr._cle(commune) == "marnay":
+            return {
+                "commune": "Marnay", "code_insee": "70334",
+                "departement": "70", "lat": 47.3, "lon": 5.8,
+            }
+        if vr._cle(commune) == "france services":
+            return {
+                "commune": "Saulx", "code_insee": "70478",
+                "departement": "70", "lat": 47.7, "lon": 6.2,
+            }
+        return None
+
+    closure = vr.fermeture_depuis_signal(
+        article, banque="La Banque Postale", geocode_fn=geocode)
+    assert closure is not None
+    assert closure["commune"] == "Marnay"
+
+
 def test_fallback_refuse_agence_postale_communale_sans_indice_bancaire():
     article = {
         "titre": "Bar-le-Duc : l'agence postale communale va fermer",
@@ -234,6 +373,29 @@ def test_fallback_refuse_agence_postale_communale_sans_indice_bancaire():
         banque="La Banque Postale",
         geocode_fn=_geocode_bar_le_duc,
     ) is None
+
+
+def test_fallback_postal_refuse_les_fermetures_temporaires_implicites():
+    titres = [
+        "Moret : le bureau de poste ferme trois semaines pour se moderniser",
+        "À Reims, un bureau de poste fermé depuis des mois pour des raisons de sécurité",
+        "Le bureau de poste de Rémire-Montjoly fermé jusqu'à nouvel ordre",
+        "Un risque d'effondrement contraint le bureau de poste à fermer à Toulouse",
+        "Essonne : ce bureau de poste ne rouvrira pas et va déménager",
+    ]
+
+    def geocode(commune, departement=None):
+        return {
+            "commune": commune, "lat": 47.0, "lon": 2.0,
+            "code_insee": "99999", "departement": "99",
+        }
+
+    for titre in titres:
+        assert vr.fermeture_depuis_signal(
+            {"titre": titre, "texte": "", "date": "2026-01-01"},
+            banque="La Banque Postale",
+            geocode_fn=geocode,
+        ) is None
 
 
 def test_generer_requetes_vigilance_bureau_de_poste_lbp():

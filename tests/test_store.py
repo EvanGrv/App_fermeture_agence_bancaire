@@ -250,3 +250,51 @@ def test_requeue_postal_articles_est_unique(tmp_path):
     store.mark_url_seen(conn, "https://example.test/poste")
     assert store.requeue_postal_articles(conn, "postal-v5") == 0
     assert store.is_url_seen(conn, "https://example.test/poste") is True
+
+
+def test_requeue_postal_articles_inclut_les_vigilances(tmp_path):
+    conn = store.init_db(tmp_path / "t.db")
+    url = "https://example.test/vigilance-postale"
+    store.upsert_vigilance(conn, {
+        "id": "postal-vigilance",
+        "banque": "La Banque Postale",
+        "departement": "45",
+        "titre": "Orléans : le bureau de poste va fermer",
+        "extrait": "",
+        "url": url,
+        "source": "PQR",
+        "date": "2024-09-03",
+        "score": 5,
+        "raison": "article pertinent sans fermeture publiable",
+    })
+    store.upsert_vigilance_review(conn, {
+        "id": "postal-vigilance",
+        "review_status": "done",
+    })
+    store.mark_url_seen(conn, url)
+
+    assert store.requeue_postal_articles(conn, "postal-fallback-v1") == 1
+    assert store.is_url_seen(conn, url) is False
+    assert conn.execute(
+        "SELECT COUNT(*) FROM vigilance_reviews WHERE id='postal-vigilance'"
+    ).fetchone()[0] == 0
+    backlog = store.list_postal_vigilance_articles(conn)
+    assert len(backlog) == 1
+    assert backlog[0]["titre"] == "Orléans : le bureau de poste va fermer"
+    assert backlog[0]["departement"] == "45"
+
+
+def test_delete_vigilance_by_url(tmp_path):
+    conn = store.init_db(tmp_path / "t.db")
+    url = "https://example.test/resolue"
+    store.upsert_vigilance(conn, {
+        "id": "resolue", "banque": "La Banque Postale", "departement": "45",
+        "titre": "Le bureau ferme", "extrait": "", "url": url,
+        "source": "PQR", "date": "2025-01-01", "score": 4,
+        "raison": "à revoir",
+    })
+    store.upsert_vigilance_review(conn, {"id": "resolue", "review_status": "done"})
+
+    assert store.delete_vigilance_by_url(conn, url) == 1
+    assert conn.execute("SELECT COUNT(*) FROM vigilances").fetchone()[0] == 0
+    assert conn.execute("SELECT COUNT(*) FROM vigilance_reviews").fetchone()[0] == 0

@@ -15,6 +15,8 @@ from __future__ import annotations
 import html
 import re
 import unicodedata
+from datetime import date, datetime, timezone
+from email.utils import parsedate_to_datetime
 from typing import Callable
 
 import config
@@ -58,10 +60,15 @@ _HINT_RE = re.compile(
 
 _EXCLUSION_FALLBACK_RE = re.compile(
     r"fermeture temporaire|temporairement ferm[ée]e?|travaux|r[ée]nov|rouvre|"
+    r"modernis|jusqu['’]à nouvel ordre|insalubrit|raisons? de s[ée]curit[ée]|"
+    r"agression|effondrement|sinistre|install[ée] dans un camion|d[ée]m[ée]nag|"
+    r"(?:pour|pendant)\s+(?:\d+|un|une|deux|trois|quatre|cinq|six)\s+"
+    r"(?:jours?|semaines?|mois)|"
     r"agence immobili[èe]re|transporteur|"
     r"guichet automatique|distributeur automatique|DAB|gr[èe]ve|syndicat|"
-    r"manifestation|craignent|liste|votre ville|plusieurs agences|"
-    r"\b\d+\s+agences\b|fermetures d[’']agences|fermeture d[’']agences",
+    r"manifestation|craignent|menac[ée]s?|liste|votre ville|plusieurs agences|"
+    r"\b(?:\d+|deux|trois|quatre|cinq|six)\s+(?:agences|bureaux)\b|"
+    r"fermetures d[’']agences|fermeture d[’']agences",
     re.IGNORECASE,
 )
 
@@ -72,6 +79,44 @@ _POSTAL_PARTNER_RE = re.compile(
 _POSTAL_BANKING_RE = re.compile(
     r"banque postale|services? financiers?|services? bancaires?|conseiller bancaire|"
     r"retrait d[’']esp[eè]ces|d[ée]p[oô]t d[’']esp[eè]ces|gestion de comptes?",
+    re.IGNORECASE,
+)
+
+_FUTURE_CLOSURE_RE = re.compile(
+    r"\b(?:va|vont|devrait|devraient)\s+(?:definitivement\s+)?fermer\b|"
+    r"\b(?:fermera|fermeront|fermeraient)\b|\bfermeture\s+(?:est\s+)?prevue\b|"
+    r"\bfermeture\s+(?:annoncee|programmee)\b|\bbientot\b|\bprochainement\b"
+)
+_PAST_CLOSURE_RE = re.compile(
+    r"\b(?:a|ont)\s+ferme\b|\b(?:est|sont)\s+ferme(?:e|es|s)?\b|"
+    r"\bferme(?:e|es|s)?\s+definitivement\b|\bferme(?:e|es|s)?\s+ses\s+portes\b|"
+    r"\bbureau(?:x)?\s+de\s+poste\s+ferme(?:e|es|s)?\b|"
+    r"\bn\s+accueille\s+plus\b|\bfermeture\s+effective\b"
+)
+_POSTAL_AP_CONVERSION_RE = re.compile(
+    r"agence\s+(?:postale\s+)?communale.{0,100}(?:remplac|transf)|"
+    r"(?:remplac|transf).{0,100}agence\s+(?:postale\s+)?communale",
+    re.IGNORECASE,
+)
+_POSTAL_RELAIS_CONVERSION_RE = re.compile(
+    r"relais\s+(?:poste|postal).{0,100}(?:remplac|transf)|"
+    r"(?:remplac|transf).{0,100}relais\s+(?:poste|postal)",
+    re.IGNORECASE,
+)
+
+_MONTHS = {
+    "janvier": 1, "fevrier": 2, "mars": 3, "avril": 4,
+    "mai": 5, "juin": 6, "juillet": 7, "aout": 8,
+    "septembre": 9, "octobre": 10, "novembre": 11, "decembre": 12,
+}
+_TITLE_DATE_RE = re.compile(
+    r"\b([0-3]?\d)(?:er)?\s+"
+    r"(janvier|fevrier|mars|avril|mai|juin|juillet|aout|septembre|octobre|novembre|decembre)"
+    r"(?:\s+(20\d{2}))?\b|\b(20\d{2})-(\d{2})-(\d{2})\b"
+)
+_MULTI_POSTAL_OFFICES_RE = re.compile(
+    r"\bbureaux\s+de\s+poste\s+(?:des\s+|de\s+la\s+|du\s+|d['’]\s*)"
+    r"(.{3,120}?)\s+(?:ferment|fermeront|vont\s+fermer|seront\s+ferm[ée]s?)\b",
     re.IGNORECASE,
 )
 
@@ -193,7 +238,10 @@ def communes_candidates_validees(
     out: list[tuple[str, dict]] = []
     seen: set[str] = set()
     for texte in textes:
-        for candidate in candidats_communes(texte, banque):
+        candidates = candidats_communes(texte, banque)
+        if normalise_banque(banque or "") == "La Banque Postale":
+            candidates = _prioriser_lieu_postal(texte, candidates)
+        for candidate in candidates:
             try:
                 geo = geocode_fn(candidate, departement or article.get("departement"))
             except Exception:
@@ -208,6 +256,32 @@ def communes_candidates_validees(
         if out:
             return out
     return out
+
+
+def _prioriser_lieu_postal(titre: str, candidates: list[str]) -> list[str]:
+    """Écarte les noms d'agence géocodables qui ne sont pas la commune citée."""
+    if not candidates:
+        return candidates
+    titre_clean = _texte_candidats(titre)
+    prefix = re.match(r"^([^.:!?]{2,60})[.:]", titre_clean)
+    if prefix:
+        leading = _cle(prefix.group(1))
+        matches = [c for c in candidates if _cle(c) in leading]
+        if matches:
+            return matches
+    office = re.search(
+        r"\bbureaux?\s+de\s+poste\s+(?:de\s+|d['’]\s*|des\s+|[àa]\s+)",
+        titre_clean,
+        re.IGNORECASE,
+    )
+    if office:
+        proper = _PROPER_NAMES.search(titre_clean[office.end():])
+        if proper:
+            location = _cle(proper.group(0))
+            matches = [c for c in candidates if _cle(c) == location]
+            if matches:
+                return matches
+    return candidates
 
 
 def _titre_localise_singulier(titre: str, banque: str | None, commune: str) -> bool:
@@ -257,6 +331,93 @@ def generer_requetes(
     )
 
 
+def _article_date(value: str | None) -> date | None:
+    raw = str(value or "").strip()
+    if not raw:
+        return None
+    try:
+        return datetime.fromisoformat(raw.replace("Z", "+00:00")).date()
+    except ValueError:
+        pass
+    try:
+        parsed = parsedate_to_datetime(raw)
+    except (TypeError, ValueError, OverflowError):
+        return None
+    if parsed.tzinfo:
+        parsed = parsed.astimezone(timezone.utc)
+    return parsed.date()
+
+
+def _date_fermeture_du_titre(
+    titre: str,
+    publication: date | None,
+) -> tuple[date | None, bool]:
+    """Extrait une date explicite; infère l'année depuis la publication."""
+    match = _TITLE_DATE_RE.search(_cle(titre))
+    if not match:
+        return None, False
+    try:
+        if match.group(4):
+            return date(int(match.group(4)), int(match.group(5)), int(match.group(6))), False
+        day = int(match.group(1))
+        month = _MONTHS[match.group(2)]
+        if match.group(3):
+            return date(int(match.group(3)), month, day), False
+        if not publication:
+            return None, False
+        candidate = date(publication.year, month, day)
+        # Un titre publié en fin d'année peut annoncer janvier de l'année
+        # suivante; inversement un bilan de janvier peut citer décembre passé.
+        delta = (candidate - publication).days
+        if delta < -300:
+            candidate = date(publication.year + 1, month, day)
+        elif delta > 300:
+            candidate = date(publication.year - 1, month, day)
+        return candidate, True
+    except (ValueError, KeyError):
+        return None, False
+
+
+def _temporalite_titre(
+    titre: str,
+    article_date: date | None,
+) -> tuple[str, str, str | None, int]:
+    """Déduit statut, temporalité, date et approximation depuis le titre."""
+    titre_norm = _cle(titre)
+    fermeture, annee_inferree = _date_fermeture_du_titre(titre, article_date)
+    if fermeture:
+        deja_fermee = fermeture < date.today()
+        return (
+            "confirmé" if deja_fermee else "projet",
+            "deja_fermee" if deja_fermee else "a_venir",
+            fermeture.isoformat(),
+            int(annee_inferree),
+        )
+    if _FUTURE_CLOSURE_RE.search(titre_norm):
+        return "projet", "a_venir", None, 0
+    if _PAST_CLOSURE_RE.search(titre_norm) and article_date:
+        return "confirmé", "deja_fermee", article_date.isoformat(), 1
+    return "projet", "inconnu", None, 0
+
+
+def _labels_bureaux_postaux(titre: str) -> list[str]:
+    """Extrait une courte liste de bureaux nommés dans une même commune."""
+    match = _MULTI_POSTAL_OFFICES_RE.search(_texte_candidats(titre))
+    if not match:
+        return []
+    labels = re.split(
+        r"\s+et\s+(?:de\s+la\s+|du\s+|des\s+|d['’]\s*)?",
+        match.group(1),
+        flags=re.IGNORECASE,
+    )
+    labels = [label.strip(" ,.;:()") for label in labels]
+    if not 2 <= len(labels) <= 5:
+        return []
+    if any(not label or len(label) > 60 for label in labels):
+        return []
+    return labels
+
+
 def fermeture_depuis_signal(
     article: dict,
     *,
@@ -269,14 +430,22 @@ def fermeture_depuis_signal(
     Sert pour les alertes dont le titre est déjà explicite ("l'agence X de Y va
     fermer") mais où l'extraction IA ou le fulltext ne donnent rien.
     """
-    texte = f"{article.get('titre','')} {article.get('texte','')} {article.get('extrait','')}"
+    titre = article.get("titre") or ""
+    titre_clean = _texte_candidats(titre)
+    texte = f"{titre} {article.get('texte','')} {article.get('extrait','')}"
     is_lbp = normalise_banque(banque or "") == "La Banque Postale"
-    is_postal = signal_fermeture_bureau_poste(texte)
+    is_postal = signal_fermeture_bureau_poste(titre_clean)
     if not banque or not (signal_fermeture_agence(texte) or (is_lbp and is_postal)):
         return None
-    if _EXCLUSION_FALLBACK_RE.search(texte):
+    if _EXCLUSION_FALLBACK_RE.search(titre_clean):
         return None
-    if is_lbp and _POSTAL_PARTNER_RE.search(texte) and not _POSTAL_BANKING_RE.search(texte):
+    conversion_ap = bool(_POSTAL_AP_CONVERSION_RE.search(titre_clean))
+    conversion_relais = bool(_POSTAL_RELAIS_CONVERSION_RE.search(titre_clean))
+    if (
+        is_lbp
+        and _POSTAL_PARTNER_RE.search(titre_clean)
+        and not (conversion_ap or conversion_relais or _POSTAL_BANKING_RE.search(texte))
+    ):
         return None
     if not _banque_presente(texte, banque) and not (is_lbp and is_postal):
         return None
@@ -287,17 +456,13 @@ def fermeture_depuis_signal(
     commune, geo = candidates[0]
     banque_norm = normalise_banque(banque)
     if is_lbp and is_postal:
-        titre_clean = _texte_candidats(article.get("titre") or "")
         if commune not in titre_clean or not signal_fermeture_bureau_poste(titre_clean):
             return None
     elif not _titre_localise_singulier(article.get("titre") or "", banque_norm, commune):
         return None
     commune_pub = geo.get("commune") or commune
-    futur = re.search(
-        r"\b(va|vont|devrait|devraient|bient[oô]t|prochainement|fin\s+\w+|"
-        r"prévue|prévu|sera|seront)\b",
-        texte,
-        re.IGNORECASE,
+    statut, statut_temporel, date_fermeture, date_approx = _temporalite_titre(
+        titre_clean, _article_date(article.get("date"))
     )
     closure = {
         "id": closure_id(banque_norm, commune_pub, "fermeture"),
@@ -307,24 +472,69 @@ def fermeture_depuis_signal(
         "departement": geo.get("departement") or departement or article.get("departement"),
         "type": "fermeture",
         "date_annonce": article.get("date") or None,
-        "date_fermeture": None,
-        "statut": "projet",
-        "statut_temporel": "a_venir" if futur else "inconnu",
-        "date_fermeture_approx": 0,
+        "date_fermeture": date_fermeture,
+        "statut": statut,
+        "statut_temporel": statut_temporel,
+        "date_fermeture_approx": date_approx,
         "fiabilite": min(3, int(article.get("score") or 3)),
         "lat": geo.get("lat"),
         "lon": geo.get("lon"),
         "citation": article.get("titre") or article.get("texte") or article.get("url") or "",
     }
+    if is_lbp:
+        closure.update({
+            "service_impact": "fermeture_lbp_complete",
+            "point_postal_avant": "Bureau de Poste",
+            "evidence_level": "titre+presse",
+        })
+        if conversion_ap:
+            closure["service_impact"] = "conversion_ap"
+            closure["point_postal_apres"] = "Agence postale communale"
+        elif conversion_relais:
+            closure["service_impact"] = "conversion_relais"
+            closure["point_postal_apres"] = "Relais poste"
     publiable, _raison = validation.fermeture_publiable(closure, geo)
     return closure if publiable else None
 
 
-def _closure_natural_key(closure: dict) -> tuple[str, str, str]:
+def fermetures_depuis_signal(
+    article: dict,
+    *,
+    banque: str | None,
+    geocode_fn: Callable[..., dict | None],
+    departement: str | None = None,
+) -> list[dict]:
+    """Version plurielle du fallback pour les bureaux nommés dans un titre."""
+    closure = fermeture_depuis_signal(
+        article,
+        banque=banque,
+        geocode_fn=geocode_fn,
+        departement=departement,
+    )
+    if not closure:
+        return []
+    if closure.get("banque") != "La Banque Postale":
+        return [closure]
+    labels = _labels_bureaux_postaux(article.get("titre") or "")
+    if not labels:
+        return [closure]
+    closures = []
+    for label in labels:
+        item = dict(closure)
+        item["agence_localisation"] = label
+        item["id"] = closure_id(
+            item["banque"], item["commune"], item["type"], label
+        )
+        closures.append(item)
+    return closures
+
+
+def _closure_natural_key(closure: dict) -> tuple[str, str, str, str]:
     return (
         normalise_cle(closure.get("banque") or ""),
         str(closure.get("code_insee") or normalise_cle(closure.get("commune") or "")),
         closure.get("type") or "fermeture",
+        normalise_cle(closure.get("agence_localisation") or ""),
     )
 
 
@@ -388,39 +598,41 @@ def review_vigilance(
 
     for art in articles:
         closure = None
+        closures = []
         if extractor_fn is not None:
             try:
                 closure = extractor_fn(art)
             except Exception as exc:
                 print(f"[vigilance_review] extraction en erreur: {exc}")
                 closure = None
-        if not closure:
-            closure = fermeture_depuis_signal(
+        if closure:
+            closures = [closure]
+        else:
+            closures = fermetures_depuis_signal(
                 art,
                 banque=vigilance.get("banque"),
                 geocode_fn=geocode_fn,
                 departement=vigilance.get("departement"),
             )
-            if not closure:
-                continue
-        try:
-            geo = geocode_fn(closure["commune"], closure.get("departement"))
-        except Exception:
-            geo = None
-        if geo:
-            closure["lat"] = closure.get("lat") or geo.get("lat")
-            closure["lon"] = closure.get("lon") or geo.get("lon")
-            if not closure.get("code_insee"):
-                closure["code_insee"] = geo.get("code_insee")
-            if not validation.departement_valide(closure.get("departement")):
-                closure["departement"] = geo.get("departement")
-        publiable, _raison = validation.fermeture_publiable(closure, geo)
-        if publiable:
-            closure["_source"] = {
-                "url": art.get("url"), "titre": art.get("titre"),
-                "source": art.get("source"), "date": art.get("date"),
-            }
-            _append_closure_dedup(result, closure)
+        for closure in closures:
+            try:
+                geo = geocode_fn(closure["commune"], closure.get("departement"))
+            except Exception:
+                geo = None
+            if geo:
+                closure["lat"] = closure.get("lat") or geo.get("lat")
+                closure["lon"] = closure.get("lon") or geo.get("lon")
+                if not closure.get("code_insee"):
+                    closure["code_insee"] = geo.get("code_insee")
+                if not validation.departement_valide(closure.get("departement")):
+                    closure["departement"] = geo.get("departement")
+            publiable, _raison = validation.fermeture_publiable(closure, geo)
+            if publiable:
+                closure["_source"] = {
+                    "url": art.get("url"), "titre": art.get("titre"),
+                    "source": art.get("source"), "date": art.get("date"),
+                }
+                _append_closure_dedup(result, closure)
     return result
 
 

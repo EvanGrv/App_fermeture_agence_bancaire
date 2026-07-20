@@ -7,7 +7,7 @@ from datetime import date, timedelta
 import anthropic
 import config
 from backend import store, export, geocode, geojson, referentiel, controle, vigilance, audit
-from backend.pipeline import run_pipeline, ingest_closures
+from backend.pipeline import run_pipeline, ingest_closures, ingest_postal_vigilance_backlog
 from backend.extractor import extract, extract_structured
 from backend.collectors import (
     google_news, gdelt, legifrance, local_feeds, official, sg_locator,
@@ -73,9 +73,16 @@ def main(since_date: str | None = None):
         )
     client = anthropic.Anthropic()  # lit ANTHROPIC_API_KEY
     cache_geo = {}
+    geo_commune = lambda c, d=None: geocode.geocode_commune_ou_lieu(
+        c, d, cache=cache_geo
+    )
 
     postal_requeued = store.requeue_postal_articles(
-        conn, f"postal-history-v{config.EXTRACTION_VERSION}"
+        conn, "postal-deterministic-fallback-v1"
+    )
+    postal_backlog = store.list_postal_vigilance_articles(conn)
+    postal_backfill = ingest_postal_vigilance_backlog(
+        conn, postal_backlog, geo_commune, since_date
     )
 
     progress("Synchronisation du réseau officiel La Poste", 10)
@@ -86,7 +93,6 @@ def main(since_date: str | None = None):
     # requêtes ciblées commune par commune. Guarded : une erreur ici ne bloque pas le run.
     drill_queries: list[str] = []
     plan_articles: list[dict] = []
-    geo_commune = lambda c, d=None: geocode.geocode_commune_ou_lieu(c, d, cache=cache_geo)
     try:
         plan_articles = google_news.collect(queries=drilldown.PLAN_SCAN_QUERIES)
         drill_queries = drilldown.requetes_depuis_articles(
@@ -216,6 +222,7 @@ def main(since_date: str | None = None):
     print("Récapitulatif presse:", recap)
     print("Synchronisation officielle La Poste:", postal_sync)
     print("Anciens articles postaux remis en file:", postal_requeued)
+    print("Backlog postal traité sans IA:", postal_backfill)
     print("Vigilances postales reclassées:", postal_reclassified)
     print("Fermetures LBP enrichies:", postal_enrichment)
     print("Bilan fermetures LBP:", lbp_summary)
@@ -235,6 +242,7 @@ def main(since_date: str | None = None):
         "recap": recap,
         "postal_sync": postal_sync,
         "postal_requeued": postal_requeued,
+        "postal_backfill": postal_backfill,
         "postal_reclassified": postal_reclassified,
         "postal_enrichment": postal_enrichment,
         "lbp_summary": lbp_summary,
