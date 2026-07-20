@@ -25,6 +25,9 @@ FORMULATIONS = [
     "mairie fermeture agence bancaire",
     "maintien du distributeur",
     "DAB maintenu",
+    "fermeture bureau de poste",
+    "bureau de poste va fermer",
+    "services financiers Banque Postale",
 ]
 
 # Requêtes de découverte quand la vigilance ne donne pas encore de commune
@@ -38,6 +41,9 @@ DISCOVERY_FORMULATIONS = [
     "liste des agences",
     "communes concernées",
     "conseil municipal fermeture agence",
+    "fermeture bureau de poste",
+    "bureau de poste va fermer",
+    "services financiers Banque Postale",
 ]
 
 # Domaines de presse/radio régionale prioritaires (cf. plan Phase 6.3).
@@ -69,8 +75,14 @@ def build_queries(
     if domains is None:
         domains = DEFAULT_DOMAINS
 
+    formulations = FORMULATIONS
+    if "banque postale" in banque.lower():
+        postal = [f for f in FORMULATIONS if "poste" in f.lower() or "postale" in f.lower()]
+        autres = [f for f in FORMULATIONS if f not in postal]
+        formulations = postal + autres
+
     # Requêtes "plein texte" avec guillemets pour ancrer banque + commune.
-    text_queries = [f'"{banque}" "{commune}" "{f}"' for f in FORMULATIONS]
+    text_queries = [f'"{banque}" "{commune}" "{f}"' for f in formulations]
     text_queries.append(f'"{commune}" "agence {banque}"')
     text_queries.append(f'mairie "{commune}" "{banque}" fermeture')
     # Requêtes site: par domaine local.
@@ -118,7 +130,13 @@ def build_discovery_queries(
     if domains is None:
         domains = DEFAULT_DOMAINS
 
-    text_queries = [f'"{banque}" "{f}"' for f in DISCOVERY_FORMULATIONS]
+    formulations = DISCOVERY_FORMULATIONS
+    if "banque postale" in banque.lower():
+        postal = [f for f in DISCOVERY_FORMULATIONS if "poste" in f.lower() or "postale" in f.lower()]
+        autres = [f for f in DISCOVERY_FORMULATIONS if f not in postal]
+        formulations = postal + autres
+
+    text_queries = [f'"{banque}" "{f}"' for f in formulations]
     if hint:
         text_queries = [f'"{banque}" "{hint}" "{f}"' for f in DISCOVERY_FORMULATIONS[:4]] + text_queries
 

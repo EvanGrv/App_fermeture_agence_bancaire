@@ -27,6 +27,8 @@ def _banque(article: dict) -> str | None:
             if normalise_cle(banque) in getattr(config, "EXCLURE_BANQUES", []):
                 return None
             return banque
+    if prefilter.is_postal_closure_candidate(article):
+        return "La Banque Postale"
     return None
 
 

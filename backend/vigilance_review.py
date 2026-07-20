@@ -34,11 +34,20 @@ _PROPER_NAMES = re.compile(
 _FERMETURE_AGENCE_RE = re.compile(
     r"\b(fermeture|ferme|fermer|fermera|fermeront|fermé|fermée|ferment|"
     r"fermetures|suppression|supprime|regroupement)\b"
-    r".{0,90}\b(agence|agences|banque|bancaire|guichet|succursale)\b"
+    r".{0,90}\b(agence|agences|banque|bancaire|guichet|succursale|bureau de poste|bureaux de poste)\b"
     r"|"
-    r"\b(agence|agences|banque|bancaire|guichet|succursale)\b"
+    r"\b(agence|agences|banque|bancaire|guichet|succursale|bureau de poste|bureaux de poste)\b"
     r".{0,90}\b(fermeture|ferme|fermer|fermera|fermeront|fermé|fermée|ferment|"
     r"fermetures|suppression|supprime|regroupement)\b",
+    re.IGNORECASE | re.DOTALL,
+)
+
+_POSTAL_CLOSURE_RE = re.compile(
+    r"\b(fermeture|ferme|fermer|fermera|fermeront|fermé|fermée|ferment|"
+    r"fermetures|suppression|supprime)\b.{0,110}\b(bureau de poste|bureaux de poste)\b"
+    r"|"
+    r"\b(bureau de poste|bureaux de poste)\b.{0,110}\b(fermeture|ferme|fermer|"
+    r"fermera|fermeront|fermé|fermée|ferment|fermetures|suppression|supprime)\b",
     re.IGNORECASE | re.DOTALL,
 )
 
@@ -49,10 +58,20 @@ _HINT_RE = re.compile(
 
 _EXCLUSION_FALLBACK_RE = re.compile(
     r"fermeture temporaire|temporairement ferm[ée]e?|travaux|r[ée]nov|rouvre|"
-    r"agence immobili[èe]re|agence postale|bureau de poste|transporteur|"
+    r"agence immobili[èe]re|transporteur|"
     r"guichet automatique|distributeur automatique|DAB|gr[èe]ve|syndicat|"
     r"manifestation|craignent|liste|votre ville|plusieurs agences|"
     r"\b\d+\s+agences\b|fermetures d[’']agences|fermeture d[’']agences",
+    re.IGNORECASE,
+)
+
+_POSTAL_PARTNER_RE = re.compile(
+    r"agence postale communale|relais poste|relais postal|point relais",
+    re.IGNORECASE,
+)
+_POSTAL_BANKING_RE = re.compile(
+    r"banque postale|services? financiers?|services? bancaires?|conseiller bancaire|"
+    r"retrait d[’']esp[eè]ces|d[ée]p[oô]t d[’']esp[eè]ces|gestion de comptes?",
     re.IGNORECASE,
 )
 
@@ -112,6 +131,11 @@ def candidats_communes(texte: str, banque: str | None) -> list[str]:
 def signal_fermeture_agence(texte: str) -> bool:
     """True si le texte ressemble à une fermeture d'agence bancaire."""
     return bool(_FERMETURE_AGENCE_RE.search(texte or ""))
+
+
+def signal_fermeture_bureau_poste(texte: str) -> bool:
+    """True si le texte ressemble à une fermeture de bureau de poste."""
+    return bool(_POSTAL_CLOSURE_RE.search(texte or ""))
 
 
 def _banque_presente(texte: str, banque: str | None) -> bool:
@@ -224,7 +248,7 @@ def generer_requetes(
             max_queries=max_queries,
         )
     texte = f"{vigilance.get('titre','')} {vigilance.get('extrait','')}"
-    if not signal_fermeture_agence(texte):
+    if not (signal_fermeture_agence(texte) or signal_fermeture_bureau_poste(texte)):
         return []
     return query_builder.build_discovery_queries(
         banque,
@@ -246,11 +270,15 @@ def fermeture_depuis_signal(
     fermer") mais où l'extraction IA ou le fulltext ne donnent rien.
     """
     texte = f"{article.get('titre','')} {article.get('texte','')} {article.get('extrait','')}"
-    if not banque or not signal_fermeture_agence(texte):
+    is_lbp = normalise_banque(banque or "") == "La Banque Postale"
+    is_postal = signal_fermeture_bureau_poste(texte)
+    if not banque or not (signal_fermeture_agence(texte) or (is_lbp and is_postal)):
         return None
     if _EXCLUSION_FALLBACK_RE.search(texte):
         return None
-    if not _banque_presente(texte, banque):
+    if is_lbp and _POSTAL_PARTNER_RE.search(texte) and not _POSTAL_BANKING_RE.search(texte):
+        return None
+    if not _banque_presente(texte, banque) and not (is_lbp and is_postal):
         return None
     candidates = communes_candidates_validees(
         article, geocode_fn, banque=banque, departement=departement)
@@ -258,7 +286,11 @@ def fermeture_depuis_signal(
         return None
     commune, geo = candidates[0]
     banque_norm = normalise_banque(banque)
-    if not _titre_localise_singulier(article.get("titre") or "", banque_norm, commune):
+    if is_lbp and is_postal:
+        titre_clean = _texte_candidats(article.get("titre") or "")
+        if commune not in titre_clean or not signal_fermeture_bureau_poste(titre_clean):
+            return None
+    elif not _titre_localise_singulier(article.get("titre") or "", banque_norm, commune):
         return None
     commune_pub = geo.get("commune") or commune
     futur = re.search(

@@ -204,6 +204,53 @@ def test_fallback_refuse_agence_non_bancaire_ou_dab_seul():
             article, banque="Crédit Agricole", geocode_fn=_geocode_bar_le_duc) is None
 
 
+def test_fallback_bureau_de_poste_publie_lbp_mono_commune():
+    article = {
+        "titre": "Bar-le-Duc : le bureau de poste va fermer définitivement",
+        "texte": "",
+        "date": "2026-07-01",
+        "source": "PQR",
+        "score": 3,
+    }
+    closure = vr.fermeture_depuis_signal(
+        article,
+        banque="La Banque Postale",
+        geocode_fn=_geocode_bar_le_duc,
+    )
+    assert closure is not None
+    assert closure["banque"] == "La Banque Postale"
+    assert closure["commune"] == "Bar-le-Duc"
+    assert closure["statut"] == "projet"
+
+
+def test_fallback_refuse_agence_postale_communale_sans_indice_bancaire():
+    article = {
+        "titre": "Bar-le-Duc : l'agence postale communale va fermer",
+        "texte": "",
+        "score": 3,
+    }
+    assert vr.fermeture_depuis_signal(
+        article,
+        banque="La Banque Postale",
+        geocode_fn=_geocode_bar_le_duc,
+    ) is None
+
+
+def test_generer_requetes_vigilance_bureau_de_poste_lbp():
+    vig = {
+        "id": "postal",
+        "banque": "La Banque Postale",
+        "departement": "55",
+        "titre": "Le bureau de poste va fermer en Meuse",
+        "extrait": "",
+        "score": 3,
+    }
+    queries = vr.generer_requetes(vig, lambda c, d=None: None, max_queries=20)
+    assert queries
+    assert any("La Banque Postale" in q for q in queries)
+    assert any("bureau de poste" in q for q in queries)
+
+
 def test_fallback_accepte_titre_agence_locale_singuliere():
     article = {
         "titre": "Dun-sur-Auron. L'agence Caisse d'épargne ferme définitivement",

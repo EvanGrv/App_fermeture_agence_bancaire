@@ -7,12 +7,22 @@ Aucune IA, aucun réseau.
 from __future__ import annotations
 
 import config
-from backend.prefilter import _ENSEIGNES_N, _TERMES_N, _normalise, _split_sentences
+from backend.prefilter import (
+    _ENSEIGNES_N,
+    _POSTAL_POINT_N,
+    _TERMES_N,
+    _normalise,
+    _split_sentences,
+)
 
 
 def _est_pertinent(unite: str, communes_norm: list[str] | None = None) -> bool:
     n = _normalise(unite)
-    if any(e in n for e in _ENSEIGNES_N) or any(t in n for t in _TERMES_N):
+    if (
+        any(e in n for e in _ENSEIGNES_N)
+        or any(t in n for t in _TERMES_N)
+        or any(t in n for t in _POSTAL_POINT_N)
+    ):
         return True
     if communes_norm:
         return any(c in n for c in communes_norm)

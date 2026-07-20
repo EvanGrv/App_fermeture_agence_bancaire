@@ -32,6 +32,18 @@ _LBP_SPECIFIQUES = [
     '"La Banque Postale" "conseiller bancaire" "fermeture"',
     '"La Banque Postale" "maillage territorial"',
 ]
+_POSTE_SPECIFIQUES = [
+    '"fermeture du bureau de poste"',
+    '"fermeture d’un bureau de poste"',
+    '"fermeture d\'un bureau de poste"',
+    '"bureau de poste" "va fermer"',
+    '"bureau de poste" "fermera"',
+    '"bureau de poste" "menace de fermeture"',
+    '"bureaux de poste" "vont fermer"',
+    '"La Poste" "fermeture du bureau"',
+    '"La Poste" "bureau de poste" "services financiers"',
+    '"bureau de poste" "conseiller bancaire"',
+]
 _PAR_ENSEIGNE = (
     [f"{e} fermeture agence" for e in config.ENSEIGNES]
     + [f"{e} ferme agence" for e in config.ENSEIGNES]
@@ -72,6 +84,10 @@ _PAR_DEPARTEMENT = [
     f"fermeture agence bancaire {nom}"
     for nom in getattr(config, "DEPARTEMENTS", {}).values()
 ]
+_POSTE_PAR_DEPARTEMENT = [
+    f"fermeture bureau de poste {nom}"
+    for nom in getattr(config, "DEPARTEMENTS", {}).values()
+]
 _PRESSE_REGIONALE = [
     f"site:{domaine} fermeture agence bancaire"
     for domaine in (
@@ -98,10 +114,12 @@ _PRESSE_REGIONALE = [
 QUERIES = list(dict.fromkeys(
     _THEMATIQUES
     + _LBP_SPECIFIQUES
+    + _POSTE_SPECIFIQUES
     + _PAR_ENSEIGNE
     + _MARQUES_REGIONALES
     + _PAR_REGION
     + _PAR_DEPARTEMENT
+    + _POSTE_PAR_DEPARTEMENT
     + _PRESSE_REGIONALE
 ))
 
@@ -114,7 +132,12 @@ _BIG_BANKS_NATIONAL = [
         "Crédit Agricole", "Société Générale", "BNP", "La Banque Postale",
     ))
 ]
-_DENSE: set[str] = set(_THEMATIQUES) | set(_LBP_SPECIFIQUES) | set(_BIG_BANKS_NATIONAL)
+_DENSE: set[str] = (
+    set(_THEMATIQUES)
+    | set(_LBP_SPECIFIQUES)
+    | set(_POSTE_SPECIFIQUES)
+    | set(_BIG_BANKS_NATIONAL)
+)
 
 
 def _parse_when_to_start(when: str, today: date) -> "date | None":

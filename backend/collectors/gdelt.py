@@ -4,7 +4,8 @@ import urllib.parse
 import requests
 
 _QUERY = (
-    '((agence banque) OR "La Banque Postale" OR "Banque Postale") '
+    '((agence banque) OR "La Banque Postale" OR "Banque Postale" '
+    'OR "bureau de poste" OR "bureaux de poste") '
     '(fermeture OR fusion OR fermera OR "va fermer" OR "menace de fermeture") '
     'sourcelang:french'
 )

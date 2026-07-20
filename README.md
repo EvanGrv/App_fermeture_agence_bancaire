@@ -113,6 +113,13 @@ manuellement avec une date `since` ou une fenêtre `lookback_months`.
   (couvre toutes les banques du périmètre). Les requêtes incluent aussi les
   principales marques régionales et anciennes dénominations (`MARQUES_REGIONALES`)
   afin d'améliorer le rappel dans la presse locale.
+- **Canal La Banque Postale / bureaux de poste** — la collecte cherche aussi les
+  formulations « fermeture bureau de poste », par mots-clés nationaux et par
+  département. Ces articles passent en candidats La Banque Postale, puis sont
+  qualifiés : un bureau de poste mono-commune peut produire une fermeture LBP
+  de confiance modérée ; une agence postale communale/relais exige un indice
+  bancaire explicite (services financiers, conseiller bancaire, retrait/dépôt
+  d'espèces, etc.).
 - **Flux RSS locaux directs** — Actu.fr, Ouest-France, Ici et La Dépêche. Ces
   flux publics complètent Google News sur les dernières publications et sont
   configurables dans `config.LOCAL_RSS_FEEDS`.

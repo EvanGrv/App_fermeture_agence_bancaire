@@ -185,6 +185,21 @@ TERMES_FERMETURE = [
     "menace de fermeture", "menacé de fermeture", "menacée de fermeture",
 ]
 
+# Canal La Banque Postale : les fermetures sont souvent formulées comme des
+# fermetures de bureaux de poste plutôt que comme des fermetures d'agences
+# bancaires. Ces termes ouvrent le préfiltre, puis l'extraction qualifie le
+# caractère bancaire.
+POSTAL_POINT_TERMS = [
+    "bureau de poste", "bureaux de poste", "guichet postal",
+    "point de contact postal", "point postal", "la poste",
+]
+POSTAL_BANKING_TERMS = [
+    "banque postale", "la banque postale", "services financiers",
+    "service bancaire", "services bancaires", "conseiller bancaire",
+    "conseillers bancaires", "gestion de comptes", "retrait d'espèces",
+    "dépôt d'espèces", "depots d'especes", "dab banque postale",
+]
+
 # Termes RH/social : servent au malus de préfiltre (-2) quand ils apparaissent
 # SANS le mot "agence" (article social sans fermeture d'agence identifiée).
 RH_TERMS = [
