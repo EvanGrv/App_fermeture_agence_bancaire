@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T06:39:29.757253+00:00",
+  "generated_at": "2026-07-20T07:43:52.899937+00:00",
   "departements": {
     "01": {
       "nom": "Ain",
@@ -7581,6 +7581,19 @@
       "created_at": "2026-06-25T15:21:05.129569+00:00"
     },
     {
+      "id": "eda91c6cc77cc97e",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Mylar Specialty Films Luxembourg va fermer la production au Luxembourg: 95 emplois sur 112 menacés - Virgule.lu",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMi3gFBVV95cUxNNjJJSFd0a3JCNTBaM1cwcUJTcC1HcFJQcWZ5OE9JOGlRQUtTQ1JfbFdzZGVLdFQxandzcjliWE9NOE5sUWpfeERqb0VtLVpIcTRhbHJ1SWlaWWhjODI2VE5rY1E2aV96eXZuLUYtVjkzSG1BUDhXR2VOQ0w4ZDlyNzhjUFVnSjFVcXBFbWtZUnduVFd1UWJoSjBkTUNFamhsOHVwZThPUllzRV8yYWdfbUs2ejFGSDFuWlNyRTU4aGlpYUZxdHE4S0NqLV9LbkZQSkhjTURmejJXWmZUanc?oc=5\" target=\"_blank\">Mylar Specialty Films Luxembourg va fermer la production au Luxembourg: 95 emplois sur 112 menacés</a>&nbsp;&nbsp;<font color=\"#",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNNjJJSFd0a3JCNTBaM1cwcUJTcC1HcFJQcWZ5OE9JOGlRQUtTQ1JfbFdzZGVLdFQxandzcjliWE9NOE5sUWpfeERqb0VtLVpIcTRhbHJ1SWlaWWhjODI2VE5rY1E2aV96eXZuLUYtVjkzSG1BUDhXR2VOQ0w4ZDlyNzhjUFVnSjFVcXBFbWtZUnduVFd1UWJoSjBkTUNFamhsOHVwZThPUllzRV8yYWdfbUs2ejFGSDFuWlNyRTU4aGlpYUZxdHE4S0NqLV9LbkZQSkhjTURmejJXWmZUanc?oc=5",
+      "source": "Google News",
+      "date": "Wed, 15 Jan 2025 08:00:00 GMT",
+      "score": 3,
+      "raison": "score préfiltre bas (-2)",
+      "created_at": "2026-07-20T07:31:19.085148+00:00"
+    },
+    {
       "id": "7ad930d7c258a140",
       "banque": "Société Générale",
       "departement": null,
@@ -9776,6 +9789,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:21:30.871905+00:00"
+    },
+    {
+      "id": "367bc3cffad1c417",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Onde de choc dans le Gard : cette grande entreprise va fermer ses portes, 164 emplois menacés - Actu.fr",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMi8AFBVV95cUxNZmluc3MzMEV0QjBNZGowZGJDQjFPdE5rYk5EUGZkai1CQXVxQ3RQMjBfODJ1em05STV0MjIzZFFCdDU2Qi1SUWFhOUlwU3VVX3RETUNqXzZ1S1FmbnRxYnVOZHR1Y1lrMjF6MkhsTTNDV3lfd2VaV0NqSkZEVmJQZFAzUlZQa2pVMDJVcjlGX1pvM19ZWG5wOWpJMWFyVk4zZXRfSk56M0pvZWVBemMzUENOdmJST0E1bFlVc2xXbXBOSGpGOXVHYWk4akRmekRBdmN0NjNxTlNoeE9Gejd1ZjFSaXRIVkp0dC1CRkFDTjM?oc=5\" target=\"_blank\">Onde de choc dans le Gard : cette grande entreprise va fermer ses portes, 164 emplois menacés</a>&nbsp;&",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNZmluc3MzMEV0QjBNZGowZGJDQjFPdE5rYk5EUGZkai1CQXVxQ3RQMjBfODJ1em05STV0MjIzZFFCdDU2Qi1SUWFhOUlwU3VVX3RETUNqXzZ1S1FmbnRxYnVOZHR1Y1lrMjF6MkhsTTNDV3lfd2VaV0NqSkZEVmJQZFAzUlZQa2pVMDJVcjlGX1pvM19ZWG5wOWpJMWFyVk4zZXRfSk56M0pvZWVBemMzUENOdmJST0E1bFlVc2xXbXBOSGpGOXVHYWk4akRmekRBdmN0NjNxTlNoeE9Gejd1ZjFSaXRIVkp0dC1CRkFDTjM?oc=5",
+      "source": "Google News",
+      "date": "Thu, 17 Apr 2025 07:00:00 GMT",
+      "score": 3,
+      "raison": "score préfiltre bas (-2)",
+      "created_at": "2026-07-20T07:31:28.443693+00:00"
     },
     {
       "id": "f66e29691945d57a",
