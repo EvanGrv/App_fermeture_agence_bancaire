@@ -21,6 +21,17 @@ _THEMATIQUES = [
     "agence bancaire transférée",
     "réorganisation réseau bancaire agence",
 ]
+_LBP_SPECIFIQUES = [
+    '"La Banque Postale" "fermeture agence"',
+    '"La Banque Postale" "fermera"',
+    '"La Banque Postale" "va fermer"',
+    '"La Banque Postale" "menace de fermeture"',
+    '"La Banque Postale" "bureaux de poste"',
+    '"La Banque Postale" "bureau de poste" "fermeture"',
+    '"La Banque Postale" "services financiers" "fermeture"',
+    '"La Banque Postale" "conseiller bancaire" "fermeture"',
+    '"La Banque Postale" "maillage territorial"',
+]
 _PAR_ENSEIGNE = (
     [f"{e} fermeture agence" for e in config.ENSEIGNES]
     + [f"{e} ferme agence" for e in config.ENSEIGNES]
@@ -54,6 +65,7 @@ _PAR_REGION = [
         "Société Générale fermeture agence",
         "BNP Paribas fermeture agence",
         "Caisse d'Épargne fermeture agence",
+        "La Banque Postale fermeture agence",
     )
 ]
 _PAR_DEPARTEMENT = [
@@ -85,6 +97,7 @@ _PRESSE_REGIONALE = [
 ]
 QUERIES = list(dict.fromkeys(
     _THEMATIQUES
+    + _LBP_SPECIFIQUES
     + _PAR_ENSEIGNE
     + _MARQUES_REGIONALES
     + _PAR_REGION
@@ -97,9 +110,11 @@ QUERIES = list(dict.fromkeys(
 # = toutes les thématiques génériques + les 3 grandes banques nationales.
 _BIG_BANKS_NATIONAL = [
     q for q in _PAR_ENSEIGNE
-    if any(q.startswith(enseigne) for enseigne in ("Crédit Agricole", "Société Générale", "BNP"))
+    if any(q.startswith(enseigne) for enseigne in (
+        "Crédit Agricole", "Société Générale", "BNP", "La Banque Postale",
+    ))
 ]
-_DENSE: set[str] = set(_THEMATIQUES) | set(_BIG_BANKS_NATIONAL)
+_DENSE: set[str] = set(_THEMATIQUES) | set(_LBP_SPECIFIQUES) | set(_BIG_BANKS_NATIONAL)
 
 
 def _parse_when_to_start(when: str, today: date) -> "date | None":

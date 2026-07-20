@@ -111,6 +111,8 @@ def main(since_date: str | None = None):
     n_sg = ingest_closures(conn, sg_records, geo_adr)
     progress("Chargement du référentiel agences", 65)
     branches = referentiel.fetch_osm_banques()
+    lbp_branches = referentiel.fetch_lbp_agences()
+    branches.extend(lbp_branches)
     for branche in branches:
         store.upsert_referentiel(conn, branche)
     total_referentiel = conn.execute("SELECT COUNT(*) FROM referentiel").fetchone()[0]
@@ -176,7 +178,8 @@ def main(since_date: str | None = None):
     print("Fenêtre de collecte:", window)
     print("Récapitulatif presse:", recap)
     print("Fermetures SG vérifiées ingérées:", n_sg)
-    print("Agences du référentiel OSM récupérées ce run:", len(branches))
+    print("Agences du référentiel OSM/LBP récupérées ce run:", len(branches))
+    print("Agences La Banque Postale récupérées ce run:", len(lbp_branches))
     print("Agences du référentiel disponibles dans l'app:", total_referentiel)
     print("Signaux de vigilance Légifrance:", n_vigilances_legifrance)
     print("Fermetures issues de l'éclatement des plans:", n_plan)
@@ -190,6 +193,7 @@ def main(since_date: str | None = None):
         "recap": recap,
         "sg": n_sg,
         "referentiel": len(branches),
+        "referentiel_lbp": len(lbp_branches),
         "referentiel_total": total_referentiel,
         "vigilances_legifrance": n_vigilances_legifrance,
         "plan_explosion": n_plan,

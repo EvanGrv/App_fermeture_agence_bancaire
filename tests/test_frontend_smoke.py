@@ -64,6 +64,14 @@ def test_filtre_temporel_present():
     assert "statut_temporel" in js
 
 
+def test_filtre_banque_regroupe_les_variantes_sous_une_enseigne():
+    js = Path("frontend/app.js").read_text(encoding="utf-8")
+    assert "canonicalBankName" in js
+    assert "normaliserEnseignesDonnees" in js
+    assert "DONNEES.enseignes" in js
+    assert "canonicalBankName(c.banque) === banque" in js
+
+
 def test_filtre_temporel_base_sur_la_date_du_jour():
     js = Path("frontend/app.js").read_text(encoding="utf-8")
     # Le statut temporel est recalculé depuis date_fermeture vs aujourd'hui,

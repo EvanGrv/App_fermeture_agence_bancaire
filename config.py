@@ -11,6 +11,11 @@ DB_PATH = DATA_DIR / "press.db"
 DATA_JSON = EXPORT_DIR / "data.json"
 GEOJSON_PATH = EXPORT_DIR / "departements.geojson"
 
+# Référentiel La Banque Postale : source CSV optionnelle. Si aucune URL n'est
+# fournie, le pipeline lit data/cache/lbp_agences.csv quand il existe.
+LBP_AGENCES_CSV_URL = os.getenv("LBP_AGENCES_CSV_URL", "")
+LBP_AGENCES_CACHE = CACHE_DIR / "lbp_agences.csv"
+
 # Modèles IA d'extraction : Haiku traite le volume, Sonnet sert de filet pour
 # les cas ambigus. Surcharge possible via .env.
 ANTHROPIC_MODEL = os.getenv("ANTHROPIC_MODEL", "claude-haiku-4-5")
@@ -175,6 +180,9 @@ TERMES_FERMETURE = [
     "libre-service", "libre service",
     "ferme ses portes", "n'accueillera",
     "quittera la commune", "quitte la commune",
+    "va fermer", "vont fermer", "fermera", "fermeront",
+    "doit fermer", "doivent fermer", "pourrait fermer", "pourraient fermer",
+    "menace de fermeture", "menacé de fermeture", "menacée de fermeture",
 ]
 
 # Termes RH/social : servent au malus de préfiltre (-2) quand ils apparaissent

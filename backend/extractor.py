@@ -23,7 +23,11 @@ _INSTRUCTIONS = (
     "EXCLURE (concerne_banque=false) : fermeture temporaire, travaux, simple suppression "
     "de distributeur (DAB), déménagement dans la MÊME commune, changement d'horaires. "
     "fiabilite: 1 (rumeur vague) à 5 (annonce officielle confirmée). "
-    "citation: la phrase exacte qui justifie la fermeture/fusion."
+    "citation: la phrase exacte qui justifie la fermeture/fusion. "
+    "Cas La Banque Postale : un bureau de poste peut compter comme point bancaire "
+    "uniquement si l'article mentionne explicitement La Banque Postale, des services "
+    "financiers/bancaires, un conseiller bancaire, ou la perte d'un service bancaire. "
+    "Sinon, une simple fermeture postale est hors périmètre."
 )
 _RETRY_STATUS_CODES = {429, 500, 504, 529}
 _DEFAULT_MAX_RETRIES = 3
@@ -47,27 +51,60 @@ _CANON = {
     "credit du nord": "Crédit du Nord",
     "hsbc": "HSBC",
     "credit cooperatif": "Crédit Coopératif",
+    # Toujours normalisé pour que les anciennes données soient regroupées à
+    # l'affichage, même lorsque cette enseigne optionnelle n'est pas collectée.
+    "credit municipal": "Crédit Municipal",
 }
+
+# Toute enseigne ajoutée à la configuration bénéficie automatiquement de la
+# normalisation, sans devoir maintenir une seconde liste manuellement.
+for _enseigne in config.ENSEIGNES:
+    _cle_enseigne = normalise_cle(_enseigne)
+    _CANON.setdefault(
+        _cle_enseigne,
+        "BNP Paribas" if _cle_enseigne == "bnp" else _enseigne,
+    )
 for _groupe, _variantes in getattr(config, "MARQUES_REGIONALES", {}).items():
     for _variante in _variantes:
         _CANON[normalise_cle(_variante)] = _groupe
 
-# Périmètre optionnel : Crédit Municipal suivi uniquement si activé (Phase 9).
-if getattr(config, "INCLUDE_CREDIT_MUNICIPAL", False):
-    _CANON["credit municipal"] = "Crédit Municipal"
+
+def _cle_enseigne(nom: str) -> str:
+    """Clé tolérante aux apostrophes, tirets et ponctuation de marque."""
+    return re.sub(r"[^a-z0-9]+", " ", normalise_cle(nom or "")).strip()
+
+
+# Les préfixes sont construits depuis les enseignes, pas depuis les caisses
+# régionales connues. Une nouvelle variante telle que "Enseigne Région X" est
+# ainsi regroupée sans modification de code ni ajout dans MARQUES_REGIONALES.
+_PREFIXES_CANONIQUES = sorted(
+    {
+        (_cle_enseigne(canon), canon)
+        for canon in _CANON.values()
+        if _cle_enseigne(canon)
+    },
+    key=lambda item: len(item[0]),
+    reverse=True,
+)
 
 
 def normalise_banque(nom: str) -> str:
     cle = normalise_cle(nom or "")
     canon = _CANON.get(cle)
     if canon is None:
-        # Try collapsing hyphens so "BNP-Paribas" → "bnp paribas" hits _CANON
-        collapsed = re.sub(r"\s+", " ", cle.replace("-", " ")).strip()
-        canon = _CANON.get(collapsed)
+        cle_souple = _cle_enseigne(nom)
+        canon = next(
+            (
+                enseigne
+                for prefixe, enseigne in _PREFIXES_CANONIQUES
+                if cle_souple == prefixe or cle_souple.startswith(f"{prefixe} ")
+            ),
+            None,
+        )
     return canon if canon else (nom or "").strip()
 
 
-KNOWN_BANKS: set[str] = set(_CANON.values()) | set(config.ENSEIGNES)
+KNOWN_BANKS: set[str] = {normalise_banque(enseigne) for enseigne in config.ENSEIGNES}
 
 
 def banque_connue(banque: str) -> bool:
@@ -163,7 +200,11 @@ _INSTRUCTIONS_STRUCTURED = (
     "status: confirmed|announced|contested|threatened|unclear. "
     "date_precision et closure_date (ISO) si connues. "
     "confidence (0..1) par closure ET global. needs_sonnet=true si ambigu/complexe. "
-    "evidence: courte citation textuelle justifiant."
+    "evidence: courte citation textuelle justifiant. "
+    "Cas La Banque Postale : un bureau de poste peut être une agence/point bancaire "
+    "physique seulement si l'article relie explicitement la fermeture à La Banque "
+    "Postale, aux services financiers/bancaires, à un conseiller bancaire, ou à la "
+    "perte d'un service bancaire. Sinon classe en out_of_scope ou ambiguous."
 )
 
 _SONNET_REVIEW_INSTRUCTIONS = (

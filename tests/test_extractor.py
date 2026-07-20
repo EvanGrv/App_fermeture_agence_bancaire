@@ -220,6 +220,14 @@ def test_normalise_banque_variantes_regionales():
     assert normalise_banque("BPGO") == "Banque Populaire"
     assert normalise_banque("CEBPL") == "Caisse d'Épargne"
 
+def test_normalise_banque_regroupe_automatiquement_les_suffixes_inconnus():
+    assert normalise_banque("Crédit Agricole Nouvelle Caisse Régionale") == "Crédit Agricole"
+    assert normalise_banque("Caisse d’Épargne Territoire Futur") == "Caisse d'Épargne"
+    assert normalise_banque("Banque Populaire Région Future") == "Banque Populaire"
+
+def test_normalise_banque_gere_casse_ponctuation_et_espaces():
+    assert normalise_banque("  CRÉDIT-AGRICOLE   Centre Test  ") == "Crédit Agricole"
+
 def test_extract_normalise_banque():
     parsed = _extraction(banque="crédit agricole")
     res = extract(_article(), client=FakeClient(parsed), aujourdhui=AUJ)

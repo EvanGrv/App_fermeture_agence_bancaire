@@ -49,11 +49,12 @@ def test_build_payload(tmp_path):
     ))
     p = export.build_payload(conn)
     assert "generated_at" in p
+    assert "BNP Paribas" in p["enseignes"]
     assert p["departements"]["69"]["count"] == 1
     assert p["departements"]["69"]["total_agences"] == 2
     assert p["departements"]["69"]["nom"] == "Rhône"
     cl = p["closures"][0]
-    assert cl["banque"] == "BNP"
+    assert cl["banque"] == "BNP Paribas"
     assert cl["sources"][0]["url"] == "http://x"
     assert cl["controle_sirene"]["etat_administratif"] == "F"
     assert p["vigilances"][0]["titre"] == "Accord PSE"
@@ -76,7 +77,7 @@ def test_export_fermetures_csv_excel(tmp_path):
     export.export_fermetures_csv(conn, out)
 
     rows = list(csv.DictReader(out.read_text(encoding="utf-8-sig").splitlines()))
-    assert rows[0]["Banque"] == "BNP"
+    assert rows[0]["Banque"] == "BNP Paribas"
     assert rows[0]["Commune"] == "Lyon"
     assert rows[0]["Département"] == "69"
     assert rows[0]["Région"] == "Auvergne-Rhône-Alpes"

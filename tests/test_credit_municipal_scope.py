@@ -25,6 +25,7 @@ def test_credit_municipal_exclu_par_defaut(monkeypatch):
     try:
         assert "Crédit Municipal" not in config.ENSEIGNES
         assert extractor.banque_connue("Crédit Municipal") is False
+        assert extractor.normalise_banque("Crédit Municipal de Bordeaux") == "Crédit Municipal"
     finally:
         _restore()
 
@@ -35,5 +36,6 @@ def test_credit_municipal_inclus_si_flag(monkeypatch):
         assert "Crédit Municipal" in config.ENSEIGNES
         assert extractor.banque_connue("Crédit Municipal") is True
         assert extractor.normalise_banque("Crédit Municipal") == "Crédit Municipal"
+        assert extractor.normalise_banque("Crédit Municipal de Bordeaux") == "Crédit Municipal"
     finally:
         _restore()
