@@ -1,5 +1,21 @@
 {
-  "generated_at": "2026-07-20T07:43:52.899937+00:00",
+  "generated_at": "2026-07-20T08:55:46.095826+00:00",
+  "enseignes": [
+    "BNP Paribas",
+    "Banque Populaire",
+    "CCF",
+    "CIC",
+    "Caisse d'Épargne",
+    "Crédit Agricole",
+    "Crédit Coopératif",
+    "Crédit Municipal",
+    "Crédit Mutuel",
+    "Crédit du Nord",
+    "HSBC",
+    "LCL",
+    "La Banque Postale",
+    "Société Générale"
+  ],
   "departements": {
     "01": {
       "nom": "Ain",
@@ -3494,7 +3510,7 @@
     },
     {
       "id": "1de9e3f0dbb9a51f",
-      "banque": "Caisse d’Épargne",
+      "banque": "Caisse d'Épargne",
       "commune": "Plonéour-Lanvern",
       "code_insee": "29174",
       "departement": "29",
@@ -3530,7 +3546,7 @@
     },
     {
       "id": "c2285ce8073e19a4",
-      "banque": "Caisse d’Épargne",
+      "banque": "Caisse d'Épargne",
       "commune": "Bannalec",
       "code_insee": "29004",
       "departement": "29",
@@ -3566,7 +3582,7 @@
     },
     {
       "id": "214173eb33726399",
-      "banque": "Caisse d’Épargne",
+      "banque": "Caisse d'Épargne",
       "commune": "Nogent-sur-Vernisson",
       "code_insee": "45229",
       "departement": "45",
@@ -3602,7 +3618,7 @@
     },
     {
       "id": "569c2beaaf790b75",
-      "banque": "Caisse d’Épargne",
+      "banque": "Caisse d'Épargne",
       "commune": "Nantes",
       "code_insee": "44109",
       "departement": "44",
@@ -3638,7 +3654,7 @@
     },
     {
       "id": "e854f69b6fc3abcd",
-      "banque": "Caisse d’Épargne",
+      "banque": "Caisse d'Épargne",
       "commune": "Artenay",
       "code_insee": "45008",
       "departement": "45",
@@ -3674,7 +3690,7 @@
     },
     {
       "id": "fad755c7a41a4e37",
-      "banque": "Caisse d’Épargne",
+      "banque": "Caisse d'Épargne",
       "commune": "Avoine",
       "code_insee": "37011",
       "departement": "37",
@@ -3710,7 +3726,7 @@
     },
     {
       "id": "98d3451f43904e59",
-      "banque": "Caisse d’Épargne",
+      "banque": "Caisse d'Épargne",
       "commune": "Vatan",
       "code_insee": "36230",
       "departement": "36",
@@ -3746,7 +3762,7 @@
     },
     {
       "id": "3769341420488a7d",
-      "banque": "Caisse d’Épargne",
+      "banque": "Caisse d'Épargne",
       "commune": "Quimperlé",
       "code_insee": "29233",
       "departement": "29",
@@ -3782,7 +3798,7 @@
     },
     {
       "id": "e812a07555546a1f",
-      "banque": "Caisse d’Épargne",
+      "banque": "Caisse d'Épargne",
       "commune": "Bubry",
       "code_insee": "56026",
       "departement": "56",
@@ -3818,7 +3834,7 @@
     },
     {
       "id": "b265787b297dfd2b",
-      "banque": "Caisse d’Épargne",
+      "banque": "Caisse d'Épargne",
       "commune": "Quimperlé",
       "code_insee": "29233",
       "departement": "29",
@@ -3854,7 +3870,7 @@
     },
     {
       "id": "b3f4f766a2a981d9",
-      "banque": "Caisse d’Épargne",
+      "banque": "Caisse d'Épargne",
       "commune": "Durtal",
       "code_insee": "49127",
       "departement": "49",
@@ -3890,7 +3906,7 @@
     },
     {
       "id": "2fdbf9c3f79f33a0",
-      "banque": "Caisse d’Épargne",
+      "banque": "Caisse d'Épargne",
       "commune": "Rennes",
       "code_insee": "35238",
       "departement": "35",
@@ -3926,7 +3942,7 @@
     },
     {
       "id": "c87baaf219324b71",
-      "banque": "Caisse d’Épargne",
+      "banque": "Caisse d'Épargne",
       "commune": "Morée",
       "code_insee": "41154",
       "departement": "41",
@@ -3962,7 +3978,7 @@
     },
     {
       "id": "635413b05d29c482",
-      "banque": "Caisse d’Épargne",
+      "banque": "Caisse d'Épargne",
       "commune": "Guilers",
       "code_insee": "29069",
       "departement": "29",
@@ -3998,7 +4014,7 @@
     },
     {
       "id": "91f120aea8268551",
-      "banque": "Caisse d’Épargne",
+      "banque": "Caisse d'Épargne",
       "commune": "Châtillon-sur-Loire",
       "code_insee": "45087",
       "departement": "45",
@@ -4034,7 +4050,7 @@
     },
     {
       "id": "2de887823af53943",
-      "banque": "Caisse d’Épargne",
+      "banque": "Caisse d'Épargne",
       "commune": "Orléans",
       "code_insee": "45234",
       "departement": "45",
@@ -4070,7 +4086,7 @@
     },
     {
       "id": "0956f155ae2c92c7",
-      "banque": "Caisse d’Épargne",
+      "banque": "Caisse d'Épargne",
       "commune": "Illiers-Combray",
       "code_insee": "28196",
       "departement": "28",
@@ -4106,7 +4122,7 @@
     },
     {
       "id": "6516a4a5eb8585a9",
-      "banque": "Caisse d’Épargne",
+      "banque": "Caisse d'Épargne",
       "commune": "Richelieu",
       "code_insee": "37196",
       "departement": "37",
@@ -4142,7 +4158,7 @@
     },
     {
       "id": "4a51b67be9d7c25d",
-      "banque": "Caisse d’Épargne",
+      "banque": "Caisse d'Épargne",
       "commune": "Donges",
       "code_insee": "44052",
       "departement": "44",
@@ -4178,7 +4194,7 @@
     },
     {
       "id": "a1827f061f8de758",
-      "banque": "Caisse d’Épargne",
+      "banque": "Caisse d'Épargne",
       "commune": "Tours",
       "code_insee": "37261",
       "departement": "37",
@@ -4214,7 +4230,7 @@
     },
     {
       "id": "2066f1ec33c2411e",
-      "banque": "Caisse d’Épargne",
+      "banque": "Caisse d'Épargne",
       "commune": "Le Pellerin",
       "code_insee": "44120",
       "departement": "44",
@@ -4250,7 +4266,7 @@
     },
     {
       "id": "1226082e1c144aad",
-      "banque": "Caisse d’Épargne",
+      "banque": "Caisse d'Épargne",
       "commune": "Chabris",
       "code_insee": "36034",
       "departement": "36",
@@ -4286,7 +4302,7 @@
     },
     {
       "id": "7bc46be6b4476480",
-      "banque": "Caisse d’Épargne",
+      "banque": "Caisse d'Épargne",
       "commune": "Senonches",
       "code_insee": "28373",
       "departement": "28",
@@ -4322,7 +4338,7 @@
     },
     {
       "id": "2681dcfbe3e84d28",
-      "banque": "Caisse d’Épargne",
+      "banque": "Caisse d'Épargne",
       "commune": "Dun-sur-Auron",
       "code_insee": "18087",
       "departement": "18",
@@ -4358,7 +4374,7 @@
     },
     {
       "id": "568fdfcac470fabf",
-      "banque": "Caisse d’Épargne",
+      "banque": "Caisse d'Épargne",
       "commune": "Cléry-Saint-André",
       "code_insee": "45098",
       "departement": "45",
@@ -4394,7 +4410,7 @@
     },
     {
       "id": "71d7c603fe256817",
-      "banque": "Caisse d’Épargne",
+      "banque": "Caisse d'Épargne",
       "commune": "Merdrignac",
       "code_insee": "22147",
       "departement": "22",
@@ -4430,7 +4446,7 @@
     },
     {
       "id": "315049620bdef518",
-      "banque": "Caisse d’Épargne",
+      "banque": "Caisse d'Épargne",
       "commune": "Blois",
       "code_insee": "41018",
       "departement": "41",
@@ -4466,7 +4482,7 @@
     },
     {
       "id": "10b4789fad1370f8",
-      "banque": "Caisse d’Épargne",
+      "banque": "Caisse d'Épargne",
       "commune": "Dordives",
       "code_insee": "45127",
       "departement": "45",
@@ -4502,7 +4518,7 @@
     },
     {
       "id": "b38bf26452a7b5bd",
-      "banque": "Caisse d’Épargne",
+      "banque": "Caisse d'Épargne",
       "commune": "Cholet",
       "code_insee": "49099",
       "departement": "49",
@@ -4538,7 +4554,7 @@
     },
     {
       "id": "533dde1b17bbb300",
-      "banque": "Caisse d’Épargne",
+      "banque": "Caisse d'Épargne",
       "commune": "Saint-Gaultier",
       "code_insee": "36192",
       "departement": "36",
@@ -4574,7 +4590,7 @@
     },
     {
       "id": "896d80636332a784",
-      "banque": "Caisse d’Épargne",
+      "banque": "Caisse d'Épargne",
       "commune": "Châlette-sur-Loing",
       "code_insee": "45068",
       "departement": "45",
@@ -4610,7 +4626,7 @@
     },
     {
       "id": "cef9c1ea22af0733",
-      "banque": "Caisse d’Épargne",
+      "banque": "Caisse d'Épargne",
       "commune": "Châteaudun",
       "code_insee": "28088",
       "departement": "28",
@@ -4646,7 +4662,7 @@
     },
     {
       "id": "e31e78943523cc2f",
-      "banque": "Caisse d’Épargne",
+      "banque": "Caisse d'Épargne",
       "commune": "Cholet",
       "code_insee": "49099",
       "departement": "49",
@@ -4682,7 +4698,7 @@
     },
     {
       "id": "e0dff46d7dcb3765",
-      "banque": "Caisse d’Épargne",
+      "banque": "Caisse d'Épargne",
       "commune": "Chartres",
       "code_insee": "28085",
       "departement": "28",
@@ -4718,7 +4734,7 @@
     },
     {
       "id": "0d512303a2a1c232",
-      "banque": "Caisse d’Épargne",
+      "banque": "Caisse d'Épargne",
       "commune": "Gallardon",
       "code_insee": "28168",
       "departement": "28",
@@ -4790,7 +4806,7 @@
     },
     {
       "id": "bee6f519134d4b04",
-      "banque": "Crédit Agricole Centre Ouest",
+      "banque": "Crédit Agricole",
       "commune": "Écueillé",
       "code_insee": "36069",
       "departement": "36",
@@ -4826,7 +4842,7 @@
     },
     {
       "id": "0bef3718984951ba",
-      "banque": "Crédit Agricole Centre Ouest",
+      "banque": "Crédit Agricole",
       "commune": "Villedieu-sur-Indre",
       "code_insee": "36241",
       "departement": "36",
@@ -4862,7 +4878,7 @@
     },
     {
       "id": "603169430571d500",
-      "banque": "Crédit Agricole Centre Ouest",
+      "banque": "Crédit Agricole",
       "commune": "Châteauroux",
       "code_insee": "36044",
       "departement": "36",
@@ -5726,7 +5742,7 @@
     },
     {
       "id": "a39161cc79f29c33",
-      "banque": "Crédit Municipal de Bordeaux / agence bancaire de Dijon",
+      "banque": "Crédit Municipal",
       "commune": "Dijon",
       "code_insee": "21231",
       "departement": "21",
@@ -6456,7 +6472,7 @@
     },
     {
       "id": "1080a9a17acfff15",
-      "banque": "Crédit agricole",
+      "banque": "Crédit Agricole",
       "departement": "Aveyron",
       "count": 5,
       "communes_mentioned": "",
@@ -6514,7 +6530,7 @@
   "vague_signals": [
     {
       "id": "febe1a37af1f69c6",
-      "banque": "Caisse d'Épargne Loire-Centre",
+      "banque": "Caisse d'Épargne",
       "scope": "regional",
       "count": null,
       "confidence": 0.6,
@@ -6566,7 +6582,7 @@
     },
     {
       "id": "5a044f307ddd7e51",
-      "banque": "Crédit agricole, Société générale",
+      "banque": "Crédit Agricole",
       "scope": "national",
       "count": null,
       "confidence": 0.5,
@@ -6605,7 +6621,7 @@
     },
     {
       "id": "2fcceb7636b34a78",
-      "banque": "Crédit agricole",
+      "banque": "Crédit Agricole",
       "scope": "regional",
       "count": 20,
       "confidence": 0.75,
@@ -7854,6 +7870,19 @@
       "created_at": "2026-07-06T08:47:09.660079+00:00"
     },
     {
+      "id": "d2755132f39163d8",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Menace de fermeture d'un centre d'apprentis : une semaine de grève de la faim qui change tout - France 3 Régions",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMivAFBVV95cUxPbTlET2xhUzVIbTViMk5qaU1aWUNibVk5c0t5dlhNZzY3Z000RnI1dHgwak96cm91Q0VNMFpvRzhteGREQzloR0x6dmtsRGszc3cza2paQUlwV3RqUUJrbTlKR3VhMG4taFdLWlFnYVhnWXlJX0ZfczczekhmTEZPbUl5ZklTYmJSck5OSGJIZDZndEs5UndtZE52Zl9WUUdmLTN2bmk1N0NTTUltaUI5WDBuanAySlBsTUw5bg?oc=5\" target=\"_blank\">Menace de fermeture d'un centre d'apprentis : une semaine de grève de la faim qui change tout</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">France 3 Régions</font>",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPbTlET2xhUzVIbTViMk5qaU1aWUNibVk5c0t5dlhNZzY3Z000RnI1dHgwak96cm91Q0VNMFpvRzhteGREQzloR0x6dmtsRGszc3cza2paQUlwV3RqUUJrbTlKR3VhMG4taFdLWlFnYVhnWXlJX0ZfczczekhmTEZPbUl5ZklTYmJSck5OSGJIZDZndEs5UndtZE52Zl9WUUdmLTN2bmk1N0NTTUltaUI5WDBuanAySlBsTUw5bg?oc=5",
+      "source": "Google News",
+      "date": "Wed, 08 Apr 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "score préfiltre bas (-2)",
+      "created_at": "2026-07-20T08:47:38.660070+00:00"
+    },
+    {
       "id": "9cc3219998078e86",
       "banque": "Société Générale",
       "departement": null,
@@ -8138,6 +8167,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-29T09:13:57.653286+00:00"
+    },
+    {
+      "id": "801b67008996afb0",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Grève à l’école : classes et cantines fermées, manifestations… à quoi il faut s’attendre ce mardi 31 mars en France et dans les Pyrénées-Atlantiques - La République des Pyrénées",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMizAJBVV95cUxPQkkxTmxETHJXcVhrc0JuRDIzemtocm5CMVV3T2ZuOGFTdkozZ0VnWmUyeFJEemxJQWo3RTVUb1BhLVp3dGxxTUtSb2w5elpwM2pmd3hZcHluUktxaTkxdEhuYnp2QmQyZlBvSG9pSTcwMFJVUXJqZ2o4dklibXk4SllvUFZucm1lNDFkNDNrRWx0QmRMbTlDWVFoTTBMMVBvQWYtMkJCR3loWEJ4OEoxdTJSYkpOLXF2eHFuX3VNYXN2QkpHNWxwUGxMS1k1U3BseFBhM19zMlBmQlJySnF2ZW0zNDR0V0tJeTRtb2F4VnZ3dG16LVNLN21ZQWw2SzlqRE1Wc0hCeWpKUWtrUlpncEFNRURCd2EzamxLZlF4RklSaWM1T051bFBzLXFrNWJsWUxnSlBkWDR3RE9RN3N3YXY0bU1FZVdJYVZIaA?oc=",
+      "url": "https://news.google.com/rss/articles/CBMizAJBVV95cUxPQkkxTmxETHJXcVhrc0JuRDIzemtocm5CMVV3T2ZuOGFTdkozZ0VnWmUyeFJEemxJQWo3RTVUb1BhLVp3dGxxTUtSb2w5elpwM2pmd3hZcHluUktxaTkxdEhuYnp2QmQyZlBvSG9pSTcwMFJVUXJqZ2o4dklibXk4SllvUFZucm1lNDFkNDNrRWx0QmRMbTlDWVFoTTBMMVBvQWYtMkJCR3loWEJ4OEoxdTJSYkpOLXF2eHFuX3VNYXN2QkpHNWxwUGxMS1k1U3BseFBhM19zMlBmQlJySnF2ZW0zNDR0V0tJeTRtb2F4VnZ3dG16LVNLN21ZQWw2SzlqRE1Wc0hCeWpKUWtrUlpncEFNRURCd2EzamxLZlF4RklSaWM1T051bFBzLXFrNWJsWUxnSlBkWDR3RE9RN3N3YXY0bU1FZVdJYVZIaA?oc=5",
+      "source": "Google News",
+      "date": "Tue, 31 Mar 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "score préfiltre bas (-2)",
+      "created_at": "2026-07-20T08:47:56.201533+00:00"
     },
     {
       "id": "980f07598deee7c8",
@@ -10389,6 +10431,19 @@
       "created_at": "2026-06-25T15:24:03.549391+00:00"
     },
     {
+      "id": "2251da278035cc27",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "\"Notre métier est bafoué\", personnels et patients de cette unité psychiatrique se mobilisent contre la fermeture de lits et la suppression de postes - France 3 Régions",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMivgJBVV95cUxNR1FQQWI0S3NFUlhjNGQyUGxtUGd2bThPLWtWSVpSVERmeThrZDdxbFZRUEJQWjlHWnNiSGI5TFZIeGRWVFliV1gtU0JPUjlTMFd5cXlpRDJsRlRKaHo1eFJEVnhHTnpHMUJqZXd5YW1IRk5HSkN0VXlSTWlUdkpnSDVKX3JrLTBfMnQwSmpPX1lHQnVZXzFSeWxaOUNYM1BBQ19OX1Q3TnIwbExkMnlxZFltR2VjUFl2N0FyUDFxcjVTeFNRMGZKb181bk9tbGo1U1VEaFRZaDQ3c203UVZ6eEo0M1lRU0tlZUMxTldFTkkyVkNub2hxLS1kZTh6Yl9EZE1yanozSFVpVnk0VmNJYTlDTE9xVjJBbzN3WjdiNnlqdDFHWE01dVRBa2VIVGlsd1VGamx4cElYWXhaTVE?oc=5\" target=\"_blank\">",
+      "url": "https://news.google.com/rss/articles/CBMivgJBVV95cUxNR1FQQWI0S3NFUlhjNGQyUGxtUGd2bThPLWtWSVpSVERmeThrZDdxbFZRUEJQWjlHWnNiSGI5TFZIeGRWVFliV1gtU0JPUjlTMFd5cXlpRDJsRlRKaHo1eFJEVnhHTnpHMUJqZXd5YW1IRk5HSkN0VXlSTWlUdkpnSDVKX3JrLTBfMnQwSmpPX1lHQnVZXzFSeWxaOUNYM1BBQ19OX1Q3TnIwbExkMnlxZFltR2VjUFl2N0FyUDFxcjVTeFNRMGZKb181bk9tbGo1U1VEaFRZaDQ3c203UVZ6eEo0M1lRU0tlZUMxTldFTkkyVkNub2hxLS1kZTh6Yl9EZE1yanozSFVpVnk0VmNJYTlDTE9xVjJBbzN3WjdiNnlqdDFHWE01dVRBa2VIVGlsd1VGamx4cElYWXhaTVE?oc=5",
+      "source": "Google News",
+      "date": "Sun, 29 Jun 2025 07:00:00 GMT",
+      "score": 3,
+      "raison": "score préfiltre bas (-2)",
+      "created_at": "2026-07-20T08:48:12.335914+00:00"
+    },
+    {
       "id": "5d288f5c28c70a03",
       "banque": "Société Générale",
       "departement": null,
@@ -11442,6 +11497,19 @@
       "created_at": "2026-06-25T15:21:01.212225+00:00"
     },
     {
+      "id": "a13d0121cfa1f103",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Appel à la grève dans l'Education Nationale : plusieurs écoles fermées ce mardi dans le Territoire de Belfort - ici.fr",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMimwJBVV95cUxPU3lLR1VKX0xndDE1WmFqTEVTWmtqWllGWkdkVzRtcU03TC02cGlzZ3NuVkpPRXppM1R1dDhJdWRyTG93N3NtY0s5UnFMVGZyWXJHUmZ1QXZsc3hMcWkxNDBYR0E0M3lJMmNqUExfc3JxX1pmUjkyenVYUm9TcWxOaFRPS0F6a2tfX0wxZExzbTJ2Y3piU1NzQW0tU1l5T3hXLVB0XzVhMXJHSGdhdUhxNFE4d3RxcTBWY3dKYkdHOGZDUmNYTkRpR1Rxd1dVbmlzRGZ6TDNYcmt1QkpGU3pJOHM0V3pWSkxsWW5EbGI3eVRoSXNXOWIyS2dDREFMZ3RFX1RVUHV6T0lCZFcxLWU0bk56SGZVblk5aVhz?oc=5\" target=\"_blank\">Appel à la grève dans l'Education Nationale : p",
+      "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxPU3lLR1VKX0xndDE1WmFqTEVTWmtqWllGWkdkVzRtcU03TC02cGlzZ3NuVkpPRXppM1R1dDhJdWRyTG93N3NtY0s5UnFMVGZyWXJHUmZ1QXZsc3hMcWkxNDBYR0E0M3lJMmNqUExfc3JxX1pmUjkyenVYUm9TcWxOaFRPS0F6a2tfX0wxZExzbTJ2Y3piU1NzQW0tU1l5T3hXLVB0XzVhMXJHSGdhdUhxNFE4d3RxcTBWY3dKYkdHOGZDUmNYTkRpR1Rxd1dVbmlzRGZ6TDNYcmt1QkpGU3pJOHM0V3pWSkxsWW5EbGI3eVRoSXNXOWIyS2dDREFMZ3RFX1RVUHV6T0lCZFcxLWU0bk56SGZVblk5aVhz?oc=5",
+      "source": "Google News",
+      "date": "Mon, 30 Mar 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "score préfiltre bas (-2)",
+      "created_at": "2026-07-20T08:48:16.588363+00:00"
+    },
+    {
       "id": "e69dc64028f1e526",
       "banque": "Crédit Mutuel",
       "departement": null,
@@ -11739,6 +11807,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-07-19T06:17:01.328853+00:00"
+    },
+    {
+      "id": "cb7e375a15e24afe",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Fermeture des sites Legrand : les salariés de Lagord en grève contre la fermeture annoncée de leur usine - Sud Ouest",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMi9wFBVV95cUxOdlkyT0xQUkk4MUpXLU9NdThBZUdkUFE4d2ZwdnhWNHN2eFRmeGk5cWdOWWQyMWNBMHhnRGkxbmtHNWtMTXFFYklldXEtUjlHdlZNdk16UjcyT3RVck9RLTktZlRpTkU0djJITmZOWDNYZ0ZVM1RiM216U1Q2TVZieGxGb3Bhdm91R1VGdm90U3hKY2hpNmdBRVkweDBZWUE4TFZUVkp0REhjRHI4cG1zWGVMWWNsaTAzX21LOFJ3TmNxTUVFaXY4V1lHNXNzb2xmdHlGZTRXbWdoY0ZRSGZzNXgtcDkweDNQSjVqa0FQQnFRbk9mNGN3?oc=5\" target=\"_blank\">Fermeture des sites Legrand : les salariés de Lagord en grève contre la fermeture annoncée de l",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOdlkyT0xQUkk4MUpXLU9NdThBZUdkUFE4d2ZwdnhWNHN2eFRmeGk5cWdOWWQyMWNBMHhnRGkxbmtHNWtMTXFFYklldXEtUjlHdlZNdk16UjcyT3RVck9RLTktZlRpTkU0djJITmZOWDNYZ0ZVM1RiM216U1Q2TVZieGxGb3Bhdm91R1VGdm90U3hKY2hpNmdBRVkweDBZWUE4TFZUVkp0REhjRHI4cG1zWGVMWWNsaTAzX21LOFJ3TmNxTUVFaXY4V1lHNXNzb2xmdHlGZTRXbWdoY0ZRSGZzNXgtcDkweDNQSjVqa0FQQnFRbk9mNGN3?oc=5",
+      "source": "Google News",
+      "date": "Mon, 22 Jun 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "score préfiltre bas (-2)",
+      "created_at": "2026-07-20T08:46:50.606145+00:00"
     },
     {
       "id": "4bc5a502419255ac",
@@ -13457,6 +13538,19 @@
       "created_at": "2026-06-25T15:46:11.268366+00:00"
     },
     {
+      "id": "fbc28a9837eba205",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Académie de Clermont-Ferrand : une centaine de postes supprimés à la rentrée, les syndicats en colère - ici.fr",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMi3AFBVV95cUxPczNQT2ZxMEFINjZWZ0Zxazc0R3dMTG1xbmpIbWs2ZW5sMUIwclJuX2swVy1Hem5nTExmSFdWbU1rQ2J5SzlLbXJyWFl3ZGJ4WlJleXVTbjRoZzNOTGcxSkYySmJFQms0QTV1OFNyZTN1anNaN25KenZ6eUpxdjlPeU1uOFllSl8waEpybUluRXNjeGstdUVodTVsSGxKUHN2MkF2T2t3bjU2WXpvUDlwdWJVWDRqUm9JX0FXalQ1b0RGVXF2UVluWTJHTVZtengyWGZSLUtlVjFJdEFF?oc=5\" target=\"_blank\">Académie de Clermont-Ferrand : une centaine de postes supprimés à la rentrée, les syndicats en colère</a>&nbsp;&nbsp;<font color=\"#",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPczNQT2ZxMEFINjZWZ0Zxazc0R3dMTG1xbmpIbWs2ZW5sMUIwclJuX2swVy1Hem5nTExmSFdWbU1rQ2J5SzlLbXJyWFl3ZGJ4WlJleXVTbjRoZzNOTGcxSkYySmJFQms0QTV1OFNyZTN1anNaN25KenZ6eUpxdjlPeU1uOFllSl8waEpybUluRXNjeGstdUVodTVsSGxKUHN2MkF2T2t3bjU2WXpvUDlwdWJVWDRqUm9JX0FXalQ1b0RGVXF2UVluWTJHTVZtengyWGZSLUtlVjFJdEFF?oc=5",
+      "source": "Google News",
+      "date": "Wed, 28 Jan 2026 08:00:00 GMT",
+      "score": 2,
+      "raison": "score préfiltre bas (-2)",
+      "created_at": "2026-07-20T08:47:55.096174+00:00"
+    },
+    {
       "id": "1715b3407ca08b00",
       "banque": "Société Générale",
       "departement": null,
@@ -13873,6 +13967,19 @@
       "created_at": "2026-06-25T15:35:13.053388+00:00"
     },
     {
+      "id": "63ef0f87b2a18114",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Suppression de postes chez ArcelorMittal, \"la direction encore une fois lâche une bombe !\" s'indigne la CFDT, pas une surprise pour la CGT - France 3 Régions",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMirwJBVV95cUxQaXNOWGxoZ3Q5RldjUmFsM2tKR2xjbzZBM0tEOHg1WWpGaWt4LUJEbDVYVnpwQWRCcnpLQm1oMGFMck5aZDk4OTRzeS15SGcwYmh5TEhPcElyV25ZaWd5ck1fV1YzeHNPcE1oTG5mVFo0ZlVkSUtoZWo0dlRIX1c2OEFLSmZzeV80emdJamxYSUNVVVNlWDl4VDJhbDlnQWN3Q1liaERNVWhQYnNYMGRCSHJOTVFZb3d0cTlOVGc1ZXJBdUR3YlJkak1qUGt4NTd2YVBJZ3lmZF8taFBFbnJ2cUo4VUVQWTFXQzVNWFY4MVlJZ3RwRlc0N3ZxUkdJVThTZF9ENnlEMnV5QlJzM21RUThSZ2Q5QWpobWVqVlAxd3k5UGRSVU15MjhKNDJPMjA?oc=5\" target=\"_blank\">Suppression de poste",
+      "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxQaXNOWGxoZ3Q5RldjUmFsM2tKR2xjbzZBM0tEOHg1WWpGaWt4LUJEbDVYVnpwQWRCcnpLQm1oMGFMck5aZDk4OTRzeS15SGcwYmh5TEhPcElyV25ZaWd5ck1fV1YzeHNPcE1oTG5mVFo0ZlVkSUtoZWo0dlRIX1c2OEFLSmZzeV80emdJamxYSUNVVVNlWDl4VDJhbDlnQWN3Q1liaERNVWhQYnNYMGRCSHJOTVFZb3d0cTlOVGc1ZXJBdUR3YlJkak1qUGt4NTd2YVBJZ3lmZF8taFBFbnJ2cUo4VUVQWTFXQzVNWFY4MVlJZ3RwRlc0N3ZxUkdJVThTZF9ENnlEMnV5QlJzM21RUThSZ2Q5QWpobWVqVlAxd3k5UGRSVU15MjhKNDJPMjA?oc=5",
+      "source": "Google News",
+      "date": "Wed, 04 Feb 2026 08:00:00 GMT",
+      "score": 2,
+      "raison": "score préfiltre bas (-2)",
+      "created_at": "2026-07-20T08:47:45.844274+00:00"
+    },
+    {
       "id": "c59994891de49e2a",
       "banque": "CCF",
       "departement": null,
@@ -13988,6 +14095,19 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-29T09:11:43.565445+00:00"
+    },
+    {
+      "id": "3e02f982ea3b8748",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Côte-d’Or. Suppression de postes d’enseignants à la rentrée 2026 : « C’est une véritable saignée… » - Le Bien Public",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMiyAFBVV95cUxPYnNoeHYxQmhPcWE1RHU0cjZaQXIwU3NKQ0t2NmJteU9jMDVvSWpGRXlGZThCaklsc1UzN1dCbVlRaXJSSHhvcHdhWURCajV6NWdpOVdjRnliU3Z6Z2Z4V2hRcUZyM1RhblJqWE9kMG9DWXBwcW1YbGtxZkpuVjE5RjBObEZvRVNKeF9LSGVTMG1GUV9IaDZQNW1KdEZQX2RUVUlDSElIcXlFOHFCa2stZ2N0N3FsYmlFbnhXMUpPSnlnb0tHX3dJNg?oc=5\" target=\"_blank\">Côte-d’Or. Suppression de postes d’enseignants à la rentrée 2026 : « C’est une véritable saignée… »</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Le Bien Public</font",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPYnNoeHYxQmhPcWE1RHU0cjZaQXIwU3NKQ0t2NmJteU9jMDVvSWpGRXlGZThCaklsc1UzN1dCbVlRaXJSSHhvcHdhWURCajV6NWdpOVdjRnliU3Z6Z2Z4V2hRcUZyM1RhblJqWE9kMG9DWXBwcW1YbGtxZkpuVjE5RjBObEZvRVNKeF9LSGVTMG1GUV9IaDZQNW1KdEZQX2RUVUlDSElIcXlFOHFCa2stZ2N0N3FsYmlFbnhXMUpPSnlnb0tHX3dJNg?oc=5",
+      "source": "Google News",
+      "date": "Tue, 27 Jan 2026 08:00:00 GMT",
+      "score": 2,
+      "raison": "score préfiltre bas (-2)",
+      "created_at": "2026-07-20T08:47:03.584087+00:00"
     },
     {
       "id": "5d71d273e8057a98",
@@ -14589,7 +14709,7 @@
     },
     {
       "id": "51eb17ba4c52a8cc",
-      "banque": "Crédit agricole, Société générale",
+      "banque": "Crédit Agricole",
       "departement": null,
       "titre": "Crédit agricole, Société générale... Pourquoi la réorganisation du secteur bancaire accroît le malaise social - Le Figaro",
       "extrait": "réorganisation du secteur bancaire accroît le malaise social",
@@ -14859,6 +14979,19 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:37:54.895867+00:00"
+    },
+    {
+      "id": "f26d3986f446d44a",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Municipales 2026 : les suppressions de postes dans l'Education nationale, \"une saignée\" pour les syndicats - Centre Presse Aveyron",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMi8AFBVV95cUxNcXd3Tm1BNGg0RldoRklfdkM1RzZFR0E1WVI0OHJWc2NfSGVzdXNWcjFZU081VkFRcU1iODViWTUtSEN1RWRtVUIyLXNBY2tPQTU5V2wxX0JNbWhTRm9BeFpkTGNFMFNTWjhTSnlQUW1DWFlXZnE5SXR3dXJSTTY0THJfV0VKbjUxa3hHMDVKYmdlNVprRDhNYU9JVXB3R2t0bmlPSXhyM091WFpWLXVNT3lEMTIxOWRtZUVubnFuOTV2cjFPUDZjb0plTDhtaHdXT3lBelBfZnJqYmRsT1dZYjA3SnJWbkVLZF9TajFPX1I?oc=5\" target=\"_blank\">Municipales 2026 : les suppressions de postes dans l'Education nationale, \"une saignée\" pour les syndica",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNcXd3Tm1BNGg0RldoRklfdkM1RzZFR0E1WVI0OHJWc2NfSGVzdXNWcjFZU081VkFRcU1iODViWTUtSEN1RWRtVUIyLXNBY2tPQTU5V2wxX0JNbWhTRm9BeFpkTGNFMFNTWjhTSnlQUW1DWFlXZnE5SXR3dXJSTTY0THJfV0VKbjUxa3hHMDVKYmdlNVprRDhNYU9JVXB3R2t0bmlPSXhyM091WFpWLXVNT3lEMTIxOWRtZUVubnFuOTV2cjFPUDZjb0plTDhtaHdXT3lBelBfZnJqYmRsT1dZYjA3SnJWbkVLZF9TajFPX1I?oc=5",
+      "source": "Google News",
+      "date": "Sat, 21 Feb 2026 08:00:00 GMT",
+      "score": 2,
+      "raison": "score préfiltre bas (-2)",
+      "created_at": "2026-07-20T08:46:43.328788+00:00"
     },
     {
       "id": "d14acaff7f5b135f",
@@ -15444,6 +15577,19 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:36:16.652297+00:00"
+    },
+    {
+      "id": "74834f4e549b3c1f",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Vidéo. Suppression de postes chez Seb : 70 salariés en grève à Mayenne - Ouest-France",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMi9gFBVV95cUxNamV4ekVaUUVZajhVNkxZRURZWDNtSU1qWEg3cmNRVDZuaXczWUhUNTF4Xzd1bUYxVTc4c2QtNUprU3FxaTJwNW55V01zdnVJSkx6WnFFWmxqekk5M1pYUE1qNndrcWJUVEpjUEEzUVRqaEQzZkRWaHZHSmtzOWZmUnA5aTFsRWdRMDJrRWJmYlhobmE4V2I0TEdzZkVOMDFwT2s1X0Z6RDdxOUN6a2NNSTFEQmNsdUV2alFzVUZ6SGtJYW5rRGxPLUJhbzRsNlhZNllhcEdlMk94LXI4X2hLUERZc0c4ZUNydmV3SzlzSHVyc0JFYlE?oc=5\" target=\"_blank\">Vidéo. Suppression de postes chez Seb : 70 salariés en grève à Mayenne</a>&nbsp;&nbsp;<font colo",
+      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNamV4ekVaUUVZajhVNkxZRURZWDNtSU1qWEg3cmNRVDZuaXczWUhUNTF4Xzd1bUYxVTc4c2QtNUprU3FxaTJwNW55V01zdnVJSkx6WnFFWmxqekk5M1pYUE1qNndrcWJUVEpjUEEzUVRqaEQzZkRWaHZHSmtzOWZmUnA5aTFsRWdRMDJrRWJmYlhobmE4V2I0TEdzZkVOMDFwT2s1X0Z6RDdxOUN6a2NNSTFEQmNsdUV2alFzVUZ6SGtJYW5rRGxPLUJhbzRsNlhZNllhcEdlMk94LXI4X2hLUERZc0c4ZUNydmV3SzlzSHVyc0JFYlE?oc=5",
+      "source": "Google News",
+      "date": "Fri, 06 Mar 2026 08:00:00 GMT",
+      "score": 2,
+      "raison": "score préfiltre bas (-2)",
+      "created_at": "2026-07-20T08:47:42.286664+00:00"
     },
     {
       "id": "79279a5d4aadb0c3",
