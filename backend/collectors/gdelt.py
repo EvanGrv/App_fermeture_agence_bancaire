@@ -3,7 +3,11 @@ import time
 import urllib.parse
 import requests
 
-_QUERY = '(agence banque) (fermeture OR fusion) sourcelang:french'
+_QUERY = (
+    '((agence banque) OR "La Banque Postale" OR "Banque Postale") '
+    '(fermeture OR fusion OR fermera OR "va fermer" OR "menace de fermeture") '
+    'sourcelang:french'
+)
 _BASE = "https://api.gdeltproject.org/api/v2/doc/doc"
 _TIMESPAN = os.getenv("GDELT_TIMESPAN", "6m")  # GDELT : m = mois ici (≠ Google News) → 6 mois
 _MIN_INTERVAL = 5.0  # GDELT exige 1 requête / 5 s

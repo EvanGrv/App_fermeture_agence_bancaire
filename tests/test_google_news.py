@@ -64,6 +64,15 @@ def test_queries_contiennent_requetes_euphemismes():
     assert "réorganisation réseau bancaire agence" in requetes
 
 
+def test_queries_ciblent_banque_postale_bureaux_et_previsions():
+    requetes = " ".join(google_news.QUERIES)
+    assert '"La Banque Postale" "bureau de poste" "fermeture"' in requetes
+    assert '"La Banque Postale" "services financiers" "fermeture"' in requetes
+    assert '"La Banque Postale" "fermera"' in requetes
+    assert "La Banque Postale fermeture agence Normandie" in requetes
+    assert any("La Banque Postale" in q for q in google_news._DENSE)
+
+
 # ---------------------------------------------------------------------------
 # Tests Task 12: découpage mensuel des requêtes denses
 # ---------------------------------------------------------------------------
@@ -184,4 +193,6 @@ def test_dense_set_contains_thematiques_and_big_banks():
     assert any("Société Générale" in q and "fermeture agence" in q and len(q.split()) <= 4
                for q in google_news._DENSE)
     assert any("BNP" in q and "fermeture agence" in q and len(q.split()) <= 4
+               for q in google_news._DENSE)
+    assert any("La Banque Postale" in q and "fermeture agence" in q
                for q in google_news._DENSE)

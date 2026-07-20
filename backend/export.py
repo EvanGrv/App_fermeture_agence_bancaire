@@ -6,6 +6,7 @@ import config
 from backend.plans import PLANS
 from backend.source_tier import tier as _source_tier
 from backend.dedup import normalise_cle
+from backend.extractor import normalise_banque
 from backend.vigilance_review import candidats_communes, signal_fermeture_agence
 
 _CLOSURE_COLS = ["id", "banque", "commune", "code_insee", "departement", "type",
@@ -51,6 +52,7 @@ def build_payload(conn) -> dict:
     compteur = {}
     for row in conn.execute(f"SELECT {','.join(_CLOSURE_COLS)} FROM closures"):
         cl = dict(zip(_CLOSURE_COLS, row))
+        cl["banque"] = normalise_banque(cl["banque"])
         srcs = conn.execute(
             "SELECT url, titre, source, date FROM sources WHERE closure_id=?",
             (cl["id"],),
@@ -95,24 +97,32 @@ def build_payload(conn) -> dict:
             f"SELECT {','.join(_VIGILANCE_COLS)} FROM vigilances ORDER BY score DESC, date DESC"
         )
     ]
+    for vigilance in vigilances:
+        vigilance["banque"] = normalise_banque(vigilance["banque"])
     closures_unlocated = [
         dict(zip(_UNLOCATED_COLS, row))
         for row in conn.execute(
             f"SELECT {','.join(_UNLOCATED_COLS)} FROM closures_unlocated ORDER BY date DESC"
         )
     ]
+    for closure in closures_unlocated:
+        closure["banque"] = normalise_banque(closure["banque"])
     department_signals = [
         dict(zip(_DEPT_SIGNAL_COLS, row))
         for row in conn.execute(
             f"SELECT {','.join(_DEPT_SIGNAL_COLS)} FROM department_signals ORDER BY date DESC"
         )
     ]
+    for signal in department_signals:
+        signal["banque"] = normalise_banque(signal["banque"])
     vague_signals = [
         dict(zip(_VAGUE_SIGNAL_COLS, row))
         for row in conn.execute(
             f"SELECT {','.join(_VAGUE_SIGNAL_COLS)} FROM vague_signals ORDER BY date DESC"
         )
     ]
+    for signal in vague_signals:
+        signal["banque"] = normalise_banque(signal["banque"])
     department_estimates = _build_department_estimates(
         closures, vigilances, closures_unlocated, department_signals)
     for code, dep in departements.items():
@@ -122,6 +132,7 @@ def build_payload(conn) -> dict:
         dep["estimated_count"] = estimate.get("estimated_count", dep["count"])
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(),
+        "enseignes": sorted({normalise_banque(nom) for nom in config.ENSEIGNES}),
         "departements": departements,
         "department_estimates": department_estimates,
         "regions": _build_regions(closures),

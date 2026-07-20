@@ -74,6 +74,19 @@ let hoveredDeptId = null;
 let depSelectionne = "";
 // Longueur maximale de l'extrait de citation dans les popups de points.
 const CITATION_MAX = 180;
+// Repli pour les exports antérieurs au champ `enseignes`. Les exports récents
+// fournissent cette liste depuis config.py, afin que toute nouvelle enseigne soit
+// automatiquement prise en compte par le filtre.
+const BANK_CANONICAL_FALLBACK = [
+  "Crédit Agricole", "BNP Paribas", "Société Générale", "Banque Populaire",
+  "Caisse d'Épargne", "Crédit Mutuel", "CIC", "LCL", "Crédit du Nord",
+  "HSBC", "CCF", "La Banque Postale", "Crédit Coopératif", "Crédit Municipal",
+];
+const BANK_EXACT_ALIASES = {
+  bnp: "BNP Paribas",
+  "banque postale": "La Banque Postale",
+  tarneaud: "Société Générale",
+};
 // Exploration in-page de la vue Articles : région ouverte, puis département ouvert.
 let articlesExplore = { region: "", dep: "", bureau: "" };
 
@@ -122,6 +135,7 @@ async function loadData() {
     fetch("/data/export/departements.geojson").then((r) => r.json()),
   ]);
   DONNEES = d1;
+  normaliserEnseignesDonnees();
   DEPTS = d2;
 }
 
@@ -131,6 +145,7 @@ async function reloadPublicData() {
     return r.json();
   });
   DONNEES = data;
+  normaliserEnseignesDonnees();
   return data;
 }
 
@@ -451,6 +466,37 @@ function normalize(s) {
   return String(s || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
 }
 
+function bankKey(s) {
+  return normalize(s).replace(/[^a-z0-9]+/g, " ").trim().replace(/\s+/g, " ");
+}
+
+function canonicalBankName(name) {
+  const raw = String(name || "").trim();
+  if (!raw) return "";
+  const key = bankKey(raw);
+  if (BANK_EXACT_ALIASES[key]) return BANK_EXACT_ALIASES[key];
+  const enseignes = (DONNEES.enseignes || BANK_CANONICAL_FALLBACK)
+    .map((label) => [bankKey(label), label])
+    .sort((a, b) => b[0].length - a[0].length);
+  const match = enseignes.find(([prefix]) => key === prefix || key.startsWith(`${prefix} `));
+  return match ? match[1] : raw;
+}
+
+function normaliserEnseignesDonnees() {
+  const collections = [
+    DONNEES.closures, DONNEES.closures_unlocated, DONNEES.department_signals,
+    DONNEES.vague_signals, DONNEES.vigilances, DONNEES.plans,
+  ];
+  collections.forEach((items) => (items || []).forEach((item) => {
+    if (item.banque) item.banque = canonicalBankName(item.banque);
+  }));
+  Object.values(DONNEES.department_estimates || {}).forEach((estimate) => {
+    (estimate.signals || []).forEach((signal) => {
+      if (signal.banque) signal.banque = canonicalBankName(signal.banque);
+    });
+  });
+}
+
 // Statut temporel recalculé à la date du jour : le champ statut_temporel est
 // figé au moment de l'extraction et devient obsolète dès que la date de
 // fermeture passe. Une fermeture datée d'aujourd'hui compte encore « à venir ».
@@ -474,7 +520,7 @@ function filtrer(applyPeriod = true) {
   const window = periodWindow();
   return DONNEES.closures.filter((c) => {
     const haystack = normalize(`${c.banque} ${c.commune} ${c.departement} ${depNom(c.departement)} ${c.citation}`);
-    return (!banque || c.banque === banque) &&
+    return (!banque || canonicalBankName(c.banque) === banque) &&
       (!type || c.type === type) &&
       (!statut || c.statut === statut) &&
       (!temporel || statutTemporelEffectif(c) === temporel) &&
@@ -1020,7 +1066,7 @@ function renderSettings() {
 }
 
 function remplirSelecteurs() {
-  const banques = [...new Set(DONNEES.closures.map((c) => c.banque).filter(Boolean))].sort();
+  const banques = [...new Set(DONNEES.closures.map((c) => canonicalBankName(c.banque)).filter(Boolean))].sort();
   const selB = document.getElementById("f-banque");
   selB.innerHTML = `<option value="">Toutes</option>`;
   banques.forEach((b) => selB.appendChild(new Option(b, b)));

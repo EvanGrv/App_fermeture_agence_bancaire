@@ -125,6 +125,10 @@ manuellement avec une date `since` ou une fenêtre `lookback_months`.
 - **Référentiel OSM / Overpass** — fond libre des agences existantes
   (`amenity=bank`, `office=financial`) utilisé comme dénominateur par département
   (`total_agences` dans `data.json`). Il ne crée aucune fermeture future.
+- **Référentiel La Banque Postale** — ingestion optionnelle d'un CSV d'agences /
+  bureaux bancarisés via `LBP_AGENCES_CSV_URL` ou `data/cache/lbp_agences.csv`.
+  Cette source complète le dénominateur pour La Banque Postale, sans jamais
+  créer de fermeture par déduction.
 - **SIRENE / Recherche d'entreprises** — contrôle a posteriori sans clé API.
   Le statut administratif est exporté dans `controle_sirene` quand il a été
   vérifié. Cette source ne déclenche jamais une publication de fermeture.

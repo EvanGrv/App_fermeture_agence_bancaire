@@ -27,6 +27,22 @@ def test_euphemisme_cesse_activite_est_pertinent():
     art = {"titre": "La Société Générale cesse son activité dans cette agence", "texte": ""}
     assert is_relevant(art) is True
 
+
+def test_banque_postale_prevision_fermera_est_pertinente():
+    art = {
+        "titre": "La Banque Postale fermera son agence de Tulle",
+        "texte": "La fermeture est prévue l'an prochain.",
+    }
+    assert is_relevant(art) is True
+
+
+def test_banque_postale_services_financiers_bureau_de_poste():
+    art = {
+        "titre": "La Banque Postale: menace de fermeture au bureau de poste",
+        "texte": "Les habitants craignent la perte des services financiers.",
+    }
+    assert is_relevant(art) is True
+
 def test_article_hors_sujet_reste_rejete():
     # Aucune enseigne, aucun terme de fermeture => doit rester rejeté
     art = {"titre": "Le marché aux fleurs ouvre ce week-end", "texte": ""}

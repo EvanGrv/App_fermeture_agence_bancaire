@@ -1,3 +1,8 @@
+import csv
+import hashlib
+import io
+from pathlib import Path
+
 import requests
 
 import config
@@ -31,6 +36,16 @@ def _default_fetch(url: str, **kwargs) -> dict:
     return resp.json()
 
 
+def _default_text_fetch(url: str, **kwargs) -> str:
+    resp = requests.get(
+        url,
+        timeout=kwargs.get("timeout", 60),
+        headers={"User-Agent": "veille-presse/1.0"},
+    )
+    resp.raise_for_status()
+    return resp.text
+
+
 def _departement(code_postal: str | None) -> str | None:
     if not code_postal:
         return None
@@ -42,6 +57,58 @@ def _departement(code_postal: str | None) -> str | None:
     if code.startswith("20"):
         return None
     return code[:2]
+
+
+def _norm_header(value: str) -> str:
+    return normalise_cle(value or "").replace(" ", "_")
+
+
+def _first(row: dict, aliases: tuple[str, ...]) -> str:
+    for alias in aliases:
+        value = row.get(alias)
+        if value not in (None, ""):
+            return str(value).strip()
+    return ""
+
+
+def _float_fr(value: str | None) -> float | None:
+    if value in (None, ""):
+        return None
+    try:
+        return float(str(value).strip().replace(",", "."))
+    except ValueError:
+        return None
+
+
+def _read_csv_text(source: str | Path | None, fetch) -> str | None:
+    if source:
+        source_s = str(source)
+        if source_s.startswith(("http://", "https://")):
+            return fetch(source_s)
+        p = Path(source_s)
+        if p.exists():
+            return p.read_text(encoding="utf-8-sig")
+        return None
+    if getattr(config, "LBP_AGENCES_CSV_URL", ""):
+        return fetch(config.LBP_AGENCES_CSV_URL)
+    cache = Path(getattr(config, "LBP_AGENCES_CACHE", config.CACHE_DIR / "lbp_agences.csv"))
+    if cache.exists():
+        return cache.read_text(encoding="utf-8-sig")
+    return None
+
+
+def _csv_rows(text: str) -> list[dict]:
+    sample = text[:4096]
+    try:
+        dialect = csv.Sniffer().sniff(sample, delimiters=",;\t")
+    except csv.Error:
+        dialect = csv.excel
+        dialect.delimiter = ";"
+    reader = csv.DictReader(io.StringIO(text), dialect=dialect)
+    rows = []
+    for raw in reader:
+        rows.append({_norm_header(k): (v or "").strip() for k, v in raw.items() if k})
+    return rows
 
 
 def _coordonnees(element: dict) -> tuple[float | None, float | None]:
@@ -87,6 +154,69 @@ def fetch_osm_banques(fetch=_default_fetch) -> list[dict]:
             "lon": lon,
             "osm_id": f"{element.get('type')}/{element.get('id')}",
             "source": "OSM",
+        })
+    return branches
+
+
+def fetch_lbp_agences(source: str | Path | None = None, fetch=_default_text_fetch) -> list[dict]:
+    """Charge un référentiel CSV La Banque Postale / bureaux La Poste bancarisés.
+
+    Le CSV peut venir de `LBP_AGENCES_CSV_URL`, de `data/cache/lbp_agences.csv`
+    ou d'un chemin explicite. Les noms de colonnes sont volontairement tolérants
+    pour accepter une extraction open data ou un export manuel.
+
+    Cette source alimente uniquement le référentiel d'agences. Elle ne crée
+    jamais de fermeture.
+    """
+    try:
+        text = _read_csv_text(source, fetch)
+    except Exception as exc:
+        print(f"[referentiel] La Banque Postale indisponible: {exc}")
+        return []
+    if not text:
+        return []
+
+    branches = []
+    for row in _csv_rows(text):
+        code_postal = _first(row, (
+            "code_postal", "cp", "postcode", "addr_postcode", "codepostal",
+        ))
+        commune = _first(row, (
+            "commune", "localite", "ville", "libelle_commune", "nom_commune",
+            "addr_city",
+        ))
+        nom = _first(row, (
+            "nom", "libelle", "libelle_du_site", "bureau", "etablissement",
+            "name",
+        ))
+        identifiant = _first(row, (
+            "id", "identifiant", "code", "code_site", "code_etablissement",
+            "siret", "osm_id",
+        ))
+        adresse = _first(row, (
+            "adresse", "adresse_complete", "ligne_adresse", "addr_street",
+        ))
+        lat = _float_fr(_first(row, ("lat", "latitude", "y", "geo_point_2d_lat")))
+        lon = _float_fr(_first(row, ("lon", "lng", "longitude", "x", "geo_point_2d_lon")))
+        if lat is None or lon is None:
+            geo = _first(row, ("geo_point_2d", "coordonnees", "coordonnees_geo"))
+            if geo and "," in geo:
+                left, right = [part.strip() for part in geo.split(",", 1)]
+                lat = lat if lat is not None else _float_fr(left)
+                lon = lon if lon is not None else _float_fr(right)
+        if not (commune or code_postal or adresse or identifiant):
+            continue
+        key = identifiant or "|".join([nom, adresse, code_postal, commune])
+        digest = hashlib.sha256(key.encode("utf-8")).hexdigest()[:16]
+        branches.append({
+            "banque": "La Banque Postale",
+            "commune": commune or None,
+            "code_postal": code_postal or None,
+            "departement": _departement(code_postal),
+            "lat": lat,
+            "lon": lon,
+            "osm_id": f"lbp/{digest}",
+            "source": "La Banque Postale",
         })
     return branches
 
