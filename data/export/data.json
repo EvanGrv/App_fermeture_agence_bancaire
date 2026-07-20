@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-19T06:27:10.718221+00:00",
+  "generated_at": "2026-07-20T06:39:29.757253+00:00",
   "departements": {
     "01": {
       "nom": "Ain",
@@ -383,7 +383,7 @@
       "nom": "Loire",
       "region": "Auvergne-Rhône-Alpes",
       "count": 4,
-      "total_agences": 36,
+      "total_agences": 35,
       "precise_count": 4,
       "unlocated_count": 0,
       "estimated_count": 4
@@ -13429,6 +13429,19 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:46:11.268366+00:00"
+    },
+    {
+      "id": "1715b3407ca08b00",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Le directeur général de JPMorgan prévoit une hausse des dépenses et envisage des opportunités de fusions-acqui - Boursorama",
+      "extrait": "TITRE: Le directeur général de JPMorgan prévoit une hausse des dépenses et envisage des opportunités de fusions-acqui - Boursorama SOURCE: Google News DATE: Wed, 27 May 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMi2AJBVV95cUxOMHpQZ0w3N25oVnQ2ajdueU9HU3JrRUc0dGJGcUV3cVJNb2tsUF9iVmFoQmMwVF9kZUJuM1d5SGVSTVJQenphWjVjLWpVQWw4Nm81THF4VzVmRFRZUWM0bVpKVEZPcnctbjl6MEd3cFZfeXhuX3ZLTEZ2WkhVOGNKZ0VLVEF6bXhxZE9sbUxZMzlpUHZSc2hIN01SbjBGdG1FUkliZGlhWldyR0dQVExMUm9mZU01Zm5ROXA0UWt3SXE5SV9FMV8",
+      "url": "https://news.google.com/rss/articles/CBMi2AJBVV95cUxOMHpQZ0w3N25oVnQ2ajdueU9HU3JrRUc0dGJGcUV3cVJNb2tsUF9iVmFoQmMwVF9kZUJuM1d5SGVSTVJQenphWjVjLWpVQWw4Nm81THF4VzVmRFRZUWM0bVpKVEZPcnctbjl6MEd3cFZfeXhuX3ZLTEZ2WkhVOGNKZ0VLVEF6bXhxZE9sbUxZMzlpUHZSc2hIN01SbjBGdG1FUkliZGlhWldyR0dQVExMUm9mZU01Zm5ROXA0UWt3SXE5SV9FMV81T1lDOTQ4bXMxTTJMZGdrZGcwNHZsUmhDWTlGMEZmSEhPT1hNQWhUT0Z6MVJnc3pxYjEwVTFKOWRZQXNTUHNnZVJ0VkRGRkZ1YmtCMFA1bDl2VnNhMDBQN2hkZXhRMlRKSDRDMzZKSUJxbjMzOFg1MTZMckhaaGM0aWtQXzZiRTJYNkYtVnNoZTlvYmJhY2xmMtIB3gJBVV95cUxNS1h2Yk1DM19VUU9aYmUwaDBtMEs2M3ItNExKeFhxYlA2dU8yQ01mRnBobjc1QUZDaFd1TDFveHpEV1g1cHR2VlBGUWMwdUlKNjJEbHVVVW8tTGpYcmxKaUZRUjlKNEl4U3lmeWttSi11bXNtSjVNMlFKd3ZOelFOTzZoNkMzajR1NU9GTUh1SGwwY3RELWQxRExDX1lhRkFTR1QtYS11dHVaeldmQm5KQTJ0N3d0a3JGUVBHWHB2QjFRWlpqSTVWMDZPc18zMHFYdEIxRGhFSG01X0NkWWxoWVdsbGNQVGlmd0NNN2tIYzh3Z3ZuRUllNkVlWDV5blR4VGwyMkEtMGR6TlMycmd2RWVmM2trajFDbkFMMkx2S1hud1hpV09Ec2NLdlVPWURKRlY1N0pDUHJVVWRvR0daaWFmTjhFb2I3aG94Mk9BUHhNVGFsUFRqY2RKeXNyQQ?oc=5",
+      "source": "Google News",
+      "date": "Wed, 27 May 2026 07:00:00 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-20T06:30:57.372082+00:00"
     },
     {
       "id": "469ad2f84e054691",
