@@ -9,7 +9,10 @@ import config
 from backend import store, export, geocode, geojson, referentiel, controle, vigilance, audit
 from backend.pipeline import run_pipeline, ingest_closures
 from backend.extractor import extract, extract_structured
-from backend.collectors import google_news, gdelt, legifrance, local_feeds, official, sg_locator, web_search
+from backend.collectors import (
+    google_news, gdelt, legifrance, local_feeds, official, sg_locator,
+    web_search, postal_web, postal_history, laposte_open_data,
+)
 from backend import drilldown, vigilance_review, seed
 from backend.fulltext import fetch_text
 from backend.search_providers import registry as search_registry
@@ -58,6 +61,11 @@ def main(since_date: str | None = None):
     progress("Configuration de la fenêtre de collecte", 5)
     window = _configure_collection_window(since_date)
     conn = store.init_db(config.DB_PATH)
+    lbp_before = {
+        row[0] for row in conn.execute(
+            "SELECT id FROM closures WHERE banque='La Banque Postale'"
+        )
+    }
     if not os.environ.get("ANTHROPIC_API_KEY"):
         raise SystemExit(
             "ANTHROPIC_API_KEY absente. Vérifie le fichier .env ou exporte la variable "
@@ -65,6 +73,13 @@ def main(since_date: str | None = None):
         )
     client = anthropic.Anthropic()  # lit ANTHROPIC_API_KEY
     cache_geo = {}
+
+    postal_requeued = store.requeue_postal_articles(
+        conn, f"postal-history-v{config.EXTRACTION_VERSION}"
+    )
+
+    progress("Synchronisation du réseau officiel La Poste", 10)
+    postal_sync = laposte_open_data.sync_official_network(conn)
 
     progress("Collecte presse et extraction IA", 15)
     # Passe descendante : détecter les articles de plan multi-agences et générer des
@@ -83,6 +98,8 @@ def main(since_date: str | None = None):
     collectors = [
         google_news.collect,
         local_feeds.collect,
+        postal_web.collect,
+        postal_history.collect,
         gdelt.collect,
         official.collect,
         legifrance.collect,
@@ -102,6 +119,7 @@ def main(since_date: str | None = None):
         since_date=since_date,
         progress_fn=progress,
     )
+    postal_reclassified = vigilance.reclassify_postal_vigilances(conn)
     progress("Ingestion des fermetures SG vérifiées", 55)
     # Fermetures SG nominativement vérifiées (localisateur officiel), géocodées
     # à l'adresse précise — Niveau 1, sans appel IA.
@@ -163,6 +181,25 @@ def main(since_date: str | None = None):
         except Exception as exc:
             print(f"[vigilance_review] revue en erreur: {exc}")
 
+    progress("Vérification des fermetures Banque Postale", 84)
+    postal_enrichment = laposte_open_data.enrich_lbp_closures(conn)
+    lbp_after = {
+        row[0] for row in conn.execute(
+            "SELECT id FROM closures WHERE banque='La Banque Postale'"
+        )
+    }
+    lbp_window_total = conn.execute(
+        """SELECT COUNT(*) FROM closures
+           WHERE banque='La Banque Postale'
+             AND (statut_temporel='a_venir' OR ? IS NULL OR date_fermeture>=?)""",
+        (since_date, since_date),
+    ).fetchone()[0]
+    lbp_summary = {
+        "new_this_run": len(lbp_after - lbp_before),
+        "total_in_window": lbp_window_total,
+        "total_all": len(lbp_after),
+    }
+
     progress("Contrôles SIRENE", 85)
     controles = 0
     for cid, banque, commune in conn.execute("SELECT id, banque, commune FROM closures"):
@@ -177,6 +214,11 @@ def main(since_date: str | None = None):
     progress("Terminé", 100)
     print("Fenêtre de collecte:", window)
     print("Récapitulatif presse:", recap)
+    print("Synchronisation officielle La Poste:", postal_sync)
+    print("Anciens articles postaux remis en file:", postal_requeued)
+    print("Vigilances postales reclassées:", postal_reclassified)
+    print("Fermetures LBP enrichies:", postal_enrichment)
+    print("Bilan fermetures LBP:", lbp_summary)
     print("Fermetures SG vérifiées ingérées:", n_sg)
     print("Agences du référentiel OSM/LBP récupérées ce run:", len(branches))
     print("Agences La Banque Postale récupérées ce run:", len(lbp_branches))
@@ -191,6 +233,11 @@ def main(since_date: str | None = None):
     return {
         "window": window,
         "recap": recap,
+        "postal_sync": postal_sync,
+        "postal_requeued": postal_requeued,
+        "postal_reclassified": postal_reclassified,
+        "postal_enrichment": postal_enrichment,
+        "lbp_summary": lbp_summary,
         "sg": n_sg,
         "referentiel": len(branches),
         "referentiel_lbp": len(lbp_branches),

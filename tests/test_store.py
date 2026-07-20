@@ -15,6 +15,7 @@ def test_init_cree_tables(tmp_path):
         "SELECT name FROM sqlite_master WHERE type='table'")}
     assert {
         "closures", "sources", "seen_urls", "referentiel", "controles_sirene", "vigilances",
+        "postal_syncs", "postal_points", "postal_point_history", "pipeline_migrations",
     } <= noms
 
 
@@ -44,6 +45,22 @@ def test_upsert_complete_champs_nuls(tmp_path):
     store.upsert_closure(conn, _closure(date_fermeture="2026-06-30"))
     val = conn.execute("SELECT date_fermeture FROM closures WHERE id='abc123'").fetchone()[0]
     assert val == "2026-06-30"
+
+
+def test_upsert_confirmation_preserve_date_exacte(tmp_path):
+    conn = store.init_db(tmp_path / "t.db")
+    store.upsert_closure(conn, _closure(
+        date_fermeture="2026-06-30", date_fermeture_approx=0,
+    ))
+    store.upsert_closure(conn, _closure(
+        statut="confirmé", fiabilite=5, date_fermeture="2026-07-01",
+        date_fermeture_approx=1, evidence_level="officiel",
+    ))
+    row = conn.execute(
+        "SELECT date_fermeture, date_fermeture_approx, statut, evidence_level "
+        "FROM closures WHERE id='abc123'"
+    ).fetchone()
+    assert row == ("2026-06-30", 0, "confirmé", "officiel")
 
 def test_sources_dedupliquees(tmp_path):
     conn = store.init_db(tmp_path / "t.db")
@@ -216,3 +233,20 @@ def test_upsert_get_extraction_round_trip(tmp_path):
     store.upsert_extraction(conn, row)
     assert conn.execute("SELECT COUNT(*) FROM extractions").fetchone()[0] == 1
     assert store.get_extraction(conn, "h1", 1, "claude-haiku-4-5")["status"] == "closure"
+
+
+def test_requeue_postal_articles_est_unique(tmp_path):
+    conn = store.init_db(tmp_path / "t.db")
+    store.upsert_article(conn, {
+        "raw_url": "https://example.test/poste", "final_url": None,
+        "canonical_url": None, "title": "Le bureau de poste devient une APC",
+        "source_domain": "example.test", "published_at": "2025-05-01",
+        "fetched_at": "2026-07-20T00:00:00+00:00", "fulltext": "",
+        "fulltext_hash": "h", "fetch_status": "ok",
+    })
+    store.mark_url_seen(conn, "https://example.test/poste")
+    assert store.requeue_postal_articles(conn, "postal-v5") == 1
+    assert store.is_url_seen(conn, "https://example.test/poste") is False
+    store.mark_url_seen(conn, "https://example.test/poste")
+    assert store.requeue_postal_articles(conn, "postal-v5") == 0
+    assert store.is_url_seen(conn, "https://example.test/poste") is True

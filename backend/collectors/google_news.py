@@ -238,7 +238,8 @@ def _default_fetch(url: str) -> str:
     return resp.text
 
 
-def collect(fetch=_default_fetch, queries=QUERIES) -> list[dict]:
+def collect(fetch=_default_fetch, queries=QUERIES,
+            slice_queries: set[str] | None = None) -> list[dict]:
     resultats = []
     vus = set()
     today = date.today()
@@ -247,7 +248,7 @@ def collect(fetch=_default_fetch, queries=QUERIES) -> list[dict]:
 
     for query in queries:
         # Dense queries with a parseable window are sliced month-by-month.
-        if query in _DENSE and start is not None:
+        if (query in _DENSE or query in (slice_queries or set())) and start is not None:
             buckets = _month_ranges(start, today)
             urls_to_fetch = [
                 _feed_url(query, after=after, before=before)

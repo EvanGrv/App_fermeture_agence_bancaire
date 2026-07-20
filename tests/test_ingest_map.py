@@ -58,6 +58,58 @@ def test_map_closure_fields():
     assert c["citation"] == "preuve"
 
 
+def test_map_conversion_postale_qualifie_impact_lbp():
+    article = {
+        **_art(),
+        "titre": "Le bureau de poste de Nomexy transformé en agence postale communale",
+    }
+    closures, _ = map_result(
+        _res(closures=[_clo(bank="La Banque Postale", commune="Nomexy")]),
+        article,
+        _TODAY,
+    )
+    assert closures[0]["service_impact"] == "conversion_ap"
+    assert closures[0]["point_postal_avant"] == "Bureau de Poste"
+    assert closures[0]["point_postal_apres"] == "Agence postale communale"
+    assert closures[0]["evidence_level"] == "presse"
+
+
+def test_map_fermeture_lbp_confirmee_datee_par_publication_si_date_absente():
+    article = {
+        **_art(),
+        "date": "Tue, 15 Apr 2025 07:00:00 GMT",
+        "titre": "Le bureau de poste de Nomexy a définitivement fermé",
+    }
+    closures, _ = map_result(
+        _res(closures=[_clo(
+            bank="La Banque Postale", commune="Nomexy", status="confirmed",
+            closure_date=None, date_precision="unknown",
+        )]),
+        article,
+        _TODAY,
+    )
+    assert closures[0]["date_fermeture"] == "2025-04-15"
+    assert closures[0]["date_fermeture_approx"] == 1
+    assert closures[0]["statut_temporel"] == "deja_fermee"
+
+
+def test_map_projet_lbp_sans_date_ne_devient_pas_fermeture_passee():
+    article = {
+        **_art(), "date": "Tue, 15 Apr 2025 07:00:00 GMT",
+        "titre": "La fermeture du bureau de poste est confirmée mais sans calendrier",
+    }
+    closures, _ = map_result(
+        _res(closures=[_clo(
+            bank="La Banque Postale", commune="Nomexy", status="confirmed",
+            closure_date=None, date_precision="unknown",
+        )]),
+        article,
+        _TODAY,
+    )
+    assert closures[0]["date_fermeture"] is None
+    assert closures[0]["statut_temporel"] == "inconnu"
+
+
 def test_map_closure_type_et_statut():
     closures, _ = map_result(
         _res(closures=[_clo(closure_type="merge", status="confirmed")]),

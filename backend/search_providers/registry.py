@@ -16,7 +16,7 @@ PROVIDERS = {
     "local_sitemap": local_sitemap.search,
 }
 
-_DEFAULT = "brave,bing,local_sitemap"
+_DEFAULT = "brave,local_sitemap"
 
 
 def enabled_providers() -> list[str]:

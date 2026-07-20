@@ -25,7 +25,7 @@ ANTHROPIC_FALLBACK_ENABLED = os.getenv("ANTHROPIC_FALLBACK_ENABLED", "1") != "0"
 # Cache d'extraction IA (Cycle 2a) : ne jamais relancer l'IA sur un contenu déjà
 # extrait pour (content_hash, extraction_version, model). Bump EXTRACTION_VERSION
 # quand le prompt ou le schéma d'extraction change (invalidation propre).
-EXTRACTION_VERSION = int(os.getenv("EXTRACTION_VERSION", "3"))
+EXTRACTION_VERSION = int(os.getenv("EXTRACTION_VERSION", "5"))
 EXTRACTION_MAX_ATTEMPTS = int(os.getenv("EXTRACTION_MAX_ATTEMPTS", "3"))
 EXTRACTION_RETRY_BASE_MIN = int(os.getenv("EXTRACTION_RETRY_BASE_MIN", "60"))
 STRUCTURED_SONNET_ESCALATION_ENABLED = (
@@ -48,11 +48,11 @@ LOOKBACK_MONTHS_DEFAULT = int(os.getenv("LOOKBACK_MONTHS_DEFAULT", "18"))
 # devient le point de départ d'une recherche secondaire ciblée (Phase 2).
 VIGILANCE_REVIEW_ENABLED = os.getenv("VIGILANCE_REVIEW_ENABLED", "1") != "0"
 VIGILANCE_REVIEW_MIN_SCORE = int(os.getenv("VIGILANCE_REVIEW_MIN_SCORE", "3"))
-# Par défaut on passe toute la file qualifiée en revue. Le coût IA est contrôlé
-# séparément par VIGILANCE_REVIEW_AI_ENABLED.
-VIGILANCE_REVIEW_MAX_PER_RUN = int(os.getenv("VIGILANCE_REVIEW_MAX_PER_RUN", "1000"))
+# La file est plafonnée par run pour maîtriser le nombre de recherches web. Le
+# coût IA est contrôlé séparément par VIGILANCE_REVIEW_AI_ENABLED.
+VIGILANCE_REVIEW_MAX_PER_RUN = int(os.getenv("VIGILANCE_REVIEW_MAX_PER_RUN", "6"))
 VIGILANCE_REVIEW_MAX_QUERIES_PER_ITEM = int(
-    os.getenv("VIGILANCE_REVIEW_MAX_QUERIES_PER_ITEM", "8"))
+    os.getenv("VIGILANCE_REVIEW_MAX_QUERIES_PER_ITEM", "3"))
 # Solution économique : la revue exploite d'abord titre/source/géocodage et ne
 # consomme pas Anthropic par défaut. Activer ponctuellement avec
 # VIGILANCE_REVIEW_AI_ENABLED=1 pour une campagne IA complète.
@@ -71,6 +71,32 @@ PLAN_EXPLOSION_MAX_COMMUNES = int(os.getenv("PLAN_EXPLOSION_MAX_COMMUNES", "30")
 LOCAL_SITEMAP_ENABLED = os.getenv("LOCAL_SITEMAP_ENABLED", "0") != "0"
 LOCAL_SITEMAP_TIMEOUT = int(os.getenv("LOCAL_SITEMAP_TIMEOUT", "5"))
 LOCAL_SITEMAP_MAX_DOMAINS = int(os.getenv("LOCAL_SITEMAP_MAX_DOMAINS", "2"))
+
+# Observation officielle du réseau La Poste. La liste nationale est légère
+# (~20 000 points) et versionnée côté producteur; une révision déjà traitée est
+# ignorée. Le calendrier bancaire n'est interrogé que pour les points LBP déjà
+# identifiés par un article ou un changement du réseau.
+LAPOSTE_OPEN_DATA_ENABLED = os.getenv("LAPOSTE_OPEN_DATA_ENABLED", "1") != "0"
+LAPOSTE_POINTS_DATASET_ID = os.getenv("LAPOSTE_POINTS_DATASET_ID", "laposte-poincont2")
+LAPOSTE_CALENDAR_DATASET_ID = os.getenv(
+    "LAPOSTE_CALENDAR_DATASET_ID", "tjwztt6h44ve52i7fln6rbxz")
+LAPOSTE_DATA_API_BASE = os.getenv(
+    "LAPOSTE_DATA_API_BASE", "https://data.laposte.fr/data-fair/api/v1/datasets")
+LAPOSTE_MISSING_CONFIRMATIONS = int(os.getenv("LAPOSTE_MISSING_CONFIRMATIONS", "2"))
+LAPOSTE_CALENDAR_MAX_CHECKS = int(os.getenv("LAPOSTE_CALENDAR_MAX_CHECKS", "20"))
+
+# Recherche web spécialisée bureaux de poste. Le budget par défaut est plafonné
+# à 8 requêtes par run; l'accès Brave reste optionnel et dépend de son offre.
+POSTAL_WEB_ENABLED = os.getenv("POSTAL_WEB_ENABLED", "1") != "0"
+POSTAL_WEB_MAX_QUERIES = int(os.getenv("POSTAL_WEB_MAX_QUERIES", "8"))
+
+# Backfill LBP spécialisé. Il ne s'exécute que lorsque la fenêtre demandée est
+# suffisamment profonde (le workflow hebdomadaire utilise environ 720 jours).
+POSTAL_HISTORY_ENABLED = os.getenv("POSTAL_HISTORY_ENABLED", "1") != "0"
+POSTAL_HISTORY_MIN_DAYS = int(os.getenv("POSTAL_HISTORY_MIN_DAYS", "700"))
+POSTAL_HISTORY_WEB_MAX_QUERIES = int(
+    os.getenv("POSTAL_HISTORY_WEB_MAX_QUERIES", "12")
+)
 
 ENSEIGNES = [
     "Crédit Agricole", "BNP", "Société Générale", "Banque Populaire",
@@ -183,6 +209,9 @@ TERMES_FERMETURE = [
     "va fermer", "vont fermer", "fermera", "fermeront",
     "doit fermer", "doivent fermer", "pourrait fermer", "pourraient fermer",
     "menace de fermeture", "menacé de fermeture", "menacée de fermeture",
+    "fermeture définitive", "définitivement fermé", "définitivement fermée",
+    "transformation", "transformé en", "transformée en", "devient une agence postale",
+    "remplacé par", "remplacée par", "relais poste", "relais postal",
 ]
 
 # Canal La Banque Postale : les fermetures sont souvent formulées comme des

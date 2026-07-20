@@ -17,6 +17,12 @@ def _texte(article: dict) -> str:
 
 
 def _banque(article: dict) -> str | None:
+    # Les descriptions Google News contiennent parfois les cartes HTML
+    # d'articles voisins et donc des noms de banques sans rapport. Un titre qui
+    # annonce explicitement la fermeture d'un bureau de poste est prioritaire.
+    titre_article = {"titre": article.get("titre") or "", "texte": ""}
+    if prefilter.is_postal_closure_candidate(titre_article):
+        return "La Banque Postale"
     texte_norm = normalise_cle(_texte(article))
     candidats = list(config.ENSEIGNES)
     for variantes in getattr(config, "MARQUES_REGIONALES", {}).values():
@@ -78,3 +84,27 @@ def ingest_articles(conn, articles: list[dict], raison: str = "signal faible") -
         store.upsert_vigilance(conn, vigilance)
         n += 1
     return n
+
+
+def reclassify_postal_vigilances(conn) -> int:
+    """Répare les anciennes vigilances postales polluées par leur extrait RSS.
+
+    Les revues associées sont supprimées pour permettre une nouvelle analyse
+    immédiate avec la bonne enseigne.
+    """
+    rows = conn.execute("SELECT id, titre, banque FROM vigilances").fetchall()
+    ids = [
+        vid for vid, titre, banque in rows
+        if prefilter.is_postal_closure_candidate({"titre": titre or "", "texte": ""})
+        and banque != "La Banque Postale"
+    ]
+    if not ids:
+        return 0
+    conn.executemany(
+        "UPDATE vigilances SET banque='La Banque Postale' WHERE id=? AND "
+        "COALESCE(banque, '') != 'La Banque Postale'",
+        [(vid,) for vid in ids],
+    )
+    conn.executemany("DELETE FROM vigilance_reviews WHERE id=?", [(vid,) for vid in ids])
+    conn.commit()
+    return len(ids)

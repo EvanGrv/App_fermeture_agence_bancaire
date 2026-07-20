@@ -83,12 +83,20 @@ Variables GitHub Actions optionnelles :
   que le modèle primaire ne transforme pas en fermeture exploitable.
 - `ANTHROPIC_FALLBACK_ENABLED=0` pour désactiver ce fallback Sonnet.
 - `OPENAI_BUDGET_EUR` (défaut `1.0`).
-- `GOOGLE_NEWS_WHEN` (défaut `720d`, soit environ 24 mois pour le workflow hébergé).
+- `GOOGLE_NEWS_WHEN` (défaut `720d`, soit environ 24 mois de résultats possibles).
 - `GDELT_THROTTLE_SECONDS` (défaut `12`).
+- `LAPOSTE_OPEN_DATA_ENABLED=0` désactive l'observation du réseau officiel.
+- `POSTAL_WEB_MAX_QUERIES` (défaut `8`) plafonne la découverte web postale.
+- `POSTAL_HISTORY_ENABLED=0` désactive le backfill LBP profond.
+- `POSTAL_HISTORY_MIN_DAYS` (défaut `700`) réserve ce backfill au passage de
+  24 mois; il ne ralentit pas le run quotidien de 60 jours.
+- `BRAVE_SEARCH_API_KEY` active la recherche des délibérations municipales et
+  des pages web qui ne remontent pas dans Google News.
 
-Le workflow `.github/workflows/update-data.yml` se lance tous les jours à
-03:17 UTC avec une fenêtre par défaut de 24 mois. Il peut aussi être lancé
-manuellement avec une date `since` ou une fenêtre `lookback_months`.
+Le workflow `.github/workflows/update-data.yml` lance un passage incrémental de
+60 jours chaque jour à 03:17 UTC et un rattrapage de 24 mois le lundi à 04:17
+UTC. Il peut aussi être lancé manuellement avec une date `since` ou une fenêtre
+`lookback_months`.
 
 ## Sources & limites
 
@@ -119,7 +127,26 @@ manuellement avec une date `since` ou une fenêtre `lookback_months`.
   qualifiés : un bureau de poste mono-commune peut produire une fermeture LBP
   de confiance modérée ; une agence postale communale/relais exige un indice
   bancaire explicite (services financiers, conseiller bancaire, retrait/dépôt
-  d'espèces, etc.).
+  d'espèces, etc.). Un titre postal explicite est attribué à LBP avant l'analyse
+  de l'extrait RSS, afin d'écarter les noms de banques provenant de cartes HTML
+  voisines.
+- **Open Data La Poste** — la liste nationale officielle des points de contact
+  est synchronisée à chaque nouvelle révision. L'état courant et les changements
+  sont conservés dans `postal_points` / `postal_point_history`. Une conversion
+  d'un bureau en agence communale ou relais crée immédiatement une fermeture LBP;
+  une disparition sans remplacement exige deux révisions. Le calendrier officiel
+  à trois mois est interrogé uniquement pour les fermetures LBP déjà identifiées,
+  afin de confirmer une coupure durable des horaires bancaires.
+- **Documents municipaux** — `postal_web.py` recherche les procès-verbaux,
+  délibérations, transformations en agence communale et relais, notamment via
+  Pappers Politique. Google News RSS fournit un canal sans clé; Brave, lorsqu'il
+  est configuré, complète la recherche sur les pages non indexées comme actualités.
+- **Backfill LBP sur 24 mois** — `postal_history.py` découpe mensuellement les
+  formulations à fort volume, recherche les fermetures définitives, conversions
+  en agence communale/relais et suppressions de services bancaires, puis ajoute
+  une requête de transformation par département. Les anciennes URLs postales
+  sont remises une seule fois dans la file lors d'un changement de version
+  d'extraction, afin que les nouvelles règles s'appliquent au stock existant.
 - **Flux RSS locaux directs** — Actu.fr, Ouest-France, Ici et La Dépêche. Ces
   flux publics complètent Google News sur les dernières publications et sont
   configurables dans `config.LOCAL_RSS_FEEDS`.
@@ -132,10 +159,9 @@ manuellement avec une date `since` ou une fenêtre `lookback_months`.
 - **Référentiel OSM / Overpass** — fond libre des agences existantes
   (`amenity=bank`, `office=financial`) utilisé comme dénominateur par département
   (`total_agences` dans `data.json`). Il ne crée aucune fermeture future.
-- **Référentiel La Banque Postale** — ingestion optionnelle d'un CSV d'agences /
-  bureaux bancarisés via `LBP_AGENCES_CSV_URL` ou `data/cache/lbp_agences.csv`.
-  Cette source complète le dénominateur pour La Banque Postale, sans jamais
-  créer de fermeture par déduction.
+- **Référentiel La Banque Postale** — les bureaux de plein exercice du jeu de
+  données officiel alimentent directement le dénominateur. Le CSV optionnel
+  `LBP_AGENCES_CSV_URL` reste accepté comme source complémentaire.
 - **SIRENE / Recherche d'entreprises** — contrôle a posteriori sans clé API.
   Le statut administratif est exporté dans `controle_sirene` quand il a été
   vérifié. Cette source ne déclenche jamais une publication de fermeture.
@@ -159,23 +185,20 @@ La revue arborescente des vigilances (`backend/vigilance_review.py`) peut
 interroger des providers de recherche web. **Tous sont optionnels et best-effort** :
 le pipeline reste pleinement fonctionnel si aucun n'est configuré.
 
-Par défaut, toute la file qualifiée est revue en mode économique
-(`VIGILANCE_REVIEW_MAX_PER_RUN=1000`, `VIGILANCE_REVIEW_AI_ENABLED=0`) : le
+Par défaut, une file plafonnée est revue en mode économique
+(`VIGILANCE_REVIEW_MAX_PER_RUN=6`, trois requêtes maximum par élément) : le
 pipeline exploite les titres, URLs, sources et le géocodage pour publier
 uniquement les cas mono-commune très explicites. Pour une campagne exhaustive
 avec Anthropic, activer ponctuellement `VIGILANCE_REVIEW_AI_ENABLED=1` ; Haiku
 reste le modèle principal et Sonnet le fallback.
 
 - **Brave Search** — activé uniquement si `BRAVE_SEARCH_API_KEY` est défini.
-  Sans clé → `[]`. ⚠️ L'offre gratuite Brave est limitée/non garantie dans le
-  temps ; ne pas en dépendre pour le run quotidien.
-- **Bing Web Search** — activé uniquement si `BING_SEARCH_API_KEY` est défini.
-  Sans clé → `[]`. ⚠️ **Important** : l'API Bing Web Search v7 classique est en
-  voie de retrait et **Bing Grounding (Azure AI Agents)** n'est **pas** la même
-  chose — c'est un service de *grounding* facturé, conditionné à l'éligibilité
-  Azure, qui ne donne **pas** un accès brut simple aux résultats de recherche et
-  n'est **pas** une source gratuite garantie. Ne jamais supposer que Bing est
-  disponible gratuitement.
+  Sans clé → `[]`. Son quota est protégé par les plafonds de requêtes, mais les
+  conditions de l'offre Brave peuvent évoluer. Le suivi officiel La Poste ne
+  dépend pas de cette clé.
+- **Bing Web Search** — le module historique reste disponible pour compatibilité,
+  mais n'est plus activé par défaut: l'API Bing Search classique a été retirée le
+  11 août 2025.
 - **`local_sitemap`** — découverte sans clé via les sitemaps/flux RSS de la
   presse régionale. **Désactivé par défaut** (`LOCAL_SITEMAP_ENABLED=0`) car
   coûteux en I/O et non encore optimisé : à n'activer que pour des campagnes
@@ -184,7 +207,7 @@ reste le modèle principal et Sonnet le fallback.
   par requête (`LOCAL_SITEMAP_MAX_DOMAINS`, défaut 2).
 
 Sélection des providers via `WEB_SEARCH_PROVIDERS` (défaut
-`brave,bing,local_sitemap` ; `local_sitemap` reste inerte tant que
+`brave,local_sitemap` ; `local_sitemap` reste inerte tant que
 `LOCAL_SITEMAP_ENABLED=0`).
 
 ## Mode « seed URLs » (ingestion directe)

@@ -29,6 +29,7 @@ _PATHS = ["/sitemap.xml", "/rss.xml", "/feed", "/sitemap_index.xml"]
 
 _DEFAULT_DOMAINS = [
     "ici.fr", "actu.fr", "info-chalon.com", "dna.fr", "estrepublicain.fr",
+    "politique.pappers.fr", "cgt-fapt.fr", "sudptt.org",
 ]
 
 # Cache process-wide des entrées parsées par (domaine, path) : évite de

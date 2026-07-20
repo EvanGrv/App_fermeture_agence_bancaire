@@ -47,15 +47,24 @@ jobs:
       GDELT_THROTTLE_SECONDS: ${{ vars.GDELT_THROTTLE_SECONDS || '12' }}
       INCLUDE_CREDIT_MUNICIPAL: ${{ vars.INCLUDE_CREDIT_MUNICIPAL || '1' }}
       VIGILANCE_REVIEW_ENABLED: ${{ vars.VIGILANCE_REVIEW_ENABLED || '1' }}
-      VIGILANCE_REVIEW_MAX_PER_RUN: ${{ vars.VIGILANCE_REVIEW_MAX_PER_RUN || '1000' }}
+      VIGILANCE_REVIEW_MAX_PER_RUN: ${{ vars.VIGILANCE_REVIEW_MAX_PER_RUN || '6' }}
+      VIGILANCE_REVIEW_MAX_QUERIES_PER_ITEM: ${{ vars.VIGILANCE_REVIEW_MAX_QUERIES_PER_ITEM || '3' }}
       VIGILANCE_REVIEW_AI_ENABLED: ${{ vars.VIGILANCE_REVIEW_AI_ENABLED || '1' }}
-      WEB_SEARCH_PROVIDERS: ${{ vars.WEB_SEARCH_PROVIDERS || 'brave,bing,local_sitemap' }}
+      WEB_SEARCH_PROVIDERS: ${{ vars.WEB_SEARCH_PROVIDERS || 'brave,local_sitemap' }}
       BRAVE_SEARCH_API_KEY: ${{ secrets.BRAVE_SEARCH_API_KEY }}
       BING_SEARCH_API_KEY: ${{ secrets.BING_SEARCH_API_KEY }}
       LOCAL_SITEMAP_ENABLED: ${{ vars.LOCAL_SITEMAP_ENABLED || '0' }}
       LOCAL_SITEMAP_TIMEOUT: ${{ vars.LOCAL_SITEMAP_TIMEOUT || '5' }}
       LOCAL_SITEMAP_MAX_DOMAINS: ${{ vars.LOCAL_SITEMAP_MAX_DOMAINS || '2' }}
-      LOCAL_SITEMAP_DOMAINS: ${{ vars.LOCAL_SITEMAP_DOMAINS || 'moneyvox.fr,lanouvellerepublique.fr,ici.fr,francebleu.fr,ouest-france.fr,dna.fr,info-chalon.com,deltafm.fr,bienpublic.com,actu.fr,estrepublicain.fr' }}
+      LAPOSTE_OPEN_DATA_ENABLED: ${{ vars.LAPOSTE_OPEN_DATA_ENABLED || '1' }}
+      LAPOSTE_MISSING_CONFIRMATIONS: ${{ vars.LAPOSTE_MISSING_CONFIRMATIONS || '2' }}
+      LAPOSTE_CALENDAR_MAX_CHECKS: ${{ vars.LAPOSTE_CALENDAR_MAX_CHECKS || '20' }}
+      POSTAL_WEB_ENABLED: ${{ vars.POSTAL_WEB_ENABLED || '1' }}
+      POSTAL_WEB_MAX_QUERIES: ${{ vars.POSTAL_WEB_MAX_QUERIES || '8' }}
+      POSTAL_HISTORY_ENABLED: ${{ vars.POSTAL_HISTORY_ENABLED || '1' }}
+      POSTAL_HISTORY_MIN_DAYS: ${{ vars.POSTAL_HISTORY_MIN_DAYS || '700' }}
+      POSTAL_HISTORY_WEB_MAX_QUERIES: ${{ vars.POSTAL_HISTORY_WEB_MAX_QUERIES || '12' }}
+      LOCAL_SITEMAP_DOMAINS: ${{ vars.LOCAL_SITEMAP_DOMAINS || 'moneyvox.fr,lanouvellerepublique.fr,ici.fr,francebleu.fr,ouest-france.fr,dna.fr,info-chalon.com,deltafm.fr,bienpublic.com,actu.fr,estrepublicain.fr,politique.pappers.fr,cgt-fapt.fr,sudptt.org' }}
 
     steps:
       - name: Checkout
