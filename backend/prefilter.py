@@ -29,6 +29,10 @@ _TERMES_N = [_normalise(t) for t in config.TERMES_FERMETURE]
 _RH_N = [_normalise(t) for t in getattr(config, "RH_TERMS", [])]
 _POSTAL_POINT_N = [_normalise(t) for t in getattr(config, "POSTAL_POINT_TERMS", [])]
 _POSTAL_BANKING_N = [_normalise(t) for t in getattr(config, "POSTAL_BANKING_TERMS", [])]
+_POSTAL_CONVERSION_N = (
+    "transforme en", "transformee en", "transformation en", "devient une agence postale",
+    "remplace par", "remplacee par", "converti en", "convertie en",
+)
 
 _MOIS = ("janvier|fevrier|février|mars|avril|mai|juin|juillet|aout|août|"
          "septembre|octobre|novembre|decembre|décembre")
@@ -84,7 +88,15 @@ def _is_postal_closure_candidate_norm(contenu_norm: str) -> bool:
         or "relais poste" in contenu_norm
         or "relais postal" in contenu_norm
     )
-    if is_partner_point and not any(t in contenu_norm for t in _POSTAL_BANKING_N):
+    full_office_conversion = (
+        "bureau de poste" in contenu_norm
+        and any(term in contenu_norm for term in _POSTAL_CONVERSION_N)
+    )
+    if (
+        is_partner_point
+        and not full_office_conversion
+        and not any(t in contenu_norm for t in _POSTAL_BANKING_N)
+    ):
         return False
     return True
 

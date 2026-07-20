@@ -26,7 +26,10 @@ def search(query: str, since: str | None = None, limit: int = 10, fetch=None) ->
     if not api_key:
         return []
     fetch = fetch or _default_fetch
-    params = {"q": query, "count": max(1, min(limit, 20))}
+    params = {
+        "q": query, "count": max(1, min(limit, 20)),
+        "country": "fr", "search_lang": "fr",
+    }
     url = f"{_ENDPOINT}?{urllib.parse.urlencode(params)}"
     headers = {"Accept": "application/json", "X-Subscription-Token": api_key}
     try:

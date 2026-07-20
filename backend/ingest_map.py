@@ -8,10 +8,12 @@ par article, pour respecter UNIQUE(url).
 from __future__ import annotations
 
 import hashlib
+import re
 from datetime import date
+from email.utils import parsedate_to_datetime
 from typing import Any
 
-from backend.dedup import closure_id
+from backend.dedup import closure_id, normalise_cle
 from backend.extractor import banque_connue, normalise_banque
 
 _TYPE_MAP = {
@@ -28,6 +30,11 @@ _STATUT_MAP = {
     "threatened": "rumeur",
     "unclear": "rumeur",
 }
+_POSTAL_PAST_RE = re.compile(
+    r"\b(?:a ferme|ont ferme|definitivement ferme|fermeture effective|"
+    r"a cesse|n[' ]accueille plus|a ete transforme(?:e)?|"
+    r"est remplace(?:e)?|ferme ses portes)\b"
+)
 
 
 def _as_dict(value: Any) -> dict:
@@ -54,6 +61,19 @@ def _statut_temporel(closure_date: Any, status: str | None, aujourdhui: str) -> 
     return "a_venir" if status in {"announced", "threatened"} else "inconnu"
 
 
+def _article_date_iso(value: Any) -> str | None:
+    raw = str(value or "").strip()
+    if not raw:
+        return None
+    try:
+        return date.fromisoformat(raw[:10]).isoformat()
+    except ValueError:
+        try:
+            return parsedate_to_datetime(raw).date().isoformat()
+        except (TypeError, ValueError, OverflowError):
+            return None
+
+
 def _map_closure(closure: Any, article: dict, aujourdhui: str) -> dict | None:
     c = _as_dict(closure)
     if not c.get("is_physical_agency", True):
@@ -67,7 +87,22 @@ def _map_closure(closure: Any, article: dict, aujourdhui: str) -> dict | None:
 
     type_ = _TYPE_MAP.get(c.get("closure_type"), "fermeture")
     date_precision = c.get("date_precision") or "unknown"
-    return {
+    closure_date = c.get("closure_date")
+    article_text = normalise_cle(
+        f"{article.get('titre') or ''} {article.get('texte') or ''} "
+        f"{c.get('evidence') or ''}"
+    )
+    reports_past_closure = bool(_POSTAL_PAST_RE.search(article_text))
+    if (
+        banque == "La Banque Postale"
+        and not closure_date
+        and c.get("status") == "confirmed"
+        and reports_past_closure
+    ):
+        closure_date = _article_date_iso(article.get("date"))
+        if closure_date:
+            date_precision = "approximate"
+    mapped = {
         "id": closure_id(banque, commune, type_, c.get("address") or ""),
         "banque": banque,
         "commune": commune,
@@ -75,10 +110,10 @@ def _map_closure(closure: Any, article: dict, aujourdhui: str) -> dict | None:
         "departement": c.get("departement") or article.get("departement"),
         "type": type_,
         "date_annonce": article.get("date") or None,
-        "date_fermeture": c.get("closure_date"),
+        "date_fermeture": closure_date,
         "statut": _STATUT_MAP.get(c.get("status"), "rumeur"),
         "statut_temporel": _statut_temporel(
-            c.get("closure_date"), c.get("status"), aujourdhui
+            closure_date, c.get("status"), aujourdhui
         ),
         "date_fermeture_approx": 0 if date_precision == "exact" else 1,
         "fiabilite": _fiabilite(c.get("confidence")),
@@ -88,6 +123,26 @@ def _map_closure(closure: Any, article: dict, aujourdhui: str) -> dict | None:
         "adresse": c.get("address") or None,
         "agence_localisation": c.get("agency_label") or None,
     }
+    if banque == "La Banque Postale":
+        texte = article_text
+        mapped.update({
+            "service_impact": "fermeture_lbp_complete",
+            "point_postal_avant": "Bureau de Poste",
+            "evidence_level": "presse",
+        })
+        if "agence postale" in texte:
+            mapped["service_impact"] = "conversion_ap"
+            mapped["point_postal_apres"] = "Agence postale communale"
+        elif "relais poste" in texte or "relais postal" in texte:
+            mapped["service_impact"] = "conversion_relais"
+            mapped["point_postal_apres"] = "Relais poste"
+        elif (
+            "suppression des services financiers" in texte
+            or "suppression du service bancaire" in texte
+            or "services bancaires supprimes" in texte
+        ):
+            mapped["service_impact"] = "fermeture_service_bancaire"
+    return mapped
 
 
 def _aggregate_vigilance(

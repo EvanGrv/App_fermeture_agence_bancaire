@@ -23,6 +23,11 @@ CREATE TABLE IF NOT EXISTS closures (
     adresse TEXT,
     agence_localisation TEXT,
     commune_originale TEXT,
+    service_impact TEXT,
+    point_postal_avant TEXT,
+    point_postal_apres TEXT,
+    postal_point_id TEXT,
+    evidence_level TEXT,
     created_at TEXT NOT NULL
 );
 CREATE TABLE IF NOT EXISTS sources (
@@ -150,6 +155,49 @@ CREATE TABLE IF NOT EXISTS extractions (
     updated_at         TEXT NOT NULL,
     PRIMARY KEY (content_hash, extraction_version, model)
 );
+CREATE TABLE IF NOT EXISTS postal_syncs (
+    revision TEXT PRIMARY KEY,
+    observed_at TEXT NOT NULL,
+    point_count INTEGER NOT NULL
+);
+CREATE TABLE IF NOT EXISTS postal_points (
+    point_id TEXT PRIMARY KEY,
+    label TEXT,
+    characteristic TEXT,
+    address TEXT,
+    postal_code TEXT,
+    locality TEXT,
+    code_insee TEXT,
+    departement TEXT,
+    lat REAL,
+    lon REAL,
+    active INTEGER NOT NULL DEFAULT 1,
+    missing_revisions INTEGER NOT NULL DEFAULT 0,
+    first_seen_revision TEXT NOT NULL,
+    last_seen_revision TEXT NOT NULL,
+    updated_at TEXT NOT NULL
+);
+CREATE TABLE IF NOT EXISTS postal_point_history (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    point_id TEXT NOT NULL,
+    revision TEXT NOT NULL,
+    observed_at TEXT NOT NULL,
+    label TEXT,
+    characteristic TEXT,
+    address TEXT,
+    postal_code TEXT,
+    locality TEXT,
+    code_insee TEXT,
+    departement TEXT,
+    lat REAL,
+    lon REAL,
+    active INTEGER NOT NULL,
+    UNIQUE(point_id, revision)
+);
+CREATE TABLE IF NOT EXISTS pipeline_migrations (
+    key TEXT PRIMARY KEY,
+    applied_at TEXT NOT NULL
+);
 """
 
 
@@ -164,7 +212,10 @@ def _ensure_closures_columns(conn: sqlite3.Connection) -> None:
         conn.execute(
             "ALTER TABLE closures ADD COLUMN date_fermeture_approx INTEGER DEFAULT 0"
         )
-    for col in ("adresse", "agence_localisation", "commune_originale"):
+    for col in (
+        "adresse", "agence_localisation", "commune_originale", "service_impact",
+        "point_postal_avant", "point_postal_apres", "postal_point_id", "evidence_level",
+    ):
         if col not in existing:
             conn.execute(f"ALTER TABLE closures ADD COLUMN {col} TEXT")
 
@@ -237,7 +288,8 @@ def get_extraction(conn: sqlite3.Connection, content_hash: str,
 
 def upsert_closure(conn: sqlite3.Connection, closure: dict) -> str:
     existing = conn.execute(
-        "SELECT fiabilite, code_insee, date_fermeture, lat, lon FROM closures WHERE id=?",
+        "SELECT fiabilite, code_insee, date_fermeture, lat, lon, "
+        "date_fermeture_approx FROM closures WHERE id=?",
         (closure["id"],),
     ).fetchone()
     if existing is None:
@@ -246,38 +298,71 @@ def upsert_closure(conn: sqlite3.Connection, closure: dict) -> str:
             (id, banque, commune, code_insee, departement, type, date_annonce,
              date_fermeture, statut, fiabilite, lat, lon, citation,
              statut_temporel, date_fermeture_approx,
-             adresse, agence_localisation, commune_originale, created_at)
+             adresse, agence_localisation, commune_originale, service_impact,
+             point_postal_avant, point_postal_apres, postal_point_id,
+             evidence_level, created_at)
             VALUES (:id,:banque,:commune,:code_insee,:departement,:type,:date_annonce,
                     :date_fermeture,:statut,:fiabilite,:lat,:lon,:citation,
                     :statut_temporel,:date_fermeture_approx,
-                    :adresse,:agence_localisation,:commune_originale,:created_at)""",
+                    :adresse,:agence_localisation,:commune_originale,:service_impact,
+                    :point_postal_avant,:point_postal_apres,:postal_point_id,
+                    :evidence_level,:created_at)""",
             {
                 "statut_temporel": "inconnu",
                 "date_fermeture_approx": 0,
                 "adresse": None,
                 "agence_localisation": None,
                 "commune_originale": None,
+                "service_impact": None,
+                "point_postal_avant": None,
+                "point_postal_apres": None,
+                "postal_point_id": None,
+                "evidence_level": None,
                 **closure,
                 "created_at": datetime.now(timezone.utc).isoformat(),
             },
         )
     else:
         fiab_max = max(existing[0] or 0, closure.get("fiabilite") or 0)
+        incoming_date = closure.get("date_fermeture")
+        if existing[2] is not None:
+            date_approx = existing[5] or 0
+        elif incoming_date is not None:
+            date_approx = closure.get("date_fermeture_approx") or 0
+        else:
+            date_approx = max(
+                existing[5] or 0, closure.get("date_fermeture_approx") or 0
+            )
         conn.execute(
             """UPDATE closures SET
                 fiabilite=?,
                 code_insee=COALESCE(code_insee, ?),
+                date_annonce=COALESCE(date_annonce, ?),
                 date_fermeture=COALESCE(date_fermeture, ?),
+                statut=CASE WHEN ?='confirmé' THEN 'confirmé' ELSE statut END,
                 lat=COALESCE(lat, ?),
                 lon=COALESCE(lon, ?),
+                citation=COALESCE(citation, ?),
+                statut_temporel=COALESCE(?, statut_temporel),
+                date_fermeture_approx=?,
                 adresse=COALESCE(adresse, ?),
                 agence_localisation=COALESCE(agence_localisation, ?),
-                commune_originale=COALESCE(commune_originale, ?)
+                commune_originale=COALESCE(commune_originale, ?),
+                service_impact=COALESCE(service_impact, ?),
+                point_postal_avant=COALESCE(point_postal_avant, ?),
+                point_postal_apres=COALESCE(point_postal_apres, ?),
+                postal_point_id=COALESCE(postal_point_id, ?),
+                evidence_level=COALESCE(evidence_level, ?)
                WHERE id=?""",
-            (fiab_max, closure.get("code_insee"), closure.get("date_fermeture"),
-             closure.get("lat"), closure.get("lon"),
+            (fiab_max, closure.get("code_insee"), closure.get("date_annonce"),
+             closure.get("date_fermeture"), closure.get("statut"),
+             closure.get("lat"), closure.get("lon"), closure.get("citation"),
+             closure.get("statut_temporel"), date_approx,
              closure.get("adresse"), closure.get("agence_localisation"),
-             closure.get("commune_originale"), closure["id"]),
+             closure.get("commune_originale"), closure.get("service_impact"),
+             closure.get("point_postal_avant"), closure.get("point_postal_apres"),
+             closure.get("postal_point_id"), closure.get("evidence_level"),
+             closure["id"]),
         )
     conn.commit()
     return closure["id"]
@@ -299,6 +384,94 @@ def is_url_seen(conn: sqlite3.Connection, url: str) -> bool:
 
 def mark_url_seen(conn: sqlite3.Connection, url: str) -> None:
     conn.execute("INSERT OR IGNORE INTO seen_urls (url) VALUES (?)", (url,))
+    conn.commit()
+
+
+def requeue_postal_articles(conn: sqlite3.Connection, migration_key: str) -> int:
+    """Remet une fois les anciens articles postaux dans la file d'extraction."""
+    if conn.execute(
+        "SELECT 1 FROM pipeline_migrations WHERE key=?", (migration_key,)
+    ).fetchone():
+        return 0
+    rows = conn.execute(
+        """SELECT articles.raw_url FROM articles
+           JOIN seen_urls ON seen_urls.url=articles.raw_url
+           WHERE lower(COALESCE(title, '') || ' ' || COALESCE(fulltext, ''))
+                 LIKE '%bureau de poste%'
+              OR lower(COALESCE(title, '') || ' ' || COALESCE(fulltext, ''))
+                 LIKE '%banque postale%'
+              OR lower(COALESCE(title, '') || ' ' || COALESCE(fulltext, ''))
+                 LIKE '%agence postale communale%'
+              OR lower(COALESCE(title, '') || ' ' || COALESCE(fulltext, ''))
+                 LIKE '%relais poste%'"""
+    ).fetchall()
+    urls = [(row[0],) for row in rows if row[0]]
+    if urls:
+        conn.executemany("DELETE FROM seen_urls WHERE url=?", urls)
+        conn.executemany(
+            "DELETE FROM vigilance_reviews WHERE id IN "
+            "(SELECT id FROM vigilances WHERE url=?)",
+            urls,
+        )
+    conn.execute(
+        "INSERT INTO pipeline_migrations (key, applied_at) VALUES (?, ?)",
+        (migration_key, datetime.now(timezone.utc).isoformat()),
+    )
+    conn.commit()
+    return len(urls)
+
+
+_POSTAL_POINT_COLS = [
+    "point_id", "label", "characteristic", "address", "postal_code", "locality",
+    "code_insee", "departement", "lat", "lon", "active", "missing_revisions",
+    "first_seen_revision", "last_seen_revision", "updated_at",
+]
+
+
+def postal_revision_seen(conn: sqlite3.Connection, revision: str) -> bool:
+    return conn.execute(
+        "SELECT 1 FROM postal_syncs WHERE revision=?", (revision,)
+    ).fetchone() is not None
+
+
+def postal_points(conn: sqlite3.Connection) -> dict[str, dict]:
+    rows = conn.execute(f"SELECT {','.join(_POSTAL_POINT_COLS)} FROM postal_points").fetchall()
+    return {row[0]: dict(zip(_POSTAL_POINT_COLS, row)) for row in rows}
+
+
+def save_postal_point(conn: sqlite3.Connection, point: dict) -> None:
+    placeholders = ",".join(f":{col}" for col in _POSTAL_POINT_COLS)
+    updates = ",".join(
+        f"{col}=excluded.{col}" for col in _POSTAL_POINT_COLS
+        if col not in ("point_id", "first_seen_revision")
+    )
+    conn.execute(
+        f"INSERT INTO postal_points ({','.join(_POSTAL_POINT_COLS)}) "
+        f"VALUES ({placeholders}) ON CONFLICT(point_id) DO UPDATE SET {updates}",
+        {col: point.get(col) for col in _POSTAL_POINT_COLS},
+    )
+
+
+def add_postal_point_history(conn: sqlite3.Connection, point: dict, revision: str,
+                             observed_at: str) -> None:
+    conn.execute(
+        """INSERT OR IGNORE INTO postal_point_history
+           (point_id, revision, observed_at, label, characteristic, address,
+            postal_code, locality, code_insee, departement, lat, lon, active)
+           VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)""",
+        (point.get("point_id"), revision, observed_at, point.get("label"),
+         point.get("characteristic"), point.get("address"), point.get("postal_code"),
+         point.get("locality"), point.get("code_insee"), point.get("departement"),
+         point.get("lat"), point.get("lon"), point.get("active", 1)),
+    )
+
+
+def finish_postal_sync(conn: sqlite3.Connection, revision: str, observed_at: str,
+                       point_count: int) -> None:
+    conn.execute(
+        "INSERT OR IGNORE INTO postal_syncs (revision, observed_at, point_count) VALUES (?,?,?)",
+        (revision, observed_at, point_count),
+    )
     conn.commit()
 
 

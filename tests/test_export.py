@@ -19,6 +19,23 @@ def test_export_expose_statut_temporel(tmp_path):
     assert cl["date_fermeture_approx"] == 0
 
 
+def test_export_expose_impact_postal(tmp_path):
+    conn = store.init_db(tmp_path / "t.db")
+    store.upsert_closure(conn, {
+        "id": "lbp", "banque": "La Banque Postale", "commune": "Nomexy",
+        "code_insee": "88327", "departement": "88", "type": "fermeture",
+        "date_annonce": "2026-06-01", "date_fermeture": "2026-07-01",
+        "statut": "confirmé", "fiabilite": 5, "lat": 48.3, "lon": 6.4,
+        "citation": "Transformation du bureau", "service_impact": "conversion_ap",
+        "point_postal_avant": "Bureau de Poste",
+        "point_postal_apres": "Agence postale communale",
+        "postal_point_id": "12345A", "evidence_level": "officiel",
+    })
+    closure = export.build_payload(conn)["closures"][0]
+    assert closure["service_impact"] == "conversion_ap"
+    assert closure["point_postal_apres"] == "Agence postale communale"
+
+
 def _seed(conn):
     c = dict(id="abc123", banque="BNP", commune="Lyon", code_insee="69003",
              departement="69", type="fermeture", date_annonce="2026-01-10",

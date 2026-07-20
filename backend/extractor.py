@@ -30,8 +30,11 @@ _INSTRUCTIONS = (
     "Si l'article annonce la fermeture permanente d'un BUREAU DE POSTE nommé dans "
     "une commune précise, traite-le comme candidat La Banque Postale même si le titre "
     "dit surtout 'La Poste' ; garde une fiabilité modérée (2-3) sauf preuve bancaire "
-    "explicite. Ne retiens pas les agences postales communales/relais sauf mention "
-    "bancaire explicite. "
+    "explicite. La transformation d'un bureau de poste nommé en agence postale "
+    "communale ou en relais compte comme fermeture du point bancaire de plein "
+    "exercice, avec une fiabilité modérée même sans mention bancaire explicite. "
+    "Ne retiens pas la fermeture d'une agence communale/relais déjà existant sans "
+    "indice bancaire explicite. "
     "Sinon, une simple fermeture postale est hors périmètre."
 )
 _RETRY_STATUS_CODES = {429, 500, 504, 529}
@@ -204,6 +207,9 @@ _INSTRUCTIONS_STRUCTURED = (
     "closure_type: closure|regroupement|transfer|merge|threatened_closure. "
     "status: confirmed|announced|contested|threatened|unclear. "
     "date_precision et closure_date (ISO) si connues. "
+    "Pour une fermeture LBP déjà confirmée sans jour exact, la couche de stockage "
+    "pourra utiliser la date de publication comme approximation: conserve donc la "
+    "closure avec status=confirmed au lieu de la réduire à un signal vague. "
     "confidence (0..1) par closure ET global. needs_sonnet=true si ambigu/complexe. "
     "evidence: courte citation textuelle justifiant. "
     "Cas La Banque Postale : un bureau de poste peut être une agence/point bancaire "
@@ -212,8 +218,11 @@ _INSTRUCTIONS_STRUCTURED = (
     "perte d'un service bancaire. Si l'article annonce la fermeture permanente d'un "
     "BUREAU DE POSTE nommé dans une commune précise, renvoie une closure La Banque "
     "Postale avec confidence modérée (0.45-0.65) même si le caractère bancaire doit "
-    "être vérifié ensuite. Ne retiens pas les agences postales communales/relais sans "
-    "indice bancaire explicite. Sinon classe en out_of_scope ou ambiguous."
+    "être vérifié ensuite. La transformation d'un bureau de poste nommé en agence "
+    "postale communale ou en relais est une closure La Banque Postale: elle supprime "
+    "le point bancaire de plein exercice, même si le service postal continue. Ne "
+    "retiens pas une agence communale/relais déjà existante sans indice bancaire "
+    "explicite. Sinon classe en out_of_scope ou ambiguous."
 )
 
 _SONNET_REVIEW_INSTRUCTIONS = (

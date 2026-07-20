@@ -34,3 +34,30 @@ def test_depuis_article_bureau_de_poste_candidate_lbp():
     assert v is not None
     assert v["banque"] == "La Banque Postale"
     assert v["score"] >= 3
+
+
+def test_titre_postal_prioritaire_sur_banque_parasite_dans_extrait():
+    article = {
+        "titre": "Le bureau de poste de Niort-Sainte-Pezenne va fermer ses portes",
+        "texte": "<a>Société Générale annonce par ailleurs une nouvelle agence</a>",
+        "url": "https://news.google.com/poste-niort",
+        "source": "Google News",
+    }
+    assert vigilance.depuis_article(article)["banque"] == "La Banque Postale"
+
+
+def test_reclassify_postal_vigilances_force_nouvelle_revue(tmp_path):
+    from backend import store
+
+    conn = store.init_db(tmp_path / "t.db")
+    store.upsert_vigilance(conn, {
+        "id": "postal", "banque": "Société Générale", "departement": "45",
+        "titre": "Le bureau de poste des Blossières fermera définitivement",
+        "extrait": "", "url": "https://example.test/poste", "source": "Google News",
+        "date": "2026-07-01", "score": 4, "raison": "signal",
+    })
+    store.upsert_vigilance_review(conn, {"id": "postal", "review_status": "done"})
+
+    assert vigilance.reclassify_postal_vigilances(conn) == 1
+    assert conn.execute("SELECT banque FROM vigilances").fetchone()[0] == "La Banque Postale"
+    assert conn.execute("SELECT COUNT(*) FROM vigilance_reviews").fetchone()[0] == 0

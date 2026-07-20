@@ -53,6 +53,7 @@ DEFAULT_DOMAINS = [
     "lavoixdunord.fr", "sudouest.fr", "leprogres.fr", "ledauphine.com",
     "republicain-lorrain.fr", "paris-normandie.fr", "lepopulaire.fr",
     "lardennais.fr",
+    "politique.pappers.fr", "cgt-fapt.fr", "sudptt.org",
 ]
 
 

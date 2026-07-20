@@ -191,6 +191,20 @@ def test_collect_single_for_longtail(monkeypatch):
     assert len(call_count) == 1
 
 
+def test_collect_decoupe_requete_explicitement_forcee(monkeypatch):
+    xml = FIXT.read_text(encoding="utf-8")
+    calls = []
+    query = '"bureau de poste" "transformé en relais poste"'
+    monkeypatch.setattr(config, "GOOGLE_NEWS_WHEN", "90d")
+    google_news.collect(
+        fetch=lambda url: calls.append(url) or xml,
+        queries=[query], slice_queries={query},
+    )
+    assert len(calls) == len(google_news._month_ranges(
+        google_news._parse_when_to_start("90d", date.today()), date.today()
+    ))
+
+
 def test_dense_set_contains_thematiques_and_big_banks():
     """_DENSE must contain all thematic queries and the big-bank national queries."""
     for q in google_news._THEMATIQUES:

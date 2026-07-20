@@ -509,6 +509,16 @@ function statutTemporelEffectif(c) {
   return t >= debutJour.getTime() ? "a_venir" : "deja_fermee";
 }
 
+function postalImpactLabel(value) {
+  return ({
+    fermeture_lbp_complete: "Services Banque Postale supprimés",
+    conversion_ap: "Conversion en agence postale communale",
+    conversion_relais: "Conversion en relais Poste",
+    fermeture_service_bancaire: "Service bancaire fermé",
+    fermeture_dab: "Distributeur supprimé",
+  })[value] || value || "";
+}
+
 function filtrer(applyPeriod = true) {
   const banque = val("f-banque");
   const type = val("f-type");
@@ -519,7 +529,7 @@ function filtrer(applyPeriod = true) {
   const q = normalize(val("f-search"));
   const window = periodWindow();
   return DONNEES.closures.filter((c) => {
-    const haystack = normalize(`${c.banque} ${c.commune} ${c.departement} ${depNom(c.departement)} ${c.citation}`);
+    const haystack = normalize(`${c.banque} ${c.commune} ${c.departement} ${depNom(c.departement)} ${c.citation} ${postalImpactLabel(c.service_impact)} ${c.point_postal_avant || ""} ${c.point_postal_apres || ""}`);
     return (!banque || canonicalBankName(c.banque) === banque) &&
       (!type || c.type === type) &&
       (!statut || c.statut === statut) &&
@@ -567,6 +577,7 @@ function pointsClosures(items) {
           date: c.date_fermeture || c.date_annonce || "",
           date_fermeture: c.date_fermeture || "",
           citation: c.citation || "",
+          service_impact: c.service_impact || "",
           sources: JSON.stringify(c.sources || []),
         },
       })),
@@ -1299,6 +1310,10 @@ function openAgencySheet(id) {
     ${sheetItem("Date fermeture", formatDate(c.date_fermeture))}
     ${sheetItem("Code INSEE", c.code_insee)}
     ${sheetItem("Département", c.departement ? `${depNom(c.departement)} (${c.departement})` : "")}
+    ${sheetItem("Impact Banque Postale", postalImpactLabel(c.service_impact))}
+    ${sheetItem("Point avant", c.point_postal_avant)}
+    ${sheetItem("Point après", c.point_postal_apres)}
+    ${sheetItem("Niveau de preuve", c.evidence_level)}
     ${sheetItem("Coordonnées", c.lat != null && c.lon != null ? `${Number(c.lat).toFixed(5)}, ${Number(c.lon).toFixed(5)}` : "")}
     ${sheetItem("Contrôle SIRENE", c.controle_sirene && c.controle_sirene.etat_administratif ? `${c.controle_sirene.etat_administratif} · ${c.controle_sirene.source || "SIRENE"}` : "Non renseigné")}
   </dl>
@@ -1803,6 +1818,7 @@ function popupHtml(p) {
     .join(" · ");
   return `<strong>${esc(p.banque)}</strong><br>${esc(p.commune)} ${p.departement ? `(${esc(p.departement)})` : ""}<br>
     ${esc(p.type)} · ${esc(p.statut)} · fiabilité ${esc(p.fiabilite)}/5<br>
+    ${p.service_impact ? `<span>${esc(postalImpactLabel(p.service_impact))}</span><br>` : ""}
     <span class="popup-date">Fermeture prévue : <strong>${p.date_fermeture ? esc(formatDate(p.date_fermeture)) : "non précisée"}</strong></span><br>
     <em>${esc(extraitCitation(p.citation))}</em><br>${src}<br>
     <button type="button" class="popup-action" onclick="openAgencySheet('${esc(p.id)}')">Ouvrir la fiche complète</button>`;

@@ -62,6 +62,16 @@ def test_agence_postale_communale_sans_bancaire_reste_non_pertinente():
     }
     assert is_relevant(art) is False
 
+
+def test_conversion_bureau_en_agence_communale_est_candidate_lbp():
+    art = {
+        "titre": "Le bureau de poste de Nomexy transformé en agence postale communale",
+        "texte": "La transformation sera effective le 1er septembre 2025.",
+    }
+    result = analyse(art)
+    assert is_relevant(art) is True
+    assert "La Banque Postale" in result.banks
+
 def test_article_hors_sujet_reste_rejete():
     # Aucune enseigne, aucun terme de fermeture => doit rester rejeté
     art = {"titre": "Le marché aux fleurs ouvre ce week-end", "texte": ""}

@@ -8,7 +8,7 @@ def test_modele_par_defaut():
     assert config.ANTHROPIC_MODEL == "claude-haiku-4-5"
     assert config.ANTHROPIC_FALLBACK_MODEL == "claude-sonnet-4-6"
     assert config.ANTHROPIC_FALLBACK_ENABLED is True
-    assert config.EXTRACTION_VERSION == 3
+    assert config.EXTRACTION_VERSION == 5
 
 def test_listes_non_vides():
     assert len(config.ENSEIGNES) >= 5
