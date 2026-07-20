@@ -43,6 +43,25 @@ def test_banque_postale_services_financiers_bureau_de_poste():
     }
     assert is_relevant(art) is True
 
+
+def test_fermeture_bureau_de_poste_devient_candidate_banque_postale():
+    art = {
+        "titre": "Le bureau de poste de Bar-le-Duc va fermer",
+        "texte": "Les habitants regrettent la fermeture de ce service.",
+    }
+    r = analyse(art)
+    assert is_relevant(art) is True
+    assert "La Banque Postale" in r.banks
+    assert r.score >= 3
+
+
+def test_agence_postale_communale_sans_bancaire_reste_non_pertinente():
+    art = {
+        "titre": "Fermeture de l'agence postale communale ce jeudi",
+        "texte": "Le service postal rouvrira vendredi.",
+    }
+    assert is_relevant(art) is False
+
 def test_article_hors_sujet_reste_rejete():
     # Aucune enseigne, aucun terme de fermeture => doit rester rejeté
     art = {"titre": "Le marché aux fleurs ouvre ce week-end", "texte": ""}

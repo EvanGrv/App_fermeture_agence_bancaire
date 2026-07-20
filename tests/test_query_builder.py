@@ -24,6 +24,13 @@ def test_build_queries_inclut_les_formulations():
     assert "cessera son activité" in joined
 
 
+def test_build_queries_inclut_canal_postal_lbp():
+    queries = qb.build_queries("La Banque Postale", "Bar-le-Duc", max_queries=50)
+    joined = " | ".join(queries)
+    assert "fermeture bureau de poste" in joined
+    assert "services financiers Banque Postale" in joined
+
+
 def test_build_queries_preserve_accents_et_variantes_banque():
     queries = qb.build_queries(
         "Crédit Agricole Franche-Comté", "Lons-le-Saunier", max_queries=50)

@@ -27,6 +27,11 @@ _INSTRUCTIONS = (
     "Cas La Banque Postale : un bureau de poste peut compter comme point bancaire "
     "uniquement si l'article mentionne explicitement La Banque Postale, des services "
     "financiers/bancaires, un conseiller bancaire, ou la perte d'un service bancaire. "
+    "Si l'article annonce la fermeture permanente d'un BUREAU DE POSTE nommé dans "
+    "une commune précise, traite-le comme candidat La Banque Postale même si le titre "
+    "dit surtout 'La Poste' ; garde une fiabilité modérée (2-3) sauf preuve bancaire "
+    "explicite. Ne retiens pas les agences postales communales/relais sauf mention "
+    "bancaire explicite. "
     "Sinon, une simple fermeture postale est hors périmètre."
 )
 _RETRY_STATUS_CODES = {429, 500, 504, 529}
@@ -204,7 +209,11 @@ _INSTRUCTIONS_STRUCTURED = (
     "Cas La Banque Postale : un bureau de poste peut être une agence/point bancaire "
     "physique seulement si l'article relie explicitement la fermeture à La Banque "
     "Postale, aux services financiers/bancaires, à un conseiller bancaire, ou à la "
-    "perte d'un service bancaire. Sinon classe en out_of_scope ou ambiguous."
+    "perte d'un service bancaire. Si l'article annonce la fermeture permanente d'un "
+    "BUREAU DE POSTE nommé dans une commune précise, renvoie une closure La Banque "
+    "Postale avec confidence modérée (0.45-0.65) même si le caractère bancaire doit "
+    "être vérifié ensuite. Ne retiens pas les agences postales communales/relais sans "
+    "indice bancaire explicite. Sinon classe en out_of_scope ou ambiguous."
 )
 
 _SONNET_REVIEW_INSTRUCTIONS = (

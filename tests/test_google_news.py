@@ -73,6 +73,14 @@ def test_queries_ciblent_banque_postale_bureaux_et_previsions():
     assert any("La Banque Postale" in q for q in google_news._DENSE)
 
 
+def test_queries_ciblent_fermetures_bureaux_de_poste():
+    requetes = " ".join(google_news.QUERIES)
+    assert '"fermeture du bureau de poste"' in requetes
+    assert '"bureau de poste" "va fermer"' in requetes
+    assert "fermeture bureau de poste Indre" in requetes
+    assert any("bureau de poste" in q for q in google_news._DENSE)
+
+
 # ---------------------------------------------------------------------------
 # Tests Task 12: découpage mensuel des requêtes denses
 # ---------------------------------------------------------------------------

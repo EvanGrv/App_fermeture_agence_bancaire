@@ -20,3 +20,17 @@ def test_depuis_article_signal_legifrance():
 def test_depuis_article_ignore_hors_sujet():
     article = {"titre": "Météo", "texte": "soleil", "url": "http://x"}
     assert vigilance.depuis_article(article) is None
+
+
+def test_depuis_article_bureau_de_poste_candidate_lbp():
+    article = {
+        "titre": "Le bureau de poste de Bar-le-Duc va fermer",
+        "texte": "Les habitants redoutent la perte de ce service public.",
+        "url": "https://pqr/poste-bar-le-duc",
+        "date": "2026-07-01",
+        "source": "PQR",
+    }
+    v = vigilance.depuis_article(article, raison="candidat postal")
+    assert v is not None
+    assert v["banque"] == "La Banque Postale"
+    assert v["score"] >= 3

@@ -27,6 +27,8 @@ _VARIANTE_PAIRS = sorted(
 _ENSEIGNES_N = [n for n, _ in _VARIANTE_PAIRS]
 _TERMES_N = [_normalise(t) for t in config.TERMES_FERMETURE]
 _RH_N = [_normalise(t) for t in getattr(config, "RH_TERMS", [])]
+_POSTAL_POINT_N = [_normalise(t) for t in getattr(config, "POSTAL_POINT_TERMS", [])]
+_POSTAL_BANKING_N = [_normalise(t) for t in getattr(config, "POSTAL_BANKING_TERMS", [])]
 
 _MOIS = ("janvier|fevrier|février|mars|avril|mai|juin|juillet|aout|août|"
          "septembre|octobre|novembre|decembre|décembre")
@@ -64,7 +66,32 @@ def _detect_banks(contenu_norm: str) -> list:
     for norm, canon in _VARIANTE_PAIRS:
         if norm in contenu_norm and canon not in found:
             found.append(canon)
+    if _is_postal_closure_candidate_norm(contenu_norm) and "La Banque Postale" not in found:
+        found.append("La Banque Postale")
     return found
+
+
+def _is_postal_closure_candidate_norm(contenu_norm: str) -> bool:
+    a_point_postal = any(t in contenu_norm for t in _POSTAL_POINT_N)
+    a_terme = any(t in contenu_norm for t in _TERMES_N)
+    if not (a_point_postal and a_terme):
+        return False
+    # Un bureau de poste ordinaire est un candidat LBP. Les agences postales
+    # communales/relais sont plus fragiles : elles ne passent que si un indice
+    # bancaire explicite apparaît dans l'article.
+    is_partner_point = (
+        "agence postale communale" in contenu_norm
+        or "relais poste" in contenu_norm
+        or "relais postal" in contenu_norm
+    )
+    if is_partner_point and not any(t in contenu_norm for t in _POSTAL_BANKING_N):
+        return False
+    return True
+
+
+def is_postal_closure_candidate(article: dict) -> bool:
+    contenu = _normalise(f"{article.get('titre', '')} {article.get('texte', '')}")
+    return _is_postal_closure_candidate_norm(contenu)
 
 
 def _detect_departements(contenu: str, contenu_norm: str) -> list:
@@ -88,7 +115,7 @@ def is_relevant(article: dict) -> bool:
     contenu = _normalise(f"{article.get('titre', '')} {article.get('texte', '')}")
     a_enseigne = any(e in contenu for e in _ENSEIGNES_N)
     a_terme = any(t in contenu for t in _TERMES_N)
-    return a_enseigne and a_terme
+    return (a_enseigne and a_terme) or _is_postal_closure_candidate_norm(contenu)
 
 
 def analyse(article: dict) -> PrefilterResult:
@@ -110,20 +137,23 @@ def analyse(article: dict) -> PrefilterResult:
         sn = _normalise(s)
         s_bank = any(n in sn for n in _ENSEIGNES_N)
         s_term = any(t in sn for t in _TERMES_N)
+        s_postal = _is_postal_closure_candidate_norm(sn)
         s_comm = communes_candidates(s)
         for c in s_comm:
             if c not in communes:
                 communes.append(c)
-        if s_bank and s_term and s_comm:
+        if ((s_bank and s_term) or s_postal) and s_comm:
             phrase_hit = True
             relevant_sentences.append(s)
-        elif s_bank or s_term:
+        elif s_bank or s_term or s_postal:
             relevant_sentences.append(s)
 
     score = 0
     titre_bank = any(n in titre_n for n in _ENSEIGNES_N)
     titre_ferm = any(t in titre_n for t in _TERMES_N) or "agence" in titre_n
     if titre_bank and titre_ferm:
+        score += 3
+    if _is_postal_closure_candidate_norm(titre_n):
         score += 3
     if phrase_hit:
         score += 3
@@ -135,7 +165,7 @@ def analyse(article: dict) -> PrefilterResult:
         score += 1
 
     has_term = any(t in contenu_n for t in _TERMES_N)
-    if not banks and not has_term:
+    if not banks and not has_term and not _is_postal_closure_candidate_norm(contenu_n):
         score -= 3
     if _RH_N and any(r in contenu_n for r in _RH_N) and "agence" not in contenu_n:
         score -= 2
