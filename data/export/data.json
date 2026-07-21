@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T13:03:13.672610+00:00",
+  "generated_at": "2026-07-21T06:18:36.127311+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -11558,6 +11558,19 @@
       "created_at": "2026-06-29T08:29:43.052247+00:00"
     },
     {
+      "id": "09b31c725261784b",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "La piscine Nancy Thermal fermée samedi et dimanche, les nageurs-sauveteurs en grève après des incivilités - France 3 Régions",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMimgJBVV95cUxPbVQ2T01WNFRpTndGbzdyYjJDdDB6OEw3dDJ2a0RldDB5elRhTmcyblNESnFPa0xUcXUwZUYzLUtaYUFZY09QZ2RyVE44Y21QQ1lKSy0tVDV3MWRNZENma2QzOW03RkNLZjZ3bDJqQzVPMXlKekE1cDEyM3QzVU5rdWFMWjNvdnZXMUVnWkNpcWJ4dUp0T1llTHNBbE5CNThUQ2FhbE80TDdNemU2QjduMHNtNG5QNXIwajk5UGJHblFJRDVrZ213dVlHWUthekhLb014WnZlM1hRT003d2xNc1NtTnB3bVpFSGRRanFfWWlLTUptYXNJMHU1SWMtS2tKaF9UWDluazFJTkRKSGlEc2JWT2llWDB4Q1E?oc=5\" target=\"_blank\">La piscine Nancy Thermal fermée samedi et dimanc",
+      "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxPbVQ2T01WNFRpTndGbzdyYjJDdDB6OEw3dDJ2a0RldDB5elRhTmcyblNESnFPa0xUcXUwZUYzLUtaYUFZY09QZ2RyVE44Y21QQ1lKSy0tVDV3MWRNZENma2QzOW03RkNLZjZ3bDJqQzVPMXlKekE1cDEyM3QzVU5rdWFMWjNvdnZXMUVnWkNpcWJ4dUp0T1llTHNBbE5CNThUQ2FhbE80TDdNemU2QjduMHNtNG5QNXIwajk5UGJHblFJRDVrZ213dVlHWUthekhLb014WnZlM1hRT003d2xNc1NtTnB3bVpFSGRRanFfWWlLTUptYXNJMHU1SWMtS2tKaF9UWDluazFJTkRKSGlEc2JWT2llWDB4Q1E?oc=5",
+      "source": "Google News",
+      "date": "Sat, 27 Jun 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "score préfiltre bas (-2)",
+      "created_at": "2026-07-21T06:11:36.116838+00:00"
+    },
+    {
       "id": "7b5f941005b0b8a1",
       "banque": "BNP Paribas",
       "departement": null,
@@ -14364,6 +14377,19 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:36:14.316472+00:00"
+    },
+    {
+      "id": "936e5fcad3d7e362",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "En Vendée, les salariés du transporteur DSV, ex-DB Schenker, en grève après l’annonce de suppression de postes - Ouest-France",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMitAJBVV95cUxQVzh6MzR6X2d3T054YmkzbUpOWUI1UnF4NFFHZHhCa3p6aWFLLXpTWDAyd09taVAtdDFoY0xGT0FhNDZ3NDM5QXd3Ti1aMmtvNFRnMTktbXMyZGNOdjYwTzFlOGU5ZjhLRnNkYl9MRDlPUnQ2ejdsSGphM243MlV3MEdMbGloUHdoNWhKRjFiMnIyRDdjVm1IVlpDS1lIWkxabDNQWTZWbkItZHhobkdyV2RDX0VrY2ZkSFYwamVKdFRJSlZFX1ZnUzNuSGNESzBxRk9xTVlvdlkzTmdRdVlsWkMzSWYtYldENDVZcnQwdUl3VEZBNG5LMFEzNk9sb25CS3hMYWdvMFc5X1V1aEcyYVdPeUJPdVNPWnl0bHlZUHhOa1VCb3hTaFJWS0dkYmlfSXBacw?oc=5\" target=\"_blank\">En Vendée, le",
+      "url": "https://news.google.com/rss/articles/CBMitAJBVV95cUxQVzh6MzR6X2d3T054YmkzbUpOWUI1UnF4NFFHZHhCa3p6aWFLLXpTWDAyd09taVAtdDFoY0xGT0FhNDZ3NDM5QXd3Ti1aMmtvNFRnMTktbXMyZGNOdjYwTzFlOGU5ZjhLRnNkYl9MRDlPUnQ2ejdsSGphM243MlV3MEdMbGloUHdoNWhKRjFiMnIyRDdjVm1IVlpDS1lIWkxabDNQWTZWbkItZHhobkdyV2RDX0VrY2ZkSFYwamVKdFRJSlZFX1ZnUzNuSGNESzBxRk9xTVlvdlkzTmdRdVlsWkMzSWYtYldENDVZcnQwdUl3VEZBNG5LMFEzNk9sb25CS3hMYWdvMFc5X1V1aEcyYVdPeUJPdVNPWnl0bHlZUHhOa1VCb3hTaFJWS0dkYmlfSXBacw?oc=5",
+      "source": "Google News",
+      "date": "Wed, 17 Jun 2026 07:00:00 GMT",
+      "score": 2,
+      "raison": "score préfiltre bas (-2)",
+      "created_at": "2026-07-21T06:11:34.658890+00:00"
     },
     {
       "id": "57f2d74c358140d1",
