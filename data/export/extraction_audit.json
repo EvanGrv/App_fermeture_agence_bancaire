@@ -278,5 +278,275 @@
     "departement": "42",
     "code_insee": "42049",
     "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "d6a009d7e413ab47",
+    "banque": "La Banque Postale",
+    "commune": "Niort",
+    "departement": "79",
+    "code_insee": "79191",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "8485df25adf3bc46",
+    "banque": "Crédit Agricole",
+    "commune": "Saint-Sernin-sur-Rance",
+    "departement": "12",
+    "code_insee": "12248",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "2d69cbac467754a6",
+    "banque": "La Banque Postale",
+    "commune": "Saint-André-des-Eaux",
+    "departement": "44",
+    "code_insee": "44151",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "316b0017ffd351b2",
+    "banque": "La Banque Postale",
+    "commune": "Bourgneuf",
+    "departement": "17",
+    "code_insee": "17059",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "73922dbc40d90246",
+    "banque": "La Banque Postale",
+    "commune": "Fougères",
+    "departement": "35",
+    "code_insee": "35115",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "ab8fd723d588ddc8",
+    "banque": "La Banque Postale",
+    "commune": "Saint-Étienne",
+    "departement": "42",
+    "code_insee": "42218",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "citation_suspecte",
+    "id": "b2e9034fb741ef79",
+    "banque": "La Banque Postale",
+    "commune": "Loué",
+    "departement": "72",
+    "code_insee": "72168",
+    "message": "citation/source évoque grève, postes, PSE ou plan national"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "07a3548a10309f8e",
+    "banque": "La Banque Postale",
+    "commune": "Montélimar",
+    "departement": "26",
+    "code_insee": "26198",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "60175139482f1b89",
+    "banque": "La Banque Postale",
+    "commune": "Rillieux-la-Pape",
+    "departement": "69",
+    "code_insee": "69286",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "e116b4dfd51c74e2",
+    "banque": "La Banque Postale",
+    "commune": "Martigues",
+    "departement": "13",
+    "code_insee": "13056",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "fe4b484729868487",
+    "banque": "La Banque Postale",
+    "commune": "Annecy",
+    "departement": "74",
+    "code_insee": "74010",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "dc2cd3b80e6485f9",
+    "banque": "La Banque Postale",
+    "commune": "Bagneux",
+    "departement": "92",
+    "code_insee": "92007",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "fce2fb04f3fdb38b",
+    "banque": "La Banque Postale",
+    "commune": "Nîmes",
+    "departement": "30",
+    "code_insee": "30189",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "citation_suspecte",
+    "id": "3388ffe867356c0d",
+    "banque": "La Banque Postale",
+    "commune": "Lyon",
+    "departement": "69",
+    "code_insee": "69123",
+    "message": "citation/source évoque grève, postes, PSE ou plan national"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "3388ffe867356c0d",
+    "banque": "La Banque Postale",
+    "commune": "Lyon",
+    "departement": "69",
+    "code_insee": "69123",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "568c4bf121a176ac",
+    "banque": "La Banque Postale",
+    "commune": "Hallencourt",
+    "departement": "80",
+    "code_insee": "80406",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "e34d7c62734d3987",
+    "banque": "La Banque Postale",
+    "commune": "Mâcon",
+    "departement": "71",
+    "code_insee": "71270",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "e9fce38eaa156517",
+    "banque": "La Banque Postale",
+    "commune": "Genevrey",
+    "departement": "70",
+    "code_insee": "70263",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "256af4512ee8fe7d",
+    "banque": "La Banque Postale",
+    "commune": "Pont-d'Ain",
+    "departement": "01",
+    "code_insee": "01304",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "b43b9ec338d92c91",
+    "banque": "La Banque Postale",
+    "commune": "Ludon-Médoc",
+    "departement": "33",
+    "code_insee": "33256",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "02adeecaa1cef64e",
+    "banque": "La Banque Postale",
+    "commune": "Veyrier-du-Lac",
+    "departement": "74",
+    "code_insee": "74299",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "9136bd7869e187ad",
+    "banque": "La Banque Postale",
+    "commune": "Crégy-lès-Meaux",
+    "departement": "77",
+    "code_insee": "77143",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "a38884dd125c98e3",
+    "banque": "La Banque Postale",
+    "commune": "Guégon",
+    "departement": "56",
+    "code_insee": "56070",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "b07ae2916513fe2e",
+    "banque": "La Banque Postale",
+    "commune": "Gardanne",
+    "departement": "13",
+    "code_insee": "13041",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "info",
+    "type": "communes_proches",
+    "id": "ef183498a867b953|f5dfed8c328d270e",
+    "banque": "BNP Paribas / La Banque Postale",
+    "commune": "Saint-Malo-de-Beignon / Saint-Malo",
+    "departement": "56 / 35",
+    "code_insee": "56226 / 35288",
+    "message": "noms proches mais localisations distinctes à vérifier visuellement"
+  },
+  {
+    "severity": "info",
+    "type": "communes_proches",
+    "id": "ef183498a867b953|405cc9d5132ed04c",
+    "banque": "BNP Paribas / La Banque Postale",
+    "commune": "Saint-Malo-de-Beignon / Saint-Malo",
+    "departement": "56 / 35",
+    "code_insee": "56226 / 35288",
+    "message": "noms proches mais localisations distinctes à vérifier visuellement"
+  },
+  {
+    "severity": "info",
+    "type": "communes_proches",
+    "id": "91f120aea8268551|35ec8203405fc9ef",
+    "banque": "Caisse d'Épargne / La Banque Postale",
+    "commune": "Châtillon-sur-Loire / Châtillon",
+    "departement": "45 / 92",
+    "code_insee": "45087 / 92020",
+    "message": "noms proches mais localisations distinctes à vérifier visuellement"
   }
 ]

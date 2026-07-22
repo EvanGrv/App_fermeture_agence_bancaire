@@ -27,3 +27,30 @@ warning,date_fermeture_absente,5e5cb2087a38cb61,Caisse d'Épargne,Saint-Gaultier
 warning,date_fermeture_absente,71252e975c353ff8,Crédit Agricole,Villedieu-sur-Indre,36,36241,article ancien sans date de fermeture explicite; à confirmer ou archiver
 warning,date_fermeture_absente,409e0f97a0d56d60,Société Générale,Vidauban,83,83148,article ancien sans date de fermeture explicite; à confirmer ou archiver
 warning,date_fermeture_absente,35f76e5c4932a58c,Crédit Agricole,Changy,42,42049,article ancien sans date de fermeture explicite; à confirmer ou archiver
+warning,date_fermeture_absente,d6a009d7e413ab47,La Banque Postale,Niort,79,79191,article ancien sans date de fermeture explicite; à confirmer ou archiver
+warning,date_fermeture_absente,8485df25adf3bc46,Crédit Agricole,Saint-Sernin-sur-Rance,12,12248,article ancien sans date de fermeture explicite; à confirmer ou archiver
+warning,date_fermeture_absente,2d69cbac467754a6,La Banque Postale,Saint-André-des-Eaux,44,44151,article ancien sans date de fermeture explicite; à confirmer ou archiver
+warning,date_fermeture_absente,316b0017ffd351b2,La Banque Postale,Bourgneuf,17,17059,article ancien sans date de fermeture explicite; à confirmer ou archiver
+warning,date_fermeture_absente,73922dbc40d90246,La Banque Postale,Fougères,35,35115,article ancien sans date de fermeture explicite; à confirmer ou archiver
+warning,date_fermeture_absente,ab8fd723d588ddc8,La Banque Postale,Saint-Étienne,42,42218,article ancien sans date de fermeture explicite; à confirmer ou archiver
+warning,citation_suspecte,b2e9034fb741ef79,La Banque Postale,Loué,72,72168,"citation/source évoque grève, postes, PSE ou plan national"
+warning,date_fermeture_absente,07a3548a10309f8e,La Banque Postale,Montélimar,26,26198,article ancien sans date de fermeture explicite; à confirmer ou archiver
+warning,date_fermeture_absente,60175139482f1b89,La Banque Postale,Rillieux-la-Pape,69,69286,article ancien sans date de fermeture explicite; à confirmer ou archiver
+warning,date_fermeture_absente,e116b4dfd51c74e2,La Banque Postale,Martigues,13,13056,article ancien sans date de fermeture explicite; à confirmer ou archiver
+warning,date_fermeture_absente,fe4b484729868487,La Banque Postale,Annecy,74,74010,article ancien sans date de fermeture explicite; à confirmer ou archiver
+warning,date_fermeture_absente,dc2cd3b80e6485f9,La Banque Postale,Bagneux,92,92007,article ancien sans date de fermeture explicite; à confirmer ou archiver
+warning,date_fermeture_absente,fce2fb04f3fdb38b,La Banque Postale,Nîmes,30,30189,article ancien sans date de fermeture explicite; à confirmer ou archiver
+warning,citation_suspecte,3388ffe867356c0d,La Banque Postale,Lyon,69,69123,"citation/source évoque grève, postes, PSE ou plan national"
+warning,date_fermeture_absente,3388ffe867356c0d,La Banque Postale,Lyon,69,69123,article ancien sans date de fermeture explicite; à confirmer ou archiver
+warning,date_fermeture_absente,568c4bf121a176ac,La Banque Postale,Hallencourt,80,80406,article ancien sans date de fermeture explicite; à confirmer ou archiver
+warning,date_fermeture_absente,e34d7c62734d3987,La Banque Postale,Mâcon,71,71270,article ancien sans date de fermeture explicite; à confirmer ou archiver
+warning,date_fermeture_absente,e9fce38eaa156517,La Banque Postale,Genevrey,70,70263,article ancien sans date de fermeture explicite; à confirmer ou archiver
+warning,date_fermeture_absente,256af4512ee8fe7d,La Banque Postale,Pont-d'Ain,01,01304,article ancien sans date de fermeture explicite; à confirmer ou archiver
+warning,date_fermeture_absente,b43b9ec338d92c91,La Banque Postale,Ludon-Médoc,33,33256,article ancien sans date de fermeture explicite; à confirmer ou archiver
+warning,date_fermeture_absente,02adeecaa1cef64e,La Banque Postale,Veyrier-du-Lac,74,74299,article ancien sans date de fermeture explicite; à confirmer ou archiver
+warning,date_fermeture_absente,9136bd7869e187ad,La Banque Postale,Crégy-lès-Meaux,77,77143,article ancien sans date de fermeture explicite; à confirmer ou archiver
+warning,date_fermeture_absente,a38884dd125c98e3,La Banque Postale,Guégon,56,56070,article ancien sans date de fermeture explicite; à confirmer ou archiver
+warning,date_fermeture_absente,b07ae2916513fe2e,La Banque Postale,Gardanne,13,13041,article ancien sans date de fermeture explicite; à confirmer ou archiver
+info,communes_proches,ef183498a867b953|f5dfed8c328d270e,BNP Paribas / La Banque Postale,Saint-Malo-de-Beignon / Saint-Malo,56 / 35,56226 / 35288,noms proches mais localisations distinctes à vérifier visuellement
+info,communes_proches,ef183498a867b953|405cc9d5132ed04c,BNP Paribas / La Banque Postale,Saint-Malo-de-Beignon / Saint-Malo,56 / 35,56226 / 35288,noms proches mais localisations distinctes à vérifier visuellement
+info,communes_proches,91f120aea8268551|35ec8203405fc9ef,Caisse d'Épargne / La Banque Postale,Châtillon-sur-Loire / Châtillon,45 / 92,45087 / 92020,noms proches mais localisations distinctes à vérifier visuellement
