@@ -105,6 +105,50 @@ POSTAL_HISTORY_WEB_MAX_QUERIES = int(
     os.getenv("POSTAL_HISTORY_WEB_MAX_QUERIES", "12")
 )
 
+# Agrégateurs de presse gratuits/non commerciaux. Les collecteurs restent
+# best-effort : une clé absente ou un quota épuisé ne bloque jamais le flow.
+MEDIACLOUD_ENABLED = os.getenv("MEDIACLOUD_ENABLED", "1") != "0"
+MEDIACLOUD_API_KEY = os.getenv("MEDIACLOUD_API_KEY", "")
+MEDIACLOUD_MAX_PAGES = int(os.getenv("MEDIACLOUD_MAX_PAGES", "2"))
+MEDIACLOUD_MAX_ARTICLES = int(os.getenv("MEDIACLOUD_MAX_ARTICLES", "200"))
+
+EVENT_REGISTRY_ENABLED = os.getenv("EVENT_REGISTRY_ENABLED", "1") != "0"
+EVENT_REGISTRY_API_KEY = os.getenv("EVENT_REGISTRY_API_KEY", "")
+EVENT_REGISTRY_MAX_PAGES = int(os.getenv("EVENT_REGISTRY_MAX_PAGES", "1"))
+EVENT_REGISTRY_MAX_ARTICLES = int(
+    os.getenv("EVENT_REGISTRY_MAX_ARTICLES", "100")
+)
+
+# Common Crawl sert uniquement de backfill profond. L'index ne permet pas une
+# recherche plein texte : on cible des domaines de presse et des URLs contenant
+# un terme bancaire/postal, puis on valide le contenu localement.
+COMMON_CRAWL_ENABLED = os.getenv("COMMON_CRAWL_ENABLED", "1") != "0"
+COMMON_CRAWL_MIN_DAYS = int(os.getenv("COMMON_CRAWL_MIN_DAYS", "700"))
+COMMON_CRAWL_MAX_DOMAINS = int(os.getenv("COMMON_CRAWL_MAX_DOMAINS", "4"))
+COMMON_CRAWL_MAX_INDEXES = int(os.getenv("COMMON_CRAWL_MAX_INDEXES", "4"))
+COMMON_CRAWL_RECORDS_PER_DOMAIN = int(
+    os.getenv("COMMON_CRAWL_RECORDS_PER_DOMAIN", "12")
+)
+COMMON_CRAWL_MAX_ARTICLES = int(os.getenv("COMMON_CRAWL_MAX_ARTICLES", "40"))
+COMMON_CRAWL_TIMEOUT = int(os.getenv("COMMON_CRAWL_TIMEOUT", "20"))
+COMMON_CRAWL_MAX_RECORD_BYTES = int(
+    os.getenv("COMMON_CRAWL_MAX_RECORD_BYTES", str(2 * 1024 * 1024))
+)
+COMMON_CRAWL_DOMAINS = [
+    domain.strip()
+    for domain in os.getenv(
+        "COMMON_CRAWL_DOMAINS",
+        (
+            "actu.fr,ici.fr,ouest-france.fr,lanouvellerepublique.fr,"
+            "ladepeche.fr,france3-regions.francetvinfo.fr,estrepublicain.fr,"
+            "bienpublic.com,dna.fr,leprogres.fr,midilibre.fr,"
+            "sudouest.fr,lamontagne.fr,letelegramme.fr,francebleu.fr,"
+            "politique.pappers.fr,cgt-fapt.fr,sudptt.org"
+        ),
+    ).split(",")
+    if domain.strip()
+]
+
 ENSEIGNES = [
     "Crédit Agricole", "BNP", "Société Générale", "Banque Populaire",
     "Caisse d'Épargne", "Crédit Mutuel", "CIC", "LCL",
