@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T06:18:36.127311+00:00",
+  "generated_at": "2026-07-22T06:18:14.518623+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -570,7 +570,7 @@
       "nom": "Orne",
       "region": "Normandie",
       "count": 0,
-      "total_agences": 40,
+      "total_agences": 38,
       "precise_count": 0,
       "unlocated_count": 0,
       "estimated_count": 0
@@ -723,7 +723,7 @@
       "nom": "Yvelines",
       "region": "Île-de-France",
       "count": 0,
-      "total_agences": 270,
+      "total_agences": 273,
       "precise_count": 0,
       "unlocated_count": 0,
       "estimated_count": 0
