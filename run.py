@@ -11,6 +11,7 @@ from backend import (
     controle,
     export,
     extractor as extractor_module,
+    extraction_guard,
     geocode,
     geojson,
     ingest_map,
@@ -126,6 +127,7 @@ def main(since_date: str | None = None):
     progress("Configuration de la fenêtre de collecte", 5)
     window = _configure_collection_window(since_date)
     conn = store.init_db(config.DB_PATH)
+    lbp_quarantine = extraction_guard.quarantine_existing_lbp(conn)
     lbp_before = {
         row[0] for row in conn.execute(
             "SELECT id FROM closures WHERE banque='La Banque Postale'"
@@ -220,6 +222,17 @@ def main(since_date: str | None = None):
                 print(f"[plan] éclatement en erreur: {exc}")
                 continue
             for closure in closures:
+                plan_geo = {
+                    "lat": closure.get("lat"), "lon": closure.get("lon"),
+                    "code_insee": closure.get("code_insee"),
+                    "departement": closure.get("departement"),
+                }
+                decision = extraction_guard.evaluate(
+                    closure, art, plan_geo, geocode_fn=geo_commune
+                )
+                if not decision.accepted:
+                    print(f"[plan] fermeture rejetée: {decision.reason}")
+                    continue
                 store.upsert_closure(conn, closure)
                 store.add_source(conn, closure["id"], {
                     "url": art.get("url"), "titre": art.get("titre"),
@@ -286,6 +299,7 @@ def main(since_date: str | None = None):
     print("Backlog postal traité sans IA:", postal_backfill)
     print("Vigilances postales reclassées:", postal_reclassified)
     print("Fermetures LBP enrichies:", postal_enrichment)
+    print("Anciens marqueurs LBP mis en quarantaine:", lbp_quarantine)
     print("Bilan fermetures LBP:", lbp_summary)
     print("Fermetures SG vérifiées ingérées:", n_sg)
     print("Agences du référentiel OSM/LBP récupérées ce run:", len(branches))
@@ -307,6 +321,7 @@ def main(since_date: str | None = None):
         "postal_backfill": postal_backfill,
         "postal_reclassified": postal_reclassified,
         "postal_enrichment": postal_enrichment,
+        "lbp_quarantine": lbp_quarantine,
         "lbp_summary": lbp_summary,
         "sg": n_sg,
         "referentiel": len(branches),

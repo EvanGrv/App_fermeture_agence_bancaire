@@ -6,6 +6,7 @@ from email.utils import parsedate_to_datetime
 from backend import (
     commune_normalize,
     context_builder,
+    extraction_guard,
     extractor,
     ingest_map,
     prefilter,
@@ -73,9 +74,22 @@ def _ingest_closure(conn, resultat, art, url, geocoder_fn, recap):
             resultat["departement"] = geo.get("departement")
         if not resultat.get("code_insee"):
             resultat["code_insee"] = geo.get("code_insee")
+        decision = extraction_guard.evaluate(
+            resultat, art, geo, geocode_fn=geocoder_fn
+        )
+        if not decision.accepted:
+            recap["rejets_validation"] += 1
+            return False, decision.reason
         # Rattache à la commune administrative (BAN) et conserve la
         # localisation d'agence d'origine (ex. Coëtquidan -> Guer).
         resultat = commune_normalize.appliquer(resultat, geo)
+    else:
+        decision = extraction_guard.evaluate(
+            resultat, art, geo, geocode_fn=geocoder_fn
+        )
+        if not decision.accepted:
+            recap["rejets_validation"] += 1
+            return False, decision.reason
     publiable, raison = validation.fermeture_publiable(resultat, geo)
     if not publiable:
         recap["rejets_validation"] += 1

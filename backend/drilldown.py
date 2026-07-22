@@ -274,6 +274,7 @@ def fermetures_depuis_plan(
             complet = fetch_fn(url)
             if complet:
                 texte = (texte + "\n\n" + complet)[:6000]
+                article["texte"] = texte
         except Exception:
             pass
     contenu = f"{titre} {texte}"
