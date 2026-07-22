@@ -20,7 +20,7 @@ from email.utils import parsedate_to_datetime
 from typing import Callable
 
 import config
-from backend import query_builder, validation
+from backend import extraction_guard, query_builder, validation
 from backend.dedup import closure_id, normalise_cle
 from backend.extractor import normalise_banque
 
@@ -626,6 +626,11 @@ def review_vigilance(
                     closure["code_insee"] = geo.get("code_insee")
                 if not validation.departement_valide(closure.get("departement")):
                     closure["departement"] = geo.get("departement")
+            decision = extraction_guard.evaluate(
+                closure, art, geo, geocode_fn=geocode_fn
+            )
+            if not decision.accepted:
+                continue
             publiable, _raison = validation.fermeture_publiable(closure, geo)
             if publiable:
                 closure["_source"] = {

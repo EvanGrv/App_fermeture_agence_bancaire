@@ -82,3 +82,34 @@ def test_reviser_ignore_les_scores_faibles(tmp_path):
         conn, search_fn=lambda q, since=None, limit=10: [_article()],
         extractor_fn=_extractor, geocode_fn=_geocode, min_score=3)
     assert summary["reviewed"] == 0
+
+
+def test_reviser_rejette_une_commune_absente_de_la_source(tmp_path):
+    conn = store.init_db(tmp_path / "t.db")
+    _seed_vigilance(conn)
+
+    def wrong_extractor(art):
+        closure = _extractor(art)
+        closure.update({
+            "id": "wrong", "commune": "Plélan-le-Grand",
+            "departement": "35", "code_insee": "35223",
+        })
+        return closure
+
+    def geocode(commune, departement=None):
+        if commune == "Plélan-le-Grand":
+            return {
+                "lat": 48.0, "lon": -2.0, "code_insee": "35223",
+                "departement": "35", "commune": commune,
+            }
+        return _geocode(commune, departement)
+
+    summary = vr.reviser_vigilances(
+        conn,
+        search_fn=lambda q, since=None, limit=10: [_article()],
+        extractor_fn=wrong_extractor,
+        geocode_fn=geocode,
+    )
+
+    assert summary["closures_created"] == 0
+    assert conn.execute("SELECT COUNT(*) FROM closures").fetchone()[0] == 0

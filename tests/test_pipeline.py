@@ -412,8 +412,14 @@ def test_pipeline_list_closures_explose_en_n_fermetures(tmp_path):
     geo = lambda commune, dept: {
         "lat": 45.0, "lon": 2.0, "code_insee": "00000", "departement": "19",
     }
+    article = {
+        "titre": "BNP Paribas ferme trois agences à Bessines, Tulle et Guéret",
+        "texte": "Les agences BNP de Bessines, Tulle et Guéret vont fermer.",
+        "url": "http://list", "date": "2026-01-10", "source": "GN",
+        "departement": "19",
+    }
     recap = pipeline.run_pipeline(
-        conn, [lambda: [_article("http://list")]], extractor, geo,
+        conn, [lambda: [article]], extractor, geo,
         enrich_fn=lambda u: "",
     )
     assert recap["fermetures"] == 3
@@ -470,6 +476,39 @@ def test_pipeline_non_geocode_stocke_closure_unlocated(tmp_path):
     assert row[0] == "BNP Paribas"
     assert row[1] == "Lyon"
     assert "commune non géocodée" in row[2]
+
+
+def test_pipeline_rejette_sortie_lbp_incompatible_avec_article_source(tmp_path):
+    conn = store.init_db(tmp_path / "t.db")
+    article = {
+        "titre": "Le bureau de poste ferme en août, ce maire de Lozère proteste",
+        "texte": "La fermeture du bureau de poste est confirmée.",
+        "url": "http://lbp-lozere", "date": "2026-06-17",
+        "source": "PQR", "departement": None,
+    }
+
+    def extractor(_article):
+        return _structured(
+            bank="La Banque Postale", commune="Plélan-le-Grand",
+            departement="35", status="confirmed",
+            closure_date="2026-08-01", date_precision="approximate",
+            evidence="Le bureau de poste ferme en août",
+        )
+
+    recap = pipeline.run_pipeline(
+        conn, [lambda: [article]], extractor,
+        lambda commune, dept: {
+            "commune": commune, "lat": 48.0, "lon": -2.0,
+            "code_insee": "35223", "departement": "35",
+        },
+        enrich_fn=lambda _url: "",
+    )
+
+    assert recap["fermetures"] == 0
+    assert recap["rejets_validation"] == 1
+    assert conn.execute("SELECT COUNT(*) FROM closures").fetchone()[0] == 0
+    reason = conn.execute("SELECT raison FROM closures_unlocated").fetchone()[0]
+    assert "département source 48" in reason
 
 
 def test_pipeline_persiste_json_riche(tmp_path):

@@ -21,7 +21,13 @@ import unicodedata
 from datetime import date, timedelta
 from pathlib import Path
 
-from backend import commune_normalize, ingest_map, store, validation
+from backend import (
+    commune_normalize,
+    extraction_guard,
+    ingest_map,
+    store,
+    validation,
+)
 from backend.dedup import closure_id
 from backend.extractor import normalise_banque
 
@@ -317,7 +323,20 @@ def _publish_or_unlocated(conn, closure: dict, article: dict, url: str, geocode_
             closure["departement"] = geo.get("departement")
         if not closure.get("code_insee"):
             closure["code_insee"] = geo.get("code_insee")
+        decision = extraction_guard.evaluate(
+            closure, article, geo, geocode_fn=geocode_fn
+        )
+        if not decision.accepted:
+            _persist_unlocated(conn, closure, article, url, decision.reason)
+            return False
         closure = commune_normalize.appliquer(closure, geo)
+    else:
+        decision = extraction_guard.evaluate(
+            closure, article, geo, geocode_fn=geocode_fn
+        )
+        if not decision.accepted:
+            _persist_unlocated(conn, closure, article, url, decision.reason)
+            return False
     publiable, raison = validation.fermeture_publiable(closure, geo)
     if not publiable:
         _persist_unlocated(conn, closure, article, url, raison)
@@ -492,7 +511,22 @@ def ingest(
                 resultat["departement"] = geo.get("departement")
             if not resultat.get("code_insee"):
                 resultat["code_insee"] = geo.get("code_insee")
+            decision = extraction_guard.evaluate(
+                resultat, art, geo, geocode_fn=geocode_fn
+            )
+            if not decision.accepted:
+                _persist_unlocated(conn, resultat, art, url, decision.reason)
+                recap["rejets"] += 1
+                continue
             resultat = commune_normalize.appliquer(resultat, geo)
+        else:
+            decision = extraction_guard.evaluate(
+                resultat, art, geo, geocode_fn=geocode_fn
+            )
+            if not decision.accepted:
+                _persist_unlocated(conn, resultat, art, url, decision.reason)
+                recap["rejets"] += 1
+                continue
         publiable, raison = validation.fermeture_publiable(resultat, geo)
         if not publiable:
             _persist_unlocated(conn, resultat, art, url, raison)
