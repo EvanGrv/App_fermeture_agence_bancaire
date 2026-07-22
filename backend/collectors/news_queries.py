@@ -47,11 +47,32 @@ def event_registry_query() -> dict:
             ]
         }
 
+    # Les comptes d'essai Event Registry acceptent au maximum 15 mots-clés.
+    # Ces termes génériques couvrent toutes les enseignes sans les énumérer.
+    event_bank_terms = (
+        '"agence bancaire"',
+        '"agences bancaires"',
+        'banque',
+        '"La Banque Postale"',
+        '"bureau de poste"',
+        '"bureaux de poste"',
+        '"réseau bancaire"',
+    )
+    event_closure_terms = (
+        'fermeture',
+        'fermetures',
+        'fermer',
+        'fermera',
+        'suppression',
+        'regroupement',
+        'transfert',
+        'transformation',
+    )
     return {
         "$query": {
             "$and": [
-                alternatives(BANK_TERMS),
-                alternatives(CLOSURE_TERMS),
+                alternatives(event_bank_terms),
+                alternatives(event_closure_terms),
             ]
         }
     }

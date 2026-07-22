@@ -50,6 +50,11 @@ def test_collect_envoie_fenetre_et_requete_booleenne():
     }
 
 
+def test_requete_respecte_la_limite_trial_de_15_mots_cles():
+    query = event_registry.event_registry_query()["$query"]["$and"]
+    assert sum(len(group["$or"]) for group in query) <= 15
+
+
 def test_collect_sans_cle_ou_quota_retourne_vide(monkeypatch):
     monkeypatch.setattr(event_registry.config, "EVENT_REGISTRY_API_KEY", "")
     assert event_registry.collect() == []
