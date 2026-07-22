@@ -9,7 +9,7 @@ une carte web interactive.
 ```bash
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-export ANTHROPIC_API_KEY="sk-ant-..."
+export OPENAI_API_KEY="sk-..."
 ```
 
 ## Lancer le pipeline
@@ -72,12 +72,16 @@ Déploiement Vercel :
 
 Secrets GitHub Actions à créer dans `Settings > Secrets and variables > Actions` :
 
-- `ANTHROPIC_API_KEY` obligatoire.
-- `OPENAI_API_KEY` optionnel pour le fallback.
+- `OPENAI_API_KEY` obligatoire avec le fournisseur par défaut `openai`.
+- `ANTHROPIC_API_KEY` optionnel; requis seulement avec
+  `EXTRACTION_PROVIDER=anthropic`.
 - `LEGIFRANCE_CLIENT_ID` et `LEGIFRANCE_CLIENT_SECRET` optionnels.
 
 Variables GitHub Actions optionnelles :
 
+- `EXTRACTION_PROVIDER` vaut `openai` par défaut; utiliser `anthropic` pour
+  réactiver Claude lorsque son crédit est disponible.
+- `OPENAI_MODEL` vaut `gpt-5.4-nano` par défaut.
 - `ANTHROPIC_MODEL` (défaut `claude-haiku-4-5`) pour l'extraction de volume.
 - `ANTHROPIC_FALLBACK_MODEL` (défaut `claude-sonnet-4-6`) pour les articles
   que le modèle primaire ne transforme pas en fermeture exploitable.
@@ -251,23 +255,26 @@ python -m pytest -v
 ## Configuration
 
 Tout se règle dans `config.py` : enseignes suivies, mots-clés, départements,
-et les modèles IA. Par défaut, `ANTHROPIC_MODEL=claude-haiku-4-5` traite le
-volume et `ANTHROPIC_FALLBACK_MODEL=claude-sonnet-4-6` sert de filet pour les
-articles que Haiku ne transforme pas en fermeture exploitable.
+et les modèles IA. Par défaut, `EXTRACTION_PROVIDER=openai` utilise
+`OPENAI_MODEL=gpt-5.4-nano`. Le mode Anthropic reste disponible avec
+`EXTRACTION_PROVIDER=anthropic`; Haiku traite alors le volume et Sonnet sert de
+filet pour les articles ambigus.
 
 Variables d'environnement optionnelles :
 
+- `EXTRACTION_PROVIDER=openai|anthropic` sélectionne le fournisseur principal.
+- `OPENAI_MODEL` sélectionne le modèle OpenAI principal.
 - `ANTHROPIC_MAX_RETRIES`, `ANTHROPIC_RETRY_BASE_SECONDS`,
   `ANTHROPIC_RETRY_MAX_SECONDS` pilotent les retries sur erreurs transitoires
   Anthropic (`429`, `500`, `504`, `529`).
 - `ANTHROPIC_FALLBACK_ENABLED=0` désactive le fallback Sonnet.
-- `OPENAI_API_KEY` active un fallback OpenAI quand Anthropic échoue encore sur
-  une erreur transitoire après retries.
+- `OPENAI_API_KEY` est utilisée directement lorsque
+  `EXTRACTION_PROVIDER=openai`.
 - `OPENAI_BUDGET_EUR` plafonne l'estimation de coût OpenAI (défaut : `1.0`).
   Le suivi est stocké dans `data/cache/openai_budget.json`.
-- `OPENAI_FALLBACK_MODEL` vaut `gpt-5.4-nano` par défaut ; les prix estimés
-  suivent les tarifs standard publics du modèle (`OPENAI_INPUT_EUR_PER_M`,
-  `OPENAI_OUTPUT_EUR_PER_M` permettent de surcharger ces valeurs).
+- `OPENAI_FALLBACK_MODEL` reste accepté comme ancien alias de `OPENAI_MODEL`.
+  Les prix estimés suivent les tarifs configurés par
+  `OPENAI_INPUT_EUR_PER_M` et `OPENAI_OUTPUT_EUR_PER_M`.
 - `LEGIFRANCE_CLIENT_ID` / `LEGIFRANCE_CLIENT_SECRET` pour activer Légifrance via PISTE.
 - `LEGIFRANCE_ENV=sandbox` pour utiliser les URLs sandbox PISTE ; par défaut,
   le collecteur utilise la production (`oauth.piste.gouv.fr` / `api.piste.gouv.fr`).

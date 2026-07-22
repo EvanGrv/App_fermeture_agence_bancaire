@@ -14,7 +14,7 @@ from backend.extractor import (
 )
 
 OPENAI_CHAT_URL = "https://api.openai.com/v1/chat/completions"
-DEFAULT_MODEL = "gpt-5.4-nano"
+DEFAULT_MODEL = config.OPENAI_MODEL
 DEFAULT_BUDGET_EUR = 1.0
 DEFAULT_MAX_OUTPUT_TOKENS = 700
 
@@ -243,7 +243,9 @@ def extract_openai(article: dict, aujourdhui: str, fetch=None, budget_path=None)
         raise RuntimeError("OPENAI_API_KEY absente")
 
     fetch = fetch or _post
-    model = os.environ.get("OPENAI_FALLBACK_MODEL", DEFAULT_MODEL)
+    model = os.environ.get("OPENAI_MODEL") or os.environ.get(
+        "OPENAI_FALLBACK_MODEL", DEFAULT_MODEL
+    )
     max_output = int(_float_env("OPENAI_MAX_OUTPUT_TOKENS", DEFAULT_MAX_OUTPUT_TOKENS))
     messages = build_messages(article, aujourdhui)
     input_estimate = _token_estimate(messages)
@@ -289,7 +291,9 @@ def extract_openai_structured(
         raise RuntimeError("OPENAI_API_KEY absente")
 
     fetch = fetch or _post
-    model = os.environ.get("OPENAI_FALLBACK_MODEL", DEFAULT_MODEL)
+    model = os.environ.get("OPENAI_MODEL") or os.environ.get(
+        "OPENAI_FALLBACK_MODEL", DEFAULT_MODEL
+    )
     max_output = int(_float_env("OPENAI_MAX_OUTPUT_TOKENS", DEFAULT_MAX_OUTPUT_TOKENS))
     messages = build_messages_structured(article, aujourdhui)
     input_estimate = _token_estimate(messages)

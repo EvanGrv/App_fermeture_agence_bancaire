@@ -78,7 +78,7 @@ def test_error_reessayable_apres_retry_after(tmp_path):
     assert extract_cached(_ART, extract_boom, conn, now_fn=lambda: t0) is None
     assert len(appels) == 1
     row = store.get_extraction(conn, content_hash(_ART), config.EXTRACTION_VERSION,
-                               config.ANTHROPIC_MODEL)
+                               config.EXTRACTION_CACHE_MODEL)
     assert row["status"] == "error" and row["attempts"] == 1 and row["retry_after"]
     # avant retry_after -> soft-skip (pas de rappel IA)
     assert extract_cached(_ART, extract_boom, conn, now_fn=lambda: t0) is None
@@ -109,7 +109,7 @@ def test_error_bloque_apres_max_attempts(tmp_path):
     futur = datetime(2030, 1, 1, tzinfo=timezone.utc)
     store.upsert_extraction(conn, {
         "content_hash": content_hash(_ART), "extraction_version": config.EXTRACTION_VERSION,
-        "model": config.ANTHROPIC_MODEL, "status": "error", "result_json": None,
+        "model": config.EXTRACTION_CACHE_MODEL, "status": "error", "result_json": None,
         "error_type": "X", "attempts": config.EXTRACTION_MAX_ATTEMPTS, "retry_after": None,
         "created_at": "2026-06-30T00:00:00+00:00", "updated_at": "2026-06-30T00:00:00+00:00"})
     appels = []

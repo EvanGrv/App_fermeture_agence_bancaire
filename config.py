@@ -16,11 +16,18 @@ GEOJSON_PATH = EXPORT_DIR / "departements.geojson"
 LBP_AGENCES_CSV_URL = os.getenv("LBP_AGENCES_CSV_URL", "")
 LBP_AGENCES_CACHE = CACHE_DIR / "lbp_agences.csv"
 
-# Modèles IA d'extraction : Haiku traite le volume, Sonnet sert de filet pour
-# les cas ambigus. Surcharge possible via .env.
+# Fournisseur et modèles d'extraction. OpenAI est temporairement prioritaire;
+# le mode Anthropic reste réactivable sans changement de code.
+EXTRACTION_PROVIDER = os.getenv("EXTRACTION_PROVIDER", "openai").strip().lower()
 ANTHROPIC_MODEL = os.getenv("ANTHROPIC_MODEL", "claude-haiku-4-5")
 ANTHROPIC_FALLBACK_MODEL = os.getenv("ANTHROPIC_FALLBACK_MODEL", "claude-sonnet-4-6")
 ANTHROPIC_FALLBACK_ENABLED = os.getenv("ANTHROPIC_FALLBACK_ENABLED", "1") != "0"
+OPENAI_MODEL = os.getenv(
+    "OPENAI_MODEL", os.getenv("OPENAI_FALLBACK_MODEL", "gpt-5.4-nano")
+)
+EXTRACTION_CACHE_MODEL = (
+    OPENAI_MODEL if EXTRACTION_PROVIDER == "openai" else ANTHROPIC_MODEL
+)
 
 # Cache d'extraction IA (Cycle 2a) : ne jamais relancer l'IA sur un contenu déjà
 # extrait pour (content_hash, extraction_version, model). Bump EXTRACTION_VERSION

@@ -195,6 +195,9 @@ def test_deploiement_vercel_github_actions_configure():
     assert "python run.py" in workflow
     assert "data/export" in workflow
     assert "ANTHROPIC_API_KEY" in workflow
+    assert "OPENAI_API_KEY" in workflow
+    assert "EXTRACTION_PROVIDER" in workflow
+    assert "|| 'openai'" in workflow
     assert 'default: "24"' in workflow
     assert "lookback-months \"$LOOKBACK_MONTHS\"" in workflow
     assert "|| '24'" in workflow

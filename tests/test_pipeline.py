@@ -375,8 +375,12 @@ def test_pipeline_ne_marque_pas_seen_apres_erreur_ia_retryable(tmp_path):
     pipeline.run_pipeline(conn, collectors, extractor_retry, _geo, enrich_fn=lambda u: "")
     assert len(appels) == 1
     assert not store.is_url_seen(conn, url), "une erreur IA réessayable ne doit pas marquer l'URL seen"
-    row = store.get_extraction(conn, _compact_hash(_article(url)), config.EXTRACTION_VERSION,
-                               config.ANTHROPIC_MODEL)
+    row = store.get_extraction(
+        conn,
+        _compact_hash(_article(url)),
+        config.EXTRACTION_VERSION,
+        config.EXTRACTION_CACHE_MODEL,
+    )
     assert row["status"] == "error"
 
     row["retry_after"] = "2000-01-01T00:00:00+00:00"

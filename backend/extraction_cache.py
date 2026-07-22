@@ -37,7 +37,7 @@ def _error_bloque(row: dict, now: datetime) -> bool:
 
 
 def extract_cached_with_status(article, extract_fn, conn, *, model=None, version=None, now_fn=None):
-    model = model or config.ANTHROPIC_MODEL
+    model = model or config.EXTRACTION_CACHE_MODEL
     version = config.EXTRACTION_VERSION if version is None else version
     now_fn = now_fn or _now
     chash = content_hash(article)
