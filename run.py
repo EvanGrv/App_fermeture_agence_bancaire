@@ -6,8 +6,20 @@ from datetime import date, timedelta
 
 import anthropic
 import config
-from backend import store, export, geocode, geojson, referentiel, controle, vigilance, audit
-from backend.pipeline import run_pipeline, ingest_closures
+from backend import (
+    audit,
+    controle,
+    export,
+    extractor as extractor_module,
+    geocode,
+    geojson,
+    ingest_map,
+    openai_fallback,
+    referentiel,
+    store,
+    vigilance,
+)
+from backend.pipeline import run_pipeline, ingest_closures, ingest_postal_vigilance_backlog
 from backend.extractor import extract, extract_structured
 from backend.collectors import (
     google_news, gdelt, legifrance, local_feeds, official, sg_locator,
@@ -57,6 +69,59 @@ def _configure_collection_window(since_date: str | None) -> dict:
     }
 
 
+def _build_ai_extractors(since_date: str | None = None) -> dict:
+    """Construit les extracteurs du fournisseur IA sélectionné."""
+    provider = config.EXTRACTION_PROVIDER
+    if provider == "openai":
+        if not os.environ.get("OPENAI_API_KEY"):
+            raise SystemExit(
+                "OPENAI_API_KEY absente alors que EXTRACTION_PROVIDER=openai."
+            )
+
+        def structured(article):
+            return openai_fallback.extract_openai_structured(
+                article, date.today().isoformat()
+            ).model_dump()
+
+        def review(article):
+            aujourdhui = date.today().isoformat()
+            result = openai_fallback.extract_openai_structured(
+                article, aujourdhui
+            ).model_dump()
+            closures, _signal = ingest_map.map_result(result, article, aujourdhui)
+            for closure in closures:
+                if extractor_module._retenir_fermeture(
+                    closure["statut_temporel"],
+                    closure.get("date_fermeture"),
+                    since_date,
+                    aujourdhui,
+                ):
+                    return closure
+            return None
+
+        return {"provider": provider, "structured": structured, "review": review}
+
+    if provider == "anthropic":
+        if not os.environ.get("ANTHROPIC_API_KEY"):
+            raise SystemExit(
+                "ANTHROPIC_API_KEY absente alors que EXTRACTION_PROVIDER=anthropic."
+            )
+        client = anthropic.Anthropic()
+        return {
+            "provider": provider,
+            "structured": lambda article: extract_structured(
+                article, client=client
+            ).model_dump(),
+            "review": lambda article: extract(
+                article, client=client, floor=since_date
+            ),
+        }
+
+    raise SystemExit(
+        f"EXTRACTION_PROVIDER invalide: {provider!r} (attendu: openai ou anthropic)."
+    )
+
+
 def main(since_date: str | None = None):
     progress("Configuration de la fenêtre de collecte", 5)
     window = _configure_collection_window(since_date)
@@ -66,16 +131,18 @@ def main(since_date: str | None = None):
             "SELECT id FROM closures WHERE banque='La Banque Postale'"
         )
     }
-    if not os.environ.get("ANTHROPIC_API_KEY"):
-        raise SystemExit(
-            "ANTHROPIC_API_KEY absente. Vérifie le fichier .env ou exporte la variable "
-            "avant de relancer la collecte."
-        )
-    client = anthropic.Anthropic()  # lit ANTHROPIC_API_KEY
+    ai = _build_ai_extractors(since_date)
     cache_geo = {}
+    geo_commune = lambda c, d=None: geocode.geocode_commune_ou_lieu(
+        c, d, cache=cache_geo
+    )
 
     postal_requeued = store.requeue_postal_articles(
-        conn, f"postal-history-v{config.EXTRACTION_VERSION}"
+        conn, "postal-deterministic-fallback-v1"
+    )
+    postal_backlog = store.list_postal_vigilance_articles(conn)
+    postal_backfill = ingest_postal_vigilance_backlog(
+        conn, postal_backlog, geo_commune, since_date
     )
 
     progress("Synchronisation du réseau officiel La Poste", 10)
@@ -86,7 +153,6 @@ def main(since_date: str | None = None):
     # requêtes ciblées commune par commune. Guarded : une erreur ici ne bloque pas le run.
     drill_queries: list[str] = []
     plan_articles: list[dict] = []
-    geo_commune = lambda c, d=None: geocode.geocode_commune_ou_lieu(c, d, cache=cache_geo)
     try:
         plan_articles = google_news.collect(queries=drilldown.PLAN_SCAN_QUERIES)
         drill_queries = drilldown.requetes_depuis_articles(
@@ -110,7 +176,7 @@ def main(since_date: str | None = None):
     recap = run_pipeline(
         conn,
         collectors,
-        extractor_fn=lambda art: extract_structured(art, client=client).model_dump(),
+        extractor_fn=ai["structured"],
         geocoder_fn=lambda commune, dept: geocode.geocode_commune_ou_lieu(
             commune, dept, cache=cache_geo),
         vigilance_fn=lambda art, raison: store.upsert_vigilance(
@@ -168,7 +234,7 @@ def main(since_date: str | None = None):
         progress("Revue arborescente des vigilances", 82)
         try:
             review_extractor = (
-                (lambda art: extract(art, client=client, floor=since_date))
+                ai["review"]
                 if config.VIGILANCE_REVIEW_AI_ENABLED
                 else None
             )
@@ -213,9 +279,11 @@ def main(since_date: str | None = None):
     audit_findings = audit.write_reports(config.DATA_JSON, config.EXPORT_DIR)
     progress("Terminé", 100)
     print("Fenêtre de collecte:", window)
+    print("Fournisseur IA d'extraction:", ai["provider"])
     print("Récapitulatif presse:", recap)
     print("Synchronisation officielle La Poste:", postal_sync)
     print("Anciens articles postaux remis en file:", postal_requeued)
+    print("Backlog postal traité sans IA:", postal_backfill)
     print("Vigilances postales reclassées:", postal_reclassified)
     print("Fermetures LBP enrichies:", postal_enrichment)
     print("Bilan fermetures LBP:", lbp_summary)
@@ -232,9 +300,11 @@ def main(since_date: str | None = None):
     print("Tableau fermetures nettoyées:", config.EXPORT_DIR / "fermetures_nettoyees.csv")
     return {
         "window": window,
+        "ai_provider": ai["provider"],
         "recap": recap,
         "postal_sync": postal_sync,
         "postal_requeued": postal_requeued,
+        "postal_backfill": postal_backfill,
         "postal_reclassified": postal_reclassified,
         "postal_enrichment": postal_enrichment,
         "lbp_summary": lbp_summary,
@@ -258,12 +328,7 @@ def seed_main(path: str, *, reference: str | None = None):
     Excel comme source d'URLs ET comme référence de comparaison.
     """
     conn = store.init_db(config.DB_PATH)
-    if not os.environ.get("ANTHROPIC_API_KEY"):
-        raise SystemExit(
-            "ANTHROPIC_API_KEY absente. Vérifie le fichier .env ou exporte la "
-            "variable avant de relancer l'ingestion seed."
-        )
-    client = anthropic.Anthropic()
+    ai = _build_ai_extractors()
     cache_geo: dict = {}
 
     progress("Chargement des URLs seed", 10)
@@ -271,7 +336,7 @@ def seed_main(path: str, *, reference: str | None = None):
     progress(f"Ingestion seed ({len(articles)} URLs)", 30)
     recap = seed.ingest(
         conn, articles,
-        extractor_fn=lambda art: extract_structured(art, client=client).model_dump(),
+        extractor_fn=ai["structured"],
         geocode_fn=lambda c, d=None: geocode.geocode_commune_ou_lieu(c, d, cache=cache_geo),
         fetch_fn=fetch_text,
     )

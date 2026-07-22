@@ -387,25 +387,52 @@ def mark_url_seen(conn: sqlite3.Connection, url: str) -> None:
     conn.commit()
 
 
+def delete_vigilance_by_url(conn: sqlite3.Connection, url: str) -> int:
+    """Retire une vigilance devenue une fermeture publiée."""
+    if not url:
+        return 0
+    conn.execute(
+        "DELETE FROM vigilance_reviews WHERE id IN "
+        "(SELECT id FROM vigilances WHERE url=?)",
+        (url,),
+    )
+    cursor = conn.execute("DELETE FROM vigilances WHERE url=?", (url,))
+    conn.commit()
+    return cursor.rowcount
+
+
 def requeue_postal_articles(conn: sqlite3.Connection, migration_key: str) -> int:
-    """Remet une fois les anciens articles postaux dans la file d'extraction."""
+    """Remet une fois articles et vigilances postaux dans la file d'extraction."""
     if conn.execute(
         "SELECT 1 FROM pipeline_migrations WHERE key=?", (migration_key,)
     ).fetchone():
         return 0
     rows = conn.execute(
-        """SELECT articles.raw_url FROM articles
-           JOIN seen_urls ON seen_urls.url=articles.raw_url
-           WHERE lower(COALESCE(title, '') || ' ' || COALESCE(fulltext, ''))
-                 LIKE '%bureau de poste%'
-              OR lower(COALESCE(title, '') || ' ' || COALESCE(fulltext, ''))
-                 LIKE '%banque postale%'
-              OR lower(COALESCE(title, '') || ' ' || COALESCE(fulltext, ''))
-                 LIKE '%agence postale communale%'
-              OR lower(COALESCE(title, '') || ' ' || COALESCE(fulltext, ''))
-                 LIKE '%relais poste%'"""
+        """WITH postal_urls(url) AS (
+             SELECT raw_url FROM articles
+             WHERE lower(COALESCE(title, '') || ' ' || COALESCE(fulltext, ''))
+                       LIKE '%bureau de poste%'
+                OR lower(COALESCE(title, '') || ' ' || COALESCE(fulltext, ''))
+                       LIKE '%banque postale%'
+                OR lower(COALESCE(title, '') || ' ' || COALESCE(fulltext, ''))
+                       LIKE '%agence postale communale%'
+                OR lower(COALESCE(title, '') || ' ' || COALESCE(fulltext, ''))
+                       LIKE '%relais poste%'
+             UNION
+             SELECT url FROM vigilances
+             WHERE url IS NOT NULL AND (
+                    banque='La Banque Postale'
+                 OR lower(COALESCE(titre, '') || ' ' || COALESCE(extrait, ''))
+                       LIKE '%bureau de poste%'
+                 OR lower(COALESCE(titre, '') || ' ' || COALESCE(extrait, ''))
+                       LIKE '%banque postale%'
+             )
+           )
+           SELECT DISTINCT postal_urls.url FROM postal_urls
+           JOIN seen_urls ON seen_urls.url=postal_urls.url
+           WHERE postal_urls.url IS NOT NULL AND postal_urls.url != ''"""
     ).fetchall()
-    urls = [(row[0],) for row in rows if row[0]]
+    urls = [(row[0],) for row in rows]
     if urls:
         conn.executemany("DELETE FROM seen_urls WHERE url=?", urls)
         conn.executemany(
@@ -419,6 +446,32 @@ def requeue_postal_articles(conn: sqlite3.Connection, migration_key: str) -> int
     )
     conn.commit()
     return len(urls)
+
+
+def list_postal_vigilance_articles(conn: sqlite3.Connection) -> list[dict]:
+    """Expose le backlog postal sous le format article attendu par le pipeline."""
+    rows = conn.execute(
+        """SELECT titre, extrait, url, date, source, departement, score
+           FROM vigilances
+           WHERE banque='La Banque Postale'
+              OR lower(COALESCE(titre, '') || ' ' || COALESCE(extrait, ''))
+                    LIKE '%bureau de poste%'
+              OR lower(COALESCE(titre, '') || ' ' || COALESCE(extrait, ''))
+                    LIKE '%banque postale%'"""
+    ).fetchall()
+    return [
+        {
+            "titre": row[0] or "",
+            "texte": row[1] or "",
+            "extrait": row[1] or "",
+            "url": row[2] or "",
+            "date": row[3],
+            "source": row[4],
+            "departement": row[5],
+            "score": row[6],
+        }
+        for row in rows
+    ]
 
 
 _POSTAL_POINT_COLS = [

@@ -116,6 +116,82 @@ def test_pipeline_stocke_vigilance_si_extraction_non_publiable(tmp_path):
     assert recap["vigilances"] == 1
     assert vus == [("http://v", "article pertinent sans fermeture publiable")]
 
+
+def test_pipeline_publie_titre_postal_explicite_sans_appel_ia(tmp_path):
+    conn = store.init_db(tmp_path / "t.db")
+    article = {
+        "titre": "Orléans : le bureau de poste fermera définitivement le 31 octobre",
+        "texte": "",
+        "url": "http://postal-orleans",
+        "date": "2024-09-03",
+        "source": "PQR",
+        "departement": "45",
+    }
+    appels_ia = []
+
+    def extractor_spy(art):
+        appels_ia.append(art)
+        return None
+
+    def geocode(commune, departement=None):
+        if commune == "Orléans":
+            return {
+                "commune": "Orléans", "lat": 47.9, "lon": 1.9,
+                "code_insee": "45234", "departement": "45",
+            }
+        return None
+
+    recap = pipeline.run_pipeline(
+        conn,
+        [lambda: [article]],
+        extractor_spy,
+        geocode,
+        since_date="2024-07-20",
+        enrich_fn=lambda url: "",
+    )
+    assert appels_ia == []
+    assert recap["fermetures"] == 1
+    row = conn.execute(
+        "SELECT banque, date_fermeture, service_impact FROM closures"
+    ).fetchone()
+    assert row == ("La Banque Postale", "2024-10-31", "fermeture_lbp_complete")
+    assert store.is_url_seen(conn, article["url"])
+
+
+def test_backlog_postal_resout_vigilance_existante_sans_ia(tmp_path):
+    conn = store.init_db(tmp_path / "t.db")
+    url = "http://postal-marnay"
+    store.upsert_vigilance(conn, {
+        "id": "marnay",
+        "banque": "La Banque Postale",
+        "departement": "70",
+        "titre": "Marnay : fermé définitivement, le bureau de poste ne rouvrira pas",
+        "extrait": "",
+        "url": url,
+        "source": "PQR",
+        "date": "2025-05-15",
+        "score": 5,
+        "raison": "article pertinent sans fermeture publiable",
+    })
+
+    def geocode(commune, departement=None):
+        if commune == "Marnay":
+            return {
+                "commune": "Marnay", "lat": 47.3, "lon": 5.8,
+                "code_insee": "70334", "departement": "70",
+            }
+        return None
+
+    recap = pipeline.ingest_postal_vigilance_backlog(
+        conn,
+        store.list_postal_vigilance_articles(conn),
+        geocode,
+        since_date="2024-07-20",
+    )
+    assert recap["fermetures"] == 1
+    assert store.is_url_seen(conn, url)
+    assert conn.execute("SELECT COUNT(*) FROM vigilances").fetchone()[0] == 0
+
 def test_pipeline_rejette_commune_inconnue_ou_non_nominative(tmp_path):
     conn = store.init_db(tmp_path / "t.db")
     collectors = [lambda: [{
@@ -299,8 +375,12 @@ def test_pipeline_ne_marque_pas_seen_apres_erreur_ia_retryable(tmp_path):
     pipeline.run_pipeline(conn, collectors, extractor_retry, _geo, enrich_fn=lambda u: "")
     assert len(appels) == 1
     assert not store.is_url_seen(conn, url), "une erreur IA réessayable ne doit pas marquer l'URL seen"
-    row = store.get_extraction(conn, _compact_hash(_article(url)), config.EXTRACTION_VERSION,
-                               config.ANTHROPIC_MODEL)
+    row = store.get_extraction(
+        conn,
+        _compact_hash(_article(url)),
+        config.EXTRACTION_VERSION,
+        config.EXTRACTION_CACHE_MODEL,
+    )
     assert row["status"] == "error"
 
     row["retry_after"] = "2000-01-01T00:00:00+00:00"

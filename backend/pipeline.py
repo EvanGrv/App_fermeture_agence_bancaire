@@ -3,7 +3,16 @@ import hashlib
 import config
 from datetime import date, datetime, timezone
 from email.utils import parsedate_to_datetime
-from backend import commune_normalize, context_builder, extractor, ingest_map, prefilter, store, validation
+from backend import (
+    commune_normalize,
+    context_builder,
+    extractor,
+    ingest_map,
+    prefilter,
+    store,
+    validation,
+    vigilance_review,
+)
 from backend.fulltext import fetch_text, fetch_article
 from backend.extraction_cache import extract_cached_with_status
 
@@ -148,6 +157,72 @@ def _persist_structured_signals(conn, result, art, url):
         })
 
 
+def _ingest_postal_fallback(
+    conn,
+    art,
+    url,
+    geocoder_fn,
+    recap,
+    since_date,
+) -> bool:
+    """Publie les fermetures postales explicites sans dépendre de l'IA."""
+    if not prefilter.is_postal_closure_candidate(art):
+        return False
+    closures = vigilance_review.fermetures_depuis_signal(
+        art,
+        banque="La Banque Postale",
+        geocode_fn=geocoder_fn,
+        departement=art.get("departement"),
+    )
+    if not closures:
+        return False
+    aujourdhui = date.today().isoformat()
+    publications = 0
+    for closure in closures:
+        if not extractor._retenir_fermeture(
+            closure["statut_temporel"],
+            closure.get("date_fermeture"),
+            since_date,
+            aujourdhui,
+        ):
+            _persist_unlocated_closure(
+                conn, closure, art, url, "hors fenêtre temporelle"
+            )
+            continue
+        recap["extraits"] += 1
+        ok, raison = _ingest_closure(conn, closure, art, url, geocoder_fn, recap)
+        if ok:
+            publications += 1
+        elif raison:
+            _persist_unlocated_closure(conn, closure, art, url, raison)
+    if publications and url:
+        store.delete_vigilance_by_url(conn, url)
+    return True
+
+
+def ingest_postal_vigilance_backlog(
+    conn,
+    articles,
+    geocoder_fn,
+    since_date: str | None = None,
+) -> dict:
+    """Résout sans IA les vigilances postales déjà présentes en base."""
+    recap = {
+        "articles": len(articles),
+        "extraits": 0,
+        "fermetures": 0,
+        "rejets_validation": 0,
+    }
+    for art in articles:
+        url = art.get("url") or ""
+        if _ingest_postal_fallback(
+            conn, art, url, geocoder_fn, recap, since_date
+        ):
+            if url:
+                store.mark_url_seen(conn, url)
+    return recap
+
+
 def run_pipeline(
     conn,
     collectors,
@@ -218,6 +293,18 @@ def run_pipeline(
                     store.mark_url_seen(conn, url)
                 if vigilance_fn and vigilance_fn(art, f"score préfiltre bas ({pf.score})"):
                     recap["vigilances"] += 1
+                continue
+            fallback_art = {**art, "score": pf.score}
+            if _ingest_postal_fallback(
+                conn,
+                fallback_art,
+                url,
+                geocoder_fn,
+                recap,
+                since_date,
+            ):
+                if url:
+                    store.mark_url_seen(conn, url)
                 continue
             art["texte"] = pf.compact_context
             try:
