@@ -113,6 +113,8 @@ def fermeture_publiable(closure: dict, geo: dict | None) -> tuple[bool, str | No
     commune = closure.get("commune")
     if not commune_publiable(commune):
         return False, "commune absente, générique ou non nominative"
+    if (geo or {}).get("ambiguous"):
+        return False, "commune homonyme sans département vérifiable"
     if geo is None:
         return False, "commune non géocodée"
     geo_dep = geo.get("departement")

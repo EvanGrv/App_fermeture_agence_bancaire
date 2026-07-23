@@ -615,6 +615,7 @@ def review_vigilance(
                 departement=vigilance.get("departement"),
             )
         for closure in closures:
+            extraction_guard.enrich_department_from_source(closure, art)
             try:
                 geo = geocode_fn(closure["commune"], closure.get("departement"))
             except Exception:

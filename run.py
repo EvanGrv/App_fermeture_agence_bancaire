@@ -128,17 +128,19 @@ def main(since_date: str | None = None):
     progress("Configuration de la fenêtre de collecte", 5)
     window = _configure_collection_window(since_date)
     conn = store.init_db(config.DB_PATH)
-    lbp_quarantine = extraction_guard.quarantine_existing_lbp(conn)
+    cache_geo = {}
+    geo_commune = lambda c, d=None: geocode.geocode_commune_ou_lieu(
+        c, d, cache=cache_geo
+    )
+    lbp_quarantine = extraction_guard.quarantine_existing_lbp(
+        conn, geocode_fn=geo_commune
+    )
     lbp_before = {
         row[0] for row in conn.execute(
             "SELECT id FROM closures WHERE banque='La Banque Postale'"
         )
     }
     ai = _build_ai_extractors(since_date)
-    cache_geo = {}
-    geo_commune = lambda c, d=None: geocode.geocode_commune_ou_lieu(
-        c, d, cache=cache_geo
-    )
 
     postal_requeued = store.requeue_postal_articles(
         conn, "postal-deterministic-fallback-v1"

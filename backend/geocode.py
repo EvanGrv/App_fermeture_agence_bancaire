@@ -1,5 +1,6 @@
 import time
 import urllib.parse
+import unicodedata
 import requests
 
 _BASE = "https://api-adresse.data.gouv.fr/search/"
@@ -16,12 +17,71 @@ def _departement(citycode: str, postcode: str):
     return src[:2] if src[:2].isdigit() else None
 
 
-def parse_ban(payload: dict, departement=None):
+def _normalise_commune(value: str | None) -> str:
+    value = "".join(
+        char for char in unicodedata.normalize("NFD", value or "")
+        if unicodedata.category(char) != "Mn"
+    )
+    return " ".join(value.replace("’", "'").lower().split())
+
+
+def _feature_commune(feature: dict) -> str | None:
+    props = feature.get("properties", {}) or {}
+    return props.get("city") or props.get("name") or None
+
+
+def _ambiguite_commune(features: list[dict], commune: str | None) -> dict | None:
+    """Détecte plusieurs communes BAN portant exactement le nom demandé."""
+    expected_name = _normalise_commune(commune)
+    if not expected_name:
+        return None
+    exact = [
+        feature for feature in features
+        if _normalise_commune(_feature_commune(feature)) == expected_name
+    ]
+    by_insee: dict[str, dict] = {}
+    for feature in exact:
+        props = feature.get("properties", {}) or {}
+        code = str(props.get("citycode") or "").strip()
+        if code:
+            by_insee.setdefault(code, feature)
+    if len(by_insee) <= 1:
+        return None
+    candidates = []
+    for code, feature in by_insee.items():
+        props = feature.get("properties", {}) or {}
+        candidates.append({
+            "commune": _feature_commune(feature),
+            "code_insee": code,
+            "departement": _departement(code, props.get("postcode") or ""),
+        })
+    return {
+        "lat": None,
+        "lon": None,
+        "code_insee": None,
+        "departement": None,
+        "commune": commune,
+        "ambiguous": True,
+        "candidates": candidates,
+    }
+
+
+def parse_ban(
+    payload: dict,
+    departement=None,
+    *,
+    commune: str | None = None,
+    reject_ambiguous: bool = False,
+):
     """Renvoie {lat, lon, code_insee, departement} de la meilleure feature, ou None."""
     features = payload.get("features") or []
     if not features:
         return None
     expected = str(departement or "").strip()
+    if reject_ambiguous and not expected:
+        ambiguity = _ambiguite_commune(features, commune)
+        if ambiguity:
+            return ambiguity
     f = features[0]
     if expected:
         matched = None
@@ -53,7 +113,9 @@ def parse_ban(payload: dict, departement=None):
 def _url(commune: str, departement) -> str:
     # La BAN ne filtre pas par département sur /search municipality ;
     # on requête plusieurs résultats et parse_ban choisit le département attendu.
-    params = {"q": commune, "type": "municipality", "limit": "5" if departement else "1"}
+    # Plusieurs résultats sont aussi indispensables sans département pour
+    # détecter les homonymes au lieu de choisir arbitrairement le premier.
+    params = {"q": commune, "type": "municipality", "limit": "10"}
     return f"{_BASE}?{urllib.parse.urlencode(params)}"
 
 
@@ -102,7 +164,12 @@ def geocode_commune(commune, departement=None, fetch=_default_fetch, cache=None,
     resultat = None
     for tentative in range(retries + 1):
         try:
-            resultat = parse_ban(fetch(_url(commune, departement)), departement)
+            resultat = parse_ban(
+                fetch(_url(commune, departement)),
+                departement,
+                commune=str(commune),
+                reject_ambiguous=not bool(departement),
+            )
             break
         except Exception as exc:
             if tentative < retries:
@@ -127,7 +194,7 @@ def geocode_commune_ou_lieu(commune, departement=None, fetch=_default_fetch, cac
     Best-effort : renvoie None si même la recherche large échoue.
     """
     geo = geocode_commune(commune, departement, fetch=fetch, cache=cache, retries=retries)
-    if geo and geo.get("code_insee"):
+    if geo and (geo.get("code_insee") or geo.get("ambiguous")):
         return geo
     if not commune:
         return None

@@ -110,6 +110,22 @@ def _source_departments(article: dict, source_text: str) -> set[str]:
     return departments
 
 
+def source_departments(article: dict) -> set[str]:
+    """Départements explicitement étayés par les métadonnées ou le texte source."""
+    return _source_departments(article, _source_text(article))
+
+
+def enrich_department_from_source(closure: dict, article: dict) -> set[str]:
+    """Complète un département absent uniquement si la source n'en indique qu'un."""
+    departments = source_departments(article)
+    if (
+        not validation.departement_valide(closure.get("departement"))
+        and len(departments) == 1
+    ):
+        closure["departement"] = next(iter(departments))
+    return departments
+
+
 def _leading_location(title: str | None) -> str | None:
     title = (title or "").strip()
     patterns = (
@@ -135,6 +151,17 @@ def evaluate(
     source_text = _source_text(article)
     banque = closure.get("banque") or ""
 
+    if (geo or {}).get("ambiguous"):
+        candidates = ", ".join(
+            f"{item.get('commune')} ({item.get('departement')})"
+            for item in (geo or {}).get("candidates", [])
+        )
+        suffix = f": {candidates}" if candidates else ""
+        return GuardDecision(
+            False,
+            f"garde entrée/sortie: commune homonyme sans département vérifiable{suffix}",
+        )
+
     if _NEGATION_RE.search(source_text):
         return GuardDecision(False, "garde entrée/sortie: la source nie ou annule la fermeture")
     if banque == "La Banque Postale" and _TEMPORARY_RE.search(source_text):
@@ -148,6 +175,25 @@ def evaluate(
             False,
             f"garde entrée/sortie: département source {named} incompatible avec la sortie {geo_department}",
         )
+
+    # Même si l'IA fournit un département, une commune homonyme ne peut être
+    # publiée que si ce département est étayé par la source. La recherche BAN
+    # non contrainte sert uniquement à détecter l'homonymie.
+    if (
+        require_location
+        and geocode_fn
+        and closure.get("commune")
+        and not source_departments
+    ):
+        try:
+            unscoped_geo = geocode_fn(closure["commune"], None)
+        except Exception:
+            unscoped_geo = None
+        if (unscoped_geo or {}).get("ambiguous"):
+            return GuardDecision(
+                False,
+                "garde entrée/sortie: commune homonyme sans département vérifiable dans la source",
+            )
 
     if require_location:
         expected = [
@@ -206,7 +252,7 @@ def evaluate(
     return GuardDecision(True)
 
 
-def quarantine_existing_lbp(conn) -> dict:
+def quarantine_existing_lbp(conn, geocode_fn=None) -> dict:
     """Retire les anciens marqueurs LBP contredits avec certitude par leur titre."""
     rows = conn.execute(
         """SELECT c.id, c.commune, c.departement, c.type, c.date_fermeture,
@@ -243,7 +289,13 @@ def quarantine_existing_lbp(conn) -> dict:
                 "source": row[16], "date": row[17], "departement": None,
             }
             decision = (
-                evaluate(closure, article, geo, require_location=True)
+                evaluate(
+                    closure,
+                    article,
+                    geo,
+                    geocode_fn=geocode_fn,
+                    require_location=True,
+                )
                 if article["titre"]
                 else GuardDecision(True)
             )

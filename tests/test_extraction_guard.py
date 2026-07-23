@@ -150,6 +150,42 @@ def test_rejette_homonyme_incompatible_avec_le_lieu_en_tete():
     assert "lieu d’article Saumur" in decision.reason
 
 
+def test_rejette_villepinte_si_le_departement_nest_pas_etaye():
+    def geocode(commune, department=None):
+        if commune == "Villepinte" and not department:
+            return {
+                "ambiguous": True,
+                "candidates": [
+                    {"commune": "Villepinte", "departement": "11"},
+                    {"commune": "Villepinte", "departement": "93"},
+                ],
+            }
+        return _geo("93", "93078")
+
+    decision = extraction_guard.evaluate(
+        _closure(commune="Villepinte", departement="93"),
+        _article("Villepinte : fermeture programmée du bureau de poste"),
+        _geo("93", "93078"),
+        geocode_fn=geocode,
+    )
+
+    assert not decision.accepted
+    assert "commune homonyme" in decision.reason
+
+
+def test_complete_villepinte_avec_laude_explicitement_citee():
+    closure = _closure(commune="Villepinte", departement=None)
+    departments = extraction_guard.enrich_department_from_source(
+        closure,
+        _article(
+            "Villepinte : fermeture programmée du bureau de poste",
+            "Article rédigé par un correspondant de l'Aude.",
+        ),
+    )
+    assert departments == {"11"}
+    assert closure["departement"] == "11"
+
+
 def test_quarantaine_un_ancien_marqueur_lbp_temporaire(tmp_path):
     conn = store.init_db(tmp_path / "guard.db")
     store.upsert_closure(conn, _closure(evidence_level="presse+référentiel"))
@@ -184,3 +220,27 @@ def test_quarantaine_un_ancien_marqueur_dont_la_commune_nest_pas_dans_le_titre(t
     assert recap["quarantined"] == 1
     reason = conn.execute("SELECT raison FROM closures_unlocated").fetchone()[0]
     assert "absente de la source" in reason
+
+
+def test_quarantaine_un_ancien_marqueur_lbp_homonyme_non_etaye(tmp_path):
+    conn = store.init_db(tmp_path / "guard-homonym.db")
+    store.upsert_closure(conn, _closure(
+        commune="Villepinte", code_insee="93078", departement="93",
+        evidence_level="presse",
+    ))
+    store.add_source(conn, "lbp-test", {
+        "url": "https://example.test/villepinte",
+        "titre": "Villepinte : fermeture programmée du bureau de poste",
+        "source": "PQR", "date": "2025-08-17",
+    })
+
+    def geocode(commune, department=None):
+        if commune == "Villepinte" and not department:
+            return {"ambiguous": True}
+        return _geo("93", "93078")
+
+    recap = extraction_guard.quarantine_existing_lbp(conn, geocode_fn=geocode)
+
+    assert recap["quarantined"] == 1
+    reason = conn.execute("SELECT raison FROM closures_unlocated").fetchone()[0]
+    assert "commune homonyme" in reason
