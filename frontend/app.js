@@ -614,12 +614,14 @@ function renderStats(id, items) {
   const confirmed = items.filter((c) => c.type !== "fusion" && c.statut === "confirmé");
   const projects = items.filter((c) => c.statut === "projet");
   const fusions = items.filter((c) => c.type === "fusion");
+  const rumors = items.filter((c) => c.statut === "rumeur");
   const deps = new Set(items.map((c) => c.departement).filter(Boolean)).size;
   const totalDeps = Object.keys(DONNEES.departements || {}).length || 0;
   el.innerHTML = [
     statCard("Confirmées", confirmed.length, `+${addedThisMonth(confirmed)} ce mois`, "red"),
     statCard("Projets", projects.length, `+${addedThisMonth(projects)} ce mois`, "orange"),
     statCard("Fusions", fusions.length, `+${addedThisMonth(fusions)} ce mois`, "purple"),
+    statCard("Rumeur", rumors.length, `+${addedThisMonth(rumors)} ce mois`, "blue"),
     statCard("Départements impactés", `${deps} / ${totalDeps}`, `+${newDepartmentsThisMonth(items)} ce mois`, "blue"),
   ].join("");
 }
