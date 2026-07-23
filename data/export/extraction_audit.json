@@ -132,16 +132,6 @@
   {
     "severity": "warning",
     "type": "date_fermeture_absente",
-    "id": "4b911a4b783ba002",
-    "banque": "Crédit Mutuel",
-    "commune": "Villersexel",
-    "departement": "70",
-    "code_insee": "70561",
-    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
-  },
-  {
-    "severity": "warning",
-    "type": "date_fermeture_absente",
     "id": "2968baba09060258",
     "banque": "Caisse d'Épargne",
     "commune": "Dun-sur-Auron",
@@ -437,6 +427,16 @@
     "commune": "Gardanne",
     "departement": "13",
     "code_insee": "13041",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "77e07df577220422",
+    "banque": "La Banque Postale",
+    "commune": "Villepinte",
+    "departement": "93",
+    "code_insee": "93078",
     "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
   },
   {

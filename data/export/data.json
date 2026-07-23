@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23T06:26:43.478457+00:00",
+  "generated_at": "2026-07-23T09:59:40.390843+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -131,8 +131,8 @@
       "count": 3,
       "total_agences": 228,
       "precise_count": 3,
-      "unlocated_count": 7,
-      "estimated_count": 10
+      "unlocated_count": 8,
+      "estimated_count": 11
     },
     "14": {
       "nom": "Calvados",
@@ -284,8 +284,8 @@
       "count": 8,
       "total_agences": 156,
       "precise_count": 8,
-      "unlocated_count": 3,
-      "estimated_count": 11
+      "unlocated_count": 4,
+      "estimated_count": 12
     },
     "30": {
       "nom": "Gard",
@@ -302,8 +302,8 @@
       "count": 1,
       "total_agences": 175,
       "precise_count": 1,
-      "unlocated_count": 2,
-      "estimated_count": 3
+      "unlocated_count": 3,
+      "estimated_count": 4
     },
     "32": {
       "nom": "Gers",
@@ -356,8 +356,8 @@
       "count": 5,
       "total_agences": 106,
       "precise_count": 5,
-      "unlocated_count": 1,
-      "estimated_count": 6
+      "unlocated_count": 2,
+      "estimated_count": 7
     },
     "38": {
       "nom": "Isère",
@@ -419,8 +419,8 @@
       "count": 5,
       "total_agences": 175,
       "precise_count": 5,
-      "unlocated_count": 2,
-      "estimated_count": 7
+      "unlocated_count": 3,
+      "estimated_count": 8
     },
     "45": {
       "nom": "Loiret",
@@ -428,8 +428,8 @@
       "count": 9,
       "total_agences": 189,
       "precise_count": 9,
-      "unlocated_count": 0,
-      "estimated_count": 9
+      "unlocated_count": 1,
+      "estimated_count": 10
     },
     "46": {
       "nom": "Lot",
@@ -581,8 +581,8 @@
       "count": 8,
       "total_agences": 212,
       "precise_count": 8,
-      "unlocated_count": 3,
-      "estimated_count": 11
+      "unlocated_count": 4,
+      "estimated_count": 12
     },
     "63": {
       "nom": "Puy-de-Dôme",
@@ -806,8 +806,8 @@
       "count": 1,
       "total_agences": 84,
       "precise_count": 1,
-      "unlocated_count": 0,
-      "estimated_count": 1
+      "unlocated_count": 1,
+      "estimated_count": 2
     },
     "88": {
       "nom": "Vosges",
@@ -857,11 +857,11 @@
     "93": {
       "nom": "Seine-Saint-Denis",
       "region": "Île-de-France",
-      "count": 0,
+      "count": 1,
       "total_agences": 139,
-      "precise_count": 0,
+      "precise_count": 1,
       "unlocated_count": 1,
-      "estimated_count": 1
+      "estimated_count": 2
     },
     "94": {
       "nom": "Val-de-Marne",
@@ -914,8 +914,8 @@
       "count": 0,
       "total_agences": 106,
       "precise_count": 0,
-      "unlocated_count": 2,
-      "estimated_count": 2
+      "unlocated_count": 3,
+      "estimated_count": 3
     },
     "976": {
       "nom": "Mayotte",
@@ -987,10 +987,22 @@
       "departement": "62",
       "nom": "Pas-de-Calais",
       "precise_count": 8,
-      "unlocated_count": 3,
-      "estimated_count": 11,
+      "unlocated_count": 4,
+      "estimated_count": 12,
       "department_signal_count": 0,
       "signals": [
+        {
+          "id": "0c462fa4ec0cf7fb",
+          "banque": "Crédit Agricole",
+          "commune": "Wizernes",
+          "departement": "62",
+          "titre": "Wizernes : la municipalité « joue la dernière carte » pour éviter la fermeture de l’agence du Crédit Agricole - Nord Littoral",
+          "source": "Google News",
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPcWhpRWdMMHlJSC1XRWcyTVBMNjliaDhVd044NUstR3cyTFJMa1Rhb1hOdmp0NTZ1Nl91VHBqUEVlQUx0M3hKQUt0d1hmWGpEaWU0UXB6U25LTHp2NXlMZWI0RW9WLTNGbjZkZlY5Vk5GNGRla1RJd2x5MzFtY080SnNoNjZwUndsR2xJcXBid01VdWdyV3h5MlVPUWR1LS1EcmxxZFlBLWJ0RkhJWkVwajFYTTQ3ZlJTbzJLR3hGbE5WNFZsR0JFN1hpTXh4a0NBRFd0QVF6dEF6cjRhdmFKQ0VxSF8?oc=5",
+          "score": 3,
+          "precision": "commune_non_geocodee",
+          "reason": "garde entrée/sortie: département source 59 incompatible avec la sortie 62"
+        },
         {
           "id": "71709fe6bbad0073",
           "banque": "La Banque Postale",
@@ -1033,10 +1045,23 @@
       "departement": "87",
       "nom": "Haute-Vienne",
       "precise_count": 1,
-      "unlocated_count": 0,
-      "estimated_count": 1,
+      "unlocated_count": 1,
+      "estimated_count": 2,
       "department_signal_count": 0,
-      "signals": []
+      "signals": [
+        {
+          "id": "f42db4363f75c42f",
+          "banque": "Crédit Agricole",
+          "commune": "Condat-sur-Vienne",
+          "departement": "87",
+          "titre": "Condat-sur-Vienne se mobilise contre la fermeture annoncée de son agence du Crédit Agricole - La Montagne",
+          "source": "Google News",
+          "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOQUI5UTJ1U0RZWWVteDVtV3lVNzVFQk80WnRfR3JGdEVsUDZneF9KcHFxT1lCcnpob1gxUHBkZzZzVWdDLW9nTVliM0laN0paRHpjUnpUeTVteDBrQzd4b1V0R3V0V3ByTDRoWDF2YTZMQ1BOem5WdFdsRFBBLVZvM3lFNzU1czRxbVI4YnBianJ6XzV2QjF1WjFQSm1OS3gtYWtnMzBibTY1YUI5aUVuQlgzNnN0QTVRazFCcVZhLVlYVGhlUVU1VUgyZ2tZTTBZV2lhemlDeUhTdkgtRWlyWGxscnhTblAxYnN0TWxaX3hWejRa?oc=5",
+          "score": 3,
+          "precision": "commune_non_geocodee",
+          "reason": "garde entrée/sortie: département source 86 incompatible avec la sortie 87"
+        }
+      ]
     },
     "36": {
       "departement": "36",
@@ -1107,17 +1132,30 @@
       "departement": "45",
       "nom": "Loiret",
       "precise_count": 9,
-      "unlocated_count": 0,
-      "estimated_count": 9,
+      "unlocated_count": 1,
+      "estimated_count": 10,
       "department_signal_count": 0,
-      "signals": []
+      "signals": [
+        {
+          "id": "72f9100798a62bcc",
+          "banque": "La Banque Postale",
+          "commune": "Orléans",
+          "departement": "45",
+          "titre": "\"On fait mourir les habitants du quartier\", aux Blossières à Orléans, la fermeture du bureau de poste ne passe pas - ici.fr",
+          "source": "Google News",
+          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPOERLU2ZxRE9XZUNRdVFoT3UzYWZvekZ4MVZMT2k0U0tFT3lxa1VDbkExcDJlQVFKd1pESDNZZHEyak5wY1lkRkJBRHNBQ1pQQVhTeGdpeEtkakFNR0dWUjVmU1IzZHBfZGxlWmxLREEybU5XR3JTbTEzaWpFWnMyZmVXeURUeTg0WWhNTTBzLXFVZXlkdXVSa1p1c0l5Z0ZJS044LXUxajItTnBUekxhY1FrTW1nQk1LRTZLLU1yZnU4TnRORHlNY0VESzlKMzdNTnJKb3R5Q2djNXpMT1h5QUZZMmItUQ?oc=5",
+          "score": 3,
+          "precision": "commune_non_geocodee",
+          "reason": "hors fenêtre temporelle"
+        }
+      ]
     },
     "29": {
       "departement": "29",
       "nom": "Finistère",
       "precise_count": 8,
-      "unlocated_count": 3,
-      "estimated_count": 11,
+      "unlocated_count": 4,
+      "estimated_count": 12,
       "department_signal_count": 0,
       "signals": [
         {
@@ -1155,6 +1193,18 @@
           "score": 3,
           "precision": "commune_non_geocodee",
           "reason": "hors fenêtre temporelle"
+        },
+        {
+          "id": "3db1d665a6fa91ce",
+          "banque": "La Banque Postale",
+          "commune": "Plonévez-Porzay",
+          "departement": "29",
+          "titre": "Le bureau de poste de Keryado fermé jusqu’à début août, à Lorient",
+          "source": "letelegramme.fr",
+          "url": "https://www.letelegramme.fr/morbihan/lorient-56100/le-bureau-de-poste-de-keryado-ferme-jusqua-debut-aout-a-lorient-7087544.php",
+          "score": 3,
+          "precision": "commune_non_geocodee",
+          "reason": "hors fenêtre temporelle"
         }
       ]
     },
@@ -1162,10 +1212,22 @@
       "departement": "37",
       "nom": "Indre-et-Loire",
       "precise_count": 5,
-      "unlocated_count": 1,
-      "estimated_count": 6,
+      "unlocated_count": 2,
+      "estimated_count": 7,
       "department_signal_count": 0,
       "signals": [
+        {
+          "id": "6d80040bf3384652",
+          "banque": "La Banque Postale",
+          "commune": "Luynes",
+          "departement": "37",
+          "titre": "Le bureau de poste de Luynes définitivement fermé et remplacé par deux relais postaux - ici.fr",
+          "source": "Google News",
+          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQdGFoRGY0LUdURjlSZFRpSGtGOHV4c3RwT1VJTlUyMWU3VFNFZXJOMHpUVnFWRFRyd2R1WE43Q2tOV3pYX2ZQMnk4eG1CVks0OVFjS0RRb2MxNGpBU1d1SzhhdlZzS242RkxhZTgyRm9DV3JfNjhwa2dnc21HQUR1MXlKaFpqYXZkdFJQZ01PbUdmWEdOT2VCZmZmdjhoV1k0bklsNEUwbVRObUNueEFTc1dtbnFHdFNUZWNGbm1wSlNIR19LbU9FUGZFWTNiRjNnamlCVw?oc=5",
+          "score": 3,
+          "precision": "commune_non_geocodee",
+          "reason": "hors fenêtre temporelle"
+        },
         {
           "id": "2d1622fef7f0fc9f",
           "banque": "La Banque Postale",
@@ -1794,8 +1856,8 @@
       "departement": "44",
       "nom": "Loire-Atlantique",
       "precise_count": 5,
-      "unlocated_count": 2,
-      "estimated_count": 7,
+      "unlocated_count": 3,
+      "estimated_count": 8,
       "department_signal_count": 0,
       "signals": [
         {
@@ -1818,6 +1880,18 @@
           "titre": "Avessac. Le bureau de poste fermé tout l’été - Ouest-France",
           "source": "Google News",
           "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPOVhVV2ZqVlRpQ2Y1dUxwTTkwcEV2d1dFM0JZZDBFX3hxUnhlYVFLN2tLWFVnVkxfb2VjdEJ6Yi1GYnhYQ1hYbEN3Qnh4RUNBenpZUDhsVE1Fcm9xelNVUzMwajRxOVZZWWRna0FqamF6SnV2UWhBVGZTdUM3MnE0YmJvMXNXZGFWQ1Q3RWZ4WUdrZENNSTlscGV0ZlJya2JXMjV1TUx4R0FqbFdHX1JybUxsMWFVV25SdzZxVElydlZYbklWZ2NXZzM1NEhZaXcwV2RiSw?oc=5",
+          "score": 3,
+          "precision": "commune_non_geocodee",
+          "reason": "garde entrée/sortie: fermeture postale temporaire ou circonstancielle"
+        },
+        {
+          "id": "caab3721792890f3",
+          "banque": "La Banque Postale",
+          "commune": "Avessac",
+          "departement": "44",
+          "titre": "Avessac. Le bureau de poste fermé tout l’été",
+          "source": "ouest-france.fr",
+          "url": "https://www.ouest-france.fr/pays-de-la-loire/avessac-44460/avessac-le-bureau-de-poste-ferme-tout-lete-1b34faed-ce10-47bd-9af0-cd47157d83e5",
           "score": 3,
           "precision": "commune_non_geocodee",
           "reason": "garde entrée/sortie: fermeture postale temporaire ou circonstancielle"
@@ -2028,8 +2102,8 @@
       "departement": "31",
       "nom": "Haute-Garonne",
       "precise_count": 1,
-      "unlocated_count": 2,
-      "estimated_count": 3,
+      "unlocated_count": 3,
+      "estimated_count": 4,
       "department_signal_count": 0,
       "signals": [
         {
@@ -2055,6 +2129,18 @@
           "score": 3,
           "precision": "commune_non_geocodee",
           "reason": "hors fenêtre temporelle"
+        },
+        {
+          "id": "0fefec76174520d2",
+          "banque": "La Banque Postale",
+          "commune": "Labarthe-Rivière",
+          "departement": "31",
+          "titre": "Labarthe-Rivière. La colère des maires face à la fermeture de La Poste",
+          "source": "ladepeche.fr",
+          "url": "https://www.ladepeche.fr/2026/07/08/la-colere-des-maires-face-a-la-fermeture-de-la-poste-13458427.php",
+          "score": 2,
+          "precision": "commune_non_geocodee",
+          "reason": "garde entrée/sortie: fermeture postale temporaire ou circonstancielle"
         }
       ]
     },
@@ -2141,8 +2227,8 @@
       "departement": "13",
       "nom": "Bouches-du-Rhône",
       "precise_count": 3,
-      "unlocated_count": 7,
-      "estimated_count": 10,
+      "unlocated_count": 8,
+      "estimated_count": 11,
       "department_signal_count": 0,
       "signals": [
         {
@@ -2177,6 +2263,18 @@
           "titre": "\"C’est un coup supplémentaire pour les habitants\" : la colère du maire de Nîmes Vincent Bouget après la fermeture du bureau de poste à Pissevin - Midi Libre",
           "source": "Google News",
           "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxQMVBBdVF4cFNGc1NwWUhMQ29Lb1FfdXJpamtjN0d0Sk93bEplck1BYkI0VUxJSy1sSkZpT0J1RkJpa0dSek5LYWpCM0x0bVB1bVZRTExQSkR5VGFxdXZ6RlNtYy15bDR5ZXJZWm4yMW85SnkzcExsZXM3RUk1TjhsdnVnZGMyY3RsNTE5Uk5DMTh6dDNrVGVCZUhIc0lzREhqSVJzSXBLak1IYTlwUUlkUDVSLXdXNVdUZEdjaGwtRUYwM3ZPdEtnaDQxVG5UcWxfNk8xZGdkanlPMGtmb2s4dWhPcXlZaWttMy1icU9UcmxyR2JTSm04RUVMRjBCX3VIYmkwQ1NuNFZ5VW52d29tVC13YnV4dw?oc=5",
+          "score": 3,
+          "precision": "commune_non_geocodee",
+          "reason": "hors fenêtre temporelle"
+        },
+        {
+          "id": "a5fb6c166be49f71",
+          "banque": "La Banque Postale",
+          "commune": "La Fare-les-Oliviers",
+          "departement": "13",
+          "titre": "Fermeture des bureaux de poste : \"Il y a un management qui broie des gens\", confie Olivier, facteur - RMC",
+          "source": "Google News",
+          "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQaS1FcFZwNGZZb2NCdmFmcG1CbXJ1d2ZFdzh0SjUzeEVkbTdwUWJXeDdXRHMwNkFXWHpqZlZUNDA3bGNKREt5SkN1SWdjNC1aaVJ5ZE54TWkyVXFKMVBnNVM1cVdkZndUX0ZlcURqTlVnZkxoZnVvNTVuRG1pRDZmNHo3Q3FNbHpudkxVdXAzcG5odlJ4RFlsZnZoemNDTEd3UDU0VmwwbVpuTW5uQk95MXdpWVVzTUNyYlBYNmd5ZnFxMmdRVGp1djgwLWVvaGFHV1Y1WHdLcERsOGFqVVQyWWNWVDBWUktqZ0s0?oc=5",
           "score": 3,
           "precision": "commune_non_geocodee",
           "reason": "hors fenêtre temporelle"
@@ -2460,6 +2558,28 @@
           "score": 3,
           "precision": "commune_non_geocodee",
           "reason": "garde entrée/sortie: commune/localisation de sortie absente de la source"
+        }
+      ]
+    },
+    "93": {
+      "departement": "93",
+      "nom": "Seine-Saint-Denis",
+      "precise_count": 1,
+      "unlocated_count": 1,
+      "estimated_count": 2,
+      "department_signal_count": 0,
+      "signals": [
+        {
+          "id": "77ea26ffe5d361e9",
+          "banque": "La Banque Postale",
+          "commune": "Villepinte",
+          "departement": "93",
+          "titre": "Villepinte. La CGT FAPT s’oppose à la fermeture du bureau de poste - ladepeche.fr",
+          "source": "Google News",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPVmlMd2tRcHJmWjlCNHg4VVJOR0s5VTEyelZld2w0ME03YzFiVnNTc3hGRS1uU0NTWVcxbFVNb3dySzg1bTRFNk9BbGdPLWlsd3JvU3prU0paWlZCYmJjd1ZnanpFQ0t3UjlteURDc0ROOEZ6dmNmRzc1ZWxaUTN4Qk5PS1dUbFRsR2gwaWwwVndJQVF5T1pzX3FKNTVIeDg4Y1dpdg?oc=5",
+          "score": 3,
+          "precision": "commune_non_geocodee",
+          "reason": "hors fenêtre temporelle"
         }
       ]
     },
@@ -2779,8 +2899,8 @@
       "departement": "974",
       "nom": "La Réunion",
       "precise_count": 0,
-      "unlocated_count": 2,
-      "estimated_count": 2,
+      "unlocated_count": 3,
+      "estimated_count": 3,
       "department_signal_count": 0,
       "signals": [
         {
@@ -2806,28 +2926,18 @@
           "score": 3,
           "precision": "commune_non_geocodee",
           "reason": "garde entrée/sortie: département source 44 incompatible avec la sortie 974"
-        }
-      ]
-    },
-    "93": {
-      "departement": "93",
-      "nom": "Seine-Saint-Denis",
-      "precise_count": 0,
-      "unlocated_count": 1,
-      "estimated_count": 1,
-      "department_signal_count": 0,
-      "signals": [
+        },
         {
-          "id": "77ea26ffe5d361e9",
+          "id": "5ccb3b98c3ce70c2",
           "banque": "La Banque Postale",
-          "commune": "Villepinte",
-          "departement": "93",
-          "titre": "Villepinte. La CGT FAPT s’oppose à la fermeture du bureau de poste - ladepeche.fr",
-          "source": "Google News",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPVmlMd2tRcHJmWjlCNHg4VVJOR0s5VTEyelZld2w0ME03YzFiVnNTc3hGRS1uU0NTWVcxbFVNb3dySzg1bTRFNk9BbGdPLWlsd3JvU3prU0paWlZCYmJjd1ZnanpFQ0t3UjlteURDc0ROOEZ6dmNmRzc1ZWxaUTN4Qk5PS1dUbFRsR2gwaWwwVndJQVF5T1pzX3FKNTVIeDg4Y1dpdg?oc=5",
+          "commune": "Sainte-Suzanne",
+          "departement": "974",
+          "titre": "Attention, le bureau de poste ferme ses portes en juillet et en août dans cette commune de Loire-Atlantique",
+          "source": "ouest-france.fr",
+          "url": "https://www.ouest-france.fr/pays-de-la-loire/avessac-44460/attention-le-bureau-de-poste-ferme-ses-portes-en-juillet-et-en-aout-dans-cette-commune-de-loire-atlantique-33e50d12-7ba4-11f1-b8c0-67c948238db5",
           "score": 3,
           "precision": "commune_non_geocodee",
-          "reason": "hors fenêtre temporelle"
+          "reason": "garde entrée/sortie: département source 44 incompatible avec la sortie 974"
         }
       ]
     },
@@ -2965,7 +3075,7 @@
     },
     {
       "region": "Bretagne",
-      "articles": 26,
+      "articles": 29,
       "fermetures": 15,
       "projets": 8,
       "fusions": 0,
@@ -2983,7 +3093,7 @@
     },
     {
       "region": "Hauts-de-France",
-      "articles": 19,
+      "articles": 23,
       "fermetures": 9,
       "projets": 5,
       "fusions": 0,
@@ -3000,9 +3110,9 @@
     },
     {
       "region": "Bourgogne-Franche-Comté",
-      "articles": 19,
-      "fermetures": 15,
-      "projets": 4,
+      "articles": 20,
+      "fermetures": 16,
+      "projets": 3,
       "fusions": 0,
       "types": [
         "Fermeture",
@@ -3095,6 +3205,24 @@
       "nb_departements": 3
     },
     {
+      "region": "Normandie",
+      "articles": 9,
+      "fermetures": 5,
+      "projets": 1,
+      "fusions": 0,
+      "types": [
+        "Fermeture",
+        "Projet"
+      ],
+      "departements": [
+        "14",
+        "27",
+        "50",
+        "76"
+      ],
+      "nb_departements": 4
+    },
+    {
       "region": "Occitanie",
       "articles": 8,
       "fermetures": 1,
@@ -3115,28 +3243,10 @@
       "nb_departements": 5
     },
     {
-      "region": "Normandie",
-      "articles": 8,
-      "fermetures": 5,
-      "projets": 1,
-      "fusions": 0,
-      "types": [
-        "Fermeture",
-        "Projet"
-      ],
-      "departements": [
-        "14",
-        "27",
-        "50",
-        "76"
-      ],
-      "nb_departements": 4
-    },
-    {
       "region": "Île-de-France",
-      "articles": 6,
+      "articles": 7,
       "fermetures": 2,
-      "projets": 3,
+      "projets": 4,
       "fusions": 0,
       "types": [
         "Fermeture",
@@ -3146,9 +3256,10 @@
         "75",
         "77",
         "78",
-        "92"
+        "92",
+        "93"
       ],
-      "nb_departements": 4
+      "nb_departements": 5
     },
     {
       "region": "Provence-Alpes-Côte d'Azur",
@@ -3858,14 +3969,14 @@
       "date_annonce": "Fri, 14 Feb 2025 08:00:00 GMT",
       "date_fermeture": "2026-06-30",
       "statut": "confirmé",
-      "statut_temporel": "a_venir",
+      "statut_temporel": "deja_fermee",
       "date_fermeture_approx": 1,
       "fiabilite": 4,
       "lat": 49.242647,
       "lon": 0.580539,
       "citation": "À Saint-Georges-du-Vièvre, le Crédit Agricole va fermer ses portes en juin",
       "adresse": null,
-      "agence_localisation": null,
+      "agence_localisation": "agence (front office)",
       "commune_originale": null,
       "service_impact": null,
       "point_postal_avant": null,
@@ -3876,6 +3987,13 @@
       "sources": [
         {
           "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOZkZfbHJUT3E3M0Z6VnQtYUFYdW5jUENsdHBhTXI3UHpMQ3FQR0N2c2dESE1xRlZkaTQ1LUkyR2xBUzd0eUI2UDRtZ2hpemVrUExvb01EZ2YzbzJfckN1YTNENjNRVUtzbjdVM2M4dVBjYkRBS0ZyUUwzOVZZNVZDYzB4Z3ZZemVRaU5SaV92SGdnenVHdWhybWdhUjBTY2JUOGc0cXRzYXgtM3NZUGVwMGlhQmFFcW5BNGNZYXMxdFRBbU52RGlIWnppTHZMQVFsaUxyU0ZTVlJETDQ?oc=5",
+          "titre": "À Saint-Georges-du-Vièvre, le Crédit Agricole va fermer ses portes en juin - Actu.fr",
+          "source": "Google News",
+          "date": "Fri, 14 Feb 2025 08:00:00 GMT",
+          "tier": "D"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNN2c3UmVBSEhwYUlMLWs4d2tFUDRabi1iT2dXTFVyaHJwei04UkR4NmdQVlVRaS1oN0tzYWF3TmVqMEhmREwzaGJmYkFPdTJiS3FyYmRWUFEzUzNoLTM1T1RzNy1xZ1lOVU9xVUFneDhaMFR5NkVNMlp5RXZPdDFHbVV3YXNIeGdiY093b0QtQi1abmtlZll3alNWSU1JREhzemxVdzlyS1hIUnpISDJlbU1oSHY5Q2psaVVDbk00cHI3Z096WHFQUUtIMmpGTzRvc2kwckp2VGxsRENfUmU3dFd6dU54SzBURGIxeUFxcw?oc=5",
           "titre": "À Saint-Georges-du-Vièvre, le Crédit Agricole va fermer ses portes en juin - Actu.fr",
           "source": "Google News",
           "date": "Fri, 14 Feb 2025 08:00:00 GMT",
@@ -4342,16 +4460,16 @@
       "departement": "70",
       "type": "fermeture",
       "date_annonce": "Fri, 05 Dec 2025 08:00:00 GMT",
-      "date_fermeture": null,
-      "statut": "projet",
-      "statut_temporel": "a_venir",
-      "date_fermeture_approx": 0,
+      "date_fermeture": "2025-12-11",
+      "statut": "confirmé",
+      "statut_temporel": "deja_fermee",
+      "date_fermeture_approx": 1,
       "fiabilite": 3,
       "lat": 47.551621,
       "lon": 6.433516,
       "citation": "Villersexel : Ils se mobilisent contre la fermeture du Crédit Mutuel",
       "adresse": null,
-      "agence_localisation": null,
+      "agence_localisation": "agence Crédit Mutuel",
       "commune_originale": null,
       "service_impact": null,
       "point_postal_avant": null,
@@ -4360,6 +4478,13 @@
       "evidence_level": null,
       "created_at": "2026-06-25T15:40:22.028421+00:00",
       "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQRkE2NmpDaTRRQ3NvZGM1dEk2djUtUjNQTE0zcGZRWVlYTXdVOHRKYmhsQzhfMlViRnpTczRyNHJ6X3g3ejJ0Q0lYbUdZVE1SbEhzYy1vaWlxczZGeGxLRlpjZmJlWV9hVmNsNG5fSDZlbnV3NWtuMWFlZDUzUFZSSTAtR2lWemFKV3hwOHlIcnFGRjJ5UkFMeVBB?oc=5",
+          "titre": "Villersexel : L’agence Crédit Mutuel a fermé ses portes - Les Affiches de la Haute-Saône",
+          "source": "Google News",
+          "date": "Thu, 11 Dec 2025 08:00:00 GMT",
+          "tier": "D"
+        },
         {
           "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQazdrWk5aNUVhcExhLXVYMElBQ0N2NmFRZnFXZnJfMWJLYTEwQVg3ZFdyZUVjdmFqVi1jWlBLTUppbGtKRWg1d1hZR0d5bGRFUGRBaXdNeFNpQ2VhcnM2b0xlUjk0TkFEWERKVFQyZV9zMlBGeTdwRjRvcUJLdDJrRlpNUTFzSGJPUzhLZEpvMHczSVl3UURpMFpjVHJ0YnRsVVlLV2V6ejBKdHFw?oc=5",
           "titre": "Villersexel : Ils se mobilisent contre la fermeture du Crédit Mutuel - Les Affiches de la Haute-Saône",
@@ -5207,6 +5332,27 @@
           "source": "Google News",
           "date": "Mon, 20 Jul 2026 14:01:40 GMT",
           "tier": "D"
+        },
+        {
+          "url": "https://www.lavoixdunord.fr/1718833/article/2026-07-05/l-agence-du-credit-agricole-de-wizernes-va-fermer-en-decembre",
+          "titre": "L’agence du Crédit Agricole de Wizernes va fermer en décembre",
+          "source": "lavoixdunord.fr",
+          "date": "2026-07-05",
+          "tier": "B"
+        },
+        {
+          "url": "https://www.lavoixdunord.fr/1720963/article/2026-07-12/les-elus-de-wizernes-sont-mecontents-de-la-fermeture-annoncee-du-credit-agricole",
+          "titre": "Les élus de Wizernes sont mécontents de la fermeture annoncée du Crédit Agricole dans la commune",
+          "source": "lavoixdunord.fr",
+          "date": "2026-07-12",
+          "tier": "B"
+        },
+        {
+          "url": "https://www.lavoixdunord.fr/1723075/article/2026-07-20/la-mairie-de-wizernes-lance-une-petition-apres-l-annonce-de-la-fermeture-de-l",
+          "titre": "La mairie de Wizernes lance une pétition après l’annonce de la fermeture de l’agence du Crédit Agricole",
+          "source": "lavoixdunord.fr",
+          "date": "2026-07-20",
+          "tier": "B"
         }
       ],
       "controle_sirene": {
@@ -8349,7 +8495,7 @@
       "lon": 3.177081,
       "citation": "L'agence du Crédit Agricole va fermer à Marcoing",
       "adresse": null,
-      "agence_localisation": null,
+      "agence_localisation": "l’agence",
       "commune_originale": null,
       "service_impact": null,
       "point_postal_avant": null,
@@ -8364,6 +8510,13 @@
           "source": "Google News",
           "date": "Fri, 17 Jul 2026 07:06:53 GMT",
           "tier": "D"
+        },
+        {
+          "url": "https://www.lavoixdunord.fr/1722300/article/2026-07-17/l-agence-du-credit-agricole-va-fermer-marcoing-les-elus-votent-une-motion-contre",
+          "titre": "L’agence du Crédit Agricole va fermer à Marcoing, les élus votent une motion contre",
+          "source": "lavoixdunord.fr",
+          "date": "2026-07-17",
+          "tier": "B"
         }
       ],
       "controle_sirene": {
@@ -8627,7 +8780,7 @@
       "departement": "56",
       "type": "fermeture",
       "date_annonce": "Tue, 21 Jul 2026 17:18:08 GMT",
-      "date_fermeture": null,
+      "date_fermeture": "2026-08-21",
       "statut": "projet",
       "statut_temporel": "a_venir",
       "date_fermeture_approx": 1,
@@ -8658,6 +8811,20 @@
           "source": "Google News",
           "date": "Tue, 21 Jul 2026 17:18:00 GMT",
           "tier": "D"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNWDB5bUU2QzFhejVsSE9nemd1Mi1xclpvd1RsR0k0Vlh6UkJ6UDRDdTVwRHA1T2g4QkpUQmlraVoyOXhGNFh3bHR6R2dWMVJzZjJoTGdUVGhadWJBeXA4QVJCdVpjS0JZczktMUlPRmk5bkNkLVlhejVib0FyOGV4VGJicXV0RHhkbnN1SkdvRGFpUEVXUnJlTUd2SXVnR0FNeDNJVFVKS2puTkp1bDQyXy1VX05LMlU2b1hFU0VCeDdHektVNFhCag?oc=5",
+          "titre": "L’agence bancaire Crédit Agricole de Ploeren fermera dans un mois - MaVille.com",
+          "source": "Google News",
+          "date": "Tue, 21 Jul 2026 17:18:00 GMT",
+          "tier": "D"
+        },
+        {
+          "url": "https://www.ouest-france.fr/bretagne/ploeren-56880/lagence-bancaire-credit-agricole-de-ploeren-fermera-dans-un-mois-676939ea-84de-11f1-a762-b8ec18c1787d",
+          "titre": "L’agence bancaire Crédit Agricole de Ploeren fermera dans un mois",
+          "source": "ouest-france.fr",
+          "date": "2026-07-21",
+          "tier": "B"
         }
       ],
       "controle_sirene": {
@@ -9352,9 +9519,9 @@
       "departement": "35",
       "type": "fermeture",
       "date_annonce": "Fri, 10 Jul 2026 07:00:00 GMT",
-      "date_fermeture": null,
+      "date_fermeture": "2026-07-10",
       "statut": "projet",
-      "statut_temporel": "a_venir",
+      "statut_temporel": "deja_fermee",
       "date_fermeture_approx": 1,
       "fiabilite": 3,
       "lat": 48.642082,
@@ -9376,6 +9543,13 @@
           "source": "Google News",
           "date": "Fri, 10 Jul 2026 07:00:00 GMT",
           "tier": "D"
+        },
+        {
+          "url": "https://www.letelegramme.fr/ille-et-vilaine/saint-malo-35400/les-habitants-de-la-decouverte-a-saint-malo-stupefaits-par-lannonce-de-fermeture-du-bureau-de-poste-7081371.php",
+          "titre": "Les habitants de La Découverte à Saint-Malo stupéfaits par l'annonce de fermeture du bureau de Poste",
+          "source": "letelegramme.fr",
+          "date": "2026-07-10",
+          "tier": "B"
         }
       ],
       "controle_sirene": {
@@ -9917,6 +10091,47 @@
         "source": "SIRENE"
       },
       "region": "Provence-Alpes-Côte d'Azur"
+    },
+    {
+      "id": "77e07df577220422",
+      "banque": "La Banque Postale",
+      "commune": "Villepinte",
+      "code_insee": "93078",
+      "departement": "93",
+      "type": "fermeture",
+      "date_annonce": "Sun, 17 Aug 2025 07:00:00 GMT",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 3,
+      "lat": 48.956508,
+      "lon": 2.532434,
+      "citation": "Villepinte. Fermeture programmée du bureau de poste - ladepeche.fr",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "service_impact": "fermeture_lbp_complete",
+      "point_postal_avant": "Bureau de Poste",
+      "point_postal_apres": null,
+      "postal_point_id": "17220A",
+      "evidence_level": "presse+référentiel",
+      "created_at": "2026-07-23T09:39:21.447328+00:00",
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQV1o2NzM2OG5BOTlXVnRkYjNGcEQzT0NRZU9mUm9MeHRMMEJPUXVMZGlZdER5VzhheHd5aVhaektJaTNST3ZIcTh0Ni1DWncxZUdIb2plWHNxUi0zd2Y2U21neE56OTdpZXdnSHpKTXhWbU0xZVFIRFVmMnVqOUZaYlZibmk0TGZfU1JJcVhyQTA3UQ?oc=5",
+          "titre": "Villepinte. Fermeture programmée du bureau de poste - ladepeche.fr",
+          "source": "Google News",
+          "date": "Sun, 17 Aug 2025 07:00:00 GMT",
+          "tier": "D"
+        }
+      ],
+      "controle_sirene": {
+        "etat_administratif": null,
+        "siret": null,
+        "source": "SIRENE"
+      },
+      "region": "Île-de-France"
     }
   ],
   "closures_unlocated": [
@@ -10045,6 +10260,24 @@
       "date": "Wed, 22 Jul 2026 10:02:57 GMT",
       "raison": "hors fenêtre temporelle",
       "created_at": "2026-07-23T06:16:20.680744+00:00"
+    },
+    {
+      "id": "0c462fa4ec0cf7fb",
+      "banque": "Crédit Agricole",
+      "commune": "Wizernes",
+      "departement": "62",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "rumeur",
+      "statut_temporel": "a_venir",
+      "fiabilite": 3,
+      "citation": "« Wizernes : la municipalité “joue la dernière carte” pour éviter la fermeture de l’agence du Crédit Agricole - Nord Littoral »",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPcWhpRWdMMHlJSC1XRWcyTVBMNjliaDhVd044NUstR3cyTFJMa1Rhb1hOdmp0NTZ1Nl91VHBqUEVlQUx0M3hKQUt0d1hmWGpEaWU0UXB6U25LTHp2NXlMZWI0RW9WLTNGbjZkZlY5Vk5GNGRla1RJd2x5MzFtY080SnNoNjZwUndsR2xJcXBid01VdWdyV3h5MlVPUWR1LS1EcmxxZFlBLWJ0RkhJWkVwajFYTTQ3ZlJTbzJLR3hGbE5WNFZsR0JFN1hpTXh4a0NBRFd0QVF6dEF6cjRhdmFKQ0VxSF8?oc=5",
+      "titre": "Wizernes : la municipalité « joue la dernière carte » pour éviter la fermeture de l’agence du Crédit Agricole - Nord Littoral",
+      "source": "Google News",
+      "date": "Wed, 22 Jul 2026 10:02:57 GMT",
+      "raison": "garde entrée/sortie: département source 59 incompatible avec la sortie 62",
+      "created_at": "2026-07-23T09:39:45.597247+00:00"
     },
     {
       "id": "6419630db4eaa359",
@@ -10584,7 +10817,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-07-23T06:13:07.079999+00:00"
+      "created_at": "2026-07-23T09:32:23.157828+00:00"
     },
     {
       "id": "50895c042a984b7d",
@@ -10620,7 +10853,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 04:46:02 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-07-23T06:13:06.827160+00:00"
+      "created_at": "2026-07-23T09:32:23.151877+00:00"
     },
     {
       "id": "8c6a0cad14626d6f",
@@ -10801,6 +11034,24 @@
       "date": "Tue, 08 Apr 2025 07:00:00 GMT",
       "raison": "garde entrée/sortie: fermeture postale temporaire ou circonstancielle",
       "created_at": "2026-07-23T06:13:02.091561+00:00"
+    },
+    {
+      "id": "f42db4363f75c42f",
+      "banque": "Crédit Agricole",
+      "commune": "Condat-sur-Vienne",
+      "departement": "87",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "a_venir",
+      "fiabilite": 3,
+      "citation": "« Condat-sur-Vienne se mobilise contre la fermeture annoncée de son agence du Crédit Agricole »",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOQUI5UTJ1U0RZWWVteDVtV3lVNzVFQk80WnRfR3JGdEVsUDZneF9KcHFxT1lCcnpob1gxUHBkZzZzVWdDLW9nTVliM0laN0paRHpjUnpUeTVteDBrQzd4b1V0R3V0V3ByTDRoWDF2YTZMQ1BOem5WdFdsRFBBLVZvM3lFNzU1czRxbVI4YnBianJ6XzV2QjF1WjFQSm1OS3gtYWtnMzBibTY1YUI5aUVuQlgzNnN0QTVRazFCcVZhLVlYVGhlUVU1VUgyZ2tZTTBZV2lhemlDeUhTdkgtRWlyWGxscnhTblAxYnN0TWxaX3hWejRa?oc=5",
+      "titre": "Condat-sur-Vienne se mobilise contre la fermeture annoncée de son agence du Crédit Agricole - La Montagne",
+      "source": "Google News",
+      "date": "Tue, 07 Oct 2025 07:00:00 GMT",
+      "raison": "garde entrée/sortie: département source 86 incompatible avec la sortie 87",
+      "created_at": "2026-07-23T09:39:12.556535+00:00"
     },
     {
       "id": "9ab6b34280867cff",
@@ -11073,6 +11324,24 @@
       "created_at": "2026-07-06T08:45:31.951474+00:00"
     },
     {
+      "id": "a5fb6c166be49f71",
+      "banque": "La Banque Postale",
+      "commune": "La Fare-les-Oliviers",
+      "departement": "13",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "Fermeture des bureaux de poste : \"Il y a un management qui broie des gens\", confie Olivier, facteur - RMC",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQaS1FcFZwNGZZb2NCdmFmcG1CbXJ1d2ZFdzh0SjUzeEVkbTdwUWJXeDdXRHMwNkFXWHpqZlZUNDA3bGNKREt5SkN1SWdjNC1aaVJ5ZE54TWkyVXFKMVBnNVM1cVdkZndUX0ZlcURqTlVnZkxoZnVvNTVuRG1pRDZmNHo3Q3FNbHpudkxVdXAzcG5odlJ4RFlsZnZoemNDTEd3UDU0VmwwbVpuTW5uQk95MXdpWVVzTUNyYlBYNmd5ZnFxMmdRVGp1djgwLWVvaGFHV1Y1WHdLcERsOGFqVVQyWWNWVDBWUktqZ0s0?oc=5",
+      "titre": "Fermeture des bureaux de poste : \"Il y a un management qui broie des gens\", confie Olivier, facteur - RMC",
+      "source": "Google News",
+      "date": "Thu, 20 Feb 2025 08:00:00 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-07-23T09:40:07.515940+00:00"
+    },
+    {
       "id": "9eb1c123c4d439f8",
       "banque": "La Banque Postale",
       "commune": "Saint-Antoine",
@@ -11107,6 +11376,24 @@
       "date": "Thu, 19 Jun 2025 07:00:00 GMT",
       "raison": "garde entrée/sortie: commune/localisation de sortie absente de la source",
       "created_at": "2026-07-23T06:13:02.097265+00:00"
+    },
+    {
+      "id": "4458f70b3a4a7499",
+      "banque": "La Banque Postale",
+      "commune": "Yvetot",
+      "departement": "null",
+      "type": "fermeture",
+      "date_fermeture": "2025-12-18",
+      "statut": "confirmé",
+      "statut_temporel": "deja_fermee",
+      "fiabilite": 2,
+      "citation": "Titre : « Yvetot… le bureau de poste est fermé ». Article ne précise pas explicitement que la fermeture concerne le service/point bancaire La Banque Postale, mais un bureau de poste peut impliquer un point bancaire physique.",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOS3QzMjUxZWNha0RKWkFKdHR4a2ZGYzVDdXpoRGU0dVl2RjByenB2NUVHTUw5OGpqdnNFSmJsc0M3QjJQMS1jMlhMbE0yTUhXeG8zNy1TaDE2OTRHajlWVWVrM3l5VEJWblNBc3QzdHlZMWhUbEl6OHRxNjYyV1hOVkFoZ21LRllzLVczNDJCd2FfT2hPVlNUTmNGN2FNYmJ0THpia1RJc1oteDlkTVFGNzNWYnN1T2RST3c?oc=5",
+      "titre": "Yvetot. Nouvel effondrement de chaussée : le bureau de poste est fermé - lecourriercauchois.fr",
+      "source": "Google News",
+      "date": "Thu, 18 Dec 2025 08:00:00 GMT",
+      "raison": "commune non géocodée",
+      "created_at": "2026-07-23T09:40:27.367784+00:00"
     },
     {
       "id": "47f5f5dcd36ed519",
@@ -11215,6 +11502,24 @@
       "date": "Thu, 12 Jun 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
       "created_at": "2026-07-22T09:11:13.234987+00:00"
+    },
+    {
+      "id": "a7d6db9ba04f3a2c",
+      "banque": "Crédit Mutuel",
+      "commune": "Villersexel",
+      "departement": null,
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "confirmé",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "Titre : « Villersexel : L’agence Crédit Mutuel a fermé ses portes » (Les Affiches de la Haute-Saône).",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQRkE2NmpDaTRRQ3NvZGM1dEk2djUtUjNQTE0zcGZRWVlYTXdVOHRKYmhsQzhfMlViRnpTczRyNHJ6X3g3ejJ0Q0lYbUdZVE1SbEhzYy1vaWlxczZGeGxLRlpjZmJlWV9hVmNsNG5fSDZlbnV3NWtuMWFlZDUzUFZSSTAtR2lWemFKV3hwOHlIcnFGRjJ5UkFMeVBB?oc=5",
+      "titre": "Villersexel : L’agence Crédit Mutuel a fermé ses portes - Les Affiches de la Haute-Saône",
+      "source": "Google News",
+      "date": "Thu, 11 Dec 2025 08:00:00 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-07-23T09:39:51.946553+00:00"
     },
     {
       "id": "baad24200b527b66",
@@ -11377,6 +11682,24 @@
       "date": "Sun, 26 Oct 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
       "created_at": "2026-07-22T09:04:30.826763+00:00"
+    },
+    {
+      "id": "72f9100798a62bcc",
+      "banque": "La Banque Postale",
+      "commune": "Orléans",
+      "departement": "45",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "\"On fait mourir les habitants du quartier\", aux Blossières à Orléans, la fermeture du bureau de poste ne passe pas - ici.fr",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPOERLU2ZxRE9XZUNRdVFoT3UzYWZvekZ4MVZMT2k0U0tFT3lxa1VDbkExcDJlQVFKd1pESDNZZHEyak5wY1lkRkJBRHNBQ1pQQVhTeGdpeEtkakFNR0dWUjVmU1IzZHBfZGxlWmxLREEybU5XR3JTbTEzaWpFWnMyZmVXeURUeTg0WWhNTTBzLXFVZXlkdXVSa1p1c0l5Z0ZJS044LXUxajItTnBUekxhY1FrTW1nQk1LRTZLLU1yZnU4TnRORHlNY0VESzlKMzdNTnJKb3R5Q2djNXpMT1h5QUZZMmItUQ?oc=5",
+      "titre": "\"On fait mourir les habitants du quartier\", aux Blossières à Orléans, la fermeture du bureau de poste ne passe pas - ici.fr",
+      "source": "Google News",
+      "date": "Sun, 24 Nov 2024 08:00:00 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-07-23T09:39:32.321506+00:00"
     },
     {
       "id": "5834994d24f7cadd",
@@ -11772,7 +12095,7 @@
       "source": "Google News",
       "date": "Sat, 03 Aug 2024 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-07-23T06:13:05.873699+00:00"
+      "created_at": "2026-07-23T09:32:21.870194+00:00"
     },
     {
       "id": "4996e3bfe560bbb6",
@@ -11845,6 +12168,24 @@
       "date": "Mon, 27 Oct 2025 07:00:00 GMT",
       "raison": "garde entrée/sortie: fermeture postale temporaire ou circonstancielle",
       "created_at": "2026-07-23T06:13:04.230024+00:00"
+    },
+    {
+      "id": "6d80040bf3384652",
+      "banque": "La Banque Postale",
+      "commune": "Luynes",
+      "departement": "37",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "Le bureau de poste de Luynes définitivement fermé et remplacé par deux relais postaux - ici.fr",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQdGFoRGY0LUdURjlSZFRpSGtGOHV4c3RwT1VJTlUyMWU3VFNFZXJOMHpUVnFWRFRyd2R1WE43Q2tOV3pYX2ZQMnk4eG1CVks0OVFjS0RRb2MxNGpBU1d1SzhhdlZzS242RkxhZTgyRm9DV3JfNjhwa2dnc21HQUR1MXlKaFpqYXZkdFJQZ01PbUdmWEdOT2VCZmZmdjhoV1k0bklsNEUwbVRObUNueEFTc1dtbnFHdFNUZWNGbm1wSlNIR19LbU9FUGZFWTNiRjNnamlCVw?oc=5",
+      "titre": "Le bureau de poste de Luynes définitivement fermé et remplacé par deux relais postaux - ici.fr",
+      "source": "Google News",
+      "date": "Mon, 23 Sep 2024 07:00:00 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-07-23T09:39:15.926113+00:00"
     },
     {
       "id": "7f1c8b1edd5ad2dc",
@@ -12582,7 +12923,7 @@
       "source": "Google News",
       "date": "Fri, 03 Jan 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-07-23T06:13:06.337475+00:00"
+      "created_at": "2026-07-23T09:32:22.477764+00:00"
     },
     {
       "id": "f3e888f7eaf5ffb7",
@@ -12619,6 +12960,114 @@
       "date": "Fri, 01 Aug 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
       "created_at": "2026-07-22T09:09:01.156970+00:00"
+    },
+    {
+      "id": "3db1d665a6fa91ce",
+      "banque": "La Banque Postale",
+      "commune": "Plonévez-Porzay",
+      "departement": "29",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "Le bureau de poste de Keryado fermé jusqu’à début août, à Lorient",
+      "url": "https://www.letelegramme.fr/morbihan/lorient-56100/le-bureau-de-poste-de-keryado-ferme-jusqua-debut-aout-a-lorient-7087544.php",
+      "titre": "Le bureau de poste de Keryado fermé jusqu’à début août, à Lorient",
+      "source": "letelegramme.fr",
+      "date": "2026-07-21",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-07-23T09:42:43.514605+00:00"
+    },
+    {
+      "id": "caab3721792890f3",
+      "banque": "La Banque Postale",
+      "commune": "Avessac",
+      "departement": "44",
+      "type": "fermeture",
+      "date_fermeture": "2026-07-18",
+      "statut": "confirmé",
+      "statut_temporel": "deja_fermee",
+      "fiabilite": 3,
+      "citation": "Avessac. Le bureau de poste fermé tout l’été",
+      "url": "https://www.ouest-france.fr/pays-de-la-loire/avessac-44460/avessac-le-bureau-de-poste-ferme-tout-lete-1b34faed-ce10-47bd-9af0-cd47157d83e5",
+      "titre": "Avessac. Le bureau de poste fermé tout l’été",
+      "source": "ouest-france.fr",
+      "date": "2026-07-18",
+      "raison": "garde entrée/sortie: fermeture postale temporaire ou circonstancielle",
+      "created_at": "2026-07-23T09:42:52.795958+00:00"
+    },
+    {
+      "id": "3b7dbcf508019d7d",
+      "banque": "La Banque Postale",
+      "commune": "Déville-lès-Rouen",
+      "departement": null,
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "rumeur",
+      "statut_temporel": "inconnu",
+      "fiabilite": 2,
+      "citation": "« Après 8 mois de fermeture, le bureau de Poste de Déville-lès-Rouen rouvre… pour 15 jours » (bureau de poste nommé ; lien bancaire La Banque Postale non explicité dans l’extrait).",
+      "url": "https://www.paris-normandie.fr/id733330/article/2026-07-17/apres-8-mois-de-fermeture-le-bureau-de-poste-de-deville-les-rouen-rouvre-pour-15",
+      "titre": "Après 8 mois de fermeture, le bureau de Poste de Déville-lès-Rouen rouvre... pour 15 jours",
+      "source": "paris-normandie.fr",
+      "date": "2026-07-17",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-07-23T09:42:57.715530+00:00"
+    },
+    {
+      "id": "d733e9055672707b",
+      "banque": "La Banque Postale",
+      "commune": "Chalabre",
+      "departement": "Aude",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "rumeur",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "« projet de fermeture du bureau de poste du village […] La Poste veut remplacer par une agence postale communale » ; « À ce jour, aucune date de fermeture n’a été annoncée […] aucune décision n’est entérinée sur les évolutions du bureau »",
+      "url": "https://www.lindependant.fr/2026/07/13/possible-fermeture-de-la-poste-a-chalabre-la-colere-monte-contre-le-recul-des-services-publics-13463315.php",
+      "titre": "Possible fermeture de La Poste à Chalabre",
+      "source": "lindependant.fr",
+      "date": "2026-07-13",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-07-23T09:43:05.677659+00:00"
+    },
+    {
+      "id": "5ccb3b98c3ce70c2",
+      "banque": "La Banque Postale",
+      "commune": "Sainte-Suzanne",
+      "departement": "974",
+      "type": "fermeture",
+      "date_fermeture": "2026-07-10",
+      "statut": "confirmé",
+      "statut_temporel": "deja_fermee",
+      "fiabilite": 3,
+      "citation": "Attention, le bureau de poste ferme ses portes en juillet et en août dans cette commune de Loire-Atlantique",
+      "url": "https://www.ouest-france.fr/pays-de-la-loire/avessac-44460/attention-le-bureau-de-poste-ferme-ses-portes-en-juillet-et-en-aout-dans-cette-commune-de-loire-atlantique-33e50d12-7ba4-11f1-b8c0-67c948238db5",
+      "titre": "Attention, le bureau de poste ferme ses portes en juillet et en août dans cette commune de Loire-Atlantique",
+      "source": "ouest-france.fr",
+      "date": "2026-07-10",
+      "raison": "garde entrée/sortie: département source 44 incompatible avec la sortie 974",
+      "created_at": "2026-07-23T09:43:18.187430+00:00"
+    },
+    {
+      "id": "0fefec76174520d2",
+      "banque": "La Banque Postale",
+      "commune": "Labarthe-Rivière",
+      "departement": "31",
+      "type": "fermeture",
+      "date_fermeture": "2026-07-06",
+      "statut": "projet",
+      "statut_temporel": "deja_fermee",
+      "fiabilite": 2,
+      "citation": "« fermeture de plusieurs bureaux de poste du secteur pendant trois semaines en juillet depuis ce lundi 6 juillet » ; maire de Labarthe-Rivière cité : « Comment peut-on décider de fermer un bureau de Poste… ? »",
+      "url": "https://www.ladepeche.fr/2026/07/08/la-colere-des-maires-face-a-la-fermeture-de-la-poste-13458427.php",
+      "titre": "Labarthe-Rivière. La colère des maires face à la fermeture de La Poste",
+      "source": "ladepeche.fr",
+      "date": "2026-07-08",
+      "raison": "garde entrée/sortie: fermeture postale temporaire ou circonstancielle",
+      "created_at": "2026-07-23T09:43:22.523096+00:00"
     },
     {
       "id": "819d9270c7054786",
@@ -12773,6 +13222,20 @@
       "source": "Google News",
       "date": "Fri, 09 Aug 2024 07:00:00 GMT",
       "created_at": "2026-07-02T07:06:46.864415+00:00"
+    },
+    {
+      "id": "8981bee66ace34e5",
+      "banque": "La Poste",
+      "departement": "Aude",
+      "count": null,
+      "communes_mentioned": "Vinassan, Trèbes",
+      "confidence": 0.35,
+      "evidence": "L’article indique que “les projets de fermetures annoncés… des bureaux de postes et d’agences communales dans notre département” ont été évoqués par les maires de l’Aude.",
+      "url": "https://www.lindependant.fr/2026/07/12/fermetures-de-bureaux-de-poste-incendies-les-sujets-qui-preoccupent-les-maires-de-laude-13466017.php",
+      "titre": "Fermetures de bureaux de poste, incendies",
+      "source": "lindependant.fr",
+      "date": "2026-07-12",
+      "created_at": "2026-07-23T09:43:12.016597+00:00"
     },
     {
       "id": "4c4057e9319024c0",
@@ -13104,6 +13567,19 @@
       "created_at": "2026-07-22T09:09:53.100627+00:00"
     },
     {
+      "id": "043ab60c008f8a26",
+      "banque": "Ma French Bank",
+      "scope": "national",
+      "count": null,
+      "confidence": 0.25,
+      "evidence": "Article centré sur la \"Fermeture de Ma French Bank\" et la récupération de l’argent via la CDC/Ciclade, sans mention d’agences physiques ni de communes.",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPR2gxZjBYcW1KWFU5Y2pKRjA0TDl1dzR5enRhNUROWGJlWUsxTk5aaVVlVV9MVVBxcGV5V0IxbmF2VURMZWFRbHNjSmpCVDRMZzhhekJRUjFaU2d2Qm12dHJBYmdFSXZhN19vdHo5cWJUaWZxQXRmal9HYjE0QlpMSnd6d0FyY3Fnb0JuY1gyM0Q0bTJ3RHVKZA?oc=5",
+      "titre": "Fermeture de Ma French Bank : comment récupérer son argent en 2026 via la CDC et Ciclade ? - Actufinance",
+      "source": "Google News",
+      "date": "Tue, 06 Jan 2026 08:00:00 GMT",
+      "created_at": "2026-07-23T09:39:19.216219+00:00"
+    },
+    {
       "id": "cbc153e451a66706",
       "banque": "CCF",
       "scope": "unknown",
@@ -13338,6 +13814,19 @@
       "created_at": "2026-07-22T08:53:48.340782+00:00"
     },
     {
+      "id": "04c7ea3f894ec905",
+      "banque": "banque non précisée",
+      "scope": "national",
+      "count": null,
+      "confidence": 0.2,
+      "evidence": "« Cette banque va bientôt fermer, … des milliers de Français qui seront impactés ? » (aucune banque/commune/agence nommée dans l’extrait)",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOcXlKRXloUUVBMjJ4OGxpY3Bka1dVaVh4Znd1UHFGSGp1SEhEd2c1TWIzWW1hdGQzT2c0T29EcldvbWVGY0N5d0M5T2tFX05TZFBXeHFzVmlFMHgwcl9SZVlEbzN4U3pvZzdMUlNwa0k4LTN0U3FrX2RDbTJTbHJTZXZOS1Y4RERDQllFQXAtSDI4RE1uU21ITFp3NXJtMXBFQTFneG13RGNjZ1ptb1FVZnc4UjhsUC0xX1FpM0ZiSjZNNkFYbVpybjYzTnF5N1lXSTRSZQ?oc=5",
+      "titre": "Cette banque va bientôt fermer, faites-vous partie des milliers de Français qui seront impactés ? - demotivateur.fr",
+      "source": "Google News",
+      "date": "Sun, 10 Nov 2024 08:00:00 GMT",
+      "created_at": "2026-07-23T09:39:27.297108+00:00"
+    },
+    {
       "id": "c9bac8d35c3be975",
       "banque": "La Poste / services bancaires (non précisé)",
       "scope": "unknown",
@@ -13414,6 +13903,19 @@
       "source": "Google News",
       "date": "Sat, 14 Dec 2024 08:00:00 GMT",
       "created_at": "2026-07-22T08:55:48.421247+00:00"
+    },
+    {
+      "id": "6d834229709e8177",
+      "banque": "La Poste",
+      "scope": "unknown",
+      "count": null,
+      "confidence": 0.15,
+      "evidence": "Le titre indique : « La Poste ferme un bureau et choisit d'ouvrir un point relais » en Seine-et-Marne, mais aucune commune ni aucun lien explicite avec une agence bancaire (La Banque Postale) n’est fourni dans le texte retransmis.",
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQU19teXFrUkw1SFNnamxqRkdKQU10S0drZ0IySUdOQnktYUthUXlJODlha2o3WmlwUXo1WVpwWkQwOTFQeHgwbVpUMHQ1TnFFd2J3a21HSnZsUTE2MDJITzNYejVKVE9QSkQ5ekJaWEc4VGY0bHBMTnpRcWhYd2NRWGpNUXBQamRPQThtQUtXWkF3MmF5Z1ZWV1Bsa29wT0xfSldQVmRqWGNibEZ4Umg0VHdmbjdXdFJKSFBZd1hKbVBWNGw2TGpUOVh0MWg5YzI3X2RtV2xCblNxWjdVdzBPaTdidG9qUFBwVndNc2I0Zw?oc=5",
+      "titre": "Seine-et-Marne : dans cette commune, La Poste ferme un bureau et choisit d'ouvrir un point relais - Actu.fr",
+      "source": "Google News",
+      "date": "Mon, 25 Aug 2025 07:00:00 GMT",
+      "created_at": "2026-07-23T09:39:37.161069+00:00"
     },
     {
       "id": "2d735e96ac1c6c71",
@@ -13533,6 +14035,32 @@
       "created_at": "2026-07-02T07:07:47.122916+00:00"
     },
     {
+      "id": "4911ea901273c61a",
+      "banque": "Postes Canada (Bureaux de poste)",
+      "scope": "national",
+      "count": null,
+      "confidence": 0.2,
+      "evidence": "Titre : « Fermetures de bureaux de Postes Canada : les petites municipalités particulièrement touchées » (il s’agit du Canada, pas d’agences bancaires physiques en France).",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOTWRCSm45YThkV2J2TkxQWGdqQVhJemhiYWN1ajNrQzN6YlIxeWtyWnRmVWlwZ1JhaGxVVHhwN2J4ODdCMDV5eWVGNC1BNU15Nl9peWpsYUlwNUFLMFZ3enBNaER0UmNFWkZrN18tXzI2TjVsb2xaUTVWUjBqNXZxY2gybWROSklwOVlGalZxUUltcWF3WEZibGJzOXROVE9yV1BZRXgzR3VTM3l6eHBtMGRRZjJNM191RXc3R2liMEFTLXVTQ0Qzdw?oc=5",
+      "titre": "Fermetures de bureaux de Postes Canada: les petites municipalités particulièrement touchées - TVA Nouvelles",
+      "source": "Google News",
+      "date": "Fri, 26 Sep 2025 07:00:00 GMT",
+      "created_at": "2026-07-23T09:40:21.141830+00:00"
+    },
+    {
+      "id": "7eab27e40a7575c3",
+      "banque": "CIC",
+      "scope": "national",
+      "count": null,
+      "confidence": 0.25,
+      "evidence": "Le titre indique une évolution des conditions liées au CDI pour des prêts immobiliers (« le CIC supprime le verrou du CDI »), sans mention de fermetures/regroupements/transferts d’agences physiques.",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQb0lPb3VKY2Z0WUtyaUc5Q1Ywa2Nvc0YxZ2l3YlpwWVR0YzN3RF9wZWlBSXJ0U0dwcVZpcDNSUmM0TWotZTdKLUg4Y0lLaWZ2X0FVak05Q2FUTjF6Sm1ocUVDQ19aMGlicDBFWFI2Ty1NenpUSTdCdlRfTDUxdGo1cjBKZ2s2X0lkaERiaDE4UmN4WEpNT0VHY0JYNXFVUQ?oc=5",
+      "titre": "Economie. Prêts immobiliers : le CIC supprime le verrou du CDI - Le Dauphiné Libéré",
+      "source": "Google News",
+      "date": "Fri, 20 Sep 2024 07:00:00 GMT",
+      "created_at": "2026-07-23T09:40:37.903154+00:00"
+    },
+    {
       "id": "cfaa325be31ab5e9",
       "banque": "La Poste (service postal)",
       "scope": "regional",
@@ -13585,6 +14113,19 @@
       "created_at": "2026-07-22T09:01:28.564202+00:00"
     },
     {
+      "id": "3e95a6f7e94a6179",
+      "banque": "La Banque Postale",
+      "scope": "unknown",
+      "count": 2,
+      "confidence": 0.25,
+      "evidence": "Titre tronqué : « La Poste ferme deux bureaux dans le centre de Metz pour en ouvrir un n ... » (communes exactes des bureaux non fournies, et lien bancaire non explicite).",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPY0pHa1pNQlBZcFdRV3g5d0h2SHp2RDZZeEpVQkZDdVpRbEQ2dWtobnMzcEM4b1Z3X3VGTnA2bHp3TkE5QnBSZHJkT2tmN01DVUtxYnhHakJad1RjMlRPdHdSLWJSRUV6c21ORlFjdENIeHJzSlNfNjZTSmN5eksyTi1RS1pDNF9HNlJoXzdEYm8xQXJKZ1JsZVpBenVpWWdLME1kdFF3cWJIT1kybVE4SC1VZ0o3dWdzcThlZ2dCRUhwOTNCNVpoSGxRcm9wX1VZ?oc=5",
+      "titre": "La Poste ferme deux bureaux dans le centre de Metz pour en ouvrir un n ... - La Gazette France",
+      "source": "Google News",
+      "date": "Fri, 11 Jul 2025 07:00:00 GMT",
+      "created_at": "2026-07-23T09:39:59.629785+00:00"
+    },
+    {
       "id": "3e20da550e4c3506",
       "banque": "La Poste",
       "scope": "regional",
@@ -13596,6 +14137,45 @@
       "source": "Google News",
       "date": "Fri, 06 Sep 2024 07:00:00 GMT",
       "created_at": "2026-07-22T08:54:47.471514+00:00"
+    },
+    {
+      "id": "6e69faa4cf93b8b9",
+      "banque": "BNP Paribas",
+      "scope": "national",
+      "count": null,
+      "confidence": 0.1,
+      "evidence": "Article boursier généraliste : mention de résultats et d’activités de BNP Paribas, sans fermeture/regroupement/transfer d’agences physiques.",
+      "url": "https://www.boursedirect.fr/fr/actualites/categorie/marche-francais/preouverture-paris-alstom-thales-stmicro-seb-soitec-valeo-totalenergies-bnp-paribas-ca-va-bouger-a-9-heur-boursier-1888204c658bb2065c2d3bd14190a7733ec27d29",
+      "titre": "Préouverture Paris : Alstom, Thales, STMicro, Seb, Soitec, Valeo, TotalEnergies, BNP Paribas... ça va bouger à 9 heures!",
+      "source": "Bourse Direct",
+      "date": "2026-07-23T06:50:22Z",
+      "created_at": "2026-07-23T09:44:06.042402+00:00"
+    },
+    {
+      "id": "a835ff401cc50121",
+      "banque": "La Banque Postale",
+      "scope": "regional",
+      "count": 35,
+      "confidence": 0.35,
+      "evidence": "« trente-cinq au total en Occitanie » (projets similaires concernant des bureaux de poste)",
+      "url": "https://www.lindependant.fr/2026/07/13/possible-fermeture-de-la-poste-a-chalabre-la-colere-monte-contre-le-recul-des-services-publics-13463315.php",
+      "titre": "Possible fermeture de La Poste à Chalabre",
+      "source": "lindependant.fr",
+      "date": "2026-07-13",
+      "created_at": "2026-07-23T09:43:05.675936+00:00"
+    },
+    {
+      "id": "4ebbbf8ba299e95e",
+      "banque": "La Poste",
+      "scope": "unknown",
+      "count": null,
+      "confidence": 0.35,
+      "evidence": "Article : « fermeture de plusieurs bureaux de poste du secteur pendant trois semaines en juillet » ; aucune agence bancaire nominative BANCAIRE n’est décrite, ni lien explicite avec La Banque Postale/Conseiller bancaire.",
+      "url": "https://www.ladepeche.fr/2026/07/08/la-colere-des-maires-face-a-la-fermeture-de-la-poste-13458709.php",
+      "titre": "Montréjeau. La colère des maires face à la fermeture de La Poste",
+      "source": "ladepeche.fr",
+      "date": "2026-07-08",
+      "created_at": "2026-07-23T09:43:25.750792+00:00"
     },
     {
       "id": "18258b9352813301",
@@ -14315,6 +14895,19 @@
       "created_at": "2026-07-23T06:16:20.706706+00:00"
     },
     {
+      "id": "25e11f43a4bb4531",
+      "banque": "Crédit Agricole",
+      "departement": null,
+      "titre": "Wizernes : la municipalité « joue la dernière carte » pour éviter la fermeture de l’agence du Crédit Agricole - Nord Littoral",
+      "extrait": "TITRE: Wizernes : la municipalité « joue la dernière carte » pour éviter la fermeture de l’agence du Crédit Agricole - Nord Littoral SOURCE: Google News DATE: Wed, 22 Jul 2026 10:02:57 GMT URL: https://news.google.com/rss/articles/CBMi5AFBVV95cUxPcWhpRWdMMHlJSC1XRWcyTVBMNjliaDhVd044NUstR3cyTFJMa1Rhb1hOdmp0NTZ1Nl91VHBqUEVlQUx0M3hKQUt0d1hmWGpEaWU0UXB6U25LTHp2NXlMZWI0RW9WLTNGbjZkZlY5Vk5GNGRla1RJd2x5MzFtY080SnNoNjZwUndsR2xJcXBid01VdWdyV3h5MlVPUWR1LS1EcmxxZFlBLWJ0RkhJWkVwajFYTTQ3ZlJTbzJLR3hGbE5WNFZsR",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPcWhpRWdMMHlJSC1XRWcyTVBMNjliaDhVd044NUstR3cyTFJMa1Rhb1hOdmp0NTZ1Nl91VHBqUEVlQUx0M3hKQUt0d1hmWGpEaWU0UXB6U25LTHp2NXlMZWI0RW9WLTNGbjZkZlY5Vk5GNGRla1RJd2x5MzFtY080SnNoNjZwUndsR2xJcXBid01VdWdyV3h5MlVPUWR1LS1EcmxxZFlBLWJ0RkhJWkVwajFYTTQ3ZlJTbzJLR3hGbE5WNFZsR0JFN1hpTXh4a0NBRFd0QVF6dEF6cjRhdmFKQ0VxSF8?oc=5",
+      "source": "Google News",
+      "date": "Wed, 22 Jul 2026 10:02:57 GMT",
+      "score": 3,
+      "raison": "fermeture non publiée: garde entrée/sortie: département source 59 incompatible avec la sortie 62",
+      "created_at": "2026-07-23T09:39:45.602084+00:00"
+    },
+    {
       "id": "a01dac0c8fad11ec",
       "banque": "Société Générale",
       "departement": null,
@@ -14497,6 +15090,32 @@
       "created_at": "2026-07-22T09:07:59.966987+00:00"
     },
     {
+      "id": "d554470b9bc7c8ee",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "Fermeture du centre de distribution de Loué : le groupe La Poste explique son choix - Actu.fr",
+      "extrait": "TITRE: Fermeture du centre de distribution de Loué : le groupe La Poste explique son choix - Actu.fr SOURCE: Google News DATE: Wed, 20 May 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMi6gFBVV95cUxNekNnUlYwNTE5ZDF6SUdVVzMycTdhcE9ISFh1TmNJSTFTbTg4cmNFY3pEX2s5OEtudW1nVVl3bkJWVkRZdXNDa3lKRXJEQXVnNVNpdzRodWpUazVySHFXOFZxbjlVSTR6cVZXX2c5TGZUWTFmSHdiTktRdWRyQVdSVVFKMXhydzNJdXM0YmNYS05STEpSTHBaYms5eml0dXpUSW5wT1d0RU5MaDlSWDhaVVZPNFZ6WDBuM09JV1lPeEUzTjRYNmpYeFZmMy1EZWZoLTIzT3FGMEI4Q19vY",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNekNnUlYwNTE5ZDF6SUdVVzMycTdhcE9ISFh1TmNJSTFTbTg4cmNFY3pEX2s5OEtudW1nVVl3bkJWVkRZdXNDa3lKRXJEQXVnNVNpdzRodWpUazVySHFXOFZxbjlVSTR6cVZXX2c5TGZUWTFmSHdiTktRdWRyQVdSVVFKMXhydzNJdXM0YmNYS05STEpSTHBaYms5eml0dXpUSW5wT1d0RU5MaDlSWDhaVVZPNFZ6WDBuM09JV1lPeEUzTjRYNmpYeFZmMy1EZWZoLTIzT3FGMEI4Q19vYnJOTzNrUld0N0dtZnc?oc=5",
+      "source": "Google News",
+      "date": "Wed, 20 May 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-23T09:40:14.844785+00:00"
+    },
+    {
+      "id": "e65b5410fc349eb3",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Plage fermée, accès limité: pourquoi le lac d’Esparron n’est pas si facile d’accès - Nice-Matin",
+      "extrait": "TITRE: Plage fermée, accès limité: pourquoi le lac d’Esparron n’est pas si facile d’accès - Nice-Matin SOURCE: Google News DATE: Wed, 20 Aug 2025 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMizAFBVV95cUxOUnFFT0phMG56NDEtbUptVEx5dnJ1aHZzcWRCWkdFbDFXMklTZzdzSHdJQk9PTE9ZVjhtTXlOTE1xRFhuUlh6QTExaVUySUZscjI0czV3TDVtOGpXS1VNSGxoTXdYY1VEdnh1cEw4Q0paZm9nUzVGOUhFRmpIN2NNcTJpdU9WNUZFREV3R3VhY2k2elFUekx5dVpwa05CckVSRXZDbmE2bW1GcTQyOGUzdExSemh6dVJaYnhLSlVPNWxvZXRCNlVOSVFCZEs?oc=5 <a href=\"https",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOUnFFT0phMG56NDEtbUptVEx5dnJ1aHZzcWRCWkdFbDFXMklTZzdzSHdJQk9PTE9ZVjhtTXlOTE1xRFhuUlh6QTExaVUySUZscjI0czV3TDVtOGpXS1VNSGxoTXdYY1VEdnh1cEw4Q0paZm9nUzVGOUhFRmpIN2NNcTJpdU9WNUZFREV3R3VhY2k2elFUekx5dVpwa05CckVSRXZDbmE2bW1GcTQyOGUzdExSemh6dVJaYnhLSlVPNWxvZXRCNlVOSVFCZEs?oc=5",
+      "source": "Google News",
+      "date": "Wed, 20 Aug 2025 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-23T09:40:06.525886+00:00"
+    },
+    {
       "id": "3bab1dab44dd9da4",
       "banque": "La Banque Postale",
       "departement": null,
@@ -14638,6 +15257,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-07-22T09:11:04.872769+00:00"
+    },
+    {
+      "id": "eaa2860359510eeb",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "Fermeture du guichet d’accueil en gare de Rethel : les billets de train seront vendus… à la Poste - L'Ardennais",
+      "extrait": "TITRE: Fermeture du guichet d’accueil en gare de Rethel : les billets de train seront vendus… à la Poste - L'Ardennais SOURCE: Google News DATE: Wed, 18 Jun 2025 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMiyAFBVV95cUxPcmhMVjlBeWZuSkRCY012dDVCR2szUXg1NVRqQVZacDNDYUUtWXNYdl9LMkEzSUtYQ1dVaUw3Sy0zSTEzTVNMLU9mek1kQklWR3NhdkZ4eUVHQWNRQ1AzM2pKbnBKZHhGaTNCUGhVX2hzRlFlWDNJbVJIeUdVRUNjbm5VTENycUM1YU1JUC13UW9EcEtNTXFWdGV0bUZYOXlaREthVndGQmdvMENEUDJ0bFBnbTlEaWVSR0VBVGNDNmpoV0RwZkl6Xw?oc=5 <a ",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPcmhMVjlBeWZuSkRCY012dDVCR2szUXg1NVRqQVZacDNDYUUtWXNYdl9LMkEzSUtYQ1dVaUw3Sy0zSTEzTVNMLU9mek1kQklWR3NhdkZ4eUVHQWNRQ1AzM2pKbnBKZHhGaTNCUGhVX2hzRlFlWDNJbVJIeUdVRUNjbm5VTENycUM1YU1JUC13UW9EcEtNTXFWdGV0bUZYOXlaREthVndGQmdvMENEUDJ0bFBnbTlEaWVSR0VBVGNDNmpoV0RwZkl6Xw?oc=5",
+      "source": "Google News",
+      "date": "Wed, 18 Jun 2025 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-23T09:40:02.454983+00:00"
     },
     {
       "id": "3794e7a476e30be6",
@@ -15743,6 +16375,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:25:05.699959+00:00"
+    },
+    {
+      "id": "83e1acd5ef34d88d",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "Fermeture exceptionnelle du bureau de Poste du quartier de la Peyrade - Frontignan la Peyrade",
+      "extrait": "TITRE: Fermeture exceptionnelle du bureau de Poste du quartier de la Peyrade - Frontignan la Peyrade SOURCE: Google News DATE: Wed, 01 Apr 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMihgFBVV95cUxOSG1wLS1NLXJpa3gza25JRVlUQkFNUXo4Q29xbDNYTzNzNHY3RDA1RGFfZkpPdWQ1cWVqX2RuXzlfWndQam55QXAxOXE5OURuVGhMd0lhSk5SUnNUSUVvQ3ZLQ3NRanBoSnVPN2YwYUE1cHl3SmZyRWItYXNaeHAzWkhxWk9VQQ?oc=5 <a href=\"https://news.google.com/rss/articles/CBMihgFBVV95cUxOSG1wLS1NLXJpa3gza25JRVlUQkFNUXo4Q29xbDNYTzNzNHY",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOSG1wLS1NLXJpa3gza25JRVlUQkFNUXo4Q29xbDNYTzNzNHY3RDA1RGFfZkpPdWQ1cWVqX2RuXzlfWndQam55QXAxOXE5OURuVGhMd0lhSk5SUnNUSUVvQ3ZLQ3NRanBoSnVPN2YwYUE1cHl3SmZyRWItYXNaeHAzWkhxWk9VQQ?oc=5",
+      "source": "Google News",
+      "date": "Wed, 01 Apr 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-23T09:40:18.776225+00:00"
     },
     {
       "id": "402df91b09fad9fe",
@@ -16954,6 +17599,19 @@
       "created_at": "2026-06-25T15:43:54.679347+00:00"
     },
     {
+      "id": "074e464862b6c74a",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Rachat de Bouchara : la liste de tous les magasins qui ferment définitivement leurs portes en France - Actu.fr",
+      "extrait": "TITRE: Rachat de Bouchara : la liste de tous les magasins qui ferment définitivement leurs portes en France - Actu.fr SOURCE: Google News DATE: Tue, 12 May 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMi0wFBVV95cUxPVlRIeGhzNVlaTm5UTFFLR3gzVURlcDVMYmVrR01QcjVKdm16V3ZudDRyNW5yNHZGaTJRRVhRQW9Dd1hiekZ2eDY0TUtkY2tQRjJrbjM0X0NOUUVYLW4zRHI1dUhidzZZc3JKczVUMGthOXBvam5MYk0yQUtyM1RkOXUtZHIxOUVGVHdnU0g3TVJOUW5ZSGJuMS1RSGtEZ0VYSmgzdFV4dHdJUENhZGNEeTV6ck9XQnZIV2RhTlhVQkttenB1UFJ5SXBDcjhwd1Q5",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPVlRIeGhzNVlaTm5UTFFLR3gzVURlcDVMYmVrR01QcjVKdm16V3ZudDRyNW5yNHZGaTJRRVhRQW9Dd1hiekZ2eDY0TUtkY2tQRjJrbjM0X0NOUUVYLW4zRHI1dUhidzZZc3JKczVUMGthOXBvam5MYk0yQUtyM1RkOXUtZHIxOUVGVHdnU0g3TVJOUW5ZSGJuMS1RSGtEZ0VYSmgzdFV4dHdJUENhZGNEeTV6ck9XQnZIV2RhTlhVQkttenB1UFJ5SXBDcjhwd1Q5TUtz?oc=5",
+      "source": "Google News",
+      "date": "Tue, 12 May 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-23T09:40:09.594415+00:00"
+    },
+    {
       "id": "782cab28309a7b77",
       "banque": "Crédit Agricole",
       "departement": null,
@@ -17123,6 +17781,19 @@
       "created_at": "2026-07-06T08:45:48.271281+00:00"
     },
     {
+      "id": "96855e6136c37fd0",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "Ajaccio : La Poste des Salines ferme pour travaux jusqu’au 4 mai - Corse Net Infos",
+      "extrait": "TITRE: Ajaccio : La Poste des Salines ferme pour travaux jusqu’au 4 mai - Corse Net Infos SOURCE: Google News DATE: Tue, 08 Apr 2025 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMirAFBVV95cUxNclhyMlZTZkhERDhDTXpzTWVkM0hMOVVyNXUybkdzMHVmZmwwX0hraVVZeDJ4MVJOTk4yRnMydEV0cnNHNnZFU0FHeE5NOTVYd2Y0QWJKeHk0ZHlXNHlyYk52STBHVWdDMXQ4MTNiTFBLa3pJZkllWlJIemR2NVZYbTk5RWtHNG5jN2xzdDg2Y3lRVnk0MGVsWFh3ZmJlcEZ0R25BcUVDWDY0dVZW?oc=5 <a href=\"https://news.google.com/rss/articles/CBMirAFBVV95cUxNclhyMlZT",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNclhyMlZTZkhERDhDTXpzTWVkM0hMOVVyNXUybkdzMHVmZmwwX0hraVVZeDJ4MVJOTk4yRnMydEV0cnNHNnZFU0FHeE5NOTVYd2Y0QWJKeHk0ZHlXNHlyYk52STBHVWdDMXQ4MTNiTFBLa3pJZkllWlJIemR2NVZYbTk5RWtHNG5jN2xzdDg2Y3lRVnk0MGVsWFh3ZmJlcEZ0R25BcUVDWDY0dVZW?oc=5",
+      "source": "Google News",
+      "date": "Tue, 08 Apr 2025 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-23T09:40:12.642061+00:00"
+    },
+    {
       "id": "baf364aec5e86b4d",
       "banque": "Crédit Agricole",
       "departement": null,
@@ -17147,6 +17818,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:42:40.621761+00:00"
+    },
+    {
+      "id": "69083e8a323ab520",
+      "banque": "Crédit Agricole",
+      "departement": null,
+      "titre": "Condat-sur-Vienne se mobilise contre la fermeture annoncée de son agence du Crédit Agricole - La Montagne",
+      "extrait": "TITRE: Condat-sur-Vienne se mobilise contre la fermeture annoncée de son agence du Crédit Agricole - La Montagne SOURCE: Google News DATE: Tue, 07 Oct 2025 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMi9AFBVV95cUxOQUI5UTJ1U0RZWWVteDVtV3lVNzVFQk80WnRfR3JGdEVsUDZneF9KcHFxT1lCcnpob1gxUHBkZzZzVWdDLW9nTVliM0laN0paRHpjUnpUeTVteDBrQzd4b1V0R3V0V3ByTDRoWDF2YTZMQ1BOem5WdFdsRFBBLVZvM3lFNzU1czRxbVI4YnBianJ6XzV2QjF1WjFQSm1OS3gtYWtnMzBibTY1YUI5aUVuQlgzNnN0QTVRazFCcVZhLVlYVGhlUVU1VUgyZ2tZTTBZV2lhe",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOQUI5UTJ1U0RZWWVteDVtV3lVNzVFQk80WnRfR3JGdEVsUDZneF9KcHFxT1lCcnpob1gxUHBkZzZzVWdDLW9nTVliM0laN0paRHpjUnpUeTVteDBrQzd4b1V0R3V0V3ByTDRoWDF2YTZMQ1BOem5WdFdsRFBBLVZvM3lFNzU1czRxbVI4YnBianJ6XzV2QjF1WjFQSm1OS3gtYWtnMzBibTY1YUI5aUVuQlgzNnN0QTVRazFCcVZhLVlYVGhlUVU1VUgyZ2tZTTBZV2lhemlDeUhTdkgtRWlyWGxscnhTblAxYnN0TWxaX3hWejRa?oc=5",
+      "source": "Google News",
+      "date": "Tue, 07 Oct 2025 07:00:00 GMT",
+      "score": 3,
+      "raison": "fermeture non publiée: garde entrée/sortie: département source 86 incompatible avec la sortie 87",
+      "created_at": "2026-07-23T09:39:12.560758+00:00"
     },
     {
       "id": "8d25e035801ca1bc",
@@ -17994,6 +18678,19 @@
       "created_at": "2026-06-25T15:41:59.381366+00:00"
     },
     {
+      "id": "5a22644dc1e37c45",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "Date de fermeture estivale de la Poste du Logis Neuf - Allauch",
+      "extrait": "TITRE: Date de fermeture estivale de la Poste du Logis Neuf - Allauch SOURCE: Google News DATE: Thu, 23 Jul 2026 08:09:03 GMT URL: https://news.google.com/rss/articles/CBMikgFBVV95cUxPaDZxUmxGZEd6UXlKMDhQQjZLU1BQMFh5WnVmbUl5S290TDZzVkwteWtvNmhZWTZNbXAtb2lWVVpSLUJCQ0gzMjM0TW5yNktETG1Oa1UxNW9VblVMWmNLRHdrRDlWa1d6YXpUQzNUQmZpelgybnl1NjJqMTA2Z2hYV0Z5dWhxa1BGaFFKcy1XN2c5UQ?oc=5 <a href=\"https://news.google.com/rss/articles/CBMikgFBVV95cUxPaDZxUmxGZEd6UXlKMDhQQjZLU1BQMFh5WnVmbUl5S290TDZzVkwteWtvNmhZWT",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPaDZxUmxGZEd6UXlKMDhQQjZLU1BQMFh5WnVmbUl5S290TDZzVkwteWtvNmhZWTZNbXAtb2lWVVpSLUJCQ0gzMjM0TW5yNktETG1Oa1UxNW9VblVMWmNLRHdrRDlWa1d6YXpUQzNUQmZpelgybnl1NjJqMTA2Z2hYV0Z5dWhxa1BGaFFKcy1XN2c5UQ?oc=5",
+      "source": "Google News",
+      "date": "Thu, 23 Jul 2026 08:09:03 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-23T09:39:29.939784+00:00"
+    },
+    {
       "id": "af042007cbd09fa5",
       "banque": "Crédit Agricole",
       "departement": null,
@@ -18011,7 +18708,7 @@
       "banque": "La Banque Postale",
       "departement": null,
       "titre": "L'exaspération du maire de Verneuil-sur-Indre après un vol de câble qui entraîne une nouvelle fermeture de la Poste - ici.fr",
-      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMi7AFBVV95cUxOdENDdlpEd1NOZjM3SGhhU1dyenl4aVdQSkdzNFBaempmSHA4VGlMZWlmRVlveVV3THU3Z2dfbktLdGpYWmZrb19YYWwzY2lfUG54Z0R5UGs1OWIyVDl2RG8xcnphQnRHVzlYNlZ6TzdVdXljS3kwcEFxUjd5LVB0dXFaM2lDZENkRGk4M0U4dXlBOWNTaHBPZVQ3ZFpwbHNxUzVrc1I5RXZHM0MyZV8tZjdOdHY5djMxSmpfcEdSLXNiQzJiYTlRaC1TdzJxVUNtV1M0TWdtWkdXLS1aZEJtTTFCWDVINlNVejJ5ag?oc=5\" target=\"_blank\">L'exaspération du maire de Verneuil-sur-Indre après un vol de câble qui entraîne une nouvelle fermeture de la",
+      "extrait": "TITRE: L'exaspération du maire de Verneuil-sur-Indre après un vol de câble qui entraîne une nouvelle fermeture de la Poste - ici.fr SOURCE: Google News DATE: Thu, 23 Jan 2025 08:00:00 GMT URL: https://news.google.com/rss/articles/CBMi7AFBVV95cUxOdENDdlpEd1NOZjM3SGhhU1dyenl4aVdQSkdzNFBaempmSHA4VGlMZWlmRVlveVV3THU3Z2dfbktLdGpYWmZrb19YYWwzY2lfUG54Z0R5UGs1OWIyVDl2RG8xcnphQnRHVzlYNlZ6TzdVdXljS3kwcEFxUjd5LVB0dXFaM2lDZENkRGk4M0U4dXlBOWNTaHBPZVQ3ZFpwbHNxUzVrc1I5RXZHM0MyZV8tZjdOdHY5djMxSmpfcEdSLXNiQzJiYT",
       "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOdENDdlpEd1NOZjM3SGhhU1dyenl4aVdQSkdzNFBaempmSHA4VGlMZWlmRVlveVV3THU3Z2dfbktLdGpYWmZrb19YYWwzY2lfUG54Z0R5UGs1OWIyVDl2RG8xcnphQnRHVzlYNlZ6TzdVdXljS3kwcEFxUjd5LVB0dXFaM2lDZENkRGk4M0U4dXlBOWNTaHBPZVQ3ZFpwbHNxUzVrc1I5RXZHM0MyZV8tZjdOdHY5djMxSmpfcEdSLXNiQzJiYTlRaC1TdzJxVUNtV1M0TWdtWkdXLS1aZEJtTTFCWDVINlNVejJ5ag?oc=5",
       "source": "Google News",
       "date": "Thu, 23 Jan 2025 08:00:00 GMT",
@@ -18293,6 +18990,19 @@
       "created_at": "2026-07-06T08:45:31.955110+00:00"
     },
     {
+      "id": "5adf69191f289aa7",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Près de Nice. Cet Ehpad contraint de fermer après \"de graves défaillances\" - Actu.fr",
+      "extrait": "TITRE: Près de Nice. Cet Ehpad contraint de fermer après \"de graves défaillances\" - Actu.fr SOURCE: Google News DATE: Thu, 20 Feb 2025 08:00:00 GMT URL: https://news.google.com/rss/articles/CBMi8gFBVV95cUxPZngzZUFyZC12akVhdHk4RHgzS0VaVU1LV0tsU2FreTkwWWltdkVTX2lIaVhOZFp4dUhDRVJMeU5qbC12Uk1abHhLQnZaVGhULVhlUV91eTJTVnhsNzEwT1YyTHlKRE5vNGVqQ3Z3OGdsR1A3TklIYzhhbGd6Z0xYUHFsLVR5dkVpWEhOVUtHbGM2N2VkY1VEWi1yQl81bHQ1U2hkcWVCUzBjcmljdnNaMXA5SGk3VzVYeVBRdW1CeW40eGpZN2ZXeEU5bzR5YkpHUmx5YlNVdFNBbU50M3cwZnpJcl",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPZngzZUFyZC12akVhdHk4RHgzS0VaVU1LV0tsU2FreTkwWWltdkVTX2lIaVhOZFp4dUhDRVJMeU5qbC12Uk1abHhLQnZaVGhULVhlUV91eTJTVnhsNzEwT1YyTHlKRE5vNGVqQ3Z3OGdsR1A3TklIYzhhbGd6Z0xYUHFsLVR5dkVpWEhOVUtHbGM2N2VkY1VEWi1yQl81bHQ1U2hkcWVCUzBjcmljdnNaMXA5SGk3VzVYeVBRdW1CeW40eGpZN2ZXeEU5bzR5YkpHUmx5YlNVdFNBbU50M3cwZnpJcllxbkRVUkpDUG5ndXBhUQ?oc=5",
+      "source": "Google News",
+      "date": "Thu, 20 Feb 2025 08:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-23T09:39:47.480615+00:00"
+    },
+    {
       "id": "ee3b8fc370b1cffe",
       "banque": "Crédit Agricole",
       "departement": null,
@@ -18395,6 +19105,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:40:33.966636+00:00"
+    },
+    {
+      "id": "0c478dcc4980cd3e",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "Yvetot. Nouvel effondrement de chaussée : le bureau de poste est fermé - lecourriercauchois.fr",
+      "extrait": "TITRE: Yvetot. Nouvel effondrement de chaussée : le bureau de poste est fermé - lecourriercauchois.fr SOURCE: Google News DATE: Thu, 18 Dec 2025 08:00:00 GMT URL: https://news.google.com/rss/articles/CBMiugFBVV95cUxOS3QzMjUxZWNha0RKWkFKdHR4a2ZGYzVDdXpoRGU0dVl2RjByenB2NUVHTUw5OGpqdnNFSmJsc0M3QjJQMS1jMlhMbE0yTUhXeG8zNy1TaDE2OTRHajlWVWVrM3l5VEJWblNBc3QzdHlZMWhUbEl6OHRxNjYyV1hOVkFoZ21LRllzLVczNDJCd2FfT2hPVlNUTmNGN2FNYmJ0THpia1RJc1oteDlkTVFGNzNWYnN1T2RST3c?oc=5 <a href=\"https://news.google.com/rss/ar",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOS3QzMjUxZWNha0RKWkFKdHR4a2ZGYzVDdXpoRGU0dVl2RjByenB2NUVHTUw5OGpqdnNFSmJsc0M3QjJQMS1jMlhMbE0yTUhXeG8zNy1TaDE2OTRHajlWVWVrM3l5VEJWblNBc3QzdHlZMWhUbEl6OHRxNjYyV1hOVkFoZ21LRllzLVczNDJCd2FfT2hPVlNUTmNGN2FNYmJ0THpia1RJc1oteDlkTVFGNzNWYnN1T2RST3c?oc=5",
+      "source": "Google News",
+      "date": "Thu, 18 Dec 2025 08:00:00 GMT",
+      "score": 3,
+      "raison": "fermeture non publiée: commune non géocodée",
+      "created_at": "2026-07-23T09:40:27.370053+00:00"
     },
     {
       "id": "8d2b6a44639dcdac",
@@ -18772,6 +19495,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-29T09:10:35.438688+00:00"
+    },
+    {
+      "id": "9a428f7896a9a307",
+      "banque": "Crédit Mutuel",
+      "departement": null,
+      "titre": "Villersexel : L’agence Crédit Mutuel a fermé ses portes - Les Affiches de la Haute-Saône",
+      "extrait": "TITRE: Villersexel : L’agence Crédit Mutuel a fermé ses portes - Les Affiches de la Haute-Saône SOURCE: Google News DATE: Thu, 11 Dec 2025 08:00:00 GMT URL: https://news.google.com/rss/articles/CBMimgFBVV95cUxQRkE2NmpDaTRRQ3NvZGM1dEk2djUtUjNQTE0zcGZRWVlYTXdVOHRKYmhsQzhfMlViRnpTczRyNHJ6X3g3ejJ0Q0lYbUdZVE1SbEhzYy1vaWlxczZGeGxLRlpjZmJlWV9hVmNsNG5fSDZlbnV3NWtuMWFlZDUzUFZSSTAtR2lWemFKV3hwOHlIcnFGRjJ5UkFMeVBB?oc=5 <a href=\"https://news.google.com/rss/articles/CBMimgFBVV95cUxQRkE2NmpDaTRRQ3NvZGM1dEk2dj",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQRkE2NmpDaTRRQ3NvZGM1dEk2djUtUjNQTE0zcGZRWVlYTXdVOHRKYmhsQzhfMlViRnpTczRyNHJ6X3g3ejJ0Q0lYbUdZVE1SbEhzYy1vaWlxczZGeGxLRlpjZmJlWV9hVmNsNG5fSDZlbnV3NWtuMWFlZDUzUFZSSTAtR2lWemFKV3hwOHlIcnFGRjJ5UkFMeVBB?oc=5",
+      "source": "Google News",
+      "date": "Thu, 11 Dec 2025 08:00:00 GMT",
+      "score": 3,
+      "raison": "fermeture non publiée: hors fenêtre temporelle",
+      "created_at": "2026-07-23T09:39:51.950344+00:00"
     },
     {
       "id": "9851d70f6908127b",
@@ -20397,6 +21133,32 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:20:03.033812+00:00"
+    },
+    {
+      "id": "262ba513d8955670",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "Fermeture de la poste du village : la fracture territoriale rurale s’aggrave - L'Indépendant",
+      "extrait": "TITRE: Fermeture de la poste du village : la fracture territoriale rurale s’aggrave - L'Indépendant SOURCE: Google News DATE: Sat, 21 Jun 2025 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMiwwFBVV95cUxPOEc0M0Z3OUFwTk5xYTVYdjNKLVh1el9SVmJGdjJOMnJXcGlmeVZyNFA1RlZOa1BybWJ0dGljejNzRnBBckZiN2E1Mi04emkyWmE0ZDRNMXhNdC01emdZamM2LVdoaDZYcWhocjhxNWtFVkNvdlpuSW1TaTBwRGlqLXdlVm9menFNSUg4NXBQQ05hMzBucWM2cGMtdjJDLWZOcWdGUnVRR19ib1ptWldKVnk2djQ5eWo5V3Rjcm13UGxhWlk?oc=5 <a href=\"https://news.google.",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPOEc0M0Z3OUFwTk5xYTVYdjNKLVh1el9SVmJGdjJOMnJXcGlmeVZyNFA1RlZOa1BybWJ0dGljejNzRnBBckZiN2E1Mi04emkyWmE0ZDRNMXhNdC01emdZamM2LVdoaDZYcWhocjhxNWtFVkNvdlpuSW1TaTBwRGlqLXdlVm9menFNSUg4NXBQQ05hMzBucWM2cGMtdjJDLWZOcWdGUnVRR19ib1ptWldKVnk2djQ5eWo5V3Rjcm13UGxhWlk?oc=5",
+      "source": "Google News",
+      "date": "Sat, 21 Jun 2025 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-23T09:39:49.604692+00:00"
+    },
+    {
+      "id": "b766709109391db4",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "Syndic, propriétaire, fuite d’eau... : pourquoi la Poste de Pasteur à Nice reste fermée ? On fait le point - Nice-Matin",
+      "extrait": "TITRE: Syndic, propriétaire, fuite d’eau... : pourquoi la Poste de Pasteur à Nice reste fermée ? On fait le point - Nice-Matin SOURCE: Google News DATE: Sat, 21 Feb 2026 08:00:00 GMT URL: https://news.google.com/rss/articles/CBMi5gFBVV95cUxOYjlpNUljeXZCY012T0NhRlc2RWtwMnRLOWd5VFpVbzJOb0Ywb1hfWUdqQmR0OEZJRkh1Q0U1MGg4aTNBbzVIbk1kdGhxT3lwTGxieXFMMzdvemU1VzZNV0I3NVdWeUJjazA1U2tVVWtjNGhoZjFmOWFLc0Jva0lackpnZDZCeVREZ1k5QlY4a004OUgxZXdQS29maXBFRWR3MW5BRlVDelpnb2p6Qmh1LXkwYUg5RDBzSlVoczJVQUJPWU1CU0lGdng",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOYjlpNUljeXZCY012T0NhRlc2RWtwMnRLOWd5VFpVbzJOb0Ywb1hfWUdqQmR0OEZJRkh1Q0U1MGg4aTNBbzVIbk1kdGhxT3lwTGxieXFMMzdvemU1VzZNV0I3NVdWeUJjazA1U2tVVWtjNGhoZjFmOWFLc0Jva0lackpnZDZCeVREZ1k5QlY4a004OUgxZXdQS29maXBFRWR3MW5BRlVDelpnb2p6Qmh1LXkwYUg5RDBzSlVoczJVQUJPWU1CU0lGdngyOGE1eUVIaTUtU1N1RFBhcEVja21SMWt5SV90dw?oc=5",
+      "source": "Google News",
+      "date": "Sat, 21 Feb 2026 08:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-23T09:40:35.546967+00:00"
     },
     {
       "id": "cccce384a8271f9e",
@@ -22856,6 +23618,19 @@
       "created_at": "2026-07-02T07:07:50.183603+00:00"
     },
     {
+      "id": "bd23be7fc4433147",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Dans ces communes de l’Orne, « aucune école n’est à l’abri d’une fermeture de classe » - Actu.fr",
+      "extrait": "TITRE: Dans ces communes de l’Orne, « aucune école n’est à l’abri d’une fermeture de classe » - Actu.fr SOURCE: Google News DATE: Fri, 21 Nov 2025 08:00:00 GMT URL: https://news.google.com/rss/articles/CBMiwwFBVV95cUxPQ3hXSGxFbF9SY2dQRG9OVml6ZFB0SWJJeDBJcm9IQmRtX01PWFBuOFpQWi0yQXY1REM0VjFNNVpVckJIWnNqRGt1SzBEWUtYYW1URllZeVlaSUZsSHlDVktoNFdYX3lJVnhXMVRyRkl3cm1USzVhYURQT3cwYjZSdG1BXzFpa3RHeGFsc0F4ZGRuaDdmTFdBa2RLb2VSdVpTUmJDZmI4bllNcFVRMS1QcXkxV3UzamRtdHNUUzk5dE1Wa2M?oc=5 <a href=\"https://news.goo",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPQ3hXSGxFbF9SY2dQRG9OVml6ZFB0SWJJeDBJcm9IQmRtX01PWFBuOFpQWi0yQXY1REM0VjFNNVpVckJIWnNqRGt1SzBEWUtYYW1URllZeVlaSUZsSHlDVktoNFdYX3lJVnhXMVRyRkl3cm1USzVhYURQT3cwYjZSdG1BXzFpa3RHeGFsc0F4ZGRuaDdmTFdBa2RLb2VSdVpTUmJDZmI4bllNcFVRMS1QcXkxV3UzamRtdHNUUzk5dE1Wa2M?oc=5",
+      "source": "Google News",
+      "date": "Fri, 21 Nov 2025 08:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-23T09:40:31.642623+00:00"
+    },
+    {
       "id": "f86f1694630cae2d",
       "banque": "BNP Paribas",
       "departement": null,
@@ -22971,6 +23746,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-29T09:13:05.871733+00:00"
+    },
+    {
+      "id": "88ae22c2502e72d9",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "Montbéliard. À La Chiffogne, la Poste fermée jusqu’à nouvel ordre - L'Est Républicain",
+      "extrait": "TITRE: Montbéliard. À La Chiffogne, la Poste fermée jusqu’à nouvel ordre - L'Est Républicain SOURCE: Google News DATE: Fri, 20 Dec 2024 08:00:00 GMT URL: https://news.google.com/rss/articles/CBMiowFBVV95cUxPYUM3NmF5SUd0OEpFbU9tNFRqenV5SGE2d0xWM3JNenJNQ1NJNDlmNzRweGd1aE1xWjk0aFlKa1VsekFvVFByd1lDejlYOFNNb2tNMlBtcnR4b3d5aGlaNHBUbnhFNmtpOWRudUJ3Yi1pTW95d0xaaWZuZVowaU9LeDFmNVRVQXEySmQzT1VGbzg2SVFnVkJ1Q0FYSkhsR3J6MnBJ?oc=5 <a href=\"https://news.google.com/rss/articles/CBMiowFBVV95cUxPYUM3NmF5SUd0OEpFb",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPYUM3NmF5SUd0OEpFbU9tNFRqenV5SGE2d0xWM3JNenJNQ1NJNDlmNzRweGd1aE1xWjk0aFlKa1VsekFvVFByd1lDejlYOFNNb2tNMlBtcnR4b3d5aGlaNHBUbnhFNmtpOWRudUJ3Yi1pTW95d0xaaWZuZVowaU9LeDFmNVRVQXEySmQzT1VGbzg2SVFnVkJ1Q0FYSkhsR3J6MnBJ?oc=5",
+      "source": "Google News",
+      "date": "Fri, 20 Dec 2024 08:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-23T09:40:29.369656+00:00"
     },
     {
       "id": "a4f3830b50dc2a74",
@@ -23597,6 +24385,19 @@
       "created_at": "2026-07-02T12:59:08.164791+00:00"
     },
     {
+      "id": "d1bcc486ca386c09",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "L'inventaire est sorti du bureau de poste principal fermé de Serbie à Mitrovica Nord et chargé dans le véhicule de la poste de Serbie - KoSSev",
+      "extrait": "TITRE: L'inventaire est sorti du bureau de poste principal fermé de Serbie à Mitrovica Nord et chargé dans le véhicule de la poste de Serbie - KoSSev SOURCE: Google News DATE: Fri, 08 Nov 2024 08:00:00 GMT URL: https://news.google.com/rss/articles/CBMixAFBVV95cUxNSk0wbGVwYk5YdFl1bTJ1WjVzeDdKbDFBTWl6OVJieVlYSkgzSzA0LUpMSUFTbFl2QUNRY2M2cHprd1lHUFlFTU5jd0hVUGhkVnhSelgtLXY4eWtGbUl1WUxlNS1vZkFtaU1TRzNEd01BZTFmRUJ1U3hFblZiclRjSnRVZHBzVnZLZ21XdWtGU3dXTVdrcEVjZmlZTzNnUTJBaWJSc1pDTHFDcGtBQ0QydFRKemJKSFNT",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNSk0wbGVwYk5YdFl1bTJ1WjVzeDdKbDFBTWl6OVJieVlYSkgzSzA0LUpMSUFTbFl2QUNRY2M2cHprd1lHUFlFTU5jd0hVUGhkVnhSelgtLXY4eWtGbUl1WUxlNS1vZkFtaU1TRzNEd01BZTFmRUJ1U3hFblZiclRjSnRVZHBzVnZLZ21XdWtGU3dXTVdrcEVjZmlZTzNnUTJBaWJSc1pDTHFDcGtBQ0QydFRKemJKSFNTTkN2MTBxalBMTXpH?oc=5",
+      "source": "Google News",
+      "date": "Fri, 08 Nov 2024 08:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-23T09:39:57.385379+00:00"
+    },
+    {
       "id": "937e0b4c84217a29",
       "banque": "Crédit Agricole",
       "departement": null,
@@ -24115,6 +24916,149 @@
       "score": 3,
       "raison": "fermeture non publiée: hors fenêtre temporelle",
       "created_at": "2026-07-22T09:09:01.159244+00:00"
+    },
+    {
+      "id": "e6b40f1e2e2dbe8a",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "La flambée des prix du pétrole ravive les craintes d'inflation à la veille de la réunion de la BCE",
+      "extrait": "TITRE: La flambée des prix du pétrole ravive les craintes d'inflation à la veille de la réunion de la BCE SOURCE: Boursorama DATE: 2026-07-23T09:27:31Z URL: https://www.boursorama.com/bourse/actualites/la-flambee-des-prix-du-petrole-ravive-les-craintes-d-inflation-a-la-veille-de-la-reunion-de-la-bce-38a86b0249fe83e1a8cfb22202f2946d Les Houthis, alliés de l'Iran, ont déclaré jeudi avoir attaqué deux pétroliers saoudiens dans le cadre d'un blocus naval contre l'Arabie saoudite, menaçant ainsi de c",
+      "url": "https://www.boursorama.com/bourse/actualites/la-flambee-des-prix-du-petrole-ravive-les-craintes-d-inflation-a-la-veille-de-la-reunion-de-la-bce-38a86b0249fe83e1a8cfb22202f2946d",
+      "source": "Boursorama",
+      "date": "2026-07-23T09:27:31Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-23T09:43:37.579339+00:00"
+    },
+    {
+      "id": "41da26284235e967",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "M6 : Cyril Hanouna aurait décroché l'animation d'une émission politique avec Shana Loustau en vue de la présidentielle",
+      "extrait": "TITRE: M6 : Cyril Hanouna aurait décroché l'animation d'une émission politique avec Shana Loustau en vue de la présidentielle SOURCE: Public.fr DATE: 2026-07-23T05:50:00Z URL: https://www.public.fr/m6-cyril-hanouna-aurait-decroche-lanimation-dune-emission-politique-avec-shana-loustau-en-vue-de-la-presidentielle Tout va pour le mieux pour Cyril Hanouna. Pourtant, l'hiver 2025, ce n'était pas la même chanson. Et pour cause... Après avoir été aux manettes de \"Touche pas à mon poste\" pendant des ann",
+      "url": "https://www.public.fr/m6-cyril-hanouna-aurait-decroche-lanimation-dune-emission-politique-avec-shana-loustau-en-vue-de-la-presidentielle",
+      "source": "Public.fr",
+      "date": "2026-07-23T05:50:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-23T09:44:10.112493+00:00"
+    },
+    {
+      "id": "02a6d3256de3eb59",
+      "banque": "BNP Paribas",
+      "departement": null,
+      "titre": "Le CAC 40 décolle grâce à Airbus : le journal de la bourse du 31 mars 2026",
+      "extrait": "TITRE: Le CAC 40 décolle grâce à Airbus : le journal de la bourse du 31 mars 2026 SOURCE: MoneyVox Actu DATE: 2026-07-22T16:56:57Z URL: https://www.moneyvox.fr/bourse/actualites/109779/le-cac-40-decolle-grace-a-airbus-le-journal-de-la-bourse-du-31-mars-2026 Le CAC décolle avec Airbus La Bourse se réveille enfin ! Le CAC 40 progresse de 0,89% ce soir, à 8 438 points, principalement soutenu par Airbus, qui bondit de 7,04%. Sodexo gagne 3,5% grâce au relèvement d'une recommandation de Bank of Ameri",
+      "url": "https://www.moneyvox.fr/bourse/actualites/109779/le-cac-40-decolle-grace-a-airbus-le-journal-de-la-bourse-du-31-mars-2026",
+      "source": "MoneyVox Actu",
+      "date": "2026-07-22T16:56:57Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-23T09:44:21.137590+00:00"
+    },
+    {
+      "id": "3eceb9cda9265ba9",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Le groupe BSIC initie une opération de titrisation multicédantes de 45 milliards FCFA sur le marché financier régional pour renforcer le financement des PME/PMI dans l'UEMOA | Financial Afrik",
+      "extrait": "TITRE: Le groupe BSIC initie une opération de titrisation multicédantes de 45 milliards FCFA sur le marché financier régional pour renforcer le financement des PME/PMI dans l'UEMOA | Financial Afrik SOURCE: Financial Afrik DATE: 2026-07-22T16:16:36Z URL: https://www.financialafrik.com/2026/07/22/le-groupe-bsic-initie-une-operation-de-titrisation-multicedantes-de-45-milliards-fcfa-sur-le-marche-financier-regional-pour-renforcer-le-financement-des-pme-pmi-dans-luemoa/ À travers cette démarche, le ",
+      "url": "https://www.financialafrik.com/2026/07/22/le-groupe-bsic-initie-une-operation-de-titrisation-multicedantes-de-45-milliards-fcfa-sur-le-marche-financier-regional-pour-renforcer-le-financement-des-pme-pmi-dans-luemoa/",
+      "source": "Financial Afrik",
+      "date": "2026-07-22T16:16:36Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-23T09:44:29.699927+00:00"
+    },
+    {
+      "id": "b2b1884e906ea634",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "TOUR EIFFEL (EPA:EIFF) |",
+      "extrait": "TITRE: TOUR EIFFEL (EPA:EIFF) | SOURCE: Les Echos DATE: 2026-07-22T16:13:03Z URL: https://lesechos-comfi.lesechos.fr/press-release/tour-eiffel-epa-eiff-communique-societe-de-la-tour-eiffel-resultats-semestriels-2026-la-fin-du-premier-cycle-de-livraisons-ouvrant-la-voie-a-la-prochaine-phase-de-transformation-EOciXnzLWco Résultats semestriels 2026 - La fin du premier cycle de livraisons, ouvrant la voie à la prochaine phase de transformation \" Au premier semestre 2026, le marché immobilier françai",
+      "url": "https://lesechos-comfi.lesechos.fr/press-release/tour-eiffel-epa-eiff-communique-societe-de-la-tour-eiffel-resultats-semestriels-2026-la-fin-du-premier-cycle-de-livraisons-ouvrant-la-voie-a-la-prochaine-phase-de-transformation-EOciXnzLWco",
+      "source": "Les Echos",
+      "date": "2026-07-22T16:13:03Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-23T09:44:39.227608+00:00"
+    },
+    {
+      "id": "286ea0a7eb4d59ff",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "La Poste du Pont-de-Montvert en Lozère ferme à cause d’un gaz radioactif",
+      "extrait": "TITRE: La Poste du Pont-de-Montvert en Lozère ferme à cause d’un gaz radioactif SOURCE: midilibre.fr DATE: 2026-07-22 URL: https://www.midilibre.fr/2026/07/22/la-poste-du-pont-de-montvert-ferme-a-cause-dun-gaz-radioactif-le-maire-denonce-une-decision-brutale-13476394.php La Poste du Pont-de-Montvert en Lozère ferme à cause d’un gaz radioactif : le maire dénonce une décision \"brutale\" La fermeture du bureau de poste du Pont-de-Montvert, liée à une concentration de radon, suscite l’incompréhension",
+      "url": "https://www.midilibre.fr/2026/07/22/la-poste-du-pont-de-montvert-ferme-a-cause-dun-gaz-radioactif-le-maire-denonce-une-decision-brutale-13476394.php",
+      "source": "midilibre.fr",
+      "date": "2026-07-22",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-23T09:42:41.932295+00:00"
+    },
+    {
+      "id": "5cb3eb92b63a9589",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "À Cannes, le bureau de Poste de la place Roubaud ferme jusqu’au 4 août pour déménager",
+      "extrait": "TITRE: À Cannes, le bureau de Poste de la place Roubaud ferme jusqu’au 4 août pour déménager SOURCE: nicematin.com DATE: 2026-07-20 URL: https://www.nicematin.com/societe/a-cannes-le-bureau-de-poste-de-la-place-roubaud-ferme-jusqu-au-4-aout-pour-demenager-10691817 À Cannes, le bureau de Poste de la place Roubaud ferme jusqu’au 4 août pour déménager Deux semaines de transit, le temps d’intégrer les nouveaux locaux. Les habitants de Cannes-la-Bocca devront s’organiser pendant une dizaine de jours.",
+      "url": "https://www.nicematin.com/societe/a-cannes-le-bureau-de-poste-de-la-place-roubaud-ferme-jusqu-au-4-aout-pour-demenager-10691817",
+      "source": "nicematin.com",
+      "date": "2026-07-20",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-23T09:42:48.777397+00:00"
+    },
+    {
+      "id": "d2c5a429148d2586",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "Incompréhension face à la fermeture temporaire de La Poste, à Scaër",
+      "extrait": "TITRE: Incompréhension face à la fermeture temporaire de La Poste, à Scaër SOURCE: letelegramme.fr DATE: 2026-07-17 URL: https://www.letelegramme.fr/finistere/scaer-29390/incomprehension-face-a-la-fermeture-temporaire-de-la-poste-a-scaer-7085721.php",
+      "url": "https://www.letelegramme.fr/finistere/scaer-29390/incomprehension-face-a-la-fermeture-temporaire-de-la-poste-a-scaer-7085721.php",
+      "source": "letelegramme.fr",
+      "date": "2026-07-17",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-23T09:42:54.744359+00:00"
+    },
+    {
+      "id": "33b98a62addd6984",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "Après 8 mois de fermeture, le bureau de Poste de Déville-lès-Rouen rouvre... pour 15 jours",
+      "extrait": "TITRE: Après 8 mois de fermeture, le bureau de Poste de Déville-lès-Rouen rouvre... pour 15 jours SOURCE: paris-normandie.fr DATE: 2026-07-17 URL: https://www.paris-normandie.fr/id733330/article/2026-07-17/apres-8-mois-de-fermeture-le-bureau-de-poste-de-deville-les-rouen-rouvre-pour-15",
+      "url": "https://www.paris-normandie.fr/id733330/article/2026-07-17/apres-8-mois-de-fermeture-le-bureau-de-poste-de-deville-les-rouen-rouvre-pour-15",
+      "source": "paris-normandie.fr",
+      "date": "2026-07-17",
+      "score": 3,
+      "raison": "fermeture non publiée: hors fenêtre temporelle",
+      "created_at": "2026-07-23T09:42:57.717310+00:00"
+    },
+    {
+      "id": "674cba37d7c6f93f",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "Labarthe-Rivière. La colère des maires face à la fermeture de La Poste",
+      "extrait": "TITRE: Labarthe-Rivière. La colère des maires face à la fermeture de La Poste SOURCE: ladepeche.fr DATE: 2026-07-08 URL: https://www.ladepeche.fr/2026/07/08/la-colere-des-maires-face-a-la-fermeture-de-la-poste-13458427.php Labarthe-Rivière. La colère des maires face à la fermeture de La Poste L’annonce de la fermeture de plusieurs bureaux de poste du secteur pendant trois semaines en juillet depuis ce lundi 6 juillet a provoqué de la colère chez les élus locaux. Pour Claire Vougny, maire de Laba",
+      "url": "https://www.ladepeche.fr/2026/07/08/la-colere-des-maires-face-a-la-fermeture-de-la-poste-13458427.php",
+      "source": "ladepeche.fr",
+      "date": "2026-07-08",
+      "score": 3,
+      "raison": "fermeture non publiée: garde entrée/sortie: fermeture postale temporaire ou circonstancielle",
+      "created_at": "2026-07-23T09:43:22.526547+00:00"
+    },
+    {
+      "id": "8828022e40f82f3b",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "Fermeture de la Poste Bordeaux Benauge",
+      "extrait": "TITRE: Fermeture de la Poste Bordeaux Benauge SOURCE: sudouest.fr DATE: 2026-06-25 URL: https://www.sudouest.fr/gironde/bordeaux/fermeture-de-la-poste-bordeaux-benauge-des-services-postaux-seront-assures-au-point-jeux-pmu-29655795.php Fermé depuis le 20 juin, le bureau de Poste de la cité de la Benauge va voir une partie de ses activités reprises par un commerçant du quartier, à partir du 16 juillet Un accord vient d’être trouvé avec un commerçant du quartier pour reprendre une partie des servic",
+      "url": "https://www.sudouest.fr/gironde/bordeaux/fermeture-de-la-poste-bordeaux-benauge-des-services-postaux-seront-assures-au-point-jeux-pmu-29655795.php",
+      "source": "sudouest.fr",
+      "date": "2026-06-25",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-23T09:43:32.811098+00:00"
     },
     {
       "id": "f211fa828a6785a4",
@@ -25183,6 +26127,19 @@
       "created_at": "2026-07-06T11:51:50.738838+00:00"
     },
     {
+      "id": "ff0fc70b82242ab3",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Hôpital de Dax : le directeur répond aux inquiétudes sur les suppressions de postes de soignants - ici.fr",
+      "extrait": "TITRE: Hôpital de Dax : le directeur répond aux inquiétudes sur les suppressions de postes de soignants - ici.fr SOURCE: Google News DATE: Tue, 10 Sep 2024 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMi2gFBVV95cUxQaExXcjBCa0F6d2UyY3YxSE5JNjltcTNCUk5aSGlwNUNMTzk4UEFaeTJBSzR3Wk1kN0c5RHFDcE9Qc2NOeUVuU0JUZXdhOGZ3cVV5aG9UZ1VhWjEwMUZHaE0wbEF1b0U0M3NhUE5RRmpUaXZlTldtRHNFNlRHUDVBdHNJYkY4dHkxdkVKeWVxejVib3NPN01FSmU1MjFGZ3NTSjdMWHJENWpsRmhlWUdMTzFya1ZqcHZyZC1rcG5MSXFLVVQyNk8wc3B0Nm9abUZkZFNLZ",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQaExXcjBCa0F6d2UyY3YxSE5JNjltcTNCUk5aSGlwNUNMTzk4UEFaeTJBSzR3Wk1kN0c5RHFDcE9Qc2NOeUVuU0JUZXdhOGZ3cVV5aG9UZ1VhWjEwMUZHaE0wbEF1b0U0M3NhUE5RRmpUaXZlTldtRHNFNlRHUDVBdHNJYkY4dHkxdkVKeWVxejVib3NPN01FSmU1MjFGZ3NTSjdMWHJENWpsRmhlWUdMTzFya1ZqcHZyZC1rcG5MSXFLVVQyNk8wc3B0Nm9abUZkZFNLZVJEYndXZw?oc=5",
+      "source": "Google News",
+      "date": "Tue, 10 Sep 2024 07:00:00 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-23T09:40:39.809301+00:00"
+    },
+    {
       "id": "a5025eeb2065a908",
       "banque": "Société Générale",
       "departement": null,
@@ -25324,6 +26281,19 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-07-22T09:07:55.850270+00:00"
+    },
+    {
+      "id": "a452068c77d3dfc1",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Banque Tarneaud : fusion Société Générale, produits, chiffres... - MoneyVox",
+      "extrait": "TITRE: Banque Tarneaud : fusion Société Générale, produits, chiffres... - MoneyVox SOURCE: Google News DATE: Thu, 28 Aug 2025 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMiW0FVX3lxTFBuMkQ1RTAwbHJSUUhsZmxCa01nejZIVExHZ1hOQU1neEN2c01GbWMyOGx0WkcyWEFBQkhoUm05S2pYYzFGYm91STkwMDUtY0tpVlFtYTlkdnVJcHM?oc=5 <a href=\"https://news.google.com/rss/articles/CBMiW0FVX3lxTFBuMkQ1RTAwbHJSUUhsZmxCa01nejZIVExHZ1hOQU1neEN2c01GbWMyOGx0WkcyWEFBQkhoUm05S2pYYzFGYm91STkwMDUtY0tpVlFtYTlkdnVJcHM?oc=5\" target",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBuMkQ1RTAwbHJSUUhsZmxCa01nejZIVExHZ1hOQU1neEN2c01GbWMyOGx0WkcyWEFBQkhoUm05S2pYYzFGYm91STkwMDUtY0tpVlFtYTlkdnVJcHM?oc=5",
+      "source": "Google News",
+      "date": "Thu, 28 Aug 2025 07:00:00 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-23T09:39:14.989071+00:00"
     },
     {
       "id": "d50595b28e0c2e61",
@@ -26067,6 +27037,19 @@
       "created_at": "2026-07-17T05:59:30.174117+00:00"
     },
     {
+      "id": "4862c8bc1eae8669",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "«La Poste doit cesser de détruire son réseau» - 24 Heures",
+      "extrait": "TITRE: «La Poste doit cesser de détruire son réseau» - 24 Heures SOURCE: Google News DATE: Sun, 03 Nov 2024 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMikgFBVV95cUxNQTlrX1I5QjZnVmNiNDFvX1pJWDQzelJ1cGxUS0pSUTJYd2thZklvNTQ1TE16bGdfR2ZTTmEzRnp0bFpTdDE1NXJRblNodWhyN3RJNHpJMVZLTU1WMTM3VnhzeEFqQ2RWT3FBY1VWRVJnWWZfNjNXX3BSMzlNYXZZcnh6ZjRTSGx4MWQ5ejI4dko2UQ?oc=5 <a href=\"https://news.google.com/rss/articles/CBMikgFBVV95cUxNQTlrX1I5QjZnVmNiNDFvX1pJWDQzelJ1cGxUS0pSUTJYd2thZklvNTQ1TE16bGdfR2Z",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNQTlrX1I5QjZnVmNiNDFvX1pJWDQzelJ1cGxUS0pSUTJYd2thZklvNTQ1TE16bGdfR2ZTTmEzRnp0bFpTdDE1NXJRblNodWhyN3RJNHpJMVZLTU1WMTM3VnhzeEFqQ2RWT3FBY1VWRVJnWWZfNjNXX3BSMzlNYXZZcnh6ZjRTSGx4MWQ5ejI4dko2UQ?oc=5",
+      "source": "Google News",
+      "date": "Sun, 03 Nov 2024 07:00:00 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-23T09:40:04.711198+00:00"
+    },
+    {
       "id": "2709201365ed60b4",
       "banque": "Société Générale",
       "departement": null,
@@ -26117,6 +27100,19 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-07-22T08:54:03.295158+00:00"
+    },
+    {
+      "id": "f03ee7ba93defa46",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Jura. Fin de Colruyt dans le bassin dolois : 608 emplois supprimés dans une «ambiance morose» - Le Progrès",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMixwFBVV95cUxNb19jWkhGTVJpeDR0eDNDd3JPMkNONld2RkV4U1NZdkNFczBxYnZHSVFpT0lUdDdHcjVEQlFBY1dYUlBaZjVSd1lvaG1XVFktazhhakpkTzNJZlVET1JsQkhESDVybWhmY1c0X1V0Z3cwNDQ0bDV3Q1B0QUx5QjhQc1hLX1NuRXNoWUdpRXlIaXJSdzVQcUFGeE5FZkVUVF9mMFFxcElOUkc3Y01nZnFsTTZ3SVFzNXhtaGFGSGg1S2ZpbTA0RVQ0?oc=5\" target=\"_blank\">Jura. Fin de Colruyt dans le bassin dolois : 608 emplois supprimés dans une «ambiance morose»</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Le Progrès</font>",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNb19jWkhGTVJpeDR0eDNDd3JPMkNONld2RkV4U1NZdkNFczBxYnZHSVFpT0lUdDdHcjVEQlFBY1dYUlBaZjVSd1lvaG1XVFktazhhakpkTzNJZlVET1JsQkhESDVybWhmY1c0X1V0Z3cwNDQ0bDV3Q1B0QUx5QjhQc1hLX1NuRXNoWUdpRXlIaXJSdzVQcUFGeE5FZkVUVF9mMFFxcElOUkc3Y01nZnFsTTZ3SVFzNXhtaGFGSGg1S2ZpbTA0RVQ0?oc=5",
+      "source": "Google News",
+      "date": "Sat, 24 Jan 2026 08:00:00 GMT",
+      "score": 2,
+      "raison": "score préfiltre bas (-2)",
+      "created_at": "2026-07-23T09:40:29.730485+00:00"
     },
     {
       "id": "8e3761c030d9dd69",
@@ -26418,6 +27414,19 @@
       "created_at": "2026-07-22T08:53:30.119763+00:00"
     },
     {
+      "id": "fd130b1a07b153ea",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "À Bricquebosq, le premier point relais postal s’installe… chez un producteur de cidre - Ouest-France",
+      "extrait": "TITRE: À Bricquebosq, le premier point relais postal s’installe… chez un producteur de cidre - Ouest-France SOURCE: Google News DATE: Mon, 07 Jul 2025 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMiiAJBVV95cUxPTGVNS2tleldkanh2Yms1TkRwN0RSOW0xRDhGWk9qTGlpQU5PRHd2S0tNTGpRbExzclViVmk3OVJZRFhONXdEOU4zRkY1TktZcXdjUG5RN1lLUDdYQ1J1cmUyR2pTcVZFYTJqZDJzVDE4RmJFNDZBSzlUUFhiZUJ2ekw0U2gteDVqM2lXWUZkQ0VMVGZGRm5kZ3NQM0w3bHZWMUJkSV92bnRrRkdfcm9RejFDOXVNbUVZc2duY2F4ZDIxSGdOTnh6VU5OWnJ0Y1lrOTlCUDVZbG",
+      "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPTGVNS2tleldkanh2Yms1TkRwN0RSOW0xRDhGWk9qTGlpQU5PRHd2S0tNTGpRbExzclViVmk3OVJZRFhONXdEOU4zRkY1TktZcXdjUG5RN1lLUDdYQ1J1cmUyR2pTcVZFYTJqZDJzVDE4RmJFNDZBSzlUUFhiZUJ2ekw0U2gteDVqM2lXWUZkQ0VMVGZGRm5kZ3NQM0w3bHZWMUJkSV92bnRrRkdfcm9RejFDOXVNbUVZc2duY2F4ZDIxSGdOTnh6VU5OWnJ0Y1lrOTlCUDVZbGFqa2d4bkhXemtwMnE3TXRhSHlDZ0hldEZkU09MZ0swczBLZURKRXdLc0xKakJrdUY?oc=5",
+      "source": "Google News",
+      "date": "Mon, 07 Jul 2025 07:00:00 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-23T09:40:23.222525+00:00"
+    },
+    {
       "id": "d859104e071f9040",
       "banque": "La Banque Postale",
       "departement": null,
@@ -26481,6 +27490,19 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-07-22T09:00:56.853373+00:00"
+    },
+    {
+      "id": "fb86bc02c974f922",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Une première manifestation contre les suppressions de postes à l'Éducation nationale à Clermont-Ferrand - ici.fr",
+      "extrait": "TITRE: Une première manifestation contre les suppressions de postes à l'Éducation nationale à Clermont-Ferrand - ici.fr SOURCE: Google News DATE: Mon, 02 Feb 2026 08:00:00 GMT URL: https://news.google.com/rss/articles/CBMi9wFBVV95cUxPWFhLMUtXaXpqdTNyRkdDUFVvcUJfRkhHZHNsdnRpOHFjX0lkTzl2R180WXZENFkteEVXaFRKX214ZHN0d3kyUEtab0ZBdk9fdWxiMHg5MnA3TDBtVG16dGlZUFlUVVFqTUpFa2VMRXllNWJqdk1jRlJuelVDVVZXVGhXNXhhSV9xTVM2RU5WQVZObzV3ekItejhSbzgtdnpOSXBhZjB3TXp3Sm9WSGtGeWI4bUkxMWZYQUhNV1E1cHNqLWRDanVxV0t0ZzVmQk",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPWFhLMUtXaXpqdTNyRkdDUFVvcUJfRkhHZHNsdnRpOHFjX0lkTzl2R180WXZENFkteEVXaFRKX214ZHN0d3kyUEtab0ZBdk9fdWxiMHg5MnA3TDBtVG16dGlZUFlUVVFqTUpFa2VMRXllNWJqdk1jRlJuelVDVVZXVGhXNXhhSV9xTVM2RU5WQVZObzV3ekItejhSbzgtdnpOSXBhZjB3TXp3Sm9WSGtGeWI4bUkxMWZYQUhNV1E1cHNqLWRDanVxV0t0ZzVmQk92REVpX3E3R1VrX0dXYktaZWVGM2VLRVFGWnYtdUgwRnRCZV9tUGF3?oc=5",
+      "source": "Google News",
+      "date": "Mon, 02 Feb 2026 08:00:00 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-23T09:40:33.541273+00:00"
     },
     {
       "id": "756527e45da165c6",
@@ -26834,6 +27856,19 @@
       "created_at": "2026-07-22T08:56:14.320175+00:00"
     },
     {
+      "id": "a640cf482da99d3c",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Industrie. En difficulté, l’entreprise adaptée Talendi supprime plus de 60 postes - Ouest-France",
+      "extrait": "TITRE: Industrie. En difficulté, l’entreprise adaptée Talendi supprime plus de 60 postes - Ouest-France SOURCE: Google News DATE: Fri, 13 Jun 2025 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMi8gFBVV95cUxOcmFxQUxSZl9EVldWSW1lRU1ieEZQbVd3VTU4WjVhMFdsTWlvSHZkNXV3NldhV282a0ZGYU95VFR1VFRTTHBNaEpBQXFXdHQxeWFJalFZZHZiVUFic1h4M092OWhPLUJKbWprbWxTanBJYUNLSnVDVW51Sk5EV09xb2RCTl9obERtWU5UWXc0YXJzQ1MxVm5JMndyLThBSGhhWkpHT1VBOWZyS01Hb3NIUkpxTGItdUhHYmprT0ZRMERGVHI3Yk51bWg1SldFcTBfek9UR2ZQaWRkUU",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOcmFxQUxSZl9EVldWSW1lRU1ieEZQbVd3VTU4WjVhMFdsTWlvSHZkNXV3NldhV282a0ZGYU95VFR1VFRTTHBNaEpBQXFXdHQxeWFJalFZZHZiVUFic1h4M092OWhPLUJKbWprbWxTanBJYUNLSnVDVW51Sk5EV09xb2RCTl9obERtWU5UWXc0YXJzQ1MxVm5JMndyLThBSGhhWkpHT1VBOWZyS01Hb3NIUkpxTGItdUhHYmprT0ZRMERGVHI3Yk51bWg1SldFcTBfek9UR2ZQaWRkUUdhdzBrS0NBcXJCcTNDVGRWZHVnbXRlQQ?oc=5",
+      "source": "Google News",
+      "date": "Fri, 13 Jun 2025 07:00:00 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-23T09:39:39.250810+00:00"
+    },
+    {
       "id": "89ed6d83ddcb864b",
       "banque": "La Banque Postale",
       "departement": null,
@@ -26990,6 +28025,175 @@
       "created_at": "2026-06-25T15:43:41.960961+00:00"
     },
     {
+      "id": "3185bc503a68aed4",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Gabon-France : un nouveau cap sur le manganèse, les infrastructures et l'énergie",
+      "extrait": "TITRE: Gabon-France : un nouveau cap sur le manganèse, les infrastructures et l'énergie SOURCE: Agence Ecofin DATE: 2026-07-23T09:29:53Z URL: https://www.agenceecofin.com/actualites/2307-140437-gabon-france-un-nouveau-cap-sur-le-manganese-les-infrastructures-et-l-energie (Agence Ecofin) - La transformation des ressources naturelles en levier d'industrialisation, de création d'emplois et de croissance économique figure parmi les priorités du président gabonais Oligui Nguema. Les accords signés av",
+      "url": "https://www.agenceecofin.com/actualites/2307-140437-gabon-france-un-nouveau-cap-sur-le-manganese-les-infrastructures-et-l-energie",
+      "source": "Agence Ecofin",
+      "date": "2026-07-23T09:29:53Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-23T09:43:39.940336+00:00"
+    },
+    {
+      "id": "54a601a892346afd",
+      "banque": "BNP Paribas",
+      "departement": null,
+      "titre": "Ouverture Paris : Soitec qui rit, STMicroelectronics qui pleure... Le CAC 40 à la peine",
+      "extrait": "TITRE: Ouverture Paris : Soitec qui rit, STMicroelectronics qui pleure... Le CAC 40 à la peine SOURCE: Bourse Direct DATE: 2026-07-23T07:47:59Z URL: https://www.boursedirect.fr/fr/actualites/categorie/marche-francais/ouverture-paris-soitec-qui-rit-stmicroelectronics-qui-pleure-le-cac-40-a-la-peine-boursier-ac7248abe6031792a5758490e90124437d76e009 +30% d'un côté (Soitec), -15% de l'autre (STMicroelectronics) : les arbitrages sont tranchés ce matin au sein des valeurs liées au semi-conducteurs à P",
+      "url": "https://www.boursedirect.fr/fr/actualites/categorie/marche-francais/ouverture-paris-soitec-qui-rit-stmicroelectronics-qui-pleure-le-cac-40-a-la-peine-boursier-ac7248abe6031792a5758490e90124437d76e009",
+      "source": "Bourse Direct",
+      "date": "2026-07-23T07:47:59Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-23T09:43:51.941070+00:00"
+    },
+    {
+      "id": "2523fbf97e43d4aa",
+      "banque": "BNP Paribas",
+      "departement": null,
+      "titre": "Ouverture Paris : Soitec qui rit, STMicroelectronics qui pleure... Le CAC 40 à la peine",
+      "extrait": "TITRE: Ouverture Paris : Soitec qui rit, STMicroelectronics qui pleure... Le CAC 40 à la peine SOURCE: Boursier.com DATE: 2026-07-23T07:30:00Z URL: https://www.boursier.com/indices/actualites/news/ouverture-paris-soitec-qui-rit-stmicroelectronics-qui-pleure-le-cac-40-a-la-peine-990613.html Ouverture Paris : Soitec qui rit, STMicroelectronics qui pleure... Le CAC 40 à la peine Ouverture Paris : Soitec qui rit, STMicroelectronics qui pleure... Le CAC 40 à la peine (Boursier.com) -- +30% d'un côté ",
+      "url": "https://www.boursier.com/indices/actualites/news/ouverture-paris-soitec-qui-rit-stmicroelectronics-qui-pleure-le-cac-40-a-la-peine-990613.html",
+      "source": "Boursier.com",
+      "date": "2026-07-23T07:30:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-23T09:43:53.716332+00:00"
+    },
+    {
+      "id": "9d4b51757307522e",
+      "banque": "BNP Paribas",
+      "departement": null,
+      "titre": "Préouverture Paris : Alstom, Thales, STMicro, Seb, Soitec, Valeo, TotalEnergies, BNP Paribas... ça va bouger à 9 heures!",
+      "extrait": "TITRE: Préouverture Paris : Alstom, Thales, STMicro, Seb, Soitec, Valeo, TotalEnergies, BNP Paribas... ça va bouger à 9 heures! SOURCE: Boursier.com DATE: 2026-07-23T06:30:02Z URL: https://www.boursier.com/indices/actualites/news/preouverture-paris-alstom-thales-stmicro-seb-soitec-valeo-totalenergies-bnp-paribas-ca-va-bouger-a-9-heures-990601.html Préouverture Paris : Alstom, Thales, STMicro, Seb, Soitec, Valeo, TotalEnergies, BNP Paribas... ça va bouger à 9 heures! Préouverture Paris : Alstom, ",
+      "url": "https://www.boursier.com/indices/actualites/news/preouverture-paris-alstom-thales-stmicro-seb-soitec-valeo-totalenergies-bnp-paribas-ca-va-bouger-a-9-heures-990601.html",
+      "source": "Boursier.com",
+      "date": "2026-07-23T06:30:02Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-23T09:44:07.830548+00:00"
+    },
+    {
+      "id": "6162782fe2c1fb90",
+      "banque": "BNP Paribas",
+      "departement": null,
+      "titre": "BNP Paribas accroît d'un tiers son résultat net au 2e trimestre",
+      "extrait": "TITRE: BNP Paribas accroît d'un tiers son résultat net au 2e trimestre SOURCE: zonebourse DATE: 2026-07-23T05:46:35Z URL: https://www.zonebourse.com/actualite-bourse/bnp-paribas-accroit-d-un-tiers-son-resultat-net-au-2e-trimestre-ce7f51ded988f12c S'il a vu son coût du risque augmenter à 949 MEUR, soit 39 points de base des encours, le groupe bancaire a enregistré une forte hausse de 14,1% de son résultat brut d'exploitation, à 6 105 MEUR, grâce notamment à une croissance à deux chiffres de ses r",
+      "url": "https://www.zonebourse.com/actualite-bourse/bnp-paribas-accroit-d-un-tiers-son-resultat-net-au-2e-trimestre-ce7f51ded988f12c",
+      "source": "zonebourse",
+      "date": "2026-07-23T05:46:35Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-23T09:44:11.903026+00:00"
+    },
+    {
+      "id": "08ec50204cb8f4a4",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Gabon: bilan économique de la visite du président Brice Oligui Nguema en France",
+      "extrait": "TITRE: Gabon: bilan économique de la visite du président Brice Oligui Nguema en France SOURCE: RFI DATE: 2026-07-23T02:53:08Z URL: https://www.rfi.fr/fr/afrique/20260723-gabon-bilan-%C3%A9conomique-de-la-visite-du-pr%C3%A9sident-brice-oligui-nguema-en-france Fin de visite d'État en France pour le président gabonais Brice Clothaire Oligui Nguema. Depuis lundi 20 juillet 2026, le chef de l'État gabonais a été reçu à Paris pour une première visite d'État, qui fait suite au déplacement d'Emmanuel Ma",
+      "url": "https://www.rfi.fr/fr/afrique/20260723-gabon-bilan-%C3%A9conomique-de-la-visite-du-pr%C3%A9sident-brice-oligui-nguema-en-france",
+      "source": "RFI",
+      "date": "2026-07-23T02:53:08Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-23T09:44:14.268534+00:00"
+    },
+    {
+      "id": "c8a27237eee91f85",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Mercato: Liverpool s'intéresse à Akliouche malgré l'accord avec le PSG",
+      "extrait": "TITRE: Mercato: Liverpool s'intéresse à Akliouche malgré l'accord avec le PSG SOURCE: RMC SPORT DATE: 2026-07-22T17:29:02Z URL: https://rmcsport.bfmtv.com/football/transferts/mercato-liverpool-s-interesse-a-akliouche-malgre-l-accord-avec-le-psg_AV-202607220609.html Alors qu'un accord a été trouvé entre le PSG et Maghnes Akliouche, Liverpool est entré dans la course au recrutement du milieu de terrain de Monaco, selon Sky Sports. Reste à savoir si le club anglais formulera une offre jugée recevab",
+      "url": "https://rmcsport.bfmtv.com/football/transferts/mercato-liverpool-s-interesse-a-akliouche-malgre-l-accord-avec-le-psg_AV-202607220609.html",
+      "source": "RMC SPORT",
+      "date": "2026-07-22T17:29:02Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-23T09:44:16.100496+00:00"
+    },
+    {
+      "id": "b2d68b8b68026e88",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "Asha Sharma perd une de ses recrues : Jared Palmer annonce son départ surprise de la direction de Xbox",
+      "extrait": "TITRE: Asha Sharma perd une de ses recrues : Jared Palmer annonce son départ surprise de la direction de Xbox SOURCE: Gamekult DATE: 2026-07-22T17:05:00Z URL: https://www.gamekult.com/actualite/xbox-le-vice-president-jared-palmer-fait-ses-valises-trois-mois-apres-son-arrivee-3050871356.html Trois mois après avoir constitué une équipe de dirigeants issus, comme elle, du milieu de l'intelligence artificielle, Asha Sharma voit l'une de ses recrues quitter la direction de Xbox. Pour la postérité, re",
+      "url": "https://www.gamekult.com/actualite/xbox-le-vice-president-jared-palmer-fait-ses-valises-trois-mois-apres-son-arrivee-3050871356.html",
+      "source": "Gamekult",
+      "date": "2026-07-22T17:05:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-23T09:44:18.749524+00:00"
+    },
+    {
+      "id": "b9aec8c34957f836",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "Projet de loi d'urgence agricole : une censure du Conseil constitutionnel est-elle envisageable ?",
+      "extrait": "TITRE: Projet de loi d'urgence agricole : une censure du Conseil constitutionnel est-elle envisageable ? SOURCE: Public Senat DATE: 2026-07-22T15:53:04Z URL: https://www.publicsenat.fr/actualites/politique/projet-de-loi-durgence-agricole-une-censure-du-conseil-constitutionnel-est-elle-envisageable Cette mesure défendue de longue date par la majorité sénatoriale de droite et du centre reprend pour partie des dispositions censurées par le Conseil constitutionnel l'été dernier, dans la très controv",
+      "url": "https://www.publicsenat.fr/actualites/politique/projet-de-loi-durgence-agricole-une-censure-du-conseil-constitutionnel-est-elle-envisageable",
+      "source": "Public Senat",
+      "date": "2026-07-22T15:53:04Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-23T09:44:35.991920+00:00"
+    },
+    {
+      "id": "446057e8d6846a68",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Un nouveau financement de 356 millions $ pour la modernisation du Transgabonais",
+      "extrait": "TITRE: Un nouveau financement de 356 millions $ pour la modernisation du Transgabonais SOURCE: Agence Ecofin DATE: 2026-07-22T15:25:32Z URL: https://www.agenceecofin.com/actualites-infrastructures/2207-140420-un-nouveau-financement-de-356-millions-pour-la-modernisation-du-transgabonais (Agence Ecofin) - Face aux prévisions de hausse des flux de marchandises et aux besoins croissants de mobilité, le Gabon accélère la transformation de son principal corridor ferroviaire, considéré comme un levier ",
+      "url": "https://www.agenceecofin.com/actualites-infrastructures/2207-140420-un-nouveau-financement-de-356-millions-pour-la-modernisation-du-transgabonais",
+      "source": "Agence Ecofin",
+      "date": "2026-07-22T15:25:32Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-23T09:44:42.200138+00:00"
+    },
+    {
+      "id": "5afd6836e61eb348",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "Possible fermeture de La Poste à Chalabre",
+      "extrait": "« trente-cinq au total en Occitanie » (projets similaires concernant des bureaux de poste)",
+      "url": "https://www.lindependant.fr/2026/07/13/possible-fermeture-de-la-poste-a-chalabre-la-colere-monte-contre-le-recul-des-services-publics-13463315.php",
+      "source": "lindependant.fr",
+      "date": "2026-07-13",
+      "score": 2,
+      "raison": "signaux: vague(La Banque Postale,regional,count=35)",
+      "created_at": "2026-07-23T09:43:05.678515+00:00"
+    },
+    {
+      "id": "bb2b632e5bb997ef",
+      "banque": "La Banque Postale",
+      "departement": "Aude",
+      "titre": "Fermetures de bureaux de poste, incendies",
+      "extrait": "L’article indique que “les projets de fermetures annoncés… des bureaux de postes et d’agences communales dans notre département” ont été évoqués par les maires de l’Aude.",
+      "url": "https://www.lindependant.fr/2026/07/12/fermetures-de-bureaux-de-poste-incendies-les-sujets-qui-preoccupent-les-maires-de-laude-13466017.php",
+      "source": "lindependant.fr",
+      "date": "2026-07-12",
+      "score": 2,
+      "raison": "signaux: dept(La Poste,Aude,count=None,communes=Vinassan, Trèbes)",
+      "created_at": "2026-07-23T09:43:12.017491+00:00"
+    },
+    {
+      "id": "c6ad6f3eab28cebf",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "Montréjeau. La colère des maires face à la fermeture de La Poste",
+      "extrait": "Article : « fermeture de plusieurs bureaux de poste du secteur pendant trois semaines en juillet » ; aucune agence bancaire nominative BANCAIRE n’est décrite, ni lien explicite avec La Banque Postale/Conseiller bancaire.",
+      "url": "https://www.ladepeche.fr/2026/07/08/la-colere-des-maires-face-a-la-fermeture-de-la-poste-13458709.php",
+      "source": "ladepeche.fr",
+      "date": "2026-07-08",
+      "score": 2,
+      "raison": "signaux: vague(La Poste,unknown,count=None)",
+      "created_at": "2026-07-23T09:43:25.751587+00:00"
+    },
+    {
       "id": "18dc02c555e83993",
       "banque": "La Banque Postale",
       "departement": null,
@@ -27040,6 +28244,19 @@
       "score": 1,
       "raison": "signaux: vague(SNCF / guichets en gare,unknown,count=None)",
       "created_at": "2026-07-22T09:01:37.909422+00:00"
+    },
+    {
+      "id": "352fff25ad5fc454",
+      "banque": "Ma French Bank",
+      "departement": null,
+      "titre": "Fermeture de Ma French Bank : comment récupérer son argent en 2026 via la CDC et Ciclade ? - Actufinance",
+      "extrait": "Article centré sur la \"Fermeture de Ma French Bank\" et la récupération de l’argent via la CDC/Ciclade, sans mention d’agences physiques ni de communes.",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPR2gxZjBYcW1KWFU5Y2pKRjA0TDl1dzR5enRhNUROWGJlWUsxTk5aaVVlVV9MVVBxcGV5V0IxbmF2VURMZWFRbHNjSmpCVDRMZzhhekJRUjFaU2d2Qm12dHJBYmdFSXZhN19vdHo5cWJUaWZxQXRmal9HYjE0QlpMSnd6d0FyY3Fnb0JuY1gyM0Q0bTJ3RHVKZA?oc=5",
+      "source": "Google News",
+      "date": "Tue, 06 Jan 2026 08:00:00 GMT",
+      "score": 1,
+      "raison": "signaux: vague(Ma French Bank,national,count=None)",
+      "created_at": "2026-07-23T09:39:19.217446+00:00"
     },
     {
       "id": "e56d23c033abea22",
@@ -27094,6 +28311,19 @@
       "created_at": "2026-07-22T08:55:41.092765+00:00"
     },
     {
+      "id": "3df20f3a95980ef9",
+      "banque": "banque non précisée",
+      "departement": null,
+      "titre": "Cette banque va bientôt fermer, faites-vous partie des milliers de Français qui seront impactés ? - demotivateur.fr",
+      "extrait": "« Cette banque va bientôt fermer, … des milliers de Français qui seront impactés ? » (aucune banque/commune/agence nommée dans l’extrait)",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOcXlKRXloUUVBMjJ4OGxpY3Bka1dVaVh4Znd1UHFGSGp1SEhEd2c1TWIzWW1hdGQzT2c0T29EcldvbWVGY0N5d0M5T2tFX05TZFBXeHFzVmlFMHgwcl9SZVlEbzN4U3pvZzdMUlNwa0k4LTN0U3FrX2RDbTJTbHJTZXZOS1Y4RERDQllFQXAtSDI4RE1uU21ITFp3NXJtMXBFQTFneG13RGNjZ1ptb1FVZnc4UjhsUC0xX1FpM0ZiSjZNNkFYbVpybjYzTnF5N1lXSTRSZQ?oc=5",
+      "source": "Google News",
+      "date": "Sun, 10 Nov 2024 08:00:00 GMT",
+      "score": 1,
+      "raison": "signaux: vague(banque non précisée,national,count=None)",
+      "created_at": "2026-07-23T09:39:27.298507+00:00"
+    },
+    {
       "id": "5ba05bdfcaeb52ef",
       "banque": "La Banque Postale",
       "departement": null,
@@ -27105,6 +28335,45 @@
       "score": 1,
       "raison": "signaux: vague(La Poste (La Banque Postale potentiellement concernée),unknown,count=None)",
       "created_at": "2026-07-22T09:19:14.677179+00:00"
+    },
+    {
+      "id": "acd09fff2c4469a2",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "Seine-et-Marne : dans cette commune, La Poste ferme un bureau et choisit d'ouvrir un point relais - Actu.fr",
+      "extrait": "Le titre indique : « La Poste ferme un bureau et choisit d'ouvrir un point relais » en Seine-et-Marne, mais aucune commune ni aucun lien explicite avec une agence bancaire (La Banque Postale) n’est fourni dans le texte retransmis.",
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQU19teXFrUkw1SFNnamxqRkdKQU10S0drZ0IySUdOQnktYUthUXlJODlha2o3WmlwUXo1WVpwWkQwOTFQeHgwbVpUMHQ1TnFFd2J3a21HSnZsUTE2MDJITzNYejVKVE9QSkQ5ekJaWEc4VGY0bHBMTnpRcWhYd2NRWGpNUXBQamRPQThtQUtXWkF3MmF5Z1ZWV1Bsa29wT0xfSldQVmRqWGNibEZ4Umg0VHdmbjdXdFJKSFBZd1hKbVBWNGw2TGpUOVh0MWg5YzI3X2RtV2xCblNxWjdVdzBPaTdidG9qUFBwVndNc2I0Zw?oc=5",
+      "source": "Google News",
+      "date": "Mon, 25 Aug 2025 07:00:00 GMT",
+      "score": 1,
+      "raison": "signaux: vague(La Poste,unknown,count=None)",
+      "created_at": "2026-07-23T09:39:37.162046+00:00"
+    },
+    {
+      "id": "62b3a1639154c6db",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "Fermetures de bureaux de Postes Canada: les petites municipalités particulièrement touchées - TVA Nouvelles",
+      "extrait": "Titre : « Fermetures de bureaux de Postes Canada : les petites municipalités particulièrement touchées » (il s’agit du Canada, pas d’agences bancaires physiques en France).",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOTWRCSm45YThkV2J2TkxQWGdqQVhJemhiYWN1ajNrQzN6YlIxeWtyWnRmVWlwZ1JhaGxVVHhwN2J4ODdCMDV5eWVGNC1BNU15Nl9peWpsYUlwNUFLMFZ3enBNaER0UmNFWkZrN18tXzI2TjVsb2xaUTVWUjBqNXZxY2gybWROSklwOVlGalZxUUltcWF3WEZibGJzOXROVE9yV1BZRXgzR3VTM3l6eHBtMGRRZjJNM191RXc3R2liMEFTLXVTQ0Qzdw?oc=5",
+      "source": "Google News",
+      "date": "Fri, 26 Sep 2025 07:00:00 GMT",
+      "score": 1,
+      "raison": "signaux: vague(Postes Canada (Bureaux de poste),national,count=None)",
+      "created_at": "2026-07-23T09:40:21.142639+00:00"
+    },
+    {
+      "id": "dc8899f9bca0449a",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "Economie. Prêts immobiliers : le CIC supprime le verrou du CDI - Le Dauphiné Libéré",
+      "extrait": "Le titre indique une évolution des conditions liées au CDI pour des prêts immobiliers (« le CIC supprime le verrou du CDI »), sans mention de fermetures/regroupements/transferts d’agences physiques.",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQb0lPb3VKY2Z0WUtyaUc5Q1Ywa2Nvc0YxZ2l3YlpwWVR0YzN3RF9wZWlBSXJ0U0dwcVZpcDNSUmM0TWotZTdKLUg4Y0lLaWZ2X0FVak05Q2FUTjF6Sm1ocUVDQ19aMGlicDBFWFI2Ty1NenpUSTdCdlRfTDUxdGo1cjBKZ2s2X0lkaERiaDE4UmN4WEpNT0VHY0JYNXFVUQ?oc=5",
+      "source": "Google News",
+      "date": "Fri, 20 Sep 2024 07:00:00 GMT",
+      "score": 1,
+      "raison": "signaux: vague(CIC,national,count=None)",
+      "created_at": "2026-07-23T09:40:37.904137+00:00"
     },
     {
       "id": "113b15b83d11fbcf",
@@ -27120,6 +28389,19 @@
       "created_at": "2026-07-22T08:54:19.389452+00:00"
     },
     {
+      "id": "592506f120e3ab12",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "La Poste ferme deux bureaux dans le centre de Metz pour en ouvrir un n ... - La Gazette France",
+      "extrait": "Titre tronqué : « La Poste ferme deux bureaux dans le centre de Metz pour en ouvrir un n ... » (communes exactes des bureaux non fournies, et lien bancaire non explicite).",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPY0pHa1pNQlBZcFdRV3g5d0h2SHp2RDZZeEpVQkZDdVpRbEQ2dWtobnMzcEM4b1Z3X3VGTnA2bHp3TkE5QnBSZHJkT2tmN01DVUtxYnhHakJad1RjMlRPdHdSLWJSRUV6c21ORlFjdENIeHJzSlNfNjZTSmN5eksyTi1RS1pDNF9HNlJoXzdEYm8xQXJKZ1JsZVpBenVpWWdLME1kdFF3cWJIT1kybVE4SC1VZ0o3dWdzcThlZ2dCRUhwOTNCNVpoSGxRcm9wX1VZ?oc=5",
+      "source": "Google News",
+      "date": "Fri, 11 Jul 2025 07:00:00 GMT",
+      "score": 1,
+      "raison": "signaux: vague(La Banque Postale,unknown,count=2)",
+      "created_at": "2026-07-23T09:39:59.631149+00:00"
+    },
+    {
       "id": "72eb876ff51489fb",
       "banque": "La Banque Postale",
       "departement": null,
@@ -27131,6 +28413,19 @@
       "score": 1,
       "raison": "signaux: vague(La Poste,regional,count=None)",
       "created_at": "2026-07-22T08:54:47.472218+00:00"
+    },
+    {
+      "id": "ce972d36c0da86ab",
+      "banque": "BNP Paribas",
+      "departement": null,
+      "titre": "Préouverture Paris : Alstom, Thales, STMicro, Seb, Soitec, Valeo, TotalEnergies, BNP Paribas... ça va bouger à 9 heures!",
+      "extrait": "Article boursier généraliste : mention de résultats et d’activités de BNP Paribas, sans fermeture/regroupement/transfer d’agences physiques.",
+      "url": "https://www.boursedirect.fr/fr/actualites/categorie/marche-francais/preouverture-paris-alstom-thales-stmicro-seb-soitec-valeo-totalenergies-bnp-paribas-ca-va-bouger-a-9-heur-boursier-1888204c658bb2065c2d3bd14190a7733ec27d29",
+      "source": "Bourse Direct",
+      "date": "2026-07-23T06:50:22Z",
+      "score": 0,
+      "raison": "signaux: vague(BNP Paribas,national,count=None)",
+      "created_at": "2026-07-23T09:44:06.043446+00:00"
     }
   ],
   "plans": [

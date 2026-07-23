@@ -12,7 +12,6 @@ warning,date_fermeture_absente,878018f0ac603f53,Crédit Agricole,Écueillé,36,3
 warning,date_fermeture_absente,f832d5b9a0d688f7,Crédit Agricole,Arnèke,59,59018,article ancien sans date de fermeture explicite; à confirmer ou archiver
 warning,date_fermeture_absente,9e37991903456bbc,Crédit Agricole,Mazingarbe,62,62563,article ancien sans date de fermeture explicite; à confirmer ou archiver
 warning,date_fermeture_absente,70a46255dfbdd872,Crédit Agricole,Limogne-en-Quercy,46,46173,article ancien sans date de fermeture explicite; à confirmer ou archiver
-warning,date_fermeture_absente,4b911a4b783ba002,Crédit Mutuel,Villersexel,70,70561,article ancien sans date de fermeture explicite; à confirmer ou archiver
 warning,date_fermeture_absente,2968baba09060258,Caisse d'Épargne,Dun-sur-Auron,18,18087,article ancien sans date de fermeture explicite; à confirmer ou archiver
 warning,date_fermeture_absente,b6e0adaef016bb42,Crédit Agricole,Saint-Germain-Laprade,43,43190,article ancien sans date de fermeture explicite; à confirmer ou archiver
 warning,date_fermeture_absente,1dd80e0b2d4ed8a9,Crédit Mutuel,Plouarzel,29,29177,article ancien sans date de fermeture explicite; à confirmer ou archiver
@@ -43,5 +42,6 @@ warning,date_fermeture_absente,e34d7c62734d3987,La Banque Postale,Mâcon,71,7127
 warning,date_fermeture_absente,02adeecaa1cef64e,La Banque Postale,Veyrier-du-Lac,74,74299,article ancien sans date de fermeture explicite; à confirmer ou archiver
 warning,date_fermeture_absente,9136bd7869e187ad,La Banque Postale,Crégy-lès-Meaux,77,77143,article ancien sans date de fermeture explicite; à confirmer ou archiver
 warning,date_fermeture_absente,b07ae2916513fe2e,La Banque Postale,Gardanne,13,13041,article ancien sans date de fermeture explicite; à confirmer ou archiver
+warning,date_fermeture_absente,77e07df577220422,La Banque Postale,Villepinte,93,93078,article ancien sans date de fermeture explicite; à confirmer ou archiver
 info,communes_proches,ef183498a867b953|f5dfed8c328d270e,BNP Paribas / La Banque Postale,Saint-Malo-de-Beignon / Saint-Malo,56 / 35,56226 / 35288,noms proches mais localisations distinctes à vérifier visuellement
 info,communes_proches,ef183498a867b953|405cc9d5132ed04c,BNP Paribas / La Banque Postale,Saint-Malo-de-Beignon / Saint-Malo,56 / 35,56226 / 35288,noms proches mais localisations distinctes à vérifier visuellement
