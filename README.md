@@ -301,13 +301,19 @@ Variables d'environnement optionnelles :
   sous cette limite.
 - `MEDIACLOUD_API_KEY` active Media Cloud. `MEDIACLOUD_MAX_PAGES` (défaut `2`)
   et `MEDIACLOUD_MAX_ARTICLES` (défaut `200`) protègent le quota hebdomadaire.
+  `MEDIACLOUD_COLLECTION_IDS` cible par défaut les collections officielles
+  France National et France State & Local (`34412146,38379799`).
 - `EVENT_REGISTRY_API_KEY` active Event Registry. L'offre gratuite étant un
   crédit d'essai fini, `EVENT_REGISTRY_MAX_PAGES=1` limite la consommation et
   une erreur de quota désactive seulement ce collecteur pour le run courant.
+  La requête respecte la limite trial de quinze mots et cible les sources dont
+  la localisation Event Registry est la France.
 - `COMMON_CRAWL_ENABLED=1` active le backfill sans clé. Il est réservé aux runs
   d'au moins `COMMON_CRAWL_MIN_DAYS=700`; les limites par défaut sont quatre
   domaines, quatre index historiques, douze captures par domaine et quarante
   articles pertinents. `COMMON_CRAWL_DOMAINS` accepte une liste séparée par des
-  virgules pour ajuster le corpus de presse locale.
+  virgules pour ajuster le corpus de presse locale. Les appels CDX sont espacés
+  de deux secondes, retentés une fois sur erreur transitoire et interrompus
+  après quatre erreurs consécutives afin de ne pas surcharger le service.
 - `FACTIVA_API_KEY`, `LEXISNEXIS_API_KEY`, `TAGADAY_API_KEY` réservées au scaffold
   presse pro, sans appel réel à ce stade.

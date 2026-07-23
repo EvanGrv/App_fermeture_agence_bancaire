@@ -78,7 +78,9 @@ def collect(
                 mediacloud_query(),
                 start_date=start,
                 end_date=end,
+                collection_ids=config.MEDIACLOUD_COLLECTION_IDS,
                 pagination_token=pagination_token,
+                page_size=min(100, article_limit - len(out)),
             )
         except Exception as exc:
             print(f"[mediacloud] recherche en erreur: {exc}")

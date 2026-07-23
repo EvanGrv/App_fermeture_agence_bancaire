@@ -141,6 +141,7 @@ def test_collect_court_ne_touche_pas_le_reseau(monkeypatch):
 
 def test_index_fetch_emploie_filtres_cdx_officiels(monkeypatch):
     captured = {}
+    monkeypatch.setattr(common_crawl.config, "COMMON_CRAWL_THROTTLE_SECONDS", 0)
 
     class Response:
         status_code = 200
@@ -161,3 +162,31 @@ def test_index_fetch_emploie_filtres_cdx_officiels(monkeypatch):
     assert captured["filter"][1] == "=mime:text/html"
     assert captured["filter"][2].startswith("~url:")
     assert captured["filter"][3].startswith("~url:")
+
+
+def test_index_fetch_reessaie_une_erreur_503(monkeypatch):
+    calls = []
+    monkeypatch.setattr(common_crawl.config, "COMMON_CRAWL_THROTTLE_SECONDS", 0)
+    monkeypatch.setattr(common_crawl.config, "COMMON_CRAWL_RETRIES", 1)
+    monkeypatch.setattr(common_crawl.config, "COMMON_CRAWL_RETRY_BASE_SECONDS", 0)
+
+    class Response:
+        text = ""
+        headers = {}
+
+        def __init__(self, status_code):
+            self.status_code = status_code
+
+        def raise_for_status(self):
+            if self.status_code >= 400:
+                raise RuntimeError(self.status_code)
+
+    def fake_get(url, **kwargs):
+        calls.append(url)
+        return Response(503 if len(calls) == 1 else 200)
+
+    monkeypatch.setattr(common_crawl.requests, "get", fake_get)
+    assert common_crawl._default_index_fetch(
+        "CC-MAIN-2026-25", "journal.fr", 5
+    ) == []
+    assert len(calls) == 2

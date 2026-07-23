@@ -111,12 +111,23 @@ MEDIACLOUD_ENABLED = os.getenv("MEDIACLOUD_ENABLED", "1") != "0"
 MEDIACLOUD_API_KEY = os.getenv("MEDIACLOUD_API_KEY", "")
 MEDIACLOUD_MAX_PAGES = int(os.getenv("MEDIACLOUD_MAX_PAGES", "2"))
 MEDIACLOUD_MAX_ARTICLES = int(os.getenv("MEDIACLOUD_MAX_ARTICLES", "200"))
+MEDIACLOUD_COLLECTION_IDS = [
+    int(value.strip())
+    for value in os.getenv(
+        "MEDIACLOUD_COLLECTION_IDS", "34412146,38379799"
+    ).split(",")
+    if value.strip()
+]
 
 EVENT_REGISTRY_ENABLED = os.getenv("EVENT_REGISTRY_ENABLED", "1") != "0"
 EVENT_REGISTRY_API_KEY = os.getenv("EVENT_REGISTRY_API_KEY", "")
 EVENT_REGISTRY_MAX_PAGES = int(os.getenv("EVENT_REGISTRY_MAX_PAGES", "1"))
 EVENT_REGISTRY_MAX_ARTICLES = int(
     os.getenv("EVENT_REGISTRY_MAX_ARTICLES", "100")
+)
+EVENT_REGISTRY_SOURCE_LOCATION_URI = os.getenv(
+    "EVENT_REGISTRY_SOURCE_LOCATION_URI",
+    "http://en.wikipedia.org/wiki/France",
 )
 
 # Common Crawl sert uniquement de backfill profond. L'index ne permet pas une
@@ -133,6 +144,16 @@ COMMON_CRAWL_MAX_ARTICLES = int(os.getenv("COMMON_CRAWL_MAX_ARTICLES", "40"))
 COMMON_CRAWL_TIMEOUT = int(os.getenv("COMMON_CRAWL_TIMEOUT", "20"))
 COMMON_CRAWL_MAX_RECORD_BYTES = int(
     os.getenv("COMMON_CRAWL_MAX_RECORD_BYTES", str(2 * 1024 * 1024))
+)
+COMMON_CRAWL_THROTTLE_SECONDS = float(
+    os.getenv("COMMON_CRAWL_THROTTLE_SECONDS", "2")
+)
+COMMON_CRAWL_RETRIES = int(os.getenv("COMMON_CRAWL_RETRIES", "1"))
+COMMON_CRAWL_RETRY_BASE_SECONDS = float(
+    os.getenv("COMMON_CRAWL_RETRY_BASE_SECONDS", "5")
+)
+COMMON_CRAWL_MAX_CONSECUTIVE_ERRORS = int(
+    os.getenv("COMMON_CRAWL_MAX_CONSECUTIVE_ERRORS", "4")
 )
 COMMON_CRAWL_DOMAINS = [
     domain.strip()

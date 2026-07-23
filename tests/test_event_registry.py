@@ -40,19 +40,28 @@ def test_collect_envoie_fenetre_et_requete_booleenne():
     )
 
     assert len(articles) == 1
-    assert calls[0]["dateStart"] == "2025-01-01"
-    assert calls[0]["dateEnd"] == "2026-01-01"
-    assert calls[0]["lang"] == "fra"
+    assert "dateStart" not in calls[0]
+    assert "lang" not in calls[0]
     assert "$and" in calls[0]["query"]["$query"]
     assert calls[0]["query"]["$query"]["$and"][0] == {
         "dateStart": "2025-01-01",
         "dateEnd": "2026-01-01",
     }
+    assert calls[0]["query"]["$query"]["$and"][1] == {"lang": "fra"}
+    assert calls[0]["query"]["$query"]["$and"][2] == {
+        "sourceLocationUri": "http://en.wikipedia.org/wiki/France",
+    }
+    assert calls[0]["query"]["$filter"]["isDuplicate"] == "skipDuplicates"
 
 
 def test_requete_respecte_la_limite_trial_de_15_mots_cles():
     query = event_registry.event_registry_query()["$query"]["$and"]
-    assert sum(len(group["$or"]) for group in query) <= 15
+    keyword_count = sum(
+        len(item["keyword"].split())
+        for group in query
+        for item in group["$or"]
+    )
+    assert keyword_count <= 15
 
 
 def test_collect_sans_cle_ou_quota_retourne_vide(monkeypatch):
