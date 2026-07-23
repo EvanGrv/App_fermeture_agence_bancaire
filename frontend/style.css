@@ -257,7 +257,7 @@ a { color: #0b63f6; text-decoration: none; font-weight: 700; }
 
 .stats-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(150px, 1fr));
+  grid-template-columns: repeat(5, minmax(150px, 1fr));
   gap: 16px;
   margin-bottom: 16px;
 }
@@ -1718,6 +1718,7 @@ td span {
   .articles-top { grid-template-columns: 1fr; }
   .articles-side { grid-template-columns: 1fr 1fr; }
   .card-row { grid-template-columns: repeat(2, 1fr); }
+  .stats-grid { grid-template-columns: repeat(3, minmax(150px, 1fr)); }
   .source-grid { grid-template-columns: repeat(2, 1fr); }
   .reliability-grid { grid-template-columns: repeat(2, minmax(180px, 1fr)); }
   .reliability-grid div { border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
