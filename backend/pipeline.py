@@ -66,6 +66,7 @@ def ingest_closures(conn, closures, geocoder_adresse_fn) -> int:
 
 
 def _ingest_closure(conn, resultat, art, url, geocoder_fn, recap):
+    extraction_guard.enrich_department_from_source(resultat, art)
     geo = geocoder_fn(resultat["commune"], resultat.get("departement"))
     if geo:
         resultat["lat"] = geo.get("lat")

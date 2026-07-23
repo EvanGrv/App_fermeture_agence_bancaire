@@ -312,6 +312,7 @@ def _persist_unlocated(conn, closure: dict, article: dict, url: str, raison: str
 
 
 def _publish_or_unlocated(conn, closure: dict, article: dict, url: str, geocode_fn) -> bool:
+    extraction_guard.enrich_department_from_source(closure, article)
     try:
         geo = geocode_fn(closure["commune"], closure.get("departement"))
     except Exception:

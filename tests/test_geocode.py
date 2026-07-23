@@ -5,6 +5,14 @@ BAN_OK = {"features": [
      "properties": {"city": "Rennes", "citycode": "35238", "postcode": "35000"}}
 ]}
 BAN_VIDE = {"features": []}
+BAN_VILLEPINTE = {"features": [
+    {"geometry": {"coordinates": [2.54, 48.96]},
+     "properties": {"city": "Villepinte", "name": "Villepinte",
+                    "citycode": "93078", "postcode": "93420"}},
+    {"geometry": {"coordinates": [2.09, 43.28]},
+     "properties": {"city": "Villepinte", "name": "Villepinte",
+                    "citycode": "11434", "postcode": "11150"}},
+]}
 
 
 def test_parse_ban():
@@ -40,6 +48,22 @@ def test_geocode_utilise_cache():
 def test_geocode_echec_retourne_none():
     res = geocode.geocode_commune("Xyz", "99", fetch=lambda url: BAN_VIDE, cache={})
     assert res is None
+
+
+def test_geocode_refuse_commune_homonyme_sans_departement():
+    geo = geocode.geocode_commune(
+        "Villepinte", fetch=lambda _url: BAN_VILLEPINTE, cache={}
+    )
+    assert geo["ambiguous"] is True
+    assert {item["departement"] for item in geo["candidates"]} == {"11", "93"}
+
+
+def test_geocode_resout_commune_homonyme_avec_departement_source():
+    geo = geocode.geocode_commune(
+        "Villepinte", "11", fetch=lambda _url: BAN_VILLEPINTE, cache={}
+    )
+    assert geo["code_insee"] == "11434"
+    assert geo["departement"] == "11"
 
 
 def test_geocode_adresse():

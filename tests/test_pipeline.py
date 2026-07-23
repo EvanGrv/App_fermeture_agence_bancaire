@@ -511,6 +511,83 @@ def test_pipeline_rejette_sortie_lbp_incompatible_avec_article_source(tmp_path):
     assert "département source 48" in reason
 
 
+def test_pipeline_ne_choisit_pas_un_villepinte_sans_departement_source(tmp_path):
+    conn = store.init_db(tmp_path / "villepinte.db")
+    article = {
+        "titre": "Villepinte : fermeture programmée du bureau de poste",
+        "texte": "Les services de courrier et de banque vont disparaître.",
+        "url": "http://villepinte", "date": "2025-08-17",
+        "source": "PQR", "departement": None,
+    }
+
+    def extractor(_article):
+        return _structured(
+            bank="La Banque Postale", commune="Villepinte",
+            departement="93", status="announced",
+            evidence="Fermeture programmée du bureau de poste",
+        )
+
+    def geocode(commune, department=None):
+        if commune == "Villepinte" and not department:
+            return {
+                "ambiguous": True,
+                "candidates": [
+                    {"commune": "Villepinte", "departement": "11"},
+                    {"commune": "Villepinte", "departement": "93"},
+                ],
+            }
+        return {
+            "commune": commune, "lat": 48.96, "lon": 2.54,
+            "code_insee": "93078", "departement": "93",
+        }
+
+    recap = pipeline.run_pipeline(
+        conn, [lambda: [article]], extractor, geocode,
+        enrich_fn=lambda _url: "",
+    )
+
+    assert recap["fermetures"] == 0
+    assert conn.execute("SELECT COUNT(*) FROM closures").fetchone()[0] == 0
+    reason = conn.execute("SELECT raison FROM closures_unlocated").fetchone()[0]
+    assert "commune homonyme" in reason
+
+
+def test_pipeline_resout_villepinte_avec_departement_dans_la_source(tmp_path):
+    conn = store.init_db(tmp_path / "villepinte-aude.db")
+    article = {
+        "titre": "Villepinte : fermeture programmée du bureau de poste",
+        "texte": "Article rédigé par un correspondant de l'Aude. "
+                 "Les services de courrier et de banque vont disparaître.",
+        "url": "http://villepinte-aude", "date": "2025-08-17",
+        "source": "PQR", "departement": None,
+    }
+
+    def extractor(_article):
+        return _structured(
+            bank="La Banque Postale", commune="Villepinte",
+            departement=None, status="announced",
+            evidence="Fermeture programmée du bureau de poste",
+        )
+
+    def geocode(commune, department=None):
+        assert department == "11"
+        return {
+            "commune": commune, "lat": 43.28, "lon": 2.09,
+            "code_insee": "11434", "departement": "11",
+        }
+
+    recap = pipeline.run_pipeline(
+        conn, [lambda: [article]], extractor, geocode,
+        enrich_fn=lambda _url: "",
+    )
+
+    assert recap["fermetures"] == 1
+    row = conn.execute(
+        "SELECT departement, code_insee FROM closures WHERE commune='Villepinte'"
+    ).fetchone()
+    assert row == ("11", "11434")
+
+
 def test_pipeline_persiste_json_riche(tmp_path):
     conn = store.init_db(tmp_path / "t.db")
     pipeline.run_pipeline(
