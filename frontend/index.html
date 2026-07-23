@@ -278,36 +278,42 @@
         <section id="view-sources" class="page">
           <div class="page-heading">
             <p>Sources</p>
-            <h1>D'où viennent les données et comment elles sont traitées</h1>
+            <h1>Sources, couverture et méthode de validation</h1>
           </div>
 
           <div class="sources-layout">
             <article class="panel source-intro">
               <h2>Principe général</h2>
               <p>
-                L'application consolide des annonces publiques de fermetures, fusions ou transferts
-                d'agences bancaires. Les sources qui nomment précisément une agence alimentent la
-                carte; les sources moins précises sont conservées comme signaux de vigilance.
+                L'application croise la presse locale, des agrégateurs d'actualités, des archives
+                du web et des sources officielles pour retrouver les fermetures, fusions,
+                transferts ou transformations d'agences bancaires. Un article ne crée un point
+                sur la carte que si l'agence ou la commune peut être identifiée et contrôlée.
               </p>
               <p>
                 Les données affichées viennent de l'export local <strong>data/export/data.json</strong>,
-                généré par le pipeline Python du projet. Les chiffres nationaux non nominatifs sont
-                indiqués à part et ne créent pas de points sur la carte.
+                régénéré par le pipeline Python. Les annonces nationales sans liste nominative,
+                les fermetures temporaires et les localisations ambiguës restent en vigilance:
+                elles ne sont pas comptées comme fermetures cartographiées.
               </p>
             </article>
 
             <article class="panel">
-              <h2>Sources exploitées</h2>
+              <h2>Canaux de détection</h2>
+              <p class="method-copy">
+                Ces canaux découvrent des articles ou documents candidats. Ils sont complémentaires:
+                une même information peut être retrouvée par plusieurs d'entre eux, puis dédupliquée.
+              </p>
               <div class="source-grid">
                 <div class="source-card">
                   <strong>Google News</strong>
-                  <span>Presse locale et nationale, requêtée par enseigne et mots-clés de fermeture ou fusion.</span>
-                  <small>Actif · Détection presse principale.</small>
+                  <span>Presse locale et nationale interrogée par enseigne, ancienne marque régionale et formulations de fermeture ou fusion.</span>
+                  <small>Actif · Canal presse principal.</small>
                 </div>
                 <div class="source-card">
                   <strong>Flux RSS locaux</strong>
                   <span>Actu.fr, Ouest-France, Ici, La Dépêche et autres flux publics configurés.</span>
-                  <small>Actif · Complément sur les publications récentes.</small>
+                  <small>Actif · Publications récentes.</small>
                 </div>
                 <div class="source-card">
                   <strong>GDELT</strong>
@@ -315,36 +321,97 @@
                   <small>Actif · Best-effort avec limitation de débit.</small>
                 </div>
                 <div class="source-card">
-                  <strong>Localisateur officiel SG</strong>
-                  <span>Fermetures Société Générale vérifiées nominativement quand le localisateur annonce un transfert.</span>
-                  <small>Actif · Source officielle nominative.</small>
+                  <strong>Media Cloud</strong>
+                  <span>Recherche plein texte dans des collections de presse française nationale et locale, puis récupération de l'article chez l'éditeur.</span>
+                  <small>Actif avec clé · Volume plafonné par collecte.</small>
+                </div>
+                <div class="source-card">
+                  <strong>Event Registry / NewsAPI.ai</strong>
+                  <span>Articles francophones issus de médias français, avec corps de texte lorsqu'il est disponible.</span>
+                  <small>Actif avec clé · Quota gratuit protégé.</small>
+                </div>
+                <div class="source-card">
+                  <strong>Common Crawl</strong>
+                  <span>Archives historiques de sites de presse locale, échantillonnées sur les collectes profondes des 24 derniers mois.</span>
+                  <small>Actif sans clé · Rattrapage hebdomadaire.</small>
+                </div>
+                <div class="source-card">
+                  <strong>Documents locaux</strong>
+                  <span>Délibérations, comptes rendus municipaux, publications syndicales et pages locales indexées sur le web.</span>
+                  <small>Actif · Utile pour les projets et transformations.</small>
                 </div>
                 <div class="source-card">
                   <strong>Légifrance / PISTE</strong>
                   <span>Accords, décisions et textes pouvant signaler des réorganisations ou suppressions d'agences.</span>
-                  <small>Actif si identifiants PISTE fournis · Souvent en vigilance.</small>
+                  <small>Actif avec identifiants · Souvent en vigilance.</small>
+                </div>
+                <div class="source-card">
+                  <strong>Recherche web secondaire</strong>
+                  <span>Brave Search et découverte par sitemaps peuvent compléter les articles manquants lors de la revue des vigilances.</span>
+                  <small>Optionnel · Activé selon la configuration.</small>
+                </div>
+              </div>
+            </article>
+
+            <article class="panel">
+              <h2>Sources officielles et contrôles</h2>
+              <p class="method-copy">
+                Ces référentiels consolident une information déjà détectée ou mesurent le réseau.
+                Sauf annonce nominative explicite, ils ne créent pas seuls une fermeture.
+              </p>
+              <div class="source-grid source-grid-controls">
+                <div class="source-card">
+                  <strong>Réseau officiel La Poste</strong>
+                  <span>Synchronisation des bureaux, agences communales et relais. Les changements de nature et disparitions répétées alimentent le contrôle LBP.</span>
+                  <small>Actif · Historique des révisions conservé.</small>
+                </div>
+                <div class="source-card">
+                  <strong>Localisateur officiel SG</strong>
+                  <span>Fermetures Société Générale vérifiées nominativement lorsque la fiche annonce le transfert des activités vers une autre agence.</span>
+                  <small>Actif · Source officielle nominative.</small>
                 </div>
                 <div class="source-card">
                   <strong>OSM / Overpass</strong>
-                  <span>Référentiel libre des agences bancaires existantes, utilisé comme dénominateur par département.</span>
-                  <small>Contrôle · Ne crée jamais une fermeture.</small>
+                  <span>Référentiel libre des agences existantes utilisé comme dénominateur par département.</span>
+                  <small>Contrôle · Ne prédit pas une fermeture.</small>
                 </div>
                 <div class="source-card">
                   <strong>SIRENE</strong>
-                  <span>Contrôle a posteriori du statut administratif quand une agence ou commune est identifiée.</span>
-                  <small>Contrôle · Validation après détection.</small>
+                  <span>Vérification a posteriori du statut administratif lorsqu'une agence ou une commune est identifiée.</span>
+                  <small>Contrôle · Ne déclenche pas une publication.</small>
                 </div>
                 <div class="source-card">
-                  <strong>CSV officiel / ACPR</strong>
-                  <span>Ingestion optionnelle de fichiers CSV déposés dans le cache, par exemple un extrait REGAFI ou ACPR.</span>
-                  <small>Optionnel · Utilisable seulement si le fichier est au bon niveau agence.</small>
+                  <strong>Base Adresse Nationale</strong>
+                  <span>Géocodage de l'adresse ou de la commune, récupération du code INSEE et contrôle du département.</span>
+                  <small>Contrôle · Homonymes bloqués sans preuve.</small>
                 </div>
                 <div class="source-card">
-                  <strong>Presse pro</strong>
-                  <span>Factiva, LexisNexis, Tagaday sont prévus dans le scaffold si des clés API sont disponibles.</span>
-                  <small>Scaffold · Non actif sans connecteur dédié.</small>
+                  <strong>CSV agence nominatif</strong>
+                  <span>Import possible d'un référentiel externe seulement s'il décrit chaque agence. REGAFI et ACPR, limités aux établissements agréés, ne suffisent pas.</span>
+                  <small>Optionnel · Niveau agence obligatoire.</small>
                 </div>
               </div>
+            </article>
+
+            <article class="panel postal-method">
+              <h2>Cas La Banque Postale</h2>
+              <p class="method-copy">
+                Une fermeture LBP est souvent annoncée comme la fermeture d'un bureau de poste.
+                Le pipeline recherche donc d'abord l'événement postal, puis vérifie son impact
+                bancaire avant toute publication.
+              </p>
+              <div class="flow-steps postal-flow" aria-label="Qualification d'une fermeture La Banque Postale">
+                <div><strong>1</strong><span>Détection postale</span><small>Fermeture définitive, disparition ou transformation d'un bureau.</small></div>
+                <div><strong>2</strong><span>Preuve bancaire</span><small>Banque Postale, services financiers, conseiller, retrait ou dépôt d'espèces.</small></div>
+                <div><strong>3</strong><span>Réseau officiel</span><small>Type du point La Poste avant et après le changement.</small></div>
+                <div><strong>4</strong><span>Impact qualifié</span><small>Services supprimés, transfert, agence communale ou relais.</small></div>
+                <div><strong>5</strong><span>Décision</span><small>Publication si le lieu et l'impact sont prouvés, sinon vigilance.</small></div>
+              </div>
+              <ul class="source-notes">
+                <li>Une fermeture temporaire pour travaux, sinistre, sécurité ou manque ponctuel de personnel est rejetée.</li>
+                <li>La transformation en agence postale communale ou relais exige un indice bancaire explicite pour être comptée comme fermeture LBP.</li>
+                <li>Le rattrapage hebdomadaire recherche les événements des 24 derniers mois, mois par mois et département par département.</li>
+              </ul>
             </article>
 
             <article class="panel">
@@ -392,22 +459,24 @@
             <article class="panel flow-panel">
               <h2>Schéma de traitement</h2>
               <div class="flow-steps" aria-label="Pipeline de données">
-                <div><strong>1</strong><span>Collecte</span><small>Articles, RSS, sources officielles, localisateur SG.</small></div>
-                <div><strong>2</strong><span>Préfiltre</span><small>Suppression des articles hors sujet et URLs déjà vues.</small></div>
-                <div><strong>3</strong><span>Structuration</span><small>Banque, commune, type, statut, dates, citation et fiabilité.</small></div>
-                <div><strong>4</strong><span>Géocodage</span><small>Coordonnées, code INSEE et département quand l'agence est localisée.</small></div>
-                <div><strong>5</strong><span>Contrôles</span><small>SIRENE, sources attachées, signaux de vigilance.</small></div>
+                <div><strong>1</strong><span>Collecte</span><small>Presse, RSS, agrégateurs, archives web et sources officielles.</small></div>
+                <div><strong>2</strong><span>Préfiltre</span><small>Élimination des hors-sujet, doublons et articles hors fenêtre.</small></div>
+                <div><strong>3</strong><span>Structuration</span><small>Extraction OpenAI de la banque, du lieu, du statut, des dates et de la citation.</small></div>
+                <div><strong>4</strong><span>Géocodage</span><small>Adresse, commune, code INSEE et département via la Base Adresse Nationale.</small></div>
+                <div><strong>5</strong><span>Garde-fous</span><small>Comparaison article-sortie, homonymes, dates, négations et fermetures temporaires.</small></div>
                 <div><strong>6</strong><span>Export</span><small>JSON front, carte, fiches agence, tableaux et fichier Excel.</small></div>
               </div>
             </article>
 
             <article class="panel">
-              <h2>Limites assumées</h2>
+              <h2>Garde-fous et limites</h2>
               <ul class="source-notes">
                 <li>Une annonce nationale sans liste nominative ne crée pas de point sur la carte.</li>
-                <li>Les articles ambigus ou trop génériques restent en vigilance plutôt qu'en fermeture confirmée.</li>
-                <li>OSM, SIRENE et les fichiers officiels importés servent au contrôle ou au dénombrement, pas à prédire une fermeture.</li>
-                <li>La fiabilité reflète la qualité des sources et la précision de l'agence identifiée.</li>
+                <li>La commune extraite doit apparaître dans le titre, le texte ou les cibles explicites de la recherche.</li>
+                <li>Le département de la source doit être compatible avec celui du géocodage; une commune homonyme sans département vérifiable est rejetée.</li>
+                <li>Une source qui nie ou annule la fermeture ne peut pas produire de marqueur.</li>
+                <li>Les articles ambigus, trop génériques, inaccessibles ou sans date exploitable restent en vigilance.</li>
+                <li>La couverture dépend de l'indexation des médias, de leurs accès et des quotas gratuits; elle ne constitue pas un recensement administratif exhaustif.</li>
               </ul>
             </article>
           </div>
