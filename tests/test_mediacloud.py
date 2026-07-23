@@ -48,6 +48,8 @@ def test_collect_pages_et_normalise():
     assert "language:fr" in client.calls[0][0]
     assert client.calls[0][1]["start_date"] == date(2025, 1, 1)
     assert client.calls[0][1]["end_date"] == date(2026, 1, 1)
+    assert client.calls[0][1]["collection_ids"] == [34412146, 38379799]
+    assert client.calls[0][1]["page_size"] == 10
     assert client.calls[1][1]["pagination_token"] == "next-page"
 
 

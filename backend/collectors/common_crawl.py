@@ -5,6 +5,7 @@ import html as html_module
 import json
 import math
 import re
+import time
 from datetime import date, datetime
 from io import BytesIO
 from urllib.parse import urlparse
@@ -23,6 +24,7 @@ _COLLINFO_URL = "https://index.commoncrawl.org/collinfo.json"
 _INDEX_BASE = "https://index.commoncrawl.org"
 _DATA_BASE = "https://data.commoncrawl.org"
 _TITLE_RE = re.compile(r"<title[^>]*>(.*?)</title>", re.IGNORECASE | re.DOTALL)
+_LAST_INDEX_REQUEST_AT = 0.0
 
 
 def is_deep_run(since_date: str | None, today: date | None = None) -> bool:
@@ -105,25 +107,51 @@ def _default_collinfo_fetch() -> list[dict]:
 
 
 def _default_index_fetch(index_id: str, domain: str, limit: int) -> list[dict]:
-    response = requests.get(
-        f"{_INDEX_BASE}/{index_id}-index",
-        params={
-            "url": f"{domain}/*",
-            "output": "json",
-            "filter": [
-                "=status:200",
-                "=mime:text/html",
-                f"~url:{COMMON_CRAWL_CLOSURE_URL_FILTER}",
-                f"~url:{COMMON_CRAWL_BANK_URL_FILTER}",
-            ],
-            "collapse": "urlkey",
-            "limit": str(limit),
-        },
-        timeout=config.COMMON_CRAWL_TIMEOUT,
-        headers={"User-Agent": "veille-presse/1.0"},
-    )
-    if response.status_code == 404:
-        return []
+    global _LAST_INDEX_REQUEST_AT
+    params = {
+        "url": f"{domain}/*",
+        "output": "json",
+        "filter": [
+            "=status:200",
+            "=mime:text/html",
+            f"~url:{COMMON_CRAWL_CLOSURE_URL_FILTER}",
+            f"~url:{COMMON_CRAWL_BANK_URL_FILTER}",
+        ],
+        "collapse": "urlkey",
+        "limit": str(limit),
+    }
+    response = None
+    for attempt in range(max(0, config.COMMON_CRAWL_RETRIES) + 1):
+        elapsed = time.monotonic() - _LAST_INDEX_REQUEST_AT
+        delay = max(0.0, config.COMMON_CRAWL_THROTTLE_SECONDS - elapsed)
+        if delay:
+            time.sleep(delay)
+        response = requests.get(
+            f"{_INDEX_BASE}/{index_id}-index",
+            params=params,
+            timeout=config.COMMON_CRAWL_TIMEOUT,
+            headers={"User-Agent": "veille-presse/1.0"},
+        )
+        _LAST_INDEX_REQUEST_AT = time.monotonic()
+        if response.status_code == 404:
+            return []
+        if response.status_code not in {429, 500, 502, 503, 504}:
+            break
+        if attempt < max(0, config.COMMON_CRAWL_RETRIES):
+            retry_after = response.headers.get("Retry-After")
+            try:
+                pause = float(retry_after) if retry_after else 0.0
+            except ValueError:
+                pause = 0.0
+            pause = max(
+                pause,
+                config.COMMON_CRAWL_RETRY_BASE_SECONDS * (2 ** attempt),
+            )
+            print(
+                f"[common_crawl] HTTP {response.status_code}, "
+                f"nouvelle tentative dans {pause:.0f}s"
+            )
+            time.sleep(pause)
     response.raise_for_status()
     records = []
     for line in response.text.splitlines():
@@ -244,6 +272,8 @@ def collect(
     per_index = max(1, math.ceil(record_limit / len(indexes)))
     candidates: list[dict] = []
     seen_candidates: set[str] = set()
+    consecutive_errors = 0
+    abort_indexes = False
     for domain in selected_domains:
         domain_records = 0
         for index_id in indexes:
@@ -251,7 +281,16 @@ def collect(
                 records = index_fetch(index_id, domain, per_index)
             except Exception as exc:
                 print(f"[common_crawl] index {index_id}/{domain} en erreur: {exc}")
+                consecutive_errors += 1
+                if (
+                    consecutive_errors
+                    >= max(1, config.COMMON_CRAWL_MAX_CONSECUTIVE_ERRORS)
+                ):
+                    print("[common_crawl] service indisponible, arrêt du backfill")
+                    abort_indexes = True
+                    break
                 continue
+            consecutive_errors = 0
             for record in records:
                 url = (record.get("url") or "").strip()
                 if not url or url in seen_candidates:
@@ -263,6 +302,8 @@ def collect(
                     break
             if domain_records >= record_limit:
                 break
+        if abort_indexes:
+            break
 
     articles: list[dict] = []
     for record in candidates:

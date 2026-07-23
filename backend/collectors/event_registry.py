@@ -54,18 +54,19 @@ def _request_payload(
     count: int,
 ) -> dict:
     query = event_registry_query()
-    query["$query"]["$and"].insert(0, {
-        "dateStart": since_date,
-        "dateEnd": end_date,
+    conditions = query["$query"]["$and"]
+    conditions.insert(0, {
+        "sourceLocationUri": config.EVENT_REGISTRY_SOURCE_LOCATION_URI,
     })
+    conditions.insert(0, {"lang": "fra"})
+    conditions.insert(0, {"dateStart": since_date, "dateEnd": end_date})
+    query["$filter"] = {
+        "dataType": ["news", "blog"],
+        "isDuplicate": "skipDuplicates",
+    }
     return {
         "action": "getArticles",
         "query": query,
-        "dateStart": since_date,
-        "dateEnd": end_date,
-        "lang": "fra",
-        "dataType": ["news", "blog"],
-        "isDuplicateFilter": "skipDuplicates",
         "articlesPage": page,
         "articlesCount": count,
         "articlesSortBy": "date",

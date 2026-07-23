@@ -69,6 +69,7 @@ jobs:
       MEDIACLOUD_API_KEY: ${{ secrets.MEDIACLOUD_API_KEY }}
       MEDIACLOUD_MAX_PAGES: ${{ vars.MEDIACLOUD_MAX_PAGES || '2' }}
       MEDIACLOUD_MAX_ARTICLES: ${{ vars.MEDIACLOUD_MAX_ARTICLES || '200' }}
+      MEDIACLOUD_COLLECTION_IDS: ${{ vars.MEDIACLOUD_COLLECTION_IDS || '34412146,38379799' }}
       EVENT_REGISTRY_ENABLED: ${{ vars.EVENT_REGISTRY_ENABLED || '1' }}
       EVENT_REGISTRY_API_KEY: ${{ secrets.EVENT_REGISTRY_API_KEY }}
       EVENT_REGISTRY_MAX_PAGES: ${{ vars.EVENT_REGISTRY_MAX_PAGES || '1' }}
@@ -79,6 +80,9 @@ jobs:
       COMMON_CRAWL_MAX_INDEXES: ${{ vars.COMMON_CRAWL_MAX_INDEXES || '4' }}
       COMMON_CRAWL_RECORDS_PER_DOMAIN: ${{ vars.COMMON_CRAWL_RECORDS_PER_DOMAIN || '12' }}
       COMMON_CRAWL_MAX_ARTICLES: ${{ vars.COMMON_CRAWL_MAX_ARTICLES || '40' }}
+      COMMON_CRAWL_THROTTLE_SECONDS: ${{ vars.COMMON_CRAWL_THROTTLE_SECONDS || '2' }}
+      COMMON_CRAWL_RETRIES: ${{ vars.COMMON_CRAWL_RETRIES || '1' }}
+      COMMON_CRAWL_MAX_CONSECUTIVE_ERRORS: ${{ vars.COMMON_CRAWL_MAX_CONSECUTIVE_ERRORS || '4' }}
       LOCAL_SITEMAP_DOMAINS: ${{ vars.LOCAL_SITEMAP_DOMAINS || 'moneyvox.fr,lanouvellerepublique.fr,ici.fr,francebleu.fr,ouest-france.fr,dna.fr,info-chalon.com,deltafm.fr,bienpublic.com,actu.fr,estrepublicain.fr,politique.pappers.fr,cgt-fapt.fr,sudptt.org' }}
 
     steps:
