@@ -23,8 +23,9 @@ from backend import (
 from backend.pipeline import run_pipeline, ingest_closures, ingest_postal_vigilance_backlog
 from backend.extractor import extract, extract_structured
 from backend.collectors import (
-    google_news, gdelt, legifrance, local_feeds, official, sg_locator,
-    web_search, postal_web, postal_history, laposte_open_data,
+    common_crawl, event_registry, google_news, gdelt, legifrance, local_feeds,
+    mediacloud, official, sg_locator, web_search, postal_web, postal_history,
+    laposte_open_data,
 )
 from backend import drilldown, vigilance_review, seed
 from backend.fulltext import fetch_text
@@ -163,11 +164,23 @@ def main(since_date: str | None = None):
     except Exception as _drill_exc:
         print(f"[drilldown] scan échoué, passage sans drill-down : {_drill_exc}")
 
+    def collect_mediacloud():
+        return mediacloud.collect(since_date=since_date)
+
+    def collect_event_registry():
+        return event_registry.collect(since_date=since_date)
+
+    def collect_common_crawl():
+        return common_crawl.collect(since_date=since_date)
+
     collectors = [
         google_news.collect,
         local_feeds.collect,
+        collect_mediacloud,
+        collect_event_registry,
         postal_web.collect,
         postal_history.collect,
+        collect_common_crawl,
         gdelt.collect,
         official.collect,
         legifrance.collect,

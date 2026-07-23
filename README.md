@@ -156,6 +156,20 @@ UTC. Il peut aussi être lancé manuellement avec une date `since` ou une fenêt
   configurables dans `config.LOCAL_RSS_FEEDS`.
 - **GDELT** — agrégateur ; rate-limité à 1 requête / 5 s (le collecteur respecte
   la limite et applique un backoff). Best-effort.
+- **Media Cloud** — recherche plein texte dans une vaste archive de presse en
+  ligne. Le collecteur récupère les métadonnées et URLs, puis la pipeline tente
+  l'enrichissement chez l'éditeur. Nécessite une clé gratuite
+  `MEDIACLOUD_API_KEY`; pagination et volume sont plafonnés par run.
+- **Event Registry / NewsAPI.ai** — complément optionnel capable de fournir le
+  corps des articles. La clé `EVENT_REGISTRY_API_KEY` active le collecteur, qui
+  s'arrête proprement lorsque les crédits gratuits d'essai sont épuisés. Une
+  seule page est demandée par défaut pour préserver ces crédits.
+- **Common Crawl** — backfill gratuit sans clé sur les archives du web. Il ne
+  tourne que pour une fenêtre profonde (700 jours par défaut), répartit ses
+  recherches sur plusieurs crawls des 24 derniers mois et fait tourner chaque
+  semaine un lot de domaines PQR. Les captures sont téléchargées par plages
+  d'octets WARC, extraites localement, puis soumises au même préfiltre et aux
+  mêmes garde-fous que les autres articles.
 - **Légifrance / PISTE** — collecteur d'accords et décisions pouvant mentionner
   des PSE, restructurations ou suppressions d'agences. Il nécessite
   `LEGIFRANCE_CLIENT_ID` et `LEGIFRANCE_CLIENT_SECRET`; sans ces variables, le
@@ -285,5 +299,15 @@ Variables d'environnement optionnelles :
   Les quotas PISTE fournis indiquent notamment `2` messages/seconde pour
   `searchUsingPOST`; `0.6` seconde entre deux requêtes reste volontairement
   sous cette limite.
+- `MEDIACLOUD_API_KEY` active Media Cloud. `MEDIACLOUD_MAX_PAGES` (défaut `2`)
+  et `MEDIACLOUD_MAX_ARTICLES` (défaut `200`) protègent le quota hebdomadaire.
+- `EVENT_REGISTRY_API_KEY` active Event Registry. L'offre gratuite étant un
+  crédit d'essai fini, `EVENT_REGISTRY_MAX_PAGES=1` limite la consommation et
+  une erreur de quota désactive seulement ce collecteur pour le run courant.
+- `COMMON_CRAWL_ENABLED=1` active le backfill sans clé. Il est réservé aux runs
+  d'au moins `COMMON_CRAWL_MIN_DAYS=700`; les limites par défaut sont quatre
+  domaines, quatre index historiques, douze captures par domaine et quarante
+  articles pertinents. `COMMON_CRAWL_DOMAINS` accepte une liste séparée par des
+  virgules pour ajuster le corpus de presse locale.
 - `FACTIVA_API_KEY`, `LEXISNEXIS_API_KEY`, `TAGADAY_API_KEY` réservées au scaffold
   presse pro, sans appel réel à ce stade.
