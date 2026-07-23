@@ -744,6 +744,18 @@ a { color: #0b63f6; text-decoration: none; font-weight: 700; }
   font-weight: 800;
 }
 
+.source-grid-controls .source-card {
+  background: #f8fbff;
+}
+
+.postal-method {
+  border-top: 3px solid #facc15;
+}
+
+.postal-flow {
+  grid-template-columns: repeat(5, minmax(145px, 1fr));
+}
+
 .method-copy {
   max-width: 920px;
   margin: 12px 0 0;
@@ -1712,6 +1724,7 @@ td span {
   .reliability-grid div:nth-child(2n) { border-right: 0; }
   .reliability-grid div:last-child { border-bottom: 0; }
   .flow-steps { grid-template-columns: repeat(2, minmax(180px, 1fr)); }
+  .postal-flow { grid-template-columns: repeat(2, minmax(180px, 1fr)); }
   .flow-steps div:nth-child(2n) { border-right: 0; }
   .settings-grid { grid-template-columns: 1fr; }
 }
