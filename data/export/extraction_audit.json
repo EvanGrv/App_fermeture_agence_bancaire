@@ -292,16 +292,6 @@
   {
     "severity": "warning",
     "type": "date_fermeture_absente",
-    "id": "2d69cbac467754a6",
-    "banque": "La Banque Postale",
-    "commune": "Saint-André-des-Eaux",
-    "departement": "44",
-    "code_insee": "44151",
-    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
-  },
-  {
-    "severity": "warning",
-    "type": "date_fermeture_absente",
     "id": "ab8fd723d588ddc8",
     "banque": "La Banque Postale",
     "commune": "Saint-Étienne",
@@ -357,16 +347,6 @@
     "commune": "Annecy",
     "departement": "74",
     "code_insee": "74010",
-    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
-  },
-  {
-    "severity": "warning",
-    "type": "date_fermeture_absente",
-    "id": "dc2cd3b80e6485f9",
-    "banque": "La Banque Postale",
-    "commune": "Bagneux",
-    "departement": "92",
-    "code_insee": "92007",
     "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
   },
   {
@@ -427,16 +407,6 @@
     "commune": "Gardanne",
     "departement": "13",
     "code_insee": "13041",
-    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
-  },
-  {
-    "severity": "warning",
-    "type": "date_fermeture_absente",
-    "id": "77e07df577220422",
-    "banque": "La Banque Postale",
-    "commune": "Villepinte",
-    "departement": "93",
-    "code_insee": "93078",
     "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
   },
   {

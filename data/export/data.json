@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23T09:59:40.390843+00:00",
+  "generated_at": "2026-07-24T06:20:37.107336+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -338,8 +338,8 @@
       "count": 3,
       "total_agences": 186,
       "precise_count": 3,
-      "unlocated_count": 3,
-      "estimated_count": 6
+      "unlocated_count": 4,
+      "estimated_count": 7
     },
     "36": {
       "nom": "Indre",
@@ -416,10 +416,10 @@
     "44": {
       "nom": "Loire-Atlantique",
       "region": "Pays de la Loire",
-      "count": 5,
+      "count": 3,
       "total_agences": 175,
-      "precise_count": 5,
-      "unlocated_count": 3,
+      "precise_count": 3,
+      "unlocated_count": 5,
       "estimated_count": 8
     },
     "45": {
@@ -650,11 +650,11 @@
     "70": {
       "nom": "Haute-Saône",
       "region": "Bourgogne-Franche-Comté",
-      "count": 4,
+      "count": 5,
       "total_agences": 36,
-      "precise_count": 4,
+      "precise_count": 5,
       "unlocated_count": 2,
-      "estimated_count": 6
+      "estimated_count": 7
     },
     "71": {
       "nom": "Saône-et-Loire",
@@ -848,19 +848,19 @@
     "92": {
       "nom": "Hauts-de-Seine",
       "region": "Île-de-France",
-      "count": 2,
+      "count": 0,
       "total_agences": 134,
-      "precise_count": 2,
-      "unlocated_count": 3,
+      "precise_count": 0,
+      "unlocated_count": 5,
       "estimated_count": 5
     },
     "93": {
       "nom": "Seine-Saint-Denis",
       "region": "Île-de-France",
-      "count": 1,
+      "count": 0,
       "total_agences": 139,
-      "precise_count": 1,
-      "unlocated_count": 1,
+      "precise_count": 0,
+      "unlocated_count": 2,
       "estimated_count": 2
     },
     "94": {
@@ -914,8 +914,8 @@
       "count": 0,
       "total_agences": 106,
       "precise_count": 0,
-      "unlocated_count": 3,
-      "estimated_count": 3
+      "unlocated_count": 4,
+      "estimated_count": 4
     },
     "976": {
       "nom": "Mayotte",
@@ -1364,9 +1364,9 @@
     "70": {
       "departement": "70",
       "nom": "Haute-Saône",
-      "precise_count": 4,
+      "precise_count": 5,
       "unlocated_count": 2,
-      "estimated_count": 6,
+      "estimated_count": 7,
       "department_signal_count": 0,
       "signals": [
         {
@@ -1855,11 +1855,23 @@
     "44": {
       "departement": "44",
       "nom": "Loire-Atlantique",
-      "precise_count": 5,
-      "unlocated_count": 3,
+      "precise_count": 3,
+      "unlocated_count": 5,
       "estimated_count": 8,
       "department_signal_count": 0,
       "signals": [
+        {
+          "id": "58ae5863254c7532",
+          "banque": "La Banque Postale",
+          "commune": "Saint-André-des-Eaux",
+          "departement": "44",
+          "titre": "Le bureau de poste de Saint-André-des-Eaux fermera définitivement ses portes à la fin de l’été - Ouest-France",
+          "source": "Google News",
+          "url": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxOR3NiZG1sOHlBTzl6ZnpMRXc5UWZKaUVsWHhMRUNwYXNGWEV1NTFNNy1JTTgzNG9XdU1PZFJmZWJaLUpGNFJnRk1RU0ZZdUNvZnY5TVhDNEFPcUVCcmF1a2JnQ05uTW5nYU5zMkg4eGFLLThHOVdqRFRHT0c3OXpNcFRZVjg1ZDA2WUdleV9Jc1RVbnlCR283UV9OUkQ4cEdET1paMjRfVmJVWDl4V1ZBYXgtUDVtaGk0d3lQeXdLT3JYUVAyYkRnVGYxZDU5dlBuUnRKbTU5QzJtV216M2tPblN6ZkNvVGdjWDRxUVFyWHE1TllCeVFVYjFMRjlLRjlBTFpMTU1qejRLdnRHNk03OENmWmhIVzl6b3JmeXNrdjBYWTRoLWxKSldB?oc=5",
+          "score": 3,
+          "precision": "commune_non_geocodee",
+          "reason": "garde entrée/sortie: commune homonyme sans département vérifiable dans la source"
+        },
         {
           "id": "1c01c4c3349ba027",
           "banque": "La Banque Postale",
@@ -1883,6 +1895,18 @@
           "score": 3,
           "precision": "commune_non_geocodee",
           "reason": "garde entrée/sortie: fermeture postale temporaire ou circonstancielle"
+        },
+        {
+          "id": "309b4ccdc7d0e82d",
+          "banque": "La Banque Postale",
+          "commune": "Saint-Nazaire",
+          "departement": "44",
+          "titre": "À Saint-Nazaire, le bureau de poste du quartier de Saint-Marc-sur-Mer fermera le 23 août - Ouest-France",
+          "source": "Google News",
+          "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxPVDFiSGxGY0EyUW1yXzJ6VHBubnJ4ZTVJczRqamRJUml3VFg2WVpPV2Y2Ry1lbGRWWGVIZGQ1bVVhZHMwaVprNGZzMXhYb0QwQXZVWjhxczFSRVNGby1QNlVPRUtPanZiVjM0NGxWMGpXQUUyMkRyUHR5WmpndjhqMUNlVkpEOGRPcUw3ellCTzI0blQxSmdjaFZnX2RVQmdkcnBMM1p0OHFWNzJ1VUxHVFdnQnpOT1lyWFRfMjZsQTlOMnhvdU5GT2oybko5WmhidlpkMnU4ZjJwWXdEb1NNZl9YbWdzN0NFamtGLUFuVVVuNTJfM1NMNVNCSGRyYzdjNmZwZ25FYWxSa1ZQRG9lQWQzenlBQkU?oc=5",
+          "score": 3,
+          "precision": "commune_non_geocodee",
+          "reason": "garde entrée/sortie: commune homonyme sans département vérifiable dans la source"
         },
         {
           "id": "caab3721792890f3",
@@ -1924,8 +1948,8 @@
       "departement": "35",
       "nom": "Ille-et-Vilaine",
       "precise_count": 3,
-      "unlocated_count": 3,
-      "estimated_count": 6,
+      "unlocated_count": 4,
+      "estimated_count": 7,
       "department_signal_count": 0,
       "signals": [
         {
@@ -1963,6 +1987,18 @@
           "score": 3,
           "precision": "commune_non_geocodee",
           "reason": "garde entrée/sortie: fermeture postale temporaire ou circonstancielle"
+        },
+        {
+          "id": "d5dbc2b4831c8d13",
+          "banque": "La Banque Postale",
+          "commune": "Saint-Marc-le-Blanc",
+          "departement": "35",
+          "titre": "La mobilisation des habitants a été vaine, le bureau de poste du quartier Saint-Marc, à Saint-Nazaire, ferme ses portes - ici.fr",
+          "source": "Google News",
+          "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPUURYWnhxbG9QcEpCeUhrenRXNUxyczg2d3pEalpROS1aRlFGa3BjMjloSnFibzVJdEFxYV9fQzE3Zkdyc2hHODExLXZJM19yQkp6UFNLcTZxaHdWWW85aXBoa01zMGNxMDNibUZzb1JMc2J2bDAwZGRrdUlRcElVOERaMjRJUC13dl9MMG5XbUZXNkNwWl9RSFRCZWlmVTBBUVRPYmYtaURQMG9CTkVfeVF5Zm9PTjVHS2tITlBnR3dnd0ZKZVhaUWNyTHNBSVhwSmFuZjF4Yy04d0JtMjJPS2hzNGVwMllLMW9MMGhlcjJQM3c5WWlMag?oc=5",
+          "score": 3,
+          "precision": "commune_non_geocodee",
+          "reason": "hors fenêtre temporelle"
         }
       ]
     },
@@ -2351,52 +2387,6 @@
         }
       ]
     },
-    "92": {
-      "departement": "92",
-      "nom": "Hauts-de-Seine",
-      "precise_count": 2,
-      "unlocated_count": 3,
-      "estimated_count": 5,
-      "department_signal_count": 0,
-      "signals": [
-        {
-          "id": "0604ab02234f6788",
-          "banque": "La Banque Postale",
-          "commune": "Bagneux",
-          "departement": "92",
-          "titre": "Bagneux. « Touche pas à ma Poste ! » : Le cri d’alarme d’un collectif d’habitants contre la fermeture du bureau de poste - Saumur Kiosque",
-          "source": "Google News",
-          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQUWtVSzNMUVdWdTlRQ2U1WVItLVZwa2JXN3p4UGhFR3U4VkszSnJEM0JSeGw1UXdOM09sdElSNjB3NXBCNGc1MGlmVmhiVElyNFdpRzR3ZDhkWTNnZ1M2WFBENmRJMkZta3RWN3RobkMzOVN4MklTLXJNSFlKUXdIcHNnZ1ltMVdyUlVrc2dqSm9nQUVuQlc0c2hOWnFKdkY0TkEtVDhOZGg0REhlU3pyQThNVGEzYkV4c0FHd1V3N2k0Q1I1QWJ5bjhvRnpwQ1BC?oc=5",
-          "score": 3,
-          "precision": "commune_non_geocodee",
-          "reason": "hors fenêtre temporelle"
-        },
-        {
-          "id": "b25190bef22f1ce4",
-          "banque": "La Banque Postale",
-          "commune": "Châtillon",
-          "departement": "92",
-          "titre": "Pourquoi le bureau de poste des Châtillons à Reims ferme définitivement le 28 septembre - L'Union",
-          "source": "Google News",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPMUtuY3Q5NlMzMmgtdW5TTG5LdUpGYUF5SU4wSmYyS2xteDgwOVAxVkx5VmFaNXJwWXhtUDUydVdiSGhXaURhSGdIblU4UndiVlFTZ0Y4eEVnaGhsSjZTX0htWmF6TTdiZS1qTFBGeURSQV9ZWWdxN3dWT1hyeTBZWDNEVlRYMG13Zll5bHlOclBZSGpRZ3FkaTZ6U0NXV09wSzR0WmYwb3JoMWM?oc=5",
-          "score": 3,
-          "precision": "commune_non_geocodee",
-          "reason": "garde entrée/sortie: commune/localisation de sortie absente de la source"
-        },
-        {
-          "id": "7ad09cd7542c8b71",
-          "banque": "La Banque Postale",
-          "commune": "Bagneux",
-          "departement": "92",
-          "titre": "À Bagneux, la fermeture du bureau de poste devient une réalité malgré la mobilisation des habitants - Angers Info",
-          "source": "Google News",
-          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOVVdPdUJmUTR6cURzVklrb2I1Zi10cFotM2NvTV90cUliNUNPQ3Jxd3RESDlxRzAtMTFGWFIzLWVPNFhJZ08xelRMem9XOGN4ZVFKdkNoWjVHOWRpVVpTS3JqMlhsMnpnWTVyMXEwRmdMNmdkNUFtM1VoX2FIVk5CZDJncGlvSWZ6dHhaTHdxYUhBQXRUT0dlazdESkRzVzUxNFJZaEJLejJxMDRoWF9ESWJSOE0xdDgwNE84X1AxdGVJWk5LZDNkdEczVjFSMDjSAdQBQVVfeXFMT2JPZmdVemlQM1R5NWVITmQtQU9BQWNzQlNtdE9iUGNkZ3BEb1E2QUVud1VEUGJGR1VVdzZqUktiNF9ac1dJYTRsRUFqWXNMWEgzSHhYZUVVcWtkdVJKdkY3bzZrSXZpVWdlQXNsT1pZaVN3Ul9yZU5xbTl2V0VmLUY0UHAxeE5HOXhBZURlZWdKNU5iT1hCakVQZTJfVmtnbGRsMkhCMXNpUFZXSF9BY21wVFJ4Qm1wdTBYTEFkbzFGTHloVVMtOXhSaXE5WkxnX0VBc3M?oc=5",
-          "score": 3,
-          "precision": "commune_non_geocodee",
-          "reason": "hors fenêtre temporelle"
-        }
-      ]
-    },
     "33": {
       "departement": "33",
       "nom": "Gironde",
@@ -2558,28 +2548,6 @@
           "score": 3,
           "precision": "commune_non_geocodee",
           "reason": "garde entrée/sortie: commune/localisation de sortie absente de la source"
-        }
-      ]
-    },
-    "93": {
-      "departement": "93",
-      "nom": "Seine-Saint-Denis",
-      "precise_count": 1,
-      "unlocated_count": 1,
-      "estimated_count": 2,
-      "department_signal_count": 0,
-      "signals": [
-        {
-          "id": "77ea26ffe5d361e9",
-          "banque": "La Banque Postale",
-          "commune": "Villepinte",
-          "departement": "93",
-          "titre": "Villepinte. La CGT FAPT s’oppose à la fermeture du bureau de poste - ladepeche.fr",
-          "source": "Google News",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPVmlMd2tRcHJmWjlCNHg4VVJOR0s5VTEyelZld2w0ME03YzFiVnNTc3hGRS1uU0NTWVcxbFVNb3dySzg1bTRFNk9BbGdPLWlsd3JvU3prU0paWlZCYmJjd1ZnanpFQ0t3UjlteURDc0ROOEZ6dmNmRzc1ZWxaUTN4Qk5PS1dUbFRsR2gwaWwwVndJQVF5T1pzX3FKNTVIeDg4Y1dpdg?oc=5",
-          "score": 3,
-          "precision": "commune_non_geocodee",
-          "reason": "hors fenêtre temporelle"
         }
       ]
     },
@@ -2895,12 +2863,82 @@
         }
       ]
     },
+    "92": {
+      "departement": "92",
+      "nom": "Hauts-de-Seine",
+      "precise_count": 0,
+      "unlocated_count": 5,
+      "estimated_count": 5,
+      "department_signal_count": 0,
+      "signals": [
+        {
+          "id": "0604ab02234f6788",
+          "banque": "La Banque Postale",
+          "commune": "Bagneux",
+          "departement": "92",
+          "titre": "Bagneux. « Touche pas à ma Poste ! » : Le cri d’alarme d’un collectif d’habitants contre la fermeture du bureau de poste - Saumur Kiosque",
+          "source": "Google News",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQUWtVSzNMUVdWdTlRQ2U1WVItLVZwa2JXN3p4UGhFR3U4VkszSnJEM0JSeGw1UXdOM09sdElSNjB3NXBCNGc1MGlmVmhiVElyNFdpRzR3ZDhkWTNnZ1M2WFBENmRJMkZta3RWN3RobkMzOVN4MklTLXJNSFlKUXdIcHNnZ1ltMVdyUlVrc2dqSm9nQUVuQlc0c2hOWnFKdkY0TkEtVDhOZGg0REhlU3pyQThNVGEzYkV4c0FHd1V3N2k0Q1I1QWJ5bjhvRnpwQ1BC?oc=5",
+          "score": 3,
+          "precision": "commune_non_geocodee",
+          "reason": "hors fenêtre temporelle"
+        },
+        {
+          "id": "3130e162ef4e8cd6",
+          "banque": "La Banque Postale",
+          "commune": "Bagneux",
+          "departement": "92",
+          "titre": "À Saumur, le baroud d’honneur des syndicats avant la fermeture du bureau de poste de Bagneux - Ouest-France",
+          "source": "Google News",
+          "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxPRjdnU0ctU0ZMNmN3NktIUkx4Wi0tNVJncG9JSzREbFVPS1kwLVJydDZWWi1SUTRsdVVmOXFzUXFmSE1kUGpBZER1enhIUVdzZTlLQjdteWFQT1NQM0YwR3lHeWdwQ0pqVGNadklkckNSSFNHdm5Uc2xZVlMzUjIxclFpbjkxbDd6UVA5eEY2Zk5lX01Ubk1ZSDZxVW16MlZIaTRRNEdxV3FwV2hiQzU3QmJkbjQ1SDdXbmVuelc3ZGE5SHVlQkx3TDZqMU8yRHVvZVZMdl9Ub29waXN1WWVfbDJ0X2FEYzItYTlMREdpc0lnVDhWdFZtN0NVNEl6VHpSckFLOHNZbGdXS1hpMHBQRllEbw?oc=5",
+          "score": 3,
+          "precision": "commune_non_geocodee",
+          "reason": "garde entrée/sortie: commune homonyme sans département vérifiable dans la source"
+        },
+        {
+          "id": "b25190bef22f1ce4",
+          "banque": "La Banque Postale",
+          "commune": "Châtillon",
+          "departement": "92",
+          "titre": "Pourquoi le bureau de poste des Châtillons à Reims ferme définitivement le 28 septembre - L'Union",
+          "source": "Google News",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPMUtuY3Q5NlMzMmgtdW5TTG5LdUpGYUF5SU4wSmYyS2xteDgwOVAxVkx5VmFaNXJwWXhtUDUydVdiSGhXaURhSGdIblU4UndiVlFTZ0Y4eEVnaGhsSjZTX0htWmF6TTdiZS1qTFBGeURSQV9ZWWdxN3dWT1hyeTBZWDNEVlRYMG13Zll5bHlOclBZSGpRZ3FkaTZ6U0NXV09wSzR0WmYwb3JoMWM?oc=5",
+          "score": 3,
+          "precision": "commune_non_geocodee",
+          "reason": "garde entrée/sortie: commune/localisation de sortie absente de la source"
+        },
+        {
+          "id": "7ad09cd7542c8b71",
+          "banque": "La Banque Postale",
+          "commune": "Bagneux",
+          "departement": "92",
+          "titre": "À Bagneux, la fermeture du bureau de poste devient une réalité malgré la mobilisation des habitants - Angers Info",
+          "source": "Google News",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOVVdPdUJmUTR6cURzVklrb2I1Zi10cFotM2NvTV90cUliNUNPQ3Jxd3RESDlxRzAtMTFGWFIzLWVPNFhJZ08xelRMem9XOGN4ZVFKdkNoWjVHOWRpVVpTS3JqMlhsMnpnWTVyMXEwRmdMNmdkNUFtM1VoX2FIVk5CZDJncGlvSWZ6dHhaTHdxYUhBQXRUT0dlazdESkRzVzUxNFJZaEJLejJxMDRoWF9ESWJSOE0xdDgwNE84X1AxdGVJWk5LZDNkdEczVjFSMDjSAdQBQVVfeXFMT2JPZmdVemlQM1R5NWVITmQtQU9BQWNzQlNtdE9iUGNkZ3BEb1E2QUVud1VEUGJGR1VVdzZqUktiNF9ac1dJYTRsRUFqWXNMWEgzSHhYZUVVcWtkdVJKdkY3bzZrSXZpVWdlQXNsT1pZaVN3Ul9yZU5xbTl2V0VmLUY0UHAxeE5HOXhBZURlZWdKNU5iT1hCakVQZTJfVmtnbGRsMkhCMXNpUFZXSF9BY21wVFJ4Qm1wdTBYTEFkbzFGTHloVVMtOXhSaXE5WkxnX0VBc3M?oc=5",
+          "score": 3,
+          "precision": "commune_non_geocodee",
+          "reason": "hors fenêtre temporelle"
+        },
+        {
+          "id": "4249c0fb09c12071",
+          "banque": "La Banque Postale",
+          "commune": "Bagneux",
+          "departement": "92",
+          "titre": "Fermeture du bureau de poste à Bagneux : les syndicats reçus par le sous-préfet de Saumur - Ouest-France",
+          "source": "Google News",
+          "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxOaVRrY2RXX1N0UVlHYkFLOHp1dklPaFFOWDNMeEFSdVlkZnhCS2laYURtR25xRzdDRFJsZURLU1hfcklmdVJtU0NBZUQ5QVZFTU9Qbm03ak9TNDNRTnJLWmNZeXFSdVFhT0FKSDllaWFsLXVUT2RBal8yaGhnY2doVUlmSktnT3o1R1JrR0VnMmlHd2x0UWxadURzeFotSVRnc19qbl9lRW5hUFhBNUwwMHJWMUNCNHpjb3lvbUdHVzZnWjFHQ3VkVDR5WlU2VEJxMW1PUDU4T3k5YVFfcjRUV0NfczVuWjNXVldndFo3ZTNnREIydC1mZE9nRzNpWnJtNE5ZcU00RFZKTG01b0NF?oc=5",
+          "score": 2,
+          "precision": "commune_non_geocodee",
+          "reason": "garde entrée/sortie: commune homonyme sans département vérifiable dans la source"
+        }
+      ]
+    },
     "974": {
       "departement": "974",
       "nom": "La Réunion",
       "precise_count": 0,
-      "unlocated_count": 3,
-      "estimated_count": 3,
+      "unlocated_count": 4,
+      "estimated_count": 4,
       "department_signal_count": 0,
       "signals": [
         {
@@ -2914,6 +2952,18 @@
           "score": 3,
           "precision": "commune_non_geocodee",
           "reason": "garde entrée/sortie: mois de fermeture incompatible avec la source"
+        },
+        {
+          "id": "03c51c4420d41ad5",
+          "banque": "La Banque Postale",
+          "commune": "Sainte-Suzanne",
+          "departement": "974",
+          "titre": "Attention, le bureau de poste ferme ses portes en juillet et en août dans cette commune de Loire-Atlantique - MaVille.com",
+          "source": "Google News",
+          "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOd2x3ZS1xX1pXY3libjBDRXZWOFQ3Y25hRExFSTZXTnk0OU9FWDdNOXhRd1VvRGN3dUVhcFlyOHdRWFBpa1BMVXgyQUxYeEJKRHo3aGhpUEZmWHRKZFlOT0JKUFpWaFI3Q1JzYzlGOUsxUENxdUFKcU04Z0djMkR1aXNvZEJiSF9ub2huNlpmNjlxTXBGdVVQczlZdUNEcm9BV3FfV2pLcjJrVGN4cldiTVhaaHhtRGtrMjM5d0d3dWVsMzd6bks3NGxiNG5vY0hvOTVBQzYzVG1PMUlkaF9zeDBXODFEU3VCUGJJM2F6MERCUGpUOU55VjBrNTFucUlRc1I4?oc=5",
+          "score": 3,
+          "precision": "commune_non_geocodee",
+          "reason": "garde entrée/sortie: département source 44 incompatible avec la sortie 974"
         },
         {
           "id": "9f5a210395ad85b1",
@@ -2938,6 +2988,40 @@
           "score": 3,
           "precision": "commune_non_geocodee",
           "reason": "garde entrée/sortie: département source 44 incompatible avec la sortie 974"
+        }
+      ]
+    },
+    "93": {
+      "departement": "93",
+      "nom": "Seine-Saint-Denis",
+      "precise_count": 0,
+      "unlocated_count": 2,
+      "estimated_count": 2,
+      "department_signal_count": 0,
+      "signals": [
+        {
+          "id": "77ea26ffe5d361e9",
+          "banque": "La Banque Postale",
+          "commune": "Villepinte",
+          "departement": "93",
+          "titre": "Villepinte. La CGT FAPT s’oppose à la fermeture du bureau de poste - ladepeche.fr",
+          "source": "Google News",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPVmlMd2tRcHJmWjlCNHg4VVJOR0s5VTEyelZld2w0ME03YzFiVnNTc3hGRS1uU0NTWVcxbFVNb3dySzg1bTRFNk9BbGdPLWlsd3JvU3prU0paWlZCYmJjd1ZnanpFQ0t3UjlteURDc0ROOEZ6dmNmRzc1ZWxaUTN4Qk5PS1dUbFRsR2gwaWwwVndJQVF5T1pzX3FKNTVIeDg4Y1dpdg?oc=5",
+          "score": 3,
+          "precision": "commune_non_geocodee",
+          "reason": "hors fenêtre temporelle"
+        },
+        {
+          "id": "17be164d050cc167",
+          "banque": "La Banque Postale",
+          "commune": "Villepinte",
+          "departement": "93",
+          "titre": "Villepinte. Fermeture programmée du bureau de poste - ladepeche.fr",
+          "source": "Google News",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQV1o2NzM2OG5BOTlXVnRkYjNGcEQzT0NRZU9mUm9MeHRMMEJPUXVMZGlZdER5VzhheHd5aVhaektJaTNST3ZIcTh0Ni1DWncxZUdIb2plWHNxUi0zd2Y2U21neE56OTdpZXdnSHpKTXhWbU0xZVFIRFVmMnVqOUZaYlZibmk0TGZfU1JJcVhyQTA3UQ?oc=5",
+          "score": 3,
+          "precision": "commune_non_geocodee",
+          "reason": "garde entrée/sortie: commune homonyme sans département vérifiable dans la source"
         }
       ]
     },
@@ -3075,7 +3159,7 @@
     },
     {
       "region": "Bretagne",
-      "articles": 29,
+      "articles": 30,
       "fermetures": 15,
       "projets": 8,
       "fusions": 0,
@@ -3110,9 +3194,9 @@
     },
     {
       "region": "Bourgogne-Franche-Comté",
-      "articles": 20,
+      "articles": 21,
       "fermetures": 16,
-      "projets": 3,
+      "projets": 4,
       "fusions": 0,
       "types": [
         "Fermeture",
@@ -3188,23 +3272,6 @@
       "nb_departements": 4
     },
     {
-      "region": "Pays de la Loire",
-      "articles": 11,
-      "fermetures": 6,
-      "projets": 4,
-      "fusions": 0,
-      "types": [
-        "Fermeture",
-        "Projet"
-      ],
-      "departements": [
-        "44",
-        "49",
-        "72"
-      ],
-      "nb_departements": 3
-    },
-    {
       "region": "Normandie",
       "articles": 9,
       "fermetures": 5,
@@ -3221,6 +3288,23 @@
         "76"
       ],
       "nb_departements": 4
+    },
+    {
+      "region": "Pays de la Loire",
+      "articles": 9,
+      "fermetures": 6,
+      "projets": 2,
+      "fusions": 0,
+      "types": [
+        "Fermeture",
+        "Projet"
+      ],
+      "departements": [
+        "44",
+        "49",
+        "72"
+      ],
+      "nb_departements": 3
     },
     {
       "region": "Occitanie",
@@ -3243,25 +3327,6 @@
       "nb_departements": 5
     },
     {
-      "region": "Île-de-France",
-      "articles": 7,
-      "fermetures": 2,
-      "projets": 4,
-      "fusions": 0,
-      "types": [
-        "Fermeture",
-        "Projet"
-      ],
-      "departements": [
-        "75",
-        "77",
-        "78",
-        "92",
-        "93"
-      ],
-      "nb_departements": 5
-    },
-    {
       "region": "Provence-Alpes-Côte d'Azur",
       "articles": 6,
       "fermetures": 2,
@@ -3278,6 +3343,23 @@
         "84"
       ],
       "nb_departements": 4
+    },
+    {
+      "region": "Île-de-France",
+      "articles": 3,
+      "fermetures": 2,
+      "projets": 1,
+      "fusions": 0,
+      "types": [
+        "Fermeture",
+        "Projet"
+      ],
+      "departements": [
+        "75",
+        "77",
+        "78"
+      ],
+      "nb_departements": 3
     }
   ],
   "closures": [
@@ -8820,6 +8902,13 @@
           "tier": "D"
         },
         {
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOdUY1M01oRU9QRVRkelBEWnpiQnBsM3dTZG42Z283MG1KUXU4UjRoRmsyb0NuSkFxck12REtVZmg4NFR3Y3F5Szg4YjNWcHFnNUI5VnQzLU5hbDNfakozZFN6c2h5aXVxUE90dHZ1TU12VkxqNFZaaHVPT0xRY2N6ZE1YMFpXTk1VU0FINEwxS3RQd0lXVEJPeUc2Njh1RVVsdlpCU3V1UGhBUXZrbWtjV1ROd0FTU0VJZTlHOHB5SzUxYkRmMjRMdg?oc=5",
+          "titre": "L’agence bancaire Crédit Agricole de Ploeren fermera dans un mois - MaVille.com",
+          "source": "Google News",
+          "date": "Tue, 21 Jul 2026 17:18:00 GMT",
+          "tier": "D"
+        },
+        {
           "url": "https://www.ouest-france.fr/bretagne/ploeren-56880/lagence-bancaire-credit-agricole-de-ploeren-fermera-dans-un-mois-676939ea-84de-11f1-a762-b8ec18c1787d",
           "titre": "L’agence bancaire Crédit Agricole de Ploeren fermera dans un mois",
           "source": "ouest-france.fr",
@@ -8970,47 +9059,6 @@
         "source": "SIRENE"
       },
       "region": "Bretagne"
-    },
-    {
-      "id": "2d69cbac467754a6",
-      "banque": "La Banque Postale",
-      "commune": "Saint-André-des-Eaux",
-      "code_insee": "44151",
-      "departement": "44",
-      "type": "fermeture",
-      "date_annonce": "Tue, 10 Jun 2025 07:00:00 GMT",
-      "date_fermeture": null,
-      "statut": "projet",
-      "statut_temporel": "a_venir",
-      "date_fermeture_approx": 0,
-      "fiabilite": 3,
-      "lat": 47.325307,
-      "lon": -2.313979,
-      "citation": "Le bureau de poste de Saint-André-des-Eaux fermera définitivement ses portes à la fin de l’été - Ouest-France",
-      "adresse": null,
-      "agence_localisation": null,
-      "commune_originale": null,
-      "service_impact": "fermeture_lbp_complete",
-      "point_postal_avant": "Bureau de Poste",
-      "point_postal_apres": null,
-      "postal_point_id": "08281A",
-      "evidence_level": "presse+référentiel",
-      "created_at": "2026-07-22T08:54:10.946876+00:00",
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxOR3NiZG1sOHlBTzl6ZnpMRXc5UWZKaUVsWHhMRUNwYXNGWEV1NTFNNy1JTTgzNG9XdU1PZFJmZWJaLUpGNFJnRk1RU0ZZdUNvZnY5TVhDNEFPcUVCcmF1a2JnQ05uTW5nYU5zMkg4eGFLLThHOVdqRFRHT0c3OXpNcFRZVjg1ZDA2WUdleV9Jc1RVbnlCR283UV9OUkQ4cEdET1paMjRfVmJVWDl4V1ZBYXgtUDVtaGk0d3lQeXdLT3JYUVAyYkRnVGYxZDU5dlBuUnRKbTU5QzJtV216M2tPblN6ZkNvVGdjWDRxUVFyWHE1TllCeVFVYjFMRjlLRjlBTFpMTU1qejRLdnRHNk03OENmWmhIVzl6b3JmeXNrdjBYWTRoLWxKSldB?oc=5",
-          "titre": "Le bureau de poste de Saint-André-des-Eaux fermera définitivement ses portes à la fin de l’été - Ouest-France",
-          "source": "Google News",
-          "date": "Tue, 10 Jun 2025 07:00:00 GMT",
-          "tier": "D"
-        }
-      ],
-      "controle_sirene": {
-        "etat_administratif": null,
-        "siret": null,
-        "source": "SIRENE"
-      },
-      "region": "Pays de la Loire"
     },
     {
       "id": "ab8fd723d588ddc8",
@@ -9259,47 +9307,6 @@
       "region": "Provence-Alpes-Côte d'Azur"
     },
     {
-      "id": "ac27a81c9da2bfa0",
-      "banque": "La Banque Postale",
-      "commune": "Saint-Nazaire",
-      "code_insee": "44184",
-      "departement": "44",
-      "type": "fermeture",
-      "date_annonce": "Fri, 20 Jun 2025 07:00:00 GMT",
-      "date_fermeture": "2025-08-23",
-      "statut": "projet",
-      "statut_temporel": "deja_fermee",
-      "date_fermeture_approx": 0,
-      "fiabilite": 3,
-      "lat": 47.275247,
-      "lon": -2.242494,
-      "citation": "« le bureau de poste du quartier de Saint-Marc-sur-Mer fermera le 23 août » (Ouest-France)",
-      "adresse": "quartier de Saint-Marc-sur-Mer",
-      "agence_localisation": "Bureau de poste du quartier de Saint-Marc-sur-Mer",
-      "commune_originale": null,
-      "service_impact": "fermeture_lbp_complete",
-      "point_postal_avant": "Bureau de Poste",
-      "point_postal_apres": null,
-      "postal_point_id": null,
-      "evidence_level": "presse",
-      "created_at": "2026-07-22T08:56:26.533542+00:00",
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxPVDFiSGxGY0EyUW1yXzJ6VHBubnJ4ZTVJczRqamRJUml3VFg2WVpPV2Y2Ry1lbGRWWGVIZGQ1bVVhZHMwaVprNGZzMXhYb0QwQXZVWjhxczFSRVNGby1QNlVPRUtPanZiVjM0NGxWMGpXQUUyMkRyUHR5WmpndjhqMUNlVkpEOGRPcUw3ellCTzI0blQxSmdjaFZnX2RVQmdkcnBMM1p0OHFWNzJ1VUxHVFdnQnpOT1lyWFRfMjZsQTlOMnhvdU5GT2oybko5WmhidlpkMnU4ZjJwWXdEb1NNZl9YbWdzN0NFamtGLUFuVVVuNTJfM1NMNVNCSGRyYzdjNmZwZ25FYWxSa1ZQRG9lQWQzenlBQkU?oc=5",
-          "titre": "À Saint-Nazaire, le bureau de poste du quartier de Saint-Marc-sur-Mer fermera le 23 août - Ouest-France",
-          "source": "Google News",
-          "date": "Fri, 20 Jun 2025 07:00:00 GMT",
-          "tier": "D"
-        }
-      ],
-      "controle_sirene": {
-        "etat_administratif": null,
-        "siret": null,
-        "source": "SIRENE"
-      },
-      "region": "Pays de la Loire"
-    },
-    {
       "id": "fe4b484729868487",
       "banque": "La Banque Postale",
       "commune": "Annecy",
@@ -9339,95 +9346,6 @@
         "source": "SIRENE"
       },
       "region": "Auvergne-Rhône-Alpes"
-    },
-    {
-      "id": "dc2cd3b80e6485f9",
-      "banque": "La Banque Postale",
-      "commune": "Bagneux",
-      "code_insee": "92007",
-      "departement": "92",
-      "type": "fermeture",
-      "date_annonce": "Thu, 19 Jun 2025 07:00:00 GMT",
-      "date_fermeture": null,
-      "statut": "projet",
-      "statut_temporel": "a_venir",
-      "date_fermeture_approx": 1,
-      "fiabilite": 2,
-      "lat": 48.797745,
-      "lon": 2.310117,
-      "citation": "Titre Ouest-France : « Fermeture du bureau de poste à Bagneux » (syndicats reçus par le sous-préfet). L’article ne précise pas explicitement le volet bancaire LBP.",
-      "adresse": "bureau de poste à Bagneux",
-      "agence_localisation": "bureau de poste de Bagneux",
-      "commune_originale": null,
-      "service_impact": "fermeture_lbp_complete",
-      "point_postal_avant": "Bureau de Poste",
-      "point_postal_apres": null,
-      "postal_point_id": null,
-      "evidence_level": "presse",
-      "created_at": "2026-07-22T08:56:35.769961+00:00",
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxOaVRrY2RXX1N0UVlHYkFLOHp1dklPaFFOWDNMeEFSdVlkZnhCS2laYURtR25xRzdDRFJsZURLU1hfcklmdVJtU0NBZUQ5QVZFTU9Qbm03ak9TNDNRTnJLWmNZeXFSdVFhT0FKSDllaWFsLXVUT2RBal8yaGhnY2doVUlmSktnT3o1R1JrR0VnMmlHd2x0UWxadURzeFotSVRnc19qbl9lRW5hUFhBNUwwMHJWMUNCNHpjb3lvbUdHVzZnWjFHQ3VkVDR5WlU2VEJxMW1PUDU4T3k5YVFfcjRUV0NfczVuWjNXVldndFo3ZTNnREIydC1mZE9nRzNpWnJtNE5ZcU00RFZKTG01b0NF?oc=5",
-          "titre": "Fermeture du bureau de poste à Bagneux : les syndicats reçus par le sous-préfet de Saumur - Ouest-France",
-          "source": "Google News",
-          "date": "Thu, 19 Jun 2025 07:00:00 GMT",
-          "tier": "D"
-        }
-      ],
-      "controle_sirene": {
-        "etat_administratif": null,
-        "siret": null,
-        "source": "SIRENE"
-      },
-      "region": "Île-de-France"
-    },
-    {
-      "id": "c735fa554a12cb22",
-      "banque": "La Banque Postale",
-      "commune": "Bagneux",
-      "code_insee": "92007",
-      "departement": "92",
-      "type": "fermeture",
-      "date_annonce": "Thu, 28 May 2026 07:00:00 GMT",
-      "date_fermeture": null,
-      "statut": "projet",
-      "statut_temporel": "a_venir",
-      "date_fermeture_approx": 1,
-      "fiabilite": 3,
-      "lat": 48.797745,
-      "lon": 2.310117,
-      "citation": "Titre : « À Saumur… avant la fermeture du bureau de poste de Bagneux ». L’article ne précise pas explicitement le volet bancaire LBP, donc relation à vérifier.",
-      "adresse": null,
-      "agence_localisation": "bureau de poste de Bagneux",
-      "commune_originale": null,
-      "service_impact": "fermeture_lbp_complete",
-      "point_postal_avant": "Bureau de Poste",
-      "point_postal_apres": null,
-      "postal_point_id": null,
-      "evidence_level": "presse",
-      "created_at": "2026-07-22T08:58:01.941583+00:00",
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxPRjdnU0ctU0ZMNmN3NktIUkx4Wi0tNVJncG9JSzREbFVPS1kwLVJydDZWWi1SUTRsdVVmOXFzUXFmSE1kUGpBZER1enhIUVdzZTlLQjdteWFQT1NQM0YwR3lHeWdwQ0pqVGNadklkckNSSFNHdm5Uc2xZVlMzUjIxclFpbjkxbDd6UVA5eEY2Zk5lX01Ubk1ZSDZxVW16MlZIaTRRNEdxV3FwV2hiQzU3QmJkbjQ1SDdXbmVuelc3ZGE5SHVlQkx3TDZqMU8yRHVvZVZMdl9Ub29waXN1WWVfbDJ0X2FEYzItYTlMREdpc0lnVDhWdFZtN0NVNEl6VHpSckFLOHNZbGdXS1hpMHBQRllEbw?oc=5",
-          "titre": "À Saumur, le baroud d’honneur des syndicats avant la fermeture du bureau de poste de Bagneux - Ouest-France",
-          "source": "Google News",
-          "date": "Thu, 28 May 2026 07:00:00 GMT",
-          "tier": "D"
-        },
-        {
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQRXhBa0FGdmhGcXRBYm1qZ3MwSDYzQmVQdFhNLUlyRURaMHRCd0JocHg3V1pzSzVDd1F1ekJHX3FmZ1FyRkVCaWlZRkxtVThVVGFKQUVCeDdsc3R0aUtMVlN1NE1SWUxKbWhGVTFUR3FqYm5Ba3ZtZC1JUVNyZUM2ZXkzUFB6RnpVRTYzSnB3aE5PTkFFYlQ2UzJieEFBYkg5X3hDM2tFSk5hVkJVSlUyVGFLeEhabmg3VkdpYUM3RQ?oc=5",
-          "titre": "Bagneux. Face à la fermeture annoncée du bureau de Poste, le Collectif Citoyen de Bagneux réagit - Saumur Kiosque",
-          "source": "Google News",
-          "date": "Mon, 11 May 2026 07:00:00 GMT",
-          "tier": "D"
-        }
-      ],
-      "controle_sirene": {
-        "etat_administratif": null,
-        "siret": null,
-        "source": "SIRENE"
-      },
-      "region": "Île-de-France"
     },
     {
       "id": "26b613ad89b5ca54",
@@ -10093,45 +10011,45 @@
       "region": "Provence-Alpes-Côte d'Azur"
     },
     {
-      "id": "77e07df577220422",
-      "banque": "La Banque Postale",
-      "commune": "Villepinte",
-      "code_insee": "93078",
-      "departement": "93",
+      "id": "8199a93775a14660",
+      "banque": "Crédit Agricole",
+      "commune": "Fougerolles-Saint-Valbert",
+      "code_insee": "70245",
+      "departement": "70",
       "type": "fermeture",
-      "date_annonce": "Sun, 17 Aug 2025 07:00:00 GMT",
+      "date_annonce": "Sat, 27 Jun 2026 18:04:09 GMT",
       "date_fermeture": null,
       "statut": "projet",
       "statut_temporel": "a_venir",
-      "date_fermeture_approx": 0,
+      "date_fermeture_approx": 1,
       "fiabilite": 3,
-      "lat": 48.956508,
-      "lon": 2.532434,
-      "citation": "Villepinte. Fermeture programmée du bureau de poste - ladepeche.fr",
+      "lat": 47.892252,
+      "lon": 6.413278,
+      "citation": "Titre : « Fougerolles-Saint-Valbert. Fermeture de l’agence du Crédit Agricole : le maire dénonce ce départ »",
       "adresse": null,
-      "agence_localisation": null,
+      "agence_localisation": "agence du Crédit Agricole",
       "commune_originale": null,
-      "service_impact": "fermeture_lbp_complete",
-      "point_postal_avant": "Bureau de Poste",
+      "service_impact": null,
+      "point_postal_avant": null,
       "point_postal_apres": null,
-      "postal_point_id": "17220A",
-      "evidence_level": "presse+référentiel",
-      "created_at": "2026-07-23T09:39:21.447328+00:00",
+      "postal_point_id": null,
+      "evidence_level": null,
+      "created_at": "2026-07-24T06:16:17.216186+00:00",
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQV1o2NzM2OG5BOTlXVnRkYjNGcEQzT0NRZU9mUm9MeHRMMEJPUXVMZGlZdER5VzhheHd5aVhaektJaTNST3ZIcTh0Ni1DWncxZUdIb2plWHNxUi0zd2Y2U21neE56OTdpZXdnSHpKTXhWbU0xZVFIRFVmMnVqOUZaYlZibmk0TGZfU1JJcVhyQTA3UQ?oc=5",
-          "titre": "Villepinte. Fermeture programmée du bureau de poste - ladepeche.fr",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNVkVRTU91S3dvdEw4OUZrSjJoLUNiT2NuOUZMRW4wN3hFWEdBMktGU3FYUjRxZlg2UDZ4bVhIT0R4T2RhNWtXR0YyYzJtUHdNSTBTLV80QzN0SlRjdVhRQ1VVT2RjQ3F6emgzWTRCSWdqWEZfbTc5ZnN4MVZwT29TODZFUFg2dUx3Tmk2Rkt5bm15RDJTTGJucGQ3amtHX0MzU0daZm5HLXViYUVNQUZqb2ptQ0h1WHFL?oc=5",
+          "titre": "Fougerolles-Saint-Valbert. Fermeture de l’agence du Crédit Agricole : le maire dénonce ce départ - L'Est Républicain",
           "source": "Google News",
-          "date": "Sun, 17 Aug 2025 07:00:00 GMT",
+          "date": "Sat, 27 Jun 2026 18:04:09 GMT",
           "tier": "D"
         }
       ],
       "controle_sirene": {
-        "etat_administratif": null,
+        "etat_administratif": "A",
         "siret": null,
         "source": "SIRENE"
       },
-      "region": "Île-de-France"
+      "region": "Bourgogne-Franche-Comté"
     }
   ],
   "closures_unlocated": [
@@ -10817,7 +10735,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-07-23T09:32:23.157828+00:00"
+      "created_at": "2026-07-24T06:06:56.981380+00:00"
     },
     {
       "id": "50895c042a984b7d",
@@ -10853,7 +10771,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 04:46:02 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-07-23T09:32:23.151877+00:00"
+      "created_at": "2026-07-24T06:06:56.975669+00:00"
     },
     {
       "id": "8c6a0cad14626d6f",
@@ -10944,6 +10862,24 @@
       "date": "Tue, 10 Jun 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
       "created_at": "2026-07-22T09:05:31.108977+00:00"
+    },
+    {
+      "id": "58ae5863254c7532",
+      "banque": "La Banque Postale",
+      "commune": "Saint-André-des-Eaux",
+      "departement": "44",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "a_venir",
+      "fiabilite": 3,
+      "citation": "Le bureau de poste de Saint-André-des-Eaux fermera définitivement ses portes à la fin de l’été - Ouest-France",
+      "url": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxOR3NiZG1sOHlBTzl6ZnpMRXc5UWZKaUVsWHhMRUNwYXNGWEV1NTFNNy1JTTgzNG9XdU1PZFJmZWJaLUpGNFJnRk1RU0ZZdUNvZnY5TVhDNEFPcUVCcmF1a2JnQ05uTW5nYU5zMkg4eGFLLThHOVdqRFRHT0c3OXpNcFRZVjg1ZDA2WUdleV9Jc1RVbnlCR283UV9OUkQ4cEdET1paMjRfVmJVWDl4V1ZBYXgtUDVtaGk0d3lQeXdLT3JYUVAyYkRnVGYxZDU5dlBuUnRKbTU5QzJtV216M2tPblN6ZkNvVGdjWDRxUVFyWHE1TllCeVFVYjFMRjlLRjlBTFpMTU1qejRLdnRHNk03OENmWmhIVzl6b3JmeXNrdjBYWTRoLWxKSldB?oc=5",
+      "titre": "Le bureau de poste de Saint-André-des-Eaux fermera définitivement ses portes à la fin de l’été - Ouest-France",
+      "source": "Google News",
+      "date": "Tue, 10 Jun 2025 07:00:00 GMT",
+      "raison": "garde entrée/sortie: commune homonyme sans département vérifiable dans la source",
+      "created_at": "2026-07-24T06:06:41.961111+00:00"
     },
     {
       "id": "d2083fbef6138a24",
@@ -11198,6 +11134,24 @@
       "created_at": "2026-07-22T08:59:15.638815+00:00"
     },
     {
+      "id": "3130e162ef4e8cd6",
+      "banque": "La Banque Postale",
+      "commune": "Bagneux",
+      "departement": "92",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "a_venir",
+      "fiabilite": 3,
+      "citation": "Titre : « À Saumur… avant la fermeture du bureau de poste de Bagneux ». L’article ne précise pas explicitement le volet bancaire LBP, donc relation à vérifier.",
+      "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxPRjdnU0ctU0ZMNmN3NktIUkx4Wi0tNVJncG9JSzREbFVPS1kwLVJydDZWWi1SUTRsdVVmOXFzUXFmSE1kUGpBZER1enhIUVdzZTlLQjdteWFQT1NQM0YwR3lHeWdwQ0pqVGNadklkckNSSFNHdm5Uc2xZVlMzUjIxclFpbjkxbDd6UVA5eEY2Zk5lX01Ubk1ZSDZxVW16MlZIaTRRNEdxV3FwV2hiQzU3QmJkbjQ1SDdXbmVuelc3ZGE5SHVlQkx3TDZqMU8yRHVvZVZMdl9Ub29waXN1WWVfbDJ0X2FEYzItYTlMREdpc0lnVDhWdFZtN0NVNEl6VHpSckFLOHNZbGdXS1hpMHBQRllEbw?oc=5",
+      "titre": "À Saumur, le baroud d’honneur des syndicats avant la fermeture du bureau de poste de Bagneux - Ouest-France",
+      "source": "Google News",
+      "date": "Thu, 28 May 2026 07:00:00 GMT",
+      "raison": "garde entrée/sortie: commune homonyme sans département vérifiable dans la source",
+      "created_at": "2026-07-24T06:06:51.115115+00:00"
+    },
+    {
       "id": "eae0bb19bbc43a2b",
       "banque": "La Banque Postale",
       "commune": "Sainte-Cérotte",
@@ -11376,6 +11330,24 @@
       "date": "Thu, 19 Jun 2025 07:00:00 GMT",
       "raison": "garde entrée/sortie: commune/localisation de sortie absente de la source",
       "created_at": "2026-07-23T06:13:02.097265+00:00"
+    },
+    {
+      "id": "4249c0fb09c12071",
+      "banque": "La Banque Postale",
+      "commune": "Bagneux",
+      "departement": "92",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "a_venir",
+      "fiabilite": 2,
+      "citation": "Titre Ouest-France : « Fermeture du bureau de poste à Bagneux » (syndicats reçus par le sous-préfet). L’article ne précise pas explicitement le volet bancaire LBP.",
+      "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxOaVRrY2RXX1N0UVlHYkFLOHp1dklPaFFOWDNMeEFSdVlkZnhCS2laYURtR25xRzdDRFJsZURLU1hfcklmdVJtU0NBZUQ5QVZFTU9Qbm03ak9TNDNRTnJLWmNZeXFSdVFhT0FKSDllaWFsLXVUT2RBal8yaGhnY2doVUlmSktnT3o1R1JrR0VnMmlHd2x0UWxadURzeFotSVRnc19qbl9lRW5hUFhBNUwwMHJWMUNCNHpjb3lvbUdHVzZnWjFHQ3VkVDR5WlU2VEJxMW1PUDU4T3k5YVFfcjRUV0NfczVuWjNXVldndFo3ZTNnREIydC1mZE9nRzNpWnJtNE5ZcU00RFZKTG01b0NF?oc=5",
+      "titre": "Fermeture du bureau de poste à Bagneux : les syndicats reçus par le sous-préfet de Saumur - Ouest-France",
+      "source": "Google News",
+      "date": "Thu, 19 Jun 2025 07:00:00 GMT",
+      "raison": "garde entrée/sortie: commune homonyme sans département vérifiable dans la source",
+      "created_at": "2026-07-24T06:06:51.668575+00:00"
     },
     {
       "id": "4458f70b3a4a7499",
@@ -11738,6 +11710,24 @@
       "created_at": "2026-07-13T07:40:44.445117+00:00"
     },
     {
+      "id": "17be164d050cc167",
+      "banque": "La Banque Postale",
+      "commune": "Villepinte",
+      "departement": "93",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "a_venir",
+      "fiabilite": 3,
+      "citation": "Villepinte. Fermeture programmée du bureau de poste - ladepeche.fr",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQV1o2NzM2OG5BOTlXVnRkYjNGcEQzT0NRZU9mUm9MeHRMMEJPUXVMZGlZdER5VzhheHd5aVhaektJaTNST3ZIcTh0Ni1DWncxZUdIb2plWHNxUi0zd2Y2U21neE56OTdpZXdnSHpKTXhWbU0xZVFIRFVmMnVqOUZaYlZibmk0TGZfU1JJcVhyQTA3UQ?oc=5",
+      "titre": "Villepinte. Fermeture programmée du bureau de poste - ladepeche.fr",
+      "source": "Google News",
+      "date": "Sun, 17 Aug 2025 07:00:00 GMT",
+      "raison": "garde entrée/sortie: commune homonyme sans département vérifiable dans la source",
+      "created_at": "2026-07-24T06:06:45.428253+00:00"
+    },
+    {
       "id": "3cbc5a8e5ce4e82d",
       "banque": "La Banque Postale",
       "commune": "Échenoz-la-Méline",
@@ -12095,7 +12085,7 @@
       "source": "Google News",
       "date": "Sat, 03 Aug 2024 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-07-23T09:32:21.870194+00:00"
+      "created_at": "2026-07-24T06:06:55.842315+00:00"
     },
     {
       "id": "4996e3bfe560bbb6",
@@ -12674,6 +12664,42 @@
       "created_at": "2026-07-22T09:00:39.309417+00:00"
     },
     {
+      "id": "309b4ccdc7d0e82d",
+      "banque": "La Banque Postale",
+      "commune": "Saint-Nazaire",
+      "departement": "44",
+      "type": "fermeture",
+      "date_fermeture": "2025-08-23",
+      "statut": "projet",
+      "statut_temporel": "deja_fermee",
+      "fiabilite": 3,
+      "citation": "« le bureau de poste du quartier de Saint-Marc-sur-Mer fermera le 23 août » (Ouest-France)",
+      "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxPVDFiSGxGY0EyUW1yXzJ6VHBubnJ4ZTVJczRqamRJUml3VFg2WVpPV2Y2Ry1lbGRWWGVIZGQ1bVVhZHMwaVprNGZzMXhYb0QwQXZVWjhxczFSRVNGby1QNlVPRUtPanZiVjM0NGxWMGpXQUUyMkRyUHR5WmpndjhqMUNlVkpEOGRPcUw3ellCTzI0blQxSmdjaFZnX2RVQmdkcnBMM1p0OHFWNzJ1VUxHVFdnQnpOT1lyWFRfMjZsQTlOMnhvdU5GT2oybko5WmhidlpkMnU4ZjJwWXdEb1NNZl9YbWdzN0NFamtGLUFuVVVuNTJfM1NMNVNCSGRyYzdjNmZwZ25FYWxSa1ZQRG9lQWQzenlBQkU?oc=5",
+      "titre": "À Saint-Nazaire, le bureau de poste du quartier de Saint-Marc-sur-Mer fermera le 23 août - Ouest-France",
+      "source": "Google News",
+      "date": "Fri, 20 Jun 2025 07:00:00 GMT",
+      "raison": "garde entrée/sortie: commune homonyme sans département vérifiable dans la source",
+      "created_at": "2026-07-24T06:06:47.774440+00:00"
+    },
+    {
+      "id": "d5dbc2b4831c8d13",
+      "banque": "La Banque Postale",
+      "commune": "Saint-Marc-le-Blanc",
+      "departement": "35",
+      "type": "fermeture",
+      "date_fermeture": "2025-06-20",
+      "statut": "confirmé",
+      "statut_temporel": "deja_fermee",
+      "fiabilite": 3,
+      "citation": "La mobilisation des habitants a été vaine, le bureau de poste du quartier Saint-Marc, à Saint-Nazaire, ferme ses portes - ici.fr",
+      "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPUURYWnhxbG9QcEpCeUhrenRXNUxyczg2d3pEalpROS1aRlFGa3BjMjloSnFibzVJdEFxYV9fQzE3Zkdyc2hHODExLXZJM19yQkp6UFNLcTZxaHdWWW85aXBoa01zMGNxMDNibUZzb1JMc2J2bDAwZGRrdUlRcElVOERaMjRJUC13dl9MMG5XbUZXNkNwWl9RSFRCZWlmVTBBUVRPYmYtaURQMG9CTkVfeVF5Zm9PTjVHS2tITlBnR3dnd0ZKZVhaUWNyTHNBSVhwSmFuZjF4Yy04d0JtMjJPS2hzNGVwMllLMW9MMGhlcjJQM3c5WWlMag?oc=5",
+      "titre": "La mobilisation des habitants a été vaine, le bureau de poste du quartier Saint-Marc, à Saint-Nazaire, ferme ses portes - ici.fr",
+      "source": "Google News",
+      "date": "Fri, 20 Jun 2025 07:00:00 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-07-24T06:07:06.527698+00:00"
+    },
+    {
       "id": "b80663fa38292743",
       "banque": "La Banque Postale",
       "commune": "Nîmes",
@@ -12800,6 +12826,24 @@
       "created_at": "2026-07-22T09:02:15.816650+00:00"
     },
     {
+      "id": "03c51c4420d41ad5",
+      "banque": "La Banque Postale",
+      "commune": "Sainte-Suzanne",
+      "departement": "974",
+      "type": "fermeture",
+      "date_fermeture": "2026-07-10",
+      "statut": "confirmé",
+      "statut_temporel": "deja_fermee",
+      "fiabilite": 3,
+      "citation": "Attention, le bureau de poste ferme ses portes en juillet et en août dans cette commune de Loire-Atlantique - MaVille.com",
+      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOd2x3ZS1xX1pXY3libjBDRXZWOFQ3Y25hRExFSTZXTnk0OU9FWDdNOXhRd1VvRGN3dUVhcFlyOHdRWFBpa1BMVXgyQUxYeEJKRHo3aGhpUEZmWHRKZFlOT0JKUFpWaFI3Q1JzYzlGOUsxUENxdUFKcU04Z0djMkR1aXNvZEJiSF9ub2huNlpmNjlxTXBGdVVQczlZdUNEcm9BV3FfV2pLcjJrVGN4cldiTVhaaHhtRGtrMjM5d0d3dWVsMzd6bks3NGxiNG5vY0hvOTVBQzYzVG1PMUlkaF9zeDBXODFEU3VCUGJJM2F6MERCUGpUOU55VjBrNTFucUlRc1I4?oc=5",
+      "titre": "Attention, le bureau de poste ferme ses portes en juillet et en août dans cette commune de Loire-Atlantique - MaVille.com",
+      "source": "Google News",
+      "date": "Fri, 10 Jul 2026 10:12:00 GMT",
+      "raison": "garde entrée/sortie: département source 44 incompatible avec la sortie 974",
+      "created_at": "2026-07-24T06:07:30.968362+00:00"
+    },
+    {
       "id": "2d1622fef7f0fc9f",
       "banque": "La Banque Postale",
       "commune": "Ballan-Miré",
@@ -12923,7 +12967,7 @@
       "source": "Google News",
       "date": "Fri, 03 Jan 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-07-23T09:32:22.477764+00:00"
+      "created_at": "2026-07-24T06:06:56.437879+00:00"
     },
     {
       "id": "f3e888f7eaf5ffb7",
@@ -12960,6 +13004,24 @@
       "date": "Fri, 01 Aug 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
       "created_at": "2026-07-22T09:09:01.156970+00:00"
+    },
+    {
+      "id": "aae1f6064a3071ba",
+      "banque": "Crédit Agricole",
+      "commune": "Aubin",
+      "departement": null,
+      "type": "fermeture",
+      "date_fermeture": "2026-02-17",
+      "statut": "confirmé",
+      "statut_temporel": "deja_fermee",
+      "fiabilite": 4,
+      "citation": "« Depuis le 17 février 2026, le Crédit Agricole ne dispose plus d'agence bancaire à Aubin… Des infiltrations d'eau… et donc fermer »",
+      "url": "https://www.ladepeche.fr/2026/07/24/malgre-labandon-des-locaux-par-le-credit-agricole-rue-henri-barbusse-a-aubin-la-banque-souhaite-rester-implantee-dans-la-villee-t-cherche-actuellement-13480915.php",
+      "titre": "Malgré l'abandon des locaux par le Crédit Agricole, rue Henri Barbusse à Aubin, la banque souhaite rester implantée dans la villee t cherche actuellement des solutions",
+      "source": "Ladepeche.fr",
+      "date": "2026-07-24T06:01:04Z",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-07-24T06:11:50.370811+00:00"
     },
     {
       "id": "3db1d665a6fa91ce",
@@ -14245,6 +14307,19 @@
       "created_at": "2026-07-01T07:54:16.966192+00:00"
     },
     {
+      "id": "495ff28a883bf122",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Le tunnel de Saint-Cloud sur l'A13 va fermer jusqu’en août 2027 - 20 Minutes",
+      "extrait": "TITRE: Le tunnel de Saint-Cloud sur l'A13 va fermer jusqu’en août 2027 - 20 Minutes SOURCE: Google News DATE: Tue, 21 Jul 2026 19:58:00 GMT URL: https://news.google.com/rss/articles/CBMi2AFBVV95cUxOd3lPajhiZ3J0NkRzaVgtdnB2dXUzdzJYbk1nX2xkTkw1eHliYWxvelQ3S2gxSG1GYWJoMzEzQ28zaWExVjlpN2xxdERfWDhweFctNnFGY3JnaVhiTVZGbTFDX21WUFJwMExlNlNMV1BPUVlyVDRPSE90ZzRjRTBVR0JablRlemQzNi13bDRzU1JNWjQ2R0hiSHJEUWtfUkRnTWFQX0dmall2eHJkTmZkWmtRcjFzS2R0S3dnVG5TYUFQcHRNMktJWmxrcmVyLXppUWRua282VGw?oc=5 <a href=\"https://",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOd3lPajhiZ3J0NkRzaVgtdnB2dXUzdzJYbk1nX2xkTkw1eHliYWxvelQ3S2gxSG1GYWJoMzEzQ28zaWExVjlpN2xxdERfWDhweFctNnFGY3JnaVhiTVZGbTFDX21WUFJwMExlNlNMV1BPUVlyVDRPSE90ZzRjRTBVR0JablRlemQzNi13bDRzU1JNWjQ2R0hiSHJEUWtfUkRnTWFQX0dmall2eHJkTmZkWmtRcjFzS2R0S3dnVG5TYUFQcHRNMktJWmxrcmVyLXppUWRua282VGw?oc=5",
+      "source": "Google News",
+      "date": "Tue, 21 Jul 2026 19:58:00 GMT",
+      "score": 4,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-24T06:09:59.027602+00:00"
+    },
+    {
       "id": "c1b470250bca05f1",
       "banque": "Société Générale",
       "departement": null,
@@ -14711,6 +14786,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-07-22T08:58:07.744245+00:00"
+    },
+    {
+      "id": "b276e5b247abe0bb",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Montpellier : « Destination Tapas » fermé 21 jours pour la 4e fois par la préfète de l'Hérault - INFO.FR",
+      "extrait": "TITRE: Montpellier : « Destination Tapas » fermé 21 jours pour la 4e fois par la préfète de l'Hérault - INFO.FR SOURCE: Google News DATE: Wed, 27 May 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMilwFBVV95cUxQR3I2ZzkyLWRPMTJZOUFWTzFGODdnNHZ1VlVOVmpLMUd1bHdJTVNCQXdNS3NrbTBfT0xYSGhDMWRQM09NanhmT0VQTlhrcmZOVHZhSFIweFpBYTQxX3dkWWxvN0tObFpETEdMTHhaeW9pWVFENi1iUTF3MlU5QlFEcDQ1d1A1amxoa1o3Nm95V2tIZzZ4cFdz?oc=5 <a href=\"https://news.google.com/rss/articles/CBMilwFBVV95cUxQR3I2ZzkyLWRPMT",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQR3I2ZzkyLWRPMTJZOUFWTzFGODdnNHZ1VlVOVmpLMUd1bHdJTVNCQXdNS3NrbTBfT0xYSGhDMWRQM09NanhmT0VQTlhrcmZOVHZhSFIweFpBYTQxX3dkWWxvN0tObFpETEdMTHhaeW9pWVFENi1iUTF3MlU5QlFEcDQ1d1A1amxoa1o3Nm95V2tIZzZ4cFdz?oc=5",
+      "source": "Google News",
+      "date": "Wed, 27 May 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-24T06:10:02.858107+00:00"
     },
     {
       "id": "cf3dfce4bb978486",
@@ -18678,6 +18766,32 @@
       "created_at": "2026-06-25T15:41:59.381366+00:00"
     },
     {
+      "id": "32bf74cfe448fa54",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Cauchemar lors d'une vente de ferme : « 530 000 € perdu en six jours » d'après les époux Pottier - Actu.fr",
+      "extrait": "TITRE: Cauchemar lors d'une vente de ferme : « 530 000 € perdu en six jours » d'après les époux Pottier - Actu.fr SOURCE: Google News DATE: Thu, 23 Jul 2026 15:46:01 GMT URL: https://news.google.com/rss/articles/CBMi-gFBVV95cUxQRjl3Z0NhNHloZmgwM09tZ204VU5pZVAzLTh6SkVfTDQtOGpkaUloenEzVWVXbXNlM1lSQmlRQ01vODVqN3JyTnBvaWJvakVXa2xWbU9sa2NEMm95SDRFX0huWGxlS2J2N0c2bk9BcVdDMjREVEtPeC1tYXZFZ1dsaDBKdk1MNEZTS2t1VTczTndMMjFyVXVodXlFWUU4WkVXdzdJY0xPSTRkMkJfSjQ5RXZ3S0QyQ1FCckFCM2R0SGlENW0zNE9VSmFXOTNEQ285Y05k",
+      "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQRjl3Z0NhNHloZmgwM09tZ204VU5pZVAzLTh6SkVfTDQtOGpkaUloenEzVWVXbXNlM1lSQmlRQ01vODVqN3JyTnBvaWJvakVXa2xWbU9sa2NEMm95SDRFX0huWGxlS2J2N0c2bk9BcVdDMjREVEtPeC1tYXZFZ1dsaDBKdk1MNEZTS2t1VTczTndMMjFyVXVodXlFWUU4WkVXdzdJY0xPSTRkMkJfSjQ5RXZ3S0QyQ1FCckFCM2R0SGlENW0zNE9VSmFXOTNEQ285Y05kVmZERVdKUmhKSl9ORm9HQUk4Y0J4V0JfLThtcDByMFN5OWktSkZR?oc=5",
+      "source": "Google News",
+      "date": "Thu, 23 Jul 2026 15:46:01 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-24T06:09:54.009815+00:00"
+    },
+    {
+      "id": "c3357015fd44fed9",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "Lozère : le bureau de poste ferme du jour au lendemain et personne ne sait quand il rouvrira, que s'est-il passé ? - Actu.fr",
+      "extrait": "TITRE: Lozère : le bureau de poste ferme du jour au lendemain et personne ne sait quand il rouvrira, que s'est-il passé ? - Actu.fr SOURCE: Google News DATE: Thu, 23 Jul 2026 15:35:13 GMT URL: https://news.google.com/rss/articles/CBMiqwJBVV95cUxNYzNyU19fcWQ2Y1I3UnVBeDhDWVVXOGlZZnljRjZZeGRyTnpoX29hSm9nWkh4N0pOUFpZbHQ5aDZwOUppWm91d1I4c3VMZ21JemdKTTViZF9pOEN2Zk5aVHFzcVYwMkVRclozblYyTEhHQnd5UC12NnhLWXlpYmRaUjZkeVp6SU9zZ2hHbHZEYUR2STdKeEZwcFJEekx1Wkg1dFB4bUlxR1ZmX2tFMm9zMG5FMDlHNXg1R3FYaWV3TndhN2Y3cD",
+      "url": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxNYzNyU19fcWQ2Y1I3UnVBeDhDWVVXOGlZZnljRjZZeGRyTnpoX29hSm9nWkh4N0pOUFpZbHQ5aDZwOUppWm91d1I4c3VMZ21JemdKTTViZF9pOEN2Zk5aVHFzcVYwMkVRclozblYyTEhHQnd5UC12NnhLWXlpYmRaUjZkeVp6SU9zZ2hHbHZEYUR2STdKeEZwcFJEekx1Wkg1dFB4bUlxR1ZmX2tFMm9zMG5FMDlHNXg1R3FYaWV3TndhN2Y3cDBxOTlrNUJGdU9hWmV1QWtmY3paWmtUaUpBTVRyZjRZVzhTWXJRZ2lLNy00Y3FPZGZBNENJU2Z1Wkp3TDFhcVNnNllYVkllMk83Z095UGtpSXNxUWFfVWcwOXA0QlNUbURnSDRZOA?oc=5",
+      "source": "Google News",
+      "date": "Thu, 23 Jul 2026 15:35:13 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-24T06:09:51.774993+00:00"
+    },
+    {
       "id": "5a22644dc1e37c45",
       "banque": "La Banque Postale",
       "departement": null,
@@ -21486,6 +21600,19 @@
       "created_at": "2026-07-12T06:17:38.137231+00:00"
     },
     {
+      "id": "00fe42fa430688d1",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Commerces, services, administration... Ce qui ouvre et ce qui ferme en ce long week-end du 14-Juillet à Toulouse - Actu.fr",
+      "extrait": "TITRE: Commerces, services, administration... Ce qui ouvre et ce qui ferme en ce long week-end du 14-Juillet à Toulouse - Actu.fr SOURCE: Google News DATE: Sat, 11 Jul 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMiiAJBVV95cUxQT2NEbGV6Rm9xeG9fYW1rdTlieHpFdG5mWTZtZ3J5Z21lVTBWeEtHRGZFYzFIXy15OG01T0l5eG5kTjVxemVLanFXc0dYVThoaEFHT0ZhbUJSTDJ0MU8ydjc2WjVaYW8xWVpwOGVCenhjQklEYWVSbzRaQk9XY2pGOE02ZWE4ODRfeDItTVFuc3dVaHN3dkFSc1llcmJ5eUlkY3UxSFBoX1JEZ3l2bzUzZDVvN1kySmJjd0s5cFY1TENSdFE3dy1j",
+      "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQT2NEbGV6Rm9xeG9fYW1rdTlieHpFdG5mWTZtZ3J5Z21lVTBWeEtHRGZFYzFIXy15OG01T0l5eG5kTjVxemVLanFXc0dYVThoaEFHT0ZhbUJSTDJ0MU8ydjc2WjVaYW8xWVpwOGVCenhjQklEYWVSbzRaQk9XY2pGOE02ZWE4ODRfeDItTVFuc3dVaHN3dkFSc1llcmJ5eUlkY3UxSFBoX1JEZ3l2bzUzZDVvN1kySmJjd0s5cFY1TENSdFE3dy1jWHFTNmhHUGkxQ3dJSldQcWZsSWpxTU9IQzFjandhMFBkVnVNN0pPbEdVQlJ6SVdnelBhRF94SEZMMjg5SGxhX3c?oc=5",
+      "source": "Google News",
+      "date": "Sat, 11 Jul 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-24T06:10:00.706491+00:00"
+    },
+    {
       "id": "2b571faf54ad61f7",
       "banque": "La Banque Postale",
       "departement": null,
@@ -23514,6 +23641,19 @@
       "created_at": "2026-07-22T09:10:12.608939+00:00"
     },
     {
+      "id": "f9ecb080df51be7e",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "Au Pont-de-Montvert, la fermeture de La Poste ravive les craintes d'un recul des services publics - ici.fr",
+      "extrait": "TITRE: Au Pont-de-Montvert, la fermeture de La Poste ravive les craintes d'un recul des services publics - ici.fr SOURCE: Google News DATE: Fri, 24 Jul 2026 04:31:30 GMT URL: https://news.google.com/rss/articles/CBMi9AFBVV95cUxOeVREOVZjZ0FzMW5iYldPMUQyS0pSNXZEOTBWckFtT240dzdiNjNxM2k1bVZtZnkxYnlkSXpRNS1yOFV5SFZPcVpHRkZQeENLNy1LZEJZY0hhY291b011ZmdSdmg0cWxUX2pGbHNqU3JEbTVHVUN5RjRWY0Fra195V055SlFSS3lobUYySXFXQTdIekpaV3ZTTTl0b2RwZ0tNdWMzUW1CeGE0dmNvNU5GZDU3SldIR2oxNEd6UXRPRGx1MjZzbVlCYnQ3dTNuTlJJbGty",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOeVREOVZjZ0FzMW5iYldPMUQyS0pSNXZEOTBWckFtT240dzdiNjNxM2k1bVZtZnkxYnlkSXpRNS1yOFV5SFZPcVpHRkZQeENLNy1LZEJZY0hhY291b011ZmdSdmg0cWxUX2pGbHNqU3JEbTVHVUN5RjRWY0Fra195V055SlFSS3lobUYySXFXQTdIekpaV3ZTTTl0b2RwZ0tNdWMzUW1CeGE0dmNvNU5GZDU3SldIR2oxNEd6UXRPRGx1MjZzbVlCYnQ3dTNuTlJJbGtyNVJJcWRuUFdiaXhOYlRXenhpZEJrMk1LVHEyUGoxUUZw?oc=5",
+      "source": "Google News",
+      "date": "Fri, 24 Jul 2026 04:31:30 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-24T06:09:49.281337+00:00"
+    },
+    {
       "id": "79591231018928bf",
       "banque": "BNP Paribas",
       "departement": null,
@@ -24916,6 +25056,110 @@
       "score": 3,
       "raison": "fermeture non publiée: hors fenêtre temporelle",
       "created_at": "2026-07-22T09:09:01.159244+00:00"
+    },
+    {
+      "id": "310b956988d6ba34",
+      "banque": "Crédit Agricole",
+      "departement": null,
+      "titre": "Malgré l'abandon des locaux par le Crédit Agricole, rue Henri Barbusse à Aubin, la banque souhaite rester implantée dans la villee t cherche actuellement des solutions",
+      "extrait": "TITRE: Malgré l'abandon des locaux par le Crédit Agricole, rue Henri Barbusse à Aubin, la banque souhaite rester implantée dans la villee t cherche actuellement des solutions SOURCE: Ladepeche.fr DATE: 2026-07-24T06:01:04Z URL: https://www.ladepeche.fr/2026/07/24/malgre-labandon-des-locaux-par-le-credit-agricole-rue-henri-barbusse-a-aubin-la-banque-souhaite-rester-implantee-dans-la-villee-t-cherche-actuellement-13480915.php l'essentiel Depuis le 17 février 2026, le Crédit Agricole ne dispose plu",
+      "url": "https://www.ladepeche.fr/2026/07/24/malgre-labandon-des-locaux-par-le-credit-agricole-rue-henri-barbusse-a-aubin-la-banque-souhaite-rester-implantee-dans-la-villee-t-cherche-actuellement-13480915.php",
+      "source": "Ladepeche.fr",
+      "date": "2026-07-24T06:01:04Z",
+      "score": 3,
+      "raison": "fermeture non publiée: hors fenêtre temporelle",
+      "created_at": "2026-07-24T06:11:50.384411+00:00"
+    },
+    {
+      "id": "01398f1898b0149a",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "\" Les banques vont-elles refacturer des frais de succession pour les mineurs décédés ? \"",
+      "extrait": "TITRE: \" Les banques vont-elles refacturer des frais de succession pour les mineurs décédés ? \" SOURCE: MoneyVox Actu DATE: 2026-07-24T06:00:48Z URL: https://www.moneyvox.fr/tarif-bancaire/actualites/109790/les-banques-vont-elles-refacturer-des-frais-de-succession-pour-les-mineurs-decedes Stéphane Vedrenne : On ne s'attendait pas du tout à cette procédure isolée de la Caisse d'Epargne Grand Est devant le Conseil constitutionnel pour faire annuler la gratuité des frais bancaires de succession pré",
+      "url": "https://www.moneyvox.fr/tarif-bancaire/actualites/109790/les-banques-vont-elles-refacturer-des-frais-de-succession-pour-les-mineurs-decedes",
+      "source": "MoneyVox Actu",
+      "date": "2026-07-24T06:00:48Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-24T06:11:52.991494+00:00"
+    },
+    {
+      "id": "6c9e7592676e4b74",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "UEMOA : La BCEAO brosse à Dakar ? un tableau de l'économie sous-régionale",
+      "extrait": "TITRE: UEMOA : La BCEAO brosse à Dakar ? un tableau de l'économie sous-régionale SOURCE: lemagazinedumanager.com DATE: 2026-07-23T18:35:42Z URL: https://lemagazinedumanager.com/28683-uemoa-la-bceao-brosse-a-dakar-un-tableau-de-leconomie-sous-regionale.html Le gouverneur de la BCEAO, Banque centrale de l'UEMOA, l'Ivoirien Jean-Claude Kassi Brou a présenté ce mercredi 22 juillet à Dakar qui abrite le siège de cette Banque, le \"Rapport annuel 2025\" de cette institution financière ouest-africaine. L",
+      "url": "https://lemagazinedumanager.com/28683-uemoa-la-bceao-brosse-a-dakar-un-tableau-de-leconomie-sous-regionale.html",
+      "source": "lemagazinedumanager.com",
+      "date": "2026-07-23T18:35:42Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-24T06:11:55.510650+00:00"
+    },
+    {
+      "id": "cd97976b6fa502db",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "J'adore le poulpe, et vous ?",
+      "extrait": "TITRE: J'adore le poulpe, et vous ? SOURCE: Causeur DATE: 2026-07-23T15:59:00Z URL: https://www.causeur.fr/jadore-le-poulpe-et-vous-330974 Entre l'Inde et le Pakistan, la crise ouverte par l'attentat de Pahalgam en 2025 n'a jamais vraiment cicatrisé : échanges de tirs de drones, accusations croisées, et deux puissances nucléaires qui continuent de se regarder en chiens de faïence au-dessus du Cachemire. La Chine multiplie les manœuvres navales autour de Taïwan, teste ses missiles balistiques emb",
+      "url": "https://www.causeur.fr/jadore-le-poulpe-et-vous-330974",
+      "source": "Causeur",
+      "date": "2026-07-23T15:59:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-24T06:12:03.642921+00:00"
+    },
+    {
+      "id": "867aeaf7801fb363",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "Il passe d'un poste de cadre à caissier : il demande 700 000 euros à l'entreprise",
+      "extrait": "TITRE: Il passe d'un poste de cadre à caissier : il demande 700 000 euros à l'entreprise SOURCE: Econostrum | Toute l'actualité économique en Méditerranée DATE: 2026-07-23T15:38:00Z URL: https://econostrum.info/entreprise-ce-cadre-finit-caisse-dun-supermarche/ Estimant avoir été humilié, ce salarié réclamait plus de 700 000 euros à son entreprise. Après plus de trente ans de carrière au sein de la chaîne espagnole de supermarchés Mercadona, un ancien responsable des ressources humaines estimait ",
+      "url": "https://econostrum.info/entreprise-ce-cadre-finit-caisse-dun-supermarche/",
+      "source": "Econostrum | Toute l'actualité économique en Méditerranée",
+      "date": "2026-07-23T15:38:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-24T06:12:08.725614+00:00"
+    },
+    {
+      "id": "992f7a01670cf372",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Mercato ASSE :Départ de Davitashvili, Cathro lâche un indice",
+      "extrait": "TITRE: Mercato ASSE :Départ de Davitashvili, Cathro lâche un indice SOURCE: Foot-sur7 DATE: 2026-07-23T13:58:00Z URL: https://www.foot-sur7.fr/766635-mercato-asse-depart-davitashvili-cathro L'entraîneur de l'ASSE a lâché un nouvel indice sur le probable départ de Zuriko Davitashvili, après le match amical contre les Rangers à Glasgow. Mercato : Le départ de Zuriko Davitashvili de l'ASSE se rapproche Inscrit sur la liste des joueurs sur le départ de l'ASSE, cet été, Zuriko Davitashvili semble avo",
+      "url": "https://www.foot-sur7.fr/766635-mercato-asse-depart-davitashvili-cathro",
+      "source": "Foot-sur7",
+      "date": "2026-07-23T13:58:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-24T06:12:12.751789+00:00"
+    },
+    {
+      "id": "30941a830d8a82d5",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "Dépenses publiques : 0,8% du PIB par an, ce que l'ajustement du FMI coûtera réellement aux Français",
+      "extrait": "TITRE: Dépenses publiques : 0,8% du PIB par an, ce que l'ajustement du FMI coûtera réellement aux Français SOURCE: Economie Matin DATE: 2026-07-23T13:00:55Z URL: https://www.economiematin.fr/depenses-publiques-0-8-pib-ajustement-fmi L'ajustement structurel de 0,8% du PIB correspond à environ 24 milliards d'euros par an. Sur trois ans (2027-2029), l'effort atteint 72 milliards. Étendu jusqu'en 2032, le montant grimpe à 126 milliards. Pour donner une échelle : le budget annuel de l'Éducation natio",
+      "url": "https://www.economiematin.fr/depenses-publiques-0-8-pib-ajustement-fmi",
+      "source": "Economie Matin",
+      "date": "2026-07-23T13:00:55Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-24T06:12:14.715297+00:00"
+    },
+    {
+      "id": "0f43ce0149334958",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "La BCE maintient ses taux à 2,25 % tandis que la guerre en Iran laisse ouverte une nouvelle hausse",
+      "extrait": "TITRE: La BCE maintient ses taux à 2,25 % tandis que la guerre en Iran laisse ouverte une nouvelle hausse SOURCE: euronews DATE: 2026-07-23T12:26:43Z URL: https://fr.euronews.com/business/2026/07/23/la-bce-maintient-ses-taux-a-225-tandis-que-la-guerre-en-iran-laisse-ouverte-une-nouvelle-h La présidente de la BCE, Christine Lagarde, s'est gardée de fermer la porte à de nouvelles hausses. Lors du forum de la banque centrale à Sintra, Christine Lagarde a insisté sur le fait que la décision de juin ",
+      "url": "https://fr.euronews.com/business/2026/07/23/la-bce-maintient-ses-taux-a-225-tandis-que-la-guerre-en-iran-laisse-ouverte-une-nouvelle-h",
+      "source": "euronews",
+      "date": "2026-07-23T12:26:43Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-24T06:12:10.644136+00:00"
     },
     {
       "id": "e6b40f1e2e2dbe8a",
@@ -28025,6 +28269,32 @@
       "created_at": "2026-06-25T15:43:41.960961+00:00"
     },
     {
+      "id": "9e4449841f3bd106",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "Journal des Transferts : Openda se rapproche de l'OL, Diomandé met la pression au PSG, une vente XXL à Monaco...",
+      "extrait": "TITRE: Journal des Transferts : Openda se rapproche de l'OL, Diomandé met la pression au PSG, une vente XXL à Monaco... SOURCE: Maxifoot DATE: 2026-07-23T16:01:13Z URL: https://www.maxifoot.fr/football/article-65453.htm Openda se rapproche de l'OL, Diomandé met la pression au PSG, une vente XXL à Monaco, Camavinga inflexible, Adeyemi au Barça... Voici le Top 5 des gros dossiers mercato du jour à ne pas manquer. Découvrez aussi le Télégramme Foot Transfert, pour ne rien rater de l'actu de ces 24 ",
+      "url": "https://www.maxifoot.fr/football/article-65453.htm",
+      "source": "Maxifoot",
+      "date": "2026-07-23T16:01:13Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-24T06:12:00.639403+00:00"
+    },
+    {
+      "id": "08fa0261d42f6bb7",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Mercato PSG - Le prix du transfert de Lucas Digne est connu",
+      "extrait": "TITRE: Mercato PSG - Le prix du transfert de Lucas Digne est connu SOURCE: PSG Canal Supporters DATE: 2026-07-23T15:52:25Z URL: https://canal-supporters.com/mercato-psg-le-prix-du-transfert-de-lucas-digne-est-connu/ Pour faire souffler Nuno Mendes au poste de latéral gauche, le PSG a décidé de miser sur Lucas Digne. L'international français a été recruté en provenance d'Aston Villa pour un montant de 7 M€. Avec la fin de la Coupe du monde, le PSG va accélérer son mercato. Si les pistes menant à ",
+      "url": "https://canal-supporters.com/mercato-psg-le-prix-du-transfert-de-lucas-digne-est-connu/",
+      "source": "PSG Canal Supporters",
+      "date": "2026-07-23T15:52:25Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-24T06:12:05.667194+00:00"
+    },
+    {
       "id": "3185bc503a68aed4",
       "banque": "Société Générale",
       "departement": null,
@@ -28036,6 +28306,19 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-07-23T09:43:39.940336+00:00"
+    },
+    {
+      "id": "a2347f6941dcfaa9",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Mastantuono à l'OM, ça chauffe",
+      "extrait": "TITRE: Mastantuono à l'OM, ça chauffe SOURCE: foot01.com DATE: 2026-07-23T08:26:48Z URL: https://www.foot01.com/marseille/mastantuono-a-lom-ca-chauffe Avec des moyens financiers très limités, l'OM rêve de faire un joli coup pour zéro euro en faisant venir Franco Mastantuono, qui va quitter le Real Madrid. Annoncé comme le futur grand milieu de terrain offensif du football mondial il y a un an de cela, Franco Mastantuono avait donné son accord au PSG avant de filer au Real Madrid. Un choix qui av",
+      "url": "https://www.foot01.com/marseille/mastantuono-a-lom-ca-chauffe",
+      "source": "foot01.com",
+      "date": "2026-07-23T08:26:48Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-24T06:11:57.517042+00:00"
     },
     {
       "id": "54a601a892346afd",
