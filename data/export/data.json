@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-24T06:20:37.107336+00:00",
+  "generated_at": "2026-07-25T06:16:42.187513+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -119,11 +119,11 @@
     "12": {
       "nom": "Aveyron",
       "region": "Occitanie",
-      "count": 2,
+      "count": 3,
       "total_agences": 69,
-      "precise_count": 2,
+      "precise_count": 3,
       "unlocated_count": 0,
-      "estimated_count": 2
+      "estimated_count": 3
     },
     "13": {
       "nom": "Bouches-du-Rhône",
@@ -210,7 +210,7 @@
       "nom": "Côte-d'Or",
       "region": "Bourgogne-Franche-Comté",
       "count": 3,
-      "total_agences": 70,
+      "total_agences": 71,
       "precise_count": 3,
       "unlocated_count": 2,
       "estimated_count": 5
@@ -218,11 +218,11 @@
     "22": {
       "nom": "Côtes-d'Armor",
       "region": "Bretagne",
-      "count": 6,
+      "count": 7,
       "total_agences": 111,
-      "precise_count": 6,
+      "precise_count": 7,
       "unlocated_count": 1,
-      "estimated_count": 7
+      "estimated_count": 8
     },
     "23": {
       "nom": "Creuse",
@@ -363,7 +363,7 @@
       "nom": "Isère",
       "region": "Auvergne-Rhône-Alpes",
       "count": 1,
-      "total_agences": 153,
+      "total_agences": 154,
       "precise_count": 1,
       "unlocated_count": 2,
       "estimated_count": 3
@@ -527,8 +527,8 @@
       "count": 6,
       "total_agences": 135,
       "precise_count": 6,
-      "unlocated_count": 4,
-      "estimated_count": 10
+      "unlocated_count": 6,
+      "estimated_count": 12
     },
     "57": {
       "nom": "Moselle",
@@ -705,7 +705,7 @@
       "nom": "Seine-Maritime",
       "region": "Normandie",
       "count": 2,
-      "total_agences": 301,
+      "total_agences": 280,
       "precise_count": 2,
       "unlocated_count": 3,
       "estimated_count": 5
@@ -914,8 +914,8 @@
       "count": 0,
       "total_agences": 106,
       "precise_count": 0,
-      "unlocated_count": 4,
-      "estimated_count": 4
+      "unlocated_count": 5,
+      "estimated_count": 5
     },
     "976": {
       "nom": "Mayotte",
@@ -977,9 +977,9 @@
     "12": {
       "departement": "12",
       "nom": "Aveyron",
-      "precise_count": 2,
+      "precise_count": 3,
       "unlocated_count": 0,
-      "estimated_count": 2,
+      "estimated_count": 3,
       "department_signal_count": 0,
       "signals": []
     },
@@ -1652,8 +1652,8 @@
       "departement": "56",
       "nom": "Morbihan",
       "precise_count": 6,
-      "unlocated_count": 4,
-      "estimated_count": 10,
+      "unlocated_count": 6,
+      "estimated_count": 12,
       "department_signal_count": 0,
       "signals": [
         {
@@ -1681,6 +1681,18 @@
           "reason": "hors fenêtre temporelle"
         },
         {
+          "id": "702ab5de0849ac69",
+          "banque": "La Banque Postale",
+          "commune": "Guiscriff",
+          "departement": "56",
+          "titre": "Le bureau de poste de Guiscriff fermé jusqu’à début août - Le Télégramme",
+          "source": "Google News",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNZWhzWG5Qdlhrenp3eU15bzYyelI5WlZiNkplaFVxcHlmbjNmTF9reFV5ZmpuY2RXeTFqRVM1THNPZkRkMENxeDFpUHhERU1NR1dyejRrMjNkOHc0a3hFWUpLclZlWS0wS0R4RGNDOEhnY2IzR1F0eG51YUY0eDZ2elpuVDl5bGZZYnI1dW5jM0ZfOG91enhVdHJvczRnTmxCRmxCZTV2al9zVC1fSnBGQkxreUxlQXJ6akg5Ug?oc=5",
+          "score": 3,
+          "precision": "commune_non_geocodee",
+          "reason": "hors fenêtre temporelle"
+        },
+        {
           "id": "8e8f2b25100a0868",
           "banque": "La Banque Postale",
           "commune": "Pontivy",
@@ -1691,6 +1703,18 @@
           "score": 3,
           "precision": "commune_non_geocodee",
           "reason": "garde entrée/sortie: fermeture postale temporaire ou circonstancielle"
+        },
+        {
+          "id": "c87ac2e30672e57d",
+          "banque": "La Banque Postale",
+          "commune": "Guiscriff",
+          "departement": "56",
+          "titre": "Le bureau de poste de Guiscriff fermé jusqu’à début août",
+          "source": "letelegramme.fr",
+          "url": "https://www.letelegramme.fr/morbihan/guiscriff-56560/le-bureau-de-poste-de-guiscriff-ferme-jusqua-debut-aout-7089636.php",
+          "score": 3,
+          "precision": "commune_non_geocodee",
+          "reason": "hors fenêtre temporelle"
         },
         {
           "id": "19fb4736e710c2c4",
@@ -1833,9 +1857,9 @@
     "22": {
       "departement": "22",
       "nom": "Côtes-d'Armor",
-      "precise_count": 6,
+      "precise_count": 7,
       "unlocated_count": 1,
-      "estimated_count": 7,
+      "estimated_count": 8,
       "department_signal_count": 0,
       "signals": [
         {
@@ -2937,8 +2961,8 @@
       "departement": "974",
       "nom": "La Réunion",
       "precise_count": 0,
-      "unlocated_count": 4,
-      "estimated_count": 4,
+      "unlocated_count": 5,
+      "estimated_count": 5,
       "department_signal_count": 0,
       "signals": [
         {
@@ -2961,6 +2985,18 @@
           "titre": "Attention, le bureau de poste ferme ses portes en juillet et en août dans cette commune de Loire-Atlantique - MaVille.com",
           "source": "Google News",
           "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOd2x3ZS1xX1pXY3libjBDRXZWOFQ3Y25hRExFSTZXTnk0OU9FWDdNOXhRd1VvRGN3dUVhcFlyOHdRWFBpa1BMVXgyQUxYeEJKRHo3aGhpUEZmWHRKZFlOT0JKUFpWaFI3Q1JzYzlGOUsxUENxdUFKcU04Z0djMkR1aXNvZEJiSF9ub2huNlpmNjlxTXBGdVVQczlZdUNEcm9BV3FfV2pLcjJrVGN4cldiTVhaaHhtRGtrMjM5d0d3dWVsMzd6bks3NGxiNG5vY0hvOTVBQzYzVG1PMUlkaF9zeDBXODFEU3VCUGJJM2F6MERCUGpUOU55VjBrNTFucUlRc1I4?oc=5",
+          "score": 3,
+          "precision": "commune_non_geocodee",
+          "reason": "garde entrée/sortie: département source 44 incompatible avec la sortie 974"
+        },
+        {
+          "id": "8c646081e1d69e81",
+          "banque": "La Banque Postale",
+          "commune": "Sainte-Suzanne",
+          "departement": "974",
+          "titre": "Attention, le bureau de poste ferme ses portes en juillet et en août dans cette commune de Loire-Atlantique - Maville Nantes",
+          "source": "Google News",
+          "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQelRSNWdySmQ0Q2hxellMdk1ZdVFfeDhnTXlSUVVVb1JOaHVnQkgydHNDMHd1V0tnWDFUUVgxYlJWc3gyemctam1nTUZNU2t3R0ZrUUhzM2xoQUZEMVpmVTNFeXFRNVdGbnBrMElqVy1LUkFsQk1vMUcyQk90b3NZRWV1SXpxc3E4WlhKbjlXWHNzb3ZlZFVjOGNaVjFVa2VBanJKN0tnTmFXUGZTUG9IeEJQb0ZrWmQxcGV1Wk0zVGZreUt1cjhQZzZSSmd5eUlJNTlRS2tjM240bHM0eGl5UUFLWUgxdjVjbllJTlh6dEJBaWRKX0pGSUJxSXBTZw?oc=5",
           "score": 3,
           "precision": "commune_non_geocodee",
           "reason": "garde entrée/sortie: département source 44 incompatible avec la sortie 974"
@@ -3159,9 +3195,9 @@
     },
     {
       "region": "Bretagne",
-      "articles": 30,
+      "articles": 32,
       "fermetures": 15,
-      "projets": 8,
+      "projets": 9,
       "fusions": 0,
       "types": [
         "Fermeture",
@@ -3272,6 +3308,26 @@
       "nb_departements": 4
     },
     {
+      "region": "Occitanie",
+      "articles": 9,
+      "fermetures": 1,
+      "projets": 5,
+      "fusions": 2,
+      "types": [
+        "Fermeture",
+        "Projet",
+        "Fusion"
+      ],
+      "departements": [
+        "12",
+        "31",
+        "46",
+        "65",
+        "82"
+      ],
+      "nb_departements": 5
+    },
+    {
       "region": "Normandie",
       "articles": 9,
       "fermetures": 5,
@@ -3305,26 +3361,6 @@
         "72"
       ],
       "nb_departements": 3
-    },
-    {
-      "region": "Occitanie",
-      "articles": 8,
-      "fermetures": 1,
-      "projets": 4,
-      "fusions": 2,
-      "types": [
-        "Fermeture",
-        "Projet",
-        "Fusion"
-      ],
-      "departements": [
-        "12",
-        "31",
-        "46",
-        "65",
-        "82"
-      ],
-      "nb_departements": 5
     },
     {
       "region": "Provence-Alpes-Côte d'Azur",
@@ -8895,6 +8931,13 @@
           "tier": "D"
         },
         {
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOdzE3c0h3a1ZqZlhiUkhhcWctRnNaUVNNeWZBd3BkbUlhLTRWY3FUbmlENlN3ZGR1bXV4ZXB2NEotQzRXYXNrMDNrV0RlcVhTLUNEUlJueUpUR0dlNlBVYjlRUTVyYW10ZjhkYkVfeHpwc0dnZVpvdmlXNnhHRjZoUDlqa3R3dWdha2ZlRGJndXJlWlpnejlMV2puX3F0LXJsZjJzM1k4ZHU2MlZEOVJScjhzdXAyeHJsdEpqTGJYT3owUndMYWlV?oc=5",
+          "titre": "L’agence bancaire Crédit Agricole de Ploeren fermera dans un mois - MaVille.com",
+          "source": "Google News",
+          "date": "Tue, 21 Jul 2026 17:18:00 GMT",
+          "tier": "D"
+        },
+        {
           "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNWDB5bUU2QzFhejVsSE9nemd1Mi1xclpvd1RsR0k0Vlh6UkJ6UDRDdTVwRHA1T2g4QkpUQmlraVoyOXhGNFh3bHR6R2dWMVJzZjJoTGdUVGhadWJBeXA4QVJCdVpjS0JZczktMUlPRmk5bkNkLVlhejVib0FyOGV4VGJicXV0RHhkbnN1SkdvRGFpUEVXUnJlTUd2SXVnR0FNeDNJVFVKS2puTkp1bDQyXy1VX05LMlU2b1hFU0VCeDdHektVNFhCag?oc=5",
           "titre": "L’agence bancaire Crédit Agricole de Ploeren fermera dans un mois - MaVille.com",
           "source": "Google News",
@@ -10050,6 +10093,88 @@
         "source": "SIRENE"
       },
       "region": "Bourgogne-Franche-Comté"
+    },
+    {
+      "id": "cd758ecd21b17b73",
+      "banque": "Crédit Agricole",
+      "commune": "Aubin",
+      "code_insee": "12013",
+      "departement": "12",
+      "type": "fermeture",
+      "date_annonce": "Fri, 24 Jul 2026 06:55:00 GMT",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 1,
+      "fiabilite": 3,
+      "lat": 44.538724,
+      "lon": 2.256769,
+      "citation": "« fermé pour cause d'infiltrations d'eau, le Crédit Agricole souhaite rester à Aubin »",
+      "adresse": null,
+      "agence_localisation": "Aubin - Centre",
+      "commune_originale": null,
+      "service_impact": null,
+      "point_postal_avant": null,
+      "point_postal_apres": null,
+      "postal_point_id": null,
+      "evidence_level": null,
+      "created_at": "2026-07-25T06:01:59.365092+00:00",
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOMEVrNmFJNEc5ZDR4YS1JWGJfYWljbXlFMXJ4b0w3ZzE5UjhWXzhDdTRCckJ2aHlqdGhxYWhvR09yTjczb2pTSFpkVWxhOUVFSlpuUlA0T0ZKeXRTOHJiNDNMalh0S2Znbnl4bkwxM0VrSHEyWE5VN24xVndsSGtDejhsVXVINUI5TDZ2MkdETC02YkdzNVk4LWt2U016UHJWQmpQRHFXamQxWkVuRGdxVUJRTkV1U3dKZTlfeXF2NUxLZUpLamVZMFFEbjlRc3lNRmJDWUpuT3kyZlRwR2R0amR4c1JKeW9tOGhMOUpydEdKZzN0S1ZZVVc4UVhiNHhxTmFn?oc=5",
+          "titre": "\"Les préfabriqués ont été commandés\" : fermé pour cause d'infiltrations d'eau, le Crédit Agricole souhaite rester à Aubin - Centre Presse Aveyron",
+          "source": "Google News",
+          "date": "Fri, 24 Jul 2026 06:55:00 GMT",
+          "tier": "D"
+        }
+      ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
+      "region": "Occitanie"
+    },
+    {
+      "id": "14c2fc2bc44eb609",
+      "banque": "Crédit Mutuel",
+      "commune": "Saint-Brieuc",
+      "code_insee": "22278",
+      "departement": "22",
+      "type": "fermeture",
+      "date_annonce": "Wed, 16 Apr 2025 07:00:00 GMT",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 1,
+      "fiabilite": 3,
+      "lat": 48.508238,
+      "lon": -2.766074,
+      "citation": "Article Ouest-France : « la fermeture du Crédit mutuel ne passe pas à Saint-Brieuc » (commune de Saint-Brieuc mentionnée).",
+      "adresse": null,
+      "agence_localisation": "agence du Crédit mutuel à Saint-Brieuc - Ouest",
+      "commune_originale": null,
+      "service_impact": null,
+      "point_postal_avant": null,
+      "point_postal_apres": null,
+      "postal_point_id": null,
+      "evidence_level": null,
+      "created_at": "2026-07-25T06:12:13.003656+00:00",
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxPelktd0o2M3Zrc25qUW9tOG5lSUZ2TWxIWDFRMUxkREtkbkk0dW5LcnVVNU5BRnB1M1JjZ3hSVzVkQi1FVW56NkVyZ2hOVjk0aG9XeFR3VFp0WXJwc0FPbVgzWHRLYXlObERBSlVKeDhKeWs0RFhlNHRsbm45TU9fUmdKYzk0VjBwUWs2WmdNM1FNcnVzZTFiWFBrNFVuTWpHUGJwcVhmTldEclctVHJGWXltUk9icldFV2xOckd3cnFiWG1YSV9QNmc5UVZWdGFydTg0SUl5THN6X0NlREVTd2dVdVE0NTQ5RE9DQWNBNWVad1FpdFZlRlRZX3pOZFliOXhmYlg2MHhRUTBmQ1AxaGtwNXFWQQ?oc=5",
+          "titre": "«Une banque, ça fait vivre un quartier» : la fermeture du Crédit mutuel ne passe pas à Saint-Brieuc - Ouest-France",
+          "source": "Google News",
+          "date": "Wed, 16 Apr 2025 07:00:00 GMT",
+          "tier": "D"
+        }
+      ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
+      "region": "Bretagne"
     }
   ],
   "closures_unlocated": [
@@ -10735,7 +10860,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-07-24T06:06:56.981380+00:00"
+      "created_at": "2026-07-25T05:59:03.113809+00:00"
     },
     {
       "id": "50895c042a984b7d",
@@ -10771,7 +10896,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 04:46:02 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-07-24T06:06:56.975669+00:00"
+      "created_at": "2026-07-25T05:59:03.107963+00:00"
     },
     {
       "id": "8c6a0cad14626d6f",
@@ -12085,7 +12210,7 @@
       "source": "Google News",
       "date": "Sat, 03 Aug 2024 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-07-24T06:06:55.842315+00:00"
+      "created_at": "2026-07-25T05:59:01.991049+00:00"
     },
     {
       "id": "4996e3bfe560bbb6",
@@ -12556,6 +12681,60 @@
       "created_at": "2026-07-02T12:58:47.063400+00:00"
     },
     {
+      "id": "702ab5de0849ac69",
+      "banque": "La Banque Postale",
+      "commune": "Guiscriff",
+      "departement": "56",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "Le bureau de poste de Guiscriff fermé jusqu’à début août - Le Télégramme",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNZWhzWG5Qdlhrenp3eU15bzYyelI5WlZiNkplaFVxcHlmbjNmTF9reFV5ZmpuY2RXeTFqRVM1THNPZkRkMENxeDFpUHhERU1NR1dyejRrMjNkOHc0a3hFWUpLclZlWS0wS0R4RGNDOEhnY2IzR1F0eG51YUY0eDZ2elpuVDl5bGZZYnI1dW5jM0ZfOG91enhVdHJvczRnTmxCRmxCZTV2al9zVC1fSnBGQkxreUxlQXJ6akg5Ug?oc=5",
+      "titre": "Le bureau de poste de Guiscriff fermé jusqu’à début août - Le Télégramme",
+      "source": "Google News",
+      "date": "Fri, 24 Jul 2026 17:31:05 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-07-25T06:02:09.539736+00:00"
+    },
+    {
+      "id": "2c798a1a00329abe",
+      "banque": "La Banque Postale",
+      "commune": "Keryado (Lorient)",
+      "departement": null,
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "rumeur",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "« un syndicat conteste la raison de la fermeture temporaire du bureau de poste de Keryado » (Ouest-France) — article ne précise pas le caractère bancaire, mais bureau de poste renvoie potentiellement à La Banque Postale.",
+      "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxNWU0wVHlrLTdDY0pPM0VyQk5rU1lYQ3JJVlRBcVgwWDU0MGlXaG1JMC1kdC1GRkQzTGFWeVhLLUQ4S21KeTZCOWt0U2oyNDNIUEF6TGdieEZlckJQWDhhSjQ3TkQ0SHBtT3ZnY1ZDMGNaZHd4d1NVb1lIVkJQaEVESWhGM0FwSDVvdUsxSXY3ZmZBLVJ5SGtETThIRTRMX094bkxpRTVlQlJreW5fT1ctQi1wZUJQcFd0V0ZPeThaSVRNWE5kR29sd2Z4U3NXdHB5X0hqVHVvdkdza3RiaDZ4ZUdFWldsbmtSYlhVMERWS2c3R1F2NkpaSEJjVGVpeUVZLW5pUjREUkhSQTNXRHYxWW1xWQ?oc=5",
+      "titre": "À Lorient, un syndicat conteste la raison de la fermeture temporaire du bureau de poste de Keryado - Ouest-France",
+      "source": "Google News",
+      "date": "Fri, 24 Jul 2026 16:56:01 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-07-25T06:02:12.901901+00:00"
+    },
+    {
+      "id": "878118525c54a6b9",
+      "banque": "La Banque Postale",
+      "commune": "Keryado",
+      "departement": null,
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "rumeur",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "« un syndicat conteste la raison de la fermeture temporaire du bureau de poste de Keryado »",
+      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxObGM1MDlZdkVWRE44MEJtbUNCTzRTU19QdjY5Qnh3RjQ5Mm1GaHdlaFZBeFM5Ty1wM0xmWTNGOUl4Y1JEdTk5MjAwTGs2UHZaS1RXV0hlOU9Kamw2SkR5V2dyZ3lGOXAtUTh3SDQtazdBS2Z6bnFBWG02azMxZ2FQZkhlV1hTNEd0dWd6OEgxWjJFWWJKZDAyRWZ6eHVScGNsSlczVzBQY19fQjVhcERpR041THc2NGxkbklfa2h4VU9ULTNwc0RicHZya2t2SWNuN1dhT01qQ1ozNzdhRXZWN0plc0ZlVzVfYnozYzVxLVFvTFE?oc=5",
+      "titre": "À Lorient, un syndicat conteste la raison de la fermeture temporaire du bureau de poste de Keryado - MaVille.com",
+      "source": "Google News",
+      "date": "Fri, 24 Jul 2026 16:56:00 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-07-25T06:02:15.232632+00:00"
+    },
+    {
       "id": "bd5deb903067899a",
       "banque": "La Banque Postale",
       "commune": "Toulouse",
@@ -12697,7 +12876,7 @@
       "source": "Google News",
       "date": "Fri, 20 Jun 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-07-24T06:07:06.527698+00:00"
+      "created_at": "2026-07-25T05:59:13.528292+00:00"
     },
     {
       "id": "b80663fa38292743",
@@ -12841,7 +13020,25 @@
       "source": "Google News",
       "date": "Fri, 10 Jul 2026 10:12:00 GMT",
       "raison": "garde entrée/sortie: département source 44 incompatible avec la sortie 974",
-      "created_at": "2026-07-24T06:07:30.968362+00:00"
+      "created_at": "2026-07-25T05:59:36.167784+00:00"
+    },
+    {
+      "id": "8c646081e1d69e81",
+      "banque": "La Banque Postale",
+      "commune": "Sainte-Suzanne",
+      "departement": "974",
+      "type": "fermeture",
+      "date_fermeture": "2026-07-10",
+      "statut": "confirmé",
+      "statut_temporel": "deja_fermee",
+      "fiabilite": 3,
+      "citation": "Attention, le bureau de poste ferme ses portes en juillet et en août dans cette commune de Loire-Atlantique - Maville Nantes",
+      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQelRSNWdySmQ0Q2hxellMdk1ZdVFfeDhnTXlSUVVVb1JOaHVnQkgydHNDMHd1V0tnWDFUUVgxYlJWc3gyemctam1nTUZNU2t3R0ZrUUhzM2xoQUZEMVpmVTNFeXFRNVdGbnBrMElqVy1LUkFsQk1vMUcyQk90b3NZRWV1SXpxc3E4WlhKbjlXWHNzb3ZlZFVjOGNaVjFVa2VBanJKN0tnTmFXUGZTUG9IeEJQb0ZrWmQxcGV1Wk0zVGZreUt1cjhQZzZSSmd5eUlJNTlRS2tjM240bHM0eGl5UUFLWUgxdjVjbllJTlh6dEJBaWRKX0pGSUJxSXBTZw?oc=5",
+      "titre": "Attention, le bureau de poste ferme ses portes en juillet et en août dans cette commune de Loire-Atlantique - Maville Nantes",
+      "source": "Google News",
+      "date": "Fri, 10 Jul 2026 10:12:00 GMT",
+      "raison": "garde entrée/sortie: département source 44 incompatible avec la sortie 974",
+      "created_at": "2026-07-25T06:02:09.907598+00:00"
     },
     {
       "id": "2d1622fef7f0fc9f",
@@ -12967,7 +13164,7 @@
       "source": "Google News",
       "date": "Fri, 03 Jan 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-07-24T06:06:56.437879+00:00"
+      "created_at": "2026-07-25T05:59:02.585289+00:00"
     },
     {
       "id": "f3e888f7eaf5ffb7",
@@ -13022,6 +13219,24 @@
       "date": "2026-07-24T06:01:04Z",
       "raison": "hors fenêtre temporelle",
       "created_at": "2026-07-24T06:11:50.370811+00:00"
+    },
+    {
+      "id": "c87ac2e30672e57d",
+      "banque": "La Banque Postale",
+      "commune": "Guiscriff",
+      "departement": "56",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "Le bureau de poste de Guiscriff fermé jusqu’à début août",
+      "url": "https://www.letelegramme.fr/morbihan/guiscriff-56560/le-bureau-de-poste-de-guiscriff-ferme-jusqua-debut-aout-7089636.php",
+      "titre": "Le bureau de poste de Guiscriff fermé jusqu’à début août",
+      "source": "letelegramme.fr",
+      "date": "2026-07-24",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-07-25T06:04:11.197871+00:00"
     },
     {
       "id": "3db1d665a6fa91ce",
@@ -13850,6 +14065,19 @@
       "created_at": "2026-07-22T08:55:41.092061+00:00"
     },
     {
+      "id": "b627c5c7cf8f1ae1",
+      "banque": "BANCAIRES (toutes banques confondues)",
+      "scope": "national",
+      "count": 180,
+      "confidence": 0.35,
+      "evidence": "« Banques: 180 agences ont fermé en 2025 sous l’effet de la digitalisation » (Consonews)",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQVDdOT1ptRG9PT05ERmdwYmRXYVVGZndJNzN3NzRETGtOS3RHdm9QZ3RUcmk1MEFSandhSll0RkEyc2RtS1lZQ1l5OXZKYmJtTzhFWmM3Q3pfanktUkR4Y2xRR1d1Z1AtZ2dOX2M5eVNIcENXZ3k4WGhCZHFHUTZiempzZzFqWHlHcFhKajBsV3BqR3NKVEt1anZCblNZTXpBbGFIXzQ3dUFtYmpNVGF4VmVn?oc=5",
+      "titre": "Banques: 180 agences ont fermé en 2025 sous l’effet de la digitalisation - Consonews",
+      "source": "Google News",
+      "date": "Thu, 02 Jul 2026 07:00:00 GMT",
+      "created_at": "2026-07-25T06:01:52.156309+00:00"
+    },
+    {
       "id": "47b0cc648a5844ec",
       "banque": "La Poste (agence/relai postaux avec volet bancaire possible mais non explicitement documenté ici)",
       "scope": "regional",
@@ -14108,6 +14336,32 @@
       "source": "Google News",
       "date": "Fri, 26 Sep 2025 07:00:00 GMT",
       "created_at": "2026-07-23T09:40:21.141830+00:00"
+    },
+    {
+      "id": "edeca1f6f5f1a848",
+      "banque": "La Banque Postale",
+      "scope": "regional",
+      "count": null,
+      "confidence": 0.15,
+      "evidence": "« Pas de fermeture prévue chez Bpost » (bureau de poste de Givry, menace évoquée mais sans fermeture annoncée).",
+      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPR1BFUkZzc3hmekRqZTMzS3o3Y3N1V2xMX1dISXpkalRPQXNfZk1zc1pHeGZEM01aREI4QmduVGJhR0gxcUZBLTk2WVBvV010ZzNPNEdoQVktaUpSZFg1QVJOZC0zRndJMDFnTXJNWGxLWEVYbDZjcVBUdUMyNkR3aFlsZHljbmpfS0RrWHRSblRaWE1Wbm90MGlURVBiYVVCT1RZQW1kR2JIRUl6eHA3SEl4X1VMMVotWUxFZnZjYjJmNFBZZEpYZ0o4dXBJWnlXejExZmhwWE9xTGJzY2IxOURORjg3UVZsX1Jsd1ZGM193SXdZYXc?oc=5",
+      "titre": "Le bureau de poste de Givry est-il menacé ? Pas de fermeture prévue chez Bpost, mais… - DHnet",
+      "source": "Google News",
+      "date": "Fri, 24 Jul 2026 12:58:00 GMT",
+      "created_at": "2026-07-25T06:02:17.310269+00:00"
+    },
+    {
+      "id": "1b6a2ae7daf69b72",
+      "banque": "Ethias",
+      "scope": "national",
+      "count": null,
+      "confidence": 0.2,
+      "evidence": "Article centré sur la fusion Belfius/Ethias (« Le futur d’Ethias n’est pas une urgence »), sans mention de fermetures/regroupements/transferts d’agences bancaires en France ni de communes.",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQTjluLWlpMmt0YTJlMmlNWTVqOVJ3QTNzWXVIbDM0eThtV29yLTE1NWJOR3RnYjZEQ2NaWUtxX25JMWZWV2w4YVQ0Nk1zcy1Uekh0b1ViMnVyQU83Q2tIcEMwTUIwWG5kRGRESDFVSGU0V1RoRW5aUVhta2RMVC1oN2Fudl81M0J0eGZKSTNYR29ya0VkWm45NHdHTV92SDVTU1psNjM0Y21DS21wVlZvSHU2NklENXRV?oc=5",
+      "titre": "La fusion Belfius/Ethias peut attendre : \"Le futur d’Ethias n’est pas une urgence\" - Trends-Tendances",
+      "source": "Google News",
+      "date": "Fri, 24 Jul 2026 09:38:04 GMT",
+      "created_at": "2026-07-25T06:01:56.356408+00:00"
     },
     {
       "id": "7eab27e40a7575c3",
@@ -14957,6 +15211,19 @@
       "created_at": "2026-07-23T06:16:11.911787+00:00"
     },
     {
+      "id": "98fc986eeeebc108",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "La piscine de l'Île d'Or, à Amboise, rouvre après cinq jours de fermeture - ici.fr",
+      "extrait": "TITRE: La piscine de l'Île d'Or, à Amboise, rouvre après cinq jours de fermeture - ici.fr SOURCE: Google News DATE: Wed, 22 Jul 2026 11:58:35 GMT URL: https://news.google.com/rss/articles/CBMi3AFBVV95cUxNbHlQQlN5aXFnMUxwaGY2VjdwSFlBejlLd1psbnNzQjZVZERZNUNacks5VGU5a1lsUG9saVhVNmgwWjNkeEw2Z2IzUHNSX2pYXzJuaFdad1F1VWh5UXVYTk1aMkk5WUVlT3ZlZk42c0lzUkZyT01EYnVub3BKSmJ6VVo1VWh0UTR5MUFpVHdmaGduU1g5VG8xSGFuOXNtUEdMdm5EUlhCbHE5dm5NSkJTa2ZBREktTDdSMDA0SHVQZzBnbExxOVZIVUNxU0tnaEUtdFR5c1RzRnpoVW5f?oc=5 <a hre",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNbHlQQlN5aXFnMUxwaGY2VjdwSFlBejlLd1psbnNzQjZVZERZNUNacks5VGU5a1lsUG9saVhVNmgwWjNkeEw2Z2IzUHNSX2pYXzJuaFdad1F1VWh5UXVYTk1aMkk5WUVlT3ZlZk42c0lzUkZyT01EYnVub3BKSmJ6VVo1VWh0UTR5MUFpVHdmaGduU1g5VG8xSGFuOXNtUEdMdm5EUlhCbHE5dm5NSkJTa2ZBREktTDdSMDA0SHVQZzBnbExxOVZIVUNxU0tnaEUtdFR5c1RzRnpoVW5f?oc=5",
+      "source": "Google News",
+      "date": "Wed, 22 Jul 2026 11:58:35 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-25T06:02:08.653406+00:00"
+    },
+    {
       "id": "452fcfd399ff8770",
       "banque": "La Banque Postale",
       "departement": null,
@@ -15592,6 +15859,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-07-19T06:16:58.616739+00:00"
+    },
+    {
+      "id": "63bead6f7073f97f",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Fin de la brève : Après 112 ans, Georges Gimaïel Nouveautés ferme ses portes. Brève suivante - Radio-Canada",
+      "extrait": "TITRE: Fin de la brève : Après 112 ans, Georges Gimaïel Nouveautés ferme ses portes. Brève suivante - Radio-Canada SOURCE: Google News DATE: Wed, 15 Jul 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMivgFBVV95cUxNNV9CZEZmcFdnTUpTUHRNVldIMFJnOHNLSzRqNnFNX3N2MEtOYndIaGR0ZWtXWFBNOUhMMEx1RTNCal9oa0IwU3hSZ19FQ0tDVjlvWTA3bEh4SkNHTFJBUGhmNFJoMW9ubzVZNmhybWdPbk1JNGl2MzhvZlo2LU45SG80aXpnR09rcW1YR2o0OENCX2pTbGVkNXAzUXphcWhfZXZScms4VEZJTHRXbzJUUVA5R0dRM2x3YlRzTVBB?oc=5 <a href=\"https://news",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNNV9CZEZmcFdnTUpTUHRNVldIMFJnOHNLSzRqNnFNX3N2MEtOYndIaGR0ZWtXWFBNOUhMMEx1RTNCal9oa0IwU3hSZ19FQ0tDVjlvWTA3bEh4SkNHTFJBUGhmNFJoMW9ubzVZNmhybWdPbk1JNGl2MzhvZlo2LU45SG80aXpnR09rcW1YR2o0OENCX2pTbGVkNXAzUXphcWhfZXZScms4VEZJTHRXbzJUUVA5R0dRM2x3YlRzTVBB?oc=5",
+      "source": "Google News",
+      "date": "Wed, 15 Jul 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-25T06:02:01.435816+00:00"
     },
     {
       "id": "4e35f3597cbc488c",
@@ -23641,6 +23921,45 @@
       "created_at": "2026-07-22T09:10:12.608939+00:00"
     },
     {
+      "id": "390296b4626331f2",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "À Lorient, un syndicat conteste la raison de la fermeture temporaire du bureau de poste de Keryado - Ouest-France",
+      "extrait": "TITRE: À Lorient, un syndicat conteste la raison de la fermeture temporaire du bureau de poste de Keryado - Ouest-France SOURCE: Google News DATE: Fri, 24 Jul 2026 16:56:01 GMT URL: https://news.google.com/rss/articles/CBMikwJBVV95cUxNWU0wVHlrLTdDY0pPM0VyQk5rU1lYQ3JJVlRBcVgwWDU0MGlXaG1JMC1kdC1GRkQzTGFWeVhLLUQ4S21KeTZCOWt0U2oyNDNIUEF6TGdieEZlckJQWDhhSjQ3TkQ0SHBtT3ZnY1ZDMGNaZHd4d1NVb1lIVkJQaEVESWhGM0FwSDVvdUsxSXY3ZmZBLVJ5SGtETThIRTRMX094bkxpRTVlQlJreW5fT1ctQi1wZUJQcFd0V0ZPeThaSVRNWE5kR29sd2Z4U3NXd",
+      "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxNWU0wVHlrLTdDY0pPM0VyQk5rU1lYQ3JJVlRBcVgwWDU0MGlXaG1JMC1kdC1GRkQzTGFWeVhLLUQ4S21KeTZCOWt0U2oyNDNIUEF6TGdieEZlckJQWDhhSjQ3TkQ0SHBtT3ZnY1ZDMGNaZHd4d1NVb1lIVkJQaEVESWhGM0FwSDVvdUsxSXY3ZmZBLVJ5SGtETThIRTRMX094bkxpRTVlQlJreW5fT1ctQi1wZUJQcFd0V0ZPeThaSVRNWE5kR29sd2Z4U3NXdHB5X0hqVHVvdkdza3RiaDZ4ZUdFWldsbmtSYlhVMERWS2c3R1F2NkpaSEJjVGVpeUVZLW5pUjREUkhSQTNXRHYxWW1xWQ?oc=5",
+      "source": "Google News",
+      "date": "Fri, 24 Jul 2026 16:56:01 GMT",
+      "score": 3,
+      "raison": "fermeture non publiée: hors fenêtre temporelle",
+      "created_at": "2026-07-25T06:02:12.904344+00:00"
+    },
+    {
+      "id": "c4d1da7768490b56",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "À Lorient, un syndicat conteste la raison de la fermeture temporaire du bureau de poste de Keryado - MaVille.com",
+      "extrait": "TITRE: À Lorient, un syndicat conteste la raison de la fermeture temporaire du bureau de poste de Keryado - MaVille.com SOURCE: Google News DATE: Fri, 24 Jul 2026 16:56:00 GMT URL: https://news.google.com/rss/articles/CBMi8wFBVV95cUxObGM1MDlZdkVWRE44MEJtbUNCTzRTU19QdjY5Qnh3RjQ5Mm1GaHdlaFZBeFM5Ty1wM0xmWTNGOUl4Y1JEdTk5MjAwTGs2UHZaS1RXV0hlOU9Kamw2SkR5V2dyZ3lGOXAtUTh3SDQtazdBS2Z6bnFBWG02azMxZ2FQZkhlV1hTNEd0dWd6OEgxWjJFWWJKZDAyRWZ6eHVScGNsSlczVzBQY19fQjVhcERpR041THc2NGxkbklfa2h4VU9ULTNwc0RicHZya2t2SW",
+      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxObGM1MDlZdkVWRE44MEJtbUNCTzRTU19QdjY5Qnh3RjQ5Mm1GaHdlaFZBeFM5Ty1wM0xmWTNGOUl4Y1JEdTk5MjAwTGs2UHZaS1RXV0hlOU9Kamw2SkR5V2dyZ3lGOXAtUTh3SDQtazdBS2Z6bnFBWG02azMxZ2FQZkhlV1hTNEd0dWd6OEgxWjJFWWJKZDAyRWZ6eHVScGNsSlczVzBQY19fQjVhcERpR041THc2NGxkbklfa2h4VU9ULTNwc0RicHZya2t2SWNuN1dhT01qQ1ozNzdhRXZWN0plc0ZlVzVfYnozYzVxLVFvTFE?oc=5",
+      "source": "Google News",
+      "date": "Fri, 24 Jul 2026 16:56:00 GMT",
+      "score": 3,
+      "raison": "fermeture non publiée: hors fenêtre temporelle",
+      "created_at": "2026-07-25T06:02:15.234637+00:00"
+    },
+    {
+      "id": "f2f65a6539838a4e",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "À Saint-Omer, l’enseigne Pronto Pizza contrainte de fermer un mois pour travail illégal - Nord Littoral",
+      "extrait": "TITRE: À Saint-Omer, l’enseigne Pronto Pizza contrainte de fermer un mois pour travail illégal - Nord Littoral SOURCE: Google News DATE: Fri, 24 Jul 2026 10:09:18 GMT URL: https://news.google.com/rss/articles/CBMiygFBVV95cUxOS01ZQjVlOEM4akhWSGhaVlFSZE41aklyZVcwdnZWY1lOQjdDNGYxbjM1ZG50NjdsZW00T2IyLXhjVHd2bkgyeWFSRDU5R2lKaFNXM3BnOXcxVmpjZTMwNUcxTlRWRnZVZldlWnZVb3VaemU3OEhGSVM0OGZGWFpQd3hBUWJJMXQzMzBQd1hlZlgyLVBZcGNzWGFUTTBSV1FyeFJBZGE4THFfRDdzeFR5NGJhZTM5NUQwV0tqUE16OGI2dDBJRy1ycURR?oc=5 <a href=\"",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOS01ZQjVlOEM4akhWSGhaVlFSZE41aklyZVcwdnZWY1lOQjdDNGYxbjM1ZG50NjdsZW00T2IyLXhjVHd2bkgyeWFSRDU5R2lKaFNXM3BnOXcxVmpjZTMwNUcxTlRWRnZVZldlWnZVb3VaemU3OEhGSVM0OGZGWFpQd3hBUWJJMXQzMzBQd1hlZlgyLVBZcGNzWGFUTTBSV1FyeFJBZGE4THFfRDdzeFR5NGJhZTM5NUQwV0tqUE16OGI2dDBJRy1ycURR?oc=5",
+      "source": "Google News",
+      "date": "Fri, 24 Jul 2026 10:09:18 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-25T06:02:03.916565+00:00"
+    },
+    {
       "id": "f9ecb080df51be7e",
       "banque": "La Banque Postale",
       "departement": null,
@@ -25058,6 +25377,58 @@
       "created_at": "2026-07-22T09:09:01.159244+00:00"
     },
     {
+      "id": "ee3fec9d2121cbc1",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "Al Aminou Lô : le porte-parolat quitte la Primature, le cabinet se renforce",
+      "extrait": "TITRE: Al Aminou Lô : le porte-parolat quitte la Primature, le cabinet se renforce SOURCE: Senego.com - Actualité au Sénégal, toute actualité du jour DATE: 2026-07-24T22:53:47Z URL: https://senego.com/al-aminou-lo-le-porte-parolat-quitte-la-primature-le-cabinet-se-renforce_1987021.html Après la nomination d'Al Aminou Lô le 25 mai 2026, en remplacement d'Ousmane Sonko, parti le 22 mai, l'administration de la Primature a été réorganisée. D'après Senenews, le cabinet s'est vu adjoindre le Secrétari",
+      "url": "https://senego.com/al-aminou-lo-le-porte-parolat-quitte-la-primature-le-cabinet-se-renforce_1987021.html",
+      "source": "Senego.com - Actualité au Sénégal, toute actualité du jour",
+      "date": "2026-07-24T22:53:47Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-25T06:04:17.793276+00:00"
+    },
+    {
+      "id": "fde6374d73444bed",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Après le coton, Monsanto cherche à multiplier les OGM en Afrique de l'Ouest",
+      "extrait": "TITRE: Après le coton, Monsanto cherche à multiplier les OGM en Afrique de l'Ouest SOURCE: afriquesenlutte.org DATE: 2026-07-24T21:50:37Z URL: https://www.afriquesenlutte.org/communiques-luttes-et-debats/livres-etudes-debats/article/apres-le-coton-monsanto-cherche-a Le Burkina Faso, l'un des pays les plus pauvres de la planète, a opté pour une variété OGM de Monsanto dans l'espoir de redresser sa filière cotonnière, qui fait vivre trois millions de personnes. Promesses de rendements non tenues, ",
+      "url": "https://www.afriquesenlutte.org/communiques-luttes-et-debats/livres-etudes-debats/article/apres-le-coton-monsanto-cherche-a",
+      "source": "afriquesenlutte.org",
+      "date": "2026-07-24T21:50:37Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-25T06:04:20.703027+00:00"
+    },
+    {
+      "id": "8d253a68b49a18dd",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "Barcus : quatre jeunes agriculteurs ouvrent leurs portes pour \" Laborarien eguna \"",
+      "extrait": "TITRE: Barcus : quatre jeunes agriculteurs ouvrent leurs portes pour \" Laborarien eguna \" SOURCE: La-R%C3%A9publique-des-Pyr%C3%A9n%C3%A9es DATE: 2026-07-24T13:54:04Z URL: https://www.larepubliquedespyrenees.fr/pyrenees-atlantiques/barcus/barcus-quatre-jeunes-agriculteurs-ouvrent-leurs-portes-pour-laborarien-eguna-30020806.php Inscrivez-vous pour recevoir les newsletters de la Rép' dans votre boîte mail Au programme de cette journée : à partir de 9 heures, départ du circuit découverte depuis le ",
+      "url": "https://www.larepubliquedespyrenees.fr/pyrenees-atlantiques/barcus/barcus-quatre-jeunes-agriculteurs-ouvrent-leurs-portes-pour-laborarien-eguna-30020806.php",
+      "source": "La-R%C3%A9publique-des-Pyr%C3%A9n%C3%A9es",
+      "date": "2026-07-24T13:54:04Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-25T06:04:27.227030+00:00"
+    },
+    {
+      "id": "46cceef3f62d6d5a",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "Afrique francophone : Airtel affiche un revenu en hausse d'environ 20% au 1er trimestre",
+      "extrait": "TITRE: Afrique francophone : Airtel affiche un revenu en hausse d'environ 20% au 1er trimestre SOURCE: Agence Ecofin DATE: 2026-07-24T11:30:30Z URL: https://www.agenceecofin.com/actualites-numerique/2407-140481-afrique-francophone-airtel-affiche-un-revenu-en-hausse-d-environ-20-au-1er-trimestre (Agence Ecofin) - Le groupe est présent dans 14 marchés en Afrique. Sa région Afrique francophone regroupe le Tchad, la RDC, le Congo, le Gabon, Madagascar, le Niger et les Seychelles. Airtel Africa a enr",
+      "url": "https://www.agenceecofin.com/actualites-numerique/2407-140481-afrique-francophone-airtel-affiche-un-revenu-en-hausse-d-environ-20-au-1er-trimestre",
+      "source": "Agence Ecofin",
+      "date": "2026-07-24T11:30:30Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-25T06:04:41.583556+00:00"
+    },
+    {
       "id": "310b956988d6ba34",
       "banque": "Crédit Agricole",
       "departement": null,
@@ -25082,6 +25453,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-07-24T06:11:52.991494+00:00"
+    },
+    {
+      "id": "d186020f854f3d42",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "À Lorient, un syndicat conteste la raison de la fermeture temporaire du bureau de poste de Keryado",
+      "extrait": "TITRE: À Lorient, un syndicat conteste la raison de la fermeture temporaire du bureau de poste de Keryado SOURCE: ouest-france.fr DATE: 2026-07-24 URL: https://www.ouest-france.fr/bretagne/lorient-56100/a-lorient-un-syndicat-conteste-la-raison-de-la-fermeture-temporaire-du-bureau-de-poste-de-keryado-882b10a4-8740-11f1-b777-fc1f4f594fd2",
+      "url": "https://www.ouest-france.fr/bretagne/lorient-56100/a-lorient-un-syndicat-conteste-la-raison-de-la-fermeture-temporaire-du-bureau-de-poste-de-keryado-882b10a4-8740-11f1-b777-fc1f4f594fd2",
+      "source": "ouest-france.fr",
+      "date": "2026-07-24",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-25T06:04:12.995553+00:00"
     },
     {
       "id": "6c9e7592676e4b74",
@@ -27151,6 +27535,19 @@
       "created_at": "2026-06-25T15:39:06.106358+00:00"
     },
     {
+      "id": "adb950553d0de02a",
+      "banque": "BANCAIRES (toutes banques confondues)",
+      "departement": null,
+      "titre": "Banques: 180 agences ont fermé en 2025 sous l’effet de la digitalisation - Consonews",
+      "extrait": "« Banques: 180 agences ont fermé en 2025 sous l’effet de la digitalisation » (Consonews)",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQVDdOT1ptRG9PT05ERmdwYmRXYVVGZndJNzN3NzRETGtOS3RHdm9QZ3RUcmk1MEFSandhSll0RkEyc2RtS1lZQ1l5OXZKYmJtTzhFWmM3Q3pfanktUkR4Y2xRR1d1Z1AtZ2dOX2M5eVNIcENXZ3k4WGhCZHFHUTZiempzZzFqWHlHcFhKajBsV3BqR3NKVEt1anZCblNZTXpBbGFIXzQ3dUFtYmpNVGF4VmVn?oc=5",
+      "source": "Google News",
+      "date": "Thu, 02 Jul 2026 07:00:00 GMT",
+      "score": 2,
+      "raison": "signaux: vague(BANCAIRES (toutes banques confondues),national,count=180)",
+      "created_at": "2026-07-25T06:01:52.159409+00:00"
+    },
+    {
       "id": "cd00716be7ba5b1d",
       "banque": "La Banque Postale",
       "departement": null,
@@ -27792,7 +28189,7 @@
       "banque": "La Banque Postale",
       "departement": null,
       "titre": "La Banque Postale regroupe ses sociétés de gestion sous la nouvelle marque «LFDE IM» - Citywire",
-      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMiygFBVV95cUxOQmx3M2N3aExRS2swUlh6bjZkUnpDUGw3eGNxTXluS01kZ1ZXY0xHRzU2Y2sxYzRfNW05a3Q2ZXhIbzhhTTdPQ0ozREFFWTMtYXZ0VE9ZOXpNXzBmMW1seWR0ZEhiYTlpR0dqY3A2eE9yX2ZjT0ZLbUZ2NmFiQWwza1hnV1hFMkZONURtWlp1VDRqX29zSWp5Um1RMGRBSmxNN3o2UDgxMzIwTDRFMk5TNVhwRDdIZ2hENk9JdEtYZEpZTlpVOEFKdVR3?oc=5\" target=\"_blank\">La Banque Postale regroupe ses sociétés de gestion sous la nouvelle marque «LFDE IM»</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Citywire</font>",
+      "extrait": "TITRE: La Banque Postale regroupe ses sociétés de gestion sous la nouvelle marque «LFDE IM» - Citywire SOURCE: Google News DATE: Fri, 29 May 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMiygFBVV95cUxOQmx3M2N3aExRS2swUlh6bjZkUnpDUGw3eGNxTXluS01kZ1ZXY0xHRzU2Y2sxYzRfNW05a3Q2ZXhIbzhhTTdPQ0ozREFFWTMtYXZ0VE9ZOXpNXzBmMW1seWR0ZEhiYTlpR0dqY3A2eE9yX2ZjT0ZLbUZ2NmFiQWwza1hnV1hFMkZONURtWlp1VDRqX29zSWp5Um1RMGRBSmxNN3o2UDgxMzIwTDRFMk5TNVhwRDdIZ2hENk9JdEtYZEpZTlpVOEFKdVR3?oc=5 <a href=\"https://",
       "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOQmx3M2N3aExRS2swUlh6bjZkUnpDUGw3eGNxTXluS01kZ1ZXY0xHRzU2Y2sxYzRfNW05a3Q2ZXhIbzhhTTdPQ0ozREFFWTMtYXZ0VE9ZOXpNXzBmMW1seWR0ZEhiYTlpR0dqY3A2eE9yX2ZjT0ZLbUZ2NmFiQWwza1hnV1hFMkZONURtWlp1VDRqX29zSWp5Um1RMGRBSmxNN3o2UDgxMzIwTDRFMk5TNVhwRDdIZ2hENk9JdEtYZEpZTlpVOEFKdVR3?oc=5",
       "source": "Google News",
       "date": "Fri, 29 May 2026 07:00:00 GMT",
@@ -28269,6 +28666,71 @@
       "created_at": "2026-06-25T15:43:41.960961+00:00"
     },
     {
+      "id": "6f7ef478ef67371d",
+      "banque": "LCL",
+      "departement": null,
+      "titre": "Les infos du jour : Terrier retour en Ligue 1 ? Nadé et Annan sur le départ, Abline joker monégasque ! - But! Football Club",
+      "extrait": "TITRE: Les infos du jour : Terrier retour en Ligue 1 ? Nadé et Annan sur le départ, Abline joker monégasque ! - But! Football Club SOURCE: But! Football Club DATE: 2026-07-24T19:32:47Z URL: https://www.butfootballclub.fr/1686311-infos-du-jour-2026-07-24/ Terrier n'a jamais proposé ses services à l'OM, Rennes aussi sur le coup Martin Terrier, sous contrat avec le Bayer Leverkusen, est dans le viseur de l'OM et du Stade Rennais pour un retour en Ligue 1. Contrairement à certaines rumeurs, l'attaqu",
+      "url": "https://www.butfootballclub.fr/1686311-infos-du-jour-2026-07-24/",
+      "source": "But! Football Club",
+      "date": "2026-07-24T19:32:47Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-25T06:04:24.741728+00:00"
+    },
+    {
+      "id": "b86946c9b4abcee3",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Mercato OL : Louis-Jean annonce du mouvement à Lyon",
+      "extrait": "TITRE: Mercato OL : Louis-Jean annonce du mouvement à Lyon SOURCE: Foot-sur7 DATE: 2026-07-24T13:58:00Z URL: https://www.foot-sur7.fr/766876-mercato-ol-louis-jean-annonce-mouvemen-lyon Matthieu Louis-Jean confirme l'arrivée imminente d'un avant-centre à l'OL. Il assure que le dossier est en bonne voie. Il annonce aussi des départs. Mercato : L'OL confirme des négociations avancées pour l'avant-centre L'OL aura un nouvel attaquant de pointe dans les prochains jours. Le club rhodanien a jusqu'au 3",
+      "url": "https://www.foot-sur7.fr/766876-mercato-ol-louis-jean-annonce-mouvemen-lyon",
+      "source": "Foot-sur7",
+      "date": "2026-07-24T13:58:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-25T06:04:29.529362+00:00"
+    },
+    {
+      "id": "720d33f7d68045cc",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "D'inattendues retrouvailles lors de Majorque/PSG ?",
+      "extrait": "TITRE: D'inattendues retrouvailles lors de Majorque/PSG ? SOURCE: CulturePSG DATE: 2026-07-24T12:59:42Z URL: https://www.culturepsg.com/news/club/d-inattendues-retrouvailles-lors-de-majorque-psg/60164 Premier match amical des Parisiens, le Majorque/PSG du 5 août pourrait être l'objet de retrouvailles sur le terrain, mais pas celles imaginées. Lee Kang-in devrait déjà être parti, mais un ancien Parisien est en passe de s'engager avec le Real Majorque. Au moment du transfert de Lee Kang-in depuis ",
+      "url": "https://www.culturepsg.com/news/club/d-inattendues-retrouvailles-lors-de-majorque-psg/60164",
+      "source": "CulturePSG",
+      "date": "2026-07-24T12:59:42Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-25T06:04:32.165246+00:00"
+    },
+    {
+      "id": "ba2e5a7af09ab7e7",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Andy Burnham inaugure son Downing Street \"du Nord\" à Manchester : Actualités",
+      "extrait": "TITRE: Andy Burnham inaugure son Downing Street \"du Nord\" à Manchester : Actualités SOURCE: Orange Actualités DATE: 2026-07-24T12:32:09Z URL: https://actu.orange.fr/monde/andy-burnham-inaugure-son-downing-street-quot-du-nord-quot-a-manchester-CNT000002qEGxl.html Le Premier ministre britannique Andy Burnham a inauguré vendredi matin ses nouveaux bureaux situés à Manchester, où il travaillera au moins une fois par semaine, symbole de sa promesse aux contours encore flous d'accentuer la décentralis",
+      "url": "https://actu.orange.fr/monde/andy-burnham-inaugure-son-downing-street-quot-du-nord-quot-a-manchester-CNT000002qEGxl.html",
+      "source": "Orange Actualités",
+      "date": "2026-07-24T12:32:09Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-25T06:04:39.157962+00:00"
+    },
+    {
+      "id": "255e8652c2efdd03",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Andy Burnham inaugure son Downing Street \"du Nord\" à Manchester",
+      "extrait": "TITRE: Andy Burnham inaugure son Downing Street \"du Nord\" à Manchester SOURCE: TV5MONDE DATE: 2026-07-23T22:01:47Z URL: https://information.tv5monde.com/international/andy-burnham-inaugure-son-downing-street-du-nord-manchester-2831274 Le Premier ministre britannique Andy Burnham prévoit de travailler à Manchester au moins une fois par semaine, et d'y être régulièrement rejoint par ses ministres Le Premier ministre britannique Andy Burnham a inauguré vendredi matin ses nouveaux bureaux situés à M",
+      "url": "https://information.tv5monde.com/international/andy-burnham-inaugure-son-downing-street-du-nord-manchester-2831274",
+      "source": "TV5MONDE",
+      "date": "2026-07-23T22:01:47Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-25T06:04:33.892796+00:00"
+    },
+    {
       "id": "9e4449841f3bd106",
       "banque": "CIC",
       "departement": null,
@@ -28644,6 +29106,32 @@
       "score": 1,
       "raison": "signaux: vague(Postes Canada (Bureaux de poste),national,count=None)",
       "created_at": "2026-07-23T09:40:21.142639+00:00"
+    },
+    {
+      "id": "de454168c067578a",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "Le bureau de poste de Givry est-il menacé ? Pas de fermeture prévue chez Bpost, mais… - DHnet",
+      "extrait": "« Pas de fermeture prévue chez Bpost » (bureau de poste de Givry, menace évoquée mais sans fermeture annoncée).",
+      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPR1BFUkZzc3hmekRqZTMzS3o3Y3N1V2xMX1dISXpkalRPQXNfZk1zc1pHeGZEM01aREI4QmduVGJhR0gxcUZBLTk2WVBvV010ZzNPNEdoQVktaUpSZFg1QVJOZC0zRndJMDFnTXJNWGxLWEVYbDZjcVBUdUMyNkR3aFlsZHljbmpfS0RrWHRSblRaWE1Wbm90MGlURVBiYVVCT1RZQW1kR2JIRUl6eHA3SEl4X1VMMVotWUxFZnZjYjJmNFBZZEpYZ0o4dXBJWnlXejExZmhwWE9xTGJzY2IxOURORjg3UVZsX1Jsd1ZGM193SXdZYXc?oc=5",
+      "source": "Google News",
+      "date": "Fri, 24 Jul 2026 12:58:00 GMT",
+      "score": 1,
+      "raison": "signaux: vague(La Banque Postale,regional,count=None)",
+      "created_at": "2026-07-25T06:02:17.311580+00:00"
+    },
+    {
+      "id": "dae7dac9d74d923d",
+      "banque": "Ethias",
+      "departement": null,
+      "titre": "La fusion Belfius/Ethias peut attendre : \"Le futur d’Ethias n’est pas une urgence\" - Trends-Tendances",
+      "extrait": "Article centré sur la fusion Belfius/Ethias (« Le futur d’Ethias n’est pas une urgence »), sans mention de fermetures/regroupements/transferts d’agences bancaires en France ni de communes.",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQTjluLWlpMmt0YTJlMmlNWTVqOVJ3QTNzWXVIbDM0eThtV29yLTE1NWJOR3RnYjZEQ2NaWUtxX25JMWZWV2w4YVQ0Nk1zcy1Uekh0b1ViMnVyQU83Q2tIcEMwTUIwWG5kRGRESDFVSGU0V1RoRW5aUVhta2RMVC1oN2Fudl81M0J0eGZKSTNYR29ya0VkWm45NHdHTV92SDVTU1psNjM0Y21DS21wVlZvSHU2NklENXRV?oc=5",
+      "source": "Google News",
+      "date": "Fri, 24 Jul 2026 09:38:04 GMT",
+      "score": 1,
+      "raison": "signaux: vague(Ethias,national,count=None)",
+      "created_at": "2026-07-25T06:01:56.357609+00:00"
     },
     {
       "id": "dc8899f9bca0449a",

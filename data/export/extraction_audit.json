@@ -410,6 +410,16 @@
     "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
   },
   {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "14c2fc2bc44eb609",
+    "banque": "Crédit Mutuel",
+    "commune": "Saint-Brieuc",
+    "departement": "22",
+    "code_insee": "22278",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
     "severity": "info",
     "type": "communes_proches",
     "id": "ef183498a867b953|f5dfed8c328d270e",
