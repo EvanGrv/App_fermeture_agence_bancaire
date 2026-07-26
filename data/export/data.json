@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-25T06:16:42.187513+00:00",
+  "generated_at": "2026-07-26T06:32:12.259156+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -209,11 +209,11 @@
     "21": {
       "nom": "Côte-d'Or",
       "region": "Bourgogne-Franche-Comté",
-      "count": 3,
+      "count": 4,
       "total_agences": 71,
-      "precise_count": 3,
+      "precise_count": 4,
       "unlocated_count": 2,
-      "estimated_count": 5
+      "estimated_count": 6
     },
     "22": {
       "nom": "Côtes-d'Armor",
@@ -344,11 +344,11 @@
     "36": {
       "nom": "Indre",
       "region": "Centre-Val de Loire",
-      "count": 14,
+      "count": 15,
       "total_agences": 42,
-      "precise_count": 14,
+      "precise_count": 15,
       "unlocated_count": 1,
-      "estimated_count": 19
+      "estimated_count": 20
     },
     "37": {
       "nom": "Indre-et-Loire",
@@ -1066,9 +1066,9 @@
     "36": {
       "departement": "36",
       "nom": "Indre",
-      "precise_count": 14,
+      "precise_count": 15,
       "unlocated_count": 1,
-      "estimated_count": 19,
+      "estimated_count": 20,
       "department_signal_count": 4,
       "signals": [
         {
@@ -1733,9 +1733,9 @@
     "21": {
       "departement": "21",
       "nom": "Côte-d'Or",
-      "precise_count": 3,
+      "precise_count": 4,
       "unlocated_count": 2,
-      "estimated_count": 5,
+      "estimated_count": 6,
       "department_signal_count": 0,
       "signals": [
         {
@@ -3175,9 +3175,9 @@
   "regions": [
     {
       "region": "Centre-Val de Loire",
-      "articles": 41,
+      "articles": 42,
       "fermetures": 36,
-      "projets": 1,
+      "projets": 2,
       "fusions": 0,
       "types": [
         "Fermeture",
@@ -3195,7 +3195,7 @@
     },
     {
       "region": "Bretagne",
-      "articles": 32,
+      "articles": 33,
       "fermetures": 15,
       "projets": 9,
       "fusions": 0,
@@ -3230,8 +3230,8 @@
     },
     {
       "region": "Bourgogne-Franche-Comté",
-      "articles": 21,
-      "fermetures": 16,
+      "articles": 22,
+      "fermetures": 17,
       "projets": 4,
       "fusions": 0,
       "types": [
@@ -6868,7 +6868,7 @@
         }
       ],
       "controle_sirene": {
-        "etat_administratif": "C",
+        "etat_administratif": null,
         "siret": null,
         "source": "SIRENE"
       },
@@ -7032,7 +7032,7 @@
         }
       ],
       "controle_sirene": {
-        "etat_administratif": "C",
+        "etat_administratif": null,
         "siret": null,
         "source": "SIRENE"
       },
@@ -7278,7 +7278,7 @@
         }
       ],
       "controle_sirene": {
-        "etat_administratif": "A",
+        "etat_administratif": null,
         "siret": null,
         "source": "SIRENE"
       },
@@ -8924,6 +8924,13 @@
           "tier": "D"
         },
         {
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQUkV0R3B5WjJvMlQ2Y0JYOG5PWExMeXV4c1JfMUNzZC1mYjBQQ3pFYWVONF9fVlNMYlVONk5Ienowc01JMVh2cG1qU09jbDcwcDNoTnRwZUhVcnBfMThHSkdyNVpkenBZUlQxMENMODlEbDhRdlRxZE92ZU1pRzBjQ1phS2ZzOTlpYjItbEpSNnI4N2hhWVgyRU5hTVplcF9ubktfY0ZUZWtXem5nWVhqSlhDZjB4QU1yWnpJX1dTZ2RpQ00?oc=5",
+          "titre": "L’agence bancaire Crédit Agricole de Ploeren fermera dans un mois - MaVille.com",
+          "source": "Google News",
+          "date": "Tue, 21 Jul 2026 17:18:00 GMT",
+          "tier": "D"
+        },
+        {
           "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOdnA0Q2ZkRXZ3UG84cmZZZE1TUlFPZEZzcEE0QWJrdVVGRkxhWjBKakJ2SDlxRzVXcjRIckExSUR4OUkxdzRhejNqeGo0SmEyOElJWUp0MUpuaTBXTGlUalllOWhGUjdYZllzRUJrWU1tN21USHpVT0JpeWtLODU4YzZfLV9YNEVyd1VheUswcDY1WC1CSUdHNDJlZExNd2doMHZPWnhMSDNud0dmWGgxQ29UbFgxOVAzbnR4eHF0czhZQjZMb2c?oc=5",
           "titre": "L’agence bancaire Crédit Agricole de Ploeren fermera dans un mois - MaVille.com",
           "source": "Google News",
@@ -10175,6 +10182,88 @@
         "source": "SIRENE"
       },
       "region": "Bretagne"
+    },
+    {
+      "id": "16388c1e7da79971",
+      "banque": "La Banque Postale",
+      "commune": "Vielverge",
+      "code_insee": "21680",
+      "departement": "21",
+      "type": "fermeture",
+      "date_annonce": "Wed, 01 Jul 2026 07:00:00 GMT",
+      "date_fermeture": "2026-07-03",
+      "statut": "confirmé",
+      "statut_temporel": "deja_fermee",
+      "date_fermeture_approx": 1,
+      "fiabilite": 3,
+      "lat": 47.267482,
+      "lon": 5.450997,
+      "citation": "Vielverge. Fermeture du bureau de poste vendredi 3 juillet - Le Bien Public",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "service_impact": "conversion_ap",
+      "point_postal_avant": "Bureau de Poste",
+      "point_postal_apres": "Agence postale communale",
+      "postal_point_id": "03677A",
+      "evidence_level": "presse+référentiel",
+      "created_at": "2026-07-26T06:20:35.463824+00:00",
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOTVE1and3ai1FMFE4MUJ5dGlGcVBCZTdhQ1RQa2RVSk1ka2ZuWUNISFhIdmFGVm1WenczR0VLa0kxd3NpMm5YVjR4LTllSVdRT0lHMThWbGZUdFRXaGtuN0FjMXFZZ2NkdFk4RTlKdXoxR2drcmhleFVfVWpDY3VuRTJNNm1UQkFaeElJeG9XWEtTZHViVU1j?oc=5",
+          "titre": "Vielverge. Fermeture du bureau de poste vendredi 3 juillet - Le Bien Public",
+          "source": "Google News",
+          "date": "Wed, 01 Jul 2026 07:00:00 GMT",
+          "tier": "D"
+        }
+      ],
+      "controle_sirene": {
+        "etat_administratif": null,
+        "siret": null,
+        "source": "SIRENE"
+      },
+      "region": "Bourgogne-Franche-Comté"
+    },
+    {
+      "id": "30701057c2819feb",
+      "banque": "La Banque Postale",
+      "commune": "Pouligny-Saint-Pierre",
+      "code_insee": "36165",
+      "departement": "36",
+      "type": "fermeture",
+      "date_annonce": "Fri, 26 Jun 2026 07:00:00 GMT",
+      "date_fermeture": "2026-06-26",
+      "statut": "projet",
+      "statut_temporel": "deja_fermee",
+      "date_fermeture_approx": 1,
+      "fiabilite": 3,
+      "lat": 46.682725,
+      "lon": 1.054701,
+      "citation": "« La Poste annonce la fermeture de l’agence de Pouligny-Saint-Pierre » (titre). Aucun détail explicite sur un point bancaire de La Banque Postale dans l’extrait.",
+      "adresse": "La Poste annonce la fermeture de l’agence de Pouligny-Saint-Pierre (adresse non précisée dans l’extrait).",
+      "agence_localisation": "Agence de Pouligny-Saint-Pierre",
+      "commune_originale": null,
+      "service_impact": "conversion_ap",
+      "point_postal_avant": "Bureau de Poste",
+      "point_postal_apres": "Agence postale communale",
+      "postal_point_id": "06778A",
+      "evidence_level": "presse+référentiel",
+      "created_at": "2026-07-26T06:27:09.937383+00:00",
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxNcHJCYmRTc3BSVzFJakdqRjhMZWVpR1dHNnNsRFVYeDFENFVfMktrVXZ6RklHQWY2YWhNRUhocEJndnpsSUwxaU1ySE8tcVFpYlVCNm1jUDBtQXJ3R0lnclVYT0E0bThac2U2T0NFTVROSTJqV1FaNVRBekxOaldTU3RzV2lWWlNLazNQZExTcHVxLW5iM3pmLXQ1OWRlY3NjVklsVEdBTkxNRjNyOXhKSTlRRDg4QU1GNnQ2Zm5wMGMtZDc4UTdXSFVqRVJNcW16QktmN2hsblN0UXUyRUdESERBUjk0RGk0bnh0NmFxRkxDNEFCUk51UnVZdVcxRnpyS29sVWp3?oc=5",
+          "titre": "\"Un choix incompréhensible\" : La Poste annonce la fermeture de l’agence de Pouligny-Saint-Pierre - lanouvellerepublique.fr",
+          "source": "Google News",
+          "date": "Fri, 26 Jun 2026 07:00:00 GMT",
+          "tier": "D"
+        }
+      ],
+      "controle_sirene": {
+        "etat_administratif": null,
+        "siret": null,
+        "source": "SIRENE"
+      },
+      "region": "Centre-Val de Loire"
     }
   ],
   "closures_unlocated": [
@@ -10860,7 +10949,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-07-25T05:59:03.113809+00:00"
+      "created_at": "2026-07-26T06:17:50.682388+00:00"
     },
     {
       "id": "50895c042a984b7d",
@@ -10896,7 +10985,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 04:46:02 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-07-25T05:59:03.107963+00:00"
+      "created_at": "2026-07-26T06:17:50.676789+00:00"
     },
     {
       "id": "8c6a0cad14626d6f",
@@ -12051,6 +12140,24 @@
       "created_at": "2026-07-03T06:46:20.426638+00:00"
     },
     {
+      "id": "81509e75ba3814a3",
+      "banque": "La Banque Postale",
+      "commune": "Plouray",
+      "departement": null,
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "rumeur",
+      "statut_temporel": "inconnu",
+      "fiabilite": 2,
+      "citation": "Titre : « Fermeture temporaire du bureau de poste de Plouray cet été » (pas d’info explicite reliant la fermeture à l’offre bancaire de La Banque Postale).",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQUlI5d1BIMTkxanBybUMteF8yNHVwdmtpaUdweURLQnpKRk0tWnFGS2tyRERlc2IzQXQ3eUxVWGNZSm14ZlBubndUcTJHTmdZZy1PSHFTek9wTEZWZHhvNVBlVG1MY18tY2dvTjFfeWVUbHRZdW5HOGFVa0Nja2lHdjJvMlJYM0xiWW5mdEl2djlycERYLWpoSENYbFNyQ3FBTk9OSEQtSTJWdXZxZU9FR0VNYW9LV3Rxb1lRR05B?oc=5",
+      "titre": "Fermeture temporaire du bureau de poste de Plouray cet été - Le Télégramme",
+      "source": "Google News",
+      "date": "Sat, 25 Jul 2026 14:08:58 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-07-26T06:20:40.671069+00:00"
+    },
+    {
       "id": "41c88cd030d9f9b9",
       "banque": "La Banque Postale",
       "commune": "Ventiseri",
@@ -12210,7 +12317,7 @@
       "source": "Google News",
       "date": "Sat, 03 Aug 2024 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-07-25T05:59:01.991049+00:00"
+      "created_at": "2026-07-26T06:17:49.864760+00:00"
     },
     {
       "id": "4996e3bfe560bbb6",
@@ -12876,7 +12983,7 @@
       "source": "Google News",
       "date": "Fri, 20 Jun 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-07-25T05:59:13.528292+00:00"
+      "created_at": "2026-07-26T06:17:57.365002+00:00"
     },
     {
       "id": "b80663fa38292743",
@@ -13020,7 +13127,7 @@
       "source": "Google News",
       "date": "Fri, 10 Jul 2026 10:12:00 GMT",
       "raison": "garde entrée/sortie: département source 44 incompatible avec la sortie 974",
-      "created_at": "2026-07-25T05:59:36.167784+00:00"
+      "created_at": "2026-07-26T06:18:13.528876+00:00"
     },
     {
       "id": "8c646081e1d69e81",
@@ -13164,7 +13271,7 @@
       "source": "Google News",
       "date": "Fri, 03 Jan 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-07-25T05:59:02.585289+00:00"
+      "created_at": "2026-07-26T06:17:50.268048+00:00"
     },
     {
       "id": "f3e888f7eaf5ffb7",
@@ -14115,6 +14222,19 @@
       "source": "Google News",
       "date": "Sun, 10 Nov 2024 08:00:00 GMT",
       "created_at": "2026-07-23T09:39:27.297108+00:00"
+    },
+    {
+      "id": "afe2d2d4b280eebd",
+      "banque": "Banco BPM",
+      "scope": "national",
+      "count": null,
+      "confidence": 0.2,
+      "evidence": "Article uniquement centré sur des discussions de fusion/rapprochement entre banques (Banco BPM et MPS) ; aucune mention de fermetures/regroupements d’agences physiques en France.",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPVm1zMXFGQ0t3WkNzVlR0anMxWDN5SWJOdHFuekRvOElMX19taUl5VTZqYm53SG5TSXk3ZmRVaHYxcXJ0c0xYUVNGbDVYZnptNVdybUx5eGpadUQyeXNqclRhbGtfX3VxY21LMXZWLUtYUDNSbVZjMjZOb3Z5N1FZVmQ0ZkdaaXhUaEhqZDFNUkt1a3k0U2s3dmFSRGNrMTVLc2VHeTRsY3lYaTlZZWZqWjR3YUZORHpPQmdrLXpGazdYcXV1MEFubzYtd1ZISFp5NzhvODdDTmZUeFp5XzNsVnZ3?oc=5",
+      "titre": "L'italienne Banco BPM invite MPS à entamer des discussions de fusion - La Libre.be",
+      "source": "Google News",
+      "date": "Sun, 07 Jun 2026 07:00:00 GMT",
+      "created_at": "2026-07-26T06:20:34.075942+00:00"
     },
     {
       "id": "c9bac8d35c3be975",
@@ -21412,6 +21532,32 @@
       "created_at": "2026-07-22T09:10:35.971757+00:00"
     },
     {
+      "id": "f91211ab47c86cc4",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Pourquoi cette gare du Lot a fermé subitement ses portes en plein mois de juillet, une association tire le signal d'alarme : \"la SNCF abandonne les usagers et les voyageurs au bord du chemin pendant l’été\" - ladepeche.fr",
+      "extrait": "TITRE: Pourquoi cette gare du Lot a fermé subitement ses portes en plein mois de juillet, une association tire le signal d'alarme : \"la SNCF abandonne les usagers et les voyageurs au bord du chemin pendant l’été\" - ladepeche.fr SOURCE: Google News DATE: Sat, 25 Jul 2026 17:01:00 GMT URL: https://news.google.com/rss/articles/CBMipgJBVV95cUxQako2ZkNiYUxjVVdGLVdrVGp5bVNtQUhIOG1XeDR1WEZCQWo3NkpQZ0V3UFRDcGh6MmZNLXkzcVFGblRhbl8xc2szTnJ4V2RyQnItYlZ4VFBnb2JaRkNPa0dqOEd6bThiYWVoelowbGVTQ205ZkhKWV9OXzZ4Zn",
+      "url": "https://news.google.com/rss/articles/CBMipgJBVV95cUxQako2ZkNiYUxjVVdGLVdrVGp5bVNtQUhIOG1XeDR1WEZCQWo3NkpQZ0V3UFRDcGh6MmZNLXkzcVFGblRhbl8xc2szTnJ4V2RyQnItYlZ4VFBnb2JaRkNPa0dqOEd6bThiYWVoelowbGVTQ205ZkhKWV9OXzZ4ZnZNSGpfakFCbkhOb3h2a1RjdUZCOS1JRkVtRXotV25TX2hYRlFEbjNVSFBBNXpVbHNIWmZrVms1cFNHb2plSldQMXI2bmZyb0NON3U3WEtJLUVCaE1XUGJ2bmlGOXN1aFNZOVl3RFBLWTc5cHJNczNXcEMtcU9zbmZJc2wzTnJkaklHYzVidG1kMnlpcFB0eWhsSWNqWTZXd0hPY0c0UlA3ZUJCenpZYWc?oc=5",
+      "source": "Google News",
+      "date": "Sat, 25 Jul 2026 17:01:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-26T06:20:44.356546+00:00"
+    },
+    {
+      "id": "a589287af0e569b0",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "Fermeture temporaire du bureau de poste de Plouray cet été - Le Télégramme",
+      "extrait": "TITRE: Fermeture temporaire du bureau de poste de Plouray cet été - Le Télégramme SOURCE: Google News DATE: Sat, 25 Jul 2026 14:08:58 GMT URL: https://news.google.com/rss/articles/CBMivgFBVV95cUxQUlI5d1BIMTkxanBybUMteF8yNHVwdmtpaUdweURLQnpKRk0tWnFGS2tyRERlc2IzQXQ3eUxVWGNZSm14ZlBubndUcTJHTmdZZy1PSHFTek9wTEZWZHhvNVBlVG1MY18tY2dvTjFfeWVUbHRZdW5HOGFVa0Nja2lHdjJvMlJYM0xiWW5mdEl2djlycERYLWpoSENYbFNyQ3FBTk9OSEQtSTJWdXZxZU9FR0VNYW9LV3Rxb1lRR05B?oc=5 <a href=\"https://news.google.com/rss/articles/CBMivgFB",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQUlI5d1BIMTkxanBybUMteF8yNHVwdmtpaUdweURLQnpKRk0tWnFGS2tyRERlc2IzQXQ3eUxVWGNZSm14ZlBubndUcTJHTmdZZy1PSHFTek9wTEZWZHhvNVBlVG1MY18tY2dvTjFfeWVUbHRZdW5HOGFVa0Nja2lHdjJvMlJYM0xiWW5mdEl2djlycERYLWpoSENYbFNyQ3FBTk9OSEQtSTJWdXZxZU9FR0VNYW9LV3Rxb1lRR05B?oc=5",
+      "source": "Google News",
+      "date": "Sat, 25 Jul 2026 14:08:58 GMT",
+      "score": 3,
+      "raison": "fermeture non publiée: hors fenêtre temporelle",
+      "created_at": "2026-07-26T06:20:40.672801+00:00"
+    },
+    {
       "id": "bdfd3038ad99ff19",
       "banque": "BNP Paribas",
       "departement": null,
@@ -22242,6 +22388,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-07-22T08:57:14.893025+00:00"
+    },
+    {
+      "id": "482b286775ec384e",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "La Poste Issy Centre ferme pour travaux à partir du 13 juillet - Issy-les-Moulineaux",
+      "extrait": "TITRE: La Poste Issy Centre ferme pour travaux à partir du 13 juillet - Issy-les-Moulineaux SOURCE: Google News DATE: Mon, 29 Jun 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMimgFBVV95cUxQZVVRUkZuMURDWTJ1YmRkNTNTcUNmMzJheDhPeEtHSkJSeEliQi1uRkc4U3BVYWxCc3V2YzRTZ3V4S2NzREk2SEdkRTd0U1dlTS03REtya01fQ1JNZ1FLSFRTYUE1RWdyeDU1MnJMUTYzcGhGVG1XWkMxSDlFMV9MRWVjWVlkMWxhaFJFa1FydGUtSDBJQVNzSWZ3?oc=5 <a href=\"https://news.google.com/rss/articles/CBMimgFBVV95cUxQZVVRUkZuMURDWTJ1YmRkNTNTcUNmMz",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQZVVRUkZuMURDWTJ1YmRkNTNTcUNmMzJheDhPeEtHSkJSeEliQi1uRkc4U3BVYWxCc3V2YzRTZ3V4S2NzREk2SEdkRTd0U1dlTS03REtya01fQ1JNZ1FLSFRTYUE1RWdyeDU1MnJMUTYzcGhGVG1XWkMxSDlFMV9MRWVjWVlkMWxhaFJFa1FydGUtSDBJQVNzSWZ3?oc=5",
+      "source": "Google News",
+      "date": "Mon, 29 Jun 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-26T06:20:48.248001+00:00"
     },
     {
       "id": "58a0aeaba2d04e67",
@@ -23778,6 +23937,19 @@
       "created_at": "2026-07-22T08:58:49.320217+00:00"
     },
     {
+      "id": "2b7f9d26c16be6d1",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Trois bureaux de police de la métropole d'Orléans fermés, les effectifs réaffectés aux dossiers de violences sexuelles - ici.fr",
+      "extrait": "TITRE: Trois bureaux de police de la métropole d'Orléans fermés, les effectifs réaffectés aux dossiers de violences sexuelles - ici.fr SOURCE: Google News DATE: Fri, 26 Jun 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMikAJBVV95cUxOeHl2VDZoT1l5aWtRcmxRNW9JaXdJOU82VG1acEVFWjdXQU9FcDFMR2RkSGNoZl9IWkZrS3VITHBpQnF3TXJzS241VjZpNy1tWWk3blJCYlJCenVQX1loNmNLNUlqSng5RjlDdVNMX05wRWZvdnloSnJjSm9GZ29sZWRsQktuRnVaMzBOR1VjUDZwWkZiNTh0NG0xRG5iUnNieUdMVHRvVGsxRkV6TGdUM2R4TTFSanpnR2xzWlUzZTRLZ05",
+      "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxOeHl2VDZoT1l5aWtRcmxRNW9JaXdJOU82VG1acEVFWjdXQU9FcDFMR2RkSGNoZl9IWkZrS3VITHBpQnF3TXJzS241VjZpNy1tWWk3blJCYlJCenVQX1loNmNLNUlqSng5RjlDdVNMX05wRWZvdnloSnJjSm9GZ29sZWRsQktuRnVaMzBOR1VjUDZwWkZiNTh0NG0xRG5iUnNieUdMVHRvVGsxRkV6TGdUM2R4TTFSanpnR2xzWlUzZTRLZ05GTWI4bjNyeHIxdUZ5dXYzMUp4YmxNYXNPNVFqb0l3OFhaVmlHdUxCQ0k2cUhhSGlQTWQtaEdTYlZIajZwVWFVb0NMVnEzWGF2bzREVA?oc=5",
+      "source": "Google News",
+      "date": "Fri, 26 Jun 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-26T06:20:42.579235+00:00"
+    },
+    {
       "id": "8557478e2432c1f7",
       "banque": "LCL",
       "departement": null,
@@ -23945,6 +24117,19 @@
       "score": 3,
       "raison": "fermeture non publiée: hors fenêtre temporelle",
       "created_at": "2026-07-25T06:02:15.234637+00:00"
+    },
+    {
+      "id": "1e706cfe32c0226a",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "À Lorient, un syndicat conteste la raison de la fermeture temporaire du bureau de poste de Keryado - MaVille.com",
+      "extrait": "TITRE: À Lorient, un syndicat conteste la raison de la fermeture temporaire du bureau de poste de Keryado - MaVille.com SOURCE: Google News DATE: Fri, 24 Jul 2026 16:56:00 GMT URL: https://news.google.com/rss/articles/CBMi8wFBVV95cUxQUGhyUW5nVTlkTDBBbUhkZmpEWEpWSFk0eXNLa1VIZkppMWpHaEF3WEM0ZmJMVFpUalBfYk1NTVlUbGx6Q1FRbU1MR3VSWjJLcExscmxwWHUtM1g4RnRYXzNHX0t6YVBqWVRTNGRDUDdaNDRUSk9KNVg0QWdMMjIzdjdqN01tLW05aWpfYWNhNnhHcDM2eGkwQ2pTMXM3LTlHT0hSdWZwRklBMTZYcVZ6YXotWFlCdHNxNGNLd1U5aTM0MkNWVkZPUGVWbkFGSm",
+      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQUGhyUW5nVTlkTDBBbUhkZmpEWEpWSFk0eXNLa1VIZkppMWpHaEF3WEM0ZmJMVFpUalBfYk1NTVlUbGx6Q1FRbU1MR3VSWjJLcExscmxwWHUtM1g4RnRYXzNHX0t6YVBqWVRTNGRDUDdaNDRUSk9KNVg0QWdMMjIzdjdqN01tLW05aWpfYWNhNnhHcDM2eGkwQ2pTMXM3LTlHT0hSdWZwRklBMTZYcVZ6YXotWFlCdHNxNGNLd1U5aTM0MkNWVkZPUGVWbkFGSmRVaEk3NlM2Yjg2X2tzaEtfbkxEUXQ2NnFocjM1dTdSLThFWmc?oc=5",
+      "source": "Google News",
+      "date": "Fri, 24 Jul 2026 16:56:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-26T06:20:46.348304+00:00"
     },
     {
       "id": "f2f65a6539838a4e",
@@ -25377,6 +25562,32 @@
       "created_at": "2026-07-22T09:09:01.159244+00:00"
     },
     {
+      "id": "4fa2e6dfad241238",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "CIH Bank : les enjeux d'une augmentation de capital à près d'un milliard de dirhams ? | Financial Afrik",
+      "extrait": "TITRE: CIH Bank : les enjeux d'une augmentation de capital à près d'un milliard de dirhams ? | Financial Afrik SOURCE: Financial Afrik DATE: 2026-07-25T21:12:49Z URL: https://www.financialafrik.com/2026/07/25/cih-bank-les-enjeux-dune-augmentation-de-capital-a-pres-dun-milliard-de-dirhams/ CIH Bank s'apprête à franchir une nouvelle étape dans son développement avec une double augmentation de capital d'un montant global proche d'un milliard de dirhams, soit 100 millions de dollars environ. Destiné",
+      "url": "https://www.financialafrik.com/2026/07/25/cih-bank-les-enjeux-dune-augmentation-de-capital-a-pres-dun-milliard-de-dirhams/",
+      "source": "Financial Afrik",
+      "date": "2026-07-25T21:12:49Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-26T06:21:14.776944+00:00"
+    },
+    {
+      "id": "9cbaf9b299d8ffe1",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "Pourquoi cette gare du Lot a fermé subitement ses portes en plein mois de juillet, une association tire le signal d'alarme : \"la SNCF abandonne les usagers et les voyageurs au bord du chemin pendant l'été\"",
+      "extrait": "TITRE: Pourquoi cette gare du Lot a fermé subitement ses portes en plein mois de juillet, une association tire le signal d'alarme : \"la SNCF abandonne les usagers et les voyageurs au bord du chemin pendant l'été\" SOURCE: Ladepeche.fr DATE: 2026-07-25T17:01:02Z URL: https://www.ladepeche.fr/2026/07/25/pourquoi-cette-gare-du-lot-a-ferme-subitement-ses-portes-en-plein-mois-de-juillet-une-association-tire-le-signal-dalarme-la-sncf-abandonne-les-usagers-13482752.php l'essentiel La gare d'Assier a gar",
+      "url": "https://www.ladepeche.fr/2026/07/25/pourquoi-cette-gare-du-lot-a-ferme-subitement-ses-portes-en-plein-mois-de-juillet-une-association-tire-le-signal-dalarme-la-sncf-abandonne-les-usagers-13482752.php",
+      "source": "Ladepeche.fr",
+      "date": "2026-07-25T17:01:02Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-26T06:21:20.082644+00:00"
+    },
+    {
       "id": "ee3fec9d2121cbc1",
       "banque": "CIC",
       "departement": null,
@@ -26441,6 +26652,19 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-07-22T09:10:20.587102+00:00"
+    },
+    {
+      "id": "f9e4ede576aa8c6d",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "La Poste : un projet de transformation de la plateforme courrier de Dijon inquiète les syndicats - Plein Air",
+      "extrait": "TITRE: La Poste : un projet de transformation de la plateforme courrier de Dijon inquiète les syndicats - Plein Air SOURCE: Google News DATE: Tue, 30 Jun 2026 17:44:22 GMT URL: https://news.google.com/rss/articles/CBMi2AFBVV95cUxNNkVTczZxZTdaLXltamRCcDBnX3Y3ckdtVXNaWUprTUJobTRINm5kLXRjdXZBQkdjZWt0X1ZCYU1ySDN3X3dLdi10WnJ3eFFzbDBROEFvTlNIazlRT2I0bFlGNndoU3dDcVhOTDNPQWhfX0JaN0s5Y1AzSTdLeXFZVEVfTVZGZVJtLWpZeHZkeTd2dXBsbnhuU19rbXdrOEdMQl9DdmRDOFdLbV9sWE5kMXhoVk5XUkxoMmgzZHlmWGQyOFlobHNZaEJMX1hPS041em",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNNkVTczZxZTdaLXltamRCcDBnX3Y3ckdtVXNaWUprTUJobTRINm5kLXRjdXZBQkdjZWt0X1ZCYU1ySDN3X3dLdi10WnJ3eFFzbDBROEFvTlNIazlRT2I0bFlGNndoU3dDcVhOTDNPQWhfX0JaN0s5Y1AzSTdLeXFZVEVfTVZGZVJtLWpZeHZkeTd2dXBsbnhuU19rbXdrOEdMQl9DdmRDOFdLbV9sWE5kMXhoVk5XUkxoMmgzZHlmWGQyOFlobHNZaEJMX1hPS041emNoT1dCX0M?oc=5",
+      "source": "Google News",
+      "date": "Tue, 30 Jun 2026 17:44:22 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-26T06:20:38.152520+00:00"
     },
     {
       "id": "03b68bc34bc6cd7f",
@@ -28666,6 +28890,175 @@
       "created_at": "2026-06-25T15:43:41.960961+00:00"
     },
     {
+      "id": "d1b6a0620faebd3b",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Liverpool ne sait pas sur quel pied danser pour Barcola - Sport.fr",
+      "extrait": "TITRE: Liverpool ne sait pas sur quel pied danser pour Barcola - Sport.fr SOURCE: Sport.fr DATE: 2026-07-26T04:11:48Z URL: https://www.sport.fr/football/liverpool-ne-sait-pas-sur-quel-pied-danser-pour-barcola-1467968.shtm Annoncé avec insistance dans le viseur des Reds, Bradley Barcola continue d'alimenter les rumeurs de transfert. Interrogé sur le sujet, le nouvel entraîneur de Liverpool, Andoni Iraola, a refusé de commenter le cas de l'ailier du Paris Saint-Germain, tout en reconnaissant que s",
+      "url": "https://www.sport.fr/football/liverpool-ne-sait-pas-sur-quel-pied-danser-pour-barcola-1467968.shtm",
+      "source": "Sport.fr",
+      "date": "2026-07-26T04:11:48Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-26T06:21:05.357800+00:00"
+    },
+    {
+      "id": "f9c7954f1a4147b0",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Mojtaba Khamenei fonce droit vers la bombe atomique",
+      "extrait": "TITRE: Mojtaba Khamenei fonce droit vers la bombe atomique SOURCE: JForum DATE: 2026-07-26T01:46:40Z URL: https://www.jforum.fr/mojtaba-khamenei-fonce-droit-vers-la-bombe-atomique.html Selon le New York Times, le nouveau guide suprême iranien, Mojtaba Khamenei, est déterminé à obtenir une ogive nucléaire, contrairement à la ligne de son père, tandis que les services de renseignement américains estiment qu'il fait progresser le projet en parallèle avec le transfert du réseau de centrifugeuses ver",
+      "url": "https://www.jforum.fr/mojtaba-khamenei-fonce-droit-vers-la-bombe-atomique.html",
+      "source": "JForum",
+      "date": "2026-07-26T01:46:40Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-26T06:21:07.378925+00:00"
+    },
+    {
+      "id": "f6210fab7b311b51",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Mercato PSG : Une piste légendaire s'offre à Chevalier",
+      "extrait": "TITRE: Mercato PSG : Une piste légendaire s'offre à Chevalier SOURCE: Foot-sur7 DATE: 2026-07-25T22:13:00Z URL: https://www.foot-sur7.fr/767907-mercato-psg-une-piste-legendaire-soffre-a-chevalier Lucas Chevalier voit son avenir dans le flou au PSG, mais une opportunité prestigieuse pourrait bien relancer sa carrière plus vite que prévu. La Juventus suit désormais de près le gardien français, alors que son statut dans la capitale reste fragile. ‎Mercato PSG : La Vieille Dame entre discrètement da",
+      "url": "https://www.foot-sur7.fr/767907-mercato-psg-une-piste-legendaire-soffre-a-chevalier",
+      "source": "Foot-sur7",
+      "date": "2026-07-25T22:13:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-26T06:21:09.571872+00:00"
+    },
+    {
+      "id": "d0f180afdf27da05",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Mercato : L'essentiel à retenir de ce samedi 25 juillet",
+      "extrait": "TITRE: Mercato : L'essentiel à retenir de ce samedi 25 juillet SOURCE: Orange Sports DATE: 2026-07-25T21:15:42Z URL: https://sports.orange.fr/football/mercato/article/mercato-l-essentiel-a-retenir-de-ce-samedi-25-juillet-exclu-CNT000002qGx7s.html Faraj Benlahoucine, Media365 : publié le samedi 25 juillet 2026 à 23h15 Retrouvez les principales officialisations et rumeurs qui ont animé le marché des transferts, en France et à l'étranger, ce samedi 25 juillet 2026. C'est officiel Trois ans après so",
+      "url": "https://sports.orange.fr/football/mercato/article/mercato-l-essentiel-a-retenir-de-ce-samedi-25-juillet-exclu-CNT000002qGx7s.html",
+      "source": "Orange Sports",
+      "date": "2026-07-25T21:15:42Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-26T06:21:12.472587+00:00"
+    },
+    {
+      "id": "912c3d73af4c20a7",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "Mercato - PSG : ça pourrait bouger pour Chevalier",
+      "extrait": "TITRE: Mercato - PSG : ça pourrait bouger pour Chevalier SOURCE: Maxifoot DATE: 2026-07-25T20:15:21Z URL: https://www.maxifoot.fr/football/article-65475.htm S'il semble parti pour vivre une deuxième saison au PSG, Lucas Chevalier pourrait tout de même faire l'objet d'approches d'ici la fin du mercato estival. A la recherche d'un nouveau gardien, la Juventus Turin pourrait tenter quelque chose concernant l'ancien Lillois. Bientôt du nouveau dans le dossier Lucas Chevalier (24 ans) ? En quête d'un",
+      "url": "https://www.maxifoot.fr/football/article-65475.htm",
+      "source": "Maxifoot",
+      "date": "2026-07-25T20:15:21Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-26T06:21:16.715922+00:00"
+    },
+    {
+      "id": "b6bd3738fcc0140f",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Luis Enrique veut recruter \"le meilleur milieu de terrain du monde\" : La presse espagnole confirme l'offensive du PSG pour Rodri !",
+      "extrait": "TITRE: Luis Enrique veut recruter \"le meilleur milieu de terrain du monde\" : La presse espagnole confirme l'offensive du PSG pour Rodri ! SOURCE: Le10sport.com DATE: 2026-07-25T18:30:37Z URL: https://le10sport.com/football/mercato/luis-enrique-veut-recruter-le-meilleur-milieu-de-terrain-du-monde-la-presse-espagnole-confirme-loffensive-du-psg-pour-rodri-789490 Pour le moment, il s'agit là que d'une prise d'informations du côté du PSG afin de savoir si un transfert du Ballon d'Or 2024 était possib",
+      "url": "https://le10sport.com/football/mercato/luis-enrique-veut-recruter-le-meilleur-milieu-de-terrain-du-monde-la-presse-espagnole-confirme-loffensive-du-psg-pour-rodri-789490",
+      "source": "Le10sport.com",
+      "date": "2026-07-25T18:30:37Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-26T06:21:18.134579+00:00"
+    },
+    {
+      "id": "356351155b3066ba",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "LeBron James à Philadelphie, Kawhi Leonard à Toronto, Giannis Antetokounmpo à Miami... Renforcée par ces trois stars, la Conférence Est vaudra le coup d'oeil en 2026-2027",
+      "extrait": "TITRE: LeBron James à Philadelphie, Kawhi Leonard à Toronto, Giannis Antetokounmpo à Miami... Renforcée par ces trois stars, la Conférence Est vaudra le coup d'oeil en 2026-2027 SOURCE: L'Équipe DATE: 2026-07-25T16:15:00Z URL: https://www.lequipe.fr/Basket/Actualites/Lebron-james-a-philadelphie-kawhi-leonard-a-toronto-giannis-antetokounmpo-a-miami-renforcee-par-ces-trois-stars-la-conference-est-vaudra-le-coup-d-oeil-en-2026-2027/1706969 Sacré mi-juin, New York a logiquement opté pour la stabilit",
+      "url": "https://www.lequipe.fr/Basket/Actualites/Lebron-james-a-philadelphie-kawhi-leonard-a-toronto-giannis-antetokounmpo-a-miami-renforcee-par-ces-trois-stars-la-conference-est-vaudra-le-coup-d-oeil-en-2026-2027/1706969",
+      "source": "L'Équipe",
+      "date": "2026-07-25T16:15:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-26T06:21:22.121104+00:00"
+    },
+    {
+      "id": "63bd6f39d6a4ec63",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Journal des Transferts : Lyon tient son avant-centre, une 2e vente au PSG, Diomandé et Rodri proches du Real...",
+      "extrait": "TITRE: Journal des Transferts : Lyon tient son avant-centre, une 2e vente au PSG, Diomandé et Rodri proches du Real... SOURCE: Maxifoot DATE: 2026-07-25T16:06:17Z URL: https://www.maxifoot.fr/football/article-65472.htm Lyon tient son avant-centre, le PSG boucle une deuxième vente, mais voit s'éloigner Diomandé, un accord entre le Real et Rodri, l'Italie a trouvé son nouveau sélectionneur... Voici le Top 5 des gros dossiers mercato du jour à ne pas manquer. Découvrez aussi le Télégramme Foot Tran",
+      "url": "https://www.maxifoot.fr/football/article-65472.htm",
+      "source": "Maxifoot",
+      "date": "2026-07-25T16:06:17Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-26T06:21:24.150337+00:00"
+    },
+    {
+      "id": "2c41340f9057a0a3",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Le PSG a contacté Manchester City pour Rodri !",
+      "extrait": "TITRE: Le PSG a contacté Manchester City pour Rodri ! SOURCE: ParisTeam.fr DATE: 2026-07-25T13:43:00Z URL: https://www.paristeam.fr/actu-psg/transferts/le-psg-a-contacte-manchester-city-pour-rodri-72270 Le Paris Saint-Germain pourrait bien réserver une nouvelle surprise sur le marché des transferts. Alors que Luis Enrique semblait disposer de toutes les garanties au milieu de terrain avec Vitinha, João Neves, Warren Zaïre-Emery, Fabian Ruiz, Dro Fernandez et Lucas Beraldo, les dirigeants parisie",
+      "url": "https://www.paristeam.fr/actu-psg/transferts/le-psg-a-contacte-manchester-city-pour-rodri-72270",
+      "source": "ParisTeam.fr",
+      "date": "2026-07-25T13:43:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-26T06:21:25.883128+00:00"
+    },
+    {
+      "id": "055a704d3c8fbece",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Le PSG entre également dans la danse pour Rodri !",
+      "extrait": "TITRE: Le PSG entre également dans la danse pour Rodri ! SOURCE: Foot Mercato : Info Transferts Football - Actu Foot Transfert DATE: 2026-07-25T13:32:02Z URL: https://www.footmercato.net/a2780626780554916066-le-psg-entre-egalement-dans-la-danse-pour-rodri Sous contrat avec Manchester City, Rodri est annoncé depuis plusieurs jours dans le viseur du Real Madrid. Alors que son avenir reste incertain, le Paris Saint-Germain est également dans la course... Il s'agit certainement du plus gros dossier ",
+      "url": "https://www.footmercato.net/a2780626780554916066-le-psg-entre-egalement-dans-la-danse-pour-rodri",
+      "source": "Foot Mercato : Info Transferts Football - Actu Foot Transfert",
+      "date": "2026-07-25T13:32:02Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-26T06:21:27.310547+00:00"
+    },
+    {
+      "id": "b5876590e8ce90ed",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "L'émouvant message de Kang-in Lee après son départ du PSG -",
+      "extrait": "TITRE: L'émouvant message de Kang-in Lee après son départ du PSG - SOURCE: PSG Canal Supporters DATE: 2026-07-25T13:25:32Z URL: https://canal-supporters.com/lemouvant-message-de-kang-in-lee-apres-son-depart-du-psg/ Ce samedi, le départ de Kang-in Lee du PSG pour l'Atlético de Madrid a été officialisé. Sur ses réseaux sociaux, le joueur a posté un émouvant message d'adieu. Le PSG a officialisé son deuxième départ de l'été. Après avoir laissé filer Gonçalo Ramos à l'AC Milan, le club de la capital",
+      "url": "https://canal-supporters.com/lemouvant-message-de-kang-in-lee-apres-son-depart-du-psg/",
+      "source": "PSG Canal Supporters",
+      "date": "2026-07-25T13:25:32Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-26T06:21:29.002059+00:00"
+    },
+    {
+      "id": "a716c319b170fcad",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "NBA : LeBron James se lance un nouveau défi",
+      "extrait": "TITRE: NBA : LeBron James se lance un nouveau défi SOURCE: La Voix du Nord DATE: 2026-07-25T08:20:56Z URL: https://www.lavoixdunord.fr/1724346/article/2026-07-25/nba-lebron-james-se-lance-un-nouveau-defi NBA : LeBron James se lance un nouveau défi À 41 ans, LeBron James, le meilleur marqueur de la NBA a annoncé dans la nuit de vendredi à samedi, rejoindre les Philadelphia 76ers pour une 24e saison dans le championnat nord-américain, où il espère toujours remporter un nouveau titre. Partage : Ajo",
+      "url": "https://www.lavoixdunord.fr/1724346/article/2026-07-25/nba-lebron-james-se-lance-un-nouveau-defi",
+      "source": "La Voix du Nord",
+      "date": "2026-07-25T08:20:56Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-26T06:21:30.580398+00:00"
+    },
+    {
+      "id": "158e12fa4efdf9c0",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Les dessous de la méga offre du Real Madrid pour Yan Diomandé",
+      "extrait": "TITRE: Les dessous de la méga offre du Real Madrid pour Yan Diomandé SOURCE: Foot Mercato : Info Transferts Football - Actu Foot Transfert DATE: 2026-07-25T07:32:37Z URL: https://www.footmercato.net/a2225402872576020789-les-dessous-de-la-mega-offre-du-real-madrid-pour-yan-diomande Le Real Madrid est passé à l'action pour Yan Diomandé avec une offre de 100M€, refusée pour le RB Leipzig. Ce n'est que le début. José Mourinho est convaincu par le grand espoir ivoirien. La nouvelle est tombée hier. L",
+      "url": "https://www.footmercato.net/a2225402872576020789-les-dessous-de-la-mega-offre-du-real-madrid-pour-yan-diomande",
+      "source": "Foot Mercato : Info Transferts Football - Actu Foot Transfert",
+      "date": "2026-07-25T07:32:37Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-26T06:21:32.104733+00:00"
+    },
+    {
       "id": "6f7ef478ef67371d",
       "banque": "LCL",
       "departement": null,
@@ -29067,6 +29460,19 @@
       "score": 1,
       "raison": "signaux: vague(banque non précisée,national,count=None)",
       "created_at": "2026-07-23T09:39:27.298507+00:00"
+    },
+    {
+      "id": "47fc9ab629a5f9eb",
+      "banque": "Banco BPM",
+      "departement": null,
+      "titre": "L'italienne Banco BPM invite MPS à entamer des discussions de fusion - La Libre.be",
+      "extrait": "Article uniquement centré sur des discussions de fusion/rapprochement entre banques (Banco BPM et MPS) ; aucune mention de fermetures/regroupements d’agences physiques en France.",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPVm1zMXFGQ0t3WkNzVlR0anMxWDN5SWJOdHFuekRvOElMX19taUl5VTZqYm53SG5TSXk3ZmRVaHYxcXJ0c0xYUVNGbDVYZnptNVdybUx5eGpadUQyeXNqclRhbGtfX3VxY21LMXZWLUtYUDNSbVZjMjZOb3Z5N1FZVmQ0ZkdaaXhUaEhqZDFNUkt1a3k0U2s3dmFSRGNrMTVLc2VHeTRsY3lYaTlZZWZqWjR3YUZORHpPQmdrLXpGazdYcXV1MEFubzYtd1ZISFp5NzhvODdDTmZUeFp5XzNsVnZ3?oc=5",
+      "source": "Google News",
+      "date": "Sun, 07 Jun 2026 07:00:00 GMT",
+      "score": 1,
+      "raison": "signaux: vague(Banco BPM,national,count=None)",
+      "created_at": "2026-07-26T06:20:34.076886+00:00"
     },
     {
       "id": "5ba05bdfcaeb52ef",
