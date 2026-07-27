@@ -41,5 +41,6 @@ warning,date_fermeture_absente,02adeecaa1cef64e,La Banque Postale,Veyrier-du-Lac
 warning,date_fermeture_absente,9136bd7869e187ad,La Banque Postale,Crégy-lès-Meaux,77,77143,article ancien sans date de fermeture explicite; à confirmer ou archiver
 warning,date_fermeture_absente,b07ae2916513fe2e,La Banque Postale,Gardanne,13,13041,article ancien sans date de fermeture explicite; à confirmer ou archiver
 warning,date_fermeture_absente,14c2fc2bc44eb609,Crédit Mutuel,Saint-Brieuc,22,22278,article ancien sans date de fermeture explicite; à confirmer ou archiver
+warning,date_fermeture_absente,a60eb2a1117b143a,Crédit Agricole,Fonsala,12,12174,article ancien sans date de fermeture explicite; à confirmer ou archiver
 info,communes_proches,ef183498a867b953|f5dfed8c328d270e,BNP Paribas / La Banque Postale,Saint-Malo-de-Beignon / Saint-Malo,56 / 35,56226 / 35288,noms proches mais localisations distinctes à vérifier visuellement
 info,communes_proches,ef183498a867b953|405cc9d5132ed04c,BNP Paribas / La Banque Postale,Saint-Malo-de-Beignon / Saint-Malo,56 / 35,56226 / 35288,noms proches mais localisations distinctes à vérifier visuellement

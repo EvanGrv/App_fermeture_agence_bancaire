@@ -420,6 +420,16 @@
     "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
   },
   {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "a60eb2a1117b143a",
+    "banque": "Crédit Agricole",
+    "commune": "Fonsala",
+    "departement": "12",
+    "code_insee": "12174",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
     "severity": "info",
     "type": "communes_proches",
     "id": "ef183498a867b953|f5dfed8c328d270e",
