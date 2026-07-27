@@ -382,16 +382,6 @@
   {
     "severity": "warning",
     "type": "date_fermeture_absente",
-    "id": "02adeecaa1cef64e",
-    "banque": "La Banque Postale",
-    "commune": "Veyrier-du-Lac",
-    "departement": "74",
-    "code_insee": "74299",
-    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
-  },
-  {
-    "severity": "warning",
-    "type": "date_fermeture_absente",
     "id": "9136bd7869e187ad",
     "banque": "La Banque Postale",
     "commune": "Crégy-lès-Meaux",
@@ -427,6 +417,16 @@
     "commune": "Fonsala",
     "departement": "12",
     "code_insee": "12174",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "c3fe16baca815c80",
+    "banque": "La Banque Postale",
+    "commune": "Saint-Cloud",
+    "departement": "92",
+    "code_insee": "92064",
     "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
   },
   {
