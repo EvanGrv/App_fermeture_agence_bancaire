@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-27T08:16:21.451565+00:00",
+  "generated_at": "2026-07-28T06:18:13.149831+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -131,8 +131,8 @@
       "count": 3,
       "total_agences": 228,
       "precise_count": 3,
-      "unlocated_count": 9,
-      "estimated_count": 12
+      "unlocated_count": 10,
+      "estimated_count": 13
     },
     "14": {
       "nom": "Calvados",
@@ -668,11 +668,11 @@
     "72": {
       "nom": "Sarthe",
       "region": "Pays de la Loire",
-      "count": 2,
+      "count": 3,
       "total_agences": 93,
-      "precise_count": 2,
+      "precise_count": 3,
       "unlocated_count": 5,
-      "estimated_count": 7
+      "estimated_count": 8
     },
     "73": {
       "nom": "Savoie",
@@ -1642,9 +1642,9 @@
     "72": {
       "departement": "72",
       "nom": "Sarthe",
-      "precise_count": 2,
+      "precise_count": 3,
       "unlocated_count": 5,
-      "estimated_count": 7,
+      "estimated_count": 8,
       "department_signal_count": 0,
       "signals": [
         {
@@ -2095,7 +2095,7 @@
           "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPUURYWnhxbG9QcEpCeUhrenRXNUxyczg2d3pEalpROS1aRlFGa3BjMjloSnFibzVJdEFxYV9fQzE3Zkdyc2hHODExLXZJM19yQkp6UFNLcTZxaHdWWW85aXBoa01zMGNxMDNibUZzb1JMc2J2bDAwZGRrdUlRcElVOERaMjRJUC13dl9MMG5XbUZXNkNwWl9RSFRCZWlmVTBBUVRPYmYtaURQMG9CTkVfeVF5Zm9PTjVHS2tITlBnR3dnd0ZKZVhaUWNyTHNBSVhwSmFuZjF4Yy04d0JtMjJPS2hzNGVwMllLMW9MMGhlcjJQM3c5WWlMag?oc=5",
           "score": 3,
           "precision": "commune_non_geocodee",
-          "reason": "garde entrée/sortie: commune/localisation de sortie absente de la source"
+          "reason": "hors fenêtre temporelle"
         }
       ]
     },
@@ -2385,8 +2385,8 @@
       "departement": "13",
       "nom": "Bouches-du-Rhône",
       "precise_count": 3,
-      "unlocated_count": 9,
-      "estimated_count": 12,
+      "unlocated_count": 10,
+      "estimated_count": 13,
       "department_signal_count": 0,
       "signals": [
         {
@@ -2481,6 +2481,18 @@
           "titre": "« C’est lamentable » : des riverains dénoncent la fermeture d’un bureau de poste à Annecy - L'Essor Savoyard",
           "source": "Google News",
           "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNbXZSUlI0REthM2I3UDVXOXZicExMSG9mMy1qd3RFYmNWaVNNYXkxN2c4UTVqQkI5YTlxUzBSRmdGbWpkTzJ2WXAyMlZBeWJHZnpTM0M2aEt1WGE1VHVVeG8yRGlaa3pGQWlJY2o4UEltMmI4aHVmTGJFWHc0UlNtOTJMcWxFaENVbFhSSVR5dDY3aXdINEEwX2daY045VC1aLVFJc3ZvdWhwQzNiSlhYMFdPX05yZlhPdElnRVRad3Z6QmZNb0IxX1N3bXlEZFFab29fZmVPZw?oc=5",
+          "score": 3,
+          "precision": "commune_non_geocodee",
+          "reason": "hors fenêtre temporelle"
+        },
+        {
+          "id": "24dd6f4121332700",
+          "banque": "La Banque Postale",
+          "commune": "Allauch",
+          "departement": "13",
+          "titre": "« C’est inadmissible » : à Ploufragan, la réduction des horaires du bureau de poste alimente les craintes d’une fermeture définitive - Le Télégramme",
+          "source": "Google News",
+          "url": "https://news.google.com/rss/articles/CBMinwJBVV95cUxPWmZhb2k2OWQ4d3l2ekg3OGZtcUhpQkwwTDZvWk5YNU5OWGhrVDJDZTVnQk8xWHhCd0EtdVBTNzFBT3hULV9GaDBFX3lRaXFBdk55T3I5X055REVNT09RV2J5UWtpNmFSdU4tTXlBeXV5WDFwYWI2eFpnNjJSZW9tSVJQSkhaVUVCUEl3T1ZuUDJneXFqMll1VVJyX01wSmliSHJXV2c0VG4wc1huZFZ3b1JpM2VJY2liVTdQb1QzU2FWYjl4aXljS2tCUlA1OXRTcExURlZwQmQwYkI0VDlvY3JteHJyYnB1ckdfQXhndHd0WTd2QWNWVDZmTEtZdUdrOVYtaHdaRDlzLUpvN2lNYVFIc09nVWQzYXNDRkZtSQ?oc=5",
           "score": 3,
           "precision": "commune_non_geocodee",
           "reason": "hors fenêtre temporelle"
@@ -3347,7 +3359,7 @@
     },
     {
       "region": "Hauts-de-France",
-      "articles": 23,
+      "articles": 25,
       "fermetures": 9,
       "projets": 5,
       "fusions": 0,
@@ -3462,6 +3474,23 @@
       "nb_departements": 5
     },
     {
+      "region": "Pays de la Loire",
+      "articles": 10,
+      "fermetures": 7,
+      "projets": 2,
+      "fusions": 0,
+      "types": [
+        "Fermeture",
+        "Projet"
+      ],
+      "departements": [
+        "44",
+        "49",
+        "72"
+      ],
+      "nb_departements": 3
+    },
+    {
       "region": "Normandie",
       "articles": 9,
       "fermetures": 5,
@@ -3478,23 +3507,6 @@
         "76"
       ],
       "nb_departements": 4
-    },
-    {
-      "region": "Pays de la Loire",
-      "articles": 9,
-      "fermetures": 6,
-      "projets": 2,
-      "fusions": 0,
-      "types": [
-        "Fermeture",
-        "Projet"
-      ],
-      "departements": [
-        "44",
-        "49",
-        "72"
-      ],
-      "nb_departements": 3
     },
     {
       "region": "Provence-Alpes-Côte d'Azur",
@@ -5580,10 +5592,24 @@
           "tier": "D"
         },
         {
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNV0M1NE1BSlJDcFREdXNVZzM1UzMyNkRiUkVKeG1WTDlzeWk0dC14d2huOEdJTmV4LUVwaldfNjVuR25SR081TEZzaVNMeEs4ZXFhb1VCanp0UjMyYU40M2YxNDczbHNaYjlLbjk1bnJrakVoMEVnYnkzbzlMUDRGMkpOMXlPN3hCamlIdG5NSWJaTUYzRUJtQm9mUTZFcC1wREZfNUZpbTlmY29uNzQ2T2JyN1FncTFOX2c?oc=5",
+          "titre": "Wizernes : la commune lance une pétition pour dire non à la fermeture annoncée du Crédit Agricole - Delta FM",
+          "source": "Google News",
+          "date": "Tue, 28 Jul 2026 05:01:23 GMT",
+          "tier": "D"
+        },
+        {
           "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPMWprT3piaGJkX0xrSmxBakExRGVDWVQ3dkV4Tkh6T0VVd2QxSnp2WDZOTHVtSjh1MUdqa3FReVMxdnptcmQxcFlKY1FxdGVocGlCeUNRc2g1WXVKWGE4LXJiaE1HMVBiT3FHUDY0SVZwNnFteXFDSi1Hek1EQjZCRkxkZ0x6eUxOeW5pXzlTV1hkNEhVNmtSejkwbjdUdkxld0VVbklWQUtLMXc3SlVHdzhqdDRxWU1iT2VHVWdkUVlqRWFQS1BUeGZpWkQ?oc=5",
           "titre": "La mairie de Wizernes lance une pétition après l’annonce de la fermeture de l’agence du Crédit Agricole - La Voix du Nord",
           "source": "Google News",
           "date": "Mon, 20 Jul 2026 14:01:40 GMT",
+          "tier": "D"
+        },
+        {
+          "url": "https://www.deltafm.fr/wizernes-la-commune-lance-une-petition-pour-dire-non-a-la-fermeture-annoncee-du-credit-agricole",
+          "titre": "Wizernes : la commune lance une pétition pour dire non à la fermeture annoncée du Crédit Agricole",
+          "source": "Delta FM",
+          "date": "2026-07-28T04:52:08Z",
           "tier": "D"
         },
         {
@@ -10529,6 +10555,47 @@
         "source": "SIRENE"
       },
       "region": "Île-de-France"
+    },
+    {
+      "id": "2955fa7269039dc5",
+      "banque": "La Banque Postale",
+      "commune": "Sablé-sur-Sarthe",
+      "code_insee": "72264",
+      "departement": "72",
+      "type": "fermeture",
+      "date_annonce": "Mon, 27 Jul 2026 15:30:02 GMT",
+      "date_fermeture": "2026-07-20",
+      "statut": "confirmé",
+      "statut_temporel": "deja_fermee",
+      "date_fermeture_approx": 1,
+      "fiabilite": 2,
+      "lat": 47.839167,
+      "lon": -0.338763,
+      "citation": "« Après sept semaines de fermeture, le bureau de La Poste de Sablé-sur-Sarthe rouvre ses portes au public » (l’article ne précise pas explicitement la fermeture d’un service bancaire La Banque Postale, mais le point La Poste est potentiellement un point bancaire associé).",
+      "adresse": null,
+      "agence_localisation": "Bureau de La Poste (service bancaire La Banque Postale associé)",
+      "commune_originale": null,
+      "service_impact": "fermeture_lbp_complete",
+      "point_postal_avant": "Bureau de Poste",
+      "point_postal_apres": null,
+      "postal_point_id": "13747A",
+      "evidence_level": "presse+référentiel",
+      "created_at": "2026-07-28T06:08:39.873901+00:00",
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxNZzcxY0dqYlhtTGRNNUYxVU5TNVp0MnBXX1E2QjlCWTZEWnhybDVzTVZtRjN3enM2d1VyVklGVjlYNmluZHBxUVNsRGs4WnpYRTNFR2Z3T1R1Ulk4OGM2TFNaRHZWUUU4OHZRNTRzcW1xX09fTUhGamFmMEI0dEZtdzZLcHZ1d3hsY2JwTS15eEt1YVBEMkU2WlRqX2VKTEVfc09TWnJIeFhRVHBuenExUFNBTDVyeVloa3l6WGwtbmVVNnVtU3BieE96OGt0M2stb2tMdm9Wd1RpbzR5cjJvQktDN05pWlZlV1AzRTVfOHllQnFlbk5BSEZpWUVfdzVaV0ROcFlzSkhkN3d4elBJejFzRm5mQQ?oc=5",
+          "titre": "Après sept semaines de fermeture, le bureau de La Poste de Sablé-sur-Sarthe rouvre ses portes au public ! - Actu.fr",
+          "source": "Google News",
+          "date": "Mon, 27 Jul 2026 15:30:02 GMT",
+          "tier": "D"
+        }
+      ],
+      "controle_sirene": {
+        "etat_administratif": null,
+        "siret": null,
+        "source": "SIRENE"
+      },
+      "region": "Pays de la Loire"
     }
   ],
   "closures_unlocated": [
@@ -11286,7 +11353,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-07-27T07:48:47.000393+00:00"
+      "created_at": "2026-07-28T06:05:47.253850+00:00"
     },
     {
       "id": "50895c042a984b7d",
@@ -11322,7 +11389,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 04:46:02 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-07-27T07:48:46.994719+00:00"
+      "created_at": "2026-07-28T06:05:47.248221+00:00"
     },
     {
       "id": "8c6a0cad14626d6f",
@@ -12798,7 +12865,7 @@
       "source": "Google News",
       "date": "Sat, 03 Aug 2024 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-07-27T07:48:45.670680+00:00"
+      "created_at": "2026-07-28T06:05:46.406973+00:00"
     },
     {
       "id": "4996e3bfe560bbb6",
@@ -12871,6 +12938,24 @@
       "date": "Mon, 27 Oct 2025 07:00:00 GMT",
       "raison": "garde entrée/sortie: fermeture postale temporaire ou circonstancielle",
       "created_at": "2026-07-23T06:13:04.230024+00:00"
+    },
+    {
+      "id": "24dd6f4121332700",
+      "banque": "La Banque Postale",
+      "commune": "Allauch",
+      "departement": "13",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "« C’est inadmissible » : à Ploufragan, la réduction des horaires du bureau de poste alimente les craintes d’une fermeture définitive - Le Télégramme",
+      "url": "https://news.google.com/rss/articles/CBMinwJBVV95cUxPWmZhb2k2OWQ4d3l2ekg3OGZtcUhpQkwwTDZvWk5YNU5OWGhrVDJDZTVnQk8xWHhCd0EtdVBTNzFBT3hULV9GaDBFX3lRaXFBdk55T3I5X055REVNT09RV2J5UWtpNmFSdU4tTXlBeXV5WDFwYWI2eFpnNjJSZW9tSVJQSkhaVUVCUEl3T1ZuUDJneXFqMll1VVJyX01wSmliSHJXV2c0VG4wc1huZFZ3b1JpM2VJY2liVTdQb1QzU2FWYjl4aXljS2tCUlA1OXRTcExURlZwQmQwYkI0VDlvY3JteHJyYnB1ckdfQXhndHd0WTd2QWNWVDZmTEtZdUdrOVYtaHdaRDlzLUpvN2lNYVFIc09nVWQzYXNDRkZtSQ?oc=5",
+      "titre": "« C’est inadmissible » : à Ploufragan, la réduction des horaires du bureau de poste alimente les craintes d’une fermeture définitive - Le Télégramme",
+      "source": "Google News",
+      "date": "Mon, 27 Jul 2026 17:08:43 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-07-28T06:08:50.052582+00:00"
     },
     {
       "id": "6d80040bf3384652",
@@ -13463,8 +13548,8 @@
       "titre": "La mobilisation des habitants a été vaine, le bureau de poste du quartier Saint-Marc, à Saint-Nazaire, ferme ses portes - ici.fr",
       "source": "Google News",
       "date": "Fri, 20 Jun 2025 07:00:00 GMT",
-      "raison": "garde entrée/sortie: commune/localisation de sortie absente de la source",
-      "created_at": "2026-07-27T07:49:00.119687+00:00"
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-07-28T06:05:54.160839+00:00"
     },
     {
       "id": "b80663fa38292743",
@@ -13608,7 +13693,7 @@
       "source": "Google News",
       "date": "Fri, 10 Jul 2026 10:12:00 GMT",
       "raison": "garde entrée/sortie: département source 44 incompatible avec la sortie 974",
-      "created_at": "2026-07-27T07:49:28.942357+00:00"
+      "created_at": "2026-07-28T06:06:10.106890+00:00"
     },
     {
       "id": "8c646081e1d69e81",
@@ -13770,7 +13855,7 @@
       "source": "Google News",
       "date": "Fri, 03 Jan 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-07-27T07:48:46.374312+00:00"
+      "created_at": "2026-07-28T06:05:46.851181+00:00"
     },
     {
       "id": "f3e888f7eaf5ffb7",
@@ -14123,6 +14208,34 @@
       "source": "Google News",
       "date": "Fri, 09 Aug 2024 07:00:00 GMT",
       "created_at": "2026-07-02T07:06:46.864415+00:00"
+    },
+    {
+      "id": "cb41604cdc37d41e",
+      "banque": "La Banque Postale",
+      "departement": "Gironde",
+      "count": 20,
+      "communes_mentioned": "",
+      "confidence": 0.35,
+      "evidence": "« 23 bureaux de Poste ont été temporairement fermés, dont 20 en Gironde » (La Poste).",
+      "url": "https://www.lefigaro.fr/flash-actu/incendies-en-france-environ-700-000-courriers-immobilises-et-securises-dans-le-sud-ouest-20260727",
+      "titre": "Incendies en France : environ 700.000 courriers \"immobilisés et sécurisés\" dans le Sud-Ouest",
+      "source": "Le Figaro.fr",
+      "date": "2026-07-27T17:58:21Z",
+      "created_at": "2026-07-28T06:09:36.599232+00:00"
+    },
+    {
+      "id": "b9b55f328ea01726",
+      "banque": "La Banque Postale",
+      "departement": "Landes",
+      "count": 3,
+      "communes_mentioned": "",
+      "confidence": 0.35,
+      "evidence": "« 23 bureaux de Poste ont été temporairement fermés, dont … trois dans les Landes » (La Poste).",
+      "url": "https://www.lefigaro.fr/flash-actu/incendies-en-france-environ-700-000-courriers-immobilises-et-securises-dans-le-sud-ouest-20260727",
+      "titre": "Incendies en France : environ 700.000 courriers \"immobilisés et sécurisés\" dans le Sud-Ouest",
+      "source": "Le Figaro.fr",
+      "date": "2026-07-27T17:58:21Z",
+      "created_at": "2026-07-28T06:09:36.600062+00:00"
     },
     {
       "id": "8981bee66ace34e5",
@@ -14858,6 +14971,19 @@
       "created_at": "2026-07-22T08:55:48.421247+00:00"
     },
     {
+      "id": "5c7b5b6c608d1848",
+      "banque": "Crédit Agricole",
+      "scope": "national",
+      "count": null,
+      "confidence": 0.12,
+      "evidence": "Titre et sujet portent sur une fusion en Italie entre Banco BPM et Monte dei Paschi (pas des fermetures/regroupements d’agences bancaires physiques en France).",
+      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNcUtWWTJRN2FRYTZaNG5UR0o4NnE4YzIwYWl3YVZEaU5fVkRQcy1USWFuTy1XYUJHVHkzYTh1cEJqbjR1QjhrWnVVeG1helV3WHRlYkdzOHJZRFF3TEpWT1RfdzFENEVQd2xvZnNfNEZ1c0VMZVJsQmp1bXR3LUNzT19KZmJEWjVlYzFIT3hscUFLZVo4dDlld2F2MWQ2UW5oVXQwVkJxMk11dzhoQzlvY01abWNEVTdYMEhRRGdHNFg5Rlh4LVk0dWRDb1kxUmJ4NVRvZXZQVjZOVXVaNUlRc0tPa05BbEZFc2dHSFZNdVVYN2M?oc=5",
+      "titre": "En Italie, Crédit Agricole au centre du jeu pour une fusion entre Banco BPM et Monte dei Paschi - Les Echos",
+      "source": "Google News",
+      "date": "Mon, 27 Jul 2026 11:58:16 GMT",
+      "created_at": "2026-07-28T06:08:35.129421+00:00"
+    },
+    {
       "id": "6d834229709e8177",
       "banque": "La Poste",
       "scope": "unknown",
@@ -15116,6 +15242,32 @@
       "source": "Google News",
       "date": "Fri, 06 Sep 2024 07:00:00 GMT",
       "created_at": "2026-07-22T08:54:47.471514+00:00"
+    },
+    {
+      "id": "8be81468ac0c1f3a",
+      "banque": "La Poste (opérations postales)",
+      "scope": "regional",
+      "count": null,
+      "confidence": 0.62,
+      "evidence": "« 23 bureaux ont été temporairement fermés, dont 20 en Gironde et trois dans les Landes » et « la plateforme de Cestas… a dû fermer depuis samedi soir »",
+      "url": "https://www.rtl.fr/actu/debats-societe/700-000-courriers-immobilises-et-securises-tournees-adaptees-comment-la-poste-s-organise-pendant-les-incendies-dans-le-sud-ouest-7900657797",
+      "titre": "700.000 courriers \"immobilisés et sécurisés\", tournées adaptées : comment La Poste s'organise pendant les incendies",
+      "source": "RTL.fr",
+      "date": "2026-07-28T03:45:56Z",
+      "created_at": "2026-07-28T06:09:19.948185+00:00"
+    },
+    {
+      "id": "55ab36dea8a090ae",
+      "banque": "Chronopost (établissement de distribution)",
+      "scope": "regional",
+      "count": 1,
+      "confidence": 0.25,
+      "evidence": "« et 11 établissements de distribution dont une agence Chronopost ont également dû cesser leur activité » (pas de commune)",
+      "url": "https://www.lefigaro.fr/flash-actu/incendies-en-france-environ-700-000-courriers-immobilises-et-securises-dans-le-sud-ouest-20260727",
+      "titre": "Incendies en France : environ 700.000 courriers \"immobilisés et sécurisés\" dans le Sud-Ouest",
+      "source": "Le Figaro.fr",
+      "date": "2026-07-27T17:58:21Z",
+      "created_at": "2026-07-28T06:09:36.600842+00:00"
     },
     {
       "id": "6e69faa4cf93b8b9",
@@ -15417,6 +15569,19 @@
       "score": 4,
       "raison": "signaux: dept(Crédit Agricole,Lot,count=None,communes=)",
       "created_at": "2026-07-02T07:06:46.865370+00:00"
+    },
+    {
+      "id": "bc4016b9cb35a654",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "L'été fou de Tottenham : deux records battus sur le mercato après avoir frôlé la Championship - Sport.fr",
+      "extrait": "TITRE: L'été fou de Tottenham : deux records battus sur le mercato après avoir frôlé la Championship - Sport.fr SOURCE: Sport.fr DATE: 2026-07-27T14:11:35Z URL: https://www.sport.fr/football/lete-fou-de-tottenham-deux-records-battus-sur-le-mercato-apres-avoir-frole-la-championship-1470028.shtm Dix-septième. Sauvé au dernier jour par un but de João Palhinha contre Everton. Tottenham sort de la pire saison de son histoire récente -- et a répondu en explosant deux fois son record de transfert en qu",
+      "url": "https://www.sport.fr/football/lete-fou-de-tottenham-deux-records-battus-sur-le-mercato-apres-avoir-frole-la-championship-1470028.shtm",
+      "source": "Sport.fr",
+      "date": "2026-07-27T14:11:35Z",
+      "score": 4,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-28T06:10:00.179333+00:00"
     },
     {
       "id": "4ada675f39fdaadb",
@@ -17018,6 +17183,19 @@
       "created_at": "2026-07-22T09:05:18.225436+00:00"
     },
     {
+      "id": "e71eb7daedff9b1f",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "Labarthe-Rivière. La colère des maires face à la fermeture de La Poste - ladepeche.fr",
+      "extrait": "TITRE: Labarthe-Rivière. La colère des maires face à la fermeture de La Poste - ladepeche.fr SOURCE: Google News DATE: Wed, 08 Jul 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMiowFBVV95cUxNZzh5WWhtSlBkZEdkcGxSZW1MaWNWalI3cjJKTGs1UTJRa1dQemtuZzRzTUcxS3hJY1NEUzVPaFl6b0p1QVBFZGtzWFZZbmpwam9nV24wRUJIX0RlSk1yUm9xT0ltdkxmc3ZXM2tRcFM4aTlmYk9WbUtaV1BxeEZoZjBvaVhnMGxtUUhISVBGeDhUM2RRamFfcW9fTEszZDloOUxV?oc=5 <a href=\"https://news.google.com/rss/articles/CBMiowFBVV95cUxNZzh5WWhtSlBkZEdkc",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNZzh5WWhtSlBkZEdkcGxSZW1MaWNWalI3cjJKTGs1UTJRa1dQemtuZzRzTUcxS3hJY1NEUzVPaFl6b0p1QVBFZGtzWFZZbmpwam9nV24wRUJIX0RlSk1yUm9xT0ltdkxmc3ZXM2tRcFM4aTlmYk9WbUtaV1BxeEZoZjBvaVhnMGxtUUhISVBGeDhUM2RRamFfcW9fTEszZDloOUxV?oc=5",
+      "source": "Google News",
+      "date": "Wed, 08 Jul 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-28T06:08:51.974615+00:00"
+    },
+    {
       "id": "bcfbf422c3c7add1",
       "banque": "Société Générale",
       "departement": null,
@@ -17679,6 +17857,32 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-29T09:13:23.230500+00:00"
+    },
+    {
+      "id": "dc50d1d829587e48",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Ces agriculteurs vendent leur ferme pour prendre leur retraite... mais n'ont jamais reçu l’argent - France 3 Régions",
+      "extrait": "TITRE: Ces agriculteurs vendent leur ferme pour prendre leur retraite... mais n'ont jamais reçu l’argent - France 3 Régions SOURCE: Google News DATE: Tue, 28 Jul 2026 04:15:01 GMT URL: https://news.google.com/rss/articles/CBMi8gFBVV95cUxPY3Ntdzh2UzAwUWR5LV9iRWxIbFF6QVBaZ3FpX2JWOEc1QUY4TVVuQ2ptT29PMGZVTzNSUFpnSkhKUjNtVnRubjZ0WTNLRXE3T2VReW91Yy05RVZoS3FMODByY1Vzc0RkaHFhSl9xNWNIVDhwYlpOR0ROc2hScDdPbjFZMWR3UWNiSkx6VGxiSGlYQ1F3WGhNWjRwb0FYUV9VYWVONWIzV3Y3YjNnUVRTOTh0S0tDSFBHTmFnZFc4Y0Z0SC1Xa19SUDg4Q0",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPY3Ntdzh2UzAwUWR5LV9iRWxIbFF6QVBaZ3FpX2JWOEc1QUY4TVVuQ2ptT29PMGZVTzNSUFpnSkhKUjNtVnRubjZ0WTNLRXE3T2VReW91Yy05RVZoS3FMODByY1Vzc0RkaHFhSl9xNWNIVDhwYlpOR0ROc2hScDdPbjFZMWR3UWNiSkx6VGxiSGlYQ1F3WGhNWjRwb0FYUV9VYWVONWIzV3Y3YjNnUVRTOTh0S0tDSFBHTmFnZFc4Y0Z0SC1Xa19SUDg4Q00wenA3bmYtMWlLUkZHb2twRWp0bVEwTExLRkdwZm9IOTFrRjBiZw?oc=5",
+      "source": "Google News",
+      "date": "Tue, 28 Jul 2026 04:15:01 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-28T06:08:33.132114+00:00"
+    },
+    {
+      "id": "c5493f508794ee99",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "«Persécution bancaire» : pourquoi journalistes et militants de droite se plaignent d’une fermeture arbitraire de leurs comptes - Le Figaro",
+      "extrait": "TITRE: «Persécution bancaire» : pourquoi journalistes et militants de droite se plaignent d’une fermeture arbitraire de leurs comptes - Le Figaro SOURCE: Google News DATE: Tue, 28 Jul 2026 04:00:11 GMT URL: https://news.google.com/rss/articles/CBMihgJBVV95cUxNX3V2Z3oyZ0YzVS1VZWk1aWViMDVxVjhSc3FQVHh0ZzdXWlpEN1g0RFhZQjJfRURjemdsR2hib2FtRy1xc0hDZnNycnduSVN4RXlRRG9IbHdockpLdEctdVJXY0tUaVJHNVVwSGxEMS16MmdJMmcxdUl3eVRTTlNoT0MxcUxoMzdaY0E4QV8zZndOOHFiZ1pLWkpLUWxxeFRxS2hfeHlOVTRNbWpXamV2dmg1YTlxSi1zbzUt",
+      "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxNX3V2Z3oyZ0YzVS1VZWk1aWViMDVxVjhSc3FQVHh0ZzdXWlpEN1g0RFhZQjJfRURjemdsR2hib2FtRy1xc0hDZnNycnduSVN4RXlRRG9IbHdockpLdEctdVJXY0tUaVJHNVVwSGxEMS16MmdJMmcxdUl3eVRTTlNoT0MxcUxoMzdaY0E4QV8zZndOOHFiZ1pLWkpLUWxxeFRxS2hfeHlOVTRNbWpXamV2dmg1YTlxSi1zbzUtdUJfOXhkYmEzc1pKU1o4Q2ZrTkhKLThGVnJMQm1WNGFXVld3RGxfcmh1Zmc3RmRhVDFsbU1jemFfdVlOdHBJemdZdFZ4dDZFRGFR?oc=5",
+      "source": "Google News",
+      "date": "Tue, 28 Jul 2026 04:00:11 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-28T06:08:41.662151+00:00"
     },
     {
       "id": "d15d2deb8eaf549a",
@@ -23323,6 +23527,45 @@
       "created_at": "2026-07-22T09:05:08.451705+00:00"
     },
     {
+      "id": "f4df57c5e22277a6",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Côte d’Ivoire:la SODECI annonce la fermeture temporaire de son agence de Yopougon Niangon à partir du lundi 3 août - Linfodrome",
+      "extrait": "TITRE: Côte d’Ivoire:la SODECI annonce la fermeture temporaire de son agence de Yopougon Niangon à partir du lundi 3 août - Linfodrome SOURCE: Google News DATE: Mon, 27 Jul 2026 17:24:50 GMT URL: https://news.google.com/rss/articles/CBMi7AFBVV95cUxOMmcyTE9VN3V1TlVQT19FTVprb3h5NzB4U0psMzBVeDZYUFgzRDIzY00xZnhiNTRLaTFwbFljd0ZtSEFDa3pUYjJoMUgtdlpvQWMwaHFUUjVqZ1BaUmJxQkVtaVNwSzVOS29tMFl2aW9uZ3FsMkJWNDVzYURuSXdrRXpmU2N3UWpBdjlPN0tIM2NGVlJmY0NFLU9iajQyS3gtRnM3UlZHNTI2TENMM3RKQUZIVnNGZ2gzcncwYi1rZ1hENkt",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOMmcyTE9VN3V1TlVQT19FTVprb3h5NzB4U0psMzBVeDZYUFgzRDIzY00xZnhiNTRLaTFwbFljd0ZtSEFDa3pUYjJoMUgtdlpvQWMwaHFUUjVqZ1BaUmJxQkVtaVNwSzVOS29tMFl2aW9uZ3FsMkJWNDVzYURuSXdrRXpmU2N3UWpBdjlPN0tIM2NGVlJmY0NFLU9iajQyS3gtRnM3UlZHNTI2TENMM3RKQUZIVnNGZ2gzcncwYi1rZ1hENkt4RkptSGw4ZUtkT0ZNQkU1UmdXWndBdEVWREMtRXZEMUk0LXlVeDg4Qg?oc=5",
+      "source": "Google News",
+      "date": "Mon, 27 Jul 2026 17:24:50 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-28T06:08:43.585829+00:00"
+    },
+    {
+      "id": "f8a8caf5e1328b38",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "« La Poste organise-t-elle la fermeture de son bureau ? » : un syndicat réagit à la réduction des horaires à Ploufragan - Maville.com Saint Brieuc",
+      "extrait": "TITRE: « La Poste organise-t-elle la fermeture de son bureau ? » : un syndicat réagit à la réduction des horaires à Ploufragan - Maville.com Saint Brieuc SOURCE: Google News DATE: Mon, 27 Jul 2026 16:18:00 GMT URL: https://news.google.com/rss/articles/CBMijgJBVV95cUxPaFRia2VTeXlkS3ZzZVVpbTh0OTQyZDNyLW85aHF6eUZsb0k2ajU0Q1VmQ3lvLWFYeVRKX3hmSUtQNzZqRGxwTVdWbGNGNzBfTUtSc0RfTDlITjdGQmlqM2VZQ191Q2dUeGxMQVB6VzlqRE5HcVM1X0lWaGgzREJLYTcwem5TaHE5bWczWE5JSGpHZnFtWXYtalZiWXF1U0hKbVhXQzhoSEl6X29EUnVDMVR4VUhM",
+      "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxPaFRia2VTeXlkS3ZzZVVpbTh0OTQyZDNyLW85aHF6eUZsb0k2ajU0Q1VmQ3lvLWFYeVRKX3hmSUtQNzZqRGxwTVdWbGNGNzBfTUtSc0RfTDlITjdGQmlqM2VZQ191Q2dUeGxMQVB6VzlqRE5HcVM1X0lWaGgzREJLYTcwem5TaHE5bWczWE5JSGpHZnFtWXYtalZiWXF1U0hKbVhXQzhoSEl6X29EUnVDMVR4VUhMRHBqZmlyYnpMZ1h0RzV0VVJybE1BQ1pSbVBCNnB4Rml1cFdUdE1EVExrUUoxUi1NcElBUERWdXltWVRJZVh3Z1hRTk9TOW5fZU9fSUJrVm0xcHlGS2Z0ZWc?oc=5",
+      "source": "Google News",
+      "date": "Mon, 27 Jul 2026 16:18:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-28T06:08:48.858829+00:00"
+    },
+    {
+      "id": "bf71e2e33e0faf9c",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "« La Poste organise-t-elle la fermeture de son bureau ? » : un syndicat réagit à la réduction des horaires à Ploufragan - Ouest-France",
+      "extrait": "TITRE: « La Poste organise-t-elle la fermeture de son bureau ? » : un syndicat réagit à la réduction des horaires à Ploufragan - Ouest-France SOURCE: Google News DATE: Mon, 27 Jul 2026 15:18:36 GMT URL: https://news.google.com/rss/articles/CBMirwJBVV95cUxPRjlFMWJUUjBJRS00Y3oweWlVXzNPaGRhYlVHcTlldi1sWG15em9TaDYxN2JoLTJYNkRsU1N4b1NPcmdSZVJKTGZhNVZFVlNzd21NaXl1MGZaelE5NmtIbmVCNnlWYTRpUDZEa1VZS2VPWnhKcFVLRTZZMzB2OW5BWjNhTjIxc2dNa1Jmc3lqZk9zWng4VUhPM1ZrZENlV0ttbUpDVE13d25FVEhmeU5ZbWx6Z3NIVWlRUXJxRWpJ",
+      "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxPRjlFMWJUUjBJRS00Y3oweWlVXzNPaGRhYlVHcTlldi1sWG15em9TaDYxN2JoLTJYNkRsU1N4b1NPcmdSZVJKTGZhNVZFVlNzd21NaXl1MGZaelE5NmtIbmVCNnlWYTRpUDZEa1VZS2VPWnhKcFVLRTZZMzB2OW5BWjNhTjIxc2dNa1Jmc3lqZk9zWng4VUhPM1ZrZENlV0ttbUpDVE13d25FVEhmeU5ZbWx6Z3NIVWlRUXJxRWpJZnA2enlBd2dJMVBZM1A5dFNpbm4zblNVQTlVZDFzTk1vajluTDJWeHFoUEpPY0hfRElRUTYyNjRFY3RWZ0ZwemQ5bWhtMFBkbnNMYlhUT1VmVFhUSDVKTkpDNlFXTDVsQ0xKbUFUTkxQY0ZMWU0td0U?oc=5",
+      "source": "Google News",
+      "date": "Mon, 27 Jul 2026 15:18:36 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-28T06:08:47.150676+00:00"
+    },
+    {
       "id": "cf7c67da2f26cda9",
       "banque": "Société Générale",
       "departement": null,
@@ -23698,6 +23941,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-07-22T08:58:32.731369+00:00"
+    },
+    {
+      "id": "752af541eac11dcc",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Canicule à Tarbes : pourquoi la piscine Paul-Boyrie est fermée pendant six jours, à partir de ce mercredi 24 juin, en pleine période de fortes chaleurs - NRPyrenees.fr",
+      "extrait": "TITRE: Canicule à Tarbes : pourquoi la piscine Paul-Boyrie est fermée pendant six jours, à partir de ce mercredi 24 juin, en pleine période de fortes chaleurs - NRPyrenees.fr SOURCE: Google News DATE: Mon, 22 Jun 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMiowJBVV95cUxQZXNtSDExbHdTa09TTnczZThNSFBTR1I0X1d4dlVzVDJ3M3R0VFh5anhicUZNRXBvRklYSUVWa2U4M2VmZXdIeXVOOG9FS0d0SGN5TzNkRnA5MW0tQ05SaXdVM2JFcTFOa1dka2hCS2ZCRzZpRkJ0Y09kSFlScTB1Z2FfVENiZ255cHRkdjJLUTlzYUFFV3MxMUlqc1B0cjNRLTJlQk1",
+      "url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxQZXNtSDExbHdTa09TTnczZThNSFBTR1I0X1d4dlVzVDJ3M3R0VFh5anhicUZNRXBvRklYSUVWa2U4M2VmZXdIeXVOOG9FS0d0SGN5TzNkRnA5MW0tQ05SaXdVM2JFcTFOa1dka2hCS2ZCRzZpRkJ0Y09kSFlScTB1Z2FfVENiZ255cHRkdjJLUTlzYUFFV3MxMUlqc1B0cjNRLTJlQk1pTVNQSEtYM1liRXdfZDZmcWVfSGVzY3JkTHlIaU40Z3V4YmtNNjN6NExiNWlyZ09qaDh2Y3A3Y3lxaGlHYUw2OFUtU1VlVHdBWXBYX2lnYXZDalZxSDNxRXhKbmZSWkxkeXZiLTctdWZ4UC0xQ2kzb0ZfT1pNeHh2VVlqTjQ?oc=5",
+      "source": "Google News",
+      "date": "Mon, 22 Jun 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-28T06:08:55.746248+00:00"
     },
     {
       "id": "4bc5a502419255ac",
@@ -24662,6 +24918,19 @@
       "created_at": "2026-07-23T06:16:47.939331+00:00"
     },
     {
+      "id": "30567224a61438e2",
+      "banque": "HSBC",
+      "departement": null,
+      "titre": "HSBC installe sa nouvelle patronne en Europe après une intense réorganisation - Les Echos",
+      "extrait": "TITRE: HSBC installe sa nouvelle patronne en Europe après une intense réorganisation - Les Echos SOURCE: Google News DATE: Mon, 01 Jun 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMi2wFBVV95cUxPWU10Nm1hWWUzdzVLck5teUhPeHA0MFlxalI3UXZTRGY2a2JHaU5ONEV6UG4zeEdVQnBHQlozSkhQb2t1S3VIWlJZYXVlV2xLUTZSS3hpWnlGOUxxVGgwU0NCck5HSWZXTWVkR29ZcnZaYlYtbHNaUmlYTDlEZGNEZ2l0VEM1cjJENTBDLWY4WUc1djdsYlZ2M3V5SGF2WlY2LWlQcUFXX00xZjBPdDc2bm5ieTJiTEJGT2lpVE5Tb2xNNjd1Y0lkeVlQQzl1QzVXSVRKTXNNWGlVRHM?oc=5 ",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPWU10Nm1hWWUzdzVLck5teUhPeHA0MFlxalI3UXZTRGY2a2JHaU5ONEV6UG4zeEdVQnBHQlozSkhQb2t1S3VIWlJZYXVlV2xLUTZSS3hpWnlGOUxxVGgwU0NCck5HSWZXTWVkR29ZcnZaYlYtbHNaUmlYTDlEZGNEZ2l0VEM1cjJENTBDLWY4WUc1djdsYlZ2M3V5SGF2WlY2LWlQcUFXX00xZjBPdDc2bm5ieTJiTEJGT2lpVE5Tb2xNNjd1Y0lkeVlQQzl1QzVXSVRKTXNNWGlVRHM?oc=5",
+      "source": "Google News",
+      "date": "Mon, 01 Jun 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-28T06:08:36.851270+00:00"
+    },
+    {
       "id": "2ec4fd2f51642350",
       "banque": "Société Générale",
       "departement": null,
@@ -25141,6 +25410,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-07-26T06:20:46.348304+00:00"
+    },
+    {
+      "id": "635dc011667846d1",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Votre agence ING va-t-elle fermer? - L'Echo",
+      "extrait": "TITRE: Votre agence ING va-t-elle fermer? - L'Echo SOURCE: Google News DATE: Fri, 24 Jul 2026 15:39:31 GMT URL: https://news.google.com/rss/articles/CBMiiwFBVV95cUxQa185eUkzYzVhRkV5OExMZktERGl2Rk1sNmVEcUo0T29iM2dFQmR3Mkc0UWhkN0dqR0NjUktrc0lMOVJiZFlVMkhzeGoxdnhmSGJsY085TlpLTkpfV1R0R3BUZnFsWDRIODJIRUFySTdsQ25ZSWFDa1JKNTdLRC1mNjBPdFFpTlR6SjdN?oc=5 <a href=\"https://news.google.com/rss/articles/CBMiiwFBVV95cUxQa185eUkzYzVhRkV5OExMZktERGl2Rk1sNmVEcUo0T29iM2dFQmR3Mkc0UWhkN0dqR0NjUktrc0lMOVJiZFlVMkhzeGo",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQa185eUkzYzVhRkV5OExMZktERGl2Rk1sNmVEcUo0T29iM2dFQmR3Mkc0UWhkN0dqR0NjUktrc0lMOVJiZFlVMkhzeGoxdnhmSGJsY085TlpLTkpfV1R0R3BUZnFsWDRIODJIRUFySTdsQ25ZSWFDa1JKNTdLRC1mNjBPdFFpTlR6SjdN?oc=5",
+      "source": "Google News",
+      "date": "Fri, 24 Jul 2026 15:39:31 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-28T06:08:31.218912+00:00"
     },
     {
       "id": "f2f65a6539838a4e",
@@ -25923,6 +26205,19 @@
       "created_at": "2026-07-11T05:57:03.000236+00:00"
     },
     {
+      "id": "e326df7f2f5dc9ab",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "TÉMOIGNAGE. \"Je ne suis pas la seule à faire ça\" : la gérante du bar de La Victoire, au quartier du Pin à Agen, désespérée après la fermeture administrative provisoire pour détention et vente illicites de tabac - PetitBleu.fr",
+      "extrait": "TITRE: TÉMOIGNAGE. \"Je ne suis pas la seule à faire ça\" : la gérante du bar de La Victoire, au quartier du Pin à Agen, désespérée après la fermeture administrative provisoire pour détention et vente illicites de tabac - PetitBleu.fr SOURCE: Google News DATE: Fri, 12 Jun 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMipAJBVV95cUxNZ2RkNEVoRmRoeHk1eUVqdG5Ld3k1UTg0NExlUFRCTktZbHZaNjVlZlJCaFNudEFqT1MzM25HenZYZjU3bUNaRlRaR1JuLWQ4aXptbWdZangwcGZYTkx1UXhtSG5VWGtSOFVTNnNwbEVwTGoxMURLT2tjd",
+      "url": "https://news.google.com/rss/articles/CBMipAJBVV95cUxNZ2RkNEVoRmRoeHk1eUVqdG5Ld3k1UTg0NExlUFRCTktZbHZaNjVlZlJCaFNudEFqT1MzM25HenZYZjU3bUNaRlRaR1JuLWQ4aXptbWdZangwcGZYTkx1UXhtSG5VWGtSOFVTNnNwbEVwTGoxMURLT2tjd0pLU2lNNUpETG0tWUQzS25BdXVxLWQ3QW5rMERKLW9vNkVsTG1RNDFkdlE5eDg3M0ZfZzJFRWxlb1VVTFB5QUFrbjBqUmEwa3lycDFSX3o1ZjZfc3AxeFB4ZVM1Ul9wSGt3Tk5KZDlVNHBScGFxbUZ4bTZTOUxPaGFoRk9Ka3NmTlRpUm9NVmZyNkZUaXNla2lMUk5ZV25qYnpwR2FaT3l2UDlJRk9kTFgy?oc=5",
+      "source": "Google News",
+      "date": "Fri, 12 Jun 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-28T06:08:53.936115+00:00"
+    },
+    {
       "id": "c2ce6b1af9e419c6",
       "banque": "Crédit Agricole",
       "departement": null,
@@ -26664,6 +26959,188 @@
       "created_at": "2026-07-22T09:09:01.159244+00:00"
     },
     {
+      "id": "f753914d6cbe401b",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "L'aide maximale à la rénovation est passée de 63 000 à 32 000 euros, ce qui a changé",
+      "extrait": "TITRE: L'aide maximale à la rénovation est passée de 63 000 à 32 000 euros, ce qui a changé SOURCE: Capital.fr DATE: 2026-07-28T05:57:18Z URL: https://www.capital.fr/immobilier/l-aide-maximale-a-la-renovation-est-passee-de-63-000-a-32-000-euros-ce-qui-a-change-1528807 Les demandes d'aides à la rénovation MaPrimeRénov ont fondu comme neige au soleil en 2026. Alors que le dispositif était très apprécié des Français en 2025, il est tombé en disgrâce durant la deuxième moitié de l'année précédente a",
+      "url": "https://www.capital.fr/immobilier/l-aide-maximale-a-la-renovation-est-passee-de-63-000-a-32-000-euros-ce-qui-a-change-1528807",
+      "source": "Capital.fr",
+      "date": "2026-07-28T05:57:18Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-28T06:09:11.012294+00:00"
+    },
+    {
+      "id": "4ad23755f3af2e67",
+      "banque": "Crédit Agricole",
+      "departement": null,
+      "titre": "\" Un projet concret et familial \" : ils ont repris le bar-tabac de la commune",
+      "extrait": "TITRE: \" Un projet concret et familial \" : ils ont repris le bar-tabac de la commune SOURCE: Ouest France DATE: 2026-07-28T04:02:01Z URL: https://www.ouest-france.fr/economie/commerce/un-projet-concret-et-familial-ils-ont-repris-le-bar-tabac-de-la-commune-997252d4-89be-11f1-951f-03a8cbb1543a Depuis le 9 juin 2026, le bar-tabac-presse La Parenthèse de Roëzé-sur-Sarthe a repris son activité sous l'impulsion de Renaud et Marine Bonneau, respectivement âgés de 37 et 35 ans. Initialement prévue plus ",
+      "url": "https://www.ouest-france.fr/economie/commerce/un-projet-concret-et-familial-ils-ont-repris-le-bar-tabac-de-la-commune-997252d4-89be-11f1-951f-03a8cbb1543a",
+      "source": "Ouest France",
+      "date": "2026-07-28T04:02:01Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-28T06:09:17.571979+00:00"
+    },
+    {
+      "id": "718ea05c72106516",
+      "banque": "La Poste (opérations postales)",
+      "departement": null,
+      "titre": "700.000 courriers \"immobilisés et sécurisés\", tournées adaptées : comment La Poste s'organise pendant les incendies",
+      "extrait": "« 23 bureaux ont été temporairement fermés, dont 20 en Gironde et trois dans les Landes » et « la plateforme de Cestas… a dû fermer depuis samedi soir »",
+      "url": "https://www.rtl.fr/actu/debats-societe/700-000-courriers-immobilises-et-securises-tournees-adaptees-comment-la-poste-s-organise-pendant-les-incendies-dans-le-sud-ouest-7900657797",
+      "source": "RTL.fr",
+      "date": "2026-07-28T03:45:56Z",
+      "score": 3,
+      "raison": "signaux: vague(La Poste (opérations postales),regional,count=None)",
+      "created_at": "2026-07-28T06:09:19.949209+00:00"
+    },
+    {
+      "id": "5197ffa6e5429dcf",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Transfert de Yan Diomandé au Real Madrid : Arsenal, PSG, Liverpool... L'effet domino qui pourrait bouleverser le mercato d'été 2026",
+      "extrait": "TITRE: Transfert de Yan Diomandé au Real Madrid : Arsenal, PSG, Liverpool... L'effet domino qui pourrait bouleverser le mercato d'été 2026 SOURCE: Top mercato DATE: 2026-07-27T21:05:44Z URL: https://www.topmercato.com/2123134-transfert-de-yan-diomande-au-real-madrid-arsenal-psg-liverpool-leffet-domino-qui-pourrait-bouleverser-le-mercato-dete-2026/ Cible de clubs de Premier League et du PSG, Yan Diomandé sera finalement un joueur des Merengues après la conclusion d'un accord entre le club espagno",
+      "url": "https://www.topmercato.com/2123134-transfert-de-yan-diomande-au-real-madrid-arsenal-psg-liverpool-leffet-domino-qui-pourrait-bouleverser-le-mercato-dete-2026/",
+      "source": "Top mercato",
+      "date": "2026-07-27T21:05:44Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-28T06:09:24.404373+00:00"
+    },
+    {
+      "id": "d6aa8b33129146d4",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "Incendies : environ 700 000 courriers \" immobilisés et sécurisés \" dans le Sud-Ouest, selon La Poste",
+      "extrait": "TITRE: Incendies : environ 700 000 courriers \" immobilisés et sécurisés \" dans le Sud-Ouest, selon La Poste SOURCE: Le Parisien DATE: 2026-07-27T20:11:14Z URL: https://www.leparisien.fr/environnement/climat/incendies-environ-700-000-courriers-immobilises-et-securises-dans-le-sud-ouest-selon-la-poste-27-07-2026-BNOP75OQHRE5HGUFQ7B5WL3XZI.php Dans le Sud-Ouest en proie à de terribles incendies, plusieurs sites de La Poste ont dû cesser leur activité ce qui a engendré l'immobilisation plusieurs cen",
+      "url": "https://www.leparisien.fr/environnement/climat/incendies-environ-700-000-courriers-immobilises-et-securises-dans-le-sud-ouest-selon-la-poste-27-07-2026-BNOP75OQHRE5HGUFQ7B5WL3XZI.php",
+      "source": "Le Parisien",
+      "date": "2026-07-27T20:11:14Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-28T06:09:28.235574+00:00"
+    },
+    {
+      "id": "2f7d2afa9d2cd294",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "Incendie dans les Landes. \" J'espère qu'on ne sera pas obligé de couper dans le personnel \" : à Biscarrosse, les commerces rouvrent mais la peur des conséquences économiques est forte",
+      "extrait": "TITRE: Incendie dans les Landes. \" J'espère qu'on ne sera pas obligé de couper dans le personnel \" : à Biscarrosse, les commerces rouvrent mais la peur des conséquences économiques est forte SOURCE: SudOuest.fr DATE: 2026-07-27T20:09:53Z URL: https://www.sudouest.fr/landes/biscarrosse/incendie-dans-les-landes-j-espere-qu-on-ne-sera-pas-oblige-de-couper-dans-le-personnel-a-biscarrosse-les-commerces-rouvrent-mais-la-peur-des-consequences-economiques-est-forte-30084684.php Si certaines boutiques so",
+      "url": "https://www.sudouest.fr/landes/biscarrosse/incendie-dans-les-landes-j-espere-qu-on-ne-sera-pas-oblige-de-couper-dans-le-personnel-a-biscarrosse-les-commerces-rouvrent-mais-la-peur-des-consequences-economiques-est-forte-30084684.php",
+      "source": "SudOuest.fr",
+      "date": "2026-07-27T20:09:53Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-28T06:09:30.592476+00:00"
+    },
+    {
+      "id": "2f461983fc39dd53",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "PSG : pourquoi Zion Suzuki serait la recrue parfaite pour Matvey Safonov",
+      "extrait": "TITRE: PSG : pourquoi Zion Suzuki serait la recrue parfaite pour Matvey Safonov SOURCE: Foot Mercato : Info Transferts Football - Actu Foot Transfert DATE: 2026-07-27T20:02:32Z URL: https://www.footmercato.net/a3294244723695310025-psg-pourquoi-zion-suzuki-serait-la-recrue-parfaite-pour-matvey-safonov Le PSG prépare déjà l'après-Coupe du Monde et le poste de gardien pourrait rapidement devenir l'un des grands dossiers de la fin du mercato. Derrière la rumeur Zion Suzuki se cache peut-être bien le",
+      "url": "https://www.footmercato.net/a3294244723695310025-psg-pourquoi-zion-suzuki-serait-la-recrue-parfaite-pour-matvey-safonov",
+      "source": "Foot Mercato : Info Transferts Football - Actu Foot Transfert",
+      "date": "2026-07-27T20:02:32Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-28T06:09:32.074767+00:00"
+    },
+    {
+      "id": "6a5960e9f2b60f24",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "La sortie programmée de la monnaie commune ECO: Une analyse du ministre Justin Koné Katinan - Presse et Portail d'Informations Générales",
+      "extrait": "TITRE: La sortie programmée de la monnaie commune ECO: Une analyse du ministre Justin Koné Katinan - Presse et Portail d'Informations Générales SOURCE: ivorian.net DATE: 2026-07-27T17:02:11Z URL: https://ivorian.net/la-sortie-programmee-de-la-monnaie-commune-eco-une-analyse-du-ministre-justin-kone-katinan/ Encore faut-il s'entendre la sémantique \" remplir les critères \". Ces critères de convergence, largement hérités du modèle européen, ressemblent à un lit de Procuste : un cadre unique, taillé ",
+      "url": "https://ivorian.net/la-sortie-programmee-de-la-monnaie-commune-eco-une-analyse-du-ministre-justin-kone-katinan/",
+      "source": "ivorian.net",
+      "date": "2026-07-27T17:02:11Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-28T06:09:39.260931+00:00"
+    },
+    {
+      "id": "67d6280b7b5407a8",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "Centre courrier de Vedène : Sud PTT dénonce une réorganisation \"imposée par La Poste\"",
+      "extrait": "TITRE: Centre courrier de Vedène : Sud PTT dénonce une réorganisation \"imposée par La Poste\" SOURCE: LaProvence.com DATE: 2026-07-27T17:01:35Z URL: https://www.laprovence.com/article/region/49449732378892/centre-courrier-de-vedene-sud-ptt-denonce-une-reorganisation-imposee-par-la-poste?id=49449732378892 Malgré une alerte déposée en amont auprès de la direction, dénonçant les risques pour les conditions de travail des agents et la qualité du service public, La Poste a choisi de maintenir ces chan",
+      "url": "https://www.laprovence.com/article/region/49449732378892/centre-courrier-de-vedene-sud-ptt-denonce-une-reorganisation-imposee-par-la-poste?id=49449732378892",
+      "source": "LaProvence.com",
+      "date": "2026-07-27T17:01:35Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-28T06:09:41.181263+00:00"
+    },
+    {
+      "id": "04d0c349505c7f73",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Arsenal : un titre à défendre et un mercato volontairement discret - Sport.fr",
+      "extrait": "TITRE: Arsenal : un titre à défendre et un mercato volontairement discret - Sport.fr SOURCE: Sport.fr DATE: 2026-07-27T16:10:12Z URL: https://www.sport.fr/football/arsenal-un-titre-a-defendre-et-un-mercato-volontairement-discret-1470038.shtm Le marché anglais a ouvert le 15 juin et fermera le 1er septembre à 23 heures. Leandro Trossard a quitté le nord de Londres pour Besiktas. Jakub Kiwior a rejoint Porto. Karl Hein, le gardien numéro trois, a vu son prêt transformé en transfert définitif au We",
+      "url": "https://www.sport.fr/football/arsenal-un-titre-a-defendre-et-un-mercato-volontairement-discret-1470038.shtm",
+      "source": "Sport.fr",
+      "date": "2026-07-27T16:10:12Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-28T06:09:47.396875+00:00"
+    },
+    {
+      "id": "d77c1948a7ac1012",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "Taux d'usure dans l'UEMOA : le recalibrage opéré par la Décision n°19/29-12-2025/CM/UMOA | Financial Afrik",
+      "extrait": "TITRE: Taux d'usure dans l'UEMOA : le recalibrage opéré par la Décision n°19/29-12-2025/CM/UMOA | Financial Afrik SOURCE: Financial Afrik DATE: 2026-07-27T16:06:43Z URL: https://www.financialafrik.com/2026/07/27/taux-dusure-dans-luemoa-le-recalibrage-opere-par-la-decision-n19-29-12-2025-cm-umoa/ La force du taux d'usure tient moins à son niveau qu'à la sévérité des conséquences attachées à son dépassement. Le dispositif répressif applicable dans l'Union combine sanctions pénales et sanctions civ",
+      "url": "https://www.financialafrik.com/2026/07/27/taux-dusure-dans-luemoa-le-recalibrage-opere-par-la-decision-n19-29-12-2025-cm-umoa/",
+      "source": "Financial Afrik",
+      "date": "2026-07-27T16:06:43Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-28T06:09:49.794633+00:00"
+    },
+    {
+      "id": "f94b06664aac93df",
+      "banque": "BNP Paribas",
+      "departement": null,
+      "titre": "Incendies en Gironde : pourquoi le service client de BNP Paribas est perturbé",
+      "extrait": "TITRE: Incendies en Gironde : pourquoi le service client de BNP Paribas est perturbé SOURCE: MoneyVox Actu DATE: 2026-07-27T15:04:47Z URL: https://www.moneyvox.fr/banque/actualites/109824/incendies-en-gironde-pourquoi-le-service-client-de-bnp-paribas-est-perturbe Le service client de BNP Paribas situé à Mérignac a été fermé sur demande des autorités depuis le 25 juillet. Une partie des effectifs poursuit en télétravail. \" Les incendies en Gironde perturbent actuellement l'accès à certains de nos",
+      "url": "https://www.moneyvox.fr/banque/actualites/109824/incendies-en-gironde-pourquoi-le-service-client-de-bnp-paribas-est-perturbe",
+      "source": "MoneyVox Actu",
+      "date": "2026-07-27T15:04:47Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-28T06:09:52.085612+00:00"
+    },
+    {
+      "id": "60782382ea993b51",
+      "banque": "Crédit Mutuel",
+      "departement": null,
+      "titre": "Crédit immobilier : pouvez-vous stopper vos mensualités si vous êtes victime des incendies ?",
+      "extrait": "TITRE: Crédit immobilier : pouvez-vous stopper vos mensualités si vous êtes victime des incendies ? SOURCE: MoneyVox Actu DATE: 2026-07-27T14:52:41Z URL: https://www.moneyvox.fr/credit/actualites/109822/credit-immobilier-pouvez-vous-stopper-vos-mensualites-si-vous-etes-victime-des-incendies L'immense incendie en Gironde, aux abords du bassin d'Arcachon, est \" stabilisé \" mais pas encore \" fixé \", a indiqué ce lundi 27 juillet le ministre de l'Intérieur, Laurent Nuñez. Le \" bilan immobilier \" évo",
+      "url": "https://www.moneyvox.fr/credit/actualites/109822/credit-immobilier-pouvez-vous-stopper-vos-mensualites-si-vous-etes-victime-des-incendies",
+      "source": "MoneyVox Actu",
+      "date": "2026-07-27T14:52:41Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-28T06:09:56.731810+00:00"
+    },
+    {
+      "id": "c21733285b2bbaa6",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Bradley Barcola doit-il quitter le PSG cet été ?",
+      "extrait": "TITRE: Bradley Barcola doit-il quitter le PSG cet été ? SOURCE: Foot Mercato : Info Transferts Football - Actu Foot Transfert DATE: 2026-07-27T11:34:32Z URL: https://www.footmercato.net/a3424268666803489871-bradley-barcola-doit-il-quitter-le-psg-cet-ete Il y a le point de vue du club, qui a acté la volonté du joueur de ne pas prolonger son contrat qui s'achève en 2028, et il y a celui de Bradley Barcola, qui réfléchit à ce qui sera le plus bénéfique pour sa carrière. Les arguments sont nombreux ",
+      "url": "https://www.footmercato.net/a3424268666803489871-bradley-barcola-doit-il-quitter-le-psg-cet-ete",
+      "source": "Foot Mercato : Info Transferts Football - Actu Foot Transfert",
+      "date": "2026-07-27T11:34:32Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-28T06:10:11.498580+00:00"
+    },
+    {
       "id": "6cb0bcafe550eb5d",
       "banque": "CIC",
       "departement": null,
@@ -26675,6 +27152,19 @@
       "score": 3,
       "raison": "score préfiltre bas (-2)",
       "created_at": "2026-07-27T07:57:45.087215+00:00"
+    },
+    {
+      "id": "7b662301b685a227",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "« La Poste organise-t-elle la fermeture de son bureau ? »",
+      "extrait": "TITRE: « La Poste organise-t-elle la fermeture de son bureau ? » SOURCE: ouest-france.fr DATE: 2026-07-27 URL: https://www.ouest-france.fr/economie/entreprises/la-poste/la-poste-organise-t-elle-la-fermeture-de-son-bureau-un-syndicat-reagit-a-la-reduction-des-horaires-a-ploufragan-d0ee23a8-89bb-11f1-b777-fc1f4f594fd2",
+      "url": "https://www.ouest-france.fr/economie/entreprises/la-poste/la-poste-organise-t-elle-la-fermeture-de-son-bureau-un-syndicat-reagit-a-la-reduction-des-horaires-a-ploufragan-d0ee23a8-89bb-11f1-b777-fc1f4f594fd2",
+      "source": "ouest-france.fr",
+      "date": "2026-07-27",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-28T06:09:06.200732+00:00"
     },
     {
       "id": "009be11fa8c9772f",
@@ -29043,6 +29533,19 @@
       "created_at": "2026-06-25T15:39:08.605442+00:00"
     },
     {
+      "id": "72499372f22bb0e4",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Canicule : RER, Transilien… Des trains supprimés à partir de lundi, IDFM conseille de « reporter » les déplacements - Le Parisien",
+      "extrait": "TITRE: Canicule : RER, Transilien… Des trains supprimés à partir de lundi, IDFM conseille de « reporter » les déplacements - Le Parisien SOURCE: Google News DATE: Sun, 21 Jun 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMiuwJBVV95cUxQNkhhYlJqemVMNFlrdTdwZ19VWUhibEFxMlBuSXlpbHRJNmVvMm1ZSGFVYlYtNW1WOUEySndOM3hhdWU4SHZ3bmxOdjY3NkR2Y1dhWmxTRUM1eHNEdkVvRjlFbkJvYjQ3a0ViZVhranJ5MXFBMDNsc0pMY0FfTFVJRmR6ZFh0bHZ1am05d2NDUG81R2lTTUZVcW1zSVRBb3lORm9jbGhaSzZJQ2E2azMtWkk3VHp0anJQV1ZZMmlONlpFT",
+      "url": "https://news.google.com/rss/articles/CBMiuwJBVV95cUxQNkhhYlJqemVMNFlrdTdwZ19VWUhibEFxMlBuSXlpbHRJNmVvMm1ZSGFVYlYtNW1WOUEySndOM3hhdWU4SHZ3bmxOdjY3NkR2Y1dhWmxTRUM1eHNEdkVvRjlFbkJvYjQ3a0ViZVhranJ5MXFBMDNsc0pMY0FfTFVJRmR6ZFh0bHZ1am05d2NDUG81R2lTTUZVcW1zSVRBb3lORm9jbGhaSzZJQ2E2azMtWkk3VHp0anJQV1ZZMmlONlpFT1hNN2YtVjQwd3B0V3dDVzhaYWNWMTRjUE5wcnZ2TDhiQ0tyX1VWcUdfaGw4YjB2Um84eTdqMHd5SmN6bTlKS1hVMm43aWluSEo2UnQ5RWl3alNWMEhqV0VuUXFUZHYyN2xLVHhCWGNROGQzanQxUmlDemgxc2pTUmc?oc=5",
+      "source": "Google News",
+      "date": "Sun, 21 Jun 2026 07:00:00 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-28T06:08:57.440538+00:00"
+    },
+    {
       "id": "a793a4e35e3bf535",
       "banque": "Crédit Agricole",
       "departement": null,
@@ -29470,6 +29973,19 @@
       "score": 2,
       "raison": "signaux: vague(La Banque Postale,national,count=None)",
       "created_at": "2026-06-29T09:10:49.960758+00:00"
+    },
+    {
+      "id": "f91593ded0277e45",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Suppressions de postes à l'hôpital de Châlons : les soignants sont-ils menacés ? - L'Hebdo du Vendredi",
+      "extrait": "TITRE: Suppressions de postes à l'hôpital de Châlons : les soignants sont-ils menacés ? - L'Hebdo du Vendredi SOURCE: Google News DATE: Mon, 13 Jul 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMivwFBVV95cUxPSHNya3VBdE1sZWZkS0ZFQ19zY1dvLTNxVW1qSDRwVEwtTDJockRSSnB2Y0tOaEJ4TWxCQVg3ZVMxa2o4UWRMWlJhaHBmSDRJRkNZZDFSd0FCNFdIRFdNREZCLWVraUxKVFp1bkJuaFA0ZUJqQ2ZRSGFSdFQ2RDBmYU9JcE41Q01GSnVETE8yODVTb21odmdLZUhpd01VMWY3bUI2VnZmSnFkU242eXVOZVRWY3VVNU8xbUgwVHUtZw?oc=5 <a href=\"https://news.go",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPSHNya3VBdE1sZWZkS0ZFQ19zY1dvLTNxVW1qSDRwVEwtTDJockRSSnB2Y0tOaEJ4TWxCQVg3ZVMxa2o4UWRMWlJhaHBmSDRJRkNZZDFSd0FCNFdIRFdNREZCLWVraUxKVFp1bkJuaFA0ZUJqQ2ZRSGFSdFQ2RDBmYU9JcE41Q01GSnVETE8yODVTb21odmdLZUhpd01VMWY3bUI2VnZmSnFkU242eXVOZVRWY3VVNU8xbUgwVHUtZw?oc=5",
+      "source": "Google News",
+      "date": "Mon, 13 Jul 2026 07:00:00 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-28T06:08:45.335995+00:00"
     },
     {
       "id": "b6bfcb463d284c11",
@@ -30122,6 +30638,188 @@
       "created_at": "2026-06-25T15:43:41.960961+00:00"
     },
     {
+      "id": "6b8cc583e1d097c7",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Dossier Yan Diomandé : le PSG se lâche en coulisses sur le Real Madrid",
+      "extrait": "TITRE: Dossier Yan Diomandé : le PSG se lâche en coulisses sur le Real Madrid SOURCE: Foot Mercato : Info Transferts Football - Actu Foot Transfert DATE: 2026-07-28T05:45:06Z URL: https://www.footmercato.net/a6534364106096089219-dossier-yan-diomande-le-psg-se-lache-en-coulisses-sur-le-real-madrid Longtemps annoncé comme promis au PSG, Yan Diomandé va finalement filer au Real Madrid. Depuis, les Rouge et Bleu ne décolèrent pas contre la Casa Blanca. Alors que le PSG avait érigé Yan Diomandé en pi",
+      "url": "https://www.footmercato.net/a6534364106096089219-dossier-yan-diomande-le-psg-se-lache-en-coulisses-sur-le-real-madrid",
+      "source": "Foot Mercato : Info Transferts Football - Actu Foot Transfert",
+      "date": "2026-07-28T05:45:06Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-28T06:09:12.582774+00:00"
+    },
+    {
+      "id": "b5829458b42f3cb4",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Mercato : L'essentiel à retenir de ce lundi 27 juillet",
+      "extrait": "TITRE: Mercato : L'essentiel à retenir de ce lundi 27 juillet SOURCE: Orange Sports DATE: 2026-07-27T21:52:24Z URL: https://sports.orange.fr/football/mercato/article/mercato-l-essentiel-a-retenir-de-ce-lundi-27-juillet-exclu-CNT000002qIac4.html Faraj Benlahoucine, Media365 : publié le lundi 27 juillet 2026 à 23h52 Retrouvez les principales officialisations et rumeurs qui ont animé le marché des transferts, en France et à l'étranger, ce lundi 27 juillet 2026. C'est officiel Après dix saisons au P",
+      "url": "https://sports.orange.fr/football/mercato/article/mercato-l-essentiel-a-retenir-de-ce-lundi-27-juillet-exclu-CNT000002qIac4.html",
+      "source": "Orange Sports",
+      "date": "2026-07-27T21:52:24Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-28T06:09:22.603566+00:00"
+    },
+    {
+      "id": "5c83b650b5c500ff",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "Man City vend la doublure de Donnarumma à Leeds pour 47 M€ - Sport.fr",
+      "extrait": "TITRE: Man City vend la doublure de Donnarumma à Leeds pour 47 M€ - Sport.fr SOURCE: Sport.fr DATE: 2026-07-27T20:40:22Z URL: https://www.sport.fr/football/man-city-vend-la-doublure-de-donnarumma-a-leeds-pour-47-me-1470083.shtm Il y a des vestiaires où l'on n'attend plus son tour. Depuis l'arrivée de Gianluigi Donnarumma, James Trafford a compris que les gants de titulaire ne changeraient pas de mains à Manchester City. Dix-sept apparitions toutes compétitions confondues sur l'exercice 2025-2026",
+      "url": "https://www.sport.fr/football/man-city-vend-la-doublure-de-donnarumma-a-leeds-pour-47-me-1470083.shtm",
+      "source": "Sport.fr",
+      "date": "2026-07-27T20:40:22Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-28T06:09:26.505336+00:00"
+    },
+    {
+      "id": "6cc4d1b9a54bfb82",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Transfert avorté, le PSG règle ses comptes dans un communiqué : Yan Diomandé, Leipzig et le Real Madrid... Tout le monde en prend pour son grade !",
+      "extrait": "TITRE: Transfert avorté, le PSG règle ses comptes dans un communiqué : Yan Diomandé, Leipzig et le Real Madrid... Tout le monde en prend pour son grade ! SOURCE: Le10sport.com DATE: 2026-07-27T19:01:00Z URL: https://le10sport.com/football/mercato/transfert-avorte-le-psg-regle-ses-comptes-dans-un-communique-yan-diomande-leipzig-et-le-real-madrid-tout-le-monde-en-prend-pour-son-grade-789567 Par l'intermédiaire de Sky Deutschland, le Paris Saint-Germain a publié un communiqué assez salé expliquant ",
+      "url": "https://le10sport.com/football/mercato/transfert-avorte-le-psg-regle-ses-comptes-dans-un-communique-yan-diomande-leipzig-et-le-real-madrid-tout-le-monde-en-prend-pour-son-grade-789567",
+      "source": "Le10sport.com",
+      "date": "2026-07-27T19:01:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-28T06:09:33.886004+00:00"
+    },
+    {
+      "id": "344404847c256a24",
+      "banque": "La Banque Postale",
+      "departement": "Gironde",
+      "titre": "Incendies en France : environ 700.000 courriers \"immobilisés et sécurisés\" dans le Sud-Ouest",
+      "extrait": "« 23 bureaux de Poste ont été temporairement fermés, dont 20 en Gironde » (La Poste). | « 23 bureaux de Poste ont été temporairement fermés, dont … trois dans les Landes » (La Poste). | « et 11 établissements de distribution dont une agence Chronopost ont également dû cesser leur activité » (pas de commune)",
+      "url": "https://www.lefigaro.fr/flash-actu/incendies-en-france-environ-700-000-courriers-immobilises-et-securises-dans-le-sud-ouest-20260727",
+      "source": "Le Figaro.fr",
+      "date": "2026-07-27T17:58:21Z",
+      "score": 2,
+      "raison": "signaux: dept(La Banque Postale,Gironde,count=20,communes=); dept(La Banque Postale,Landes,count=3,communes=); vague(Chronopost (établissement de distribution),regional,count=1)",
+      "created_at": "2026-07-28T06:09:36.601798+00:00"
+    },
+    {
+      "id": "36d2d00fd5d12dd7",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Mercato PSG : discussions entamées pour Zion Suzuki, l'arrivée du gardien japonais se fera à une condition",
+      "extrait": "TITRE: Mercato PSG : discussions entamées pour Zion Suzuki, l'arrivée du gardien japonais se fera à une condition SOURCE: Top mercato DATE: 2026-07-27T16:34:00Z URL: https://www.topmercato.com/2123222-mercato-psg-discussions-entamees-pour-zion-suzuki-larrivee-du-gardien-japonais-se-fera-a-une-condition/ Le PSG est cité pour Zion Suzuki, le gardien du Japon et de Parme. Mais ce dernier devra patienter, car sa venue à Paris est conditionnée. Quel gardien de but va garder les cages du Paris Saint-G",
+      "url": "https://www.topmercato.com/2123222-mercato-psg-discussions-entamees-pour-zion-suzuki-larrivee-du-gardien-japonais-se-fera-a-une-condition/",
+      "source": "Top mercato",
+      "date": "2026-07-27T16:34:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-28T06:09:42.846578+00:00"
+    },
+    {
+      "id": "ec3a69eb58928585",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "Teting-sur-Nied. Conseil municipal : presbytère, aire de jeux et Manoir au programme",
+      "extrait": "TITRE: Teting-sur-Nied. Conseil municipal : presbytère, aire de jeux et Manoir au programme SOURCE: Le Républicain Lorrain DATE: 2026-07-27T16:30:00Z URL: https://www.republicain-lorrain.fr/politique/2026/07/27/conseil-municipal-presbytere-aire-de-jeux-et-manoir-au-programme Dix des 14 conseillers municipaux en exercice étaient présents à l'ouverture de la séance du conseil municipal du 30 juin. Le conseil municipal a donné, à l'unanimité, un avis favorable au transfert du presbytère catholique ",
+      "url": "https://www.republicain-lorrain.fr/politique/2026/07/27/conseil-municipal-presbytere-aire-de-jeux-et-manoir-au-programme",
+      "source": "Le Républicain Lorrain",
+      "date": "2026-07-27T16:30:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-28T06:09:45.500162+00:00"
+    },
+    {
+      "id": "997ff9fa885a0938",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "Les révolutions de Tunis à Ouagadougou,",
+      "extrait": "TITRE: Les révolutions de Tunis à Ouagadougou, SOURCE: afriquesenlutte.org DATE: 2026-07-27T15:05:03Z URL: https://www.afriquesenlutte.org/communiques-luttes-et-debats/livres-etudes-debats/article/les-revolutions-de-tunis-a \" 908 années suffiraient \", selon Jan Tibergen, pour voir les \" remèdes \" de la Banque mondiale guérir nos pays sous ajustement structurel de leurs maux sociaux. \" 908 années \", répondent les masses africaines de Tunis à Ouagadougou en passant par le Caire en cette année 2011",
+      "url": "https://www.afriquesenlutte.org/communiques-luttes-et-debats/livres-etudes-debats/article/les-revolutions-de-tunis-a",
+      "source": "afriquesenlutte.org",
+      "date": "2026-07-27T15:05:03Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-28T06:09:54.563206+00:00"
+    },
+    {
+      "id": "ffbeca703bb93b83",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Mercato Analyse - PSG : Pourquoi Paris a vite laché l'affaire sur Yan Diomandé...",
+      "extrait": "TITRE: Mercato Analyse - PSG : Pourquoi Paris a vite laché l'affaire sur Yan Diomandé... SOURCE: Le10sport.com DATE: 2026-07-27T14:14:08Z URL: https://le10sport.com/football/mercato/mercato-analyse-psg-pourquoi-paris-a-vite-lache-laffaire-sur-yan-diomande-789547 Positionné depuis plusieurs semaines sur le dossier Yan Diomandé, l'attaquant international ivoirien du Red Bull Leipzig, avec lequel un terrain d'entente contractuel avait même plus ou moins été trouvé et qui constituait la grande prior",
+      "url": "https://le10sport.com/football/mercato/mercato-analyse-psg-pourquoi-paris-a-vite-lache-laffaire-sur-yan-diomande-789547",
+      "source": "Le10sport.com",
+      "date": "2026-07-27T14:14:08Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-28T06:09:58.216226+00:00"
+    },
+    {
+      "id": "a34cb09b4a34d76a",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "Télécoms : Sonatel place son second semestre sous le signe de la 5G, des services numériques et de l'IA",
+      "extrait": "TITRE: Télécoms : Sonatel place son second semestre sous le signe de la 5G, des services numériques et de l'IA SOURCE: La Tribune DATE: 2026-07-27T13:00:02Z URL: https://www.latribune.fr/article/afrique/45038975283624/telecoms-sonatel-place-son-second-semestre-sous-le-signe-de-la-5g-des-services-numeriques-et-de-l-ia Après un premier semestre 2026 marqué par une croissance de 9,3% de son chiffre d'affaires consolidé à 1 049,8 milliards FCFA (environ 1,6 milliard d'euros), le groupe Sonatel, fili",
+      "url": "https://www.latribune.fr/article/afrique/45038975283624/telecoms-sonatel-place-son-second-semestre-sous-le-signe-de-la-5g-des-services-numeriques-et-de-l-ia",
+      "source": "La Tribune",
+      "date": "2026-07-27T13:00:02Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-28T06:10:02.014178+00:00"
+    },
+    {
+      "id": "d53d12594f221fe1",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Mercato PSG: Lucas Chevalier, encore une mauvaise nouvelle",
+      "extrait": "TITRE: Mercato PSG: Lucas Chevalier, encore une mauvaise nouvelle SOURCE: Football.fr DATE: 2026-07-27T12:38:35Z URL: https://www.football.fr/mercato/mercato-psg-lucas-chevalier-encore-une-mauvaise-nouvelle-825349.html Le PSG poursuit son mercato dans le secteur des gardiens de but. Pas une bonne nouvelle pour Lucas Chevalier. Le mercato estival du PSG est en plein mouvement. Départ officiel de Kang-In Lee vers l'Atlético de Madrid, discussions arrêtées autour d'une possible prolongation de Brad",
+      "url": "https://www.football.fr/mercato/mercato-psg-lucas-chevalier-encore-une-mauvaise-nouvelle-825349.html",
+      "source": "Football.fr",
+      "date": "2026-07-27T12:38:35Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-28T06:10:03.951663+00:00"
+    },
+    {
+      "id": "fc506ef5a75642b4",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Le PSG avance sur la piste Suzuki",
+      "extrait": "TITRE: Le PSG avance sur la piste Suzuki SOURCE: CulturePSG DATE: 2026-07-27T11:52:55Z URL: https://www.culturepsg.com/news/mercato/le-psg-avance-sur-la-piste-suzuki/60179 Le poste de gardien de but semblait figé au PSG pour cette saison 2026/2027, il semblerait que ce ne soit finalement pas le cas. Depuis quelques jours, des médias italiens évoquent un intérêt du PSG pour le gardien japonais de Parme Zion Suzuki, notamment vu à la Coupe du monde. L'intérêt, apparu pour la première fois dans un ",
+      "url": "https://www.culturepsg.com/news/mercato/le-psg-avance-sur-la-piste-suzuki/60179",
+      "source": "CulturePSG",
+      "date": "2026-07-27T11:52:55Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-28T06:10:06.744863+00:00"
+    },
+    {
+      "id": "1471270fd6d1bc1f",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Le Real Madrid avait-il vraiment besoin de Diomandé ?",
+      "extrait": "TITRE: Le Real Madrid avait-il vraiment besoin de Diomandé ? SOURCE: Eurosport DATE: 2026-07-27T11:48:01Z URL: https://www.eurosport.fr/football/transferts/2026-2027/transferts-le-real-madrid-avait-il-vraiment-besoin-de-linternational-ivoirien-yan-diomande-leipzig-bundesliga_sto23323117/story.shtml Espagne - Argentine, pire finale de l'histoire ? Video credit: Eurosport Le Real Madrid va faire sauter la banque pour Yan Diomandé. Les Merengue, qui ont déjà enrôlé Marc Cucurella (50 millions), Den",
+      "url": "https://www.eurosport.fr/football/transferts/2026-2027/transferts-le-real-madrid-avait-il-vraiment-besoin-de-linternational-ivoirien-yan-diomande-leipzig-bundesliga_sto23323117/story.shtml",
+      "source": "Eurosport",
+      "date": "2026-07-27T11:48:01Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-28T06:10:08.355159+00:00"
+    },
+    {
+      "id": "f11eafcf146a259c",
+      "banque": "Crédit Coopératif",
+      "departement": null,
+      "titre": "Pascal Pouyet (Crédit Coopératif) : \" On ne pourra pas tout financer \"",
+      "extrait": "TITRE: Pascal Pouyet (Crédit Coopératif) : \" On ne pourra pas tout financer \" SOURCE: Economie Matin DATE: 2026-07-27T11:45:46Z URL: https://www.economiematin.fr/pascal-pouyet-credit-cooperatif-on-ne-pourra-pas-tout-financer Diplômé de l'école Polytech, Pascal Pouyet a commencé sa carrière à la Caisse d'Épargne Auvergne, avant de devenir membre du directoire en charge des ressources de la Caisse d'Épargne de Picardie, puis de la Caisse d'Épargne d'Auvergne et du Limousin. Il a ensuite piloté la ",
+      "url": "https://www.economiematin.fr/pascal-pouyet-credit-cooperatif-on-ne-pourra-pas-tout-financer",
+      "source": "Economie Matin",
+      "date": "2026-07-27T11:45:46Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-28T06:10:09.971684+00:00"
+    },
+    {
       "id": "4d3a940ad516d619",
       "banque": "Société Générale",
       "departement": null,
@@ -30146,6 +30844,32 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-07-27T06:49:00.538081+00:00"
+    },
+    {
+      "id": "0886e248c0d14dfc",
+      "banque": "Crédit Agricole",
+      "departement": null,
+      "titre": "En Italie, Crédit Agricole au centre du jeu pour une fusion entre Banco BPM et Monte dei Paschi",
+      "extrait": "TITRE: En Italie, Crédit Agricole au centre du jeu pour une fusion entre Banco BPM et Monte dei Paschi SOURCE: lesechos.fr DATE: 2026-07-27 URL: https://www.lesechos.fr/finance-marches/banque-assurances/en-italie-credit-agricole-serait-pret-a-negocier-une-fusion-entre-banco-bpm-et-monte-dei-paschi-2244527",
+      "url": "https://www.lesechos.fr/finance-marches/banque-assurances/en-italie-credit-agricole-serait-pret-a-negocier-une-fusion-entre-banco-bpm-et-monte-dei-paschi-2244527",
+      "source": "lesechos.fr",
+      "date": "2026-07-27",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-28T06:09:07.681679+00:00"
+    },
+    {
+      "id": "44743da57091b315",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Guéla Doué change d'agent, le PSG en alerte",
+      "extrait": "TITRE: Guéla Doué change d'agent, le PSG en alerte SOURCE: foot01.com DATE: 2026-07-26T18:10:36Z URL: https://www.foot01.com/paris/guela-doue-change-dagent-le-psg-en-alerte Frère aîné de Désiré Doué, Guéla Doué vient de s'engager avec Moussa Sissoko, un agent bien connu au PSG. Une façon de se rapprocher du club de la capitale française en vue d'un futur transfert ? Pendant de longues années, Désiré Doué et Guéla Doué ont porté le même maillot, celui de leur club formateur, le Stade Rennais. Mai",
+      "url": "https://www.foot01.com/paris/guela-doue-change-dagent-le-psg-en-alerte",
+      "source": "foot01.com",
+      "date": "2026-07-26T18:10:36Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-28T06:10:13.454740+00:00"
     },
     {
       "id": "3bb14272e54fbb06",
@@ -30835,6 +31559,19 @@
       "score": 1,
       "raison": "signaux: vague(La Poste (La Banque Postale potentiellement concernée),unknown,count=None)",
       "created_at": "2026-07-22T09:19:14.677179+00:00"
+    },
+    {
+      "id": "6b4aed61a58f0176",
+      "banque": "Crédit Agricole",
+      "departement": null,
+      "titre": "En Italie, Crédit Agricole au centre du jeu pour une fusion entre Banco BPM et Monte dei Paschi - Les Echos",
+      "extrait": "Titre et sujet portent sur une fusion en Italie entre Banco BPM et Monte dei Paschi (pas des fermetures/regroupements d’agences bancaires physiques en France).",
+      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNcUtWWTJRN2FRYTZaNG5UR0o4NnE4YzIwYWl3YVZEaU5fVkRQcy1USWFuTy1XYUJHVHkzYTh1cEJqbjR1QjhrWnVVeG1helV3WHRlYkdzOHJZRFF3TEpWT1RfdzFENEVQd2xvZnNfNEZ1c0VMZVJsQmp1bXR3LUNzT19KZmJEWjVlYzFIT3hscUFLZVo4dDlld2F2MWQ2UW5oVXQwVkJxMk11dzhoQzlvY01abWNEVTdYMEhRRGdHNFg5Rlh4LVk0dWRDb1kxUmJ4NVRvZXZQVjZOVXVaNUlRc0tPa05BbEZFc2dHSFZNdVVYN2M?oc=5",
+      "source": "Google News",
+      "date": "Mon, 27 Jul 2026 11:58:16 GMT",
+      "score": 1,
+      "raison": "signaux: vague(Crédit Agricole,national,count=None)",
+      "created_at": "2026-07-28T06:08:35.130668+00:00"
     },
     {
       "id": "acd09fff2c4469a2",
