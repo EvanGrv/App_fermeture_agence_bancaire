@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T06:24:20.826144+00:00",
+  "generated_at": "2026-07-30T06:17:15.413653+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -419,8 +419,8 @@
       "count": 3,
       "total_agences": 175,
       "precise_count": 3,
-      "unlocated_count": 5,
-      "estimated_count": 8
+      "unlocated_count": 7,
+      "estimated_count": 10
     },
     "45": {
       "nom": "Loiret",
@@ -624,7 +624,7 @@
       "nom": "Bas-Rhin",
       "region": "Grand Est",
       "count": 5,
-      "total_agences": 254,
+      "total_agences": 255,
       "precise_count": 5,
       "unlocated_count": 3,
       "estimated_count": 8
@@ -705,7 +705,7 @@
       "nom": "Seine-Maritime",
       "region": "Normandie",
       "count": 3,
-      "total_agences": 280,
+      "total_agences": 279,
       "precise_count": 3,
       "unlocated_count": 3,
       "estimated_count": 6
@@ -1941,10 +1941,34 @@
       "departement": "44",
       "nom": "Loire-Atlantique",
       "precise_count": 3,
-      "unlocated_count": 5,
-      "estimated_count": 8,
+      "unlocated_count": 7,
+      "estimated_count": 10,
       "department_signal_count": 0,
       "signals": [
+        {
+          "id": "6734fc6adc83f9d3",
+          "banque": "La Banque Postale",
+          "commune": "Donges",
+          "departement": "44",
+          "titre": "Le bureau de poste de Donges désormais fermé le samedi ? Le député LFI Mathias Tavel dénonce « une mesure de rétorsion » - Ouest-France",
+          "source": "Google News",
+          "url": "https://news.google.com/rss/articles/CBMiswJBVV95cUxPNUZZaEF0RzAtXy1Ocko2S1FVbTRQQzJIUHN2MFNtMDFyNy1oaDU3UTNxMzJhVlU0Y21fSEhHVkZCU253NWFVSF8yTUtlV19yc2ZKVHByZmlCWHE4ck1DU1cwaWJ1c2s0VGdfWDNwNVBfT2NxRWlWM2tkQkxHLTVGQVd3V0dtV0hYcXMzZ2pfLThZQk9zVjMxUVVrbDhWQkdXMFFCQU90T1B4c3dLZmlZVko1Rmp4M0IyTkdZTXlFd2lDaldUUW9XZ05Dc0R4UzZTSUNndVJhcU1DX3VrTmVTQXNndHR4OHE0S3otMmdJMXhtQWNfWFRHd0VfYmlnSW54czV3d29ZRUU4VERxN1VUemV5QjNQQVRjN0g4QUVQbWZoWUl2VFBMaVRjbHBxLTNMdmlR?oc=5",
+          "score": 3,
+          "precision": "commune_non_geocodee",
+          "reason": "hors fenêtre temporelle"
+        },
+        {
+          "id": "a0c81655578824f4",
+          "banque": "La Banque Postale",
+          "commune": "Donges",
+          "departement": "44",
+          "titre": "Le bureau de poste de Donges désormais fermé le samedi ? Le député LFI Mathias Tavel dénonce - labaule.maville.com",
+          "source": "Google News",
+          "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNdVNTTnlZQzdydUF1Snd6elphOTNUd1NHZng2U3lsUmhsUkdPYUFJQ2ZVRUp3MlMtYzQ5M0NJQkZTQkp6a3BmaGV5ZFpLNHg3YVNPLVRxc3FSbnVRX1ppTDFSSlRMUkdhYXlzWUtpWEd0bWU2ZjA0MXdaWkJ6WExidDhER1NWQzhmTlRzMktoaG1KLVlsaUlraVJQM2lmTGk0ZnprV081SHlPZDNkeEJheTdldFhyclE3Qy1xRWRkVDJmX1RodGpwbGdxaENWNkhNWkdfeVpkdGNQYmJFWFNXMUJXdlBtSXNHYVZveWFUdWtCX25EdmF0bHVfOGlNVlEtY0NvYUJTaFY?oc=5",
+          "score": 3,
+          "precision": "commune_non_geocodee",
+          "reason": "hors fenêtre temporelle"
+        },
         {
           "id": "58ae5863254c7532",
           "banque": "La Banque Postale",
@@ -3512,7 +3536,7 @@
     },
     {
       "region": "Normandie",
-      "articles": 10,
+      "articles": 11,
       "fermetures": 6,
       "projets": 1,
       "fusions": 0,
@@ -10702,6 +10726,13 @@
       "created_at": "2026-07-29T06:13:55.693852+00:00",
       "sources": [
         {
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPNXFNMXloT0JobndxSGVOVUIybkdWMGxPZkVjbkI3QktXcnRYcTZCUWJVLVVSNmxmMDJ2NFIxc1ZwbXVXWnM3TUdhRUxyNVJiOE1hYkNLTjhwT1hXc1ppSnVZeXdpZDg0Z3ZUNER5Nk9vZXVXZjhkQTNlVllWTTBkUFZhNFppUEdzVnA3YWRBTnk4NXJCNl9mYWp0MVZnay0tQ3Aza2NoLWtqMmc?oc=5",
+          "titre": "Nointot. Le bureau de poste ferme, mais le service perdure - lecourriercauchois.fr",
+          "source": "Google News",
+          "date": "Tue, 28 Jul 2026 15:29:00 GMT",
+          "tier": "D"
+        },
+        {
           "url": "https://www.lecourriercauchois.fr/actualite-402696-nointot-le-bureau-de-poste-ferme-mais-le-service-perdure",
           "titre": "Nointot. Le bureau de poste ferme, mais le service perdure",
           "source": "lecourriercauchois.fr",
@@ -10753,6 +10784,42 @@
       "date": "Wed, 30 Oct 2024 07:00:00 GMT",
       "raison": "garde entrée/sortie: commune/localisation de sortie absente de la source",
       "created_at": "2026-07-27T07:57:07.046780+00:00"
+    },
+    {
+      "id": "6734fc6adc83f9d3",
+      "banque": "La Banque Postale",
+      "commune": "Donges",
+      "departement": "44",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "Le bureau de poste de Donges désormais fermé le samedi ? Le député LFI Mathias Tavel dénonce « une mesure de rétorsion » - Ouest-France",
+      "url": "https://news.google.com/rss/articles/CBMiswJBVV95cUxPNUZZaEF0RzAtXy1Ocko2S1FVbTRQQzJIUHN2MFNtMDFyNy1oaDU3UTNxMzJhVlU0Y21fSEhHVkZCU253NWFVSF8yTUtlV19yc2ZKVHByZmlCWHE4ck1DU1cwaWJ1c2s0VGdfWDNwNVBfT2NxRWlWM2tkQkxHLTVGQVd3V0dtV0hYcXMzZ2pfLThZQk9zVjMxUVVrbDhWQkdXMFFCQU90T1B4c3dLZmlZVko1Rmp4M0IyTkdZTXlFd2lDaldUUW9XZ05Dc0R4UzZTSUNndVJhcU1DX3VrTmVTQXNndHR4OHE0S3otMmdJMXhtQWNfWFRHd0VfYmlnSW54czV3d29ZRUU4VERxN1VUemV5QjNQQVRjN0g4QUVQbWZoWUl2VFBMaVRjbHBxLTNMdmlR?oc=5",
+      "titre": "Le bureau de poste de Donges désormais fermé le samedi ? Le député LFI Mathias Tavel dénonce « une mesure de rétorsion » - Ouest-France",
+      "source": "Google News",
+      "date": "Wed, 29 Jul 2026 16:22:16 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-07-30T06:04:49.273165+00:00"
+    },
+    {
+      "id": "a0c81655578824f4",
+      "banque": "La Banque Postale",
+      "commune": "Donges",
+      "departement": "44",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "Le bureau de poste de Donges désormais fermé le samedi ? Le député LFI Mathias Tavel dénonce - labaule.maville.com",
+      "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNdVNTTnlZQzdydUF1Snd6elphOTNUd1NHZng2U3lsUmhsUkdPYUFJQ2ZVRUp3MlMtYzQ5M0NJQkZTQkp6a3BmaGV5ZFpLNHg3YVNPLVRxc3FSbnVRX1ppTDFSSlRMUkdhYXlzWUtpWEd0bWU2ZjA0MXdaWkJ6WExidDhER1NWQzhmTlRzMktoaG1KLVlsaUlraVJQM2lmTGk0ZnprV081SHlPZDNkeEJheTdldFhyclE3Qy1xRWRkVDJmX1RodGpwbGdxaENWNkhNWkdfeVpkdGNQYmJFWFNXMUJXdlBtSXNHYVZveWFUdWtCX25EdmF0bHVfOGlNVlEtY0NvYUJTaFY?oc=5",
+      "titre": "Le bureau de poste de Donges désormais fermé le samedi ? Le député LFI Mathias Tavel dénonce - labaule.maville.com",
+      "source": "Google News",
+      "date": "Wed, 29 Jul 2026 16:22:00 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-07-30T06:04:44.262761+00:00"
     },
     {
       "id": "ac553e471600a119",
@@ -11526,7 +11593,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-07-29T06:09:53.915800+00:00"
+      "created_at": "2026-07-30T06:01:55.263205+00:00"
     },
     {
       "id": "50895c042a984b7d",
@@ -11562,7 +11629,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 04:46:02 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-07-29T06:09:53.910089+00:00"
+      "created_at": "2026-07-30T06:01:54.743179+00:00"
     },
     {
       "id": "8c6a0cad14626d6f",
@@ -13038,7 +13105,7 @@
       "source": "Google News",
       "date": "Sat, 03 Aug 2024 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-07-29T06:09:53.180755+00:00"
+      "created_at": "2026-07-30T06:01:53.698819+00:00"
     },
     {
       "id": "4996e3bfe560bbb6",
@@ -13722,7 +13789,7 @@
       "source": "Google News",
       "date": "Fri, 20 Jun 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-07-29T06:09:59.826394+00:00"
+      "created_at": "2026-07-30T06:02:05.383507+00:00"
     },
     {
       "id": "b80663fa38292743",
@@ -13866,7 +13933,7 @@
       "source": "Google News",
       "date": "Fri, 10 Jul 2026 10:12:00 GMT",
       "raison": "garde entrée/sortie: département source 44 incompatible avec la sortie 974",
-      "created_at": "2026-07-29T06:10:13.566547+00:00"
+      "created_at": "2026-07-30T06:02:27.275523+00:00"
     },
     {
       "id": "8c646081e1d69e81",
@@ -14028,7 +14095,7 @@
       "source": "Google News",
       "date": "Fri, 03 Jan 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-07-29T06:09:53.542123+00:00"
+      "created_at": "2026-07-30T06:01:54.228063+00:00"
     },
     {
       "id": "f3e888f7eaf5ffb7",
@@ -15498,6 +15565,19 @@
       "created_at": "2026-07-22T08:54:47.471514+00:00"
     },
     {
+      "id": "46bbba3813679e2c",
+      "banque": "La Poste (plateforme industrielle de courrier)",
+      "scope": "regional",
+      "count": 10,
+      "confidence": 0.35,
+      "evidence": "« La plateforme de Cestas […] l'une des dix plateformes industrielles de courrier de France »",
+      "url": "https://www.franceinfo.fr/environnement/evenements-meteorologiques-extremes/incendies-et-feux-de-foret/incendies-en-gironde/les-700-000-courriers-bloques-en-nouvelle-aquitaine-en-raison-des-incendies-seront-distribues-d-ici-la-fin-de-cette-semaine-le-temps-de-distribution-reste-perturbe_8127557.html",
+      "titre": "Les 700 000 courriers bloqués en Nouvelle-Aquitaine en raison des incendies seront distribués \"d'ici la fin de cette semaine\", le temps de distribution reste \"perturbé\"",
+      "source": "Franceinfo",
+      "date": "2026-07-29T18:17:40Z",
+      "created_at": "2026-07-30T06:06:52.797564+00:00"
+    },
+    {
       "id": "38d9ea641903618c",
       "banque": "Orange Bank",
       "scope": "national",
@@ -15903,6 +15983,19 @@
       "created_at": "2026-07-02T07:06:46.865370+00:00"
     },
     {
+      "id": "dd4d843f249c7f5d",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Le Nasdaq se fait corriger",
+      "extrait": "TITRE: Le Nasdaq se fait corriger SOURCE: zonebourse DATE: 2026-07-30T05:39:23Z URL: https://www.zonebourse.com/actualite-bourse/le-nasdaq-se-fait-corriger-ce7f51d3d18af52c Ce matin, la tendance est plutôt à l'embellie : Microsoft a publié de bons résultats, qui permettent au titre de prendre près de 9% dans les échanges hors séance. Les chiffres de Samsung Electronics vont aussi dans le bon sens. De quoi contrebalancer ceux de Meta Platforms, dont les résultats sont plutôt du genre à alimenter ",
+      "url": "https://www.zonebourse.com/actualite-bourse/le-nasdaq-se-fait-corriger-ce7f51d3d18af52c",
+      "source": "zonebourse",
+      "date": "2026-07-30T05:39:23Z",
+      "score": 4,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-30T06:06:29.809203+00:00"
+    },
+    {
       "id": "65b20c538faf0002",
       "banque": "Société Générale",
       "departement": null,
@@ -16109,6 +16202,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-07-22T09:04:14.000175+00:00"
+    },
+    {
+      "id": "93d88f78e26c7f09",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Le restaurant La Sittelle ferme ses portes à Lac-Etchemin - La Voix du Sud",
+      "extrait": "TITRE: Le restaurant La Sittelle ferme ses portes à Lac-Etchemin - La Voix du Sud SOURCE: Google News DATE: Wed, 29 Jul 2026 18:39:23 GMT URL: https://news.google.com/rss/articles/CBMimwFBVV95cUxNTVVQQTYwZDJRN2RoZzNNdkpqNHVCV3FXcDJOVHV1dlExQVdENnNmdng3VFEwQzZTNy1EcF9IdlRHZ05SLUh3R0tHNThQNW5JYm5VVGg2Nkd3bUFoSE1iSG9QeGF1WlptdzRHVVJtUUZmZ3N5QnNJcXZUM3R1dmpTdHA0TzBpMXB3MGNScGRLVkQyVUZpQTk1Y3lhUQ?oc=5 <a href=\"https://news.google.com/rss/articles/CBMimwFBVV95cUxNTVVQQTYwZDJRN2RoZzNNdkpqNHVCV3FXcDJOVH",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNTVVQQTYwZDJRN2RoZzNNdkpqNHVCV3FXcDJOVHV1dlExQVdENnNmdng3VFEwQzZTNy1EcF9IdlRHZ05SLUh3R0tHNThQNW5JYm5VVGg2Nkd3bUFoSE1iSG9QeGF1WlptdzRHVVJtUUZmZ3N5QnNJcXZUM3R1dmpTdHA0TzBpMXB3MGNScGRLVkQyVUZpQTk1Y3lhUQ?oc=5",
+      "source": "Google News",
+      "date": "Wed, 29 Jul 2026 18:39:23 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-30T06:04:43.234595+00:00"
     },
     {
       "id": "fbe9591d2e4eb90b",
@@ -18215,6 +18321,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-29T09:13:23.230500+00:00"
+    },
+    {
+      "id": "a8bf93e3e49bae20",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "La fermeture de l’Ehpad de Signy-le-Petit pourrait n’intervenir qu’à l’été 2027 - L'Ardennais",
+      "extrait": "TITRE: La fermeture de l’Ehpad de Signy-le-Petit pourrait n’intervenir qu’à l’été 2027 - L'Ardennais SOURCE: Google News DATE: Tue, 28 Jul 2026 18:02:00 GMT URL: https://news.google.com/rss/articles/CBMiyAFBVV95cUxOdzgwNlU0MkFPT0RNT0swLWtVNVZQZlBEczBFQUNHcXlDUi1TLXNrSG1pLTgwUlliN3FwRXpPbXpFV3RkZmpFckh6Z2k3X3MxSDEwT2lKQUxGcDFFUlo3allkV1d0SFE2UHAyZW9lX0RiU052Q0tZUjhwSndWcTJhSHl2a0VHRE4tTERhX3kxelhtQWtPRlNqMWdScmJSZVlUSGY1WkZvdmxjalpzOFRTSGkxREZlZjU5RWRyQURBNGtFSkRrWHRPbQ?oc=5 <a href=\"https://news",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOdzgwNlU0MkFPT0RNT0swLWtVNVZQZlBEczBFQUNHcXlDUi1TLXNrSG1pLTgwUlliN3FwRXpPbXpFV3RkZmpFckh6Z2k3X3MxSDEwT2lKQUxGcDFFUlo3allkV1d0SFE2UHAyZW9lX0RiU052Q0tZUjhwSndWcTJhSHl2a0VHRE4tTERhX3kxelhtQWtPRlNqMWdScmJSZVlUSGY1WkZvdmxjalpzOFRTSGkxREZlZjU5RWRyQURBNGtFSkRrWHRPbQ?oc=5",
+      "source": "Google News",
+      "date": "Tue, 28 Jul 2026 18:02:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-30T06:04:46.447920+00:00"
     },
     {
       "id": "6096cb2d710da570",
@@ -23950,6 +24069,19 @@
       "created_at": "2026-07-28T06:08:47.150676+00:00"
     },
     {
+      "id": "d978b3de2a144372",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "« La Poste organise-t-elle la fermeture de son bureau ? » : un syndicat réagit à la réduction des horaires à Ploufragan - MaVille.com",
+      "extrait": "TITRE: « La Poste organise-t-elle la fermeture de son bureau ? » : un syndicat réagit à la réduction des horaires à Ploufragan - MaVille.com SOURCE: Google News DATE: Mon, 27 Jul 2026 15:18:00 GMT URL: https://news.google.com/rss/articles/CBMiggJBVV95cUxOV1pjcGkzeHU1TlE5dEk1c042dGpuYksyUDBpbFhaNHJnV0thSk4zdHJ0SFdxaGI3TjRMcDBnNTdlaFFXLVctMFBZQkhncFkyWWFScFhzaFRBTkY3VER4NzV1NUdReFQ1YU9hUjgzeUdZNHQ0bHpyQzJYNzd0ZlV2S3NuVjJkeW9zZTY0T0ROQmtxN0x4WXJKWWNaNERXaXdXN2c0Tmp0cGpnbmpMUzZfb3FGZW9FOHZmNDNYdFFGN",
+      "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOV1pjcGkzeHU1TlE5dEk1c042dGpuYksyUDBpbFhaNHJnV0thSk4zdHJ0SFdxaGI3TjRMcDBnNTdlaFFXLVctMFBZQkhncFkyWWFScFhzaFRBTkY3VER4NzV1NUdReFQ1YU9hUjgzeUdZNHQ0bHpyQzJYNzd0ZlV2S3NuVjJkeW9zZTY0T0ROQmtxN0x4WXJKWWNaNERXaXdXN2c0Tmp0cGpnbmpMUzZfb3FGZW9FOHZmNDNYdFFGNGdPZ2xsc0k5bjVkUzN2R2ExNHNHYkxVdXVFU1NlM2V3TjlYR1FheDBqVndhM2ZDMS1FQ25scFBMZ0EwczRGOUhTQmc?oc=5",
+      "source": "Google News",
+      "date": "Mon, 27 Jul 2026 15:18:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-30T06:04:48.916416+00:00"
+    },
+    {
       "id": "cf7c67da2f26cda9",
       "banque": "Société Générale",
       "departement": null,
@@ -27341,6 +27473,162 @@
       "score": 3,
       "raison": "fermeture non publiée: hors fenêtre temporelle",
       "created_at": "2026-07-22T09:09:01.159244+00:00"
+    },
+    {
+      "id": "dcd582072c48d35b",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "La Matinale Senego : Diomaye et Abass Fall, Mbaye Fall endeuillé, Eleemane HK avec Beyoncé",
+      "extrait": "TITRE: La Matinale Senego : Diomaye et Abass Fall, Mbaye Fall endeuillé, Eleemane HK avec Beyoncé SOURCE: Senego.com - Actualité au Sénégal, toute actualité du jour DATE: 2026-07-30T06:03:41Z URL: https://senego.com/la-matinale-senego-diomaye-et-abass-fall-mbaye-fall-endeuille-eleemane-hk-avec-beyonce_1988776.html Bonjour et bienvenue dans la matinale de Senego du jeudi 30 juillet 2026. Cette nuit, l'actualité a oscillé entre un fait divers dramatique à Mbaye Fall, une séquence politique marquée",
+      "url": "https://senego.com/la-matinale-senego-diomaye-et-abass-fall-mbaye-fall-endeuille-eleemane-hk-avec-beyonce_1988776.html",
+      "source": "Senego.com - Actualité au Sénégal, toute actualité du jour",
+      "date": "2026-07-30T06:03:41Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-30T06:06:25.919089+00:00"
+    },
+    {
+      "id": "51dbdfc5f8564e59",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Mercato PSG : Un deal surprise en vue pour Chevalier ? Campos s'active",
+      "extrait": "TITRE: Mercato PSG : Un deal surprise en vue pour Chevalier ? Campos s'active SOURCE: Foot-sur7 DATE: 2026-07-30T06:03:00Z URL: https://www.foot-sur7.fr/768837-mercato-psg-un-deal-surprise-en-vue-pour-chevalier-campos-sactive ‎‎Lucas Chevalier est au centre d'un nouveau dossier qui agite le mercato du PSG. Alors que le club de la capitale explore plusieurs options pour son poste de gardien, une opération inattendue pourrait se réaliser dans les prochaines semaines. Mercato PSG : Paris avance ses",
+      "url": "https://www.foot-sur7.fr/768837-mercato-psg-un-deal-surprise-en-vue-pour-chevalier-campos-sactive",
+      "source": "Foot-sur7",
+      "date": "2026-07-30T06:03:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-30T06:06:27.956799+00:00"
+    },
+    {
+      "id": "948154a5d63d5fec",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "Le drame de l'île Jeremiah: en Zambie, des pêcheurs sacrifiés au profit d'une entreprise chinoise",
+      "extrait": "TITRE: Le drame de l'île Jeremiah: en Zambie, des pêcheurs sacrifiés au profit d'une entreprise chinoise SOURCE: RFI DATE: 2026-07-30T05:25:06Z URL: https://www.rfi.fr/fr/afrique/20260730-le-drame-de-l-%C3%AEle-jeremiah-en-zambie-des-p%C3%AAcheurs-sacrifi%C3%A9s-au-profit-d-une-entreprise-chinoise Des centaines de pêcheurs vivaient en paix sur cette île chatoyante du lac Kariba, entre la Zambie et le Zimbabwe. Mais le destin de ces familles a radicalement changé lorsqu'il y a trois ans, une entr",
+      "url": "https://www.rfi.fr/fr/afrique/20260730-le-drame-de-l-%C3%AEle-jeremiah-en-zambie-des-p%C3%AAcheurs-sacrifi%C3%A9s-au-profit-d-une-entreprise-chinoise",
+      "source": "RFI",
+      "date": "2026-07-30T05:25:06Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-30T06:06:33.373910+00:00"
+    },
+    {
+      "id": "b8e8c5f441b5e570",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Mercato : Vinicius Jr, Rodri, Ferran Torres... Les sept joueurs dont le contrat se termine en juin 2027 et qui pourraient animer la fin du marché des transferts",
+      "extrait": "TITRE: Mercato : Vinicius Jr, Rodri, Ferran Torres... Les sept joueurs dont le contrat se termine en juin 2027 et qui pourraient animer la fin du marché des transferts SOURCE: Franceinfo DATE: 2026-07-30T05:00:02Z URL: https://www.franceinfo.fr/sports/foot/mercato/mercato-vinicius-jr-rodri-ferran-torres-les-sept-joueurs-dont-le-contrat-se-termine-en-juin-2027-et-qui-pourraient-animer-la-fin-du-marche-des-transferts_8123819.html Des noms qui circulent, des cellules recrutement qui s'activent, des",
+      "url": "https://www.franceinfo.fr/sports/foot/mercato/mercato-vinicius-jr-rodri-ferran-torres-les-sept-joueurs-dont-le-contrat-se-termine-en-juin-2027-et-qui-pourraient-animer-la-fin-du-marche-des-transferts_8123819.html",
+      "source": "Franceinfo",
+      "date": "2026-07-30T05:00:02Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-30T06:06:35.438276+00:00"
+    },
+    {
+      "id": "b74924e7071e5ea5",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Bénin : qui est Abèdjè Sinatou Saka, la nouvelle DG de la SRTB ?",
+      "extrait": "TITRE: Bénin : qui est Abèdjè Sinatou Saka, la nouvelle DG de la SRTB ? SOURCE: Afrique-Sur7.fr DATE: 2026-07-29T22:33:22Z URL: https://www.afrique-sur7.fr/benin-qui-est-abedje-sinatou-saka-la-nouvelle-dg-de-la-srtb Au Bénin, la Société de Radio et de Télévision du Bénin (SRTB) a une nouvelle directrice générale. Abèdjè Sinatou Saka a été nommée en remplacement de Koundé Ogoutchina qui assurait l'intérim après le départ d'Angela Aquereburu Rabatel. Sinatou Saka a pris les rênes de la SRTB ce lun",
+      "url": "https://www.afrique-sur7.fr/benin-qui-est-abedje-sinatou-saka-la-nouvelle-dg-de-la-srtb",
+      "source": "Afrique-Sur7.fr",
+      "date": "2026-07-29T22:33:22Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-30T06:06:40.498241+00:00"
+    },
+    {
+      "id": "b4cd83854e019d7e",
+      "banque": "Crédit Mutuel",
+      "departement": null,
+      "titre": "Une partie de la droite médiatique accuse les banques de leur fermer la porte au nez",
+      "extrait": "TITRE: Une partie de la droite médiatique accuse les banques de leur fermer la porte au nez SOURCE: Europe 1 DATE: 2026-07-29T20:04:31Z URL: https://www.europe1.fr/politique/une-partie-de-la-droite-mediatique-accuse-les-banques-de-leur-fermer-la-porte-au-nez-992091 Plusieurs médias et associations de droite dénoncent depuis plusieurs jours la fermeture de leurs comptes bancaires. Une polémique relancée par les difficultés du Rassemblement national, parti de Marine Le Pen, à financer sa campagne ",
+      "url": "https://www.europe1.fr/politique/une-partie-de-la-droite-mediatique-accuse-les-banques-de-leur-fermer-la-porte-au-nez-992091",
+      "source": "Europe 1",
+      "date": "2026-07-29T20:04:31Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-30T06:06:46.598951+00:00"
+    },
+    {
+      "id": "998a7f5c4164c739",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "EMEIS |",
+      "extrait": "TITRE: EMEIS | SOURCE: Les Echos DATE: 2026-07-29T20:03:00Z URL: https://lesechos-comfi.lesechos.fr/press-release/emeis-epa-informations-privilegiees-communique-sur-comptes-resultats-1b1KZ4HW9z1 * Dette nette à 3,9 Md€, en baisse de -0,6 Md€ depuis fin 2025, conséquence de la finalisation de l'opération Isemia et des autres cessions finalisées depuis le début de l'exercice. 55% de la dette du Groupe est aujourd'hui couverte ou à taux fixe emeis, détenue à 50,3% par la Caisse des Dépôts, CNP Assu",
+      "url": "https://lesechos-comfi.lesechos.fr/press-release/emeis-epa-informations-privilegiees-communique-sur-comptes-resultats-1b1KZ4HW9z1",
+      "source": "Les Echos",
+      "date": "2026-07-29T20:03:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-30T06:06:43.091003+00:00"
+    },
+    {
+      "id": "321093b2c207352a",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "Mourenx : la vraie frite belge s'installe place Jules-Verne avec le food truck La Frite Rit",
+      "extrait": "TITRE: Mourenx : la vraie frite belge s'installe place Jules-Verne avec le food truck La Frite Rit SOURCE: SudOuest.fr DATE: 2026-07-29T15:43:11Z URL: https://www.sudouest.fr/pyrenees-atlantiques/mourenx/mourenx-la-vraie-frite-belge-s-installe-place-jules-verne-avec-le-food-truck-la-frite-rit-30069539.php La Frite Rit, un food truck qui propose \" la vraie frite belge \" chaque vendredi place Jules-Verne (devant la Poste) à Mourenx (1), est née d'une rencontre entre Patrick Dewerixhas, originaire ",
+      "url": "https://www.sudouest.fr/pyrenees-atlantiques/mourenx/mourenx-la-vraie-frite-belge-s-installe-place-jules-verne-avec-le-food-truck-la-frite-rit-30069539.php",
+      "source": "SudOuest.fr",
+      "date": "2026-07-29T15:43:11Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-30T06:06:57.148303+00:00"
+    },
+    {
+      "id": "5abdfcc9b97377c7",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Mercato: intérêt pour Suzuki, situation de Chevalier... le PSG actif sur le poste de gardien",
+      "extrait": "TITRE: Mercato: intérêt pour Suzuki, situation de Chevalier... le PSG actif sur le poste de gardien SOURCE: RMC SPORT DATE: 2026-07-29T15:19:02Z URL: https://rmcsport.bfmtv.com/football/transferts/mercato-interet-pour-suzuki-situation-de-chevalier-le-psg-actif-sur-le-poste-de-gardien_AV-202607290378.html À l'affût de toute opportunité sur ce mercato estival, notamment chez les jeunes joueurs, le PSG pourrait recruter au poste de gardien de but. Le club parisien a un intérêt pour le Japonais Zion",
+      "url": "https://rmcsport.bfmtv.com/football/transferts/mercato-interet-pour-suzuki-situation-de-chevalier-le-psg-actif-sur-le-poste-de-gardien_AV-202607290378.html",
+      "source": "RMC SPORT",
+      "date": "2026-07-29T15:19:02Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-30T06:07:04.100585+00:00"
+    },
+    {
+      "id": "d3e1161bb78cf410",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Mercato PSG : Les raisons de l'échec du dossier Yan Diomandé | Foot Sur 7",
+      "extrait": "TITRE: Mercato PSG : Les raisons de l'échec du dossier Yan Diomandé | Foot Sur 7 SOURCE: Foot-sur7 DATE: 2026-07-29T13:03:00Z URL: https://www.foot-sur7.fr/768553-mercato-psg-les-raisons-de-lechec-du-dossier-yan-diomande Alors qu'il était annoncé du côté du Paris Saint-Germain, à qui il avait donné son accord, Yan Diomandé va finalement signer au Real Madrid dans les prochains jours. On vous explique les raisons de l'échec de ce dossier en les détaillant. Mercato PSG : Une nouvelle politique de ",
+      "url": "https://www.foot-sur7.fr/768553-mercato-psg-les-raisons-de-lechec-du-dossier-yan-diomande",
+      "source": "Foot-sur7",
+      "date": "2026-07-29T13:03:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-30T06:07:16.089899+00:00"
+    },
+    {
+      "id": "52b7fc906cb42a44",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "Le mythe le plus cher du monde : 1,7 % de risque, 10 points de prime | Financial Afrik",
+      "extrait": "TITRE: Le mythe le plus cher du monde : 1,7 % de risque, 10 points de prime | Financial Afrik SOURCE: Financial Afrik DATE: 2026-07-29T12:21:30Z URL: https://www.financialafrik.com/2026/07/29/le-mythe-le-plus-cher-du-monde-17-de-risque-10-points-de-prime/ Par Junior Mbuyi Kanganga, Fondateur & CEO de JPG Consulting Partners Group, Président d'Africa Risk - Strategic Institute for African Sovereignty & Transformation. Tribune tirée des travaux de l'auteur et de son essai à paraître, Du Chaos à l'",
+      "url": "https://www.financialafrik.com/2026/07/29/le-mythe-le-plus-cher-du-monde-17-de-risque-10-points-de-prime/",
+      "source": "Financial Afrik",
+      "date": "2026-07-29T12:21:30Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-30T06:07:21.710003+00:00"
+    },
+    {
+      "id": "fbbde0b968e48b13",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "\"La Poste n'assume plus le service public tel qu'elle le prétend\" : les facteurs de Souillac sont en grève illimitée, ils dénoncent des conditions de travail qui se dégradent",
+      "extrait": "TITRE: \"La Poste n'assume plus le service public tel qu'elle le prétend\" : les facteurs de Souillac sont en grève illimitée, ils dénoncent des conditions de travail qui se dégradent SOURCE: Ladepeche.fr DATE: 2026-07-29T11:08:02Z URL: https://www.ladepeche.fr/2026/07/29/la-poste-nassume-plus-le-service-public-tel-quelle-le-pretend-les-facteurs-de-souillac-sont-en-greve-illimitee-ils-denoncent-des-conditions-de-travail-13487193.php l'essentiel Les facteurs de Souillac ont entamé une grève illimit",
+      "url": "https://www.ladepeche.fr/2026/07/29/la-poste-nassume-plus-le-service-public-tel-quelle-le-pretend-les-facteurs-de-souillac-sont-en-greve-illimitee-ils-denoncent-des-conditions-de-travail-13487193.php",
+      "source": "Ladepeche.fr",
+      "date": "2026-07-29T11:08:02Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-30T06:07:14.184780+00:00"
     },
     {
       "id": "9235184c462b94e8",
@@ -31126,6 +31414,175 @@
       "created_at": "2026-06-25T15:43:41.960961+00:00"
     },
     {
+      "id": "531439fc1d1dc0f6",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "Épave de La Lune : le DRASSM et la Marine nationale au cœur d'une campagne de fouilles exceptionnelle",
+      "extrait": "TITRE: Épave de La Lune : le DRASSM et la Marine nationale au cœur d'une campagne de fouilles exceptionnelle SOURCE: Mer et Marine DATE: 2026-07-29T22:25:00Z URL: https://www.meretmarine.com/fr/histoire-navale/epave-de-la-lune-le-drassm-et-la-marine-nationale-au-coeur-d-une-campagne-de-fouilles-exceptionnelle Au large de Toulon, deux navires semblent immobiles, figés sur la mer. Pourtant, à près de 90 mètres sous leur coque, une intense activité anime depuis plusieurs jours l'une des épaves les ",
+      "url": "https://www.meretmarine.com/fr/histoire-navale/epave-de-la-lune-le-drassm-et-la-marine-nationale-au-coeur-d-une-campagne-de-fouilles-exceptionnelle",
+      "source": "Mer et Marine",
+      "date": "2026-07-29T22:25:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-30T06:06:37.903279+00:00"
+    },
+    {
+      "id": "c5f52de535b552cc",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "Conseil des ministres : Voici le communiqué du mercredi 29 juillet 2026",
+      "extrait": "TITRE: Conseil des ministres : Voici le communiqué du mercredi 29 juillet 2026 SOURCE: Senego.com - Actualité au Sénégal, toute actualité du jour DATE: 2026-07-29T20:53:14Z URL: https://senego.com/conseil-des-ministres-voici-le-communique-du-mercredi-29-juillet-2026_1988655.html Le Conseil des Ministres s'est tenu le mercredi 29 juillet 2026, au Palais de la République, sous la présidence de Son Excellence Monsieur Bassirou Diomaye Diakhar FAYE, Président de la République. AU TITRE DE LA COMMUNI",
+      "url": "https://senego.com/conseil-des-ministres-voici-le-communique-du-mercredi-29-juillet-2026_1988655.html",
+      "source": "Senego.com - Actualité au Sénégal, toute actualité du jour",
+      "date": "2026-07-29T20:53:14Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-30T06:06:45.138059+00:00"
+    },
+    {
+      "id": "2e583c2e979779e4",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Kolo Muani arrive à la Juve, le Real s'active pour Rodri : les 12 infos de mercredi",
+      "extrait": "TITRE: Kolo Muani arrive à la Juve, le Real s'active pour Rodri : les 12 infos de mercredi SOURCE: Eurosport DATE: 2026-07-29T18:47:18Z URL: https://www.eurosport.fr/football/transferts/2026-2027/transferts-i-kolo-muani-chelsea-vinicus-osimhen-sangare-barcola-rodri-juventus-les-12-infos-mercato-du-mardi-28-juillet_sto23323606/story.shtml \"Si un Espagnol doit être Ballon d'Or, Rodri aura l'avantage\" Video credit: Eurosport Selon les informations de RMC et du Parisien, l'accord semblerait imminent",
+      "url": "https://www.eurosport.fr/football/transferts/2026-2027/transferts-i-kolo-muani-chelsea-vinicus-osimhen-sangare-barcola-rodri-juventus-les-12-infos-mercato-du-mardi-28-juillet_sto23323606/story.shtml",
+      "source": "Eurosport",
+      "date": "2026-07-29T18:47:18Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-30T06:06:47.869015+00:00"
+    },
+    {
+      "id": "878bee139b3eef69",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "PSG : du nouveau pour Zion Suzuki ? - Sport.fr",
+      "extrait": "TITRE: PSG : du nouveau pour Zion Suzuki ? - Sport.fr SOURCE: Sport.fr DATE: 2026-07-29T18:30:53Z URL: https://www.sport.fr/football/psg-du-nouveau-pour-zion-suzuki-1470532.shtm Le Paris Saint-Germain continue d'explorer le marché dans toutes les lignes. Selon les informations de RMC Sport, le club de la capitale s'intéresse au gardien japonais Zion Suzuki, qui évolue à Parme et sort d'une belle Coupe du monde 2026 avec le Japon. Également convoité par la Juventus Turin, le portier de 23 ans s'i",
+      "url": "https://www.sport.fr/football/psg-du-nouveau-pour-zion-suzuki-1470532.shtm",
+      "source": "Sport.fr",
+      "date": "2026-07-29T18:30:53Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-30T06:06:49.978015+00:00"
+    },
+    {
+      "id": "6d22e3652463a6a8",
+      "banque": "La Poste (plateforme industrielle de courrier)",
+      "departement": null,
+      "titre": "Les 700 000 courriers bloqués en Nouvelle-Aquitaine en raison des incendies seront distribués \"d'ici la fin de cette semaine\", le temps de distribution reste \"perturbé\"",
+      "extrait": "« La plateforme de Cestas […] l'une des dix plateformes industrielles de courrier de France »",
+      "url": "https://www.franceinfo.fr/environnement/evenements-meteorologiques-extremes/incendies-et-feux-de-foret/incendies-en-gironde/les-700-000-courriers-bloques-en-nouvelle-aquitaine-en-raison-des-incendies-seront-distribues-d-ici-la-fin-de-cette-semaine-le-temps-de-distribution-reste-perturbe_8127557.html",
+      "source": "Franceinfo",
+      "date": "2026-07-29T18:17:40Z",
+      "score": 2,
+      "raison": "signaux: vague(La Poste (plateforme industrielle de courrier),regional,count=10)",
+      "created_at": "2026-07-30T06:06:52.799018+00:00"
+    },
+    {
+      "id": "f0313ef2e7bfe7fc",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Mercato - L'intérêt du PSG pour Zion Suzuki se confirme",
+      "extrait": "TITRE: Mercato - L'intérêt du PSG pour Zion Suzuki se confirme SOURCE: PSG Canal Supporters DATE: 2026-07-29T16:49:01Z URL: https://canal-supporters.com/mercato-linteret-du-psg-pour-zion-suzuki-se-confirme/ Alors que des renforts sont attendus en attaque, le PSG pourrait également se renforcer au poste de gardien de but en ciblant le jeune portier japonais Zion Suzuki (23 ans). Le PSG poursuit sa tradition de renforcer son poste de gardien de but à chaque mercato estival. Le club de la capitale ",
+      "url": "https://canal-supporters.com/mercato-linteret-du-psg-pour-zion-suzuki-se-confirme/",
+      "source": "PSG Canal Supporters",
+      "date": "2026-07-29T16:49:01Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-30T06:06:55.245181+00:00"
+    },
+    {
+      "id": "bd26db1d2e15dcd5",
+      "banque": "BNP Paribas",
+      "departement": null,
+      "titre": "FREY (EPA:FREY) |",
+      "extrait": "TITRE: FREY (EPA:FREY) | SOURCE: Les Echos DATE: 2026-07-29T15:53:09Z URL: https://lesechos-comfi.lesechos.fr/press-release/frey-epa-frey-erratum-mise-a-disposition-du-rapport-financier-semestriel-2026-N0lKpVvGcmM 3.1 Informations financières concernant le patrimoine, la situation financière et les résultats du groupe Frey 15 Monsieur Antoine FREY, Président Directeur Général de FREY S.A (la \" Société \"). Fait à Bezannes, le 24 juillet 2026 Monsieur Antoine FREY Président Directeur Général de FR",
+      "url": "https://lesechos-comfi.lesechos.fr/press-release/frey-epa-frey-erratum-mise-a-disposition-du-rapport-financier-semestriel-2026-N0lKpVvGcmM",
+      "source": "Les Echos",
+      "date": "2026-07-29T15:53:09Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-30T06:06:59.805057+00:00"
+    },
+    {
+      "id": "73bf2d240aaa4080",
+      "banque": "Crédit Mutuel",
+      "departement": null,
+      "titre": "INFOTEL (EPA:INF) |",
+      "extrait": "TITRE: INFOTEL (EPA:INF) | SOURCE: Les Echos DATE: 2026-07-29T15:53:09Z URL: https://lesechos-comfi.lesechos.fr/press-release/infotel-epa-inf-infotel-acceleration-de-la-croissance-du-chiffre-daffaires-au-2e-trimestre-2026-104-solide-performance-sur-le-1er-semestre-2026-95-SIuOqRMMuK9 Infotel, (code ISIN : FR0000071797 - mémo : INF), partenaire de référence de la transformation digitale des grands comptes en Europe, publie ce jour son chiffre d'affaires du 1er semestre 2026. Après un 1er trimestr",
+      "url": "https://lesechos-comfi.lesechos.fr/press-release/infotel-epa-inf-infotel-acceleration-de-la-croissance-du-chiffre-daffaires-au-2e-trimestre-2026-104-solide-performance-sur-le-1er-semestre-2026-95-SIuOqRMMuK9",
+      "source": "Les Echos",
+      "date": "2026-07-29T15:53:09Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-30T06:07:02.589848+00:00"
+    },
+    {
+      "id": "caeb1625de54bcc2",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "La seconde vie de l'hôtel des Postes de Vannes",
+      "extrait": "TITRE: La seconde vie de l'hôtel des Postes de Vannes SOURCE: LesEchos.fr DATE: 2026-07-29T15:10:54Z URL: https://www.lesechos.fr/pme-regions/bretagne/la-seconde-vie-de-lhotel-des-postes-de-vannes-2244989 La Poste donne une nouvelle vocation à son hôtel des Postes de Vannes. La foncière du groupe, la Poste Immobilier, a annoncé investir 6,5 millions d'euros dans la transformation de cet ensemble, incontournable du centre-ville vannetais depuis les années 1950. Hormis celle du bureau de poste, ..",
+      "url": "https://www.lesechos.fr/pme-regions/bretagne/la-seconde-vie-de-lhotel-des-postes-de-vannes-2244989",
+      "source": "LesEchos.fr",
+      "date": "2026-07-29T15:10:54Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-30T06:07:05.872217+00:00"
+    },
+    {
+      "id": "45c081bd82e80598",
+      "banque": "Crédit Agricole",
+      "departement": null,
+      "titre": "Crédit Agricole : une nouvelle prime de bienvenue jusqu'à 100 euros",
+      "extrait": "TITRE: Crédit Agricole : une nouvelle prime de bienvenue jusqu'à 100 euros SOURCE: MoneyVox Actu DATE: 2026-07-29T14:47:36Z URL: https://www.moneyvox.fr/banque-en-ligne/actualites/109859/credit-agricole-une-nouvelle-prime-de-bienvenue-jusqua-100-euros Bonne nouvelle pour les personnes souhaitant changer de banque : le Crédit Agricole propose actuellement une offre de bienvenue pouvant atteindre 100 euros pour toute première ouverture d'un compte bancaire en ligne avec une offre Eko, Essentiel, P",
+      "url": "https://www.moneyvox.fr/banque-en-ligne/actualites/109859/credit-agricole-une-nouvelle-prime-de-bienvenue-jusqua-100-euros",
+      "source": "MoneyVox Actu",
+      "date": "2026-07-29T14:47:36Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-30T06:07:07.755742+00:00"
+    },
+    {
+      "id": "b7f7cbcce4c3748f",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Le point sur les pistes du PSG pour le poste de numéro 9",
+      "extrait": "TITRE: Le point sur les pistes du PSG pour le poste de numéro 9 SOURCE: PSG Canal Supporters DATE: 2026-07-29T14:16:01Z URL: https://canal-supporters.com/mercato-le-point-sur-les-differentes-pistes-du-psg-pour-le-poste-de-numero-9/ À la recherche d'un numéro 9 pour compenser le départ de Gonçalo Ramos, le PSG a ciblé plusieurs profils. À ce jour, le nom de Ferran Torres semble tenir la corde, mais d'autres joueurs sont également associés aux Rouge & Bleu. Si le PSG se montre, pour l'instant, plu",
+      "url": "https://canal-supporters.com/mercato-le-point-sur-les-differentes-pistes-du-psg-pour-le-poste-de-numero-9/",
+      "source": "PSG Canal Supporters",
+      "date": "2026-07-29T14:16:01Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-30T06:07:09.899890+00:00"
+    },
+    {
+      "id": "627f005b08ffd6a3",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "RC Lens : Sangaré bientôt vendu pour une plus-value record ! - Sport.fr",
+      "extrait": "TITRE: RC Lens : Sangaré bientôt vendu pour une plus-value record ! - Sport.fr SOURCE: Sport.fr DATE: 2026-07-29T13:47:03Z URL: https://www.sport.fr/football/rc-lens-sangare-bientot-vendu-pour-une-plus-value-record-1470417.shtm Un accord de principe a été trouvé entre le RC Lens et Brentford pour Mamadou Sangaré. Autour de 48 millions d'euros, bonus non compris. La plus grosse vente de l'histoire des Sang et Or. Huit millions d'euros à l'été 2025, dont trois de bonus. Voilà ce que le RC Lens ava",
+      "url": "https://www.sport.fr/football/rc-lens-sangare-bientot-vendu-pour-une-plus-value-record-1470417.shtm",
+      "source": "Sport.fr",
+      "date": "2026-07-29T13:47:03Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-30T06:07:12.006053+00:00"
+    },
+    {
+      "id": "f85f40d6612401de",
+      "banque": "LCL",
+      "departement": null,
+      "titre": "PSG : après Diomandé, Pérez veut jouer un nouveau mauvais tour à Paris ! - But! Football Club",
+      "extrait": "TITRE: PSG : après Diomandé, Pérez veut jouer un nouveau mauvais tour à Paris ! - But! Football Club SOURCE: But! Football Club DATE: 2026-07-29T13:00:00Z URL: https://www.butfootballclub.fr/1687301-psg-apres-diomande-perez-veut-jouer-un-nouveau-mauvais-tour-a-paris/ Le Real Madrid passe enfin à l'action dans le dossier Rodri. Également surveillé par le PSG et le FC Barcelone, le milieu de Manchester City fait désormais l'objet de premiers échanges entre les Citizens et la Casa Blanca, prête à i",
+      "url": "https://www.butfootballclub.fr/1687301-psg-apres-diomande-perez-veut-jouer-un-nouveau-mauvais-tour-a-paris/",
+      "source": "But! Football Club",
+      "date": "2026-07-29T13:00:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-30T06:07:18.997862+00:00"
+    },
+    {
       "id": "e1b40c0aa4d0c8f9",
       "banque": "Société Générale",
       "departement": null,
@@ -31293,6 +31750,19 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-07-28T06:09:12.582774+00:00"
+    },
+    {
+      "id": "e4d58edce61c0724",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "même si l'attaquant du PSG Bradley Barcola a choisi Liverpool, son transfert est loin d'être acté",
+      "extrait": "TITRE: même si l'attaquant du PSG Bradley Barcola a choisi Liverpool, son transfert est loin d'être acté SOURCE: lequipe.fr DATE: 2026-07-28 URL: https://www.lequipe.fr/Football/Article/Mercato-meme-si-l-attaquant-du-psg-bradley-barcola-a-choisi-liverpool-son-transfert-est-loin-d-etre-acte/1707646 Le feuilleton Bradley Barcola pourrait durer un petit moment encore, mais une étape importante a été franchie ces dernières heures. Après avoir pris la décision, comme révélé dimanche, de ne pas prolon",
+      "url": "https://www.lequipe.fr/Football/Article/Mercato-meme-si-l-attaquant-du-psg-bradley-barcola-a-choisi-liverpool-son-transfert-est-loin-d-etre-acte/1707646",
+      "source": "lequipe.fr",
+      "date": "2026-07-28",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-30T06:06:21.877826+00:00"
     },
     {
       "id": "b5829458b42f3cb4",
