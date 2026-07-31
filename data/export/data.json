@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T06:17:15.413653+00:00",
+  "generated_at": "2026-07-31T06:54:57.229017+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -419,8 +419,8 @@
       "count": 3,
       "total_agences": 175,
       "precise_count": 3,
-      "unlocated_count": 7,
-      "estimated_count": 10
+      "unlocated_count": 8,
+      "estimated_count": 11
     },
     "45": {
       "nom": "Loiret",
@@ -1941,8 +1941,8 @@
       "departement": "44",
       "nom": "Loire-Atlantique",
       "precise_count": 3,
-      "unlocated_count": 7,
-      "estimated_count": 10,
+      "unlocated_count": 8,
+      "estimated_count": 11,
       "department_signal_count": 0,
       "signals": [
         {
@@ -2016,6 +2016,18 @@
           "score": 3,
           "precision": "commune_non_geocodee",
           "reason": "garde entrée/sortie: commune homonyme sans département vérifiable dans la source"
+        },
+        {
+          "id": "7df3781a7ecb28f5",
+          "banque": "La Banque Postale",
+          "commune": "Donges",
+          "departement": "44",
+          "titre": "Le bureau de poste de Donges désormais fermé le samedi ? Le député LFI Mathias Tavel dénonce « une mesure de rétorsion »",
+          "source": "ouest-france.fr",
+          "url": "https://www.ouest-france.fr/economie/entreprises/la-poste/le-bureau-de-poste-de-donges-desormais-ferme-le-samedi-le-depute-lfi-mathias-tavel-denonce-une-mesure-de-retorsion-269ac244-8b5a-11f1-ae39-071763a6d211",
+          "score": 3,
+          "precision": "commune_non_geocodee",
+          "reason": "hors fenêtre temporelle"
         },
         {
           "id": "caab3721792890f3",
@@ -11593,7 +11605,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-07-30T06:01:55.263205+00:00"
+      "created_at": "2026-07-31T06:26:12.239779+00:00"
     },
     {
       "id": "50895c042a984b7d",
@@ -11629,7 +11641,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 04:46:02 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-07-30T06:01:54.743179+00:00"
+      "created_at": "2026-07-31T06:26:11.849317+00:00"
     },
     {
       "id": "8c6a0cad14626d6f",
@@ -13105,7 +13117,7 @@
       "source": "Google News",
       "date": "Sat, 03 Aug 2024 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-07-30T06:01:53.698819+00:00"
+      "created_at": "2026-07-31T06:26:11.061357+00:00"
     },
     {
       "id": "4996e3bfe560bbb6",
@@ -13789,7 +13801,7 @@
       "source": "Google News",
       "date": "Fri, 20 Jun 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-07-30T06:02:05.383507+00:00"
+      "created_at": "2026-07-31T06:26:19.555618+00:00"
     },
     {
       "id": "b80663fa38292743",
@@ -13933,7 +13945,7 @@
       "source": "Google News",
       "date": "Fri, 10 Jul 2026 10:12:00 GMT",
       "raison": "garde entrée/sortie: département source 44 incompatible avec la sortie 974",
-      "created_at": "2026-07-30T06:02:27.275523+00:00"
+      "created_at": "2026-07-31T06:26:34.961564+00:00"
     },
     {
       "id": "8c646081e1d69e81",
@@ -14095,7 +14107,7 @@
       "source": "Google News",
       "date": "Fri, 03 Jan 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-07-30T06:01:54.228063+00:00"
+      "created_at": "2026-07-31T06:26:11.455502+00:00"
     },
     {
       "id": "f3e888f7eaf5ffb7",
@@ -14150,6 +14162,24 @@
       "date": "Fri, 01 Aug 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
       "created_at": "2026-07-27T07:56:36.407534+00:00"
+    },
+    {
+      "id": "7df3781a7ecb28f5",
+      "banque": "La Banque Postale",
+      "commune": "Donges",
+      "departement": "44",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "Le bureau de poste de Donges désormais fermé le samedi ? Le député LFI Mathias Tavel dénonce « une mesure de rétorsion »",
+      "url": "https://www.ouest-france.fr/economie/entreprises/la-poste/le-bureau-de-poste-de-donges-desormais-ferme-le-samedi-le-depute-lfi-mathias-tavel-denonce-une-mesure-de-retorsion-269ac244-8b5a-11f1-ae39-071763a6d211",
+      "titre": "Le bureau de poste de Donges désormais fermé le samedi ? Le député LFI Mathias Tavel dénonce « une mesure de rétorsion »",
+      "source": "ouest-france.fr",
+      "date": "2026-07-29",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-07-31T06:45:52.832335+00:00"
     },
     {
       "id": "aae1f6064a3071ba",
@@ -14746,6 +14776,19 @@
       "created_at": "2026-07-22T09:09:35.351414+00:00"
     },
     {
+      "id": "0639709817b6fc9e",
+      "banque": "La Banque Postale",
+      "scope": "unknown",
+      "count": null,
+      "confidence": 0.25,
+      "evidence": "Article uniquement intitulé : « La CGT dénonce une fermeture programmée » (aucun lieu/banque/commune mentionnés dans le texte fourni).",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNZ0l3M25COC14OFdPMUZKV0l3N3hzUWhKMXZpNkxfeFlNSTZ3R3NiOUFNaTRjY2xOY1d6NkNHV2VnT1dtZjhaWHpjRlM1VmM4TGhscmpic1N4enp0MXUtbU5UUkZYVDdVM25DeldqejNxT1lkWG9kcWltUmtBaG9sLU9oWmd1aHRfVFlueW9mRV9GRzZRTkc0MUJ5ZVlfLTUyUDNLVWM4UGLSAa4BQVVfeXFMTkVVa1MxdEpFdFhLdGl6M2ZmR1Bqa3RGRm5OZVNWSm5DUWpqOGZrX0d3VHYzb1ZOUjNRdS11V25OWUxSbEljZDlhLTdoWlRkbVRmSzBfY0lxbVhqSGpsSEVuMHMwVzA1RHRTamV0LWU5UE9icVdQc1VidVhMOGpsUUdJZFZfbVhHY3E0TWI1dzI2aGtDcWNpNkV6MUotdmRHazBwRmFrYVQ4c1RoczZn?oc=5",
+      "titre": "La CGT dénonce une fermeture programmée - lepetitjournal.net",
+      "source": "Google News",
+      "date": "Tue, 28 Jul 2026 13:32:39 GMT",
+      "created_at": "2026-07-31T06:44:48.963386+00:00"
+    },
+    {
       "id": "9aab7e0b61eb4ca6",
       "banque": "La Poste",
       "scope": "regional",
@@ -14900,6 +14943,19 @@
       "source": "Google News",
       "date": "Tue, 01 Jul 2025 07:00:00 GMT",
       "created_at": "2026-07-22T08:56:29.843160+00:00"
+    },
+    {
+      "id": "c164bb081711e39e",
+      "banque": "banque non précisée",
+      "scope": "unknown",
+      "count": null,
+      "confidence": 0.2,
+      "evidence": "Titre : « Une banque a fermé près de 90 % de ses agences, ne conservant ainsi que 27 points de service dans son réseau » (aucune agence ni localisation en France citée).",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQelVOZmVJTEhKR3E4QS1hc0NZX2U0bU9Obk14d1FZQW8wZUgtNEF4TEVkTDRHeTlTU2g2NVM4bk80YWRRM2NnUGJtSHptdmNoakgyVUdPNUlnbmI2U2hTWXJ6T084Z2RtSEJVY1dKQmQwZFAxOS1ESGhfLURnc3RkMS1fVzl6VDEtOFNzRUl2MFdVTEtPSVdPSVpIZV9zZw?oc=5",
+      "titre": "Une banque a fermé près de 90 % de ses agences, ne conservant ainsi que 27 points de service dans son réseau. - Vietnam.vn",
+      "source": "Google News",
+      "date": "Thu, 30 Jul 2026 13:21:50 GMT",
+      "created_at": "2026-07-31T06:44:46.762140+00:00"
     },
     {
       "id": "88c7c30beb3826d1",
@@ -15827,6 +15883,19 @@
       "created_at": "2026-07-22T09:08:48.914714+00:00"
     },
     {
+      "id": "2400d0407c1e331a",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "La ferme de Rantoy a fait le plein pour ce weekend de marché à la ferme - lepetitjournal.net",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMivwFBVV95cUxNWXZONzZ4dHRnMmNXU29lSTBPRGE5LW9pbkxqUEZHaUdRcXNadmQwVEpxLWFmVmg4QTVwQTg4NHZhckJmUGoxSlJSRjJNZmRuOVI2YV83SkFHbWR1U0pCb0VvcVdFWUZXaF8tNDlIT3FkMjVqOWxMZXh0VDFPYUdKemsxVHI5NXdlQkdYS24tRUczQzJrN045MV9PVVZodHAtc1ZFczFKVElIdXlRZGM3SUFDYTZMRUpDQnlucU55MNIBxAFBVV95cUxNWVEtVEpVcVBFWldBYzhnc1BCamxFX0c2UDFhbWo2aHlNR2lhWDN5VElkcWZmbXRzSEZPQVNwWUxncVNISzNKcU5nZ2ZZOGdvcGZGRDVBR1RiV2hmY0RQVUlCSUNVOWRtOXVseHFFZk1kZ25vckE5WHpsZ2docDEyOU5zQTJjMldyTGk5b1",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNWXZONzZ4dHRnMmNXU29lSTBPRGE5LW9pbkxqUEZHaUdRcXNadmQwVEpxLWFmVmg4QTVwQTg4NHZhckJmUGoxSlJSRjJNZmRuOVI2YV83SkFHbWR1U0pCb0VvcVdFWUZXaF8tNDlIT3FkMjVqOWxMZXh0VDFPYUdKemsxVHI5NXdlQkdYS24tRUczQzJrN045MV9PVVZodHAtc1ZFczFKVElIdXlRZGM3SUFDYTZMRUpDQnlucU55MNIBxAFBVV95cUxNWVEtVEpVcVBFWldBYzhnc1BCamxFX0c2UDFhbWo2aHlNR2lhWDN5VElkcWZmbXRzSEZPQVNwWUxncVNISzNKcU5nZ2ZZOGdvcGZGRDVBR1RiV2hmY0RQVUlCSUNVOWRtOXVseHFFZk1kZ25vckE5WHpsZ2docDEyOU5zQTJjMldyTGk5b1A1ZVVMek5VUjRpSERPdURRSGJkMXRUajlQNldTeHM5Yml2VEpJa3NVbmxZcVZFYVZlUXN5Rm4t?oc=5",
+      "source": "Google News",
+      "date": "Thu, 30 Jul 2026 08:33:00 GMT",
+      "score": 4,
+      "raison": "score préfiltre bas (-2)",
+      "created_at": "2026-07-31T06:44:53.014655+00:00"
+    },
+    {
       "id": "42d4c9ec54ca4e7a",
       "banque": "Caisse d'Épargne",
       "departement": null,
@@ -15981,6 +16050,19 @@
       "score": 4,
       "raison": "signaux: dept(Crédit Agricole,Lot,count=None,communes=)",
       "created_at": "2026-07-02T07:06:46.865370+00:00"
+    },
+    {
+      "id": "0662e4cbdb9d584a",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "L'expulsion de Xenia Fedorova prouve que nous sommes entrés en dictature",
+      "extrait": "TITRE: L'expulsion de Xenia Fedorova prouve que nous sommes entrés en dictature SOURCE: Riposte Laïque DATE: 2026-07-30T22:20:18Z URL: https://ripostelaique.com/lexpulsion-de-xenia-fedorova-prouve-que-nous-sommes-entres-en-dictature/ En août 1968, une main anonyme a écrit à la peinture sur un mur à Prague : \" Lénine réveille-toi ! Ils sont devenus fous \". Par transposition une main anonyme pourrait parfaitement écrire ces jours-ci sur un mur à Paris, Marseille, Lyon ou Bordeaux : \" Marianne , ré",
+      "url": "https://ripostelaique.com/lexpulsion-de-xenia-fedorova-prouve-que-nous-sommes-entres-en-dictature/",
+      "source": "Riposte Laïque",
+      "date": "2026-07-30T22:20:18Z",
+      "score": 4,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-31T06:46:19.287335+00:00"
     },
     {
       "id": "dd4d843f249c7f5d",
@@ -17060,6 +17142,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-07-11T05:57:05.031801+00:00"
+    },
+    {
+      "id": "3763bf30ee4a4034",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "\"Déjà plus de 30° dans les classes\" : les écoles maternelle et élémentaire de Neuillé-Pont-Pierre fermées lundi et mardi - ici.fr",
+      "extrait": "TITRE: \"Déjà plus de 30° dans les classes\" : les écoles maternelle et élémentaire de Neuillé-Pont-Pierre fermées lundi et mardi - ici.fr SOURCE: Google News DATE: Wed, 17 Jun 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMijgJBVV95cUxOVkwwRG1QOTJncGlnX0pSNVpkUDk5UFlOaGhfTVZBNnBtTlN2OGlUbmIyVHFtZ2dJUFMwNmlVMGh5NTdfZ3YxcUdJcE9mZkhQNXdyVzZUa1dqekNPY3hQOVZYakNGSEdoakIxNDBsdktfZVptV19iZ01vdU5oYXBWc01mYVUtYjlrVlA3ZDZxUml1ZVFnTTFIQmJ5YTFnQ2JwYVZVVXZaQTk1b2x5SGlBcm9KR3ZBdHhNLTlMaHFBRTZpV",
+      "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxOVkwwRG1QOTJncGlnX0pSNVpkUDk5UFlOaGhfTVZBNnBtTlN2OGlUbmIyVHFtZ2dJUFMwNmlVMGh5NTdfZ3YxcUdJcE9mZkhQNXdyVzZUa1dqekNPY3hQOVZYakNGSEdoakIxNDBsdktfZVptV19iZ01vdU5oYXBWc01mYVUtYjlrVlA3ZDZxUml1ZVFnTTFIQmJ5YTFnQ2JwYVZVVXZaQTk1b2x5SGlBcm9KR3ZBdHhNLTlMaHFBRTZpVVEyTVdreUV4REh0QnRiNThUSmxBSWJoZkJpZU9ELUstRGpfampfR2VxbThjR0hzQ01xZTJNWWRXbk82ZDJpYXdNTVRMU3NYRXp1UXc?oc=5",
+      "source": "Google News",
+      "date": "Wed, 17 Jun 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-31T06:44:59.937062+00:00"
     },
     {
       "id": "3b6d314acf3a367b",
@@ -19181,6 +19276,19 @@
       "created_at": "2026-07-22T09:02:25.741652+00:00"
     },
     {
+      "id": "291bac791a1eac5d",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Tours : la casse automobile Hornn fermée pour laisser place à une piste cyclable - ici.fr",
+      "extrait": "TITRE: Tours : la casse automobile Hornn fermée pour laisser place à une piste cyclable - ici.fr SOURCE: Google News DATE: Tue, 16 Jun 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMi4wFBVV95cUxQZnh1N0xvQms4VVlsR3dhSFZNVERlLWlGX1BJVmgyV2tDUkNGMUNDa1BQMVN3STV1Vk1YSWtJMGx4ajdZM0NGQnVDYS1fa2Q2WlZiYmpHeWNZUWZ4UW4zS3RuT0p1aHNRSG5qT29XWl92XzN6UXZsU3I5NFFKYTV5YmZQamdnQVUxbmxZVGpVd0MwX3hLUWY3SHNwVEJuRng0a09tZUZ1Q3pnVlpCSGhtQXZrMEJ4VGt6ZTBBWUkzdmRBcl9CLWpMM196bGxNU2VVOUdGZXU1TXlSSFZzSTFGV",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQZnh1N0xvQms4VVlsR3dhSFZNVERlLWlGX1BJVmgyV2tDUkNGMUNDa1BQMVN3STV1Vk1YSWtJMGx4ajdZM0NGQnVDYS1fa2Q2WlZiYmpHeWNZUWZ4UW4zS3RuT0p1aHNRSG5qT29XWl92XzN6UXZsU3I5NFFKYTV5YmZQamdnQVUxbmxZVGpVd0MwX3hLUWY3SHNwVEJuRng0a09tZUZ1Q3pnVlpCSGhtQXZrMEJ4VGt6ZTBBWUkzdmRBcl9CLWpMM196bGxNU2VVOUdGZXU1TXlSSFZzSTFGVl84bw?oc=5",
+      "source": "Google News",
+      "date": "Tue, 16 Jun 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-31T06:45:01.880186+00:00"
+    },
+    {
       "id": "f3ca59006adc7ffb",
       "banque": "La Banque Postale",
       "departement": null,
@@ -20091,6 +20199,45 @@
       "created_at": "2026-07-22T09:03:51.343361+00:00"
     },
     {
+      "id": "3cfc2ab0324fd99f",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "Incendie en Gironde : après la fermeture d’un site de La Poste, 300.000 courriers supplémentaires passent chaque jour par l’Indre-et-Loire - lanouvellerepublique.fr",
+      "extrait": "TITRE: Incendie en Gironde : après la fermeture d’un site de La Poste, 300.000 courriers supplémentaires passent chaque jour par l’Indre-et-Loire - lanouvellerepublique.fr SOURCE: Google News DATE: Thu, 30 Jul 2026 18:33:51 GMT URL: https://news.google.com/rss/articles/CBMiuAJBVV95cUxPZFdnQ1FJa1N6RTRVRmRfdmQ0Wlh4YXBjZW9ILTk1SURyWjFsVWtMU0xCUFJoQ3UxVTJpLVcwRG9kU3ZpcTQwbVFnVnNjM0ZNTjZubXFDXzV1UmJPYUhZS3dNNmpjbklpcHhTZzZ5S2xTbFRmV1gtb1ZFRWQ3TmNWbDZKRGI1Nm1UOUZHMjF1bHFBUmV4M3FOc0EyV0Nsd2FlYzZJeVp2Uk",
+      "url": "https://news.google.com/rss/articles/CBMiuAJBVV95cUxPZFdnQ1FJa1N6RTRVRmRfdmQ0Wlh4YXBjZW9ILTk1SURyWjFsVWtMU0xCUFJoQ3UxVTJpLVcwRG9kU3ZpcTQwbVFnVnNjM0ZNTjZubXFDXzV1UmJPYUhZS3dNNmpjbklpcHhTZzZ5S2xTbFRmV1gtb1ZFRWQ3TmNWbDZKRGI1Nm1UOUZHMjF1bHFBUmV4M3FOc0EyV0Nsd2FlYzZJeVp2UkZVUThIZ0VuVjgtc1VhYkFYTUhxaUhNdmVmQXJOUmNpTHh6Rk5aZU4yTGdITDctMFBQYi1Nb1pqdFpOcFVkZV9NVDZYOE9rVVp3T3h6eFRTSXU4RE5vQlV0OGpZZ3FFMEw1ZWI5YnV2Q0dEQk9lR0p2M3RVRU1LNFNjZkNJOWFTb3owZF8waGFBS3hfQXNoTEM?oc=5",
+      "source": "Google News",
+      "date": "Thu, 30 Jul 2026 18:33:51 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-31T06:44:50.853267+00:00"
+    },
+    {
+      "id": "7494f62a69d57fc9",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "La Poste ferme le samedi : habitants et élus de cette ville de Loire-Atlantique dénoncent l’asphyxie du service public - Ouest-France",
+      "extrait": "TITRE: La Poste ferme le samedi : habitants et élus de cette ville de Loire-Atlantique dénoncent l’asphyxie du service public - Ouest-France SOURCE: Google News DATE: Thu, 30 Jul 2026 06:36:01 GMT URL: https://news.google.com/rss/articles/CBMitAJBVV95cUxONGRhMXE2M1U5aXpFeS14OTZzOGJVZVBFQnJYeUtDZFVSeWVnc0p3RFBndkoxTWJrVEpQd1RPaHpmX0hyOE4yS3NkS3dBUnlMTENDWTdJdnlXUldKa21CMjNvdEREYXE3elpjc2pZa2NfdTFwT2xUSGRHUm9kWFB2Q0xaSmQteXVYQkdKWml0YlNSY2NLc1FvQnpNNFJvell2UUN2bWJ2VlZFeTFaVXpldnc0NlpXWHVhcXlLLV80R",
+      "url": "https://news.google.com/rss/articles/CBMitAJBVV95cUxONGRhMXE2M1U5aXpFeS14OTZzOGJVZVBFQnJYeUtDZFVSeWVnc0p3RFBndkoxTWJrVEpQd1RPaHpmX0hyOE4yS3NkS3dBUnlMTENDWTdJdnlXUldKa21CMjNvdEREYXE3elpjc2pZa2NfdTFwT2xUSGRHUm9kWFB2Q0xaSmQteXVYQkdKWml0YlNSY2NLc1FvQnpNNFJvell2UUN2bWJ2VlZFeTFaVXpldnc0NlpXWHVhcXlLLV80RTctRjZlM3YtdXVkNVhaWWRhZlcxS3ZsbFRmemVTamNrc2xtM3djVTZ0WHlISHJsSW5PLWNjTXFzeGlGdzNnV2JxVGtJRTVnUXE3YmJWZWY0czd3OG5Yb0FBc2JMcWgwZGVXU2hlb21jN2NVQ2JLV2RHZ2lzbQ?oc=5",
+      "source": "Google News",
+      "date": "Thu, 30 Jul 2026 06:36:01 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-31T06:44:54.645280+00:00"
+    },
+    {
+      "id": "6517582147603162",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "Giromagny. Pourquoi le bureau de La Poste va fermer pour une durée indéterminée à compter du 3 août - L'Est Républicain",
+      "extrait": "TITRE: Giromagny. Pourquoi le bureau de La Poste va fermer pour une durée indéterminée à compter du 3 août - L'Est Républicain SOURCE: Google News DATE: Thu, 30 Jul 2026 06:06:45 GMT URL: https://news.google.com/rss/articles/CBMi0wFBVV95cUxONjVfQ3duRFlleGVBdG9JU0VLRXVnTy1PQlBKeFZaVHZpWjBUVGZoR01jcUtsRWZlMkpiRmU3UzE1UUNlVjhfU25zOG91Y0tDZkMxS09XVl9wbW1CTFA0dlhaalZELUU4REozM3Fha0hMQWswbUYyZXVjS25QVl9CaDJ4Q3pZZWQ3dk5aeGJ0Wm8tYldUU1RtcDNCT0F3cXE5UnU3ZWJKa243NEpXUzI4UWZrNk9MZEFXOFRHSlJjQjZCS1NaYlV3TUd",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxONjVfQ3duRFlleGVBdG9JU0VLRXVnTy1PQlBKeFZaVHZpWjBUVGZoR01jcUtsRWZlMkpiRmU3UzE1UUNlVjhfU25zOG91Y0tDZkMxS09XVl9wbW1CTFA0dlhaalZELUU4REozM3Fha0hMQWswbUYyZXVjS25QVl9CaDJ4Q3pZZWQ3dk5aeGJ0Wm8tYldUU1RtcDNCT0F3cXE5UnU3ZWJKa243NEpXUzI4UWZrNk9MZEFXOFRHSlJjQjZCS1NaYlV3TUdqTTlfQXctV1Z3?oc=5",
+      "source": "Google News",
+      "date": "Thu, 30 Jul 2026 06:06:45 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-31T06:45:05.286867+00:00"
+    },
+    {
       "id": "8471b494a4d27f9f",
       "banque": "Société Générale",
       "departement": null,
@@ -20934,6 +21081,32 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-07-22T08:58:51.433256+00:00"
+    },
+    {
+      "id": "1a39294630986359",
+      "banque": "BNP Paribas",
+      "departement": null,
+      "titre": "Chaleur : fermeture des écoles l'après-midi, garderie maintenue, quelle situation en Indre-et-Loire lundi et mardi - ici.fr",
+      "extrait": "TITRE: Chaleur : fermeture des écoles l'après-midi, garderie maintenue, quelle situation en Indre-et-Loire lundi et mardi - ici.fr SOURCE: Google News DATE: Thu, 18 Jun 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMi8wFBVV95cUxOYVV2aTU1M3lnbnpERElsWXdYRnpnZFdKeXdZem5YNzdFMWMxWXNTSi1SWVBpMzBoeVpmbkltOXQ1RTdIc0NiZHVDTll3LXBnMnJrSHZSbGItR3c5RjFkNVlZTURTYXRkeURZd01ka1ZRUE9zXzFBSVBsSzRzdDB2dFAzOXpITUkyUUdCTERoMzY2eVRramo2c3VIT0xUcXNDY2ZJMl9ESFRaeXJRTFJ3QTBxMXRYWndya3lmNUk3UFZ4TC1YdXV",
+      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOYVV2aTU1M3lnbnpERElsWXdYRnpnZFdKeXdZem5YNzdFMWMxWXNTSi1SWVBpMzBoeVpmbkltOXQ1RTdIc0NiZHVDTll3LXBnMnJrSHZSbGItR3c5RjFkNVlZTURTYXRkeURZd01ka1ZRUE9zXzFBSVBsSzRzdDB2dFAzOXpITUkyUUdCTERoMzY2eVRramo2c3VIT0xUcXNDY2ZJMl9ESFRaeXJRTFJ3QTBxMXRYWndya3lmNUk3UFZ4TC1YdXVmYlFvajZzQWxXMWtxb2s3b0ZVckMxWjU5WV9uNnhfWDdSeTQzTEdpMEhLSGs?oc=5",
+      "source": "Google News",
+      "date": "Thu, 18 Jun 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-31T06:44:56.464711+00:00"
+    },
+    {
+      "id": "803544fd03aaf803",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Chaleur : \"À 40 degrés, je ferme les écoles\", affirme le maire de Tours Emmanuel Denis - ici.fr",
+      "extrait": "TITRE: Chaleur : \"À 40 degrés, je ferme les écoles\", affirme le maire de Tours Emmanuel Denis - ici.fr SOURCE: Google News DATE: Thu, 18 Jun 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMi5gFBVV95cUxNaGhMd2ZQWmZPUXlXR1c3NjB2b2ExMTNDdGVTYTdwOVg3S2tfNG1wc3hEVTRTZUwzR2swQXlPNnJBcFU4YnJmUWRKNTVYU21Oc3M2Zjd1eG1BRDVOcFJldVNySGY1VnV4VlNIeHM5OWkwODVtRVIteUE3VTdCeDlFeEVtZGZPbVJaNGZxcjluZk83ci1PNVdJTXB2VVlkNk9fT3hzSnFtaTVSQ3ItcGptRzhVaVFLNGRJVWVwWGR5TGZodWFjTFlxajc1YWZpSlQ5YXJpOTRkTFBXb0Z",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNaGhMd2ZQWmZPUXlXR1c3NjB2b2ExMTNDdGVTYTdwOVg3S2tfNG1wc3hEVTRTZUwzR2swQXlPNnJBcFU4YnJmUWRKNTVYU21Oc3M2Zjd1eG1BRDVOcFJldVNySGY1VnV4VlNIeHM5OWkwODVtRVIteUE3VTdCeDlFeEVtZGZPbVJaNGZxcjluZk83ci1PNVdJTXB2VVlkNk9fT3hzSnFtaTVSQ3ItcGptRzhVaVFLNGRJVWVwWGR5TGZodWFjTFlxajc1YWZpSlQ5YXJpOTRkTFBXb0ZEWjY4RzJSMW9IQQ?oc=5",
+      "source": "Google News",
+      "date": "Thu, 18 Jun 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-31T06:44:58.399317+00:00"
     },
     {
       "id": "ee58abfbeca31340",
@@ -24082,6 +24255,19 @@
       "created_at": "2026-07-30T06:04:48.916416+00:00"
     },
     {
+      "id": "17f59c37cfea3581",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "« La Poste organise-t-elle la fermeture de son bureau ? » : un syndicat réagit à la réduction des horaires à Ploufragan - MaVille.com",
+      "extrait": "TITRE: « La Poste organise-t-elle la fermeture de son bureau ? » : un syndicat réagit à la réduction des horaires à Ploufragan - MaVille.com SOURCE: Google News DATE: Mon, 27 Jul 2026 15:18:00 GMT URL: https://news.google.com/rss/articles/CBMiggJBVV95cUxPQ2JZX3ZwRGtxelRySUZ5Mk1aQUgzN1VDa0RBSm1aUjh5NnMyREp4VkdPSF94bVpTdUx5Qjc4WGdZaTFOMWNpM2JCb1Q0MUZEaUlObkpiZnJEMldhbVgzT2JybUd0M3pVdVF3RXBhdm1UU3l3QWNPMlhTQ3pFaFhCVXgwZTlacElzRzNEYzNHcGNVaTM5SThKNXAwYXZPX21rWU5XTUNyRmlBbUJRbzhkcjFMWTdFQXBVanRLcmxyL",
+      "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPQ2JZX3ZwRGtxelRySUZ5Mk1aQUgzN1VDa0RBSm1aUjh5NnMyREp4VkdPSF94bVpTdUx5Qjc4WGdZaTFOMWNpM2JCb1Q0MUZEaUlObkpiZnJEMldhbVgzT2JybUd0M3pVdVF3RXBhdm1UU3l3QWNPMlhTQ3pFaFhCVXgwZTlacElzRzNEYzNHcGNVaTM5SThKNXAwYXZPX21rWU5XTUNyRmlBbUJRbzhkcjFMWTdFQXBVanRLcmxyLXhXaUZaR1cwX2tiemJEZm1KT1NHRFNINUFvLVFVRW1kbVhxNG9KeXVmajJoMktQYkdNSS14Nnc1cE5SM3JZMjZoTmc?oc=5",
+      "source": "Google News",
+      "date": "Mon, 27 Jul 2026 15:18:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-31T06:44:52.563341+00:00"
+    },
+    {
       "id": "cf7c67da2f26cda9",
       "banque": "Société Générale",
       "departement": null,
@@ -25928,6 +26114,19 @@
       "created_at": "2026-07-26T06:20:46.348304+00:00"
     },
     {
+      "id": "3419067d83083b1f",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "À Lorient, un syndicat conteste la raison de la fermeture temporaire du bureau de poste de Keryado - MaVille.com",
+      "extrait": "TITRE: À Lorient, un syndicat conteste la raison de la fermeture temporaire du bureau de poste de Keryado - MaVille.com SOURCE: Google News DATE: Fri, 24 Jul 2026 16:56:00 GMT URL: https://news.google.com/rss/articles/CBMi9gFBVV95cUxORG5PVkVnYTB6SWUwZDN1ejFXTlFxdlBicjBzem1SbDc0MV9YRFRjaXJvRXNZeTRaWHdfbXNfTjV1Nmw2RTdfTzFtbXlSZGoyVnMxTURGZU5mTmkxZjBMMXh6U1pJaWRMLVFRSTVvR1AxTHFzbnRjd19ZeXM5X2dTNGk5QjJXeVBNUkhTbWZKNkJRM3YwUE11UFJQcHp6dl9vSEZoOGhfMU5yeFU0V0FPYm1fQWUxc2c1WEdzNjVmTWFFQXhGLXJaRGJFZnBtY2",
+      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxORG5PVkVnYTB6SWUwZDN1ejFXTlFxdlBicjBzem1SbDc0MV9YRFRjaXJvRXNZeTRaWHdfbXNfTjV1Nmw2RTdfTzFtbXlSZGoyVnMxTURGZU5mTmkxZjBMMXh6U1pJaWRMLVFRSTVvR1AxTHFzbnRjd19ZeXM5X2dTNGk5QjJXeVBNUkhTbWZKNkJRM3YwUE11UFJQcHp6dl9vSEZoOGhfMU5yeFU0V0FPYm1fQWUxc2c1WEdzNjVmTWFFQXhGLXJaRGJFZnBtY25DQ3VxQzdmamZ2WnNITUxETzlzLUlrUW1weDM4QjRWbWxQTjVSbWc?oc=5",
+      "source": "Google News",
+      "date": "Fri, 24 Jul 2026 16:56:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-31T06:45:03.415849+00:00"
+    },
+    {
       "id": "635dc011667846d1",
       "banque": "Société Générale",
       "departement": null,
@@ -27475,6 +27674,175 @@
       "created_at": "2026-07-22T09:09:01.159244+00:00"
     },
     {
+      "id": "43667e8f6344b7d3",
+      "banque": "Crédit Agricole",
+      "departement": null,
+      "titre": "Crédit Agricole : 2e trimestre en croissance, accélération dans l'IA",
+      "extrait": "TITRE: Crédit Agricole : 2e trimestre en croissance, accélération dans l'IA SOURCE: Bourse Direct DATE: 2026-07-31T06:00:48Z URL: https://www.boursedirect.fr/fr/actualites/categorie/resultats/credit-agricole-2e-trimestre-en-croissance-acceleration-dans-l-ia-boursier-c4175d7254d2eb98c316d4680ff99cf7b01967d2 Crédit Agricole SA publie pour son 2e trimestre des revenus de 7,36 milliards d'euros en progression de 7,7% avec tous les métiers et sur un niveau historique, pour un résultat brut d'exploita",
+      "url": "https://www.boursedirect.fr/fr/actualites/categorie/resultats/credit-agricole-2e-trimestre-en-croissance-acceleration-dans-l-ia-boursier-c4175d7254d2eb98c316d4680ff99cf7b01967d2",
+      "source": "Bourse Direct",
+      "date": "2026-07-31T06:00:48Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-31T06:46:10.513032+00:00"
+    },
+    {
+      "id": "07c4e96a21a5c609",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "Entretien avec le vice-amiral d'escadre Jean-François Quérat, préfet maritime et commandant de la zone maritime Atlantique",
+      "extrait": "TITRE: Entretien avec le vice-amiral d'escadre Jean-François Quérat, préfet maritime et commandant de la zone maritime Atlantique SOURCE: Mer et Marine DATE: 2026-07-31T05:55:00Z URL: https://www.meretmarine.com/fr/defense/entretien-avec-le-vice-amiral-d-escadre-jean-francois-querat-prefet-maritime-et-commandant-de-la Ce vendredi 31 août 2026, le vice-amiral d'escadre Jean-François Quérat passe le flambeau au VAE Marc-Antoine de Saint-Germain comme préfet maritime et commandant en chef de la zon",
+      "url": "https://www.meretmarine.com/fr/defense/entretien-avec-le-vice-amiral-d-escadre-jean-francois-querat-prefet-maritime-et-commandant-de-la",
+      "source": "Mer et Marine",
+      "date": "2026-07-31T05:55:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-31T06:45:59.251502+00:00"
+    },
+    {
+      "id": "6d76be988e2ba048",
+      "banque": "Crédit Agricole",
+      "departement": null,
+      "titre": "Crédit Agricole : 2e trimestre en croissance, accélération dans l'IA",
+      "extrait": "TITRE: Crédit Agricole : 2e trimestre en croissance, accélération dans l'IA SOURCE: Boursier.com DATE: 2026-07-31T05:19:00Z URL: https://www.boursier.com/actions/actualites/news/credit-agricole-2e-trimestre-en-croissance-acceleration-dans-l-ia-991264.html Crédit Agricole : 2e trimestre en croissance, accélération dans l'IA Par Jean-Noël Legalland Publié le 31/07/2026 à 07h19 Crédit Agricole : 2e trimestre en croissance, accélération dans l'IA (Boursier.com) -- Crédit Agricole SA publie pour son ",
+      "url": "https://www.boursier.com/actions/actualites/news/credit-agricole-2e-trimestre-en-croissance-acceleration-dans-l-ia-991264.html",
+      "source": "Boursier.com",
+      "date": "2026-07-31T05:19:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-31T06:46:11.992487+00:00"
+    },
+    {
+      "id": "deaef079c0de2388",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "DBV TECHNOLOGIES (EPA:DBV) |",
+      "extrait": "TITRE: DBV TECHNOLOGIES (EPA:DBV) | SOURCE: Les Echos DATE: 2026-07-30T23:29:57Z URL: https://lesechos-comfi.lesechos.fr/press-release/dbv-technologies-epa-dbv-dbv-technologies-annonce-le-placement-dads-pour-un-montant-denviron-50-millions-de-dollars-us-dans-le-cadre-de-son-programme-at-the-market-atm-sur-le-nasdaq-s6eZnPsZiXN Châtillon, France, 30 juillet 2026 Dans le cadre du Programme ATM, et conformément aux dispositions de l'article L. 225-138 du Code de commerce et à la 25ème résolution ad",
+      "url": "https://lesechos-comfi.lesechos.fr/press-release/dbv-technologies-epa-dbv-dbv-technologies-annonce-le-placement-dads-pour-un-montant-denviron-50-millions-de-dollars-us-dans-le-cadre-de-son-programme-at-the-market-atm-sur-le-nasdaq-s6eZnPsZiXN",
+      "source": "Les Echos",
+      "date": "2026-07-30T23:29:57Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-31T06:46:17.971981+00:00"
+    },
+    {
+      "id": "69bea5480f766717",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Aux abois, le pouvoir frelaté de Macron accentue la censure préventive !",
+      "extrait": "TITRE: Aux abois, le pouvoir frelaté de Macron accentue la censure préventive ! SOURCE: Riposte Laïque DATE: 2026-07-30T22:20:18Z URL: https://ripostelaique.com/aux-abois-le-pouvoir-frelate-de-macron-et-sa-clique-accentue-la-censure-preventive/ Un des nombreux exemples activement à la manœuvre : l'ARCOM, gendarme du PAF payé par nos impôts, non pour faire un sain ménage dans ce paysage de l'audiovisuel français qui en a pourtant bien besoin, mais bien plutôt pour cirer les pompes du pouvoir en p",
+      "url": "https://ripostelaique.com/aux-abois-le-pouvoir-frelate-de-macron-et-sa-clique-accentue-la-censure-preventive/",
+      "source": "Riposte Laïque",
+      "date": "2026-07-30T22:20:18Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-31T06:46:20.461856+00:00"
+    },
+    {
+      "id": "f91d659c55e76578",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "DBV Technologies annonce le placement d'ADS pour un montant d'environ 50 millions de Dollars US dans le cadre de son programme At-The-Market (ATM) sur le Nasdaq",
+      "extrait": "TITRE: DBV Technologies annonce le placement d'ADS pour un montant d'environ 50 millions de Dollars US dans le cadre de son programme At-The-Market (ATM) sur le Nasdaq SOURCE: 24matins.fr DATE: 2026-07-30T21:50:05Z URL: https://www.24matins.fr/pr/dbv-technologies-annonce-le-placement-dads-pour-un-montant-denviron-50-millions-de-dollars-us-dans-le-cadre-de-son-programme-at-the-market-atm-sur-le-nasdaq Châtillon, France, 30 juillet 2026 Dans le cadre du Programme ATM, et conformément aux dispositi",
+      "url": "https://www.24matins.fr/pr/dbv-technologies-annonce-le-placement-dads-pour-un-montant-denviron-50-millions-de-dollars-us-dans-le-cadre-de-son-programme-at-the-market-atm-sur-le-nasdaq",
+      "source": "24matins.fr",
+      "date": "2026-07-30T21:50:05Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-31T06:46:15.560657+00:00"
+    },
+    {
+      "id": "d735c22d72538d87",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Grosse séance pour le CAC 40, Société Générale au zénith : le journal de la bourse du 30 juillet",
+      "extrait": "TITRE: Grosse séance pour le CAC 40, Société Générale au zénith : le journal de la bourse du 30 juillet SOURCE: MoneyVox Actu DATE: 2026-07-30T20:17:23Z URL: https://www.moneyvox.fr/bourse/actualites/109884/grosse-seance-pour-le-cac-40-societe-generale-au-zenith-le-journal-de-la-bourse-du-30-juillet Grosse séance ! Le CAC 40 gagne 0,92% ce jeudi. Il clôture à 8 486 points, grâce à une série de résultats d'entreprises particulièrement solides. Schneider Electric bondit de 10,8% et L'Oréal gagne 2",
+      "url": "https://www.moneyvox.fr/bourse/actualites/109884/grosse-seance-pour-le-cac-40-societe-generale-au-zenith-le-journal-de-la-bourse-du-30-juillet",
+      "source": "MoneyVox Actu",
+      "date": "2026-07-30T20:17:23Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-31T06:46:24.083689+00:00"
+    },
+    {
+      "id": "4e8eb2ca77eead58",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "Entrée massive de migrants à Ceuta, Madrid envoie l'armée, l'Italie veut suspendre l'Espagne de l'espace Schengen",
+      "extrait": "TITRE: Entrée massive de migrants à Ceuta, Madrid envoie l'armée, l'Italie veut suspendre l'Espagne de l'espace Schengen SOURCE: La Voix du Nord DATE: 2026-07-30T19:18:01Z URL: https://www.lavoixdunord.fr/1725698/article/2026-07-30/entree-massive-de-migrants-ceuta-madrid-envoie-l-armee-l-italie-veut-suspendre-l Neuf migrants sont morts jeudi en tentant de rejoindre à la nage depuis le Maroc l'enclave espagnole de Ceuta, où plusieurs centaines d'autres sont arrivés dans les dernières heures, ce q",
+      "url": "https://www.lavoixdunord.fr/1725698/article/2026-07-30/entree-massive-de-migrants-ceuta-madrid-envoie-l-armee-l-italie-veut-suspendre-l",
+      "source": "La Voix du Nord",
+      "date": "2026-07-30T19:18:01Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-31T06:46:33.772190+00:00"
+    },
+    {
+      "id": "15b23d2c6dfddc25",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "Incendie en Gironde : après la fermeture d'un site de La Poste, 300.000 courriers supplémentaires passent chaque jour par l'Indre-et-Loire",
+      "extrait": "TITRE: Incendie en Gironde : après la fermeture d'un site de La Poste, 300.000 courriers supplémentaires passent chaque jour par l'Indre-et-Loire SOURCE: lanouvellerepublique.fr DATE: 2026-07-30T18:33:51Z URL: https://www.lanouvellerepublique.fr/indre-et-loire/commune/sorigny/incendie-en-gironde-apres-la-fermeture-d-un-site-de-la-poste-300-000-courriers-supplementaires-passent-chaque-jour-par-l-indre-et-loire-1785436431 Depuis le lundi 27 juillet 2026, les courriers à destination de la Charente,",
+      "url": "https://www.lanouvellerepublique.fr/indre-et-loire/commune/sorigny/incendie-en-gironde-apres-la-fermeture-d-un-site-de-la-poste-300-000-courriers-supplementaires-passent-chaque-jour-par-l-indre-et-loire-1785436431",
+      "source": "lanouvellerepublique.fr",
+      "date": "2026-07-30T18:33:51Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-31T06:46:38.897886+00:00"
+    },
+    {
+      "id": "d8b1c17a7098e3a0",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "\"Urgence humanitaire\" à Ceuta après l'arrivée massive de migrants, l'armée envoyée en renfort",
+      "extrait": "TITRE: \"Urgence humanitaire\" à Ceuta après l'arrivée massive de migrants, l'armée envoyée en renfort SOURCE: France 24 DATE: 2026-07-30T17:45:13Z URL: https://www.france24.com/fr/europe/20260730-urgence-humanitaire-%C3%A0-ceuta-apr%C3%A8s-l-arriv%C3%A9e-massive-de-migrants-l-arm%C3%A9e-envoy%C3%A9e-en-renfort Le gouvernement espagnol va déployer des soldats pour garantir la sécurité dans l'enclave de Ceuta, sur la côte nord de l'Afrique. Après l'arrivée de centaines de migrants depuis le Maroc d",
+      "url": "https://www.france24.com/fr/europe/20260730-urgence-humanitaire-%C3%A0-ceuta-apr%C3%A8s-l-arriv%C3%A9e-massive-de-migrants-l-arm%C3%A9e-envoy%C3%A9e-en-renfort",
+      "source": "France 24",
+      "date": "2026-07-30T17:45:13Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-31T06:46:40.444061+00:00"
+    },
+    {
+      "id": "5ca53d2d2a4e7e6d",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Mercato : le PSG tient Akliouche, l'OM attend toujours pour Gouiri",
+      "extrait": "TITRE: Mercato : le PSG tient Akliouche, l'OM attend toujours pour Gouiri SOURCE: Afrik.com DATE: 2026-07-30T16:40:49Z URL: https://www.afrik.com/mercato-le-psg-tient-akliouche-l-om-attend-toujours-pour-gouiri Paris et Monaco sont parvenus jeudi aux derniers réglages d'un accord pour Maghnes Akliouche, dont les parents sont originaires de Bouira. À Marseille, l'avenir d'Amine Gouiri, international algérien, dépend d'une offre qui n'est pas encore arrivée. Les négociations traînaient depuis des s",
+      "url": "https://www.afrik.com/mercato-le-psg-tient-akliouche-l-om-attend-toujours-pour-gouiri",
+      "source": "Afrik.com",
+      "date": "2026-07-30T16:40:49Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-31T06:46:46.450972+00:00"
+    },
+    {
+      "id": "200579b6b5250431",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "Soutien au peuple palestinien et à nos camarades syndicalistes en Cisjordanie occupée",
+      "extrait": "TITRE: Soutien au peuple palestinien et à nos camarades syndicalistes en Cisjordanie occupée SOURCE: Union syndicale groupe des 10 Solidaires DATE: 2026-07-30T14:40:37Z URL: https://www.solidaires.org/soutien-au-peuple-palestinien-et-a-nos-camarades-syndicalistes-en-cisjordanie-occupee/ Appeal from the Palestinian Postal Services Workers Union to Trade Unions Worldwide الم ة في الع ات العمالي طينية إلى النقاب ة الفلس دمات البريدي املين في الخ ة الع ل من نقاب داء عاج ن, Appel du syndicat des trav",
+      "url": "https://www.solidaires.org/soutien-au-peuple-palestinien-et-a-nos-camarades-syndicalistes-en-cisjordanie-occupee/",
+      "source": "Union syndicale groupe des 10 Solidaires",
+      "date": "2026-07-30T14:40:37Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-31T06:46:56.063985+00:00"
+    },
+    {
+      "id": "9764307a97e48be6",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "Envie d'uriner toutes les 2 heures : pourquoi la justice a refusé son invalidité permanente",
+      "extrait": "TITRE: Envie d'uriner toutes les 2 heures : pourquoi la justice a refusé son invalidité permanente SOURCE: Topsante.com DATE: 2026-07-30T13:55:00Z URL: https://www.topsante.com/medecine/digestion_et_transit/envie-duriner-toutes-les-2-heures-pourquoi-la-justice-a-refuse-son-invalidite-permanente-975619 Les manuels médicaux comme le Manuel MSD distinguent bien l'urgence intestinale de l'urgence urinaire. Dans la première, les symptômes clés sont douleurs abdominales, besoin soudain d'aller à la se",
+      "url": "https://www.topsante.com/medecine/digestion_et_transit/envie-duriner-toutes-les-2-heures-pourquoi-la-justice-a-refuse-son-invalidite-permanente-975619",
+      "source": "Topsante.com",
+      "date": "2026-07-30T13:55:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-31T06:46:53.801651+00:00"
+    },
+    {
       "id": "dcd582072c48d35b",
       "banque": "CIC",
       "departement": null,
@@ -27525,6 +27893,32 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-07-30T06:06:35.438276+00:00"
+    },
+    {
+      "id": "92be6bd1751ac765",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "La Société Générale affiche un bénéfice record six mois après un plan de suppression de postes massif",
+      "extrait": "TITRE: La Société Générale affiche un bénéfice record six mois après un plan de suppression de postes massif SOURCE: humanite.fr DATE: 2026-07-30 URL: https://www.humanite.fr/social-et-economie/banques/la-societe-generale-affiche-un-benefice-record-six-mois-apres-un-plan-de-suppression-de-postes-massif La Société Générale affiche, jeudi 30 juillet, un bénéfice net de 1,79 milliard d’euros pour son deuxième trimestre, du jamais-vu. La banque signe également un bénéfice record à l’échelle du semes",
+      "url": "https://www.humanite.fr/social-et-economie/banques/la-societe-generale-affiche-un-benefice-record-six-mois-apres-un-plan-de-suppression-de-postes-massif",
+      "source": "humanite.fr",
+      "date": "2026-07-30",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-31T06:45:50.811043+00:00"
+    },
+    {
+      "id": "eb49d923b5881fda",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "La Poste ferme le samedi",
+      "extrait": "TITRE: La Poste ferme le samedi SOURCE: ouest-france.fr DATE: 2026-07-30 URL: https://www.ouest-france.fr/economie/entreprises/la-poste/la-poste-ferme-le-samedi-habitants-et-elus-de-cette-ville-de-loire-atlantique-denoncent-lasphyxie-du-service-public-d89da06e-8b51-11f1-bc55-2f16fe87c4fe",
+      "url": "https://www.ouest-france.fr/economie/entreprises/la-poste/la-poste-ferme-le-samedi-habitants-et-elus-de-cette-ville-de-loire-atlantique-denoncent-lasphyxie-du-service-public-d89da06e-8b51-11f1-bc55-2f16fe87c4fe",
+      "source": "ouest-france.fr",
+      "date": "2026-07-30",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-31T06:45:52.269378+00:00"
     },
     {
       "id": "b74924e7071e5ea5",
@@ -31414,6 +31808,227 @@
       "created_at": "2026-06-25T15:43:41.960961+00:00"
     },
     {
+      "id": "e291c64acf6b9f81",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "Pour Koundé, c'est enfin l'heure de briller dans l'axe",
+      "extrait": "TITRE: Pour Koundé, c'est enfin l'heure de briller dans l'axe SOURCE: Eurosport DATE: 2026-07-31T06:36:37Z URL: https://www.eurosport.fr/football/transferts/2026-2027/mercato-jules-kounde-devrait-retrouver-un-poste-de-defenseur-central-cette-saison-au-fc-barcelone-si-ronald-araujo-venait-a-partir_sto23323395/story.shtml L'Argentine, le néant : \"Donner ce spectacle en finale de la Coupe du monde, c'est triste\" Voilà bientôt quatre ans que Jules Koundé n'a plus occupé durablement son poste naturel",
+      "url": "https://www.eurosport.fr/football/transferts/2026-2027/mercato-jules-kounde-devrait-retrouver-un-poste-de-defenseur-central-cette-saison-au-fc-barcelone-si-ronald-araujo-venait-a-partir_sto23323395/story.shtml",
+      "source": "Eurosport",
+      "date": "2026-07-31T06:36:37Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-31T06:45:55.453182+00:00"
+    },
+    {
+      "id": "bd72ff7b5b6ed074",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "Stéphane devient freelance: comment recréer une protection sociale et patrimoniale?",
+      "extrait": "TITRE: Stéphane devient freelance: comment recréer une protection sociale et patrimoniale? SOURCE: Boursorama DATE: 2026-07-31T06:00:11Z URL: https://www.boursorama.com/epargne/placements-bancaires/actualites/stephane-devient-freelance-comment-recreer-une-protection-sociale-et-patrimoniale-7b7e656765352b1b7dea92f1465b69cb Après un plan de départ volontaire, Stéphane quitte le salariat pour devenir travailleur indépendant. Sans CDI, tout change : les revenus sont irréguliers, la retraite moins li",
+      "url": "https://www.boursorama.com/epargne/placements-bancaires/actualites/stephane-devient-freelance-comment-recreer-une-protection-sociale-et-patrimoniale-7b7e656765352b1b7dea92f1465b69cb",
+      "source": "Boursorama",
+      "date": "2026-07-31T06:00:11Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-31T06:45:57.468381+00:00"
+    },
+    {
+      "id": "6c509722c31203b1",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "Un sujet évoqué par Pestiriv",
+      "extrait": "TITRE: Un sujet évoqué par Pestiriv SOURCE: Ladepeche.fr DATE: 2026-07-31T03:11:41Z URL: https://www.ladepeche.fr/2026/07/31/un-sujet-evoque-par-pestiriv-13490918.php Le 15 septembre 2025, l'agence nationale de sécurité sanitaire de l'alimentation, de l'environnement et du travail (Anses) et Santé publique France (SPF) livraient les résultats de l'étude Pestiriv. Un travail de longue haleine, engagé en 2021, avec 11 M€ de budget pour étudier 265 zones viticoles et zones éloignées de toute cultur",
+      "url": "https://www.ladepeche.fr/2026/07/31/un-sujet-evoque-par-pestiriv-13490918.php",
+      "source": "Ladepeche.fr",
+      "date": "2026-07-31T03:11:41Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-31T06:46:14.100983+00:00"
+    },
+    {
+      "id": "4338dd88bf0a3ec4",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Deux ans de drague, trois offres refusées : pourquoi Paris a insisté pour Akliouche",
+      "extrait": "TITRE: Deux ans de drague, trois offres refusées : pourquoi Paris a insisté pour Akliouche SOURCE: Eurosport DATE: 2026-07-30T21:50:58Z URL: https://www.eurosport.fr/football/transferts/2026-2027/deux-ans-de-drague-trois-offres-refusees-pourquoi-le-paris-saint-germain-a-insiste-pour-maghnes-akliouche-as-monaco_sto23324066/story.shtml Akliouche, un renfort idéal pour le PSG ? Video credit: Eurosport Comme une mauvaise romance que l'on aurait déclinée en feuilleton, l'affaire monégasco-parisienne ",
+      "url": "https://www.eurosport.fr/football/transferts/2026-2027/deux-ans-de-drague-trois-offres-refusees-pourquoi-le-paris-saint-germain-a-insiste-pour-maghnes-akliouche-as-monaco_sto23324066/story.shtml",
+      "source": "Eurosport",
+      "date": "2026-07-30T21:50:58Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-31T06:46:22.049465+00:00"
+    },
+    {
+      "id": "40f9505c78f059c0",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "Espagne. Neuf morts durant l'entrée massive de migrants à Ceuta, l'Italie veut suspendre l'Espagne de Shengen",
+      "extrait": "TITRE: Espagne. Neuf morts durant l'entrée massive de migrants à Ceuta, l'Italie veut suspendre l'Espagne de Shengen SOURCE: Le Journal de Saône-et-Loire DATE: 2026-07-30T20:07:00Z URL: https://www.lejsl.com/faits-divers-justice/2026/07/30/neuf-morts-durant-l-entree-massive-de-migrants-a-ceuta-l-italie-veut-suspendre-l-espagne-de-shengen Neuf migrants sont morts jeudi en tentant de rejoindre à la nage depuis le Maroc l'enclave espagnole de Ceuta, où plusieurs centaines d'autres sont arrivés dans",
+      "url": "https://www.lejsl.com/faits-divers-justice/2026/07/30/neuf-morts-durant-l-entree-massive-de-migrants-a-ceuta-l-italie-veut-suspendre-l-espagne-de-shengen",
+      "source": "Le Journal de Saône-et-Loire",
+      "date": "2026-07-30T20:07:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-31T06:46:27.315837+00:00"
+    },
+    {
+      "id": "946ae3249f19b511",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "Neuf morts durant l'entrée massive de migrants à Ceuta, Madrid envoie l'armée",
+      "extrait": "TITRE: Neuf morts durant l'entrée massive de migrants à Ceuta, Madrid envoie l'armée SOURCE: RTL.fr DATE: 2026-07-30T19:57:08Z URL: https://www.rtl.fr/actu/international/neuf-morts-durant-l-entree-massive-de-migrants-a-ceuta-madrid-envoie-l-armee-7900658432 Neuf migrants sont morts jeudi 30 juillet en tentant de rejoindre à la nage depuis le Maroc l'enclave espagnole de Ceuta, où plusieurs centaines d'autres sont arrivés dans les dernières heures, ce qui a poussé le gouvernement espagnol à annon",
+      "url": "https://www.rtl.fr/actu/international/neuf-morts-durant-l-entree-massive-de-migrants-a-ceuta-madrid-envoie-l-armee-7900658432",
+      "source": "RTL.fr",
+      "date": "2026-07-30T19:57:08Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-31T06:46:29.038153+00:00"
+    },
+    {
+      "id": "0baf8a39abc87949",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "Espagne : 9 morts durant l'entrée massive de migrants à Ceuta, Madrid envoie l'armée",
+      "extrait": "TITRE: Espagne : 9 morts durant l'entrée massive de migrants à Ceuta, Madrid envoie l'armée SOURCE: LaProvence.com DATE: 2026-07-30T19:44:06Z URL: https://www.laprovence.com/article/societe/17357576872992/espagne-9-morts-durant-lentree-massive-de-migrants-a-ceuta-madrid-envoie-larmee?id=17357576872992 Plus de 1500 personnes sont arrivées \"ces derniers jours\", à un rythme de \"200 personnes par jour\" en moyenne, avait indiqué le président le président de la ville autonome de Ceuta, Juan Vivas, par",
+      "url": "https://www.laprovence.com/article/societe/17357576872992/espagne-9-morts-durant-lentree-massive-de-migrants-a-ceuta-madrid-envoie-larmee?id=17357576872992",
+      "source": "LaProvence.com",
+      "date": "2026-07-30T19:44:06Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-31T06:46:30.832854+00:00"
+    },
+    {
+      "id": "ac771a468cb89b2b",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Quand l'Afrique commande les grands soirs européens - Africa Top Sports",
+      "extrait": "TITRE: Quand l'Afrique commande les grands soirs européens - Africa Top Sports SOURCE: Africa Top Sports DATE: 2026-07-30T19:34:20Z URL: https://africatopsports.com/afrique-football/quand-lafrique-commande-les-grands-soirs-europeens/ L'influence des footballeurs africains ne se mesure plus seulement au nombre de maillots vendus ou aux hommages avant une CAN. Elle se lit dans les zones où les matches basculent: la surface de Liverpool avec Mohamed Salah, le couloir droit du PSG avec Achraf Hakimi",
+      "url": "https://africatopsports.com/afrique-football/quand-lafrique-commande-les-grands-soirs-europeens/",
+      "source": "Africa Top Sports",
+      "date": "2026-07-30T19:34:20Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-31T06:46:32.182356+00:00"
+    },
+    {
+      "id": "a7506bac1b7cc3a8",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "PSG : Finalement vers un mercato blanc en attaque ? - Sport.fr",
+      "extrait": "TITRE: PSG : Finalement vers un mercato blanc en attaque ? - Sport.fr SOURCE: Sport.fr DATE: 2026-07-30T18:45:20Z URL: https://www.sport.fr/football/psg-finalement-vers-un-mercato-blanc-en-attaque-1470733.shtm Gonçalo Ramos à Milan, Kang-in Lee parti, Barcola peut-être vers Liverpool, Mbaye sur le départ : le secteur offensif du PSG se vide. Pourtant, le club de la capitale n'a encore recruté personne. Selon Fabrice Hawkins de RMC, la direction parisienne assume complètement ce vide relatif : \" ",
+      "url": "https://www.sport.fr/football/psg-finalement-vers-un-mercato-blanc-en-attaque-1470733.shtm",
+      "source": "Sport.fr",
+      "date": "2026-07-30T18:45:20Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-31T06:46:37.248159+00:00"
+    },
+    {
+      "id": "ea1f6ae8b5aab9fb",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "Mercato Strasbourg : Julio Enciso courtisé en PL, un Mondialiste américain pour le remplacer ?",
+      "extrait": "TITRE: Mercato Strasbourg : Julio Enciso courtisé en PL, un Mondialiste américain pour le remplacer ? SOURCE: Top mercato DATE: 2026-07-30T17:40:45Z URL: https://www.topmercato.com/2123738-mercato-strasbourg-julio-enciso-courtise-en-pl-un-mondialiste-americain-pour-le-remplacer/ Le milieu offensif du RC Strasbourg, Julio Enciso, est courtisé en Premier League, alors que le club alsacien cible un Mondialiste américain à ce poste sur le mercato. Auteur d'une Coupe du monde très intéressante avec l",
+      "url": "https://www.topmercato.com/2123738-mercato-strasbourg-julio-enciso-courtise-en-pl-un-mondialiste-americain-pour-le-remplacer/",
+      "source": "Top mercato",
+      "date": "2026-07-30T17:40:45Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-31T06:46:42.047582+00:00"
+    },
+    {
+      "id": "c1cb8d36bb17ac78",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "De CFAO aux terres rares : comment Toyota remonte sa chaîne de valeur en Afrique",
+      "extrait": "TITRE: De CFAO aux terres rares : comment Toyota remonte sa chaîne de valeur en Afrique SOURCE: Agence Ecofin DATE: 2026-07-30T17:15:57Z URL: https://www.agenceecofin.com/actualites/3007-140656-de-cfao-aux-terres-rares-comment-toyota-remonte-sa-chaine-de-valeur-en-afrique (Agence Ecofin) - Toyota fait de l'électrification l'un des axes de la transformation de son offre automobile. Longtemps considérée comme un débouché commercial, l'Afrique peut devenir une source directe des métaux nécessaires ",
+      "url": "https://www.agenceecofin.com/actualites/3007-140656-de-cfao-aux-terres-rares-comment-toyota-remonte-sa-chaine-de-valeur-en-afrique",
+      "source": "Agence Ecofin",
+      "date": "2026-07-30T17:15:57Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-31T06:46:44.412809+00:00"
+    },
+    {
+      "id": "8a1dc6af33b4e44f",
+      "banque": "LCL",
+      "departement": null,
+      "titre": "OM Mercato : Lorenzi a un ancien taulier de Ligue 1 dans le viseur, mais... - But! Football Club",
+      "extrait": "TITRE: OM Mercato : Lorenzi a un ancien taulier de Ligue 1 dans le viseur, mais... - But! Football Club SOURCE: But! Football Club DATE: 2026-07-30T16:20:00Z URL: https://www.butfootballclub.fr/1687609-om-mercato-lorenzi-a-un-ancien-taulier-de-ligue-1-dans-le-viseur-mais/ À la recherche d'un nouveau gardien titulaire après les possibles départs de Geronimo Rulli et Jeffrey De Lange, l'OM a coché le nom de Marcin Bulka. Le chantier du mercato marseillais devrait toucher tous les secteurs, et le p",
+      "url": "https://www.butfootballclub.fr/1687609-om-mercato-lorenzi-a-un-ancien-taulier-de-ligue-1-dans-le-viseur-mais/",
+      "source": "But! Football Club",
+      "date": "2026-07-30T16:20:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-31T06:46:48.294220+00:00"
+    },
+    {
+      "id": "1666b31a1549eceb",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "Journal des Transferts : l'offre du PSG pour Akliouche acceptée, City va piocher à l'OM, Monaco lâche 30 M€...",
+      "extrait": "TITRE: Journal des Transferts : l'offre du PSG pour Akliouche acceptée, City va piocher à l'OM, Monaco lâche 30 M€... SOURCE: Maxifoot DATE: 2026-07-30T16:03:39Z URL: https://www.maxifoot.fr/football/article-65519.htm Monaco accepte l'offre du PSG pour Akliouche, Rulli en route pour Manchester City, Monaco mise 30 millions d'euros sur Abline, Lacroix rejoint Chelsea pour 60 millions d'euros, Bouaddi d'accord avec Manchester City... Voici le Top 5 des gros dossiers mercato du jour à ne pas manque",
+      "url": "https://www.maxifoot.fr/football/article-65519.htm",
+      "source": "Maxifoot",
+      "date": "2026-07-30T16:03:39Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-31T06:46:50.315361+00:00"
+    },
+    {
+      "id": "ae16445d6b960b2f",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "Mercato OM : Marseille proche d'une recrue surprise !",
+      "extrait": "TITRE: Mercato OM : Marseille proche d'une recrue surprise ! SOURCE: Foot-sur7 DATE: 2026-07-30T15:13:10Z URL: https://www.foot-sur7.fr/768983-mercato-om-marseille-proche-dune-recrue-surprise Le mercato de l'OM prend une nouvelle direction. Le directeur sportif Grégory Lorenzi et son équipe se tournent à présent vers un latéral droit évoluant en Croatie. Mercato OM : Lorenzi passe à l'action pour Moris Valincic L'Olympique de Marseille reste discret sur ce mercato, notamment dans le sens des arr",
+      "url": "https://www.foot-sur7.fr/768983-mercato-om-marseille-proche-dune-recrue-surprise",
+      "source": "Foot-sur7",
+      "date": "2026-07-30T15:13:10Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-31T06:46:52.124120+00:00"
+    },
+    {
+      "id": "efac20ce153d62cb",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "Neuf morts durant l'entrée massive de migrants à Ceuta, Madrid envoie l'armée",
+      "extrait": "TITRE: Neuf morts durant l'entrée massive de migrants à Ceuta, Madrid envoie l'armée SOURCE: TV5MONDE DATE: 2026-07-30T14:52:33Z URL: https://information.tv5monde.com/international/neuf-morts-durant-lentree-massive-de-migrants-ceuta-madrid-envoie-larmee-2831959 Des dizaines de personnes nagent pour tenter d'atteindre l'enclave espagnole de Ceuta depuis le Maroc, comme le montre cette capture d'écran d'une vidéo tournée par une journaliste de l'AFP, le 30 juillet 2026 Neuf migrants sont morts jeu",
+      "url": "https://information.tv5monde.com/international/neuf-morts-durant-lentree-massive-de-migrants-ceuta-madrid-envoie-larmee-2831959",
+      "source": "TV5MONDE",
+      "date": "2026-07-30T14:52:33Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-31T06:46:35.410332+00:00"
+    },
+    {
+      "id": "d99e5b074a39a307",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Mercato Liverpool : \"il nous le faut désespérément\", Carragher milite pour un autre profil que Barcola",
+      "extrait": "TITRE: Mercato Liverpool : \"il nous le faut désespérément\", Carragher milite pour un autre profil que Barcola SOURCE: Top mercato DATE: 2026-07-30T13:36:00Z URL: https://www.topmercato.com/2123697-mercato-liverpool-il-nous-le-faut-desesperement-carragher-milite-pour-un-autre-profil-que-barcola/ Alors que Liverpool se rapproche de la signature de Bradley Barcola, Jamie Carragher a conseillé à son club de coeur de viser plutôt un autre profil sur ce mercato. Les Reds semblent avancer dans le dossi",
+      "url": "https://www.topmercato.com/2123697-mercato-liverpool-il-nous-le-faut-desesperement-carragher-milite-pour-un-autre-profil-que-barcola/",
+      "source": "Top mercato",
+      "date": "2026-07-30T13:36:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-31T06:46:57.385023+00:00"
+    },
+    {
+      "id": "86548200108c6122",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Gros coup de froid pour le transfert de Ferran Torres au PSG",
+      "extrait": "TITRE: Gros coup de froid pour le transfert de Ferran Torres au PSG SOURCE: Foot-sur7 DATE: 2026-07-30T12:38:32Z URL: https://www.foot-sur7.fr/768925-gros-coup-de-froid-pour-le-transfert-de-ferran-torres-au-psg Le PSG aimerait faire venir Ferran Torres pour remplacer Gonçalo Ramos, parti à l'AC Milan cet été. Mais le dossier traîne et le Barça ne semble pas démordre pour son attaquant de 26 ans. Mercato : Le PSG met la pression à Ferran Torres D'après RMC Sport, le Paris Saint-Germain ferait de ",
+      "url": "https://www.foot-sur7.fr/768925-gros-coup-de-froid-pour-le-transfert-de-ferran-torres-au-psg",
+      "source": "Foot-sur7",
+      "date": "2026-07-30T12:38:32Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-07-31T06:46:58.999654+00:00"
+    },
+    {
       "id": "531439fc1d1dc0f6",
       "banque": "CIC",
       "departement": null,
@@ -32519,6 +33134,19 @@
       "created_at": "2026-07-22T09:09:35.352161+00:00"
     },
     {
+      "id": "3076b8427f674b71",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "La CGT dénonce une fermeture programmée - lepetitjournal.net",
+      "extrait": "Article uniquement intitulé : « La CGT dénonce une fermeture programmée » (aucun lieu/banque/commune mentionnés dans le texte fourni).",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNZ0l3M25COC14OFdPMUZKV0l3N3hzUWhKMXZpNkxfeFlNSTZ3R3NiOUFNaTRjY2xOY1d6NkNHV2VnT1dtZjhaWHpjRlM1VmM4TGhscmpic1N4enp0MXUtbU5UUkZYVDdVM25DeldqejNxT1lkWG9kcWltUmtBaG9sLU9oWmd1aHRfVFlueW9mRV9GRzZRTkc0MUJ5ZVlfLTUyUDNLVWM4UGLSAa4BQVVfeXFMTkVVa1MxdEpFdFhLdGl6M2ZmR1Bqa3RGRm5OZVNWSm5DUWpqOGZrX0d3VHYzb1ZOUjNRdS11V25OWUxSbEljZDlhLTdoWlRkbVRmSzBfY0lxbVhqSGpsSEVuMHMwVzA1RHRTamV0LWU5UE9icVdQc1VidVhMOGpsUUdJZFZfbVhHY3E0TWI1dzI2aGtDcWNpNkV6MUotdmRHazBwRmFrYVQ4c1RoczZn?oc=5",
+      "source": "Google News",
+      "date": "Tue, 28 Jul 2026 13:32:39 GMT",
+      "score": 1,
+      "raison": "signaux: vague(La Banque Postale,unknown,count=None)",
+      "created_at": "2026-07-31T06:44:48.964389+00:00"
+    },
+    {
       "id": "4dfaa0862d82634e",
       "banque": "La Banque Postale",
       "departement": null,
@@ -32582,6 +33210,19 @@
       "score": 1,
       "raison": "signaux: vague(La Banque Postale,regional,count=None)",
       "created_at": "2026-07-22T08:56:29.844092+00:00"
+    },
+    {
+      "id": "01262077ff52e6ab",
+      "banque": "banque non précisée",
+      "departement": null,
+      "titre": "Une banque a fermé près de 90 % de ses agences, ne conservant ainsi que 27 points de service dans son réseau. - Vietnam.vn",
+      "extrait": "Titre : « Une banque a fermé près de 90 % de ses agences, ne conservant ainsi que 27 points de service dans son réseau » (aucune agence ni localisation en France citée).",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQelVOZmVJTEhKR3E4QS1hc0NZX2U0bU9Obk14d1FZQW8wZUgtNEF4TEVkTDRHeTlTU2g2NVM4bk80YWRRM2NnUGJtSHptdmNoakgyVUdPNUlnbmI2U2hTWXJ6T084Z2RtSEJVY1dKQmQwZFAxOS1ESGhfLURnc3RkMS1fVzl6VDEtOFNzRUl2MFdVTEtPSVdPSVpIZV9zZw?oc=5",
+      "source": "Google News",
+      "date": "Thu, 30 Jul 2026 13:21:50 GMT",
+      "score": 1,
+      "raison": "signaux: vague(banque non précisée,unknown,count=None)",
+      "created_at": "2026-07-31T06:44:46.763210+00:00"
     },
     {
       "id": "5e3e2b8e4bea0b3d",
