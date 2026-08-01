@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T06:54:57.229017+00:00",
+  "generated_at": "2026-08-01T06:29:58.058557+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -119,11 +119,11 @@
     "12": {
       "nom": "Aveyron",
       "region": "Occitanie",
-      "count": 4,
+      "count": 5,
       "total_agences": 69,
-      "precise_count": 4,
-      "unlocated_count": 1,
-      "estimated_count": 5
+      "precise_count": 5,
+      "unlocated_count": 2,
+      "estimated_count": 7
     },
     "13": {
       "nom": "Bouches-du-Rhône",
@@ -140,8 +140,8 @@
       "count": 2,
       "total_agences": 87,
       "precise_count": 2,
-      "unlocated_count": 1,
-      "estimated_count": 3
+      "unlocated_count": 2,
+      "estimated_count": 4
     },
     "15": {
       "nom": "Cantal",
@@ -282,7 +282,7 @@
       "nom": "Finistère",
       "region": "Bretagne",
       "count": 8,
-      "total_agences": 156,
+      "total_agences": 157,
       "precise_count": 8,
       "unlocated_count": 5,
       "estimated_count": 13
@@ -624,7 +624,7 @@
       "nom": "Bas-Rhin",
       "region": "Grand Est",
       "count": 5,
-      "total_agences": 255,
+      "total_agences": 257,
       "precise_count": 5,
       "unlocated_count": 3,
       "estimated_count": 8
@@ -696,7 +696,7 @@
       "nom": "Paris",
       "region": "Île-de-France",
       "count": 1,
-      "total_agences": 271,
+      "total_agences": 272,
       "precise_count": 1,
       "unlocated_count": 0,
       "estimated_count": 1
@@ -977,9 +977,9 @@
     "12": {
       "departement": "12",
       "nom": "Aveyron",
-      "precise_count": 4,
-      "unlocated_count": 1,
-      "estimated_count": 5,
+      "precise_count": 5,
+      "unlocated_count": 2,
+      "estimated_count": 7,
       "department_signal_count": 0,
       "signals": [
         {
@@ -993,6 +993,18 @@
           "score": 3,
           "precision": "commune_non_geocodee",
           "reason": "hors fenêtre temporelle"
+        },
+        {
+          "id": "eaa24d1f020b9366",
+          "banque": "La Banque Postale",
+          "commune": "Rodez",
+          "departement": "12",
+          "titre": "Le bureau de poste principal ferme à Rodez ce samedi 1er août et ne rouvrira que lundi 28 septembre 2026",
+          "source": "centrepresseaveyron.fr",
+          "url": "https://www.centrepresseaveyron.fr/2026/08/01/le-bureau-de-poste-principal-ferme-a-rodez-ce-samedi-1er-aout-et-ne-rouvrira-que-lundi-28-septembre-2026-13491637.php",
+          "score": 3,
+          "precision": "commune_non_geocodee",
+          "reason": "garde entrée/sortie: fermeture postale temporaire ou circonstancielle"
         }
       ]
     },
@@ -1492,10 +1504,22 @@
       "departement": "14",
       "nom": "Calvados",
       "precise_count": 2,
-      "unlocated_count": 1,
-      "estimated_count": 3,
+      "unlocated_count": 2,
+      "estimated_count": 4,
       "department_signal_count": 0,
       "signals": [
+        {
+          "id": "d0bd4ca9c94e3452",
+          "banque": "La Banque Postale",
+          "commune": "Caen",
+          "departement": "14",
+          "titre": "Fermé depuis plus d’un mois, le bureau de Poste de cette commune près de Caen ne va pas rouvrir tout de suite - Actu.fr",
+          "source": "Google News",
+          "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQdmtnTDZMWUNRUlFxMUFmS1U1Zk9tSEROazZrcE50UktxbjdST2tKZGVsVVdqUi03Rk45VVgycUZXWHRPVFM0ZjFJZk9YT3NZTGZXcXRiUGZFWkJvVno3RlJTTGVoMXRxMlQ0T0pMREdLSFk2Znk0bGNiUkU3T2hsV1hCNHV0S01ZQTZRQnRJQm1qblE4bW9XTFlvUWFsUFNsMS1lazFOOEFzQlVmRkNrSG9FaU5jRW5iVDhNN1cyZUNSaXFON09IalVEQzZYQ2V6dHBJOF9DRGc5ZG1oZzdSeWttQk53SkozazZnUHJhMTE?oc=5",
+          "score": 3,
+          "precision": "commune_non_geocodee",
+          "reason": "hors fenêtre temporelle"
+        },
         {
           "id": "51b55e9a42b033d6",
           "banque": "La Banque Postale",
@@ -3488,6 +3512,27 @@
       "nb_departements": 7
     },
     {
+      "region": "Occitanie",
+      "articles": 12,
+      "fermetures": 1,
+      "projets": 8,
+      "fusions": 2,
+      "types": [
+        "Fermeture",
+        "Projet",
+        "Fusion"
+      ],
+      "departements": [
+        "12",
+        "31",
+        "46",
+        "48",
+        "65",
+        "82"
+      ],
+      "nb_departements": 6
+    },
+    {
       "region": "Nouvelle-Aquitaine",
       "articles": 12,
       "fermetures": 5,
@@ -3507,27 +3552,6 @@
         "87"
       ],
       "nb_departements": 7
-    },
-    {
-      "region": "Occitanie",
-      "articles": 11,
-      "fermetures": 1,
-      "projets": 7,
-      "fusions": 2,
-      "types": [
-        "Fermeture",
-        "Projet",
-        "Fusion"
-      ],
-      "departements": [
-        "12",
-        "31",
-        "46",
-        "48",
-        "65",
-        "82"
-      ],
-      "nb_departements": 6
     },
     {
       "region": "Grand Est",
@@ -4065,7 +4089,7 @@
         }
       ],
       "controle_sirene": {
-        "etat_administratif": "A",
+        "etat_administratif": null,
         "siret": null,
         "source": "SIRENE"
       },
@@ -9118,7 +9142,7 @@
         }
       ],
       "controle_sirene": {
-        "etat_administratif": "A",
+        "etat_administratif": null,
         "siret": null,
         "source": "SIRENE"
       },
@@ -9420,7 +9444,7 @@
         }
       ],
       "controle_sirene": {
-        "etat_administratif": "A",
+        "etat_administratif": null,
         "siret": null,
         "source": "SIRENE"
       },
@@ -10758,6 +10782,47 @@
         "source": "SIRENE"
       },
       "region": "Normandie"
+    },
+    {
+      "id": "860338b7aa7d9efe",
+      "banque": "La Banque Postale",
+      "commune": "Rodez",
+      "code_insee": "12202",
+      "departement": "12",
+      "type": "fermeture",
+      "date_annonce": "Sat, 01 Aug 2026 06:04:00 GMT",
+      "date_fermeture": "2026-08-01",
+      "statut": "projet",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 1,
+      "fiabilite": 3,
+      "lat": 44.359272,
+      "lon": 2.566732,
+      "citation": "Le bureau de poste principal ferme à Rodez ce samedi 1er août et ne rouvrira que lundi 28 septembre 2026 - centrepresseaveyron.fr",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "service_impact": "fermeture_lbp_complete",
+      "point_postal_avant": "Bureau de Poste",
+      "point_postal_apres": null,
+      "postal_point_id": null,
+      "evidence_level": "titre+presse",
+      "created_at": "2026-08-01T06:15:35.793207+00:00",
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNaWNneDdrN3JscnIzM2R5WDZHeGpsU0trYXd3bEluSnhoLXZ1TkpBMjB0V0UxS3RvOFNaeVhJOG8zSnU5TktSWFRPSFNjdFkyTWNacjk4dDdManU0VEpIMW95ZEt6VFd5Ym13a3cydC1TeWZ3UVYxUzZBbVY2WVMwQWttdWdSM0VwVXVkQjZDV3dlTENwWFZTd3dnTWk5Z0FqZ016dHZtcUdBSHpxNEtJTnh2SUUxbGp5QUpxeFVkcE9yNU9ZLWhqc2ljMW1TcFdiaVIzdTBqM3lhbVBrdUt6NmxSMDR4SllWVzdIaHFWVElyQ2ZPdnc?oc=5",
+          "titre": "Le bureau de poste principal ferme à Rodez ce samedi 1er août et ne rouvrira que lundi 28 septembre 2026 - centrepresseaveyron.fr",
+          "source": "Google News",
+          "date": "Sat, 01 Aug 2026 06:04:00 GMT",
+          "tier": "D"
+        }
+      ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
+      "region": "Occitanie"
     }
   ],
   "closures_unlocated": [
@@ -10832,6 +10897,24 @@
       "date": "Wed, 29 Jul 2026 16:22:00 GMT",
       "raison": "hors fenêtre temporelle",
       "created_at": "2026-07-30T06:04:44.262761+00:00"
+    },
+    {
+      "id": "aa1a3c4f9273b49c",
+      "banque": "Crédit Agricole",
+      "commune": "Berlai mont",
+      "departement": null,
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "rumeur",
+      "statut_temporel": "a_venir",
+      "fiabilite": 3,
+      "citation": "« NON à la fermeture de l'agence du CREDIT AGRICOLE de BERLAIMONT ! » (MyPetition.org)",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOcG5TaG1yLXhxdmZpdHRoMTVhZHdIdGJBUTFSS3BVaFpyZUpQc1d3WkpoMVMwanBkRDlJeDhYSlF3blVNcEVSdWxGeFBsT2REeW4tWWZMc2c1dEZ2cEhvSlgwVnYzYXdadDJodTJqbWpUeWRYRnJ1VlN6V2VuQ2Q1SlBWRG52ZENjMi1qTnVDZjhnQQ?oc=5",
+      "titre": "Aidez-moi à faire avancer ce combat : NON à la fermeture de l'agence du CREDIT AGRICOLE de BERLAIMONT ! - MyPetition.org",
+      "source": "Google News",
+      "date": "Wed, 29 Jul 2026 07:27:32 GMT",
+      "raison": "commune non géocodée",
+      "created_at": "2026-08-01T06:15:51.000346+00:00"
     },
     {
       "id": "ac553e471600a119",
@@ -11500,6 +11583,24 @@
       "created_at": "2026-07-22T09:07:04.820534+00:00"
     },
     {
+      "id": "d0bd4ca9c94e3452",
+      "banque": "La Banque Postale",
+      "commune": "Caen",
+      "departement": "14",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "Fermé depuis plus d’un mois, le bureau de Poste de cette commune près de Caen ne va pas rouvrir tout de suite - Actu.fr",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQdmtnTDZMWUNRUlFxMUFmS1U1Zk9tSEROazZrcE50UktxbjdST2tKZGVsVVdqUi03Rk45VVgycUZXWHRPVFM0ZjFJZk9YT3NZTGZXcXRiUGZFWkJvVno3RlJTTGVoMXRxMlQ0T0pMREdLSFk2Znk0bGNiUkU3T2hsV1hCNHV0S01ZQTZRQnRJQm1qblE4bW9XTFlvUWFsUFNsMS1lazFOOEFzQlVmRkNrSG9FaU5jRW5iVDhNN1cyZUNSaXFON09IalVEQzZYQ2V6dHBJOF9DRGc5ZG1oZzdSeWttQk53SkozazZnUHJhMTE?oc=5",
+      "titre": "Fermé depuis plus d’un mois, le bureau de Poste de cette commune près de Caen ne va pas rouvrir tout de suite - Actu.fr",
+      "source": "Google News",
+      "date": "Tue, 21 Jul 2026 07:00:00 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-08-01T06:15:55.908818+00:00"
+    },
+    {
       "id": "51b55e9a42b033d6",
       "banque": "La Banque Postale",
       "commune": "Caen",
@@ -11605,7 +11706,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-07-31T06:26:12.239779+00:00"
+      "created_at": "2026-08-01T06:12:15.591560+00:00"
     },
     {
       "id": "50895c042a984b7d",
@@ -11641,7 +11742,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 04:46:02 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-07-31T06:26:11.849317+00:00"
+      "created_at": "2026-08-01T06:12:15.190337+00:00"
     },
     {
       "id": "8c6a0cad14626d6f",
@@ -13117,7 +13218,7 @@
       "source": "Google News",
       "date": "Sat, 03 Aug 2024 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-07-31T06:26:11.061357+00:00"
+      "created_at": "2026-08-01T06:12:14.299795+00:00"
     },
     {
       "id": "4996e3bfe560bbb6",
@@ -13534,6 +13635,24 @@
       "created_at": "2026-07-22T08:56:33.529499+00:00"
     },
     {
+      "id": "34974805e975121f",
+      "banque": "Crédit Agricole",
+      "commune": "La Capelle-lès-Boulogne",
+      "departement": null,
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "confirmé",
+      "statut_temporel": "inconnu",
+      "fiabilite": 4,
+      "citation": "« L’agence Crédit agricole a fermé »",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQbV95ZzVqSVR1SkhmM3hZb2t6UGNtTmZzaUxKem5nUEtGTU1iOEpxZWxhNDA0V2lrWXR3eHhYZmszZEVRMkxvMmljTEQxWEhrYmJLaE1FQk1ycVcwS1YxZ1o2cGlscHowTmg3N29WVTRTOV82T3V4dndrdjh4R1ViWmJ5cHFzaEZWQ3Y0V1hVeExCa2pLZFNzRDIzOTZkWGRvcE85NjI2UUNmNWJ1UVRVdERYNFFrTlJ1T0NSQlhYSlJoeWlsVXFkVXFubnJiQQ?oc=5",
+      "titre": "La Capelle-lès-Boulogne : l’agence Crédit agricole a fermé mais le distributeur devrait passer les fêtes - La Voix du Nord",
+      "source": "Google News",
+      "date": "Fri, 31 Jul 2026 16:11:20 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-08-01T06:15:27.040507+00:00"
+    },
+    {
       "id": "b61bc1f12aa28026",
       "banque": "La Banque Postale",
       "commune": "Paray-Vieille-Poste",
@@ -13801,7 +13920,7 @@
       "source": "Google News",
       "date": "Fri, 20 Jun 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-07-31T06:26:19.555618+00:00"
+      "created_at": "2026-08-01T06:12:23.133275+00:00"
     },
     {
       "id": "b80663fa38292743",
@@ -13945,7 +14064,7 @@
       "source": "Google News",
       "date": "Fri, 10 Jul 2026 10:12:00 GMT",
       "raison": "garde entrée/sortie: département source 44 incompatible avec la sortie 974",
-      "created_at": "2026-07-31T06:26:34.961564+00:00"
+      "created_at": "2026-08-01T06:12:41.384835+00:00"
     },
     {
       "id": "8c646081e1d69e81",
@@ -14107,7 +14226,7 @@
       "source": "Google News",
       "date": "Fri, 03 Jan 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-07-31T06:26:11.455502+00:00"
+      "created_at": "2026-08-01T06:12:14.750555+00:00"
     },
     {
       "id": "f3e888f7eaf5ffb7",
@@ -14162,6 +14281,42 @@
       "date": "Fri, 01 Aug 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
       "created_at": "2026-07-27T07:56:36.407534+00:00"
+    },
+    {
+      "id": "eaa24d1f020b9366",
+      "banque": "La Banque Postale",
+      "commune": "Rodez",
+      "departement": "12",
+      "type": "fermeture",
+      "date_fermeture": "2026-08-01",
+      "statut": "projet",
+      "statut_temporel": "a_venir",
+      "fiabilite": 3,
+      "citation": "Le bureau de poste principal ferme à Rodez ce samedi 1er août et ne rouvrira que lundi 28 septembre 2026",
+      "url": "https://www.centrepresseaveyron.fr/2026/08/01/le-bureau-de-poste-principal-ferme-a-rodez-ce-samedi-1er-aout-et-ne-rouvrira-que-lundi-28-septembre-2026-13491637.php",
+      "titre": "Le bureau de poste principal ferme à Rodez ce samedi 1er août et ne rouvrira que lundi 28 septembre 2026",
+      "source": "centrepresseaveyron.fr",
+      "date": "2026-08-01T06:01:02Z",
+      "raison": "garde entrée/sortie: fermeture postale temporaire ou circonstancielle",
+      "created_at": "2026-08-01T06:16:53.337548+00:00"
+    },
+    {
+      "id": "67b6754bf5fad86e",
+      "banque": "Crédit Agricole",
+      "commune": "Saint-Maurice-de-Lignon",
+      "departement": "null",
+      "type": "fermeture",
+      "date_fermeture": "2025-07",
+      "statut": "confirmé",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "« À la suite de la fermeture de l’agence du Crédit Agricole en juillet 2025, le DAB (…) a, lui aussi, disparu »",
+      "url": "https://www.leprogres.fr/economie/2026/07/31/un-distributeur-d-argent-de-retour-en-septembre-a-saint-maurice-de-lignon",
+      "titre": "Haute-Loire. Un distributeur d'argent de retour en septembre à Saint-Maurice-de-Lignon, un an après sa suppression",
+      "source": "Le Progrès",
+      "date": "2026-07-31T17:00:00Z",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-08-01T06:17:10.845746+00:00"
     },
     {
       "id": "7df3781a7ecb28f5",
@@ -15387,6 +15542,19 @@
       "created_at": "2026-07-22T08:52:57.224838+00:00"
     },
     {
+      "id": "281dfb86b171c0dd",
+      "banque": "La Banque Postale",
+      "scope": "regional",
+      "count": null,
+      "confidence": 0.15,
+      "evidence": "Titre : « Fermeture du centre de distribution de La Poste en Sarthe » (article centré sur grève et centre de distribution de La Poste, pas sur des agences BANCAIRES physiques/LBP nommées).",
+      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOY1o2QVZBX3NDbWdjV2hnbVlwUEtlME51R3hmSl8wdzVOb0t5cVBlZERFWHFKSEQ3TUs4ODNGZ1gxNWZkTUhPMEdBdXlnMWJTYVNMSU5pWU5aX3VaNWlNc0k5ZGU4Ty1xZXJBcVRtbzAwQjNpV1FNOG05NzJFeDFnNnlsaDMyYUY0M3YtYjFvRXhkTUpZQTJ0NDhuWEZBTGc3bmpibTRDN0VlUTBBUW5Sc1h4R3hIZV9vWS1HbHdBSVZudFNKMWY5X1AzaThrRm1IejR5ODN5MlJzaWFiUkJnMVZpem9VUnNobkhHcU1ial9SNVE?oc=5",
+      "titre": "Fermeture du centre de distribution de La Poste en Sarthe : les facteurs ont commencé une grève illimitée - Actu.fr",
+      "source": "Google News",
+      "date": "Mon, 15 Jun 2026 07:00:00 GMT",
+      "created_at": "2026-08-01T06:15:47.968002+00:00"
+    },
+    {
       "id": "d0364a47f936b369",
       "banque": "La Banque Postale",
       "scope": "national",
@@ -15450,6 +15618,19 @@
       "source": "Google News",
       "date": "Mon, 06 Oct 2025 07:00:00 GMT",
       "created_at": "2026-07-22T09:10:31.948966+00:00"
+    },
+    {
+      "id": "c12ab7a29a788d59",
+      "banque": "Crédit Agricole",
+      "scope": "national",
+      "count": null,
+      "confidence": 0.15,
+      "evidence": "Article centré sur des rumeurs de fusion et un démenti, sans mention de fermetures/regroupements/transferts d’agences bancaires physiques.",
+      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNbEV3RHVadHhkSmFMazZNZEpTZTgzdWFNbXYzX3NYdkUxelF2WEhvaXFGY0xTWW9GVVlLRHdaLXVfcmNtbEFjTE5zT05UYmdEV08xcTVhRnItNkgyT0VVYkZ4SGpCUnluMkIteTNJd3NlSHRzV3NvbkpBQmZQNnJ0WEhSVi1MV3RPM0JHRS10TkwtMnYyalVwd01mbDRLNHJ6SlE3SlZhdWl5djJlY2VrU1lZaTloQlA3ZGNsTm83cFpqT2JJTWJRMnhfb3NTRHVCRkJhS1YxcGRUOGstTnR2WEh3OEJPbk1uV0lXaGlvUFQ0RGc?oc=5",
+      "titre": "Crédit Agricole dépasse les prévisions au deuxième trimestre et dément les rumeurs de fusion Monte Paschi-Banco BPM - Zonebourse",
+      "source": "Google News",
+      "date": "Fri, 31 Jul 2026 05:06:41 GMT",
+      "created_at": "2026-08-01T06:15:32.820247+00:00"
     },
     {
       "id": "a3b66cb3d7340581",
@@ -15619,6 +15800,19 @@
       "source": "Google News",
       "date": "Fri, 06 Sep 2024 07:00:00 GMT",
       "created_at": "2026-07-22T08:54:47.471514+00:00"
+    },
+    {
+      "id": "a9fdadbd1ae76631",
+      "banque": "La Banque Postale",
+      "scope": "national",
+      "count": null,
+      "confidence": 0.2,
+      "evidence": "L’article traite de la stratégie financière de La Poste et mentionne que l’activité inclut « la Banque postale (LBP) » ; aucune fermeture, regroupement ou transfert d’agence/point bancaire n’est décrit.",
+      "url": "https://www.20minutes.fr/societe/4237209-20260731-comment-poste-parvient-rester-beneficiaire-malgre-effondrement-courrier",
+      "titre": "Comment La Poste reste bénéficiaire malgré l'effondrement du courrier",
+      "source": "20minutes",
+      "date": "2026-07-31T12:52:07Z",
+      "created_at": "2026-08-01T06:17:28.033295+00:00"
     },
     {
       "id": "46bbba3813679e2c",
@@ -15909,6 +16103,19 @@
       "created_at": "2026-06-25T15:27:16.551314+00:00"
     },
     {
+      "id": "5f465cd66ec3d0ee",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Cauchemar lors d'une vente de ferme : « 530 000 € perdu en six jours » d'après les époux Pottier - Actu.fr",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMi5gFBVV95cUxPVnVfaTd2Q09RWUNJcnJRY2dacHNtN0RnYVZBQUZWR3I1VDFtNGNXbElkeFNGZ1M2SG1LdUZ5VkUxNVpSeXhsUFk2OWxtQkltejVJZHloRFhRMmFsdHdBVF9pMVlMQ3p4N1VRQThnUktKVkIyNTZMNE15MzNWZDZXMm1Pb2gtd2txUm51c3k4SkdIVHRvWS1VRVBmeEJUNUVmTk9fMktBRC0xZkNURWFray1XVFFhR1FXb0hfRVBhZmJ2d1lNQWJzRVJUcmJtaTVaYkZZa0dIR2xjeUJzVHNqcGNaVU8wQQ?oc=5\" target=\"_blank\">Cauchemar lors d'une vente de ferme : « 530 000 € perdu en six jours » d'après les époux Pottier</a>&nbsp;&nbsp;<font",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPVnVfaTd2Q09RWUNJcnJRY2dacHNtN0RnYVZBQUZWR3I1VDFtNGNXbElkeFNGZ1M2SG1LdUZ5VkUxNVpSeXhsUFk2OWxtQkltejVJZHloRFhRMmFsdHdBVF9pMVlMQ3p4N1VRQThnUktKVkIyNTZMNE15MzNWZDZXMm1Pb2gtd2txUm51c3k4SkdIVHRvWS1VRVBmeEJUNUVmTk9fMktBRC0xZkNURWFray1XVFFhR1FXb0hfRVBhZmJ2d1lNQWJzRVJUcmJtaTVaYkZZa0dIR2xjeUJzVHNqcGNaVU8wQQ?oc=5",
+      "source": "Google News",
+      "date": "Thu, 23 Jul 2026 07:00:00 GMT",
+      "score": 4,
+      "raison": "score préfiltre bas (-2)",
+      "created_at": "2026-08-01T06:15:53.320251+00:00"
+    },
+    {
       "id": "017200273cfd93e0",
       "banque": "La Banque Postale",
       "departement": null,
@@ -16076,6 +16283,19 @@
       "score": 4,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-07-30T06:06:29.809203+00:00"
+    },
+    {
+      "id": "8a4e5626ad59d8af",
+      "banque": "HSBC",
+      "departement": null,
+      "titre": "Banque: le CCF redevient bénéficiaire après un plan de transformation",
+      "extrait": "TITRE: Banque: le CCF redevient bénéficiaire après un plan de transformation SOURCE: boursorama.com DATE: 2026-07-30 URL: https://www.boursorama.com/actualite-economique/actualites/banque-le-ccf-redevient-beneficiaire-apres-un-plan-de-transformation-721ac7c89539ddb42c0aa3d85f4631d8 Vous êtes authentifié. Nous chargeons votre espace membre. Message d'information Message d'alerte Pour des raisons de sécurité et pour continuer à accéder à votre espace membre, nous vous remercions de bien vouloir va",
+      "url": "https://www.boursorama.com/actualite-economique/actualites/banque-le-ccf-redevient-beneficiaire-apres-un-plan-de-transformation-721ac7c89539ddb42c0aa3d85f4631d8",
+      "source": "boursorama.com",
+      "date": "2026-07-30",
+      "score": 4,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-01T06:16:50.458960+00:00"
     },
     {
       "id": "65b20c538faf0002",
@@ -16297,6 +16517,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-07-30T06:04:43.234595+00:00"
+    },
+    {
+      "id": "6368891ecaa5d95d",
+      "banque": "Crédit Agricole",
+      "departement": null,
+      "titre": "Aidez-moi à faire avancer ce combat : NON à la fermeture de l'agence du CREDIT AGRICOLE de BERLAIMONT ! - MyPetition.org",
+      "extrait": "TITRE: Aidez-moi à faire avancer ce combat : NON à la fermeture de l'agence du CREDIT AGRICOLE de BERLAIMONT ! - MyPetition.org SOURCE: Google News DATE: Wed, 29 Jul 2026 07:27:32 GMT URL: https://news.google.com/rss/articles/CBMikgFBVV95cUxOcG5TaG1yLXhxdmZpdHRoMTVhZHdIdGJBUTFSS3BVaFpyZUpQc1d3WkpoMVMwanBkRDlJeDhYSlF3blVNcEVSdWxGeFBsT2REeW4tWWZMc2c1dEZ2cEhvSlgwVnYzYXdadDJodTJqbWpUeWRYRnJ1VlN6V2VuQ2Q1SlBWRG52ZENjMi1qTnVDZjhnQQ?oc=5 <a href=\"https://news.google.com/rss/articles/CBMikgFBVV95cUxOcG5T",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOcG5TaG1yLXhxdmZpdHRoMTVhZHdIdGJBUTFSS3BVaFpyZUpQc1d3WkpoMVMwanBkRDlJeDhYSlF3blVNcEVSdWxGeFBsT2REeW4tWWZMc2c1dEZ2cEhvSlgwVnYzYXdadDJodTJqbWpUeWRYRnJ1VlN6V2VuQ2Q1SlBWRG52ZENjMi1qTnVDZjhnQQ?oc=5",
+      "source": "Google News",
+      "date": "Wed, 29 Jul 2026 07:27:32 GMT",
+      "score": 3,
+      "raison": "fermeture non publiée: commune non géocodée",
+      "created_at": "2026-08-01T06:15:51.004270+00:00"
     },
     {
       "id": "fbe9591d2e4eb90b",
@@ -18156,6 +18389,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-07-22T09:00:49.087930+00:00"
+    },
+    {
+      "id": "f4bf9c66827f2a99",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "Blâmont. Fermeture du bureau de poste : la municipalité se penche sur le problème - L'Est Républicain",
+      "extrait": "TITRE: Blâmont. Fermeture du bureau de poste : la municipalité se penche sur le problème - L'Est Républicain SOURCE: Google News DATE: Wed, 01 Jul 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMivAFBVV95cUxPX2lKa0Fjdzh6ZHB6TWlFNFI2dTFFbkowWDhGY1p3bDl4ei0xcWRQVVFJWExid19qdjlyb0hyaGRoTXJfUzhBdThXTU84dDVEZHdfZHd3RFdzNGM1aVdWdnlkQ1hGcmdRcF9WXzR0RTJEekhFUDB1YWhJMEhKZy0ySllsdzNTSnZPejZjNUlmTnJ0OUp0MXQ0WXpDcE5sbGxkcjc5bkVwTHN2UXhOZ1loQ2ZtXzRvajZxQ3lxWA?oc=5 <a href=\"https://news.google.",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPX2lKa0Fjdzh6ZHB6TWlFNFI2dTFFbkowWDhGY1p3bDl4ei0xcWRQVVFJWExid19qdjlyb0hyaGRoTXJfUzhBdThXTU84dDVEZHdfZHd3RFdzNGM1aVdWdnlkQ1hGcmdRcF9WXzR0RTJEekhFUDB1YWhJMEhKZy0ySllsdzNTSnZPejZjNUlmTnJ0OUp0MXQ0WXpDcE5sbGxkcjc5bkVwTHN2UXhOZ1loQ2ZtXzRvajZxQ3lxWA?oc=5",
+      "source": "Google News",
+      "date": "Wed, 01 Jul 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-01T06:15:37.995421+00:00"
     },
     {
       "id": "6f909d91c344f4be",
@@ -20212,6 +20458,19 @@
       "created_at": "2026-07-31T06:44:50.853267+00:00"
     },
     {
+      "id": "b21eba77df3ec47a",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "Député et association vent debout contre la fermeture de La Poste à Donges - saintnazaire-infos.fr",
+      "extrait": "TITRE: Député et association vent debout contre la fermeture de La Poste à Donges - saintnazaire-infos.fr SOURCE: Google News DATE: Thu, 30 Jul 2026 18:10:10 GMT URL: https://news.google.com/rss/articles/CBMiqAFBVV95cUxNb2JTN1NLSlFWRnJhZVU4cWF4Qm5VMWU0ZC1PTmYtWFBqNTZaM1laMUtVc3Q3YXEtbV82cDJ6bEVSN21KeVAxUWVndEJQYXhXZDV4dXdjLW9sSS1DaU52QWo4emp5Ty1xbFNCU0pmWHpwZGNWNmdOVVRiTEg5LW1lRzNhR1g4R1Q5OHZtUzNDV2dtRllCZU9oTE10TExXN3RPRXVjVWJ4VU4?oc=5 <a href=\"https://news.google.com/rss/articles/CBMiqAFBVV95c",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNb2JTN1NLSlFWRnJhZVU4cWF4Qm5VMWU0ZC1PTmYtWFBqNTZaM1laMUtVc3Q3YXEtbV82cDJ6bEVSN21KeVAxUWVndEJQYXhXZDV4dXdjLW9sSS1DaU52QWo4emp5Ty1xbFNCU0pmWHpwZGNWNmdOVVRiTEg5LW1lRzNhR1g4R1Q5OHZtUzNDV2dtRllCZU9oTE10TExXN3RPRXVjVWJ4VU4?oc=5",
+      "source": "Google News",
+      "date": "Thu, 30 Jul 2026 18:10:10 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-01T06:15:41.667712+00:00"
+    },
+    {
       "id": "7494f62a69d57fc9",
       "banque": "La Banque Postale",
       "departement": null,
@@ -20691,6 +20950,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-07-23T09:39:29.939784+00:00"
+    },
+    {
+      "id": "c51f0fea399135b0",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "Lozère : le bureau de poste ferme du jour au lendemain et personne ne sait quand il rouvrira, que s'est-il passé ? - Actu.fr",
+      "extrait": "TITRE: Lozère : le bureau de poste ferme du jour au lendemain et personne ne sait quand il rouvrira, que s'est-il passé ? - Actu.fr SOURCE: Google News DATE: Thu, 23 Jul 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMilwJBVV95cUxPajJxUXFhSG55cFo1Sk1wOTJpY3RMa25UUkxrRng5WEZ4RVV6T1g0Skx1Y1lHS2tLQTZqNWo3YmlpR2xLcXdzQUZVaHJrdmZsTkJHcVdYZVBtRC1oRjNVejlwUndYUlkweFpGdUxQR2FkaVphZ041bEJ0YkZGZ3VxZUlfV25kSk4weEFqQ1JPMUJGR05pNnVCVW45Q0doT3ZQbmFGYjF5MWVFTGhHZ2FQUVNoUGlhcVU4X1ZUUXhzc09UV0VrRU",
+      "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxPajJxUXFhSG55cFo1Sk1wOTJpY3RMa25UUkxrRng5WEZ4RVV6T1g0Skx1Y1lHS2tLQTZqNWo3YmlpR2xLcXdzQUZVaHJrdmZsTkJHcVdYZVBtRC1oRjNVejlwUndYUlkweFpGdUxQR2FkaVphZ041bEJ0YkZGZ3VxZUlfV25kSk4weEFqQ1JPMUJGR05pNnVCVW45Q0doT3ZQbmFGYjF5MWVFTGhHZ2FQUVNoUGlhcVU4X1ZUUXhzc09UV0VrRUtoTHllSXJnY3F6bWE3R1JleXlJcEFYdU5vMXhIMW9HdEtDcTV6OWFXQkFYQmlYS3hFQUJaSGVtNjFwOGFWamdvVWl4dTBKNFZ1Y1pzS2RLWWM?oc=5",
+      "source": "Google News",
+      "date": "Thu, 23 Jul 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-01T06:15:43.577118+00:00"
     },
     {
       "id": "af042007cbd09fa5",
@@ -21551,6 +21823,19 @@
       "created_at": "2026-07-22T09:10:24.398180+00:00"
     },
     {
+      "id": "8c03dea618d3cb65",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Mondial 2026 : horaires de fermeture étendus, écran en extérieur, écran géant sur le toit… Dans les brasseries de Rodez, on est prêts à partager une Coupe - centrepresseaveyron.fr",
+      "extrait": "TITRE: Mondial 2026 : horaires de fermeture étendus, écran en extérieur, écran géant sur le toit… Dans les brasseries de Rodez, on est prêts à partager une Coupe - centrepresseaveyron.fr SOURCE: Google News DATE: Thu, 11 Jun 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMisAJBVV95cUxNUlZwelVYLTFRN3pnNHhYTDluQ0Fkb3AxVmtPV2ctX1liWERIRGVZbjd6NDNtcE5vWERHZ01pSGYwWlA0NUFlUDZKLU9icmYxZUdXbWhrenp2UUhLNkRNYXVoWEZWRXQyUmFkNGtheGhEcGVDSXkycUVzbWMzNklGd0QzbEd6UUZOMVNlYnlrYTVlRGRqNG13Wlo2QVQ",
+      "url": "https://news.google.com/rss/articles/CBMisAJBVV95cUxNUlZwelVYLTFRN3pnNHhYTDluQ0Fkb3AxVmtPV2ctX1liWERIRGVZbjd6NDNtcE5vWERHZ01pSGYwWlA0NUFlUDZKLU9icmYxZUdXbWhrenp2UUhLNkRNYXVoWEZWRXQyUmFkNGtheGhEcGVDSXkycUVzbWMzNklGd0QzbEd6UUZOMVNlYnlrYTVlRGRqNG13Wlo2QVQ0QzV5S2tKdVVCdXh0YUpzQ3FJZ01Kb3VCQ21sQm5KM0NYeEZ2eG4zekEzQ1VTU0hFbk5oeDZuVzUyUjVzM3VKcDZkSVZRMEw2WXBXWGRWano4RmZJLUNTajIwTEJueVlWc0ZBbGZRTFlDMzE5Q0lYSV9oT1pHeGRPODl5dXIzV3g0dXo0VVl5cGlCQkZ2MmNuVldk?oc=5",
+      "source": "Google News",
+      "date": "Thu, 11 Jun 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-01T06:15:59.445351+00:00"
+    },
+    {
       "id": "f995850adefa07e6",
       "banque": "Société Générale",
       "departement": null,
@@ -21978,6 +22263,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-07-23T06:16:36.952931+00:00"
+    },
+    {
+      "id": "4ab6f898bff90aa6",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Tours : le bar tabac Le Balzac de nouveau fermé temporairement après la découverte de produits stupéfiants - ici.fr",
+      "extrait": "TITRE: Tours : le bar tabac Le Balzac de nouveau fermé temporairement après la découverte de produits stupéfiants - ici.fr SOURCE: Google News DATE: Thu, 04 Jun 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMihgJBVV95cUxQY1FpZ0QxaERtd0J5R3BXQUlNNnVwdU14RzdlU2RNQ1ptdURDRWZtdHBlY3FfZzRpaVNydE1HdnM5VGFtMm1hRmR5bFpfZmY2a1BxNFgwZ2Z5YTk4NUxtZ3lCYTBxS2R1Q2d5d2dZenZoN2p5ekEzVUFaa3pRbEg2SGdvYXVKa0tBcEFQS3BndG83bFUtOTFjdTFreEk2UE16MTJtdDhfUlY1UDRPYXNiTGlFbFlQeE0tQ3JsN1VIMGNBSkd6bzI1SURDMXU",
+      "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxQY1FpZ0QxaERtd0J5R3BXQUlNNnVwdU14RzdlU2RNQ1ptdURDRWZtdHBlY3FfZzRpaVNydE1HdnM5VGFtMm1hRmR5bFpfZmY2a1BxNFgwZ2Z5YTk4NUxtZ3lCYTBxS2R1Q2d5d2dZenZoN2p5ekEzVUFaa3pRbEg2SGdvYXVKa0tBcEFQS3BndG83bFUtOTFjdTFreEk2UE16MTJtdDhfUlY1UDRPYXNiTGlFbFlQeE0tQ3JsN1VIMGNBSkd6bzI1SURDMXU3enRwRDM2ZEN5aTBkU28yMk5JeG1tQWhVckhsdXJCb2VGblFwbVFJMGx5RVkyVGdqNk51TGdwdmtR?oc=5",
+      "source": "Google News",
+      "date": "Thu, 04 Jun 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-01T06:15:57.763810+00:00"
     },
     {
       "id": "1b03b38d13c263cd",
@@ -22550,6 +22848,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-07-22T09:01:52.114211+00:00"
+    },
+    {
+      "id": "52e828b0b1149185",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "Mort de Charlie Dalin, fermeture de bureaux de poste, abonnement au HAC... Voici les infos de la semaine au Havre - Actu.fr",
+      "extrait": "TITRE: Mort de Charlie Dalin, fermeture de bureaux de poste, abonnement au HAC... Voici les infos de la semaine au Havre - Actu.fr SOURCE: Google News DATE: Sun, 14 Jun 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMi9wFBVV95cUxNWVdoSVRJTndIdmxpdmR0RFAtWVkzY2dPdWhnQ2g0MS1SZWFrWkJJVmdRZm9jaFhnVXdoZGRSQ1lleldxeVI5STJWNkQ1Q1FSY1RTZjFjZXlrT05vVG1QY2l3YWMzcS1Bczl0NFlUTzZMMXhwbjhJR0JBZm41RHp2ck1ZMjFPWEg0YmpsREpTbXU5cUhBQWJkSTVPeno0YVNnSWg4bFo5MWd1VzNEdVBzbkplcDQwWGFhWm1rT2xNd2JlX2RaVEI",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNWVdoSVRJTndIdmxpdmR0RFAtWVkzY2dPdWhnQ2g0MS1SZWFrWkJJVmdRZm9jaFhnVXdoZGRSQ1lleldxeVI5STJWNkQ1Q1FSY1RTZjFjZXlrT05vVG1QY2l3YWMzcS1Bczl0NFlUTzZMMXhwbjhJR0JBZm41RHp2ck1ZMjFPWEg0YmpsREpTbXU5cUhBQWJkSTVPeno0YVNnSWg4bFo5MWd1VzNEdVBzbkplcDQwWGFhWm1rT2xNd2JlX2RaVEIwdFhCeXUwZVdOaEpIQk5waXFBemUzS0ZyZ1pqSUZ3SmNWOUQ3Rkd5OGl2MU1rT0Y0?oc=5",
+      "source": "Google News",
+      "date": "Sun, 14 Jun 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-01T06:15:45.619385+00:00"
     },
     {
       "id": "b9d58950bfa16251",
@@ -25646,6 +25957,45 @@
       "created_at": "2026-07-27T07:56:27.789631+00:00"
     },
     {
+      "id": "d112be050dfc32b1",
+      "banque": "Crédit Agricole",
+      "departement": null,
+      "titre": "La Capelle-lès-Boulogne : l’agence Crédit agricole a fermé mais le distributeur devrait passer les fêtes - La Voix du Nord",
+      "extrait": "TITRE: La Capelle-lès-Boulogne : l’agence Crédit agricole a fermé mais le distributeur devrait passer les fêtes - La Voix du Nord SOURCE: Google News DATE: Fri, 31 Jul 2026 16:11:20 GMT URL: https://news.google.com/rss/articles/CBMizgFBVV95cUxQbV95ZzVqSVR1SkhmM3hZb2t6UGNtTmZzaUxKem5nUEtGTU1iOEpxZWxhNDA0V2lrWXR3eHhYZmszZEVRMkxvMmljTEQxWEhrYmJLaE1FQk1ycVcwS1YxZ1o2cGlscHowTmg3N29WVTRTOV82T3V4dndrdjh4R1ViWmJ5cHFzaEZWQ3Y0V1hVeExCa2pLZFNzRDIzOTZkWGRvcE85NjI2UUNmNWJ1UVRVdERYNFFrTlJ1T0NSQlhYSlJoeWlsVXFk",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQbV95ZzVqSVR1SkhmM3hZb2t6UGNtTmZzaUxKem5nUEtGTU1iOEpxZWxhNDA0V2lrWXR3eHhYZmszZEVRMkxvMmljTEQxWEhrYmJLaE1FQk1ycVcwS1YxZ1o2cGlscHowTmg3N29WVTRTOV82T3V4dndrdjh4R1ViWmJ5cHFzaEZWQ3Y0V1hVeExCa2pLZFNzRDIzOTZkWGRvcE85NjI2UUNmNWJ1UVRVdERYNFFrTlJ1T0NSQlhYSlJoeWlsVXFkVXFubnJiQQ?oc=5",
+      "source": "Google News",
+      "date": "Fri, 31 Jul 2026 16:11:20 GMT",
+      "score": 3,
+      "raison": "fermeture non publiée: hors fenêtre temporelle",
+      "created_at": "2026-08-01T06:15:27.044441+00:00"
+    },
+    {
+      "id": "a718c958869879ac",
+      "banque": "BNP Paribas",
+      "departement": null,
+      "titre": "La fermeture administrative jugée « disproportionnée » par le tribunal, le fast-food Paname 62 a rouvert, à Boulogne - La Voix du Nord",
+      "extrait": "TITRE: La fermeture administrative jugée « disproportionnée » par le tribunal, le fast-food Paname 62 a rouvert, à Boulogne - La Voix du Nord SOURCE: Google News DATE: Fri, 31 Jul 2026 12:51:00 GMT URL: https://news.google.com/rss/articles/CBMizwFBVV95cUxQZVBoNWE5NWM5YXZBVG1Rdlp5SHo1WG42aVJJSDJSWXE4bkh6bkpxR2xiUDlMbTBHcEhicTgyN20yUzhOWVhsZ2hTR3BTbENNcnlyT3UzakJicEE1UW5lSmlGNXotYkpLZFZFMDZ0cEV4bnpsWWVQc3lYUmdhX3Nvbi1SVzFHQkFaM1VJWWxsbGc4blRPUDNPMkZITnpHeVhpRjVQZXp4RFBCX0JYWnJaclE3bGtLRGJfdG5JbVZp",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQZVBoNWE5NWM5YXZBVG1Rdlp5SHo1WG42aVJJSDJSWXE4bkh6bkpxR2xiUDlMbTBHcEhicTgyN20yUzhOWVhsZ2hTR3BTbENNcnlyT3UzakJicEE1UW5lSmlGNXotYkpLZFZFMDZ0cEV4bnpsWWVQc3lYUmdhX3Nvbi1SVzFHQkFaM1VJWWxsbGc4blRPUDNPMkZITnpHeVhpRjVQZXp4RFBCX0JYWnJaclE3bGtLRGJfdG5JbVZpQXZLYm9IVkpCd1UtYldqX0E?oc=5",
+      "source": "Google News",
+      "date": "Fri, 31 Jul 2026 12:51:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-01T06:15:52.875357+00:00"
+    },
+    {
+      "id": "f926dbd8f0b1c0e0",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "La Ferme aux Crocodiles poursuit sa mue - mesinfos",
+      "extrait": "TITRE: La Ferme aux Crocodiles poursuit sa mue - mesinfos SOURCE: Google News DATE: Fri, 31 Jul 2026 07:33:00 GMT URL: https://news.google.com/rss/articles/CBMikwFBVV95cUxPaW1lN0N5MWJvbktXZnJ0MjU3eXdSZmtoVkdmX2F6TWFVdy1tdFBHOEhycTZESDdhbldBaFVQNzlPMFNoX3k0eXYtdVRYSGJPN3ZVZkZVWmJpbmFJblM4NHJFTVZKNlE2bm1TMktiMW1kZVNJVGlNY1A1TDhEUWFhRTd4Z0E1N3JPUGszWlZJeFpyTFU?oc=5 <a href=\"https://news.google.com/rss/articles/CBMikwFBVV95cUxPaW1lN0N5MWJvbktXZnJ0MjU3eXdSZmtoVkdmX2F6TWFVdy1tdFBHOEhycTZESDdhbldBaFVQN",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPaW1lN0N5MWJvbktXZnJ0MjU3eXdSZmtoVkdmX2F6TWFVdy1tdFBHOEhycTZESDdhbldBaFVQNzlPMFNoX3k0eXYtdVRYSGJPN3ZVZkZVWmJpbmFJblM4NHJFTVZKNlE2bm1TMktiMW1kZVNJVGlNY1A1TDhEUWFhRTd4Z0E1N3JPUGszWlZJeFpyTFU?oc=5",
+      "source": "Google News",
+      "date": "Fri, 31 Jul 2026 07:33:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-01T06:15:34.438551+00:00"
+    },
+    {
       "id": "5bf126b078da9435",
       "banque": "Crédit Agricole",
       "departement": null,
@@ -27672,6 +28022,97 @@
       "score": 3,
       "raison": "fermeture non publiée: hors fenêtre temporelle",
       "created_at": "2026-07-22T09:09:01.159244+00:00"
+    },
+    {
+      "id": "420148b362329618",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "La France soviétisée devra être sauvée à la tronçonneuse",
+      "extrait": "TITRE: La France soviétisée devra être sauvée à la tronçonneuse SOURCE: Riposte Laïque DATE: 2026-07-31T22:26:49Z URL: https://ripostelaique.com/la-france-sovietisee-devra-etre-sauvee-a-la-tronconneuse/ Aujourd'hui on voit qu'il faudrait augmenter significativement et prioritairement les budgets de la sécurité civile, de la police et gendarmerie, de la santé pour arrêter la fermeture de lits et d'hôpitaux, de l'Éducation nationale avant dernière dans le classement PISA européen. L'abrogation d'u",
+      "url": "https://ripostelaique.com/la-france-sovietisee-devra-etre-sauvee-a-la-tronconneuse/",
+      "source": "Riposte Laïque",
+      "date": "2026-07-31T22:26:49Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-01T06:16:54.808274+00:00"
+    },
+    {
+      "id": "15cc55776d56c8b3",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "Mercato Lens : Sangaré ? Thomasson ? Les deux ? Qui va vraiment remplacer la recrue Yacine Titraoui ?",
+      "extrait": "TITRE: Mercato Lens : Sangaré ? Thomasson ? Les deux ? Qui va vraiment remplacer la recrue Yacine Titraoui ? SOURCE: Top mercato DATE: 2026-07-31T18:03:04Z URL: https://www.topmercato.com/2123892-mercato-lens-sangare-thomasson-les-deux-qui-va-vraiment-remplacer-la-recrue-yacine-titraoui/ À la recherche d'un milieu défensif à l'occasion de ce mercato d'été 2026, le Racing Club de Lens a jeté son dévolu sur Yacine Titraoui. L'international algérien de Charleroi aura la lourde tâche de remplacer Ma",
+      "url": "https://www.topmercato.com/2123892-mercato-lens-sangare-thomasson-les-deux-qui-va-vraiment-remplacer-la-recrue-yacine-titraoui/",
+      "source": "Top mercato",
+      "date": "2026-07-31T18:03:04Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-01T06:17:00.570762+00:00"
+    },
+    {
+      "id": "4cbe0f94438fbbc5",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Les activités de marché dopent les banques européennes",
+      "extrait": "TITRE: Les activités de marché dopent les banques européennes SOURCE: Boursorama DATE: 2026-07-31T17:13:15Z URL: https://www.boursorama.com/actualite-economique/actualites/les-activites-de-marche-dopent-les-banques-europeennes-e23fa1545b712db657c2dd938976a41b Quant à la BFI du français BNP Paribas, elle a connu un \"excellent trimestre\", avec un indicateur de performance opérationnelle (PNB) en hausse de 12,7% à 5,28 milliards d'euros. La BFI reste également le premier moteur financier du françai",
+      "url": "https://www.boursorama.com/actualite-economique/actualites/les-activites-de-marche-dopent-les-banques-europeennes-e23fa1545b712db657c2dd938976a41b",
+      "source": "Boursorama",
+      "date": "2026-07-31T17:13:15Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-01T06:17:04.935760+00:00"
+    },
+    {
+      "id": "8df45cea2d14a5af",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "Côte d'Ivoire : deux programmes propulsent l'écosystème numérique",
+      "extrait": "TITRE: Côte d'Ivoire : deux programmes propulsent l'écosystème numérique SOURCE: Afrique-Sur7.fr DATE: 2026-07-31T17:09:58Z URL: https://www.afrique-sur7.fr/cote-divoire-deux-programmes-propulsent-lecosysteme-numerique La Côte d'Ivoire accélère le pas sur la transition numérique. Le ministre Djibril Ouattara a profité d'une rencontre au Sofitel Abidjan Hôtel Ivoire ce mercredi 29 juillet 2026. Il a officialisé le lancement de deux plans d'accompagnement stratégique. Les programmes s'appellent Iv",
+      "url": "https://www.afrique-sur7.fr/cote-divoire-deux-programmes-propulsent-lecosysteme-numerique",
+      "source": "Afrique-Sur7.fr",
+      "date": "2026-07-31T17:09:58Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-01T06:17:07.160440+00:00"
+    },
+    {
+      "id": "c6e6c4aab0c7c736",
+      "banque": "Crédit Agricole",
+      "departement": null,
+      "titre": "Haute-Loire. Un distributeur d'argent de retour en septembre à Saint-Maurice-de-Lignon, un an après sa suppression",
+      "extrait": "TITRE: Haute-Loire. Un distributeur d'argent de retour en septembre à Saint-Maurice-de-Lignon, un an après sa suppression SOURCE: Le Progrès DATE: 2026-07-31T17:00:00Z URL: https://www.leprogres.fr/economie/2026/07/31/un-distributeur-d-argent-de-retour-en-septembre-a-saint-maurice-de-lignon Depuis plus d'un an, retirer de l'argent liquide est devenu compliqué pour les habitants de Saint-Maurice-de-Lignon. À la suite de la fermeture de l'agence du Crédit Agricole en juillet 2025, le DAB (Distribu",
+      "url": "https://www.leprogres.fr/economie/2026/07/31/un-distributeur-d-argent-de-retour-en-septembre-a-saint-maurice-de-lignon",
+      "source": "Le Progrès",
+      "date": "2026-07-31T17:00:00Z",
+      "score": 3,
+      "raison": "fermeture non publiée: hors fenêtre temporelle",
+      "created_at": "2026-08-01T06:17:10.853085+00:00"
+    },
+    {
+      "id": "af5d4c122a6fa6d4",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "À la Plateforme de Distribution de Courriers de Sagone, une vagu...",
+      "extrait": "TITRE: À la Plateforme de Distribution de Courriers de Sagone, une vagu... SOURCE: Corse Net Infos - Pure player corse DATE: 2026-07-31T15:09:25Z URL: https://www.corsenetinfos.corsica/A-la-Plateforme-de-Distribution-de-Courriers-de-Sagone-une-vague-d-arrets-maladie-met-en-lumiere-un-profond-malaise_a91978.html Les facteurs de la PDC de Sagone - qui regroupe depuis septembre 2024 les anciens bureaux de Sagone, Vico, Cargèse et Calcatoggio - dénoncent une dégradation continue de leurs conditions ",
+      "url": "https://www.corsenetinfos.corsica/A-la-Plateforme-de-Distribution-de-Courriers-de-Sagone-une-vague-d-arrets-maladie-met-en-lumiere-un-profond-malaise_a91978.html",
+      "source": "Corse Net Infos - Pure player corse",
+      "date": "2026-07-31T15:09:25Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-01T06:17:19.539186+00:00"
+    },
+    {
+      "id": "338fcfa665b842cf",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Barcola à Liverpool, le verdict tranchant",
+      "extrait": "TITRE: Barcola à Liverpool, le verdict tranchant SOURCE: Football 365 DATE: 2026-07-31T13:23:34Z URL: https://www.football365.fr/barcola-a-liverpool-le-verdict-tranchant-10305399.html Le potentiel transfert de l'attaquant tricolore du PSG vers Liverpool suscite des interrogations de l'autre côté de la Manche. Liverpool a coché le nom de Bradley Barcola cet été. Le club de la Mersey envisage de recruter l'attaquant du Paris Saint-Germain afin de renforcer son côté gauche. Mais la polyvalence de l",
+      "url": "https://www.football365.fr/barcola-a-liverpool-le-verdict-tranchant-10305399.html",
+      "source": "Football 365",
+      "date": "2026-07-31T13:23:34Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-01T06:17:24.543942+00:00"
     },
     {
       "id": "43667e8f6344b7d3",
@@ -30469,6 +30910,19 @@
       "created_at": "2026-07-22T08:58:44.820087+00:00"
     },
     {
+      "id": "0be739423d014514",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "Le bureau de poste supprimé dans ce village de l'Eure : ce qui va changer pour les habitants - Actu.fr",
+      "extrait": "TITRE: Le bureau de poste supprimé dans ce village de l'Eure : ce qui va changer pour les habitants - Actu.fr SOURCE: Google News DATE: Thu, 18 Jun 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMi2AFBVV95cUxPaWQzT0RRSXRKd2kzZGN4U3lEWmdQeGFFaDV2d1VjVUNrT0N0S2VoeHJURlN2RXNWbjR0NXRoVnA5RWYyek5XR1dVUzJ2RHB1LTcyYkUyTndoZzF4LXB1NFpCQk1GbXpZLWozRDVYR3duUUQ1ZzB1bHBiU0E4RHpHb1VSLUNUc0xDSjhZZEg4V0toZ0pZc3JmdlhIWG5MNmw3ejVtd2hWYnA4TjFXZE9INlVpdUl0bVF0Rm5IdU8xNVpteF9MYmF4ZGRlU1hzZUtqNmZ4VUFr",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPaWQzT0RRSXRKd2kzZGN4U3lEWmdQeGFFaDV2d1VjVUNrT0N0S2VoeHJURlN2RXNWbjR0NXRoVnA5RWYyek5XR1dVUzJ2RHB1LTcyYkUyTndoZzF4LXB1NFpCQk1GbXpZLWozRDVYR3duUUQ1ZzB1bHBiU0E4RHpHb1VSLUNUc0xDSjhZZEg4V0toZ0pZc3JmdlhIWG5MNmw3ejVtd2hWYnA4TjFXZE9INlVpdUl0bVF0Rm5IdU8xNVpteF9MYmF4ZGRlU1hzZUtqNmZ4VUFrWGw?oc=5",
+      "source": "Google News",
+      "date": "Thu, 18 Jun 2026 07:00:00 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-01T06:15:39.694295+00:00"
+    },
+    {
       "id": "cae441128e8d6b45",
       "banque": "La Banque Postale",
       "departement": null,
@@ -30898,6 +31352,19 @@
       "created_at": "2026-07-22T08:57:41.737559+00:00"
     },
     {
+      "id": "59d641593c59eb4d",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Compétitivité bancaire : les propositions de Bruxelles peuvent-elles relancer les fusions transfrontalières - Les Echos",
+      "extrait": "TITRE: Compétitivité bancaire : les propositions de Bruxelles peuvent-elles relancer les fusions transfrontalières - Les Echos SOURCE: Google News DATE: Sat, 18 Jul 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMigAJBVV95cUxQUk01bFUySVRrTGdDTlIwc05yeG5hTnpTRWIyZjN5OHRZVVZFWmNnVTM2ZjFoSUV6djVwTFNadmNlYi1WTk1GSy11R1h6WFl1NVF6d1dXZ0luV0kzTUxqUDdoam96dV8yd0w4Q3BGZzVsZ1JmTHJFRUJwUEVfbjdidnV4MXhndmRCZHJmNm9kcTY3aF9uaHVHNGkxRTBlWC15cVlXMUtBSExFeVh5b0dNXzhaQWtfM1V4bFY4U1pVNHM5T1laWVVVODN",
+      "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQUk01bFUySVRrTGdDTlIwc05yeG5hTnpTRWIyZjN5OHRZVVZFWmNnVTM2ZjFoSUV6djVwTFNadmNlYi1WTk1GSy11R1h6WFl1NVF6d1dXZ0luV0kzTUxqUDdoam96dV8yd0w4Q3BGZzVsZ1JmTHJFRUJwUEVfbjdidnV4MXhndmRCZHJmNm9kcTY3aF9uaHVHNGkxRTBlWC15cVlXMUtBSExFeVh5b0dNXzhaQWtfM1V4bFY4U1pVNHM5T1laWVVVODNCVk5USl9BbzNsUmFWdlhpVlRZNHJtWmpYZ19wdFhlelMxVE5yM3BCa3d6bDFIWG5SSGota3lK?oc=5",
+      "source": "Google News",
+      "date": "Sat, 18 Jul 2026 07:00:00 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-01T06:15:30.764228+00:00"
+    },
+    {
       "id": "95a47e40fe9e1a43",
       "banque": "Société Générale",
       "departement": null,
@@ -31312,6 +31779,32 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-07-13T07:40:00.224585+00:00"
+    },
+    {
+      "id": "6705755a97226ac7",
+      "banque": "Crédit Agricole",
+      "departement": null,
+      "titre": "Italie : Banco BPM abandonne son projet de fusion avec Monte dei Paschi après le refus du Crédit Agricole - Zonebourse Suisse",
+      "extrait": "TITRE: Italie : Banco BPM abandonne son projet de fusion avec Monte dei Paschi après le refus du Crédit Agricole - Zonebourse Suisse SOURCE: Google News DATE: Fri, 31 Jul 2026 21:28:00 GMT URL: https://news.google.com/rss/articles/CBMi7wFBVV95cUxOc3dTdGpHdmJyczlOLWUtU1FQMExzcUlabGNFdHFnNUE1ODVCSWFydnY0OXpsVDJVVDFxQXdXRFVWTEt2ckVPVm1weTM4ODlYZHhIOTY5RmhkSFBBMTZyZ3VnVkVOUDluZXdWUDZaWlMwbUZ2ei1GTjNNMVkyWnNoYlY3ZjUxS093MUgtVnJHcnNGTHQ1YnV0OFI4X0NnOEFNUmpQNDVpVWRQT0dNV2lsOS11NjY2bElpUjF4elBQVGp5aTI5L",
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOc3dTdGpHdmJyczlOLWUtU1FQMExzcUlabGNFdHFnNUE1ODVCSWFydnY0OXpsVDJVVDFxQXdXRFVWTEt2ckVPVm1weTM4ODlYZHhIOTY5RmhkSFBBMTZyZ3VnVkVOUDluZXdWUDZaWlMwbUZ2ei1GTjNNMVkyWnNoYlY3ZjUxS093MUgtVnJHcnNGTHQ1YnV0OFI4X0NnOEFNUmpQNDVpVWRQT0dNV2lsOS11NjY2bElpUjF4elBQVGp5aTI5LVdBMEVkRTAxWWlydncyd2Iwd3pGTEZWR3BSOUFmUzVZLWttX0xNX1YtNA?oc=5",
+      "source": "Google News",
+      "date": "Fri, 31 Jul 2026 21:28:00 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-01T06:15:28.896071+00:00"
+    },
+    {
+      "id": "9a1d7a23a3c9e815",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "« C’est dévastateur » : un des deux (seuls) centres de fertilité des Yvelines baisse le rideau « sans préavis » - Le Parisien",
+      "extrait": "TITRE: « C’est dévastateur » : un des deux (seuls) centres de fertilité des Yvelines baisse le rideau « sans préavis » - Le Parisien SOURCE: Google News DATE: Fri, 31 Jul 2026 12:30:14 GMT URL: https://news.google.com/rss/articles/CBMiigJBVV95cUxNMzRKcFduX2ZtZW9aT00zV0dyTXJkSjZ2WW5GcTdLQ0dDcFFSMHNMQTc0cWNUY1VkQjdwXzU0ZEstN0EyazNKd0ZmeTJhNDdrbFFGQXZlWW1HWjlXQmhHcW5tWUsyNk9TWnJCRlgwTmFVclpTbHY4MkhWTlNwdVF4dExaaXZEVlpiQUJ5NHBFUjExSHkwWGpNalFUZUYxNW1yazZKSGdQcmY4MmlPT3FSRjd4ZUllTzlhMldBTmdvTkhPR2tTS",
+      "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxNMzRKcFduX2ZtZW9aT00zV0dyTXJkSjZ2WW5GcTdLQ0dDcFFSMHNMQTc0cWNUY1VkQjdwXzU0ZEstN0EyazNKd0ZmeTJhNDdrbFFGQXZlWW1HWjlXQmhHcW5tWUsyNk9TWnJCRlgwTmFVclpTbHY4MkhWTlNwdVF4dExaaXZEVlpiQUJ5NHBFUjExSHkwWGpNalFUZUYxNW1yazZKSGdQcmY4MmlPT3FSRjd4ZUllTzlhMldBTmdvTkhPR2tTSnNlOUU0czEwVUpsXzN4YnNNXy1uaU5CRm5VMVZYX0JYaTNzd19xRWZoZ0ZMUllxME1PbGlHcWR2czZxbDBRaXZnb1hldw?oc=5",
+      "source": "Google News",
+      "date": "Fri, 31 Jul 2026 12:30:14 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-01T06:15:55.016972+00:00"
     },
     {
       "id": "bdf36cddb47af7d3",
@@ -31806,6 +32299,136 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:43:41.960961+00:00"
+    },
+    {
+      "id": "e0b0286a06696f43",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Mercato : Le PSG prêt à une autre folie après Chevalier ?",
+      "extrait": "TITRE: Mercato : Le PSG prêt à une autre folie après Chevalier ? SOURCE: Foot-sur7 DATE: 2026-07-31T21:33:00Z URL: https://www.foot-sur7.fr/769186-mercato-le-psg-pret-a-une-autre-folie-apres-chevalier Un an seulement après avoir dépensé 55 millions d'euros pour recruter Lucas Chevalier au LOSC, le PSG va-t-il remettre le couvert avec un gros chèque pour un autre gardien de but ? Les rumeurs vont dans ce sens. Mercato PSG : Une révélation du Mondial 2026 pour chasser Chevalier ? Alors que Lucas C",
+      "url": "https://www.foot-sur7.fr/769186-mercato-le-psg-pret-a-une-autre-folie-apres-chevalier",
+      "source": "Foot-sur7",
+      "date": "2026-07-31T21:33:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-01T06:16:56.554661+00:00"
+    },
+    {
+      "id": "1732ee22a7ddb28b",
+      "banque": "BNP Paribas",
+      "departement": null,
+      "titre": "Piratée via son numéro de téléphone, une cliente fait condamner son organisme de crédit",
+      "extrait": "TITRE: Piratée via son numéro de téléphone, une cliente fait condamner son organisme de crédit SOURCE: Capital.fr DATE: 2026-07-31T20:28:39Z URL: https://www.capital.fr/votre-argent/piratee-via-son-numero-de-telephone-une-cliente-fait-condamner-son-organisme-de-credit-1528938 C'est une affaire tentaculaire, face à laquelle beaucoup auraient été tentés d'abandonner. Mais ce n'est pas le cas de cette cliente de Cetelem. Selon les informations de Clubic, une femme a souscrit un crédit renouvelable ",
+      "url": "https://www.capital.fr/votre-argent/piratee-via-son-numero-de-telephone-une-cliente-fait-condamner-son-organisme-de-credit-1528938",
+      "source": "Capital.fr",
+      "date": "2026-07-31T20:28:39Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-01T06:16:59.024012+00:00"
+    },
+    {
+      "id": "d6772f25c576dd14",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "L'AS Monaco tenue en échec pour son troisième match de préparation face au Cercle Bruges (2-2)",
+      "extrait": "TITRE: L'AS Monaco tenue en échec pour son troisième match de préparation face au Cercle Bruges (2-2) SOURCE: Nice-Matin DATE: 2026-07-31T17:35:04Z URL: https://www.nicematin.com/sports/football/l-as-monaco-tenue-en-echec-pour-son-troisieme-match-de-preparation-face-au-cercle-bruges-2-2-10697440 Sans Matthis Abline, dernière recrue ménagée après que sa dernière semaine de préparation a été perturbée par les discussions entourant son transfert, ni les mondialistes Folarin Balogun et Lamine Camara",
+      "url": "https://www.nicematin.com/sports/football/l-as-monaco-tenue-en-echec-pour-son-troisieme-match-de-preparation-face-au-cercle-bruges-2-2-10697440",
+      "source": "Nice-Matin",
+      "date": "2026-07-31T17:35:04Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-01T06:17:02.769052+00:00"
+    },
+    {
+      "id": "4d541e92b778af56",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "HYDROGEN REFUELING (EPA:ALHRS) |",
+      "extrait": "TITRE: HYDROGEN REFUELING (EPA:ALHRS) | SOURCE: Les Echos DATE: 2026-07-31T16:12:22Z URL: https://lesechos-comfi.lesechos.fr/press-release/hydrogen-refueling-epa-alhrs-chiffre-daffaires-annuel-2025-2026-ARrzmq2dwdY * POURSUITE DES ACTIONS EN COURS AFIN DE RENFORCER RAPIDEMENT L'HORIZON DE TRÉSORERIE, ESTIMÉ À CE JOUR À SEPTEMBRE 2026, AVEC EN PARTICULIER LA SIGNATURE À VENIR DE LA PROMESSE DE VENTE POUR LE SITE DE CHAMPAGNIER ET DES NÉGOCATIONS AVANCÉES POUR L'OBTENTION D'UN FINANCEMENT BANCAIRE",
+      "url": "https://lesechos-comfi.lesechos.fr/press-release/hydrogen-refueling-epa-alhrs-chiffre-daffaires-annuel-2025-2026-ARrzmq2dwdY",
+      "source": "Les Echos",
+      "date": "2026-07-31T16:12:22Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-01T06:17:13.463219+00:00"
+    },
+    {
+      "id": "bb0e26170c66e6c6",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Mercato Real Madrid : \"Vinicius se sert d'Arsenal\", une grosse désillusion déjà pressentie par un ancien Gunner",
+      "extrait": "TITRE: Mercato Real Madrid : \"Vinicius se sert d'Arsenal\", une grosse désillusion déjà pressentie par un ancien Gunner SOURCE: Top mercato DATE: 2026-07-31T15:58:53Z URL: https://www.topmercato.com/2123797-mercato-real-madrid-vinicius-se-sert-darsenal-une-grosse-desillusion-deja-pressentie-par-un-ancien-gunner/ L'ancien joueur d'Arsenal Paul Merson estime que l'intérêt des Gunners pour Vinicius Jr a peu de chances de déboucher sur une arrivée du Brésilien à l'Emirates. Pour le consultant anglais",
+      "url": "https://www.topmercato.com/2123797-mercato-real-madrid-vinicius-se-sert-darsenal-une-grosse-desillusion-deja-pressentie-par-un-ancien-gunner/",
+      "source": "Top mercato",
+      "date": "2026-07-31T15:58:53Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-01T06:17:14.922747+00:00"
+    },
+    {
+      "id": "404c88a431a4e4cb",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Crédit Agricole, BNP Paribas, Société Générale : \" Des résultats financiers historiquement bons \"",
+      "extrait": "TITRE: Crédit Agricole, BNP Paribas, Société Générale : \" Des résultats financiers historiquement bons \" SOURCE: MoneyVox Actu DATE: 2026-07-31T15:34:03Z URL: https://www.moneyvox.fr/banque/actualites/109906/credit-agricole-bnp-paribas-societe-generale-des-resultats-financiers-historiquement-bons Les grandes banques ont engrangé des résultats financiers historiquement bons au deuxième trimestre, portés notamment par leurs banques de financement et d'investissement (BFI), et le rebond de la banqu",
+      "url": "https://www.moneyvox.fr/banque/actualites/109906/credit-agricole-bnp-paribas-societe-generale-des-resultats-financiers-historiquement-bons",
+      "source": "MoneyVox Actu",
+      "date": "2026-07-31T15:34:03Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-01T06:17:16.807922+00:00"
+    },
+    {
+      "id": "0e7cf443450a71fe",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "Manchester City prépare 9 départs",
+      "extrait": "TITRE: Manchester City prépare 9 départs SOURCE: Foot Mercato : Info Transferts Football - Actu Foot Transfert DATE: 2026-07-31T15:01:51Z URL: https://www.footmercato.net/a128969019291816592-manchester-city-prepare-9-departs Enzo Maresca fait face à un sacré chantier à Manchester City. Et ce n'est pas terminé pour l'Italien qui risque encore de perdre des joueurs. Cet été, Manchester City entame un nouveau cycle après le départ de Pep Guardiola. C'est Enzo Maresca, son ancien adjoint, qui a été ",
+      "url": "https://www.footmercato.net/a128969019291816592-manchester-city-prepare-9-departs",
+      "source": "Foot Mercato : Info Transferts Football - Actu Foot Transfert",
+      "date": "2026-07-31T15:01:51Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-01T06:17:21.071576+00:00"
+    },
+    {
+      "id": "dfaa06a814dee6ec",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Ça bouge enfin sur le mercato du PSG !",
+      "extrait": "TITRE: Ça bouge enfin sur le mercato du PSG ! SOURCE: Football.fr DATE: 2026-07-31T13:49:34Z URL: https://www.football.fr/ligue-1/ca-bouge-enfin-sur-le-mercato-du-psg-825935.html Discret depuis le début du mercato estival, le PSG semble enfin prêt à accélérer. Depuis l'ouverture du mercato estival au début du mois de juin, le PSG est resté particulièrement discret sur le marché des transferts. À ce jour, le club de la capitale n'a enregistré qu'une seule arrivée, celle du jeune gardien italien A",
+      "url": "https://www.football.fr/ligue-1/ca-bouge-enfin-sur-le-mercato-du-psg-825935.html",
+      "source": "Football.fr",
+      "date": "2026-07-31T13:49:34Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-01T06:17:22.813515+00:00"
+    },
+    {
+      "id": "9faa558f4060e9ac",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "Comment La Poste reste bénéficiaire malgré la chute du courrier",
+      "extrait": "TITRE: Comment La Poste reste bénéficiaire malgré la chute du courrier SOURCE: MoneyVox Actu DATE: 2026-07-31T12:50:18Z URL: https://www.moneyvox.fr/votre-argent/actualites/109900/comment-la-poste-reste-beneficiaire-malgre-la-chute-du-courrier Malgré la chute spectaculaire des volumes de courrier et le coût de ses missions de service public, La Poste demeure dans le vert au premier semestre 2026, grâce à ses activités de livraison de colis, de banque et d'assurance. En juillet, sa nouvelle PDG M",
+      "url": "https://www.moneyvox.fr/votre-argent/actualites/109900/comment-la-poste-reste-beneficiaire-malgre-la-chute-du-courrier",
+      "source": "MoneyVox Actu",
+      "date": "2026-07-31T12:50:18Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-01T06:17:29.953655+00:00"
+    },
+    {
+      "id": "e4f71380e1dfb416",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "Lithium : le Zimbabwe dépasse en six mois ses recettes d'exportation de toute l'année 2025",
+      "extrait": "TITRE: Lithium : le Zimbabwe dépasse en six mois ses recettes d'exportation de toute l'année 2025 SOURCE: Agence Ecofin DATE: 2026-07-31T12:03:41Z URL: https://www.agenceecofin.com/actualites-industries/3107-140680-lithium-le-zimbabwe-depasse-en-six-mois-ses-recettes-d-exportation-de-toute-l-annee-2025 (Agence Ecofin) - Premier producteur africain de lithium, le Zimbabwe a franchi un nouveau cap cette année avec ses premières exportations de sulfate de lithium, un produit à plus forte valeur ajo",
+      "url": "https://www.agenceecofin.com/actualites-industries/3107-140680-lithium-le-zimbabwe-depasse-en-six-mois-ses-recettes-d-exportation-de-toute-l-annee-2025",
+      "source": "Agence Ecofin",
+      "date": "2026-07-31T12:03:41Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-01T06:17:32.358793+00:00"
     },
     {
       "id": "e291c64acf6b9f81",
@@ -33342,6 +33965,32 @@
       "created_at": "2026-07-23T09:39:37.162046+00:00"
     },
     {
+      "id": "0e048241d2d0e7f9",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "Fermeture du centre de distribution de La Poste en Sarthe : les facteurs ont commencé une grève illimitée - Actu.fr",
+      "extrait": "Titre : « Fermeture du centre de distribution de La Poste en Sarthe » (article centré sur grève et centre de distribution de La Poste, pas sur des agences BANCAIRES physiques/LBP nommées).",
+      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOY1o2QVZBX3NDbWdjV2hnbVlwUEtlME51R3hmSl8wdzVOb0t5cVBlZERFWHFKSEQ3TUs4ODNGZ1gxNWZkTUhPMEdBdXlnMWJTYVNMSU5pWU5aX3VaNWlNc0k5ZGU4Ty1xZXJBcVRtbzAwQjNpV1FNOG05NzJFeDFnNnlsaDMyYUY0M3YtYjFvRXhkTUpZQTJ0NDhuWEZBTGc3bmpibTRDN0VlUTBBUW5Sc1h4R3hIZV9vWS1HbHdBSVZudFNKMWY5X1AzaThrRm1IejR5ODN5MlJzaWFiUkJnMVZpem9VUnNobkhHcU1ial9SNVE?oc=5",
+      "source": "Google News",
+      "date": "Mon, 15 Jun 2026 07:00:00 GMT",
+      "score": 1,
+      "raison": "signaux: vague(La Banque Postale,regional,count=None)",
+      "created_at": "2026-08-01T06:15:47.969298+00:00"
+    },
+    {
+      "id": "9917c6e0e8a7ee9d",
+      "banque": "Crédit Agricole",
+      "departement": null,
+      "titre": "Crédit Agricole dépasse les prévisions au deuxième trimestre et dément les rumeurs de fusion Monte Paschi-Banco BPM - Zonebourse",
+      "extrait": "Article centré sur des rumeurs de fusion et un démenti, sans mention de fermetures/regroupements/transferts d’agences bancaires physiques.",
+      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNbEV3RHVadHhkSmFMazZNZEpTZTgzdWFNbXYzX3NYdkUxelF2WEhvaXFGY0xTWW9GVVlLRHdaLXVfcmNtbEFjTE5zT05UYmdEV08xcTVhRnItNkgyT0VVYkZ4SGpCUnluMkIteTNJd3NlSHRzV3NvbkpBQmZQNnJ0WEhSVi1MV3RPM0JHRS10TkwtMnYyalVwd01mbDRLNHJ6SlE3SlZhdWl5djJlY2VrU1lZaTloQlA3ZGNsTm83cFpqT2JJTWJRMnhfb3NTRHVCRkJhS1YxcGRUOGstTnR2WEh3OEJPbk1uV0lXaGlvUFQ0RGc?oc=5",
+      "source": "Google News",
+      "date": "Fri, 31 Jul 2026 05:06:41 GMT",
+      "score": 1,
+      "raison": "signaux: vague(Crédit Agricole,national,count=None)",
+      "created_at": "2026-08-01T06:15:32.821455+00:00"
+    },
+    {
       "id": "62b3a1639154c6db",
       "banque": "La Banque Postale",
       "departement": null,
@@ -33431,6 +34080,19 @@
       "score": 1,
       "raison": "signaux: vague(La Poste,regional,count=None)",
       "created_at": "2026-07-22T08:54:47.472218+00:00"
+    },
+    {
+      "id": "59846eab3a4d3532",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "Comment La Poste reste bénéficiaire malgré l'effondrement du courrier",
+      "extrait": "L’article traite de la stratégie financière de La Poste et mentionne que l’activité inclut « la Banque postale (LBP) » ; aucune fermeture, regroupement ou transfert d’agence/point bancaire n’est décrit.",
+      "url": "https://www.20minutes.fr/societe/4237209-20260731-comment-poste-parvient-rester-beneficiaire-malgre-effondrement-courrier",
+      "source": "20minutes",
+      "date": "2026-07-31T12:52:07Z",
+      "score": 1,
+      "raison": "signaux: vague(La Banque Postale,national,count=None)",
+      "created_at": "2026-08-01T06:17:28.034190+00:00"
     },
     {
       "id": "de6307b78f4ca58a",
