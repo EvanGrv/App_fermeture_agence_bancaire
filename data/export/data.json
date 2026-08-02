@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T06:29:58.058557+00:00",
+  "generated_at": "2026-08-02T06:31:33.844240+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -419,8 +419,8 @@
       "count": 3,
       "total_agences": 175,
       "precise_count": 3,
-      "unlocated_count": 8,
-      "estimated_count": 11
+      "unlocated_count": 9,
+      "estimated_count": 12
     },
     "45": {
       "nom": "Loiret",
@@ -1965,8 +1965,8 @@
       "departement": "44",
       "nom": "Loire-Atlantique",
       "precise_count": 3,
-      "unlocated_count": 8,
-      "estimated_count": 11,
+      "unlocated_count": 9,
+      "estimated_count": 12,
       "department_signal_count": 0,
       "signals": [
         {
@@ -1989,6 +1989,18 @@
           "titre": "Le bureau de poste de Donges désormais fermé le samedi ? Le député LFI Mathias Tavel dénonce - labaule.maville.com",
           "source": "Google News",
           "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNdVNTTnlZQzdydUF1Snd6elphOTNUd1NHZng2U3lsUmhsUkdPYUFJQ2ZVRUp3MlMtYzQ5M0NJQkZTQkp6a3BmaGV5ZFpLNHg3YVNPLVRxc3FSbnVRX1ppTDFSSlRMUkdhYXlzWUtpWEd0bWU2ZjA0MXdaWkJ6WExidDhER1NWQzhmTlRzMktoaG1KLVlsaUlraVJQM2lmTGk0ZnprV081SHlPZDNkeEJheTdldFhyclE3Qy1xRWRkVDJmX1RodGpwbGdxaENWNkhNWkdfeVpkdGNQYmJFWFNXMUJXdlBtSXNHYVZveWFUdWtCX25EdmF0bHVfOGlNVlEtY0NvYUJTaFY?oc=5",
+          "score": 3,
+          "precision": "commune_non_geocodee",
+          "reason": "hors fenêtre temporelle"
+        },
+        {
+          "id": "85c6e29a6b143039",
+          "banque": "La Banque Postale",
+          "commune": "Donges",
+          "departement": "44",
+          "titre": "Le bureau de poste de Donges désormais fermé le samedi ? Le député LFI Mathias Tavel dénonce - MaVille.com",
+          "source": "Google News",
+          "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxOQ002dU4tYjRJZ2Y1NExVU1BJZkg2aFBHQmJqaThMYS1UTDY3Q1JERFhpVlpmLXdPaENhUDN6OXBUTzU3cGN4YnFDbGx2REhwZ0l2WURhWmRHU0ZqR01NNDVLeWJxTWdHNnJXYlJxZFlzRER3dWZQN1dLVFpjM3ZpMXN0N2cyeVZQLWpiclRnUTlzWFk5N2dkZVlfb1lhcUFnZ0htVzRhQXBRLWQ5QTVsdFZMUHNLMGtjMzNSYnZzS3R1NE85SnkxR2VRdkNXcUNDQ1NNUHJWZWR5REhQelV5V1UyUUNyR2xQSkR6cVZKdEpienZtSEJUV1BQcW16dWdoMDNNX0h3UE9COVdzcy1Tdg?oc=5",
           "score": 3,
           "precision": "commune_non_geocodee",
           "reason": "hors fenêtre temporelle"
@@ -4089,7 +4101,7 @@
         }
       ],
       "controle_sirene": {
-        "etat_administratif": null,
+        "etat_administratif": "A",
         "siret": null,
         "source": "SIRENE"
       },
@@ -9142,7 +9154,7 @@
         }
       ],
       "controle_sirene": {
-        "etat_administratif": null,
+        "etat_administratif": "A",
         "siret": null,
         "source": "SIRENE"
       },
@@ -9444,7 +9456,7 @@
         }
       ],
       "controle_sirene": {
-        "etat_administratif": null,
+        "etat_administratif": "A",
         "siret": null,
         "source": "SIRENE"
       },
@@ -10899,6 +10911,24 @@
       "created_at": "2026-07-30T06:04:44.262761+00:00"
     },
     {
+      "id": "85c6e29a6b143039",
+      "banque": "La Banque Postale",
+      "commune": "Donges",
+      "departement": "44",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "Le bureau de poste de Donges désormais fermé le samedi ? Le député LFI Mathias Tavel dénonce - MaVille.com",
+      "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxOQ002dU4tYjRJZ2Y1NExVU1BJZkg2aFBHQmJqaThMYS1UTDY3Q1JERFhpVlpmLXdPaENhUDN6OXBUTzU3cGN4YnFDbGx2REhwZ0l2WURhWmRHU0ZqR01NNDVLeWJxTWdHNnJXYlJxZFlzRER3dWZQN1dLVFpjM3ZpMXN0N2cyeVZQLWpiclRnUTlzWFk5N2dkZVlfb1lhcUFnZ0htVzRhQXBRLWQ5QTVsdFZMUHNLMGtjMzNSYnZzS3R1NE85SnkxR2VRdkNXcUNDQ1NNUHJWZWR5REhQelV5V1UyUUNyR2xQSkR6cVZKdEpienZtSEJUV1BQcW16dWdoMDNNX0h3UE9COVdzcy1Tdg?oc=5",
+      "titre": "Le bureau de poste de Donges désormais fermé le samedi ? Le député LFI Mathias Tavel dénonce - MaVille.com",
+      "source": "Google News",
+      "date": "Wed, 29 Jul 2026 16:22:00 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-08-02T06:20:54.829151+00:00"
+    },
+    {
       "id": "aa1a3c4f9273b49c",
       "banque": "Crédit Agricole",
       "commune": "Berlai mont",
@@ -11706,7 +11736,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-01T06:12:15.591560+00:00"
+      "created_at": "2026-08-02T06:18:06.434420+00:00"
     },
     {
       "id": "50895c042a984b7d",
@@ -11742,7 +11772,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 04:46:02 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-01T06:12:15.190337+00:00"
+      "created_at": "2026-08-02T06:18:05.935911+00:00"
     },
     {
       "id": "8c6a0cad14626d6f",
@@ -13218,7 +13248,7 @@
       "source": "Google News",
       "date": "Sat, 03 Aug 2024 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-01T06:12:14.299795+00:00"
+      "created_at": "2026-08-02T06:18:04.912979+00:00"
     },
     {
       "id": "4996e3bfe560bbb6",
@@ -13237,6 +13267,24 @@
       "date": "Sat, 01 Nov 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
       "created_at": "2026-07-22T09:03:26.715978+00:00"
+    },
+    {
+      "id": "b1e55350d67ba98e",
+      "banque": "Crédit Agricole",
+      "commune": "Loos-en-Gohelle",
+      "departement": null,
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "confirmé",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "Titre : « Loos-en-Gohelle : l’agence Crédit agricole définitivement fermée » (La Voix du Nord).",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOSmpxcEVpbFljRG1JUld1ekxlQWhkNXpNX2FMY0hSaEtVVnhpNU5MZFhIeExXcnBpTy1QTnFtN0xFaDZrV2lTWVVuUGE4clBJeGpvSzY3ODJwalplUmpDVHF2XzJ3YTJoWWR4ZGw0VnZvMXcxcndZRFl0TktNRG41VGdyLXo1NVVKV2QyVGZaa001dXc2TGZkSVlpNnNrbHpDT2V1M3FlMWtVMTFmWkQ0ajBkUTUyYzZz?oc=5",
+      "titre": "Loos-en-Gohelle : l’agence Crédit agricole définitivement fermée - La Voix du Nord",
+      "source": "Google News",
+      "date": "Sat, 01 Aug 2026 06:20:00 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-08-02T06:20:53.859133+00:00"
     },
     {
       "id": "f022b150b7207c5f",
@@ -13920,7 +13968,7 @@
       "source": "Google News",
       "date": "Fri, 20 Jun 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-01T06:12:23.133275+00:00"
+      "created_at": "2026-08-02T06:18:15.316919+00:00"
     },
     {
       "id": "b80663fa38292743",
@@ -14064,7 +14112,7 @@
       "source": "Google News",
       "date": "Fri, 10 Jul 2026 10:12:00 GMT",
       "raison": "garde entrée/sortie: département source 44 incompatible avec la sortie 974",
-      "created_at": "2026-08-01T06:12:41.384835+00:00"
+      "created_at": "2026-08-02T06:18:36.014847+00:00"
     },
     {
       "id": "8c646081e1d69e81",
@@ -14226,7 +14274,7 @@
       "source": "Google News",
       "date": "Fri, 03 Jan 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-01T06:12:14.750555+00:00"
+      "created_at": "2026-08-02T06:18:05.416707+00:00"
     },
     {
       "id": "f3e888f7eaf5ffb7",
@@ -23175,6 +23223,19 @@
       "created_at": "2026-06-25T15:21:18.224626+00:00"
     },
     {
+      "id": "3bde0b278e905ad6",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "\"Une interprétation à six mains\" : avant la fermeture le 30 août, du Café Bras à Rodez, les Chailloux préparent un dîner \"d'exception\" avec Michel et Sébastien - Centre Presse Aveyron",
+      "extrait": "TITRE: \"Une interprétation à six mains\" : avant la fermeture le 30 août, du Café Bras à Rodez, les Chailloux préparent un dîner \"d'exception\" avec Michel et Sébastien - Centre Presse Aveyron SOURCE: Google News DATE: Sun, 02 Aug 2026 06:01:00 GMT URL: https://news.google.com/rss/articles/CBMiswJBVV95cUxPbllmVVRORGdJZjFsMTZYYkt0TVp5dUl1M3JCOFNQMHJiT2R6MV9VVVRpRzBjT0U3RzY4T3djOTJxcTFHMTFHMmJuVVlEdmM4WWV2eHg3RFRkNGNtN3hEdjVzSE15VGNkbWxOX3V4Z3U0aHQtSDN2WmpreVVkbGJrdkhxZi1OSGxCUnU0c0x5cV95Q2dNZTlKSUJ",
+      "url": "https://news.google.com/rss/articles/CBMiswJBVV95cUxPbllmVVRORGdJZjFsMTZYYkt0TVp5dUl1M3JCOFNQMHJiT2R6MV9VVVRpRzBjT0U3RzY4T3djOTJxcTFHMTFHMmJuVVlEdmM4WWV2eHg3RFRkNGNtN3hEdjVzSE15VGNkbWxOX3V4Z3U0aHQtSDN2WmpreVVkbGJrdkhxZi1OSGxCUnU0c0x5cV95Q2dNZTlKSUJUelBNZ29pVDZNYVQ1bXoyYk52UVpNZWJCcEF2TUJoRG9YTF9WbTZsNVlHWldPM3VVQ3JmZEVwSDBqNjY2RkJuRjFfaERYNWpUNlpnNXBMdFVGZzVXQk9UMnQtejRCMnlmajl5TWtzOVRjSzBzbmZUTkdYV1pSbGZkbkhRYldfY2FqT0J2RlQxd1lsVHFSbUVtV24xYmZOSnNz?oc=5",
+      "source": "Google News",
+      "date": "Sun, 02 Aug 2026 06:01:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-02T06:21:08.591911+00:00"
+    },
+    {
       "id": "1faea878222a4e05",
       "banque": "Société Générale",
       "departement": null,
@@ -24369,6 +24430,71 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:21:01.212225+00:00"
+    },
+    {
+      "id": "ffbafc83355f01a1",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "L’association Audace 53 réagit à la fermeture des urgences à Mayenne les 1er et 2 août - Ouest-France",
+      "extrait": "TITRE: L’association Audace 53 réagit à la fermeture des urgences à Mayenne les 1er et 2 août - Ouest-France SOURCE: Google News DATE: Sat, 01 Aug 2026 11:25:05 GMT URL: https://news.google.com/rss/articles/CBMijgJBVV95cUxNbUtKRm80VU1MdkdkSjdPWGhVQU5uekxyeGtnd1pLUk5jSFpCOFZvRUlrQXB1aFB0RHZJM256MjB6NU5zQjJlT1lZck9reUNuVGFFcXlpSlNzLUxzZ19Ocml1TWxlSTQ0My1vTDh1Vmpqa0diVTd3aGJhZVVEaWwzUTJ4NGoyeEwycWhoU1gxQy1FTGFxRDI0bm9GMk8tZzZsU1BZczR0bDVWdGdra0F5Q0FnbWRMODdtNHM5WmdqRkpPTWhpeXluSmVkU0NmazVMalRBRlgwM",
+      "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxNbUtKRm80VU1MdkdkSjdPWGhVQU5uekxyeGtnd1pLUk5jSFpCOFZvRUlrQXB1aFB0RHZJM256MjB6NU5zQjJlT1lZck9reUNuVGFFcXlpSlNzLUxzZ19Ocml1TWxlSTQ0My1vTDh1Vmpqa0diVTd3aGJhZVVEaWwzUTJ4NGoyeEwycWhoU1gxQy1FTGFxRDI0bm9GMk8tZzZsU1BZczR0bDVWdGdra0F5Q0FnbWRMODdtNHM5WmdqRkpPTWhpeXluSmVkU0NmazVMalRBRlgwME9fRFp2U2hnYlN1NEkyYVBiRUJNbzZreHVhQWF6WDl6b2R2NzZnclhUakY5VXdRUnFwSGJ0TGc?oc=5",
+      "source": "Google News",
+      "date": "Sat, 01 Aug 2026 11:25:05 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-02T06:20:59.639565+00:00"
+    },
+    {
+      "id": "25f876060d46ef61",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "Fermeture de la Poste : le maire de Giromagny dénonce « le mépris total de la France rurale et du service public » - L'Est Républicain",
+      "extrait": "TITRE: Fermeture de la Poste : le maire de Giromagny dénonce « le mépris total de la France rurale et du service public » - L'Est Républicain SOURCE: Google News DATE: Sat, 01 Aug 2026 10:03:01 GMT URL: https://news.google.com/rss/articles/CBMi3AFBVV95cUxPMHgtOUl5aVR2dkZxVXhndUlhZkttYW1SeDdDaUZySTVlb0NPOEZ1ZS0wSHhYeHQzLXlYZWc2S2RHUUxlemJRRnVRaTdTcUFpbmZVWk91akVtdDBjLVdqV1FOVnRGOVEtSVphN19EMFBBNHlHLXhMLVp5RzBLc2NLY1lnQ005VllkTHJqc2F1bC1YZ3RIcVh1aE9QTDdEd2xYRVc1UVRGQUtORUk2ZWJmWkRVMV80RUJnY2RnRm9C",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPMHgtOUl5aVR2dkZxVXhndUlhZkttYW1SeDdDaUZySTVlb0NPOEZ1ZS0wSHhYeHQzLXlYZWc2S2RHUUxlemJRRnVRaTdTcUFpbmZVWk91akVtdDBjLVdqV1FOVnRGOVEtSVphN19EMFBBNHlHLXhMLVp5RzBLc2NLY1lnQ005VllkTHJqc2F1bC1YZ3RIcVh1aE9QTDdEd2xYRVc1UVRGQUtORUk2ZWJmWkRVMV80RUJnY2RnRm9CWEdCOXlIV2huU05XdVk3WHhMVVdkQ2dBUGo5am4y?oc=5",
+      "source": "Google News",
+      "date": "Sat, 01 Aug 2026 10:03:01 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-02T06:20:51.711755+00:00"
+    },
+    {
+      "id": "094dfb2632c4e553",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "AGASA : fermeture provisoire d'un restaurant de rue à Franceville pour non-respect des règles d'hygiène - Gabon Media Time",
+      "extrait": "TITRE: AGASA : fermeture provisoire d'un restaurant de rue à Franceville pour non-respect des règles d'hygiène - Gabon Media Time SOURCE: Google News DATE: Sat, 01 Aug 2026 09:53:00 GMT URL: https://news.google.com/rss/articles/CBMixgFBVV95cUxQaFUyUV9BZ0VlNzJZX3gwQmF2b0lESVE3ZmdOT3NGblZDT2JiQjh3YTNQVl92RVV5eFhZNkhwQjZ6SlFva0tORFN5ZTdzaFUtWkM3VnotWFBZbjZ2eEdZTEtxbHl5YWlhRHVsRzlsRWlHeEZFaXplM3lCblpJZEM3TV9oRnhDTlVnNHdjWjNsdTVGX2o0M1d5TjlWSGRZb2FhU0dPYmtmLWFjVU11bUJYdlJiY3ZvSU00cEFVc2Z3clNkY3hzcFE?",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQaFUyUV9BZ0VlNzJZX3gwQmF2b0lESVE3ZmdOT3NGblZDT2JiQjh3YTNQVl92RVV5eFhZNkhwQjZ6SlFva0tORFN5ZTdzaFUtWkM3VnotWFBZbjZ2eEdZTEtxbHl5YWlhRHVsRzlsRWlHeEZFaXplM3lCblpJZEM3TV9oRnhDTlVnNHdjWjNsdTVGX2o0M1d5TjlWSGRZb2FhU0dPYmtmLWFjVU11bUJYdlJiY3ZvSU00cEFVc2Z3clNkY3hzcFE?oc=5",
+      "source": "Google News",
+      "date": "Sat, 01 Aug 2026 09:53:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-02T06:20:56.956031+00:00"
+    },
+    {
+      "id": "b5ae2e9bff23ea70",
+      "banque": "Crédit Agricole",
+      "departement": null,
+      "titre": "Loos-en-Gohelle : l’agence Crédit agricole définitivement fermée - La Voix du Nord",
+      "extrait": "TITRE: Loos-en-Gohelle : l’agence Crédit agricole définitivement fermée - La Voix du Nord SOURCE: Google News DATE: Sat, 01 Aug 2026 06:20:00 GMT URL: https://news.google.com/rss/articles/CBMiuAFBVV95cUxOSmpxcEVpbFljRG1JUld1ekxlQWhkNXpNX2FMY0hSaEtVVnhpNU5MZFhIeExXcnBpTy1QTnFtN0xFaDZrV2lTWVVuUGE4clBJeGpvSzY3ODJwalplUmpDVHF2XzJ3YTJoWWR4ZGw0VnZvMXcxcndZRFl0TktNRG41VGdyLXo1NVVKV2QyVGZaa001dXc2TGZkSVlpNnNrbHpDT2V1M3FlMWtVMTFmWkQ0ajBkUTUyYzZz?oc=5 <a href=\"https://news.google.com/rss/articles/CBMiuAFB",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOSmpxcEVpbFljRG1JUld1ekxlQWhkNXpNX2FMY0hSaEtVVnhpNU5MZFhIeExXcnBpTy1QTnFtN0xFaDZrV2lTWVVuUGE4clBJeGpvSzY3ODJwalplUmpDVHF2XzJ3YTJoWWR4ZGw0VnZvMXcxcndZRFl0TktNRG41VGdyLXo1NVVKV2QyVGZaa001dXc2TGZkSVlpNnNrbHpDT2V1M3FlMWtVMTFmWkQ0ajBkUTUyYzZz?oc=5",
+      "source": "Google News",
+      "date": "Sat, 01 Aug 2026 06:20:00 GMT",
+      "score": 3,
+      "raison": "fermeture non publiée: hors fenêtre temporelle",
+      "created_at": "2026-08-02T06:20:53.863263+00:00"
+    },
+    {
+      "id": "21929a6739ee5262",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "Claix. Le bureau de poste ferme ses portes pendant le mois d’août - Le Dauphiné Libéré",
+      "extrait": "TITRE: Claix. Le bureau de poste ferme ses portes pendant le mois d’août - Le Dauphiné Libéré SOURCE: Google News DATE: Sat, 01 Aug 2026 01:09:41 GMT URL: https://news.google.com/rss/articles/CBMiqAFBVV95cUxNalR3TDk3VFBKampRUVJxRl9xb3V3RGlUMGdma05wMzhEV3ZPbUpTOF9SMzFOWFJQVVZaSV9oMlVHLXJ6YW1sVU9sczRVZUs1TURaS3VEWWxrMmVVeVpVM1VoVWt2bWppTHV3aGtDY3lZT1RYcGdiVDdjT3U1U1BGX2VUT2lSNmhDUU5kV2JyMzBoendSMERjemNrUWlxRlp0TWV5My0zeVk?oc=5 <a href=\"https://news.google.com/rss/articles/CBMiqAFBVV95cUxNalR3TDk3V",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNalR3TDk3VFBKampRUVJxRl9xb3V3RGlUMGdma05wMzhEV3ZPbUpTOF9SMzFOWFJQVVZaSV9oMlVHLXJ6YW1sVU9sczRVZUs1TURaS3VEWWxrMmVVeVpVM1VoVWt2bWppTHV3aGtDY3lZT1RYcGdiVDdjT3U1U1BGX2VUT2lSNmhDUU5kV2JyMzBoendSMERjemNrUWlxRlp0TWV5My0zeVk?oc=5",
+      "source": "Google News",
+      "date": "Sat, 01 Aug 2026 01:09:41 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-02T06:21:06.799942+00:00"
     },
     {
       "id": "a13d0121cfa1f103",
@@ -28024,6 +28150,71 @@
       "created_at": "2026-07-22T09:09:01.159244+00:00"
     },
     {
+      "id": "d98e9ed95641b48d",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Mercato PSG : les soupçons de Luis Campos... Les raisons derrière le retrait dans le dossier Yan Diomandé",
+      "extrait": "TITRE: Mercato PSG : les soupçons de Luis Campos... Les raisons derrière le retrait dans le dossier Yan Diomandé SOURCE: Top mercato DATE: 2026-08-01T17:13:48Z URL: https://www.topmercato.com/2124053-mercato-psg-les-soupcons-de-luis-campos-les-raisons-derriere-le-retrait-dans-le-dossier-yan-diomande/ Convoité par les plus belles écuries européennes à l'été 2026, Yan Diomandé suscitait l'intérêt du Paris Saint-Germain. Sauf que le club de la capitale s'est depuis retiré de la course à un transfer",
+      "url": "https://www.topmercato.com/2124053-mercato-psg-les-soupcons-de-luis-campos-les-raisons-derriere-le-retrait-dans-le-dossier-yan-diomande/",
+      "source": "Top mercato",
+      "date": "2026-08-01T17:13:48Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-02T06:22:24.201975+00:00"
+    },
+    {
+      "id": "43aa875cd7ebce25",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Julian Alvarez, Ferran Torres : Hansi Flick est cash sur le mercato du FC Barcelone",
+      "extrait": "TITRE: Julian Alvarez, Ferran Torres : Hansi Flick est cash sur le mercato du FC Barcelone SOURCE: Foot Mercato : Info Transferts Football - Actu Foot Transfert DATE: 2026-08-01T11:44:32Z URL: https://www.footmercato.net/a6573505201257612817-julian-alvarez-ferran-torres-hansi-flick-est-cash-sur-le-mercato-du-fc-barcelone Après le match amical du FC Barcelone hier contre Birmingham, Hansi Flick a abordé la question du mercato et donné les tendances des dossiers chauds. Le FC Barcelone disputait s",
+      "url": "https://www.footmercato.net/a6573505201257612817-julian-alvarez-ferran-torres-hansi-flick-est-cash-sur-le-mercato-du-fc-barcelone",
+      "source": "Foot Mercato : Info Transferts Football - Actu Foot Transfert",
+      "date": "2026-08-01T11:44:32Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-02T06:22:32.647143+00:00"
+    },
+    {
+      "id": "c316dbacd0f37617",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "PSG : Godts ciblé, l'Ajax reste ferme",
+      "extrait": "TITRE: PSG : Godts ciblé, l'Ajax reste ferme SOURCE: Orange Sports DATE: 2026-08-01T10:52:11Z URL: https://sports.orange.fr/football/mercato/article/psg-godts-cible-l-ajax-reste-ferme-exclu-CNT000002qPdB2.html Thibaut Simon, Media365 : publié le samedi 01 août 2026 à 12h52 Le Paris Saint-Germain s'active sur le marché des transferts. Après le transfert bouclé de Maghnes Akliouche, le PSG a fait du Belge Mika Godts une priorité. Mais l'Ajax Amsterdam ne l'entend pas de cette oreille. La surprise ",
+      "url": "https://sports.orange.fr/football/mercato/article/psg-godts-cible-l-ajax-reste-ferme-exclu-CNT000002qPdB2.html",
+      "source": "Orange Sports",
+      "date": "2026-08-01T10:52:11Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-02T06:22:38.390970+00:00"
+    },
+    {
+      "id": "4449b4de758a25fe",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "À L'Aigle, une boîte aux lettres condamnée suscite l'incompréhension des habitants",
+      "extrait": "TITRE: À L'Aigle, une boîte aux lettres condamnée suscite l'incompréhension des habitants SOURCE: Angers Info DATE: 2026-08-01T07:48:08Z URL: https://my-angers.info/08/01/a-laigle-une-boite-aux-lettres-condamnee-suscite-lincomprehension-des-habitants/191903 Les habitants du quartier de l'Horloge, à L'Aigle (Orne), ne peuvent plus déposer leur courrier dans la boîte aux lettres de leur secteur. Fermée à l'aide d'un ruban adhésif estampillé La Poste, elle est désormais inutilisable, sans qu'aucune",
+      "url": "https://my-angers.info/08/01/a-laigle-une-boite-aux-lettres-condamnee-suscite-lincomprehension-des-habitants/191903",
+      "source": "Angers Info",
+      "date": "2026-08-01T07:48:08Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-02T06:22:47.635773+00:00"
+    },
+    {
+      "id": "c2c590d370972b2c",
+      "banque": "Crédit Mutuel",
+      "departement": null,
+      "titre": "Présidentielle 2027 : le Crédit Mutuel referme la porte au financement des candidats, un coup dur pour Marine Le Pen",
+      "extrait": "TITRE: Présidentielle 2027 : le Crédit Mutuel referme la porte au financement des candidats, un coup dur pour Marine Le Pen SOURCE: Tribunal Du Net DATE: 2026-08-01T06:54:28Z URL: https://www.letribunaldunet.fr/politique/credit-mutuel-refuse-financement-candidats-presidentielle-2027.html Trouver de l'argent pour financer une campagne présidentielle relève déjà du parcours du combattant pour certains partis. Le Crédit Mutuel vient de compliquer encore la donne. La banque a tranché : sans garantie",
+      "url": "https://www.letribunaldunet.fr/politique/credit-mutuel-refuse-financement-candidats-presidentielle-2027.html",
+      "source": "Tribunal Du Net",
+      "date": "2026-08-01T06:54:28Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-02T06:22:53.001659+00:00"
+    },
+    {
       "id": "420148b362329618",
       "banque": "La Banque Postale",
       "departement": null,
@@ -30286,6 +30477,19 @@
       "created_at": "2026-07-22T08:58:37.508497+00:00"
     },
     {
+      "id": "f10292c7e95ec85b",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "Bron : grève à La Poste contre un projet de fusion contesté - LYON 1ère",
+      "extrait": "TITRE: Bron : grève à La Poste contre un projet de fusion contesté - LYON 1ère SOURCE: Google News DATE: Tue, 09 Jun 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMimgFBVV95cUxNOEpNZUVjbkhhaldhVWdkMmV6b2k3aEVGcEZxYkpwa2RjMElnSkNHTWI5YmMtSmlzNWRkRWstbmVucFNEZzhmcnhGRFQ3TFUyeThvdFZ1ZEhTalFXb3NqOXhSQkp3LWFJUUlrWjZJUmxCVDZFWC1Vc2FuOWVzVTVDSGpRNTlmczk3MUo0c2RTN0c3WGZ3b3FXY0tB?oc=5 <a href=\"https://news.google.com/rss/articles/CBMimgFBVV95cUxNOEpNZUVjbkhhaldhVWdkMmV6b2k3aEVGcEZxYkpwa2R",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNOEpNZUVjbkhhaldhVWdkMmV6b2k3aEVGcEZxYkpwa2RjMElnSkNHTWI5YmMtSmlzNWRkRWstbmVucFNEZzhmcnhGRFQ3TFUyeThvdFZ1ZEhTalFXb3NqOXhSQkp3LWFJUUlrWjZJUmxCVDZFWC1Vc2FuOWVzVTVDSGpRNTlmczk3MUo0c2RTN0c3WGZ3b3FXY0tB?oc=5",
+      "source": "Google News",
+      "date": "Tue, 09 Jun 2026 07:00:00 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-02T06:21:04.027946+00:00"
+    },
+    {
       "id": "d2207b2131202e27",
       "banque": "Société Générale",
       "departement": null,
@@ -31794,6 +31998,19 @@
       "created_at": "2026-08-01T06:15:28.896071+00:00"
     },
     {
+      "id": "40be04fb32606353",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "\"On préfère s’en aller avant qu’il ne soit trop tard\" : après 42 ans d’existence, le garage Franzin Automobiles à Villeneuve-sur-Lot va cesser son activité - ladepeche.fr",
+      "extrait": "TITRE: \"On préfère s’en aller avant qu’il ne soit trop tard\" : après 42 ans d’existence, le garage Franzin Automobiles à Villeneuve-sur-Lot va cesser son activité - ladepeche.fr SOURCE: Google News DATE: Fri, 31 Jul 2026 15:47:00 GMT URL: https://news.google.com/rss/articles/CBMiogJBVV95cUxOZzZKdkVsaTJ2OUJJNHVzY1VrWlZncmFweVdMQXhkbTN6cGtNajlwck9KY0tWSUVhVVlIT09ZWjBXRHd0TFM4NW8xREY4eF83STJPNHhrejM3WU01ZzZwSUktYUF5M1A4U3BmSU1BM3QwRFJWRVc3S1g4VExacjFMQkVkcE5TeUZ2dG9RQnhlejZjb1RYN2pSQkhCWE9US1c0SXVP",
+      "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxOZzZKdkVsaTJ2OUJJNHVzY1VrWlZncmFweVdMQXhkbTN6cGtNajlwck9KY0tWSUVhVVlIT09ZWjBXRHd0TFM4NW8xREY4eF83STJPNHhrejM3WU01ZzZwSUktYUF5M1A4U3BmSU1BM3QwRFJWRVc3S1g4VExacjFMQkVkcE5TeUZ2dG9RQnhlejZjb1RYN2pSQkhCWE9US1c0SXVPNnNBbzVMRk5MUExSNWpCT1AwSGU3TGFzejh4WEtSZ2Rvcjl6TURmZVVaaWY3eHUybi1Uak1ZdnZMVXRmeG9sTDRMMThCb3hNLXRBR0szWm85TzE0YVhXcGF5WmdKOWszOHJ5V3JTN3NrZWMxeDNCY3pTdTMwVnZ3TUt4MGVqZw?oc=5",
+      "source": "Google News",
+      "date": "Fri, 31 Jul 2026 15:47:00 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-02T06:21:01.691396+00:00"
+    },
+    {
       "id": "9a1d7a23a3c9e815",
       "banque": "Société Générale",
       "departement": null,
@@ -32299,6 +32516,84 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:43:41.960961+00:00"
+    },
+    {
+      "id": "3c8605816922b482",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "La piste Zion Suzuki abandonnée par Paris ? - Sport.fr",
+      "extrait": "TITRE: La piste Zion Suzuki abandonnée par Paris ? - Sport.fr SOURCE: Sport.fr DATE: 2026-08-02T00:26:00Z URL: https://www.sport.fr/football/la-piste-zion-suzuki-abandonnee-par-paris-1470532.shtm Le Paris Saint-Germain continue d'explorer le marché dans toutes les lignes. Selon les informations de RMC Sport, le club de la capitale s'intéresse au gardien japonais Zion Suzuki, qui évolue à Parme et sort d'une belle Coupe du monde 2026 avec le Japon. Également convoité par la Juventus Turin, le por",
+      "url": "https://www.sport.fr/football/la-piste-zion-suzuki-abandonnee-par-paris-1470532.shtm",
+      "source": "Sport.fr",
+      "date": "2026-08-02T00:26:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-02T06:22:22.264018+00:00"
+    },
+    {
+      "id": "cfccd68c4f9e4112",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "PSG : Ferran Torres veut rejoindre le club",
+      "extrait": "TITRE: PSG : Ferran Torres veut rejoindre le club SOURCE: Orange Sports DATE: 2026-08-01T13:17:56Z URL: https://sports.orange.fr/football/mercato/article/psg-ferran-torres-veut-rejoindre-le-club-exclu-CNT000002qPk2r.html Axel Allag, Media365 : publié le samedi 01 août 2026 à 15h17 Le PSG avance encore et toujours concernant le dossier menant à Ferran Torres, désireux de rejoindre le club double champion d'Europe. L'information est dévoilée par nos confrères de Foot Mercato, ce samedi : Ferran To",
+      "url": "https://sports.orange.fr/football/mercato/article/psg-ferran-torres-veut-rejoindre-le-club-exclu-CNT000002qPk2r.html",
+      "source": "Orange Sports",
+      "date": "2026-08-01T13:17:56Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-02T06:22:29.160730+00:00"
+    },
+    {
+      "id": "53292e0d381f538f",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Réunion entre le PSG et le Barça attendues pour Torres",
+      "extrait": "TITRE: Réunion entre le PSG et le Barça attendues pour Torres SOURCE: PSG Canal Supporters DATE: 2026-08-01T13:11:07Z URL: https://canal-supporters.com/reunion-entre-le-psg-et-le-fc-barcelone-la-semaine-prochaine-pour-torres/ Pour renforcer son poste d'avant-centre, le PSG penserait à Ferran Torres. Une réunion doit avoir lieu la semaine prochaine entre le PSG et le FC Barcelone à son sujet. Avec le départ de Gonçalo Ramos à l'AC Milan, le PSG est à la recherche d'un attaquant de pointe comme do",
+      "url": "https://canal-supporters.com/reunion-entre-le-psg-et-le-fc-barcelone-la-semaine-prochaine-pour-torres/",
+      "source": "PSG Canal Supporters",
+      "date": "2026-08-01T13:11:07Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-02T06:22:31.238003+00:00"
+    },
+    {
+      "id": "1b890b25376d57a1",
+      "banque": "CCF",
+      "departement": null,
+      "titre": "\" Je sais que ce sera intensif \" : le maire de La Mole, Pascal Etienne, se confie sur ses quatre premiers mois de mandat",
+      "extrait": "TITRE: \" Je sais que ce sera intensif \" : le maire de La Mole, Pascal Etienne, se confie sur ses quatre premiers mois de mandat SOURCE: Nice-Matin DATE: 2026-08-01T10:45:03Z URL: https://www.nicematin.com/societe/politique/je-sais-que-ce-sera-intensif-le-maire-de-la-mole-pascal-etienne-se-confie-sur-ses-quatre-premiers-mois-de-mandat-10697954 Une transformation qui ira de pair avec la construction d'un pôle technique - Police municipale - CCFF à l'ancienne scierie. Le dernier week-end a été sens",
+      "url": "https://www.nicematin.com/societe/politique/je-sais-que-ce-sera-intensif-le-maire-de-la-mole-pascal-etienne-se-confie-sur-ses-quatre-premiers-mois-de-mandat-10697954",
+      "source": "Nice-Matin",
+      "date": "2026-08-01T10:45:03Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-02T06:22:40.733944+00:00"
+    },
+    {
+      "id": "ea567d4a1dfc9f2a",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "PSG Mercato : Urgent ! Barcola \" très proche de Liverpool \"",
+      "extrait": "TITRE: PSG Mercato : Urgent ! Barcola \" très proche de Liverpool \" SOURCE: Foot-sur7 DATE: 2026-08-01T08:33:00Z URL: https://www.foot-sur7.fr/769460-psg-mercato-urgent-barcola-tres-proche-de-liverpool Désireux d'avoir plus de responsabilités en étant le leader offensif d'un nouveau club, Bradley Barcola s'apprête à quitter les rangs du PSG pour rejoindre Liverpool. Aux dernières nouvelles, l'attaquant français serait même très proche des Reds. PSG Mercato : Bradley Barcola \" super excité par Liv",
+      "url": "https://www.foot-sur7.fr/769460-psg-mercato-urgent-barcola-tres-proche-de-liverpool",
+      "source": "Foot-sur7",
+      "date": "2026-08-01T08:33:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-02T06:22:45.051203+00:00"
+    },
+    {
+      "id": "2a4b4e7eeccb6c75",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Top Déclarations : Infantino plus critiqué que jamais, Zidane ne voulait que les Bleus, Benzema ravi pour la légende...",
+      "extrait": "TITRE: Top Déclarations : Infantino plus critiqué que jamais, Zidane ne voulait que les Bleus, Benzema ravi pour la légende... SOURCE: Maxifoot DATE: 2026-08-01T07:00:53Z URL: https://www.maxifoot.fr/football/article-65530.htm 7. PSG - \"Le Paris Saint-Germain a officiellement retiré ce soir son intérêt et mis fin à toutes négociations concernant Yan Diomandé. Le montant du transfert demandé ainsi que les exigences salariales étaient totalement disproportionnés et de nature à déséquilibrer le mar",
+      "url": "https://www.maxifoot.fr/football/article-65530.htm",
+      "source": "Maxifoot",
+      "date": "2026-08-01T07:00:53Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-02T06:22:50.856790+00:00"
     },
     {
       "id": "e0b0286a06696f43",
