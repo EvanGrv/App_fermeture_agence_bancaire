@@ -156,6 +156,9 @@ function bindUi() {
   ["f-banque", "f-type", "f-statut", "f-fiab", "f-dep", "f-period", "f-temporel", "f-search"].forEach((id) => {
     document.getElementById(id).addEventListener(id === "f-search" ? "input" : "change", () => {
       if (id === "f-period" && val("f-period") === "all") selectedMonth = "";
+      // Le filtre global de département prime sur une ancienne sélection faite
+      // directement sur la carte.
+      if (id === "f-dep") setDepartmentSelection(val("f-dep"));
       rafraichir();
     });
   });
@@ -168,6 +171,7 @@ function bindUi() {
     document.getElementById("f-dep").value = "";
     document.getElementById("f-period").value = "all";
     document.getElementById("f-temporel").value = "";
+    setDepartmentSelection("");
     selectedMonth = "";
     rafraichir();
   });
@@ -929,25 +933,24 @@ function setText(id, value) {
 }
 
 function renderDepartments(items) {
-  const selected = depSelectionne || val("f-dep") || (topDepartmentEstimates(items)[0] && topDepartmentEstimates(items)[0][0]) || "";
+  // Aucun choix implicite : tant que l'utilisateur n'a pas cliqué ou filtré,
+  // le panneau décrit réellement l'ensemble de la carte nationale.
+  const selected = val("f-dep") || depSelectionne || "";
   const depItems = selected ? items.filter((c) => c.departement === selected) : items;
   const dep = selected ? `${depNom(selected)} (${selected})` : "Départements impactés";
   const estimate = departmentEstimate(selected, items);
   document.getElementById("department-title").textContent = dep;
-  const confirmed = depItems.filter((c) => c.statut === "confirmé").length;
-  const projects = depItems.filter((c) => c.statut === "projet").length;
   const fusions = depItems.filter((c) => c.type === "fusion").length;
-  const totalAgencies = selected && DONNEES.departements[selected] ? DONNEES.departements[selected].total_agences : sum(Object.values(DONNEES.departements || {}).map((d) => d.total_agences || 0));
   document.getElementById("department-summary").innerHTML = `<h2>${esc(dep)}</h2>
     <p class="status-line"><span class="green-dot"></span>Période : ${esc(periodLabel())}</p>
     <div class="metric-grid">
-      ${metric("Estimation départementale", estimate.estimated_count, "red")}
-      ${metric("Points précis X/Y", estimate.precise_count, "blue")}
-      ${metric("Signaux non pointés", estimate.unlocated_count, "orange")}
-      ${metric("Annonces départementales", estimate.department_signal_count, "purple")}
+      ${metric("Total indicatif", estimate.estimated_count, "red")}
+      ${metric("Marqueurs visibles X/Y", estimate.precise_count, "blue")}
+      ${metric("Candidats locaux non géocodés", estimate.unlocated_count, "orange")}
+      ${metric("Volume annoncé sans liste nominative", estimate.department_signal_count, "purple")}
       ${metric("Fusions / Rapprochements", fusions, "purple")}
     </div>
-    <p class="department-note">Cliquez un département sur la carte pour afficher ses statistiques ici, sans filtrer les données. L'estimation agrège les points affichés et les signaux locaux sans coordonnée fiable.</p>`;
+    <p class="department-note">Le total additionne les marqueurs visibles, les candidats locaux restant à géocoder et les volumes départementaux sans liste d'agences. Les rejets techniques (hors période, fermeture temporaire ou département contradictoire) sont exclus. Sans coordonnées X/Y, aucun marqueur ne peut être affiché.</p>`;
   const bankRows = Object.entries(groupCount(depItems, (c) => c.banque || "Non isolée"))
     .sort((a, b) => b[1] - a[1]).slice(0, 6);
   document.getElementById("department-banks").innerHTML = `<h2>Top banques touchées</h2>${bankRows.map(([name, count]) => {
@@ -955,8 +958,8 @@ function renderDepartments(items) {
     return `<div class="bar-row"><span>${esc(name)}</span><strong>${esc(count)}</strong><i style="width:${width}%"></i></div>`;
   }).join("") || emptyState("Aucune banque dans ce périmètre.")}`;
   const vagueSignals = selected
-    ? (DONNEES.department_estimates?.[selected]?.signals || [])
-    : Object.values(DONNEES.department_estimates || {}).flatMap((d) => d.signals || []);
+    ? visibleDepartmentSignals(selected)
+    : Object.keys(DONNEES.departements || {}).flatMap(visibleDepartmentSignals);
   document.getElementById("department-watch").innerHTML = `<h2>Panorama départemental</h2>
     <div class="stack-list">
       ${depItems.slice(0, 4).map(resultCard).join("")}
@@ -967,24 +970,29 @@ function renderDepartments(items) {
 
 function departmentEstimate(code, items = filtrer()) {
   if (!code) {
-    const estimates = DONNEES.department_estimates || {};
     return Object.keys(DONNEES.departements || {}).reduce((acc, depCode) => {
-      const dep = DONNEES.departements[depCode] || {};
-      const estimate = estimates[depCode] || {};
-      acc.precise_count += Number(estimate.precise_count ?? dep.precise_count ?? dep.count ?? 0);
-      acc.unlocated_count += Number(estimate.unlocated_count ?? dep.unlocated_count ?? 0);
-      acc.department_signal_count += Number(estimate.department_signal_count ?? dep.department_signal_count ?? 0);
-      acc.estimated_count += Number(estimate.estimated_count ?? dep.estimated_count ?? dep.count ?? 0);
+      const current = departmentEstimate(depCode, items);
+      acc.precise_count += current.precise_count;
+      acc.unlocated_count += current.unlocated_count;
+      acc.department_signal_count += current.department_signal_count;
+      acc.estimated_count += current.estimated_count;
       return acc;
     }, { precise_count: 0, unlocated_count: 0, department_signal_count: 0, estimated_count: 0 });
   }
   const dep = DONNEES.departements?.[code] || {};
   const estimate = DONNEES.department_estimates?.[code] || {};
-  const preciseFiltered = items.filter((c) => c.departement === code).length;
-  const basePrecise = Number(estimate.precise_count ?? dep.precise_count ?? dep.count ?? 0);
-  const unlocated = Number(estimate.unlocated_count ?? dep.unlocated_count ?? 0);
-  const deptSignalCount = Number(estimate.department_signal_count ?? dep.department_signal_count ?? 0);
-  const precise = preciseFiltered || basePrecise;
+  // Même prédicat que pointsClosures() : un « point X/Y » est nécessairement
+  // un marqueur réellement dessinable, pas seulement une ligne de fermeture.
+  const precise = items.filter((c) => (
+    c.departement === code && c.lat != null && c.lon != null
+  )).length;
+  const visibleSignals = visibleDepartmentSignals(code);
+  const unlocated = visibleSignals.filter(isLocalUnlocatedSignal).length;
+  const aggregateSignals = visibleSignals.filter((signal) => !isLocalUnlocatedSignal(signal));
+  const signalsCarryCounts = aggregateSignals.some((signal) => signal.count != null);
+  const deptSignalCount = signalsCarryCounts
+    ? sum(aggregateSignals.map((signal) => Number(signal.count || 0)))
+    : (departmentSignalFiltersActive() ? 0 : Number(estimate.department_signal_count ?? dep.department_signal_count ?? 0));
   return {
     precise_count: precise,
     unlocated_count: unlocated,
@@ -993,11 +1001,44 @@ function departmentEstimate(code, items = filtrer()) {
   };
 }
 
-function topDepartmentEstimates(items = filtrer()) {
-  return Object.keys(DONNEES.departements || {})
-    .map((code) => [code, departmentEstimate(code, items).estimated_count])
-    .filter(([, count]) => count > 0)
-    .sort((a, b) => b[1] - a[1]);
+function isLocalUnlocatedSignal(signal) {
+  if (!signal || !signal.commune) return false;
+  if (signal.precision === "commune_non_geocodee") {
+    const reason = normalize(signal.reason || "");
+    return reason.includes("non geocode") || reason === "code insee absent apres geocodage";
+  }
+  return signal.reason === "signal local non pointé précisément";
+}
+
+function departmentSignalFiltersActive() {
+  return Boolean(
+    val("f-banque") || val("f-type") || val("f-statut") || val("f-temporel") ||
+    val("f-search") || val("f-period") !== "all" || Number(val("f-fiab") || 0) > 1
+  );
+}
+
+function departmentSignalMatchesFilters(signal, code) {
+  const filterDep = val("f-dep");
+  if (filterDep && filterDep !== code) return false;
+  const banque = val("f-banque");
+  if (banque && canonicalBankName(signal.banque) !== banque) return false;
+  const fiab = Number(val("f-fiab") || 0);
+  if (Number(signal.score || 0) < fiab) return false;
+  if (val("f-type") && signal.type !== val("f-type")) return false;
+  if (val("f-statut") && signal.statut !== val("f-statut")) return false;
+  if (val("f-temporel") && signal.statut_temporel !== val("f-temporel")) return false;
+  const q = normalize(val("f-search"));
+  const haystack = normalize(`${signal.banque || ""} ${signal.commune || ""} ${signal.titre || ""} ${signal.reason || ""}`);
+  if (q && !haystack.includes(q)) return false;
+  return dateInWindow(signal, periodWindow());
+}
+
+function visibleDepartmentSignals(code) {
+  return (DONNEES.department_estimates?.[code]?.signals || [])
+    .filter((signal) => (
+      (isLocalUnlocatedSignal(signal) || !signal.commune) &&
+      departmentSignalMatchesFilters(signal, code)
+    ));
 }
 
 function departmentSignalCard(signal) {
@@ -1262,7 +1303,7 @@ function focusClosure(id) {
   openAgencySheet(id);
 }
 
-function choisirDepartement(code) {
+function setDepartmentSelection(code) {
   if (map && map.getSource("departements") && depSelectionne && depSelectionne !== code) {
     map.setFeatureState({ source: "departements", id: depSelectionne }, { selected: false });
   }
@@ -1270,7 +1311,33 @@ function choisirDepartement(code) {
   if (map && map.getSource("departements") && depSelectionne) {
     map.setFeatureState({ source: "departements", id: depSelectionne }, { selected: true });
   }
+}
+
+function choisirDepartement(code) {
+  setDepartmentSelection(code);
   renderDepartments(filtrer());
+  if (depSelectionne) fitToDepartment(depSelectionne);
+}
+
+function fitToDepartment(code) {
+  if (!map || !map.loaded() || !DEPTS) return;
+  const feature = DEPTS.features.find((item) => String(item.properties?.code) === String(code));
+  if (!feature) return;
+  const coordinates = [];
+  const collect = (value) => {
+    if (Array.isArray(value) && value.length >= 2 && value.every((n) => typeof n === "number")) {
+      coordinates.push(value);
+      return;
+    }
+    if (Array.isArray(value)) value.forEach(collect);
+  };
+  collect(feature.geometry?.coordinates);
+  if (!coordinates.length) return;
+  const bounds = coordinates.reduce(
+    (box, point) => box.extend(point),
+    new maplibregl.LngLatBounds(coordinates[0], coordinates[0]),
+  );
+  map.fitBounds(bounds, { padding: 70, maxZoom: 9, duration: 450 });
 }
 
 function selectDepartment(code) {
@@ -1829,6 +1896,11 @@ function popupHtml(p) {
 function fitToFiltered() {
   if (!map || !map.loaded()) return;
   if (currentView === "departments") {
+    const selected = val("f-dep") || depSelectionne;
+    if (selected) {
+      fitToDepartment(selected);
+      return;
+    }
     map.fitBounds([[-5.4, 41.1], [9.8, 51.3]], { padding: 45, duration: 450 });
     return;
   }
@@ -1889,7 +1961,7 @@ function parseDate(value) {
 }
 
 function dateValue(c) {
-  return parseDate(c.date_fermeture || c.date_annonce || c.created_at);
+  return parseDate(c.date_fermeture || c.date_annonce || c.date || c.created_at);
 }
 
 function formatDate(value) {

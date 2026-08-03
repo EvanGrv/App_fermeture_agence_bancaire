@@ -146,10 +146,15 @@ def test_vue_departement_affiche_points_et_stats_sans_filtre():
     # Surbrillance au survol et sélection visible
     assert '"feature-state", "hover"' in js
     assert '"feature-state", "selected"' in js
-    assert "Estimation départementale" in js
-    assert "Signaux non pointés" in js
-    assert "Annonces départementales" in js
+    assert "Total indicatif" in js
+    assert "Marqueurs visibles X/Y" in js
+    assert "Candidats locaux non géocodés" in js
+    assert "Volume annoncé sans liste nominative" in js
     assert "Agence sans point précis" in js
+    # Un point compté applique exactement la condition de rendu de la carte.
+    assert "c.lat != null && c.lon != null" in js
+    # La sélection permet de voir immédiatement les marqueurs du département.
+    assert "fitToDepartment" in js
 
 
 def test_popup_point_citation_tronquee_et_date_fermeture_complete():
