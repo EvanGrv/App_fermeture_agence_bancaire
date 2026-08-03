@@ -49,12 +49,46 @@ _REGIONS = {
 }
 
 
+def _department_code(value: str | None) -> str:
+    """Retourne le code canonique d'un département, même stocké par son nom.
+
+    Les collecteurs historiques ont parfois persisté ``Indre`` ou
+    ``Haute-Loire`` là où le front attend respectivement ``36`` et ``43``.
+    Normaliser à la frontière de l'export évite de perdre ces signaux sans
+    réécrire les données d'audit brutes.
+    """
+    raw = str(value or "").strip()
+    if raw in config.DEPARTEMENTS:
+        return raw
+    key = normalise_cle(raw)
+    return next(
+        (code for code, name in config.DEPARTEMENTS.items()
+         if normalise_cle(name) == key),
+        "",
+    )
+
+
+def _countable_unlocated(candidate: dict) -> bool:
+    """True uniquement pour un événement local crédible non cartographiable.
+
+    ``closures_unlocated`` sert aussi de quarantaine/audit. Une contradiction
+    géographique, une fermeture temporaire ou un élément hors fenêtre n'est
+    donc pas une fermeture estimée et ne doit pas colorer la carte.
+    """
+    reason = normalise_cle(candidate.get("raison") or "")
+    return (
+        "non geocode" in reason
+        or reason == "code insee absent apres geocodage"
+    ) and not reason.startswith("garde entree sortie")
+
+
 def build_payload(conn) -> dict:
     closures = []
     compteur = {}
     for row in conn.execute(f"SELECT {','.join(_CLOSURE_COLS)} FROM closures"):
         cl = dict(zip(_CLOSURE_COLS, row))
         cl["banque"] = normalise_banque(cl["banque"])
+        cl["departement"] = _department_code(cl["departement"])
         srcs = conn.execute(
             "SELECT url, titre, source, date FROM sources WHERE closure_id=?",
             (cl["id"],),
@@ -101,6 +135,7 @@ def build_payload(conn) -> dict:
     ]
     for vigilance in vigilances:
         vigilance["banque"] = normalise_banque(vigilance["banque"])
+        vigilance["departement"] = _department_code(vigilance["departement"])
     closures_unlocated = [
         dict(zip(_UNLOCATED_COLS, row))
         for row in conn.execute(
@@ -109,6 +144,7 @@ def build_payload(conn) -> dict:
     ]
     for closure in closures_unlocated:
         closure["banque"] = normalise_banque(closure["banque"])
+        closure["departement"] = _department_code(closure["departement"])
     department_signals = [
         dict(zip(_DEPT_SIGNAL_COLS, row))
         for row in conn.execute(
@@ -117,6 +153,7 @@ def build_payload(conn) -> dict:
     ]
     for signal in department_signals:
         signal["banque"] = normalise_banque(signal["banque"])
+        signal["departement"] = _department_code(signal["departement"])
     vague_signals = [
         dict(zip(_VAGUE_SIGNAL_COLS, row))
         for row in conn.execute(
@@ -206,7 +243,7 @@ def _build_department_estimates(
         if c.get("banque") and c.get("commune")
     }
     for cl in closures:
-        dep = cl.get("departement")
+        dep = _department_code(cl.get("departement"))
         if dep not in config.DEPARTEMENTS:
             continue
         bucket = estimates.setdefault(dep, {
@@ -218,10 +255,13 @@ def _build_department_estimates(
             "department_signal_count": 0,
             "signals": [],
         })
-        bucket["precise_count"] += 1
+        # Le front ne dessine un marqueur que si les deux coordonnées existent.
+        # Le compteur X/Y doit appliquer exactement la même définition.
+        if cl.get("lat") is not None and cl.get("lon") is not None:
+            bucket["precise_count"] += 1
     for candidate in closures_unlocated:
-        dep = candidate.get("departement")
-        if dep not in config.DEPARTEMENTS:
+        dep = _department_code(candidate.get("departement"))
+        if dep not in config.DEPARTEMENTS or not _countable_unlocated(candidate):
             continue
         bucket = estimates.setdefault(dep, {
             "departement": dep,
@@ -244,9 +284,17 @@ def _build_department_estimates(
             "score": candidate.get("fiabilite") or 0,
             "precision": "commune_non_geocodee",
             "reason": candidate.get("raison") or "fermeture non pointée précisément",
+            "type": candidate.get("type") or "",
+            "statut": candidate.get("statut") or "",
+            "statut_temporel": candidate.get("statut_temporel") or "",
+            "date": candidate.get("date_fermeture") or candidate.get("date") or "",
         })
+        represented.add((
+            normalise_cle(candidate.get("banque") or ""),
+            normalise_cle(candidate.get("commune") or ""),
+        ))
     for signal in department_signals:
-        dep = signal.get("departement")
+        dep = _department_code(signal.get("departement"))
         if dep not in config.DEPARTEMENTS:
             continue
         bucket = estimates.setdefault(dep, {
@@ -270,6 +318,8 @@ def _build_department_estimates(
             "score": round(float(signal.get("confidence") or 0) * 5),
             "precision": "departement",
             "reason": signal.get("evidence") or "signal départemental",
+            "count": int(signal.get("count") or 0),
+            "date": signal.get("date") or "",
         })
     seen_signals: set[str] = set()
     for vig in vigilances:
@@ -289,6 +339,10 @@ def _build_department_estimates(
         })
         bucket["signals"].append(signal)
         bucket["unlocated_count"] += 1
+        represented.add((
+            normalise_cle(signal.get("banque") or ""),
+            normalise_cle(signal.get("commune") or ""),
+        ))
     for bucket in estimates.values():
         bucket["estimated_count"] = (
             bucket["precise_count"]

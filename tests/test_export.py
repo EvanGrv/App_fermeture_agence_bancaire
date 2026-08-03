@@ -201,3 +201,58 @@ def test_build_payload_expose_tiers_multiniveaux(tmp_path):
     assert estimate["unlocated_count"] == 1
     assert estimate["department_signal_count"] == 2
     assert estimate["estimated_count"] == 4
+
+
+def test_department_estimate_exclut_les_rejets_de_la_quarantaine(tmp_path):
+    conn = store.init_db(tmp_path / "t.db")
+    base = {
+        "banque": "La Banque Postale", "commune": "Paray-Vieille-Poste",
+        "departement": "91", "type": "fermeture", "statut": "projet",
+        "fiabilite": 3, "citation": "x", "source": "PQR", "date": "2026-01-01",
+    }
+    for ident, reason in (
+        ("u-window", "hors fenêtre temporelle"),
+        ("u-temp", "garde entrée/sortie: fermeture postale temporaire ou circonstancielle"),
+        ("u-dep", "garde entrée/sortie: département source 44 incompatible avec la sortie 91"),
+    ):
+        store.upsert_closure_unlocated(conn, {
+            **base, "id": ident, "url": f"http://{ident}", "raison": reason,
+        })
+
+    payload = export.build_payload(conn)
+
+    assert "91" not in payload["department_estimates"]
+    assert payload["departements"]["91"]["unlocated_count"] == 0
+    assert payload["departements"]["91"]["estimated_count"] == 0
+
+
+def test_department_estimate_compte_seulement_les_vrais_xy(tmp_path):
+    conn = store.init_db(tmp_path / "t.db")
+    store.upsert_closure(conn, {
+        "id": "c-no-xy", "banque": "BNP Paribas", "commune": "Melun",
+        "code_insee": "77288", "departement": "77", "type": "fermeture",
+        "date_annonce": None, "date_fermeture": None,
+        "statut": "projet", "fiabilite": 3, "citation": "x",
+        "lat": None, "lon": None,
+    })
+
+    estimate = export.build_payload(conn)["department_estimates"]["77"]
+
+    assert estimate["precise_count"] == 0
+    assert estimate["estimated_count"] == 0
+
+
+def test_department_estimate_normalise_les_noms_departementaux(tmp_path):
+    conn = store.init_db(tmp_path / "t.db")
+    store.upsert_closure_unlocated(conn, {
+        "id": "u-name", "banque": "Crédit Agricole", "commune": "Reuilly",
+        "departement": "Indre", "type": "fermeture", "statut": "confirmé",
+        "fiabilite": 4, "citation": "x", "url": "http://u-name",
+        "titre": "Fermeture à Reuilly", "source": "PQR", "date": "2026-01-01",
+        "raison": "commune non géocodée",
+    })
+
+    payload = export.build_payload(conn)
+
+    assert payload["closures_unlocated"][0]["departement"] == "36"
+    assert payload["department_estimates"]["36"]["unlocated_count"] == 1
