@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T06:31:33.844240+00:00",
+  "generated_at": "2026-08-03T06:55:08.612269+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -228,7 +228,7 @@
       "nom": "Creuse",
       "region": "Nouvelle-Aquitaine",
       "count": 0,
-      "total_agences": 47,
+      "total_agences": 46,
       "precise_count": 0,
       "unlocated_count": 0,
       "estimated_count": 0
@@ -281,11 +281,11 @@
     "29": {
       "nom": "Finistère",
       "region": "Bretagne",
-      "count": 8,
+      "count": 9,
       "total_agences": 157,
-      "precise_count": 8,
+      "precise_count": 9,
       "unlocated_count": 5,
-      "estimated_count": 13
+      "estimated_count": 14
     },
     "30": {
       "nom": "Gard",
@@ -419,8 +419,8 @@
       "count": 3,
       "total_agences": 175,
       "precise_count": 3,
-      "unlocated_count": 9,
-      "estimated_count": 12
+      "unlocated_count": 10,
+      "estimated_count": 13
     },
     "45": {
       "nom": "Loiret",
@@ -471,7 +471,7 @@
       "nom": "Manche",
       "region": "Normandie",
       "count": 1,
-      "total_agences": 71,
+      "total_agences": 72,
       "precise_count": 1,
       "unlocated_count": 0,
       "estimated_count": 1
@@ -578,11 +578,11 @@
     "62": {
       "nom": "Pas-de-Calais",
       "region": "Hauts-de-France",
-      "count": 8,
+      "count": 9,
       "total_agences": 212,
-      "precise_count": 8,
+      "precise_count": 9,
       "unlocated_count": 4,
-      "estimated_count": 12
+      "estimated_count": 13
     },
     "63": {
       "nom": "Puy-de-Dôme",
@@ -779,8 +779,8 @@
       "count": 1,
       "total_agences": 90,
       "precise_count": 1,
-      "unlocated_count": 1,
-      "estimated_count": 2
+      "unlocated_count": 3,
+      "estimated_count": 4
     },
     "85": {
       "nom": "Vendée",
@@ -833,8 +833,8 @@
       "count": 1,
       "total_agences": 17,
       "precise_count": 1,
-      "unlocated_count": 0,
-      "estimated_count": 1
+      "unlocated_count": 1,
+      "estimated_count": 2
     },
     "91": {
       "nom": "Essonne",
@@ -1011,9 +1011,9 @@
     "62": {
       "departement": "62",
       "nom": "Pas-de-Calais",
-      "precise_count": 8,
+      "precise_count": 9,
       "unlocated_count": 4,
-      "estimated_count": 12,
+      "estimated_count": 13,
       "department_signal_count": 0,
       "signals": [
         {
@@ -1202,9 +1202,9 @@
     "29": {
       "departement": "29",
       "nom": "Finistère",
-      "precise_count": 8,
+      "precise_count": 9,
       "unlocated_count": 5,
-      "estimated_count": 13,
+      "estimated_count": 14,
       "department_signal_count": 0,
       "signals": [
         {
@@ -1921,10 +1921,22 @@
       "departement": "84",
       "nom": "Vaucluse",
       "precise_count": 1,
-      "unlocated_count": 1,
-      "estimated_count": 2,
+      "unlocated_count": 3,
+      "estimated_count": 4,
       "department_signal_count": 0,
       "signals": [
+        {
+          "id": "bbe03727e060c3bc",
+          "banque": "La Banque Postale",
+          "commune": "Caumont-sur-Durance",
+          "departement": "84",
+          "titre": "Le bureau de poste ne fermera pas à Caumont-sur-Durance mais les horaires d'ouverture sont aménagés - La Provence",
+          "source": "Google News",
+          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNaUwxV1p2ZHl6ZFlERkRpWXhkeUlDbDZDRmdmNnhUaWpRQmx2OHJMbmE0SE1RMmd6SjlZQUE1U2RCZ3NuVTktbFhnTUJLNkt1d3JxYUNmR2J4Ry1XdTY1UFVWdlMxYUN3MkNWblhVakZ4Q1hCRjNQNTBlbWJWNmNESi1JRE93RlBIYlVqYkRESm1yZ2NYMVR3VmFrU0N6RER3M2hUUU9zWEk2U2VVR19tYjRSQVYzXzhOY3pHRFU1dFhWQzJfUnJDZUZQZVVwanVxNFlTX2I4ckhGYnVra0FoS05rRDIyYW5XNlRmQy1n?oc=5",
+          "score": 3,
+          "precision": "commune_non_geocodee",
+          "reason": "garde entrée/sortie: la source nie ou annule la fermeture"
+        },
         {
           "id": "a5c7f9c4e3e842d8",
           "banque": "La Banque Postale",
@@ -1936,6 +1948,18 @@
           "score": 3,
           "precision": "commune_non_geocodee",
           "reason": "hors fenêtre temporelle"
+        },
+        {
+          "id": "44f40079e5e54826",
+          "banque": "La Banque Postale",
+          "commune": "Caumont-sur-Durance",
+          "departement": "84",
+          "titre": "Le bureau de poste ne fermera pas à Caumont-sur-Durance mais les horaires d'ouverture sont aménagés",
+          "source": "LaProvence.com",
+          "url": "https://www.laprovence.com/article/societe/80810211253626/le-bureau-de-poste-ne-fermera-pas-a-caumont-sur-durance-mais-les-horaires-d-ouverture-sont-amenages?id=80810211253626",
+          "score": 3,
+          "precision": "commune_non_geocodee",
+          "reason": "garde entrée/sortie: la source nie ou annule la fermeture"
         }
       ]
     },
@@ -1965,8 +1989,8 @@
       "departement": "44",
       "nom": "Loire-Atlantique",
       "precise_count": 3,
-      "unlocated_count": 9,
-      "estimated_count": 12,
+      "unlocated_count": 10,
+      "estimated_count": 13,
       "department_signal_count": 0,
       "signals": [
         {
@@ -2001,6 +2025,18 @@
           "titre": "Le bureau de poste de Donges désormais fermé le samedi ? Le député LFI Mathias Tavel dénonce - MaVille.com",
           "source": "Google News",
           "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxOQ002dU4tYjRJZ2Y1NExVU1BJZkg2aFBHQmJqaThMYS1UTDY3Q1JERFhpVlpmLXdPaENhUDN6OXBUTzU3cGN4YnFDbGx2REhwZ0l2WURhWmRHU0ZqR01NNDVLeWJxTWdHNnJXYlJxZFlzRER3dWZQN1dLVFpjM3ZpMXN0N2cyeVZQLWpiclRnUTlzWFk5N2dkZVlfb1lhcUFnZ0htVzRhQXBRLWQ5QTVsdFZMUHNLMGtjMzNSYnZzS3R1NE85SnkxR2VRdkNXcUNDQ1NNUHJWZWR5REhQelV5V1UyUUNyR2xQSkR6cVZKdEpienZtSEJUV1BQcW16dWdoMDNNX0h3UE9COVdzcy1Tdg?oc=5",
+          "score": 3,
+          "precision": "commune_non_geocodee",
+          "reason": "hors fenêtre temporelle"
+        },
+        {
+          "id": "ea09716d88100219",
+          "banque": "La Banque Postale",
+          "commune": "Donges",
+          "departement": "44",
+          "titre": "Le bureau de poste de Donges désormais fermé le samedi ? Le député LFI Mathias Tavel dénonce - Maville Nantes",
+          "source": "Google News",
+          "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxObEhkZWtlTllBRTVJaEZiWGstZndocXJMZFhsdi1Vd1BWQmR4X1FaN1czNTU5UWFmQ1czcUE3Nl9pMW40SXU3RDRWY1FTOGZidjhrc2Fza0ZqaDAyYTZ0N0lYX3BxNkVyNmVIdF8yZmVGcDg5NzJrb0ZvY2RjZTlkNUJoVTFEcUpybGxURTNUMjJVbm1STjI3WGlRWlpiSUhWODIxWlZSc0R4alV2Wmk4XzQ2eEprdk1hV0FkemFFdlRxQUtOc1lqYjZ4R1FBS2liNTRzbkhIZ0EyYkpjWU55eHRIWFRMN1pzSll6MzlTV0toYnVLSFh6cExnWnMxQnhqX1ZvVTduRQ?oc=5",
           "score": 3,
           "precision": "commune_non_geocodee",
           "reason": "hors fenêtre temporelle"
@@ -2215,10 +2251,23 @@
       "departement": "90",
       "nom": "Territoire de Belfort",
       "precise_count": 1,
-      "unlocated_count": 0,
-      "estimated_count": 1,
+      "unlocated_count": 1,
+      "estimated_count": 2,
       "department_signal_count": 0,
-      "signals": []
+      "signals": [
+        {
+          "id": "018c8143b8fa164d",
+          "banque": "La Banque Postale",
+          "commune": "Giromagny",
+          "departement": "90",
+          "titre": "Fermeture du bureau de poste de Giromagny : la faute au radon, un gaz radioactif - ici.fr",
+          "source": "Google News",
+          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNVmxnRmVDLXFpSEpVZ2UzeXpoZGVHU0R3NElpRzFQYklqY1JZSUdvZUsyZThKeFFXV0NfSzZlYlNYUmRXYUVUb1VCdUV1RDdKNVlLa1lyMzM0TUFzTDVwXzVwVDJsN0FnanV0cnBwejY3QWM4ZXVmNmgxNi1pOEl6SVhEWk15bXlBRmxfYURqQlFVUENsWVh2X29SaHJCN1RCd0RhZmVaYmR5YklyNXdKRTdrREkxMHBPTHBpUnFjNDFidlhGdWNYRzFtN2wzNThlS01tRElUZEZvWGY5bDJtZUJBazFhdw?oc=5",
+          "score": 1,
+          "precision": "commune_non_geocodee",
+          "reason": "hors fenêtre temporelle"
+        }
+      ]
     },
     "39": {
       "departement": "39",
@@ -3449,9 +3498,9 @@
     },
     {
       "region": "Bretagne",
-      "articles": 33,
+      "articles": 34,
       "fermetures": 15,
-      "projets": 9,
+      "projets": 10,
       "fusions": 0,
       "types": [
         "Fermeture",
@@ -3467,8 +3516,8 @@
     },
     {
       "region": "Hauts-de-France",
-      "articles": 25,
-      "fermetures": 9,
+      "articles": 26,
+      "fermetures": 10,
       "projets": 5,
       "fusions": 0,
       "types": [
@@ -10835,6 +10884,88 @@
         "source": "SIRENE"
       },
       "region": "Occitanie"
+    },
+    {
+      "id": "226abd99b05cfecc",
+      "banque": "La Banque Postale",
+      "commune": "Daoulas",
+      "code_insee": "29043",
+      "departement": "29",
+      "type": "fermeture",
+      "date_annonce": "Sun, 02 Aug 2026 17:22:54 GMT",
+      "date_fermeture": "2026-08-01",
+      "statut": "projet",
+      "statut_temporel": "deja_fermee",
+      "date_fermeture_approx": 1,
+      "fiabilite": 3,
+      "lat": 48.355335,
+      "lon": -4.265512,
+      "citation": "« À Daoulas, la fermeture en août de La Poste » (article sur la fermeture d’un bureau de poste nommé, donc point bancaire potentiellement lié à La Banque Postale d’après le titre).",
+      "adresse": null,
+      "agence_localisation": "bureau de poste de Daoulas (fermeture en août)",
+      "commune_originale": null,
+      "service_impact": "fermeture_lbp_complete",
+      "point_postal_avant": "Bureau de Poste",
+      "point_postal_apres": null,
+      "postal_point_id": "04959A",
+      "evidence_level": "presse+référentiel",
+      "created_at": "2026-08-03T06:42:39.873091+00:00",
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPSDRPODZjOUo3VzNRX05wRHRrVU8xZ2ZSSGlEY21Kd0V3Q0lNeTRvRXlWcXRSRUJDb0xnMlZuNTBhOTIyLWhhaUdtY1N1YXpEcy1aeGJxdkRmSldhVjdEVWptZ1kzd0NuQzYzbFF1UlJYTmJzZDNpSnc4ZFVZUG9NbFhUb0lMSGFyMlo0QUNMTFZqejZaNTZ4LUJzY2pnMV81YzM3RkJIVHh4N2JhQXNFNnhTdjhIZnB6cGNielZuZ3hGMURuOVFIMWREbw?oc=5",
+          "titre": "À Daoulas, la fermeture en août de La Poste mécontente des habitants - letelegramme.fr",
+          "source": "Google News",
+          "date": "Sun, 02 Aug 2026 17:22:54 GMT",
+          "tier": "D"
+        }
+      ],
+      "controle_sirene": {
+        "etat_administratif": null,
+        "siret": null,
+        "source": "SIRENE"
+      },
+      "region": "Bretagne"
+    },
+    {
+      "id": "0a3b293111d7c326",
+      "banque": "Crédit Agricole",
+      "commune": "Loos-en-Gohelle",
+      "code_insee": "62528",
+      "departement": "62",
+      "type": "fermeture",
+      "date_annonce": "2026-08-01",
+      "date_fermeture": "2026-08-01",
+      "statut": "confirmé",
+      "statut_temporel": "deja_fermee",
+      "date_fermeture_approx": 1,
+      "fiabilite": 3,
+      "lat": 50.452176,
+      "lon": 2.786615,
+      "citation": "Article intitulé : « l’agence Crédit agricole définitivement fermée » (Loos-en-Gohelle). URL : /loos-en-gohelle-l-agence-credit-agricole-definitivement-fermee",
+      "adresse": null,
+      "agence_localisation": "l’agence Crédit agricole",
+      "commune_originale": null,
+      "service_impact": null,
+      "point_postal_avant": null,
+      "point_postal_apres": null,
+      "postal_point_id": null,
+      "evidence_level": null,
+      "created_at": "2026-08-03T06:44:15.920279+00:00",
+      "sources": [
+        {
+          "url": "https://www.lavoixdunord.fr/1725996/article/2026-08-01/loos-en-gohelle-l-agence-credit-agricole-definitivement-fermee",
+          "titre": "l’agence Crédit agricole définitivement fermée",
+          "source": "lavoixdunord.fr",
+          "date": "2026-08-01",
+          "tier": "B"
+        }
+      ],
+      "controle_sirene": {
+        "etat_administratif": null,
+        "siret": null,
+        "source": "SIRENE"
+      },
+      "region": "Hauts-de-France"
     }
   ],
   "closures_unlocated": [
@@ -10927,6 +11058,24 @@
       "date": "Wed, 29 Jul 2026 16:22:00 GMT",
       "raison": "hors fenêtre temporelle",
       "created_at": "2026-08-02T06:20:54.829151+00:00"
+    },
+    {
+      "id": "ea09716d88100219",
+      "banque": "La Banque Postale",
+      "commune": "Donges",
+      "departement": "44",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "Le bureau de poste de Donges désormais fermé le samedi ? Le député LFI Mathias Tavel dénonce - Maville Nantes",
+      "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxObEhkZWtlTllBRTVJaEZiWGstZndocXJMZFhsdi1Vd1BWQmR4X1FaN1czNTU5UWFmQ1czcUE3Nl9pMW40SXU3RDRWY1FTOGZidjhrc2Fza0ZqaDAyYTZ0N0lYX3BxNkVyNmVIdF8yZmVGcDg5NzJrb0ZvY2RjZTlkNUJoVTFEcUpybGxURTNUMjJVbm1STjI3WGlRWlpiSUhWODIxWlZSc0R4alV2Wmk4XzQ2eEprdk1hV0FkemFFdlRxQUtOc1lqYjZ4R1FBS2liNTRzbkhIZ0EyYkpjWU55eHRIWFRMN1pzSll6MzlTV0toYnVLSFh6cExnWnMxQnhqX1ZvVTduRQ?oc=5",
+      "titre": "Le bureau de poste de Donges désormais fermé le samedi ? Le député LFI Mathias Tavel dénonce - Maville Nantes",
+      "source": "Google News",
+      "date": "Wed, 29 Jul 2026 16:22:00 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-08-03T06:42:46.403236+00:00"
     },
     {
       "id": "aa1a3c4f9273b49c",
@@ -11736,7 +11885,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-02T06:18:06.434420+00:00"
+      "created_at": "2026-08-03T06:39:55.058924+00:00"
     },
     {
       "id": "50895c042a984b7d",
@@ -11772,7 +11921,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 04:46:02 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-02T06:18:05.935911+00:00"
+      "created_at": "2026-08-03T06:39:54.674695+00:00"
     },
     {
       "id": "8c6a0cad14626d6f",
@@ -12981,6 +13130,24 @@
       "created_at": "2026-07-22T08:56:20.863098+00:00"
     },
     {
+      "id": "bbe03727e060c3bc",
+      "banque": "La Banque Postale",
+      "commune": "Caumont-sur-Durance",
+      "departement": "84",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "a_venir",
+      "fiabilite": 3,
+      "citation": "Le bureau de poste ne fermera pas à Caumont-sur-Durance mais les horaires d'ouverture sont aménagés - La Provence",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNaUwxV1p2ZHl6ZFlERkRpWXhkeUlDbDZDRmdmNnhUaWpRQmx2OHJMbmE0SE1RMmd6SjlZQUE1U2RCZ3NuVTktbFhnTUJLNkt1d3JxYUNmR2J4Ry1XdTY1UFVWdlMxYUN3MkNWblhVakZ4Q1hCRjNQNTBlbWJWNmNESi1JRE93RlBIYlVqYkRESm1yZ2NYMVR3VmFrU0N6RER3M2hUUU9zWEk2U2VVR19tYjRSQVYzXzhOY3pHRFU1dFhWQzJfUnJDZUZQZVVwanVxNFlTX2I4ckhGYnVra0FoS05rRDIyYW5XNlRmQy1n?oc=5",
+      "titre": "Le bureau de poste ne fermera pas à Caumont-sur-Durance mais les horaires d'ouverture sont aménagés - La Provence",
+      "source": "Google News",
+      "date": "Sun, 02 Aug 2026 20:16:00 GMT",
+      "raison": "garde entrée/sortie: la source nie ou annule la fermeture",
+      "created_at": "2026-08-03T06:42:45.531140+00:00"
+    },
+    {
       "id": "c018dcc336b7d7e8",
       "banque": "La Banque Postale",
       "commune": "Valence",
@@ -13248,7 +13415,7 @@
       "source": "Google News",
       "date": "Sat, 03 Aug 2024 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-02T06:18:04.912979+00:00"
+      "created_at": "2026-08-03T06:39:53.881838+00:00"
     },
     {
       "id": "4996e3bfe560bbb6",
@@ -13357,6 +13524,24 @@
       "date": "Mon, 27 Jul 2026 17:08:43 GMT",
       "raison": "hors fenêtre temporelle",
       "created_at": "2026-07-28T06:08:50.052582+00:00"
+    },
+    {
+      "id": "f75148b8341551e5",
+      "banque": "La Banque Postale",
+      "commune": "Sablé-sur-Sarthe",
+      "departement": null,
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "rumeur",
+      "statut_temporel": "inconnu",
+      "fiabilite": 2,
+      "citation": "« Après sept semaines de fermeture, le bureau de La Poste de Sablé-sur-Sarthe rouvre ses portes au public ! » (article ne précise pas explicitement un retrait d’activité bancaire/La Banque Postale)",
+      "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPWmp2XzdIM3phUEF0eV8tUHBmR2lqUWpLTE1vV0dmVzcyNmtkX2dTZEtCd0RhZVg5NGFNV1NYYmxaS2VTRF9teHM0X2FVWEVkVUtzczR5WXFlSkh2SGxWQ0gzLUZZN3otNXdtbUFCR012YU1ZblUwVWJCQXR1R3RZQnFzN01tSVJ2VUtiVHp0dy1YSmdoQk5JWGpRSHBaY3hsRERIelVubk0ydk4wQmxvMHU2QzlJOTBUNGR0X21VQ1dscldKbU1FbV9ETFJ1elU1enQycHZvQ0t0N0lFczl4RGZHSERSa3IyZEJMOW5mR0swRDhxaGVkeW5vY0ZZakZYZEE?oc=5",
+      "titre": "Après sept semaines de fermeture, le bureau de La Poste de Sablé-sur-Sarthe rouvre ses portes au public ! - Actu.fr",
+      "source": "Google News",
+      "date": "Mon, 27 Jul 2026 15:30:00 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-08-03T06:42:43.333484+00:00"
     },
     {
       "id": "6d80040bf3384652",
@@ -13665,6 +13850,24 @@
       "created_at": "2026-07-22T09:08:24.700909+00:00"
     },
     {
+      "id": "018c8143b8fa164d",
+      "banque": "La Banque Postale",
+      "commune": "Giromagny",
+      "departement": "90",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 1,
+      "citation": "Fermeture du bureau de poste de Giromagny : la faute au radon, un gaz radioactif - ici.fr",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNVmxnRmVDLXFpSEpVZ2UzeXpoZGVHU0R3NElpRzFQYklqY1JZSUdvZUsyZThKeFFXV0NfSzZlYlNYUmRXYUVUb1VCdUV1RDdKNVlLa1lyMzM0TUFzTDVwXzVwVDJsN0FnanV0cnBwejY3QWM4ZXVmNmgxNi1pOEl6SVhEWk15bXlBRmxfYURqQlFVUENsWVh2X29SaHJCN1RCd0RhZmVaYmR5YklyNXdKRTdrREkxMHBPTHBpUnFjNDFidlhGdWNYRzFtN2wzNThlS01tRElUZEZvWGY5bDJtZUJBazFhdw?oc=5",
+      "titre": "Fermeture du bureau de poste de Giromagny : la faute au radon, un gaz radioactif - ici.fr",
+      "source": "Google News",
+      "date": "Mon, 03 Aug 2026 05:31:30 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-08-03T06:42:44.397065+00:00"
+    },
+    {
       "id": "9e4aa4c244dfc47f",
       "banque": "La Banque Postale",
       "commune": "Sainte-Cérotte",
@@ -13968,7 +14171,7 @@
       "source": "Google News",
       "date": "Fri, 20 Jun 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-02T06:18:15.316919+00:00"
+      "created_at": "2026-08-03T06:40:02.062195+00:00"
     },
     {
       "id": "b80663fa38292743",
@@ -14112,7 +14315,7 @@
       "source": "Google News",
       "date": "Fri, 10 Jul 2026 10:12:00 GMT",
       "raison": "garde entrée/sortie: département source 44 incompatible avec la sortie 974",
-      "created_at": "2026-08-02T06:18:36.014847+00:00"
+      "created_at": "2026-08-03T06:40:18.840679+00:00"
     },
     {
       "id": "8c646081e1d69e81",
@@ -14274,7 +14477,7 @@
       "source": "Google News",
       "date": "Fri, 03 Jan 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-02T06:18:05.416707+00:00"
+      "created_at": "2026-08-03T06:39:54.267112+00:00"
     },
     {
       "id": "f3e888f7eaf5ffb7",
@@ -14329,6 +14532,24 @@
       "date": "Fri, 01 Aug 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
       "created_at": "2026-07-27T07:56:36.407534+00:00"
+    },
+    {
+      "id": "44f40079e5e54826",
+      "banque": "La Banque Postale",
+      "commune": "Caumont-sur-Durance",
+      "departement": "84",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "a_venir",
+      "fiabilite": 3,
+      "citation": "Le bureau de poste ne fermera pas à Caumont-sur-Durance mais les horaires d'ouverture sont aménagés",
+      "url": "https://www.laprovence.com/article/societe/80810211253626/le-bureau-de-poste-ne-fermera-pas-a-caumont-sur-durance-mais-les-horaires-d-ouverture-sont-amenages?id=80810211253626",
+      "titre": "Le bureau de poste ne fermera pas à Caumont-sur-Durance mais les horaires d'ouverture sont aménagés",
+      "source": "LaProvence.com",
+      "date": "2026-08-03T05:16:08Z",
+      "raison": "garde entrée/sortie: la source nie ou annule la fermeture",
+      "created_at": "2026-08-03T06:44:31.539821+00:00"
     },
     {
       "id": "eaa24d1f020b9366",
@@ -15848,6 +16069,19 @@
       "source": "Google News",
       "date": "Fri, 06 Sep 2024 07:00:00 GMT",
       "created_at": "2026-07-22T08:54:47.471514+00:00"
+    },
+    {
+      "id": "187e7651952df995",
+      "banque": "La Poste",
+      "scope": "regional",
+      "count": null,
+      "confidence": 0.2,
+      "evidence": "Article centré sur l’évacuation de la PIC de Cestas et des mesures RH après incendie, sans annonce de fermeture/traitement bancaire d’agences.",
+      "url": "https://www.revolutionpermanente.fr/Incendies-en-Gironde-La-Poste-veut-imposer-le-rattrapage-des-heures-et-retirer-des-conges-aux",
+      "titre": "Gironde : La Poste veut faire rattraper les heures aux salariés évacués, les postiers ripostent par la grève",
+      "source": "Révolution Permanente",
+      "date": "2026-08-01T21:27:34Z",
+      "created_at": "2026-08-03T06:44:56.951180+00:00"
     },
     {
       "id": "a9fdadbd1ae76631",
@@ -21676,6 +21910,19 @@
       "created_at": "2026-07-27T06:48:40.175923+00:00"
     },
     {
+      "id": "bb0a526c0b8a2ac1",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Henrichemont : le centre d'exploitation des routes risque de fermer - ici.fr",
+      "extrait": "TITRE: Henrichemont : le centre d'exploitation des routes risque de fermer - ici.fr SOURCE: Google News DATE: Thu, 16 Jul 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMizgFBVV95cUxQc2VFQWJlalJLaDNBcG9xaWNKQWJucS1sUXJQV05XdjhVa0tMY0hBeXFWa0o4NzhBV0sxVzNGUWJObklOX1dLeXJhWUpxUlM1OVhNTVVZN0I0UW9XaXczSlBLaWFlRmY4Q0xXR1ZkY0VsalpvbURKVGtnZUhaNHRqYUdWRml4NDh1MG1ER1FYSG5WaUpCcnNjUHBETXRDRXd6c1hTM0dBLXIxWGlDV0dGWkNhaXJ1eWxESzJ4STZIX3RtVTlrcTJnNGFkSllOUQ?oc=5 <a href=\"https://news.google.c",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQc2VFQWJlalJLaDNBcG9xaWNKQWJucS1sUXJQV05XdjhVa0tMY0hBeXFWa0o4NzhBV0sxVzNGUWJObklOX1dLeXJhWUpxUlM1OVhNTVVZN0I0UW9XaXczSlBLaWFlRmY4Q0xXR1ZkY0VsalpvbURKVGtnZUhaNHRqYUdWRml4NDh1MG1ER1FYSG5WaUpCcnNjUHBETXRDRXd6c1hTM0dBLXIxWGlDV0dGWkNhaXJ1eWxESzJ4STZIX3RtVTlrcTJnNGFkSllOUQ?oc=5",
+      "source": "Google News",
+      "date": "Thu, 16 Jul 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-03T06:42:50.159046+00:00"
+    },
+    {
       "id": "748a1533dc952fa3",
       "banque": "Société Générale",
       "departement": null,
@@ -23223,6 +23470,19 @@
       "created_at": "2026-06-25T15:21:18.224626+00:00"
     },
     {
+      "id": "c8dce6464ac727db",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Fermeture du Câble C1 en août : comment faire pour se déplacer durant les travaux dans le Val-de-Marne ? - Actu.fr",
+      "extrait": "TITRE: Fermeture du Câble C1 en août : comment faire pour se déplacer durant les travaux dans le Val-de-Marne ? - Actu.fr SOURCE: Google News DATE: Sun, 02 Aug 2026 10:32:02 GMT URL: https://news.google.com/rss/articles/CBMi1AFBVV95cUxNQlR2dk5nNGF0elMyMkJvLUJYNkJYajk4SmVRaFprM25tbzYyb2FSdlI0Qnk2aGJCMkpyNmh0SGpScjFJa21vWndmT3NvQzk3S1pBcFRmUlMtUUxOUGNJZmg3NlA3Y0M1MWdVRTZBYnZBNGQwbFFhWVpGSUhNbFV0c0FwYldDMDhSNXVzNUg3UjVFb2FPV3F3dGJhWXV6U19aUjZnendIUEJvZ0RVRUtRRXFrVnlLcHJucENpcVZOQkVIUF9sV2JKS2xGTk1o",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNQlR2dk5nNGF0elMyMkJvLUJYNkJYajk4SmVRaFprM25tbzYyb2FSdlI0Qnk2aGJCMkpyNmh0SGpScjFJa21vWndmT3NvQzk3S1pBcFRmUlMtUUxOUGNJZmg3NlA3Y0M1MWdVRTZBYnZBNGQwbFFhWVpGSUhNbFV0c0FwYldDMDhSNXVzNUg3UjVFb2FPV3F3dGJhWXV6U19aUjZnendIUEJvZ0RVRUtRRXFrVnlLcHJucENpcVZOQkVIUF9sV2JKS2xGTk1oNGl0dmluMw?oc=5",
+      "source": "Google News",
+      "date": "Sun, 02 Aug 2026 10:32:02 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-03T06:42:48.181377+00:00"
+    },
+    {
       "id": "3bde0b278e905ad6",
       "banque": "Société Générale",
       "departement": null,
@@ -24664,6 +24924,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-07-28T06:08:48.858829+00:00"
+    },
+    {
+      "id": "b61d223ddb9ad61f",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "Après sept semaines de fermeture, le bureau de La Poste de Sablé-sur-Sarthe rouvre ses portes au public ! - Actu.fr",
+      "extrait": "TITRE: Après sept semaines de fermeture, le bureau de La Poste de Sablé-sur-Sarthe rouvre ses portes au public ! - Actu.fr SOURCE: Google News DATE: Mon, 27 Jul 2026 15:30:00 GMT URL: https://news.google.com/rss/articles/CBMiggJBVV95cUxPWmp2XzdIM3phUEF0eV8tUHBmR2lqUWpLTE1vV0dmVzcyNmtkX2dTZEtCd0RhZVg5NGFNV1NYYmxaS2VTRF9teHM0X2FVWEVkVUtzczR5WXFlSkh2SGxWQ0gzLUZZN3otNXdtbUFCR012YU1ZblUwVWJCQXR1R3RZQnFzN01tSVJ2VUtiVHp0dy1YSmdoQk5JWGpRSHBaY3hsRERIelVubk0ydk4wQmxvMHU2QzlJOTBUNGR0X21VQ1dscldKbU1FbV9ETFJ",
+      "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPWmp2XzdIM3phUEF0eV8tUHBmR2lqUWpLTE1vV0dmVzcyNmtkX2dTZEtCd0RhZVg5NGFNV1NYYmxaS2VTRF9teHM0X2FVWEVkVUtzczR5WXFlSkh2SGxWQ0gzLUZZN3otNXdtbUFCR012YU1ZblUwVWJCQXR1R3RZQnFzN01tSVJ2VUtiVHp0dy1YSmdoQk5JWGpRSHBaY3hsRERIelVubk0ydk4wQmxvMHU2QzlJOTBUNGR0X21VQ1dscldKbU1FbV9ETFJ1elU1enQycHZvQ0t0N0lFczl4RGZHSERSa3IyZEJMOW5mR0swRDhxaGVkeW5vY0ZZakZYZEE?oc=5",
+      "source": "Google News",
+      "date": "Mon, 27 Jul 2026 15:30:00 GMT",
+      "score": 3,
+      "raison": "fermeture non publiée: hors fenêtre temporelle",
+      "created_at": "2026-08-03T06:42:43.335512+00:00"
     },
     {
       "id": "bf71e2e33e0faf9c",
@@ -28148,6 +28421,110 @@
       "score": 3,
       "raison": "fermeture non publiée: hors fenêtre temporelle",
       "created_at": "2026-07-22T09:09:01.159244+00:00"
+    },
+    {
+      "id": "0e7a97881bfa9a12",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "Christophe Willem, 43 ans : la phrase des coulisses de la Nouvelle Star qu'il n'a jamais oubliée",
+      "extrait": "TITRE: Christophe Willem, 43 ans : la phrase des coulisses de la Nouvelle Star qu'il n'a jamais oubliée SOURCE: Tribunal Du Net DATE: 2026-08-03T06:20:45Z URL: https://www.letribunaldunet.fr/people/christophe-willem-43-ans-nouvelle-star-coulisses-voix.html Il souffle ses 43 bougies aujourd'hui, ce 3 août 2026. Et quelque part dans le Val-d'Oise, à Deuil-la-Barre, là où ses parents tenaient une auto-école, un type qu'on appelait \" la tortue \" peut se dire qu'il a gagné. Novembre 2005 : une sœur, ",
+      "url": "https://www.letribunaldunet.fr/people/christophe-willem-43-ans-nouvelle-star-coulisses-voix.html",
+      "source": "Tribunal Du Net",
+      "date": "2026-08-03T06:20:45Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-03T06:44:19.438629+00:00"
+    },
+    {
+      "id": "8f253aafdfaa2ff0",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "Ouverture de la première session irrégulière de la XVI<sup>e</sup> Assemblée nationale",
+      "extrait": "TITRE: Ouverture de la première session irrégulière de la XVI<sup>e</sup> Assemblée nationale SOURCE: lecourrier.vn DATE: 2026-08-03T04:21:10Z URL: https://lecourrier.vn/ouverture-de-la-premiere-session-irreguliere-de-la-xvie-assemblee-nationale/1352628.html Prévue jusqu'au 24 août, la session se tient en présentiel au Palais de l'Assemblée nationale à Hanoï et se divise en deux phases : du 3 au 13 août et du 19 au 24 août. Parmi les projets de loi à débattre et à adopter figurent la loi révisée",
+      "url": "https://lecourrier.vn/ouverture-de-la-premiere-session-irreguliere-de-la-xvie-assemblee-nationale/1352628.html",
+      "source": "lecourrier.vn",
+      "date": "2026-08-03T04:21:10Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-03T06:44:35.337737+00:00"
+    },
+    {
+      "id": "188d30fe90abd7f6",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "3 août : le jour où l'Allemagne déclare la guerre à la France... et où un sous-marin réalisa le rêve de Jules Verne",
+      "extrait": "TITRE: 3 août : le jour où l'Allemagne déclare la guerre à la France... et où un sous-marin réalisa le rêve de Jules Verne SOURCE: Planet DATE: 2026-08-03T00:48:26Z URL: https://www.planet.fr/saints/sainte-lydie Son départ marque une étape symbolique dans la reconnaissance des femmes en France. En effet, elle devient la première femme de lettres à recevoir des obsèques nationales dans la cour d'honneur du Palais-Royal. Un triomphe laïque qui vient contraster avec le refus ferme de l'Église catho",
+      "url": "https://www.planet.fr/saints/sainte-lydie",
+      "source": "Planet",
+      "date": "2026-08-03T00:48:26Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-03T06:44:36.749567+00:00"
+    },
+    {
+      "id": "bce00559c19fb493",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Le PSG accélère pour Godts, l'avenir de Vinicius en suspens : les 13 infos mercato de dimanche",
+      "extrait": "TITRE: Le PSG accélère pour Godts, l'avenir de Vinicius en suspens : les 13 infos mercato de dimanche SOURCE: Eurosport DATE: 2026-08-02T19:29:57Z URL: https://www.eurosport.fr/football/transferts/2026-2027/transferts-godts-vinicius-lukaku-dzeko-alajbegovic-torres-manchester-city-lyon-les-13-infos-mercato-du-dimanche-2-aout_sto23324797/story.shtml Le PSG a officiellement soumis une première offre à l'Ajax Amsterdam pour Mika Godts qui s'élève à 40 millions d'euros, même si d'autres grosses écuri",
+      "url": "https://www.eurosport.fr/football/transferts/2026-2027/transferts-godts-vinicius-lukaku-dzeko-alajbegovic-torres-manchester-city-lyon-les-13-infos-mercato-du-dimanche-2-aout_sto23324797/story.shtml",
+      "source": "Eurosport",
+      "date": "2026-08-02T19:29:57Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-03T06:44:38.104529+00:00"
+    },
+    {
+      "id": "a4e1178db8b1eab6",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "PSG : 30ME pour Beraldo, Paris préfère en rire",
+      "extrait": "TITRE: PSG : 30ME pour Beraldo, Paris préfère en rire SOURCE: foot01.com DATE: 2026-08-02T19:00:00Z URL: https://www.foot01.com/paris/psg-30me-pour-beraldo-paris-prefere-en-rire Devenu le couteau suisse de Luis Enrique, Lucas Beraldo est désormais un joueur qui compte au PSG. Mais Paris le sait, des clubs européens s'intéressent au jeune Brésilien. En marquant avec un sang-froid ahurissant le dernier tir au but du Paris Saint-Germain en finale de la Ligue des champions contre Arsenal, Lucas Bera",
+      "url": "https://www.foot01.com/paris/psg-30me-pour-beraldo-paris-prefere-en-rire",
+      "source": "foot01.com",
+      "date": "2026-08-02T19:00:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-03T06:44:39.876028+00:00"
+    },
+    {
+      "id": "bb7f56bf8f305e88",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "Jura. Tour de France féminin : comment circuler et stationner entre Lajoux et Poligny",
+      "extrait": "TITRE: Jura. Tour de France féminin : comment circuler et stationner entre Lajoux et Poligny SOURCE: Le Progrès DATE: 2026-08-02T10:30:00Z URL: https://www.leprogres.fr/tour-de-france/2026/08/02/tour-de-france-feminin-comment-circuler-et-stationner-entre-lajoux-et-poligny Dans le premier village jurassien de l'étape du jour, il sera interdit de stationner en bord de route ou sur les accotements de la RD 436 du dimanche 2 août à 18 h au lundi 3 août à 18 h. La côte de Lajoux, la traversée du vill",
+      "url": "https://www.leprogres.fr/tour-de-france/2026/08/02/tour-de-france-feminin-comment-circuler-et-stationner-entre-lajoux-et-poligny",
+      "source": "Le Progrès",
+      "date": "2026-08-02T10:30:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-03T06:45:00.122370+00:00"
+    },
+    {
+      "id": "0caec9a158c7a632",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "Essai Kia EV2 42 kWh sur 2000 Km : moins de 19 000 € pour ce petit SUV électrique ?!",
+      "extrait": "TITRE: Essai Kia EV2 42 kWh sur 2000 Km : moins de 19 000 € pour ce petit SUV électrique ?! SOURCE: Mac4Ever DATE: 2026-08-02T07:05:29Z URL: https://www.mac4ever.com/auto/197376-essai-kia-ev2-42-kwh-sur-2000-km-moins-de-19-000-pour-ce-petit-suv-electrique Dans le plus grand calme, Kia continue d'étoffer sa gamme de véhicules électriques, en proposant enfin un modèle vraiment abordable, mais néanmoins très capable : le Kia EV 2 ! Kia l'a évidemment doté de la one-pédale, qui permet de ne pas touc",
+      "url": "https://www.mac4ever.com/auto/197376-essai-kia-ev2-42-kwh-sur-2000-km-moins-de-19-000-pour-ce-petit-suv-electrique",
+      "source": "Mac4Ever",
+      "date": "2026-08-02T07:05:29Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-03T06:44:44.210759+00:00"
+    },
+    {
+      "id": "1970dc55ebc04951",
+      "banque": "La Banque Postale",
+      "departement": null,
+      "titre": "À Daoulas, la fermeture en août de La Poste mécontente des habitants",
+      "extrait": "TITRE: À Daoulas, la fermeture en août de La Poste mécontente des habitants SOURCE: letelegramme.fr DATE: 2026-08-02 URL: https://www.letelegramme.fr/finistere/daoulas-29460/a-daoulas-la-fermeture-en-aout-de-la-poste-mecontente-des-habitants-7094263.php",
+      "url": "https://www.letelegramme.fr/finistere/daoulas-29460/a-daoulas-la-fermeture-en-aout-de-la-poste-mecontente-des-habitants-7094263.php",
+      "source": "letelegramme.fr",
+      "date": "2026-08-02",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-03T06:44:12.739581+00:00"
     },
     {
       "id": "d98e9ed95641b48d",
@@ -32518,6 +32895,201 @@
       "created_at": "2026-06-25T15:43:41.960961+00:00"
     },
     {
+      "id": "1e2819d9dcb76e17",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Eagle Football Group : une 6e recrue au mercato estival",
+      "extrait": "TITRE: Eagle Football Group : une 6e recrue au mercato estival SOURCE: Bourse Direct DATE: 2026-08-03T05:32:12Z URL: https://www.boursedirect.fr/fr/actualites/categorie/divers/eagle-football-group-une-6e-recrue-au-mercato-estival-boursier-f722cbfeb295c6773c6a9c2c18f03cfc8c1fa7b9 L'Olympique Lyonnais informe de l'arrivée du défenseur autrichien Felix Bacher (25 ans), en provenance du GD Estoril Praia, pour 5 saisons, soit jusqu'au 30 juin 2031. Felix Bacher est la 6e recrue du club lors de mercat",
+      "url": "https://www.boursedirect.fr/fr/actualites/categorie/divers/eagle-football-group-une-6e-recrue-au-mercato-estival-boursier-f722cbfeb295c6773c6a9c2c18f03cfc8c1fa7b9",
+      "source": "Bourse Direct",
+      "date": "2026-08-03T05:32:12Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-03T06:44:30.772784+00:00"
+    },
+    {
+      "id": "cc7c9e0199a963ff",
+      "banque": "HSBC",
+      "departement": null,
+      "titre": "Croissance : les organisations internationales confiantes mais vigilantes",
+      "extrait": "TITRE: Croissance : les organisations internationales confiantes mais vigilantes SOURCE: lecourrier.vn DATE: 2026-08-03T04:23:47Z URL: https://lecourrier.vn/croissance-les-organisations-internationales-confiantes-mais-vigilantes/1352625.html Selon Vu Binh Minh, directeur des activités de marchés de capitaux et monétaires de HSBC Vietnam, cette performance s'explique par une structure de croissance plus équilibrée que lors des cycles précédents, grâce au renforcement des moteurs internes. Dans le",
+      "url": "https://lecourrier.vn/croissance-les-organisations-internationales-confiantes-mais-vigilantes/1352625.html",
+      "source": "lecourrier.vn",
+      "date": "2026-08-03T04:23:47Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-03T06:44:33.691308+00:00"
+    },
+    {
+      "id": "c75892b56a270743",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Mercato : L'OM vise du lourd pour remplacer Geronimo Rulli !",
+      "extrait": "TITRE: Mercato : L'OM vise du lourd pour remplacer Geronimo Rulli ! SOURCE: Foot-sur7 DATE: 2026-08-02T16:08:00Z URL: https://www.foot-sur7.fr/769718-mercato-lom-vise-du-lourd-pour-remplacer-geronimo-rulli Alors que le départ de Geronimo Rulli vers Manchester City semble prendre de l'épaisseur, les dirigeants de l'OM s'activent déjà pour recruter un nouveau gardien de but. Mercato : Manchester City touche au but pour Geronimo Rulli À la recherche d'une doublure à Gianluigi Donnarumma après le dé",
+      "url": "https://www.foot-sur7.fr/769718-mercato-lom-vise-du-lourd-pour-remplacer-geronimo-rulli",
+      "source": "Foot-sur7",
+      "date": "2026-08-02T16:08:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-03T06:44:47.489077+00:00"
+    },
+    {
+      "id": "65735b51331362b3",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Transfert de Zion Suzuki : Fabrizio Romano dévoile la première \"offre officielle\" du PSG pour le remplaçant espéré de Lucas Chevalier !",
+      "extrait": "TITRE: Transfert de Zion Suzuki : Fabrizio Romano dévoile la première \"offre officielle\" du PSG pour le remplaçant espéré de Lucas Chevalier ! SOURCE: Le10sport.com DATE: 2026-08-02T16:00:29Z URL: https://le10sport.com/football/mercato/transfert-de-zion-suzuki-fabrizio-romano-devoile-la-premiere-offre-officielle-du-psg-pour-le-remplacant-espere-de-lucas-chevalier-789811 Le mercato estival du PSG s'accélère. Le club de la capitale avance sur plusieurs dossiers en même temps. Si Mika Godts (Ajax A",
+      "url": "https://le10sport.com/football/mercato/transfert-de-zion-suzuki-fabrizio-romano-devoile-la-premiere-offre-officielle-du-psg-pour-le-remplacant-espere-de-lucas-chevalier-789811",
+      "source": "Le10sport.com",
+      "date": "2026-08-02T16:00:29Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-03T06:44:45.676043+00:00"
+    },
+    {
+      "id": "12b19c91c3cd3a47",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Le PSG a envoyé 33 M€ à Parme pour Zion Suzuki !",
+      "extrait": "TITRE: Le PSG a envoyé 33 M€ à Parme pour Zion Suzuki ! SOURCE: Foot Mercato : Info Transferts Football - Actu Foot Transfert DATE: 2026-08-02T15:43:49Z URL: https://www.footmercato.net/a7728174654091899126-le-psg-a-envoye-33-meur-a-parme-pour-zion-suzuki Après avoir bouclé l'arrivée de Maghnes Akliouche et accélérer dans le dossier Mika Godts, le Paris Saint-Germain continue d'avancer ses pions pour Zion Suzuki. Le club parisien a en effet envoyé une proposition de 33 millions d'euros à Parme p",
+      "url": "https://www.footmercato.net/a7728174654091899126-le-psg-a-envoye-33-meur-a-parme-pour-zion-suzuki",
+      "source": "Foot Mercato : Info Transferts Football - Actu Foot Transfert",
+      "date": "2026-08-02T15:43:49Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-03T06:44:48.883780+00:00"
+    },
+    {
+      "id": "dc2aee74194df9f0",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Le PSG a fait une grosse offre à Parme pour Suzuki",
+      "extrait": "TITRE: Le PSG a fait une grosse offre à Parme pour Suzuki SOURCE: CulturePSG DATE: 2026-08-02T15:23:34Z URL: https://www.culturepsg.com/news/mercato/le-psg-a-fait-une-grosse-offre-a-parme-pour-suzuki/60218 Paris est de retour sur le marché des gardiens de but puisque le PSG a fait une première grosse offre à Parme pour Zion Suzuki, gardien japonais de 23 ans. Alors que les supporters parisiens commençaient à se demander si le mercato allait enfin s'activer, ils peuvent être rassurés, même si voi",
+      "url": "https://www.culturepsg.com/news/mercato/le-psg-a-fait-une-grosse-offre-a-parme-pour-suzuki/60218",
+      "source": "CulturePSG",
+      "date": "2026-08-02T15:23:34Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-03T06:44:52.943585+00:00"
+    },
+    {
+      "id": "a1795afec82391f4",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Le PSG a transmis une offre pour Suzuki",
+      "extrait": "TITRE: Le PSG a transmis une offre pour Suzuki SOURCE: foot01.com DATE: 2026-08-02T15:07:09Z URL: https://www.foot01.com/paris/le-psg-a-transmis-une-offre-pour-suzuki Les dirigeants parisiens ont transmis ces dernières heures une offre à Parme pour le transfert de Zion Suzuki. La Juventus est à la traîne dans ce dossier. Tout comme pour Mika Godts, le Paris Saint-Germain a décidé de passer à la vitesse supérieure concernant la signature de Zion Suzuki. En effet, Fabrizio Romano, encore lui, conf",
+      "url": "https://www.foot01.com/paris/le-psg-a-transmis-une-offre-pour-suzuki",
+      "source": "foot01.com",
+      "date": "2026-08-02T15:07:09Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-03T06:44:41.441432+00:00"
+    },
+    {
+      "id": "f7b7f19c8616d108",
+      "banque": "CIC",
+      "departement": null,
+      "titre": "ASSE Mercato : un ancien flop des Verts pourrait signer dans un gros club de Ligue 1 ! - But! Football Club",
+      "extrait": "TITRE: ASSE Mercato : un ancien flop des Verts pourrait signer dans un gros club de Ligue 1 ! - But! Football Club SOURCE: But! Football Club DATE: 2026-08-02T15:00:00Z URL: https://www.butfootballclub.fr/1688196-asse-mercato-un-ancien-flop-des-verts-pourrait-signer-dans-un-gros-club-de-ligue-1/ Sacré meilleur latéral gauche du championnat égyptien après une saison aboutie avec Zamalek, Mahmoud Bentayg pourrait bientôt retrouver la Ligue 1. L'ancien défenseur de l'ASSE attise les convoitises, av",
+      "url": "https://www.butfootballclub.fr/1688196-asse-mercato-un-ancien-flop-des-verts-pourrait-signer-dans-un-gros-club-de-ligue-1/",
+      "source": "But! Football Club",
+      "date": "2026-08-02T15:00:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-03T06:44:54.981450+00:00"
+    },
+    {
+      "id": "ad25255498884212",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Eagle Football Group : une 6e recrue au mercato estival",
+      "extrait": "TITRE: Eagle Football Group : une 6e recrue au mercato estival SOURCE: Boursier.com DATE: 2026-08-02T12:37:00Z URL: https://www.boursier.com/actions/actualites/news/eagle-football-group-une-6e-recrue-au-mercato-estival-991345.html Eagle Football Group : une 6e recrue au mercato estival Par Alexandra Saintpierre Publié le 02/08/2026 à 14h37 Eagle Football Group : une 6e recrue au mercato estival (Boursier.com) -- L'Olympique Lyonnais informe de l'arrivée du défenseur autrichien Felix Bacher (25 a",
+      "url": "https://www.boursier.com/actions/actualites/news/eagle-football-group-une-6e-recrue-au-mercato-estival-991345.html",
+      "source": "Boursier.com",
+      "date": "2026-08-02T12:37:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-03T06:45:01.749356+00:00"
+    },
+    {
+      "id": "add45abc0df8ac24",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Mercato, grande nouvelle pour Désiré Doué",
+      "extrait": "TITRE: Mercato, grande nouvelle pour Désiré Doué SOURCE: Football.fr DATE: 2026-08-02T11:17:13Z URL: https://www.football.fr/psg/mercato-grande-nouvelle-pour-desire-doue-826075.html Deux ans après son arrivée au PSG, Désiré Doué doit briller toujours plus lors de la saison à venir alors que Bradley Barcola pourrait quitter le club. Le prodige de 21 ans pourrait accueillir une sacrée nouvelle. Désiré Doué a fêté ses 21 ans seulement avant une Coupe du monde qui l'a vu souffler le chaud et le froi",
+      "url": "https://www.football.fr/psg/mercato-grande-nouvelle-pour-desire-doue-826075.html",
+      "source": "Football.fr",
+      "date": "2026-08-02T11:17:13Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-03T06:45:03.628530+00:00"
+    },
+    {
+      "id": "e155056e3e56c560",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "OLYMPIQUE LYONNAIS GROUPE (EPA:OLG) |",
+      "extrait": "TITRE: OLYMPIQUE LYONNAIS GROUPE (EPA:OLG) | SOURCE: Les Echos DATE: 2026-08-02T08:14:08Z URL: https://lesechos-comfi.lesechos.fr/press-release/olympique-lyonnais-groupe-epa-olg-le-defenseur-autrichien-felix-bacher-sengage-avec-lol-jusquen-2031-NQmoAybTyxr Dimanche 2 août 2026 - 10h00 L'Olympique Lyonnais informe de l'arrivée du défenseur autrichien Felix Bacher, en provenance du GD Estoril Praia, pour 5 saisons, soit jusqu'au 30 juin 2031. Le montant du transfert s'élève à 4,3 M€, auxquels pour",
+      "url": "https://lesechos-comfi.lesechos.fr/press-release/olympique-lyonnais-groupe-epa-olg-le-defenseur-autrichien-felix-bacher-sengage-avec-lol-jusquen-2031-NQmoAybTyxr",
+      "source": "Les Echos",
+      "date": "2026-08-02T08:14:08Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-03T06:45:07.226939+00:00"
+    },
+    {
+      "id": "fe30b801c6cf0624",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Mercato : l'OL tient un nouveau défenseur central",
+      "extrait": "TITRE: Mercato : l'OL tient un nouveau défenseur central SOURCE: Olympique & Lyonnais DATE: 2026-08-02T08:02:09Z URL: https://www.olympique-et-lyonnais.com/mercato-lol-tient-un-nouveau-defenseur-central,403889.html Felix Bacher est Lyonnais. Le défenseur central a signé jusqu'en 2031 avec l'OL, qui a payé 4,3 millions d'euros pour le recruter. Voilà la sixième recrue de l'OL (sans compter l'option levée pour Noham Kamara) cet été. Ce dimanche, le club a officialisé l'arrivée de Felix Bacher, déf",
+      "url": "https://www.olympique-et-lyonnais.com/mercato-lol-tient-un-nouveau-defenseur-central,403889.html",
+      "source": "Olympique & Lyonnais",
+      "date": "2026-08-02T08:02:09Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-03T06:45:09.027100+00:00"
+    },
+    {
+      "id": "02719645e164d965",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Mercato PSG : une offre tombe pour Lucas Chevalier, menacé par Suzuki",
+      "extrait": "TITRE: Mercato PSG : une offre tombe pour Lucas Chevalier, menacé par Suzuki SOURCE: Top mercato DATE: 2026-08-02T07:55:00Z URL: https://www.topmercato.com/2124121-mercato-psg-une-offre-tombe-pour-lucas-chevalier-menace-par-suzuki/ Barré par le Russe Matvey Safonov, Lucas Chevalier pourrait voir un nouveau gardien débarquer au Paris Saint-Germain, l'international japonais Zion Suzuki. Une arrivée qui, si elle se confirme, remettra sur le devant de la scène la question d'un départ du portier fran",
+      "url": "https://www.topmercato.com/2124121-mercato-psg-une-offre-tombe-pour-lucas-chevalier-menace-par-suzuki/",
+      "source": "Top mercato",
+      "date": "2026-08-02T07:55:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-03T06:45:10.419080+00:00"
+    },
+    {
+      "id": "2a7e625fcace16db",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "Le PSG possède une longueur d'avance sur la Juve pour Suzuki",
+      "extrait": "TITRE: Le PSG possède une longueur d'avance sur la Juve pour Suzuki SOURCE: PSG Canal Supporters DATE: 2026-08-02T07:15:34Z URL: https://canal-supporters.com/le-psg-possede-une-longueur-davance-sur-la-juve-pour-suzuki/ Même s'il possède Matvey Safonov et Lucas Chevalier dans ses rangs, le PSG s'intéresserait à Zion Suzuki. Dans ce dossier, il aurait une longueur d'avance sur la Juventus. Cet été, le PSG s'est offert un jeune gardien prometteur en la personne d'Alessandro Longoni. Mais le jeune p",
+      "url": "https://canal-supporters.com/le-psg-possede-une-longueur-davance-sur-la-juve-pour-suzuki/",
+      "source": "PSG Canal Supporters",
+      "date": "2026-08-02T07:15:34Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-03T06:45:12.267665+00:00"
+    },
+    {
+      "id": "bb3b543958aa9154",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "L'OM a une piste pour remplacer Pavard, les détails du deal PSG-Juve pour Kolo Muani, le Barça fixé sur le prix de Laporte... Les 3 infos mercato du jour",
+      "extrait": "TITRE: L'OM a une piste pour remplacer Pavard, les détails du deal PSG-Juve pour Kolo Muani, le Barça fixé sur le prix de Laporte... Les 3 infos mercato du jour SOURCE: Top mercato DATE: 2026-08-02T06:13:46Z URL: https://www.topmercato.com/2124096-lom-a-une-piste-pour-remplacer-pavard-les-details-du-deal-psg-juve-pour-kolo-muani-le-barca-fixe-sur-le-prix-de-laporte-les-3-infos-mercato-du-jour/ L'Olympique de Marseille pense à un ancien défenseur de l'Olympique Lyonnais, le Paris Saint-Germain et",
+      "url": "https://www.topmercato.com/2124096-lom-a-une-piste-pour-remplacer-pavard-les-details-du-deal-psg-juve-pour-kolo-muani-le-barca-fixe-sur-le-prix-de-laporte-les-3-infos-mercato-du-jour/",
+      "source": "Top mercato",
+      "date": "2026-08-02T06:13:46Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-03T06:45:13.819578+00:00"
+    },
+    {
       "id": "3c8605816922b482",
       "banque": "Société Générale",
       "departement": null,
@@ -33532,6 +34104,19 @@
       "created_at": "2026-07-27T06:49:03.881188+00:00"
     },
     {
+      "id": "eab1333be12c5fa8",
+      "banque": "Société Générale",
+      "departement": null,
+      "titre": "PSG : Paris s'attaque à un défenseur blessé à 50 ME",
+      "extrait": "TITRE: PSG : Paris s'attaque à un défenseur blessé à 50 ME SOURCE: foot01.com DATE: 2026-07-26T16:00:25Z URL: https://www.foot01.com/paris/psg-paris-sattaque-a-un-defenseur-blesse-a-50-me A la recherche d'un défenseur central droit également capable de jouer latéral, le PSG rêvait de Guéla Doué, mais la piste est complexe. Le club parisien se rabat sur Joel Ordonez... actuellement blessé. Après avoir bouclé la signature de Lucas Digne pour seulement 7 millions d'euros afin de doubler le poste de",
+      "url": "https://www.foot01.com/paris/psg-paris-sattaque-a-un-defenseur-blesse-a-50-me",
+      "source": "foot01.com",
+      "date": "2026-07-26T16:00:25Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-03T06:45:05.157655+00:00"
+    },
+    {
       "id": "192760ac238a6620",
       "banque": "Société Générale",
       "departement": null,
@@ -34375,6 +34960,19 @@
       "score": 1,
       "raison": "signaux: vague(La Poste,regional,count=None)",
       "created_at": "2026-07-22T08:54:47.472218+00:00"
+    },
+    {
+      "id": "2f12063f59d03b45",
+      "banque": "La Poste",
+      "departement": null,
+      "titre": "Gironde : La Poste veut faire rattraper les heures aux salariés évacués, les postiers ripostent par la grève",
+      "extrait": "Article centré sur l’évacuation de la PIC de Cestas et des mesures RH après incendie, sans annonce de fermeture/traitement bancaire d’agences.",
+      "url": "https://www.revolutionpermanente.fr/Incendies-en-Gironde-La-Poste-veut-imposer-le-rattrapage-des-heures-et-retirer-des-conges-aux",
+      "source": "Révolution Permanente",
+      "date": "2026-08-01T21:27:34Z",
+      "score": 1,
+      "raison": "signaux: vague(La Poste,regional,count=None)",
+      "created_at": "2026-08-03T06:44:56.952165+00:00"
     },
     {
       "id": "59846eab3a4d3532",
