@@ -71,6 +71,8 @@ CREATE TABLE IF NOT EXISTS vigilances (
     date TEXT,
     score INTEGER,
     raison TEXT,
+    resolved_closure_id TEXT,
+    resolved_at TEXT,
     created_at TEXT NOT NULL,
     UNIQUE(url)
 );
@@ -98,6 +100,8 @@ CREATE TABLE IF NOT EXISTS closures_unlocated (
     source TEXT,
     date TEXT,
     raison TEXT,
+    resolved_closure_id TEXT,
+    resolved_at TEXT,
     created_at TEXT NOT NULL,
     UNIQUE(url, banque, commune)
 );
@@ -220,11 +224,22 @@ def _ensure_closures_columns(conn: sqlite3.Connection) -> None:
             conn.execute(f"ALTER TABLE closures ADD COLUMN {col} TEXT")
 
 
+def _ensure_resolution_columns(conn: sqlite3.Connection) -> None:
+    """Ajoute l'état de résolution aux anciennes bases sans perdre l'audit."""
+    for table in ("vigilances", "closures_unlocated"):
+        existing = {r[1] for r in conn.execute(f"PRAGMA table_info({table})")}
+        if "resolved_closure_id" not in existing:
+            conn.execute(f"ALTER TABLE {table} ADD COLUMN resolved_closure_id TEXT")
+        if "resolved_at" not in existing:
+            conn.execute(f"ALTER TABLE {table} ADD COLUMN resolved_at TEXT")
+
+
 def init_db(path) -> sqlite3.Connection:
     conn = sqlite3.connect(str(path))
     conn.execute("PRAGMA foreign_keys = ON")
     conn.executescript(_SCHEMA)
     _ensure_closures_columns(conn)
+    _ensure_resolution_columns(conn)
     conn.commit()
     return conn
 
@@ -401,6 +416,145 @@ def delete_vigilance_by_url(conn: sqlite3.Connection, url: str) -> int:
     return cursor.rowcount
 
 
+def _reconciliation_key(value: str | None) -> str:
+    """Clé tolérante aux accents et séparateurs pour les rapprochements."""
+    from backend.dedup import normalise_cle
+
+    return re.sub(r"[^a-z0-9]+", " ", normalise_cle(value or "")).strip()
+
+
+def _bank_reconciliation_key(value: str | None) -> str:
+    # Import local pour éviter de charger le fournisseur IA à l'initialisation
+    # du module de stockage.
+    from backend.extractor import normalise_banque
+
+    return _reconciliation_key(normalise_banque(value or ""))
+
+
+def _department_reconciliation_key(value: str | None) -> str:
+    import config
+
+    raw = str(value or "").strip()
+    if raw in config.DEPARTEMENTS:
+        return raw
+    key = _reconciliation_key(raw)
+    return next(
+        (code for code, name in config.DEPARTEMENTS.items()
+         if _reconciliation_key(name) == key),
+        key,
+    )
+
+
+def reconcile_resolved_records(conn: sqlite3.Connection) -> dict[str, int]:
+    """Marque les alertes/quarantaines couvertes par une fermeture localisée.
+
+    Les données d'audit ne sont pas supprimées. Une quarantaine est résolue sur
+    une correspondance naturelle stricte (banque, commune et type). Une
+    vigilance exige en plus que l'URL soit attachée comme source à la fermeture
+    et que la commune/localisation publiée soit présente dans son texte. Cette
+    seconde règle conserve les plans régionaux génériques sans agence nommée.
+    """
+    now = datetime.now(timezone.utc).isoformat()
+    closures = []
+    for row in conn.execute(
+        """SELECT id, banque, commune, departement, type,
+                  commune_originale, agence_localisation
+           FROM closures
+           WHERE lat IS NOT NULL AND lon IS NOT NULL AND code_insee IS NOT NULL
+           ORDER BY fiabilite DESC, created_at ASC"""
+    ):
+        cid, banque, commune, departement, type_, originale, localisation = row
+        urls = {
+            str(source[0]).strip().rstrip("/")
+            for source in conn.execute(
+                "SELECT url FROM sources WHERE closure_id=?", (cid,)
+            )
+            if source[0]
+        }
+        locations = {
+            _reconciliation_key(value)
+            for value in (commune, originale, localisation)
+            if _reconciliation_key(value)
+        }
+        closures.append({
+            "id": cid,
+            "bank": _bank_reconciliation_key(banque),
+            "department": _department_reconciliation_key(departement),
+            "type": _reconciliation_key(type_ or "fermeture"),
+            "locations": locations,
+            "urls": urls,
+        })
+
+    resolved_unlocated = 0
+    unresolved_rows = conn.execute(
+        """SELECT id, banque, commune, departement, type
+           FROM closures_unlocated
+           WHERE resolved_closure_id IS NULL"""
+    ).fetchall()
+    for uid, banque, commune, departement, type_ in unresolved_rows:
+        bank = _bank_reconciliation_key(banque)
+        location = _reconciliation_key(commune)
+        event_type = _reconciliation_key(type_ or "fermeture")
+        department = _department_reconciliation_key(departement)
+        match = next((closure for closure in closures if (
+            closure["bank"] == bank
+            and location in closure["locations"]
+            and closure["type"] == event_type
+            and (
+                not department
+                or not closure["department"]
+                or department == closure["department"]
+            )
+        )), None)
+        if not match:
+            continue
+        conn.execute(
+            """UPDATE closures_unlocated
+               SET resolved_closure_id=?, resolved_at=? WHERE id=?""",
+            (match["id"], now, uid),
+        )
+        resolved_unlocated += 1
+
+    resolved_vigilances = 0
+    vigilance_rows = conn.execute(
+        """SELECT id, banque, departement, titre, extrait, raison, url
+           FROM vigilances
+           WHERE resolved_closure_id IS NULL"""
+    ).fetchall()
+    for vid, banque, departement, titre, extrait, raison, url in vigilance_rows:
+        source_url = str(url or "").strip().rstrip("/")
+        if not source_url:
+            continue
+        bank = _bank_reconciliation_key(banque)
+        department = _department_reconciliation_key(departement)
+        vigilance_text = " ".join((titre or "", extrait or "", raison or ""))
+        text = f" {_reconciliation_key(vigilance_text)} "
+        match = next((closure for closure in closures if (
+            closure["bank"] == bank
+            and source_url in closure["urls"]
+            and (
+                not department
+                or not closure["department"]
+                or department == closure["department"]
+            )
+            and any(f" {location} " in text for location in closure["locations"])
+        )), None)
+        if not match:
+            continue
+        conn.execute(
+            """UPDATE vigilances
+               SET resolved_closure_id=?, resolved_at=? WHERE id=?""",
+            (match["id"], now, vid),
+        )
+        resolved_vigilances += 1
+
+    conn.commit()
+    return {
+        "vigilances": resolved_vigilances,
+        "closures_unlocated": resolved_unlocated,
+    }
+
+
 def requeue_postal_articles(conn: sqlite3.Connection, migration_key: str) -> int:
     """Remet une fois articles et vigilances postaux dans la file d'extraction."""
     if conn.execute(
@@ -420,7 +574,7 @@ def requeue_postal_articles(conn: sqlite3.Connection, migration_key: str) -> int
                        LIKE '%relais poste%'
              UNION
              SELECT url FROM vigilances
-             WHERE url IS NOT NULL AND (
+             WHERE resolved_closure_id IS NULL AND url IS NOT NULL AND (
                     banque='La Banque Postale'
                  OR lower(COALESCE(titre, '') || ' ' || COALESCE(extrait, ''))
                        LIKE '%bureau de poste%'
@@ -453,11 +607,12 @@ def list_postal_vigilance_articles(conn: sqlite3.Connection) -> list[dict]:
     rows = conn.execute(
         """SELECT titre, extrait, url, date, source, departement, score
            FROM vigilances
-           WHERE banque='La Banque Postale'
+           WHERE resolved_closure_id IS NULL AND (
+                 banque='La Banque Postale'
               OR lower(COALESCE(titre, '') || ' ' || COALESCE(extrait, ''))
                     LIKE '%bureau de poste%'
               OR lower(COALESCE(titre, '') || ' ' || COALESCE(extrait, ''))
-                    LIKE '%banque postale%'"""
+                    LIKE '%banque postale%')"""
     ).fetchall()
     return [
         {
@@ -739,6 +894,7 @@ def select_vigilances_a_reviser(
             FROM vigilances v
             LEFT JOIN vigilance_reviews r ON v.id = r.id
             WHERE v.score >= ?
+              AND v.resolved_closure_id IS NULL
               AND (r.id IS NULL OR r.reviewed_at < ?)
             ORDER BY v.score DESC, v.date DESC""",
         (min_score, cutoff),

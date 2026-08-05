@@ -298,3 +298,104 @@ def test_delete_vigilance_by_url(tmp_path):
     assert store.delete_vigilance_by_url(conn, url) == 1
     assert conn.execute("SELECT COUNT(*) FROM vigilances").fetchone()[0] == 0
     assert conn.execute("SELECT COUNT(*) FROM vigilance_reviews").fetchone()[0] == 0
+
+
+def test_reconcile_marque_vigilance_et_non_localisee_resolues(tmp_path):
+    conn = store.init_db(tmp_path / "t.db")
+    source_url = "https://ici.fr/reuilly"
+    store.upsert_closure(conn, {
+        "id": "closure-reuilly", "banque": "Crédit Agricole",
+        "commune": "Reuilly", "code_insee": "36171", "departement": "36",
+        "type": "fermeture", "date_annonce": "2026-01-23",
+        "date_fermeture": "2026-06-26", "statut": "confirmé",
+        "fiabilite": 5, "lat": 47.084619, "lon": 2.037058,
+        "citation": "L'agence ferme ses portes.",
+    })
+    store.add_source(conn, "closure-reuilly", {
+        "url": source_url, "titre": "Reuilly ferme", "source": "ICI",
+        "date": "2026-01-23",
+    })
+    store.upsert_closure_unlocated(conn, {
+        "id": "unlocated-reuilly", "banque": "Crédit Agricole Centre Ouest",
+        "commune": "Reuilly", "departement": "Indre", "type": "fermeture",
+        "statut": "confirmé", "fiabilite": 4, "citation": "x",
+        "url": source_url, "titre": "Reuilly ferme", "source": "ICI",
+        "date": "2026-01-23", "raison": "commune non géocodée",
+    })
+    store.upsert_vigilance(conn, {
+        "id": "vigilance-reuilly", "banque": "Crédit Agricole",
+        "departement": "36", "titre": "Crédit Agricole Reuilly fermeture agence",
+        "extrait": "", "url": source_url, "source": "ICI",
+        "date": "2026-01-23", "score": 5, "raison": "signal départemental",
+    })
+    store.upsert_vigilance_review(conn, {
+        "id": "vigilance-reuilly", "review_status": "done",
+    })
+
+    summary = store.reconcile_resolved_records(conn)
+
+    assert summary == {"vigilances": 1, "closures_unlocated": 1}
+    assert conn.execute(
+        "SELECT resolved_closure_id FROM closures_unlocated WHERE id='unlocated-reuilly'"
+    ).fetchone()[0] == "closure-reuilly"
+    assert conn.execute(
+        "SELECT resolved_closure_id FROM vigilances WHERE id='vigilance-reuilly'"
+    ).fetchone()[0] == "closure-reuilly"
+    assert store.select_vigilances_a_reviser(
+        conn, min_score=3, max_per_run=10, cooldown_days=0
+    ) == []
+
+
+def test_reconcile_conserve_signaux_non_couverts(tmp_path):
+    conn = store.init_db(tmp_path / "t.db")
+    store.upsert_closure(conn, {
+        "id": "closure-reuilly", "banque": "Crédit Agricole",
+        "commune": "Reuilly", "code_insee": "36171", "departement": "36",
+        "type": "fermeture", "date_annonce": None, "date_fermeture": None,
+        "statut": "confirmé", "fiabilite": 5, "lat": 47.0, "lon": 2.0,
+        "citation": "x",
+    })
+    store.add_source(conn, "closure-reuilly", {
+        "url": "https://ici.fr/reuilly", "titre": "t", "source": "ICI",
+        "date": None,
+    })
+    store.upsert_closure_unlocated(conn, {
+        "id": "other-type", "banque": "Crédit Agricole", "commune": "Reuilly",
+        "departement": "36", "type": "fusion", "statut": "projet",
+        "fiabilite": 3, "citation": "x", "url": "https://x/fusion",
+        "titre": "Fusion", "source": "PQR", "date": None,
+        "raison": "commune non géocodée",
+    })
+    store.upsert_vigilance(conn, {
+        "id": "plan", "banque": "Crédit Agricole", "departement": "36",
+        "titre": "Quatre agences fermeront dans l'Indre", "extrait": "",
+        "url": "https://ici.fr/reuilly", "source": "ICI", "date": None,
+        "score": 4, "raison": "plan départemental sans communes",
+    })
+
+    assert store.reconcile_resolved_records(conn) == {
+        "vigilances": 0, "closures_unlocated": 0,
+    }
+    assert conn.execute(
+        "SELECT resolved_closure_id FROM closures_unlocated WHERE id='other-type'"
+    ).fetchone()[0] is None
+    assert conn.execute(
+        "SELECT resolved_closure_id FROM vigilances WHERE id='plan'"
+    ).fetchone()[0] is None
+
+
+def test_migration_legacy_ajoute_colonnes_resolution(tmp_path):
+    import sqlite3
+
+    db_path = tmp_path / "legacy-resolution.db"
+    legacy = sqlite3.connect(str(db_path))
+    legacy.execute("CREATE TABLE vigilances (id TEXT PRIMARY KEY)")
+    legacy.execute("CREATE TABLE closures_unlocated (id TEXT PRIMARY KEY)")
+    legacy.commit()
+    legacy.close()
+
+    conn = store.init_db(db_path)
+
+    for table in ("vigilances", "closures_unlocated"):
+        cols = {row[1] for row in conn.execute(f"PRAGMA table_info({table})")}
+        assert {"resolved_closure_id", "resolved_at"} <= cols

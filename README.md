@@ -203,6 +203,11 @@ La revue arborescente des vigilances (`backend/vigilance_review.py`) peut
 interroger des providers de recherche web. **Tous sont optionnels et best-effort** :
 le pipeline reste pleinement fonctionnel si aucun n'est configuré.
 
+Avant chaque export, les vigilances et fermetures non localisées sont
+automatiquement rapprochées des fermetures désormais validées. Une
+correspondance résolue sort des listes actives et de la file de revue, tout en
+restant conservée en base avec l'identifiant de la fermeture pour l'audit.
+
 Par défaut, une file plafonnée est revue en mode économique
 (`VIGILANCE_REVIEW_MAX_PER_RUN=6`, trois requêtes maximum par élément) : le
 pipeline exploite les titres, URLs, sources et le géocodage pour publier

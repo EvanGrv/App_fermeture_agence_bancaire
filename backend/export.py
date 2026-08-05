@@ -83,6 +83,12 @@ def _countable_unlocated(candidate: dict) -> bool:
 
 
 def build_payload(conn) -> dict:
+    # Réconcilie également l'historique restauré depuis le cache du pipeline.
+    # Les lignes résolues restent en base pour l'audit, mais sortent des listes
+    # actives et des estimations cartographiques.
+    from backend import store
+    store.reconcile_resolved_records(conn)
+
     closures = []
     compteur = {}
     for row in conn.execute(f"SELECT {','.join(_CLOSURE_COLS)} FROM closures"):
@@ -130,7 +136,8 @@ def build_payload(conn) -> dict:
     vigilances = [
         dict(zip(_VIGILANCE_COLS, row))
         for row in conn.execute(
-            f"SELECT {','.join(_VIGILANCE_COLS)} FROM vigilances ORDER BY score DESC, date DESC"
+            f"SELECT {','.join(_VIGILANCE_COLS)} FROM vigilances "
+            "WHERE resolved_closure_id IS NULL ORDER BY score DESC, date DESC"
         )
     ]
     for vigilance in vigilances:
@@ -139,7 +146,8 @@ def build_payload(conn) -> dict:
     closures_unlocated = [
         dict(zip(_UNLOCATED_COLS, row))
         for row in conn.execute(
-            f"SELECT {','.join(_UNLOCATED_COLS)} FROM closures_unlocated ORDER BY date DESC"
+            f"SELECT {','.join(_UNLOCATED_COLS)} FROM closures_unlocated "
+            "WHERE resolved_closure_id IS NULL ORDER BY date DESC"
         )
     ]
     for closure in closures_unlocated:

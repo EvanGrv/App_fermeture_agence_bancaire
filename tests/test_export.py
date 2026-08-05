@@ -78,6 +78,42 @@ def test_build_payload(tmp_path):
     # plans nationaux non nominatifs présents et distincts des closures
     assert any(pl["banque"] == "Société Générale" for pl in p["plans"])
 
+
+def test_build_payload_reconcilie_historique_avant_export(tmp_path):
+    conn = store.init_db(tmp_path / "t.db")
+    source_url = "https://ici.fr/reuilly"
+    store.upsert_closure(conn, {
+        "id": "reuilly", "banque": "Crédit Agricole", "commune": "Reuilly",
+        "code_insee": "36171", "departement": "36", "type": "fermeture",
+        "date_annonce": "2026-01-23", "date_fermeture": "2026-06-26",
+        "statut": "confirmé", "fiabilite": 5, "lat": 47.08, "lon": 2.03,
+        "citation": "L'agence de Reuilly ferme.",
+    })
+    store.add_source(conn, "reuilly", {
+        "url": source_url, "titre": "Reuilly ferme", "source": "ICI",
+        "date": "2026-01-23",
+    })
+    store.upsert_closure_unlocated(conn, {
+        "id": "u-reuilly", "banque": "Crédit Agricole", "commune": "Reuilly",
+        "departement": "36", "type": "fermeture", "statut": "confirmé",
+        "fiabilite": 4, "citation": "x", "url": source_url,
+        "titre": "Reuilly ferme", "source": "ICI", "date": "2026-01-23",
+        "raison": "commune non géocodée",
+    })
+    store.upsert_vigilance(conn, {
+        "id": "v-reuilly", "banque": "Crédit Agricole", "departement": "36",
+        "titre": "Crédit Agricole Reuilly fermeture agence", "extrait": "",
+        "url": source_url, "source": "ICI", "date": "2026-01-23",
+        "score": 5, "raison": "signal",
+    })
+
+    payload = export.build_payload(conn)
+
+    assert [closure["id"] for closure in payload["closures"]] == ["reuilly"]
+    assert payload["closures_unlocated"] == []
+    assert payload["vigilances"] == []
+    assert payload["department_estimates"]["36"]["estimated_count"] == 1
+
 def test_export_json_ecrit_fichier(tmp_path):
     conn = store.init_db(tmp_path / "t.db")
     _seed(conn)
