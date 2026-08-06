@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T09:30:36.753904+00:00",
+  "generated_at": "2026-08-06T06:23:46.965598+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -1885,6 +1885,23 @@
       "nb_departements": 4
     },
     {
+      "region": "Pays de la Loire",
+      "articles": 12,
+      "fermetures": 8,
+      "projets": 2,
+      "fusions": 0,
+      "types": [
+        "Fermeture",
+        "Projet"
+      ],
+      "departements": [
+        "44",
+        "49",
+        "72"
+      ],
+      "nb_departements": 3
+    },
+    {
       "region": "Grand Est",
       "articles": 11,
       "fermetures": 11,
@@ -1900,23 +1917,6 @@
         "68"
       ],
       "nb_departements": 4
-    },
-    {
-      "region": "Pays de la Loire",
-      "articles": 11,
-      "fermetures": 8,
-      "projets": 2,
-      "fusions": 0,
-      "types": [
-        "Fermeture",
-        "Projet"
-      ],
-      "departements": [
-        "44",
-        "49",
-        "72"
-      ],
-      "nb_departements": 3
     },
     {
       "region": "Provence-Alpes-Côte d'Azur",
@@ -9276,10 +9276,10 @@
       "type": "fermeture",
       "date_annonce": "Mon, 03 Aug 2026 14:19:26 GMT",
       "date_fermeture": "2026-08-03",
-      "statut": "rumeur",
+      "statut": "confirmé",
       "statut_temporel": "deja_fermee",
       "date_fermeture_approx": 1,
-      "fiabilite": 2,
+      "fiabilite": 3,
       "lat": 47.345752,
       "lon": -2.066722,
       "citation": "Article titre : « Bureau de poste de Donges : le RN dénonce la fermeture les samedis » (dégradation de l’offre de service public). Le texte ne relie pas explicitement la fermeture à des services bancaires/à La Banque Postale.",
@@ -9293,6 +9293,13 @@
       "evidence_level": "presse+référentiel",
       "created_at": "2026-08-04T06:10:11.475315+00:00",
       "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxObmdYUTRKdFVZaGVTazhNcG5fZXFwN1dqaHlNdl9zLWtIRnVuTXVrU2tRYk56VHNlYzlmNlFZTEtpR1QxUWxfWlJZRGd2SWFVU1RNczJPZUVHTW1Wb1dqdVVYTWlwaW9qUlpZNGJMWVdVUGhRZnF5OHoxazBTOHk0MmNoVHlBRXFwMjh3aE05LUNxdnJlWWNzanFkRm8?oc=5",
+          "titre": "Donges : le bureau de Poste ferme désormais ses portes le samedi - Seven Radio",
+          "source": "Google News",
+          "date": "Thu, 06 Aug 2026 02:08:43 GMT",
+          "tier": "D"
+        },
         {
           "url": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxPdnVMUXBTQ2dPU3dWdThNdTYyS0RDMFdMalZTd0xvd1lMME5iZFZjS1FXckNLMUZuX0x6U0h1MjNVY3FCWjR1LU95MW1zN056blV3ZWREVmdLQllONHZaUUF6LWlaVEFBT3dPeXA1QkpQZE9qNmFxR25nWjZCSy1vMVExYVI2aVFha1Q1c1lLZ0piVDAybjhDSW81cUZYMW5LdGpCbHhOLXRBbzdjT2Zvb3phdUpNQldPemk1S0hIdTMtUGRFc24wSmlZSEhzMnB3UGNEMDVZLVE1YjFZeEk3SW1OeG5jSTdHVldfNXlKMV80TlZoS2twOHp4Xy1qUEl6clMzRC1RT3JBZ3VhV0VjU09fVEs5aVc0WGpKMEh4RUZRMG1ZRE85bXA2TQ?oc=5",
           "titre": "Bureau de poste de Donges : le RN dénonce la fermeture les samedis, « une dégradation de l’offre de service public » - Ouest-France",
@@ -10105,7 +10112,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-05T09:08:15.061381+00:00"
+      "created_at": "2026-08-06T06:07:27.462559+00:00"
     },
     {
       "id": "50895c042a984b7d",
@@ -10141,7 +10148,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 04:46:02 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-05T09:08:14.687309+00:00"
+      "created_at": "2026-08-06T06:07:27.069190+00:00"
     },
     {
       "id": "8c6a0cad14626d6f",
@@ -10916,6 +10923,24 @@
       "date": "Thu, 06 Nov 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
       "created_at": "2026-07-22T08:55:18.735523+00:00"
+    },
+    {
+      "id": "dd4274987c6f2c9a",
+      "banque": "La Banque Postale",
+      "commune": "Saint-Paul-Cap-de-Joux",
+      "departement": "81",
+      "type": "fermeture",
+      "date_fermeture": "2026-08-14",
+      "statut": "projet",
+      "statut_temporel": "a_venir",
+      "fiabilite": 3,
+      "citation": "Saint-Paul-Cap-de-Joux. Le bureau de poste fermée jusqu’au 14 août - ladepeche.fr",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOSXJZVnRmbW5TRnFKZXd6aTg3MWduY3VHZkh3am9HOXpzUGVGVjE1UDZrT3RCNzh5bW9jZDlvcnBveW1DM3pNMmlpOWFZaDRYRmJVSXptOXh6U28wZmZySlNGUWZfOTZ2Mmc0T1E0NTZlMDVaR1F3ZkVzYkpnX3hmaFl4NzFPaGN1bHVacXFSRDBlVDcz?oc=5",
+      "titre": "Saint-Paul-Cap-de-Joux. Le bureau de poste fermée jusqu’au 14 août - ladepeche.fr",
+      "source": "Google News",
+      "date": "Thu, 06 Aug 2026 03:12:00 GMT",
+      "raison": "garde entrée/sortie: fermeture postale temporaire ou circonstancielle",
+      "created_at": "2026-08-06T06:10:47.152566+00:00"
     },
     {
       "id": "cff075962dfca256",
@@ -12031,7 +12056,7 @@
       "source": "Google News",
       "date": "Fri, 20 Jun 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-05T09:08:22.774173+00:00"
+      "created_at": "2026-08-06T06:07:35.342104+00:00"
     },
     {
       "id": "b80663fa38292743",
@@ -12120,8 +12145,8 @@
       "titre": "Attention, le bureau de poste ferme ses portes en juillet et en août dans cette commune de Loire-Atlantique - MaVille.com",
       "source": "Google News",
       "date": "Fri, 10 Jul 2026 10:12:00 GMT",
-      "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-05T09:08:39.907935+00:00"
+      "raison": "garde entrée/sortie: département source 44 incompatible avec la sortie 974",
+      "created_at": "2026-08-06T06:07:54.116717+00:00"
     },
     {
       "id": "8c646081e1d69e81",
@@ -12301,7 +12326,7 @@
       "source": "Google News",
       "date": "Fri, 03 Jan 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-05T09:08:14.327242+00:00"
+      "created_at": "2026-08-06T06:07:26.611013+00:00"
     },
     {
       "id": "411db107f70f2387",
@@ -12374,6 +12399,24 @@
       "date": "Fri, 01 Aug 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
       "created_at": "2026-07-27T07:56:36.407534+00:00"
+    },
+    {
+      "id": "4d3113de788ed4e0",
+      "banque": "BNP Paribas",
+      "commune": "Paris",
+      "departement": "",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "a_venir",
+      "fiabilite": 2,
+      "citation": "« La direction de BNP Paribas avait annoncé fin 2025 le départ progressif de ses équipes à partir de mars des locaux situés à proximité de la gare RER Rosa-Parks »",
+      "url": "https://www.europe1.fr/societe/crack-a-paris-plus-de-300-interpellations-dans-le-xixe-arrondissement-en-quatre-mois-1000080",
+      "titre": "Crack à Paris : plus de 300 interpellations dans le XIXe arrondissement en quatre mois",
+      "source": "Europe 1",
+      "date": "2026-08-05T10:33:32Z",
+      "raison": "garde entrée/sortie: département source 59, 75 incompatible avec la sortie null",
+      "created_at": "2026-08-06T06:13:39.319976+00:00"
     },
     {
       "id": "44f40079e5e54826",
@@ -13991,6 +14034,19 @@
       "source": "Google News",
       "date": "Fri, 05 Jun 2026 07:00:00 GMT",
       "created_at": "2026-08-04T06:10:34.623634+00:00"
+    },
+    {
+      "id": "394f37349d5363b2",
+      "banque": "BNP Paribas",
+      "scope": "regional",
+      "count": null,
+      "confidence": 0.35,
+      "evidence": "« la direction de BNP Paribas avait annoncé fin 2025 le départ progressif de ses équipes à partir de mars des locaux situés à proximité de la gare RER Rosa-Parks » (sans agence/commune ni statut de fermeture précisé)",
+      "url": "https://www.20minutes.fr/faits_divers/faits-divers-paris/4237933-20260805-paris-300-interpellations-2-000-evictions-quatre-mois-lors-operations-liees-chasse-crack",
+      "titre": "300 interpellations et 2.000 évictions en quatre mois liées au crack à Paris",
+      "source": "20minutes",
+      "date": "2026-08-05T11:21:47Z",
+      "created_at": "2026-08-06T06:13:26.834006+00:00"
     },
     {
       "id": "ff0907fe22bb7799",
@@ -16515,6 +16571,71 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-08-03T07:53:33.221665+00:00"
+    },
+    {
+      "id": "c891e29f8083d8c6",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Gaz radon à Thueyts, le bureau de La Poste reste fermé - e-tribune.fr",
+      "extrait": "TITRE: Gaz radon à Thueyts, le bureau de La Poste reste fermé - e-tribune.fr SOURCE: Google News DATE: Wed, 05 Aug 2026 13:58:47 GMT URL: https://news.google.com/rss/articles/CBMipAFBVV95cUxNUHFZU0hRVERoSEY5UjFUekVBM2tOX18yZ19MY3FNckNWV25LSUdneWZfMDZEc2dnOUZ3WUFQQVVSLVV2ZDlIVUF4cHFOOWFYT21oM0NFNFdvbTNkcS1rNWlPRWZSLTJJWHMyMm9IUEZsNTB0UElOczhGWko3VTVlZTlnV2pjV3h0d2RpQUxENmxFV0tEbG5pN2JJbDgyS2xYazVvMg?oc=5 <a href=\"https://news.google.com/rss/articles/CBMipAFBVV95cUxNUHFZU0hRVERoSEY5UjFUekVBM2tOX18",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNUHFZU0hRVERoSEY5UjFUekVBM2tOX18yZ19MY3FNckNWV25LSUdneWZfMDZEc2dnOUZ3WUFQQVVSLVV2ZDlIVUF4cHFOOWFYT21oM0NFNFdvbTNkcS1rNWlPRWZSLTJJWHMyMm9IUEZsNTB0UElOczhGWko3VTVlZTlnV2pjV3h0d2RpQUxENmxFV0tEbG5pN2JJbDgyS2xYazVvMg?oc=5",
+      "source": "Google News",
+      "date": "Wed, 05 Aug 2026 13:58:47 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-06T06:10:53.641675+00:00"
+    },
+    {
+      "id": "b14bd9bba4adf352",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "\"Une décision aberrante\" : La Poste décide de fermer le samedi le bureau de cette commune de Loire-Atlantique - Actu.fr",
+      "extrait": "TITRE: \"Une décision aberrante\" : La Poste décide de fermer le samedi le bureau de cette commune de Loire-Atlantique - Actu.fr SOURCE: Google News DATE: Wed, 05 Aug 2026 12:56:05 GMT URL: https://news.google.com/rss/articles/CBMi-AFBVV95cUxOQ2dwRzZfWVB3UmtqUjNjSlpBeDNQSzhlQjBLVWx5ZVM3ZWtEN1BtTjRMS2dxeFhzVHJnclRXY1RUZjRNbWpkQzFmNU1EcnZzdW9rMzg3Qks4X1NzTTZ5STZneTUyd1RDTGg1M3BtdFZIcm9KSHhERFNIelNQZjF0OXptZVdVNWpkdXRxRU00a2RXZ3g2MWM5Nkt3RUV2YXNpb2NiSEZGUnlZbXNnY2x3ZnBVREF5UnFudGZ3MHJOTHl0a2VkSmFKVTB",
+      "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOQ2dwRzZfWVB3UmtqUjNjSlpBeDNQSzhlQjBLVWx5ZVM3ZWtEN1BtTjRMS2dxeFhzVHJnclRXY1RUZjRNbWpkQzFmNU1EcnZzdW9rMzg3Qks4X1NzTTZ5STZneTUyd1RDTGg1M3BtdFZIcm9KSHhERFNIelNQZjF0OXptZVdVNWpkdXRxRU00a2RXZ3g2MWM5Nkt3RUV2YXNpb2NiSEZGUnlZbXNnY2x3ZnBVREF5UnFudGZ3MHJOTHl0a2VkSmFKVTBJcW5EZ3JncjFDM2JNOWxrLWstMzBQODIwNFJTYWdHR0pGdHdoYTlWOWxWcWdJZA?oc=5",
+      "source": "Google News",
+      "date": "Wed, 05 Aug 2026 12:56:05 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-06T06:10:49.676176+00:00"
+    },
+    {
+      "id": "c044cb53daa36767",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Incendies en Gironde : le centre de tri de La Poste ferme à cause des feux, les salariés apprennent qu'ils vont devoir rattraper les heures non travaillées",
+      "extrait": "TITRE: Incendies en Gironde : le centre de tri de La Poste ferme à cause des feux, les salariés apprennent qu'ils vont devoir rattraper les heures non travaillées SOURCE: La Dépêche DATE: Wed, 05 Aug 2026 12:01:04 +0200 URL: https://www.ladepeche.fr/2026/08/05/incendies-en-gironde-le-centre-de-tri-de-la-poste-ferme-a-cause-des-feux-les-salaries-apprennent-quils-vont-devoir-rattraper-les-heures-non-13497569.php À La Poste, les agents du centre de tri de Cestas, fermé sept jours pour risque d'ince",
+      "url": "https://www.ladepeche.fr/2026/08/05/incendies-en-gironde-le-centre-de-tri-de-la-poste-ferme-a-cause-des-feux-les-salaries-apprennent-quils-vont-devoir-rattraper-les-heures-non-13497569.php",
+      "source": "La Dépêche",
+      "date": "Wed, 05 Aug 2026 12:01:04 +0200",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-06T06:11:10.683142+00:00"
+    },
+    {
+      "id": "a89189a56f1280d8",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Incendies en Gironde : le centre de tri de La Poste ferme à cause des feux, les salariés apprennent qu'ils vont devoir rattraper les heures non travaillées - ladepeche.fr",
+      "extrait": "TITRE: Incendies en Gironde : le centre de tri de La Poste ferme à cause des feux, les salariés apprennent qu'ils vont devoir rattraper les heures non travaillées - ladepeche.fr SOURCE: Google News DATE: Wed, 05 Aug 2026 10:01:00 GMT URL: https://news.google.com/rss/articles/CBMilwJBVV95cUxQYkk1UFZSSE9BRU9hNXhoMlNKdVJ0c3J5a1dhMnpfeDBLaXRtaFVYQmpwMEc3b0lJN1AyTDdFbk8zRjRmeG1QOWZwNHFHZHc2SkgxeDlDTHFFVWZwWFEwVEJrS3lOSjVXSFI3S1J1c0tBSjJiYlNac2NTMDV5OHc5SGp3bnZ1NHh1bnRnTlRwYjNYNnc1WS1kMzNNM1B6ZnNhOTJJ",
+      "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxQYkk1UFZSSE9BRU9hNXhoMlNKdVJ0c3J5a1dhMnpfeDBLaXRtaFVYQmpwMEc3b0lJN1AyTDdFbk8zRjRmeG1QOWZwNHFHZHc2SkgxeDlDTHFFVWZwWFEwVEJrS3lOSjVXSFI3S1J1c0tBSjJiYlNac2NTMDV5OHc5SGp3bnZ1NHh1bnRnTlRwYjNYNnc1WS1kMzNNM1B6ZnNhOTJJTmZVbDdtVE1CUXl6RFVMMzFDZUFfLW1wXzU5enB0WW45eUh2dXEyWnFsUG9xUlZQTU16N3NGeEw4MWN3RkJtRHFVSnBabWZJQzdFRDdDTk5nc0JHT1ZOc2Iwbl8zWTZuVTJfT2QyWjZwVVpadmtES1MyRGs?oc=5",
+      "source": "Google News",
+      "date": "Wed, 05 Aug 2026 10:01:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-06T06:11:04.467091+00:00"
+    },
+    {
+      "id": "ed353cf9c5bc531d",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Sombernon. Fermeture de l’agence France services - Le Bien Public",
+      "extrait": "TITRE: Sombernon. Fermeture de l’agence France services - Le Bien Public SOURCE: Google News DATE: Wed, 05 Aug 2026 01:27:05 GMT URL: https://news.google.com/rss/articles/CBMijAFBVV95cUxPWHpiOWJWMDNxREdVeEdxSHp5WDBCQmhkLUVMOGp0NUl4SGlVWTFqWThaNE5KREF3Z1pMZWlaOFFVcGVMUjNPTkJDNWdkMHlMd29mU2xRdjZvdEFDUkpDSXFGQTdSTk9LMmVxeG1jaDBac2pfa1VtOUQxdmdwZV95blBWZE9oMmpLNzlISA?oc=5 <a href=\"https://news.google.com/rss/articles/CBMijAFBVV95cUxPWHpiOWJWMDNxREdVeEdxSHp5WDBCQmhkLUVMOGp0NUl4SGlVWTFqWThaNE5KREF3Z1p",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPWHpiOWJWMDNxREdVeEdxSHp5WDBCQmhkLUVMOGp0NUl4SGlVWTFqWThaNE5KREF3Z1pMZWlaOFFVcGVMUjNPTkJDNWdkMHlMd29mU2xRdjZvdEFDUkpDSXFGQTdSTk9LMmVxeG1jaDBac2pfa1VtOUQxdmdwZV95blBWZE9oMmpLNzlISA?oc=5",
+      "source": "Google News",
+      "date": "Wed, 05 Aug 2026 01:27:05 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-06T06:10:57.005817+00:00"
     },
     {
       "id": "092caf2c25825e4b",
@@ -25617,6 +25738,19 @@
       "created_at": "2026-07-25T06:02:03.916565+00:00"
     },
     {
+      "id": "1969895236c541fc",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "À Lorient, un syndicat conteste la raison de la fermeture temporaire du bureau de poste de Keryado - MaVille.com",
+      "extrait": "TITRE: À Lorient, un syndicat conteste la raison de la fermeture temporaire du bureau de poste de Keryado - MaVille.com SOURCE: Google News DATE: Fri, 24 Jul 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMi8gFBVV95cUxQVjhiOFhrRmZfUW1RWEtENGZ1TS1iSkVkbVFDQjl2dGV0ai0xWkhhazg0dzBtbjEwXzFrT0JWbTBGM3g4Z0N1bXhhVE5DRkJ4YURUb0tDbzRTM3Jqa281VmRDekZ4VklJaVNCbTBjeC1WRU80OV9BZ0R2Y20tU1JsUC1JWXVHNFBiTkRMOGJ2N3Z1MVhhVFhOZ2RFU1lTaHhxZmo5alVQV1kyT2hkalJzQUFLLTdSVnNnLUYyVkZmWWxNUGU2d2VkN2d6d0xyNG",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQVjhiOFhrRmZfUW1RWEtENGZ1TS1iSkVkbVFDQjl2dGV0ai0xWkhhazg0dzBtbjEwXzFrT0JWbTBGM3g4Z0N1bXhhVE5DRkJ4YURUb0tDbzRTM3Jqa281VmRDekZ4VklJaVNCbTBjeC1WRU80OV9BZ0R2Y20tU1JsUC1JWXVHNFBiTkRMOGJ2N3Z1MVhhVFhOZ2RFU1lTaHhxZmo5alVQV1kyT2hkalJzQUFLLTdSVnNnLUYyVkZmWWxNUGU2d2VkN2d6d0xyNGh4NmcyTEptSzZ0MDduWVVMbUpWb3I5N29aQmdmQmlvSFRHZw?oc=5",
+      "source": "Google News",
+      "date": "Fri, 24 Jul 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-06T06:11:01.706760+00:00"
+    },
+    {
       "id": "f9ecb080df51be7e",
       "banque": "La Banque Postale",
       "departement": "",
@@ -27294,6 +27428,331 @@
       "created_at": "2026-07-22T09:09:01.159244+00:00"
     },
     {
+      "id": "c1a3a95601504880",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "La Poste : malgré les incendies en Gironde, pas de cadeaux pour les salariés",
+      "extrait": "Depuis la fermeture du centre de tri de Cestas pendant sept jours, La Poste impose à 500 salariés de rattraper leurs heures perdues sans rémunération ou de poser des congés. Une décision qui génère un préavis de grève et pourrait coûter bien plus cher que les quelques milliers d'euros économisés sur les autorisations spéciales d'absence. Un calcul RH qui ne tient pas : le coût caché des heures non payées Immobilisés par les incendies, 500 salariés du centre de tri de Cestas doivent rattraper leu",
+      "url": "https://www.economiematin.fr/la-poste-rattrapage-heures-perdues-salaries-incendies-gironde",
+      "source": "Economie Matin",
+      "date": "2026-08-06T06:05:16Z",
+      "score": 3,
+      "raison": "score préfiltre bas (-2)",
+      "created_at": "2026-08-06T06:12:08.369929+00:00"
+    },
+    {
+      "id": "90dcffff3e5732ca",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "La Poste envisage de demander aux salariés n'ayant pas pu travailler pendant l'incendie de Gironde de rattraper les heures perdues",
+      "extrait": "À cause du mégafeu de Saumos, la plateforme de distribution de Cestas et plusieurs bureaux de poste ont dû fermer. Pour écouler les 700 000 courriers restés bloqués, la direction entend faire jouer une exception existante dans le Code du Travail. La Poste envisage de faire rattraper les heures perdues aux salariés n'ayant pas pu travailler pendant l'incendie de Gironde, d'après des documents de la direction du groupe que France Inter a pu consulter. Fin juillet, certains salariés de La Poste n'o",
+      "url": "https://www.franceinfo.fr/environnement/evenements-meteorologiques-extremes/incendies-et-feux-de-foret/incendies-en-gironde/la-poste-envisage-de-demander-aux-salaries-n-ayant-pas-pu-travailler-pendant-l-incendie-de-gironde-de-rattraper-les-heures-perdues_8136710.html",
+      "source": "Franceinfo",
+      "date": "2026-08-06T05:32:02Z",
+      "score": 3,
+      "raison": "score préfiltre bas (-2)",
+      "created_at": "2026-08-06T06:12:14.015072+00:00"
+    },
+    {
+      "id": "003dd59359de4cf6",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Aux origines du Brivet, une rivière qui a façonné les marais avant d'être transformée par l'homme",
+      "extrait": "TITRE: Aux origines du Brivet, une rivière qui a façonné les marais avant d'être transformée par l'homme SOURCE: Ouest France DATE: 2026-08-06T05:04:02Z URL: https://www.ouest-france.fr/pays-de-la-loire/saint-nazaire-44600/aux-origines-du-brivet-une-riviere-qui-a-faconne-les-marais-avant-detre-transformee-par-lhomme-5c325680-81df-11f1-8650-d79ccbde952a L'idée de cette série est née alors que le train remontait la Loire. Par la fenêtre, le fleuve s'étalait à perte de vue, offrant un souffle de fr",
+      "url": "https://www.ouest-france.fr/pays-de-la-loire/saint-nazaire-44600/aux-origines-du-brivet-une-riviere-qui-a-faconne-les-marais-avant-detre-transformee-par-lhomme-5c325680-81df-11f1-8650-d79ccbde952a",
+      "source": "Ouest France",
+      "date": "2026-08-06T05:04:02Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-06T06:12:17.302132+00:00"
+    },
+    {
+      "id": "9dae2114b0bf2b37",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Incendie en Gironde : La Poste veut demander aux salariés n'ayant pas pu travailler de rattraper les heures perdues",
+      "extrait": "La Poste envisage de faire rattraper les heures perdues aux salariés n'ayant pas pu travailler pendant l'incendie de Gironde, d'après des documents de la direction du groupe que France Inter a pu consulter. Fin juillet, certains salariés de La Poste n'ont pas pu travailler en raison du feu particulièrement violent qui s'est déclaré à Saumos le 22 juillet et a parcouru 42 000 hectares. Jusqu'à 220 000 personnes ont été évacuées au plus fort de l'incendie et fin juillet, 700 000 courriers ont été ",
+      "url": "https://www.radiofrance.fr/franceinter/podcasts/l-info-de-france-inter/incendie-en-gironde-la-poste-veut-demander-aux-salaries-n-ayant-pas-pu-travailler-de-rattraper-les-heures-perdues-8017141",
+      "source": "Radio France",
+      "date": "2026-08-06T04:32:00Z",
+      "score": 3,
+      "raison": "score préfiltre bas (-2)",
+      "created_at": "2026-08-06T06:12:13.266943+00:00"
+    },
+    {
+      "id": "6ff63bebc11c9912",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Best of Émiratis en Afrique (4/6). Une alliance inavouable avec Israël",
+      "extrait": "TITRE: Best of Émiratis en Afrique (4/6). Une alliance inavouable avec Israël SOURCE: Mondafrique DATE: 2026-08-06T04:00:00Z URL: https://mondafrique.com/decryptage/best-of-emiratis-en-afrique-4-6-une-alliance-inavouable-avec-israel/ Un démenti émirati autour d'une rencontre secrète attribuée à Netanyahou et Mohammed ben Zayed met en lumière les ambiguïtés d'une relation devenue centrale. Depuis les accords d'Abraham, Israël et les Émirats ont bâti un partenariat économique, technologique et mil",
+      "url": "https://mondafrique.com/decryptage/best-of-emiratis-en-afrique-4-6-une-alliance-inavouable-avec-israel/",
+      "source": "Mondafrique",
+      "date": "2026-08-06T04:00:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-06T06:12:19.554106+00:00"
+    },
+    {
+      "id": "3e7d4773a5dfd300",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "La Poste demande aux salariés empêchés par les incendies en Gironde de poser des congés ou de rattraper leurs heures",
+      "extrait": "Incendies en Gironde - Cette décision, confirmée ces derniers jours aux agents concernés, intervient dans un contexte où les feux de forêt ont déjà provoqué l'évacuation de milliers de habitants et la mise à l'arrêt de nombreuses entreprises du département. Des sites fermés et des tournées suspendues Depuis le 22 juillet, les incendies en Gironde ont entraîné la fermeture temporaire de plusieurs bureaux de poste et centres de tri, selon La Poste, dont la plateforme de Cestas qui assure le tri du",
+      "url": "https://www.epochtimes.fr/la-poste-demande-aux-salaries-empeches-par-les-incendies-en-gironde-de-poser-des-conges-ou-de-rattraper-leurs-heures-3321713.html",
+      "source": "Epoch Times",
+      "date": "2026-08-06T03:58:30Z",
+      "score": 3,
+      "raison": "score préfiltre bas (-2)",
+      "created_at": "2026-08-06T06:12:14.906520+00:00"
+    },
+    {
+      "id": "c6c253174bdcf110",
+      "banque": "Banque Populaire",
+      "departement": "",
+      "titre": "Noyant-Villages. Encore un mois à profiter de la piscine",
+      "extrait": "TITRE: Noyant-Villages. Encore un mois à profiter de la piscine SOURCE: Ouest France DATE: 2026-08-06T03:09:17Z URL: https://www.ouest-france.fr/pays-de-la-loire/noyant-villages-49490/noyant-villages-encore-un-mois-a-profiter-de-la-piscine-0b2e6677-6bab-4028-a58d-57d9eac7219c Il reste encore un petit mois pour profiter de la piscine de Noyant, qui fermera dimanche 30 août. Florian Bredard, maître-nageur sauveteur, Camille Lacave, surveillant de baignade, et Mathiew Daveau, qui assure l'accueil, ",
+      "url": "https://www.ouest-france.fr/pays-de-la-loire/noyant-villages-49490/noyant-villages-encore-un-mois-a-profiter-de-la-piscine-0b2e6677-6bab-4028-a58d-57d9eac7219c",
+      "source": "Ouest France",
+      "date": "2026-08-06T03:09:17Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-06T06:12:21.949364+00:00"
+    },
+    {
+      "id": "903760f87859ed5e",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "KBC (EBR:KBC) |",
+      "extrait": "TITRE: KBC (EBR:KBC) | SOURCE: Les Echos DATE: 2026-08-06T00:00:00Z URL: https://lesechos-comfi.lesechos.fr/press-release/kbc-ebr-kbc-kbc-groupe-benefice-de-1-152-millions-deuros-pour-le-deuxieme-trimestre-UcoTraTlTxi KBC Groupe: Bénéfice de 1 152 millions d'euros pour le deuxième trimestre \"Nous avons enregistré un excellent bénéfice net de 1 152 millions d'euros au deuxième trimestre 2026. Par rapport au trimestre précédent, nos revenus totaux ont bénéficié de la hausse des revenus nets d'inté",
+      "url": "https://lesechos-comfi.lesechos.fr/press-release/kbc-ebr-kbc-kbc-groupe-benefice-de-1-152-millions-deuros-pour-le-deuxieme-trimestre-UcoTraTlTxi",
+      "source": "Les Echos",
+      "date": "2026-08-06T00:00:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-06T06:12:07.941621+00:00"
+    },
+    {
+      "id": "804534cfe92bfca8",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Allemagne : un drone muni d'un explosif perturbe l'aéroport de Leipzig, hub stratégique pour l'Ukraine",
+      "extrait": "TITRE: Allemagne : un drone muni d'un explosif perturbe l'aéroport de Leipzig, hub stratégique pour l'Ukraine SOURCE: lanouvellerepublique.fr DATE: 2026-08-05T20:39:33Z URL: https://www.lanouvellerepublique.fr/a-la-une/allemagne-un-drone-muni-d-un-explosif-perturbe-l-aeroport-de-leipzig-hub-strategique-pour-l-ukraine-1785962373 Le trafic a été interrompu pendant deux heures, la nuit dernière, à l'aéroport de Leipzig à la suite de la découverte d'un drone équipé d'un engin explosif. Le ministre d",
+      "url": "https://www.lanouvellerepublique.fr/a-la-une/allemagne-un-drone-muni-d-un-explosif-perturbe-l-aeroport-de-leipzig-hub-strategique-pour-l-ukraine-1785962373",
+      "source": "lanouvellerepublique.fr",
+      "date": "2026-08-05T20:39:33Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-06T06:12:27.337049+00:00"
+    },
+    {
+      "id": "d774de3e2ec044bf",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Drone explosif à Leipzig: l'Allemagne alerte sur une \"nouvelle dimension de menace\" : Actualités",
+      "extrait": "TITRE: Drone explosif à Leipzig: l'Allemagne alerte sur une \"nouvelle dimension de menace\" : Actualités SOURCE: Orange Actualités DATE: 2026-08-05T20:18:51Z URL: https://actu.orange.fr/economie/drone-explosif-a-leipzig-l-allemagne-alerte-sur-une-quot-nouvelle-dimension-de-menace-quot-CNT000002r040A.html Le ministre allemand de l'Intérieur a alerté mercredi soir \"sur une nouvelle dimension de menace\", évoquant un possible \"scénario d'attaque hybride\" après la découverte d'un drone explosif, à l'a",
+      "url": "https://actu.orange.fr/economie/drone-explosif-a-leipzig-l-allemagne-alerte-sur-une-quot-nouvelle-dimension-de-menace-quot-CNT000002r040A.html",
+      "source": "Orange Actualités",
+      "date": "2026-08-05T20:18:51Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-06T06:12:30.737496+00:00"
+    },
+    {
+      "id": "065aeda471b2396a",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Un drone explosif sème la pagaille dans cet aéroport allemand, mais que s'est-il passé ?",
+      "extrait": "TITRE: Un drone explosif sème la pagaille dans cet aéroport allemand, mais que s'est-il passé ? SOURCE: Le Huffington Post DATE: 2026-08-05T18:50:10Z URL: https://www.huffingtonpost.fr/international/article/un-drone-muni-d-un-explosif-seme-la-pagaille-a-l-aeroport-de-leipzig-mais-que-s-est-il-passe-ce-mercredi_300038.html Des images d'agence de presse tournées de nuit montrent un robot de déminage circuler sur le tarmac, tout près d'un avion de la compagnie ukrainienne de fret Antonov Airlines. ",
+      "url": "https://www.huffingtonpost.fr/international/article/un-drone-muni-d-un-explosif-seme-la-pagaille-a-l-aeroport-de-leipzig-mais-que-s-est-il-passe-ce-mercredi_300038.html",
+      "source": "Le Huffington Post",
+      "date": "2026-08-05T18:50:10Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-06T06:12:36.877610+00:00"
+    },
+    {
+      "id": "8eaeeeb6a3679a2a",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Lot-et-Garonne : cette attaque de chiens sur des moutons à Tombeboeuf qui a fait le buzz en 2004",
+      "extrait": "TITRE: Lot-et-Garonne : cette attaque de chiens sur des moutons à Tombeboeuf qui a fait le buzz en 2004 SOURCE: SudOuest.fr DATE: 2026-08-05T17:11:06Z URL: https://www.sudouest.fr/environnement/animaux/lot-et-garonne-en-2004-un-troupeau-de-moutons-est-attaque-par-des-chiens-suspectes-de-rage-a-tombeboeuf-5802847.php À l'origine de la crise, la mort en Gironde, le 21 août 2004, de Tiki, un chiot de 4 mois atteint de la maladie et ramené illégalement du Maroc par un jeune Bordelais. Ce dernier a p",
+      "url": "https://www.sudouest.fr/environnement/animaux/lot-et-garonne-en-2004-un-troupeau-de-moutons-est-attaque-par-des-chiens-suspectes-de-rage-a-tombeboeuf-5802847.php",
+      "source": "SudOuest.fr",
+      "date": "2026-08-05T17:11:06Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-06T06:12:40.001517+00:00"
+    },
+    {
+      "id": "0c4d2141ee15454f",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Allemagne: un drone muni d'un explosif perturbe l'aéroport de Leipzig, hub stratégique pour l'aide à l'Ukraine",
+      "extrait": "TITRE: Allemagne: un drone muni d'un explosif perturbe l'aéroport de Leipzig, hub stratégique pour l'aide à l'Ukraine SOURCE: RFI DATE: 2026-08-05T15:28:42Z URL: https://www.rfi.fr/fr/europe/20260805-allemagne-un-drone-muni-d-un-explosif-perturbe-l-a%C3%A9roport-de-leipzig-hub-strat%C3%A9gique-pour-l-aide-%C3%A0-l-ukraine Un incident, impliquant au moins un drone équipé d'un engin explosif, a entraîné la suspension temporaire du trafic à l'aéroport allemand de Leipzig dans la nuit de mardi 4 à m",
+      "url": "https://www.rfi.fr/fr/europe/20260805-allemagne-un-drone-muni-d-un-explosif-perturbe-l-a%C3%A9roport-de-leipzig-hub-strat%C3%A9gique-pour-l-aide-%C3%A0-l-ukraine",
+      "source": "RFI",
+      "date": "2026-08-05T15:28:42Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-06T06:12:49.669219+00:00"
+    },
+    {
+      "id": "ab12aa14f494b0ba",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Un drone explosif a percuté un avion à Leipzig, hub stratégique de l'Otan et l'Ukraine",
+      "extrait": "TITRE: Un drone explosif a percuté un avion à Leipzig, hub stratégique de l'Otan et l'Ukraine SOURCE: 20minutes DATE: 2026-08-05T14:51:02Z URL: https://www.20minutes.fr/monde/ukraine/4237958-20260805-allemagne-sait-drone-explosif-touche-avion-leipzig-hub-strategique-otan-ukraine Allemagne : Ce que l'on sait du drone explosif qui a touché un avion à Leipzig, hub stratégique pour l'Otan et l'UkraineL'ombre russe*L'aéroport de Leipzig, hub logistique stratégique pour l'Otan et l'acheminement de mat",
+      "url": "https://www.20minutes.fr/monde/ukraine/4237958-20260805-allemagne-sait-drone-explosif-touche-avion-leipzig-hub-strategique-otan-ukraine",
+      "source": "20minutes",
+      "date": "2026-08-05T14:51:02Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-06T06:12:59.306780+00:00"
+    },
+    {
+      "id": "fc20bf01f141f596",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Renforcement musculaire, cardio, marche dans l'eau, step ou encore stretching : ces activités sportives matinales à Narbonne-Plage attirent habitués et touristes dans la bonne humeur.",
+      "extrait": "TITRE: Renforcement musculaire, cardio, marche dans l'eau, step ou encore stretching : ces activités sportives matinales à Narbonne-Plage attirent habitués et touristes dans la bonne humeur. SOURCE: lindependant.fr DATE: 2026-08-05T14:32:40Z URL: https://www.lindependant.fr/2026/08/05/renforcement-musculaire-cardio-marche-dans-leau-step-ou-encore-stretching-ces-activites-sportives-matinales-a-narbonne-plage-attirent-habitues-et-13497833.php Depuis le 3 juillet, un espace de Narbonne-Plage propos",
+      "url": "https://www.lindependant.fr/2026/08/05/renforcement-musculaire-cardio-marche-dans-leau-step-ou-encore-stretching-ces-activites-sportives-matinales-a-narbonne-plage-attirent-habitues-et-13497833.php",
+      "source": "lindependant.fr",
+      "date": "2026-08-05T14:32:40Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-06T06:13:01.941253+00:00"
+    },
+    {
+      "id": "9831adeabab2aed0",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Cette actrice d'Hélène et les garçons révèle que son cœur ne fonctionne plus qu'à 25 %",
+      "extrait": "TITRE: Cette actrice d'Hélène et les garçons révèle que son cœur ne fonctionne plus qu'à 25 % SOURCE: Tribunal Du Net DATE: 2026-08-05T13:39:17Z URL: https://www.letribunaldunet.fr/people/actrice-helene-et-les-garcons-coeur-25-pour-cent-rechute.html Elle a dû fermer boutique. Arrêter net l'activité qui lui donnait un sens depuis cinq ans. Renoncer, du jour au lendemain, à ce qui la faisait tenir debout. Et elle l'a annoncé elle-même, face caméra, à celles et ceux qui la suivent encore. Le mois d",
+      "url": "https://www.letribunaldunet.fr/people/actrice-helene-et-les-garcons-coeur-25-pour-cent-rechute.html",
+      "source": "Tribunal Du Net",
+      "date": "2026-08-05T13:39:17Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-06T06:13:12.376700+00:00"
+    },
+    {
+      "id": "f3352e45aab4ff70",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Un drone muni d'un explosif perturbe l'aéroport de Leipzig, hub stratégique pour l'Ukraine : Actualités",
+      "extrait": "TITRE: Un drone muni d'un explosif perturbe l'aéroport de Leipzig, hub stratégique pour l'Ukraine : Actualités SOURCE: Orange Actualités DATE: 2026-08-05T13:27:24Z URL: https://actu.orange.fr/economie/un-drone-muni-d-un-explosif-perturbe-l-aeroport-de-leipzig-hub-strategique-pour-l-ukraine-CNT000002r040A.html Un incident, impliquant au moins un drone équipé d'un engin explosif, a entraîné la suspension temporaire du trafic à l'aéroport allemand de Leipzig, un hub logistique clé pour l'Otan et l'",
+      "url": "https://actu.orange.fr/economie/un-drone-muni-d-un-explosif-perturbe-l-aeroport-de-leipzig-hub-strategique-pour-l-ukraine-CNT000002r040A.html",
+      "source": "Orange Actualités",
+      "date": "2026-08-05T13:27:24Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-06T06:13:19.489556+00:00"
+    },
+    {
+      "id": "6eaa9271a07d8921",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Nike décramponné par JP Morgan",
+      "extrait": "TITRE: Nike décramponné par JP Morgan SOURCE: Les Echos DATE: 2026-08-05T13:02:47Z URL: https://investir.lesechos.fr/actu-des-valeurs/la-vie-des-actions/nike-decramponne-par-jp-morgan-2246015 Pour tenir sur la durée, il faut parfois réapprendre à courir, un gros effort que Nike tente de faire... sans succès jusqu'à présent. Son plan de redressement \" Win Now \", entré dans la dernière ligne droite, ne connaîtra pas de bon finish. La direction de l'équipementier sportif américain a elle-même recon",
+      "url": "https://investir.lesechos.fr/actu-des-valeurs/la-vie-des-actions/nike-decramponne-par-jp-morgan-2246015",
+      "source": "Les Echos",
+      "date": "2026-08-05T13:02:47Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-06T06:13:21.544886+00:00"
+    },
+    {
+      "id": "7c895a495d1ebedd",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Un drone muni d'un explosif perturbe l'aéroport de Leipzig, hub stratégique pour l'Ukraine",
+      "extrait": "TITRE: Un drone muni d'un explosif perturbe l'aéroport de Leipzig, hub stratégique pour l'Ukraine SOURCE: La-R%C3%A9publique-des-Pyr%C3%A9n%C3%A9es DATE: 2026-08-05T11:27:24Z URL: https://www.larepubliquedespyrenees.fr/societe/afp/un-drone-muni-d-un-explosif-perturbe-l-aeroport-de-leipzig-hub-strategique-pour-l-ukraine-30170243.php Cette information n'a pas été confirmée officiellement, même si des images d'agence de presse tournées de nuit ont montré un robot de déminage circuler sur le tarmac,",
+      "url": "https://www.larepubliquedespyrenees.fr/societe/afp/un-drone-muni-d-un-explosif-perturbe-l-aeroport-de-leipzig-hub-strategique-pour-l-ukraine-30170243.php",
+      "source": "La-R%C3%A9publique-des-Pyr%C3%A9n%C3%A9es",
+      "date": "2026-08-05T11:27:24Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-06T06:13:16.247957+00:00"
+    },
+    {
+      "id": "63061b4cb99e4674",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Drone explosif à Leipzig: l'Allemagne alerte sur une \"nouvelle dimension de menace\"",
+      "extrait": "TITRE: Drone explosif à Leipzig: l'Allemagne alerte sur une \"nouvelle dimension de menace\" SOURCE: TV5MONDE DATE: 2026-08-05T11:14:14Z URL: https://information.tv5monde.com/international/drone-explosif-leipzig-lallemagne-alerte-sur-une-nouvelle-dimension-de-menace-2832555 Des palettes de fret à proximité d'un Antonov ukrainien, à l'aéroport allemand de Leipzig-Halle, le 5 août 2026 (extrait d'une vidéo de News5) Le ministre allemand de l'Intérieur a alerté mercredi soir \"sur une nouvelle dimensi",
+      "url": "https://information.tv5monde.com/international/drone-explosif-leipzig-lallemagne-alerte-sur-une-nouvelle-dimension-de-menace-2832555",
+      "source": "TV5MONDE",
+      "date": "2026-08-05T11:14:14Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-06T06:12:25.416746+00:00"
+    },
+    {
+      "id": "1ae357be327148e4",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Un drone muni d'un explosif perturbe l'aéroport de Leipzig, hub stratégique pour l'Ukraine",
+      "extrait": "TITRE: Un drone muni d'un explosif perturbe l'aéroport de Leipzig, hub stratégique pour l'Ukraine SOURCE: TV5MONDE DATE: 2026-08-05T11:14:14Z URL: https://information.tv5monde.com/economie/un-drone-muni-dun-explosif-perturbe-laeroport-de-leipzig-hub-strategique-pour-lukraine-2832555 Des palettes de fret à proximité d'un Antonov ukrainien, à l'aéroport allemand de Leipzig-Halle, le 5 août 2026 (extrait d'une vidéo de News5) Un incident, impliquant au moins un drone équipé d'un engin explosif, a e",
+      "url": "https://information.tv5monde.com/economie/un-drone-muni-dun-explosif-perturbe-laeroport-de-leipzig-hub-strategique-pour-lukraine-2832555",
+      "source": "TV5MONDE",
+      "date": "2026-08-05T11:14:14Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-06T06:13:06.242004+00:00"
+    },
+    {
+      "id": "2a745d2e2f81853e",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Un drone explosif découvert près d'un avion ukrainien à Leipzig, un autre avion a percuté un \" objet \" en vol",
+      "extrait": "TITRE: Un drone explosif découvert près d'un avion ukrainien à Leipzig, un autre avion a percuté un \" objet \" en vol SOURCE: La Voix du Nord DATE: 2026-08-05T10:51:49Z URL: https://www.lavoixdunord.fr/1726909/article/2026-08-05/un-drone-explosif-decouvert-pres-d-un-avion-ukrainien-leipzig-un-autre-avion Les autorités allemandes évoquent une tentative d'attentat. Un drone transportant un colis a été découvert mardi vers 23h40 sur le tarmac de l'aéroport de Leipzig/Halle, à proximité immédiate d'u",
+      "url": "https://www.lavoixdunord.fr/1726909/article/2026-08-05/un-drone-explosif-decouvert-pres-d-un-avion-ukrainien-leipzig-un-autre-avion",
+      "source": "La Voix du Nord",
+      "date": "2026-08-05T10:51:49Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-06T06:13:28.475250+00:00"
+    },
+    {
+      "id": "effd3061237e0743",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "\" On commence à avoir des tas partout et on ne sait pas quoi en faire \" : face à la fermeture de la moitié des conteneurs à textiles de la Riviera Française, ces associations alertent",
+      "extrait": "TITRE: \" On commence à avoir des tas partout et on ne sait pas quoi en faire \" : face à la fermeture de la moitié des conteneurs à textiles de la Riviera Française, ces associations alertent SOURCE: Nice-Matin DATE: 2026-08-05T10:45:03Z URL: https://www.nicematin.com/societe/on-commence-a-avoir-des-tas-partout-et-on-ne-sait-pas-quoi-en-faire-face-a-la-fermeture-de-la-moitie-des-conteneurs-a-textiles-de-la-riviera-francaise-ces-associations-alertent-10696684 Cette décision émane de la Communauté ",
+      "url": "https://www.nicematin.com/societe/on-commence-a-avoir-des-tas-partout-et-on-ne-sait-pas-quoi-en-faire-face-a-la-fermeture-de-la-moitie-des-conteneurs-a-textiles-de-la-riviera-francaise-ces-associations-alertent-10696684",
+      "source": "Nice-Matin",
+      "date": "2026-08-05T10:45:03Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-06T06:13:33.916669+00:00"
+    },
+    {
+      "id": "0886643bf71a2b93",
+      "banque": "BNP Paribas",
+      "departement": "",
+      "titre": "Crack à Paris : plus de 300 interpellations dans le XIXe arrondissement en quatre mois",
+      "extrait": "TITRE: Crack à Paris : plus de 300 interpellations dans le XIXe arrondissement en quatre mois SOURCE: Europe 1 DATE: 2026-08-05T10:33:32Z URL: https://www.europe1.fr/societe/crack-a-paris-plus-de-300-interpellations-dans-le-xixe-arrondissement-en-quatre-mois-1000080 Plus de 300 interpellations et près de 2.000 évictions ont été réalisées depuis le mois d'avril dans le cadre de la lutte contre la consommation de crack dans le XIXe arrondissement de Paris, a annoncé la préfecture de police. Plus d",
+      "url": "https://www.europe1.fr/societe/crack-a-paris-plus-de-300-interpellations-dans-le-xixe-arrondissement-en-quatre-mois-1000080",
+      "source": "Europe 1",
+      "date": "2026-08-05T10:33:32Z",
+      "score": 3,
+      "raison": "fermeture non publiée: garde entrée/sortie: département source 59, 75 incompatible avec la sortie null",
+      "created_at": "2026-08-06T06:13:39.332787+00:00"
+    },
+    {
+      "id": "2dfcfcc95d4e94bd",
+      "banque": "BNP Paribas",
+      "departement": "",
+      "titre": "Crack à Paris : 309 interpellations en quatre mois dans le XIXe, quartier rongé par la drogue",
+      "extrait": "TITRE: Crack à Paris : 309 interpellations en quatre mois dans le XIXe, quartier rongé par la drogue SOURCE: Le Parisien DATE: 2026-08-05T10:24:02Z URL: https://www.leparisien.fr/paris-75/crack-a-paris-309-interpellations-en-quatre-mois-dans-le-xixe-quartier-ronge-par-la-drogue-05-08-2026-KPNS5GHGJJADVBRUCRRRSO5WK4.php Dans le XIXe arrondissement de Paris, la préfecture de police dresse un premier bilan depuis la création, en avril, d'une cellule judiciaire dédiée : 309 interpellations et 1 940 ",
+      "url": "https://www.leparisien.fr/paris-75/crack-a-paris-309-interpellations-en-quatre-mois-dans-le-xixe-quartier-ronge-par-la-drogue-05-08-2026-KPNS5GHGJJADVBRUCRRRSO5WK4.php",
+      "source": "Le Parisien",
+      "date": "2026-08-05T10:24:02Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-06T06:13:35.781726+00:00"
+    },
+    {
       "id": "ad295bacd2843a67",
       "banque": "La Banque Postale",
       "departement": "",
@@ -28880,6 +29339,19 @@
       "created_at": "2026-06-25T15:27:45.332530+00:00"
     },
     {
+      "id": "f9757a1fa6585b7a",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "« Mode de vie numérique » : un aperçu de la transformation numérique de la ville - Vietnam.vn",
+      "extrait": "TITRE: « Mode de vie numérique » : un aperçu de la transformation numérique de la ville - Vietnam.vn SOURCE: Google News DATE: Wed, 29 Jul 2026 23:21:20 GMT URL: https://news.google.com/rss/articles/CBMiggFBVV95cUxNSGZDR3NaSGdfREw1YUZ5ZzdzSmg4ZmxnUkk5clNwMUxVS3paNTF0ZEVDX1J4aFF0QV9ScGtEYVlMTVM3ckNEUkNZT3pmdWNQb1NGY1drclRkV19VbVlXaW5QQ1FSaktuTXRmYzFiY3Z5S2l0VENQa1ZTY29BRFZYbVZB?oc=5 <a href=\"https://news.google.com/rss/articles/CBMiggFBVV95cUxNSGZDR3NaSGdfREw1YUZ5ZzdzSmg4ZmxnUkk5clNwMUxVS3paNTF0Z",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNSGZDR3NaSGdfREw1YUZ5ZzdzSmg4ZmxnUkk5clNwMUxVS3paNTF0ZEVDX1J4aFF0QV9ScGtEYVlMTVM3ckNEUkNZT3pmdWNQb1NGY1drclRkV19VbVlXaW5QQ1FSaktuTXRmYzFiY3Z5S2l0VENQa1ZTY29BRFZYbVZB?oc=5",
+      "source": "Google News",
+      "date": "Wed, 29 Jul 2026 23:21:20 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-06T06:10:51.639147+00:00"
+    },
+    {
       "id": "272bd635f9a2d1c9",
       "banque": "Société Générale",
       "departement": "",
@@ -29463,6 +29935,19 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:35:13.053388+00:00"
+    },
+    {
+      "id": "a49823ff51963e87",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Offres du jour-Fusions et acquisitions - boursorama.com",
+      "extrait": "TITRE: Offres du jour-Fusions et acquisitions - boursorama.com SOURCE: Google News DATE: Wed, 05 Aug 2026 13:36:35 GMT URL: https://news.google.com/rss/articles/CBMivAFBVV95cUxQelZ3TWJxZk9tZS04MGRULVN3dS1KWEVSdzlTUnJ5djJpaG54eFFOMFB6aWVBanlxU3NOangwajcwNmJtZDRGRlBNb3JlMU9TV1JsOGdiazdZMVJPSHFZY3lMT2NIcFVIWmpvSW9yeGlZSENJTlU0SWFERlpic1ZOWDlocTZqcHN0cHNmcEZOd0ZZU2tsRklzaEhhTWtfTVQ2Z2xiUXR0RmFOOFBzQnVQbDBtSlotcnJQZUl3StIBvAFBVV95cUxQelZ3TWJxZk9tZS04MGRULVN3dS1KWEVSdzlTUnJ5djJpaG54eFFOMFB6aWVBanlxU3N",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQelZ3TWJxZk9tZS04MGRULVN3dS1KWEVSdzlTUnJ5djJpaG54eFFOMFB6aWVBanlxU3NOangwajcwNmJtZDRGRlBNb3JlMU9TV1JsOGdiazdZMVJPSHFZY3lMT2NIcFVIWmpvSW9yeGlZSENJTlU0SWFERlpic1ZOWDlocTZqcHN0cHNmcEZOd0ZZU2tsRklzaEhhTWtfTVQ2Z2xiUXR0RmFOOFBzQnVQbDBtSlotcnJQZUl3StIBvAFBVV95cUxQelZ3TWJxZk9tZS04MGRULVN3dS1KWEVSdzlTUnJ5djJpaG54eFFOMFB6aWVBanlxU3NOangwajcwNmJtZDRGRlBNb3JlMU9TV1JsOGdiazdZMVJPSHFZY3lMT2NIcFVIWmpvSW9yeGlZSENJTlU0SWFERlpic1ZOWDlocTZqcHN0cHNmcEZOd0ZZU2tsRklzaEhhTWtfTVQ2Z2xiUXR0RmFOOFBzQnVQbDBtSlotcnJQZUl3Sg?oc=5",
+      "source": "Google News",
+      "date": "Wed, 05 Aug 2026 13:36:35 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-06T06:10:45.744003+00:00"
     },
     {
       "id": "4b9d131adf9640e4",
@@ -32180,6 +32665,188 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:43:41.960961+00:00"
+    },
+    {
+      "id": "f4b5ac7381dd78df",
+      "banque": "BNP Paribas",
+      "departement": "",
+      "titre": "Zéro frais cachés et assurances : partez à l'étranger l'esprit tranquille avec BNP Paribas",
+      "extrait": "TITRE: Zéro frais cachés et assurances : partez à l'étranger l'esprit tranquille avec BNP Paribas SOURCE: Frandroid DATE: 2026-08-06T05:48:03Z URL: https://www.frandroid.com/services/banque-en-ligne/3191537_zero-frais-cache-et-assurances-partez-a-letranger-lesprit-tranquille-avec-bnp-paribas La bonne nouvelle, c'est qu'aujourd'hui, ces frais bancaires ne sont plus une fatalité. Les banques évoluent et s'adaptent aux usages des voyageurs afin de simplifier concrètement leur quotidien. Depuis son ",
+      "url": "https://www.frandroid.com/services/banque-en-ligne/3191537_zero-frais-cache-et-assurances-partez-a-letranger-lesprit-tranquille-avec-bnp-paribas",
+      "source": "Frandroid",
+      "date": "2026-08-06T05:48:03Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-06T06:12:12.268114+00:00"
+    },
+    {
+      "id": "7a5966dd6cad5773",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "PSG : en Russie, l'arrivée possible de Zion Suzuki fait déjà réagir - Sport.fr",
+      "extrait": "TITRE: PSG : en Russie, l'arrivée possible de Zion Suzuki fait déjà réagir - Sport.fr SOURCE: Sport.fr DATE: 2026-08-05T20:02:34Z URL: https://www.sport.fr/football/psg-en-russie-larrivee-possible-de-zion-suzuki-fait-deja-reagir-1472123.shtm Matvey Safonov aborde la nouvelle saison dans la peau du gardien numéro un du PSG. Mais la possible arrivée de Zion Suzuki suscite déjà des interrogations en Russie, où les médias redoutent une concurrence bien plus relevée. Titulaire attendu après avoir pri",
+      "url": "https://www.sport.fr/football/psg-en-russie-larrivee-possible-de-zion-suzuki-fait-deja-reagir-1472123.shtm",
+      "source": "Sport.fr",
+      "date": "2026-08-05T20:02:34Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-06T06:12:32.947845+00:00"
+    },
+    {
+      "id": "e15eebbdfc54279d",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Le CAC 40 bat des records : Le journal de la bourse du 5 août 2026",
+      "extrait": "TITRE: Le CAC 40 bat des records : Le journal de la bourse du 5 août 2026 SOURCE: MoneyVox Actu DATE: 2026-08-05T17:06:06Z URL: https://www.moneyvox.fr/bourse/actualites/109952/le-cac-40-bat-des-records-le-journal-de-la-bourse-du-5-aout-2026 À Wall Street, l'appétit pour le risque demeure intact. Le S&P 500 (+0,1%) et le Dow Jones (+0,8%) évoluent une nouvelle fois sur des sommets historiques, malgré quelques déceptions individuelles. SpaceX (-10%), AMD (-6%) et Novo Nordisk (-4,9%) sont sanctio",
+      "url": "https://www.moneyvox.fr/bourse/actualites/109952/le-cac-40-bat-des-records-le-journal-de-la-bourse-du-5-aout-2026",
+      "source": "MoneyVox Actu",
+      "date": "2026-08-05T17:06:06Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-06T06:12:42.173379+00:00"
+    },
+    {
+      "id": "8d41e7db38a5eeb3",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Real Madrid : Diomandé, le transfert fou enfin débloqué",
+      "extrait": "TITRE: Real Madrid : Diomandé, le transfert fou enfin débloqué SOURCE: Football 365 DATE: 2026-08-05T16:35:33Z URL: https://www.football365.fr/real-madrid-diomande-le-transfert-fou-enfin-debloque-10306156.html Après de multiples retournements et une bataille avec le PSG, le Real Madrid touche enfin au but pour Yan Diomandé. Le feuilleton le plus agité du mercato madrilène touche à son dénouement. Longtemps annoncé au PSG, puis promis au Real Madrid, Yan Diomandé est resté bloqué plusieurs jours ",
+      "url": "https://www.football365.fr/real-madrid-diomande-le-transfert-fou-enfin-debloque-10306156.html",
+      "source": "Football 365",
+      "date": "2026-08-05T16:35:33Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-06T06:12:44.486218+00:00"
+    },
+    {
+      "id": "d6f29f2c145597ec",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Real Madrid : Diomandé, ça coince à cause de ses agents",
+      "extrait": "TITRE: Real Madrid : Diomandé, ça coince à cause de ses agents SOURCE: Orange Sports DATE: 2026-08-05T15:48:24Z URL: https://sports.orange.fr/football/mercato/article/real-madrid-diomande-ca-coince-a-cause-de-ses-agents-exclu-CNT000002r0fQk.html Faraj Benlahoucine, Media365 : publié le mercredi 05 août 2026 à 17h48 Le transfert de Yan Diomandé au Real Madrid semble coincer à cause d'un problème lié aux agents du joueur, réclamant chacun la légitimité de représenter l'international ivoirien. Joue",
+      "url": "https://sports.orange.fr/football/mercato/article/real-madrid-diomande-ca-coince-a-cause-de-ses-agents-exclu-CNT000002r0fQk.html",
+      "source": "Orange Sports",
+      "date": "2026-08-05T15:48:24Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-06T06:12:47.185910+00:00"
+    },
+    {
+      "id": "01a452de6088e9cf",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Le Real Madrid va lâcher près de 140 M€ pour s'offrir Yan Diomandé",
+      "extrait": "TITRE: Le Real Madrid va lâcher près de 140 M€ pour s'offrir Yan Diomandé SOURCE: Foot Mercato : Info Transferts Football - Actu Foot Transfert DATE: 2026-08-05T15:12:03Z URL: https://www.footmercato.net/a2872070797988202374-le-real-madrid-va-lacher-pres-de-140-meur-pour-soffrir-yan-diomande Le dossier Yan Diomandé a connu une avancée significative ce mercredi. Le Real Madrid et le RB Leipzig sont proches d'un accord pour un transfert compris entre 130 et 140 M€. Le Real Madrid est en ébullition",
+      "url": "https://www.footmercato.net/a2872070797988202374-le-real-madrid-va-lacher-pres-de-140-meur-pour-soffrir-yan-diomande",
+      "source": "Foot Mercato : Info Transferts Football - Actu Foot Transfert",
+      "date": "2026-08-05T15:12:03Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-06T06:12:51.547205+00:00"
+    },
+    {
+      "id": "fdc6b9da70afe698",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Le PSG prépare une nouvelle offensive pour Zion Suzuki - Sport.fr",
+      "extrait": "TITRE: Le PSG prépare une nouvelle offensive pour Zion Suzuki - Sport.fr SOURCE: Sport.fr DATE: 2026-08-05T15:02:49Z URL: https://www.sport.fr/football/le-psg-prepare-une-nouvelle-offensive-pour-zion-suzuki-1472028.shtm Le PSG accélère dans le dossier Zion Suzuki. Selon Fabrizio Romano, le club de la capitale s'apprête à revoir son offre à la hausse pour convaincre Parme de céder son gardien japonais. Après une première proposition de 28 millions d'euros, bonus compris, les dirigeants parisiens ",
+      "url": "https://www.sport.fr/football/le-psg-prepare-une-nouvelle-offensive-pour-zion-suzuki-1472028.shtm",
+      "source": "Sport.fr",
+      "date": "2026-08-05T15:02:49Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-06T06:12:53.636303+00:00"
+    },
+    {
+      "id": "0a3bb5004e97a298",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Safonov, Chevalier et bientôt Suzuki : c'est quoi le plan du PSG au poste de gardien ?",
+      "extrait": "TITRE: Safonov, Chevalier et bientôt Suzuki : c'est quoi le plan du PSG au poste de gardien ? SOURCE: Top mercato DATE: 2026-08-05T14:43:10Z URL: https://www.topmercato.com/2124530-safonov-chevalier-et-bientot-suzuki-cest-quoi-le-plan-du-psg-au-poste-de-gardien/ Lucas Chevalier et Matvei Safonov ont été en concurrence pour le poste de gardien titulaire du Paris Saint-Germain durant la saison 2025-2026. Et Zion Suzuki pourrait venir s'ajouter à l'équation sur ce mercato. Le Français avait débuté ",
+      "url": "https://www.topmercato.com/2124530-safonov-chevalier-et-bientot-suzuki-cest-quoi-le-plan-du-psg-au-poste-de-gardien/",
+      "source": "Top mercato",
+      "date": "2026-08-05T14:43:10Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-06T06:12:57.142871+00:00"
+    },
+    {
+      "id": "cd499b14b1f4045d",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Le PSG va revoir son offre à la hausse pour Zion Suzuki",
+      "extrait": "TITRE: Le PSG va revoir son offre à la hausse pour Zion Suzuki SOURCE: PSG Canal Supporters DATE: 2026-08-05T13:49:24Z URL: https://canal-supporters.com/mercato-le-psg-va-revoir-son-offre-a-la-hausse-pour-zion-suzuki/ Ciblé par le PSG pour renforcer le poste de gardien, Zion Suzuki pourrait être recruté avant d'être prêté dans la foulée. En attendant, le club parisien doit encore se mettre d'accord avec Parme. Lors de ce mercato estival 2026, le PSG a une nouvelle fois décidé de se montrer actif",
+      "url": "https://canal-supporters.com/mercato-le-psg-va-revoir-son-offre-a-la-hausse-pour-zion-suzuki/",
+      "source": "PSG Canal Supporters",
+      "date": "2026-08-05T13:49:24Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-06T06:13:04.753935+00:00"
+    },
+    {
+      "id": "156c2a7acf45bb7b",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "PSG : le cas Matvey Safonov inquiète déjà la Russie",
+      "extrait": "TITRE: PSG : le cas Matvey Safonov inquiète déjà la Russie SOURCE: Foot Mercato : Info Transferts Football - Actu Foot Transfert DATE: 2026-08-05T12:16:03Z URL: https://www.footmercato.net/a8786945393351851834-psg-le-cas-matvey-safonov-inquiete-deja-la-russie Après avoir pris le dessus sur Lucas Chevalier la saison dernière, Matvey Safonov va démarrer ce nouvel exercice dans la peau d'un titulaire. Mais le Russe va faire face à une nouvelle concurrence. Ce qui fait déjà parler au pays. Ce soir, ",
+      "url": "https://www.footmercato.net/a8786945393351851834-psg-le-cas-matvey-safonov-inquiete-deja-la-russie",
+      "source": "Foot Mercato : Info Transferts Football - Actu Foot Transfert",
+      "date": "2026-08-05T12:16:03Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-06T06:13:23.186397+00:00"
+    },
+    {
+      "id": "edc193d38a9401ae",
+      "banque": "BNP Paribas",
+      "departement": "",
+      "titre": "300 interpellations et 2.000 évictions en quatre mois liées au crack à Paris",
+      "extrait": "« la direction de BNP Paribas avait annoncé fin 2025 le départ progressif de ses équipes à partir de mars des locaux situés à proximité de la gare RER Rosa-Parks » (sans agence/commune ni statut de fermeture précisé)",
+      "url": "https://www.20minutes.fr/faits_divers/faits-divers-paris/4237933-20260805-paris-300-interpellations-2-000-evictions-quatre-mois-lors-operations-liees-chasse-crack",
+      "source": "20minutes",
+      "date": "2026-08-05T11:21:47Z",
+      "score": 2,
+      "raison": "signaux: vague(BNP Paribas,regional,count=None)",
+      "created_at": "2026-08-06T06:13:26.835567+00:00"
+    },
+    {
+      "id": "e954a2f51c06e6a0",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Le vice-amiral d'escadre Marc-Antoine de Saint-Germain est le nouveau préfet maritime de l'Atlantique",
+      "extrait": "TITRE: Le vice-amiral d'escadre Marc-Antoine de Saint-Germain est le nouveau préfet maritime de l'Atlantique SOURCE: Ouest France DATE: 2026-08-05T10:46:02Z URL: https://www.ouest-france.fr/mer/securite-en-mer/marine-nationale/le-vice-amiral-descadre-marc-antoine-de-saint-germain-est-le-nouveau-prefet-maritime-de-latlantique-f8562ca4-902f-11f1-affe-b5734e615deb La zone Atlantique a un nouveau préfet maritime. Marc-Antoine de Saint-Germain a pris ses fonctions à la préfecture maritime de Brest (F",
+      "url": "https://www.ouest-france.fr/mer/securite-en-mer/marine-nationale/le-vice-amiral-descadre-marc-antoine-de-saint-germain-est-le-nouveau-prefet-maritime-de-latlantique-f8562ca4-902f-11f1-affe-b5734e615deb",
+      "source": "Ouest France",
+      "date": "2026-08-05T10:46:02Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-06T06:13:31.364703+00:00"
+    },
+    {
+      "id": "234de17e5b9ea2d2",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Yan Diomandé de retour à l'entraînement avec Leipzig (avant son transfert au Real Madrid?)",
+      "extrait": "TITRE: Yan Diomandé de retour à l'entraînement avec Leipzig (avant son transfert au Real Madrid?) SOURCE: RMC SPORT DATE: 2026-08-05T10:32:21Z URL: https://rmcsport.bfmtv.com/football/bundesliga/yan-diomande-de-retour-a-l-entrainement-avec-leipzig-avant-son-transfert-au-real-madrid_AV-202608050298.html Absent du stage de pré-saison de l'équipe en Autriche en raison d'une infection, Yan Diomandé a repris l'entraînement avec le RB Leipzig ce mercredi matin. L'un de ses tous derniers en Allemagne a",
+      "url": "https://rmcsport.bfmtv.com/football/bundesliga/yan-diomande-de-retour-a-l-entrainement-avec-leipzig-avant-son-transfert-au-real-madrid_AV-202608050298.html",
+      "source": "RMC SPORT",
+      "date": "2026-08-05T10:32:21Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-06T06:13:41.174651+00:00"
+    },
+    {
+      "id": "61e1256cf7b425ca",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Fieldfisher conseille Lactalis",
+      "extrait": "TITRE: Fieldfisher conseille Lactalis SOURCE: Le Monde du Droit DATE: 2026-08-05T10:20:29Z URL: https://www.lemondedudroit.fr/deals/105354-fieldfisher-conseille-lactalis.html Fieldfisher conseille Lactalis dans le cadre de son projet d'acquisition du groupe Triballat. Fieldfisher a conseillé le groupe Lactalis dans le cadre de son entrée en négociations exclusives avec les actionnaires du groupe Triballat en vue de l'acquisition de 100 % de son capital. Pour Lactalis, leader mondial des produits",
+      "url": "https://www.lemondedudroit.fr/deals/105354-fieldfisher-conseille-lactalis.html",
+      "source": "Le Monde du Droit",
+      "date": "2026-08-05T10:20:29Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-06T06:13:42.921946+00:00"
     },
     {
       "id": "72de40691b9b702f",

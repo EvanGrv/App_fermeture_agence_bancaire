@@ -222,6 +222,16 @@
   {
     "severity": "warning",
     "type": "date_fermeture_absente",
+    "id": "037810b5cd177297",
+    "banque": "Crédit Mutuel",
+    "commune": "Montauban",
+    "departement": "82",
+    "code_insee": "82121",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
     "id": "2b3c02eac49ee643",
     "banque": "Crédit Agricole",
     "commune": "Saint-Saturnin-lès-Avignon",
