@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T06:23:46.965598+00:00",
+  "generated_at": "2026-08-07T05:22:48.108258+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -119,11 +119,11 @@
     "12": {
       "nom": "Aveyron",
       "region": "Occitanie",
-      "count": 5,
+      "count": 6,
       "total_agences": 69,
-      "precise_count": 5,
+      "precise_count": 6,
       "unlocated_count": 0,
-      "estimated_count": 10
+      "estimated_count": 11
     },
     "13": {
       "nom": "Bouches-du-Rhône",
@@ -969,9 +969,9 @@
     "12": {
       "departement": "12",
       "nom": "Aveyron",
-      "precise_count": 5,
+      "precise_count": 6,
       "unlocated_count": 0,
-      "estimated_count": 10,
+      "estimated_count": 11,
       "department_signal_count": 5,
       "signals": [
         {
@@ -1826,9 +1826,9 @@
     },
     {
       "region": "Occitanie",
-      "articles": 12,
+      "articles": 13,
       "fermetures": 1,
-      "projets": 8,
+      "projets": 9,
       "fusions": 2,
       "types": [
         "Fermeture",
@@ -9355,6 +9355,47 @@
         "source": "SIRENE"
       },
       "region": "Bourgogne-Franche-Comté"
+    },
+    {
+      "id": "5c5d7633ee061844",
+      "banque": "La Banque Postale",
+      "commune": "Rodez",
+      "code_insee": "12202",
+      "departement": "12",
+      "type": "fermeture",
+      "date_annonce": "Fri, 31 Jul 2026 08:23:26 GMT",
+      "date_fermeture": "2026-08-07",
+      "statut": "projet",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 1,
+      "fiabilite": 3,
+      "lat": 44.359272,
+      "lon": 2.566732,
+      "citation": "Article indique : « Rodez : la poste de la place Foch ferme près de deux mois » (aucune mention explicite de la partie bancaire LBP dans l’extrait).",
+      "adresse": "place Foch",
+      "agence_localisation": "La Poste – place Foch (point bancaire de La Banque Postale associé à une agence postale)",
+      "commune_originale": null,
+      "service_impact": "fermeture_lbp_complete",
+      "point_postal_avant": "Bureau de Poste",
+      "point_postal_apres": null,
+      "postal_point_id": null,
+      "evidence_level": "presse",
+      "created_at": "2026-08-07T05:09:27.842393+00:00",
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNdWg2UmZUaUUwTnk3TDItN1huY0ZRTmZCUUxtc29OZWwwTG1FTy1IeVM2Y0M5dzlVWmVrc2Q0anVZeFFQby1UeVp2T3pRTnprLU5RcFJkZkwxU3Y1ay04bU5NZjVMdjFVcURMcXVyQmN2azR0RTVKWFdVdjNaUG9QdzJZM2ZBVW83cHlBUklKR3RfQjEzcnYtNFI0cG5XVFpMTTBnZTVoYkxRMDhVOG4zUA?oc=5",
+          "titre": "Rodez : la poste de la place Foch ferme près de deux mois, où aller en attendant ? - 12actu.com",
+          "source": "Google News",
+          "date": "Fri, 31 Jul 2026 08:23:26 GMT",
+          "tier": "D"
+        }
+      ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
+      "region": "Occitanie"
     }
   ],
   "closures_unlocated": [
@@ -10112,7 +10153,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-06T06:07:27.462559+00:00"
+      "created_at": "2026-08-07T05:05:44.715708+00:00"
     },
     {
       "id": "50895c042a984b7d",
@@ -10148,7 +10189,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 04:46:02 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-06T06:07:27.069190+00:00"
+      "created_at": "2026-08-07T05:05:44.181886+00:00"
     },
     {
       "id": "8c6a0cad14626d6f",
@@ -12056,7 +12097,7 @@
       "source": "Google News",
       "date": "Fri, 20 Jun 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-06T06:07:35.342104+00:00"
+      "created_at": "2026-08-07T05:05:53.352695+00:00"
     },
     {
       "id": "b80663fa38292743",
@@ -12146,7 +12187,7 @@
       "source": "Google News",
       "date": "Fri, 10 Jul 2026 10:12:00 GMT",
       "raison": "garde entrée/sortie: département source 44 incompatible avec la sortie 974",
-      "created_at": "2026-08-06T06:07:54.116717+00:00"
+      "created_at": "2026-08-07T05:06:14.120668+00:00"
     },
     {
       "id": "8c646081e1d69e81",
@@ -12326,7 +12367,7 @@
       "source": "Google News",
       "date": "Fri, 03 Jan 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-06T06:07:26.611013+00:00"
+      "created_at": "2026-08-07T05:05:43.622091+00:00"
     },
     {
       "id": "411db107f70f2387",
@@ -18120,6 +18161,19 @@
       "created_at": "2026-07-31T06:45:01.880186+00:00"
     },
     {
+      "id": "537b7716101b4cce",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "« Cette maternité m’a vu naître » : Omar Sy dénonce la fermeture annoncée de cet établissement des Yvelines - Ouest-France",
+      "extrait": "TITRE: « Cette maternité m’a vu naître » : Omar Sy dénonce la fermeture annoncée de cet établissement des Yvelines - Ouest-France SOURCE: Google News DATE: Tue, 16 Jun 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMigAJBVV95cUxQWkoyZzZTUmhGT3JQd1ZYVmR3NXF2Z1cxQ2NpVEdLWkFpS0xCdmcxVFctbFU4UG9hTVVVX05DazRWdWt0VUV5Q09XaUN6R3lkczdCTWhnSzdMQzNtSEJHR3hjVTBwMnc5UWJwOE1URVdDQkZIdDNmWnpCc1NYSzk0bUpwWXVhaWFzUXBjLWlfQlIxY3daZXMzT1dIMkZTY1dqaGFCLVFST1V2VVNwYW9tUmloaWdIWDhFa21GcndDNEYtaFVoallD",
+      "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQWkoyZzZTUmhGT3JQd1ZYVmR3NXF2Z1cxQ2NpVEdLWkFpS0xCdmcxVFctbFU4UG9hTVVVX05DazRWdWt0VUV5Q09XaUN6R3lkczdCTWhnSzdMQzNtSEJHR3hjVTBwMnc5UWJwOE1URVdDQkZIdDNmWnpCc1NYSzk0bUpwWXVhaWFzUXBjLWlfQlIxY3daZXMzT1dIMkZTY1dqaGFCLVFST1V2VVNwYW9tUmloaWdIWDhFa21GcndDNEYtaFVoallDcE1PR190N3JkYnNUSm5zdk1TSGpuTnpaUUVwWXd6anNhY19KWlA2NjhDcVFBUnZLdVUzeWZ6dGZL?oc=5",
+      "source": "Google News",
+      "date": "Tue, 16 Jun 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-07T05:09:34.940556+00:00"
+    },
+    {
       "id": "f3ca59006adc7ffb",
       "banque": "La Banque Postale",
       "departement": "",
@@ -19706,6 +19760,19 @@
       "created_at": "2026-08-01T06:15:43.577118+00:00"
     },
     {
+      "id": "f93b7fa5a35ec076",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Poitiers : fermeture temporaire du lagon des Bois de Saint-Pierre - lanouvellerepublique.fr",
+      "extrait": "TITRE: Poitiers : fermeture temporaire du lagon des Bois de Saint-Pierre - lanouvellerepublique.fr SOURCE: Google News DATE: Thu, 23 Jul 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMiuwFBVV95cUxQdVRjR242cGF1S3ZpQzl6ZlBVWGd3NmstOUI4NHNGelJsLWE3TWdESFg3ZkFXRkVFdVg2QVVjY2JFRFp2Qm5QWFVrRmM0S016S0NtSGNWbDlIU3QwVElJUzl1X3EwZjdxOGlHbWZkUWhyS0Q4NllNRXVXV25WVnZPM1YwZTJLWGxkZlVod0FjTnA0X2wzVW10S2JOb2pEX3BfcWw1NXlzSnNldzZXdjVBUFRwYmxtbWtHY3hn?oc=5 <a href=\"https://news.google.com/rss/arti",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQdVRjR242cGF1S3ZpQzl6ZlBVWGd3NmstOUI4NHNGelJsLWE3TWdESFg3ZkFXRkVFdVg2QVVjY2JFRFp2Qm5QWFVrRmM0S016S0NtSGNWbDlIU3QwVElJUzl1X3EwZjdxOGlHbWZkUWhyS0Q4NllNRXVXV25WVnZPM1YwZTJLWGxkZlVod0FjTnA0X2wzVW10S2JOb2pEX3BfcWw1NXlzSnNldzZXdjVBUFRwYmxtbWtHY3hn?oc=5",
+      "source": "Google News",
+      "date": "Thu, 23 Jul 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-07T05:09:39.769343+00:00"
+    },
+    {
       "id": "af042007cbd09fa5",
       "banque": "Crédit Agricole",
       "departement": "",
@@ -20978,6 +21045,45 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-07-27T07:57:04.196875+00:00"
+    },
+    {
+      "id": "b6c74d5c603891ff",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "\"On ne laissera pas faire !\" : le maire de Donges dénonce la fermeture du bureau de Poste de sa ville les samedis matins - ici.fr",
+      "extrait": "TITRE: \"On ne laissera pas faire !\" : le maire de Donges dénonce la fermeture du bureau de Poste de sa ville les samedis matins - ici.fr SOURCE: Google News DATE: Thu, 06 Aug 2026 17:11:52 GMT URL: https://news.google.com/rss/articles/CBMikwJBVV95cUxQbjY5N1pWS3JIazRNMm1SbjRCYlpzdF9YdGRwTW1MY0JKelprWHgxRDBmVlhlQlRtS0pCY0lReEZvQnR5Uk1fQWRMX1JDSXRibU9QZGJNSUF5Z1lid3VwdVRwVU03TFVFNThwSlR1MVdYUENKYjI2Z2poLUN0aEhQWkh4c2psZ0VuV1o5Y29fS3NLYU8tQXJENV94S3VLdUVtZzJsdTdzN0NKdVZXMjBUVWxqV2NHSktES2h5dHN0U25pL",
+      "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxQbjY5N1pWS3JIazRNMm1SbjRCYlpzdF9YdGRwTW1MY0JKelprWHgxRDBmVlhlQlRtS0pCY0lReEZvQnR5Uk1fQWRMX1JDSXRibU9QZGJNSUF5Z1lid3VwdVRwVU03TFVFNThwSlR1MVdYUENKYjI2Z2poLUN0aEhQWkh4c2psZ0VuV1o5Y29fS3NLYU8tQXJENV94S3VLdUVtZzJsdTdzN0NKdVZXMjBUVWxqV2NHSktES2h5dHN0U25pLVdwMHBZSXBCa1pxMXRhYUNIazZtaEwwMVAwWWE2MFF3aXlfc25mZHRCNHB5WXJBcUtGRXB5OUx5NXRINVkyR2RHR0hzcmctVldfZ3p2THJnbw?oc=5",
+      "source": "Google News",
+      "date": "Thu, 06 Aug 2026 17:11:52 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-07T05:09:23.896877+00:00"
+    },
+    {
+      "id": "e0ad15972d24dc33",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Ils vendent leur ferme mais n'ont toujours pas reçu les 530 000 euros : le combat d'un couple d'agriculteurs retraités de l'Orne - France 3 Régions",
+      "extrait": "TITRE: Ils vendent leur ferme mais n'ont toujours pas reçu les 530 000 euros : le combat d'un couple d'agriculteurs retraités de l'Orne - France 3 Régions SOURCE: Google News DATE: Thu, 06 Aug 2026 16:49:02 GMT URL: https://news.google.com/rss/articles/CBMinAJBVV95cUxOSE5DRWFaNmVSRWhmQlhQV0xUY1hJdGpiV3lNQnB0dnlsOTlQQ0ZVYzJKTzZEbWg5YlBHSGNBdlU3ekFnbGhhdjQwRWVUQXVOandJREJ4Q0dkWk50alN2bUZkdDB3T1NnSG9jTzZUVndFcUJ2ZUU4eUFXTmd1eEtSeGVvZUEzN2NFLVVoWTJnMXJZNkNjWGNfdlNkNFk2cVdxbzRrZUVUSDU3RFJNUlNlOXQ4cGV",
+      "url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxOSE5DRWFaNmVSRWhmQlhQV0xUY1hJdGpiV3lNQnB0dnlsOTlQQ0ZVYzJKTzZEbWg5YlBHSGNBdlU3ekFnbGhhdjQwRWVUQXVOandJREJ4Q0dkWk50alN2bUZkdDB3T1NnSG9jTzZUVndFcUJ2ZUU4eUFXTmd1eEtSeGVvZUEzN2NFLVVoWTJnMXJZNkNjWGNfdlNkNFk2cVdxbzRrZUVUSDU3RFJNUlNlOXQ4cGVDd3pMMWdaanlSeDB4NGNTQnFkQUFpOTdwZ2RyOUFGcVQzMXV0TXFSSVYtM1RKd3JPblM4elpHNV9aeE5KN0dWMmE5VXhzTWROaTNKaE5DQW15VXlhWkZfRktxSkxiWFk5OHE3YXdHOQ?oc=5",
+      "source": "Google News",
+      "date": "Thu, 06 Aug 2026 16:49:02 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-07T05:09:30.477853+00:00"
+    },
+    {
+      "id": "e151ca5022d6d2e7",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Le service des urgences à nouveau contraint à la fermeture à Mayenne pendant 4 jours - Ouest-France",
+      "extrait": "TITRE: Le service des urgences à nouveau contraint à la fermeture à Mayenne pendant 4 jours - Ouest-France SOURCE: Google News DATE: Thu, 06 Aug 2026 09:55:13 GMT URL: https://news.google.com/rss/articles/CBMijAJBVV95cUxQd3RGWjZoX0FNSTZvNmNYLUpjdFpZNm1hS0QwNlBlLVdPaEEyT24xQlo3dGVFZlV6X1ZQRWtNcy00M3hEM2ZXajZKVG5ucUpGeHY1Q1MyZnhnWTBraVpocGIyU0ZMUlU3S0NfREtocGdoNFN5TXRzd0h3OE91RW00RG1tNEZ4dTRNZ3ZOenc5amNkTUR3UXBLeW0yWC1KaUJEOWhDX2Zzbll6NTlCdGNhMWZLcEJ4Z2x3WmFxZGtpRjlvbmU4YndmZVVER2dFaDl3TVFyUGFqY0Z",
+      "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxQd3RGWjZoX0FNSTZvNmNYLUpjdFpZNm1hS0QwNlBlLVdPaEEyT24xQlo3dGVFZlV6X1ZQRWtNcy00M3hEM2ZXajZKVG5ucUpGeHY1Q1MyZnhnWTBraVpocGIyU0ZMUlU3S0NfREtocGdoNFN5TXRzd0h3OE91RW00RG1tNEZ4dTRNZ3ZOenc5amNkTUR3UXBLeW0yWC1KaUJEOWhDX2Zzbll6NTlCdGNhMWZLcEJ4Z2x3WmFxZGtpRjlvbmU4YndmZVVER2dFaDl3TVFyUGFqY0Z2WDhUQUJGdktnREJhN29MRzNKNU5OWG9fT3l4RTBBcnNwNFB6bzNIT1Itb0VPT1NVSGhG?oc=5",
+      "source": "Google News",
+      "date": "Thu, 06 Aug 2026 09:55:13 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-07T05:09:32.981217+00:00"
     },
     {
       "id": "ce38cc48d7521ac6",
@@ -26778,6 +26884,19 @@
       "created_at": "2026-07-22T09:08:19.778618+00:00"
     },
     {
+      "id": "5440c25d2da7a67b",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Près de Nancy : un bureau de tabac fermé brutalement par la préfecture, voici pourquoi - Actu.fr",
+      "extrait": "TITRE: Près de Nancy : un bureau de tabac fermé brutalement par la préfecture, voici pourquoi - Actu.fr SOURCE: Google News DATE: Fri, 10 Jul 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMizwFBVV95cUxObFBQY1BlY3ZPakRROWNWMV82TUlLT3RwSWotX3NUT0N6SUxCWVhncWFGcVlsbjRGekRDa3B1TnJycnp1bDVXbkF6Y2tDZDlvN3JNbXp1blBSdWd0UE9fcG9icmlQajdUSnQya0tQVTZkUVFqQVBmdWxLeGNfSVgtbWtTUXBhY3RYeDFsWkZKVFhxVC1ncVBUWFZqQ01kWUhkYzF0SGlZXzFUcFFnQ2IwejRqZEFPcnFKNjBGYnhVRVN5OEhPRExJbERVMTNqMVU?oc=5 <a href=\"",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxObFBQY1BlY3ZPakRROWNWMV82TUlLT3RwSWotX3NUT0N6SUxCWVhncWFGcVlsbjRGekRDa3B1TnJycnp1bDVXbkF6Y2tDZDlvN3JNbXp1blBSdWd0UE9fcG9icmlQajdUSnQya0tQVTZkUVFqQVBmdWxLeGNfSVgtbWtTUXBhY3RYeDFsWkZKVFhxVC1ncVBUWFZqQ01kWUhkYzF0SGlZXzFUcFFnQ2IwejRqZEFPcnFKNjBGYnhVRVN5OEhPRExJbERVMTNqMVU?oc=5",
+      "source": "Google News",
+      "date": "Fri, 10 Jul 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-07T05:09:37.231813+00:00"
+    },
+    {
       "id": "6fe33a9e23cd91a3",
       "banque": "Société Générale",
       "departement": "",
@@ -27426,6 +27545,136 @@
       "score": 3,
       "raison": "fermeture non publiée: hors fenêtre temporelle",
       "created_at": "2026-07-22T09:09:01.159244+00:00"
+    },
+    {
+      "id": "8948cfdf0c84ea15",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Mercato OM : La signature de cet ancien du PSG est déjà validée",
+      "extrait": "TITRE: Mercato OM : La signature de cet ancien du PSG est déjà validée SOURCE: Foot-sur7 DATE: 2026-08-07T05:03:00Z URL: https://www.foot-sur7.fr/770904-mercato-om-la-signature-de-cet-ancien-du-psg-est-deja-validee ‎Le mercato de l'Olympique de Marseille s'emballe. Après avoir trouvé un accord pour le transfert de Geronimo Rulli vers Manchester City, le club olympien travaille désormais sur la succession de l'international argentin. L'opération, qui devrait rapporter environ 3,5 millions d'euros",
+      "url": "https://www.foot-sur7.fr/770904-mercato-om-la-signature-de-cet-ancien-du-psg-est-deja-validee",
+      "source": "Foot-sur7",
+      "date": "2026-08-07T05:03:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-07T05:10:51.375012+00:00"
+    },
+    {
+      "id": "89da1b2502d2024e",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Exploitation, trafics et maltraitance: à Ceuta, des ONG s'inquiètent des risques pour les enfants migrants",
+      "extrait": "TITRE: Exploitation, trafics et maltraitance: à Ceuta, des ONG s'inquiètent des risques pour les enfants migrants SOURCE: BFMTV DATE: 2026-08-07T04:44:47Z URL: https://www.bfmtv.com/international/europe/espagne/exploitation-trafics-et-maltraitance-a-ceuta-des-ong-s-inquietent-des-risques-pour-les-enfants-migrants_AD-202608070054.html En seulement deux jours, les 30 et 31 juillet derniers, près de 72.000 personnes ont tenté de rejoindre Ceuta, l'enclave espagnole jouxtant la côte marocaine. Des a",
+      "url": "https://www.bfmtv.com/international/europe/espagne/exploitation-trafics-et-maltraitance-a-ceuta-des-ong-s-inquietent-des-risques-pour-les-enfants-migrants_AD-202608070054.html",
+      "source": "BFMTV",
+      "date": "2026-08-07T04:44:47Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-07T05:10:53.282989+00:00"
+    },
+    {
+      "id": "8d6a83b4e082626b",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "En cavale en Espagne, un fugitif britannique trahi par ses tatouages",
+      "extrait": "TITRE: En cavale en Espagne, un fugitif britannique trahi par ses tatouages SOURCE: 24matins.fr DATE: 2026-08-06T19:00:53Z URL: https://www.24matins.fr/en-cavale-en-espagne-un-fugitif-britannique-trahi-par-ses-tatouages-1418538 * John Rocks arrêté dans un café à Madrid * Ses tatouages ont permis son identification * Il attend une décision d'extradition L'un des fugitifs les plus recherchés par le Royaume-Uni a été arrêté en Espagne. L'Écossais John Rocks, 37 ans, accusé de plusieurs agressions s",
+      "url": "https://www.24matins.fr/en-cavale-en-espagne-un-fugitif-britannique-trahi-par-ses-tatouages-1418538",
+      "source": "24matins.fr",
+      "date": "2026-08-06T19:00:53Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-07T05:11:01.849342+00:00"
+    },
+    {
+      "id": "8cf57d72a175308f",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Chassés par les flammes, les postiers de Gironde sommés de rattraper le temps perdu",
+      "extrait": "Depuis le 22 juillet, les incendies de Gironde ont fermé une vingtaine de bureaux de poste et paralysé le centre de tri de Cestas pendant sept jours. La Poste demande à ce que les 500 salariés évacués de leur domicile ou empêchés de travailler rattrapent leurs heures perdues ou posent des congés. Les salariés dénoncent une \"double pleine\". Selon les informations relayées par Epoch Times, 20 bureaux de poste de Gironde ont cessé leur activité depuis le 22 juillet, dans un département où les incen",
+      "url": "https://www.francesoir.fr/politique-france/chasses-par-les-flammes-les-postiers-de-gironde-sommes-de-rattraper-le-temps-perdu",
+      "source": "France Soir",
+      "date": "2026-08-06T15:22:16Z",
+      "score": 3,
+      "raison": "score préfiltre bas (-2)",
+      "created_at": "2026-08-07T05:11:22.394181+00:00"
+    },
+    {
+      "id": "e15daa610665fe6a",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Le drone explosif découvert à l'aéroport de Leipzig se trouvait près d'un avion ukrainien, Moscou pointé du doigt",
+      "extrait": "TITRE: Le drone explosif découvert à l'aéroport de Leipzig se trouvait près d'un avion ukrainien, Moscou pointé du doigt SOURCE: La Tribune DATE: 2026-08-06T14:53:08Z URL: https://www.latribune.fr/article/defense-aerospatiale/defense/94162045179221/le-drone-explosif-decouvert-a-laeroport-de-leipzig-se-trouvait-pres-dun-avion-ukrainien-moscou-pointe-du-doigt Outre le drone muni d'un explosif découvert, un deuxième objet volant non identifié aurait percuté un avion-cargo après que celui-ci a inter",
+      "url": "https://www.latribune.fr/article/defense-aerospatiale/defense/94162045179221/le-drone-explosif-decouvert-a-laeroport-de-leipzig-se-trouvait-pres-dun-avion-ukrainien-moscou-pointe-du-doigt",
+      "source": "La Tribune",
+      "date": "2026-08-06T14:53:08Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-07T05:11:28.951421+00:00"
+    },
+    {
+      "id": "abf063b2ca563540",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Mercato: PSG : Plus qu'une question de jours pour Mika Godts",
+      "extrait": "TITRE: Mercato: PSG : Plus qu'une question de jours pour Mika Godts SOURCE: Foot-sur7 DATE: 2026-08-06T14:53:00Z URL: https://www.foot-sur7.fr/770768-mercato-psg-plus-quune-question-de-jours-pour-mika-godts Mika Godts veut absolument rejoindre le PSG et les récentes sorties de son agent visent directement à faire pression sur l'Ajax Amsterdam. Le transfert pourrait rapidement se conclure. Mercato PSG : Les discussions se poursuivent pour Mika Godts D'après les dernières informations du journalis",
+      "url": "https://www.foot-sur7.fr/770768-mercato-psg-plus-quune-question-de-jours-pour-mika-godts",
+      "source": "Foot-sur7",
+      "date": "2026-08-06T14:53:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-07T05:11:26.707995+00:00"
+    },
+    {
+      "id": "0a994d8bee548c49",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Faire rattraper aux salariés les heures perdues lors du feu de Gironde ? Cette idée de La Poste indigne",
+      "extrait": "TITRE: Faire rattraper aux salariés les heures perdues lors du feu de Gironde ? Cette idée de La Poste indigne SOURCE: Le Huffington Post DATE: 2026-08-06T14:37:14Z URL: https://www.huffingtonpost.fr/france/article/apres-le-feu-de-gironde-la-poste-n-exclut-pas-que-les-salaries-rattrapent-les-heures-perdues-et-fait-polemique_300500.html Des révélations qui surprennent autant qu'elles indignent. Après le mégafeu de Gironde, la Poste envisage de faire rattraper leurs heures perdues aux salariés emp",
+      "url": "https://www.huffingtonpost.fr/france/article/apres-le-feu-de-gironde-la-poste-n-exclut-pas-que-les-salaries-rattrapent-les-heures-perdues-et-fait-polemique_300500.html",
+      "source": "Le Huffington Post",
+      "date": "2026-08-06T14:37:14Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-07T05:11:31.612643+00:00"
+    },
+    {
+      "id": "1ebcae0036ff3bc6",
+      "banque": "Crédit Agricole",
+      "departement": "",
+      "titre": "CREDIT AGRICOLE ALPES PROVENCE (EPA:CRAP) |",
+      "extrait": "TITRE: CREDIT AGRICOLE ALPES PROVENCE (EPA:CRAP) | SOURCE: Les Echos DATE: 2026-08-06T12:03:17Z URL: https://lesechos-comfi.lesechos.fr/press-release/credit-agricole-alpes-provence-epa-crap-crcam-alpes-provence-rapport-financier-semestriel-2026-b4Iby4wiKIO Rapport Financier semestriel 2026 Caisse RÈgionale CrÈdit Agricole Mutuel Alpes Provence 2.1 PrÈsentation du groupe CrÈdit Agricole Alpes Provence .......................................... 11 2.2 Contribution des entitÈs du groupe CrÈdit Agri",
+      "url": "https://lesechos-comfi.lesechos.fr/press-release/credit-agricole-alpes-provence-epa-crap-crcam-alpes-provence-rapport-financier-semestriel-2026-b4Iby4wiKIO",
+      "source": "Les Echos",
+      "date": "2026-08-06T12:03:17Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-07T05:11:43.304370+00:00"
+    },
+    {
+      "id": "c7fb71f0a3dc0c67",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "La Corée du Nord a tiré un missile balistique en direction de la mer du Japon, selon l'armée sud-coréenne",
+      "extrait": "TITRE: La Corée du Nord a tiré un missile balistique en direction de la mer du Japon, selon l'armée sud-coréenne SOURCE: La-R%C3%A9publique-des-Pyr%C3%A9n%C3%A9es DATE: 2026-08-06T11:33:05Z URL: https://www.larepubliquedespyrenees.fr/societe/afp/la-coree-du-nord-a-tire-un-missile-balistique-en-direction-de-la-mer-du-japon-selon-l-armee-sud-coreenne-30180367.php Ce tir intervient au lendemain des accusations portées par Pyongyang contre le Japon, qu'il accuse de se transformer en \"Etat belliqueux",
+      "url": "https://www.larepubliquedespyrenees.fr/societe/afp/la-coree-du-nord-a-tire-un-missile-balistique-en-direction-de-la-mer-du-japon-selon-l-armee-sud-coreenne-30180367.php",
+      "source": "La-R%C3%A9publique-des-Pyr%C3%A9n%C3%A9es",
+      "date": "2026-08-06T11:33:05Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-07T05:11:51.282158+00:00"
+    },
+    {
+      "id": "5bf379ef92a703c3",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Incendies en Gironde : La Poste envisage de faire rattraper les heures perdues à ses salariés qui n'ont pas pu travailler, colère des syndicats qui dénoncent une \"double peine\"",
+      "extrait": "Face aux fermetures imposées par les feux de forêt estivaux, La Poste s'appuie sur le Code du travail pour imposer le rattrapage des heures perdues à ses agents. Cette récupération, plafonnée à une heure par jour, doit être effectuée sous 12 mois. Dénonçant une \"double peine\", la CGT-FAPT a déposé un préavis de grève. Après les violents incendies ayant ravagé la Gironde, la direction de La Poste exige de plus de 500 employés, privés d'activité lors de la fermeture exceptionnelle de sites, de réc",
+      "url": "https://www.lindependant.fr/2026/08/06/incendies-en-gironde-la-poste-envisage-de-faire-rattraper-les-heures-perdues-a-ses-salaries-qui-nont-pas-pu-travailler-colere-des-syndicats-qui-13499172.php",
+      "source": "lindependant.fr",
+      "date": "2026-08-06T10:39:20Z",
+      "score": 3,
+      "raison": "score préfiltre bas (-2)",
+      "created_at": "2026-08-07T05:11:52.538224+00:00"
     },
     {
       "id": "c1a3a95601504880",
@@ -29937,6 +30186,19 @@
       "created_at": "2026-06-25T15:35:13.053388+00:00"
     },
     {
+      "id": "aaeda3ee687cde44",
+      "banque": "Crédit Agricole",
+      "departement": "",
+      "titre": "Le deuxième trimestre de Banco BPM a dépassé les attentes : l’objectif de bénéfice pour 2026 a été relevé à plus de 1,95 milliard d’euros. Castagna : « Une fusion avec Crédit Agricole est une option solide. » - firstonline.info",
+      "extrait": "TITRE: Le deuxième trimestre de Banco BPM a dépassé les attentes : l’objectif de bénéfice pour 2026 a été relevé à plus de 1,95 milliard d’euros. Castagna : « Une fusion avec Crédit Agricole est une option solide. » - firstonline.info SOURCE: Google News DATE: Wed, 05 Aug 2026 18:20:00 GMT URL: https://news.google.com/rss/articles/CBMilANBVV95cUxOc0dsT1BHeUhzM3RQQllwY3U1VThrd0Q2WWROZVRvU3ZkSGtjaG1vN1ZsV3pTdUFwNWF3SEZkYnNpQzdxMDRPZlV0SHNhODl4VzlTLXNTMzNUYmR1MldMZHF3dGd0V3FoRVQwaVNPeG5lbVdXZVlMcS1",
+      "url": "https://news.google.com/rss/articles/CBMilANBVV95cUxOc0dsT1BHeUhzM3RQQllwY3U1VThrd0Q2WWROZVRvU3ZkSGtjaG1vN1ZsV3pTdUFwNWF3SEZkYnNpQzdxMDRPZlV0SHNhODl4VzlTLXNTMzNUYmR1MldMZHF3dGd0V3FoRVQwaVNPeG5lbVdXZVlMcS1YdTJJX2ptTHg0VUN2bVJyYmVQZ3JUVGhQTGhzNXV4NWJQVnpiRE4tMHRzWWpjZVVNTnhiOFB6dzRuX0FmZFc4VnNSNjBWM0dYVldHdk82aTQ4bHlmNEZsaWVwSGs2MU5ST0JEVVlWY1VIbktXTzMzbk5vekxabWZqRHBaaTNqbkdVNDllVHBMY2lmSmJMNUhnYlJMTGdmRHpmSWlrcFhxVjhzS0U3SjVzVS13RExzSTdTVmhEUmtFMXFJQ1hHcVNHa1k3bGxWLUYybnozMFpVVXRpQ2hISzZyZmZLSHNqTzlaekwtVG5DN09IeXM2djV0VC00Rnk2RUd4WjNpSUdTdmtJRzNPSTVwSDh0OVpQUTZCcnZMenFlbUU4eA?oc=5",
+      "source": "Google News",
+      "date": "Wed, 05 Aug 2026 18:20:00 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-07T05:09:18.448198+00:00"
+    },
+    {
       "id": "a49823ff51963e87",
       "banque": "Société Générale",
       "departement": "",
@@ -29948,6 +30210,19 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-08-06T06:10:45.744003+00:00"
+    },
+    {
+      "id": "784292f808dd9914",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Études à l’étranger : transferts, loyers, frais de séjour… les nouvelles règles à connaître - LesEco.ma",
+      "extrait": "TITRE: Études à l’étranger : transferts, loyers, frais de séjour… les nouvelles règles à connaître - LesEco.ma SOURCE: Google News DATE: Wed, 05 Aug 2026 12:57:22 GMT URL: https://news.google.com/rss/articles/CBMitAFBVV95cUxOOHFqRlU2S195WXlFSGpxS012YUxDWHNLc21GN3FhNmVQeE1qTmMyRnFrNFRwQnF6QlBXaVNzaGtuWlNKRlJ6QkJMdC1weDNHakV5ck9LOUY1T05GS2NiTjc1Z3ZqbFhSOHpET3V1MnR4UFBYUjZHNk84NXdYbldqUUFCWHhENEF1aEtRUFFpZnZqa0tzb1RtQnpfc3plOXo0YWtoYnBNZ0R2OURDaTQ4cjZTVTM?oc=5 <a href=\"https://news.google.com/rss/a",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOOHFqRlU2S195WXlFSGpxS012YUxDWHNLc21GN3FhNmVQeE1qTmMyRnFrNFRwQnF6QlBXaVNzaGtuWlNKRlJ6QkJMdC1weDNHakV5ck9LOUY1T05GS2NiTjc1Z3ZqbFhSOHpET3V1MnR4UFBYUjZHNk84NXdYbldqUUFCWHhENEF1aEtRUFFpZnZqa0tzb1RtQnpfc3plOXo0YWtoYnBNZ0R2OURDaTQ4cjZTVTM?oc=5",
+      "source": "Google News",
+      "date": "Wed, 05 Aug 2026 12:57:22 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-07T05:09:20.732380+00:00"
     },
     {
       "id": "4b9d131adf9640e4",
@@ -32665,6 +32940,227 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:43:41.960961+00:00"
+    },
+    {
+      "id": "f346f82d005263c1",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Nouveau record pour le CAC 40 : la barre des 8 700 points franchie, Hermès au sommet",
+      "extrait": "TITRE: Nouveau record pour le CAC 40 : la barre des 8 700 points franchie, Hermès au sommet SOURCE: MoneyVox Actu DATE: 2026-08-06T21:31:46Z URL: https://www.moneyvox.fr/bourse/actualites/109963/nouveau-record-pour-le-cac-40-la-barre-des-8-700-points-franchie-hermes-au-sommet Le CAC 40 poursuit son ascension. L'indice parisien gagne 0,35% à 8 700 points et franchit, pour la première fois de son histoire, le seuil symbolique des 8 700 points en séance. Il en profite pour inscrire un nouveau recor",
+      "url": "https://www.moneyvox.fr/bourse/actualites/109963/nouveau-record-pour-le-cac-40-la-barre-des-8-700-points-franchie-hermes-au-sommet",
+      "source": "MoneyVox Actu",
+      "date": "2026-08-06T21:31:46Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-07T05:10:55.425513+00:00"
+    },
+    {
+      "id": "77948917f7b355c5",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Mercato Monaco : la plus grosse valeur marchande de l'ASM proposée à De Zerbi",
+      "extrait": "TITRE: Mercato Monaco : la plus grosse valeur marchande de l'ASM proposée à De Zerbi SOURCE: Top mercato DATE: 2026-08-06T21:02:00Z URL: https://www.topmercato.com/2124693-mercato-monaco-la-plus-grosse-valeur-marchande-de-lasm-proposee-a-de-zerbi/ Alors que le transfert de Maghnes Akliouche au PSG a été officialisé ce jeudi, l'AS Monaco voit un autre cadre se rapprocher d'un départ sur ce mercato. Nouvel entraîneur de l'AS Monco, Filipe Luis a déjà perdu sur ce mercato les jeunes Aladji Bamba et",
+      "url": "https://www.topmercato.com/2124693-mercato-monaco-la-plus-grosse-valeur-marchande-de-lasm-proposee-a-de-zerbi/",
+      "source": "Top mercato",
+      "date": "2026-08-06T21:02:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-07T05:10:57.156837+00:00"
+    },
+    {
+      "id": "8ab2ba8124720045",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Le PSG veut un défenseur de Chelsea, ce n'est pas Malo Gusto",
+      "extrait": "TITRE: Le PSG veut un défenseur de Chelsea, ce n'est pas Malo Gusto SOURCE: foot01.com DATE: 2026-08-06T21:00:00Z URL: https://www.foot01.com/paris/le-psg-veut-un-defenseur-de-chelsea-ce-nest-pas-malo-gusto En quête de nouveaux renforts durant ce mercato estival, le Paris Saint-Germain a coché le nom du jeune défenseur néerlandais de Chelsea, Jorrel Hato. Le club de la capitale française a officiellement lancé les grandes manœuvres ce jeudi avec le transfert de Maghnes Akliouche, arrivé en prove",
+      "url": "https://www.foot01.com/paris/le-psg-veut-un-defenseur-de-chelsea-ce-nest-pas-malo-gusto",
+      "source": "foot01.com",
+      "date": "2026-08-06T21:00:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-07T05:10:59.436130+00:00"
+    },
+    {
+      "id": "3987250f09d106c0",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "En Côte d'Ivoire, les lycées techniques peinent à produire les nouveaux profils recherchés par le secteur bancaire",
+      "extrait": "TITRE: En Côte d'Ivoire, les lycées techniques peinent à produire les nouveaux profils recherchés par le secteur bancaire SOURCE: Agence Ecofin DATE: 2026-08-06T16:32:53Z URL: https://www.agenceecofin.com/actualites/0608-140790-en-cote-divoire-les-lycees-techniques-peinent-a-produire-les-nouveaux-profils-recherches-par-le-secteur-bancaire (Agence Ecofin) - Alors que le gouvernement ivoirien mène une réforme profonde de son enseignement technique, les branches professionnelles du secteur financie",
+      "url": "https://www.agenceecofin.com/actualites/0608-140790-en-cote-divoire-les-lycees-techniques-peinent-a-produire-les-nouveaux-profils-recherches-par-le-secteur-bancaire",
+      "source": "Agence Ecofin",
+      "date": "2026-08-06T16:32:53Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-07T05:11:09.555005+00:00"
+    },
+    {
+      "id": "f6892c67be996d00",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "BoursoBank franchit 9,1 millions de clients et devient un actif stratégique pour Société Générale",
+      "extrait": "TITRE: BoursoBank franchit 9,1 millions de clients et devient un actif stratégique pour Société Générale SOURCE: Le nouvel Economiste DATE: 2026-08-06T16:31:37Z URL: https://www.lenouveleconomiste.fr/boursobank-franchit-91-millions-de-clients-et-devient-un-actif-strategique-pour-societe-generale-138234/ BoursoBank franchit 9,1 millions de clients au 30 juin 2026 selon les résultats de Société Générale. Bénéfice net de 84 millions au T2. Son modèle numérique attire l'attention des investisseurs. ",
+      "url": "https://www.lenouveleconomiste.fr/boursobank-franchit-91-millions-de-clients-et-devient-un-actif-strategique-pour-societe-generale-138234/",
+      "source": "Le nouvel Economiste",
+      "date": "2026-08-06T16:31:37Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-07T05:11:12.131190+00:00"
+    },
+    {
+      "id": "f6203004afcbacd1",
+      "banque": "LCL",
+      "departement": "",
+      "titre": "PSG Mercato : Luis Enrique a validé un dossier hors de prix dont le nom résonne en Ligue 1 - But! Football Club",
+      "extrait": "TITRE: PSG Mercato : Luis Enrique a validé un dossier hors de prix dont le nom résonne en Ligue 1 - But! Football Club SOURCE: But! Football Club DATE: 2026-08-06T16:00:00Z URL: https://www.butfootballclub.fr/1689086-psg-mercato-luis-enrique-a-valide-un-dossier-hors-de-prix-dont-le-nom-resonne-en-ligue-1/ Le PSG aurait coché le nom de Malo Gusto pour renforcer son couloir droit. L'ancien latéral de l'OL plaît à Luis Enrique, mais Chelsea aurait fixé un prix XXL qui pourrait refroidir les ambitio",
+      "url": "https://www.butfootballclub.fr/1689086-psg-mercato-luis-enrique-a-valide-un-dossier-hors-de-prix-dont-le-nom-resonne-en-ligue-1/",
+      "source": "But! Football Club",
+      "date": "2026-08-06T16:00:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-07T05:11:14.751726+00:00"
+    },
+    {
+      "id": "4110935759943cc3",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "PSG : C'est officiel, Yan Diomande signe un transfert record",
+      "extrait": "TITRE: PSG : C'est officiel, Yan Diomande signe un transfert record SOURCE: Foot-sur7 DATE: 2026-08-06T15:53:00Z URL: https://www.foot-sur7.fr/770795-psg-cest-officiel-yan-diomande-signe-un-transfert-record Fortement pressé au PSG lors de ce mercato estival, Yan Diomande quitte finalement les rangs du RB Leipzig pour s'engager avec le Real Madrid. Le club espagnol a officialisé le transfert ce jeudi après-midi. Mercato PSG : Yan Diomande au Real Madrid jusqu'en 2033 Le Real Madrid a doublé le Pa",
+      "url": "https://www.foot-sur7.fr/770795-psg-cest-officiel-yan-diomande-signe-un-transfert-record",
+      "source": "Foot-sur7",
+      "date": "2026-08-06T15:53:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-07T05:11:17.308690+00:00"
+    },
+    {
+      "id": "9789f1391457420a",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Mercato : Yan Diomandé officiellement transféré au Real Madrid",
+      "extrait": "TITRE: Mercato : Yan Diomandé officiellement transféré au Real Madrid SOURCE: Sud Radio DATE: 2026-08-06T15:41:59Z URL: https://www.sudradio.fr/sport-rugby/sport/mercato-yan-diomande-officiellement-transfere-au-real-madrid L'international ivoirien a rejoint pour sept saisons le club madrilène, qui aurait déboursé 125 millions d'euros pour le recruter. Il y a un an à peine, il était pourtant un parfait inconnu. C'est désormais officiel : Yan Diomandé quitte le RB Leipzig pour rejoindre le Real Ma",
+      "url": "https://www.sudradio.fr/sport-rugby/sport/mercato-yan-diomande-officiellement-transfere-au-real-madrid",
+      "source": "Sud Radio",
+      "date": "2026-08-06T15:41:59Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-07T05:11:06.948548+00:00"
+    },
+    {
+      "id": "82b03f09526fe417",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "L'intelligence artificielle, vecteur de discriminations",
+      "extrait": "TITRE: L'intelligence artificielle, vecteur de discriminations SOURCE: Union syndicale groupe des 10 Solidaires DATE: 2026-08-06T15:30:50Z URL: https://www.solidaires.org/ressources/lintelligence-artificielle-vecteur-de-discriminations/ Au-delà des promesses de progrès techniques et de transformation sociétale, les outils d'IA représentent un risque, notamment celui de véhiculer et exacerber des stéréotypes. Ils reflètent les préjugés existants et renforcent les discriminations liées au genre, à",
+      "url": "https://www.solidaires.org/ressources/lintelligence-artificielle-vecteur-de-discriminations/",
+      "source": "Union syndicale groupe des 10 Solidaires",
+      "date": "2026-08-06T15:30:50Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-07T05:11:22.091313+00:00"
+    },
+    {
+      "id": "1396c1aed94af971",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Football : l'international ivoirien Yann Diomandé rejoint le Real Madrid",
+      "extrait": "TITRE: Football : l'international ivoirien Yann Diomandé rejoint le Real Madrid SOURCE: TV5MONDE DATE: 2026-08-06T15:04:26Z URL: https://information.tv5monde.com/sport/football-linternational-ivoirien-yann-diomande-rejoint-le-real-madrid-2832690 Yann Diomandé lors de la Coupe du monde 2026 dans le match contre l'Équateur (AP/archives). \"Le Real Madrid et le RB Leipzig sont parvenus à un accord concernant le transfert du joueur Yan Diomandé, qui s'engage avec notre club pour les sept prochaines s",
+      "url": "https://information.tv5monde.com/sport/football-linternational-ivoirien-yann-diomande-rejoint-le-real-madrid-2832690",
+      "source": "TV5MONDE",
+      "date": "2026-08-06T15:04:26Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-07T05:11:24.257079+00:00"
+    },
+    {
+      "id": "e724ba72d5991fc8",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "D'abord courtisé par le PSG, Yan Diomandé signe finalement au Real Madrid pour un montant record",
+      "extrait": "TITRE: D'abord courtisé par le PSG, Yan Diomandé signe finalement au Real Madrid pour un montant record SOURCE: Le Parisien DATE: 2026-08-06T14:16:24Z URL: https://www.leparisien.fr/sports/football/football-dabord-courtise-par-le-psg-yan-diomande-signe-finalement-au-real-madrid-pour-un-montant-record-06-08-2026-MKWGLNGQ4VG7XAM24HVNCMKDVI.php L'ailier de Leipzig, Yan Diomandé signe un contrat de 7 ans au Real Madrid, jusqu'en juin 2033. Avec un transfert estimé à 140 millions d'euros, bonus compr",
+      "url": "https://www.leparisien.fr/sports/football/football-dabord-courtise-par-le-psg-yan-diomande-signe-finalement-au-real-madrid-pour-un-montant-record-06-08-2026-MKWGLNGQ4VG7XAM24HVNCMKDVI.php",
+      "source": "Le Parisien",
+      "date": "2026-08-06T14:16:24Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-07T05:11:04.533358+00:00"
+    },
+    {
+      "id": "56977cda3fe2cb28",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "RD Congo : Eastcastle Infrastructure obtient 32,8 millions $ pour déployer 728 tours télécoms",
+      "extrait": "TITRE: RD Congo : Eastcastle Infrastructure obtient 32,8 millions $ pour déployer 728 tours télécoms SOURCE: Agence Ecofin DATE: 2026-08-06T13:56:12Z URL: https://www.agenceecofin.com/actualites-numerique/0608-140787-rd-congo-eastcastle-infrastructure-obtient-32-8-millions-pour-deployer-728-tours-telecoms (Agence Ecofin) - Alors que l'accès au numérique demeure inégal sur le territoire congolais, le développement d'infrastructures partagées apparaît comme une clé pour desservir les zones les plu",
+      "url": "https://www.agenceecofin.com/actualites-numerique/0608-140787-rd-congo-eastcastle-infrastructure-obtient-32-8-millions-pour-deployer-728-tours-telecoms",
+      "source": "Agence Ecofin",
+      "date": "2026-08-06T13:56:12Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-07T05:11:34.158651+00:00"
+    },
+    {
+      "id": "6250bfa52f383363",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Le PSG prépare la vente de Chevalier en sous-marin - Sport.fr",
+      "extrait": "TITRE: Le PSG prépare la vente de Chevalier en sous-marin - Sport.fr SOURCE: Sport.fr DATE: 2026-08-06T13:47:07Z URL: https://www.sport.fr/football/le-psg-prepare-la-vente-de-chevalier-en-sous-marin-1472227.shtm Lucas Chevalier pense avoir sa chance. À 25 ans, gardien de Ligue 1 avec le LOSC jusqu'à l'été dernier, convoqué en équipe de France, le portier nordiste est convaincu que Luis Enrique lui fera confiance. Il ne sait probablement pas que le PSG est déjà en train de le vendre. Le journalis",
+      "url": "https://www.sport.fr/football/le-psg-prepare-la-vente-de-chevalier-en-sous-marin-1472227.shtm",
+      "source": "Sport.fr",
+      "date": "2026-08-06T13:47:07Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-07T05:11:36.376458+00:00"
+    },
+    {
+      "id": "66e8c8cacbc96e84",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Mercato : Zion Suzuki au PSG dans les 48 heures ? - Canal Supporters PSG 24-7",
+      "extrait": "TITRE: Mercato : Zion Suzuki au PSG dans les 48 heures ? - Canal Supporters PSG 24-7 SOURCE: PSG Canal Supporters DATE: 2026-08-06T12:41:24Z URL: https://canal-supporters.com/mercato-zion-suzuki-au-psg-dans-les-48-heures/ D'après la presse italienne, le transfert de Zion Suzuki au PSG est en très bonne voie. Un accord total serait même en approche. Alors que Maghnes Akliouche arrive en ce moment-même sur Paris, le Paris Saint-Germain pourrait boucler une autre arrivée dans la foulée. Et malgré l",
+      "url": "https://canal-supporters.com/mercato-zion-suzuki-au-psg-dans-les-48-heures/",
+      "source": "PSG Canal Supporters",
+      "date": "2026-08-06T12:41:24Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-07T05:11:45.617866+00:00"
+    },
+    {
+      "id": "fb087ba118114c09",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Vote indicatif à l'ONU : Comment ce processus conforte la candidature de Macky Sall (Par Souleymane Ndiaye)",
+      "extrait": "TITRE: Vote indicatif à l'ONU : Comment ce processus conforte la candidature de Macky Sall (Par Souleymane Ndiaye) SOURCE: Senego.com - Actualité au Sénégal, toute actualité du jour DATE: 2026-08-06T10:11:06Z URL: https://senego.com/vote-indicatif-a-lonu-comment-ce-processus-conforte-la-candidature-de-macky-sall-par-souleymane-ndiaye_1991016.html Le vote indicatif, plus connu sous son appellation anglaise de straw poll, est souvent présenté comme un moment décisif dans la désignation du futur Se",
+      "url": "https://senego.com/vote-indicatif-a-lonu-comment-ce-processus-conforte-la-candidature-de-macky-sall-par-souleymane-ndiaye_1991016.html",
+      "source": "Senego.com - Actualité au Sénégal, toute actualité du jour",
+      "date": "2026-08-06T10:11:06Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-07T05:11:54.791944+00:00"
+    },
+    {
+      "id": "95019205a5ad6714",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Maurel & Prom : envolée des résultats au 1er semestre 2026",
+      "extrait": "TITRE: Maurel & Prom : envolée des résultats au 1er semestre 2026 SOURCE: zonebourse DATE: 2026-08-06T09:52:32Z URL: https://www.zonebourse.com/actualite-bourse/maurel-prom-envolee-des-resultats-au-1er-semestre-2026-ce7f50ddd98ffe2d Une rentabilité financière portée par la hausse des cours du pétrole Sur les six premiers mois de l'année 2026, le chiffre d'affaires du groupe s'établit à 366 MUSD, en hausse de 27%. Cette progression a été largement tirée par un prix de vente moyen du pétrole en fo",
+      "url": "https://www.zonebourse.com/actualite-bourse/maurel-prom-envolee-des-resultats-au-1er-semestre-2026-ce7f50ddd98ffe2d",
+      "source": "zonebourse",
+      "date": "2026-08-06T09:52:32Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-07T05:11:56.463605+00:00"
+    },
+    {
+      "id": "7381651964949b17",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Maurel et prom : Envolée des résultats au 1er semestre 2026",
+      "extrait": "TITRE: Maurel et prom : Envolée des résultats au 1er semestre 2026 SOURCE: BFM Bourse DATE: 2026-08-06T09:50:00Z URL: https://www.tradingsat.com/maurel-et-prom-FR0000051070/actualites/maurel-et-prom-maurel-prom-envolee-des-resultats-au-1er-semestre-2026-1168226.html Cette forte génération de cash a permis au groupe d'honorer son engagement de retour aux actionnaires (notamment avec le versement d'un dividende annuel au titre de l'exercice 2025 distribué début juillet) tout en renforçant son bila",
+      "url": "https://www.tradingsat.com/maurel-et-prom-FR0000051070/actualites/maurel-et-prom-maurel-prom-envolee-des-resultats-au-1er-semestre-2026-1168226.html",
+      "source": "BFM Bourse",
+      "date": "2026-08-06T09:50:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-07T05:11:49.054679+00:00"
     },
     {
       "id": "f4b5ac7381dd78df",
