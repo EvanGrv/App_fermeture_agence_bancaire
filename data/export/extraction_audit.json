@@ -440,6 +440,16 @@
     "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
   },
   {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
+    "id": "2784b9c7b7b8a187",
+    "banque": "Crédit Agricole",
+    "commune": "Lantriac",
+    "departement": "43",
+    "code_insee": "43113",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
     "severity": "info",
     "type": "communes_proches",
     "id": "ef183498a867b953|f5dfed8c328d270e",

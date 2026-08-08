@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T05:22:48.108258+00:00",
+  "generated_at": "2026-08-08T04:45:00.039633+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -129,7 +129,7 @@
       "nom": "Bouches-du-Rhône",
       "region": "Provence-Alpes-Côte d'Azur",
       "count": 3,
-      "total_agences": 228,
+      "total_agences": 227,
       "precise_count": 3,
       "unlocated_count": 0,
       "estimated_count": 3
@@ -246,7 +246,7 @@
       "nom": "Doubs",
       "region": "Bourgogne-Franche-Comté",
       "count": 8,
-      "total_agences": 90,
+      "total_agences": 87,
       "precise_count": 8,
       "unlocated_count": 0,
       "estimated_count": 8
@@ -291,7 +291,7 @@
       "nom": "Gard",
       "region": "Occitanie",
       "count": 0,
-      "total_agences": 159,
+      "total_agences": 160,
       "precise_count": 0,
       "unlocated_count": 0,
       "estimated_count": 0
@@ -399,7 +399,7 @@
       "nom": "Loire",
       "region": "Auvergne-Rhône-Alpes",
       "count": 5,
-      "total_agences": 106,
+      "total_agences": 105,
       "precise_count": 5,
       "unlocated_count": 0,
       "estimated_count": 30
@@ -407,17 +407,17 @@
     "43": {
       "nom": "Haute-Loire",
       "region": "Auvergne-Rhône-Alpes",
-      "count": 3,
+      "count": 4,
       "total_agences": 56,
-      "precise_count": 3,
+      "precise_count": 4,
       "unlocated_count": 0,
-      "estimated_count": 15
+      "estimated_count": 16
     },
     "44": {
       "nom": "Loire-Atlantique",
       "region": "Pays de la Loire",
       "count": 4,
-      "total_agences": 174,
+      "total_agences": 173,
       "precise_count": 4,
       "unlocated_count": 0,
       "estimated_count": 4
@@ -507,7 +507,7 @@
       "nom": "Meurthe-et-Moselle",
       "region": "Grand Est",
       "count": 0,
-      "total_agences": 96,
+      "total_agences": 93,
       "precise_count": 0,
       "unlocated_count": 0,
       "estimated_count": 0
@@ -525,7 +525,7 @@
       "nom": "Morbihan",
       "region": "Bretagne",
       "count": 6,
-      "total_agences": 135,
+      "total_agences": 134,
       "precise_count": 6,
       "unlocated_count": 0,
       "estimated_count": 6
@@ -543,7 +543,7 @@
       "nom": "Nièvre",
       "region": "Bourgogne-Franche-Comté",
       "count": 0,
-      "total_agences": 62,
+      "total_agences": 61,
       "precise_count": 0,
       "unlocated_count": 0,
       "estimated_count": 0
@@ -615,7 +615,7 @@
       "nom": "Pyrénées-Orientales",
       "region": "Occitanie",
       "count": 0,
-      "total_agences": 87,
+      "total_agences": 86,
       "precise_count": 0,
       "unlocated_count": 0,
       "estimated_count": 0
@@ -642,7 +642,7 @@
       "nom": "Rhône",
       "region": "Auvergne-Rhône-Alpes",
       "count": 2,
-      "total_agences": 183,
+      "total_agences": 184,
       "precise_count": 2,
       "unlocated_count": 0,
       "estimated_count": 2
@@ -687,7 +687,7 @@
       "nom": "Haute-Savoie",
       "region": "Auvergne-Rhône-Alpes",
       "count": 2,
-      "total_agences": 201,
+      "total_agences": 200,
       "precise_count": 2,
       "unlocated_count": 0,
       "estimated_count": 2
@@ -714,7 +714,7 @@
       "nom": "Seine-et-Marne",
       "region": "Île-de-France",
       "count": 1,
-      "total_agences": 237,
+      "total_agences": 236,
       "precise_count": 1,
       "unlocated_count": 0,
       "estimated_count": 1
@@ -777,7 +777,7 @@
       "nom": "Vaucluse",
       "region": "Provence-Alpes-Côte d'Azur",
       "count": 1,
-      "total_agences": 90,
+      "total_agences": 89,
       "precise_count": 1,
       "unlocated_count": 0,
       "estimated_count": 1
@@ -813,7 +813,7 @@
       "nom": "Vosges",
       "region": "Grand Est",
       "count": 0,
-      "total_agences": 54,
+      "total_agences": 53,
       "precise_count": 0,
       "unlocated_count": 0,
       "estimated_count": 0
@@ -1170,9 +1170,9 @@
     "43": {
       "departement": "43",
       "nom": "Haute-Loire",
-      "precise_count": 3,
+      "precise_count": 4,
       "unlocated_count": 0,
-      "estimated_count": 15,
+      "estimated_count": 16,
       "department_signal_count": 12,
       "signals": [
         {
@@ -1805,9 +1805,9 @@
     },
     {
       "region": "Auvergne-Rhône-Alpes",
-      "articles": 16,
+      "articles": 17,
       "fermetures": 7,
-      "projets": 8,
+      "projets": 9,
       "fusions": 0,
       "types": [
         "Fermeture",
@@ -8336,11 +8336,11 @@
       "adresse": null,
       "agence_localisation": "bureau de poste de Valbonne",
       "commune_originale": null,
-      "service_impact": "fermeture_lbp_complete",
+      "service_impact": "conversion_relais",
       "point_postal_avant": "Bureau de Poste",
-      "point_postal_apres": null,
-      "postal_point_id": null,
-      "evidence_level": "presse",
+      "point_postal_apres": "Relais poste",
+      "postal_point_id": "24666D",
+      "evidence_level": "presse+référentiel",
       "created_at": "2026-07-22T09:01:08.127342+00:00",
       "sources": [
         {
@@ -9396,6 +9396,47 @@
         "source": "SIRENE"
       },
       "region": "Occitanie"
+    },
+    {
+      "id": "2784b9c7b7b8a187",
+      "banque": "Crédit Agricole",
+      "commune": "Lantriac",
+      "code_insee": "43113",
+      "departement": "43",
+      "type": "fermeture",
+      "date_annonce": "Fri, 11 Jul 2025 07:00:00 GMT",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 1,
+      "fiabilite": 3,
+      "lat": 44.99037,
+      "lon": 4.001364,
+      "citation": "Titre : « Fermetures d'agences Crédit Agricole : la mobilisation et la grogne à Lantriac et au Mazet-Saint-Voy »",
+      "adresse": null,
+      "agence_localisation": "agence à Lantriac",
+      "commune_originale": null,
+      "service_impact": null,
+      "point_postal_avant": null,
+      "point_postal_apres": null,
+      "postal_point_id": null,
+      "evidence_level": null,
+      "created_at": "2026-08-08T04:40:32.556520+00:00",
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPNmE0TFN0b2xsWWI4cFRLOGJteFVXWXYwRldhTndicVRxQzlDNDhYNW5IT2IyWG8zV2VlMElLaWR6clV5Nkt6d2c4NUlsVEI2TnV3QTF2SE9uMHdLVmJlblV3MGxfVTVIZkxNbmRYSXdVeDl6VVRWdVN6MHRoNlJ5N2NNTmtnRzQwVUlrN21yOFZnUlVCcEpTdHFmXzlyZDRveTVPSTFDZ1FDb3R3UjVyNnFHNTJINjF6VjBmX0tLWWtKSWwxZlJ2cXJBcGtCNGdMMnd5Q243ZFNpNWYzMjlVVW90VVNUdWs?oc=5",
+          "titre": "Fermetures d'agences Crédit Agricole : la mobilisation et la grogne à Lantriac et au Mazet-Saint-Voy - La Commère 43",
+          "source": "Google News",
+          "date": "Fri, 11 Jul 2025 07:00:00 GMT",
+          "tier": "D"
+        }
+      ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
+      "region": "Auvergne-Rhône-Alpes"
     }
   ],
   "closures_unlocated": [
@@ -9958,6 +9999,24 @@
       "created_at": "2026-07-29T06:12:35.052508+00:00"
     },
     {
+      "id": "880e2ab2becd8852",
+      "banque": "La Banque Postale",
+      "commune": "Paray-Vieille-Poste",
+      "departement": "91",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "Fermeture estivale du bureau de Poste - Le journal du Gers",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPR1ZUQVVoZEtxUGcySkhDS1FBcHUzNGZ0RWhxZTA1Qnp3UW1jRzlqOFBsby1PWVpsRHJrc0hFMWhxMy0xaFAzVFZfOTdhMFVPaTM4blZSTEdWZnVOVDBFUGE3SzR6OTRKZHhqYXhTVVNaYl9MN1pTaEVYZlRXUWVvY19vN0VZLWxUNGZIWldYR25NQQ?oc=5",
+      "titre": "Fermeture estivale du bureau de Poste - Le journal du Gers",
+      "source": "Google News",
+      "date": "Tue, 28 Jul 2026 13:58:00 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-08-08T04:34:10.439763+00:00"
+    },
+    {
       "id": "065b11d369fd1ea6",
       "banque": "La Banque Postale",
       "commune": "Bouillargues",
@@ -10153,7 +10212,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-07T05:05:44.715708+00:00"
+      "created_at": "2026-08-08T04:31:22.317792+00:00"
     },
     {
       "id": "50895c042a984b7d",
@@ -10189,7 +10248,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 04:46:02 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-07T05:05:44.181886+00:00"
+      "created_at": "2026-08-08T04:31:21.969260+00:00"
     },
     {
       "id": "8c6a0cad14626d6f",
@@ -12097,7 +12156,7 @@
       "source": "Google News",
       "date": "Fri, 20 Jun 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-07T05:05:53.352695+00:00"
+      "created_at": "2026-08-08T04:31:29.545873+00:00"
     },
     {
       "id": "b80663fa38292743",
@@ -12187,7 +12246,7 @@
       "source": "Google News",
       "date": "Fri, 10 Jul 2026 10:12:00 GMT",
       "raison": "garde entrée/sortie: département source 44 incompatible avec la sortie 974",
-      "created_at": "2026-08-07T05:06:14.120668+00:00"
+      "created_at": "2026-08-08T04:31:43.643890+00:00"
     },
     {
       "id": "8c646081e1d69e81",
@@ -12367,7 +12426,7 @@
       "source": "Google News",
       "date": "Fri, 03 Jan 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-07T05:05:43.622091+00:00"
+      "created_at": "2026-08-08T04:31:21.636062+00:00"
     },
     {
       "id": "411db107f70f2387",
@@ -12440,6 +12499,24 @@
       "date": "Fri, 01 Aug 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
       "created_at": "2026-07-27T07:56:36.407534+00:00"
+    },
+    {
+      "id": "1fa8820c5d2cbd31",
+      "banque": "La Banque Postale",
+      "commune": "Saint-Paul-Cap-de-Joux",
+      "departement": "81",
+      "type": "fermeture",
+      "date_fermeture": "2026-08-14",
+      "statut": "projet",
+      "statut_temporel": "a_venir",
+      "fiabilite": 3,
+      "citation": "Saint-Paul-Cap-de-Joux. Le bureau de poste fermée jusqu’au 14 août",
+      "url": "https://www.ladepeche.fr/2026/08/06/le-bureau-de-poste-fermee-jusquau-14-aout-13498633.php",
+      "titre": "Saint-Paul-Cap-de-Joux. Le bureau de poste fermée jusqu’au 14 août",
+      "source": "ladepeche.fr",
+      "date": "2026-08-06",
+      "raison": "garde entrée/sortie: fermeture postale temporaire ou circonstancielle",
+      "created_at": "2026-08-08T04:34:22.513584+00:00"
     },
     {
       "id": "4d3113de788ed4e0",
@@ -14077,6 +14154,19 @@
       "created_at": "2026-08-04T06:10:34.623634+00:00"
     },
     {
+      "id": "1933fff4d922c635",
+      "banque": "Saham Bank",
+      "scope": "national",
+      "count": null,
+      "confidence": 0.2,
+      "evidence": "Article centré sur un programme d'investissement de 500 MDH en 2026 pour moderniser l’infrastructure, cybersécurité et digitalisation, sans mention de fermeture/regroupement/transfer d’agences physiques en France.",
+      "url": "https://www.financialafrik.com/2026/08/07/saham-bank-accelere-sa-transformation-avec-un-programme-dinvestissement-de-500-mdh-en-2026/",
+      "titre": "Saham Bank accélère sa transformation avec un programme d'investissement de 500 MDH en 2026 | Financial Afrik",
+      "source": "Financial Afrik",
+      "date": "2026-08-07T14:12:06Z",
+      "created_at": "2026-08-08T04:34:40.329227+00:00"
+    },
+    {
       "id": "394f37349d5363b2",
       "banque": "BNP Paribas",
       "scope": "regional",
@@ -14299,6 +14389,227 @@
     }
   ],
   "vigilances": [
+    {
+      "id": "308842175c77299b",
+      "banque": "La Banque Postale",
+      "departement": "13",
+      "titre": "Disparition à confirmer du bureau de poste BOULBON BP",
+      "extrait": "Le bureau de poste n'apparaît plus dans la dernière révision du référentiel officiel. Une seconde révision ou une source locale est requise.",
+      "url": "https://data.laposte.fr/datasets/laposte-poincont2?point=01965A",
+      "source": "La Poste Open Data",
+      "date": "2026-08-08",
+      "score": 5,
+      "raison": "disparition officielle à confirmer",
+      "created_at": "2026-08-08T04:32:05.175559+00:00"
+    },
+    {
+      "id": "db545abdff97b686",
+      "banque": "La Banque Postale",
+      "departement": "25",
+      "titre": "Disparition à confirmer du bureau de poste BESANCON DEMANGEL BP",
+      "extrait": "Le bureau de poste n'apparaît plus dans la dernière révision du référentiel officiel. Une seconde révision ou une source locale est requise.",
+      "url": "https://data.laposte.fr/datasets/laposte-poincont2?point=04330A",
+      "source": "La Poste Open Data",
+      "date": "2026-08-08",
+      "score": 5,
+      "raison": "disparition officielle à confirmer",
+      "created_at": "2026-08-08T04:32:05.194411+00:00"
+    },
+    {
+      "id": "5da605a464467ae3",
+      "banque": "La Banque Postale",
+      "departement": "25",
+      "titre": "Disparition à confirmer du bureau de poste L ISLE SUR LE DOUBS BP",
+      "extrait": "Le bureau de poste n'apparaît plus dans la dernière révision du référentiel officiel. Une seconde révision ou une source locale est requise.",
+      "url": "https://data.laposte.fr/datasets/laposte-poincont2?point=04385A",
+      "source": "La Poste Open Data",
+      "date": "2026-08-08",
+      "score": 5,
+      "raison": "disparition officielle à confirmer",
+      "created_at": "2026-08-08T04:32:05.196350+00:00"
+    },
+    {
+      "id": "81b50a1799b65146",
+      "banque": "La Banque Postale",
+      "departement": "25",
+      "titre": "Disparition à confirmer du bureau de poste MONTBELIARD LA CHIFFOGNE BP",
+      "extrait": "Le bureau de poste n'apparaît plus dans la dernière révision du référentiel officiel. Une seconde révision ou une source locale est requise.",
+      "url": "https://data.laposte.fr/datasets/laposte-poincont2?point=04468A",
+      "source": "La Poste Open Data",
+      "date": "2026-08-08",
+      "score": 5,
+      "raison": "disparition officielle à confirmer",
+      "created_at": "2026-08-08T04:32:05.198088+00:00"
+    },
+    {
+      "id": "62c3123c57b6524d",
+      "banque": "La Banque Postale",
+      "departement": "42",
+      "titre": "Disparition à confirmer du bureau de poste SAINT JEAN SOLEYMIEUX BP",
+      "extrait": "Le bureau de poste n'apparaît plus dans la dernière révision du référentiel officiel. Une seconde révision ou une source locale est requise.",
+      "url": "https://data.laposte.fr/datasets/laposte-poincont2?point=07945A",
+      "source": "La Poste Open Data",
+      "date": "2026-08-08",
+      "score": 5,
+      "raison": "disparition officielle à confirmer",
+      "created_at": "2026-08-08T04:32:05.200466+00:00"
+    },
+    {
+      "id": "5a46b3398c44534a",
+      "banque": "La Banque Postale",
+      "departement": "44",
+      "titre": "Disparition à confirmer du bureau de poste PONT ST MARTIN BP",
+      "extrait": "Le bureau de poste n'apparaît plus dans la dernière révision du référentiel officiel. Une seconde révision ou une source locale est requise.",
+      "url": "https://data.laposte.fr/datasets/laposte-poincont2?point=08264A",
+      "source": "La Poste Open Data",
+      "date": "2026-08-08",
+      "score": 5,
+      "raison": "disparition officielle à confirmer",
+      "created_at": "2026-08-08T04:32:05.202359+00:00"
+    },
+    {
+      "id": "66806cee4a99ef44",
+      "banque": "La Banque Postale",
+      "departement": "54",
+      "titre": "Disparition à confirmer du bureau de poste NANCY MARCHE BP",
+      "extrait": "Le bureau de poste n'apparaît plus dans la dernière révision du référentiel officiel. Une seconde révision ou une source locale est requise.",
+      "url": "https://data.laposte.fr/datasets/laposte-poincont2?point=09771A",
+      "source": "La Poste Open Data",
+      "date": "2026-08-08",
+      "score": 5,
+      "raison": "disparition officielle à confirmer",
+      "created_at": "2026-08-08T04:32:05.204041+00:00"
+    },
+    {
+      "id": "6a27e5be28cfb291",
+      "banque": "La Banque Postale",
+      "departement": "54",
+      "titre": "Disparition à confirmer du bureau de poste VANNES LE CHATEL BP",
+      "extrait": "Le bureau de poste n'apparaît plus dans la dernière révision du référentiel officiel. Une seconde révision ou une source locale est requise.",
+      "url": "https://data.laposte.fr/datasets/laposte-poincont2?point=09898A",
+      "source": "La Poste Open Data",
+      "date": "2026-08-08",
+      "score": 5,
+      "raison": "disparition officielle à confirmer",
+      "created_at": "2026-08-08T04:32:05.205930+00:00"
+    },
+    {
+      "id": "904e293d185c9bc1",
+      "banque": "La Banque Postale",
+      "departement": "54",
+      "titre": "Disparition à confirmer du bureau de poste NANCY PORTE DESILLES BP",
+      "extrait": "Le bureau de poste n'apparaît plus dans la dernière révision du référentiel officiel. Une seconde révision ou une source locale est requise.",
+      "url": "https://data.laposte.fr/datasets/laposte-poincont2?point=09924A",
+      "source": "La Poste Open Data",
+      "date": "2026-08-08",
+      "score": 5,
+      "raison": "disparition officielle à confirmer",
+      "created_at": "2026-08-08T04:32:05.207955+00:00"
+    },
+    {
+      "id": "cf08107f766106bf",
+      "banque": "La Banque Postale",
+      "departement": "56",
+      "titre": "Disparition à confirmer du bureau de poste LA GACILLY BP",
+      "extrait": "Le bureau de poste n'apparaît plus dans la dernière révision du référentiel officiel. Une seconde révision ou une source locale est requise.",
+      "url": "https://data.laposte.fr/datasets/laposte-poincont2?point=10103A",
+      "source": "La Poste Open Data",
+      "date": "2026-08-08",
+      "score": 5,
+      "raison": "disparition officielle à confirmer",
+      "created_at": "2026-08-08T04:32:05.209905+00:00"
+    },
+    {
+      "id": "a93ece566ed56701",
+      "banque": "La Banque Postale",
+      "departement": "58",
+      "titre": "Disparition à confirmer du bureau de poste SAINT BENIN D AZY BP",
+      "extrait": "Le bureau de poste n'apparaît plus dans la dernière révision du référentiel officiel. Une seconde révision ou une source locale est requise.",
+      "url": "https://data.laposte.fr/datasets/laposte-poincont2?point=10638A",
+      "source": "La Poste Open Data",
+      "date": "2026-08-08",
+      "score": 5,
+      "raison": "disparition officielle à confirmer",
+      "created_at": "2026-08-08T04:32:05.211654+00:00"
+    },
+    {
+      "id": "794546cfe0dc42e0",
+      "banque": "La Banque Postale",
+      "departement": "59",
+      "titre": "Disparition à confirmer du bureau de poste LAMBERSART VILLAGE EN FLANDRE BP",
+      "extrait": "Le bureau de poste n'apparaît plus dans la dernière révision du référentiel officiel. Une seconde révision ou une source locale est requise.",
+      "url": "https://data.laposte.fr/datasets/laposte-poincont2?point=11033A",
+      "source": "La Poste Open Data",
+      "date": "2026-08-08",
+      "score": 5,
+      "raison": "disparition officielle à confirmer",
+      "created_at": "2026-08-08T04:32:05.213500+00:00"
+    },
+    {
+      "id": "79180aca64212a38",
+      "banque": "La Banque Postale",
+      "departement": "66",
+      "titre": "Disparition à confirmer du bureau de poste PERPIGNAN PORTE D ESPAGNE BP",
+      "extrait": "Le bureau de poste n'apparaît plus dans la dernière révision du référentiel officiel. Une seconde révision ou une source locale est requise.",
+      "url": "https://data.laposte.fr/datasets/laposte-poincont2?point=12437A",
+      "source": "La Poste Open Data",
+      "date": "2026-08-08",
+      "score": 5,
+      "raison": "disparition officielle à confirmer",
+      "created_at": "2026-08-08T04:32:05.215532+00:00"
+    },
+    {
+      "id": "24146c66078c7982",
+      "banque": "La Banque Postale",
+      "departement": "74",
+      "titre": "Disparition à confirmer du bureau de poste GROISY BP",
+      "extrait": "Le bureau de poste n'apparaît plus dans la dernière révision du référentiel officiel. Une seconde révision ou une source locale est requise.",
+      "url": "https://data.laposte.fr/datasets/laposte-poincont2?point=14052A",
+      "source": "La Poste Open Data",
+      "date": "2026-08-08",
+      "score": 5,
+      "raison": "disparition officielle à confirmer",
+      "created_at": "2026-08-08T04:32:05.218218+00:00"
+    },
+    {
+      "id": "7e665d19625d6583",
+      "banque": "La Banque Postale",
+      "departement": "77",
+      "titre": "Disparition à confirmer du bureau de poste THOMERY BP",
+      "extrait": "Le bureau de poste n'apparaît plus dans la dernière révision du référentiel officiel. Une seconde révision ou une source locale est requise.",
+      "url": "https://data.laposte.fr/datasets/laposte-poincont2?point=14828A",
+      "source": "La Poste Open Data",
+      "date": "2026-08-08",
+      "score": 5,
+      "raison": "disparition officielle à confirmer",
+      "created_at": "2026-08-08T04:32:05.219973+00:00"
+    },
+    {
+      "id": "14d234fdbbaddcc3",
+      "banque": "La Banque Postale",
+      "departement": "84",
+      "titre": "Disparition à confirmer du bureau de poste SAINT SATURNIN LES APT BP",
+      "extrait": "Le bureau de poste n'apparaît plus dans la dernière révision du référentiel officiel. Une seconde révision ou une source locale est requise.",
+      "url": "https://data.laposte.fr/datasets/laposte-poincont2?point=15924A",
+      "source": "La Poste Open Data",
+      "date": "2026-08-08",
+      "score": 5,
+      "raison": "disparition officielle à confirmer",
+      "created_at": "2026-08-08T04:32:05.222318+00:00"
+    },
+    {
+      "id": "6b37148160af30d2",
+      "banque": "La Banque Postale",
+      "departement": "88",
+      "titre": "Disparition à confirmer du bureau de poste NOMEXY BP",
+      "extrait": "Le bureau de poste n'apparaît plus dans la dernière révision du référentiel officiel. Une seconde révision ou une source locale est requise.",
+      "url": "https://data.laposte.fr/datasets/laposte-poincont2?point=16620A",
+      "source": "La Poste Open Data",
+      "date": "2026-08-08",
+      "score": 5,
+      "raison": "disparition officielle à confirmer",
+      "created_at": "2026-08-08T04:32:05.224152+00:00"
+    },
     {
       "id": "f07344e8ff10dc77",
       "banque": "BNP Paribas",
@@ -16664,6 +16975,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-08-06T06:11:04.467091+00:00"
+    },
+    {
+      "id": "4f16e78a194db990",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Rhône (69) : Dates d’ouverture et de fermeture de la chasse 2026 - Chassons.com",
+      "extrait": "TITRE: Rhône (69) : Dates d’ouverture et de fermeture de la chasse 2026 - Chassons.com SOURCE: Google News DATE: Wed, 05 Aug 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMiqAFBVV95cUxObWVCeE1ZTFllQmpGSUNzMWJiQndJNzQyaGdEcDAzYWFuY2ZoQWpvYkU4RldmNXFJaWZtYWNKOEVXN0JaZFBrRWVwQ3B1S181TmdkYk5qNVdwUVp3MV9Tc2ZVckwwMzVfMkdmc2JVVTNub3l4Z0daNmVMT1JZUV9IQklGODVzWjJFbFNobjF6ZUM4RDhuUmE1V3ozTmtRQTR1b0pIRDhzSG4?oc=5 <a href=\"https://news.google.com/rss/articles/CBMiqAFBVV95cUxObWVCeE1ZTFllQmpG",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxObWVCeE1ZTFllQmpGSUNzMWJiQndJNzQyaGdEcDAzYWFuY2ZoQWpvYkU4RldmNXFJaWZtYWNKOEVXN0JaZFBrRWVwQ3B1S181TmdkYk5qNVdwUVp3MV9Tc2ZVckwwMzVfMkdmc2JVVTNub3l4Z0daNmVMT1JZUV9IQklGODVzWjJFbFNobjF6ZUM4RDhuUmE1V3ozTmtRQTR1b0pIRDhzSG4?oc=5",
+      "source": "Google News",
+      "date": "Wed, 05 Aug 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-08T04:34:12.381892+00:00"
     },
     {
       "id": "ed353cf9c5bc531d",
@@ -26767,19 +27091,6 @@
       "created_at": "2026-06-25T15:22:45.177738+00:00"
     },
     {
-      "id": "e23f55d29b7dc4fc",
-      "banque": "Crédit Agricole",
-      "departement": "",
-      "titre": "Fermetures d'agences Crédit Agricole : la mobilisation et la grogne à Lantriac et au Mazet-Saint-Voy - La Commère 43",
-      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMi5wFBVV95cUxPNmE0TFN0b2xsWWI4cFRLOGJteFVXWXYwRldhTndicVRxQzlDNDhYNW5IT2IyWG8zV2VlMElLaWR6clV5Nkt6d2c4NUlsVEI2TnV3QTF2SE9uMHdLVmJlblV3MGxfVTVIZkxNbmRYSXdVeDl6VVRWdVN6MHRoNlJ5N2NNTmtnRzQwVUlrN21yOFZnUlVCcEpTdHFmXzlyZDRveTVPSTFDZ1FDb3R3UjVyNnFHNTJINjF6VjBmX0tLWWtKSWwxZlJ2cXJBcGtCNGdMMnd5Q243ZFNpNWYzMjlVVW90VVNUdWs?oc=5\" target=\"_blank\">Fermetures d'agences Crédit Agricole : la mobilisation et la grogne à Lantriac et au Mazet-Saint-Voy</a>&nbsp;&nbsp;",
-      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPNmE0TFN0b2xsWWI4cFRLOGJteFVXWXYwRldhTndicVRxQzlDNDhYNW5IT2IyWG8zV2VlMElLaWR6clV5Nkt6d2c4NUlsVEI2TnV3QTF2SE9uMHdLVmJlblV3MGxfVTVIZkxNbmRYSXdVeDl6VVRWdVN6MHRoNlJ5N2NNTmtnRzQwVUlrN21yOFZnUlVCcEpTdHFmXzlyZDRveTVPSTFDZ1FDb3R3UjVyNnFHNTJINjF6VjBmX0tLWWtKSWwxZlJ2cXJBcGtCNGdMMnd5Q243ZFNpNWYzMjlVVW90VVNUdWs?oc=5",
-      "source": "Google News",
-      "date": "Fri, 11 Jul 2025 07:00:00 GMT",
-      "score": 3,
-      "raison": "article pertinent sans fermeture publiable",
-      "created_at": "2026-06-25T15:22:50.420870+00:00"
-    },
-    {
       "id": "0b1d6b5519b91ece",
       "banque": "Société Générale",
       "departement": "",
@@ -27545,6 +27856,136 @@
       "score": 3,
       "raison": "fermeture non publiée: hors fenêtre temporelle",
       "created_at": "2026-07-22T09:09:01.159244+00:00"
+    },
+    {
+      "id": "67eada67721b7748",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "FECOFA : comment seront répartis les 16 millions $ de la Coupe du Monde 2026 - Africa Top Sports",
+      "extrait": "TITRE: FECOFA : comment seront répartis les 16 millions $ de la Coupe du Monde 2026 - Africa Top Sports SOURCE: Africa Top Sports DATE: 2026-08-07T20:48:16Z URL: https://africatopsports.com/afrique-football/fecofa-comment-seront-repartis-les-16-millions-de-la-coupe-du-monde-2026/ Le Comité Exécutif de la Fédération Congolaise de Football-Association (FECOFA) s'est réuni en session ordinaire ce vendredi 7 août 2026 à Kinshasa, sous la présidence de Mr Véron Mosengo-Omba. En ouverture des travaux,",
+      "url": "https://africatopsports.com/afrique-football/fecofa-comment-seront-repartis-les-16-millions-de-la-coupe-du-monde-2026/",
+      "source": "Africa Top Sports",
+      "date": "2026-08-07T20:48:16Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-08T04:34:25.180577+00:00"
+    },
+    {
+      "id": "1385a46feb33a943",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Saint-Quentin-Fallavier. L'espace Ma Ville Services marque une pause estivale",
+      "extrait": "TITRE: Saint-Quentin-Fallavier. L'espace Ma Ville Services marque une pause estivale SOURCE: Le Dauphiné Libéré DATE: 2026-08-07T16:55:08Z URL: https://www.ledauphine.com/societe/2026/08/07/l-espace-ma-ville-services-marque-une-pause-estivale L'espace Ma Ville Services, situé au 11 rue du Lac à Saint-Quentin-Fallavier, fermera exceptionnellement ses portes du 10 au 23 août inclus pour la période estivale. Cette fermeture concerne l'ensemble des services accueillis sur le site, notamment le burea",
+      "url": "https://www.ledauphine.com/societe/2026/08/07/l-espace-ma-ville-services-marque-une-pause-estivale",
+      "source": "Le Dauphiné Libéré",
+      "date": "2026-08-07T16:55:08Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-08T04:34:33.127935+00:00"
+    },
+    {
+      "id": "3878bb0862a27de7",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "PSG : Urgent ! Le transfert de Zion Suzuki bouclé pour 36M€",
+      "extrait": "TITRE: PSG : Urgent ! Le transfert de Zion Suzuki bouclé pour 36M€ SOURCE: Foot-sur7 DATE: 2026-08-07T16:08:00Z URL: https://www.foot-sur7.fr/770980-psg-urgent-le-transfert-de-zion-suzuki-boucle-pour-36me Avant l'ailier belge de l'Ajax Amsterdam, Mika Godts, le PSG pourrait prochainement annoncer l'arrivée de Zion Suzuki en provenance de Parme contre une indemnité de 36 millions d'euros. Explications. \" Zion Suzuki n'est qu'à un pas de signer pour PSG \" Après avoir enregistré la signature de Mag",
+      "url": "https://www.foot-sur7.fr/770980-psg-urgent-le-transfert-de-zion-suzuki-boucle-pour-36me",
+      "source": "Foot-sur7",
+      "date": "2026-08-07T16:08:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-08T04:34:35.214510+00:00"
+    },
+    {
+      "id": "9a0a80f5ea0b9f48",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "\" C'est la double peine \" : après le mégafeu de Gironde, des salariés de La Poste contraints de rattraper les heures de travail perdues",
+      "extrait": "Pas de répit pour les postiers girondins. Après le passage du mégafeu de Saumos qui a ravagé plus de 42 000 hectares, les salariés de La Poste sont retournés travailler au centre de tri du courrier de Cestas, fermé au plus fort de l'incendie fin juillet tout comme quinze bureaux situés dans ... « C’est la double peine » : après le mégafeu de Gironde, des salariés de La Poste contraints de rattraper les heures de travail perdues Récit Des centaines de salariés girondins de La Poste qui, évacués l",
+      "url": "https://www.nouvelobs.com/social/20260807.OBS117260/c-est-la-double-peine-apres-le-megafeu-de-gironde-des-salaries-de-la-poste-contraints-de-rattraper-les-heures-de-travail-perdues.html",
+      "source": "L'Obs",
+      "date": "2026-08-07T16:00:21Z",
+      "score": 3,
+      "raison": "score préfiltre bas (-2)",
+      "created_at": "2026-08-08T04:34:35.410543+00:00"
+    },
+    {
+      "id": "d2511e310ba905cc",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Incendies : la poste souhaite faire rattraper les heures de travail perdues par ses employés absents à cause des feux",
+      "extrait": "C'est une possibilité qui est loin de plaire aux personnes concernées. Les incendies en Gironde, qui ont détruit 42 000 hectares, ont conduit à des évacuations massives. Beaucoup d'entreprises dans les secteurs évacués ont donc cessé de fonctionner le temps que les flammes soient maîtrisées. C'est aussi le cas de La Poste, qui envisage aujourd'hui de faire rattraper les heures perdues aux salariés concernés. 700 000 courriers ont été bloqués en Nouvelle-Aquitaine à cause de la fermeture de la pl",
+      "url": "https://www.capital.fr/economie-politique/incendies-la-poste-souhaite-faire-rattraper-les-heures-de-travail-perdues-par-ses-employes-absents-a-cause-des-feux-1529114",
+      "source": "Capital.fr",
+      "date": "2026-08-07T15:39:25Z",
+      "score": 3,
+      "raison": "score préfiltre bas (-2)",
+      "created_at": "2026-08-08T04:34:35.943292+00:00"
+    },
+    {
+      "id": "b4160328fe8c0b0e",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Le PSG et Liverpool avancent bien pour le transfert XXL de Bradley barcola - Canal Supporters PSG 24-7",
+      "extrait": "TITRE: Le PSG et Liverpool avancent bien pour le transfert XXL de Bradley barcola - Canal Supporters PSG 24-7 SOURCE: PSG Canal Supporters DATE: 2026-08-07T14:11:32Z URL: https://canal-supporters.com/le-psg-et-liverpool-avancent-bien-pour-le-transfert-xxl-de-bradley-barcola/ Les discussions entre le PSG et Liverpool pour Bradley Barcola sont positives à en croire L'Equipe. De quoi envisager un transfert de taille avant la fin du mercato. Alors qu'il a décidé de ne pas apposer sa signature sur un",
+      "url": "https://canal-supporters.com/le-psg-et-liverpool-avancent-bien-pour-le-transfert-xxl-de-bradley-barcola/",
+      "source": "PSG Canal Supporters",
+      "date": "2026-08-07T14:11:32Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-08T04:34:37.684484+00:00"
+    },
+    {
+      "id": "f5a9ebf4b5515803",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Assemblée nationale : trois projets de loi majeurs au menu des discussions en groupes",
+      "extrait": "TITRE: Assemblée nationale : trois projets de loi majeurs au menu des discussions en groupes SOURCE: lecourrier.vn DATE: 2026-08-07T12:17:42Z URL: https://lecourrier.vn/assemblee-nationale-trois-projets-de-loi-majeurs-au-menu-des-discussions-en-groupes/1352967.html Il s'agit du projet de loi sur le développement urbain, du projet de loi modifiant et complétant plusieurs dispositions de dix lois relatives aux procédures administratives et aux conditions d'exercice des activités économiques dans l",
+      "url": "https://lecourrier.vn/assemblee-nationale-trois-projets-de-loi-majeurs-au-menu-des-discussions-en-groupes/1352967.html",
+      "source": "lecourrier.vn",
+      "date": "2026-08-07T12:17:42Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-08T04:34:45.234921+00:00"
+    },
+    {
+      "id": "5d55f306f5491cfa",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "BERNARD LOISEAU (EPA:BLOI) |",
+      "extrait": "TITRE: BERNARD LOISEAU (EPA:BLOI) | SOURCE: Les Echos DATE: 2026-08-07T10:50:35Z URL: https://lesechos-comfi.lesechos.fr/press-release/bernard-loiseau-epa-bloi-modalite-de-mise-a-disposition-des-documents-preparatoires-ag-018-092026-n7Tpl9H5Uhq Ordre du jour de l'assemblée générale mixte Page 4 Participation à l'assemblée et représentation Page 5 Formulaire de représentation et de vote par correspondance Page 8 Commentaires sur l'activité - Exercice clos le 30 avril 2026 Page 9 Résultats financi",
+      "url": "https://lesechos-comfi.lesechos.fr/press-release/bernard-loiseau-epa-bloi-modalite-de-mise-a-disposition-des-documents-preparatoires-ag-018-092026-n7Tpl9H5Uhq",
+      "source": "Les Echos",
+      "date": "2026-08-07T10:50:35Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-08T04:34:53.333083+00:00"
+    },
+    {
+      "id": "eb5a68cd9a6e972a",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Gironde. Incendies : La Poste veut faire rattraper les heures \" perdues \" aux postiers et suscite un tollé",
+      "extrait": "La rédaction - Aujourd'hui à 12:38 | mis à jour aujourd'hui à 12:39 - Temps de lecture : Fin juillet, alors que les flammes se rapprochent dangereusement de la ville de Cestas, en Gironde, le centre de tri de La Poste a dû fermer ses portes pendant sept jours. Un choix imposé par la sécurité, alors que l'incendie déclenché le 22 juillet à Saumos a entraîné au total l'évacuation de près de 220 000 personnes et la destruction de 42 000 hectares. En conséquence de cette fermeture : environ 700 000 ",
+      "url": "https://www.vosgesmatin.fr/faits-divers-justice/2026/08/07/incendies-la-poste-veut-faire-rattraper-les-heures-perdues-a-cause-des-feux-aux-postiers",
+      "source": "Vosges Matin",
+      "date": "2026-08-07T10:38:00Z",
+      "score": 3,
+      "raison": "score préfiltre bas (-2)",
+      "created_at": "2026-08-08T04:34:55.250955+00:00"
+    },
+    {
+      "id": "33511a6cc839d8bf",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "\"C'est trop!\": indignation des salariés de La Poste en Gironde qui doivent rattraper les heures perdues à cause des incendies",
+      "extrait": "TITRE: \"C'est trop!\": indignation des salariés de La Poste en Gironde qui doivent rattraper les heures perdues à cause des incendies SOURCE: RMC DATE: 2026-08-07T07:23:26Z URL: https://rmc.bfmtv.com/actualites/societe/c-est-trop-indignation-des-salaries-de-la-poste-en-gironde-qui-doivent-rattraper-les-heures-perdues-a-cause-des-incendies_AV-202608070193.html La Poste veut faire rattraper aux salariés concernés les heures perdues qu'ils n'ont pu effectuer du fait de l'incendie en Gironde. 14h au ",
+      "url": "https://rmc.bfmtv.com/actualites/societe/c-est-trop-indignation-des-salaries-de-la-poste-en-gironde-qui-doivent-rattraper-les-heures-perdues-a-cause-des-incendies_AV-202608070193.html",
+      "source": "RMC",
+      "date": "2026-08-07T07:23:26Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-08T04:35:00.868685+00:00"
     },
     {
       "id": "8948cfdf0c84ea15",
@@ -32344,6 +32785,19 @@
       "created_at": "2026-08-04T06:10:18.441472+00:00"
     },
     {
+      "id": "bf12f52821664716",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Banco BPM met fin aux négociations de fusion avec Monte dei Paschi - Les Echos",
+      "extrait": "TITRE: Banco BPM met fin aux négociations de fusion avec Monte dei Paschi - Les Echos SOURCE: Google News DATE: Mon, 03 Aug 2026 07:10:00 GMT URL: https://news.google.com/rss/articles/CBMi1gFBVV95cUxPd085UFZMcWk3TUI0dW9TU2hPdjg0WlpvX0JBcEpncUJsMk1sUlIzQ1pvOWZwTkJtQ2NjaVhJb2E0aW1kcnZwUkV6azhzbTBRenZnRHcwZGY5THhqNm9yXzFGdnAwaE94QzJhbXpSYVR6RThseFI0T19vZ01TczBjdXJpZWhuTTZaMThSUjZwS0hxTVV6aE9aUjVnc2x5R1dQR0UyOEJyYV8tSnVKbFZnNGZWU21oUmFua3dxSHI3Y2ctUHNlSl8ySGdLMS1nTFZ6YWlYRG1n?oc=5 <a href=\"https://n",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPd085UFZMcWk3TUI0dW9TU2hPdjg0WlpvX0JBcEpncUJsMk1sUlIzQ1pvOWZwTkJtQ2NjaVhJb2E0aW1kcnZwUkV6azhzbTBRenZnRHcwZGY5THhqNm9yXzFGdnAwaE94QzJhbXpSYVR6RThseFI0T19vZ01TczBjdXJpZWhuTTZaMThSUjZwS0hxTVV6aE9aUjVnc2x5R1dQR0UyOEJyYV8tSnVKbFZnNGZWU21oUmFua3dxSHI3Y2ctUHNlSl8ySGdLMS1nTFZ6YWlYRG1n?oc=5",
+      "source": "Google News",
+      "date": "Mon, 03 Aug 2026 07:10:00 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-08T04:34:10.052464+00:00"
+    },
+    {
       "id": "9cc2e2b09d9d5590",
       "banque": "La Banque Postale",
       "departement": "",
@@ -32942,6 +33396,110 @@
       "created_at": "2026-06-25T15:43:41.960961+00:00"
     },
     {
+      "id": "6b8f3188fbeef007",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Medhi Benatia s'est \"senti trahi\" par Pablo Longoria : Quelques semaines après son départ, l'ancien directeur de football de l'OM règle ses comptes",
+      "extrait": "TITRE: Medhi Benatia s'est \"senti trahi\" par Pablo Longoria : Quelques semaines après son départ, l'ancien directeur de football de l'OM règle ses comptes SOURCE: Le10sport.com DATE: 2026-08-07T19:00:33Z URL: https://le10sport.com/football/ligue1/om/medhi-benatia-sest-senti-trahi-par-pablo-longoria-quelques-semaines-apres-son-depart-lancien-directeur-de-football-de-lom-regle-ses-comptes-789982 \" Je vais rappeler le deal de Kondogbia parce que dans un monde normal, le propriétaire doit virer Long",
+      "url": "https://le10sport.com/football/ligue1/om/medhi-benatia-sest-senti-trahi-par-pablo-longoria-quelques-semaines-apres-son-depart-lancien-directeur-de-football-de-lom-regle-ses-comptes-789982",
+      "source": "Le10sport.com",
+      "date": "2026-08-07T19:00:33Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-08T04:34:27.322751+00:00"
+    },
+    {
+      "id": "f233181780a7484b",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Namibie : les mines ont généré 434 millions $ de recettes fiscales en 2025, soit 14 % du PIB",
+      "extrait": "TITRE: Namibie : les mines ont généré 434 millions $ de recettes fiscales en 2025, soit 14 % du PIB SOURCE: Agence Ecofin DATE: 2026-08-07T18:11:17Z URL: https://www.agenceecofin.com/actualites/0708-140816-namibie-les-mines-ont-genere-434-millions-de-recettes-fiscales-en-2025-soit-14-du-pib (Agence Ecofin) - Alors que le pays figure parmi les principaux producteurs mondiaux d'uranium, les autorités misent sur de nouveaux projets pour accroître la production, attirer les investissements et renfor",
+      "url": "https://www.agenceecofin.com/actualites/0708-140816-namibie-les-mines-ont-genere-434-millions-de-recettes-fiscales-en-2025-soit-14-du-pib",
+      "source": "Agence Ecofin",
+      "date": "2026-08-07T18:11:17Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-08T04:34:29.964631+00:00"
+    },
+    {
+      "id": "0546686eda809ef7",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Noah Nsoki annonce son départ du PSG : \" Je resterai Parisien à jamais \" - Canal Supporters PSG 24-7",
+      "extrait": "TITRE: Noah Nsoki annonce son départ du PSG : \" Je resterai Parisien à jamais \" - Canal Supporters PSG 24-7 SOURCE: PSG Canal Supporters DATE: 2026-08-07T13:30:42Z URL: https://canal-supporters.com/noah-nsoki-annonce-son-depart-du-psg-je-resterai-parisien-a-jamais/ Dans un message publié sur ses réseaux sociaux, Noah Nsoki a officialisé son départ du PSG. Le titi prend la direction de la Croatie. Comme beaucoup de ses partenaires au PSG la saison passée, Noah Nsoki va quitter son club formateur ",
+      "url": "https://canal-supporters.com/noah-nsoki-annonce-son-depart-du-psg-je-resterai-parisien-a-jamais/",
+      "source": "PSG Canal Supporters",
+      "date": "2026-08-07T13:30:42Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-08T04:34:42.052666+00:00"
+    },
+    {
+      "id": "00d57f740f112e58",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Spiritueux : santé !",
+      "extrait": "TITRE: Spiritueux : santé ! SOURCE: Boursier.com DATE: 2026-08-07T11:58:00Z URL: https://www.boursier.com/actions/actualites/news/spiritueux-sante-991757.html Par Jean-Baptiste André Publié le 07/08/2026 à 13h58 Spiritueux : santé ! (Boursier.com) -- Le secteur européen des spiritueux continue de briller en cette fin de semaine, tiré par Diageo qui gagne encore plus de 4% à Londres. Les derniers résultats du géant britannique des boissons alcoolisées et sa journée investisseurs (Capital Markets ",
+      "url": "https://www.boursier.com/actions/actualites/news/spiritueux-sante-991757.html",
+      "source": "Boursier.com",
+      "date": "2026-08-07T11:58:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-08T04:34:46.853345+00:00"
+    },
+    {
+      "id": "b037d43bff7aa728",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Mercato, Luca Zidane de retour à Madrid !",
+      "extrait": "TITRE: Mercato, Luca Zidane de retour à Madrid ! SOURCE: Football.fr DATE: 2026-08-07T11:57:53Z URL: https://www.football.fr/mercato/mercato-luca-zidane-de-retour-a-madrid-826705.html De retour de ses vacances après la Coupe du monde 2026 avec l'Algérie, Luca Zidane quitte son club de Grenade, en Liga 2, pour retrouver Madrid, la ville dans laquelle il a grandi. Encore une nouvelle étape dans la carrière de Luca Zidane. Après avoir disputé la Coupe d'Afrique des nations 2025 au Maroc et la Coupe",
+      "url": "https://www.football.fr/mercato/mercato-luca-zidane-de-retour-a-madrid-826705.html",
+      "source": "Football.fr",
+      "date": "2026-08-07T11:57:53Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-08T04:34:48.253257+00:00"
+    },
+    {
+      "id": "efa28c03c1b69c85",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "BIDC : 510 millions de dollars pour le développement en Afrique de l'Ouest",
+      "extrait": "TITRE: BIDC : 510 millions de dollars pour le développement en Afrique de l'Ouest SOURCE: Agence Ecofin DATE: 2026-08-07T11:49:53Z URL: https://www.agenceecofin.com/actualites/0708-140804-bidc-510-millions-de-dollars-pour-le-developpement-en-afrique-de-l-ouest (BIDC) - Le Conseil d'Administration de la Banque d'Investissement et de Développement de la CEDEAO (BIDC) a approuvé cinq opérations stratégiques d'un montant total de plus de 269,55 millions d'euros et 200 millions de dollars US, soit pl",
+      "url": "https://www.agenceecofin.com/actualites/0708-140804-bidc-510-millions-de-dollars-pour-le-developpement-en-afrique-de-l-ouest",
+      "source": "Agence Ecofin",
+      "date": "2026-08-07T11:49:53Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-08T04:34:51.088112+00:00"
+    },
+    {
+      "id": "8116a918966887e3",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Le PSG avait un autre plan pour Mbaye",
+      "extrait": "TITRE: Le PSG avait un autre plan pour Mbaye SOURCE: CulturePSG DATE: 2026-08-07T07:47:55Z URL: https://www.culturepsg.com/news/mercato/le-psg-avait-un-autre-plan-pour-mbaye/60258 Titulaire contre Majorque mercredi soir, deux jours après sa reprise de l'entraînement, Ibrahim Mbaye est plus que jamais candidat au départ cet été après avoir échangé avec Luis Campos et Luis Enrique sur son futur temps de jeu en cas de nouvelle saison au PSG. Si une vente est désormais le scénario le plus crédible, ",
+      "url": "https://www.culturepsg.com/news/mercato/le-psg-avait-un-autre-plan-pour-mbaye/60258",
+      "source": "CulturePSG",
+      "date": "2026-08-07T07:47:55Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-08T04:34:59.008149+00:00"
+    },
+    {
+      "id": "1683758f5bbda2ac",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "150 millions pour Barcola, est-ce vraiment délirant ?",
+      "extrait": "TITRE: 150 millions pour Barcola, est-ce vraiment délirant ? SOURCE: Eurosport DATE: 2026-08-06T21:46:57Z URL: https://www.eurosport.fr/football/transferts/2026-2027/mercato-i-150-millions-pour-bradley-barcola-psg-convoite-par-liverpool-est-ce-vraiment-delirant_sto23325898/story.shtml Barcola, un deal gagnant-gagnant à Liverpool ? Video credit: Eurosport C'est l'été des coups de chaud. Sur l'Europe comme sur la planète mercato, où la température risque encore de grimper d'ici à la fin du mois d'",
+      "url": "https://www.eurosport.fr/football/transferts/2026-2027/mercato-i-150-millions-pour-bradley-barcola-psg-convoite-par-liverpool-est-ce-vraiment-delirant_sto23325898/story.shtml",
+      "source": "Eurosport",
+      "date": "2026-08-06T21:46:57Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-08T04:35:02.206654+00:00"
+    },
+    {
       "id": "f346f82d005263c1",
       "banque": "CIC",
       "departement": "",
@@ -33070,6 +33628,19 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-08-07T05:11:24.257079+00:00"
+    },
+    {
+      "id": "cc1033f0791865b1",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Mercato de football: l'international ivoirien Yan Diomandé rejoint le Real Madrid",
+      "extrait": "TITRE: Mercato de football: l'international ivoirien Yan Diomandé rejoint le Real Madrid SOURCE: TV5MONDE DATE: 2026-08-06T15:04:26Z URL: https://information.tv5monde.com/sport/mercato-de-football-linternational-ivoirien-yan-diomande-rejoint-le-real-madrid-2832690 Yann Diomandé lors de la Coupe du monde 2026 dans le match contre l'Équateur (AP/archives). \"Le Real Madrid et le RB Leipzig sont parvenus à un accord concernant le transfert du joueur Yan Diomandé, qui s'engage avec notre club pour le",
+      "url": "https://information.tv5monde.com/sport/mercato-de-football-linternational-ivoirien-yan-diomande-rejoint-le-real-madrid-2832690",
+      "source": "TV5MONDE",
+      "date": "2026-08-06T15:04:26Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-08T04:35:03.654601+00:00"
     },
     {
       "id": "e724ba72d5991fc8",
@@ -35865,6 +36436,19 @@
       "score": 1,
       "raison": "signaux: vague(unknown,regional,count=None)",
       "created_at": "2026-08-04T06:10:34.624514+00:00"
+    },
+    {
+      "id": "8fcd7999859bebf4",
+      "banque": "Saham Bank",
+      "departement": "",
+      "titre": "Saham Bank accélère sa transformation avec un programme d'investissement de 500 MDH en 2026 | Financial Afrik",
+      "extrait": "Article centré sur un programme d'investissement de 500 MDH en 2026 pour moderniser l’infrastructure, cybersécurité et digitalisation, sans mention de fermeture/regroupement/transfer d’agences physiques en France.",
+      "url": "https://www.financialafrik.com/2026/08/07/saham-bank-accelere-sa-transformation-avec-un-programme-dinvestissement-de-500-mdh-en-2026/",
+      "source": "Financial Afrik",
+      "date": "2026-08-07T14:12:06Z",
+      "score": 1,
+      "raison": "signaux: vague(Saham Bank,national,count=None)",
+      "created_at": "2026-08-08T04:34:40.330586+00:00"
     },
     {
       "id": "7b9a48e2286becad",
