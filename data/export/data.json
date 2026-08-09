@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-08T04:45:00.039633+00:00",
+  "generated_at": "2026-08-09T04:56:01.505323+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -401,8 +401,8 @@
       "count": 5,
       "total_agences": 105,
       "precise_count": 5,
-      "unlocated_count": 0,
-      "estimated_count": 30
+      "unlocated_count": 1,
+      "estimated_count": 31
     },
     "43": {
       "nom": "Haute-Loire",
@@ -932,8 +932,8 @@
       "departement": "42",
       "nom": "Loire",
       "precise_count": 5,
-      "unlocated_count": 0,
-      "estimated_count": 30,
+      "unlocated_count": 1,
+      "estimated_count": 31,
       "department_signal_count": 25,
       "signals": [
         {
@@ -963,6 +963,22 @@
           "reason": "CRÉDIT AGRICOLE : LES FERMETURES DANS LE ROANNAIS",
           "count": 0,
           "date": "Thu, 17 Jul 2025 07:00:00 GMT"
+        },
+        {
+          "id": "91c3fdf249810c04",
+          "banque": "La Banque Postale",
+          "commune": "Le Mans",
+          "departement": "42",
+          "titre": "La Poste ferme un de ses bureaux au Mans",
+          "source": "ouest-france.fr",
+          "url": "https://www.ouest-france.fr/pays-de-la-loire/le-mans-72000/la-poste-ferme-un-de-ses-bureaux-au-mans-220d8db0-925d-11f1-8bae-616c424ae7e0",
+          "score": 2,
+          "precision": "commune_non_geocodee",
+          "reason": "commune non géocodée",
+          "type": "fermeture",
+          "statut": "projet",
+          "statut_temporel": "a_venir",
+          "date": "2026-08-08"
         }
       ]
     },
@@ -10212,7 +10228,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-08T04:31:22.317792+00:00"
+      "created_at": "2026-08-09T04:42:25.932462+00:00"
     },
     {
       "id": "50895c042a984b7d",
@@ -10248,7 +10264,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 04:46:02 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-08T04:31:21.969260+00:00"
+      "created_at": "2026-08-09T04:42:25.420788+00:00"
     },
     {
       "id": "8c6a0cad14626d6f",
@@ -11439,6 +11455,24 @@
       "created_at": "2026-07-23T06:13:01.714035+00:00"
     },
     {
+      "id": "aa3a3bd91c181610",
+      "banque": "La Banque Postale",
+      "commune": "Gex",
+      "departement": "01",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "Pays de Gex. Bureaux de poste : des fermetures à répétition qui suscitent des inquiétudes - Le Dauphiné Libéré",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOX0x2RTNoWFBWcGxFQTlwZ2hTVXk1UnR0dExwbmYtQTlkWmpfNGxlcG0tY21SZ2k1dmlIbG1lN0RuTFlNMENuWHJLSmx4YTRmcG10Wjl3RUVZUi1KY0xRNkdIRHNHam9JNEsycTQxRlJYZ01USk1JcDRDc29OZkhKR2JCMXMzaXk3eHRuOUU5ZXhmOG9nRUlPN2U4RUdCSGc2QjBMb0s1ZkJpV3pwamRXS1pzb19KYlhUM2R1Rg?oc=5",
+      "titre": "Pays de Gex. Bureaux de poste : des fermetures à répétition qui suscitent des inquiétudes - Le Dauphiné Libéré",
+      "source": "Google News",
+      "date": "Sat, 08 Aug 2026 06:56:56 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-08-09T04:45:22.589784+00:00"
+    },
+    {
       "id": "d994e19b43698ba0",
       "banque": "La Banque Postale",
       "commune": "Charbonnières-les-Bains",
@@ -12156,7 +12190,7 @@
       "source": "Google News",
       "date": "Fri, 20 Jun 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-08T04:31:29.545873+00:00"
+      "created_at": "2026-08-09T04:42:34.584504+00:00"
     },
     {
       "id": "b80663fa38292743",
@@ -12246,7 +12280,7 @@
       "source": "Google News",
       "date": "Fri, 10 Jul 2026 10:12:00 GMT",
       "raison": "garde entrée/sortie: département source 44 incompatible avec la sortie 974",
-      "created_at": "2026-08-08T04:31:43.643890+00:00"
+      "created_at": "2026-08-09T04:42:54.671228+00:00"
     },
     {
       "id": "8c646081e1d69e81",
@@ -12426,7 +12460,7 @@
       "source": "Google News",
       "date": "Fri, 03 Jan 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-08T04:31:21.636062+00:00"
+      "created_at": "2026-08-09T04:42:24.907269+00:00"
     },
     {
       "id": "411db107f70f2387",
@@ -12499,6 +12533,24 @@
       "date": "Fri, 01 Aug 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
       "created_at": "2026-07-27T07:56:36.407534+00:00"
+    },
+    {
+      "id": "91c3fdf249810c04",
+      "banque": "La Banque Postale",
+      "commune": "Le Mans",
+      "departement": "42",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "a_venir",
+      "fiabilite": 2,
+      "citation": "« La Poste ferme un de ses bureaux au Mans » (titre de l’article ; lien explicite avec un service bancaire La Banque Postale non fourni dans l’extrait).",
+      "url": "https://www.ouest-france.fr/pays-de-la-loire/le-mans-72000/la-poste-ferme-un-de-ses-bureaux-au-mans-220d8db0-925d-11f1-8bae-616c424ae7e0",
+      "titre": "La Poste ferme un de ses bureaux au Mans",
+      "source": "ouest-france.fr",
+      "date": "2026-08-08",
+      "raison": "commune non géocodée",
+      "created_at": "2026-08-09T04:45:40.377771+00:00"
     },
     {
       "id": "1fa8820c5d2cbd31",
@@ -14819,6 +14871,19 @@
       "created_at": "2026-07-22T08:57:37.162816+00:00"
     },
     {
+      "id": "99098e8768b35f70",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "La Poste ferme un de ses bureaux au Mans - Maville Le Mans",
+      "extrait": "TITRE: La Poste ferme un de ses bureaux au Mans - Maville Le Mans SOURCE: Google News DATE: Sat, 08 Aug 2026 11:01:00 GMT URL: https://news.google.com/rss/articles/CBMipAFBVV95cUxOMHZ3NGZKVWhRSnFTcVRBd082YndvVE1rQnJzQ2o1LVdnbTlDcHNfb05jM19aa1JMVC1TbFR1Nk02WFp5X09SQnkzTUlHcHVCLW91S29kelEydDVIY2FhbU91dTVZNlQ0bWNBb1VOY2ZiTlMwd3F6RjlpTFZsdWJnU2xzdnF1ai0zemFjTW1WcHB2VU8ydjlpSEpVQjBHdE9xdDkySw?oc=5 <a href=\"https://news.google.com/rss/articles/CBMipAFBVV95cUxOMHZ3NGZKVWhRSnFTcVRBd082YndvVE1rQnJzQ2o1LV",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOMHZ3NGZKVWhRSnFTcVRBd082YndvVE1rQnJzQ2o1LVdnbTlDcHNfb05jM19aa1JMVC1TbFR1Nk02WFp5X09SQnkzTUlHcHVCLW91S29kelEydDVIY2FhbU91dTVZNlQ0bWNBb1VOY2ZiTlMwd3F6RjlpTFZsdWJnU2xzdnF1ai0zemFjTW1WcHB2VU8ydjlpSEpVQjBHdE9xdDkySw?oc=5",
+      "source": "Google News",
+      "date": "Sat, 08 Aug 2026 11:01:00 GMT",
+      "score": 4,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-09T04:45:25.729008+00:00"
+    },
+    {
       "id": "2f942102b705ee7a",
       "banque": "Crédit Agricole",
       "departement": "12",
@@ -16572,6 +16637,19 @@
       "score": 3,
       "raison": "signaux: vague(La Banque Postale,regional,count=4)",
       "created_at": "2026-06-25T15:45:45.527438+00:00"
+    },
+    {
+      "id": "7e5c6069e7d54f8a",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Travaux au centre-ville : des réunions publiques à la rentrée, la fermeture définitive du tunnel Charles-III sûre « à 95 % » - L'Est Républicain",
+      "extrait": "TITRE: Travaux au centre-ville : des réunions publiques à la rentrée, la fermeture définitive du tunnel Charles-III sûre « à 95 % » - L'Est Républicain SOURCE: Google News DATE: Wed, 10 Jun 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMi9wFBVV95cUxPem9uNXpCa3l5SzdDS1RiOGhkOGRNcmZJLUZocGI1V0c5WVN2dnh3STM4NHM3WnRoYkhDZ21HOThtMWRHckpTX2VCRmJjNEJxeVBtY294MlUtNXNHaEJ2andwWS1rcHc2c1c1OUFyZjR2R251TkZCTFZaS2dKUHFaeEkzZFkzSGdhZVdyZS1wVUt0TEVMcVpkTTlQZnVTYWc0Zm1ZSXhSTmF0ZHY5Q2pmQWtCY1ZlZk",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPem9uNXpCa3l5SzdDS1RiOGhkOGRNcmZJLUZocGI1V0c5WVN2dnh3STM4NHM3WnRoYkhDZ21HOThtMWRHckpTX2VCRmJjNEJxeVBtY294MlUtNXNHaEJ2andwWS1rcHc2c1c1OUFyZjR2R251TkZCTFZaS2dKUHFaeEkzZFkzSGdhZVdyZS1wVUt0TEVMcVpkTTlQZnVTYWc0Zm1ZSXhSTmF0ZHY5Q2pmQWtCY1ZlZkFrVUNBR0FLR0ljS0Z3SUQxRzhMTXpfSHNWY0hrSDJzVGdjZnFFUkN5dlZYa0lwYktpeDNHSURvMWpaUlBLUG5J?oc=5",
+      "source": "Google News",
+      "date": "Wed, 10 Jun 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-09T04:45:30.324823+00:00"
     },
     {
       "id": "ae6e555ff40748f0",
@@ -23581,6 +23659,19 @@
       "created_at": "2026-06-25T15:21:15.397464+00:00"
     },
     {
+      "id": "a205e4b77933e329",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "La Poste ferme un de ses bureaux au Mans - Ouest-France",
+      "extrait": "TITRE: La Poste ferme un de ses bureaux au Mans - Ouest-France SOURCE: Google News DATE: Sat, 08 Aug 2026 11:01:01 GMT URL: https://news.google.com/rss/articles/CBMi0gFBVV95cUxOdmRSLThyT00yck11OVdDYTRnQW9fUlJJOG5oaUwwYndBdGRNU1haUEkweExsYXBubmJtUVhmY2twcVRkTEtQUUh3LVcxYzR1blZqcWJXTXVTRldpQlJkU0hvWkNBR21aUW90UGEyZ284emRDamhrVkVLTGw4bC1WV1hVd3Fld2NjdTVvcDZTcVczcGRTdXRFMnJMYVdROFI1VlplZ1hZNjB2V2hvN1Y1VWhOYk9wbmNsb1FwN3ZCQW1zeklQNGtUVmhRcUZ0QndleUE?oc=5 <a href=\"https://news.google.com/rss/articles/",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOdmRSLThyT00yck11OVdDYTRnQW9fUlJJOG5oaUwwYndBdGRNU1haUEkweExsYXBubmJtUVhmY2twcVRkTEtQUUh3LVcxYzR1blZqcWJXTXVTRldpQlJkU0hvWkNBR21aUW90UGEyZ284emRDamhrVkVLTGw4bC1WV1hVd3Fld2NjdTVvcDZTcVczcGRTdXRFMnJMYVdROFI1VlplZ1hZNjB2V2hvN1Y1VWhOYk9wbmNsb1FwN3ZCQW1zeklQNGtUVmhRcUZ0QndleUE?oc=5",
+      "source": "Google News",
+      "date": "Sat, 08 Aug 2026 11:01:01 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-09T04:45:28.029029+00:00"
+    },
+    {
       "id": "c0234b41b64ae0b2",
       "banque": "Société Générale",
       "departement": "",
@@ -27856,6 +27947,84 @@
       "score": 3,
       "raison": "fermeture non publiée: hors fenêtre temporelle",
       "created_at": "2026-07-22T09:09:01.159244+00:00"
+    },
+    {
+      "id": "08c2512db2f797a0",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Révision du PLU et motion pour défendre le bureau de poste de Sorède",
+      "extrait": "TITRE: Révision du PLU et motion pour défendre le bureau de poste de Sorède SOURCE: lindependant.fr DATE: 2026-08-08T18:24:35Z URL: https://www.lindependant.fr/2026/08/08/revision-du-plu-et-motion-pour-defendre-le-bureau-de-poste-de-sorede-13502032.php De nombreux dossiers ont été abordés durant la séance du conseil municipal. Le point le plus marquant concerne la révision du Plan local d'urbanisme (PLU). Afin d'adapter le document aux évolutions démographiques, économiques et environnementales,",
+      "url": "https://www.lindependant.fr/2026/08/08/revision-du-plu-et-motion-pour-defendre-le-bureau-de-poste-de-sorede-13502032.php",
+      "source": "lindependant.fr",
+      "date": "2026-08-08T18:24:35Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-09T04:45:55.849780+00:00"
+    },
+    {
+      "id": "018c0f357e005c5b",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "\"Il y aura un mouvement social très important\" : les syndicats indignés après la décision de La Poste de faire rattraper les heures perdues à cause des incendies",
+      "extrait": "TITRE: \"Il y aura un mouvement social très important\" : les syndicats indignés après la décision de La Poste de faire rattraper les heures perdues à cause des incendies SOURCE: Le Figaro.fr DATE: 2026-08-08T15:04:37Z URL: https://www.lefigaro.fr/social/il-y-aura-un-mouvement-social-tres-important-les-syndicats-indignes-apres-la-decision-de-la-poste-de-faire-rattraper-les-heures-perdues-a-cause-des-incendies-20260808 Alors que le centre de tri de Cestas a fermé ses portes pendant une semaine et q",
+      "url": "https://www.lefigaro.fr/social/il-y-aura-un-mouvement-social-tres-important-les-syndicats-indignes-apres-la-decision-de-la-poste-de-faire-rattraper-les-heures-perdues-a-cause-des-incendies-20260808",
+      "source": "Le Figaro.fr",
+      "date": "2026-08-08T15:04:37Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-09T04:45:59.354151+00:00"
+    },
+    {
+      "id": "9a56ad7a70938283",
+      "banque": "LCL",
+      "departement": "",
+      "titre": "OL, OM : la prime qui a fait capoter le dossier Meunier - But! Football Club",
+      "extrait": "TITRE: OL, OM : la prime qui a fait capoter le dossier Meunier - But! Football Club SOURCE: But! Football Club DATE: 2026-08-08T13:06:54Z URL: https://www.butfootballclub.fr/1689497-ol-om-prime-signature-meunier-sunderland/ Libre après la fin de son contrat au LOSC, Thomas Meunier figurait sur les tablettes de l'OL et de l'OM. Les deux Olympiques ont toutefois reculé devant les exigences financières de l'international belge, qui a finalement rejoint Sunderland. L'OL cherchait une solution à droi",
+      "url": "https://www.butfootballclub.fr/1689497-ol-om-prime-signature-meunier-sunderland/",
+      "source": "But! Football Club",
+      "date": "2026-08-08T13:06:54Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-09T04:46:01.370050+00:00"
+    },
+    {
+      "id": "096ecfede918cb8e",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Vinicius lui échappe : Arsenal se rabat sur Barcola, mais Liverpool a une longueur d'avance - Sport.fr",
+      "extrait": "TITRE: Vinicius lui échappe : Arsenal se rabat sur Barcola, mais Liverpool a une longueur d'avance - Sport.fr SOURCE: Sport.fr DATE: 2026-08-08T09:19:57Z URL: https://www.sport.fr/football/vinicius-lui-echappe-arsenal-se-rabat-sur-barcola-mais-liverpool-a-une-longueur-davance-1472543.shtm Le dossier brésilien enterré, les Gunners ont dressé une short-list de trois attaquants. Le Parisien y figure en tête -- sauf qu'il faudra jouer des coudes. Il y a des échecs qui clarifient les choses. En appre",
+      "url": "https://www.sport.fr/football/vinicius-lui-echappe-arsenal-se-rabat-sur-barcola-mais-liverpool-a-une-longueur-davance-1472543.shtm",
+      "source": "Sport.fr",
+      "date": "2026-08-08T09:19:57Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-09T04:46:05.337826+00:00"
+    },
+    {
+      "id": "bd61f9f563c70d8b",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Bénin : Moody's rehausse la notation souveraine à long terme de \"B1\" à \"BA3\"",
+      "extrait": "TITRE: Bénin : Moody's rehausse la notation souveraine à long terme de \"B1\" à \"BA3\" SOURCE: Afrique-Sur7.fr DATE: 2026-08-08T06:24:55Z URL: https://www.afrique-sur7.fr/benin-moodys-rehausse-la-notation-souveraine-a-long-terme-de-b1-a-ba3 Le Bénin intègre désormais le cercle très fermé des économies subsahariennes les mieux notées du continent au sein de la catégorie spéculative noble BA. Le gouvernement s'est réjoui de la nouvelle notation qui propulse le pays de B1 à BA3. Pour les autorités bén",
+      "url": "https://www.afrique-sur7.fr/benin-moodys-rehausse-la-notation-souveraine-a-long-terme-de-b1-a-ba3",
+      "source": "Afrique-Sur7.fr",
+      "date": "2026-08-08T06:24:55Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-09T04:46:12.117560+00:00"
+    },
+    {
+      "id": "a305af59345be481",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "La Poste ferme un de ses bureaux au Mans",
+      "extrait": "TITRE: La Poste ferme un de ses bureaux au Mans SOURCE: ouest-france.fr DATE: 2026-08-08 URL: https://www.ouest-france.fr/pays-de-la-loire/le-mans-72000/la-poste-ferme-un-de-ses-bureaux-au-mans-220d8db0-925d-11f1-8bae-616c424ae7e0",
+      "url": "https://www.ouest-france.fr/pays-de-la-loire/le-mans-72000/la-poste-ferme-un-de-ses-bureaux-au-mans-220d8db0-925d-11f1-8bae-616c424ae7e0",
+      "source": "ouest-france.fr",
+      "date": "2026-08-08",
+      "score": 3,
+      "raison": "fermeture non publiée: commune non géocodée",
+      "created_at": "2026-08-09T04:45:40.379573+00:00"
     },
     {
       "id": "67eada67721b7748",
@@ -33394,6 +33563,123 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:43:41.960961+00:00"
+    },
+    {
+      "id": "55f3eefeea806ca3",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Mercato PSG : Les 3 priorités de Luis Enrique, qui s'impatiente",
+      "extrait": "TITRE: Mercato PSG : Les 3 priorités de Luis Enrique, qui s'impatiente SOURCE: Foot-sur7 DATE: 2026-08-09T03:33:00Z URL: https://www.foot-sur7.fr/771183-mercato-psg-les-3-priorites-de-luis-enrique-qui-simpatiente ‎Le PSG a déjà commencé à dessiner les contours de son nouvel effectif, mais Luis Enrique attend encore plusieurs pièces importantes pour parfaire son équipe. À l'approche des premières échéances officielles, l'entraîneur espagnol voit le temps filer et aimerait pouvoir travailler rapid",
+      "url": "https://www.foot-sur7.fr/771183-mercato-psg-les-3-priorites-de-luis-enrique-qui-simpatiente",
+      "source": "Foot-sur7",
+      "date": "2026-08-09T03:33:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-09T04:45:44.623924+00:00"
+    },
+    {
+      "id": "bf83d3f283f8e8ab",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Que va faire Ferran Torres au PSG ?",
+      "extrait": "TITRE: Que va faire Ferran Torres au PSG ? SOURCE: Football 365 DATE: 2026-08-09T03:10:00Z URL: https://www.football365.fr/que-va-faire-ferran-torres-au-psg-10307064.html Pressenti pour rejoindre le PSG dans ce mercato estival, que pourrait apporter Ferran Torres (FC Barcelone) à l'équipe parisienne ? Le héros de l'été du football, c'est lui. Ferran Torres a inscrit le 19 juillet dernier l'unique but de la finale de la Coupe du monde, Espagne-Argentine (1-0, après prolongation). On suppose qu'il",
+      "url": "https://www.football365.fr/que-va-faire-ferran-torres-au-psg-10307064.html",
+      "source": "Football 365",
+      "date": "2026-08-09T03:10:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-09T04:45:46.488631+00:00"
+    },
+    {
+      "id": "3ffe323096856e47",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Ferran Torres aux portes du PSG : le \"no-brainer\" à un détail près",
+      "extrait": "TITRE: Ferran Torres aux portes du PSG : le \"no-brainer\" à un détail près SOURCE: Eurosport DATE: 2026-08-08T22:13:08Z URL: https://www.eurosport.fr/football/transferts/2026-2027/mercato-i-ferran-torres-barca-aux-portes-du-psg-le-no-brainer-a-un-detail-pres_sto23326396/story.shtml Barcola, un deal gagnant-gagnant à Liverpool ? Video credit: Eurosport Ce n'est pas encore fait. Mais pour Marca, c'est tout comme. Le média espagnol affirme ce samedi que Ferran Torres sera un joueur du Paris Ssaint-G",
+      "url": "https://www.eurosport.fr/football/transferts/2026-2027/mercato-i-ferran-torres-barca-aux-portes-du-psg-le-no-brainer-a-un-detail-pres_sto23326396/story.shtml",
+      "source": "Eurosport",
+      "date": "2026-08-08T22:13:08Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-09T04:45:47.963948+00:00"
+    },
+    {
+      "id": "753d26c51ca0ecfc",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Afrique du sud : VBG dans la communauté LGBTQIA+ : quel est le tableau et quels sont les moyens de la contrer ?",
+      "extrait": "TITRE: Afrique du sud : VBG dans la communauté LGBTQIA+ : quel est le tableau et quels sont les moyens de la contrer ? SOURCE: afriquesenlutte.org DATE: 2026-08-08T20:03:53Z URL: https://www.afriquesenlutte.org/afrique-australe/afrique-du-sud/article/afrique-du-sud-vbg-dans-la-communaute-lgbtqia-quel-est-le-tableau-et-quels-sont Mais nous nous sommes organisés en tant que communauté LGBTQIA+. Par exemple, il y a eu un cas à Khayelitsha, au Cap, où une jeune lesbienne a été assassinée. La communa",
+      "url": "https://www.afriquesenlutte.org/afrique-australe/afrique-du-sud/article/afrique-du-sud-vbg-dans-la-communaute-lgbtqia-quel-est-le-tableau-et-quels-sont",
+      "source": "afriquesenlutte.org",
+      "date": "2026-08-08T20:03:53Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-09T04:45:52.436150+00:00"
+    },
+    {
+      "id": "f2173141ca2c9c3a",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "\" Scellé depuis 20 ans \" en Essonne, un mystérieux coffre de banque renfermait des pistolets-mitrailleurs",
+      "extrait": "TITRE: \" Scellé depuis 20 ans \" en Essonne, un mystérieux coffre de banque renfermait des pistolets-mitrailleurs SOURCE: Le Parisien DATE: 2026-08-08T16:45:13Z URL: https://www.leparisien.fr/faits-divers/scelle-depuis-20-ans-en-essonne-un-mysterieux-coffre-de-banque-renfermait-des-pistolets-mitrailleurs-08-08-2026-P3WUI7IJUREYHF6QJ52DY3OTXU.php On trouve de tout dans un coffre de banque, c'est bien connu. Bijoux oubliés, toiles de maître et autres raretés... Les anecdotes ne manquent pas. Mais c",
+      "url": "https://www.leparisien.fr/faits-divers/scelle-depuis-20-ans-en-essonne-un-mysterieux-coffre-de-banque-renfermait-des-pistolets-mitrailleurs-08-08-2026-P3WUI7IJUREYHF6QJ52DY3OTXU.php",
+      "source": "Le Parisien",
+      "date": "2026-08-08T16:45:13Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-09T04:45:57.423371+00:00"
+    },
+    {
+      "id": "1dda2c880bee17bb",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Suzuki recruté, Chevalier veut se battre, Safonov numéro un... Le PSG se lance encore dans un gros chantier pour le poste de gardien de but",
+      "extrait": "TITRE: Suzuki recruté, Chevalier veut se battre, Safonov numéro un... Le PSG se lance encore dans un gros chantier pour le poste de gardien de but SOURCE: Le10sport.com DATE: 2026-08-08T10:00:51Z URL: https://le10sport.com/football/ligue1/psg/suzuki-recrute-chevalier-veut-se-battre-safonov-numero-un-le-psg-se-lance-encore-dans-un-gros-chantier-pour-le-poste-de-gardien-de-but-789989 Ainsi, pas de quoi bousculer la hiérarchie actuelle. Si la saison dernière, Matvey Safonov avait pris le dessus sur",
+      "url": "https://le10sport.com/football/ligue1/psg/suzuki-recrute-chevalier-veut-se-battre-safonov-numero-un-le-psg-se-lance-encore-dans-un-gros-chantier-pour-le-poste-de-gardien-de-but-789989",
+      "source": "Le10sport.com",
+      "date": "2026-08-08T10:00:51Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-09T04:46:02.943823+00:00"
+    },
+    {
+      "id": "f5d04c0ca0d07873",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Safonov, Chevalier, Suzuki... Le point sur les gardiens au PSG - Canal Supporters PSG 24-7",
+      "extrait": "TITRE: Safonov, Chevalier, Suzuki... Le point sur les gardiens au PSG - Canal Supporters PSG 24-7 SOURCE: PSG Canal Supporters DATE: 2026-08-08T07:00:45Z URL: https://canal-supporters.com/safonov-chevalier-suzuki-le-point-sur-les-gardiens-au-psg/ S'il possède déjà Matvey Safonov et Lucas Chevalier dans ses rangs, le PSG aimerait recruter Zion Suzuki au poste de gardien. De quoi relancer une nouvelle saga dans les buts ? Le PSG devrait lancer sa saison 2026-2027 avec Matvey Safonov dans les buts ",
+      "url": "https://canal-supporters.com/safonov-chevalier-suzuki-le-point-sur-les-gardiens-au-psg/",
+      "source": "PSG Canal Supporters",
+      "date": "2026-08-08T07:00:45Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-09T04:46:09.468704+00:00"
+    },
+    {
+      "id": "7c2c4acc93eae613",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "PSG : Paris paie 100 millions d'euros et valide un gros départ",
+      "extrait": "TITRE: PSG : Paris paie 100 millions d'euros et valide un gros départ SOURCE: foot01.com DATE: 2026-08-08T06:15:52Z URL: https://www.foot01.com/paris/le-psg-paie-100-me-et-valide-un-gros-depart Avec la signature à venir de Zion Suzuki pour 40 millions d'euros, la facture du PSG pour ses trois gardiens monte à 100 millions d'euros. Problème : aucun titulaire ne se dégage pour l'instant. Après avoir bouclé les signatures de Lucas Digne et de Maghnes Akliouche, le Paris Saint-Germain est sur le poi",
+      "url": "https://www.foot01.com/paris/le-psg-paie-100-me-et-valide-un-gros-depart",
+      "source": "foot01.com",
+      "date": "2026-08-08T06:15:52Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-09T04:46:06.900097+00:00"
+    },
+    {
+      "id": "78d84af7e84ce051",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Antoine Griezmann et N'Golo Kanté : Comme Yan Diomandé, les deux champions du monde ont refusé de signer au PSG !",
+      "extrait": "TITRE: Antoine Griezmann et N'Golo Kanté : Comme Yan Diomandé, les deux champions du monde ont refusé de signer au PSG ! SOURCE: Le10sport.com DATE: 2026-08-08T06:00:00Z URL: https://le10sport.com/football/mercato/antoine-griezmann-et-ngolo-kante-comme-yan-diomande-les-deux-champions-du-monde-ont-refuse-de-signer-au-psg-789985 Et il se trouve que José Mourinho ait joué un rôle phare dans cette opération. Un membre de l'agence Roc Nation a dévoilé à The Athletic l'importance du nouvel entraîneur ",
+      "url": "https://le10sport.com/football/mercato/antoine-griezmann-et-ngolo-kante-comme-yan-diomande-les-deux-champions-du-monde-ont-refuse-de-signer-au-psg-789985",
+      "source": "Le10sport.com",
+      "date": "2026-08-08T06:00:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-09T04:46:13.757730+00:00"
     },
     {
       "id": "6b8f3188fbeef007",
