@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T04:56:01.505323+00:00",
+  "generated_at": "2026-08-10T05:09:15.181304+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -10228,7 +10228,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-09T04:42:25.932462+00:00"
+      "created_at": "2026-08-10T04:57:39.199936+00:00"
     },
     {
       "id": "50895c042a984b7d",
@@ -10264,7 +10264,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 04:46:02 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-09T04:42:25.420788+00:00"
+      "created_at": "2026-08-10T04:57:38.750817+00:00"
     },
     {
       "id": "8c6a0cad14626d6f",
@@ -11455,6 +11455,24 @@
       "created_at": "2026-07-23T06:13:01.714035+00:00"
     },
     {
+      "id": "f4c37adfebdecc61",
+      "banque": "La Banque Postale",
+      "commune": "Gex",
+      "departement": "01",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "Pays de Gex. Bureaux de poste : des fermetures à répétition qui suscitent des inquiétudes - Le Progrès",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOVWxHdDNQMDFPR3hWMEhlWDBOUXFaTGRwMm4tVHlBek0yNURuX19NQ1A4MHZ3Q0o2M0hOdDJIWlp2bmFsWFUtT0tJN2tjTnZ2YUZySUpmYzEyOHY2QjR3RDl5UlJHVkQwNWY1cDkzREM2c21KekF1WjFVOVFabl9vcGJNR1VpbFp0UURZaDl6d18weDhEMUdaOF9XVU1SMHdYUG9nMTUza3hwa2FqT2UyX2JOZk5FY1F0OGc?oc=5",
+      "titre": "Pays de Gex. Bureaux de poste : des fermetures à répétition qui suscitent des inquiétudes - Le Progrès",
+      "source": "Google News",
+      "date": "Sat, 08 Aug 2026 17:19:09 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-08-10T05:00:19.567970+00:00"
+    },
+    {
       "id": "aa3a3bd91c181610",
       "banque": "La Banque Postale",
       "commune": "Gex",
@@ -12190,7 +12208,7 @@
       "source": "Google News",
       "date": "Fri, 20 Jun 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-09T04:42:34.584504+00:00"
+      "created_at": "2026-08-10T04:57:45.594401+00:00"
     },
     {
       "id": "b80663fa38292743",
@@ -12280,7 +12298,7 @@
       "source": "Google News",
       "date": "Fri, 10 Jul 2026 10:12:00 GMT",
       "raison": "garde entrée/sortie: département source 44 incompatible avec la sortie 974",
-      "created_at": "2026-08-09T04:42:54.671228+00:00"
+      "created_at": "2026-08-10T04:58:00.535781+00:00"
     },
     {
       "id": "8c646081e1d69e81",
@@ -12460,7 +12478,7 @@
       "source": "Google News",
       "date": "Fri, 03 Jan 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-09T04:42:24.907269+00:00"
+      "created_at": "2026-08-10T04:57:38.289100+00:00"
     },
     {
       "id": "411db107f70f2387",
@@ -14204,6 +14222,19 @@
       "source": "Google News",
       "date": "Fri, 05 Jun 2026 07:00:00 GMT",
       "created_at": "2026-08-04T06:10:34.623634+00:00"
+    },
+    {
+      "id": "a401631f9e410a55",
+      "banque": "N/A",
+      "scope": "national",
+      "count": null,
+      "confidence": 0.6,
+      "evidence": "Article de droit/normalisation UMOA (transposition de loi bancaire) ; aucun signal de fermetures, regroupements ou transferts d'agences BANCAIRES physiques en France.",
+      "url": "https://www.financialafrik.com/2026/08/09/lintegration-normative-a-deux-vitesses-de-la-nouvelle-loi-uniforme-portant-reglementation-bancaire-dans-lumoa-2/",
+      "titre": "L'intégration normative à deux vitesses de la nouvelle loi uniforme portant réglementation bancaire dans l'UMOA | Financial Afrik",
+      "source": "Financial Afrik",
+      "date": "2026-08-09T14:38:36Z",
+      "created_at": "2026-08-10T05:00:42.069553+00:00"
     },
     {
       "id": "1933fff4d922c635",
@@ -25206,6 +25237,19 @@
       "created_at": "2026-07-22T08:56:16.150096+00:00"
     },
     {
+      "id": "24468b2f9328a578",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "La fermeture du pôle spectacle vivant de l’agence culturelle du Grand-Est, cas d’école des restrictions budgétaires qui touchent la culture - Le Monde.fr",
+      "extrait": "TITRE: La fermeture du pôle spectacle vivant de l’agence culturelle du Grand-Est, cas d’école des restrictions budgétaires qui touchent la culture - Le Monde.fr SOURCE: Google News DATE: Mon, 10 Aug 2026 04:00:55 GMT URL: https://news.google.com/rss/articles/CBMitAJBVV95cUxPd0otZDFJS2I5bFloaWxGWno0SzNwdDN3Nm1yV0U4dnF4Nk00V3djMXZEUnU3LW9tNU82eWlZaXg1QVZwNl9Rdjh6QWwwVmNCS2UxWmlwYllHZkZvZU1NbW9COTdoMUdzbWd3RTNGS2VMUnZSZTh1UDg0RFZlUmJJSXF0LVhvVkM4SGxlZWkwbldSM0k0R21MUW1DYjBIQlZxbDBlazZxaG9SX0sxU2ZuS",
+      "url": "https://news.google.com/rss/articles/CBMitAJBVV95cUxPd0otZDFJS2I5bFloaWxGWno0SzNwdDN3Nm1yV0U4dnF4Nk00V3djMXZEUnU3LW9tNU82eWlZaXg1QVZwNl9Rdjh6QWwwVmNCS2UxWmlwYllHZkZvZU1NbW9COTdoMUdzbWd3RTNGS2VMUnZSZTh1UDg0RFZlUmJJSXF0LVhvVkM4SGxlZWkwbldSM0k0R21MUW1DYjBIQlZxbDBlazZxaG9SX0sxU2ZuSzR5M3Z5UnQ1TFJlckJfRzA1SG9aZ0x2ejRjbUtDWkxyZHd4U2Zabm5sWmVsWGhjalEyNFoycU5yWVJTTVRTTVMxUnBEY29oaWNBTEQxOFdYWDRzR20weWJaZFNkS1pJcUhUSzgtd0prUjI3X1hacEpRTE9jX0Y5b1ZXZC1yRjB6eTh3OA?oc=5",
+      "source": "Google News",
+      "date": "Mon, 10 Aug 2026 04:00:55 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-10T05:00:18.849026+00:00"
+    },
+    {
       "id": "bf5c50c204e5de92",
       "banque": "Société Générale",
       "departement": "",
@@ -27780,6 +27824,19 @@
       "created_at": "2026-07-27T06:48:33.451655+00:00"
     },
     {
+      "id": "9484393369f0383c",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "\"Les habitués se languissaient et ont déjà réservé\"… Après trois mois de fermeture, cette brasserie proche d’Aimé-Giral va rouvrir ses portes au public - L'Indépendant",
+      "extrait": "TITRE: \"Les habitués se languissaient et ont déjà réservé\"… Après trois mois de fermeture, cette brasserie proche d’Aimé-Giral va rouvrir ses portes au public - L'Indépendant SOURCE: Google News DATE: Fri, 03 Jul 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMipAJBVV95cUxPWTVRN0cyZS0zSUJLMjdaazZ3ODlvT3czRkFCNmx1UWs1aGdoTmhic19ta2U1QkRKRUQ3U01xNHFHc0dzRTZlYzZQTW0xbVZFY210WVR0akN3aHE2RWVGdmYwanhURmUtT3VWUTFhZll6Wk45QTBJVHBMX2N0YUQ5N1E5M1JKZ3FSTlA3ZzJ0UDFsNVFZR0tlcUVmV3dNZ2VrLVNIZmt",
+      "url": "https://news.google.com/rss/articles/CBMipAJBVV95cUxPWTVRN0cyZS0zSUJLMjdaazZ3ODlvT3czRkFCNmx1UWs1aGdoTmhic19ta2U1QkRKRUQ3U01xNHFHc0dzRTZlYzZQTW0xbVZFY210WVR0akN3aHE2RWVGdmYwanhURmUtT3VWUTFhZll6Wk45QTBJVHBMX2N0YUQ5N1E5M1JKZ3FSTlA3ZzJ0UDFsNVFZR0tlcUVmV3dNZ2VrLVNIZmtDMW5YY1FoaGJETnRhcFVuRlVtcGNhSnZTNmdMX2JibWwxTDdlSkNteEdULXlobDdZSGNscE8tWDJWQkZqeFdWTU5NY0xhVGhuSEpGWlJTQzN2SUp5UUJxaEl3ME1GRjlxR3NJcGdaU3g1dlh5elc3YkhOTVFITTdCZE9ZZUU0?oc=5",
+      "source": "Google News",
+      "date": "Fri, 03 Jul 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-10T05:00:16.649370+00:00"
+    },
+    {
       "id": "f3805f7a48777c35",
       "banque": "Société Générale",
       "departement": "",
@@ -27947,6 +28004,58 @@
       "score": 3,
       "raison": "fermeture non publiée: hors fenêtre temporelle",
       "created_at": "2026-07-22T09:09:01.159244+00:00"
+    },
+    {
+      "id": "fc634cd12ab80552",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Mercato PSG : Terrible revirement pour Lucas Chevalier",
+      "extrait": "TITRE: Mercato PSG : Terrible revirement pour Lucas Chevalier SOURCE: Foot-sur7 DATE: 2026-08-10T00:43:00Z URL: https://www.foot-sur7.fr/771238-mercato-psg-terrible-revirement-pour-lucas-chevalier Lucas Chevalier se retrouve au cœur d'un nouveau tournant au PSG, où son avenir semblait pourtant de plus en plus bouché. Alors que Zion Suzuki arrive, le club de la capitale pousse désormais pour le départ de l'ancien gardien de but du LOSC. ‎‎Mercato PSG : La porte de sortie indiquée à Chevalier ‎Alo",
+      "url": "https://www.foot-sur7.fr/771238-mercato-psg-terrible-revirement-pour-lucas-chevalier",
+      "source": "Foot-sur7",
+      "date": "2026-08-10T00:43:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-10T05:00:34.086328+00:00"
+    },
+    {
+      "id": "239fcc08090fb4da",
+      "banque": "N/A",
+      "departement": "",
+      "titre": "L'intégration normative à deux vitesses de la nouvelle loi uniforme portant réglementation bancaire dans l'UMOA | Financial Afrik",
+      "extrait": "Article de droit/normalisation UMOA (transposition de loi bancaire) ; aucun signal de fermetures, regroupements ou transferts d'agences BANCAIRES physiques en France.",
+      "url": "https://www.financialafrik.com/2026/08/09/lintegration-normative-a-deux-vitesses-de-la-nouvelle-loi-uniforme-portant-reglementation-bancaire-dans-lumoa-2/",
+      "source": "Financial Afrik",
+      "date": "2026-08-09T14:38:36Z",
+      "score": 3,
+      "raison": "signaux: vague(N/A,national,count=None)",
+      "created_at": "2026-08-10T05:00:42.070706+00:00"
+    },
+    {
+      "id": "556e8ff6b65a5596",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "One, two, three, un Algérien arrive à Monaco",
+      "extrait": "TITRE: One, two, three, un Algérien arrive à Monaco SOURCE: foot01.com DATE: 2026-08-09T12:00:00Z URL: https://www.foot01.com/monaco/one-two-three-un-algerien-arrive-a-monaco Maghnes Akliouche ayant signé au PSG, l'AS Monaco s'est mise en quête d'un renfort au même poste et fonce sur Farès Ghedjemis, l'international algérien de Frosinone. Le Paris Saint-Germain a officialisé cette semaine la signature de Maghnes Akliouche moyennant 50 millions d'euros. L'AS Monaco a fait une belle affaire financ",
+      "url": "https://www.foot01.com/monaco/one-two-three-un-algerien-arrive-a-monaco",
+      "source": "foot01.com",
+      "date": "2026-08-09T12:00:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-10T05:00:48.063630+00:00"
+    },
+    {
+      "id": "5d04710dcb61ac2b",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Par orgueil la France boude les \" Shahed \" européens",
+      "extrait": "TITRE: Par orgueil la France boude les \" Shahed \" européens SOURCE: JForum DATE: 2026-08-09T08:15:14Z URL: https://www.jforum.fr/par-orgueil-la-france-boude-les-shahed-europeens.html Dans une grande salle, un slogan domine quatre lignes d'assemblage : \" Protéger nos démocraties \". Le même qui avait intrigué, en 2025, les visiteurs du Salon du Bourget, à Paris. Potentiellement exposée à une frappe adverse en cas de guerre, l'usine principale peut être remplacée par des dizaines de mini-usines. Ce",
+      "url": "https://www.jforum.fr/par-orgueil-la-france-boude-les-shahed-europeens.html",
+      "source": "JForum",
+      "date": "2026-08-09T08:15:14Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-10T05:00:49.994836+00:00"
     },
     {
       "id": "08c2512db2f797a0",
@@ -33563,6 +33672,84 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:43:41.960961+00:00"
+    },
+    {
+      "id": "5cd977ce66fa7a7c",
+      "banque": "LCL",
+      "departement": "",
+      "titre": "PSG Mercato : Lucas Chevalier détient la clé du prochain gros coup parisien ! - But! Football Club",
+      "extrait": "TITRE: PSG Mercato : Lucas Chevalier détient la clé du prochain gros coup parisien ! - But! Football Club SOURCE: But! Football Club DATE: 2026-08-09T20:20:00Z URL: https://www.butfootballclub.fr/1689821-psg-mercato-lucas-chevalier-detient-la-cle-du-prochain-gros-coup-parisien/ Le PSG se rapproche d'un accord avec Parme pour Zion Suzuki. Mais avant de finaliser l'opération, le club parisien doit encore régler une question majeure : l'avenir de Lucas Chevalier. Le PSG accélère pour Zion Suzuki. D",
+      "url": "https://www.butfootballclub.fr/1689821-psg-mercato-lucas-chevalier-detient-la-cle-du-prochain-gros-coup-parisien/",
+      "source": "But! Football Club",
+      "date": "2026-08-09T20:20:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-10T05:00:35.940512+00:00"
+    },
+    {
+      "id": "8edeeee5920d62ba",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Le Barça ne lâche pas Rodri, l'OL a ficelé une arrivée : les 14 infos mercato de dimanche",
+      "extrait": "TITRE: Le Barça ne lâche pas Rodri, l'OL a ficelé une arrivée : les 14 infos mercato de dimanche SOURCE: Eurosport DATE: 2026-08-09T19:27:15Z URL: https://www.eurosport.fr/football/transferts/2026-2027/transferts-rodri-lukaku-romero-ivanovic-ferran-torres-psg-ol-malick-fofana-les-13-infos-mercato-de-dimanche_sto23326578/story.shtml Barcola, un deal gagnant-gagnant à Liverpool ? Video credit: Eurosport Le FC Barcelone aurait formulé à Manchester City une deuxième offre pour son milieu de terrain ",
+      "url": "https://www.eurosport.fr/football/transferts/2026-2027/transferts-rodri-lukaku-romero-ivanovic-ferran-torres-psg-ol-malick-fofana-les-13-infos-mercato-de-dimanche_sto23326578/story.shtml",
+      "source": "Eurosport",
+      "date": "2026-08-09T19:27:15Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-10T05:00:37.308441+00:00"
+    },
+    {
+      "id": "256403334675a333",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Le PSG s'offre Lucas Digne !",
+      "extrait": "TITRE: Le PSG s'offre Lucas Digne ! SOURCE: Foot Mercato : Info Transferts Football - Actu Foot Transfert DATE: 2026-08-09T17:05:07Z URL: https://www.footmercato.net/a7685033005420929296-le-psg-soffre-lucas-digne En quête d'un renfort au poste de latéral gauche pour suppléer Nuno Mendes, le PSG a choisi de rapatrier Lucas Digne. Le club parisien vient d'officialiser le retour de l'international français, titulaire avec les Bleus lors de la Coupe du Monde 2026, en provenance d'Aston Villa pour le",
+      "url": "https://www.footmercato.net/a7685033005420929296-le-psg-soffre-lucas-digne",
+      "source": "Foot Mercato : Info Transferts Football - Actu Foot Transfert",
+      "date": "2026-08-09T17:05:07Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-10T05:00:39.285824+00:00"
+    },
+    {
+      "id": "c7935029cb097323",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "\" Nous aimerions louer \" : l'arnaque aux faux vacanciers qui cible les propriétaires de locations jusqu'en Charente",
+      "extrait": "TITRE: \" Nous aimerions louer \" : l'arnaque aux faux vacanciers qui cible les propriétaires de locations jusqu'en Charente SOURCE: CharenteLibre.fr DATE: 2026-08-09T13:39:25Z URL: https://www.charentelibre.fr/societe/nous-aimerions-louer-l-arnaque-aux-faux-vacanciers-qui-cible-les-proprietaires-de-locations-jusqu-en-charente-30205243.php \" Nous sommes deux personnes et nous aimerions connaître le montant de l'acompte nécessaire. \" La demande a tout de celle du vacancier prévoyant qui prépare tra",
+      "url": "https://www.charentelibre.fr/societe/nous-aimerions-louer-l-arnaque-aux-faux-vacanciers-qui-cible-les-proprietaires-de-locations-jusqu-en-charente-30205243.php",
+      "source": "CharenteLibre.fr",
+      "date": "2026-08-09T13:39:25Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-10T05:00:44.114163+00:00"
+    },
+    {
+      "id": "f892a58807ecf8b7",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "La Poste digitalise la validité des timbres : vers un système postal plus intelligent",
+      "extrait": "TITRE: La Poste digitalise la validité des timbres : vers un système postal plus intelligent SOURCE: Les Smartgrids DATE: 2026-08-09T12:33:00Z URL: https://les-smartgrids.fr/la-poste-digitalise-systeme-courrier/ La Poste transforme son service de timbres numériques en introduisant une validité limitée à six mois dès septembre 2026. Une évolution technologique qui intègre traçabilité, impression de dates limites et gestion en temps réel via l'espace client, révélant la digitalisation croissante d",
+      "url": "https://les-smartgrids.fr/la-poste-digitalise-systeme-courrier/",
+      "source": "Les Smartgrids",
+      "date": "2026-08-09T12:33:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-10T05:00:45.912896+00:00"
+    },
+    {
+      "id": "97e0c7ff18cbdd0a",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Lens tient un nouveau numéro 9, Meunier explique son départ du LOSC, Manchester United en contact avec Endrick ? Les 3 infos mercato du jour",
+      "extrait": "TITRE: Lens tient un nouveau numéro 9, Meunier explique son départ du LOSC, Manchester United en contact avec Endrick ? Les 3 infos mercato du jour SOURCE: Top mercato DATE: 2026-08-09T06:41:22Z URL: https://www.topmercato.com/2125121-lens-tient-un-nouveau-numero-9-meunier-explique-son-depart-du-losc-manchester-united-en-contact-avec-endrick-les-3-infos-mercato-du-jour/ Le RC Lens a bouclé l'arrivée d'un nouveau buteur, Thomas Meunier a expliqué son départ du LOSC, Manchester United aurait conta",
+      "url": "https://www.topmercato.com/2125121-lens-tient-un-nouveau-numero-9-meunier-explique-son-depart-du-losc-manchester-united-en-contact-avec-endrick-les-3-infos-mercato-du-jour/",
+      "source": "Top mercato",
+      "date": "2026-08-09T06:41:22Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-10T05:00:51.985004+00:00"
     },
     {
       "id": "55f3eefeea806ca3",
