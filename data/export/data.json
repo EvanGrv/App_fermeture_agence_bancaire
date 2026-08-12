@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-11T04:59:55.325876+00:00",
+  "generated_at": "2026-08-12T05:21:52.163434+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -1766,7 +1766,7 @@
     },
     {
       "region": "Bretagne",
-      "articles": 35,
+      "articles": 36,
       "fermetures": 15,
       "projets": 10,
       "fusions": 0,
@@ -1841,6 +1841,24 @@
       "nb_departements": 7
     },
     {
+      "region": "Normandie",
+      "articles": 14,
+      "fermetures": 7,
+      "projets": 2,
+      "fusions": 0,
+      "types": [
+        "Fermeture",
+        "Projet"
+      ],
+      "departements": [
+        "14",
+        "27",
+        "50",
+        "76"
+      ],
+      "nb_departements": 4
+    },
+    {
       "region": "Occitanie",
       "articles": 13,
       "fermetures": 1,
@@ -1860,24 +1878,6 @@
         "82"
       ],
       "nb_departements": 6
-    },
-    {
-      "region": "Normandie",
-      "articles": 13,
-      "fermetures": 7,
-      "projets": 2,
-      "fusions": 0,
-      "types": [
-        "Fermeture",
-        "Projet"
-      ],
-      "departements": [
-        "14",
-        "27",
-        "50",
-        "76"
-      ],
-      "nb_departements": 4
     },
     {
       "region": "Nouvelle-Aquitaine",
@@ -8775,6 +8775,13 @@
           "source": "Google News",
           "date": "Wed, 16 Apr 2025 07:00:00 GMT",
           "tier": "D"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMipwJBVV95cUxOQTgyZUlHOXJRWmxxMFpVUE4xREF5dWRlM29tMkpqVEdQcThic2hNSjdCdXZtWkZpT3BSSjBoY0p1ZGNOcTVfelRQTmRma3oxdGdOVjNKdVNZVWpYYjBGdDFZVjVqQWxJcFVfQVpaZFBnenVWZlFhNXR0WURXVVFsdXZKc1pnNTNxVXpUY25NTnRPbzdiLW9oWEZkY0FaYjYyM2kzQUo0TjdCVEpPQ1BSOHZjYi1tQnV1TkI4bGRkWHZMWG1GNndtTEN3elNOX1J0VTlQRWhKOVIzZ1Z1djE1aGFGMVlBWHF5V2daWWJGNEM3Ykgxa01rMVh3Mzl1MVZXeXhHM3d5NXU0bDlmQ3lYdXQ1SnAySXhYaTRaUTZXQXFNTXlLTS13?oc=5",
+          "titre": "« Avec la fermeture du Géant, les habitudes ont changé » : le Crédit mutuel va fermer cette agence de Saint-Brieuc - Ouest-France",
+          "source": "Google News",
+          "date": "Tue, 11 Aug 2026 17:41:01 GMT",
+          "tier": "D"
         }
       ],
       "controle_sirene": {
@@ -9480,6 +9487,13 @@
       "evidence_level": "presse+référentiel",
       "created_at": "2026-08-11T04:47:20.576480+00:00",
       "sources": [
+        {
+          "url": "https://actu.fr/normandie/criel-sur-mer_76192/le-bureau-de-poste-de-criel-sur-mer-va-fermer-ses-portes-definitivement-a-la-fin-de-lannee_64639970.html",
+          "titre": "Le bureau de Poste de Criel-sur-Mer va fermer ses portes définitivement à la fin de l’année",
+          "source": "Actu.fr",
+          "date": "Tue, 11 Aug 2026 06:30:02 +0200",
+          "tier": "C"
+        },
         {
           "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQVWlWWV9NVk5WMnlkSDNhR3VOcDBfeFo5TkJyRTFKY3RicGs3bllwcTJ0dVA2LVl5RGNVSkJWNHprWE5wSzRfSnlyWktpSmZEczlSNFVaaXdkOUY4V0J1MUh1clQ3d3lPSm5MbWVYZ1F4YmFqdUZURE9QbjFaMXJpTHVyR05LdXhmTnRCUGlFZXdnWFFTOGh4V25CRlpab1NEUDhPSnM5cVVGb1hRMkk5VVA1eXA3U1Z6d1kzcm9FUU9Xanc2c09ETzV4NjBtYXNQdm5PbzNtakVIUjBqNzN1eGxfaDU?oc=5",
           "titre": "Le bureau de Poste de Criel-sur-Mer va fermer ses portes définitivement à la fin de l’année - Actu.fr",
@@ -10323,7 +10337,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-11T04:44:02.132001+00:00"
+      "created_at": "2026-08-12T05:07:50.766039+00:00"
     },
     {
       "id": "50895c042a984b7d",
@@ -10359,7 +10373,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 04:46:02 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-11T04:44:01.682607+00:00"
+      "created_at": "2026-08-12T05:07:50.417642+00:00"
     },
     {
       "id": "8c6a0cad14626d6f",
@@ -12429,7 +12443,7 @@
       "source": "Google News",
       "date": "Fri, 20 Jun 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-11T04:44:09.528962+00:00"
+      "created_at": "2026-08-12T05:07:57.657881+00:00"
     },
     {
       "id": "b70960ea48a1a247",
@@ -12537,7 +12551,7 @@
       "source": "Google News",
       "date": "Fri, 10 Jul 2026 10:12:00 GMT",
       "raison": "garde entrée/sortie: département source 44 incompatible avec la sortie 974",
-      "created_at": "2026-08-11T04:44:26.472055+00:00"
+      "created_at": "2026-08-12T05:08:11.997956+00:00"
     },
     {
       "id": "8c646081e1d69e81",
@@ -12717,7 +12731,7 @@
       "source": "Google News",
       "date": "Fri, 03 Jan 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-11T04:44:01.160992+00:00"
+      "created_at": "2026-08-12T05:07:49.191083+00:00"
     },
     {
       "id": "411db107f70f2387",
@@ -13644,6 +13658,32 @@
       "source": "Google News",
       "date": "Tue, 12 Aug 2025 07:00:00 GMT",
       "created_at": "2026-07-22T09:09:53.100627+00:00"
+    },
+    {
+      "id": "8a313f6ef3874791",
+      "banque": "Crédit Mutuel",
+      "scope": "regional",
+      "count": null,
+      "confidence": 0.25,
+      "evidence": "Titre : « Avec la fermeture du Géant, les habitudes ont changé » : le Crédit mutuel va fermer cette… (aucune commune/point bancaire précisé dans l’extrait fourni)",
+      "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxQT0NDWElJRm03b3BwQXgwQjdZdlNsZXdoSE55UGZOa1hCWWhWQWZGRUpnYTVQdVVDZldieHk5RzU0QnRjS250Vlo5Wi1GWHNLVTRIcE4zWnFxOTZHNXVVN3YzTnFsckFDWml3aFBwd0RSZGxZRnRXcFBaS3lTNDlTTnR1a2toSnl1bGNiNjdSQ25udFVZT2FOeWR4X2hYVzViV0tCUVFkV2NQOGpBZG9reTJTSXpCMk9xQm9FRGotOU1XMDdnNVBsNEowS29OeEZTQW1VQXpwa1BPTWliTlZjMVV0enJzMWhHalBpc21BLUtYa2NYUVpmWlZjRkMyNXZLdzlHdEhR?oc=5",
+      "titre": "« Avec la fermeture du Géant, les habitudes ont changé » : le Crédit mutuel va fermer cette - Maville.com Saint Brieuc",
+      "source": "Google News",
+      "date": "Tue, 11 Aug 2026 18:41:00 GMT",
+      "created_at": "2026-08-12T05:10:50.785832+00:00"
+    },
+    {
+      "id": "43f6b85197c836be",
+      "banque": "Crédit Mutuel",
+      "scope": "regional",
+      "count": null,
+      "confidence": 0.35,
+      "evidence": "« le Crédit mutuel va fermer cette… » (article titré sur Maville.com Saint-Brieuc, sans commune d’agence ni localisation bancaire précise dans l’extrait fourni)",
+      "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxNMHpNNGE0U0piNFRIbXpHS0RHU2U2NXNYcGpsdlJTUERaY0QxTWhZaUxLallsZW03dWYzMmxUZlFveDkteGRQWnNkY1QzdFZ1MGY3MXhGSjdibUd1WldUQmh1VXlRXzBlX2Jaal9yZVFFMzc2SkpOTGltZTZpeC1BbVoyU1NETnFma2JCb21mQlp5RXZJeGlVWGhROHhXemtBT2tyZnAwSGtDRW85Z2l4MG5ZTzh1YWlmTkkzR0V1dUhwQUVfcHNrdC0yM3oxYi1UNVpGOVl0MjRJOVJOdXlFRk9sTjhSNUVqbkRsRjl5US1iZHZNYjJhZGZSU1F0bVdpWEFkN2ZB?oc=5",
+      "titre": "« Avec la fermeture du Géant, les habitudes ont changé » : le Crédit mutuel va fermer cette - Maville.com Saint Brieuc",
+      "source": "Google News",
+      "date": "Tue, 11 Aug 2026 18:41:00 GMT",
+      "created_at": "2026-08-12T05:10:52.935350+00:00"
     },
     {
       "id": "043ab60c008f8a26",
@@ -15310,6 +15350,32 @@
       "score": 4,
       "raison": "signaux: dept(Crédit Agricole,Lot,count=None,communes=)",
       "created_at": "2026-07-02T07:06:46.865370+00:00"
+    },
+    {
+      "id": "91b6a738bfb2e4ac",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Location saisonnière : ils prétendent vouloir réserver, ces faux touristes veulent en réalité arnaquer les propriétaires",
+      "extrait": "TITRE: Location saisonnière : ils prétendent vouloir réserver, ces faux touristes veulent en réalité arnaquer les propriétaires SOURCE: Boursorama DATE: 2026-08-11T13:19:48Z URL: https://www.boursorama.com/immobilier/actualites/location-saisonniere-ils-pretendent-vouloir-reserver-ces-faux-touristes-veulent-en-realite-arnaquer-les-proprietaires-8816b9cda3ebbcdeb74d76148e6ab9b3 Le propriétaire d'un studio à Angoulême a évité de peu le piège, le 28 juillet dernier, rapporte La Charente Libre . Il a",
+      "url": "https://www.boursorama.com/immobilier/actualites/location-saisonniere-ils-pretendent-vouloir-reserver-ces-faux-touristes-veulent-en-realite-arnaquer-les-proprietaires-8816b9cda3ebbcdeb74d76148e6ab9b3",
+      "source": "Boursorama",
+      "date": "2026-08-11T13:19:48Z",
+      "score": 4,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-12T05:11:32.647886+00:00"
+    },
+    {
+      "id": "6fa86d193aa6a767",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Le seul rachat qui compte vraiment pour Xbox ? Microsoft a peut-être enfin identifié son studio star : il surpasse ses attentes !",
+      "extrait": "TITRE: Le seul rachat qui compte vraiment pour Xbox ? Microsoft a peut-être enfin identifié son studio star : il surpasse ses attentes ! SOURCE: Jeuxvideo.com DATE: 2026-08-11T10:50:12Z URL: https://www.jeuxvideo.com/news/2098163/le-seul-rachat-qui-compte-vraiment-pour-xbox-microsoft-a-peut-etre-enfin-identifie-son-studio-star-il-surpasse-ses-attentes.htm Rentabilisation des investissements Microsoft : L'acquisition d'Activision Blizzard pour 69 milliards de dollars s'affirme comme un actif stab",
+      "url": "https://www.jeuxvideo.com/news/2098163/le-seul-rachat-qui-compte-vraiment-pour-xbox-microsoft-a-peut-etre-enfin-identifie-son-studio-star-il-surpasse-ses-attentes.htm",
+      "source": "Jeuxvideo.com",
+      "date": "2026-08-11T10:50:12Z",
+      "score": 4,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-12T05:11:40.994048+00:00"
     },
     {
       "id": "0578bc416a5ca5a7",
@@ -19381,17 +19447,43 @@
       "created_at": "2026-08-03T07:53:16.957808+00:00"
     },
     {
-      "id": "8d23889bcd020a84",
+      "id": "3e96606ed488bcd2",
       "banque": "La Banque Postale",
       "departement": "",
-      "titre": "Le bureau de Poste de Criel-sur-Mer va fermer ses portes définitivement à la fin de l’année",
-      "extrait": "TITRE: Le bureau de Poste de Criel-sur-Mer va fermer ses portes définitivement à la fin de l’année SOURCE: Actu.fr DATE: Tue, 11 Aug 2026 06:30:02 +0200 URL: https://actu.fr/normandie/criel-sur-mer_76192/le-bureau-de-poste-de-criel-sur-mer-va-fermer-ses-portes-definitivement-a-la-fin-de-lannee_64639970.html Dans quelques mois, le bureau de La Poste de Criel-sur-Mer va définitivement fermer ses portes. La municipalité cherche une solution pour maintenir un service minimum. Avant la fin de l’année",
-      "url": "https://actu.fr/normandie/criel-sur-mer_76192/le-bureau-de-poste-de-criel-sur-mer-va-fermer-ses-portes-definitivement-a-la-fin-de-lannee_64639970.html",
-      "source": "Actu.fr",
-      "date": "Tue, 11 Aug 2026 06:30:02 +0200",
+      "titre": "L’attaque d’un distributeur automatique de billets entraîne la fermeture temporaire de la Poste à Bons-en-Chablais - Le Messager",
+      "extrait": "TITRE: L’attaque d’un distributeur automatique de billets entraîne la fermeture temporaire de la Poste à Bons-en-Chablais - Le Messager SOURCE: Google News DATE: Tue, 11 Aug 2026 15:00:31 GMT URL: https://news.google.com/rss/articles/CBMixgFBVV95cUxQMEJPT05zeTNsVzNUZV92TjNEMGkySnFDVWgydG1NWnVJQmhMb09XcnlGNnVDMllHdmZuUmdaazYyRE1DUEFxSWNUTnc0czVOVmc2QVVnU3FUaVI3NlItX0VJYklKX0RObUJWT1c1M21zS2wxZEsxRDh3WnprVVBxSjNZVWRHY3VKXzIxOTJFejdaTnFCUFJrMVFsSjlrcXpLaVdWWWdzb1B1VVNiWHNMZ1lzUFY3RFBPb0ZmRVNhMmFObX",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQMEJPT05zeTNsVzNUZV92TjNEMGkySnFDVWgydG1NWnVJQmhMb09XcnlGNnVDMllHdmZuUmdaazYyRE1DUEFxSWNUTnc0czVOVmc2QVVnU3FUaVI3NlItX0VJYklKX0RObUJWT1c1M21zS2wxZEsxRDh3WnprVVBxSjNZVWRHY3VKXzIxOTJFejdaTnFCUFJrMVFsSjlrcXpLaVdWWWdzb1B1VVNiWHNMZ1lzUFY3RFBPb0ZmRVNhMmFObXRMdlE?oc=5",
+      "source": "Google News",
+      "date": "Tue, 11 Aug 2026 15:00:31 GMT",
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
-      "created_at": "2026-08-11T04:47:44.101861+00:00"
+      "created_at": "2026-08-12T05:10:57.960395+00:00"
+    },
+    {
+      "id": "f7139e6e5b35282d",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "L’attaque d’un distributeur automatique de billets entraîne la fermeture temporaire de la Poste à Bons-en-Chablais - lepaysgessien.lemessager.fr",
+      "extrait": "TITRE: L’attaque d’un distributeur automatique de billets entraîne la fermeture temporaire de la Poste à Bons-en-Chablais - lepaysgessien.lemessager.fr SOURCE: Google News DATE: Tue, 11 Aug 2026 15:00:31 GMT URL: https://news.google.com/rss/articles/CBMi0wFBVV95cUxOVVYyOXIwVXRwdWlIejhUd0hMXzBkbTV1eXBCUXdxcnhWRnRrUjBZaF9YLVJqNTVHWTRMT0IxZHVNeFd5VWlnazBEOWlJMUdiRVNESEIwcnBQMXIwMU5uUi1wQlFJMkRCWlJBWWpYMzhmcjdyYzM4U081QzU3cW1fd0J2LU0xTDlQVEpMTEd1RUdIb0hnSTRtY3N5WGpxWmxBSXI5NkV4Y0FNOGYwUFMyMUV6dDNfYV",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOVVYyOXIwVXRwdWlIejhUd0hMXzBkbTV1eXBCUXdxcnhWRnRrUjBZaF9YLVJqNTVHWTRMT0IxZHVNeFd5VWlnazBEOWlJMUdiRVNESEIwcnBQMXIwMU5uUi1wQlFJMkRCWlJBWWpYMzhmcjdyYzM4U081QzU3cW1fd0J2LU0xTDlQVEpMTEd1RUdIb0hnSTRtY3N5WGpxWmxBSXI5NkV4Y0FNOGYwUFMyMUV6dDNfYVpXc0lPLV9Id09yaVBRckZLVmFQcW1meWtFSTgw?oc=5",
+      "source": "Google News",
+      "date": "Tue, 11 Aug 2026 15:00:31 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-12T05:10:59.412722+00:00"
+    },
+    {
+      "id": "238c57a83e8c20fa",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Cette commune de Loire-Atlantique se mobilise contre la fermeture du bureau de poste - Ouest-France",
+      "extrait": "TITRE: Cette commune de Loire-Atlantique se mobilise contre la fermeture du bureau de poste - Ouest-France SOURCE: Google News DATE: Tue, 11 Aug 2026 14:13:00 GMT URL: https://news.google.com/rss/articles/CBMiiwJBVV95cUxNVk5PdmNabEJKRS1TOHdwZmRsbWN1RmdxYmV6NzJVR3hDbUZUMXlfQWVBWl9yR2pmTml4QzgtR2xsQWRodDJneDBocENCZXFpTVhneUNyc21zdWlZVTZ4OXZYdldDWEttVjFGUzZ1Tk53T1ZGOWNkTXFmWkxlSmxQcktrSURfVXNYeHlhNFRJdmVxUWU0ZEMyM3MtRGtsYjlqVjFGQ3NlXzVoSnVYQ0J6eklFZGVORXBsNi0yYTRjbGVOdWprSXI5b05JeFBBN1g4ODNMZVQxRW9",
+      "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNVk5PdmNabEJKRS1TOHdwZmRsbWN1RmdxYmV6NzJVR3hDbUZUMXlfQWVBWl9yR2pmTml4QzgtR2xsQWRodDJneDBocENCZXFpTVhneUNyc21zdWlZVTZ4OXZYdldDWEttVjFGUzZ1Tk53T1ZGOWNkTXFmWkxlSmxQcktrSURfVXNYeHlhNFRJdmVxUWU0ZEMyM3MtRGtsYjlqVjFGQ3NlXzVoSnVYQ0J6eklFZGVORXBsNi0yYTRjbGVOdWprSXI5b05JeFBBN1g4ODNMZVQxRW9mUlZzYTNtRWlISHBLX0tuQXp3Y1RBbThvQ29ISlJtVEh2OE8xVGRpQUtKV0ZqRDE2N2c?oc=5",
+      "source": "Google News",
+      "date": "Tue, 11 Aug 2026 14:13:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-12T05:10:54.334612+00:00"
     },
     {
       "id": "93968649b848a764",
@@ -24360,6 +24452,19 @@
       "created_at": "2026-08-09T04:45:28.029029+00:00"
     },
     {
+      "id": "76dc3fd419e13fac",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "La Poste ferme un de ses bureaux au Mans - lemans.maville.com",
+      "extrait": "TITRE: La Poste ferme un de ses bureaux au Mans - lemans.maville.com SOURCE: Google News DATE: Sat, 08 Aug 2026 11:01:00 GMT URL: https://news.google.com/rss/articles/CBMipAFBVV95cUxQcEtVb0RQVWxZWDhhWC01djNpeng3MmZVLVI5cUMyWEZrVGFWWl82Vl9ucV9UUW5XbEJ0RFhJY3B6QUY5bF9PNzVUNGNJeVNzSm5MMVp5T0twU0RSNkVJMjlUNDZNZjJXbzJDWTVXZjE0eDc2V3hyNFN5dk5DWE4tblptQTdpNlByZzRDV2RmOWExdzZ4NW5IOVRYVlpGdDBLZnhHMQ?oc=5 <a href=\"https://news.google.com/rss/articles/CBMipAFBVV95cUxQcEtVb0RQVWxZWDhhWC01djNpeng3MmZVLVI5cUM",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQcEtVb0RQVWxZWDhhWC01djNpeng3MmZVLVI5cUMyWEZrVGFWWl82Vl9ucV9UUW5XbEJ0RFhJY3B6QUY5bF9PNzVUNGNJeVNzSm5MMVp5T0twU0RSNkVJMjlUNDZNZjJXbzJDWTVXZjE0eDc2V3hyNFN5dk5DWE4tblptQTdpNlByZzRDV2RmOWExdzZ4NW5IOVRYVlpGdDBLZnhHMQ?oc=5",
+      "source": "Google News",
+      "date": "Sat, 08 Aug 2026 11:01:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-12T05:10:55.958145+00:00"
+    },
+    {
       "id": "c0234b41b64ae0b2",
       "banque": "Société Générale",
       "departement": "",
@@ -28871,6 +28976,84 @@
       "created_at": "2026-07-22T09:09:01.159244+00:00"
     },
     {
+      "id": "770dceda25d3d425",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Démocrates progressistes et modérés s'affrontent dans le Wisconsin et Minnesota",
+      "extrait": "TITRE: Démocrates progressistes et modérés s'affrontent dans le Wisconsin et Minnesota SOURCE: 20minutes DATE: 2026-08-12T00:27:54Z URL: https://www.20minutes.fr/monde/4238801-20260812-etats-unis-wisconsin-minnesota-nouvelle-bataille-entre-democrates-progressistes-moderes-primaires En Caroline du Sud, les républicains votent également pour choisir leur candidat au Sénat après la mort de Lindsey Graham, avec sa sœur Darline Graham donnée favorite grâce au soutien de Donald Trump. A moins de trois",
+      "url": "https://www.20minutes.fr/monde/4238801-20260812-etats-unis-wisconsin-minnesota-nouvelle-bataille-entre-democrates-progressistes-moderes-primaires",
+      "source": "20minutes",
+      "date": "2026-08-12T00:27:54Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-12T05:11:13.539224+00:00"
+    },
+    {
+      "id": "0442a0a994526ed2",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Le pari des Big Tech sur l'IA commence-t-il à paraître plus risqué ? La frénésie des dépenses d'investissement menace désormais la stabilité financière des ménages et des fonds de retraite",
+      "extrait": "TITRE: Le pari des Big Tech sur l'IA commence-t-il à paraître plus risqué ? La frénésie des dépenses d'investissement menace désormais la stabilité financière des ménages et des fonds de retraite SOURCE: Developpez.com DATE: 2026-08-11T22:43:05Z URL: https://intelligence-artificielle.developpez.com/actu/386077/Le-pari-des-Big-Tech-sur-l-IA-commence-t-il-a-paraitre-plus-risque-La-frenesie-des-depenses-d-investissement-menace-desormais-la-stabilite-financiere-des-menages-et-des-fonds-de-retraite/ ",
+      "url": "https://intelligence-artificielle.developpez.com/actu/386077/Le-pari-des-Big-Tech-sur-l-IA-commence-t-il-a-paraitre-plus-risque-La-frenesie-des-depenses-d-investissement-menace-desormais-la-stabilite-financiere-des-menages-et-des-fonds-de-retraite/",
+      "source": "Developpez.com",
+      "date": "2026-08-11T22:43:05Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-12T05:11:15.465878+00:00"
+    },
+    {
+      "id": "918a5228f36633e6",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Toulouse : le record de transfert battu deux fois en un seul mercato ? Comment le TFC s'est transformé en machine à vendre",
+      "extrait": "TITRE: Toulouse : le record de transfert battu deux fois en un seul mercato ? Comment le TFC s'est transformé en machine à vendre SOURCE: Top mercato DATE: 2026-08-11T17:48:20Z URL: https://www.topmercato.com/2125438-toulouse-le-record-de-transfert-battu-deux-fois-en-un-seul-mercato-comment-le-tfc-sest-transforme-en-machine-a-vendre/ Lors de ce mercato estival, le TFC pourrait battre deux fois son record de transfert. Top Mercato s'est penché sur la gestion du club haut-garonnais, qui s'est réce",
+      "url": "https://www.topmercato.com/2125438-toulouse-le-record-de-transfert-battu-deux-fois-en-un-seul-mercato-comment-le-tfc-sest-transforme-en-machine-a-vendre/",
+      "source": "Top mercato",
+      "date": "2026-08-11T17:48:20Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-12T05:11:18.512014+00:00"
+    },
+    {
+      "id": "912d2c5a6811ae5a",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "\" En Gironde, l'indécence de La Poste éclate au grand jour. \" Billet d'un facteur parisien",
+      "extrait": "TITRE: \" En Gironde, l'indécence de La Poste éclate au grand jour. \" Billet d'un facteur parisien SOURCE: Révolution Permanente DATE: 2026-08-11T15:05:26Z URL: https://www.revolutionpermanente.fr/En-Gironde-l-indecence-de-La-Poste-eclate-au-grand-jour-Billet-d-un-facteur-parisien Après les incendies en Gironde, la Poste force ses salariés à récupérer les heures ratées. Une décision indécente, qui est seulement la pointe émergée de l'iceberg selon un facteur parisien. Depuis quelques jours, une n",
+      "url": "https://www.revolutionpermanente.fr/En-Gironde-l-indecence-de-La-Poste-eclate-au-grand-jour-Billet-d-un-facteur-parisien",
+      "source": "Révolution Permanente",
+      "date": "2026-08-11T15:05:26Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-12T05:11:27.078774+00:00"
+    },
+    {
+      "id": "39c431c057fcdf12",
+      "banque": "BNP Paribas",
+      "departement": "",
+      "titre": "DU FRANC CFA À L'ECO : Évolution et renforcement de la servitude volontaire !",
+      "extrait": "TITRE: DU FRANC CFA À L'ECO : Évolution et renforcement de la servitude volontaire ! SOURCE: afriquesenlutte.org DATE: 2026-08-11T12:52:21Z URL: https://www.afriquesenlutte.org/communiques-luttes-et-debats/livres-etudes-debats/article/du-franc-cfa-a-l-eco-evolution-et-renforcement-de-la-servitude-volontaire Lorsque le Président français Emmanuel Macron annonce la \" réforme historique majeure 1 \" du Franc CFA en précisant que \" l'ECO verra le jour en 2020 \", il a implicitement reconnu que le fran",
+      "url": "https://www.afriquesenlutte.org/communiques-luttes-et-debats/livres-etudes-debats/article/du-franc-cfa-a-l-eco-evolution-et-renforcement-de-la-servitude-volontaire",
+      "source": "afriquesenlutte.org",
+      "date": "2026-08-11T12:52:21Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-12T05:11:36.176873+00:00"
+    },
+    {
+      "id": "cd39d37546fc810c",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Haute-Loire. À l'hôtel-restaurant de la Poste, la cuisine traditionnelle a du bon : \" Ici c'est familial ! \"",
+      "extrait": "TITRE: Haute-Loire. À l'hôtel-restaurant de la Poste, la cuisine traditionnelle a du bon : \" Ici c'est familial ! \" SOURCE: Le Progrès DATE: 2026-08-11T10:00:00Z URL: https://www.leprogres.fr/economie/2026/08/11/a-l-hotel-restaurant-de-la-poste-la-cuisine-traditionnelle-a-du-bon-ici-c-est-familial Le lundi c'est relâche. Enfin presque. Hervé a commencé à 6 heures pour la mise en place des petits-déjeuners. À notre arrivée, il s'affaire à revisser les roulettes un peu tremblantes du chariot à fro",
+      "url": "https://www.leprogres.fr/economie/2026/08/11/a-l-hotel-restaurant-de-la-poste-la-cuisine-traditionnelle-a-du-bon-ici-c-est-familial",
+      "source": "Le Progrès",
+      "date": "2026-08-11T10:00:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-12T05:11:44.280939+00:00"
+    },
+    {
       "id": "4d79f1af43ce4177",
       "banque": "La Banque Postale",
       "departement": "",
@@ -28882,6 +29065,19 @@
       "score": 3,
       "raison": "fermeture non publiée: garde entrée/sortie: fermeture postale temporaire ou circonstancielle",
       "created_at": "2026-08-11T04:47:55.213809+00:00"
+    },
+    {
+      "id": "62a31c30a5201742",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Cette commune de Loire-Atlantique se mobilise contre la fermeture du bureau de poste",
+      "extrait": "TITRE: Cette commune de Loire-Atlantique se mobilise contre la fermeture du bureau de poste SOURCE: ouest-france.fr DATE: 2026-08-11 URL: https://www.ouest-france.fr/pays-de-la-loire/donges-44480/cette-commune-de-loire-atlantique-se-mobilise-contre-la-fermeture-du-bureau-de-poste-3013873c-958e-11f1-9573-eb68c72d47d1",
+      "url": "https://www.ouest-france.fr/pays-de-la-loire/donges-44480/cette-commune-de-loire-atlantique-se-mobilise-contre-la-fermeture-du-bureau-de-poste-3013873c-958e-11f1-9573-eb68c72d47d1",
+      "source": "ouest-france.fr",
+      "date": "2026-08-11",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-12T05:11:06.594667+00:00"
     },
     {
       "id": "799f477a0d5aec9d",
@@ -29064,6 +29260,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-08-10T05:00:48.063630+00:00"
+    },
+    {
+      "id": "d903a8bfc2a7cc3b",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "\" Au PSG, ça ne passera pas \", Akliouche se fait déjà secouer",
+      "extrait": "TITRE: \" Au PSG, ça ne passera pas \", Akliouche se fait déjà secouer SOURCE: foot01.com DATE: 2026-08-09T09:45:37Z URL: https://www.foot01.com/paris/au-psg-ca-ne-passera-pas-akliouche-se-fait-deja-secouer Remplaçant sans jouer à la Coupe du monde, Maghnès Akliouche va devoir vite se mettre en évidence à Paris pour ne pas avoir le même rôle d'éternel joker au PSG. C'est la première recrue de l'été, et cela compte toujours aux yeux des supporters. Avant même Lucas Digne, qui avait trouvé un accord",
+      "url": "https://www.foot01.com/paris/au-psg-ca-ne-passera-pas-akliouche-se-fait-deja-secouer",
+      "source": "foot01.com",
+      "date": "2026-08-09T09:45:37Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-12T05:11:22.663738+00:00"
     },
     {
       "id": "5d04710dcb61ac2b",
@@ -32524,6 +32733,32 @@
       "created_at": "2026-08-03T07:51:44.481966+00:00"
     },
     {
+      "id": "b64ea33af46bfe26",
+      "banque": "Crédit Mutuel",
+      "departement": "",
+      "titre": "« Avec la fermeture du Géant, les habitudes ont changé » : le Crédit mutuel va fermer cette - Maville.com Saint Brieuc",
+      "extrait": "« le Crédit mutuel va fermer cette… » (article titré sur Maville.com Saint-Brieuc, sans commune d’agence ni localisation bancaire précise dans l’extrait fourni)",
+      "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxNMHpNNGE0U0piNFRIbXpHS0RHU2U2NXNYcGpsdlJTUERaY0QxTWhZaUxLallsZW03dWYzMmxUZlFveDkteGRQWnNkY1QzdFZ1MGY3MXhGSjdibUd1WldUQmh1VXlRXzBlX2Jaal9yZVFFMzc2SkpOTGltZTZpeC1BbVoyU1NETnFma2JCb21mQlp5RXZJeGlVWGhROHhXemtBT2tyZnAwSGtDRW85Z2l4MG5ZTzh1YWlmTkkzR0V1dUhwQUVfcHNrdC0yM3oxYi1UNVpGOVl0MjRJOVJOdXlFRk9sTjhSNUVqbkRsRjl5US1iZHZNYjJhZGZSU1F0bVdpWEFkN2ZB?oc=5",
+      "source": "Google News",
+      "date": "Tue, 11 Aug 2026 18:41:00 GMT",
+      "score": 2,
+      "raison": "signaux: vague(Crédit Mutuel,regional,count=None)",
+      "created_at": "2026-08-12T05:10:52.936217+00:00"
+    },
+    {
+      "id": "cbb854e86321e80d",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Est-ce que les banques ouvrent le vendredi 14 et le samedi 15 août ? Horaires des bureaux, transferts et distributeurs - Demócrata",
+      "extrait": "TITRE: Est-ce que les banques ouvrent le vendredi 14 et le samedi 15 août ? Horaires des bureaux, transferts et distributeurs - Demócrata SOURCE: Google News DATE: Tue, 11 Aug 2026 15:11:00 GMT URL: https://news.google.com/rss/articles/CBMizgFBVV95cUxNMU4yUXZOd0JYbmdHMEJsZXBRWmFfcE9nNVRIbE5rV2NKbU1LTlNSbW9iTk9Yam1TODIxYXVJS0pPV2QtT3FYYmFvS1ZHUXhkRkkwQ05FUkNGRXRFRDhyUGRKdmI1cUFCN2QxZzNkZzFJbDh3LW1GR1F6b2xINlk2TU42V3BfV1N2anhYS3hUcmxKNk04RnZadUtMOXU0RzBoWDhISzRNWXdUcHlDM0o0Qm5uSXdDa200S1RlVTVSSG0x",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNMU4yUXZOd0JYbmdHMEJsZXBRWmFfcE9nNVRIbE5rV2NKbU1LTlNSbW9iTk9Yam1TODIxYXVJS0pPV2QtT3FYYmFvS1ZHUXhkRkkwQ05FUkNGRXRFRDhyUGRKdmI1cUFCN2QxZzNkZzFJbDh3LW1GR1F6b2xINlk2TU42V3BfV1N2anhYS3hUcmxKNk04RnZadUtMOXU0RzBoWDhISzRNWXdUcHlDM0o0Qm5uSXdDa200S1RlVTVSSG0xM2EyNVZZSGxrSF8zZ9IBzgFBVV95cUxNMU4yUXZOd0JYbmdHMEJsZXBRWmFfcE9nNVRIbE5rV2NKbU1LTlNSbW9iTk9Yam1TODIxYXVJS0pPV2QtT3FYYmFvS1ZHUXhkRkkwQ05FUkNGRXRFRDhyUGRKdmI1cUFCN2QxZzNkZzFJbDh3LW1GR1F6b2xINlk2TU42V3BfV1N2anhYS3hUcmxKNk04RnZadUtMOXU0RzBoWDhISzRNWXdUcHlDM0o0Qm5uSXdDa200S1RlVTVSSG0xM2EyNVZZSGxrSF8zZw?oc=5",
+      "source": "Google News",
+      "date": "Tue, 11 Aug 2026 15:11:00 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-12T05:10:34.780227+00:00"
+    },
+    {
       "id": "ff0fc70b82242ab3",
       "banque": "Société Générale",
       "departement": "",
@@ -34771,6 +35006,201 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:43:41.960961+00:00"
+    },
+    {
+      "id": "70b134640daa04e4",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Burkina Faso : les autorités actualisent le cadre réglementaire du secteur postal",
+      "extrait": "TITRE: Burkina Faso : les autorités actualisent le cadre réglementaire du secteur postal SOURCE: Agence Ecofin DATE: 2026-08-12T02:58:56Z URL: https://www.agenceecofin.com/actualites-numerique/1208-140862-burkina-faso-les-autorites-actualisent-le-cadre-reglementaire-du-secteur-postal (Agence Ecofin) - Face au recul du courrier traditionnel et à l'essor du commerce électronique, le secteur postal doit adapter ses modèles. Au Burkina Faso, les autorités révisent le cadre réglementaire pour accompa",
+      "url": "https://www.agenceecofin.com/actualites-numerique/1208-140862-burkina-faso-les-autorites-actualisent-le-cadre-reglementaire-du-secteur-postal",
+      "source": "Agence Ecofin",
+      "date": "2026-08-12T02:58:56Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-12T05:11:10.008741+00:00"
+    },
+    {
+      "id": "6215b6feed6924d2",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Bénin : Après le renversement de Patrice Talon, retour au passé ou aller de l'avant ?",
+      "extrait": "TITRE: Bénin : Après le renversement de Patrice Talon, retour au passé ou aller de l'avant ? SOURCE: afriquesenlutte.org DATE: 2026-08-11T21:19:19Z URL: https://www.afriquesenlutte.org/afrique-de-l-ouest/benin/article/benin-apres-le-renversement-de-patrice-talon-retour-au-passe-ou-aller-de-l La question du départ de Patrice Talon du pouvoir soit par renversement révolutionnaire ou par les urnes et son remplacement par un autre pouvoir se pose et fait débat au sein de ce qu'il est convenu d'appel",
+      "url": "https://www.afriquesenlutte.org/afrique-de-l-ouest/benin/article/benin-apres-le-renversement-de-patrice-talon-retour-au-passe-ou-aller-de-l",
+      "source": "afriquesenlutte.org",
+      "date": "2026-08-11T21:19:19Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-12T05:11:17.243051+00:00"
+    },
+    {
+      "id": "d28f1bcd426d0676",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Vosges. Sécheresse : une opération exceptionnelle de citernage à Sapois pour réalimenter le réservoir d'eau potable",
+      "extrait": "TITRE: Vosges. Sécheresse : une opération exceptionnelle de citernage à Sapois pour réalimenter le réservoir d'eau potable SOURCE: Vosges Matin DATE: 2026-08-11T17:30:00Z URL: https://www.vosgesmatin.fr/environnement/2026/08/11/secheresse-une-operation-exceptionnelle-de-citernage-a-sapois-pour-realimenter-le-reservoir-d-eau-potable Dans un contexte de forte tension sur la ressource en eau, c'est une opération exceptionnelle de citernage qui vient d'avoir lieu à Sapois du côté du réservoir de Men",
+      "url": "https://www.vosgesmatin.fr/environnement/2026/08/11/secheresse-une-operation-exceptionnelle-de-citernage-a-sapois-pour-realimenter-le-reservoir-d-eau-potable",
+      "source": "Vosges Matin",
+      "date": "2026-08-11T17:30:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-12T05:11:21.036737+00:00"
+    },
+    {
+      "id": "94c52c88b256acbb",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Tanzanie : 20 milliards de dollars pour passer du transit au raffinage du pétrole brut ougandais",
+      "extrait": "TITRE: Tanzanie : 20 milliards de dollars pour passer du transit au raffinage du pétrole brut ougandais SOURCE: La Tribune DATE: 2026-08-11T15:00:04Z URL: https://www.latribune.fr/article/afrique/12274108887394/tanzanie-20-milliards-pour-passer-du-transit-au-raffinage-du-petrole-brut-ougandais La mise en valeur du pétrole ougandais recompose les infrastructures énergétiques d'Afrique de l'Est. Autour d'EACOP, la Tanzanie et l'Ouganda cherchent désormais à intégrer davantage de transformation, de",
+      "url": "https://www.latribune.fr/article/afrique/12274108887394/tanzanie-20-milliards-pour-passer-du-transit-au-raffinage-du-petrole-brut-ougandais",
+      "source": "La Tribune",
+      "date": "2026-08-11T15:00:04Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-12T05:11:25.434621+00:00"
+    },
+    {
+      "id": "4a403a65289392e9",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Accord total trouvé, Zion Suzuki va signer au PSG !",
+      "extrait": "TITRE: Accord total trouvé, Zion Suzuki va signer au PSG ! SOURCE: ParisTeam.fr DATE: 2026-08-11T12:39:00Z URL: https://www.paristeam.fr/actu-psg/transferts/accord-total-trouve-zion-suzuki-va-signer-au-psg-72400 Zion Suzuki va être un joueur du PSG dans les heures à venir. Parme et le PSG ont trouvé un accord pour le transfert du gardien japonais âgé de 23 ans. Une opération qui s'est bouclée ce mardi matin contre un chèque de 35 M€, nous apprend L'Equipe. De son côté, le joueur s'est déjà mis e",
+      "url": "https://www.paristeam.fr/actu-psg/transferts/accord-total-trouve-zion-suzuki-va-signer-au-psg-72400",
+      "source": "ParisTeam.fr",
+      "date": "2026-08-11T12:39:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-12T05:11:37.588527+00:00"
+    },
+    {
+      "id": "aa1639db4bce2228",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Yérim Sow: de l'informatique à un empire présent dans 16 pays, le parcours d'un bâtisseur africain - Presse et Portail d'Informations Générales",
+      "extrait": "TITRE: Yérim Sow: de l'informatique à un empire présent dans 16 pays, le parcours d'un bâtisseur africain - Presse et Portail d'Informations Générales SOURCE: ivorian.net DATE: 2026-08-11T12:04:07Z URL: https://ivorian.net/yerim-sow-de-linformatique-a-un-empire-present-dans-16-pays-le-parcours-dun-batisseur-africain/ Avec des actifs estimés à 293 milliards de FCFA et un groupe présent dans une quinzaine de pays, Yérim Sow fait partie des entrepreneurs les plus influents du continent. Immobilier,",
+      "url": "https://ivorian.net/yerim-sow-de-linformatique-a-un-empire-present-dans-16-pays-le-parcours-dun-batisseur-africain/",
+      "source": "ivorian.net",
+      "date": "2026-08-11T12:04:07Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-12T05:11:28.849979+00:00"
+    },
+    {
+      "id": "1b66599a90cb99f9",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "BVMAC : la Banque Postale du Congo lance sa filiale de société de bourse | Financial Afrik",
+      "extrait": "TITRE: BVMAC : la Banque Postale du Congo lance sa filiale de société de bourse | Financial Afrik SOURCE: Financial Afrik DATE: 2026-08-11T10:49:44Z URL: https://www.financialafrik.com/2026/08/11/bvmac-la-banque-postale-du-congo-lance-sa-filiale-de-societe-de-bourse/ La Banque Postale du Congo (BPC) a officiellement lancé, le 7 août 2026, sa filiale dédiée aux activités de société de bourse. Baptisée BPC Bourse, cette nouvelle entité marque une nouvelle étape dans la stratégie de diversification",
+      "url": "https://www.financialafrik.com/2026/08/11/bvmac-la-banque-postale-du-congo-lance-sa-filiale-de-societe-de-bourse/",
+      "source": "Financial Afrik",
+      "date": "2026-08-11T10:49:44Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-12T05:11:39.839980+00:00"
+    },
+    {
+      "id": "09e08e3dceb13c20",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Transfert : le Paris Saint-Germain s'offre un gardien à 35 millions d'euros",
+      "extrait": "TITRE: Transfert : le Paris Saint-Germain s'offre un gardien à 35 millions d'euros SOURCE: CNEWS DATE: 2026-08-11T10:23:41Z URL: https://www.cnews.fr/sport/2026-08-11/transfert-le-paris-saint-germain-soffre-un-gardien-35-millions-deuros-1903436 Le PSG a déboursé 35 millions d'euros pour s'offrir les services de Zion Suzuki, le gardien de but de Parma (Serie A). Le club de la capitale pourrait renvoyer le joueur en prêt dès cette saison 2026-2027. Paris mise sur l'avenir. Après avoir officialisé ",
+      "url": "https://www.cnews.fr/sport/2026-08-11/transfert-le-paris-saint-germain-soffre-un-gardien-35-millions-deuros-1903436",
+      "source": "CNEWS",
+      "date": "2026-08-11T10:23:41Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-12T05:11:42.149431+00:00"
+    },
+    {
+      "id": "99136e8f5489bab3",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "CSG remporte une commande auprès du groupe polonais Dezamet",
+      "extrait": "TITRE: CSG remporte une commande auprès du groupe polonais Dezamet SOURCE: BFM Bourse DATE: 2026-08-11T10:03:00Z URL: https://www.tradingsat.com/actualites/informations-societes/csg-remporte-une-commande-aupres-du-groupe-polonais-dezamet-1168420.html (Zonebourse.com) - CSG annonce la signature avec le groupe polonais Dezamet, filiale de Polska Grupa Zbrojeniowa (PGZ), d'un accord d'une valeur supérieure à 100 MEUR portant sur la fourniture de composants destinés à la production de munitions d'ar",
+      "url": "https://www.tradingsat.com/actualites/informations-societes/csg-remporte-une-commande-aupres-du-groupe-polonais-dezamet-1168420.html",
+      "source": "BFM Bourse",
+      "date": "2026-08-11T10:03:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-12T05:11:30.541673+00:00"
+    },
+    {
+      "id": "3570d224cb2857e1",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Mercato - Accord entre le PSG et Parme pour Zion Suzuki",
+      "extrait": "TITRE: Mercato - Accord entre le PSG et Parme pour Zion Suzuki SOURCE: PSG Canal Supporters DATE: 2026-08-11T09:50:14Z URL: https://canal-supporters.com/mercato-accord-entre-le-psg-et-parme-pour-zion-suzuki/ Après plusieurs jours de négociations, le PSG et Parme sont parvenus à un accord pour le transfert de Zion Suzuki. Le gardien japonais s'engagera pour cinq ans avec le club parisien. Après Lucas Digne et Maghnes Akliouche, le PSG est sur le point de boucler une troisième arrivée en l'espace ",
+      "url": "https://canal-supporters.com/mercato-accord-entre-le-psg-et-parme-pour-zion-suzuki/",
+      "source": "PSG Canal Supporters",
+      "date": "2026-08-11T09:50:14Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-12T05:11:48.931367+00:00"
+    },
+    {
+      "id": "d4b96bf2bd09dbfe",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Accord total trouvé entre le PSG et Parme pour Zion Suzuki !",
+      "extrait": "TITRE: Accord total trouvé entre le PSG et Parme pour Zion Suzuki ! SOURCE: Foot Mercato : Info Transferts Football - Actu Foot Transfert DATE: 2026-08-11T09:45:02Z URL: https://www.footmercato.net/a7584116053513926652-accord-total-trouve-entre-le-psg-et-parme-pour-zion-suzuki Après plusieurs jours de négociations avec Parme, le Paris Saint-Germain s'est enfin mis d'accord avec le club italien pour l'arrivée du portier japonais, Zion Suzuki. Le montant du transfert est estimé à environ 35 millio",
+      "url": "https://www.footmercato.net/a7584116053513926652-accord-total-trouve-entre-le-psg-et-parme-pour-zion-suzuki",
+      "source": "Foot Mercato : Info Transferts Football - Actu Foot Transfert",
+      "date": "2026-08-11T09:45:02Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-12T05:11:50.264044+00:00"
+    },
+    {
+      "id": "74c21226c1206416",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Attractivité et fidélisation dans la fonction publique : relever le défi des postes vacants et des métiers en tension",
+      "extrait": "La fonction publique est confrontée à une évolution profonde de son environnement. Longtemps considérée comme un employeur offrant stabilité, sécurité de l'emploi et sens de l'intérêt général, elle peine désormais à attirer et à conserver les compétences dont elle a besoin. Les difficultés de recrutement touchent aujourd'hui des secteurs aussi divers que la santé, le numérique, l'ingénierie, la police municipale, la petite enfance ou encore les métiers de contrôle et d'inspection. Les collectivi",
+      "url": "https://www.agoravox.fr/tribune-libre/article/attractivite-et-fidelisation-dans-270970",
+      "source": "Agora Vox",
+      "date": "2026-08-11T09:43:14Z",
+      "score": 2,
+      "raison": "score préfiltre bas (-2)",
+      "created_at": "2026-08-12T05:11:37.786636+00:00"
+    },
+    {
+      "id": "21bf3e276b31fd76",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "La politique étrangère et de sécurité commune (PESC) - Touteleurope.eu",
+      "extrait": "TITRE: La politique étrangère et de sécurité commune (PESC) - Touteleurope.eu SOURCE: Toute l'Europe.eu DATE: 2026-08-11T09:27:25Z URL: https://www.touteleurope.eu/fonctionnement-de-l-ue/la-politique-etrangere-et-de-securite-commune-pesc/ * encourager l'intégration de tous les pays dans l'économie mondiale, y compris par la suppression progressive des obstacles au commerce international ; En 2016, la Stratégie globale de l'Union européenne (SGUE) prend la place de la SES, avec une approche englo",
+      "url": "https://www.touteleurope.eu/fonctionnement-de-l-ue/la-politique-etrangere-et-de-securite-commune-pesc/",
+      "source": "Toute l'Europe.eu",
+      "date": "2026-08-11T09:27:25Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-12T05:11:47.229721+00:00"
+    },
+    {
+      "id": "1b24eb63709c816b",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Accord entre le PSG et Parme pour Suzuki, les discussions se poursuivent pour Godts et Torres",
+      "extrait": "TITRE: Accord entre le PSG et Parme pour Suzuki, les discussions se poursuivent pour Godts et Torres SOURCE: RMC SPORT DATE: 2026-08-11T09:20:56Z URL: https://rmcsport.bfmtv.com/football/transferts/accord-entre-le-psg-et-parme-pour-suzuki-les-discussions-se-poursuivent-pour-godts-et-torres_AV-202608110241.html A la veille de la Supercoupe d'Europe, le PSG poursuit son mercato estival à un rythme soutenu. Le Paris Saint-Germain continue d'avancer sur plusieurs dossiers. Le club de la capitale a n",
+      "url": "https://rmcsport.bfmtv.com/football/transferts/accord-entre-le-psg-et-parme-pour-suzuki-les-discussions-se-poursuivent-pour-godts-et-torres_AV-202608110241.html",
+      "source": "RMC SPORT",
+      "date": "2026-08-11T09:20:56Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-12T05:11:54.140301+00:00"
+    },
+    {
+      "id": "3e99af5e80a3ef9f",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "PSG : Chevalier convoque les dirigeants et renvoie Suzuki en Italie",
+      "extrait": "TITRE: PSG : Chevalier convoque les dirigeants et renvoie Suzuki en Italie SOURCE: foot01.com DATE: 2026-08-11T06:40:00Z URL: https://www.foot01.com/paris/psg-chevalier-convoque-les-dirigeants-et-renvoie-suzuki-en-italie Le PSG a décidé de mettre le paquet pour recruter le gardien japonais Zion Suzuki, quitte à créer une grosse embrouille à ce poste entre les trois portiers du club. Dans cette semaine bien plus musclée que les précédentes pour le Paris Saint-Germain, les choses vont aussi s'acti",
+      "url": "https://www.foot01.com/paris/psg-chevalier-convoque-les-dirigeants-et-renvoie-suzuki-en-italie",
+      "source": "foot01.com",
+      "date": "2026-08-11T06:40:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-12T05:11:55.758707+00:00"
     },
     {
       "id": "341a5d0e2d58e810",
@@ -37761,6 +38191,19 @@
       "score": 1,
       "raison": "signaux: vague(SNCF / guichets en gare,unknown,count=None)",
       "created_at": "2026-07-22T09:01:37.909422+00:00"
+    },
+    {
+      "id": "862d4cd4910f1290",
+      "banque": "Crédit Mutuel",
+      "departement": "",
+      "titre": "« Avec la fermeture du Géant, les habitudes ont changé » : le Crédit mutuel va fermer cette - Maville.com Saint Brieuc",
+      "extrait": "Titre : « Avec la fermeture du Géant, les habitudes ont changé » : le Crédit mutuel va fermer cette… (aucune commune/point bancaire précisé dans l’extrait fourni)",
+      "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxQT0NDWElJRm03b3BwQXgwQjdZdlNsZXdoSE55UGZOa1hCWWhWQWZGRUpnYTVQdVVDZldieHk5RzU0QnRjS250Vlo5Wi1GWHNLVTRIcE4zWnFxOTZHNXVVN3YzTnFsckFDWml3aFBwd0RSZGxZRnRXcFBaS3lTNDlTTnR1a2toSnl1bGNiNjdSQ25udFVZT2FOeWR4X2hYVzViV0tCUVFkV2NQOGpBZG9reTJTSXpCMk9xQm9FRGotOU1XMDdnNVBsNEowS29OeEZTQW1VQXpwa1BPTWliTlZjMVV0enJzMWhHalBpc21BLUtYa2NYUVpmWlZjRkMyNXZLdzlHdEhR?oc=5",
+      "source": "Google News",
+      "date": "Tue, 11 Aug 2026 18:41:00 GMT",
+      "score": 1,
+      "raison": "signaux: vague(Crédit Mutuel,regional,count=None)",
+      "created_at": "2026-08-12T05:10:50.786950+00:00"
     },
     {
       "id": "352fff25ad5fc454",
