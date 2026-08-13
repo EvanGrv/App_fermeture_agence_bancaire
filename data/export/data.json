@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-12T05:21:52.163434+00:00",
+  "generated_at": "2026-08-13T05:24:43.863726+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -471,7 +471,7 @@
       "nom": "Manche",
       "region": "Normandie",
       "count": 1,
-      "total_agences": 72,
+      "total_agences": 74,
       "precise_count": 1,
       "unlocated_count": 0,
       "estimated_count": 1
@@ -615,7 +615,7 @@
       "nom": "Pyrénées-Orientales",
       "region": "Occitanie",
       "count": 0,
-      "total_agences": 86,
+      "total_agences": 87,
       "precise_count": 0,
       "unlocated_count": 0,
       "estimated_count": 0
@@ -9872,6 +9872,60 @@
       "created_at": "2026-07-22T09:07:20.038631+00:00"
     },
     {
+      "id": "88a98b8d05bc1156",
+      "banque": "La Banque Postale",
+      "commune": "Mansigné",
+      "departement": "72",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "« On mérite quand même quelques égards » : au Mans, la riposte s’organise après la fermeture d’un bureau de poste - Ouest-France",
+      "url": "https://news.google.com/rss/articles/CBMipwJBVV95cUxNU1V0OVBNV1I0bjd3aFVHYVBGczBoOEhVVEo0aVhoc2NMQ2xQaENlVXlFS2JsbHJuX0FSMm5wTG9raTVOREVtdlQyUWtlT043SGhfNGpla3cwdmRBM1FPcWphOG5RVmJFNXVSN2hsOUlDRmZ2MDRiU3FRMmJmYjJYamx4aENLX1V6RnVmVGlaem1MdzQ0WXVkdG5WMjczbmdPQ1BKamxyZGhqQW1kSDZnSFJhYXhWVHRkbUZmUXR4LTdIY1BTYU9USnJBLXN6M2VOZlhnNHhJV09vNVVkb2g1SFRFRjVNX3NvYTBhRDRNbmtlLTgwN0xYeGl4UzRyQ0VuMVktRnNUSmtsQWpDN3hSLXpFSGVxMU9laWNvRDM2dFFIT2FFTGFZ?oc=5",
+      "titre": "« On mérite quand même quelques égards » : au Mans, la riposte s’organise après la fermeture d’un bureau de poste - Ouest-France",
+      "source": "Google News",
+      "date": "Wed, 12 Aug 2026 17:17:01 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-08-13T05:14:21.951901+00:00"
+    },
+    {
+      "id": "7096f561bb79e2fa",
+      "banque": "La Banque Postale",
+      "commune": "Mansigné",
+      "departement": "72",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "« On mérite quand même quelques égards » : au Mans, la riposte s’organise après la fermeture d’un bureau de poste - - La Baule.maville.com",
+      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNbUp6QWhJdl9nc0NPakl5MmNURlNwc2cwSE1KdUZ5TVN4cWk1SUxudGlFblFVVUpBWlRiRTVhQjc5NndpaGMxVDAxSGdnamN0X09BNkhJRUpqTzA0Y0FBYmtJMHJvNzZSZG1odThDMzM1YzJpVDdvdUJtRUtrcFRTZUh4dG41SEdLX2VnRFplaTZyYWtJcDFkNS1OeVdZZldsN2N2T2NiU1pzNTktbUl0MVRvc3oxQmo0OVhoVU5QRG5Ld1lJV0VRTkZNRzlOancxc3VhT1FDdWlQMkVGSEdiTjlKZ0YxMGx6cUZaaWpYYmlRVFNGdTVCdnVVR2RIZw?oc=5",
+      "titre": "« On mérite quand même quelques égards » : au Mans, la riposte s’organise après la fermeture d’un bureau de poste - - La Baule.maville.com",
+      "source": "Google News",
+      "date": "Wed, 12 Aug 2026 17:17:00 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-08-13T05:14:22.403919+00:00"
+    },
+    {
+      "id": "bc8147f7f14d2900",
+      "banque": "La Banque Postale",
+      "commune": "Mansigné",
+      "departement": "72",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "« On mérite quand même quelques égards » : au Mans, la riposte s’organise après la fermeture d’un bureau de poste - Maville Angers",
+      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOOG5nZ0NRdkhEUERZRDdqX251TUNiUlMyVm93XzFmd3pvS3Z2NWl0Y0JBWHpLVjBEZS1QQWRReGRuTW1KRDE5NGliVGdkRDVvUldQckY4SHhPN3ExdzZoRVV0VkU2WGVBN1pLZDF5WldBZ3pzZTkzS2EzTzJnMDN5eGFDTHdwTjFhN0lXbUVwM0pabndzdndwN2QwbmZGNWViRUVhRjJzZmRtZ0tMRDM0Ml9TZTR2Ry1ZR3JaRGltWmhBV3YxV2dwVThSZEdEbjFEdHlCaVU1MUhwal9nQXdqcjh5V3QtbHZvYnEyTTRuM2dFX05SRlBsd245Q1Y?oc=5",
+      "titre": "« On mérite quand même quelques égards » : au Mans, la riposte s’organise après la fermeture d’un bureau de poste - Maville Angers",
+      "source": "Google News",
+      "date": "Wed, 12 Aug 2026 17:17:00 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-08-13T05:14:23.367732+00:00"
+    },
+    {
       "id": "a7f9e1ce252267a7",
       "banque": "La Banque Postale",
       "commune": "Montauroux",
@@ -10337,7 +10391,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-12T05:07:50.766039+00:00"
+      "created_at": "2026-08-13T05:10:57.723632+00:00"
     },
     {
       "id": "50895c042a984b7d",
@@ -10373,7 +10427,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 04:46:02 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-12T05:07:50.417642+00:00"
+      "created_at": "2026-08-13T05:10:57.247566+00:00"
     },
     {
       "id": "8c6a0cad14626d6f",
@@ -12443,7 +12497,7 @@
       "source": "Google News",
       "date": "Fri, 20 Jun 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-12T05:07:57.657881+00:00"
+      "created_at": "2026-08-13T05:11:05.736818+00:00"
     },
     {
       "id": "b70960ea48a1a247",
@@ -12551,7 +12605,7 @@
       "source": "Google News",
       "date": "Fri, 10 Jul 2026 10:12:00 GMT",
       "raison": "garde entrée/sortie: département source 44 incompatible avec la sortie 974",
-      "created_at": "2026-08-12T05:08:11.997956+00:00"
+      "created_at": "2026-08-13T05:11:25.013061+00:00"
     },
     {
       "id": "8c646081e1d69e81",
@@ -12731,7 +12785,7 @@
       "source": "Google News",
       "date": "Fri, 03 Jan 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-12T05:07:49.191083+00:00"
+      "created_at": "2026-08-13T05:10:56.774664+00:00"
     },
     {
       "id": "411db107f70f2387",
@@ -13684,6 +13738,19 @@
       "source": "Google News",
       "date": "Tue, 11 Aug 2026 18:41:00 GMT",
       "created_at": "2026-08-12T05:10:52.935350+00:00"
+    },
+    {
+      "id": "bce0c7ea4ccc7332",
+      "banque": "Crédit Mutuel",
+      "scope": "unknown",
+      "count": null,
+      "confidence": 0.35,
+      "evidence": "Titre : « le Crédit mutuel va fermer cette » (commune/lieu non précisés dans l’extrait fourni).",
+      "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPd0ppcXB4QXUyaGtydVkwZXdLX2E0N2xDbkl6WnRrSWdhQVdJbWF3c2ZncVVFQVlfdWdSV2t4ajFETDNCRU5GZXMwNzJkZVJvZy1EWXpKb2JrT29EVk1QNm9HOUItN0FXWldZeUdjcmZRVlhwWFRab1lqYWFZcVNwc2phZ1FXbFVvWlNVWFZWUTJvSXJCWTl3WGV2N2pwNEt5N2QzUXhnVlhMTklldnNlRVBmcV9BMkdHbkt5ak9mT0xjYkZxT2tzLVgwUDl4ZHc3THcwanQyT1hfeFpuQm0xeFQxX3hzNVhLc09pNkdzVGtPampiejg0d0thS2gtaHZ5SU9BdndR?oc=5",
+      "titre": "« Avec la fermeture du Géant, les habitudes ont changé » : le Crédit mutuel va fermer cette - saint-brieuc.maville.com",
+      "source": "Google News",
+      "date": "Tue, 11 Aug 2026 18:41:00 GMT",
+      "created_at": "2026-08-13T05:14:19.073463+00:00"
     },
     {
       "id": "043ab60c008f8a26",
@@ -17014,6 +17081,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-07-22T09:06:44.313932+00:00"
+    },
+    {
+      "id": "6225fc7f9d946141",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "« On mérite quand même quelques égards » : au Mans, la riposte s’organise après la fermeture d’un bureau de poste - - La Roche sur Yon.maville.com",
+      "extrait": "TITRE: « On mérite quand même quelques égards » : au Mans, la riposte s’organise après la fermeture d’un bureau de poste - - La Roche sur Yon.maville.com SOURCE: Google News DATE: Wed, 12 Aug 2026 18:17:00 GMT URL: https://news.google.com/rss/articles/CBMihgJBVV95cUxOTmcwZENBNDhnYk5oMUE4RGFYeDBhdlNqeEpqSjhwUWxQdGhNMy1VQ3ctOW1RdVJGWWsxTUYyNGNJME5XT1JJVlAyak96andJcUR3ZjVaNE5mNUtBQVZtaklLcU9VYWFxYXNGRVgyTzJnVXpodWZlSWViLTUyN1VUTlhRSlpaSEpEZzNXZTJsNjhXWlp1RmU1R0R6b3FVdU9vWGJORnJQS0VZVG5IOElYQWFUNlRs",
+      "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxOTmcwZENBNDhnYk5oMUE4RGFYeDBhdlNqeEpqSjhwUWxQdGhNMy1VQ3ctOW1RdVJGWWsxTUYyNGNJME5XT1JJVlAyak96andJcUR3ZjVaNE5mNUtBQVZtaklLcU9VYWFxYXNGRVgyTzJnVXpodWZlSWViLTUyN1VUTlhRSlpaSEpEZzNXZTJsNjhXWlp1RmU1R0R6b3FVdU9vWGJORnJQS0VZVG5IOElYQWFUNlRsWnUzN19TVXVPcVpNSVloNlVsaVB1eC1feEdVUUFEalMzT05USXhGNEY3ZjNKSHI3TVhVdkt3bTNJTkp1bGJWeDN1SGtlYVQ3cUUxSlFxXy1B?oc=5",
+      "source": "Google News",
+      "date": "Wed, 12 Aug 2026 18:17:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-13T05:14:27.783190+00:00"
     },
     {
       "id": "50fb7fc6e95bae74",
@@ -28976,6 +29056,162 @@
       "created_at": "2026-07-22T09:09:01.159244+00:00"
     },
     {
+      "id": "59dcf55cbe2340ed",
+      "banque": "HSBC",
+      "departement": "",
+      "titre": "Souveraineté financière, euro numérique et roaming: l'UE cherche une alternative",
+      "extrait": "TITRE: Souveraineté financière, euro numérique et roaming: l'UE cherche une alternative SOURCE: euronews DATE: 2026-08-13T05:05:14Z URL: https://fr.euronews.com/business/2026/08/13/souverainete-financiere-euro-numerique-et-roaming-lue-cherche-une-alternative L'Europe dépense des milliards d'euros par an en paiements par carte, presque entièrement en dehors de systèmes européens. La majorité des achats par carte passe par Visa ou Mastercard, deux entreprises américaines qui dominent les paiements",
+      "url": "https://fr.euronews.com/business/2026/08/13/souverainete-financiere-euro-numerique-et-roaming-lue-cherche-une-alternative",
+      "source": "euronews",
+      "date": "2026-08-13T05:05:14Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-13T05:14:37.496957+00:00"
+    },
+    {
+      "id": "7c827787bf3817fb",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "\"Nos corps ne sont pas vos frontières\" - MIGREUROP",
+      "extrait": "TITRE: \"Nos corps ne sont pas vos frontières\" - MIGREUROP SOURCE: migreurop.org DATE: 2026-08-12T19:47:39Z URL: http://migreurop.org/article3611.html Du 3 au 9 août 2026, plusieurs membres du réseau Migreurop se sont rassemblé·es avec plus de 70 organisations au sein du \"Village Migration\" à Cotonou (Bénin), dans le cadre du Forum Social Mondial 2026. Des riches échanges lors de cette rencontre transnationale est né ce manifeste pour la liberté de circulation, initié et rédigé par des survivant·",
+      "url": "http://migreurop.org/article3611.html",
+      "source": "migreurop.org",
+      "date": "2026-08-12T19:47:39Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-13T05:14:39.445149+00:00"
+    },
+    {
+      "id": "46f6bf5ec01f9864",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "La France a une piste de ski de 620 m enfermée sous un hall en Moselle : elle doit être réfrigérée même les jours où personne ne vient",
+      "extrait": "TITRE: La France a une piste de ski de 620 m enfermée sous un hall en Moselle : elle doit être réfrigérée même les jours où personne ne vient SOURCE: Sciencepost DATE: 2026-08-12T18:27:55Z URL: https://sciencepost.fr/la-france-a-une-piste-de-ski-de-620-m-enfermee-sous-un-hall-en-moselle-elle-doit-etre-refrigeree-meme-les-jours-ou-personne-ne-vient/ Impossible d'éteindre le froid, même le mardi après-midi où le parking est vide. Au SnowWorld d'Amnéville, en Moselle, la piste de ski couverte de 62",
+      "url": "https://sciencepost.fr/la-france-a-une-piste-de-ski-de-620-m-enfermee-sous-un-hall-en-moselle-elle-doit-etre-refrigeree-meme-les-jours-ou-personne-ne-vient/",
+      "source": "Sciencepost",
+      "date": "2026-08-12T18:27:55Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-13T05:14:41.810057+00:00"
+    },
+    {
+      "id": "1e7f7f83ed67971f",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Clôture Paris : le marché plie à nouveau",
+      "extrait": "TITRE: Clôture Paris : le marché plie à nouveau SOURCE: Bourse Direct DATE: 2026-08-12T16:17:16Z URL: https://www.boursedirect.fr/fr/actualites/categorie/marche-francais/cloture-paris-le-marche-plie-a-nouveau-boursier-5f434948b6837b67993c7a6bde1913cf2a972a9b Après un beau parcours de 8 séances consécutives de hausse, le marché parisien confirme le repli amorcé hier. A la fermeture des marchés, le CAC 40 redonne -0,46%, revenant à 8.674 points. Le luxe, bien représenté dans la ventilation indicie",
+      "url": "https://www.boursedirect.fr/fr/actualites/categorie/marche-francais/cloture-paris-le-marche-plie-a-nouveau-boursier-5f434948b6837b67993c7a6bde1913cf2a972a9b",
+      "source": "Bourse Direct",
+      "date": "2026-08-12T16:17:16Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-13T05:14:53.411903+00:00"
+    },
+    {
+      "id": "d8820373bdf020f7",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Journal des Transferts : Ferran Torres au PSG, Monaco ne veut plus de Pogba, une réflexion pour Messi, Rulli quitte l'OM...",
+      "extrait": "TITRE: Journal des Transferts : Ferran Torres au PSG, Monaco ne veut plus de Pogba, une réflexion pour Messi, Rulli quitte l'OM... SOURCE: Maxifoot DATE: 2026-08-12T16:01:07Z URL: https://www.maxifoot.fr/football/article-65643.htm Ferran Torres au PSG, Monaco ne veut plus de Pogba, une réflexion pour Messi, Rulli quitte l'OM, aucune offre pour Camavinga... Voici le Top 5 des gros dossiers mercato du jour à ne pas manquer. Découvrez aussi le Télégramme Foot Transfert, pour ne rien rater de l'actu",
+      "url": "https://www.maxifoot.fr/football/article-65643.htm",
+      "source": "Maxifoot",
+      "date": "2026-08-12T16:01:07Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-13T05:14:56.790241+00:00"
+    },
+    {
+      "id": "504689c4a4e6519c",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Clôture Paris : le marché plie à nouveau",
+      "extrait": "TITRE: Clôture Paris : le marché plie à nouveau SOURCE: Boursier.com DATE: 2026-08-12T16:00:03Z URL: https://www.boursier.com/indices/actualites/news/cloture-paris-le-marche-plie-a-nouveau-991952.html Clôture Paris : le marché plie à nouveau Clôture Paris : le marché plie à nouveau (Boursier.com) -- Après un beau parcours de 8 séances consécutives de hausse, le marché parisien confirme le repli amorcé hier. A la fermeture des marchés, le CAC 40 redonne -0,46%, revenant à 8.674 points. Le luxe, b",
+      "url": "https://www.boursier.com/indices/actualites/news/cloture-paris-le-marche-plie-a-nouveau-991952.html",
+      "source": "Boursier.com",
+      "date": "2026-08-12T16:00:03Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-13T05:14:54.904393+00:00"
+    },
+    {
+      "id": "9df400add3a39277",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Mercato : L'OM et la Juventus négocient un accord surprise !",
+      "extrait": "TITRE: Mercato : L'OM et la Juventus négocient un accord surprise ! SOURCE: Foot-sur7 DATE: 2026-08-12T14:33:00Z URL: https://www.foot-sur7.fr/771849-mercato-lom-et-la-juventus-negocient-un-accord-surprise L'OM et la Juventus ont entamé des discussions autour d'une transaction inattendue. Les deux clubs négocieraient actuellement le transfert de Michele Di Gregorio. Mercato OM : Michele Di Gregorio pour remplacer Geronimo Rulli Le poste de gardien reste un chantier prioritaire à l'Olympique de M",
+      "url": "https://www.foot-sur7.fr/771849-mercato-lom-et-la-juventus-negocient-un-accord-surprise",
+      "source": "Foot-sur7",
+      "date": "2026-08-12T14:33:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-13T05:15:00.023297+00:00"
+    },
+    {
+      "id": "9d8950744b10e818",
+      "banque": "LCL",
+      "departement": "",
+      "titre": "PSG Mercato : Luis Enrique ravive une énorme piste pour le Stade Rennais !",
+      "extrait": "TITRE: PSG Mercato : Luis Enrique ravive une énorme piste pour le Stade Rennais ! SOURCE: But! Football Club DATE: 2026-08-12T12:00:00Z URL: https://www.butfootballclub.fr/1690346-psg-mercato-luis-enrique-ravive-une-piste-en-or-pour-le-stade-rennais/ Pisté par le Stade Rennais en début de mercato, Lucas Chevalier (24 ans) pourrait finalement être placé sur le marché des transferts par le PSG. Lucas Chevalier pourrait de nouveau animer le marché des gardiens. Arrivé au PSG l'été dernier avec de g",
+      "url": "https://www.butfootballclub.fr/1690346-psg-mercato-luis-enrique-ravive-une-piste-en-or-pour-le-stade-rennais/",
+      "source": "But! Football Club",
+      "date": "2026-08-12T12:00:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-13T05:15:02.902215+00:00"
+    },
+    {
+      "id": "37bf8158c391c1e1",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Les canicules de cet été ont fait grimper votre éco-anxiété ? Voici comment reconnaître et soulager cette angoisse selon un psychologue",
+      "extrait": "TITRE: Les canicules de cet été ont fait grimper votre éco-anxiété ? Voici comment reconnaître et soulager cette angoisse selon un psychologue SOURCE: Femme Actuelle DATE: 2026-08-12T10:25:21Z URL: https://www.femmeactuelle.fr/sante/sante-pratique/eco-anxiete-definition-symptomes-et-solutions-2162344 Contraction d'écologie, au sens de science qui étudie les relations des êtres vivants avec leur environnement et d'anxiété, ce terme a été inventé en 1997 par Véronique Lapaige, médecin-chercheur be",
+      "url": "https://www.femmeactuelle.fr/sante/sante-pratique/eco-anxiete-definition-symptomes-et-solutions-2162344",
+      "source": "Femme Actuelle",
+      "date": "2026-08-12T10:25:21Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-13T05:15:06.067078+00:00"
+    },
+    {
+      "id": "310a7b2cbcf8e324",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Violences et actes anti-chrétiens : l'Allemagne figurerait parmi les pays les plus touchés en Europe",
+      "extrait": "TITRE: Violences et actes anti-chrétiens : l'Allemagne figurerait parmi les pays les plus touchés en Europe SOURCE: Epoch Times DATE: 2026-08-12T09:55:25Z URL: https://www.epochtimes.fr/violences-et-actes-anti-chretiens-lallemagne-figurerait-parmi-les-pays-les-plus-touches-en-europe-3324328.html Violences et actes anti-chrétiens en Allemagne - Le Café Stay, situé dans le quartier de Reudnitz à Leipzig, a fermé ses portes fin juin après trois ans d'activité. Il était géré par l'Église libre chrét",
+      "url": "https://www.epochtimes.fr/violences-et-actes-anti-chretiens-lallemagne-figurerait-parmi-les-pays-les-plus-touches-en-europe-3324328.html",
+      "source": "Epoch Times",
+      "date": "2026-08-12T09:55:25Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-13T05:15:08.371306+00:00"
+    },
+    {
+      "id": "f10493c69e792097",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "OM : un gardien paraguayen pour remplacer Rulli ? - Sport.fr",
+      "extrait": "TITRE: OM : un gardien paraguayen pour remplacer Rulli ? - Sport.fr SOURCE: Sport.fr DATE: 2026-08-12T09:28:08Z URL: https://www.sport.fr/football/om-un-gardien-paraguayen-pour-remplacer-rulli-1473500.shtm L'été de l'Olympique de Marseille est jusqu'ici resté vierge de toute recrue. Une anomalie pour un club censé reconstruire un effectif dégraissé à marche forcée. Mais le dossier du gardien de but pourrait bien accélérer les choses dans les prochains jours -- et pour cause : Gerónimo Rulli semb",
+      "url": "https://www.sport.fr/football/om-un-gardien-paraguayen-pour-remplacer-rulli-1473500.shtm",
+      "source": "Sport.fr",
+      "date": "2026-08-12T09:28:08Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-13T05:15:10.313980+00:00"
+    },
+    {
+      "id": "bdb9bf2767231c3b",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Purges au sommet : pourquoi Vladimir Poutine liquide son appareil d'État",
+      "extrait": "TITRE: Purges au sommet : pourquoi Vladimir Poutine liquide son appareil d'État SOURCE: Agora Vox DATE: 2026-08-12T07:40:31Z URL: https://www.agoravox.fr/tribune-libre/article/purges-au-sommet-pourquoi-vladimir-271207 \"Au Kremlin aujourd'hui, si vous regardez le patron dans les yeux pendant plus de deux secondes, on considère que vous cherchez à deviner sa pensée. Et deviner sa pensée, c'est déjà vouloir le remplacer\", glissait récemment sous couvert d'anonymat un ancien cadre de l'administratio",
+      "url": "https://www.agoravox.fr/tribune-libre/article/purges-au-sommet-pourquoi-vladimir-271207",
+      "source": "Agora Vox",
+      "date": "2026-08-12T07:40:31Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-13T05:15:04.158960+00:00"
+    },
+    {
       "id": "770dceda25d3d425",
       "banque": "Société Générale",
       "departement": "",
@@ -32005,6 +32241,32 @@
       "created_at": "2026-06-25T15:35:18.829792+00:00"
     },
     {
+      "id": "4b31a4b00d0369d3",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Le compte courant bancaire devant la chambre commerciale : la fusion des créances, la clôture du compte et le revirement du 11 septembre 2024 (2023-2026) - Kohen Avocats",
+      "extrait": "TITRE: Le compte courant bancaire devant la chambre commerciale : la fusion des créances, la clôture du compte et le revirement du 11 septembre 2024 (2023-2026) - Kohen Avocats SOURCE: Google News DATE: Wed, 12 Aug 2026 10:44:00 GMT URL: https://news.google.com/rss/articles/CBMi4wFBVV95cUxQNGZuSGR3MGtEanNJQjhQX1ZoMTNZMmhJRFNMS0dxUElDYjlJSERlZktjSE13bzVrR3M5WXhzeUJwYl9ZNk9xVWhhWTZidnRoRHhJRlY0M212NWRnb0RvRWtfUzNPeEI5NTBrUkFEbWRBSXN2N01IYnpacVFIdjAwX2o5UGlvSUVLaUxHdlFVQWc4N3JFbGhmdzZEWUlKajJlVWt2d",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQNGZuSGR3MGtEanNJQjhQX1ZoMTNZMmhJRFNMS0dxUElDYjlJSERlZktjSE13bzVrR3M5WXhzeUJwYl9ZNk9xVWhhWTZidnRoRHhJRlY0M212NWRnb0RvRWtfUzNPeEI5NTBrUkFEbWRBSXN2N01IYnpacVFIdjAwX2o5UGlvSUVLaUxHdlFVQWc4N3JFbGhmdzZEWUlKajJlVWt2dmpLVHAzT0xWcmtWdTdYSjZJOV9tVmhvODd5aThJTzZpRzhIQ1ZrLUZ4MDRWYktSQjQ0S2JsZ1AzQ0pxVUdidw?oc=5",
+      "source": "Google News",
+      "date": "Wed, 12 Aug 2026 10:44:00 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-13T05:14:20.965890+00:00"
+    },
+    {
+      "id": "3816f52161b4f98f",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "En Seine-et-Marne, ces gens du voyage expulsés sans cesse cherchent un terrain pour accueillir un malade à domicile - Actu.fr",
+      "extrait": "TITRE: En Seine-et-Marne, ces gens du voyage expulsés sans cesse cherchent un terrain pour accueillir un malade à domicile - Actu.fr SOURCE: Google News DATE: Wed, 12 Aug 2026 09:34:09 GMT URL: https://news.google.com/rss/articles/CBMiiAJBVV95cUxQZzR3TmtQSE1tbGdlOHVPa3g5LWxTNEVwcWJGbkpQRmpVa2E2R0FqWnZHaWRhVVBLcF9tTEsxQVJhTXNxTnI3LWkyZjIwWU1hdTJLR19sTVFnNmlXa3hScVlETkhmX19SdzFhT0pXajEzYVVoY0R6bTZDa3lNVXJSRnd5T1UtMzZMdUpEc3U4X1JFbkN2dUhmbC1VZDFHc3RFSGVJYkllQjFuR1pOUE43WS1kR1RxTmF1X3p3YlNHbjdZMXVlN",
+      "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQZzR3TmtQSE1tbGdlOHVPa3g5LWxTNEVwcWJGbkpQRmpVa2E2R0FqWnZHaWRhVVBLcF9tTEsxQVJhTXNxTnI3LWkyZjIwWU1hdTJLR19sTVFnNmlXa3hScVlETkhmX19SdzFhT0pXajEzYVVoY0R6bTZDa3lNVXJSRnd5T1UtMzZMdUpEc3U4X1JFbkN2dUhmbC1VZDFHc3RFSGVJYkllQjFuR1pOUE43WS1kR1RxTmF1X3p3YlNHbjdZMXVlNEc2UUdXellVOFJiUTNCVFJRalc4S1VnV3BxM1pvcDgtMVp2ZlZybFpzU1AySVFUZkVKZnBXTlVGaTdPLWt3YzRnTVE?oc=5",
+      "source": "Google News",
+      "date": "Wed, 12 Aug 2026 09:34:09 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-13T05:14:25.243697+00:00"
+    },
+    {
       "id": "31c2c8340ef5a7ae",
       "banque": "Banque Populaire",
       "departement": "",
@@ -32744,6 +33006,19 @@
       "score": 2,
       "raison": "signaux: vague(Crédit Mutuel,regional,count=None)",
       "created_at": "2026-08-12T05:10:52.936217+00:00"
+    },
+    {
+      "id": "84bc8d418192c2b7",
+      "banque": "Crédit Mutuel",
+      "departement": "",
+      "titre": "« Avec la fermeture du Géant, les habitudes ont changé » : le Crédit mutuel va fermer cette - saint-brieuc.maville.com",
+      "extrait": "Titre : « le Crédit mutuel va fermer cette » (commune/lieu non précisés dans l’extrait fourni).",
+      "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPd0ppcXB4QXUyaGtydVkwZXdLX2E0N2xDbkl6WnRrSWdhQVdJbWF3c2ZncVVFQVlfdWdSV2t4ajFETDNCRU5GZXMwNzJkZVJvZy1EWXpKb2JrT29EVk1QNm9HOUItN0FXWldZeUdjcmZRVlhwWFRab1lqYWFZcVNwc2phZ1FXbFVvWlNVWFZWUTJvSXJCWTl3WGV2N2pwNEt5N2QzUXhnVlhMTklldnNlRVBmcV9BMkdHbkt5ak9mT0xjYkZxT2tzLVgwUDl4ZHc3THcwanQyT1hfeFpuQm0xeFQxX3hzNVhLc09pNkdzVGtPampiejg0d0thS2gtaHZ5SU9BdndR?oc=5",
+      "source": "Google News",
+      "date": "Tue, 11 Aug 2026 18:41:00 GMT",
+      "score": 2,
+      "raison": "signaux: vague(Crédit Mutuel,unknown,count=None)",
+      "created_at": "2026-08-13T05:14:19.074890+00:00"
     },
     {
       "id": "cbb854e86321e80d",
