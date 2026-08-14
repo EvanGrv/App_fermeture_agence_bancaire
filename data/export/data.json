@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-13T05:24:43.863726+00:00",
+  "generated_at": "2026-08-14T05:21:44.593292+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -10391,7 +10391,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-13T05:10:57.723632+00:00"
+      "created_at": "2026-08-14T05:07:15.628420+00:00"
     },
     {
       "id": "50895c042a984b7d",
@@ -10427,7 +10427,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 04:46:02 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-13T05:10:57.247566+00:00"
+      "created_at": "2026-08-14T05:07:15.169987+00:00"
     },
     {
       "id": "8c6a0cad14626d6f",
@@ -11130,6 +11130,60 @@
       "date": "Thu, 13 Feb 2025 08:00:00 GMT",
       "raison": "garde entrée/sortie: fermeture postale temporaire ou circonstancielle",
       "created_at": "2026-07-23T06:13:04.583864+00:00"
+    },
+    {
+      "id": "701742f314afe50b",
+      "banque": "La Banque Postale",
+      "commune": "Sartène",
+      "departement": "2A",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "a_venir",
+      "fiabilite": 3,
+      "citation": "Ces bureaux de poste à Monaco vont fermer le jour du Grand Départ de la Vuelta 2026 - Nice-Matin",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNMXZRdDZibWVheEVPVUFieEx3OGpsOWhka29JaGZvS1QzLWx5ZmxEa05lSXlmRldSVUxvM1dXcHlESVBVQ0dGY21oNUlOS3A0YldBd2I5SzFvTXB2aG9fQlRKTkZyQzZuWEI3WWZRX0VYZjAyZENldkRTX3EwOWxfOTBoNU9rSXVxSk04NGhFT1BybE05aHZmcThFV2l3Z1ZRY29jankwNTFZY3Q1aEVEZ1FBOTFIV25hWklKUTJjX2szbUE2d0JvYmpjT2hESmFhSk0w?oc=5",
+      "titre": "Ces bureaux de poste à Monaco vont fermer le jour du Grand Départ de la Vuelta 2026 - Nice-Matin",
+      "source": "Google News",
+      "date": "Thu, 13 Aug 2026 11:18:54 GMT",
+      "raison": "garde entrée/sortie: commune/localisation de sortie absente de la source",
+      "created_at": "2026-08-14T05:10:39.239511+00:00"
+    },
+    {
+      "id": "61c238255afdc3b7",
+      "banque": "La Banque Postale",
+      "commune": "Allauch",
+      "departement": "13",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "« C’est du mépris total » : ils se mobilisent contre la fermeture de leur bureau de Poste - Ouest-France",
+      "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxORG1aR1VyWm1mbXFfSVhrVFd4U1NacHpPQWkzeXlCYWpQWUx5VkFCXy12ZHA0YVhuZDNxVWhhU2VVRXNBUklHSWhuSDRKV2xXNk1ENElUQWhNU0lKMFE4WUxuZWtHMThPUS04bWV1RXg2THY2bGp0bHlzcFNycmxCZDFZblNhM29Ddlc1X3ZLd1V5R1BwNFFMNk9pZE1FdFZ0MExUc2RNeVdWbFlhTnlnVmNxR2RlZHNjUG8zWGNzTkowbEYzUlNldlUyckEyWkRjXzRqWDRTZFYzRDR0NkY5TzljQURTRkV1Y0txOHRKOWgxUm43amkwck1FaXBFYkxKeXZYdkNhVFg?oc=5",
+      "titre": "« C’est du mépris total » : ils se mobilisent contre la fermeture de leur bureau de Poste - Ouest-France",
+      "source": "Google News",
+      "date": "Thu, 13 Aug 2026 06:44:01 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-08-14T05:10:31.616446+00:00"
+    },
+    {
+      "id": "1f851d8eeb522b9d",
+      "banque": "La Banque Postale",
+      "commune": "Allauch",
+      "departement": "13",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "« C’est du mépris total » : ils se mobilisent contre la fermeture de leur bureau de Poste - Maville Le Mans",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNUmR2OXdsUUZ1RzJCdnQwd0dRWDIzbWd2eDBndFFUbWZpODQyS2pxc291U3pocE9ZeWRIYUR5NjZ1MHdXSHJ6NUhBOGFabTFsMWNTQWV5WUFVTFBudW9LRXVVemlreEZiQ3Rac3pZak0wTG1ycEJoa1VVWDUzNUVFLURPVmRuZ0FqcmJqNEc2bjRNcmU5RVZGUlVRNVlRbnljcWhMcGtDQnc3TjhnNE82Q2Iwa1VSU2d1MVcxcVFuTm9NSlR2OURoUHVCTjlOd0s5ZXdEME54WlY5VEQ0MWc?oc=5",
+      "titre": "« C’est du mépris total » : ils se mobilisent contre la fermeture de leur bureau de Poste - Maville Le Mans",
+      "source": "Google News",
+      "date": "Thu, 13 Aug 2026 06:44:00 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-08-14T05:10:36.810014+00:00"
     },
     {
       "id": "3214d997da896290",
@@ -12497,7 +12551,7 @@
       "source": "Google News",
       "date": "Fri, 20 Jun 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-13T05:11:05.736818+00:00"
+      "created_at": "2026-08-14T05:07:22.492456+00:00"
     },
     {
       "id": "b70960ea48a1a247",
@@ -12605,7 +12659,7 @@
       "source": "Google News",
       "date": "Fri, 10 Jul 2026 10:12:00 GMT",
       "raison": "garde entrée/sortie: département source 44 incompatible avec la sortie 974",
-      "created_at": "2026-08-13T05:11:25.013061+00:00"
+      "created_at": "2026-08-14T05:07:40.128844+00:00"
     },
     {
       "id": "8c646081e1d69e81",
@@ -12785,7 +12839,7 @@
       "source": "Google News",
       "date": "Fri, 03 Jan 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-13T05:10:56.774664+00:00"
+      "created_at": "2026-08-14T05:07:14.744661+00:00"
     },
     {
       "id": "411db107f70f2387",
@@ -12858,6 +12912,24 @@
       "date": "Fri, 01 Aug 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
       "created_at": "2026-07-27T07:56:36.407534+00:00"
+    },
+    {
+      "id": "fae9c0c00ab641d3",
+      "banque": "La Banque Postale",
+      "commune": "Sartène",
+      "departement": "2A",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "a_venir",
+      "fiabilite": 3,
+      "citation": "Ces bureaux de poste à Monaco vont fermer le jour du Grand Départ de la Vuelta 2026",
+      "url": "https://www.nicematin.com/societe/vie-locale/ces-bureaux-de-poste-a-monaco-vont-fermer-le-jour-du-grand-depart-de-la-vuelta-2026-10705169",
+      "titre": "Ces bureaux de poste à Monaco vont fermer le jour du Grand Départ de la Vuelta 2026",
+      "source": "nicematin.com",
+      "date": "2026-08-13",
+      "raison": "garde entrée/sortie: fermeture postale temporaire ou circonstancielle",
+      "created_at": "2026-08-14T05:10:49.039633+00:00"
     },
     {
       "id": "d748828f2f027334",
@@ -14648,6 +14720,19 @@
       "source": "Google News",
       "date": "Fri, 05 Jun 2026 07:00:00 GMT",
       "created_at": "2026-08-04T06:10:34.623634+00:00"
+    },
+    {
+      "id": "73b7e8d34773e1bf",
+      "banque": "Revolut",
+      "scope": "national",
+      "count": null,
+      "confidence": 0.4,
+      "evidence": "Article centré sur l'obtention d'une licence bancaire française par Revolut; évoque la tendance générale à la fermeture d'agences mais sans citer d'agence ni de réseau précis.",
+      "url": "https://www.rtl.fr/actu/economie-consommation/credits-livrets-d-epargne-a-quoi-s-attendre-pour-la-banque-revolut-apres-l-obtention-d-une-licence-bancaire-francaise-7900661985",
+      "titre": "Crédits, livrets d'épargne... À quoi s'attendre pour la banque Revolut après l'obtention d'une licence bancaire française ?",
+      "source": "RTL.fr",
+      "date": "2026-08-13T20:37:44Z",
+      "created_at": "2026-08-14T05:10:56.171960+00:00"
     },
     {
       "id": "ce549650f41eb8d7",
@@ -19566,6 +19651,19 @@
       "created_at": "2026-08-12T05:10:54.334612+00:00"
     },
     {
+      "id": "8c4062c4250a2f60",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Cette commune de Loire-Atlantique se mobilise contre la fermeture du bureau de poste - - La Baule.maville.com",
+      "extrait": "TITRE: Cette commune de Loire-Atlantique se mobilise contre la fermeture du bureau de poste - - La Baule.maville.com SOURCE: Google News DATE: Tue, 11 Aug 2026 14:13:00 GMT URL: https://news.google.com/rss/articles/CBMi4AFBVV95cUxOVDQ3RXFLbHMwTkxubkswZUMzRXJVeENReWlQTU84ME1sQnVsdDZwb3AyTTltZW94ekpObkFZUUE0dVdNajNkLWUzeUhoVDh6a3g0cW9vT2lxNUVBVkFEZVk4NGhLckV2NkxDMVRLbjRjQVpDNXNpbk1CUzBsaWR3NjFqVG9rak9td29PeHB1MXRBaFVjTDNQX2tNTUlObU9UOXNDTGI2X01FTDVXNW5KZVpVUm9wQmpFbXJkNlFuNXAwMm02Qng1QVZ4aDN6MWt2Y",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOVDQ3RXFLbHMwTkxubkswZUMzRXJVeENReWlQTU84ME1sQnVsdDZwb3AyTTltZW94ekpObkFZUUE0dVdNajNkLWUzeUhoVDh6a3g0cW9vT2lxNUVBVkFEZVk4NGhLckV2NkxDMVRLbjRjQVpDNXNpbk1CUzBsaWR3NjFqVG9rak9td29PeHB1MXRBaFVjTDNQX2tNTUlObU9UOXNDTGI2X01FTDVXNW5KZVpVUm9wQmpFbXJkNlFuNXAwMm02Qng1QVZ4aDN6MWt2YUNqaXpXWVdaYTFKS1p2cA?oc=5",
+      "source": "Google News",
+      "date": "Tue, 11 Aug 2026 14:13:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-14T05:10:34.310391+00:00"
+    },
+    {
       "id": "93968649b848a764",
       "banque": "LCL",
       "departement": "",
@@ -21774,6 +21872,32 @@
       "score": 3,
       "raison": "fermeture non publiée: commune absente, générique ou non nominative",
       "created_at": "2026-06-25T15:41:29.211348+00:00"
+    },
+    {
+      "id": "3a42f6a11fe36762",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "\"Moins de proximité, c'était bien pratique\" : au Mans, La Poste ferme son bureau à Pontlieue, la direction s'explique - ici.fr",
+      "extrait": "TITRE: \"Moins de proximité, c'était bien pratique\" : au Mans, La Poste ferme son bureau à Pontlieue, la direction s'explique - ici.fr SOURCE: Google News DATE: Thu, 13 Aug 2026 16:25:52 GMT URL: https://news.google.com/rss/articles/CBMiggJBVV95cUxOT0I1LVhrWGt0VHVDM3o3RzNLMGg3eEIyN1p0S3gwOS1RUmQxSWFOTDVSanFaSHdaM2hfcTNYeXRTU2pLNTRZQ1FXN081WkZ6VVpubElaSVVpTEJKakRYaUVDd3FZaTdXMUhqMzNwOExuRnR3eTRjSV9LUXQtVFVoa0VDQXRNOHBMZkFYWTQ5Q1VTVkVlVWV3UVU4MGhTVXpqZ3YtQkt5VjMyVEwwWGo0dkVqc0RGVklqRmNRWTJvVmhkemlj",
+      "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOT0I1LVhrWGt0VHVDM3o3RzNLMGg3eEIyN1p0S3gwOS1RUmQxSWFOTDVSanFaSHdaM2hfcTNYeXRTU2pLNTRZQ1FXN081WkZ6VVpubElaSVVpTEJKakRYaUVDd3FZaTdXMUhqMzNwOExuRnR3eTRjSV9LUXQtVFVoa0VDQXRNOHBMZkFYWTQ5Q1VTVkVlVWV3UVU4MGhTVXpqZ3YtQkt5VjMyVEwwWGo0dkVqc0RGVklqRmNRWTJvVmhkemljXzlSeV9qUkdqN21teGxGcm56bklKbThMZE5JRjdRWmRtbnIwNEJOOE5oYTVkTzI0WVNtd21nU25zWF9fVkE?oc=5",
+      "source": "Google News",
+      "date": "Thu, 13 Aug 2026 16:25:52 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-14T05:10:36.341285+00:00"
+    },
+    {
+      "id": "b9bb134ef68b1faf",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Salives. Fermeture de la mairie et de la poste - Le Bien Public",
+      "extrait": "TITRE: Salives. Fermeture de la mairie et de la poste - Le Bien Public SOURCE: Google News DATE: Thu, 13 Aug 2026 00:39:18 GMT URL: https://news.google.com/rss/articles/CBMijAFBVV95cUxOdURkR0x5TFFKWUNscDh1RlpjeE5MbGl0cllTQ3J4Qk9wSElweDhVc1M4Ulp4MW9pN3J4eGxuUTVkTWkyb0JXMTNRZ0xwTmItUERYSllJRlJKc1hmTDdpTmNyRWtzREg2bVFEY0lnNWlONzZJS21KWlVfendJbnpoWmNRRGpmMnY1VVJ2eg?oc=5 <a href=\"https://news.google.com/rss/articles/CBMijAFBVV95cUxOdURkR0x5TFFKWUNscDh1RlpjeE5MbGl0cllTQ3J4Qk9wSElweDhVc1M4Ulp4MW9pN3J4e",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOdURkR0x5TFFKWUNscDh1RlpjeE5MbGl0cllTQ3J4Qk9wSElweDhVc1M4Ulp4MW9pN3J4eGxuUTVkTWkyb0JXMTNRZ0xwTmItUERYSllJRlJKc1hmTDdpTmNyRWtzREg2bVFEY0lnNWlONzZJS21KWlVfendJbnpoWmNRRGpmMnY1VVJ2eg?oc=5",
+      "source": "Google News",
+      "date": "Thu, 13 Aug 2026 00:39:18 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-14T05:10:41.371610+00:00"
     },
     {
       "id": "b2d92266d47a1586",
@@ -26573,6 +26697,19 @@
       "created_at": "2026-08-04T06:10:21.042064+00:00"
     },
     {
+      "id": "3bfd6cffbcb18621",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Fermeture exceptionnelle des services de l'Etat le 13 juillet - Les services de l'État dans le Gers",
+      "extrait": "TITRE: Fermeture exceptionnelle des services de l'Etat le 13 juillet - Les services de l'État dans le Gers SOURCE: Google News DATE: Mon, 03 Aug 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMi1AFBVV95cUxQUkl5eC1SY0duRDVPZUVMcTJLLXdGaV9aWmRXZDdEWE5VanBQcEdCbE5EcnRUSG0zNmd5X05lempHVXl3cUJQTkJFOE1hdC1yTzRKNnFTX05SVWdQSl9pdndCZjU2WmhCcDZsOGN3MTc3dm5lSy12ODNkc1V5d255U2oxSlJaOG1BcWpnWFNZdDBGM1NUa012d1BQOUFtQmFIdGxBM2VOazJwVVVpdEhpQWRncUd6MGt4SnJscGdwNlB5blB4Y0xXSUlBMWxHSEhCT004eg?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQUkl5eC1SY0duRDVPZUVMcTJLLXdGaV9aWmRXZDdEWE5VanBQcEdCbE5EcnRUSG0zNmd5X05lempHVXl3cUJQTkJFOE1hdC1yTzRKNnFTX05SVWdQSl9pdndCZjU2WmhCcDZsOGN3MTc3dm5lSy12ODNkc1V5d255U2oxSlJaOG1BcWpnWFNZdDBGM1NUa012d1BQOUFtQmFIdGxBM2VOazJwVVVpdEhpQWRncUd6MGt4SnJscGdwNlB5blB4Y0xXSUlBMWxHSEhCT004eg?oc=5",
+      "source": "Google News",
+      "date": "Mon, 03 Aug 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-14T05:10:29.139434+00:00"
+    },
+    {
       "id": "6f6d4d55098df4cb",
       "banque": "Société Générale",
       "departement": "",
@@ -29054,6 +29191,97 @@
       "score": 3,
       "raison": "fermeture non publiée: hors fenêtre temporelle",
       "created_at": "2026-07-22T09:09:01.159244+00:00"
+    },
+    {
+      "id": "f7f104d2b2baf486",
+      "banque": "LCL",
+      "departement": "",
+      "titre": "PSG Mercato : coup de tonnerre pour l'avenir de Chevalier et Suzuki - But! Football Club",
+      "extrait": "TITRE: PSG Mercato : coup de tonnerre pour l'avenir de Chevalier et Suzuki - But! Football Club SOURCE: But! Football Club DATE: 2026-08-13T19:20:00Z URL: https://www.butfootballclub.fr/1690546-psg-mercato-coup-de-tonnerre-pour-lavenir-de-chevalier-et-suzuki/ Malgré sa volonté de s'imposer au PSG, Lucas Chevalier voit son avenir s'assombrir. Et l'arrivée imminente de Zion Suzuki pourrait pousser l'ancien Lillois vers la sortie avant la fin du mercato. La hiérarchie semble désormais claire au PSG",
+      "url": "https://www.butfootballclub.fr/1690546-psg-mercato-coup-de-tonnerre-pour-lavenir-de-chevalier-et-suzuki/",
+      "source": "But! Football Club",
+      "date": "2026-08-13T19:20:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-14T05:11:00.034262+00:00"
+    },
+    {
+      "id": "47be3c3a7fe430c3",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Le rayon charcuterie du supermarché en 1975 : cette vitrine a totalement disparu du paysage français",
+      "extrait": "TITRE: Le rayon charcuterie du supermarché en 1975 : cette vitrine a totalement disparu du paysage français SOURCE: Tribunal Du Net DATE: 2026-08-13T16:01:28Z URL: https://www.letribunaldunet.fr/insolite/rayon-charcuterie-supermarche-1975-evolution.html Le libre-service qui a tout changé, mais pas d'un coup Ce basculement rappelle celui d'autres rayons du même supermarché : la Poste d'il y a 60 ans a connu une transformation tout aussi radicale, poussée par la même logique d'efficacité et de rap",
+      "url": "https://www.letribunaldunet.fr/insolite/rayon-charcuterie-supermarche-1975-evolution.html",
+      "source": "Tribunal Du Net",
+      "date": "2026-08-13T16:01:28Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-14T05:11:13.672333+00:00"
+    },
+    {
+      "id": "eb7974806257ab9f",
+      "banque": "LCL",
+      "departement": "",
+      "titre": "PSG Mercato : Al-Khelaïfi a un nouveau rêve fou, ça sera 500 millions d'euros ! - But! Football Club",
+      "extrait": "TITRE: PSG Mercato : Al-Khelaïfi a un nouveau rêve fou, ça sera 500 millions d'euros ! - But! Football Club SOURCE: But! Football Club DATE: 2026-08-13T16:00:00Z URL: https://www.butfootballclub.fr/1690479-psg-mercato-al-khelaifi-a-un-nouveau-reve-fou-ca-sera-500-millions-deuros/ Le PSG continue de regarder du côté de l'Espagne. Alors que Ferran Torres est annoncé tout proche de Paris, Nasser Al-Khelaïfi aurait également coché le nom de Pau Cubarsí, le jeune défenseur du FC Barcelone. Le mercato",
+      "url": "https://www.butfootballclub.fr/1690479-psg-mercato-al-khelaifi-a-un-nouveau-reve-fou-ca-sera-500-millions-deuros/",
+      "source": "But! Football Club",
+      "date": "2026-08-13T16:00:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-14T05:11:15.524303+00:00"
+    },
+    {
+      "id": "6e469fe70d0df18b",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Démographie : la jeune Afrique, dernier grand réservoir d'émigration, par Stephen Smith",
+      "extrait": "TITRE: Démographie : la jeune Afrique, dernier grand réservoir d'émigration, par Stephen Smith SOURCE: LExpress.fr DATE: 2026-08-13T15:00:00Z URL: https://www.lexpress.fr/idees-et-debats/demographie-la-jeune-afrique-dernier-grand-reservoir-demigration-par-stephen-smith-ZRYDEOKA5VGQPLCWHKACFRQZUQ/ À la manière dont L'Assommoir, d'Émile Zola, fait comprendre l'alcoolisme et la prostitution de misère sous le Second Empire en France, GraceLand, de Chris Abani, témoigne des débuts de la grande migrat",
+      "url": "https://www.lexpress.fr/idees-et-debats/demographie-la-jeune-afrique-dernier-grand-reservoir-demigration-par-stephen-smith-ZRYDEOKA5VGQPLCWHKACFRQZUQ/",
+      "source": "LExpress.fr",
+      "date": "2026-08-13T15:00:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-14T05:11:17.879707+00:00"
+    },
+    {
+      "id": "67bcdc33dfcf6f9a",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Vladimir Poutine en visite pour la première fois aux îles Kouriles, l'ambassadeur russe convoqué par Tokyo",
+      "extrait": "TITRE: Vladimir Poutine en visite pour la première fois aux îles Kouriles, l'ambassadeur russe convoqué par Tokyo SOURCE: BFMTV DATE: 2026-08-13T10:34:47Z URL: https://www.bfmtv.com/international/asie/russie/vladimir-poutine-en-visite-pour-la-premiere-fois-aux-iles-kouriles-l-ambassadeur-russe-convoque-par-tokyo_AD-202608130300.html Le président russe Vladimir Poutine s'est rendu pour la première fois dans les îles Kouriles, en Extrême-Orient, risquant d'aggraver les relations avec le Japon, qui",
+      "url": "https://www.bfmtv.com/international/asie/russie/vladimir-poutine-en-visite-pour-la-premiere-fois-aux-iles-kouriles-l-ambassadeur-russe-convoque-par-tokyo_AD-202608130300.html",
+      "source": "BFMTV",
+      "date": "2026-08-13T10:34:47Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-14T05:11:28.658651+00:00"
+    },
+    {
+      "id": "8362a5b37583f754",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Ici tout commence en avance : le 14 août, Louis fait une visite surprise et Joséphine découvre la vérité sur Loup et Bianca",
+      "extrait": "TITRE: Ici tout commence en avance : le 14 août, Louis fait une visite surprise et Joséphine découvre la vérité sur Loup et Bianca SOURCE: Telestar.fr DATE: 2026-08-13T08:59:43Z URL: https://www.telestar.fr/feuilletons-tv/ici-tout-commence-en-avance-le-14-aout-louis-fait-une-visite-surprise-et-josephine-decouvre-la-verite-sur-loup-et-bianca-1777517 Dans l'épisode d'Ici tout commence du vendredi 14 août 2026 sur TF1, Olivia (Virginie Caliari) trouve Claire (Catherine Marchal) au studio, occupée à",
+      "url": "https://www.telestar.fr/feuilletons-tv/ici-tout-commence-en-avance-le-14-aout-louis-fait-une-visite-surprise-et-josephine-decouvre-la-verite-sur-loup-et-bianca-1777517",
+      "source": "Telestar.fr",
+      "date": "2026-08-13T08:59:43Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-14T05:11:37.969402+00:00"
+    },
+    {
+      "id": "f1724d5604b0e95c",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Assomption : ce qui ferme samedi 15 août et les courses à faire dès vendredi",
+      "extrait": "TITRE: Assomption : ce qui ferme samedi 15 août et les courses à faire dès vendredi SOURCE: Tribunal Du Net DATE: 2026-08-13T06:50:32Z URL: https://www.letribunaldunet.fr/societe/assomption-15-aout-fermetures-courses-anticiper.html Vendredi soir, tu fermes les yeux en te disant que tout ira bien. Puis le samedi matin arrive, le frigo est vide, et là, panique. Le 15 août tombe un samedi cette année, et ça change pas mal de choses côté commerces. Entre les fermetures classiques du férié et celles ",
+      "url": "https://www.letribunaldunet.fr/societe/assomption-15-aout-fermetures-courses-anticiper.html",
+      "source": "Tribunal Du Net",
+      "date": "2026-08-13T06:50:32Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-14T05:11:41.616497+00:00"
     },
     {
       "id": "59dcf55cbe2340ed",
@@ -35281,6 +35509,279 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:43:41.960961+00:00"
+    },
+    {
+      "id": "0604ee5790e60f93",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "On vous explique pourquoi la visite historique de Vladimir Poutine sur les îles Kouriles irrite le Japon",
+      "extrait": "TITRE: On vous explique pourquoi la visite historique de Vladimir Poutine sur les îles Kouriles irrite le Japon SOURCE: Franceinfo DATE: 2026-08-14T04:09:44Z URL: https://www.franceinfo.fr/monde/russie/vladimir-poutine/on-vous-explique-pourquoi-la-visite-historique-de-vladimir-poutine-sur-les-iles-kouriles-irrite-le-japon_8146121.html Le président russe s'est rendu jeudi pour la première fois dans cet archipel contrôlé par Moscou depuis 1945 et revendiqué en partie par Tokyo. Un déplacement qui ",
+      "url": "https://www.franceinfo.fr/monde/russie/vladimir-poutine/on-vous-explique-pourquoi-la-visite-historique-de-vladimir-poutine-sur-les-iles-kouriles-irrite-le-japon_8146121.html",
+      "source": "Franceinfo",
+      "date": "2026-08-14T04:09:44Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-14T05:10:54.104369+00:00"
+    },
+    {
+      "id": "74ba272b036ce121",
+      "banque": "Revolut",
+      "departement": "",
+      "titre": "Crédits, livrets d'épargne... À quoi s'attendre pour la banque Revolut après l'obtention d'une licence bancaire française ?",
+      "extrait": "Article centré sur l'obtention d'une licence bancaire française par Revolut; évoque la tendance générale à la fermeture d'agences mais sans citer d'agence ni de réseau précis.",
+      "url": "https://www.rtl.fr/actu/economie-consommation/credits-livrets-d-epargne-a-quoi-s-attendre-pour-la-banque-revolut-apres-l-obtention-d-une-licence-bancaire-francaise-7900661985",
+      "source": "RTL.fr",
+      "date": "2026-08-13T20:37:44Z",
+      "score": 2,
+      "raison": "signaux: vague(Revolut,national,count=None)",
+      "created_at": "2026-08-14T05:10:56.172968+00:00"
+    },
+    {
+      "id": "79f7675d34e4a35f",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Mercato LOSC : Fenerbahçe discute avec Berke Özer pour remplacer Ederson... A quel prix vendre le portier turc ?",
+      "extrait": "TITRE: Mercato LOSC : Fenerbahçe discute avec Berke Özer pour remplacer Ederson... A quel prix vendre le portier turc ? SOURCE: Top mercato DATE: 2026-08-13T19:10:58Z URL: https://www.topmercato.com/2125780-mercato-losc-fenerbahce-discute-avec-berke-ozer-pour-remplacer-ederson-a-quel-prix-vendre-le-portier-turc/ Fenerbahçe pense à Berke Özer pour remplacer Ederson, qui a des touches pour quitter le club turc lors de ce mercato. Il s'agit d'un transfert potentiellement particulier sur le plan fin",
+      "url": "https://www.topmercato.com/2125780-mercato-losc-fenerbahce-discute-avec-berke-ozer-pour-remplacer-ederson-a-quel-prix-vendre-le-portier-turc/",
+      "source": "Top mercato",
+      "date": "2026-08-13T19:10:58Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-14T05:11:01.577774+00:00"
+    },
+    {
+      "id": "3ff84cd256da7353",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "PSG : un accord de principe trouvé avec le FC Barcelone pour le transfert de Ferran Torres",
+      "extrait": "TITRE: PSG : un accord de principe trouvé avec le FC Barcelone pour le transfert de Ferran Torres SOURCE: Le Parisien DATE: 2026-08-13T18:28:02Z URL: https://www.leparisien.fr/sports/football/psg/psg-un-accord-de-principe-trouve-avec-le-fc-barcelone-pour-le-transfert-de-ferran-torres-13-08-2026-V2XBWNDCFFBY5F5ELLQS7FAXQ4.php L'attaquant espagnol, champion du monde cet été avec la Roja, va s'engager pour cinq ans avec le club de la capitale. Ferran Torres devrait rapidement devenir un joueur du P",
+      "url": "https://www.leparisien.fr/sports/football/psg/psg-un-accord-de-principe-trouve-avec-le-fc-barcelone-pour-le-transfert-de-ferran-torres-13-08-2026-V2XBWNDCFFBY5F5ELLQS7FAXQ4.php",
+      "source": "Le Parisien",
+      "date": "2026-08-13T18:28:02Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-14T05:11:03.245722+00:00"
+    },
+    {
+      "id": "55402ceaa88a300c",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "PSG : Zion Suzuki, tout s'écroule en 24 heures",
+      "extrait": "TITRE: PSG : Zion Suzuki, tout s'écroule en 24 heures SOURCE: foot01.com DATE: 2026-08-13T17:40:15Z URL: https://www.foot01.com/paris/psg-zion-suzuki-tout-secroule-en-24-heures Tout était ficelé pour l'avenir de Zion Suzuki, qui devait signer au PSG ce week-end et rejoindre la Juventus en prêt dans la foulée. Mais il y a eu un immense couac, et le Japonais n'est plus attendu en Italie. Le deal était bizarre, mais ficelé depuis quelques jours. Pourtant, tout ne se passera pas comme prévu concerna",
+      "url": "https://www.foot01.com/paris/psg-zion-suzuki-tout-secroule-en-24-heures",
+      "source": "foot01.com",
+      "date": "2026-08-13T17:40:15Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-14T05:11:04.922221+00:00"
+    },
+    {
+      "id": "84c5000ed1464981",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Le PSG prépare la vente inatendue en sous-marin - Sport.fr",
+      "extrait": "TITRE: Le PSG prépare la vente inatendue en sous-marin - Sport.fr SOURCE: Sport.fr DATE: 2026-08-13T16:45:28Z URL: https://www.sport.fr/football/le-psg-prepare-la-vente-inatendue-en-sous-marin-1472227.shtm Lucas Chevalier pense avoir sa chance. À 25 ans, gardien de Ligue 1 avec le LOSC jusqu'à l'été dernier, convoqué en équipe de France, le portier nordiste est convaincu que Luis Enrique lui fera confiance. Il ne sait probablement pas que le PSG est déjà en train de le vendre. Le journaliste Ach",
+      "url": "https://www.sport.fr/football/le-psg-prepare-la-vente-inatendue-en-sous-marin-1472227.shtm",
+      "source": "Sport.fr",
+      "date": "2026-08-13T16:45:28Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-14T05:11:08.156717+00:00"
+    },
+    {
+      "id": "d45bd37da6ca43ef",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Journal des Transferts : ça sent la fin pour Barcola, Suzuki accepte l'escale à Turin, le Barça pense à un ex de l'OL...",
+      "extrait": "TITRE: Journal des Transferts : ça sent la fin pour Barcola, Suzuki accepte l'escale à Turin, le Barça pense à un ex de l'OL... SOURCE: Maxifoot DATE: 2026-08-13T16:03:30Z URL: https://www.maxifoot.fr/football/article-65652.htm Ça sent la fin pour Barcola, Suzuki accepte l'escale à Turin, le Barça pense à un ex de l'OL, Xavi retrouve un banc, Camavinga pisté par Manchester United... Voici le Top 5 des gros dossiers mercato du jour à ne pas manquer. Découvrez aussi le Télégramme Foot Transfert, p",
+      "url": "https://www.maxifoot.fr/football/article-65652.htm",
+      "source": "Maxifoot",
+      "date": "2026-08-13T16:03:30Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-14T05:11:11.844542+00:00"
+    },
+    {
+      "id": "1db781c813cc5a0d",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "La tactique de Chelsea pour faire payer le PSG",
+      "extrait": "TITRE: La tactique de Chelsea pour faire payer le PSG SOURCE: foot01.com DATE: 2026-08-13T14:06:14Z URL: https://www.foot01.com/paris/la-tactique-de-chelsea-pour-faire-payer-le-psg Chelsea annonce ne plus vouloir vendre Malo Gusto. A moins que le PSG ne fasse une offre complètement folle. Nouveau mercato très actif de la part de Chelsea, qui a fait venir moins de joueurs, mais a tout de même dépensé plus de 400 millions d'euros. Morgan Rogers, Maxence Lacroix, Geovany Quenda, Valentin Barco, Emm",
+      "url": "https://www.foot01.com/paris/la-tactique-de-chelsea-pour-faire-payer-le-psg",
+      "source": "foot01.com",
+      "date": "2026-08-13T14:06:14Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-14T05:11:09.795596+00:00"
+    },
+    {
+      "id": "e3d02f3c13289834",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Mercato PSG : après Zaïre-Emery, Manchester United convoite un deuxième titi",
+      "extrait": "TITRE: Mercato PSG : après Zaïre-Emery, Manchester United convoite un deuxième titi SOURCE: Top mercato DATE: 2026-08-13T12:16:00Z URL: https://www.topmercato.com/2125742-mercato-psg-apres-zaire-emery-manchester-united-convoite-un-deuxieme-titi/ Manchester United s'est joint à la course pour l'un des plus prometteurs jeunes attaquants du Paris Saint-Germain sur ce mercato. Déjà sous le charme de Warren Zaïre-Emery, les Red Devils ont effectué les premières démarches au sujet d'Ibrahim Mbaye, la ",
+      "url": "https://www.topmercato.com/2125742-mercato-psg-apres-zaire-emery-manchester-united-convoite-un-deuxieme-titi/",
+      "source": "Top mercato",
+      "date": "2026-08-13T12:16:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-14T05:11:19.436048+00:00"
+    },
+    {
+      "id": "8c145dadda9918db",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Mercato: le Barça prêt à ouvrir la porte à une vente XXL de Koundé?",
+      "extrait": "TITRE: Mercato: le Barça prêt à ouvrir la porte à une vente XXL de Koundé? SOURCE: RMC SPORT DATE: 2026-08-13T11:49:04Z URL: https://rmcsport.bfmtv.com/football/transferts/mercato-le-barca-pret-a-ouvrir-la-porte-a-une-vente-xxl-de-kounde_AV-202608130326.html Taulier du FC Barcelone au poste de latéral droit, Jules Koundé ne serait plus jugé intransférable par ses dirigeants. Si seule une très grosse offre pourrait pousser la direction catalane à envisager un départ du défenseur français pendant ",
+      "url": "https://rmcsport.bfmtv.com/football/transferts/mercato-le-barca-pret-a-ouvrir-la-porte-a-une-vente-xxl-de-kounde_AV-202608130326.html",
+      "source": "RMC SPORT",
+      "date": "2026-08-13T11:49:04Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-14T05:11:20.972259+00:00"
+    },
+    {
+      "id": "1edd4d392ab881ab",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Mercato : Zinedine Zidane officialise le staff des Bleus !",
+      "extrait": "TITRE: Mercato : Zinedine Zidane officialise le staff des Bleus ! SOURCE: Foot-sur7 DATE: 2026-08-13T11:20:15Z URL: https://www.foot-sur7.fr/772076-mercato-zinedine-zidane-officialise-le-staff-des-bleus Lire aussi : Mercato PSG : Zidane impliqué dans une signature à Paris Le poste qu'occupera Fabien Barthez dans le staff de l'équipe de France n'est pas une surprise. En effet, l'ancien gardien et champion du monde en 1998 reprend du service, mais cette fois-ci en tant qu'entraîneur des gardiens. ",
+      "url": "https://www.foot-sur7.fr/772076-mercato-zinedine-zidane-officialise-le-staff-des-bleus",
+      "source": "Foot-sur7",
+      "date": "2026-08-13T11:20:15Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-14T05:11:23.541540+00:00"
+    },
+    {
+      "id": "84d2ec424c01bd5d",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Poutine sur une île revendiquée par le Japon, Tokyo proteste",
+      "extrait": "TITRE: Poutine sur une île revendiquée par le Japon, Tokyo proteste SOURCE: Boursier.com DATE: 2026-08-13T10:59:05Z URL: https://www.boursier.com/actualites/reuters/poutine-sur-une-ile-revendiquee-par-le-japon-tokyo-proteste-424433.html Poutine sur une île revendiquée par le Japon, Tokyo proteste Publié le 13/08/2026 à 12h59 Poutine sur une île revendiquée par le Japon, Tokyo proteste TOKYO, 13 août (Reuters) - Vladimir Poutine s'est rendu à Iturup, une île revendiquée par le Japon située à l'ex",
+      "url": "https://www.boursier.com/actualites/reuters/poutine-sur-une-ile-revendiquee-par-le-japon-tokyo-proteste-424433.html",
+      "source": "Boursier.com",
+      "date": "2026-08-13T10:59:05Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-14T05:11:27.331154+00:00"
+    },
+    {
+      "id": "beaa952a1085c8f8",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Poutine en visite pour la première fois aux îles Kouriles, disputées avec le Japon",
+      "extrait": "TITRE: Poutine en visite pour la première fois aux îles Kouriles, disputées avec le Japon SOURCE: La-R%C3%A9publique-des-Pyr%C3%A9n%C3%A9es DATE: 2026-08-13T10:48:29Z URL: https://www.larepubliquedespyrenees.fr/societe/afp/poutine-en-visite-pour-la-premiere-fois-aux-iles-kouriles-disputees-avec-le-japon-30243324.php Au lendemain d'une visite à Ioujno-Sakhalinsk, sur l'île de Sakhaline, mercredi où il a visité un hôpital, Vladimir Poutine s'est rendu à Itouroup, l'une des îles de l'archipel des K",
+      "url": "https://www.larepubliquedespyrenees.fr/societe/afp/poutine-en-visite-pour-la-premiere-fois-aux-iles-kouriles-disputees-avec-le-japon-30243324.php",
+      "source": "La-R%C3%A9publique-des-Pyr%C3%A9n%C3%A9es",
+      "date": "2026-08-13T10:48:29Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-14T05:11:25.867962+00:00"
+    },
+    {
+      "id": "73348232143c040a",
+      "banque": "BNP Paribas",
+      "departement": "",
+      "titre": "Arnaque à la carte SIM : 17 000 euros ont été volés à un abonné Free, l'opérateur a été jugé responsable",
+      "extrait": "TITRE: Arnaque à la carte SIM : 17 000 euros ont été volés à un abonné Free, l'opérateur a été jugé responsable SOURCE: 01net DATE: 2026-08-13T10:30:59Z URL: https://www.01net.com/?p=1363926 Mme X a été victime d'un détournement de son numéro de téléphone qui a mené à des virements frauduleux. Malgré la réactivité de la victime, BNP Paribas n'a pas bloqué la carte Visa. De son côté, Free a effectué un transfert de ligne sans vérifier l'identité de la personne à l'origine de la demande. Qui est l",
+      "url": "https://www.01net.com/?p=1363926",
+      "source": "01net",
+      "date": "2026-08-13T10:30:59Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-14T05:11:30.846980+00:00"
+    },
+    {
+      "id": "2684ec0c57483a41",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Mercato : Urgent ! Nouvel accord entre le PSG et la Juventus",
+      "extrait": "TITRE: Mercato : Urgent ! Nouvel accord entre le PSG et la Juventus SOURCE: Foot-sur7 DATE: 2026-08-13T10:03:00Z URL: https://www.foot-sur7.fr/772059-mercato-urgent-nouvel-accord-entre-le-psg-et-la-juventus Après Randal Kolo Muani, le PSG et la Juventus Turin pourraient prochainement annoncer un nouvel accord pour un joueur lors de ce mercato estival. Une recrue du club de la capitale serait sur le point de renforcer les Bianconeri. Explications. La Juventus négocie avec le PSG pour un gardien A",
+      "url": "https://www.foot-sur7.fr/772059-mercato-urgent-nouvel-accord-entre-le-psg-et-la-juventus",
+      "source": "Foot-sur7",
+      "date": "2026-08-13T10:03:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-14T05:11:32.712525+00:00"
+    },
+    {
+      "id": "42845903c73bbcf0",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Vladimir Poutine sur une île revendiquée par le Japon, Tokyo proteste",
+      "extrait": "TITRE: Vladimir Poutine sur une île revendiquée par le Japon, Tokyo proteste SOURCE: Boursier.com DATE: 2026-08-13T09:53:55Z URL: https://www.boursier.com/actualites/reuters/vladimir-poutine-sur-une-ile-revendiquee-par-le-japon-tokyo-proteste-424425.html Vladimir Poutine sur une île revendiquée par le Japon, Tokyo proteste Publié le 13/08/2026 à 11h53 Vladimir Poutine sur une île revendiquée par le Japon, Tokyo proteste 13 août (Reuters) - Le président Vladimir Poutine s'est rendu à Iturup, une ",
+      "url": "https://www.boursier.com/actualites/reuters/vladimir-poutine-sur-une-ile-revendiquee-par-le-japon-tokyo-proteste-424425.html",
+      "source": "Boursier.com",
+      "date": "2026-08-13T09:53:55Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-14T05:11:34.132446+00:00"
+    },
+    {
+      "id": "2c6eaa6c8c3d858b",
+      "banque": "Crédit Agricole",
+      "departement": "",
+      "titre": "Crédit Agricole : une prime de bienvenue jusqu'à 100 euros",
+      "extrait": "TITRE: Crédit Agricole : une prime de bienvenue jusqu'à 100 euros SOURCE: MoneyVox Actu DATE: 2026-08-13T09:29:04Z URL: https://www.moneyvox.fr/banque-en-ligne/actualites/109859/credit-agricole-une-prime-de-bienvenue-jusqua-100-euros Bonne nouvelle pour les personnes souhaitant changer de banque : le Crédit Agricole propose actuellement une offre de bienvenue pouvant atteindre 100 euros pour toute première ouverture d'un compte bancaire en ligne avec une offre Eko, Essentiel, Premium ou Prestige",
+      "url": "https://www.moneyvox.fr/banque-en-ligne/actualites/109859/credit-agricole-une-prime-de-bienvenue-jusqua-100-euros",
+      "source": "MoneyVox Actu",
+      "date": "2026-08-13T09:29:04Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-14T05:11:36.099375+00:00"
+    },
+    {
+      "id": "fa0f6b204a974fc5",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Vladimir Poutine en visite pour la première fois aux îles Kouriles, disputées avec le Japon",
+      "extrait": "TITRE: Vladimir Poutine en visite pour la première fois aux îles Kouriles, disputées avec le Japon SOURCE: RFI DATE: 2026-08-13T09:21:38Z URL: https://www.rfi.fr/fr/asie-pacifique/20260813-vladimir-poutine-en-visite-pour-la-premi%C3%A8re-fois-aux-%C3%AEles-kouriles-disput%C3%A9es-avec-le-japon Le président russe Vladimir Poutine s'est rendu pour la première fois jeudi 13 août dans les îles Kouriles, en Extrême-Orient, une visite provoquant une vive protestation du Japon qui revendique également ",
+      "url": "https://www.rfi.fr/fr/asie-pacifique/20260813-vladimir-poutine-en-visite-pour-la-premi%C3%A8re-fois-aux-%C3%AEles-kouriles-disput%C3%A9es-avec-le-japon",
+      "source": "RFI",
+      "date": "2026-08-13T09:21:38Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-14T05:11:39.750081+00:00"
+    },
+    {
+      "id": "cc415ddbce995f9e",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Votre identité vaut de l'or, et l'IA vient de la mettre en vente sur Le Bon Coin - Korben",
+      "extrait": "TITRE: Votre identité vaut de l'or, et l'IA vient de la mettre en vente sur Le Bon Coin - Korben SOURCE: Korben DATE: 2026-08-13T06:03:25Z URL: https://korben.info/votre-identite-vaut-de-lor.html 40% des emails de phishing ciblant les entreprises sont désormais générés par IA, et PassGAN a cracké 51% des mots de passe en moins d'une minute et 81% en moins d'un mois. Petite mise en situation réelle (les noms ont été changés pour protéger les victimes comme ils disent à la télé). Vous êtes employé",
+      "url": "https://korben.info/votre-identite-vaut-de-lor.html",
+      "source": "Korben",
+      "date": "2026-08-13T06:03:25Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-14T05:11:43.060269+00:00"
+    },
+    {
+      "id": "f2c970e52c9be139",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Dispute entre la Russie et le Japon après une visite de Vladimir Poutine aux îles Kouriles",
+      "extrait": "TITRE: Dispute entre la Russie et le Japon après une visite de Vladimir Poutine aux îles Kouriles SOURCE: TV5MONDE DATE: 2026-08-13T05:07:13Z URL: https://information.tv5monde.com/international/dispute-entre-la-russie-et-le-japon-apres-une-visite-de-vladimir-poutine-aux-iles-kouriles-2833423 La Russie et le Japon ont échangé jeudi des critiques acerbes après une visite, pour la première fois, du président Vladimir Poutine dans les Kouriles, un archipel au coeur d'un différend territorial entre l",
+      "url": "https://information.tv5monde.com/international/dispute-entre-la-russie-et-le-japon-apres-une-visite-de-vladimir-poutine-aux-iles-kouriles-2833423",
+      "source": "TV5MONDE",
+      "date": "2026-08-13T05:07:13Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-14T05:10:58.132566+00:00"
+    },
+    {
+      "id": "b840b98982e306e5",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Poutine en visite pour la première fois dans les Kouriles, au centre d'un différend avec le Japon",
+      "extrait": "TITRE: Poutine en visite pour la première fois dans les Kouriles, au centre d'un différend avec le Japon SOURCE: TV5MONDE DATE: 2026-08-13T05:07:13Z URL: https://information.tv5monde.com/international/poutine-en-visite-pour-la-premiere-fois-dans-les-kouriles-au-centre-dun-differend-avec-le-japon-2833423 Le président russe Vladimir Poutine s'est rendu pour la première fois jeudi dans les îles Kouriles, en Extrême-Orient, une visite jugée \"absolument inacceptable\" par le Japon qui revendique une p",
+      "url": "https://information.tv5monde.com/international/poutine-en-visite-pour-la-premiere-fois-dans-les-kouriles-au-centre-dun-differend-avec-le-japon-2833423",
+      "source": "TV5MONDE",
+      "date": "2026-08-13T05:07:13Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-14T05:11:06.325081+00:00"
     },
     {
       "id": "70b134640daa04e4",
