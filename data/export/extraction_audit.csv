@@ -44,5 +44,6 @@ warning,date_fermeture_absente,14c2fc2bc44eb609,Crédit Mutuel,Saint-Brieuc,22,2
 warning,date_fermeture_absente,a60eb2a1117b143a,Crédit Agricole,Fonsala,12,12174,article ancien sans date de fermeture explicite; à confirmer ou archiver
 warning,date_fermeture_absente,c3fe16baca815c80,La Banque Postale,Saint-Cloud,92,92064,article ancien sans date de fermeture explicite; à confirmer ou archiver
 warning,date_fermeture_absente,2784b9c7b7b8a187,Crédit Agricole,Lantriac,43,43113,article ancien sans date de fermeture explicite; à confirmer ou archiver
+warning,date_fermeture_absente,27f044ff2028ff60,Crédit Agricole,Chateauponsac,87,87041,article ancien sans date de fermeture explicite; à confirmer ou archiver
 info,communes_proches,ef183498a867b953|f5dfed8c328d270e,BNP Paribas / La Banque Postale,Saint-Malo-de-Beignon / Saint-Malo,56 / 35,56226 / 35288,noms proches mais localisations distinctes à vérifier visuellement
 info,communes_proches,ef183498a867b953|405cc9d5132ed04c,BNP Paribas / La Banque Postale,Saint-Malo-de-Beignon / Saint-Malo,56 / 35,56226 / 35288,noms proches mais localisations distinctes à vérifier visuellement

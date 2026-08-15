@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T05:21:44.593292+00:00",
+  "generated_at": "2026-08-15T04:12:23.371593+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -803,11 +803,11 @@
     "87": {
       "nom": "Haute-Vienne",
       "region": "Nouvelle-Aquitaine",
-      "count": 1,
+      "count": 2,
       "total_agences": 84,
-      "precise_count": 1,
+      "precise_count": 2,
       "unlocated_count": 0,
-      "estimated_count": 8
+      "estimated_count": 9
     },
     "88": {
       "nom": "Vosges",
@@ -1018,9 +1018,9 @@
     "87": {
       "departement": "87",
       "nom": "Haute-Vienne",
-      "precise_count": 1,
+      "precise_count": 2,
       "unlocated_count": 0,
-      "estimated_count": 8,
+      "estimated_count": 9,
       "department_signal_count": 7,
       "signals": [
         {
@@ -1881,9 +1881,9 @@
     },
     {
       "region": "Nouvelle-Aquitaine",
-      "articles": 12,
+      "articles": 13,
       "fermetures": 5,
-      "projets": 3,
+      "projets": 4,
       "fusions": 0,
       "types": [
         "Fermeture",
@@ -9508,6 +9508,47 @@
         "source": "SIRENE"
       },
       "region": "Normandie"
+    },
+    {
+      "id": "27f044ff2028ff60",
+      "banque": "Crédit Agricole",
+      "commune": "Chateauponsac",
+      "code_insee": "87041",
+      "departement": "87",
+      "type": "fermeture",
+      "date_annonce": "Fri, 23 Jan 2026 08:00:00 GMT",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 1,
+      "fiabilite": 2,
+      "lat": 46.131111,
+      "lon": 1.284389,
+      "citation": "Le titre indique « Sept fermetures d'agences du Crédit Agricole en Haute-Vienne » et cite le maire de Chateauponsac.",
+      "adresse": null,
+      "agence_localisation": "agence",
+      "commune_originale": null,
+      "service_impact": null,
+      "point_postal_avant": null,
+      "point_postal_apres": null,
+      "postal_point_id": null,
+      "evidence_level": null,
+      "created_at": "2026-08-15T04:07:33.253481+00:00",
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxPRTZ6dzZyOEdONHdGbEM1TUVzOWhKWTBfY2UzSllBckZqT0RqakVCV2pkTmdSYkdhWFNmWkF1bEt3NmJVVmpEbVI3c2tHaXAtRlJRVmxiTnVRSXVzUjI0Ui1ORlZ2VkIxUTBaTmh5WTV3clFnV2c5aW01NnAxVXUxaURNZ1B0ekVfR2xaNGx4a2plRGo4VnEya18wb3dRR3ljMG5hWHU1cjFpWjhydlZCMTBuaWhsazd0a2d5Z1BYcVhyR3hfRjI4NHozM1ZuQW4tbDZYZ3IzQm9LUTVueWhFTktJQW1CaWFwTkpZVko4UE9YbHp5WVdxbDlLZ3BXSGxtbU9IUHhxWUNyZHdPc2cxTzNlTzc4enFEbE9hSVZrdUs?oc=5",
+          "titre": "Sept fermetures d'agences du Crédit Agricole en Haute-Vienne : \"c'est inadmissible\" pour le maire de Chateauponsac - Radio France",
+          "source": "Google News",
+          "date": "Fri, 23 Jan 2026 08:00:00 GMT",
+          "tier": "D"
+        }
+      ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
+      "region": "Nouvelle-Aquitaine"
     }
   ],
   "closures_unlocated": [
@@ -9924,6 +9965,24 @@
       "date": "Wed, 12 Aug 2026 17:17:00 GMT",
       "raison": "hors fenêtre temporelle",
       "created_at": "2026-08-13T05:14:23.367732+00:00"
+    },
+    {
+      "id": "02398b832f6e7c43",
+      "banque": "La Banque Postale",
+      "commune": "Mansigné",
+      "departement": "72",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "« On mérite quand même quelques égards » : au Mans, la riposte s’organise après la fermeture d’un bureau de poste - - La Baule.maville.com",
+      "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPNk5oaFJvQ3dUUVNPRWlRVDdURFhPSWF2eEt1TnB5bWpiMmp4SHdfZkxYOW1uOU9hQ3dWU0tOQ1F6WGZ4R3RyWHRWV0tETmNFaDdtVEQ4cVdPak1HeWtIREJTZVROeTdfeS01Y2FFeU54RVdqcWc5a2tjSXVCUDVuN2FFLTg0anZ3eHBmaEhXNTZYR084Q1RPZzVqRkFSNG5zRFFWQ3NfVmdhTUtNcE1jRkFBemFTTEVjMWhnc1ZPT18zdFA2SDhMbmI4a1ZhU2tOMnhYbGxZVC1WdXJrMERxOWRWc3RBMkVja21HN3JBbzVaZUV4Vk1yT0YzVzhsNy1UeUE?oc=5",
+      "titre": "« On mérite quand même quelques égards » : au Mans, la riposte s’organise après la fermeture d’un bureau de poste - - La Baule.maville.com",
+      "source": "Google News",
+      "date": "Wed, 12 Aug 2026 17:17:00 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-08-15T04:00:33.534802+00:00"
     },
     {
       "id": "a7f9e1ce252267a7",
@@ -10391,7 +10450,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-14T05:07:15.628420+00:00"
+      "created_at": "2026-08-15T03:57:13.789427+00:00"
     },
     {
       "id": "50895c042a984b7d",
@@ -10427,7 +10486,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 04:46:02 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-14T05:07:15.169987+00:00"
+      "created_at": "2026-08-15T03:57:13.213753+00:00"
     },
     {
       "id": "8c6a0cad14626d6f",
@@ -12551,7 +12610,7 @@
       "source": "Google News",
       "date": "Fri, 20 Jun 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-14T05:07:22.492456+00:00"
+      "created_at": "2026-08-15T03:57:20.646496+00:00"
     },
     {
       "id": "b70960ea48a1a247",
@@ -12644,6 +12703,24 @@
       "created_at": "2026-07-22T08:58:08.705021+00:00"
     },
     {
+      "id": "5b7bf82a4a8691aa",
+      "banque": "La Banque Postale",
+      "commune": "Chanceaux-sur-Choisille",
+      "departement": "37",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "a_venir",
+      "fiabilite": 2,
+      "citation": "« le maire de Chanceaux-sur-Choisille déplore la fermeture temporaire du bureau de poste de sa commune » (article ne relie pas explicitement au volet bancaire LBP).",
+      "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxQUld4dms1MS1YWWpsT3hnaTA2dng0ZEo2aUtxbktyekN2UGRFWkVCTkJKZmMwNHhjcjhzVGdkRjUxSkhocDVOMktDUUlPYUpIOFBUYm51dTNyeTM5bFpKYnlXdXcxYTdHcThtR0VxMV95RFktd09WcmFodGtKcGYxOFRsckY0cUVmNHhKZXZFS1VxUnNzMUx3OHhCaURKZmpNSHgzTEVYX3FVNjQ0RXhZRDMzUGRXZTN0aVJUSlg3Y0VuM19BVW9GSWFjMkhUNkprbTBFMGZVZm1xNGZ0RklTcVJpWmg4ZmJGQkQ2M29oQlR5aFlsVy1ua24wWU80Q0l1YUJpS2drZTJQR25nSmtHT0kya3A4T1JlMWlSYk9vbzJBSWZCd1RGRHEzOHdhYm8?oc=5",
+      "titre": "\"C'est inquiétant\": le maire de Chanceaux-sur-Choisille déplore la fermeture temporaire du bureau de poste de sa commune - ici.fr",
+      "source": "Google News",
+      "date": "Fri, 14 Aug 2026 08:28:51 GMT",
+      "raison": "garde entrée/sortie: fermeture postale temporaire ou circonstancielle",
+      "created_at": "2026-08-15T04:00:41.375890+00:00"
+    },
+    {
       "id": "03c51c4420d41ad5",
       "banque": "La Banque Postale",
       "commune": "Sainte-Suzanne",
@@ -12659,7 +12736,7 @@
       "source": "Google News",
       "date": "Fri, 10 Jul 2026 10:12:00 GMT",
       "raison": "garde entrée/sortie: département source 44 incompatible avec la sortie 974",
-      "created_at": "2026-08-14T05:07:40.128844+00:00"
+      "created_at": "2026-08-15T03:57:38.490550+00:00"
     },
     {
       "id": "8c646081e1d69e81",
@@ -12839,7 +12916,7 @@
       "source": "Google News",
       "date": "Fri, 03 Jan 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-14T05:07:14.744661+00:00"
+      "created_at": "2026-08-15T03:57:12.803332+00:00"
     },
     {
       "id": "411db107f70f2387",
@@ -12912,6 +12989,24 @@
       "date": "Fri, 01 Aug 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
       "created_at": "2026-07-27T07:56:36.407534+00:00"
+    },
+    {
+      "id": "1dcceab365aa1a1d",
+      "banque": "La Banque Postale",
+      "commune": "Vic-en-Bigorre",
+      "departement": "65",
+      "type": "fermeture",
+      "date_fermeture": "2026-08-14",
+      "statut": "projet",
+      "statut_temporel": "deja_fermee",
+      "fiabilite": 3,
+      "citation": "« Le bureau de poste de Vic-en-Bigorre ... va fermer temporairement ses portes ... » et « ... ainsi que les services de conseil bancaire y seront assurés » (orientation vers Maubourguet pendant les travaux).",
+      "url": "https://www.ladepeche.fr/2026/08/14/la-poste-se-modernise-et-ferme-trois-semaine-13509784.php",
+      "titre": "Vic-en-Bigorre. La Poste se modernise et ferme trois semaine",
+      "source": "Ladepeche.fr",
+      "date": "2026-08-14T21:30:20Z",
+      "raison": "garde entrée/sortie: fermeture postale temporaire ou circonstancielle",
+      "created_at": "2026-08-15T04:01:01.279069+00:00"
     },
     {
       "id": "fae9c0c00ab641d3",
@@ -15504,6 +15599,45 @@
       "created_at": "2026-07-02T07:06:46.865370+00:00"
     },
     {
+      "id": "15defb539e54dfdd",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Ouverture Paris : le CAC40 peine à rebondir dans une actualité limitée",
+      "extrait": "TITRE: Ouverture Paris : le CAC40 peine à rebondir dans une actualité limitée SOURCE: Boursier.com DATE: 2026-08-14T07:31:01Z URL: https://www.boursier.com/indices/actualites/news/ouverture-paris-le-cac40-peine-a-rebondir-dans-une-actualite-limitee-992033.html Ouverture Paris : le CAC40 peine à rebondir dans une actualité limitée Par Jean-Baptiste André Publié le 14/08/2026 à 09h31 Ouverture Paris : le CAC40 peine à rebondir dans une actualité limitée (Boursier.com) -- LA TENDANCE A l'image de c",
+      "url": "https://www.boursier.com/indices/actualites/news/ouverture-paris-le-cac40-peine-a-rebondir-dans-une-actualite-limitee-992033.html",
+      "source": "Boursier.com",
+      "date": "2026-08-14T07:31:01Z",
+      "score": 4,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-15T04:01:48.716029+00:00"
+    },
+    {
+      "id": "92bc787f7700f48b",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Préouverture Paris : le CAC40 va-t-il mettre fin à 3 séances de baisse ?",
+      "extrait": "TITRE: Préouverture Paris : le CAC40 va-t-il mettre fin à 3 séances de baisse ? SOURCE: Bourse Direct DATE: 2026-08-14T06:52:33Z URL: https://www.boursedirect.fr/fr/actualites/categorie/marche-francais/preouverture-paris-le-cac40-va-t-il-mettre-fin-a-3-seances-de-baisse-boursier-169b223b9eecc06bae0c905f20d8b45493e0bc45 Le CAC40, qui reste sur trois séances de petite baisse, évolue peu à quelques minutes de l'ouverture. A défaut de résultats d'entreprises, ce sont les indicateurs économiques qui ",
+      "url": "https://www.boursedirect.fr/fr/actualites/categorie/marche-francais/preouverture-paris-le-cac40-va-t-il-mettre-fin-a-3-seances-de-baisse-boursier-169b223b9eecc06bae0c905f20d8b45493e0bc45",
+      "source": "Bourse Direct",
+      "date": "2026-08-14T06:52:33Z",
+      "score": 4,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-15T04:01:59.725210+00:00"
+    },
+    {
+      "id": "f61b4bff416770e7",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Préouverture Paris : le CAC40 va-t-il mettre fin à 3 séances de baisse ?",
+      "extrait": "TITRE: Préouverture Paris : le CAC40 va-t-il mettre fin à 3 séances de baisse ? SOURCE: Boursier.com DATE: 2026-08-14T06:30:02Z URL: https://www.boursier.com/indices/actualites/news/preouverture-paris-le-cac40-va-t-il-mettre-fin-a-3-seances-de-baisse-992028.html Préouverture Paris : le CAC40 va-t-il mettre fin à 3 séances de baisse ? Par Jean-Baptiste André Publié le 14/08/2026 à 08h30 Préouverture Paris : le CAC40 va-t-il mettre fin à 3 séances de baisse ? LA TENDANCE (Boursier.com) -- Le CAC40",
+      "url": "https://www.boursier.com/indices/actualites/news/preouverture-paris-le-cac40-va-t-il-mettre-fin-a-3-seances-de-baisse-992028.html",
+      "source": "Boursier.com",
+      "date": "2026-08-14T06:30:02Z",
+      "score": 4,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-15T04:02:03.386830+00:00"
+    },
+    {
       "id": "91b6a738bfb2e4ac",
       "banque": "Société Générale",
       "departement": "",
@@ -16765,6 +16899,19 @@
       "created_at": "2026-07-31T06:44:59.937062+00:00"
     },
     {
+      "id": "5a9c19687ba99bbe",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "« Les utilisateurs devraient retirer leurs fonds » : pourquoi Binance risque de fermer ses portes aux Européens - La Tribune",
+      "extrait": "TITRE: « Les utilisateurs devraient retirer leurs fonds » : pourquoi Binance risque de fermer ses portes aux Européens - La Tribune SOURCE: Google News DATE: Wed, 17 Jun 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMi-gFBVV95cUxNT3B1TW5KYmFoSG94WWQ5dVFpLUs2XzlrN2dDekRSVnpZRlFXb1RTS3JnTzFIT3NwcjQyVjlqUFN2WWVxQVJITndjNmFFaEJKQXFTbTRSTVg1TXk2bEJjeWZKMFdpY1BaLWRsY092bG1zMHQ1WWdJTkN6VU0wTmNidGdvWFNJazN5VkdJVzBTdmh0d2IyQ0NIbjVBWVFKTGlyTnZPTFNGSVZyaXBnaFJDQ3gwX3RMVlhfQzZ4T04zLXh0TFEyV2",
+      "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNT3B1TW5KYmFoSG94WWQ5dVFpLUs2XzlrN2dDekRSVnpZRlFXb1RTS3JnTzFIT3NwcjQyVjlqUFN2WWVxQVJITndjNmFFaEJKQXFTbTRSTVg1TXk2bEJjeWZKMFdpY1BaLWRsY092bG1zMHQ1WWdJTkN6VU0wTmNidGdvWFNJazN5VkdJVzBTdmh0d2IyQ0NIbjVBWVFKTGlyTnZPTFNGSVZyaXBnaFJDQ3gwX3RMVlhfQzZ4T04zLXh0TFEyV2hBLXlXeDNfTkVmblh2YW0yLTc1NXQ5WlplUXU4VkozZmNFUEhRY0JvMllxQ25GX0J6RUNR?oc=5",
+      "source": "Google News",
+      "date": "Wed, 17 Jun 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-15T04:00:38.549847+00:00"
+    },
+    {
       "id": "92f5f21a1f59da72",
       "banque": "La Banque Postale",
       "departement": "",
@@ -17179,6 +17326,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-08-13T05:14:27.783190+00:00"
+    },
+    {
+      "id": "54626d205c739f79",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "À Montigny-le-Tilleul, le Bel Encas va fermer ses portes mais un nouveau chapitre s’écrit déjà : « Apporter une nouvelle identité avec de la qualité dans l’assiette » - sudinfo.be",
+      "extrait": "TITRE: À Montigny-le-Tilleul, le Bel Encas va fermer ses portes mais un nouveau chapitre s’écrit déjà : « Apporter une nouvelle identité avec de la qualité dans l’assiette » - sudinfo.be SOURCE: Google News DATE: Wed, 12 Aug 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMiygFBVV95cUxNNWhSSmRHTnJNRjhrOC0xQVo5bmQ4cnRZbGNtLUI3SGhkSHdqZERyZU5FbTVycWxwdVc4Q0JOdWlHMXpha2hPTlBCTWNpdFdTenFhTjMzQk1PdFRJc2hYWTNWVFljX3h2c1A5OWhCb3p1MUJ4SjBBdlM2dmJheTZtNTJJTTh0UV9jM1ZNVEJOZkV1ZGlObjI0TGtybzh",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNNWhSSmRHTnJNRjhrOC0xQVo5bmQ4cnRZbGNtLUI3SGhkSHdqZERyZU5FbTVycWxwdVc4Q0JOdWlHMXpha2hPTlBCTWNpdFdTenFhTjMzQk1PdFRJc2hYWTNWVFljX3h2c1A5OWhCb3p1MUJ4SjBBdlM2dmJheTZtNTJJTTh0UV9jM1ZNVEJOZkV1ZGlObjI0TGtybzhGNWZGUExIdzUtblhkTGNOVUE4ejQ3dzZFUWtlYzZrRm1GNV94Q0xsRGtIakJB?oc=5",
+      "source": "Google News",
+      "date": "Wed, 12 Aug 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-15T04:00:33.084547+00:00"
     },
     {
       "id": "50fb7fc6e95bae74",
@@ -18700,6 +18860,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-07-23T06:16:49.866589+00:00"
+    },
+    {
+      "id": "f0abff701bf04f82",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Les élus de Saint-Méloir se mobilisent contre la fermeture de deux classes au collège de Cancale - MaVille.com",
+      "extrait": "TITRE: Les élus de Saint-Méloir se mobilisent contre la fermeture de deux classes au collège de Cancale - MaVille.com SOURCE: Google News DATE: Tue, 23 Jun 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMi8AFBVV95cUxQSUJ2SFQwa19UTktEbjBnd2hZdG5xa09FRV9CUl94RHpxbmhTZlJldnVXQi11eDFPaWhtbFd6ZFgtV21fM3M2YmNFV016OXdDaHZJeTFJOGx4UXV1YzJsZXdYY3puT2tKUWlFWlNJczYySzliRi1KY1FhOXY4dEdWWll4QlVJR3k5RzN0QjR3Z1VVbFNFbkE4cXpwSGY5SWJOZ0VGS2JQc1JlVHlMZUpyY2wwazRqeC03WkpFbTdrYlJhNHowek9oU0hVd1BuakxR",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQSUJ2SFQwa19UTktEbjBnd2hZdG5xa09FRV9CUl94RHpxbmhTZlJldnVXQi11eDFPaWhtbFd6ZFgtV21fM3M2YmNFV016OXdDaHZJeTFJOGx4UXV1YzJsZXdYY3puT2tKUWlFWlNJczYySzliRi1KY1FhOXY4dEdWWll4QlVJR3k5RzN0QjR3Z1VVbFNFbkE4cXpwSGY5SWJOZ0VGS2JQc1JlVHlMZUpyY2wwazRqeC03WkpFbTdrYlJhNHowek9oU0hVd1BuakxRQ1dHSENEY0pDSUJCWUFKSkNpSlZXVkJKdzd5SzZONWo?oc=5",
+      "source": "Google News",
+      "date": "Tue, 23 Jun 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-15T04:00:46.660206+00:00"
     },
     {
       "id": "315e870b6e0174fb",
@@ -23473,6 +23646,19 @@
       "created_at": "2026-06-25T15:30:33.667741+00:00"
     },
     {
+      "id": "81b2677534647b21",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Risque d'orages en Haute-Savoie : le site du Fer-à-Cheval fermé par précaution, cinq jours après la lave torrentielle mortelle - France 3 Régions",
+      "extrait": "TITRE: Risque d'orages en Haute-Savoie : le site du Fer-à-Cheval fermé par précaution, cinq jours après la lave torrentielle mortelle - France 3 Régions SOURCE: Google News DATE: Sun, 09 Aug 2026 14:05:10 GMT URL: https://news.google.com/rss/articles/CBMisgJBVV95cUxNRE15Mnlvb0xmMjRKUm5Kb0tzNnp4X29HNWxrNGVneFUtR3VYM1I3ZXM3UHo1ejlwQ0JzZVBZOEozTVhDcjRybmJ0YlVySjRaWFpZS29lQXpEbXBZNXR3N29lR3cxZFhUU2laOVpfWC1kaHdhYzJUeUNxX1AzOVhYbVhtVG1ldzgtV0FjT3hBdDRTZ0JraHZFbzVQSkpFV3ppVVJ0QzVKcVRERURNTlVjdFd2WUcyQ",
+      "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxNRE15Mnlvb0xmMjRKUm5Kb0tzNnp4X29HNWxrNGVneFUtR3VYM1I3ZXM3UHo1ejlwQ0JzZVBZOEozTVhDcjRybmJ0YlVySjRaWFpZS29lQXpEbXBZNXR3N29lR3cxZFhUU2laOVpfWC1kaHdhYzJUeUNxX1AzOVhYbVhtVG1ldzgtV0FjT3hBdDRTZ0JraHZFbzVQSkpFV3ppVVJ0QzVKcVRERURNTlVjdFd2WUcyQ0FScjV2Qi03bHJUbzhvcGlDUWM0Y3R0ODNidFJuQm54c2JoUjljWXNKWWZVTHdrSHpaTzNSSDMzT3pFQm1QTXk2WVRWdDlZMVlpNEU2a3E5Y0c5ZTlQaE5WZ2Jic0Y3N0JvWTFUeHlZWTdHcWRJeURyeHlQcDByOW5Bb0E?oc=5",
+      "source": "Google News",
+      "date": "Sun, 09 Aug 2026 14:05:10 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-15T04:00:43.027565+00:00"
+    },
+    {
       "id": "208652e8e92e2b0f",
       "banque": "Société Générale",
       "departement": "",
@@ -24394,6 +24580,19 @@
       "score": 3,
       "raison": "fermeture non publiée: hors fenêtre temporelle",
       "created_at": "2026-07-22T08:56:18.985828+00:00"
+    },
+    {
+      "id": "5086a45a93edd399",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "La Poste se modernise et ferme trois semaines - NRPyrenees.fr",
+      "extrait": "TITRE: La Poste se modernise et ferme trois semaines - NRPyrenees.fr SOURCE: Google News DATE: Sat, 15 Aug 2026 03:10:00 GMT URL: https://news.google.com/rss/articles/CBMimwFBVV95cUxPTFlUaGNkb1B1T1lPMjB2Vk1CVnY3VVBfTGpVTFBYa1BSdzRtdjlVOGt1VkxpWG9EVDY5cXBiMnlDaDlmbnJwWlE4a3RmbC1hczI0QmNPOHZ2bVV4ampKTnhCV3UwYndsNnREQW1aWlpaY3ZVaDhrVUptU05vU3FaY3pGaExMMGhJMlh1MWxWLXRKZ3BYNnE2cFkzOA?oc=5 <a href=\"https://news.google.com/rss/articles/CBMimwFBVV95cUxPTFlUaGNkb1B1T1lPMjB2Vk1CVnY3VVBfTGpVTFBYa1BSdzRtdjl",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPTFlUaGNkb1B1T1lPMjB2Vk1CVnY3VVBfTGpVTFBYa1BSdzRtdjlVOGt1VkxpWG9EVDY5cXBiMnlDaDlmbnJwWlE4a3RmbC1hczI0QmNPOHZ2bVV4ampKTnhCV3UwYndsNnREQW1aWlpaY3ZVaDhrVUptU05vU3FaY3pGaExMMGhJMlh1MWxWLXRKZ3BYNnE2cFkzOA?oc=5",
+      "source": "Google News",
+      "date": "Sat, 15 Aug 2026 03:10:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-15T04:00:45.165671+00:00"
     },
     {
       "id": "19b84526cf84f73c",
@@ -26515,6 +26714,19 @@
       "created_at": "2026-08-05T06:07:08.253345+00:00"
     },
     {
+      "id": "f1cb79c8cc4fbcbf",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Confrontée à une baisse de fréquentation, La Poste de Pleubian risque de fermer - Maville.com Saint Brieuc",
+      "extrait": "TITRE: Confrontée à une baisse de fréquentation, La Poste de Pleubian risque de fermer - Maville.com Saint Brieuc SOURCE: Google News DATE: Mon, 06 Jul 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMi2wFBVV95cUxPMjRROVR1Z2hMNGE3RkVJQzlTeWQ5V2FRWF9saUlXZEVHVlFhUHB6bnlZYkxPZHZtMWhCRXFaWHE2c1VwdlhFd3pMM0pDU3RTOGVwLVkxY2p5amhUd1FtdmtZYVV6LTAzV1NaVl9fU0R6RHVEN3lUZmRjb05RdmhxNEM2TVo0eUg3YmZsYW9VaGMtYUhyelNYQkI5eDZ3WGtnVlE5elpxa2RWR01kTXVXcGJUNTB6NHdVLWFWNjlJMDNYYjNZRkRLQlhfM0F2bC1wNEdo",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPMjRROVR1Z2hMNGE3RkVJQzlTeWQ5V2FRWF9saUlXZEVHVlFhUHB6bnlZYkxPZHZtMWhCRXFaWHE2c1VwdlhFd3pMM0pDU3RTOGVwLVkxY2p5amhUd1FtdmtZYVV6LTAzV1NaVl9fU0R6RHVEN3lUZmRjb05RdmhxNEM2TVo0eUg3YmZsYW9VaGMtYUhyelNYQkI5eDZ3WGtnVlE5elpxa2RWR01kTXVXcGJUNTB6NHdVLWFWNjlJMDNYYjNZRkRLQlhfM0F2bC1wNEdoT1czdi1EWU0?oc=5",
+      "source": "Google News",
+      "date": "Mon, 06 Jul 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-15T04:00:37.138363+00:00"
+    },
+    {
       "id": "3a33226ab8cac0cb",
       "banque": "La Banque Postale",
       "departement": "",
@@ -27503,19 +27715,6 @@
       "created_at": "2026-06-25T15:46:47.244144+00:00"
     },
     {
-      "id": "5b6d2802f79f49d5",
-      "banque": "Crédit Agricole",
-      "departement": "",
-      "titre": "Sept fermetures d'agences du Crédit Agricole en Haute-Vienne : \"c'est inadmissible\" pour le maire de Chateauponsac - Radio France",
-      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMioAJBVV95cUxPRTZ6dzZyOEdONHdGbEM1TUVzOWhKWTBfY2UzSllBckZqT0RqakVCV2pkTmdSYkdhWFNmWkF1bEt3NmJVVmpEbVI3c2tHaXAtRlJRVmxiTnVRSXVzUjI0Ui1ORlZ2VkIxUTBaTmh5WTV3clFnV2c5aW01NnAxVXUxaURNZ1B0ekVfR2xaNGx4a2plRGo4VnEya18wb3dRR3ljMG5hWHU1cjFpWjhydlZCMTBuaWhsazd0a2d5Z1BYcVhyR3hfRjI4NHozM1ZuQW4tbDZYZ3IzQm9LUTVueWhFTktJQW1CaWFwTkpZVko4UE9YbHp5WVdxbDlLZ3BXSGxtbU9IUHhxWUNyZHdPc2cxTzNlTzc4enFEbE9hSVZrdUs?oc=5\" target=\"_blank\">Sept fermetures d'agences du Crédit Agri",
-      "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxPRTZ6dzZyOEdONHdGbEM1TUVzOWhKWTBfY2UzSllBckZqT0RqakVCV2pkTmdSYkdhWFNmWkF1bEt3NmJVVmpEbVI3c2tHaXAtRlJRVmxiTnVRSXVzUjI0Ui1ORlZ2VkIxUTBaTmh5WTV3clFnV2c5aW01NnAxVXUxaURNZ1B0ekVfR2xaNGx4a2plRGo4VnEya18wb3dRR3ljMG5hWHU1cjFpWjhydlZCMTBuaWhsazd0a2d5Z1BYcVhyR3hfRjI4NHozM1ZuQW4tbDZYZ3IzQm9LUTVueWhFTktJQW1CaWFwTkpZVko4UE9YbHp5WVdxbDlLZ3BXSGxtbU9IUHhxWUNyZHdPc2cxTzNlTzc4enFEbE9hSVZrdUs?oc=5",
-      "source": "Google News",
-      "date": "Fri, 23 Jan 2026 08:00:00 GMT",
-      "score": 3,
-      "raison": "article pertinent sans fermeture publiable",
-      "created_at": "2026-06-29T09:12:32.603923+00:00"
-    },
-    {
       "id": "fffd822c494aa45a",
       "banque": "Société Générale",
       "departement": "",
@@ -28164,6 +28363,32 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-08-03T07:54:02.313352+00:00"
+    },
+    {
+      "id": "449d5652df99af08",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Vic-en-Bigorre. La Poste se modernise et ferme trois semaine - ladepeche.fr",
+      "extrait": "TITRE: Vic-en-Bigorre. La Poste se modernise et ferme trois semaine - ladepeche.fr SOURCE: Google News DATE: Fri, 14 Aug 2026 21:30:00 GMT URL: https://news.google.com/rss/articles/CBMimAFBVV95cUxNTHN3NDV5RWQtQVY5aE53QXE5bmM3S3ozRFZsZkxoUHBOS2I5VW5peEJROEhMbkt6NVhRS3lBcVEzejBKeS1ka0o3VnhOVXVWalY4SW5PUHltRXRZQTl1Xzc5Ry1nenB5U2hxUk1vc0I2VmhvUGVXQy1vMktoVWI0dDdhbkR3UXdFNVRmNXJ3aTlqWG9rWEtseQ?oc=5 <a href=\"https://news.google.com/rss/articles/CBMimAFBVV95cUxNTHN3NDV5RWQtQVY5aE53QXE5bmM3S3ozRFZsZkxoU",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNTHN3NDV5RWQtQVY5aE53QXE5bmM3S3ozRFZsZkxoUHBOS2I5VW5peEJROEhMbkt6NVhRS3lBcVEzejBKeS1ka0o3VnhOVXVWalY4SW5PUHltRXRZQTl1Xzc5Ry1nenB5U2hxUk1vc0I2VmhvUGVXQy1vMktoVWI0dDdhbkR3UXdFNVRmNXJ3aTlqWG9rWEtseQ?oc=5",
+      "source": "Google News",
+      "date": "Fri, 14 Aug 2026 21:30:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-15T04:00:35.400676+00:00"
+    },
+    {
+      "id": "2f46a3dd9c018284",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "\"C'est inquiétant\": le maire de Chanceaux-sur-Choisille déplore la fermeture temporaire du bureau de poste de sa commune - ici.fr",
+      "extrait": "TITRE: \"C'est inquiétant\": le maire de Chanceaux-sur-Choisille déplore la fermeture temporaire du bureau de poste de sa commune - ici.fr SOURCE: Google News DATE: Fri, 14 Aug 2026 08:28:51 GMT URL: https://news.google.com/rss/articles/CBMirwJBVV95cUxQUld4dms1MS1YWWpsT3hnaTA2dng0ZEo2aUtxbktyekN2UGRFWkVCTkJKZmMwNHhjcjhzVGdkRjUxSkhocDVOMktDUUlPYUpIOFBUYm51dTNyeTM5bFpKYnlXdXcxYTdHcThtR0VxMV95RFktd09WcmFodGtKcGYxOFRsckY0cUVmNHhKZXZFS1VxUnNzMUx3OHhCaURKZmpNSHgzTEVYX3FVNjQ0RXhZRDMzUGRXZTN0aVJUSlg3Y0VuM",
+      "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxQUld4dms1MS1YWWpsT3hnaTA2dng0ZEo2aUtxbktyekN2UGRFWkVCTkJKZmMwNHhjcjhzVGdkRjUxSkhocDVOMktDUUlPYUpIOFBUYm51dTNyeTM5bFpKYnlXdXcxYTdHcThtR0VxMV95RFktd09WcmFodGtKcGYxOFRsckY0cUVmNHhKZXZFS1VxUnNzMUx3OHhCaURKZmpNSHgzTEVYX3FVNjQ0RXhZRDMzUGRXZTN0aVJUSlg3Y0VuM19BVW9GSWFjMkhUNkprbTBFMGZVZm1xNGZ0RklTcVJpWmg4ZmJGQkQ2M29oQlR5aFlsVy1ua24wWU80Q0l1YUJpS2drZTJQR25nSmtHT0kya3A4T1JlMWlSYk9vbzJBSWZCd1RGRHEzOHdhYm8?oc=5",
+      "source": "Google News",
+      "date": "Fri, 14 Aug 2026 08:28:51 GMT",
+      "score": 3,
+      "raison": "fermeture non publiée: garde entrée/sortie: fermeture postale temporaire ou circonstancielle",
+      "created_at": "2026-08-15T04:00:41.378659+00:00"
     },
     {
       "id": "5871ec8906c4f8f5",
@@ -29191,6 +29416,149 @@
       "score": 3,
       "raison": "fermeture non publiée: hors fenêtre temporelle",
       "created_at": "2026-07-22T09:09:01.159244+00:00"
+    },
+    {
+      "id": "c018abe209769c16",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Vic-en-Bigorre. La Poste se modernise et ferme trois semaine",
+      "extrait": "TITRE: Vic-en-Bigorre. La Poste se modernise et ferme trois semaine SOURCE: Ladepeche.fr DATE: 2026-08-14T21:30:20Z URL: https://www.ladepeche.fr/2026/08/14/la-poste-se-modernise-et-ferme-trois-semaine-13509784.php Article rédigé par Correspondant de la rédaction des Hautes-Pyrénées Le bureau de poste de Vic-en-Bigorre, situé 8 boulevard Gallieni, va fermer temporairement ses portes afin de réaliser des travaux destinés à améliorer l'accueil des usagers. La fermeture interviendra à partir du ven",
+      "url": "https://www.ladepeche.fr/2026/08/14/la-poste-se-modernise-et-ferme-trois-semaine-13509784.php",
+      "source": "Ladepeche.fr",
+      "date": "2026-08-14T21:30:20Z",
+      "score": 3,
+      "raison": "fermeture non publiée: garde entrée/sortie: fermeture postale temporaire ou circonstancielle",
+      "created_at": "2026-08-15T04:01:01.283156+00:00"
+    },
+    {
+      "id": "c2c90dc0f097f466",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Moefana et Brau-Boirie voulaient travailler les coups de pied par-dessus\" : Petitjean raconte sa tournée",
+      "extrait": "TITRE: Moefana et Brau-Boirie voulaient travailler les coups de pied par-dessus\" : Petitjean raconte sa tournée SOURCE: Rugbyrama DATE: 2026-08-14T17:31:04Z URL: https://www.rugbyrama.fr/2026/08/14/grand-entretien-xv-de-france-top-14-moefana-et-brau-boirie-voulaient-travailler-les-coups-de-pied-par-dessus-maxime-petitjean-toulon-raconte-sa-13504406.php Propulsé entraîneur adjoint du XV de France en charge du jeu au pied cet été, le Toulonnais Maxime Petitjean a pris ses marques en Australie pour",
+      "url": "https://www.rugbyrama.fr/2026/08/14/grand-entretien-xv-de-france-top-14-moefana-et-brau-boirie-voulaient-travailler-les-coups-de-pied-par-dessus-maxime-petitjean-toulon-raconte-sa-13504406.php",
+      "source": "Rugbyrama",
+      "date": "2026-08-14T17:31:04Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-15T04:01:06.625711+00:00"
+    },
+    {
+      "id": "fb0f4b89f42e1122",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "DGFIP piratée : revenu fiscal, prélèvement à la source... L'hémorragie des données personnelles des Français se poursuit à grande échelle",
+      "extrait": "TITRE: DGFIP piratée : revenu fiscal, prélèvement à la source... L'hémorragie des données personnelles des Français se poursuit à grande échelle SOURCE: Challenges DATE: 2026-08-14T16:50:00Z URL: https://www.challenges.fr/entreprise/dgfip-piratee-revenu-fiscal-prelevement-a-la-source-lhemorragie-des-donnees-personnelles-des-francais-se-poursuit-a-grande-echelle_645229 L'Etat tente toutefois de réagir. Lors du Forum InCyber de Lille, début avril, la ministre du Numérique Anne Le Hénanff avait inv",
+      "url": "https://www.challenges.fr/entreprise/dgfip-piratee-revenu-fiscal-prelevement-a-la-source-lhemorragie-des-donnees-personnelles-des-francais-se-poursuit-a-grande-echelle_645229",
+      "source": "Challenges",
+      "date": "2026-08-14T16:50:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-15T04:01:08.455996+00:00"
+    },
+    {
+      "id": "cfdc5d0dcda06d56",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Clôture Paris : quatrième séance de pause pour le CAC 40, -0,9% sur la semaine",
+      "extrait": "TITRE: Clôture Paris : quatrième séance de pause pour le CAC 40, -0,9% sur la semaine SOURCE: Bourse Direct DATE: 2026-08-14T16:16:49Z URL: https://www.boursedirect.fr/fr/actualites/categorie/marche-francais/cloture-paris-quatrieme-seance-de-pause-pour-le-cac-40-0-9-sur-la-semaine-boursier-c85548389161af66bf63d4b4f0de8168810d349e Les cours du pétrole ont enregistré une hausse hebdomadaire d'environ 5%. Pas de changement de tendance en bourse de Paris qui a terminé sans grande évolution une des s",
+      "url": "https://www.boursedirect.fr/fr/actualites/categorie/marche-francais/cloture-paris-quatrieme-seance-de-pause-pour-le-cac-40-0-9-sur-la-semaine-boursier-c85548389161af66bf63d4b4f0de8168810d349e",
+      "source": "Bourse Direct",
+      "date": "2026-08-14T16:16:49Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-15T04:01:19.497413+00:00"
+    },
+    {
+      "id": "3972d4f24eb8059b",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Clôture Paris : quatrième séance de pause pour le CAC 40, -0,9% sur la semaine",
+      "extrait": "TITRE: Clôture Paris : quatrième séance de pause pour le CAC 40, -0,9% sur la semaine SOURCE: Boursier.com DATE: 2026-08-14T15:59:10Z URL: https://www.boursier.com/indices/actualites/news/cloture-paris-quatrieme-seance-de-pause-pour-le-cac-40-0-9-sur-la-semaine-992055.html Clôture Paris : quatrième séance de pause pour le CAC 40, -0,9% sur la semaine Par Olivier Cheilan Publié le 14/08/2026 à 18h00 Clôture Paris : quatrième séance de pause pour le CAC 40, -0,9% sur la semaine (Boursier.com) -- L",
+      "url": "https://www.boursier.com/indices/actualites/news/cloture-paris-quatrieme-seance-de-pause-pour-le-cac-40-0-9-sur-la-semaine-992055.html",
+      "source": "Boursier.com",
+      "date": "2026-08-14T15:59:10Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-15T04:01:21.054516+00:00"
+    },
+    {
+      "id": "d5fe578816c4669d",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "La filière bois et papeterie vosgienne",
+      "extrait": "TITRE: La filière bois et papeterie vosgienne SOURCE: Le nouvel Economiste DATE: 2026-08-14T15:32:45Z URL: https://www.lenouveleconomiste.fr/la-filiere-bois-et-papeterie-vosgienne-138808/ Épinal se targue d'être la \" capitale du bois \". Le mot n'est pas usurpé : la moitié du département est boisée, un record dans le Grand Est. Autre chiffre parlant, l'industrie du papier-carton reste le premier employeur industriel local, avec plus de 2 600 salariés. Elle pèse aussi lourd à l'export : le papier-",
+      "url": "https://www.lenouveleconomiste.fr/la-filiere-bois-et-papeterie-vosgienne-138808/",
+      "source": "Le nouvel Economiste",
+      "date": "2026-08-14T15:32:45Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-15T04:01:22.892421+00:00"
+    },
+    {
+      "id": "eadeeab159001373",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Algérie-AES : comment Alger a renoué avec Niamey, Ouagadougou et Bamako",
+      "extrait": "TITRE: Algérie-AES : comment Alger a renoué avec Niamey, Ouagadougou et Bamako SOURCE: Afrik.com DATE: 2026-08-14T12:42:37Z URL: https://www.afrik.com/algerie-aes-alger-renoue-niamey-ouagadougou-bamako Après la crise du drone malien abattu à Tin Zaouatine au printemps 2025, Alger a progressivement rétabli ses relations avec les trois capitales de la Confédération des États du Sahel. Le rapprochement a d'abord emprunté la voie de l'énergie et de l'économie avec Niamey et Ouagadougou, avant de gag",
+      "url": "https://www.afrik.com/algerie-aes-alger-renoue-niamey-ouagadougou-bamako",
+      "source": "Afrik.com",
+      "date": "2026-08-14T12:42:37Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-15T04:00:58.563491+00:00"
+    },
+    {
+      "id": "4341c893808c818b",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Mi-séance Paris : quatrième séance de consolidation pour le CAC 40, les éditeurs de logiciels se démarquent",
+      "extrait": "TITRE: Mi-séance Paris : quatrième séance de consolidation pour le CAC 40, les éditeurs de logiciels se démarquent SOURCE: Bourse Direct DATE: 2026-08-14T10:15:14Z URL: https://www.boursedirect.fr/fr/actualites/categorie/marche-francais/mi-seance-paris-quatrieme-seance-de-consolidation-pour-le-cac-40-les-editeurs-de-logiciels-se-demarquent-boursier-10f7db1cb8c5d13f41b4a72aaaba96c14a11a866 L'espoir d'un accord de paix au Moyen-Orient s'éloigne un peu plus ce vendredi. Pas de changement de tendanc",
+      "url": "https://www.boursedirect.fr/fr/actualites/categorie/marche-francais/mi-seance-paris-quatrieme-seance-de-consolidation-pour-le-cac-40-les-editeurs-de-logiciels-se-demarquent-boursier-10f7db1cb8c5d13f41b4a72aaaba96c14a11a866",
+      "source": "Bourse Direct",
+      "date": "2026-08-14T10:15:14Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-15T04:01:37.630230+00:00"
+    },
+    {
+      "id": "7a6053eb39c9bf02",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Mi-séance Paris : quatrième séance de consolidation pour le CAC 40, les éditeurs de logiciels se démarquent",
+      "extrait": "TITRE: Mi-séance Paris : quatrième séance de consolidation pour le CAC 40, les éditeurs de logiciels se démarquent SOURCE: Boursier.com DATE: 2026-08-14T09:59:28Z URL: https://www.boursier.com/indices/actualites/news/mi-seance-paris-quatrieme-seance-de-consolidation-pour-le-cac-40-les-editeurs-de-logiciels-se-demarquent-992042.html Mi-séance Paris : quatrième séance de consolidation pour le CAC 40, les éditeurs de logiciels se démarquent Par Olivier Cheilan Publié le 14/08/2026 à 12h00 Mi-séance",
+      "url": "https://www.boursier.com/indices/actualites/news/mi-seance-paris-quatrieme-seance-de-consolidation-pour-le-cac-40-les-editeurs-de-logiciels-se-demarquent-992042.html",
+      "source": "Boursier.com",
+      "date": "2026-08-14T09:59:28Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-15T04:01:38.977159+00:00"
+    },
+    {
+      "id": "3b9268f75c55a9e4",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "\"Jusqu'à 2 000 personnes font l'ascension chaque soir\" : l'éruption de l'Etna attire des foules de touristes",
+      "extrait": "TITRE: \"Jusqu'à 2 000 personnes font l'ascension chaque soir\" : l'éruption de l'Etna attire des foules de touristes SOURCE: LaProvence.com DATE: 2026-08-14T09:18:05Z URL: https://www.laprovence.com/article/ecoplanete/29232487412800/jusqu-a-2-000-personnes-font-l-ascension-chaque-soir-l-eruption-de-l-etna-attire-des-foules-de-touristes?id=29232487412800 L'Etna en éruption attire des milliers de touristes, créant une \"éruption touristique\" sans précédent. Mais entre selfies risqués et ascensions e",
+      "url": "https://www.laprovence.com/article/ecoplanete/29232487412800/jusqu-a-2-000-personnes-font-l-ascension-chaque-soir-l-eruption-de-l-etna-attire-des-foules-de-touristes?id=29232487412800",
+      "source": "LaProvence.com",
+      "date": "2026-08-14T09:18:05Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-15T04:01:40.559354+00:00"
+    },
+    {
+      "id": "9096055f320ed671",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Jumia réduit sa voilure et lève 50 millions de dollars pour viser la rentabilité",
+      "extrait": "TITRE: Jumia réduit sa voilure et lève 50 millions de dollars pour viser la rentabilité SOURCE: Agence Ecofin DATE: 2026-08-14T06:42:06Z URL: https://www.agenceecofin.com/actualites/1408-140897-jumia-reduit-sa-voilure-et-leve-50-millions-de-dollars-pour-viser-la-rentabilite Jumia veut désormais faire de la rentabilité l'aboutissement de sa transformation. Après plusieurs années d'expansion coûteuse en Afrique, la plateforme de commerce électronique a annoncé le 12 août avoir levé 50 millions de ",
+      "url": "https://www.agenceecofin.com/actualites/1408-140897-jumia-reduit-sa-voilure-et-leve-50-millions-de-dollars-pour-viser-la-rentabilite",
+      "source": "Agence Ecofin",
+      "date": "2026-08-14T06:42:06Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-15T04:02:02.072274+00:00"
     },
     {
       "id": "f7f104d2b2baf486",
@@ -33262,6 +33630,19 @@
       "created_at": "2026-08-12T05:10:34.780227+00:00"
     },
     {
+      "id": "560f2768d3b5782b",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Est-ce que les banques ouvrent le vendredi 14 et le samedi 15 août ? Horaires des bureaux, transferts et distributeurs - Demócrata",
+      "extrait": "TITRE: Est-ce que les banques ouvrent le vendredi 14 et le samedi 15 août ? Horaires des bureaux, transferts et distributeurs - Demócrata SOURCE: Google News DATE: Tue, 11 Aug 2026 15:11:00 GMT URL: https://news.google.com/rss/articles/CBMiyAFBVV95cUxOUl9LZUFRdW0zMlpPTGYxbDlyOFNPaDEyTUl6MmdyMGRMU2xJQmxQV0ZQZXNENm5PR1dmUmZzbWdLMTJraWljU20tZmJON1hEOVBId2xDZ2drTXpoeFROWXZoaEtRQ0ZZcGdfUlh3SnBseml6T3pDM0d2Ul9QaGplXzBkUWVvcWNubHpGREVlbXkzb3J6YVZxMW1sUVNCZjRpSDl0YnlOYUxuczZ4Rjc4YnVCejl5WHRSbHQ1WWZnUXdu",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOUl9LZUFRdW0zMlpPTGYxbDlyOFNPaDEyTUl6MmdyMGRMU2xJQmxQV0ZQZXNENm5PR1dmUmZzbWdLMTJraWljU20tZmJON1hEOVBId2xDZ2drTXpoeFROWXZoaEtRQ0ZZcGdfUlh3SnBseml6T3pDM0d2Ul9QaGplXzBkUWVvcWNubHpGREVlbXkzb3J6YVZxMW1sUVNCZjRpSDl0YnlOYUxuczZ4Rjc4YnVCejl5WHRSbHQ1WWZnUXduNEpTMWFhOdIBzgFBVV95cUxNMU4yUXZOd0JYbmdHMEJsZXBRWmFfcE9nNVRIbE5rV2NKbU1LTlNSbW9iTk9Yam1TODIxYXVJS0pPV2QtT3FYYmFvS1ZHUXhkRkkwQ05FUkNGRXRFRDhyUGRKdmI1cUFCN2QxZzNkZzFJbDh3LW1GR1F6b2xINlk2TU42V3BfV1N2anhYS3hUcmxKNk04RnZadUtMOXU0RzBoWDhISzRNWXdUcHlDM0o0Qm5uSXdDa200S1RlVTVSSG0xM2EyNVZZSGxrSF8zZw?oc=5",
+      "source": "Google News",
+      "date": "Tue, 11 Aug 2026 15:11:00 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-15T04:00:31.351264+00:00"
+    },
+    {
       "id": "ff0fc70b82242ab3",
       "banque": "Société Générale",
       "departement": "",
@@ -35511,6 +35892,110 @@
       "created_at": "2026-06-25T15:43:41.960961+00:00"
     },
     {
+      "id": "3d94cb1a7a70d82d",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Bokhol : la ministre des Pêches a présidé une cérémonie marquant l'inauguration d'une unité de fabrication d'aliments aquacoles",
+      "extrait": "TITRE: Bokhol : la ministre des Pêches a présidé une cérémonie marquant l'inauguration d'une unité de fabrication d'aliments aquacoles SOURCE: Senego.com - Actualité au Sénégal, toute actualité du jour DATE: 2026-08-15T02:28:12Z URL: https://senego.com/bokhol-la-ministre-des-peches-a-preside-une-ceremonie-marquant-linauguration-dune-unite-de-fabrication-daliments-aquacoles_1993803.html La ministre des Pêches et de l'Économie maritime, Amy Mara Dièye, a inauguré jeudi 13 août 2026 à Bokhol une un",
+      "url": "https://senego.com/bokhol-la-ministre-des-peches-a-preside-une-ceremonie-marquant-linauguration-dune-unite-de-fabrication-daliments-aquacoles_1993803.html",
+      "source": "Senego.com - Actualité au Sénégal, toute actualité du jour",
+      "date": "2026-08-15T02:28:12Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-15T04:00:56.530348+00:00"
+    },
+    {
+      "id": "e2c4aeb3407b75dd",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "PSG : coup de théâtre pour Zion Suzuki, Lucas Enrique veut le voir",
+      "extrait": "TITRE: PSG : coup de théâtre pour Zion Suzuki, Lucas Enrique veut le voir SOURCE: ParisTeam.fr DATE: 2026-08-14T19:03:00Z URL: https://www.paristeam.fr/actu-psg/transferts/psg-coup-de-theatre-pour-zion-suzuki-lucas-enrique-veut-le-voir-72423 Le dossier Zion Suzuki réserve un nouveau rebondissement. Le Paris Saint-Germain a trouvé un accord avec Parme autour d'un transfert de 35 millions d'euros, bonus compris, et le gardien international japonais doit s'engager pour cinq ans avec le club de la c",
+      "url": "https://www.paristeam.fr/actu-psg/transferts/psg-coup-de-theatre-pour-zion-suzuki-lucas-enrique-veut-le-voir-72423",
+      "source": "ParisTeam.fr",
+      "date": "2026-08-14T19:03:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-15T04:01:04.705998+00:00"
+    },
+    {
+      "id": "985f5f91a736b882",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Mercato PSG : Ferran Torres et Mika Godts arrivent... avant une dernière recrue en attaque ?",
+      "extrait": "TITRE: Mercato PSG : Ferran Torres et Mika Godts arrivent... avant une dernière recrue en attaque ? SOURCE: Top mercato DATE: 2026-08-14T19:00:00Z URL: https://www.topmercato.com/2125947-mercato-psg-ferran-torres-et-mika-godts-arrivent-avant-une-derniere-recrue-en-attaque/ Le PSG est parvenu à s'entendre avec le Barça et l'Ajax pour Ferran Torres et Mika Godts. Deux recrues, et puis c'est tout ? En réalité, un autre offensif pourrait bien arriver à Paris. Avec le transfert de Ferran Torres au PS",
+      "url": "https://www.topmercato.com/2125947-mercato-psg-ferran-torres-et-mika-godts-arrivent-avant-une-derniere-recrue-en-attaque/",
+      "source": "Top mercato",
+      "date": "2026-08-14T19:00:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-15T04:01:02.843177+00:00"
+    },
+    {
+      "id": "954f7beb35e7d023",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "À Lisula, socioprofessionnels et intercommunalité renouent l...",
+      "extrait": "TITRE: À Lisula, socioprofessionnels et intercommunalité renouent l... SOURCE: Corse Net Infos - Pure player corse DATE: 2026-08-14T12:51:44Z URL: https://www.corsenetinfos.corsica/A-Lisula-socioprofessionnels-et-intercommunalite-renouent-le-dialogue-sur-la-redevance-des-dechets_a92172.html Contestée par une partie des professionnels de Lisula, la redevance spéciale appliquée à la collecte des déchets était au cœur d'une réunion avec le président de la communauté de communes, Lionel Mortini. Des",
+      "url": "https://www.corsenetinfos.corsica/A-Lisula-socioprofessionnels-et-intercommunalite-renouent-le-dialogue-sur-la-redevance-des-dechets_a92172.html",
+      "source": "Corse Net Infos - Pure player corse",
+      "date": "2026-08-14T12:51:44Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-15T04:01:26.481867+00:00"
+    },
+    {
+      "id": "887d92993badd0d6",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "\"Pas un environnement sain et stable à l'OM\" : Aubameyang pointe l'éternel problème de Marseille en plein mercato",
+      "extrait": "TITRE: \"Pas un environnement sain et stable à l'OM\" : Aubameyang pointe l'éternel problème de Marseille en plein mercato SOURCE: Top mercato DATE: 2026-08-14T08:19:07Z URL: https://www.topmercato.com/2125812-pas-un-environnement-sain-et-stable-a-lom-aubameyang-pointe-leternel-probleme-de-marseille-en-plein-mercato/ Pierre-Emerick Aubameyang, qui a quitté l'OM pour rejoindre La Corogne lors de ce mercato estival, a pointé du doigt les problèmes du club phocéen et notamment son manque de stabilité",
+      "url": "https://www.topmercato.com/2125812-pas-un-environnement-sain-et-stable-a-lom-aubameyang-pointe-leternel-probleme-de-marseille-en-plein-mercato/",
+      "source": "Top mercato",
+      "date": "2026-08-14T08:19:07Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-15T04:01:41.999671+00:00"
+    },
+    {
+      "id": "d179e2e0c66b8a46",
+      "banque": "LCL",
+      "departement": "",
+      "titre": "Flashback, il y a un an : Du rêve à la réalité : ces promesses nantaises qui ont viré au casse-tête - But! Football Club",
+      "extrait": "TITRE: Flashback, il y a un an : Du rêve à la réalité : ces promesses nantaises qui ont viré au casse-tête - But! Football Club SOURCE: But! Football Club DATE: 2026-08-14T08:08:22Z URL: https://www.butfootballclub.fr/1690604-flashback-il-y-a-un-an-du-reve-a-la-realite-ces-promesses-nantaises-qui-ont-vire-au-casse-tete/ L'été dernier, la Beaujoire vibrait pour sa nouvelle sentinelle, symbole d'un mercato plein d'espoirs avant le choc contre le PSG. Douze mois plus tard, le décor a changé : Nante",
+      "url": "https://www.butfootballclub.fr/1690604-flashback-il-y-a-un-an-du-reve-a-la-realite-ces-promesses-nantaises-qui-ont-vire-au-casse-tete/",
+      "source": "But! Football Club",
+      "date": "2026-08-14T08:08:22Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-15T04:01:44.377750+00:00"
+    },
+    {
+      "id": "7de3b06f50a83858",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Nouvelle grève des salariés du Rhônexpress ce vendredi pour dénoncer les conditions de travail",
+      "extrait": "Après un premier mouvement en juillet, les salariés de Rhônexpress sont de nouveau appelés à la grève ce vendredi 14 août. Après une mobilisation déjà importante le 10 juillet dernier, les salariés du Rhônexpress sont de nouveau appelés à faire grève ce vendredi 14 août. Dans un communiqué, la CGT Rhônexpress affirme que les agents se mobilisent \"massivement\" pour dénoncer leurs conditions de travail et l'absence d'avancées depuis le précédent mouvement. Le syndicat met notamment en cause l'orga",
+      "url": "https://www.lyoncapitale.fr/actualite/nouvelle-greve-des-salaries-du-rhonexpress-ce-vendredi-pour-denoncer-les-conditions-de-travail",
+      "source": "Lyon Capitale",
+      "date": "2026-08-14T08:02:00Z",
+      "score": 2,
+      "raison": "score préfiltre bas (-2)",
+      "created_at": "2026-08-15T04:01:45.112625+00:00"
+    },
+    {
+      "id": "99e62ec0433cdfa0",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Rwanda : les recettes d'exportation agricoles atteignent le milliard de dollars en 2025/2026",
+      "extrait": "TITRE: Rwanda : les recettes d'exportation agricoles atteignent le milliard de dollars en 2025/2026 SOURCE: Agence Ecofin DATE: 2026-08-14T07:31:55Z URL: https://www.agenceecofin.com/actualites-agro/1408-140900-rwanda-les-recettes-d-exportation-agricoles-atteignent-le-milliard-de-dollars-en-2025/2026 (Agence Ecofin) - L'agriculture rwandaise contribue à hauteur de 20 % au PIB et emploie environ 35 % de la population active. Au terme de l'exercice fiscal 2025/2026, le secteur consolide ses perfor",
+      "url": "https://www.agenceecofin.com/actualites-agro/1408-140900-rwanda-les-recettes-d-exportation-agricoles-atteignent-le-milliard-de-dollars-en-2025/2026",
+      "source": "Agence Ecofin",
+      "date": "2026-08-14T07:31:55Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-15T04:01:47.364425+00:00"
+    },
+    {
       "id": "0604ee5790e60f93",
       "banque": "CIC",
       "departement": "",
@@ -35548,6 +36033,19 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-08-14T05:11:01.577774+00:00"
+    },
+    {
+      "id": "133e5500d4138fdf",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Mexique: douze ans après la disparition non élucidée de 36 étudiants, un ex-gouverneur inculpé par la justice mexicaine",
+      "extrait": "TITRE: Mexique: douze ans après la disparition non élucidée de 36 étudiants, un ex-gouverneur inculpé par la justice mexicaine SOURCE: TV5MONDE DATE: 2026-08-13T18:52:43Z URL: https://information.tv5monde.com/international/video/mexique-douze-ans-apres-la-disparition-non-elucidee-de-36-etudiants-un-ex-gouverneur-inculpe-par-la-justice-mexicaine-2833500 C'est l'un des plus grands drames et l'un des plus grands mystères de ces 15 dernières années au Mexique: une quarantaine d'étudiants disparus en",
+      "url": "https://information.tv5monde.com/international/video/mexique-douze-ans-apres-la-disparition-non-elucidee-de-36-etudiants-un-ex-gouverneur-inculpe-par-la-justice-mexicaine-2833500",
+      "source": "TV5MONDE",
+      "date": "2026-08-13T18:52:43Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-15T04:01:24.183026+00:00"
     },
     {
       "id": "3ff84cd256da7353",
