@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T04:12:23.371593+00:00",
+  "generated_at": "2026-08-16T04:17:47.189657+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -9985,6 +9985,24 @@
       "created_at": "2026-08-15T04:00:33.534802+00:00"
     },
     {
+      "id": "5d282a59cc62bf5c",
+      "banque": "La Banque Postale",
+      "commune": "Mansigné",
+      "departement": "72",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "« On mérite quand même quelques égards » : au Mans, la riposte s’organise après la fermeture d’un bureau de poste - Maville Nantes",
+      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQdmp4YUVOalVYLUJTNEs3OTgycGdKNXpYU1piel9fOEs5WWlyY2dQbVh6UVl0clhFTW5aQ2VwcUwyY2pUWDdnZjEtZUc1TThxV3RNbVZhMERhdXJHZHhGTTQ0ZmwxNTdiQUs4d1V4OUxyR0pqMkc2T19NdWJreWVhS0dGcndFanAxU1JvaGFrTkxRZmF4QjcwcjF6OEhoMWdUcUxpQThXdmloZTZCTFNhVDZHR1M5ckxwdVFzdEhiNGEyTGxhR0c1a1lkbG1sd3ZMLXZPbmZTU21UazI4anQ3VERvMTlqRGFYU0lSTHp6TmZZb2FPbkJzMmlaeUw?oc=5",
+      "titre": "« On mérite quand même quelques égards » : au Mans, la riposte s’organise après la fermeture d’un bureau de poste - Maville Nantes",
+      "source": "Google News",
+      "date": "Wed, 12 Aug 2026 17:17:00 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-08-16T04:06:26.383740+00:00"
+    },
+    {
       "id": "a7f9e1ce252267a7",
       "banque": "La Banque Postale",
       "commune": "Montauroux",
@@ -10450,7 +10468,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-15T03:57:13.789427+00:00"
+      "created_at": "2026-08-16T04:03:11.285720+00:00"
     },
     {
       "id": "50895c042a984b7d",
@@ -10486,7 +10504,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 04:46:02 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-15T03:57:13.213753+00:00"
+      "created_at": "2026-08-16T04:03:10.844912+00:00"
     },
     {
       "id": "8c6a0cad14626d6f",
@@ -11785,6 +11803,24 @@
       "created_at": "2026-07-23T06:13:03.953448+00:00"
     },
     {
+      "id": "c80ff0dcd58162a8",
+      "banque": "La Banque Postale",
+      "commune": "Paray-Vieille-Poste",
+      "departement": "91",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "Après la fermeture le samedi de ce bureau de Poste en Loire-Atlantique, le collectif se remobilise et lance une pétition - Actu.fr",
+      "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxQT2pZbWhIX0g2UmtTTzNDUVM0NjFrVDhDNzE3WmFoSlBLblpDeVBXelRTNXZfT1N1N0lKVHhsc0JSaXp6cVY0T2ZyeUhtUVFCMVNBYWZXaFYzbnIxRkVQdDR2blRqNzJ3MnBhWnZKRDE3YXFMQXR2WmQ1S19mejZQVXNOSFMweU0wUGxMY2p5cnNmTnhkNHBoR2VTdHJQVTNGS19YOUp3UzFhdnhTSkxEa1VWaUV2WmNrY1ZEbUF0T3J4Z1gxYk1uZmJhcFJBNkZNY1ppUXZEeXBvT2N3LVRwVmJzaHlDOVBFQnRZNG83TmlZcDZwWGpzLTJqWjI4czBVdHFpTkEzNml4WUE?oc=5",
+      "titre": "Après la fermeture le samedi de ce bureau de Poste en Loire-Atlantique, le collectif se remobilise et lance une pétition - Actu.fr",
+      "source": "Google News",
+      "date": "Sat, 15 Aug 2026 07:00:02 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-08-16T04:06:21.417399+00:00"
+    },
+    {
       "id": "7858ad44f325e59c",
       "banque": "La Banque Postale",
       "commune": "Pont-d'Ain",
@@ -12610,7 +12646,7 @@
       "source": "Google News",
       "date": "Fri, 20 Jun 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-15T03:57:20.646496+00:00"
+      "created_at": "2026-08-16T04:03:17.845649+00:00"
     },
     {
       "id": "b70960ea48a1a247",
@@ -12736,7 +12772,7 @@
       "source": "Google News",
       "date": "Fri, 10 Jul 2026 10:12:00 GMT",
       "raison": "garde entrée/sortie: département source 44 incompatible avec la sortie 974",
-      "created_at": "2026-08-15T03:57:38.490550+00:00"
+      "created_at": "2026-08-16T04:03:34.944628+00:00"
     },
     {
       "id": "8c646081e1d69e81",
@@ -12916,7 +12952,7 @@
       "source": "Google News",
       "date": "Fri, 03 Jan 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-15T03:57:12.803332+00:00"
+      "created_at": "2026-08-16T04:03:10.443651+00:00"
     },
     {
       "id": "411db107f70f2387",
@@ -12989,6 +13025,24 @@
       "date": "Fri, 01 Aug 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
       "created_at": "2026-07-27T07:56:36.407534+00:00"
+    },
+    {
+      "id": "1105ca26eb31ded5",
+      "banque": "La Banque Postale",
+      "commune": "Vic-en-Bigorre",
+      "departement": "65",
+      "type": "fermeture",
+      "date_fermeture": "2026-08-14",
+      "statut": "projet",
+      "statut_temporel": "deja_fermee",
+      "fiabilite": 2,
+      "citation": "« Le bureau de poste de Vic-en-Bigorre… va fermer temporairement… La réouverture est programmée le vendredi 11 septembre à 10 heures. … ainsi que les services de conseil bancaire y seront assurés »",
+      "url": "https://www.nrpyrenees.fr/2026/08/15/la-poste-se-modernise-et-ferme-trois-semaines-13509946.php",
+      "titre": "La Poste se modernise et ferme trois semaines",
+      "source": "nrpyrenees.fr",
+      "date": "2026-08-15",
+      "raison": "garde entrée/sortie: fermeture postale temporaire ou circonstancielle",
+      "created_at": "2026-08-16T04:06:41.952330+00:00"
     },
     {
       "id": "1dcceab365aa1a1d",
@@ -17326,6 +17380,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-08-13T05:14:27.783190+00:00"
+    },
+    {
+      "id": "e1b1f143ea6933df",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Fermetures de bureaux de poste « suspendues » : le nouveau président promet de rouvrir les points de vente fermés - Portugal Resident",
+      "extrait": "TITRE: Fermetures de bureaux de poste « suspendues » : le nouveau président promet de rouvrir les points de vente fermés - Portugal Resident SOURCE: Google News DATE: Wed, 12 Aug 2026 10:34:13 GMT URL: https://news.google.com/rss/articles/CBMi_gFBVV95cUxOSWpFTGRYZnNJNHhHX2JxZVluLXRXUkxFQkRjOVEycEt4ZTVvWTRUTVlFN1RmU0lIaXBFdVFKYXo0OGFlaVloZWVwTU1Gcl9BbzlhbU9zd1p5RmxvY3owUkhtZnVSTWtYSk1Gd0QwTGdLSjVfTHltVUluZ09VaXYtbGFESGhaaUljQjY5M193eTc4RnpuRFFuSHlwTURSRlFRVkNUaFd4bFA5NEU0TkVWOWZISUlMUXJUN2t5SnVsQ",
+      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOSWpFTGRYZnNJNHhHX2JxZVluLXRXUkxFQkRjOVEycEt4ZTVvWTRUTVlFN1RmU0lIaXBFdVFKYXo0OGFlaVloZWVwTU1Gcl9BbzlhbU9zd1p5RmxvY3owUkhtZnVSTWtYSk1Gd0QwTGdLSjVfTHltVUluZ09VaXYtbGFESGhaaUljQjY5M193eTc4RnpuRFFuSHlwTURSRlFRVkNUaFd4bFA5NEU0TkVWOWZISUlMUXJUN2t5SnVsQWdveWI3eXZsMTNZWWx3NWZ1ZkxINVRKR2IzY08xNGVoWUpuZEgxWkdZd3dHLWROaGdaRXpRNHp0X29PTFpqZw?oc=5",
+      "source": "Google News",
+      "date": "Wed, 12 Aug 2026 10:34:13 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-16T04:06:28.466360+00:00"
     },
     {
       "id": "54626d205c739f79",
@@ -28391,6 +28458,19 @@
       "created_at": "2026-08-15T04:00:41.378659+00:00"
     },
     {
+      "id": "807abff08387fa2d",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "L'Indonésie va fermer plus de 750 entreprises publiques - Le Figaro",
+      "extrait": "TITRE: L'Indonésie va fermer plus de 750 entreprises publiques - Le Figaro SOURCE: Google News DATE: Fri, 14 Aug 2026 04:19:25 GMT URL: https://news.google.com/rss/articles/CBMinwFBVV95cUxOb0Z1ZExQV05JUlpRS2JiMlpGT1Q3cFB4X1YzdW5Pb1dKeGdWSGNaMm5PcmYyX2hoUEtiUUhxb1hwV1pzZ1RBTEMwQjh4TTVnaEZOS3Y4SF9FNGx0WVNFLVF0V1RzekxxaDVTRkRhMG5fNmg2YUhucmIxWFYtSlhNaGl4d2RrN1JfVUdRYUYtc3lyQjljNTJWSTJfOFZKTFU?oc=5 <a href=\"https://news.google.com/rss/articles/CBMinwFBVV95cUxOb0Z1ZExQV05JUlpRS2JiMlpGT1Q3cFB4X1YzdW5P",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOb0Z1ZExQV05JUlpRS2JiMlpGT1Q3cFB4X1YzdW5Pb1dKeGdWSGNaMm5PcmYyX2hoUEtiUUhxb1hwV1pzZ1RBTEMwQjh4TTVnaEZOS3Y4SF9FNGx0WVNFLVF0V1RzekxxaDVTRkRhMG5fNmg2YUhucmIxWFYtSlhNaGl4d2RrN1JfVUdRYUYtc3lyQjljNTJWSTJfOFZKTFU?oc=5",
+      "source": "Google News",
+      "date": "Fri, 14 Aug 2026 04:19:25 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-16T04:06:25.936375+00:00"
+    },
+    {
       "id": "5871ec8906c4f8f5",
       "banque": "Société Générale",
       "departement": "",
@@ -29416,6 +29496,123 @@
       "score": 3,
       "raison": "fermeture non publiée: hors fenêtre temporelle",
       "created_at": "2026-07-22T09:09:01.159244+00:00"
+    },
+    {
+      "id": "e3ff4f7f8967512f",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Algérie, Tebboune  : l'enjeu d'un deuxième mandat",
+      "extrait": "TITRE: Algérie, Tebboune : l'enjeu d'un deuxième mandat SOURCE: afriquesenlutte.org DATE: 2026-08-16T02:53:41Z URL: https://www.afriquesenlutte.org/afrique-du-nord/algerie/article/algerie-tebboune-l-enjeu-d-un-deuxieme-mandat Le nouveau président incarne les besoins de répression du pouvoir, l'impossibilité d'une transformation démocratique de celui-ci et les difficultés d'incarnation de la colère populaire, cinq ans après le Hirak. Entre-temps, le front interne reste en stand-by, dans l'attente",
+      "url": "https://www.afriquesenlutte.org/afrique-du-nord/algerie/article/algerie-tebboune-l-enjeu-d-un-deuxieme-mandat",
+      "source": "afriquesenlutte.org",
+      "date": "2026-08-16T02:53:41Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-16T04:06:45.862334+00:00"
+    },
+    {
+      "id": "ace7381c1b890780",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "PSG : repositionné au milieu, Désiré Doué pousse Paris à chercher un nouvel attaquant - Sport.fr",
+      "extrait": "TITRE: PSG : repositionné au milieu, Désiré Doué pousse Paris à chercher un nouvel attaquant - Sport.fr SOURCE: Sport.fr DATE: 2026-08-15T17:50:29Z URL: https://www.sport.fr/football/psg-repositionne-au-milieu-desire-doue-pousse-paris-a-chercher-un-nouvel-attaquant-1474310.shtm Un choix tactique, et ses conséquences directes sur le marché des transferts. Selon les dernières indiscrétions, Luis Enrique envisagerait de repositionner Désiré Doué à un poste plus axial, au cœur du jeu parisien, plutô",
+      "url": "https://www.sport.fr/football/psg-repositionne-au-milieu-desire-doue-pousse-paris-a-chercher-un-nouvel-attaquant-1474310.shtm",
+      "source": "Sport.fr",
+      "date": "2026-08-15T17:50:29Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-16T04:06:52.288012+00:00"
+    },
+    {
+      "id": "3c180dd83bce226e",
+      "banque": "LCL",
+      "departement": "",
+      "titre": "PSG Mercato : Marquinhos a scellé son avenir, sa prochaine destination est connue ! - But! Football Club",
+      "extrait": "TITRE: PSG Mercato : Marquinhos a scellé son avenir, sa prochaine destination est connue ! - But! Football Club SOURCE: But! Football Club DATE: 2026-08-15T14:40:00Z URL: https://www.butfootballclub.fr/1690836-psg-mercato-marquinhos-a-scelle-son-avenir-sa-prochaine-destination-est-connue/ Malgré les sollicitations venues d'Arabie saoudite, Marquinhos n'envisage pas de quitter le PSG à court terme. Mais... L'avenir de Marquinhos semble désormais beaucoup plus clair. Alors que son nom a régulièrem",
+      "url": "https://www.butfootballclub.fr/1690836-psg-mercato-marquinhos-a-scelle-son-avenir-sa-prochaine-destination-est-connue/",
+      "source": "But! Football Club",
+      "date": "2026-08-15T14:40:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-16T04:07:01.751069+00:00"
+    },
+    {
+      "id": "8448ca4ce4168eb0",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Mercato PSG : Incroyable rebondissement pour Lucas Chevalier",
+      "extrait": "TITRE: Mercato PSG : Incroyable rebondissement pour Lucas Chevalier SOURCE: Foot-sur7 DATE: 2026-08-15T13:43:00Z URL: https://www.foot-sur7.fr/772643-mercato-psg-incroyable-rebondissement-pour-lucas-chevalier Alors qu'il était déterminé à se battre la saison prochaine contre Matvey Safonov dans les cages du PSG, Lucas Chevalier pourrait finalement voir son avenir au PSG basculer dans les jours à venir. Mercato PSG : Luis Enrique mélange tout chez les gardiens Après de longues discussions, le PSG",
+      "url": "https://www.foot-sur7.fr/772643-mercato-psg-incroyable-rebondissement-pour-lucas-chevalier",
+      "source": "Foot-sur7",
+      "date": "2026-08-15T13:43:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-16T04:07:03.989229+00:00"
+    },
+    {
+      "id": "8da588071252a7e9",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Real Madrid : Mourinho prend les pleins pouvoirs - Sport.fr",
+      "extrait": "TITRE: Real Madrid : Mourinho prend les pleins pouvoirs - Sport.fr SOURCE: Sport.fr DATE: 2026-08-15T13:42:50Z URL: https://www.sport.fr/football/real-madrid-mourinho-prend-les-pleins-pouvoirs-1474223.shtm Treize ans après avoir quitté le banc merengue en 2013, José Mourinho n'est pas revenu à Madrid pour se contenter de coacher onze joueurs le dimanche. Il faut dire que le contexte s'y prêtait. Le Real Madrid sort de deux saisons sans le moindre trophée majeur, une disette qui a fini par ébranl",
+      "url": "https://www.sport.fr/football/real-madrid-mourinho-prend-les-pleins-pouvoirs-1474223.shtm",
+      "source": "Sport.fr",
+      "date": "2026-08-15T13:42:50Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-16T04:07:05.975445+00:00"
+    },
+    {
+      "id": "5731f08b8e92b1e7",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "EasyJet France : plus de 100 vols annulés ce week-end en raison de la grève des hôtesses et stewards",
+      "extrait": "TITRE: EasyJet France : plus de 100 vols annulés ce week-end en raison de la grève des hôtesses et stewards SOURCE: Air Journal DATE: 2026-08-15T08:00:00Z URL: https://www.air-journal.fr/2026-08-15-easyjet-france-plus-de-100-vols-annules-ce-week-end-en-raison-de-la-greve-des-hotesses-et-stewards-5276932.html La grève des hôtesses et stewards d'easyJet France est fortement suivie ce week-end du 15 août. Plus d'une centaine de vols sont annulés sur les 162 initialement programmés samedi et dimanch",
+      "url": "https://www.air-journal.fr/2026-08-15-easyjet-france-plus-de-100-vols-annules-ce-week-end-en-raison-de-la-greve-des-hotesses-et-stewards-5276932.html",
+      "source": "Air Journal",
+      "date": "2026-08-15T08:00:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-16T04:07:18.462031+00:00"
+    },
+    {
+      "id": "1c222f51761a1c8a",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Les gambaderies labyrinthiques d'Erdogan (revue de presse) - Afrique Asie",
+      "extrait": "TITRE: Les gambaderies labyrinthiques d'Erdogan (revue de presse) - Afrique Asie SOURCE: Afrique Asie DATE: 2026-08-15T06:56:10Z URL: https://www.afrique-asie.fr/les-gambaderies-labyrinthiques-derdogan-revue-de-presse/ \" ...En effet, et pour en revenir à notre titre, qui se rappelle encore de la première rock star de la période, le président US, un Africain Américain, Barack Obama, avec son discours du Caire de début juin 2009 (l'époque où nous croyions encore à la possibilité d'un Obama \"gorbat",
+      "url": "https://www.afrique-asie.fr/les-gambaderies-labyrinthiques-derdogan-revue-de-presse/",
+      "source": "Afrique Asie",
+      "date": "2026-08-15T06:56:10Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-16T04:07:25.331779+00:00"
+    },
+    {
+      "id": "5d460537e7380f90",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Renault : Stellantis déclassé, Renault ignoré, Volkswagen et BMW sanctionnés... La saison des résultats a démontré combien la Bourse a perdu patience avec les constructeurs auto",
+      "extrait": "TITRE: Renault : Stellantis déclassé, Renault ignoré, Volkswagen et BMW sanctionnés... La saison des résultats a démontré combien la Bourse a perdu patience avec les constructeurs auto SOURCE: BFM Bourse DATE: 2026-08-15T05:00:00Z URL: https://www.tradingsat.com/renault-FR0000131906/actualites/renault-stellantis-declasse-renault-ignore-volkswagen-et-bmw-sanctionnes-la-saison-des-resultats-a-demontre-combien-la-bourse-a-perdu-patience-avec-les-constructeurs-auto-1168390.html (BFM Bourse) - À l'ex",
+      "url": "https://www.tradingsat.com/renault-FR0000131906/actualites/renault-stellantis-declasse-renault-ignore-volkswagen-et-bmw-sanctionnes-la-saison-des-resultats-a-demontre-combien-la-bourse-a-perdu-patience-avec-les-constructeurs-auto-1168390.html",
+      "source": "BFM Bourse",
+      "date": "2026-08-15T05:00:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-16T04:07:27.293110+00:00"
+    },
+    {
+      "id": "b57bbe20e60232a5",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "La Poste se modernise et ferme trois semaines",
+      "extrait": "TITRE: La Poste se modernise et ferme trois semaines SOURCE: nrpyrenees.fr DATE: 2026-08-15 URL: https://www.nrpyrenees.fr/2026/08/15/la-poste-se-modernise-et-ferme-trois-semaines-13509946.php La Poste se modernise et ferme trois semaines Le bureau de poste de Vic-en-Bigorre, situé 8 boulevard Gallieni, va fermer temporairement ses portes afin de réaliser des travaux destinés à améliorer l’accueil des usagers. La fermeture interviendra à partir du vendredi 14 août au soir et se poursuivra jusqu’",
+      "url": "https://www.nrpyrenees.fr/2026/08/15/la-poste-se-modernise-et-ferme-trois-semaines-13509946.php",
+      "source": "nrpyrenees.fr",
+      "date": "2026-08-15",
+      "score": 3,
+      "raison": "fermeture non publiée: garde entrée/sortie: fermeture postale temporaire ou circonstancielle",
+      "created_at": "2026-08-16T04:06:41.955399+00:00"
     },
     {
       "id": "c018abe209769c16",
@@ -35890,6 +36087,110 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:43:41.960961+00:00"
+    },
+    {
+      "id": "c11de5d36857298f",
+      "banque": "LCL",
+      "departement": "",
+      "titre": "OM Mercato : Genesio a trouvé son nouveau défenseur central, transfert de 5 M€ imminent ? - But! Football Club",
+      "extrait": "TITRE: OM Mercato : Genesio a trouvé son nouveau défenseur central, transfert de 5 M€ imminent ? - But! Football Club SOURCE: But! Football Club DATE: 2026-08-15T18:20:00Z URL: https://www.butfootballclub.fr/1690881-om-mercato-genesio-a-trouve-son-nouveau-defenseur-central-transfert-de-5-me-imminent/ L'OM pourrait encore bouger dans le secteur défensif. Bruno Genesio aurait choisi de faire durablement confiance à Geoffrey Kondogbia en défense centrale, une décision qui pourrait précipiter le dép",
+      "url": "https://www.butfootballclub.fr/1690881-om-mercato-genesio-a-trouve-son-nouveau-defenseur-central-transfert-de-5-me-imminent/",
+      "source": "But! Football Club",
+      "date": "2026-08-15T18:20:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-16T04:06:48.811790+00:00"
+    },
+    {
+      "id": "2bffe916e17f601a",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "PSG : échec du transfert de Zion Suzuki, confiance du staff... Matvey Safonov conforte sa place de titulaire",
+      "extrait": "TITRE: PSG : échec du transfert de Zion Suzuki, confiance du staff... Matvey Safonov conforte sa place de titulaire SOURCE: Le Parisien DATE: 2026-08-15T17:47:04Z URL: https://www.leparisien.fr/sports/football/psg/psg-echec-du-transfert-de-zion-suzuki-confiance-du-staff-matvey-safonov-conforte-sa-place-de-titulaire-15-08-2026-SSBYOG3HVJG7HKB6JLDH6ZRY2E.php La vie des gardiens à Paris n'est pas franchement un long fleuve tranquille et le coup de théâtre intervenu ce samedi au PSG a une nouvelle f",
+      "url": "https://www.leparisien.fr/sports/football/psg/psg-echec-du-transfert-de-zion-suzuki-confiance-du-staff-matvey-safonov-conforte-sa-place-de-titulaire-15-08-2026-SSBYOG3HVJG7HKB6JLDH6ZRY2E.php",
+      "source": "Le Parisien",
+      "date": "2026-08-15T17:47:04Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-16T04:06:50.467563+00:00"
+    },
+    {
+      "id": "ccc82ca21d032d95",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Les agents de Suzuki ont fait capoter son transfert au PSG",
+      "extrait": "TITRE: Les agents de Suzuki ont fait capoter son transfert au PSG SOURCE: CulturePSG DATE: 2026-08-15T15:56:04Z URL: https://www.culturepsg.com/news/mercato/les-agents-de-suzuki-ont-fait-capoter-son-transfert-au-psg/60352 Alors qu'il semblait en bonne voie, le transfert de Zion Suzuki au PSG a capoté ce samedi après-midi. Les demandes de ses agents auraient poussé les dirigeants parisiens à se rétracter, selon plusieurs sources. Retournement de situation total dans le dossier Zion Suzuki. Annonc",
+      "url": "https://www.culturepsg.com/news/mercato/les-agents-de-suzuki-ont-fait-capoter-son-transfert-au-psg/60352",
+      "source": "CulturePSG",
+      "date": "2026-08-15T15:56:04Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-16T04:06:56.189275+00:00"
+    },
+    {
+      "id": "63a8f8ca0949aadc",
+      "banque": "LCL",
+      "departement": "",
+      "titre": "PSG Mercato : énorme coup de tonnerre pour une priorité de Luis Enrique - But! Football Club",
+      "extrait": "TITRE: PSG Mercato : énorme coup de tonnerre pour une priorité de Luis Enrique - But! Football Club SOURCE: But! Football Club DATE: 2026-08-15T15:20:00Z URL: https://www.butfootballclub.fr/1690849-psg-mercato-enorme-coup-de-tonnerre-pour-une-priorite-de-luis-enrique/ Le transfert de Zion Suzuki au PSG, pourtant annoncé comme quasiment bouclé, a finalement été abandonné. Le scénario semblait pourtant écrit. Mardi, le PSG et Parme étaient parvenus à un accord pour le transfert de Zion Suzuki, éva",
+      "url": "https://www.butfootballclub.fr/1690849-psg-mercato-enorme-coup-de-tonnerre-pour-une-priorite-de-luis-enrique/",
+      "source": "But! Football Club",
+      "date": "2026-08-15T15:20:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-16T04:06:59.081574+00:00"
+    },
+    {
+      "id": "35a05407f744edd6",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "PSG : Luis Enrique veut gagner le Trophée des champions",
+      "extrait": "TITRE: PSG : Luis Enrique veut gagner le Trophée des champions SOURCE: Orange Sports DATE: 2026-08-15T13:08:54Z URL: https://sports.orange.fr/football/ligue-1/article/psg-luis-enrique-veut-gagner-le-trophee-des-champions-exclu-CNT000002rlNHQ.html Axel Allag, Media365 : publié le samedi 15 août 2026 à 15h08 A la veille d'un possible deuxième titre pour le PSG cette saison, avec le Trophée des champions disputé face à Lens au stade Bollaert dimanche (20h45), Luis Enrique s'est présenté en conféren",
+      "url": "https://sports.orange.fr/football/ligue-1/article/psg-luis-enrique-veut-gagner-le-trophee-des-champions-exclu-CNT000002rlNHQ.html",
+      "source": "Orange Sports",
+      "date": "2026-08-15T13:08:54Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-16T04:07:12.876696+00:00"
+    },
+    {
+      "id": "eed3dc05871e03f6",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "PSG : Ferran Torres, champion du monde espagnol, s'engage avec le club parisien jusqu'en 2031",
+      "extrait": "TITRE: PSG : Ferran Torres, champion du monde espagnol, s'engage avec le club parisien jusqu'en 2031 SOURCE: Le Monde.fr DATE: 2026-08-15T10:14:36Z URL: https://www.lemonde.fr/football/article/2026/08/15/psg-ferran-torres-champion-du-monde-espagnol-s-engage-avec-le-club-parisien-jusqu-en-2031_6746659_1616938.html L'Espagnol Ferran Torres, unique buteur en finale de la Coupe du monde 2026 contre l'Argentine, s'est engagé au Paris Saint-Germain en provenance du FC Barcelone pour une durée de cinq ",
+      "url": "https://www.lemonde.fr/football/article/2026/08/15/psg-ferran-torres-champion-du-monde-espagnol-s-engage-avec-le-club-parisien-jusqu-en-2031_6746659_1616938.html",
+      "source": "Le Monde.fr",
+      "date": "2026-08-15T10:14:36Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-16T04:07:14.324321+00:00"
+    },
+    {
+      "id": "aa41263f6723ee5d",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Ferran Torres, nouveau numéro 9 du PSG (Officiel)",
+      "extrait": "TITRE: Ferran Torres, nouveau numéro 9 du PSG (Officiel) SOURCE: Football 365 DATE: 2026-08-15T09:43:05Z URL: https://www.football365.fr/ferran-torres-nouveau-numero-9-du-psg-officiel-10308389.html Le Paris Saint‑Germain a officialisé l'arrivée de Ferran Torres en provenance du FC Barcelone pour un montant de 50 millions d'euros. Champion du monde cet été avec l'Espagne et buteur décisif en finale contre l'Argentine, l'attaquant de 26 ans s'est engagé pour cinq saisons, jusqu'en 2031, et portera",
+      "url": "https://www.football365.fr/ferran-torres-nouveau-numero-9-du-psg-officiel-10308389.html",
+      "source": "Football 365",
+      "date": "2026-08-15T09:43:05Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-16T04:07:15.987337+00:00"
+    },
+    {
+      "id": "b5c139f3eea9cfc5",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Retour à l'ajustement structurel néolibéral et mobilisations populaires",
+      "extrait": "TITRE: Retour à l'ajustement structurel néolibéral et mobilisations populaires SOURCE: afriquesenlutte.org DATE: 2026-08-15T04:00:57Z URL: https://www.afriquesenlutte.org/afrique-centrale/article/retour-a-l-ajustement-structurel C'est en général sous de bons auspices que les six États membres de la Communauté économique et monétaire de l'Afrique centrale (CEMAC : Cameroun, Centrafrique, Congo, Gabon, Guinée équatoriale et Tchad) (1) ont passé la première décennie du XXIe siècle. Sans être la plu",
+      "url": "https://www.afriquesenlutte.org/afrique-centrale/article/retour-a-l-ajustement-structurel",
+      "source": "afriquesenlutte.org",
+      "date": "2026-08-15T04:00:57Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-16T04:07:29.502272+00:00"
     },
     {
       "id": "3d94cb1a7a70d82d",
