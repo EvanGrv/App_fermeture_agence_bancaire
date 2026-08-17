@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-16T04:17:47.189657+00:00",
+  "generated_at": "2026-08-17T04:17:28.972202+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -10468,7 +10468,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-16T04:03:11.285720+00:00"
+      "created_at": "2026-08-17T04:06:05.101636+00:00"
     },
     {
       "id": "50895c042a984b7d",
@@ -10504,7 +10504,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 04:46:02 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-16T04:03:10.844912+00:00"
+      "created_at": "2026-08-17T04:06:04.768668+00:00"
     },
     {
       "id": "8c6a0cad14626d6f",
@@ -12646,7 +12646,7 @@
       "source": "Google News",
       "date": "Fri, 20 Jun 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-16T04:03:17.845649+00:00"
+      "created_at": "2026-08-17T04:06:10.520864+00:00"
     },
     {
       "id": "b70960ea48a1a247",
@@ -12772,7 +12772,7 @@
       "source": "Google News",
       "date": "Fri, 10 Jul 2026 10:12:00 GMT",
       "raison": "garde entrée/sortie: département source 44 incompatible avec la sortie 974",
-      "created_at": "2026-08-16T04:03:34.944628+00:00"
+      "created_at": "2026-08-17T04:06:24.500765+00:00"
     },
     {
       "id": "8c646081e1d69e81",
@@ -12952,7 +12952,7 @@
       "source": "Google News",
       "date": "Fri, 03 Jan 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-16T04:03:10.443651+00:00"
+      "created_at": "2026-08-17T04:06:04.423295+00:00"
     },
     {
       "id": "411db107f70f2387",
@@ -17107,6 +17107,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-07-25T06:02:01.435816+00:00"
+    },
+    {
+      "id": "f825d358819bcf0e",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Drogue à Rennes : la nouvelle préfète de Bretagne promet d'agir avec \"fermeté \" contre les dealers et les consommateurs - ici.fr",
+      "extrait": "TITRE: Drogue à Rennes : la nouvelle préfète de Bretagne promet d'agir avec \"fermeté \" contre les dealers et les consommateurs - ici.fr SOURCE: Google News DATE: Wed, 15 Jul 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMi6wFBVV95cUxQOTNPTnZoaUI0TUVCcl9QVFdzV0tmeUhzS2NFd1d5c25SQnJQZ2M5YkJlOTVtTG1WYmRZWWFEaUJsakpVYUxYUlU5UWMxZlozV2RGc2xGaTJ4MU13QWVfV090NDR6TlpyMXBESGpzdXptSi05akRGZzM4UU1JQ3k0OF9GYVVUU2lIRUItdW1WQ0VvR3A3M2lSSDZyMktfU2ZNODR2dVFEaDhkYjltdWptN2JNLVA5V1dUNnBkUWJYdVJrUj",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQOTNPTnZoaUI0TUVCcl9QVFdzV0tmeUhzS2NFd1d5c25SQnJQZ2M5YkJlOTVtTG1WYmRZWWFEaUJsakpVYUxYUlU5UWMxZlozV2RGc2xGaTJ4MU13QWVfV090NDR6TlpyMXBESGpzdXptSi05akRGZzM4UU1JQ3k0OF9GYVVUU2lIRUItdW1WQ0VvR3A3M2lSSDZyMktfU2ZNODR2dVFEaDhkYjltdWptN2JNLVA5V1dUNnBkUWJYdVJrUjFGTjhnVjlyUHFldzZucnJCdUFkNXU2dzFBWUIzTm1sTjJ1VklORTNV?oc=5",
+      "source": "Google News",
+      "date": "Wed, 15 Jul 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-17T04:08:46.467094+00:00"
     },
     {
       "id": "4e35f3597cbc488c",
@@ -26118,6 +26131,19 @@
       "created_at": "2026-08-03T07:54:19.367703+00:00"
     },
     {
+      "id": "8bf0c88c82b45092",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Hautes-Pyrénées – Ce bureau de poste fermera pendant un mois, les clients redirigés - La Semaine des Pyrénées",
+      "extrait": "TITRE: Hautes-Pyrénées – Ce bureau de poste fermera pendant un mois, les clients redirigés - La Semaine des Pyrénées SOURCE: Google News DATE: Mon, 17 Aug 2026 03:30:00 GMT URL: https://news.google.com/rss/articles/CBMiuAFBVV95cUxOdmYzUW0zQ0ExTWFYSWhnMVRzcjNqSnZfZWtSY3ZOdm14UENkb1VoaklPU1RENmc2RjZzVXVkRWJES2o1SjJWY0VtQjJ1QU1yeU9OempFajFRMFlnbXp6OGM1LXVKNnR6enpJUFVIYTRuM3JNWUcyYzk2M3RRZDlteTNMWl8tN04yRmFka1hJQTBmaUlES0xTU0U3eGozejFNUC1mSExhQVNJNjhRUG9pRGVqSG5iUFUz?oc=5 <a href=\"https://news.googl",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOdmYzUW0zQ0ExTWFYSWhnMVRzcjNqSnZfZWtSY3ZOdm14UENkb1VoaklPU1RENmc2RjZzVXVkRWJES2o1SjJWY0VtQjJ1QU1yeU9OempFajFRMFlnbXp6OGM1LXVKNnR6enpJUFVIYTRuM3JNWUcyYzk2M3RRZDlteTNMWl8tN04yRmFka1hJQTBmaUlES0xTU0U3eGozejFNUC1mSExhQVNJNjhRUG9pRGVqSG5iUFUz?oc=5",
+      "source": "Google News",
+      "date": "Mon, 17 Aug 2026 03:30:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-17T04:08:45.113320+00:00"
+    },
+    {
       "id": "ae3287ef5741d5fc",
       "banque": "Société Générale",
       "departement": "",
@@ -29496,6 +29522,84 @@
       "score": 3,
       "raison": "fermeture non publiée: hors fenêtre temporelle",
       "created_at": "2026-07-22T09:09:01.159244+00:00"
+    },
+    {
+      "id": "4cdda48436c368a3",
+      "banque": "Crédit Agricole",
+      "departement": "",
+      "titre": "American Express face au SIM swapping : anatomie d'une fraude bancaire high-tech",
+      "extrait": "TITRE: American Express face au SIM swapping : anatomie d'une fraude bancaire high-tech SOURCE: Les Smartgrids DATE: 2026-08-16T15:21:00Z URL: https://les-smartgrids.fr/carte-american-express-fraudes-bancaires/ En décembre 2022, une cliente de BNP Paribas découvre que son compte a été vidé de 16 964 euros en six jours. L'arme du crime ? Un SIM swap orchestré entre SFR et Free Mobile sans son consentement. Parallèlement, en août 2026, 912 clients du Crédit Agricole voient leurs identifiants banca",
+      "url": "https://les-smartgrids.fr/carte-american-express-fraudes-bancaires/",
+      "source": "Les Smartgrids",
+      "date": "2026-08-16T15:21:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-17T04:08:59.523414+00:00"
+    },
+    {
+      "id": "11c3bd85d312a03b",
+      "banque": "Crédit Agricole",
+      "departement": "",
+      "titre": "American Express : avantages économiques, frais réels et coûts cachés de la fraude bancaire",
+      "extrait": "TITRE: American Express : avantages économiques, frais réels et coûts cachés de la fraude bancaire SOURCE: Economie Matin DATE: 2026-08-16T13:02:16Z URL: https://www.economiematin.fr/american-express-avantages-economiques-frais-reels-couts-caches-fraude 16 964 €Montant perdu en SIM swap par une cliente BNP Paribas en décembre 2022 Blue, Green, Gold, Platinum : quel modèle pour quel budget ? Depuis 1964, American Express commercialise quatre gammes principales sur le marché français. La carte Blu",
+      "url": "https://www.economiematin.fr/american-express-avantages-economiques-frais-reels-couts-caches-fraude",
+      "source": "Economie Matin",
+      "date": "2026-08-16T13:02:16Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-17T04:09:03.682463+00:00"
+    },
+    {
+      "id": "a093933da424274d",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "La Suisse a eu le plus grand abri antiatomique civil du monde en 1976 : ce qui l'a condamné en 1987 n'était ni le béton ni ses portes de 350 tonnes",
+      "extrait": "TITRE: La Suisse a eu le plus grand abri antiatomique civil du monde en 1976 : ce qui l'a condamné en 1987 n'était ni le béton ni ses portes de 350 tonnes SOURCE: Sciencepost DATE: 2026-08-16T11:31:20Z URL: https://sciencepost.fr/la-suisse-a-eu-le-plus-grand-abri-antiatomique-civil-du-monde-en-1976-ce-qui-l-a-condamne-en-1987-n-etait-ni-le-beton-ni-ses-portes-de-350-tonnes/ Deux semaines. C'est le temps qu'il aurait fallu pour rendre pleinement opérationnel le plus grand abri antiatomique civil ",
+      "url": "https://sciencepost.fr/la-suisse-a-eu-le-plus-grand-abri-antiatomique-civil-du-monde-en-1976-ce-qui-l-a-condamne-en-1987-n-etait-ni-le-beton-ni-ses-portes-de-350-tonnes/",
+      "source": "Sciencepost",
+      "date": "2026-08-16T11:31:20Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-17T04:09:05.811223+00:00"
+    },
+    {
+      "id": "26e4390b170ef064",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Côte d'Ivoire : l'Etat veut encadrer le secteur de la livraison",
+      "extrait": "TITRE: Côte d'Ivoire : l'Etat veut encadrer le secteur de la livraison SOURCE: Afrique-Sur7.fr DATE: 2026-08-16T11:20:52Z URL: https://www.afrique-sur7.fr/cote-divoire-letat-veut-encadrer-le-secteur-de-la-livraison L'administration centrale refuse de se limiter à des campagnes classiques de sensibilisation routière. Le ministère collabore activement avec la Poste de Côte d'Ivoire pour concevoir une licence d'exploitation dédiée. Ce titre professionnel obligatoire identifiera chaque coursier (liv",
+      "url": "https://www.afrique-sur7.fr/cote-divoire-letat-veut-encadrer-le-secteur-de-la-livraison",
+      "source": "Afrique-Sur7.fr",
+      "date": "2026-08-16T11:20:52Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-17T04:09:07.737047+00:00"
+    },
+    {
+      "id": "826602d33e77dc43",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "\"C'est inadmissible qu'elles soient fermées\" : des toilettes publiques sont inaccessibles depuis plus d'un an dans cette commune, une contrainte pour les locaux et un chantier à plus de 10 000 euros",
+      "extrait": "TITRE: \"C'est inadmissible qu'elles soient fermées\" : des toilettes publiques sont inaccessibles depuis plus d'un an dans cette commune, une contrainte pour les locaux et un chantier à plus de 10 000 euros SOURCE: Ladepeche.fr DATE: 2026-08-16T09:56:02Z URL: https://www.ladepeche.fr/2026/08/16/cest-inadmissible-quelles-soient-fermees-des-toilettes-publiques-sont-inaccessibles-depuis-plus-dun-an-dans-cette-commune-une-contrainte-pour-les-13507565.php Si une envie pressante vous prend dans le cent",
+      "url": "https://www.ladepeche.fr/2026/08/16/cest-inadmissible-quelles-soient-fermees-des-toilettes-publiques-sont-inaccessibles-depuis-plus-dun-an-dans-cette-commune-une-contrainte-pour-les-13507565.php",
+      "source": "Ladepeche.fr",
+      "date": "2026-08-16T09:56:02Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-17T04:09:09.651566+00:00"
+    },
+    {
+      "id": "348c862507dfa4e1",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Cette phrase de Safonov explique pourquoi le PSG lui fait confiance",
+      "extrait": "TITRE: Cette phrase de Safonov explique pourquoi le PSG lui fait confiance SOURCE: Football 365 DATE: 2026-08-16T09:18:28Z URL: https://www.football365.fr/?p=10308633 Matvey Safonov a pris une nouvelle dimension au PSG. Une phrase prononcée par le Russe résume parfaitement la mentalité qui séduit Luis Enrique. Matvey Safonov semble avoir changé de dimension au PSG. La victoire parisienne contre Aston Villa (2-1) en Supercoupe d'Europe a conforté le statut du gardien russe, déjà installé comme un",
+      "url": "https://www.football365.fr/?p=10308633",
+      "source": "Football 365",
+      "date": "2026-08-16T09:18:28Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-17T04:09:11.008533+00:00"
     },
     {
       "id": "e3ff4f7f8967512f",
@@ -33164,6 +33268,19 @@
       "created_at": "2026-07-22T09:05:50.129257+00:00"
     },
     {
+      "id": "0de8a8fd80e1e45a",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Châtillon-sur-Seine. Fusion des pharmacies : les gérants expliquent leur projet en détail - Le Bien Public",
+      "extrait": "TITRE: Châtillon-sur-Seine. Fusion des pharmacies : les gérants expliquent leur projet en détail - Le Bien Public SOURCE: Google News DATE: Wed, 08 Jul 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMiswFBVV95cUxQdUtkZW1hdHV6ZTNnSEpyeTMxU2Y4dWEwSTlsc3hYdGdEYW1kNENfUEJteVFaM0R3YlFkbnJTX05hWDliZjR2WDIxcjZXQmJfYXQyb1VKVElzSmxaTWU4eXB3MDR6QTFkd0UwZ3ppb1ZMUXAwVlNDcXh3MC02Qk1GODRuSGdjN3JsNVExaTBzRmpfaTJ2X3NZbkVPSkduMHV2TV9ZRmFEMlFINkFzV2xBOWhIWQ?oc=5 <a href=\"https://news.google.com/rss",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQdUtkZW1hdHV6ZTNnSEpyeTMxU2Y4dWEwSTlsc3hYdGdEYW1kNENfUEJteVFaM0R3YlFkbnJTX05hWDliZjR2WDIxcjZXQmJfYXQyb1VKVElzSmxaTWU4eXB3MDR6QTFkd0UwZ3ppb1ZMUXAwVlNDcXh3MC02Qk1GODRuSGdjN3JsNVExaTBzRmpfaTJ2X3NZbkVPSkduMHV2TV9ZRmFEMlFINkFzV2xBOWhIWQ?oc=5",
+      "source": "Google News",
+      "date": "Wed, 08 Jul 2026 07:00:00 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-17T04:08:48.137889+00:00"
+    },
+    {
       "id": "966a5d8c988918ab",
       "banque": "Société Générale",
       "departement": "",
@@ -36087,6 +36204,32 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:43:41.960961+00:00"
+    },
+    {
+      "id": "87f26c4d8250b5b9",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Al-Hilal ne veut plus de Benzema, l'OL courtisé pour Fofana : les 13 infos mercato de dimanche",
+      "extrait": "TITRE: Al-Hilal ne veut plus de Benzema, l'OL courtisé pour Fofana : les 13 infos mercato de dimanche SOURCE: Eurosport DATE: 2026-08-16T18:52:46Z URL: https://www.eurosport.fr/football/transferts/2026-2027/benzema-fofana-osimhen-martinelli-barca-kombouare-witsel-batshuayi-les-13-infos-mercato-du-dimanche-16-aout_sto23328653/story.shtml Karim Benzema auteur d'un triplé lors de son premier match avec Al-Hilal. Alors qu'il a marqué d'entrée pour la reprise du championnat saoudien, Karim Benzema po",
+      "url": "https://www.eurosport.fr/football/transferts/2026-2027/benzema-fofana-osimhen-martinelli-barca-kombouare-witsel-batshuayi-les-13-infos-mercato-du-dimanche-16-aout_sto23328653/story.shtml",
+      "source": "Eurosport",
+      "date": "2026-08-16T18:52:46Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-17T04:08:57.921026+00:00"
+    },
+    {
+      "id": "70952ea5fabd4008",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "PSG : le FC Barcelone se frotte les mains avec la vente de Ferran Torres !",
+      "extrait": "TITRE: PSG : le FC Barcelone se frotte les mains avec la vente de Ferran Torres ! SOURCE: Foot Mercato : Info Transferts Football - Actu Foot Transfert DATE: 2026-08-16T15:05:32Z URL: https://www.footmercato.net/a1975392460361749569-psg-le-fc-barcelone-se-frotte-les-mains-avec-la-vente-de-ferran-torres Le départ de Ferran Torres à Paris n'est clairement pas vu comme une fatalité en interne du côté du Barça. Explications. C'était un des gros dossiers de ce mercato, et il s'est réglé ce week-end. ",
+      "url": "https://www.footmercato.net/a1975392460361749569-psg-le-fc-barcelone-se-frotte-les-mains-avec-la-vente-de-ferran-torres",
+      "source": "Foot Mercato : Info Transferts Football - Actu Foot Transfert",
+      "date": "2026-08-16T15:05:32Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-17T04:09:00.709863+00:00"
     },
     {
       "id": "c11de5d36857298f",
