@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T05:28:57.333223+00:00",
+  "generated_at": "2026-08-18T04:13:04.550105+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -10693,7 +10693,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-17T04:56:41.683669+00:00"
+      "created_at": "2026-08-18T04:01:17.646040+00:00"
     },
     {
       "id": "50895c042a984b7d",
@@ -10729,7 +10729,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 04:46:02 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-17T04:56:41.239305+00:00"
+      "created_at": "2026-08-18T04:01:17.301887+00:00"
     },
     {
       "id": "8c6a0cad14626d6f",
@@ -12460,6 +12460,42 @@
       "created_at": "2026-08-17T05:04:56.968220+00:00"
     },
     {
+      "id": "39535313ea9eb80f",
+      "banque": "La Banque Postale",
+      "commune": "Saint-Pierre",
+      "departement": "974",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "« Personne n’a envie que ça ferme » : 500 signatures pour sauver le bureau de Poste du Capreau, à Wasquehal - lavoixdunord.fr",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPTVo5b2dxdTdsNU5rdm4xZHVUejFmTENjUGxSWi1YajZKWE1nWGxPWjZiSHBBMkM4eDBtVTRCTlNWczNHMlJpQlZMekE2WmVhNTI3WF81b01odHlJdkZ4UEtaODV6S3R2VXhId0tJcVg5UFozR1NqblNMSW0xelJlMWhib3hoWXJJX2NRQnRLRDQ2RUQtMTRNbkRnaFBYaWgyeUJpeDgwcFNGQUVJS2F2ZWpiOFF3cWRDYzZ0aFNTZG5XRllpT3diWmhvZkNnUQ?oc=5",
+      "titre": "« Personne n’a envie que ça ferme » : 500 signatures pour sauver le bureau de Poste du Capreau, à Wasquehal - lavoixdunord.fr",
+      "source": "Google News",
+      "date": "Mon, 17 Aug 2026 14:49:45 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-08-18T04:04:02.338476+00:00"
+    },
+    {
+      "id": "3125b372f460f0dc",
+      "banque": "La Banque Postale",
+      "commune": "Saint-Pierre",
+      "departement": "974",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "« Personne n’a envie que ça ferme » : 500 signatures pour sauver le bureau de Poste du Capreau, à Wasquehal - nordeclair.fr",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPUXFpeFpFbDh6dTh5WUJ1WElnMWdwNUNGaW05M2M1Ukt6RkJfdi1aN0Z1ejF4dDFxejRvaTc2R2NuOGFLYTlJQjgwblBrYVM0anh3c0RueXgzV1pvMEhHOUZDRUxBX0tTWTVwSkxmM1VoN3cxeG9jN2xEbmQwc1ZmbVVkd2I0QV9meER6alpoMVJGNTJSWFYxdEVFZDd1V1hwbVphVTZCMHpQTE9zUkRkcnhha2pjU29WdkxqLU1MWjhZRzFJV2cyMm1R?oc=5",
+      "titre": "« Personne n’a envie que ça ferme » : 500 signatures pour sauver le bureau de Poste du Capreau, à Wasquehal - nordeclair.fr",
+      "source": "Google News",
+      "date": "Mon, 17 Aug 2026 14:49:45 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-08-18T04:04:02.673364+00:00"
+    },
+    {
       "id": "b25190bef22f1ce4",
       "banque": "La Banque Postale",
       "commune": "Châtillon",
@@ -12996,8 +13032,8 @@
       "titre": "La mobilisation des habitants a été vaine, le bureau de poste du quartier Saint-Marc, à Saint-Nazaire, ferme ses portes - ici.fr",
       "source": "Google News",
       "date": "Fri, 20 Jun 2025 07:00:00 GMT",
-      "raison": "garde entrée/sortie: commune/localisation de sortie absente de la source",
-      "created_at": "2026-08-17T04:56:51.514459+00:00"
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-08-18T04:01:23.074350+00:00"
     },
     {
       "id": "b70960ea48a1a247",
@@ -13123,7 +13159,7 @@
       "source": "Google News",
       "date": "Fri, 10 Jul 2026 10:12:00 GMT",
       "raison": "garde entrée/sortie: département source 44 incompatible avec la sortie 974",
-      "created_at": "2026-08-17T04:57:11.964843+00:00"
+      "created_at": "2026-08-18T04:01:38.035422+00:00"
     },
     {
       "id": "8c646081e1d69e81",
@@ -13303,7 +13339,7 @@
       "source": "Google News",
       "date": "Fri, 03 Jan 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-17T04:56:40.802768+00:00"
+      "created_at": "2026-08-18T04:01:16.957041+00:00"
     },
     {
       "id": "411db107f70f2387",
@@ -15343,6 +15379,19 @@
       "source": "Google News",
       "date": "Fri, 05 Jun 2026 07:00:00 GMT",
       "created_at": "2026-08-04T06:10:34.623634+00:00"
+    },
+    {
+      "id": "71701f697de2636b",
+      "banque": "Société Générale",
+      "scope": "national",
+      "count": null,
+      "confidence": 0.15,
+      "evidence": "Le texte traite de l’acquisition d’une banque étrangère (Guinée équatoriale) et d’autorisations CEMAC, sans mention de fermetures/fermeture d’agences BANCAIRES physiques en France.",
+      "url": "https://www.financialafrik.com/2026/08/17/guinee-equatoriale-lacquisition-de-lex-societe-generale-par-vista-group-entre-dans-sa-phase-finale-dexamen-regional/",
+      "titre": "Guinée équatoriale : l'acquisition de l'ex-Société Générale par Vista Group entre dans sa phase finale d'examen régional | Financial Afrik",
+      "source": "Financial Afrik",
+      "date": "2026-08-17T11:34:27Z",
+      "created_at": "2026-08-18T04:04:33.434985+00:00"
     },
     {
       "id": "73b7e8d34773e1bf",
@@ -30388,6 +30437,71 @@
       "created_at": "2026-07-22T09:09:01.159244+00:00"
     },
     {
+      "id": "14d8145d2af7fd35",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Retraites désindexées",
+      "extrait": "TITRE: Retraites désindexées SOURCE: Montceau News DATE: 2026-08-18T02:43:44Z URL: https://montceau-news.com/selnews-site/885023-retraites-desindexees.html La désindexation n'est pas une invention récente. La France a longtemps lié l'évolution des retraites à celle des salaires. Tant que les salaires réels progressaient, les retraités participaient ainsi, au moins partiellement, à l'enrichissement collectif. À partir de la fin des années 1980, puis surtout avec la réforme Balladur de 1993 pour l",
+      "url": "https://montceau-news.com/selnews-site/885023-retraites-desindexees.html",
+      "source": "Montceau News",
+      "date": "2026-08-18T02:43:44Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-18T04:04:15.453215+00:00"
+    },
+    {
+      "id": "e7ab6d04699ad93a",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Bugs en série, dossiers disparus : le logiciel \"moyenâgeux\" qui empoisonne le quotidien des policiers",
+      "extrait": "TITRE: Bugs en série, dossiers disparus : le logiciel \"moyenâgeux\" qui empoisonne le quotidien des policiers SOURCE: LExpress.fr DATE: 2026-08-17T15:00:00Z URL: https://www.lexpress.fr/societe/justice/bugs-en-serie-dossiers-disparus-le-logiciel-moyenageux-qui-empoisonne-le-quotidien-des-policiers-NNHV25G64JAUXBQQMZW7OGUEEI/ Garder son calme, et ne surtout pas cliquer en pagaille face aux caprices de la machine. En près de dix ans d'exercice au sein d'une brigade d'investigation de l'est de la Fr",
+      "url": "https://www.lexpress.fr/societe/justice/bugs-en-serie-dossiers-disparus-le-logiciel-moyenageux-qui-empoisonne-le-quotidien-des-policiers-NNHV25G64JAUXBQQMZW7OGUEEI/",
+      "source": "LExpress.fr",
+      "date": "2026-08-17T15:00:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-18T04:04:26.922918+00:00"
+    },
+    {
+      "id": "27275cb21a69c68e",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Juventus : après Lucumí, la Vieille Dame touche au but pour un nouveau gardien - Sport.fr",
+      "extrait": "TITRE: Juventus : après Lucumí, la Vieille Dame touche au but pour un nouveau gardien - Sport.fr SOURCE: Sport.fr DATE: 2026-08-17T13:00:41Z URL: https://www.sport.fr/football/juventus-apres-lucumi-la-vieille-dame-touche-au-but-pour-un-nouveau-gardien-1474604.shtm Un mercato décidément mouvementé du côté de Turin. Quelques heures à peine après avoir officialisé l'arrivée de Jhon Lucumí en défense centrale, la Juventus s'apprête à boucler un second dossier majeur, cette fois entre les perches. Un",
+      "url": "https://www.sport.fr/football/juventus-apres-lucumi-la-vieille-dame-touche-au-but-pour-un-nouveau-gardien-1474604.shtm",
+      "source": "Sport.fr",
+      "date": "2026-08-17T13:00:41Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-18T04:04:28.186410+00:00"
+    },
+    {
+      "id": "67a521ed6b993c89",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Pourquoi le PSG a subitement abandonné le dossier Zion Suzuki - Sport.fr",
+      "extrait": "TITRE: Pourquoi le PSG a subitement abandonné le dossier Zion Suzuki - Sport.fr SOURCE: Sport.fr DATE: 2026-08-17T07:31:40Z URL: https://www.sport.fr/football/pourquoi-le-psg-a-subitement-abandonne-le-dossier-zion-suzuki-1474544.shtm Tout semblait pourtant ficelé. Depuis plusieurs semaines, le nom de Zion Suzuki circulait avec insistance du côté du Parc des Princes, présenté comme la piste privilégiée pour renforcer le secteur du gardien de but. Coup de théâtre : le Paris Saint-Germain a finalem",
+      "url": "https://www.sport.fr/football/pourquoi-le-psg-a-subitement-abandonne-le-dossier-zion-suzuki-1474544.shtm",
+      "source": "Sport.fr",
+      "date": "2026-08-17T07:31:40Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-18T04:04:42.891251+00:00"
+    },
+    {
+      "id": "44e082c9619c6aae",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Taylor Swift sort à Londres en mini-robe après son mariage présumé... Et les internautes se sont jetés sur un détail en particulier -- Photos",
+      "extrait": "TITRE: Taylor Swift sort à Londres en mini-robe après son mariage présumé... Et les internautes se sont jetés sur un détail en particulier -- Photos SOURCE: amomama.fr DATE: 2026-08-17T07:18:28Z URL: https://amomama.fr/641655-taylor-swift-sort-a-londres-en-mini-robe.html La star de la pop a refait surface à Londres après son mariage qui aurait eu lieu à New York, et ces nouvelles photos ont vite déclenché une vague de réactions sur Internet. Le 13 août 2026, Taylor Swift serait sortie pour une s",
+      "url": "https://amomama.fr/641655-taylor-swift-sort-a-londres-en-mini-robe.html",
+      "source": "amomama.fr",
+      "date": "2026-08-17T07:18:28Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-18T04:04:41.112344+00:00"
+    },
+    {
       "id": "4cdda48436c368a3",
       "banque": "Crédit Agricole",
       "departement": "",
@@ -37213,6 +37327,110 @@
       "created_at": "2026-06-25T15:43:41.960961+00:00"
     },
     {
+      "id": "c1bd219bc01554d6",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "PSG : Barcola à l'écart jusqu'au départ ?",
+      "extrait": "TITRE: PSG : Barcola à l'écart jusqu'au départ ? SOURCE: Maxifoot DATE: 2026-08-17T21:03:03Z URL: https://www.maxifoot.fr/psg/barcola-a-l-rsquo-ecart-jusqu-rsquo-au-depart-foot-461985.htm Resté sur le banc face à Aston Villa (2-1) en Supercoupe d'Europe, Bradley Barcola (23 ans, 29 matchs et 11 buts en L1 pour la saison 2025-2026) a été envoyé en tribunes pour le Trophée des Champions perdu par le Paris Saint-Germain contre le RC Lens (0-1) dimanche. Une mise à l'écart bien partie pour durer pui",
+      "url": "https://www.maxifoot.fr/psg/barcola-a-l-rsquo-ecart-jusqu-rsquo-au-depart-foot-461985.htm",
+      "source": "Maxifoot",
+      "date": "2026-08-17T21:03:03Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-18T04:04:17.517327+00:00"
+    },
+    {
+      "id": "18e94109be98c40d",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "PSG: en attendant une nouvelle offre de Liverpool, Barcola restera à l'écart",
+      "extrait": "TITRE: PSG: en attendant une nouvelle offre de Liverpool, Barcola restera à l'écart SOURCE: RMC SPORT DATE: 2026-08-17T19:30:54Z URL: https://rmcsport.bfmtv.com/football/transferts/psg-en-attendant-une-nouvelle-offre-de-liverpool-barcola-restera-a-l-ecart_AV-202608170557.html Bradley Barcola ne devrait pas réintégrer l'effectif du Paris Saint-Germain tant que la question de son avenir n'est pas réglée. Liverpool négocie toujours son transfert lors du mercato estival et devrait rapidement formule",
+      "url": "https://rmcsport.bfmtv.com/football/transferts/psg-en-attendant-une-nouvelle-offre-de-liverpool-barcola-restera-a-l-ecart_AV-202608170557.html",
+      "source": "RMC SPORT",
+      "date": "2026-08-17T19:30:54Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-18T04:04:18.580663+00:00"
+    },
+    {
+      "id": "306607324086d8a8",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Impôts piratés : ces arnaques redoutables qui pourraient bientôt viser 678 000 contribuables",
+      "extrait": "TITRE: Impôts piratés : ces arnaques redoutables qui pourraient bientôt viser 678 000 contribuables SOURCE: Capital.fr DATE: 2026-08-17T16:05:00Z URL: https://www.capital.fr/economie-politique/impots-pirates-comment-dejouer-les-arnaques-qui-vont-suivre-1529351 Le faux remboursement d'impôt constitue déjà l'une des fraudes les plus fréquemment signalées à Cybermalveillance.gouv.fr. Le message annonce généralement une somme précise, volontairement non arrondie, afin de donner l'impression qu'elle ",
+      "url": "https://www.capital.fr/economie-politique/impots-pirates-comment-dejouer-les-arnaques-qui-vont-suivre-1529351",
+      "source": "Capital.fr",
+      "date": "2026-08-17T16:05:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-18T04:04:23.777281+00:00"
+    },
+    {
+      "id": "b5195939f24f4626",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "PSG : accord trouvé pour un crack ! La grande annonce",
+      "extrait": "TITRE: PSG : accord trouvé pour un crack ! La grande annonce SOURCE: Football 365 DATE: 2026-08-17T15:29:51Z URL: https://www.football365.fr/psg-accord-trouve-pour-un-crack-la-grande-annonce-10308898.html Le Paris Saint-Germain serait sur le point de recruter l'un des prospects les plus prometteurs de sa génération. Malgré la déception d'un revers dans le Trophée des Champions face au Racing Club de Lens dimanche soir, le Paris Saint-Germain reste sur tous les fronts. Notamment en coulisses, où ",
+      "url": "https://www.football365.fr/psg-accord-trouve-pour-un-crack-la-grande-annonce-10308898.html",
+      "source": "Football 365",
+      "date": "2026-08-17T15:29:51Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-18T04:04:25.246616+00:00"
+    },
+    {
+      "id": "ca0155462da0ddfa",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "L'OM s'attaque à Justin Njinmah",
+      "extrait": "TITRE: L'OM s'attaque à Justin Njinmah SOURCE: Foot Mercato : Info Transferts Football - Actu Foot Transfert DATE: 2026-08-17T11:41:33Z URL: https://www.footmercato.net/a3212164997550764366-lom-sattaque-a-justin-njinmah Le club phocéen doit toujours vendre avant de penser à recruter. Ce qui ne l'empêche de pas de cibler d'éventuels renforts comme l'ailier allemand Justin Njinmah. En acceptant de signer deux ans à l'Olympique de Marseille, Bruno Genesio savait où il mettait les pieds, même si le ",
+      "url": "https://www.footmercato.net/a3212164997550764366-lom-sattaque-a-justin-njinmah",
+      "source": "Foot Mercato : Info Transferts Football - Actu Foot Transfert",
+      "date": "2026-08-17T11:41:33Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-18T04:04:30.505392+00:00"
+    },
+    {
+      "id": "dea1868f1cda690f",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Mercato Barça : le dossier Julian Alvarez patine, offensive imminente pour Viktor Gyökeres ?",
+      "extrait": "TITRE: Mercato Barça : le dossier Julian Alvarez patine, offensive imminente pour Viktor Gyökeres ? SOURCE: Top mercato DATE: 2026-08-17T08:20:58Z URL: https://www.topmercato.com/2126102-mercato-barca-le-dossier-julian-alvarez-patine-offensive-imminente-pour-viktor-gyokeres/ Le FC Barcelone est obligé de lancer de nouvelles pistes, alors que le dossier Julian Alvarez patine. Le club catalan a ajouté Viktor Gyokeres à sa short-list. C'est une semaine intense dans les bureaux du FC Barcelone. Le c",
+      "url": "https://www.topmercato.com/2126102-mercato-barca-le-dossier-julian-alvarez-patine-offensive-imminente-pour-viktor-gyokeres/",
+      "source": "Top mercato",
+      "date": "2026-08-17T08:20:58Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-18T04:04:36.025874+00:00"
+    },
+    {
+      "id": "5ecf0f45467a9ca9",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "L'impressionnant hommage de l'Ajax à Godts",
+      "extrait": "TITRE: L'impressionnant hommage de l'Ajax à Godts SOURCE: CulturePSG DATE: 2026-08-17T08:09:33Z URL: https://www.culturepsg.com/news/reseaux-sociaux/l-impressionnant-hommage-de-l-ajax-a-godts/60374 En plus de l'avoir encouragé et remercié pour son passage au club, l'Ajax Amsterdam a rendu un magnifique hommage à Mika Godts dans la foulée de son transfert au PSG. Cinquième recrue officielle du mercato estival du PSG, l'ailier belge Mika Godts s'est engagé jusqu'en juin 2031 avec le double champio",
+      "url": "https://www.culturepsg.com/news/reseaux-sociaux/l-impressionnant-hommage-de-l-ajax-a-godts/60374",
+      "source": "CulturePSG",
+      "date": "2026-08-17T08:09:33Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-18T04:04:39.816440+00:00"
+    },
+    {
+      "id": "a16b4082f2ec2401",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "L'OM tient son gardien de but, la Juventus donne son feu vert",
+      "extrait": "TITRE: L'OM tient son gardien de but, la Juventus donne son feu vert SOURCE: foot01.com DATE: 2026-08-17T08:04:34Z URL: https://www.foot01.com/marseille/lom-tient-son-gardien-de-but-la-juventus-donne-son-feu-vert En quête d'un gardien de but pour remplacer Geronimo Rulli, l'OM avait plusieurs pistes en cours. Mais d'intenses réunions avec la Juventus ont permis d'avancer pour la signature de Michele Di Gregorio. Ayant vu Geronimo Rulli rejoindre Manchester City la semaine passée, Bruno Genesio a",
+      "url": "https://www.foot01.com/marseille/lom-tient-son-gardien-de-but-la-juventus-donne-son-feu-vert",
+      "source": "foot01.com",
+      "date": "2026-08-17T08:04:34Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-18T04:04:34.886750+00:00"
+    },
+    {
       "id": "523bdb7c98ac6eb2",
       "banque": "Société Générale",
       "departement": "",
@@ -41332,6 +41550,19 @@
       "score": 1,
       "raison": "signaux: vague(unknown,regional,count=None)",
       "created_at": "2026-08-04T06:10:34.624514+00:00"
+    },
+    {
+      "id": "499e6ab2aae81693",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Guinée équatoriale : l'acquisition de l'ex-Société Générale par Vista Group entre dans sa phase finale d'examen régional | Financial Afrik",
+      "extrait": "Le texte traite de l’acquisition d’une banque étrangère (Guinée équatoriale) et d’autorisations CEMAC, sans mention de fermetures/fermeture d’agences BANCAIRES physiques en France.",
+      "url": "https://www.financialafrik.com/2026/08/17/guinee-equatoriale-lacquisition-de-lex-societe-generale-par-vista-group-entre-dans-sa-phase-finale-dexamen-regional/",
+      "source": "Financial Afrik",
+      "date": "2026-08-17T11:34:27Z",
+      "score": 1,
+      "raison": "signaux: vague(Société Générale,national,count=None)",
+      "created_at": "2026-08-18T04:04:33.435983+00:00"
     },
     {
       "id": "23b1ab19e3e2e359",
