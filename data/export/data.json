@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T04:13:04.550105+00:00",
+  "generated_at": "2026-08-19T04:17:07.095319+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -326,11 +326,11 @@
     "34": {
       "nom": "Hérault",
       "region": "Occitanie",
-      "count": 1,
+      "count": 2,
       "total_agences": 253,
-      "precise_count": 1,
+      "precise_count": 2,
       "unlocated_count": 0,
-      "estimated_count": 1
+      "estimated_count": 2
     },
     "35": {
       "nom": "Ille-et-Vilaine",
@@ -354,7 +354,7 @@
       "nom": "Indre-et-Loire",
       "region": "Centre-Val de Loire",
       "count": 6,
-      "total_agences": 106,
+      "total_agences": 105,
       "precise_count": 6,
       "unlocated_count": 0,
       "estimated_count": 6
@@ -525,7 +525,7 @@
       "nom": "Morbihan",
       "region": "Bretagne",
       "count": 6,
-      "total_agences": 134,
+      "total_agences": 135,
       "precise_count": 6,
       "unlocated_count": 0,
       "estimated_count": 6
@@ -912,7 +912,7 @@
       "nom": "La Réunion",
       "region": "La Réunion",
       "count": 0,
-      "total_agences": 106,
+      "total_agences": 108,
       "precise_count": 0,
       "unlocated_count": 0,
       "estimated_count": 0
@@ -1684,9 +1684,9 @@
     "34": {
       "departement": "34",
       "nom": "Hérault",
-      "precise_count": 1,
+      "precise_count": 2,
       "unlocated_count": 0,
-      "estimated_count": 1,
+      "estimated_count": 2,
       "department_signal_count": 0,
       "signals": []
     },
@@ -1868,8 +1868,8 @@
     },
     {
       "region": "Occitanie",
-      "articles": 14,
-      "fermetures": 1,
+      "articles": 15,
+      "fermetures": 2,
       "projets": 10,
       "fusions": 2,
       "types": [
@@ -9720,6 +9720,47 @@
         "source": "SIRENE"
       },
       "region": "Pays de la Loire"
+    },
+    {
+      "id": "6585d894c1c131b2",
+      "banque": "La Banque Postale",
+      "commune": "Aniane",
+      "code_insee": "34010",
+      "departement": "34",
+      "type": "fermeture",
+      "date_annonce": "Tue, 18 Aug 2026 15:36:00 GMT",
+      "date_fermeture": "2026-08-18",
+      "statut": "confirmé",
+      "statut_temporel": "deja_fermee",
+      "date_fermeture_approx": 1,
+      "fiabilite": 3,
+      "lat": 43.680894,
+      "lon": 3.583731,
+      "citation": "Hérault : coup de massue, le bureau de poste d'Aniane ferme définitivement - infoccitanie.fr",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "service_impact": "fermeture_lbp_complete",
+      "point_postal_avant": "Bureau de Poste",
+      "point_postal_apres": null,
+      "postal_point_id": "06156A",
+      "evidence_level": "presse+référentiel",
+      "created_at": "2026-08-19T04:05:51.078456+00:00",
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOY0lTNkFLOTdYeWtZWnRld0UxR1kxakdidFladllRS0dTSHNmcnl2N29IcEdZdEJlZTVwN09aTnVHemFVcXoxUWEyLTU3cGw0VFFGUnVvVFN3VzB1a0ZsZGdpVHY2LWNJMm40Q1h0WnJUdEkxUWItb2hiVUUxZ1F4ZzM1TkJPbDJqQ0FNUUFPLUxlMzdEUk1VY3NvOVc?oc=5",
+          "titre": "Hérault : coup de massue, le bureau de poste d'Aniane ferme définitivement - infoccitanie.fr",
+          "source": "Google News",
+          "date": "Tue, 18 Aug 2026 15:36:00 GMT",
+          "tier": "D"
+        }
+      ],
+      "controle_sirene": {
+        "etat_administratif": null,
+        "siret": null,
+        "source": "SIRENE"
+      },
+      "region": "Occitanie"
     }
   ],
   "closures_unlocated": [
@@ -10678,6 +10719,42 @@
       "created_at": "2026-07-22T09:08:17.776091+00:00"
     },
     {
+      "id": "ac85e8f45cf7198e",
+      "banque": "La Banque Postale",
+      "commune": "Paray-Vieille-Poste",
+      "departement": "91",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "Fermeture du bureau de Poste : le lundi 24/08 - Ville de Mèze -",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9sZ0ZqVDFIZDl2MGl3VVc5a1hxanl1aURubERyMHpDVWZhNXJ0d0dDMExQcldhVHF1UWdDVmFkd1NiLW94QU5XRFAzaWV2VWczMnpPcHpqYnczem53SWVObFFZM05BNTR5b1dOMkZxZmJlNngwYW1NUjZB?oc=5",
+      "titre": "Fermeture du bureau de Poste : le lundi 24/08 - Ville de Mèze -",
+      "source": "Google News",
+      "date": "Tue, 18 Aug 2026 13:39:38 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-08-19T04:05:46.261723+00:00"
+    },
+    {
+      "id": "627f7865da3331ac",
+      "banque": "La Banque Postale",
+      "commune": "Doyet",
+      "departement": "03",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "Aidez-moi à faire avancer ce combat : Non à la fermeture du bureau de poste. - MyPetition.org",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOTFo2RUZUYUs0YnluTmpNQkdONC1GTjRMNVNzbGl0Z2RfYmdNWUdMS2JiSzcydG5wVVk0bjBZV2lFLWVXeTVnYzMtTkFNRklRaHR4Z0NZc28zSXh6VDFqWkI0bk5XYlJsbEJIT2lhNkV6Q3lDUXRobVgtVmlxemlOOXkwNmpDMTdfN1hsWWlR?oc=5",
+      "titre": "Aidez-moi à faire avancer ce combat : Non à la fermeture du bureau de poste. - MyPetition.org",
+      "source": "Google News",
+      "date": "Tue, 18 Aug 2026 05:46:12 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-08-19T04:05:47.946534+00:00"
+    },
+    {
       "id": "0a2a812b8edd82d7",
       "banque": "La Banque Postale",
       "commune": "Paray-Vieille-Poste",
@@ -10693,7 +10770,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-18T04:01:17.646040+00:00"
+      "created_at": "2026-08-19T04:02:57.531571+00:00"
     },
     {
       "id": "50895c042a984b7d",
@@ -10729,7 +10806,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 04:46:02 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-18T04:01:17.301887+00:00"
+      "created_at": "2026-08-19T04:02:57.199446+00:00"
     },
     {
       "id": "8c6a0cad14626d6f",
@@ -13033,7 +13110,7 @@
       "source": "Google News",
       "date": "Fri, 20 Jun 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-18T04:01:23.074350+00:00"
+      "created_at": "2026-08-19T04:03:03.063233+00:00"
     },
     {
       "id": "b70960ea48a1a247",
@@ -13159,7 +13236,7 @@
       "source": "Google News",
       "date": "Fri, 10 Jul 2026 10:12:00 GMT",
       "raison": "garde entrée/sortie: département source 44 incompatible avec la sortie 974",
-      "created_at": "2026-08-18T04:01:38.035422+00:00"
+      "created_at": "2026-08-19T04:03:17.410827+00:00"
     },
     {
       "id": "8c646081e1d69e81",
@@ -13339,7 +13416,7 @@
       "source": "Google News",
       "date": "Fri, 03 Jan 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-18T04:01:16.957041+00:00"
+      "created_at": "2026-08-19T04:02:56.821946+00:00"
     },
     {
       "id": "411db107f70f2387",
@@ -14742,6 +14819,32 @@
       "source": "Google News",
       "date": "Thu, 02 Jan 2025 08:00:00 GMT",
       "created_at": "2026-07-22T09:19:07.254564+00:00"
+    },
+    {
+      "id": "f91c8cb1fb963f83",
+      "banque": "BNP Paribas",
+      "scope": "national",
+      "count": null,
+      "confidence": 0.35,
+      "evidence": "Article annoncé : « Distributeurs de billets supprimés en 2026… dans votre banque BNP Paribas ou CIC ? » (suppression de DAB, sans communes ni agences physiques nommées).",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNQkt1cXBSeVF0OWJadGRQNlZjN2h4QmdGT29zSEh6ZEF1cDV6Mk1ydkFReWlybHJBbUx3TFFnRkU4NFpadEZTNk9oeGpmT05VWjNIZ09ITzlKQm5nN1p2S3ZrRElpdG9iNXJVNjdxZkliOVRjQTdieWlXTUFjTXVaeGw5bnk1RWZPaGM3M1I1WVQwLXBhSHg5cW5qLVZNaWFuX0NNR2hYUVV5S3N5WGNDRlhhRDJPaDJOMDlkeWw5Nm9GdDl2dG5pb1hxcy1DeXpsSVVOeg?oc=5",
+      "titre": "Distributeurs de billets supprimés en 2026 : qu'est-ce qui va changer dans votre banque BNP Paribas ou CIC ? - BDOR",
+      "source": "Google News",
+      "date": "Sun, 28 Jun 2026 07:00:00 GMT",
+      "created_at": "2026-08-19T04:05:53.598250+00:00"
+    },
+    {
+      "id": "9f59f508962c2e25",
+      "banque": "CIC",
+      "scope": "national",
+      "count": null,
+      "confidence": 0.35,
+      "evidence": "Article annoncé : « Distributeurs de billets supprimés en 2026… dans votre banque BNP Paribas ou CIC ? » (suppression de DAB, sans communes ni agences physiques nommées).",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNQkt1cXBSeVF0OWJadGRQNlZjN2h4QmdGT29zSEh6ZEF1cDV6Mk1ydkFReWlybHJBbUx3TFFnRkU4NFpadEZTNk9oeGpmT05VWjNIZ09ITzlKQm5nN1p2S3ZrRElpdG9iNXJVNjdxZkliOVRjQTdieWlXTUFjTXVaeGw5bnk1RWZPaGM3M1I1WVQwLXBhSHg5cW5qLVZNaWFuX0NNR2hYUVV5S3N5WGNDRlhhRDJPaDJOMDlkeWw5Nm9GdDl2dG5pb1hxcy1DeXpsSVVOeg?oc=5",
+      "titre": "Distributeurs de billets supprimés en 2026 : qu'est-ce qui va changer dans votre banque BNP Paribas ou CIC ? - BDOR",
+      "source": "Google News",
+      "date": "Sun, 28 Jun 2026 07:00:00 GMT",
+      "created_at": "2026-08-19T04:05:53.599081+00:00"
     },
     {
       "id": "5c52d44ad9d93fa2",
@@ -17957,6 +18060,19 @@
       "created_at": "2026-08-13T05:14:27.783190+00:00"
     },
     {
+      "id": "c0c10c3196a9e9b4",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "« On mérite quand même quelques égards » : au Mans, la riposte s’organise après la fermeture d’un bureau de poste - - Les Sables d'Olonne.maville.com",
+      "extrait": "TITRE: « On mérite quand même quelques égards » : au Mans, la riposte s’organise après la fermeture d’un bureau de poste - - Les Sables d'Olonne.maville.com SOURCE: Google News DATE: Wed, 12 Aug 2026 17:17:00 GMT URL: https://news.google.com/rss/articles/CBMiigJBVV95cUxNcU5lcFNVTlR0RW1XTDFYa2Y1U1p2MzFKckJCdktiSFBuVHNmMEZwYkd2QTBiamktS3BrZUd4b2tZdks5Slk1c1llV3hLdGczMXEyaXR5eW1UN1JFN0JsbTREd0hZOUhSQ1cyTWRrNDRpZU43ZmVUWURReU9QVGZWOS0zZjFxXzF3c1dfNWVOYUl4MFpQdnRwam1pUFhwbjF0dDlhYVJDeGVrb3pwRV9vemhDM",
+      "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxNcU5lcFNVTlR0RW1XTDFYa2Y1U1p2MzFKckJCdktiSFBuVHNmMEZwYkd2QTBiamktS3BrZUd4b2tZdks5Slk1c1llV3hLdGczMXEyaXR5eW1UN1JFN0JsbTREd0hZOUhSQ1cyTWRrNDRpZU43ZmVUWURReU9QVGZWOS0zZjFxXzF3c1dfNWVOYUl4MFpQdnRwam1pUFhwbjF0dDlhYVJDeGVrb3pwRV9vemhDMmJuVU9JeVhrTDlJX21wYUtaS2J4emE4bElSRW9maEdLYVpNSTl0N3BLV1NUUkoycTd2NjNMM2s1U0FFLTBYMU1WNGdoT0dLVGlaeW0wLU9SaXl3SDkwUQ?oc=5",
+      "source": "Google News",
+      "date": "Wed, 12 Aug 2026 17:17:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-19T04:06:03.971151+00:00"
+    },
+    {
       "id": "e1b1f143ea6933df",
       "banque": "La Banque Postale",
       "departement": "",
@@ -19946,6 +20062,32 @@
       "created_at": "2026-06-25T15:30:04.916467+00:00"
     },
     {
+      "id": "2ec67f0a0e895d61",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "La Banco Popular de Ahorro est fermé depuis plusieurs jours à Sierra de Cubitas, laissant les personnes âgées incapables de retirer leur argent - CiberCuba",
+      "extrait": "TITRE: La Banco Popular de Ahorro est fermé depuis plusieurs jours à Sierra de Cubitas, laissant les personnes âgées incapables de retirer leur argent - CiberCuba SOURCE: Google News DATE: Tue, 18 Aug 2026 19:14:28 GMT URL: https://news.google.com/rss/articles/CBMiuwFBVV95cUxNVERQOUdqRl9iWWcyODN5UWs2SHFQVzFsUW54cEhKbHhtVXJkbWxUYks2MWFhSkhSUzA2N3A3ZFRCTGFzVjVHNjlON002UVRKcUhyOElHeXhVRWhVTVd2Z3hLT2w2WjVvajIxaFQ1SGtmQmNuUUZXd3VOcEVpcmlzTnJpalZQR2FvMm1nVUhyWkZUUVFIaGJwWWRUYjUxd1lNSEhhb2U3RHpwNmREM3l",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNVERQOUdqRl9iWWcyODN5UWs2SHFQVzFsUW54cEhKbHhtVXJkbWxUYks2MWFhSkhSUzA2N3A3ZFRCTGFzVjVHNjlON002UVRKcUhyOElHeXhVRWhVTVd2Z3hLT2w2WjVvajIxaFQ1SGtmQmNuUUZXd3VOcEVpcmlzTnJpalZQR2FvMm1nVUhyWkZUUVFIaGJwWWRUYjUxd1lNSEhhb2U3RHpwNmREM3lPUHlqZFVpRUVBMHNz?oc=5",
+      "source": "Google News",
+      "date": "Tue, 18 Aug 2026 19:14:28 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-19T04:05:41.422755+00:00"
+    },
+    {
+      "id": "61fae1a0c4a24839",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "À Port-Jérôme-sur-Seine, le bureau de poste principal fermera… Pour rouvrir à la mairie - paris-normandie.fr",
+      "extrait": "TITRE: À Port-Jérôme-sur-Seine, le bureau de poste principal fermera… Pour rouvrir à la mairie - paris-normandie.fr SOURCE: Google News DATE: Tue, 18 Aug 2026 10:36:00 GMT URL: https://news.google.com/rss/articles/CBMizgFBVV95cUxPcWhDUFlCMDk2Yi04LVRzeHRZZkxUSHJ2SHI4WlFJOElPbUdrWDNsYXZ6aW5jMjYzMktXUkhTVmM0OGJ6ZEh3bl9xREFoRzNfcERPOWh0Z3pZTEVoanQ2REtSVjlwSlhIWXJxVmRsdDUwM3pLTlJVNzgxb3pQVW1tMVl1S0ZNYUt4QlVWY0NxREF4b1lHRERoOXdoVmd1Rmp2bmpwNjRGUlVLZjFfaHI0UlhXM0pqYmhtVXJ6R2h1T3MwU3pnclNhYXlIT0RXQQ?oc=",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPcWhDUFlCMDk2Yi04LVRzeHRZZkxUSHJ2SHI4WlFJOElPbUdrWDNsYXZ6aW5jMjYzMktXUkhTVmM0OGJ6ZEh3bl9xREFoRzNfcERPOWh0Z3pZTEVoanQ2REtSVjlwSlhIWXJxVmRsdDUwM3pLTlJVNzgxb3pQVW1tMVl1S0ZNYUt4QlVWY0NxREF4b1lHRERoOXdoVmd1Rmp2bmpwNjRGUlVLZjFfaHI0UlhXM0pqYmhtVXJ6R2h1T3MwU3pnclNhYXlIT0RXQQ?oc=5",
+      "source": "Google News",
+      "date": "Tue, 18 Aug 2026 10:36:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-19T04:05:45.909941+00:00"
+    },
+    {
       "id": "570f5cced2c16245",
       "banque": "La Banque Postale",
       "departement": "",
@@ -20557,6 +20699,19 @@
       "created_at": "2026-08-14T05:10:34.310391+00:00"
     },
     {
+      "id": "c094413ae22f5902",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Cette commune de Loire-Atlantique se mobilise contre la fermeture du bureau de poste - Maville Nantes",
+      "extrait": "TITRE: Cette commune de Loire-Atlantique se mobilise contre la fermeture du bureau de poste - Maville Nantes SOURCE: Google News DATE: Tue, 11 Aug 2026 14:13:00 GMT URL: https://news.google.com/rss/articles/CBMi3wFBVV95cUxPS1RnS2I5U0ptSHVjeWo2Nk9FUDBzTUpJdmhZYm85X2d0Wi1wNjlmNHJSdHcxeDFybUFsemIxaGNYb3ZQNzdPVWFyUkxhZ0xSMVVvM21FNEp0cThOMnJoV0l6Qk5lZldmYXlUNFZMMENBSXh6SmJtNVNzSmtHdTNmajR4OUZaaWZEVWd5ZGFWYmV2WTU0VFgxdUpFTXVYZTJGdzlhM3BJVzloNUpSRTY2bmowbjlvLWxWdEZBaUFhbWF5NXBlTnFWM2s5cEd1RWxWR1JzVV9SO",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPS1RnS2I5U0ptSHVjeWo2Nk9FUDBzTUpJdmhZYm85X2d0Wi1wNjlmNHJSdHcxeDFybUFsemIxaGNYb3ZQNzdPVWFyUkxhZ0xSMVVvM21FNEp0cThOMnJoV0l6Qk5lZldmYXlUNFZMMENBSXh6SmJtNVNzSmtHdTNmajR4OUZaaWZEVWd5ZGFWYmV2WTU0VFgxdUpFTXVYZTJGdzlhM3BJVzloNUpSRTY2bmowbjlvLWxWdEZBaUFhbWF5NXBlTnFWM2s5cEd1RWxWR1JzVV9SOURfR2hCMUpB?oc=5",
+      "source": "Google News",
+      "date": "Tue, 11 Aug 2026 14:13:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-19T04:05:50.041676+00:00"
+    },
+    {
       "id": "93968649b848a764",
       "banque": "LCL",
       "departement": "",
@@ -21088,6 +21243,32 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-08-05T06:07:14.061890+00:00"
+    },
+    {
+      "id": "95d5f35bba454a93",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Une sortie de la E40 fermée ce samedi soir : voici pourquoi - Le Soir",
+      "extrait": "TITRE: Une sortie de la E40 fermée ce samedi soir : voici pourquoi - Le Soir SOURCE: Google News DATE: Tue, 04 Aug 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMiqAFBVV95cUxPMENlRDFWcGtvaUZyYWxEVk1ISk1lOEM1MVRKbnZMalRhaDg0cEZ3MVM1WGFmUldweXJNbTlBQXhsUmFUVEFBUVlTRUw3SGVuOTF2MmxEeVpBZkRsU1hUTDkxUXZVN3ZKZGtIRXFCaThlTWxiODQzYXl3UDM5eUVpSUpwSm5mbjZ5X3JCSDZjdzNDT0xWakJHSy1tdmM1Z253U2Q4aDJOS1k?oc=5 <a href=\"https://news.google.com/rss/articles/CBMiqAFBVV95cUxPMENlRDFWcGtvaUZyYWxEVk1ISk",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPMENlRDFWcGtvaUZyYWxEVk1ISk1lOEM1MVRKbnZMalRhaDg0cEZ3MVM1WGFmUldweXJNbTlBQXhsUmFUVEFBUVlTRUw3SGVuOTF2MmxEeVpBZkRsU1hUTDkxUXZVN3ZKZGtIRXFCaThlTWxiODQzYXl3UDM5eUVpSUpwSm5mbjZ5X3JCSDZjdzNDT0xWakJHSy1tdmM1Z253U2Q4aDJOS1k?oc=5",
+      "source": "Google News",
+      "date": "Tue, 04 Aug 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-19T04:05:55.270820+00:00"
+    },
+    {
+      "id": "f7dc95922ef1fcca",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Invasion de physalies sur les côtes : plusieurs plages des Landes fermées, la préfecture des Pyrénées-Atlantiques appelle à la prudence - La République des Pyrénées",
+      "extrait": "TITRE: Invasion de physalies sur les côtes : plusieurs plages des Landes fermées, la préfecture des Pyrénées-Atlantiques appelle à la prudence - La République des Pyrénées SOURCE: Google News DATE: Tue, 04 Aug 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMirwJBVV95cUxNVzBNanZaNU5hRjhQUENLb2xCcnlJLUw1Rk04SjFEY1VoNlBvbUdwamJIcU9fWkVJbGFEcUhKOENrcWRjLXV2VENWMmI3NzFXMW5lX19DalNsMnJBYzFTSnp5Y3MyWTFSR3l0V1NKVWxERV92Wm9NOFc5ZG9IOVgzU0h5R3VROEF6aTR4dURzVG1GWnMwU2p1eUwwMWlQQ0tWREVFc3dJRG",
+      "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxNVzBNanZaNU5hRjhQUENLb2xCcnlJLUw1Rk04SjFEY1VoNlBvbUdwamJIcU9fWkVJbGFEcUhKOENrcWRjLXV2VENWMmI3NzFXMW5lX19DalNsMnJBYzFTSnp5Y3MyWTFSR3l0V1NKVWxERV92Wm9NOFc5ZG9IOVgzU0h5R3VROEF6aTR4dURzVG1GWnMwU2p1eUwwMWlQQ0tWREVFc3dJRG1kWFBEeEwxRDN1emNkTTRqTklNNGtJeGVfRl9fR3lVZzM3d19wMlJPekxrb2UwSGVtR3R4dHllX2xxYk0ySU16amRZbW16cXRDOVV4YVkwRlBhbUMzYWIweE5IOTZyTFdaRlM3TFcyR0RpaDlaLV9SZEI5QXBUNGkyUk5Sa3p6VGJkOVVSVWs?oc=5",
+      "source": "Google News",
+      "date": "Tue, 04 Aug 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-19T04:05:59.039668+00:00"
     },
     {
       "id": "010153ddfbfcb135",
@@ -22882,6 +23063,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-08-14T05:10:36.341285+00:00"
+    },
+    {
+      "id": "73d74b2e4bcf859e",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Vacances gâchées pour des milliers de passagers : l'aéroport de cette île de Méditerranée reste fermé à cause de cendres volcaniques - L'Indépendant",
+      "extrait": "TITRE: Vacances gâchées pour des milliers de passagers : l'aéroport de cette île de Méditerranée reste fermé à cause de cendres volcaniques - L'Indépendant SOURCE: Google News DATE: Thu, 13 Aug 2026 11:05:00 GMT URL: https://news.google.com/rss/articles/CBMijgJBVV95cUxOTkphTVlER0l6ZDJlTm40MGNHcGFZZEpYS2ZTS2hYdThiR21GZHZ1S0JjSG9CcGV6SWdYTkRqSGo5M3dIbkZKUFQ2WDM5Ti0zRDZmSnZ1S09fbnNOUkppTmpReEN3eVNHaU5Jcm9IVnVLWDJVUlg1NE9aNm9aSWZqdjJZemNURVNMWFdkRnk4MjdRSGVyV2xHYTNUUF9LODdEV2o1Wlpkc2N4Wi1IdTlKajlWR0",
+      "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxOTkphTVlER0l6ZDJlTm40MGNHcGFZZEpYS2ZTS2hYdThiR21GZHZ1S0JjSG9CcGV6SWdYTkRqSGo5M3dIbkZKUFQ2WDM5Ti0zRDZmSnZ1S09fbnNOUkppTmpReEN3eVNHaU5Jcm9IVnVLWDJVUlg1NE9aNm9aSWZqdjJZemNURVNMWFdkRnk4MjdRSGVyV2xHYTNUUF9LODdEV2o1Wlpkc2N4Wi1IdTlKajlWR0YyNnotaWlmODFCSWhaVTlBTk4yVnhqbFBrSTY1ZERmSFhnTUVSYmNNNE9ENDQ3V0hINEFpR0htQkRiaVNIbHpSbXJyXzRPWU1PZ1VSX1JlNlJSZzFYTEJCbUE?oc=5",
+      "source": "Google News",
+      "date": "Thu, 13 Aug 2026 11:05:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-19T04:05:57.408689+00:00"
     },
     {
       "id": "b9bb134ef68b1faf",
@@ -28617,6 +28811,19 @@
       "created_at": "2026-08-06T06:11:01.706760+00:00"
     },
     {
+      "id": "a27ab2acef34a2e1",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "A Tulle, le pont de Souilhac fermé à la circulation en raison des travaux de réfection - La Montagne",
+      "extrait": "TITRE: A Tulle, le pont de Souilhac fermé à la circulation en raison des travaux de réfection - La Montagne SOURCE: Google News DATE: Fri, 24 Jul 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMi3AFBVV95cUxOZ3dxN2ZyeVJhbVNPWnM3NGNDTGVJNkZrYWQ1LUh6Z1d1SmpLTDF6dU5vZUdCT09rSmFHZUZ2WU1QOHo3OHA4a2dWQVNxSGZGR2dmdU5pZGlZR2M1OXBfUTlJemdFSzZCUXZxSG1YRl85d2IwOW5LUnlZSWxUVjNPZlpFUDdfN2dValFHZVp5ZWUwODNnZFhydWY5VFRUcHNCZ2V1OW9lRkR4cjlRWEtxS21JN19jeHR2MEZhNDN6R21vSEhVTVdxUFpFTU1pOEFtSmhoaDBQNV",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOZ3dxN2ZyeVJhbVNPWnM3NGNDTGVJNkZrYWQ1LUh6Z1d1SmpLTDF6dU5vZUdCT09rSmFHZUZ2WU1QOHo3OHA4a2dWQVNxSGZGR2dmdU5pZGlZR2M1OXBfUTlJemdFSzZCUXZxSG1YRl85d2IwOW5LUnlZSWxUVjNPZlpFUDdfN2dValFHZVp5ZWUwODNnZFhydWY5VFRUcHNCZ2V1OW9lRkR4cjlRWEtxS21JN19jeHR2MEZhNDN6R21vSEhVTVdxUFpFTU1pOEFtSmhoaDBQNVZHR0JJ?oc=5",
+      "source": "Google News",
+      "date": "Fri, 24 Jul 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-19T04:06:01.133193+00:00"
+    },
+    {
       "id": "f9ecb080df51be7e",
       "banque": "La Banque Postale",
       "departement": "",
@@ -30437,6 +30644,97 @@
       "created_at": "2026-07-22T09:09:01.159244+00:00"
     },
     {
+      "id": "0c3d932041f07308",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "\" La cybersécurité n'a pas été une priorité \" : les syndicats dénoncent une gestion exposant les données de milliers de Français",
+      "extrait": "TITRE: \" La cybersécurité n'a pas été une priorité \" : les syndicats dénoncent une gestion exposant les données de milliers de Français SOURCE: lanouvellerepublique.fr DATE: 2026-08-18T19:08:34Z URL: https://www.lanouvellerepublique.fr/a-la-une/la-cybersecurite-n-a-pas-ete-une-priorite-les-syndicats-denoncent-une-gestion-exposant-les-donnees-de-milliers-de-francais-1787080114 Après le piratage du fisc qui a permis d'extraire des données sensibles de 678.000 usagers, les syndicats alertent sur de",
+      "url": "https://www.lanouvellerepublique.fr/a-la-une/la-cybersecurite-n-a-pas-ete-une-priorite-les-syndicats-denoncent-une-gestion-exposant-les-donnees-de-milliers-de-francais-1787080114",
+      "source": "lanouvellerepublique.fr",
+      "date": "2026-08-18T19:08:34Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-19T04:06:28.054032+00:00"
+    },
+    {
+      "id": "02ac02896d6e6cd4",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Bugs en série, dossiers disparus : le logiciel \"moyenâgeux\" qui empoisonne le quotidien des policiers : Actualités",
+      "extrait": "TITRE: Bugs en série, dossiers disparus : le logiciel \"moyenâgeux\" qui empoisonne le quotidien des policiers : Actualités SOURCE: Orange Actualités DATE: 2026-08-18T17:00:00Z URL: https://actu.orange.fr/france/bugs-en-serie-dossiers-disparus-le-logiciel-moyenageux-qui-empoisonne-le-quotidien-des-policiers-magicExpress-CNT000002robtg.html Garder son calme, et ne surtout pas cliquer en pagaille face aux caprices de la machine. En près de dix ans d'exercice au sein d'une brigade d'investigation de ",
+      "url": "https://actu.orange.fr/france/bugs-en-serie-dossiers-disparus-le-logiciel-moyenageux-qui-empoisonne-le-quotidien-des-policiers-magicExpress-CNT000002robtg.html",
+      "source": "Orange Actualités",
+      "date": "2026-08-18T17:00:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-19T04:06:35.989420+00:00"
+    },
+    {
+      "id": "dc39a6359d67cfeb",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Journal des Transferts : Barcola vers la sortie, Todibo pousse pour l'OM, Savinho à prix d'or...",
+      "extrait": "TITRE: Journal des Transferts : Barcola vers la sortie, Todibo pousse pour l'OM, Savinho à prix d'or... SOURCE: Maxifoot DATE: 2026-08-18T16:01:34Z URL: https://www.maxifoot.fr/football/article-65704.htm Barcola vers la sortie, Todibo pousse pour l'OM, Savinho à prix d'or, Mbaye dit oui à Liverpool, Fofana se rapproche de la Roma... Voici le Top 5 des gros dossiers mercato du jour à ne pas manquer. Découvrez aussi le Télégramme Foot Transfert, pour ne rien rater de l'actu de ces 24 heures. Le me",
+      "url": "https://www.maxifoot.fr/football/article-65704.htm",
+      "source": "Maxifoot",
+      "date": "2026-08-18T16:01:34Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-19T04:06:38.974575+00:00"
+    },
+    {
+      "id": "a70c9f328041b1f6",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Ariane 6 : l'Europe prépare sa première mission vers l'orbite de transfert géostationnaire",
+      "extrait": "TITRE: Ariane 6 : l'Europe prépare sa première mission vers l'orbite de transfert géostationnaire SOURCE: Le nouvel Economiste DATE: 2026-08-18T15:08:00Z URL: https://www.lenouveleconomiste.fr/ariane-6-leurope-prepare-sa-premiere-mission-vers-lorbite-de-transfert-geostationnaire-138970/ Le 27 août 2026, Ariane 6 doit placer en orbite le satellite météo MTG-I2. La mission doit aussi tester la compétitivité du lanceur européen face à SpaceX. Ariane 6 doit franchir une étape inédite le 27 août 2026",
+      "url": "https://www.lenouveleconomiste.fr/ariane-6-leurope-prepare-sa-premiere-mission-vers-lorbite-de-transfert-geostationnaire-138970/",
+      "source": "Le nouvel Economiste",
+      "date": "2026-08-18T15:08:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-19T04:06:44.622782+00:00"
+    },
+    {
+      "id": "cd73a5eaca6d81f3",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Après l'effraction du 4 août, le bureau de poste de Villeneuve-sur-Yonne rouvre ses portes",
+      "extrait": "TITRE: Après l'effraction du 4 août, le bureau de poste de Villeneuve-sur-Yonne rouvre ses portes SOURCE: lyonne.fr DATE: 2026-08-18T14:46:00Z URL: https://www.lyonne.fr/villeneuve-sur-yonne-89500/faits-divers/apres-l-effraction-du-4-aout-le-bureau-de-poste-de-villeneuve-sur-yonne-rouvre-ses-portes_15034010/ Fermé depuis le 4 août à la suite d'une effraction et de dégradations, le bureau de poste de Villeneuve-sur-Yonne va rouvrir ses portes ce mercredi 19 août, à 9 heures, aux horaires habituel",
+      "url": "https://www.lyonne.fr/villeneuve-sur-yonne-89500/faits-divers/apres-l-effraction-du-4-aout-le-bureau-de-poste-de-villeneuve-sur-yonne-rouvre-ses-portes_15034010/",
+      "source": "lyonne.fr",
+      "date": "2026-08-18T14:46:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-19T04:06:46.331039+00:00"
+    },
+    {
+      "id": "9d5e8968fee6646e",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Étain : la Namibie veut produire plus, mais la transformation se fait toujours ailleurs",
+      "extrait": "TITRE: Étain : la Namibie veut produire plus, mais la transformation se fait toujours ailleurs SOURCE: Agence Ecofin DATE: 2026-08-18T07:16:53Z URL: https://www.agenceecofin.com/actualites-industries/1808-140923-etain-la-namibie-veut-produire-plus-mais-la-transformation-se-fait-toujours-ailleurs (Agence Ecofin) - La Namibie veut faire passer la part des exportations minières ayant subi une transformation locale de 46,6 % à 57 % d'ici 2030. L'étain n'est néanmoins pas une priorité de cette straté",
+      "url": "https://www.agenceecofin.com/actualites-industries/1808-140923-etain-la-namibie-veut-produire-plus-mais-la-transformation-se-fait-toujours-ailleurs",
+      "source": "Agence Ecofin",
+      "date": "2026-08-18T07:16:53Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-19T04:06:50.367101+00:00"
+    },
+    {
+      "id": "026a1be565398297",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Nvidia garantit 105 milliards de dollars pour construire le futur data center d'OpenAI",
+      "extrait": "TITRE: Nvidia garantit 105 milliards de dollars pour construire le futur data center d'OpenAI SOURCE: La Tribune DATE: 2026-08-18T06:25:01Z URL: https://www.latribune.fr/article/tech/intelligence-artificielle/76665445287495/nvidia-garantit-105-milliards-de-dollars-pour-construire-le-futur-data-center-d-openai Nvidia apporte une garantie pouvant atteindre 105 milliards de dollars pour permettre à OpenAI de louer un immense campus informatique dans l'Ohio, développé par SB Energy, filiale de SoftB",
+      "url": "https://www.latribune.fr/article/tech/intelligence-artificielle/76665445287495/nvidia-garantit-105-milliards-de-dollars-pour-construire-le-futur-data-center-d-openai",
+      "source": "La Tribune",
+      "date": "2026-08-18T06:25:01Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-19T04:06:52.374151+00:00"
+    },
+    {
       "id": "14d8145d2af7fd35",
       "banque": "Société Générale",
       "departement": "",
@@ -30448,6 +30746,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-08-18T04:04:15.453215+00:00"
+    },
+    {
+      "id": "60e5858bfda9c7b8",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "À Port-Jérôme-sur-Seine, le bureau de poste principal fermera… Pour rouvrir à la mairie",
+      "extrait": "TITRE: À Port-Jérôme-sur-Seine, le bureau de poste principal fermera… Pour rouvrir à la mairie SOURCE: paris-normandie.fr DATE: 2026-08-18 URL: https://www.paris-normandie.fr/id739293/article/2026-08-18/port-jerome-sur-seine-le-bureau-de-poste-principal-fermera-pour-rouvrir-la",
+      "url": "https://www.paris-normandie.fr/id739293/article/2026-08-18/port-jerome-sur-seine-le-bureau-de-poste-principal-fermera-pour-rouvrir-la",
+      "source": "paris-normandie.fr",
+      "date": "2026-08-18",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-19T04:06:16.701693+00:00"
     },
     {
       "id": "e7ab6d04699ad93a",
@@ -34766,6 +35077,19 @@
       "created_at": "2026-07-22T09:08:33.344364+00:00"
     },
     {
+      "id": "83a3a02a3d0171f6",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Dans ce petit village, ils découvrent un millier de dés à jouer enterrés, mais personne ne sait à quoi ils servaient",
+      "extrait": "TITRE: Dans ce petit village, ils découvrent un millier de dés à jouer enterrés, mais personne ne sait à quoi ils servaient SOURCE: Ouest-France DATE: Tue, 18 Aug 2026 17:07:03 GMT URL: https://www.ouest-france.fr/leditiondusoir/2026-08-18/dans-ce-petit-village-ils-decouvrent-un-millier-de-des-a-jouer-enterres-mais-personne-ne-sait-a-quoi-ils-servaient-55357b89-a52b-4dca-bcf0-1f1f4c20c550?utm_source=fluxpublicfrance&utm_medium=fluxrss&utm_campaign=banquedecontenu La plus impressionnante collecti",
+      "url": "https://www.ouest-france.fr/leditiondusoir/2026-08-18/dans-ce-petit-village-ils-decouvrent-un-millier-de-des-a-jouer-enterres-mais-personne-ne-sait-a-quoi-ils-servaient-55357b89-a52b-4dca-bcf0-1f1f4c20c550?utm_source=fluxpublicfrance&utm_medium=fluxrss&utm_campaign=banquedecontenu",
+      "source": "Ouest-France",
+      "date": "Tue, 18 Aug 2026 17:07:03 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-19T04:06:08.615022+00:00"
+    },
+    {
       "id": "b60801f7780ed174",
       "banque": "Société Générale",
       "departement": "",
@@ -35975,6 +36299,19 @@
       "created_at": "2026-06-29T08:29:55.021464+00:00"
     },
     {
+      "id": "40d67915c12d9ffb",
+      "banque": "BNP Paribas",
+      "departement": "",
+      "titre": "Distributeurs de billets supprimés en 2026 : qu'est-ce qui va changer dans votre banque BNP Paribas ou CIC ? - BDOR",
+      "extrait": "Article annoncé : « Distributeurs de billets supprimés en 2026… dans votre banque BNP Paribas ou CIC ? » (suppression de DAB, sans communes ni agences physiques nommées). | Article annoncé : « Distributeurs de billets supprimés en 2026… dans votre banque BNP Paribas ou CIC ? » (suppression de DAB, sans communes ni agences physiques nommées).",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNQkt1cXBSeVF0OWJadGRQNlZjN2h4QmdGT29zSEh6ZEF1cDV6Mk1ydkFReWlybHJBbUx3TFFnRkU4NFpadEZTNk9oeGpmT05VWjNIZ09ITzlKQm5nN1p2S3ZrRElpdG9iNXJVNjdxZkliOVRjQTdieWlXTUFjTXVaeGw5bnk1RWZPaGM3M1I1WVQwLXBhSHg5cW5qLVZNaWFuX0NNR2hYUVV5S3N5WGNDRlhhRDJPaDJOMDlkeWw5Nm9GdDl2dG5pb1hxcy1DeXpsSVVOeg?oc=5",
+      "source": "Google News",
+      "date": "Sun, 28 Jun 2026 07:00:00 GMT",
+      "score": 2,
+      "raison": "signaux: vague(BNP Paribas,national,count=None); vague(CIC,national,count=None)",
+      "created_at": "2026-08-19T04:05:53.600103+00:00"
+    },
+    {
       "id": "0a62b6441f84bc69",
       "banque": "Société Générale",
       "departement": "",
@@ -36324,6 +36661,19 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-30T07:07:09.651005+00:00"
+    },
+    {
+      "id": "6fc6c319b90e30ed",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Nigeria : Providus Bank et Unity Bank finalisent leur fusion et lancent ProvidusUnity Bank - Financial Afrik",
+      "extrait": "TITRE: Nigeria : Providus Bank et Unity Bank finalisent leur fusion et lancent ProvidusUnity Bank - Financial Afrik SOURCE: Google News DATE: Mon, 29 Jun 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMiywFBVV95cUxQQVdXQkNZWEVqYkhjWnN5VWpkTUwzN1o5Y0k1eXBoRHJzS09ybXBaN3hwWlpldEgwSV9KOHRTUFc0MTFxcG1QWFU3WHpZWUJreS1SU2NvNDVBVkZjRHVyRWFBazg0MXN6TnQteTdmQTNMUGs5a0wxQmhac2tDdGdSa2xwTVZCM0tRQ3NlSGZyTXlTbEN5aEJJQm81Z3dadF93REFpTDg0bE1BWEJUT3dzbUlqclh0OUEweVQ4ZEZaQ2NJSGpteVhYal8yUQ?oc=5 <a",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQQVdXQkNZWEVqYkhjWnN5VWpkTUwzN1o5Y0k1eXBoRHJzS09ybXBaN3hwWlpldEgwSV9KOHRTUFc0MTFxcG1QWFU3WHpZWUJreS1SU2NvNDVBVkZjRHVyRWFBazg0MXN6TnQteTdmQTNMUGs5a0wxQmhac2tDdGdSa2xwTVZCM0tRQ3NlSGZyTXlTbEN5aEJJQm81Z3dadF93REFpTDg0bE1BWEJUT3dzbUlqclh0OUEweVQ4ZEZaQ2NJSGpteVhYal8yUQ?oc=5",
+      "source": "Google News",
+      "date": "Mon, 29 Jun 2026 07:00:00 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-19T04:05:43.434451+00:00"
     },
     {
       "id": "b3cbe55253fdc952",
@@ -37325,6 +37675,136 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:43:41.960961+00:00"
+    },
+    {
+      "id": "be2ea20e3ccbfac4",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Urgent : 2 priorités, une surprise... Le PSG accélère son mercato",
+      "extrait": "TITRE: Urgent : 2 priorités, une surprise... Le PSG accélère son mercato SOURCE: Foot-sur7 DATE: 2026-08-18T23:18:00Z URL: https://www.foot-sur7.fr/773301-urgent-2-priorites-une-surprise-le-psg-accelere-son-mercato ‎Le PSG entre dans la dernière ligne droite de son mercato avec une stratégie désormais beaucoup plus lisible. Le club parisien pourrait encore bouger à deux postes, tout en gardant une porte entrouverte pour une jeune pépite qui attise les convoitises. ‎‎Mercato PSG : Un dernier coup",
+      "url": "https://www.foot-sur7.fr/773301-urgent-2-priorites-une-surprise-le-psg-accelere-son-mercato",
+      "source": "Foot-sur7",
+      "date": "2026-08-18T23:18:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-19T04:06:20.314144+00:00"
+    },
+    {
+      "id": "d67ebc1350e305e3",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Mercato : L'essentiel à retenir de ce mardi 18 août",
+      "extrait": "TITRE: Mercato : L'essentiel à retenir de ce mardi 18 août SOURCE: Orange Sports DATE: 2026-08-18T20:55:35Z URL: https://sports.orange.fr/football/mercato/article/mercato-l-essentiel-a-retenir-de-ce-mardi-18-aout-exclu-CNT000002rog4d.html Thibaut Simon, Media365 : publié le mardi 18 août 2026 à 22h55 Retrouvez l'essentiel des officialisations et des rumeurs de transfert de ce mardi 18 août 2026, en France comme à l'étranger. C'est officiel Après Toulouse, le champion du monde 2018, Djibril Sidib",
+      "url": "https://sports.orange.fr/football/mercato/article/mercato-l-essentiel-a-retenir-de-ce-mardi-18-aout-exclu-CNT000002rog4d.html",
+      "source": "Orange Sports",
+      "date": "2026-08-18T20:55:35Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-19T04:06:22.955186+00:00"
+    },
+    {
+      "id": "5e55e3463c90dba2",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "AC Milan : les raisons derrière l'énorme mercato à 200 M€",
+      "extrait": "TITRE: AC Milan : les raisons derrière l'énorme mercato à 200 M€ SOURCE: Foot Mercato : Info Transferts Football - Actu Foot Transfert DATE: 2026-08-18T20:29:35Z URL: https://www.footmercato.net/a7640342418040548841-ac-milan-les-raisons-derriere-lenorme-mercato-a-200-meur L'été de l'AC Milan a pris des airs de révolution. Quelques semaines seulement après un exercice particulièrement décevant, le club lombard a décidé de rebattre profondément les cartes au sein de son organisation, avec les dépa",
+      "url": "https://www.footmercato.net/a7640342418040548841-ac-milan-les-raisons-derriere-lenorme-mercato-a-200-meur",
+      "source": "Foot Mercato : Info Transferts Football - Actu Foot Transfert",
+      "date": "2026-08-18T20:29:35Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-19T04:06:24.305196+00:00"
+    },
+    {
+      "id": "481ed773e43dd3bc",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "PSG Mercato: L'agent de Mika Godts dit tout sur sa signature",
+      "extrait": "TITRE: PSG Mercato: L'agent de Mika Godts dit tout sur sa signature SOURCE: Foot-sur7 DATE: 2026-08-18T20:08:00Z URL: https://www.foot-sur7.fr/773274-psg-mercato-lagent-de-mika-godts-dit-tout-sur-sa-signature Dans les colonnes du journal De Telegraaf, l'agent de Mika Godts a livré les coulisses de sa signature en provenance de l'Ajax Amsterdam, en dévoilant notamment le rôle joué par Luis Enrique dans ce dossier. Mercato : \" Le PSG connaît Mika Godts depuis ses années de formation \" Alors que Br",
+      "url": "https://www.foot-sur7.fr/773274-psg-mercato-lagent-de-mika-godts-dit-tout-sur-sa-signature",
+      "source": "Foot-sur7",
+      "date": "2026-08-18T20:08:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-19T04:06:26.245549+00:00"
+    },
+    {
+      "id": "52792bc541063131",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Stade Rennais : Toulouse réagit au départ de Cresswell avec un espoir de Milan - But! Football Club",
+      "extrait": "TITRE: Stade Rennais : Toulouse réagit au départ de Cresswell avec un espoir de Milan - But! Football Club SOURCE: But! Football Club DATE: 2026-08-18T18:28:17Z URL: https://www.butfootballclub.fr/1691547-toulouse-cresswell-rennes-odogu-milan/ Quelques jours après le transfert de Charlie Cresswell au Stade Rennais, Toulouse tient son renfort en défense centrale. Le TFC mise sur David Odogu, jeune international allemand arrivé à l'AC Milan contre 7 M€ l'été dernier. Odogu prêté un an au TFC Le To",
+      "url": "https://www.butfootballclub.fr/1691547-toulouse-cresswell-rennes-odogu-milan/",
+      "source": "But! Football Club",
+      "date": "2026-08-18T18:28:17Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-19T04:06:29.873036+00:00"
+    },
+    {
+      "id": "3cb327f7203d49ca",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Zabarnyi à Tottenham, le transfert surprise du PSG",
+      "extrait": "TITRE: Zabarnyi à Tottenham, le transfert surprise du PSG SOURCE: foot01.com DATE: 2026-08-18T17:30:00Z URL: https://www.foot01.com/paris/zabarnyi-a-tottenham-le-transfert-surprise-du-psg Décevant pour sa première saison, guère rassurant dans cette reprise, Illya Zabarnyi intéresse en Premier League. Pour un transfert en urgence auquel le PSG ne devrait pas trop s'opposer si les Anglais mettent le prix. Souvent félicité à juste titre pour le mercato de ces dernières années, Luis Campos a aussi q",
+      "url": "https://www.foot01.com/paris/zabarnyi-a-tottenham-le-transfert-surprise-du-psg",
+      "source": "foot01.com",
+      "date": "2026-08-18T17:30:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-19T04:06:33.136093+00:00"
+    },
+    {
+      "id": "ac6f33a240d23e90",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Mercato Rennes : les 3 derniers noms ronflants concernés par la saignée de l'effectif avant le 1er septembre",
+      "extrait": "TITRE: Mercato Rennes : les 3 derniers noms ronflants concernés par la saignée de l'effectif avant le 1er septembre SOURCE: Top mercato DATE: 2026-08-18T17:22:46Z URL: https://www.topmercato.com/2126332-mercato-rennes-les-3-derniers-noms-ronflants-concernes-par-la-saignee-de-leffectif-avant-le-1er-septembre/ Lancé dans une refonte massive de son effectif avant la reprise de la compétition, le Stade Rennais a encore l'intention de se séparer de plusieurs joueurs d'ici le terme du mercato estival.",
+      "url": "https://www.topmercato.com/2126332-mercato-rennes-les-3-derniers-noms-ronflants-concernes-par-la-saignee-de-leffectif-avant-le-1er-septembre/",
+      "source": "Top mercato",
+      "date": "2026-08-18T17:22:46Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-19T04:06:31.549060+00:00"
+    },
+    {
+      "id": "8cbcc45636af46ed",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "\" Une vision sportive claire \", comment le PSG a convaincu Godts",
+      "extrait": "TITRE: \" Une vision sportive claire \", comment le PSG a convaincu Godts SOURCE: CulturePSG DATE: 2026-08-18T15:36:51Z URL: https://www.culturepsg.com/news/mercato/une-vision-sportive-claire-comment-le-psg-a-convaincu-godts/60388 L'agent de Mika Godts est revenu dans les colonnes du quotidien néerlandais De Telegraaf sur la genèse de son transfert au PSG contre 55 millions d'euros, bonus compris, et a loué le rôle déterminant joué par Luis Enrique pour convaincre l'ailier belge d'épouser son proj",
+      "url": "https://www.culturepsg.com/news/mercato/une-vision-sportive-claire-comment-le-psg-a-convaincu-godts/60388",
+      "source": "CulturePSG",
+      "date": "2026-08-18T15:36:51Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-19T04:06:42.794297+00:00"
+    },
+    {
+      "id": "94df99b0a1b90030",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Suppressions de postes à l'hôpital de Châlons : la CGT monte au créneau",
+      "extrait": "TITRE: Suppressions de postes à l'hôpital de Châlons : la CGT monte au créneau SOURCE: L'Hebdo du Vendredi DATE: 2026-08-18T10:17:45Z URL: https://www.lhebdoduvendredi.com/article/57018/suppressions-de-postes-a-lhopital-de-chalons-la-cgt-monte-au-creneau Le 9 juillet, lors d'un conseil municipal, le maire de Châlons, Benoist Apparu, également président du conseil de surveillance de l'hôpital Léon-Bourgeois, confirmait publiquement la suppression de postes envisagée au sein de cette structure. Un",
+      "url": "https://www.lhebdoduvendredi.com/article/57018/suppressions-de-postes-a-lhopital-de-chalons-la-cgt-monte-au-creneau",
+      "source": "L'Hebdo du Vendredi",
+      "date": "2026-08-18T10:17:45Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-19T04:06:48.234031+00:00"
+    },
+    {
+      "id": "55ef023f6a9373e0",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "OL - Mercato : Malick Fofana, le gros dossier de la fin de l'été ?",
+      "extrait": "TITRE: OL - Mercato : Malick Fofana, le gros dossier de la fin de l'été ? SOURCE: Olympique & Lyonnais DATE: 2026-08-18T05:30:00Z URL: https://www.olympique-et-lyonnais.com/ol-mercato-malick-fofana-le-gros-dossier-de-la-fin-de-lete,405089.html Malick Fofana aurait trouvé un accord avec l'AS Rome pour un transfert. Mais une éventuelle opération n'aura vraisemblablement pas lieu de suite, les Romains étant concentrés sur une autre piste. Après Afonso Moreira au début du mercato, l'OL perdra-t-il u",
+      "url": "https://www.olympique-et-lyonnais.com/ol-mercato-malick-fofana-le-gros-dossier-de-la-fin-de-lete,405089.html",
+      "source": "Olympique & Lyonnais",
+      "date": "2026-08-18T05:30:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-19T04:06:54.363838+00:00"
     },
     {
       "id": "c1bd219bc01554d6",
