@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19T04:17:07.095319+00:00",
+  "generated_at": "2026-08-20T04:17:41.416668+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -30,7 +30,7 @@
       "nom": "Aisne",
       "region": "Hauts-de-France",
       "count": 1,
-      "total_agences": 91,
+      "total_agences": 92,
       "precise_count": 1,
       "unlocated_count": 0,
       "estimated_count": 1
@@ -57,7 +57,7 @@
       "nom": "Hautes-Alpes",
       "region": "Provence-Alpes-Côte d'Azur",
       "count": 0,
-      "total_agences": 39,
+      "total_agences": 40,
       "precise_count": 0,
       "unlocated_count": 0,
       "estimated_count": 0
@@ -390,7 +390,7 @@
       "nom": "Loir-et-Cher",
       "region": "Centre-Val de Loire",
       "count": 2,
-      "total_agences": 54,
+      "total_agences": 55,
       "precise_count": 2,
       "unlocated_count": 0,
       "estimated_count": 2
@@ -417,7 +417,7 @@
       "nom": "Loire-Atlantique",
       "region": "Pays de la Loire",
       "count": 5,
-      "total_agences": 172,
+      "total_agences": 171,
       "precise_count": 5,
       "unlocated_count": 0,
       "estimated_count": 5
@@ -587,11 +587,11 @@
     "63": {
       "nom": "Puy-de-Dôme",
       "region": "Auvergne-Rhône-Alpes",
-      "count": 0,
+      "count": 1,
       "total_agences": 118,
-      "precise_count": 0,
+      "precise_count": 1,
       "unlocated_count": 0,
-      "estimated_count": 0
+      "estimated_count": 1
     },
     "64": {
       "nom": "Pyrénées-Atlantiques",
@@ -1690,6 +1690,15 @@
       "department_signal_count": 0,
       "signals": []
     },
+    "63": {
+      "departement": "63",
+      "nom": "Puy-de-Dôme",
+      "precise_count": 1,
+      "unlocated_count": 0,
+      "estimated_count": 1,
+      "department_signal_count": 0,
+      "signals": []
+    },
     "11": {
       "departement": "11",
       "nom": "Aude",
@@ -1847,8 +1856,8 @@
     },
     {
       "region": "Auvergne-Rhône-Alpes",
-      "articles": 17,
-      "fermetures": 7,
+      "articles": 18,
+      "fermetures": 8,
       "projets": 9,
       "fusions": 0,
       "types": [
@@ -1861,10 +1870,11 @@
         "38",
         "42",
         "43",
+        "63",
         "69",
         "74"
       ],
-      "nb_departements": 7
+      "nb_departements": 8
     },
     {
       "region": "Occitanie",
@@ -9761,6 +9771,47 @@
         "source": "SIRENE"
       },
       "region": "Occitanie"
+    },
+    {
+      "id": "ec84a996d39fc70a",
+      "banque": "La Banque Postale",
+      "commune": "Maringues",
+      "code_insee": "63210",
+      "departement": "63",
+      "type": "fermeture",
+      "date_annonce": "Thu, 20 Aug 2026 03:17:00 GMT",
+      "date_fermeture": "2026-08-20",
+      "statut": "confirmé",
+      "statut_temporel": "deja_fermee",
+      "date_fermeture_approx": 1,
+      "fiabilite": 3,
+      "lat": 45.929291,
+      "lon": 3.333708,
+      "citation": "Maringues : une pétition pour réouvrir le bureau de poste fermé en août face à la baisse de fréquentation - lamontagne.fr",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "service_impact": "fermeture_lbp_complete",
+      "point_postal_avant": "Bureau de Poste",
+      "point_postal_apres": null,
+      "postal_point_id": "11844A",
+      "evidence_level": "presse+référentiel",
+      "created_at": "2026-08-20T04:06:16.033071+00:00",
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQT21tOGFlbTJJWTNNM3ZTa2x2eU4tWDdjQ3g2bmtGTkJOSTJERnhzdldzWXhrb0tvdVJvWWc5dFZXRFFqaUZoOW5mZ3Fjck1Lc281RzNaWlE2WXZhbXBudlNTbktmSlMxaEREMzZHeGY0MEEtbmxjMHBtcm85akNuV2JiSDFHUkFiSGFGUzU4ZGdaSGhvVXNiU3lBRVlRLUNxRXY1N01SRDhWdXRKMTBVUXBkd0hZUWVnc3prWGJkcXhVRk5RcWlXbmg4S0xxM0VZbjJieVpFTkNwVnoxRzQyWk9SWVo0LUo0eXZiYXl0bndabUszSmN1VWlB?oc=5",
+          "titre": "Maringues : une pétition pour réouvrir le bureau de poste fermé en août face à la baisse de fréquentation - lamontagne.fr",
+          "source": "Google News",
+          "date": "Thu, 20 Aug 2026 03:17:00 GMT",
+          "tier": "D"
+        }
+      ],
+      "controle_sirene": {
+        "etat_administratif": null,
+        "siret": null,
+        "source": "SIRENE"
+      },
+      "region": "Auvergne-Rhône-Alpes"
     }
   ],
   "closures_unlocated": [
@@ -10770,7 +10821,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-19T04:02:57.531571+00:00"
+      "created_at": "2026-08-20T04:02:47.907632+00:00"
     },
     {
       "id": "50895c042a984b7d",
@@ -10806,7 +10857,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 04:46:02 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-19T04:02:57.199446+00:00"
+      "created_at": "2026-08-20T04:02:47.307716+00:00"
     },
     {
       "id": "8c6a0cad14626d6f",
@@ -13110,7 +13161,7 @@
       "source": "Google News",
       "date": "Fri, 20 Jun 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-19T04:03:03.063233+00:00"
+      "created_at": "2026-08-20T04:02:55.511259+00:00"
     },
     {
       "id": "b70960ea48a1a247",
@@ -13236,7 +13287,7 @@
       "source": "Google News",
       "date": "Fri, 10 Jul 2026 10:12:00 GMT",
       "raison": "garde entrée/sortie: département source 44 incompatible avec la sortie 974",
-      "created_at": "2026-08-19T04:03:17.410827+00:00"
+      "created_at": "2026-08-20T04:03:13.872758+00:00"
     },
     {
       "id": "8c646081e1d69e81",
@@ -13416,7 +13467,7 @@
       "source": "Google News",
       "date": "Fri, 03 Jan 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-19T04:02:56.821946+00:00"
+      "created_at": "2026-08-20T04:02:46.777198+00:00"
     },
     {
       "id": "411db107f70f2387",
@@ -13489,6 +13540,24 @@
       "date": "Fri, 01 Aug 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
       "created_at": "2026-07-27T07:56:36.407534+00:00"
+    },
+    {
+      "id": "30bcafb6c6ea23d6",
+      "banque": "La Banque Postale",
+      "commune": "Saint-André-de-Cubzac",
+      "departement": "33",
+      "type": "fermeture",
+      "date_fermeture": "2026-08-19",
+      "statut": "confirmé",
+      "statut_temporel": "deja_fermee",
+      "fiabilite": 3,
+      "citation": "Saint-André-de-Cubzac : le bureau de poste fermé après un incendie",
+      "url": "https://www.sudouest.fr/gironde/saint-andre-de-cubzac/saint-andre-de-cubzac-le-bureau-de-poste-ferme-apres-un-incendie-30305294.php",
+      "titre": "Saint-André-de-Cubzac : le bureau de poste fermé après un incendie",
+      "source": "SudOuest.fr",
+      "date": "2026-08-19T16:28:46Z",
+      "raison": "garde entrée/sortie: fermeture postale temporaire ou circonstancielle",
+      "created_at": "2026-08-20T04:06:38.736750+00:00"
     },
     {
       "id": "354d13d049088629",
@@ -14156,6 +14225,19 @@
       "source": "Google News",
       "date": "Wed, 21 Jan 2026 08:00:00 GMT",
       "created_at": "2026-07-02T07:07:20.568231+00:00"
+    },
+    {
+      "id": "2b05c23823b0779a",
+      "banque": "unknown",
+      "scope": "national",
+      "count": null,
+      "confidence": 0.2,
+      "evidence": "TF1 Info : article générique sur la tendance « de plus en plus d'agences bancaires ferment » sans nommer d'agences/communes dans l’extrait fourni.",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOTDUzNnI4cURyaG9TbTA5NFFFMEJyb3ZrOVNRTFlWdXdMcklxaUgxQkVHV19QbURZZnpUSnRGLWJSM2FlTllXdmgxT2MzbHNzSFVWTzMzLWl3TUJnS0RiWURSRGpmcXY1eklxdWR0QV9DSGhWUXJkV2FVcnY1LXhEMGFnWFZNX1ZsQkxZRjZUUC1NeHZVWnpTdDIwVllVOGtRVk9oaFBMMWI0MmRrTmlMd2xlVlN6MW1mV1ZPRDR1WF82bklZVk9RelJhamFNYmNVZFRPUQ?oc=5",
+      "titre": "De plus en plus d'agences bancaires ferment : comment l'expliquer et quelles conséquences - TF1 Info",
+      "source": "Google News",
+      "date": "Wed, 19 Aug 2026 11:04:55 GMT",
+      "created_at": "2026-08-20T04:06:12.724487+00:00"
     },
     {
       "id": "5526dbd7d248850a",
@@ -17410,6 +17492,19 @@
       "created_at": "2026-06-25T15:41:32.320681+00:00"
     },
     {
+      "id": "eb0fbbc2af79def8",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "La Poste fermée à cause d’un gaz radioactif, cent vingt personnes se mobilisent au Pont-de-Montvert - Midi Libre",
+      "extrait": "TITRE: La Poste fermée à cause d’un gaz radioactif, cent vingt personnes se mobilisent au Pont-de-Montvert - Midi Libre SOURCE: Google News DATE: Wed, 19 Aug 2026 15:09:00 GMT URL: https://news.google.com/rss/articles/CBMi3wFBVV95cUxQWkVscDBfb21oaU04cGl1TUlCZFY3NWlLUEZYQXF3X2cxcm4yWU05b2F2Z0lSNlBRUk40QzIwaGZzU2d4bjZSWktTOVUyNHl5dTU1NzU2UnJyZE5ZdmMxZDRRb1JQUVZERzlrNm9Fak9CR19sMjVGMVZtMWZMR3NaMXljREpyYklaeEhROHI5SGRTWkxpS0Qxc0ZydWdiTmtvVnpLTGdLeWRtRDhTTXVRRVNONFIwcmxUUElOc1JBWnJJWU5tRV8yQkRzWkczdk",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQWkVscDBfb21oaU04cGl1TUlCZFY3NWlLUEZYQXF3X2cxcm4yWU05b2F2Z0lSNlBRUk40QzIwaGZzU2d4bjZSWktTOVUyNHl5dTU1NzU2UnJyZE5ZdmMxZDRRb1JQUVZERzlrNm9Fak9CR19sMjVGMVZtMWZMR3NaMXljREpyYklaeEhROHI5SGRTWkxpS0Qxc0ZydWdiTmtvVnpLTGdLeWRtRDhTTXVRRVNONFIwcmxUUElOc1JBWnJJWU5tRV8yQkRzWkczdkMyenNSeDVOR25fajlGMjNJ?oc=5",
+      "source": "Google News",
+      "date": "Wed, 19 Aug 2026 15:09:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-20T04:06:10.282532+00:00"
+    },
+    {
       "id": "d3f0c7eb1f420533",
       "banque": "La Banque Postale",
       "departement": "",
@@ -17787,6 +17882,32 @@
       "created_at": "2026-08-17T04:08:46.467094+00:00"
     },
     {
+      "id": "f267336eb6f7eea9",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "« Quel est le prix d’une vie, chère direction ? » : 300 manifestants face à la fermeture des urgences de cet hôpital - ouest-france.fr",
+      "extrait": "TITRE: « Quel est le prix d’une vie, chère direction ? » : 300 manifestants face à la fermeture des urgences de cet hôpital - ouest-france.fr SOURCE: Google News DATE: Wed, 15 Jul 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMiiAJBVV95cUxNaG5oTFlZdGV0WmppckxyMlZ3SU1CUnhZYU55SEZGanN5SlYweDlsanhIMDlnaUtlOHZkV1VkUGVYNU5kVTVqVFpISkJKSlROTk9CbFF1dmtrdEVMMWdyTnE0Uno4cUZZc1prS1pMcXVHdkY5ajhIbUl2NHByM1dYTkNDcDVWUFk3UlRoanZiTDlPaGtOVDRpOW9OOW9vVG9TQWVPcVpyZ0lLYm5KdmIzemlZem5PaUVQSzBjN1NI",
+      "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNaG5oTFlZdGV0WmppckxyMlZ3SU1CUnhZYU55SEZGanN5SlYweDlsanhIMDlnaUtlOHZkV1VkUGVYNU5kVTVqVFpISkJKSlROTk9CbFF1dmtrdEVMMWdyTnE0Uno4cUZZc1prS1pMcXVHdkY5ajhIbUl2NHByM1dYTkNDcDVWUFk3UlRoanZiTDlPaGtOVDRpOW9OOW9vVG9TQWVPcVpyZ0lLYm5KdmIzemlZem5PaUVQSzBjN1NISnpIeXp2NHpBV0JnSHdPT2RSM2ZiS1d6QXpyZjdCM05vaW5DSGtEMjVlVVg3TmtJRTlqUjZtMlprR3p6WC13RmtMVzVJVXUybUM?oc=5",
+      "source": "Google News",
+      "date": "Wed, 15 Jul 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-20T04:06:14.448653+00:00"
+    },
+    {
+      "id": "ac127eb90a4ab2dc",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "\"Des clients n’avaient plus les 200 euros pour l’entretien\" : pourquoi Brendan a dû fermer son garage en Auvergne - lamontagne.fr",
+      "extrait": "TITRE: \"Des clients n’avaient plus les 200 euros pour l’entretien\" : pourquoi Brendan a dû fermer son garage en Auvergne - lamontagne.fr SOURCE: Google News DATE: Wed, 15 Jul 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMiiAJBVV95cUxNbEpnUW1JS0xrLUptYXRkMHc0WW1nWEtaLXJtX0s2RlFocTUxMWhtVmV6cExCNm5SeHB4MnAxcWRFRlhRMEJkU2dla3l3ZkhRSGxrRFVEb0g4VU5zajdyMTdRU09TdElQMDBjTDZ3UldxN3lPeEdDMEs2Zjl1YXQwZUx0SVJqdkJYMHZ0eUt3MVRBZ1VsaWpLRlpHT0puaDAzU29IdkZDcDgyekdRRGFEeHdZdG1FQ3hLTElQaUN6NzgwT",
+      "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNbEpnUW1JS0xrLUptYXRkMHc0WW1nWEtaLXJtX0s2RlFocTUxMWhtVmV6cExCNm5SeHB4MnAxcWRFRlhRMEJkU2dla3l3ZkhRSGxrRFVEb0g4VU5zajdyMTdRU09TdElQMDBjTDZ3UldxN3lPeEdDMEs2Zjl1YXQwZUx0SVJqdkJYMHZ0eUt3MVRBZ1VsaWpLRlpHT0puaDAzU29IdkZDcDgyekdRRGFEeHdZdG1FQ3hLTElQaUN6NzgwT3VDT29OZURGbm1FdGxKQld5aGtxdkQwa3lRT04yd1Nzd1VDaHY0V2FHeWduLXVXTHE1Tnh4azR6Rk9GdlJRSEVGOFFod18?oc=5",
+      "source": "Google News",
+      "date": "Wed, 15 Jul 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-20T04:06:20.413399+00:00"
+    },
+    {
       "id": "4e35f3597cbc488c",
       "banque": "Société Générale",
       "departement": "",
@@ -18073,6 +18194,19 @@
       "created_at": "2026-08-19T04:06:03.971151+00:00"
     },
     {
+      "id": "121628c9a20947dd",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "« On mérite quand même quelques égards » : au Mans, la riposte s’organise après la fermeture d’un bureau de poste - - Le Mans.maville.com",
+      "extrait": "TITRE: « On mérite quand même quelques égards » : au Mans, la riposte s’organise après la fermeture d’un bureau de poste - - Le Mans.maville.com SOURCE: Google News DATE: Wed, 12 Aug 2026 17:17:00 GMT URL: https://news.google.com/rss/articles/CBMi_AFBVV95cUxPeG54bWlBVmhVSldoN2N1MG1LUDBPelAtWGZ6YUNBVndqeGRTSHA2MWxNYVUxWmFzRHVncUNZNEJnSmw3QlhtT2pMemVvd0M3ZEktRW5wNHJSRUtIMERtV0ZsU0ZDVTZDZEtLOVIyWnZabXhMS1BlNm9uWXd5LW5XQ09nMmpqR3o0TjUzdURSemx6VExoVFNnRkYzWnFfejFsYlk5bnNxUG1Zb3FuN0M0RE1GYVpDWUYzTmZMc",
+      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPeG54bWlBVmhVSldoN2N1MG1LUDBPelAtWGZ6YUNBVndqeGRTSHA2MWxNYVUxWmFzRHVncUNZNEJnSmw3QlhtT2pMemVvd0M3ZEktRW5wNHJSRUtIMERtV0ZsU0ZDVTZDZEtLOVIyWnZabXhMS1BlNm9uWXd5LW5XQ09nMmpqR3o0TjUzdURSemx6VExoVFNnRkYzWnFfejFsYlk5bnNxUG1Zb3FuN0M0RE1GYVpDWUYzTmZMc0lUT0VCai1YMTd1TklOb0t3QjNPd0F6YmJUV2FDbUNuUmhqTzJkWG5CZy1GOG1rZGFZU25sc0Z5UEhEZ295TmU?oc=5",
+      "source": "Google News",
+      "date": "Wed, 12 Aug 2026 17:17:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-20T04:06:23.057669+00:00"
+    },
+    {
       "id": "e1b1f143ea6933df",
       "banque": "La Banque Postale",
       "departement": "",
@@ -18357,6 +18491,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-08-05T06:07:06.301926+00:00"
+    },
+    {
+      "id": "b09f8347386935d3",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "FERMETURE EXCEPTIONNELLE DE CERTAINS SERVICES DE L'ÉTAT LUNDI 13 JUILLET 2026 - Les services de l'État en Charente-Maritime",
+      "extrait": "TITRE: FERMETURE EXCEPTIONNELLE DE CERTAINS SERVICES DE L'ÉTAT LUNDI 13 JUILLET 2026 - Les services de l'État en Charente-Maritime SOURCE: Google News DATE: Wed, 08 Jul 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMiqgJBVV95cUxPUENHbFFpS2VpeGxORHdtTVdyZy1ib2hQZkQxWkVtaWMzS1ExQ0FNREJjQ1IwOFFxUzB3NE14QXNJaTJ4OFNQcTVBQ0JJcWlBQWpYWUM2MDZKOHN4RHVEekYyNmhOQXd6Ni1DQ2M0cGlfWjZPcUhsZmlNc3NKM0pMMGltQ3AxZFd0UFRqTkdMUnc5cGFENmJpakNQZUgyRVZPeUF5cmpGbXFucDh0RDE3N3NIZ0xGOTUwYnZBQktFQmNYR0pHdHh",
+      "url": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxPUENHbFFpS2VpeGxORHdtTVdyZy1ib2hQZkQxWkVtaWMzS1ExQ0FNREJjQ1IwOFFxUzB3NE14QXNJaTJ4OFNQcTVBQ0JJcWlBQWpYWUM2MDZKOHN4RHVEekYyNmhOQXd6Ni1DQ2M0cGlfWjZPcUhsZmlNc3NKM0pMMGltQ3AxZFd0UFRqTkdMUnc5cGFENmJpakNQZUgyRVZPeUF5cmpGbXFucDh0RDE3N3NIZ0xGOTUwYnZBQktFQmNYR0pHdHhnQXkxOXFvekxjUjJkYXp0NlJoR2F6NjVwSTJKSEI4dTJ3d0hSSGd6dFdCVlJFLU9tWFZqS1RkX2w5V3lDRVVQb19pRUtmSlBSeXRtbUs4Z0FEM1BpMG9zODFBWFlCNVg1NzZR?oc=5",
+      "source": "Google News",
+      "date": "Wed, 08 Jul 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-20T04:06:18.449994+00:00"
     },
     {
       "id": "bcfbf422c3c7add1",
@@ -30644,6 +30791,149 @@
       "created_at": "2026-07-22T09:09:01.159244+00:00"
     },
     {
+      "id": "bf0656859db70c23",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Mercato PSG : Une recrue estivale séduit déjà Luis Enrique !",
+      "extrait": "TITRE: Mercato PSG : Une recrue estivale séduit déjà Luis Enrique ! SOURCE: Foot-sur7 DATE: 2026-08-19T18:28:00Z URL: https://www.foot-sur7.fr/773466-mercato-psg-une-recrue-estivale-seduit-deja-luis-enrique Cet été, le PSG a recruté Alessandro Longoni, Maghnes Akliouche, Lucas Digne, Ferran Torres et Mika Godts. Parmi toutes ces nouvelles arrivées, un joueur marque déjà des points aux yeux de Luis Enrique, l'entraîneur du club parisien. Explications. Mercato PSG : Luis Enrique apprécie l'adaptat",
+      "url": "https://www.foot-sur7.fr/773466-mercato-psg-une-recrue-estivale-seduit-deja-luis-enrique",
+      "source": "Foot-sur7",
+      "date": "2026-08-19T18:28:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-20T04:06:34.634782+00:00"
+    },
+    {
+      "id": "25a34dbd74659b2d",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Fin de mercato au RC Lens : entre nouvelles pistes et cadres verrouillés, la stratégie de Leca se précise - Sport.fr",
+      "extrait": "TITRE: Fin de mercato au RC Lens : entre nouvelles pistes et cadres verrouillés, la stratégie de Leca se précise - Sport.fr SOURCE: Sport.fr DATE: 2026-08-19T13:42:17Z URL: https://www.sport.fr/football/fin-de-mercato-au-rc-lens-entre-nouvelles-pistes-et-cadres-verrouilles-la-strategie-de-leca-se-precise-1475152.shtm Le feuilleton continue à La Gaillette, et il prend une tournure aussi offensive que défensive. Alors que le marché des transferts entre dans sa dernière ligne droite, le Racing Club",
+      "url": "https://www.sport.fr/football/fin-de-mercato-au-rc-lens-entre-nouvelles-pistes-et-cadres-verrouilles-la-strategie-de-leca-se-precise-1475152.shtm",
+      "source": "Sport.fr",
+      "date": "2026-08-19T13:42:17Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-20T04:06:42.541399+00:00"
+    },
+    {
+      "id": "59c6353302f2add9",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Agence immobilière à Paris : la sélection des 5 meilleures agences pour votre projet d'achat",
+      "extrait": "TITRE: Agence immobilière à Paris : la sélection des 5 meilleures agences pour votre projet d'achat SOURCE: Challenges DATE: 2026-08-19T13:20:31Z URL: https://www.challenges.fr/immobilier/agence-immobiliere-a-paris-la-selection-des-5-meilleures-agences-pour-votre-projet-dachat_645267 En matière d'immobilier, Paris est la ville la plus attractive de France. Pour autant, son marché a une particularité déroutante, une demande largement supérieure à l'offre disponible. Les biens s'y vendent en à pei",
+      "url": "https://www.challenges.fr/immobilier/agence-immobiliere-a-paris-la-selection-des-5-meilleures-agences-pour-votre-projet-dachat_645267",
+      "source": "Challenges",
+      "date": "2026-08-19T13:20:31Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-20T04:06:36.861494+00:00"
+    },
+    {
+      "id": "d4e6c164782c8ea3",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Mercato OM : Timothy Weah répond cash à Villarreal !",
+      "extrait": "TITRE: Mercato OM : Timothy Weah répond cash à Villarreal ! SOURCE: Foot-sur7 DATE: 2026-08-19T12:58:00Z URL: https://www.foot-sur7.fr/773425-mercato-om-timothy-weah-repond-cash-a-villarreal Courtisé par Villarreal, Timothy Weah a décidé de clarifier sa situation à l'OM. L'attaquant américain a fait une mise au point sur son futur prochaine. Mercato : Timothy Weah n'a pas l'intention de quitter l'OM La Ligue 1 revient ce vendredi avec un choc OM-RC Strasbourg. Deux jours avant le coup d'envoi du",
+      "url": "https://www.foot-sur7.fr/773425-mercato-om-timothy-weah-repond-cash-a-villarreal",
+      "source": "Foot-sur7",
+      "date": "2026-08-19T12:58:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-20T04:06:44.623459+00:00"
+    },
+    {
+      "id": "3aa5de5abcc7e231",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "En rebouchant leurs puits épuisés à la va-vite pendant un siècle, les pétroliers américains ont littéralement semé des millions de fuites invisibles",
+      "extrait": "TITRE: En rebouchant leurs puits épuisés à la va-vite pendant un siècle, les pétroliers américains ont littéralement semé des millions de fuites invisibles SOURCE: Sciencepost DATE: 2026-08-19T11:33:20Z URL: https://sciencepost.fr/en-rebouchant-leurs-puits-epuises-a-la-va-vite-pendant-un-siecle-les-petroliers-americains-ont-litteralement-seme-des-millions-de-fuites-invisibles/ Le chiffre officiel donne déjà le vertige. Selon l'Environmental Defense Fund, plus de 129 000 puits abandonnés sont rec",
+      "url": "https://sciencepost.fr/en-rebouchant-leurs-puits-epuises-a-la-va-vite-pendant-un-siecle-les-petroliers-americains-ont-litteralement-seme-des-millions-de-fuites-invisibles/",
+      "source": "Sciencepost",
+      "date": "2026-08-19T11:33:20Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-20T04:06:46.660738+00:00"
+    },
+    {
+      "id": "0fea57fd2bbc0aa9",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Chaussée et signalétique au sol refaites : un nouveau visage pour les abords de l'église paroissiale de Lourdes",
+      "extrait": "TITRE: Chaussée et signalétique au sol refaites : un nouveau visage pour les abords de l'église paroissiale de Lourdes SOURCE: Ladepeche.fr DATE: 2026-08-19T11:25:02Z URL: https://www.ladepeche.fr/2026/08/19/chaussee-et-signaletique-au-sol-refaites-un-nouveau-visage-pour-les-abords-de-leglise-paroissiale-de-lourdes-13514390.php Près d'un an après l'inauguration en grandes pompes du nouveau parvis, les abords de l'église du Sacré-Cœur de Lourdes ont été entièrement refaits ces dernières semaines.",
+      "url": "https://www.ladepeche.fr/2026/08/19/chaussee-et-signaletique-au-sol-refaites-un-nouveau-visage-pour-les-abords-de-leglise-paroissiale-de-lourdes-13514390.php",
+      "source": "Ladepeche.fr",
+      "date": "2026-08-19T11:25:02Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-20T04:06:49.993752+00:00"
+    },
+    {
+      "id": "1ad6b47d70114cfd",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Rodri au Barça : la première défaite de la saison du Real Madrid",
+      "extrait": "TITRE: Rodri au Barça : la première défaite de la saison du Real Madrid SOURCE: SOFOOT.com DATE: 2026-08-19T10:17:03Z URL: https://www.sofoot.com/articles/liga-avec-larrivee-de-rodri-au-fc-barcelone-le-real-madrid-subi-sa-premiere-defaite-symbolique-de-la-saison-2026-2027 Longtemps promis au Real Madrid, Rodri s'est finalement engagé avec le FC Barcelone ce mardi soir. Un joueur avec un ADN Barça compatible certain qui aurait pourtant fait les beaux jours du milieu de terrain merengue. De quoi f",
+      "url": "https://www.sofoot.com/articles/liga-avec-larrivee-de-rodri-au-fc-barcelone-le-real-madrid-subi-sa-premiere-defaite-symbolique-de-la-saison-2026-2027",
+      "source": "SOFOOT.com",
+      "date": "2026-08-19T10:17:03Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-20T04:06:57.500168+00:00"
+    },
+    {
+      "id": "30645e0a67148460",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Diogo Costa au PSG : le rebondissement inattendu après le fiasco Suzuki - Sport.fr",
+      "extrait": "TITRE: Diogo Costa au PSG : le rebondissement inattendu après le fiasco Suzuki - Sport.fr SOURCE: Sport.fr DATE: 2026-08-19T10:12:15Z URL: https://www.sport.fr/football/diogo-costa-au-psg-le-rebondissement-inattendu-apres-le-fiasco-suzuki-1475114.shtm Il y a une semaine encore, tout semblait ficelé. Un accord entre le PSG et Parme, un jet privé affrété pour le transfert, une visite médicale programmée. Puis, coup de théâtre : au dernier moment, les agents de Zion Suzuki ont réclamé des commissio",
+      "url": "https://www.sport.fr/football/diogo-costa-au-psg-le-rebondissement-inattendu-apres-le-fiasco-suzuki-1475114.shtm",
+      "source": "Sport.fr",
+      "date": "2026-08-19T10:12:15Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-20T04:06:59.302097+00:00"
+    },
+    {
+      "id": "91cda5fa8398630b",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Macron dans la mouise : cette facture colossale à l'Elysée qui fait scandale",
+      "extrait": "TITRE: Macron dans la mouise : cette facture colossale à l'Elysée qui fait scandale SOURCE: Tribunal Du Net DATE: 2026-08-19T09:37:25Z URL: https://www.letribunaldunet.fr/politique/bache-concorde-103000-euros-macron-14-juillet.html L'Élysée, épaulé par Matignon, aurait poussé pour que la dépense soit prise en charge ailleurs. Deux cibles désignées : le Quai d'Orsay, ministère des Affaires étrangères, et Bercy, le ministère de l'Économie. Le patron du Service d'information du gouvernement, le SIG",
+      "url": "https://www.letribunaldunet.fr/politique/bache-concorde-103000-euros-macron-14-juillet.html",
+      "source": "Tribunal Du Net",
+      "date": "2026-08-19T09:37:25Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-20T04:07:03.388453+00:00"
+    },
+    {
+      "id": "820919d10224524a",
+      "banque": "Banque Populaire",
+      "departement": "",
+      "titre": "Carte du pouvoir : à qui profite l'orpaillage illégal en Côte d'Ivoire ?",
+      "extrait": "TITRE: Carte du pouvoir : à qui profite l'orpaillage illégal en Côte d'Ivoire ? SOURCE: Agence Ecofin DATE: 2026-08-19T07:18:10Z URL: https://www.agenceecofin.com/actualites/1908-140933-carte-du-pouvoir-a-qui-profite-l-orpaillage-illegal-en-cote-d-ivoire Entre les financiers et les mineurs interviennent par ailleurs diverses autorités. Début août, le porte-parole du rassemblement politique PDCI-RDA, Bredoumy Soumaïla, a accusé certains responsables coutumiers, élus et cadres de faciliter l'activ",
+      "url": "https://www.agenceecofin.com/actualites/1908-140933-carte-du-pouvoir-a-qui-profite-l-orpaillage-illegal-en-cote-d-ivoire",
+      "source": "Agence Ecofin",
+      "date": "2026-08-19T07:18:10Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-20T04:07:08.192381+00:00"
+    },
+    {
+      "id": "2b48052bbb1a9af8",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Quel gardien pour l'OM cette saison ?",
+      "extrait": "TITRE: Quel gardien pour l'OM cette saison ? SOURCE: SOFOOT.com DATE: 2026-08-19T04:19:43Z URL: https://www.sofoot.com/articles/restes-de-lange-un-ennemi-de-mbappe-lentraineur-des-gardiens-de-lequipe-de-france-quel-gardien-pour-lom À deux jours de lancer sa saison face à Strasbourg, l'OM n'a toujours pas trouvé le successeur de Gerónimo Rulli dans ses cages. Entre les pistes trop chères, les prêts compliqués et un compte en banque qui impose désormais de regarder deux fois le prix avant de passe",
+      "url": "https://www.sofoot.com/articles/restes-de-lange-un-ennemi-de-mbappe-lentraineur-des-gardiens-de-lequipe-de-france-quel-gardien-pour-lom",
+      "source": "SOFOOT.com",
+      "date": "2026-08-19T04:19:43Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-20T04:07:09.785239+00:00"
+    },
+    {
       "id": "0c3d932041f07308",
       "banque": "CIC",
       "departement": "",
@@ -37677,6 +37967,84 @@
       "created_at": "2026-06-25T15:43:41.960961+00:00"
     },
     {
+      "id": "77ce7698ded30cda",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "C'est officiel, le PSG a trouvé sa nouvelle pépite... grâce aux vannes de Luis Enrique au téléphone ?",
+      "extrait": "TITRE: C'est officiel, le PSG a trouvé sa nouvelle pépite... grâce aux vannes de Luis Enrique au téléphone ? SOURCE: Le10sport.com DATE: 2026-08-19T11:30:59Z URL: https://le10sport.com/football/ligue1/psg/cest-officiel-le-psg-a-trouve-sa-nouvelle-pepite-grace-aux-vannes-de-luis-enrique-au-telephone-790267 Auprès du Telegraaf, l'agent de Mika Godts, Niels De Jonck, a expliqué comment une conversation pleine d'humour avec Luis Enrique avait définitivement convaincu le Belge de rejoindre le PSG. \" ",
+      "url": "https://le10sport.com/football/ligue1/psg/cest-officiel-le-psg-a-trouve-sa-nouvelle-pepite-grace-aux-vannes-de-luis-enrique-au-telephone-790267",
+      "source": "Le10sport.com",
+      "date": "2026-08-19T11:30:59Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-20T04:06:47.930820+00:00"
+    },
+    {
+      "id": "bbdbdd1cc7557c7e",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Après son transfert avorté au PSG, Suzuki signe à Aston Villa",
+      "extrait": "TITRE: Après son transfert avorté au PSG, Suzuki signe à Aston Villa SOURCE: Orange Sports DATE: 2026-08-19T09:55:56Z URL: https://sports.orange.fr/football/mercato/article/apres-son-transfert-avorte-au-psg-suzuki-signe-a-aston-villa-exclu-CNT000002rpB5t.html Mathieu Armand, Media365 : publié le mercredi 19 août 2026 à 11h55 Après l'échec de son transfert au PSG, Zion Suzuki rejoint officiellement Aston Villa. Le Japonais a été présenté mercredi matin, en même temps que l'Italien Matteo Ruggeri.",
+      "url": "https://sports.orange.fr/football/mercato/article/apres-son-transfert-avorte-au-psg-suzuki-signe-a-aston-villa-exclu-CNT000002rpB5t.html",
+      "source": "Orange Sports",
+      "date": "2026-08-19T09:55:56Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-20T04:06:55.665021+00:00"
+    },
+    {
+      "id": "335d020cc4fd99a1",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Porsche AG dans le vert, DZ Bank relève sa cible mais reste à vendre",
+      "extrait": "TITRE: Porsche AG dans le vert, DZ Bank relève sa cible mais reste à vendre SOURCE: BFM Bourse DATE: 2026-08-19T09:51:00Z URL: https://www.tradingsat.com/actualites/informations-societes/porsche-ag-dans-le-vert-dz-bank-releve-sa-cible-mais-reste-a-vendre-1168791.html (Zonebourse.com) - Porsche AG reprend un peu de hauteur ( 1,07%, à 44,46 euros) soutenu par DZ Bank qui a légèrement relevé son objectif de cours sur le titre de 33 à 36 euros, mais a confirmé sa recommandation à vendre. Les analyst",
+      "url": "https://www.tradingsat.com/actualites/informations-societes/porsche-ag-dans-le-vert-dz-bank-releve-sa-cible-mais-reste-a-vendre-1168791.html",
+      "source": "BFM Bourse",
+      "date": "2026-08-19T09:51:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-20T04:06:40.172083+00:00"
+    },
+    {
+      "id": "9af0bed7438d0082",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Mercato Barça : 4 buteurs pour compenser l'échec et la grosse déception Julian Alvarez",
+      "extrait": "TITRE: Mercato Barça : 4 buteurs pour compenser l'échec et la grosse déception Julian Alvarez SOURCE: Top mercato DATE: 2026-08-19T09:46:00Z URL: https://www.topmercato.com/2126430-mercato-barca-4-buteurs-pour-compenser-lechec-et-la-grosse-deception-julian-alvarez/ Le FC Barcelone a perdu Robert Lewandowski, sans parvenir à recruter sa cible n°1, Julian Alvarez. L'Argentin ne devrait pas rallier dans le club catalan, ce qui ouvre la porte à d'autres buteurs. Il est difficile de savoir si Julian ",
+      "url": "https://www.topmercato.com/2126430-mercato-barca-4-buteurs-pour-compenser-lechec-et-la-grosse-deception-julian-alvarez/",
+      "source": "Top mercato",
+      "date": "2026-08-19T09:46:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-20T04:07:00.990461+00:00"
+    },
+    {
+      "id": "0fafcec12f649926",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Mercato. Qui est Zion Suzuki, gardien tout proche de rejoindre le PSG qui a finalement signé à Aston Villa ?",
+      "extrait": "TITRE: Mercato. Qui est Zion Suzuki, gardien tout proche de rejoindre le PSG qui a finalement signé à Aston Villa ? SOURCE: Ouest France DATE: 2026-08-19T09:16:01Z URL: https://www.ouest-france.fr/sport/football/transferts/mercato-qui-est-zion-suzuki-gardien-tout-proche-de-rejoindre-le-psg-qui-a-finalement-signe-a-aston-villa-e7023ec4-9427-11f1-8bae-616c424ae7e0 C'était un des feuilletons de l'été. Longtemps courtisé par le PSG, finalement refroidi par le comportement de l'entourage du joueur, Z",
+      "url": "https://www.ouest-france.fr/sport/football/transferts/mercato-qui-est-zion-suzuki-gardien-tout-proche-de-rejoindre-le-psg-qui-a-finalement-signe-a-aston-villa-e7023ec4-9427-11f1-8bae-616c424ae7e0",
+      "source": "Ouest France",
+      "date": "2026-08-19T09:16:01Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-20T04:07:04.557271+00:00"
+    },
+    {
+      "id": "9b8a1386b3df507e",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Mercato: après l'imbroglio sur son transfert au PSG, Suzuki débarque en Premier League",
+      "extrait": "TITRE: Mercato: après l'imbroglio sur son transfert au PSG, Suzuki débarque en Premier League SOURCE: RMC SPORT DATE: 2026-08-19T08:57:17Z URL: https://rmcsport.bfmtv.com/football/transferts/mercato-apres-l-imbroglio-sur-son-transfert-au-psg-suzuki-debarque-en-premier-league_AV-202608190237.html La gardien Zion Suzuki s'est engagé ce mercredi avec le club anglais d'Aston Villa. Très proche de signer au Paris Saint-Germain lors du mercato avant un gros rebondissement, l'arrivée du Japonais en Pre",
+      "url": "https://rmcsport.bfmtv.com/football/transferts/mercato-apres-l-imbroglio-sur-son-transfert-au-psg-suzuki-debarque-en-premier-league_AV-202608190237.html",
+      "source": "RMC SPORT",
+      "date": "2026-08-19T08:57:17Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-20T04:07:05.906314+00:00"
+    },
+    {
       "id": "be2ea20e3ccbfac4",
       "banque": "Société Générale",
       "departement": "",
@@ -41562,6 +41930,19 @@
       "score": 2,
       "raison": "signaux: vague(La Poste,unknown,count=None)",
       "created_at": "2026-07-23T09:43:25.751587+00:00"
+    },
+    {
+      "id": "34b89572797ae32b",
+      "banque": "unknown",
+      "departement": "",
+      "titre": "De plus en plus d'agences bancaires ferment : comment l'expliquer et quelles conséquences - TF1 Info",
+      "extrait": "TF1 Info : article générique sur la tendance « de plus en plus d'agences bancaires ferment » sans nommer d'agences/communes dans l’extrait fourni.",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOTDUzNnI4cURyaG9TbTA5NFFFMEJyb3ZrOVNRTFlWdXdMcklxaUgxQkVHV19QbURZZnpUSnRGLWJSM2FlTllXdmgxT2MzbHNzSFVWTzMzLWl3TUJnS0RiWURSRGpmcXY1eklxdWR0QV9DSGhWUXJkV2FVcnY1LXhEMGFnWFZNX1ZsQkxZRjZUUC1NeHZVWnpTdDIwVllVOGtRVk9oaFBMMWI0MmRrTmlMd2xlVlN6MW1mV1ZPRDR1WF82bklZVk9RelJhamFNYmNVZFRPUQ?oc=5",
+      "source": "Google News",
+      "date": "Wed, 19 Aug 2026 11:04:55 GMT",
+      "score": 1,
+      "raison": "signaux: vague(unknown,national,count=None)",
+      "created_at": "2026-08-20T04:06:12.725749+00:00"
     },
     {
       "id": "18dc02c555e83993",

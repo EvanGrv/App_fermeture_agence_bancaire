@@ -498,5 +498,25 @@
     "departement": "56 / 35",
     "code_insee": "56226 / 35288",
     "message": "noms proches mais localisations distinctes à vérifier visuellement"
+  },
+  {
+    "severity": "info",
+    "type": "communes_proches",
+    "id": "e116b4dfd51c74e2|ec84a996d39fc70a",
+    "banque": "La Banque Postale / La Banque Postale",
+    "commune": "Martigues / Maringues",
+    "departement": "13 / 63",
+    "code_insee": "13056 / 63210",
+    "message": "noms proches mais localisations distinctes à vérifier visuellement"
+  },
+  {
+    "severity": "info",
+    "type": "communes_proches",
+    "id": "3b5a0091f7f95188|ec84a996d39fc70a",
+    "banque": "La Banque Postale / La Banque Postale",
+    "commune": "Martigues / Maringues",
+    "departement": "13 / 63",
+    "code_insee": "13056 / 63210",
+    "message": "noms proches mais localisations distinctes à vérifier visuellement"
   }
 ]

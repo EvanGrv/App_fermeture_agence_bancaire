@@ -49,3 +49,5 @@ warning,date_fermeture_absente,4330ec7dc7023010,La Banque Postale,Frontignan,34,
 warning,date_fermeture_absente,af527f56098b83fd,La Banque Postale,Chinon,37,37072,article ancien sans date de fermeture explicite; à confirmer ou archiver
 info,communes_proches,ef183498a867b953|f5dfed8c328d270e,BNP Paribas / La Banque Postale,Saint-Malo-de-Beignon / Saint-Malo,56 / 35,56226 / 35288,noms proches mais localisations distinctes à vérifier visuellement
 info,communes_proches,ef183498a867b953|405cc9d5132ed04c,BNP Paribas / La Banque Postale,Saint-Malo-de-Beignon / Saint-Malo,56 / 35,56226 / 35288,noms proches mais localisations distinctes à vérifier visuellement
+info,communes_proches,e116b4dfd51c74e2|ec84a996d39fc70a,La Banque Postale / La Banque Postale,Martigues / Maringues,13 / 63,13056 / 63210,noms proches mais localisations distinctes à vérifier visuellement
+info,communes_proches,3b5a0091f7f95188|ec84a996d39fc70a,La Banque Postale / La Banque Postale,Martigues / Maringues,13 / 63,13056 / 63210,noms proches mais localisations distinctes à vérifier visuellement
