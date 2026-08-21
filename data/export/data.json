@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T04:17:41.416668+00:00",
+  "generated_at": "2026-08-21T04:20:03.432798+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -209,11 +209,11 @@
     "21": {
       "nom": "Côte-d'Or",
       "region": "Bourgogne-Franche-Comté",
-      "count": 4,
+      "count": 5,
       "total_agences": 71,
-      "precise_count": 4,
+      "precise_count": 5,
       "unlocated_count": 0,
-      "estimated_count": 4
+      "estimated_count": 5
     },
     "22": {
       "nom": "Côtes-d'Armor",
@@ -390,7 +390,7 @@
       "nom": "Loir-et-Cher",
       "region": "Centre-Val de Loire",
       "count": 2,
-      "total_agences": 55,
+      "total_agences": 56,
       "precise_count": 2,
       "unlocated_count": 0,
       "estimated_count": 2
@@ -1359,9 +1359,9 @@
     "21": {
       "departement": "21",
       "nom": "Côte-d'Or",
-      "precise_count": 4,
+      "precise_count": 5,
       "unlocated_count": 0,
-      "estimated_count": 4,
+      "estimated_count": 5,
       "department_signal_count": 0,
       "signals": []
     },
@@ -1836,9 +1836,9 @@
     },
     {
       "region": "Bourgogne-Franche-Comté",
-      "articles": 24,
+      "articles": 25,
       "fermetures": 19,
-      "projets": 4,
+      "projets": 5,
       "fusions": 0,
       "types": [
         "Fermeture",
@@ -1878,7 +1878,7 @@
     },
     {
       "region": "Occitanie",
-      "articles": 15,
+      "articles": 16,
       "fermetures": 2,
       "projets": 10,
       "fusions": 2,
@@ -9741,7 +9741,7 @@
       "date_annonce": "Tue, 18 Aug 2026 15:36:00 GMT",
       "date_fermeture": "2026-08-18",
       "statut": "confirmé",
-      "statut_temporel": "deja_fermee",
+      "statut_temporel": "a_venir",
       "date_fermeture_approx": 1,
       "fiabilite": 3,
       "lat": 43.680894,
@@ -9762,6 +9762,13 @@
           "titre": "Hérault : coup de massue, le bureau de poste d'Aniane ferme définitivement - infoccitanie.fr",
           "source": "Google News",
           "date": "Tue, 18 Aug 2026 15:36:00 GMT",
+          "tier": "D"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOY2R5bkxmczFYZGM1NE9vS01GcEd1RmFRUEVXU0YwSEJkVFl4WW5oNm9yQWtDeDE1bGwxb0xPN01nZmEwWC1OalUyOUc2VzQ1U2dNNEhjeFRoQUtDajVwZW9sWG5VUDZST2dhTlNyMkF2R3R0V1E2RGxhT2hiUFVaUmliXzBXbktXbkx5amR3V2dETUtTN3dZYTEtT1o3aElXSTRMcFdZVEpqSGVWdktlUkxudDFFRFhaTHFydQ?oc=5",
+          "titre": "Aniane : le bureau de poste fermera définitivement le 1er septembre - Echo des Tribunes",
+          "source": "Google News",
+          "date": "Thu, 20 Aug 2026 11:02:00 GMT",
           "tier": "D"
         }
       ],
@@ -9812,6 +9819,47 @@
         "source": "SIRENE"
       },
       "region": "Auvergne-Rhône-Alpes"
+    },
+    {
+      "id": "ba479ca8de39dc52",
+      "banque": "La Banque Postale",
+      "commune": "Fontaine-lès-Dijon",
+      "code_insee": "21278",
+      "departement": "21",
+      "type": "fermeture",
+      "date_annonce": "Thu, 20 Aug 2026 01:07:24 GMT",
+      "date_fermeture": "2026-08-24",
+      "statut": "projet",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 1,
+      "fiabilite": 3,
+      "lat": 47.344925,
+      "lon": 5.025268,
+      "citation": "Fontaine-lès-Dijon. Pourquoi le bureau de poste va fermer dès lundi 24 août - Le Bien Public",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "service_impact": "fermeture_lbp_complete",
+      "point_postal_avant": "Bureau de Poste",
+      "point_postal_apres": null,
+      "postal_point_id": "03576A",
+      "evidence_level": "presse+référentiel",
+      "created_at": "2026-08-21T04:08:46.162198+00:00",
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOWndGWkp3bzljQm1mNnN2Z3diRk9NNEpqYWRBTWdqYkV0Z3lXMXRYbmlQOFFtOTY5Y25CY3NiT25uXzNEd29SOF96a2ZnRk9JMTFhdkFldXBoT21jUWhmNTVONnV1dWpJcWJOd0hvMmN3MEN5a0JQOFJ2ZTNaWEpLMEl3REdXVWlGVHg4Qk8wLXpkUS1hRFNpTjJMajFoMXJnZFVSOQ?oc=5",
+          "titre": "Fontaine-lès-Dijon. Pourquoi le bureau de poste va fermer dès lundi 24 août - Le Bien Public",
+          "source": "Google News",
+          "date": "Thu, 20 Aug 2026 01:07:24 GMT",
+          "tier": "D"
+        }
+      ],
+      "controle_sirene": {
+        "etat_administratif": null,
+        "siret": null,
+        "source": "SIRENE"
+      },
+      "region": "Bourgogne-Franche-Comté"
     }
   ],
   "closures_unlocated": [
@@ -10821,7 +10869,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-20T04:02:47.907632+00:00"
+      "created_at": "2026-08-21T04:05:15.126988+00:00"
     },
     {
       "id": "50895c042a984b7d",
@@ -10857,7 +10905,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 04:46:02 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-20T04:02:47.307716+00:00"
+      "created_at": "2026-08-21T04:05:14.613601+00:00"
     },
     {
       "id": "8c6a0cad14626d6f",
@@ -13161,7 +13209,7 @@
       "source": "Google News",
       "date": "Fri, 20 Jun 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-20T04:02:55.511259+00:00"
+      "created_at": "2026-08-21T04:05:23.637752+00:00"
     },
     {
       "id": "b70960ea48a1a247",
@@ -13287,7 +13335,7 @@
       "source": "Google News",
       "date": "Fri, 10 Jul 2026 10:12:00 GMT",
       "raison": "garde entrée/sortie: département source 44 incompatible avec la sortie 974",
-      "created_at": "2026-08-20T04:03:13.872758+00:00"
+      "created_at": "2026-08-21T04:05:44.179845+00:00"
     },
     {
       "id": "8c646081e1d69e81",
@@ -13467,7 +13515,7 @@
       "source": "Google News",
       "date": "Fri, 03 Jan 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-20T04:02:46.777198+00:00"
+      "created_at": "2026-08-21T04:05:14.069842+00:00"
     },
     {
       "id": "411db107f70f2387",
@@ -13558,6 +13606,24 @@
       "date": "2026-08-19T16:28:46Z",
       "raison": "garde entrée/sortie: fermeture postale temporaire ou circonstancielle",
       "created_at": "2026-08-20T04:06:38.736750+00:00"
+    },
+    {
+      "id": "757b849369f53e6c",
+      "banque": "La Banque Postale",
+      "commune": "Pont-de-Montvert",
+      "departement": "48",
+      "type": "fermeture",
+      "date_fermeture": "2026-08-19",
+      "statut": "projet",
+      "statut_temporel": "deja_fermee",
+      "fiabilite": 3,
+      "citation": "« Derrière la question du radon… fermeture annoncée pour au moins un an de l’établissement » ; « c’est précisément dans ce type de situations… Pour le maire, … bureau : celle de La Banque postale… possibilité d’effectuer sur un livret A un retrait à partir de 1,50 € » et « 120… devant le bureau de poste du Pont-de-Montvert ».",
+      "url": "https://www.midilibre.fr/2026/08/19/la-poste-fermee-a-cause-dun-gaz-radioactif-cent-vingt-personnes-se-mobilisent-au-pont-de-montvert-13514599.php",
+      "titre": "La Poste fermée à cause d’un gaz radioactif, cent vingt personnes se mobilisent au Pont-de-Montvert",
+      "source": "midilibre.fr",
+      "date": "2026-08-19",
+      "raison": "garde entrée/sortie: fermeture postale temporaire ou circonstancielle",
+      "created_at": "2026-08-21T04:09:09.876625+00:00"
     },
     {
       "id": "354d13d049088629",
@@ -16372,6 +16438,19 @@
       "score": 4,
       "raison": "signaux: dept(Crédit Agricole,Lot,count=None,communes=)",
       "created_at": "2026-07-02T07:06:46.865370+00:00"
+    },
+    {
+      "id": "917178345294abe7",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Coty creuse ses pertes avant une année \"de transition\" sans Gucci",
+      "extrait": "TITRE: Coty creuse ses pertes avant une année \"de transition\" sans Gucci SOURCE: Premium Beauty News DATE: 2026-08-20T21:55:04Z URL: https://www.premiumbeautynews.com/fr/coty-creuse-ses-pertes-avant-une,28042 Le groupe américain de cosmétiques et parfums Coty, qui a récemment annoncé la cession avec un an d'avance de sa licence Gucci Beauté à Kering et L'Oréal, a creusé ses pertes sur son exercice décalé 2025/2026 et annonce une année 2027 \"de transition\". Le groupe, en pleine restructuration, a",
+      "url": "https://www.premiumbeautynews.com/fr/coty-creuse-ses-pertes-avant-une,28042",
+      "source": "Premium Beauty News",
+      "date": "2026-08-20T21:55:04Z",
+      "score": 4,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-21T04:09:18.039479+00:00"
     },
     {
       "id": "15defb539e54dfdd",
@@ -22640,6 +22719,19 @@
       "created_at": "2026-08-03T07:54:54.013223+00:00"
     },
     {
+      "id": "9c7f3db3d3dad07b",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Une entreprise de Hô Chi Minh-Ville ferme ses portes, laissant une ardoise de plusieurs dizaines de milliards de dongs de salaires impayés : l’affaire est transférée au parquet. - Vietnam.vn",
+      "extrait": "TITRE: Une entreprise de Hô Chi Minh-Ville ferme ses portes, laissant une ardoise de plusieurs dizaines de milliards de dongs de salaires impayés : l’affaire est transférée au parquet. - Vietnam.vn SOURCE: Google News DATE: Thu, 20 Aug 2026 03:39:03 GMT URL: https://news.google.com/rss/articles/CBMioAFBVV95cUxPNS1aMTl2UTFQWFVZODZRMThxWGVFcmVNUDg3N0lNX1otbElub1otMVUySGlBTktROS1YZDE3TXpqaU9aR1pxNWpoM3RDMzROdFdpREJyOHNoc29Hbkpwd2dNc2l6TTNnbTN2WkdSVU5paUpZdUxpb2xydXRyRi12NXJ4ZXhiTEN0QlpJTFhCS0JhNXll",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPNS1aMTl2UTFQWFVZODZRMThxWGVFcmVNUDg3N0lNX1otbElub1otMVUySGlBTktROS1YZDE3TXpqaU9aR1pxNWpoM3RDMzROdFdpREJyOHNoc29Hbkpwd2dNc2l6TTNnbTN2WkdSVU5paUpZdUxpb2xydXRyRi12NXJ4ZXhiTEN0QlpJTFhCS0JhNXllcW45VXRlSzJReE5W?oc=5",
+      "source": "Google News",
+      "date": "Thu, 20 Aug 2026 03:39:03 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-21T04:08:49.859411+00:00"
+    },
+    {
       "id": "ee3b8fc370b1cffe",
       "banque": "Crédit Agricole",
       "departement": "",
@@ -25264,6 +25356,19 @@
       "score": 3,
       "raison": "score préfiltre bas (-2)",
       "created_at": "2026-07-21T06:11:36.116838+00:00"
+    },
+    {
+      "id": "4d173b3708155174",
+      "banque": "BNP Paribas",
+      "departement": "",
+      "titre": "\"Elle ne peut constituer une perspective satisfaisante\" : les parents d’élèves d’une école d’Albi dénoncent la fermeture de l’établissement pour cause de fortes chaleurs - ladepeche.fr",
+      "extrait": "TITRE: \"Elle ne peut constituer une perspective satisfaisante\" : les parents d’élèves d’une école d’Albi dénoncent la fermeture de l’établissement pour cause de fortes chaleurs - ladepeche.fr SOURCE: Google News DATE: Sat, 27 Jun 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMinwJBVV95cUxQUERwZjhnbERORUJJT3RfLUxFTk1WUWNIMWFabnpza1FsWVlMYW83cE5GbU9vc3FGb3F6aEwyenpiZEJsTHV3X3N4QjBPTjhiZl9kV1MtM1ZBcm5hSG5jSzRQYkZEXzQwcWg1R2hnazhpOXA0SDlIU3F5SkhsMm9oVDk0RDJKWHgtS09SN1dYMm1oakEyNXpsVT",
+      "url": "https://news.google.com/rss/articles/CBMinwJBVV95cUxQUERwZjhnbERORUJJT3RfLUxFTk1WUWNIMWFabnpza1FsWVlMYW83cE5GbU9vc3FGb3F6aEwyenpiZEJsTHV3X3N4QjBPTjhiZl9kV1MtM1ZBcm5hSG5jSzRQYkZEXzQwcWg1R2hnazhpOXA0SDlIU3F5SkhsMm9oVDk0RDJKWHgtS09SN1dYMm1oakEyNXpsVTBRVS05emlfdVYxLXhxdGVRWW8wTmJ1dUdBOHpFNHB5clg5MEVlaE01VEJkSFVwNFY3MXFjdEJsd1lFUkU2bzdjQnpuVjZjV0tGTTNBSWhwbzYtZnB4S1B5X1VXekNKVDlQV0NlX0FFUXNQbi1iVnUzSlJNT3JsUnlGYVdzTFJRY0Y3X1ZXOA?oc=5",
+      "source": "Google News",
+      "date": "Sat, 27 Jun 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-21T04:08:52.060678+00:00"
     },
     {
       "id": "7b5f941005b0b8a1",
@@ -30791,6 +30896,110 @@
       "created_at": "2026-07-22T09:09:01.159244+00:00"
     },
     {
+      "id": "69cac9f32de4b45c",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Madagascar. Portrait d'un économiste intègre",
+      "extrait": "TITRE: Madagascar. Portrait d'un économiste intègre SOURCE: Mondafrique DATE: 2026-08-21T03:49:00Z URL: https://mondafrique.com/economie/madagascar-portrait-dun-economiste-integre/ Expert en économie spécialiste de l'audit d'entreprises à l'international, réputé pour son intégrité, Jean-Jacques Ratsietison a joué un rôle actif dans l'avènement du régime transitoire de septembre 2025. Portrait. Il n'est pas un grand inconnu : depuis plus d'une décennie, il a marqué de sa présence l'espace public ",
+      "url": "https://mondafrique.com/economie/madagascar-portrait-dun-economiste-integre/",
+      "source": "Mondafrique",
+      "date": "2026-08-21T03:49:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-21T04:09:13.488992+00:00"
+    },
+    {
+      "id": "cb65a35f04643114",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "En Ukraine, l'ex-ministre Fedorov peut-il faire trembler Zelensky ?",
+      "extrait": "TITRE: En Ukraine, l'ex-ministre Fedorov peut-il faire trembler Zelensky ? SOURCE: 20minutes DATE: 2026-08-20T15:32:48Z URL: https://www.20minutes.fr/monde/ukraine/4239894-20260820-guerre-ukraine-popularite-nouvelles-elections-ex-ministre-mykhailo-fedorov-peut-faire-trembler-zelensky Lorsque Mykhailo Fedorov prend la parole sur sa page YouTube mardi, chemise noire sur fond noir, il n'est pas question d'aux revoirs. Alors que le parlement ukrainien a approuvé son successeur au poste de ministre d",
+      "url": "https://www.20minutes.fr/monde/ukraine/4239894-20260820-guerre-ukraine-popularite-nouvelles-elections-ex-ministre-mykhailo-fedorov-peut-faire-trembler-zelensky",
+      "source": "20minutes",
+      "date": "2026-08-20T15:32:48Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-21T04:09:20.778337+00:00"
+    },
+    {
+      "id": "0deacc42c375889a",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Les 8 régions françaises où l'on mange le plus de fromage : le n°1 dépasse 25 kg par habitant et par an",
+      "extrait": "TITRE: Les 8 régions françaises où l'on mange le plus de fromage : le n°1 dépasse 25 kg par habitant et par an SOURCE: Tribunal Du Net DATE: 2026-08-20T15:01:21Z URL: https://www.letribunaldunet.fr/actualites/regions-france-plus-fromage-classement.html Les régions qui ferment le classement mais restent gourmandes Et en tête du classement, sans grande surprise cette fois, le Grand Est dépasse les 25 kg par habitant et par an. Le munster, le géromé et une tradition fromagère héritée des monastères",
+      "url": "https://www.letribunaldunet.fr/actualites/regions-france-plus-fromage-classement.html",
+      "source": "Tribunal Du Net",
+      "date": "2026-08-20T15:01:21Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-21T04:09:22.891646+00:00"
+    },
+    {
+      "id": "6397f41ac37c24ae",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Marseille - Strasbourg | Pronostics, conseils et cotes | Ligue 1",
+      "extrait": "TITRE: Marseille - Strasbourg | Pronostics, conseils et cotes | Ligue 1 SOURCE: Eurosport DATE: 2026-08-20T14:07:46Z URL: https://www.eurosport.fr/paris-sportifs/pronostics/marseille-strasbourg-pronostics-conseils-et-cotes-ligue-1/ Orange Vélodrome, Marseille, France Marseille 2-0 Strasbourg Strasbourg n'a plus gagné à l'Orange Vélodrome en championnat depuis 1997 L'Orange Vélodrome lance la saison 2026-2027 de Ligue 1 ce vendredi soir avec la réception du Racing Club de Strasbourg par l'Olympiq",
+      "url": "https://www.eurosport.fr/paris-sportifs/pronostics/marseille-strasbourg-pronostics-conseils-et-cotes-ligue-1/",
+      "source": "Eurosport",
+      "date": "2026-08-20T14:07:46Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-21T04:09:24.320439+00:00"
+    },
+    {
+      "id": "5a8450a46e736205",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Franck Ribéry, bientôt papa pour la 6e fois : ce qui lui est arrivé à 2 ans explique tout",
+      "extrait": "TITRE: Franck Ribéry, bientôt papa pour la 6e fois : ce qui lui est arrivé à 2 ans explique tout SOURCE: Tribunal Du Net DATE: 2026-08-20T07:33:13Z URL: https://www.letribunaldunet.fr/people/franck-ribery-cicatrice-visage-accident-2-ans.html Et puis, un matin d'août 2026, son nom revient en tête des conversations. Pas pour un but. Pas pour un transfert. Pour une naissance annoncée par un journaliste italien, et une famille prise de court. Boulogne-sur-Mer, quartier du Chemin Vert : le vrai point",
+      "url": "https://www.letribunaldunet.fr/people/franck-ribery-cicatrice-visage-accident-2-ans.html",
+      "source": "Tribunal Du Net",
+      "date": "2026-08-20T07:33:13Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-21T04:09:28.167728+00:00"
+    },
+    {
+      "id": "bb4e29c8547aef8f",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Franck Ribéry papa pour la 6e fois : mais d'où vient vraiment cette cicatrice sur son visage ?",
+      "extrait": "TITRE: Franck Ribéry papa pour la 6e fois : mais d'où vient vraiment cette cicatrice sur son visage ? SOURCE: Tribunal Du Net DATE: 2026-08-20T07:33:13Z URL: https://www.letribunaldunet.fr/people/franck-ribery-cicatrice-visage-origine-accident.html Et voilà qu'à 43 ans, l'ancien international français revient au centre de tous les regards. Pas pour un but. Pas pour un transfert. Pour une naissance. Une sixième, annoncée dans un fracas médiatique que personne n'avait vu venir, et qui a pris de co",
+      "url": "https://www.letribunaldunet.fr/people/franck-ribery-cicatrice-visage-origine-accident.html",
+      "source": "Tribunal Du Net",
+      "date": "2026-08-20T07:33:13Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-21T04:09:32.142841+00:00"
+    },
+    {
+      "id": "fc7c3922a13211e2",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "CAC 40 : Rebond en perspective",
+      "extrait": "TITRE: CAC 40 : Rebond en perspective SOURCE: BFM Bourse DATE: 2026-08-20T06:30:00Z URL: https://www.tradingsat.com/cac-40-FR0003500008/conseils/cac-40-rebond-en-perspective-1168822.html La bourse de Paris devrait tenter de reprendre de la hauteur ce jeudi après une séance sans relief mercredi. Le CAC 40 a terminé en léger repli de 0,09 % à 8 501 points, dans un marché toujours partagé entre la détente des rendements obligataires américains, les craintes inflationnistes et les tensions géopoliti",
+      "url": "https://www.tradingsat.com/cac-40-FR0003500008/conseils/cac-40-rebond-en-perspective-1168822.html",
+      "source": "BFM Bourse",
+      "date": "2026-08-20T06:30:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-21T04:09:34.110304+00:00"
+    },
+    {
+      "id": "ee98e55d9bdcb796",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Prix des logements : le retour de la \" grande peur \" ? - Journal de l'Agence",
+      "extrait": "TITRE: Prix des logements : le retour de la \" grande peur \" ? - Journal de l'Agence SOURCE: Journal de l'Agence DATE: 2026-08-20T05:36:50Z URL: https://www.journaldelagence.com/1413167-prix-des-logements-le-retour-de-la-grande-peur Les prix sont-ils vraiment responsables de la crise du logement ? Entre Paris et certaines communes de province, le prix au mètre carré peut varier de 1 à 6. Pourtant, acheter son logement n'est pas nécessairement plus facile dans les petites villes que dans les grand",
+      "url": "https://www.journaldelagence.com/1413167-prix-des-logements-le-retour-de-la-grande-peur",
+      "source": "Journal de l'Agence",
+      "date": "2026-08-20T05:36:50Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-21T04:09:36.567615+00:00"
+    },
+    {
       "id": "bf0656859db70c23",
       "banque": "Société Générale",
       "departement": "",
@@ -30932,6 +31141,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-08-20T04:07:09.785239+00:00"
+    },
+    {
+      "id": "d79f00afe8a8039e",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "La Poste fermée à cause d’un gaz radioactif, cent vingt personnes se mobilisent au Pont-de-Montvert",
+      "extrait": "TITRE: La Poste fermée à cause d’un gaz radioactif, cent vingt personnes se mobilisent au Pont-de-Montvert SOURCE: midilibre.fr DATE: 2026-08-19 URL: https://www.midilibre.fr/2026/08/19/la-poste-fermee-a-cause-dun-gaz-radioactif-cent-vingt-personnes-se-mobilisent-au-pont-de-montvert-13514599.php La Poste fermée à cause d’un gaz radioactif, cent vingt personnes se mobilisent au Pont-de-Montvert Habitants, élus et syndicalistes se sont rassemblés mercredi 19 août 2026. Derrière la question du rado",
+      "url": "https://www.midilibre.fr/2026/08/19/la-poste-fermee-a-cause-dun-gaz-radioactif-cent-vingt-personnes-se-mobilisent-au-pont-de-montvert-13514599.php",
+      "source": "midilibre.fr",
+      "date": "2026-08-19",
+      "score": 3,
+      "raison": "fermeture non publiée: garde entrée/sortie: fermeture postale temporaire ou circonstancielle",
+      "created_at": "2026-08-21T04:09:09.882117+00:00"
     },
     {
       "id": "0c3d932041f07308",
@@ -37343,6 +37565,19 @@
       "created_at": "2026-08-08T04:34:10.052464+00:00"
     },
     {
+      "id": "e692e3f97fc03d7e",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Bénin : transfert effectif des agents de santé aux communes - APAnews - Agence de Presse Africaine",
+      "extrait": "TITRE: Bénin : transfert effectif des agents de santé aux communes - APAnews - Agence de Presse Africaine SOURCE: Google News DATE: Mon, 03 Aug 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMioAFBVV95cUxQWnBBeHE5dWt1MWpReF9ubXdpd0ZPM281eFl6VFFBcHZUMU84YzhMRVBHbml6YTlqT2RxN1RhZ0RrRmoxVUY1Y3F0TV8wRko4VzBCSWFGSHVBdGRMaHhRb0cxSG05M2RTblFQYjl6dC1URUpfUVppQTA1M0pvSjZVN3dZWWdKclA1V2o4NzktYVU5SnA2cWw5Y0IySEFnYnYx?oc=5 <a href=\"https://news.google.com/rss/articles/CBMioAFBVV95cUxQWnBBeHE5",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQWnBBeHE5dWt1MWpReF9ubXdpd0ZPM281eFl6VFFBcHZUMU84YzhMRVBHbml6YTlqT2RxN1RhZ0RrRmoxVUY1Y3F0TV8wRko4VzBCSWFGSHVBdGRMaHhRb0cxSG05M2RTblFQYjl6dC1URUpfUVppQTA1M0pvSjZVN3dZWWdKclA1V2o4NzktYVU5SnA2cWw5Y0IySEFnYnYx?oc=5",
+      "source": "Google News",
+      "date": "Mon, 03 Aug 2026 07:00:00 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-21T04:08:44.457337+00:00"
+    },
+    {
       "id": "9cc2e2b09d9d5590",
       "banque": "La Banque Postale",
       "departement": "",
@@ -37965,6 +38200,45 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:43:41.960961+00:00"
+    },
+    {
+      "id": "3a06eba9c95a042a",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Paris prépare une vente inatendue en sous-marin - Sport.fr",
+      "extrait": "TITRE: Paris prépare une vente inatendue en sous-marin - Sport.fr SOURCE: Sport.fr DATE: 2026-08-20T22:21:01Z URL: https://www.sport.fr/football/paris-prepare-une-vente-inatendue-en-sous-marin-1472227.shtm Lucas Chevalier pense avoir sa chance. À 25 ans, gardien de Ligue 1 avec le LOSC jusqu'à l'été dernier, convoqué en équipe de France, le portier nordiste est convaincu que Luis Enrique lui fera confiance. Il ne sait probablement pas que le PSG est déjà en train de le vendre. Le journaliste Ach",
+      "url": "https://www.sport.fr/football/paris-prepare-une-vente-inatendue-en-sous-marin-1472227.shtm",
+      "source": "Sport.fr",
+      "date": "2026-08-20T22:21:01Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-21T04:09:15.834736+00:00"
+    },
+    {
+      "id": "6d4997560c2a1622",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Mercato : le LOSC est en passe de recruter le gardien du Paraguay !",
+      "extrait": "TITRE: Mercato : le LOSC est en passe de recruter le gardien du Paraguay ! SOURCE: Foot Mercato : Info Transferts Football - Actu Foot Transfert DATE: 2026-08-20T13:07:02Z URL: https://www.footmercato.net/a3869928395914143650-mercato-le-losc-est-en-passe-de-recruter-le-gardien-du-paraguay Selon différents médias, le club nordiste est proche d'enrôler un des gardiens révélation du dernier Mondial 2026. La saison à venir s'annonce passionnante pour le LOSC. Les Dogues, qui lanceront cet exercice 2",
+      "url": "https://www.footmercato.net/a3869928395914143650-mercato-le-losc-est-en-passe-de-recruter-le-gardien-du-paraguay",
+      "source": "Foot Mercato : Info Transferts Football - Actu Foot Transfert",
+      "date": "2026-08-20T13:07:02Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-21T04:09:25.951097+00:00"
+    },
+    {
+      "id": "f3ed3df5b369839a",
+      "banque": "Crédit Agricole",
+      "departement": "",
+      "titre": "Heineken annonce la nomination de Laurent Turpault au poste de directeur corporate affairs",
+      "extrait": "TITRE: Heineken annonce la nomination de Laurent Turpault au poste de directeur corporate affairs SOURCE: CB News DATE: 2026-08-20T09:35:04Z URL: https://www.cbnews.fr/mouvements/heineken-annonce-nomination-laurent-turpault-au-poste-directeur-corporate-affairs Heineken France annonce la nomination de Laurent Turpault au poste de directeur corporate affairs, couvrant la communication, les affaires publiques et la responsabilité sociétale de l'entreprise (RSE). Il aura pour mission d'accompagner l",
+      "url": "https://www.cbnews.fr/mouvements/heineken-annonce-nomination-laurent-turpault-au-poste-directeur-corporate-affairs",
+      "source": "CB News",
+      "date": "2026-08-20T09:35:04Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-21T04:09:30.022130+00:00"
     },
     {
       "id": "77ce7698ded30cda",

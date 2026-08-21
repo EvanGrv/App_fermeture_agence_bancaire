@@ -502,6 +502,26 @@
   {
     "severity": "info",
     "type": "communes_proches",
+    "id": "a39161cc79f29c33|ba479ca8de39dc52",
+    "banque": "Crédit Municipal / La Banque Postale",
+    "commune": "Dijon / Fontaine-lès-Dijon",
+    "departement": "21 / 21",
+    "code_insee": "21231 / 21278",
+    "message": "noms proches mais localisations distinctes à vérifier visuellement"
+  },
+  {
+    "severity": "info",
+    "type": "communes_proches",
+    "id": "e2f8216461e27295|ba479ca8de39dc52",
+    "banque": "Crédit Municipal / La Banque Postale",
+    "commune": "Dijon / Fontaine-lès-Dijon",
+    "departement": "21 / 21",
+    "code_insee": "21231 / 21278",
+    "message": "noms proches mais localisations distinctes à vérifier visuellement"
+  },
+  {
+    "severity": "info",
+    "type": "communes_proches",
     "id": "e116b4dfd51c74e2|ec84a996d39fc70a",
     "banque": "La Banque Postale / La Banque Postale",
     "commune": "Martigues / Maringues",
@@ -517,6 +537,16 @@
     "commune": "Martigues / Maringues",
     "departement": "13 / 63",
     "code_insee": "13056 / 63210",
+    "message": "noms proches mais localisations distinctes à vérifier visuellement"
+  },
+  {
+    "severity": "info",
+    "type": "communes_proches",
+    "id": "7c2dff7869afaf08|ba479ca8de39dc52",
+    "banque": "Crédit Agricole / La Banque Postale",
+    "commune": "Fontaine-le-Dun / Fontaine-lès-Dijon",
+    "departement": "76 / 21",
+    "code_insee": "76272 / 21278",
     "message": "noms proches mais localisations distinctes à vérifier visuellement"
   }
 ]
