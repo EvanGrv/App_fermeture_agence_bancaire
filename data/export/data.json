@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T04:20:03.432798+00:00",
+  "generated_at": "2026-08-22T04:13:20.999735+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -30,7 +30,7 @@
       "nom": "Aisne",
       "region": "Hauts-de-France",
       "count": 1,
-      "total_agences": 92,
+      "total_agences": 93,
       "precise_count": 1,
       "unlocated_count": 0,
       "estimated_count": 1
@@ -10869,7 +10869,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-21T04:05:15.126988+00:00"
+      "created_at": "2026-08-22T03:59:49.391959+00:00"
     },
     {
       "id": "50895c042a984b7d",
@@ -10905,7 +10905,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 04:46:02 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-21T04:05:14.613601+00:00"
+      "created_at": "2026-08-22T03:59:49.054928+00:00"
     },
     {
       "id": "8c6a0cad14626d6f",
@@ -13209,7 +13209,7 @@
       "source": "Google News",
       "date": "Fri, 20 Jun 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-21T04:05:23.637752+00:00"
+      "created_at": "2026-08-22T03:59:54.761453+00:00"
     },
     {
       "id": "b70960ea48a1a247",
@@ -13335,7 +13335,7 @@
       "source": "Google News",
       "date": "Fri, 10 Jul 2026 10:12:00 GMT",
       "raison": "garde entrée/sortie: département source 44 incompatible avec la sortie 974",
-      "created_at": "2026-08-21T04:05:44.179845+00:00"
+      "created_at": "2026-08-22T04:00:08.990006+00:00"
     },
     {
       "id": "8c646081e1d69e81",
@@ -13515,7 +13515,7 @@
       "source": "Google News",
       "date": "Fri, 03 Jan 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-21T04:05:14.069842+00:00"
+      "created_at": "2026-08-22T03:59:48.681920+00:00"
     },
     {
       "id": "411db107f70f2387",
@@ -15528,6 +15528,19 @@
       "created_at": "2026-07-29T06:12:50.328913+00:00"
     },
     {
+      "id": "cce9841c16cf0186",
+      "banque": "La Poste",
+      "scope": "unknown",
+      "count": null,
+      "confidence": 0.25,
+      "evidence": "Article France 3 Régions sur « la fermeture de ce bureau de poste » et réaction du maire, sans commune ni adresse dans l’extrait fourni.",
+      "url": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxNQ19xNmdLVFgzczZXRVNzbUo5S1FFa1B1MFBWNVZLSXhlcjBBdThHVW1mUkliVDVocVBUVUVNZFZadmJhMjNJRlBlZkNBVEhvblRESmNNaTVFV21vREMybGVRYVdTN21yamo5M0pqWVl6ODM1ZjI3aklXYVhSWl83QnRRZzZlZDZTNzdZTkktY29CTThDNDlOWXBiVnlRblNIa3dlWUpnT0tNdnZWYm40YmcyNXFXTk9xSUdsakpjZEJNN1ItWlJ1NVBXQl9hRnFvX2ZMZ1RsWjVtcUJUa0V1bUZWU2RNb0lJdjFQbVZub0tNY2lQa1NMbk9GYndxU0lWLVI0aWJXTUIzTU9Oc2J6Y0JJSmNHc1VyMU9Fb2pKbUtGM04wZUFvcQ?oc=5",
+      "titre": "\"Je trouve ça déplorable\" : la fermeture de ce bureau de poste indigne les habitants, le maire dénonce le silence de La Poste - France 3 Régions",
+      "source": "Google News",
+      "date": "Fri, 21 Aug 2026 04:55:01 GMT",
+      "created_at": "2026-08-22T04:02:40.350270+00:00"
+    },
+    {
       "id": "7eab27e40a7575c3",
       "banque": "CIC",
       "scope": "national",
@@ -15630,6 +15643,58 @@
       "source": "Google News",
       "date": "Fri, 05 Jun 2026 07:00:00 GMT",
       "created_at": "2026-08-04T06:10:34.623634+00:00"
+    },
+    {
+      "id": "e61767e363d53a1d",
+      "banque": "Banco BPM",
+      "scope": "national",
+      "count": null,
+      "confidence": 0.25,
+      "evidence": "Article évoque une inquiétude « d'un éventuel transfert d'une grande partie des agences à Unipol-BPER » à propos de Mps/Banco Bpm, sans détails de communes ni annonce de fermetures en France.",
+      "url": "https://fr.euronews.com/business/2026/08/21/monte-dei-paschi-les-details-de-loffre-pour-banco-bpm-et-banca-generali",
+      "titre": "Monte dei Paschi : les détails de l'offre pour Banco BPM et Banca Generali",
+      "source": "euronews",
+      "date": "2026-08-21T10:07:06Z",
+      "created_at": "2026-08-22T04:03:18.230162+00:00"
+    },
+    {
+      "id": "322e4ac9ae6ec78f",
+      "banque": "Mps",
+      "scope": "national",
+      "count": null,
+      "confidence": 0.25,
+      "evidence": "L'hypothèse d'un changement de contrôle de Mps (passage sous Intesa Sanpaolo) est associée à un risque de « transfert d'une grande partie des agences » et « réduction des effectifs » (sans fermer d'agence bancaire en France nommée).",
+      "url": "https://fr.euronews.com/business/2026/08/21/monte-dei-paschi-les-details-de-loffre-pour-banco-bpm-et-banca-generali",
+      "titre": "Monte dei Paschi : les détails de l'offre pour Banco BPM et Banca Generali",
+      "source": "euronews",
+      "date": "2026-08-21T10:07:06Z",
+      "created_at": "2026-08-22T04:03:18.230991+00:00"
+    },
+    {
+      "id": "2575c37a4d65448e",
+      "banque": "Unipol-BPER",
+      "scope": "national",
+      "count": null,
+      "confidence": 0.2,
+      "evidence": "Le texte mentionne Unipol-BPER comme bénéficiaire potentiel d'un « transfert d'une grande partie des agences » dans le contexte italien, sans lien explicite avec des agences physiques en France.",
+      "url": "https://fr.euronews.com/business/2026/08/21/monte-dei-paschi-les-details-de-loffre-pour-banco-bpm-et-banca-generali",
+      "titre": "Monte dei Paschi : les détails de l'offre pour Banco BPM et Banca Generali",
+      "source": "euronews",
+      "date": "2026-08-21T10:07:06Z",
+      "created_at": "2026-08-22T04:03:18.231811+00:00"
+    },
+    {
+      "id": "fea0043dc3b914e4",
+      "banque": "Banca Generali",
+      "scope": "national",
+      "count": null,
+      "confidence": 0.15,
+      "evidence": "Banca Generali est intégrée à l'opération via OPE, mais l'article ne cite aucun réseau d'agences en France ni aucune fermeture/regroupement d'agence.",
+      "url": "https://fr.euronews.com/business/2026/08/21/monte-dei-paschi-les-details-de-loffre-pour-banco-bpm-et-banca-generali",
+      "titre": "Monte dei Paschi : les détails de l'offre pour Banco BPM et Banca Generali",
+      "source": "euronews",
+      "date": "2026-08-21T10:07:06Z",
+      "created_at": "2026-08-22T04:03:18.232602+00:00"
     },
     {
       "id": "71701f697de2636b",
@@ -17103,6 +17168,19 @@
       "created_at": "2026-07-01T07:54:21.512420+00:00"
     },
     {
+      "id": "2237eab146312c29",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Canicule : voici l’heure idéale à laquelle il faut fermer ses volets pour garder sa maison au frais - CNews",
+      "extrait": "TITRE: Canicule : voici l’heure idéale à laquelle il faut fermer ses volets pour garder sa maison au frais - CNews SOURCE: Google News DATE: Wed, 24 Jun 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMiuAFBVV95cUxNeXJsQV9rWW1XUkR1bXdtRENJa0JTZkphRy11S3FOenZlT1RQYjJZeFdIc0tldDk4MFBScVJGZFpVb0s5bWNKNkQtMDN1YkFMMkVUWnVBVDVkOHpTbXkxNGlwNk04Y1FIOGthMUxQZzI0WVhtOWQzLUVFZzFoMkllNmUteEt0RXc4cVBQRFo0eUNBZTNIcWp0THNkQ0s3TmJXcDFCVXk5XzlxQkJxVDJBSnk1dGNJeVlv0gG-AUFVX3lxTE9ZVlpWekdqcVpCWTRFTHd",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNeXJsQV9rWW1XUkR1bXdtRENJa0JTZkphRy11S3FOenZlT1RQYjJZeFdIc0tldDk4MFBScVJGZFpVb0s5bWNKNkQtMDN1YkFMMkVUWnVBVDVkOHpTbXkxNGlwNk04Y1FIOGthMUxQZzI0WVhtOWQzLUVFZzFoMkllNmUteEt0RXc4cVBQRFo0eUNBZTNIcWp0THNkQ0s3TmJXcDFCVXk5XzlxQkJxVDJBSnk1dGNJeVlv0gG-AUFVX3lxTE9ZVlpWekdqcVpCWTRFTHdBNmIyYUpKeU1pbm5aelRzOFp5bm5ZRGZxYlNnTEZjNER0YXo3cmtCV3JCSUplQXExTnRSMVA3b3NEYmkzSTdtYi1WN01LSXVRSE43TlBobFZ3NE1MaXRjdXBKSGdiZzctMGZNN1JuQkhmTTZsYnBuR3UzNHFCN21NMHhnQmltV01XM3dha2MtT2s3MU0wYTR1aThjeTBBZHk1NndzWUN1eFpacmpySHc?oc=5",
+      "source": "Google News",
+      "date": "Wed, 24 Jun 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-22T04:02:41.682414+00:00"
+    },
+    {
       "id": "9c2f9fdb6ce434e4",
       "banque": "Société Générale",
       "departement": "",
@@ -17582,6 +17660,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-08-20T04:06:10.282532+00:00"
+    },
+    {
+      "id": "c50182e02804e23a",
+      "banque": "CCF",
+      "departement": "",
+      "titre": "\"Chaque ferme a son propre levain\" : l'histoire du Gwell, ce lait fermenté de vache Bretonne Pie noir qui vise une prestigieuse AOP - France 3 Régions",
+      "extrait": "TITRE: \"Chaque ferme a son propre levain\" : l'histoire du Gwell, ce lait fermenté de vache Bretonne Pie noir qui vise une prestigieuse AOP - France 3 Régions SOURCE: Google News DATE: Wed, 19 Aug 2026 05:00:03 GMT URL: https://news.google.com/rss/articles/CBMiswJBVV95cUxNZTFhbkE3ZC14WE9jY0hHRzBTaTlySWtaSW9yT1RPUHlVZ2ltSVoxZ1AyRFZjcFZ4T2pCcFcwSGdMODdSdzRBQks3VFgyU3FSTkxPaUdNRkJ2T1Z5Q0ZRSjBfaXI2SlhnV1hJenUtMnQtWklVVm13bllSMWtlZGFTTUlHWThlSUVia1AzZk9jbEJVeHFKSzNpYXJCeERZTURMMXhNc1pvX2t6LWo0VVZsSU9Z",
+      "url": "https://news.google.com/rss/articles/CBMiswJBVV95cUxNZTFhbkE3ZC14WE9jY0hHRzBTaTlySWtaSW9yT1RPUHlVZ2ltSVoxZ1AyRFZjcFZ4T2pCcFcwSGdMODdSdzRBQks3VFgyU3FSTkxPaUdNRkJ2T1Z5Q0ZRSjBfaXI2SlhnV1hJenUtMnQtWklVVm13bllSMWtlZGFTTUlHWThlSUVia1AzZk9jbEJVeHFKSzNpYXJCeERZTURMMXhNc1pvX2t6LWo0VVZsSU9ZVHRHdTg1NlhUTGUyYXhOWnZGMFpueXhFVzhHU1ItWmd3S2xlby14Y2YyQWVVMWR1VkFCU3AwVmdDYjFGa0J0TXBJbzlwNjdKT1RQWjl3TmJTaTNuSHBiakx6b3Z6NERhRncyQVhlRXE1QTNmQWlhNGJJbnRZaHdsVWxjQlZNeXhR?oc=5",
+      "source": "Google News",
+      "date": "Wed, 19 Aug 2026 05:00:03 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-22T04:02:47.874184+00:00"
     },
     {
       "id": "d3f0c7eb1f420533",
@@ -27867,6 +27958,19 @@
       "created_at": "2026-08-10T05:51:20.040497+00:00"
     },
     {
+      "id": "95f9a95471466b86",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Montpellier : ce qui sera ouvert et fermé le samedi 15 août - Echo des Tribunes",
+      "extrait": "TITRE: Montpellier : ce qui sera ouvert et fermé le samedi 15 août - Echo des Tribunes SOURCE: Google News DATE: Mon, 10 Aug 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMisgFBVV95cUxNb0J5TFJKVElKek9nTThmdkMtOUZIc0pTQ09EaVlZemw1XzhPb3JCcmxKRlE5X0FqRHRvNHI3dG8xSHJxVy0wb2gySFdtMzNDU19UOXRJS2h3VS1VX1h1Y1hHRW1tT3o5RTJSa3JIZVVPNHQwTEhPQnpReXRHQ2pSdTNIYmZ6d0ZNMzJLQ0Y2bko2d1RXVFJUbWdsTWlNdHJWUFY2NGFCa3B3U0x4T09KZ193?oc=5 <a href=\"https://news.google.com/rss/articles/CBMisgFBVV95cUxNb0J",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNb0J5TFJKVElKek9nTThmdkMtOUZIc0pTQ09EaVlZemw1XzhPb3JCcmxKRlE5X0FqRHRvNHI3dG8xSHJxVy0wb2gySFdtMzNDU19UOXRJS2h3VS1VX1h1Y1hHRW1tT3o5RTJSa3JIZVVPNHQwTEhPQnpReXRHQ2pSdTNIYmZ6d0ZNMzJLQ0Y2bko2d1RXVFJUbWdsTWlNdHJWUFY2NGFCa3B3U0x4T09KZ193?oc=5",
+      "source": "Google News",
+      "date": "Mon, 10 Aug 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-22T04:02:46.495397+00:00"
+    },
+    {
       "id": "24468b2f9328a578",
       "banque": "Société Générale",
       "departement": "",
@@ -29269,6 +29373,71 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:41:00.823060+00:00"
+    },
+    {
+      "id": "63641412f05cdf01",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "« 4 000 hectares resteront fermés » : quelles parties de la forêt de Fontainebleau vont rouvrir au public ? - Actu.fr",
+      "extrait": "TITRE: « 4 000 hectares resteront fermés » : quelles parties de la forêt de Fontainebleau vont rouvrir au public ? - Actu.fr SOURCE: Google News DATE: Fri, 21 Aug 2026 16:28:01 GMT URL: https://news.google.com/rss/articles/CBMi9gFBVV95cUxPMG5TMkFmRDUzRllyamZpZmthMkI1R1ZXelFKdnVoSkdKYXVDMkdLa3FxSDQ2OEhMdzVzamtYWjhpZmhFOVRxOUFVQnptMm9DTEFvR3hOX3dBcFRzT2JxQ19pcEc4UWU5MVJFb2FJaFRkU21YY2ZPQXFGUTNMSndMU2lDRWNjRWtPa0pjSUVyM0FhNlNSMEtfcnpDSGNaX0Z3T19QeGZDcWRHZFZuVWJmaUF2eFBGUjA4ek1qTXg0WkhLQlNicW5EX0hua",
+      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPMG5TMkFmRDUzRllyamZpZmthMkI1R1ZXelFKdnVoSkdKYXVDMkdLa3FxSDQ2OEhMdzVzamtYWjhpZmhFOVRxOUFVQnptMm9DTEFvR3hOX3dBcFRzT2JxQ19pcEc4UWU5MVJFb2FJaFRkU21YY2ZPQXFGUTNMSndMU2lDRWNjRWtPa0pjSUVyM0FhNlNSMEtfcnpDSGNaX0Z3T19QeGZDcWRHZFZuVWJmaUF2eFBGUjA4ek1qTXg0WkhLQlNicW5EX0huaThiX3RxUUd5V2Y0U3FFWFdYRmxEOGRFVEFpSUlnckx1Q21UdEw4X0g0bXc?oc=5",
+      "source": "Google News",
+      "date": "Fri, 21 Aug 2026 16:28:01 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-22T04:02:43.091058+00:00"
+    },
+    {
+      "id": "69b0e702d2e82292",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "\"Regrettable, mais on y gagnera\" : en Ille-et-Vilaine, ce bureau de poste ferme pour rouvrir dans un commerce - Actu.fr",
+      "extrait": "TITRE: \"Regrettable, mais on y gagnera\" : en Ille-et-Vilaine, ce bureau de poste ferme pour rouvrir dans un commerce - Actu.fr SOURCE: Google News DATE: Fri, 21 Aug 2026 10:00:02 GMT URL: https://news.google.com/rss/articles/CBMi-wFBVV95cUxQSFc5MGgwVDVpODd6S25ZVFc2NEhEdEpHNWhjX3lyTHBad1dHQ2xqaWpmeElERWJOME1RcklnQ1JwZFcyWC16R09PSjRpZ29OTExuLTJYTkhGdEk5RGJLeTZDUl83RDg5dWRna1hwWWdmTllyc3ZKRHBLd0FRN2NkZ3lDRHpRMGxYTUpzVVc3aXh0SURub3B4WWQ4ZjA0ODVuYUtpY0dzMG1OYkdrY3daZXNCNDROX0ZIZF9wdm14ZGRIVGQ2Q01KOGl",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQSFc5MGgwVDVpODd6S25ZVFc2NEhEdEpHNWhjX3lyTHBad1dHQ2xqaWpmeElERWJOME1RcklnQ1JwZFcyWC16R09PSjRpZ29OTExuLTJYTkhGdEk5RGJLeTZDUl83RDg5dWRna1hwWWdmTllyc3ZKRHBLd0FRN2NkZ3lDRHpRMGxYTUpzVVc3aXh0SURub3B4WWQ4ZjA0ODVuYUtpY0dzMG1OYkdrY3daZXNCNDROX0ZIZF9wdm14ZGRIVGQ2Q01KOGlhWTJ0dWk0eno0MldBRmNQQWhWTFhKQ3YxQmZiR0xlMVFUUER5ckF4QXFWbjZiRHUzZw?oc=5",
+      "source": "Google News",
+      "date": "Fri, 21 Aug 2026 10:00:02 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-22T04:02:38.196367+00:00"
+    },
+    {
+      "id": "69eb63206434ede7",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Malgré les propositions de solution, un service public historique ferme dans le village - Midi Libre",
+      "extrait": "TITRE: Malgré les propositions de solution, un service public historique ferme dans le village - Midi Libre SOURCE: Google News DATE: Fri, 21 Aug 2026 07:45:00 GMT URL: https://news.google.com/rss/articles/CBMi0AFBVV95cUxNTm9ia1pHUWhYQ2dvVGdpSHAtVFpkd2NPb0p0Vk05UXVFZ01LcmpqX3B2Y1JZdlhMbGY5N3ZNOTlzSDZYSUkxTUlWbXNFcjcyMDFpcndJbnQwZGR1WEhZN1dJU3pHWnlVVkZSTlZ4anB0MHBRMUE2Wmh4UGNRZWhURllNNnhkQ19uR2hYcDdVaUZTcjA2SGltNGItR2xHaXJTaFd6azJBcjFxZk5VWkVWVHZKY1JIWVF2eEhacDc1TDhIRUFIeWVROHFNMHQzWGpG?oc=5 <a h",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNTm9ia1pHUWhYQ2dvVGdpSHAtVFpkd2NPb0p0Vk05UXVFZ01LcmpqX3B2Y1JZdlhMbGY5N3ZNOTlzSDZYSUkxTUlWbXNFcjcyMDFpcndJbnQwZGR1WEhZN1dJU3pHWnlVVkZSTlZ4anB0MHBRMUE2Wmh4UGNRZWhURllNNnhkQ19uR2hYcDdVaUZTcjA2SGltNGItR2xHaXJTaFd6azJBcjFxZk5VWkVWVHZKY1JIWVF2eEhacDc1TDhIRUFIeWVROHFNMHQzWGpG?oc=5",
+      "source": "Google News",
+      "date": "Fri, 21 Aug 2026 07:45:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-22T04:02:33.999598+00:00"
+    },
+    {
+      "id": "292e0b9852a854d2",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Louvigné-du-Désert. La Poste ferme son agence historique , mais s'installe au Carrefour Express - lamanchelibre.fr",
+      "extrait": "TITRE: Louvigné-du-Désert. La Poste ferme son agence historique , mais s'installe au Carrefour Express - lamanchelibre.fr SOURCE: Google News DATE: Fri, 21 Aug 2026 06:00:00 GMT URL: https://news.google.com/rss/articles/CBMi1gFBVV95cUxQcV9oSHNNdE4ya0lQTjhTVFZUd00zNnlSRTB6Q2JQZHFvZVE2M2FqYmZKTjVjSGppZzVCU2tVNEwtb3hFbUdMXzRKdl9KWjVhNnpsaGpKR1FPWDFicGc2d2lPNUVtX2Q5Q1lPby10d1BGUFlxdmF0ZWVWeFVfc1dOMkJIZVM2bUZYQ2dseHRac3FMNlNzV1R6RXRZT0VLaHo0bDRlZDAyZ19sV3FQUEpsSUUxUkVWVmhlRWZZMVJiRHdmWmxRS3VleDE2c0o5",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQcV9oSHNNdE4ya0lQTjhTVFZUd00zNnlSRTB6Q2JQZHFvZVE2M2FqYmZKTjVjSGppZzVCU2tVNEwtb3hFbUdMXzRKdl9KWjVhNnpsaGpKR1FPWDFicGc2d2lPNUVtX2Q5Q1lPby10d1BGUFlxdmF0ZWVWeFVfc1dOMkJIZVM2bUZYQ2dseHRac3FMNlNzV1R6RXRZT0VLaHo0bDRlZDAyZ19sV3FQUEpsSUUxUkVWVmhlRWZZMVJiRHdmWmxRS3VleDE2c0o5VF83Yk92R25B?oc=5",
+      "source": "Google News",
+      "date": "Fri, 21 Aug 2026 06:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-22T04:02:35.675409+00:00"
+    },
+    {
+      "id": "661245c52bbe3223",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "La poste d'Aniane, près de Montpellier, va définitivement fermer ses portes - Actu.fr",
+      "extrait": "TITRE: La poste d'Aniane, près de Montpellier, va définitivement fermer ses portes - Actu.fr SOURCE: Google News DATE: Fri, 21 Aug 2026 04:06:01 GMT URL: https://news.google.com/rss/articles/CBMiqgFBVV95cUxQSXU5MVJWQVRPV2k0VXo0Tk5QWXJiWDNuTzRQb0Zia2hpUTN2VXVEaHNWNlJ0R0xHTUlrLU52dUx4b281Yzg3Y05LaHljWVktdDlEUkxOZWtabFRRRVhmVFpyQWJZalhFWnFEWmZ3aXdSaEIzWFlLUGJuVS1YaEJUdU5YbktUNDJKT18wMzM3TU9HQzdPeE1FWFBwQ1RmWEo4eG40ek5yVzVYUQ?oc=5 <a href=\"https://news.google.com/rss/articles/CBMiqgFBVV95cUxQSXU5MVJ",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQSXU5MVJWQVRPV2k0VXo0Tk5QWXJiWDNuTzRQb0Zia2hpUTN2VXVEaHNWNlJ0R0xHTUlrLU52dUx4b281Yzg3Y05LaHljWVktdDlEUkxOZWtabFRRRVhmVFpyQWJZalhFWnFEWmZ3aXdSaEIzWFlLUGJuVS1YaEJUdU5YbktUNDJKT18wMzM3TU9HQzdPeE1FWFBwQ1RmWEo4eG40ek5yVzVYUQ?oc=5",
+      "source": "Google News",
+      "date": "Fri, 21 Aug 2026 04:06:01 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-22T04:02:44.698132+00:00"
     },
     {
       "id": "9e70a9e86db1d4ab",
@@ -30896,6 +31065,58 @@
       "created_at": "2026-07-22T09:09:01.159244+00:00"
     },
     {
+      "id": "7f3f829a6f5bebc5",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Saint-Quentin-Fallavier. Reprise des permanences à l'espace Ma Ville Services",
+      "extrait": "TITRE: Saint-Quentin-Fallavier. Reprise des permanences à l'espace Ma Ville Services SOURCE: Le Progrès DATE: 2026-08-21T16:22:38Z URL: https://www.leprogres.fr/culture-loisirs/2026/08/21/reprise-des-permanences-a-l-espace-ma-ville-services Après sa fermeture estivale, l'espace Ma Ville Services accueillera de nouveau le public à partir du lundi 24 août. Situé au 11 rue du Lac, cet équipement de proximité permet aux habitants d'effectuer de nombreuses démarches administratives et d'accéder à dif",
+      "url": "https://www.leprogres.fr/culture-loisirs/2026/08/21/reprise-des-permanences-a-l-espace-ma-ville-services",
+      "source": "Le Progrès",
+      "date": "2026-08-21T16:22:38Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-22T04:03:04.881193+00:00"
+    },
+    {
+      "id": "e41358bf6d8192cd",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Bénin : l'or blanc s'impose en tête de la balance commerciale malgré le repli trimestriel",
+      "extrait": "TITRE: Bénin : l'or blanc s'impose en tête de la balance commerciale malgré le repli trimestriel SOURCE: Afrique-Sur7.fr DATE: 2026-08-21T12:52:57Z URL: https://www.afrique-sur7.fr/benin-lor-blanc-simpose-en-tete-de-la-balance-commerciale-malgre-le-repli-trimestriel Les statistiques du deuxième trimestre de l'exercice en cours affichent un recul conjoncturel de 18,4 % des exportations par rapport au trimestre précédent, tandis que le glissement annuel révèle un bond spectaculaire de 59,3 %. L'en",
+      "url": "https://www.afrique-sur7.fr/benin-lor-blanc-simpose-en-tete-de-la-balance-commerciale-malgre-le-repli-trimestriel",
+      "source": "Afrique-Sur7.fr",
+      "date": "2026-08-21T12:52:57Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-22T04:03:12.145051+00:00"
+    },
+    {
+      "id": "07996481786b732c",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Fallon, Kimmel, Colbert... pourquoi les rois du late night show ne font plus rêver l'Amérique ?",
+      "extrait": "TITRE: Fallon, Kimmel, Colbert... pourquoi les rois du late night show ne font plus rêver l'Amérique ? SOURCE: Les Inrockuptibles DATE: 2026-08-21T10:17:21Z URL: https://www.lesinrocks.com/societe/fallon-kimmel-colbert-pourquoi-les-rois-du-late-night-show-ne-font-plus-rever-lamerique-701073-21-08-2026/ Voilà exactement 72 ans, si l'on remonte aux débuts de Steve Allen aux commandes du Tonight Show de NBC, que l'image trône au sommet de la télévision américaine : un gentleman encravaté derrière u",
+      "url": "https://www.lesinrocks.com/societe/fallon-kimmel-colbert-pourquoi-les-rois-du-late-night-show-ne-font-plus-rever-lamerique-701073-21-08-2026/",
+      "source": "Les Inrockuptibles",
+      "date": "2026-08-21T10:17:21Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-22T04:03:15.011464+00:00"
+    },
+    {
+      "id": "b4bf7919158757c1",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Le nouveau snack-bar du Jardin exotique offre la plus belle vue de Monaco (et au-delà) : rencontre avec les deux gérants de cet établissement",
+      "extrait": "TITRE: Le nouveau snack-bar du Jardin exotique offre la plus belle vue de Monaco (et au-delà) : rencontre avec les deux gérants de cet établissement SOURCE: Nice-Matin DATE: 2026-08-21T04:45:04Z URL: https://www.nicematin.com/economie/commerce/le-nouveau-snack-bar-du-jardin-exotique-offre-la-plus-belle-vue-de-monaco-et-au-dela-rencontre-avec-les-deux-gerants-de-cet-etablissement-10708663 Si bien qu'en février 2026, lorsque la mairie publie au Journal de Monaco un appel à candidatures pour exploi",
+      "url": "https://www.nicematin.com/economie/commerce/le-nouveau-snack-bar-du-jardin-exotique-offre-la-plus-belle-vue-de-monaco-et-au-dela-rencontre-avec-les-deux-gerants-de-cet-etablissement-10708663",
+      "source": "Nice-Matin",
+      "date": "2026-08-21T04:45:04Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-22T04:03:30.392776+00:00"
+    },
+    {
       "id": "69cac9f32de4b45c",
       "banque": "CIC",
       "departement": "",
@@ -30946,6 +31167,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-08-21T04:09:24.320439+00:00"
+    },
+    {
+      "id": "2f00ac5b498c6f20",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Kevin Pedro vendu en Ligue 1, l'ASSE tremble",
+      "extrait": "TITRE: Kevin Pedro vendu en Ligue 1, l'ASSE tremble SOURCE: foot01.com DATE: 2026-08-20T14:00:02Z URL: https://www.foot01.com/st-etienne/kevin-pedro-vendu-en-ligue-1-lasse-tremble Bien lancée dans cette nouvelle saison de Ligue 2, l'ASSE s'apprête à connaître une fin de mercato mouvementée malgré tout. Plusieurs joueurs sont susceptibles de quitter le Forez d'ici à la fin du mois d'août, dont Kévin Pedro. Après une dernière saison en Ligue 2 conclue par un sprint final complètement raté, Saint-E",
+      "url": "https://www.foot01.com/st-etienne/kevin-pedro-vendu-en-ligue-1-lasse-tremble",
+      "source": "foot01.com",
+      "date": "2026-08-20T14:00:02Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-22T04:03:21.235235+00:00"
     },
     {
       "id": "5a8450a46e736205",
@@ -38202,6 +38436,136 @@
       "created_at": "2026-06-25T15:43:41.960961+00:00"
     },
     {
+      "id": "7387c0358277c653",
+      "banque": "Crédit Agricole",
+      "departement": "",
+      "titre": "avis sur ANAE excellence du Credit agricole",
+      "extrait": "TITRE: avis sur ANAE excellence du Credit agricole SOURCE: MoneyVox Actu DATE: 2026-08-22T01:33:18Z URL: https://www.moneyvox.fr/forums/fil/avis-sur-anae-excellence-du-credit-agricole.46242/ Je viens d'ouvrir il y a plus d'un mois, comme un novice béotien, et client fidèle, un contrat ANAE Excellence auprès de ma Banque Crédit Agricole pour un montant de 450000 Euros, via un transfert sans frais d'un contrat ancien Floripro qui ne contenait que 20000 Euros, auquel s'est donc ajouté 430000 Euros.",
+      "url": "https://www.moneyvox.fr/forums/fil/avis-sur-anae-excellence-du-credit-agricole.46242/",
+      "source": "MoneyVox Actu",
+      "date": "2026-08-22T01:33:18Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-22T04:02:56.587526+00:00"
+    },
+    {
+      "id": "c8b6ac69383aaa1c",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Un nouveau prix dissuasif pour Ibrahim Mbaye, le PSG rêve de la 3e meilleure vente de son histoire",
+      "extrait": "TITRE: Un nouveau prix dissuasif pour Ibrahim Mbaye, le PSG rêve de la 3e meilleure vente de son histoire SOURCE: Top mercato DATE: 2026-08-21T17:58:16Z URL: https://www.topmercato.com/2126991-un-nouveau-prix-dissuasif-pour-ibrahim-mbaye-le-psg-reve-de-la-3e-meilleure-vente-de-son-histoire/ Le Paris Saint-Germain compte réclamer une somme XXL pour son jeune attaquant Ibrahim Mbaye, sur les tablettes des Anglais de Liverpool à l'occasion de ce mercato estival. Barré la saison dernière par Désiré ",
+      "url": "https://www.topmercato.com/2126991-un-nouveau-prix-dissuasif-pour-ibrahim-mbaye-le-psg-reve-de-la-3e-meilleure-vente-de-son-histoire/",
+      "source": "Top mercato",
+      "date": "2026-08-21T17:58:16Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-22T04:03:00.106535+00:00"
+    },
+    {
+      "id": "325f7303296c08b5",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "PSG : Ibrahim Mbaye écarté, Liverpool refuse les 70 millions demandés",
+      "extrait": "TITRE: PSG : Ibrahim Mbaye écarté, Liverpool refuse les 70 millions demandés SOURCE: Senego.com - Actualité au Sénégal, toute actualité du jour DATE: 2026-08-21T17:05:43Z URL: https://senego.com/psg-ibrahim-mbaye-ecarte-liverpool-refuse-les-70-millions-demandes_1995892.html Le Paris Saint-Germain réclame 70 millions d'euros pour laisser partir Ibrahim Mbaye. Cette exigence refroidit les clubs intéressés par l'attaquant international sénégalais, dont la valeur est estimée autour de 50 millions d'",
+      "url": "https://senego.com/psg-ibrahim-mbaye-ecarte-liverpool-refuse-les-70-millions-demandes_1995892.html",
+      "source": "Senego.com - Actualité au Sénégal, toute actualité du jour",
+      "date": "2026-08-21T17:05:43Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-22T04:03:01.550698+00:00"
+    },
+    {
+      "id": "f4cbfd244cefbc4d",
+      "banque": "Banque Populaire",
+      "departement": "",
+      "titre": "Journal des Transferts : l'OM fixe ses prix, un deal XXL pour Savinho, la mise au point de Benzema...",
+      "extrait": "TITRE: Journal des Transferts : l'OM fixe ses prix, un deal XXL pour Savinho, la mise au point de Benzema... SOURCE: Maxifoot DATE: 2026-08-21T16:02:01Z URL: https://www.maxifoot.fr/football/article-65734.htm L'OM fixe ses prix, un deal XXL pour Savinho, la mise au point de Benzema, la Roma freine pour Fofana, Liverpool s'intéresse à Endrick... Voici le Top 5 des gros dossiers mercato du jour à ne pas manquer. Découvrez aussi le Télégramme Foot Transfert, pour ne rien rater de l'actu de ces 24 h",
+      "url": "https://www.maxifoot.fr/football/article-65734.htm",
+      "source": "Maxifoot",
+      "date": "2026-08-21T16:02:01Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-22T04:03:06.718320+00:00"
+    },
+    {
+      "id": "16ac0118096a1927",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Égypte : 658 millions $ pour transformer le phosphate en moteur d'exportations",
+      "extrait": "TITRE: Égypte : 658 millions $ pour transformer le phosphate en moteur d'exportations SOURCE: Agence Ecofin DATE: 2026-08-21T15:11:51Z URL: https://www.agenceecofin.com/actualites/2108-140961-egypte-658-millions-pour-transformer-le-phosphate-en-moteur-dexportations (Agence Ecofin) - 3e détenteur mondial de réserves de phosphate, l'Égypte veut accélérer la transformation locale de cette ressource. Le nouveau complexe permettra de produire de l'acide phosphorique, un produit intermédiaire à forte ",
+      "url": "https://www.agenceecofin.com/actualites/2108-140961-egypte-658-millions-pour-transformer-le-phosphate-en-moteur-dexportations",
+      "source": "Agence Ecofin",
+      "date": "2026-08-21T15:11:51Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-22T04:03:08.923892+00:00"
+    },
+    {
+      "id": "77e09591c54a9610",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "L'OM se penche sur Cameron Puertas",
+      "extrait": "TITRE: L'OM se penche sur Cameron Puertas SOURCE: Foot Mercato : Info Transferts Football - Actu Foot Transfert DATE: 2026-08-21T13:09:13Z URL: https://www.footmercato.net/a1025135391604510156-lom-se-penche-sur-cameron-puertas Toujours en quête de renforts pour son milieu de terrain, l'Olympique de Marseille multiplie les pistes. Selon nos informations, le profil de Cameron Puertas plaît énormément à la direction phocéenne, qui espère boucler un prêt dans la dernière ligne droite du mercato. Le ",
+      "url": "https://www.footmercato.net/a1025135391604510156-lom-se-penche-sur-cameron-puertas",
+      "source": "Foot Mercato : Info Transferts Football - Actu Foot Transfert",
+      "date": "2026-08-21T13:09:13Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-22T04:03:10.491174+00:00"
+    },
+    {
+      "id": "486b92e4cb8ec33d",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Football: cinq pépites africaines à suivre cette saison en Ligue 1",
+      "extrait": "TITRE: Football: cinq pépites africaines à suivre cette saison en Ligue 1 SOURCE: RFI DATE: 2026-08-21T09:37:53Z URL: https://www.rfi.fr/fr/afrique-foot/20260821-football-cinq-p%C3%A9pites-africaines-%C3%A0-suivre-cette-saison-en-ligue-1 Patrick Zabi (19 ans, Côte d'Ivoire, Paris FC) Il y a plusieurs façons d'attirer les regards sur soi. Devenir le plus gros transfert de l'histoire de son club en est une. C'est le cas de Patrick Zabi, qui a coûté 25 millions d'euros au Paris FC. Le club de la ca",
+      "url": "https://www.rfi.fr/fr/afrique-foot/20260821-football-cinq-p%C3%A9pites-africaines-%C3%A0-suivre-cette-saison-en-ligue-1",
+      "source": "RFI",
+      "date": "2026-08-21T09:37:53Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-22T04:03:19.668271+00:00"
+    },
+    {
+      "id": "639dd7a7443d275a",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Mercato - Le Stade Rennais pense à un attaquant aux 2 buts en 30 matchs pour remplacer Breel Embolo",
+      "extrait": "TITRE: Mercato - Le Stade Rennais pense à un attaquant aux 2 buts en 30 matchs pour remplacer Breel Embolo SOURCE: Top mercato DATE: 2026-08-21T08:11:41Z URL: https://www.topmercato.com/2126807-mercato-le-stade-rennais-pense-a-un-attaquant-aux-2-buts-en-30-matchs-pour-remplacer-breel-embolo/ Alors que Breel Embolo est un partant probable du Stade Rennais, le club breton s'intéresse à un attaquant, qui sort d'une saison difficile pour le remplacer. Cette semaine, Rennes a ouvert un loft avec 3 in",
+      "url": "https://www.topmercato.com/2126807-mercato-le-stade-rennais-pense-a-un-attaquant-aux-2-buts-en-30-matchs-pour-remplacer-breel-embolo/",
+      "source": "Top mercato",
+      "date": "2026-08-21T08:11:41Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-22T04:03:22.968999+00:00"
+    },
+    {
+      "id": "f50e526d57dfb46a",
+      "banque": "LCL",
+      "departement": "",
+      "titre": "Les infos du jour : Pablo Garcia vers l'Angleterre, Touré pari nantais, Cathro nouveau renfort ? - But! Football Club",
+      "extrait": "TITRE: Les infos du jour : Pablo Garcia vers l'Angleterre, Touré pari nantais, Cathro nouveau renfort ? - But! Football Club SOURCE: But! Football Club DATE: 2026-08-21T08:01:18Z URL: https://www.butfootballclub.fr/1692212-infos-du-jour-2026-08-21/ Proposé à l'OM, Lens, Rennes, OL, LOSC ou encore l'ASSE, le jeune ailier espagnol Pablo Garcia du Betis devrait finalement rejoindre Hull City. Malgré son potentiel, aucun club français n'a concrétisé l'intérêt, laissant filer une recrue prometteuse v",
+      "url": "https://www.butfootballclub.fr/1692212-infos-du-jour-2026-08-21/",
+      "source": "But! Football Club",
+      "date": "2026-08-21T08:01:18Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-22T04:03:26.334261+00:00"
+    },
+    {
+      "id": "e8aee98ad876b3ba",
+      "banque": "Banque Populaire",
+      "departement": "",
+      "titre": "Mercato : l'OL aurait à l'œil un ailier néerlandais",
+      "extrait": "TITRE: Mercato : l'OL aurait à l'œil un ailier néerlandais SOURCE: Olympique & Lyonnais DATE: 2026-08-21T07:25:00Z URL: https://www.olympique-et-lyonnais.com/mercato-lol-aurait-a-loeil-un-ailier-neerlandais,405280.html Ailier gauche du KV Mechelen, Myron van Brederode brille en ce début de saison. L'OL l'aurait inscrit sur ses tablettes. Après ses neuf buts et six passes décisives en championnat la saison passée, Myron van Brederode est reparti sur de bonnes bases en 2026-2027. L'ailier du KV Me",
+      "url": "https://www.olympique-et-lyonnais.com/mercato-lol-aurait-a-loeil-un-ailier-neerlandais,405280.html",
+      "source": "Olympique & Lyonnais",
+      "date": "2026-08-21T07:25:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-22T04:03:28.294359+00:00"
+    },
+    {
       "id": "3a06eba9c95a042a",
       "banque": "Société Générale",
       "departement": "",
@@ -42622,6 +42986,19 @@
       "created_at": "2026-07-25T06:01:56.357609+00:00"
     },
     {
+      "id": "0fcce800c77e9b35",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "\"Je trouve ça déplorable\" : la fermeture de ce bureau de poste indigne les habitants, le maire dénonce le silence de La Poste - France 3 Régions",
+      "extrait": "Article France 3 Régions sur « la fermeture de ce bureau de poste » et réaction du maire, sans commune ni adresse dans l’extrait fourni.",
+      "url": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxNQ19xNmdLVFgzczZXRVNzbUo5S1FFa1B1MFBWNVZLSXhlcjBBdThHVW1mUkliVDVocVBUVUVNZFZadmJhMjNJRlBlZkNBVEhvblRESmNNaTVFV21vREMybGVRYVdTN21yamo5M0pqWVl6ODM1ZjI3aklXYVhSWl83QnRRZzZlZDZTNzdZTkktY29CTThDNDlOWXBiVnlRblNIa3dlWUpnT0tNdnZWYm40YmcyNXFXTk9xSUdsakpjZEJNN1ItWlJ1NVBXQl9hRnFvX2ZMZ1RsWjVtcUJUa0V1bUZWU2RNb0lJdjFQbVZub0tNY2lQa1NMbk9GYndxU0lWLVI0aWJXTUIzTU9Oc2J6Y0JJSmNHc1VyMU9Fb2pKbUtGM04wZUFvcQ?oc=5",
+      "source": "Google News",
+      "date": "Fri, 21 Aug 2026 04:55:01 GMT",
+      "score": 1,
+      "raison": "signaux: vague(La Poste,unknown,count=None)",
+      "created_at": "2026-08-22T04:02:40.351593+00:00"
+    },
+    {
       "id": "dc8899f9bca0449a",
       "banque": "CIC",
       "departement": "",
@@ -42685,6 +43062,19 @@
       "score": 1,
       "raison": "signaux: vague(unknown,regional,count=None)",
       "created_at": "2026-08-04T06:10:34.624514+00:00"
+    },
+    {
+      "id": "f5ad6e112dfbea86",
+      "banque": "Banco BPM",
+      "departement": "",
+      "titre": "Monte dei Paschi : les détails de l'offre pour Banco BPM et Banca Generali",
+      "extrait": "Article évoque une inquiétude « d'un éventuel transfert d'une grande partie des agences à Unipol-BPER » à propos de Mps/Banco Bpm, sans détails de communes ni annonce de fermetures en France. | L'hypothèse d'un changement de contrôle de Mps (passage sous Intesa Sanpaolo) est associée à un risque de « transfert d'une grande partie des agences » et « réduction des effectifs » (sans fermer d'agence bancaire en France nommée). | Le texte mentionne Unipol-BPER comme bénéficiaire potentiel d'un « tran",
+      "url": "https://fr.euronews.com/business/2026/08/21/monte-dei-paschi-les-details-de-loffre-pour-banco-bpm-et-banca-generali",
+      "source": "euronews",
+      "date": "2026-08-21T10:07:06Z",
+      "score": 1,
+      "raison": "signaux: vague(Banco BPM,national,count=None); vague(Mps,national,count=None); vague(Unipol-BPER,national,count=None); vague(Banca Generali,national,count=None)",
+      "created_at": "2026-08-22T04:03:18.233521+00:00"
     },
     {
       "id": "499e6ab2aae81693",
