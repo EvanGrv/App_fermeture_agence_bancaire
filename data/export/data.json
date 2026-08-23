@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T04:13:20.999735+00:00",
+  "generated_at": "2026-08-23T04:18:32.420953+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -498,7 +498,7 @@
       "nom": "Mayenne",
       "region": "Pays de la Loire",
       "count": 0,
-      "total_agences": 46,
+      "total_agences": 47,
       "precise_count": 0,
       "unlocated_count": 0,
       "estimated_count": 0
@@ -578,11 +578,11 @@
     "62": {
       "nom": "Pas-de-Calais",
       "region": "Hauts-de-France",
-      "count": 9,
+      "count": 10,
       "total_agences": 212,
-      "precise_count": 9,
+      "precise_count": 10,
       "unlocated_count": 0,
-      "estimated_count": 9
+      "estimated_count": 10
     },
     "63": {
       "nom": "Puy-de-Dôme",
@@ -1009,9 +1009,9 @@
     "62": {
       "departement": "62",
       "nom": "Pas-de-Calais",
-      "precise_count": 9,
+      "precise_count": 10,
       "unlocated_count": 0,
-      "estimated_count": 9,
+      "estimated_count": 10,
       "department_signal_count": 0,
       "signals": []
     },
@@ -1819,8 +1819,8 @@
     },
     {
       "region": "Hauts-de-France",
-      "articles": 26,
-      "fermetures": 10,
+      "articles": 27,
+      "fermetures": 11,
       "projets": 5,
       "fusions": 0,
       "types": [
@@ -9860,6 +9860,47 @@
         "source": "SIRENE"
       },
       "region": "Bourgogne-Franche-Comté"
+    },
+    {
+      "id": "615ff93ad87634d9",
+      "banque": "La Banque Postale",
+      "commune": "Beussent",
+      "code_insee": "62123",
+      "departement": "62",
+      "type": "fermeture",
+      "date_annonce": "2026-08-22",
+      "date_fermeture": "2026-08-22",
+      "statut": "rumeur",
+      "statut_temporel": "deja_fermee",
+      "date_fermeture_approx": 1,
+      "fiabilite": 2,
+      "lat": 50.559332,
+      "lon": 1.812288,
+      "citation": "« La poste de Beussent va fermer… » (article parle d’une fermeture de « La poste » à Beussent, sans préciser explicitement qu’il s’agit du point bancaire La Banque Postale / d’un conseiller bancaire).",
+      "adresse": null,
+      "agence_localisation": "La Poste de Beussent",
+      "commune_originale": null,
+      "service_impact": "conversion_ap",
+      "point_postal_avant": "Bureau de Poste",
+      "point_postal_apres": "Agence postale communale",
+      "postal_point_id": "11490A",
+      "evidence_level": "presse+référentiel",
+      "created_at": "2026-08-23T04:07:49.775974+00:00",
+      "sources": [
+        {
+          "url": "https://www.lavoixdunord.fr/1730822/article/2026-08-22/la-poste-de-beussent-va-fermer-il-faudra-desormais-se-rendre-au-cafe-restaurant",
+          "titre": "La poste de Beussent va fermer, il faudra désormais se rendre... au café-restaurant du village",
+          "source": "lavoixdunord.fr",
+          "date": "2026-08-22",
+          "tier": "B"
+        }
+      ],
+      "controle_sirene": {
+        "etat_administratif": null,
+        "siret": null,
+        "source": "SIRENE"
+      },
+      "region": "Hauts-de-France"
     }
   ],
   "closures_unlocated": [
@@ -10869,7 +10910,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-22T03:59:49.391959+00:00"
+      "created_at": "2026-08-23T04:04:48.276769+00:00"
     },
     {
       "id": "50895c042a984b7d",
@@ -10905,7 +10946,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 04:46:02 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-22T03:59:49.054928+00:00"
+      "created_at": "2026-08-23T04:04:47.947365+00:00"
     },
     {
       "id": "8c6a0cad14626d6f",
@@ -12240,6 +12281,24 @@
       "created_at": "2026-08-10T05:50:58.337050+00:00"
     },
     {
+      "id": "fee3244edcaa82af",
+      "banque": "La Banque Postale",
+      "commune": "Boulogne-sur-Mer",
+      "departement": "62",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "Fermeture du bureau de poste de Bréquerecque : « Une décision regrettable » selon la mairie - La Voix du Nord",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQTW1iMHpXZm5MbVp3ZjFMTHRGQnZaMXVNWkdVYlhtbmZlT0hfVUtmMlFkRTZWSmp4cjlyZzdZcGJSeWY4UHRxWmVVbGUtd3hOaDBrNGZJdGZVeWxfclJtMVlIazN2UkxtQzdYVkZ1N2hLaVZSN1hpSWJYWi1sdXhZUVpWWmVFaFlVMmJLbEJGWS1jbDFkWnkwY0I3UTg0TUZiSUV4SFlQQ1lMbFRkSURKYTAxdS1wTFdUbWJ6QVJ1NXl0d3VTd240MnB0Y3VNUQ?oc=5",
+      "titre": "Fermeture du bureau de poste de Bréquerecque : « Une décision regrettable » selon la mairie - La Voix du Nord",
+      "source": "Google News",
+      "date": "Sat, 22 Aug 2026 14:57:51 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-08-23T04:07:32.416771+00:00"
+    },
+    {
       "id": "b747bae7745028df",
       "banque": "La Banque Postale",
       "commune": "Avessac",
@@ -13209,7 +13268,7 @@
       "source": "Google News",
       "date": "Fri, 20 Jun 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-22T03:59:54.761453+00:00"
+      "created_at": "2026-08-23T04:04:53.723148+00:00"
     },
     {
       "id": "b70960ea48a1a247",
@@ -13335,7 +13394,7 @@
       "source": "Google News",
       "date": "Fri, 10 Jul 2026 10:12:00 GMT",
       "raison": "garde entrée/sortie: département source 44 incompatible avec la sortie 974",
-      "created_at": "2026-08-22T04:00:08.990006+00:00"
+      "created_at": "2026-08-23T04:05:08.291090+00:00"
     },
     {
       "id": "8c646081e1d69e81",
@@ -13515,7 +13574,7 @@
       "source": "Google News",
       "date": "Fri, 03 Jan 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-22T03:59:48.681920+00:00"
+      "created_at": "2026-08-23T04:04:47.620827+00:00"
     },
     {
       "id": "411db107f70f2387",
@@ -13588,6 +13647,24 @@
       "date": "Fri, 01 Aug 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
       "created_at": "2026-07-27T07:56:36.407534+00:00"
+    },
+    {
+      "id": "f117ac7bd0166d0d",
+      "banque": "La Banque Postale",
+      "commune": "Boulogne-sur-Mer",
+      "departement": "62",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "Fermeture du bureau de poste de Bréquerecque",
+      "url": "https://www.lavoixdunord.fr/1730944/article/2026-08-22/fermeture-du-bureau-de-poste-de-brequerecque-une-decision-regrettable-selon-la",
+      "titre": "Fermeture du bureau de poste de Bréquerecque",
+      "source": "lavoixdunord.fr",
+      "date": "2026-08-22",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-08-23T04:07:47.621178+00:00"
     },
     {
       "id": "30bcafb6c6ea23d6",
@@ -16503,6 +16580,19 @@
       "score": 4,
       "raison": "signaux: dept(Crédit Agricole,Lot,count=None,communes=)",
       "created_at": "2026-07-02T07:06:46.865370+00:00"
+    },
+    {
+      "id": "540d1f9e7f0c8a97",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Grève à La Poste de Léré : un rassemblement organisé ce mercredi 26 août pour le 100e jour de mobilisation des facteurs",
+      "extrait": "Le conflit social s'enracine au bureau de Poste de Léré. En grève depuis le 19 mai dernier, les quatre facteurs de la commune franchissent un cap symbolique ce mercredi 26 août : celui des 100 jours de mobilisation. Pour marquer ce cap symbolique et interpeller la direction comme les usagers, un rassemblement est organisé à partir de 10 heures devant le bureau de Poste, situé à proximité de la mairie. Une restructuration au cœur des tensions À l'origine de ce mouvement de contestation figure un ",
+      "url": "https://www.leberry.fr/lere-18240/economie/greve-a-la-poste-de-lere-un-rassemblement-organise-ce-mercredi-pour-le-100e-jour-de-mobilisation-des-facteurs_15035258/",
+      "source": "LeBerry.fr",
+      "date": "2026-08-22T11:59:00Z",
+      "score": 4,
+      "raison": "score préfiltre bas (-2)",
+      "created_at": "2026-08-23T04:07:58.860705+00:00"
     },
     {
       "id": "917178345294abe7",
@@ -25709,6 +25799,32 @@
       "created_at": "2026-06-25T15:43:52.601295+00:00"
     },
     {
+      "id": "43ccc9a6ec10f365",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Elle a fermé ses portes début août, sans crier gare : La Poste dans le quartier de Bréquereque, c’est fini - La Voix du Nord",
+      "extrait": "TITRE: Elle a fermé ses portes début août, sans crier gare : La Poste dans le quartier de Bréquereque, c’est fini - La Voix du Nord SOURCE: Google News DATE: Sat, 22 Aug 2026 10:16:35 GMT URL: https://news.google.com/rss/articles/CBMizAFBVV95cUxQclozRDNqSDlJWjVId2F5VHRNalB3UkVZTTRyc3RFc25UTTdHbS1xbzVFTlpwaG1yMlUwNjZDYXFESHJ1UkJvQTZ5cUVzRWVMRmg4akJxa1c1bGpoZFQ4RUNRTHVhd3NlRlV1MWctYUx4QnR5Xzh0b2JmdUFqNk1LYXBpX05TRzlwanZVclJhTUlUZEhLYVR0bWtrQzh0S0VKY0Vlek10RTBuOGVxTWJsX2lYWVcwSDhCT0s0eW9Pc0hkeWRobV",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQclozRDNqSDlJWjVId2F5VHRNalB3UkVZTTRyc3RFc25UTTdHbS1xbzVFTlpwaG1yMlUwNjZDYXFESHJ1UkJvQTZ5cUVzRWVMRmg4akJxa1c1bGpoZFQ4RUNRTHVhd3NlRlV1MWctYUx4QnR5Xzh0b2JmdUFqNk1LYXBpX05TRzlwanZVclJhTUlUZEhLYVR0bWtrQzh0S0VKY0Vlek10RTBuOGVxTWJsX2lYWVcwSDhCT0s0eW9Pc0hkeWRobVJzWmplZEg?oc=5",
+      "source": "Google News",
+      "date": "Sat, 22 Aug 2026 10:16:35 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-23T04:07:39.105314+00:00"
+    },
+    {
+      "id": "63de4de076c2cdef",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "La poste de Beussent va fermer, il faudra désormais se rendre... au café-restaurant du village - La Voix du Nord",
+      "extrait": "TITRE: La poste de Beussent va fermer, il faudra désormais se rendre... au café-restaurant du village - La Voix du Nord SOURCE: Google News DATE: Sat, 22 Aug 2026 08:02:47 GMT URL: https://news.google.com/rss/articles/CBMizwFBVV95cUxOeXhuVzlFUjd2TDFSM1psRkZOOGNJU3JidGpJZlVsUEZwSTNveE9EZmtJc2JhRnFLX0pUZVkzcVpQVEpScEJSOEFFNHZvNzVrUFdjS01ZVGlGNkZQN3NUR0dKeUd5Qy1ETDdsYnI5VkdYM2hzaTlwWFVQdExJUW94dHV5UUc3ZkRQcGtvOV9iZ0RnYUxjeVV1b2lsT0FMdjQtVzRHYkRodlowWGtNVG1NVWZGYnJ1WjRMYzBBTWFqc194TnBNei1iR2tibWVSak",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOeXhuVzlFUjd2TDFSM1psRkZOOGNJU3JidGpJZlVsUEZwSTNveE9EZmtJc2JhRnFLX0pUZVkzcVpQVEpScEJSOEFFNHZvNzVrUFdjS01ZVGlGNkZQN3NUR0dKeUd5Qy1ETDdsYnI5VkdYM2hzaTlwWFVQdExJUW94dHV5UUc3ZkRQcGtvOV9iZ0RnYUxjeVV1b2lsT0FMdjQtVzRHYkRodlowWGtNVG1NVWZGYnJ1WjRMYzBBTWFqc194TnBNei1iR2tibWVSakk?oc=5",
+      "source": "Google News",
+      "date": "Sat, 22 Aug 2026 08:02:47 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-23T04:07:37.442620+00:00"
+    },
+    {
       "id": "5299e7e46e325dd3",
       "banque": "Société Générale",
       "departement": "",
@@ -26838,6 +26954,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-07-31T06:44:52.563341+00:00"
+    },
+    {
+      "id": "520bcda5a90a2c38",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Vandalisme, dinosaure condamné… Ce grand parc de Toulon va être fermé pour rénovation - Nice-Matin",
+      "extrait": "TITRE: Vandalisme, dinosaure condamné… Ce grand parc de Toulon va être fermé pour rénovation - Nice-Matin SOURCE: Google News DATE: Mon, 27 Jul 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMizgFBVV95cUxPdldHRkd1MmxMN0V4RG5DN3hFTGhaYmZLWXhCM2Z2U0VJSzdiSjBXaHVhREY2SVAza0xvTzhaUGNpeks0a09Xb1VuYXB2bjBZRTUwQzdCcGxhUUFfakhVM1QxSjFfcmY0UmJVSG9uQXo3QTVXZGtwTzV2Ty0wQi02Q3U2enJPWUZySXo3WjhCcTh3SUxUOElWb1RYMk1kVVNqN3RyUDU1czMtbEpoNDFiV3FaYk5PUDBBZ1dTR0s2M3JDQjFwdXlyM0p6ZFB5Zw?oc=5 <a href=",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPdldHRkd1MmxMN0V4RG5DN3hFTGhaYmZLWXhCM2Z2U0VJSzdiSjBXaHVhREY2SVAza0xvTzhaUGNpeks0a09Xb1VuYXB2bjBZRTUwQzdCcGxhUUFfakhVM1QxSjFfcmY0UmJVSG9uQXo3QTVXZGtwTzV2Ty0wQi02Q3U2enJPWUZySXo3WjhCcTh3SUxUOElWb1RYMk1kVVNqN3RyUDU1czMtbEpoNDFiV3FaYk5PUDBBZ1dTR0s2M3JDQjFwdXlyM0p6ZFB5Zw?oc=5",
+      "source": "Google News",
+      "date": "Mon, 27 Jul 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-23T04:07:35.574593+00:00"
     },
     {
       "id": "8d0617338b437b45",
@@ -29440,6 +29569,19 @@
       "created_at": "2026-08-22T04:02:44.698132+00:00"
     },
     {
+      "id": "d36b0b1278e8ee80",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Succès de la structure gonflable au centre aquatique de Saint-Georges-de-Mons avant sa fermeture - La Montagne",
+      "extrait": "TITRE: Succès de la structure gonflable au centre aquatique de Saint-Georges-de-Mons avant sa fermeture - La Montagne SOURCE: Google News DATE: Fri, 21 Aug 2026 03:58:00 GMT URL: https://news.google.com/rss/articles/CBMigAJBVV95cUxNSGt6RVN3d1NRXzdGQlVEZk1OR1E4b1BRRXNYMm5SOVpqTW9RS1BNQTlXT3VodVNQcnZKTjk5RlQtUHZGLVJISVd2UGZLRUMtaC0wNDYwZVZSd09BWVZrTzZ2amthT0tNZnNrZXBvcklXYkJseGVYdk5IR2YzZ2JQZUM2SzA4SDFLVllpWmZiU1NOVWwwb3hIdzBFVUszaTNtZWtWcU5lTi12Vlp2UHlaZlBvdEM0dDVvckV4by1wSXl5WUpNdm1FY05SZ3dRNUlu",
+      "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNSGt6RVN3d1NRXzdGQlVEZk1OR1E4b1BRRXNYMm5SOVpqTW9RS1BNQTlXT3VodVNQcnZKTjk5RlQtUHZGLVJISVd2UGZLRUMtaC0wNDYwZVZSd09BWVZrTzZ2amthT0tNZnNrZXBvcklXYkJseGVYdk5IR2YzZ2JQZUM2SzA4SDFLVllpWmZiU1NOVWwwb3hIdzBFVUszaTNtZWtWcU5lTi12Vlp2UHlaZlBvdEM0dDVvckV4by1wSXl5WUpNdm1FY05SZ3dRNUluLUJfMjBOa1lfaUtibV9KWkJ3ZHRJOTdXbUJRVWdwS3l4WktkZFIwSXd1OXdVN1Qt?oc=5",
+      "source": "Google News",
+      "date": "Fri, 21 Aug 2026 03:58:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-23T04:07:40.870095+00:00"
+    },
+    {
       "id": "9e70a9e86db1d4ab",
       "banque": "La Banque Postale",
       "departement": "",
@@ -30363,6 +30505,19 @@
       "created_at": "2026-08-07T05:09:37.231813+00:00"
     },
     {
+      "id": "e33281d462f4e9fd",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Renault supprime 650 postes au Technocentre de Guyancourt, site le plus touché en France - InfosYvelines",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMimgFBVV95cUxPQVBwSGg0QU5ma3dZWjhoa3Z3cDdlczhJMkRIVGNVaXh3UjVERlRITEpSekhZQVlqdXQxRkFoVW1xaTNsTkRHYW9YNWtVd19OdzlNaGRoR1cwVVNaa200Mk1tUTNZZXNURjNQRm1nNVQ4Q21aS0ZFLUVkaTRob21KejFxNTU2WFBQa1FNbmp1dzJBaF9td1EyQ0Z3?oc=5\" target=\"_blank\">Renault supprime 650 postes au Technocentre de Guyancourt, site le plus touché en France</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">InfosYvelines</font>",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPQVBwSGg0QU5ma3dZWjhoa3Z3cDdlczhJMkRIVGNVaXh3UjVERlRITEpSekhZQVlqdXQxRkFoVW1xaTNsTkRHYW9YNWtVd19OdzlNaGRoR1cwVVNaa200Mk1tUTNZZXNURjNQRm1nNVQ4Q21aS0ZFLUVkaTRob21KejFxNTU2WFBQa1FNbmp1dzJBaF9td1EyQ0Z3?oc=5",
+      "source": "Google News",
+      "date": "Fri, 10 Jul 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "score préfiltre bas (-2)",
+      "created_at": "2026-08-23T04:07:41.213156+00:00"
+    },
+    {
       "id": "89e4b871933c1bc4",
       "banque": "La Banque Postale",
       "departement": "",
@@ -31063,6 +31218,110 @@
       "score": 3,
       "raison": "fermeture non publiée: hors fenêtre temporelle",
       "created_at": "2026-07-22T09:09:01.159244+00:00"
+    },
+    {
+      "id": "b88e7821cfb4e160",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "PSG : Un défenseur portugais XXL comme dernier renfort",
+      "extrait": "TITRE: PSG : Un défenseur portugais XXL comme dernier renfort SOURCE: foot01.com DATE: 2026-08-22T17:35:00Z URL: https://www.foot01.com/paris/psg-un-defenseur-portugais-xxl-comme-dernier-renfort Le mercato du PSG n'est pas terminé. Et si Luis Campos a pour l'instant travaillé sur le secteur offensif, à l'exception de la signature de Lucas Digne, il pourrait convaincre un nouveau joueur portugais de rejoindre les champions d'Europe avant le 1er septembre. Avec Mika Godts, Maghnes Akliouche et Fer",
+      "url": "https://www.foot01.com/paris/psg-un-defenseur-portugais-xxl-comme-dernier-renfort",
+      "source": "foot01.com",
+      "date": "2026-08-22T17:35:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-23T04:07:56.211137+00:00"
+    },
+    {
+      "id": "8afae9652904eefb",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "L'OM craint le pire pour l'avenir d'Amine Gouiri !",
+      "extrait": "TITRE: L'OM craint le pire pour l'avenir d'Amine Gouiri ! SOURCE: Foot Mercato : Info Transferts Football - Actu Foot Transfert DATE: 2026-08-22T07:48:49Z URL: https://www.footmercato.net/a678704802199302328-lom-craint-le-pire-pour-amine-gouiri Auteur d'un doublé lors de la démonstration de l'OM face à Strasbourg (4-0), l'attaquant algérien semble revivre depuis ses retrouvailles avec Bruno Genesio. Une performance qui pourrait aussi accélerer son départ... L'OM ne pouvait rêver meilleure entrée",
+      "url": "https://www.footmercato.net/a678704802199302328-lom-craint-le-pire-pour-amine-gouiri",
+      "source": "Foot Mercato : Info Transferts Football - Actu Foot Transfert",
+      "date": "2026-08-22T07:48:49Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-23T04:08:04.117599+00:00"
+    },
+    {
+      "id": "06fa4fb34e34fcf2",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Un \" pays tiers \" sollicité pour rendre visite à des prisonniers arméniens en Azerbaïdjan - Nouvelles d'Arménie en Ligne - Toute l'actualité sur le monde arménien",
+      "extrait": "TITRE: Un \" pays tiers \" sollicité pour rendre visite à des prisonniers arméniens en Azerbaïdjan - Nouvelles d'Arménie en Ligne - Toute l'actualité sur le monde arménien SOURCE: Nouvelles d'Arménie DATE: 2026-08-22T06:30:19Z URL: https://www.armenews.com/un-pays-tiers-sollicite-pour-rendre-visite-a-des-prisonniers-armeniens-en-azerbaidjan/ L'Arménie a demandé à un pays tiers d'envoyer des diplomates rendre visite à des prisonniers arméniens détenus en Azerbaïdjan, a déclaré vendredi le ministère",
+      "url": "https://www.armenews.com/un-pays-tiers-sollicite-pour-rendre-visite-a-des-prisonniers-armeniens-en-azerbaidjan/",
+      "source": "Nouvelles d'Arménie",
+      "date": "2026-08-22T06:30:19Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-23T04:08:06.974664+00:00"
+    },
+    {
+      "id": "f1e63ee2b0e539ee",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "OPINION. La bataille des talents a commencé, la France est-elle prête ?",
+      "extrait": "TITRE: OPINION. La bataille des talents a commencé, la France est-elle prête ? SOURCE: La Tribune DATE: 2026-08-22T05:40:03Z URL: https://www.latribune.fr/article/idees/27928151370397/opinion-la-bataille-des-talents-a-commence-la-france-est-elle-prete Il est temps que la France cesse de subir cette compétition et qu'elle décide, enfin, d'y jouer un rôle offensif. Ce déficit, du reste, ne se comprend pas sans regarder qui, en France, se détourne des mathématiques dès le lycée : dès la classe de p",
+      "url": "https://www.latribune.fr/article/idees/27928151370397/opinion-la-bataille-des-talents-a-commence-la-france-est-elle-prete",
+      "source": "La Tribune",
+      "date": "2026-08-22T05:40:03Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-23T04:08:08.427758+00:00"
+    },
+    {
+      "id": "183280ff4561140b",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "DE LA COUPE AUX LÈVRES : QUEL AVENIR POUR LA TRANSITION AU SÉNÉGAL ?",
+      "extrait": "TITRE: DE LA COUPE AUX LÈVRES : QUEL AVENIR POUR LA TRANSITION AU SÉNÉGAL ? SOURCE: afriquesenlutte.org DATE: 2026-08-22T05:21:29Z URL: https://www.afriquesenlutte.org/afrique-de-l-ouest/senegal/article/de-la-coupe-aux-levres-quel-avenir En effet, les épreuves auxquelles est confronté son successeur, l'âpreté et l'urgence des Instruits par leur vécu du caractère dommageable de tout exercice du pouvoir dont les tenants transformation sociale, attaché aux valeurs de justice, d'égalité, de liberté ",
+      "url": "https://www.afriquesenlutte.org/afrique-de-l-ouest/senegal/article/de-la-coupe-aux-levres-quel-avenir",
+      "source": "afriquesenlutte.org",
+      "date": "2026-08-22T05:21:29Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-23T04:08:13.386170+00:00"
+    },
+    {
+      "id": "f5dd30ff762c8d6d",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "9 personnes sur 10 ne suppriment pas leurs données d'internet et voici ce qu'il se passe : ça fait peur",
+      "extrait": "TITRE: 9 personnes sur 10 ne suppriment pas leurs données d'internet et voici ce qu'il se passe : ça fait peur SOURCE: L'EnerGeek DATE: 2026-08-22T05:20:48Z URL: https://lenergeek.com/2026/08/22/9-personnes-sur-10-ne-suppriment-pas-leurs-donnees-dinternet-et-voici-ce-quil-se-passe-ca-fait-peur/ \" Avec vingt informations, on arrive à détecter l'appartenance politique d'une personne, si une femme est enceinte ou si un mari trompe sa conjointe \", affirme Nathalie Devillier, experte en droit du numé",
+      "url": "https://lenergeek.com/2026/08/22/9-personnes-sur-10-ne-suppriment-pas-leurs-donnees-dinternet-et-voici-ce-quil-se-passe-ca-fait-peur/",
+      "source": "L'EnerGeek",
+      "date": "2026-08-22T05:20:48Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-23T04:08:09.759425+00:00"
+    },
+    {
+      "id": "ba2f2499bdb7479f",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Cyberattaque contre le fisc : pourquoi Sébastien Lecornu réclame-t-il la création d'une nouvelle unité, alors que plusieurs agences existent déjà ?",
+      "extrait": "TITRE: Cyberattaque contre le fisc : pourquoi Sébastien Lecornu réclame-t-il la création d'une nouvelle unité, alors que plusieurs agences existent déjà ? SOURCE: Franceinfo DATE: 2026-08-22T05:16:47Z URL: https://www.franceinfo.fr/internet/securite-sur-internet/cyberattaques/cyberattaque-contre-le-fisc-pourquoi-sebastien-lecornu-reclame-t-il-la-creation-d-une-nouvelle-unite-alors-que-plusieurs-agences-existent-deja_8156213.html L'Anssi est déjà intervenue directement au sein de ministères ou de",
+      "url": "https://www.franceinfo.fr/internet/securite-sur-internet/cyberattaques/cyberattaque-contre-le-fisc-pourquoi-sebastien-lecornu-reclame-t-il-la-creation-d-une-nouvelle-unite-alors-que-plusieurs-agences-existent-deja_8156213.html",
+      "source": "Franceinfo",
+      "date": "2026-08-22T05:16:47Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-23T04:08:11.325955+00:00"
+    },
+    {
+      "id": "8738c816e01b535c",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "L'ASEAN accélère la numérisation des chaînes d'approvisionnement régionales",
+      "extrait": "TITRE: L'ASEAN accélère la numérisation des chaînes d'approvisionnement régionales SOURCE: lecourrier.vn DATE: 2026-08-22T05:10:42Z URL: https://lecourrier.vn/lasean-accelere-la-numerisation-des-chaines-dapprovisionnement-regionales/1353921.html Ces questions ont été abordées lors du Forum de dialogue Vietnam-ASEAN sur les chaînes de valeur mondiales, organisé le 21 août dans la mégapole du Sud par le Centre pour la quatrième révolution industrielle de Hô Chi Minh-Ville (HCMC C4IR). Selon Nguyên",
+      "url": "https://lecourrier.vn/lasean-accelere-la-numerisation-des-chaines-dapprovisionnement-regionales/1353921.html",
+      "source": "lecourrier.vn",
+      "date": "2026-08-22T05:10:42Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-23T04:08:15.564538+00:00"
     },
     {
       "id": "7f3f829a6f5bebc5",
@@ -38434,6 +38693,71 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:43:41.960961+00:00"
+    },
+    {
+      "id": "da2fc66e2ea6e4b4",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "PSG : \"On reste ouverts à des possibilités\", les 3 postes que Paris peut encore renforcer en cette fin de mercato",
+      "extrait": "TITRE: PSG : \"On reste ouverts à des possibilités\", les 3 postes que Paris peut encore renforcer en cette fin de mercato SOURCE: Top mercato DATE: 2026-08-22T18:25:00Z URL: https://www.topmercato.com/2127129-psg-on-reste-ouverts-a-des-possibilites-les-3-postes-que-paris-peut-encore-renforcer-en-cette-fin-de-mercato/ Le PSG a déjà beaucoup recruté depuis le début de l'été, mais le club français pourrait continuer dans cette voie, comme révélé par Luis Enrique. Interrogé par les médias sur la fin ",
+      "url": "https://www.topmercato.com/2127129-psg-on-reste-ouverts-a-des-possibilites-les-3-postes-que-paris-peut-encore-renforcer-en-cette-fin-de-mercato/",
+      "source": "Top mercato",
+      "date": "2026-08-22T18:25:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-23T04:07:54.363471+00:00"
+    },
+    {
+      "id": "3463a33ab85ab90f",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Détroit de Béring : ce corridor \"oublié\" qui pourrait devenir hautement stratégique",
+      "extrait": "TITRE: Détroit de Béring : ce corridor \"oublié\" qui pourrait devenir hautement stratégique SOURCE: LExpress.fr DATE: 2026-08-22T14:00:00Z URL: https://www.lexpress.fr/monde/detroit-de-bering-ce-corridor-oublie-qui-pourrait-devenir-hautement-strategique-KK4K5A354ZHI3IZBSVWKUXQHFQ/ La crise d'Ormuz l'a bien montré, les détroits jouent un rôle vital dans le commerce mondial. De Malacca à Béring, en passant par le Bosphore, L'Express vous invite à un voyage dans ces lieux emblématiques, où se joue l",
+      "url": "https://www.lexpress.fr/monde/detroit-de-bering-ce-corridor-oublie-qui-pourrait-devenir-hautement-strategique-KK4K5A354ZHI3IZBSVWKUXQHFQ/",
+      "source": "LExpress.fr",
+      "date": "2026-08-22T14:00:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-23T04:07:58.195233+00:00"
+    },
+    {
+      "id": "1e1e7a74aae09ab6",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "PSG : Liverpool offre 140ME et attend Barcola",
+      "extrait": "TITRE: PSG : Liverpool offre 140ME et attend Barcola SOURCE: foot01.com DATE: 2026-08-22T13:55:35Z URL: https://www.foot01.com/paris/psg-liverpool-offre-140me-et-attend-barcola A quelques jours de la clôture du mercato estival, Liverpool s'apprête à envoyer une ultime offre au Paris Saint-Germain pour recruter Bradley Barcola. Une proposition qui dépassera les 137 millions d'euros dépensés par Chelsea pour recruter Morgan Rogers plus tôt cet été. Le mercato s'emballe toujours dans les derniers j",
+      "url": "https://www.foot01.com/paris/psg-liverpool-offre-140me-et-attend-barcola",
+      "source": "foot01.com",
+      "date": "2026-08-22T13:55:35Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-23T04:07:52.677038+00:00"
+    },
+    {
+      "id": "954bfa4a7d4499dc",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Avenir fixé pour Ilia Zabarnyi ?",
+      "extrait": "TITRE: Avenir fixé pour Ilia Zabarnyi ? SOURCE: CulturePSG DATE: 2026-08-22T10:40:50Z URL: https://www.culturepsg.com/news/mercato/avenir-fixe-pour-ilia-zabarnyi/60419 Recruté l'été dernier sans que sa première saison soit vraiment convaincante, Ilia Zabarnyi devrait rester au PSG en 2026/27. A moins de dix jours de la fin du mercato estival, la tendance ne serait pas à un départ du défenseur central ukrainien. Si le PSG s'attend encore à quelques ventes d'ici la fin du mercato, et notamment dan",
+      "url": "https://www.culturepsg.com/news/mercato/avenir-fixe-pour-ilia-zabarnyi/60419",
+      "source": "CulturePSG",
+      "date": "2026-08-22T10:40:50Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-23T04:08:02.624033+00:00"
+    },
+    {
+      "id": "d404790b2cbae0dc",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Règlement de Dublin : cacophonie européenne sur les transferts",
+      "extrait": "TITRE: Règlement de Dublin : cacophonie européenne sur les transferts SOURCE: euronews DATE: 2026-08-22T07:34:34Z URL: https://fr.euronews.com/my-europe/2026/08/22/la-suede-veut-renvoyer-des-migrants-en-italie-la-france-et-lespagne-refusent-les-transfert Après l'Allemagne, la Suisse, l'Autriche et la Finlande, la Suède veut renvoyer en Italie les migrants partis vers le nord. Eurostat recense 109 427 demandes de transfert vers Rome entre 2023 et 2025, avec un risque de boomerang pour le gouverne",
+      "url": "https://fr.euronews.com/my-europe/2026/08/22/la-suede-veut-renvoyer-des-migrants-en-italie-la-france-et-lespagne-refusent-les-transfert",
+      "source": "euronews",
+      "date": "2026-08-22T07:34:34Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-23T04:08:05.341303+00:00"
     },
     {
       "id": "7387c0358277c653",
