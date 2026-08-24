@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T04:18:32.420953+00:00",
+  "generated_at": "2026-08-24T04:23:31.389582+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -10910,7 +10910,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-23T04:04:48.276769+00:00"
+      "created_at": "2026-08-24T04:09:23.891911+00:00"
     },
     {
       "id": "50895c042a984b7d",
@@ -10946,7 +10946,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 04:46:02 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-23T04:04:47.947365+00:00"
+      "created_at": "2026-08-24T04:09:23.465525+00:00"
     },
     {
       "id": "8c6a0cad14626d6f",
@@ -13268,7 +13268,7 @@
       "source": "Google News",
       "date": "Fri, 20 Jun 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-23T04:04:53.723148+00:00"
+      "created_at": "2026-08-24T04:09:30.017357+00:00"
     },
     {
       "id": "b70960ea48a1a247",
@@ -13394,7 +13394,7 @@
       "source": "Google News",
       "date": "Fri, 10 Jul 2026 10:12:00 GMT",
       "raison": "garde entrée/sortie: département source 44 incompatible avec la sortie 974",
-      "created_at": "2026-08-23T04:05:08.291090+00:00"
+      "created_at": "2026-08-24T04:09:46.097979+00:00"
     },
     {
       "id": "8c646081e1d69e81",
@@ -13574,7 +13574,7 @@
       "source": "Google News",
       "date": "Fri, 03 Jan 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-23T04:04:47.620827+00:00"
+      "created_at": "2026-08-24T04:09:23.053865+00:00"
     },
     {
       "id": "411db107f70f2387",
@@ -15720,6 +15720,32 @@
       "source": "Google News",
       "date": "Fri, 05 Jun 2026 07:00:00 GMT",
       "created_at": "2026-08-04T06:10:34.623634+00:00"
+    },
+    {
+      "id": "d1624e77b84a268b",
+      "banque": "Orange Money Group / Orange Bank Africa / Wave Bank Africa (et acteurs fintech associés)",
+      "scope": "regional",
+      "count": null,
+      "confidence": 0.15,
+      "evidence": "Article centré sur la fintech et la monnaie électronique (Orange Money, Wave, etc.) et non sur des fermetures/regroupements/transferts d’agences bancaires physiques nominativement localisées.",
+      "url": "https://www.afrique-sur7.fr/fintech-afrique-orange-money-2026",
+      "titre": "Fintech Afrique : Orange Money, le guide essentiel 2026",
+      "source": "Afrique-Sur7.fr",
+      "date": "2026-08-23T14:53:44Z",
+      "created_at": "2026-08-24T04:12:52.133586+00:00"
+    },
+    {
+      "id": "126bd40fa8cb3392",
+      "banque": "Orange Bank Africa (à Abidjan) / Wave Bank Africa (à Abidjan)",
+      "scope": "regional",
+      "count": null,
+      "confidence": 0.1,
+      "evidence": "Le texte mentionne la création/implantation et des partenariats, mais ne décrit pas de fermeture ou fermeture d’agence/point bancaire physique.",
+      "url": "https://www.afrique-sur7.fr/fintech-afrique-orange-money-2026",
+      "titre": "Fintech Afrique : Orange Money, le guide essentiel 2026",
+      "source": "Afrique-Sur7.fr",
+      "date": "2026-08-23T14:53:44Z",
+      "created_at": "2026-08-24T04:12:52.135044+00:00"
     },
     {
       "id": "e61767e363d53a1d",
@@ -24720,6 +24746,45 @@
       "created_at": "2026-08-03T07:53:04.147669+00:00"
     },
     {
+      "id": "493d242e9f1adf8a",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "À Donges, la mobilisation se poursuit contre la fermeture du bureau de La Poste le samedi - Ouest-France",
+      "extrait": "TITRE: À Donges, la mobilisation se poursuit contre la fermeture du bureau de La Poste le samedi - Ouest-France SOURCE: Google News DATE: Sun, 23 Aug 2026 15:19:16 GMT URL: https://news.google.com/rss/articles/CBMikAJBVV95cUxNWWJLR0hfV3NGQjYxRVBlREFZQ1VwVUFiU0ZlYmZjQXdNeFE0Z04tbzNZbEpGS0czWDBaWnlvWUZCZUluZzBabkM5TkxnamtBT2I2Wk1YbHdxVzcyZmZ0bmVtRTVRZ2xBZlQ5WXZJWTVoZFQyMS1seUI0Tkkwa25rUHFIYkZwM3JIa0hDYV9icVE1YmtHakY5UUV3ZEJZMUdPeFNyTVo2TnI1TFRZZmdBc0pvaGVSSUJIU2tPVkhZMU9HZTNyaUcxd0VUZ3FULTZjYTVKNT",
+      "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxNWWJLR0hfV3NGQjYxRVBlREFZQ1VwVUFiU0ZlYmZjQXdNeFE0Z04tbzNZbEpGS0czWDBaWnlvWUZCZUluZzBabkM5TkxnamtBT2I2Wk1YbHdxVzcyZmZ0bmVtRTVRZ2xBZlQ5WXZJWTVoZFQyMS1seUI0Tkkwa25rUHFIYkZwM3JIa0hDYV9icVE1YmtHakY5UUV3ZEJZMUdPeFNyTVo2TnI1TFRZZmdBc0pvaGVSSUJIU2tPVkhZMU9HZTNyaUcxd0VUZ3FULTZjYTVKNTM5bElXZ0xCaWczaTJiU1BhaWhRdVNvdG05N0Y2NHUtT2FUeHR1SDdhaHM2Y2k1WTUzMUJSei11bVlsNg?oc=5",
+      "source": "Google News",
+      "date": "Sun, 23 Aug 2026 15:19:16 GMT",
+      "score": 3,
+      "raison": "fermeture non publiée: hors fenêtre temporelle",
+      "created_at": "2026-08-24T04:12:24.120541+00:00"
+    },
+    {
+      "id": "1d4c5065a30f6f28",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "SCB a fermé 13 succursales supplémentaires en août. - Vietnam.vn",
+      "extrait": "TITRE: SCB a fermé 13 succursales supplémentaires en août. - Vietnam.vn SOURCE: Google News DATE: Sun, 23 Aug 2026 09:58:53 GMT URL: https://news.google.com/rss/articles/CBMiekFVX3lxTE5OdnJZNW0xdnRRUm1MaG9GRnNuTzdsLVRYaVBYcG5COVZmY2U3UzdWcEFoOF8zWkxDaXFZU2ZUeGNBdXN6cHdoNmhpSDloSGg1WXlZajhneTMtSjg0a0xFdHhXUFI2WktVVU41VVViME16UHpYWjY3ZU9R?oc=5 <a href=\"https://news.google.com/rss/articles/CBMiekFVX3lxTE5OdnJZNW0xdnRRUm1MaG9GRnNuTzdsLVRYaVBYcG5COVZmY2U3UzdWcEFoOF8zWkxDaXFZU2ZUeGNBdXN6cHdoNmhpSDloSG",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5OdnJZNW0xdnRRUm1MaG9GRnNuTzdsLVRYaVBYcG5COVZmY2U3UzdWcEFoOF8zWkxDaXFZU2ZUeGNBdXN6cHdoNmhpSDloSGg1WXlZajhneTMtSjg0a0xFdHhXUFI2WktVVU41VVViME16UHpYWjY3ZU9R?oc=5",
+      "source": "Google News",
+      "date": "Sun, 23 Aug 2026 09:58:53 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-24T04:12:21.641707+00:00"
+    },
+    {
+      "id": "08f85d4df6064794",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Boulogne-sur-Mer : après la fermeture de La Poste de Bréquerecque, quelle solution pour les habitants du quartier ? - Nord Littoral",
+      "extrait": "TITRE: Boulogne-sur-Mer : après la fermeture de La Poste de Bréquerecque, quelle solution pour les habitants du quartier ? - Nord Littoral SOURCE: Google News DATE: Sun, 23 Aug 2026 07:40:18 GMT URL: https://news.google.com/rss/articles/CBMizgFBVV95cUxPdTduQndWN2ZWdXBvTWRtRVdzTTQzVW0xQTZTUnJxMnlGMGxtU2xaVGtnQnRfSG5lS3p2bWxVMnNLOGRsX0p4OWxkY3ZnX0c1b1d5RUQydkhqQ18wdWFlMEV1U3RjWVZNdHEtZFRkb2pmWEgxWHNaVW9FU3gwUkpqVHYtQVgtMzVxMnV3VC1UNUVPRlJkeFdiZmk0Rnk4YkpfNjhZTkFiZlJHTEJ0MC1LQmZnLXQ5NnhBYkx4WG9Nd25",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPdTduQndWN2ZWdXBvTWRtRVdzTTQzVW0xQTZTUnJxMnlGMGxtU2xaVGtnQnRfSG5lS3p2bWxVMnNLOGRsX0p4OWxkY3ZnX0c1b1d5RUQydkhqQ18wdWFlMEV1U3RjWVZNdHEtZFRkb2pmWEgxWHNaVW9FU3gwUkpqVHYtQVgtMzVxMnV3VC1UNUVPRlJkeFdiZmk0Rnk4YkpfNjhZTkFiZlJHTEJ0MC1LQmZnLXQ5NnhBYkx4WG9Nd25zbGN2V1dyb0RHN1R2QQ?oc=5",
+      "source": "Google News",
+      "date": "Sun, 23 Aug 2026 07:40:18 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-24T04:12:26.181656+00:00"
+    },
+    {
       "id": "1d13dfbbd5fa400b",
       "banque": "Société Générale",
       "departement": "",
@@ -31220,6 +31285,149 @@
       "created_at": "2026-07-22T09:09:01.159244+00:00"
     },
     {
+      "id": "aee9b9ee2d0fd84e",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Niger : le général Tiani acte une hausse de 2 % du budget 2026, marqué par la sécurité et la crise pétrolière | Financial Afrik",
+      "extrait": "TITRE: Niger : le général Tiani acte une hausse de 2 % du budget 2026, marqué par la sécurité et la crise pétrolière | Financial Afrik SOURCE: Financial Afrik DATE: 2026-08-24T00:38:33Z URL: https://www.financialafrik.com/2026/08/24/niger-le-general-tiani-acte-une-hausse-de-2-du-budget-2026-marque-par-la-securite-et-la-crise-petroliere/ Le Niger a procédé à une première révision de son budget 2026, dont l'enveloppe est désormais fixée à 2 980,54 milliards de FCFA, soit environ 5,3 milliards de d",
+      "url": "https://www.financialafrik.com/2026/08/24/niger-le-general-tiani-acte-une-hausse-de-2-du-budget-2026-marque-par-la-securite-et-la-crise-petroliere/",
+      "source": "Financial Afrik",
+      "date": "2026-08-24T00:38:33Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-24T04:12:38.356571+00:00"
+    },
+    {
+      "id": "d79459b6b9dc13b8",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Les charlots de gauche en action tout le week-end...",
+      "extrait": "TITRE: Les charlots de gauche en action tout le week-end... SOURCE: Riposte Laïque DATE: 2026-08-23T22:23:03Z URL: https://ripostelaique.com/les-charlots-de-gauche-en-action-tout-le-week-end/ SOUS L'OEIL TRÈS INTÉRESSÉ DU PROPHÈTE Comment LFI mine la France et prépare sa défaite. Le bordel à gauche continue. Les crapules staliniennes inspirées par les ondes de Béria préparent la candidature Roussel, qui piquera quelques voix à Rachid Méluche. https://www.bvoltaire.fr/barbut-tondelier-rousseau-de",
+      "url": "https://ripostelaique.com/les-charlots-de-gauche-en-action-tout-le-week-end/",
+      "source": "Riposte Laïque",
+      "date": "2026-08-23T22:23:03Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-24T04:12:41.688197+00:00"
+    },
+    {
+      "id": "bd6c425c3abef059",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Alonso contre Arbeloa : les ex du Real face à leur \"cicatrice\"",
+      "extrait": "TITRE: Alonso contre Arbeloa : les ex du Real face à leur \"cicatrice\" SOURCE: Eurosport DATE: 2026-08-23T22:20:15Z URL: https://www.eurosport.fr/football/premier-league/2026-2027/premier-league-i-xabi-alonso-chelsea-contre-alvaro-arbeloa-fulham-les-ex-du-real-madrid-face-a-leur-cicatrice_sto23330668/story.shtml Lundi soir (21h), le nouveau Chelsea de Xabi Alonso lancera sa saison de Premier League face au nouveau Fulham d'Alvaro Arbeloa. Les deux Espagnols ont animé le banc du Real Madrid, la sa",
+      "url": "https://www.eurosport.fr/football/premier-league/2026-2027/premier-league-i-xabi-alonso-chelsea-contre-alvaro-arbeloa-fulham-les-ex-du-real-madrid-face-a-leur-cicatrice_sto23330668/story.shtml",
+      "source": "Eurosport",
+      "date": "2026-08-23T22:20:15Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-24T04:12:43.226546+00:00"
+    },
+    {
+      "id": "962988b461f5f5b4",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Tourisme africain 2026 : le bilan exclusif de 4 pays",
+      "extrait": "TITRE: Tourisme africain 2026 : le bilan exclusif de 4 pays SOURCE: Afrique-Sur7.fr DATE: 2026-08-23T16:17:58Z URL: https://www.afrique-sur7.fr/tourisme-africain-cote-ivoire-senegal-maroc Ces projections datent de 2023 et n'ont pas été actualisées publiquement avec les résultats de 2025. Elles restent la référence la plus citée dès qu'il s'agit de chiffrer le potentiel du tourisme africain, y compris à Abidjan et à Dakar. Le ministère ivoirien du Tourisme et des Loisirs avance des chiffres qui f",
+      "url": "https://www.afrique-sur7.fr/tourisme-africain-cote-ivoire-senegal-maroc",
+      "source": "Afrique-Sur7.fr",
+      "date": "2026-08-23T16:17:58Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-24T04:12:45.982234+00:00"
+    },
+    {
+      "id": "50221659173456e1",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Moïse Mitterrand : \"Faire maigrir l'État pour enrichir les Français\"",
+      "extrait": "TITRE: Moïse Mitterrand : \"Faire maigrir l'État pour enrichir les Français\" SOURCE: lejdd.fr DATE: 2026-08-23T16:00:07Z URL: https://www.lejdd.fr/economie/moise-mitterrand-faire-maigrir-letat-pour-enrichir-les-francais-181545 ENTRETIEN. Le petit neveu de François Mitterrand, Moïse Mitterrand, prône une révolution libérale et préconise entre autres la réduction du nombre de ministères à sept, la suppression de 580 000 postes dans la fonction publique... Concrètement, cela représente combien de su",
+      "url": "https://www.lejdd.fr/economie/moise-mitterrand-faire-maigrir-letat-pour-enrichir-les-francais-181545",
+      "source": "lejdd.fr",
+      "date": "2026-08-23T16:00:07Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-24T04:12:47.384289+00:00"
+    },
+    {
+      "id": "5da659fc9a36252a",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Bien avant la fibre, Napoléon III a créé Internet sous les rues de Paris... 427 km de tuyaux dorment encore sous nos pieds !",
+      "extrait": "TITRE: Bien avant la fibre, Napoléon III a créé Internet sous les rues de Paris... 427 km de tuyaux dorment encore sous nos pieds ! SOURCE: Jeuxvideo.com DATE: 2026-08-23T10:40:07Z URL: https://www.jeuxvideo.com/news/2099441/bien-avant-la-fibre-napoleon-iii-a-cree-internet-sous-les-rues-de-paris-427-km-de-tuyaux-dorment-encore-sous-nos-pieds.htm Obsolescence et gestion urbaine : Concurrencée par les télécommunications modernes et jugée trop coûteuse à extraire après sa fermeture en 1984, cette i",
+      "url": "https://www.jeuxvideo.com/news/2099441/bien-avant-la-fibre-napoleon-iii-a-cree-internet-sous-les-rues-de-paris-427-km-de-tuyaux-dorment-encore-sous-nos-pieds.htm",
+      "source": "Jeuxvideo.com",
+      "date": "2026-08-23T10:40:07Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-24T04:12:54.120777+00:00"
+    },
+    {
+      "id": "c5fe20eeadece5a2",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "PSG : Un joueur du Benfica arrive - Sport.fr",
+      "extrait": "TITRE: PSG : Un joueur du Benfica arrive - Sport.fr SOURCE: Sport.fr DATE: 2026-08-23T09:45:50Z URL: https://www.sport.fr/football/psg-un-joueur-du-benfica-arrive-1476104.shtm Le Paris Saint-Germain cherche toujours un défenseur central avant le 1er septembre, et le temps presse. Luis Campos travaille activement sur plusieurs dossiers, dont celui de Tomas Araujo, l'international portugais de Benfica. Âgé de 24 ans, Araujo est estimé à 30 millions d'euros par Transfermarkt et lié au club lisboète",
+      "url": "https://www.sport.fr/football/psg-un-joueur-du-benfica-arrive-1476104.shtm",
+      "source": "Sport.fr",
+      "date": "2026-08-23T09:45:50Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-24T04:12:56.453616+00:00"
+    },
+    {
+      "id": "cc23a64680e97803",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Rentrée 2026 : les nouveautés mode, beauté, culture et déco à ne pas manquer",
+      "extrait": "TITRE: Rentrée 2026 : les nouveautés mode, beauté, culture et déco à ne pas manquer SOURCE: Version Femina DATE: 2026-08-23T08:00:01Z URL: https://www.femina.fr/article/rentree-2026-les-nouveautes-mode-beaute-culture-et-deco-a-ne-pas-manquer Dix pour cent, le film, était espéré. Bonne nouvelle : il est là, et avec les acteurs de la formidable série. Cinq ans après la fermeture de l'agence, Andréa va réaliser son premier long-métrage. Camille Cottin en tête donne le ton, aux côtés de ",
+      "url": "https://www.femina.fr/article/rentree-2026-les-nouveautes-mode-beaute-culture-et-deco-a-ne-pas-manquer",
+      "source": "Version Femina",
+      "date": "2026-08-23T08:00:01Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-24T04:12:57.921284+00:00"
+    },
+    {
+      "id": "6e026fd58a9d9963",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "LFI \"On commencera par l'interdiction de CNews\"",
+      "extrait": "TITRE: LFI \"On commencera par l'interdiction de CNews\" SOURCE: JForum DATE: 2026-08-23T07:12:39Z URL: https://www.jforum.fr/lfi-on-commencera-par-linterdiction-de-cnews.html \"On commencera par l'interdiction de CNews\": Louis Boyard se rêve en censeur et promet de fermer la chaîne si LFI arrive au pouvoir. La formulation choisie est particulièrement provocatrice. \" Semaine une \" : à entendre Louis Boyard, l'une des urgences d'une arrivée au pouvoir de son camp serait donc de supprimer une chaîne ",
+      "url": "https://www.jforum.fr/lfi-on-commencera-par-linterdiction-de-cnews.html",
+      "source": "JForum",
+      "date": "2026-08-23T07:12:39Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-24T04:12:59.956346+00:00"
+    },
+    {
+      "id": "56147578bc1a35bd",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "L'IA va-t-elle enrichir les Etats-Unis ? Pourquoi le miracle économique n'a pas encore eu lieu",
+      "extrait": "TITRE: L'IA va-t-elle enrichir les Etats-Unis ? Pourquoi le miracle économique n'a pas encore eu lieu SOURCE: LExpress.fr DATE: 2026-08-23T06:45:00Z URL: https://www.lexpress.fr/economie/high-tech/lia-va-t-elle-enrichir-les-etats-unis-pourquoi-le-miracle-economique-na-pas-encore-eu-lieu-VBBFMXJTUVBTTOEM7BUMXPUYFE/ \"L'argent n'aura plus d'importance en 2036.\" Les mots d'Elon Musk sont du miel aux oreilles de ceux, parmi les Américains, qui peinent à boucler leurs fins de mois. L'intelligence arti",
+      "url": "https://www.lexpress.fr/economie/high-tech/lia-va-t-elle-enrichir-les-etats-unis-pourquoi-le-miracle-economique-na-pas-encore-eu-lieu-VBBFMXJTUVBTTOEM7BUMXPUYFE/",
+      "source": "LExpress.fr",
+      "date": "2026-08-23T06:45:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-24T04:13:02.084373+00:00"
+    },
+    {
+      "id": "29f9a0d8cbcc08fd",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "À Donges, la mobilisation se poursuit contre la fermeture du bureau de La Poste le samedi",
+      "extrait": "TITRE: À Donges, la mobilisation se poursuit contre la fermeture du bureau de La Poste le samedi SOURCE: ouest-france.fr DATE: 2026-08-23 URL: https://www.ouest-france.fr/pays-de-la-loire/donges-44480/a-donges-la-mobilisation-se-poursuit-contre-la-fermeture-du-bureau-de-la-poste-le-samedi-316377e2-9f01-11f1-b6b2-5710555c207e",
+      "url": "https://www.ouest-france.fr/pays-de-la-loire/donges-44480/a-donges-la-mobilisation-se-poursuit-contre-la-fermeture-du-bureau-de-la-poste-le-samedi-316377e2-9f01-11f1-b6b2-5710555c207e",
+      "source": "ouest-france.fr",
+      "date": "2026-08-23",
+      "score": 3,
+      "raison": "fermeture non publiée: hors fenêtre temporelle",
+      "created_at": "2026-08-24T04:12:34.435496+00:00"
+    },
+    {
       "id": "b88e7821cfb4e160",
       "banque": "Société Générale",
       "departement": "",
@@ -31322,6 +31530,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-08-23T04:08:15.564538+00:00"
+    },
+    {
+      "id": "ec81bb32cf031b08",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Clôture Wall Street : les marchés se reprennent",
+      "extrait": "TITRE: Clôture Wall Street : les marchés se reprennent SOURCE: Boursier.com DATE: 2026-08-21T20:30:00Z URL: https://www.boursier.com/indices/actualites/news/cloture-wall-street-les-marches-se-reprennent-992367.html (Boursier.com) -- Malgré une semaine difficile, Wall Street se reprend et termine dans le vert, ce vendredi. A la fermeture des marchés, le S&P 500 gagne +0,43% à 7.674 pts. Sur la semaine glissante, l'indice décroche cependant de -0,91%. Le Dow Jones gagne +0,98%, revenant à 53.277 p",
+      "url": "https://www.boursier.com/indices/actualites/news/cloture-wall-street-les-marches-se-reprennent-992367.html",
+      "source": "Boursier.com",
+      "date": "2026-08-21T20:30:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-24T04:12:48.645233+00:00"
     },
     {
       "id": "7f3f829a6f5bebc5",
@@ -38695,6 +38916,19 @@
       "created_at": "2026-06-25T15:43:41.960961+00:00"
     },
     {
+      "id": "58b467418d3687ba",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Égypte : 658 millions de dollars pour transformer le phosphate en moteur d'exportation | Financial Afrik",
+      "extrait": "TITRE: Égypte : 658 millions de dollars pour transformer le phosphate en moteur d'exportation | Financial Afrik SOURCE: Financial Afrik DATE: 2026-08-24T00:28:31Z URL: https://www.financialafrik.com/2026/08/24/egypte-658-millions-de-dollars-pour-transformer-le-phosphate-en-moteur-dexportation/ L'Égypte a lancé, le 19 août 2026, les travaux d'un complexe de production d'acide phosphorique sur le plateau d'Abu Tartour, dans le désert occidental, pour un investissement de 658 millions de dollars. S",
+      "url": "https://www.financialafrik.com/2026/08/24/egypte-658-millions-de-dollars-pour-transformer-le-phosphate-en-moteur-dexportation/",
+      "source": "Financial Afrik",
+      "date": "2026-08-24T00:28:31Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-24T04:12:40.371243+00:00"
+    },
+    {
       "id": "da2fc66e2ea6e4b4",
       "banque": "Société Générale",
       "departement": "",
@@ -43386,6 +43620,19 @@
       "score": 1,
       "raison": "signaux: vague(unknown,regional,count=None)",
       "created_at": "2026-08-04T06:10:34.624514+00:00"
+    },
+    {
+      "id": "1111266b5b0363ee",
+      "banque": "Orange Money Group / Orange Bank Africa / Wave Bank Africa (et acteurs fintech associés)",
+      "departement": "",
+      "titre": "Fintech Afrique : Orange Money, le guide essentiel 2026",
+      "extrait": "Article centré sur la fintech et la monnaie électronique (Orange Money, Wave, etc.) et non sur des fermetures/regroupements/transferts d’agences bancaires physiques nominativement localisées. | Le texte mentionne la création/implantation et des partenariats, mais ne décrit pas de fermeture ou fermeture d’agence/point bancaire physique.",
+      "url": "https://www.afrique-sur7.fr/fintech-afrique-orange-money-2026",
+      "source": "Afrique-Sur7.fr",
+      "date": "2026-08-23T14:53:44Z",
+      "score": 1,
+      "raison": "signaux: vague(Orange Money Group / Orange Bank Africa / Wave Bank Africa (et acteurs fintech associés),regional,count=None); vague(Orange Bank Africa (à Abidjan) / Wave Bank Africa (à Abidjan),regional,count=None)",
+      "created_at": "2026-08-24T04:12:52.137147+00:00"
     },
     {
       "id": "f5ad6e112dfbea86",
