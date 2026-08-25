@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T04:23:31.389582+00:00",
+  "generated_at": "2026-08-25T04:18:51.078316+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -435,7 +435,7 @@
       "nom": "Lot",
       "region": "Occitanie",
       "count": 1,
-      "total_agences": 41,
+      "total_agences": 40,
       "precise_count": 1,
       "unlocated_count": 0,
       "estimated_count": 1
@@ -554,8 +554,8 @@
       "count": 5,
       "total_agences": 327,
       "precise_count": 5,
-      "unlocated_count": 0,
-      "estimated_count": 5
+      "unlocated_count": 1,
+      "estimated_count": 6
     },
     "60": {
       "nom": "Oise",
@@ -723,7 +723,7 @@
       "nom": "Yvelines",
       "region": "Île-de-France",
       "count": 1,
-      "total_agences": 273,
+      "total_agences": 274,
       "precise_count": 1,
       "unlocated_count": 0,
       "estimated_count": 1
@@ -876,7 +876,7 @@
       "nom": "Val-d'Oise",
       "region": "Île-de-France",
       "count": 0,
-      "total_agences": 150,
+      "total_agences": 151,
       "precise_count": 0,
       "unlocated_count": 0,
       "estimated_count": 0
@@ -1178,10 +1178,27 @@
       "departement": "59",
       "nom": "Nord",
       "precise_count": 5,
-      "unlocated_count": 0,
-      "estimated_count": 5,
+      "unlocated_count": 1,
+      "estimated_count": 6,
       "department_signal_count": 0,
-      "signals": []
+      "signals": [
+        {
+          "id": "ff1d01292cba9241",
+          "banque": "La Banque Postale",
+          "commune": "Bréquerecque",
+          "departement": "59",
+          "titre": "Boulogne-sur-Mer : « une décision regrettable », la mairie réagit à la fermeture de La Poste à Bréquerecque - Nord Littoral",
+          "source": "Google News",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQVWpMYzdWUjFKV2l6ZGpXU1lNZTNwLTQydksyRnBESzVkaGdwMDh6bDRleHR3aEpYTV9wUkdfN3pmbDhZb1BSbGl2MjE4VUdNV0FwZFRxYzkySzFmRFhOS1M2RFVBVklYSGRwN3J1cWluZVhlNHhkVGRmMEdJZWtzN1VyQTFCWV9XN3ZORWViamJTcWJhX2Jkc1hfSjlKb1VVOVFqWmF1VFhsQlVUbXl6T3NJeWFZQWpZN19uN1dMY2ZsRWMzY3ozQUpidw?oc=5",
+          "score": 3,
+          "precision": "commune_non_geocodee",
+          "reason": "commune non géocodée",
+          "type": "fermeture",
+          "statut": "projet",
+          "statut_temporel": "deja_fermee",
+          "date": "2026-08-24"
+        }
+      ]
     },
     "43": {
       "departement": "43",
@@ -10910,7 +10927,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-24T04:09:23.891911+00:00"
+      "created_at": "2026-08-25T04:03:33.643541+00:00"
     },
     {
       "id": "50895c042a984b7d",
@@ -10946,7 +10963,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 04:46:02 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-24T04:09:23.465525+00:00"
+      "created_at": "2026-08-25T04:03:33.124550+00:00"
     },
     {
       "id": "8c6a0cad14626d6f",
@@ -12569,6 +12586,60 @@
       "created_at": "2026-07-28T06:08:50.052582+00:00"
     },
     {
+      "id": "2de6d4ccddcfbc9b",
+      "banque": "La Banque Postale",
+      "commune": "Barjac",
+      "departement": "",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "rumeur",
+      "statut_temporel": "inconnu",
+      "fiabilite": 2,
+      "citation": "« Fermeture du bureau de Poste de Barjac le samedi matin, la mairie dit non » (ici.fr) — l’article parle d’un bureau de poste, sans lien explicite avec l’offre bancaire/La Banque Postale.",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOeTRJYlcwZTdxYnNjZF9hZl8wUWRaY1g4djlsX1lLVzRKcTVZcjc4bXRIc2FNZG9YX2JjbTNvNUV2ZWg3OEJ2RWFWMDhXMGFELUNvXzdKWGlrR29pUzh6X1F0c1EwdkFPZ3hOWF9vS1RGLWhtaUxtMWNrazVETWJuaHJ1eHJNNDE2bEZhalRXRjh5NVhXa21sVXBWbjJZNTFrTjV1V2dIalhYc2JDOThBZVVnX19HNEdlS3c?oc=5",
+      "titre": "Fermeture du bureau de Poste de Barjac le samedi matin, la mairie dit non - ici.fr",
+      "source": "Google News",
+      "date": "Mon, 24 Aug 2026 17:11:22 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-08-25T04:07:00.413167+00:00"
+    },
+    {
+      "id": "21c39dd180a1dacb",
+      "banque": "La Banque Postale",
+      "commune": "Paray-Vieille-Poste",
+      "departement": "91",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "« Ce n’est pas un luxe » : un rassemblement contre la fermeture le samedi de ce bureau de Poste de Loire-Atlantique - Actu.fr",
+      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOTjZoLWh6M2lWelVUYmp6cWxvTUxFaVA3V1hNdjRMOVdKVzJqR0ItOFhBd29qMUNzNU9tMHVabFNBdmdPa3R2RnpYTlBkd2FWOXNjOHVkbVFKQ0xqTVlOS3ktbWxtVFg2QUhENkgzLVFzSGc3SW9WUm1oSkNSbTUzSVhOZzVYS1M4djBBUzlRZVdvdGFkTF9DVWN5VHcyRkdoTjZQOEpBdF9lQWZZQUJrQ0oxLWEtSkx2NXJ3QmUyMlN1bWtSVDlqQlhHSlBlUTB1ZXZWcW9SVlN5RTFBTWtYOFBWYjZiRTdvZFh5WlJCX3gwbDZRWDcwWnFnc0k?oc=5",
+      "titre": "« Ce n’est pas un luxe » : un rassemblement contre la fermeture le samedi de ce bureau de Poste de Loire-Atlantique - Actu.fr",
+      "source": "Google News",
+      "date": "Mon, 24 Aug 2026 15:40:02 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-08-25T04:07:02.745068+00:00"
+    },
+    {
+      "id": "ff1d01292cba9241",
+      "banque": "La Banque Postale",
+      "commune": "Bréquerecque",
+      "departement": "59",
+      "type": "fermeture",
+      "date_fermeture": "2026-08-24",
+      "statut": "projet",
+      "statut_temporel": "deja_fermee",
+      "fiabilite": 3,
+      "citation": "Titre : « la mairie réagit à la fermeture de La Poste à Bréquerecque » (l’article ne précise pas explicitement que c’est l’agence/point bancaire La Banque Postale qui ferme).",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQVWpMYzdWUjFKV2l6ZGpXU1lNZTNwLTQydksyRnBESzVkaGdwMDh6bDRleHR3aEpYTV9wUkdfN3pmbDhZb1BSbGl2MjE4VUdNV0FwZFRxYzkySzFmRFhOS1M2RFVBVklYSGRwN3J1cWluZVhlNHhkVGRmMEdJZWtzN1VyQTFCWV9XN3ZORWViamJTcWJhX2Jkc1hfSjlKb1VVOVFqWmF1VFhsQlVUbXl6T3NJeWFZQWpZN19uN1dMY2ZsRWMzY3ozQUpidw?oc=5",
+      "titre": "Boulogne-sur-Mer : « une décision regrettable », la mairie réagit à la fermeture de La Poste à Bréquerecque - Nord Littoral",
+      "source": "Google News",
+      "date": "Mon, 24 Aug 2026 04:41:00 GMT",
+      "raison": "commune non géocodée",
+      "created_at": "2026-08-25T04:07:07.220669+00:00"
+    },
+    {
       "id": "6d80040bf3384652",
       "banque": "La Banque Postale",
       "commune": "Luynes",
@@ -13268,7 +13339,7 @@
       "source": "Google News",
       "date": "Fri, 20 Jun 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-24T04:09:30.017357+00:00"
+      "created_at": "2026-08-25T04:03:41.499283+00:00"
     },
     {
       "id": "b70960ea48a1a247",
@@ -13394,7 +13465,7 @@
       "source": "Google News",
       "date": "Fri, 10 Jul 2026 10:12:00 GMT",
       "raison": "garde entrée/sortie: département source 44 incompatible avec la sortie 974",
-      "created_at": "2026-08-24T04:09:46.097979+00:00"
+      "created_at": "2026-08-25T04:04:01.907112+00:00"
     },
     {
       "id": "8c646081e1d69e81",
@@ -13574,7 +13645,7 @@
       "source": "Google News",
       "date": "Fri, 03 Jan 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-24T04:09:23.053865+00:00"
+      "created_at": "2026-08-25T04:03:32.596820+00:00"
     },
     {
       "id": "411db107f70f2387",
@@ -13647,6 +13718,42 @@
       "date": "Fri, 01 Aug 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
       "created_at": "2026-07-27T07:56:36.407534+00:00"
+    },
+    {
+      "id": "9de6b49cda1e30fc",
+      "banque": "La Banque Postale",
+      "commune": "Albi",
+      "departement": "81",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "a_venir",
+      "fiabilite": 2,
+      "citation": "« Pour la partie courrier et colis, La Poste a tranché : direction le relais postal de la maison de la presse, au 91 bis avenue Dembourg. »",
+      "url": "https://www.ladepeche.fr/2026/08/24/temoignages-plus-de-distributeur-frais-bancaires-bus-obligatoire-dans-ce-quartier-dalbi-la-fermeture-de-la-poste-passe-tres-mal-13517307.php",
+      "titre": "TÉMOIGNAGES. Plus de distributeur, frais bancaires, bus obligatoire... dans ce quartier d'Albi, la fermeture de La Poste passe très mal",
+      "source": "Ladepeche.fr",
+      "date": "2026-08-24T10:01:05Z",
+      "raison": "garde entrée/sortie: fermeture postale temporaire ou circonstancielle",
+      "created_at": "2026-08-25T04:08:23.518983+00:00"
+    },
+    {
+      "id": "a70d9a30421352fc",
+      "banque": "La Banque Postale",
+      "commune": "Ferrières",
+      "departement": "",
+      "type": "fermeture",
+      "date_fermeture": "2026-08-21",
+      "statut": "confirmé",
+      "statut_temporel": "deja_fermee",
+      "fiabilite": 2,
+      "citation": "« Les rideaux métalliques du bureau de poste de Ferrières sont baissés vendredi 21 août. L'antenne n'accueille aucun usager depuis le début du mois… » et « le bureau de poste de Ferrières a rouvert ce lundi » (ferm. temporaire, pas explicitement liée à La Banque Postale).",
+      "url": "https://www.lamarseillaise.fr/societe/le-comite-de-vigilance-de-martigues-inquiet-de-l-avenir-du-service-postal-ME20606291",
+      "titre": "Le comité de vigilance de Martigues inquiet de l'avenir du service postal",
+      "source": "www.lamarseillaise.fr",
+      "date": "2026-08-24T04:57:48Z",
+      "raison": "garde entrée/sortie: commune homonyme sans département vérifiable: Ferrières (17), Ferrières (80), Ferrières (60), Ferrières (54), Ferrières (65)",
+      "created_at": "2026-08-24T07:43:12.540266+00:00"
     },
     {
       "id": "f117ac7bd0166d0d",
@@ -15293,6 +15400,32 @@
       "created_at": "2026-07-23T09:39:37.161069+00:00"
     },
     {
+      "id": "5dd2b107da17a82b",
+      "banque": "La Poste",
+      "scope": "regional",
+      "count": null,
+      "confidence": 0.35,
+      "evidence": "L’article (titre) évoque la « fermeture de La Poste » dans « ce quartier d’Albi », avec des impacts bancaires (« plus de distributeur, frais bancaires, bus obligatoire »), mais sans commune précise (au-delà d’Albi) ni date ni précision sur un transfert/retrait d’agences bancaires.",
+      "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxNQ2hfTXl1QnlLOVFtcjRQeFB0MDhjMzBLZkJSZHpvdzJWYm15ei1ZM0ZuQ2djZW1ORTZYbWhtcEE4TjRUT1NTMUQ3NWtNd05JT0FDcEtmbEpKbzlub0dhYWVOYlhlY09WT2JTYUllRENGbHYxUnBVS2hCU0F4NnRIV2xrR204UlNsckZnZmZOM0dtNV9JM0FUM21QNG52QXJBX2hzR0g0UmJmRHdxbUxqUlEzSUdWU1FmWGp2dTFyQnB4UUotOGd1aXFJMGJjQTdLVHhVWFdobkF2M05DLXN2TnJNaVJ4SVdCN2d1ZzdqbTduNmF0TDdFVUxTaHd5YXoyS3RNMHltTQ?oc=5",
+      "titre": "TÉMOIGNAGES. Plus de distributeur, frais bancaires, bus obligatoire... dans ce quartier d'Albi, la fermeture de La Poste passe très mal - ladepeche.fr",
+      "source": "Google News",
+      "date": "Mon, 24 Aug 2026 10:01:00 GMT",
+      "created_at": "2026-08-25T04:07:14.459591+00:00"
+    },
+    {
+      "id": "253cfeb61aa037ae",
+      "banque": "La Poste",
+      "scope": "regional",
+      "count": null,
+      "confidence": 0.35,
+      "evidence": "« Incendie à La Poste : le bureau fermé jusqu’à nouvel ordre - Haute Gironde » (fermeture temporaire/inconnue, commune non précisée)",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPZzkwdERkZDdsbEpZRXA5TWFuLVdjZWM0VXFxbGE1Z3ZUNmtrRWdwN1VGajFpckxsMUxmZk9IM2ZGU0k0LTRlR29jcGxlcjY4OE15dERkeV9ab1ZLMTJIeG1uTVV0WUhYQjVpdFRLSFZSeUdtZXRUTlRFdTdSOWo5WERuM0x5cFRseVdsT2NpdFlnMjhBNFEyT3A5MGFMNDlSYnZuM1YyRTE3Wkhpa24tVThXZWFROWllRTgwSXZEZTVpdFJRdmc?oc=5",
+      "titre": "Incendie à La Poste : le bureau fermé jusqu’à nouvel ordre - Haute Gironde",
+      "source": "Google News",
+      "date": "Mon, 24 Aug 2026 05:51:00 GMT",
+      "created_at": "2026-08-25T04:07:16.990471+00:00"
+    },
+    {
       "id": "2d735e96ac1c6c71",
       "banque": "La Poste (guichet postal)",
       "scope": "unknown",
@@ -15720,6 +15853,19 @@
       "source": "Google News",
       "date": "Fri, 05 Jun 2026 07:00:00 GMT",
       "created_at": "2026-08-04T06:10:34.623634+00:00"
+    },
+    {
+      "id": "432f9116d157b219",
+      "banque": "La Poste / service postal (bureaux de poste)",
+      "scope": "regional",
+      "count": null,
+      "confidence": 0.45,
+      "evidence": "Article décrit des fermetures/horaires dégradés : « Croix-Sainte… Jonquières a fermé tout l'été… la Couronne n'est pas accessible le lundi… Carry-le-Rouet et de Sausset-les-Pins fermés un samedi sur deux… »",
+      "url": "https://www.lamarseillaise.fr/societe/le-comite-de-vigilance-de-martigues-inquiet-de-l-avenir-du-service-postal-ME20606291",
+      "titre": "Le comité de vigilance de Martigues inquiet de l'avenir du service postal",
+      "source": "www.lamarseillaise.fr",
+      "date": "2026-08-24T04:57:48Z",
+      "created_at": "2026-08-24T07:43:12.524536+00:00"
     },
     {
       "id": "d1624e77b84a268b",
@@ -24759,6 +24905,19 @@
       "created_at": "2026-08-24T04:12:24.120541+00:00"
     },
     {
+      "id": "21edcd9a78d7e19d",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "À Donges, la mobilisation se poursuit contre la fermeture du bureau de La Poste le samedi - - La Baule.maville.com",
+      "extrait": "TITRE: À Donges, la mobilisation se poursuit contre la fermeture du bureau de La Poste le samedi - - La Baule.maville.com SOURCE: Google News DATE: Sun, 23 Aug 2026 15:19:00 GMT URL: https://news.google.com/rss/articles/CBMi5gFBVV95cUxQdlNUQjRzUHZrd1dFZHltUWcxeE9UUkcyeVlGbHhBbTNEWXR6U2pVdzdENXBZcURlOGZvNDBOODJieExKblhrZmxyNlJWamg3N0FQLTVoTUtpb1V6UjRwZENCME5QWXRzYUpuaFZzTG9hOFk3WG1ObklxcjZsM2s2aUZiaVBFbXFsakREU3JWMmFMY1ZnNmVSY3N1MTkwVWM4NG9DeFFyTUxXbVI3R29uUGdRdUNwTFVBTDZneUd3WURBZ2tiZE8xZTJZS296",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQdlNUQjRzUHZrd1dFZHltUWcxeE9UUkcyeVlGbHhBbTNEWXR6U2pVdzdENXBZcURlOGZvNDBOODJieExKblhrZmxyNlJWamg3N0FQLTVoTUtpb1V6UjRwZENCME5QWXRzYUpuaFZzTG9hOFk3WG1ObklxcjZsM2s2aUZiaVBFbXFsakREU3JWMmFMY1ZnNmVSY3N1MTkwVWM4NG9DeFFyTUxXbVI3R29uUGdRdUNwTFVBTDZneUd3WURBZ2tiZE8xZTJZS296OHpOVlZ0QzMwem91ZHVQbkRfS0lpRmMtZw?oc=5",
+      "source": "Google News",
+      "date": "Sun, 23 Aug 2026 15:19:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-25T04:07:02.343325+00:00"
+    },
+    {
       "id": "1d4c5065a30f6f28",
       "banque": "Société Générale",
       "departement": "",
@@ -25888,6 +26047,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-08-23T04:07:37.442620+00:00"
+    },
+    {
+      "id": "ca3c3d8006191ab4",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Après la fermeture des bars à Montpellier, les policiers obligent les fêtards à quitter les places - ici.fr",
+      "extrait": "TITRE: Après la fermeture des bars à Montpellier, les policiers obligent les fêtards à quitter les places - ici.fr SOURCE: Google News DATE: Sat, 22 Aug 2026 05:31:30 GMT URL: https://news.google.com/rss/articles/CBMi_AFBVV95cUxNUFAtYWR1QmZUdkt4NGNuSjVDSFdjZmRIcFVZY0RKbDRVQ1p1a2xheWFBclZ0c0QtdU13WGpNc0hVSFYtSGN3cmtfZHd5emtQU0ZvNXp0elJncE9lRnhSakdOWDhPUlBSc1Q1X0tFdXVBNVNMMjNoMkEwVWYwTXFGMDVlanBYal95Y1Rlb0NyOVROMjFnTUw0MHpJV1hMcU5BUUVrQXM3dDd2SGRlNEVHcEFOdElnZFBmaHdwdVlkWkdfb2J1UWtHT0RHcnBMWm81R3l",
+      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNUFAtYWR1QmZUdkt4NGNuSjVDSFdjZmRIcFVZY0RKbDRVQ1p1a2xheWFBclZ0c0QtdU13WGpNc0hVSFYtSGN3cmtfZHd5emtQU0ZvNXp0elJncE9lRnhSakdOWDhPUlBSc1Q1X0tFdXVBNVNMMjNoMkEwVWYwTXFGMDVlanBYal95Y1Rlb0NyOVROMjFnTUw0MHpJV1hMcU5BUUVrQXM3dDd2SGRlNEVHcEFOdElnZFBmaHdwdVlkWkdfb2J1UWtHT0RHcnBMWm81R3lVMF9PYTRXazF5YlVLOHhLWGxHUDVicWJQUkdDM1ZoY1NGWldlNHRNZEk?oc=5",
+      "source": "Google News",
+      "date": "Sat, 22 Aug 2026 05:31:30 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-25T04:07:18.827846+00:00"
     },
     {
       "id": "5299e7e46e325dd3",
@@ -27253,6 +27425,84 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-07-22T09:10:58.278399+00:00"
+    },
+    {
+      "id": "2e99153d4446efe6",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Fermeture du bureau de Poste de Barjac le samedi matin, la mairie dit non - ici.fr",
+      "extrait": "TITRE: Fermeture du bureau de Poste de Barjac le samedi matin, la mairie dit non - ici.fr SOURCE: Google News DATE: Mon, 24 Aug 2026 17:11:22 GMT URL: https://news.google.com/rss/articles/CBMiugFBVV95cUxOeTRJYlcwZTdxYnNjZF9hZl8wUWRaY1g4djlsX1lLVzRKcTVZcjc4bXRIc2FNZG9YX2JjbTNvNUV2ZWg3OEJ2RWFWMDhXMGFELUNvXzdKWGlrR29pUzh6X1F0c1EwdkFPZ3hOWF9vS1RGLWhtaUxtMWNrazVETWJuaHJ1eHJNNDE2bEZhalRXRjh5NVhXa21sVXBWbjJZNTFrTjV1V2dIalhYc2JDOThBZVVnX19HNEdlS3c?oc=5 <a href=\"https://news.google.com/rss/articles/CBMiu",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOeTRJYlcwZTdxYnNjZF9hZl8wUWRaY1g4djlsX1lLVzRKcTVZcjc4bXRIc2FNZG9YX2JjbTNvNUV2ZWg3OEJ2RWFWMDhXMGFELUNvXzdKWGlrR29pUzh6X1F0c1EwdkFPZ3hOWF9vS1RGLWhtaUxtMWNrazVETWJuaHJ1eHJNNDE2bEZhalRXRjh5NVhXa21sVXBWbjJZNTFrTjV1V2dIalhYc2JDOThBZVVnX19HNEdlS3c?oc=5",
+      "source": "Google News",
+      "date": "Mon, 24 Aug 2026 17:11:22 GMT",
+      "score": 3,
+      "raison": "fermeture non publiée: hors fenêtre temporelle",
+      "created_at": "2026-08-25T04:07:00.415457+00:00"
+    },
+    {
+      "id": "5f56015245da7456",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Restructuration bancaire en Italie : le point sur toutes les fusions-acquisitions depuis 2025 - Zonebourse",
+      "extrait": "TITRE: Restructuration bancaire en Italie : le point sur toutes les fusions-acquisitions depuis 2025 - Zonebourse SOURCE: Google News DATE: Mon, 24 Aug 2026 14:03:29 GMT URL: https://news.google.com/rss/articles/CBMi5wFBVV95cUxOS2p1RWJhdXJXRXktV2dzaGRqRWdjUFRkU0hyYWtxRkhUb2t0Qm90ZE9Nd3BsRUc3Z21KNFk3cGk1WDVLYlFqMEYxXzQwSy1fNDI0OWR1OHhqY1YyR1lKNmhzUTFfQVJaY3dBVV9neFM0T2UtclViS2FKeUR3REs0OHhEQUJMdHJUVF9jSk8xUXlWQXR0Nm5iWmpwSzJ5SGhad0NqYy12VmU2SURvNXdTUWFITmFqa1RqU3VCOGI0R1V6TnhVN0VLVmtkTFliV0V4WmZE",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOS2p1RWJhdXJXRXktV2dzaGRqRWdjUFRkU0hyYWtxRkhUb2t0Qm90ZE9Nd3BsRUc3Z21KNFk3cGk1WDVLYlFqMEYxXzQwSy1fNDI0OWR1OHhqY1YyR1lKNmhzUTFfQVJaY3dBVV9neFM0T2UtclViS2FKeUR3REs0OHhEQUJMdHJUVF9jSk8xUXlWQXR0Nm5iWmpwSzJ5SGhad0NqYy12VmU2SURvNXdTUWFITmFqa1RqU3VCOGI0R1V6TnhVN0VLVmtkTFliV0V4WmZELWpaVE1qaTZSRlE5UW45SU1iRGc?oc=5",
+      "source": "Google News",
+      "date": "Mon, 24 Aug 2026 14:03:29 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-25T04:06:56.708309+00:00"
+    },
+    {
+      "id": "4d012ea2351e1bc9",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Beussent : La poste va fermer, il faudra désormais se rendre au café-restaurant du village - Nord Littoral",
+      "extrait": "TITRE: Beussent : La poste va fermer, il faudra désormais se rendre au café-restaurant du village - Nord Littoral SOURCE: Google News DATE: Mon, 24 Aug 2026 10:07:00 GMT URL: https://news.google.com/rss/articles/CBMizgFBVV95cUxOaDBoMHJFYTRDNkh4RjdocWxWenlQbDh0Q1oteHlIdDVVNzVPaXVMUmJ1VkltUnF3dVhkM3hvaWJZVHBpdjZGWVdiT1piYjRnV25HSW5xOVJPZzhUODRxSUZuTEFXb1NBNE9aaVdST1Z5SEsxV2x6Znl6cGpZMEpSbDlvQ3hRYkZwWjFyNU9NVFRSZWFtdTFxbXQ1QnFBbVlWN0wxUW9pbHVIM0RwZGU4Ti1SUEp3c2NXdXJ3eXFKNWVHOXpoQkhYdUdUR1pKQQ?oc=5 ",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOaDBoMHJFYTRDNkh4RjdocWxWenlQbDh0Q1oteHlIdDVVNzVPaXVMUmJ1VkltUnF3dVhkM3hvaWJZVHBpdjZGWVdiT1piYjRnV25HSW5xOVJPZzhUODRxSUZuTEFXb1NBNE9aaVdST1Z5SEsxV2x6Znl6cGpZMEpSbDlvQ3hRYkZwWjFyNU9NVFRSZWFtdTFxbXQ1QnFBbVlWN0wxUW9pbHVIM0RwZGU4Ti1SUEp3c2NXdXJ3eXFKNWVHOXpoQkhYdUdUR1pKQQ?oc=5",
+      "source": "Google News",
+      "date": "Mon, 24 Aug 2026 10:07:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-25T04:07:08.969268+00:00"
+    },
+    {
+      "id": "400208388fa85837",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Beussent : La poste va fermer, il faudra désormais se rendre au café-restaurant du village - Nord Littoral",
+      "extrait": "TITRE: Beussent : La poste va fermer, il faudra désormais se rendre au café-restaurant du village - Nord Littoral SOURCE: Google News DATE: Mon, 24 Aug 2026 10:07:00 GMT URL: https://news.google.com/rss/articles/CBMi4AFBVV95cUxNTWpKdDVyb0tJVE9FMDhrYi1OSDJKclN6ZTJBbldJbjdmd1RFVHE2Q28wdGhxYzg1WkVfamhVcmFUY2YzVFBiWDhLOUlFQVNrX2c0VHZUMVVDRnR5Z0RVa1Jkcmh1UnY1Q2lmbTloclpvQTUzbmdvOE5BeGRuZHd4TG9kOUdFUkE3aDdUQmRsN3ZENmdJQy12T2JiUmZQUEphYXNjRmdMMUhYVXdveDV3bXVkeUozNmplWE43VlhydTVwekkxcDEyZnRuR2ZzSXNZNjcw",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNTWpKdDVyb0tJVE9FMDhrYi1OSDJKclN6ZTJBbldJbjdmd1RFVHE2Q28wdGhxYzg1WkVfamhVcmFUY2YzVFBiWDhLOUlFQVNrX2c0VHZUMVVDRnR5Z0RVa1Jkcmh1UnY1Q2lmbTloclpvQTUzbmdvOE5BeGRuZHd4TG9kOUdFUkE3aDdUQmRsN3ZENmdJQy12T2JiUmZQUEphYXNjRmdMMUhYVXdveDV3bXVkeUozNmplWE43VlhydTVwekkxcDEyZnRuR2ZzSXNZNjcweTBTcXQ3N01yUHpQbQ?oc=5",
+      "source": "Google News",
+      "date": "Mon, 24 Aug 2026 10:07:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-25T04:07:21.051986+00:00"
+    },
+    {
+      "id": "dc3fb60b6430e125",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "La poste à Aniane fermera ses portes le 1er septembre 2026 - ici.fr",
+      "extrait": "TITRE: La poste à Aniane fermera ses portes le 1er septembre 2026 - ici.fr SOURCE: Google News DATE: Mon, 24 Aug 2026 05:32:30 GMT URL: https://news.google.com/rss/articles/CBMivAFBVV95cUxONnZFVFpWdHNzUFI3LTF4QWxrc0EzaXFhT09fWXVvNWh5Z1hlcjFaX2dPVE9DUXplWi1pcmQ1cnZtcXk4WTA2a3lLM0JIQS1Hb3VqdERQMEtLNjk0VEpQTFZHOW41UUdnSkNfXzBXOG1SbklncnBRbTlxSmN2S0tzNUJ2cXQ5eE1KRUZoQ0NNOWRkSGw0dmVpMzJyZlZaUkZrY0xZUi00QXZyVGJXS3dyakRNMDFDRlg2ZVg2dg?oc=5 <a href=\"https://news.google.com/rss/articles/CBMivAFBVV95cUxON",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxONnZFVFpWdHNzUFI3LTF4QWxrc0EzaXFhT09fWXVvNWh5Z1hlcjFaX2dPVE9DUXplWi1pcmQ1cnZtcXk4WTA2a3lLM0JIQS1Hb3VqdERQMEtLNjk0VEpQTFZHOW41UUdnSkNfXzBXOG1SbklncnBRbTlxSmN2S0tzNUJ2cXQ5eE1KRUZoQ0NNOWRkSGw0dmVpMzJyZlZaUkZrY0xZUi00QXZyVGJXS3dyakRNMDFDRlg2ZVg2dg?oc=5",
+      "source": "Google News",
+      "date": "Mon, 24 Aug 2026 05:32:30 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-25T04:07:10.915347+00:00"
+    },
+    {
+      "id": "e1f86bbfaca815a7",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Boulogne-sur-Mer : « une décision regrettable », la mairie réagit à la fermeture de La Poste à Bréquerecque - Nord Littoral",
+      "extrait": "TITRE: Boulogne-sur-Mer : « une décision regrettable », la mairie réagit à la fermeture de La Poste à Bréquerecque - Nord Littoral SOURCE: Google News DATE: Mon, 24 Aug 2026 04:41:00 GMT URL: https://news.google.com/rss/articles/CBMiywFBVV95cUxQVWpMYzdWUjFKV2l6ZGpXU1lNZTNwLTQydksyRnBESzVkaGdwMDh6bDRleHR3aEpYTV9wUkdfN3pmbDhZb1BSbGl2MjE4VUdNV0FwZFRxYzkySzFmRFhOS1M2RFVBVklYSGRwN3J1cWluZVhlNHhkVGRmMEdJZWtzN1VyQTFCWV9XN3ZORWViamJTcWJhX2Jkc1hfSjlKb1VVOVFqWmF1VFhsQlVUbXl6T3NJeWFZQWpZN19uN1dMY2ZsRWMzY3o",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQVWpMYzdWUjFKV2l6ZGpXU1lNZTNwLTQydksyRnBESzVkaGdwMDh6bDRleHR3aEpYTV9wUkdfN3pmbDhZb1BSbGl2MjE4VUdNV0FwZFRxYzkySzFmRFhOS1M2RFVBVklYSGRwN3J1cWluZVhlNHhkVGRmMEdJZWtzN1VyQTFCWV9XN3ZORWViamJTcWJhX2Jkc1hfSjlKb1VVOVFqWmF1VFhsQlVUbXl6T3NJeWFZQWpZN19uN1dMY2ZsRWMzY3ozQUpidw?oc=5",
+      "source": "Google News",
+      "date": "Mon, 24 Aug 2026 04:41:00 GMT",
+      "score": 3,
+      "raison": "fermeture non publiée: commune non géocodée",
+      "created_at": "2026-08-25T04:07:07.223681+00:00"
     },
     {
       "id": "fc84cf5650e4403c",
@@ -31285,6 +31535,279 @@
       "created_at": "2026-07-22T09:09:01.159244+00:00"
     },
     {
+      "id": "51aa65b5cbbc98da",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Tout le monde est le bienvenu ici.",
+      "extrait": "TITRE: Tout le monde est le bienvenu ici. SOURCE: Montceau News DATE: 2026-08-25T03:49:20Z URL: https://montceau-news.com/montceau_et_sa_region/885886-tout-le-monde-est-le-bienvenu-ici.html Elle se rattache d'abord à l'humanisme, qui place la personne humaine au centre de la réflexion morale. Elle rejoint le cosmopolitisme des stoïciens, pour lesquels chaque être humain appartient à une communauté plus vaste que sa cité ou son peuple. Elle rencontre l'hospitalité défendue par Kant, mais aussi la",
+      "url": "https://montceau-news.com/montceau_et_sa_region/885886-tout-le-monde-est-le-bienvenu-ici.html",
+      "source": "Montceau News",
+      "date": "2026-08-25T03:49:20Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-25T04:07:36.137877+00:00"
+    },
+    {
+      "id": "c519969288e153b2",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Téléphone interdit au lycée, carte scolaire... Le ministre de l'Éducation se livre sur les nouveautés de la rentrée 2026",
+      "extrait": "TITRE: Téléphone interdit au lycée, carte scolaire... Le ministre de l'Éducation se livre sur les nouveautés de la rentrée 2026 SOURCE: Ouest France DATE: 2026-08-24T18:15:07Z URL: https://www.ouest-france.fr/education/rentree-scolaire/telephone-interdit-au-lycee-carte-scolaire-le-ministre-de-leducation-se-livre-sur-les-nouveautes-de-la-rentree-2026-130d8afe-9fb9-11f1-a8ad-3219df531147 Les téléphones seront bien interdits dans les lycées à la rentrée, comme c'est déjà le cas au collège. \" Le pré",
+      "url": "https://www.ouest-france.fr/education/rentree-scolaire/telephone-interdit-au-lycee-carte-scolaire-le-ministre-de-leducation-se-livre-sur-les-nouveautes-de-la-rentree-2026-130d8afe-9fb9-11f1-a8ad-3219df531147",
+      "source": "Ouest France",
+      "date": "2026-08-24T18:15:07Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-25T04:07:45.806951+00:00"
+    },
+    {
+      "id": "b875782d64aa7411",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Un enfant sur 10 victime de violences sexuelles : le ministre de l'Éducation lance un questionnaire pour 10 millions d'élèves",
+      "extrait": "TITRE: Un enfant sur 10 victime de violences sexuelles : le ministre de l'Éducation lance un questionnaire pour 10 millions d'élèves SOURCE: www.lejdc.fr DATE: 2026-08-24T18:15:00Z URL: https://www.lejdc.fr/paris-75000/actualites/un-enfant-sur-10-victime-de-violences-sexuelles-le-ministre-de-l-education-lance-un-questionnaire-pour-10-millions-d-eleves_15036211/ Cela correspond grosso modo aux écoles qui ont été très vite fermées au moment de la canicule. Dans ces établissements, nous avons décle",
+      "url": "https://www.lejdc.fr/paris-75000/actualites/un-enfant-sur-10-victime-de-violences-sexuelles-le-ministre-de-l-education-lance-un-questionnaire-pour-10-millions-d-eleves_15036211/",
+      "source": "www.lejdc.fr",
+      "date": "2026-08-24T18:15:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-25T04:07:38.682789+00:00"
+    },
+    {
+      "id": "3b751b58ff0ea243",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Un enfant sur 10 victime de violences sexuelles : le ministre de l'Éducation lance un questionnaire pour 10 millions d'élèves",
+      "extrait": "TITRE: Un enfant sur 10 victime de violences sexuelles : le ministre de l'Éducation lance un questionnaire pour 10 millions d'élèves SOURCE: Le Populaire du Centre DATE: 2026-08-24T18:15:00Z URL: https://www.lepopulaire.fr/paris-75000/actualites/un-enfant-sur-10-victime-de-violences-sexuelles-le-ministre-de-l-education-lance-un-questionnaire-pour-10-millions-d-eleves_15036211/ Cela correspond grosso modo aux écoles qui ont été très vite fermées au moment de la canicule. Dans ces établissements, ",
+      "url": "https://www.lepopulaire.fr/paris-75000/actualites/un-enfant-sur-10-victime-de-violences-sexuelles-le-ministre-de-l-education-lance-un-questionnaire-pour-10-millions-d-eleves_15036211/",
+      "source": "Le Populaire du Centre",
+      "date": "2026-08-24T18:15:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-25T04:07:44.561177+00:00"
+    },
+    {
+      "id": "f95c6c89f412885f",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Analyse. Xi Jinping, la nouvelle génération d'officiers et les contradictions de l'armée chinoise",
+      "extrait": "TITRE: Analyse. Xi Jinping, la nouvelle génération d'officiers et les contradictions de l'armée chinoise SOURCE: Révolution Permanente DATE: 2026-08-24T16:18:45Z URL: https://www.revolutionpermanente.fr/Analyse-Xi-Jinping-la-nouvelle-generation-d-officiers-et-les-contradictions-de-l-armee-chinoise Les résultats de cette refonte militaire commencent désormais à se dessiner. Et ils traduisent un changement structurel majeur au sein des principaux organes de l'Armée populaire de libération (APL) --",
+      "url": "https://www.revolutionpermanente.fr/Analyse-Xi-Jinping-la-nouvelle-generation-d-officiers-et-les-contradictions-de-l-armee-chinoise",
+      "source": "Révolution Permanente",
+      "date": "2026-08-24T16:18:45Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-25T04:07:53.112594+00:00"
+    },
+    {
+      "id": "cc4925e3821c30ad",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Tô Lâm remet les nominations à quatre procureurs du Parquet populaire suprême",
+      "extrait": "TITRE: Tô Lâm remet les nominations à quatre procureurs du Parquet populaire suprême SOURCE: lecourrier.vn DATE: 2026-08-24T15:00:13Z URL: https://lecourrier.vn/to-lam-remet-les-nominations-a-quatre-procureurs-du-parquet-populaire-supreme/1354085.html S'exprimant lors de la cérémonie, le secrétaire général et président Tô Lâm a souligné que les procureurs du Parquet populaire suprême sont soumis à des exigences particulièrement élevées en matière de qualité et caractère, de compétence profession",
+      "url": "https://lecourrier.vn/to-lam-remet-les-nominations-a-quatre-procureurs-du-parquet-populaire-supreme/1354085.html",
+      "source": "lecourrier.vn",
+      "date": "2026-08-24T15:00:13Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-25T04:07:59.222461+00:00"
+    },
+    {
+      "id": "90eed41152f311a0",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Foot Mercato : l'actualité des transferts, les dernières infos et rumeurs en temps réel",
+      "extrait": "TITRE: Foot Mercato : l'actualité des transferts, les dernières infos et rumeurs en temps réel SOURCE: Ouest France DATE: 2026-08-24T13:49:39Z URL: https://www.ouest-france.fr/sport/football/transferts/ La planète football vit au rythme des transferts. Avec son lot de rumeurs. Chaque année, deux fois par saison, le mercato agite les clubs, principalement en Europe. Si les droits TV restent la principale source de revenus des clubs, le mercato constitue, lui, une source de flux financiers importa",
+      "url": "https://www.ouest-france.fr/sport/football/transferts/",
+      "source": "Ouest France",
+      "date": "2026-08-24T13:49:39Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-25T04:08:02.290856+00:00"
+    },
+    {
+      "id": "ec42a896cb3871c8",
+      "banque": "LCL",
+      "departement": "",
+      "titre": "Stade Rennais Mercato : après l'OM, un autre club de L1 veut relancer Ludovic Blas !",
+      "extrait": "TITRE: Stade Rennais Mercato : après l'OM, un autre club de L1 veut relancer Ludovic Blas ! SOURCE: But! Football Club DATE: 2026-08-24T13:00:00Z URL: https://www.butfootballclub.fr/1693082-stade-rennais-mercato-un-autre-club-de-l1-que-lom-pret-a-se-jeter-sur-ludovic-blas/ Auteur d'une entrée incisive face au PSG (2-2), Ludovic Blas (Stade Rennais, 28 ans) a gagné du crédit en plein marché des transferts. Le mercato du Stade Rennais pourrait encore réserver quelques surprises. Alors que le club ",
+      "url": "https://www.butfootballclub.fr/1693082-stade-rennais-mercato-un-autre-club-de-l1-que-lom-pret-a-se-jeter-sur-ludovic-blas/",
+      "source": "But! Football Club",
+      "date": "2026-08-24T13:00:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-25T04:08:08.179331+00:00"
+    },
+    {
+      "id": "43787ce46bebba49",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Côte d'Ivoire : l'hévéa diversifie ses revenus",
+      "extrait": "TITRE: Côte d'Ivoire : l'hévéa diversifie ses revenus SOURCE: Afrique-Sur7.fr DATE: 2026-08-24T12:57:37Z URL: https://www.afrique-sur7.fr/cote-divoire-lhevea-diversifie-ses-revenus La Côte d'Ivoire transforme en profondeur les circuits de commercialisation de son secteur agricole afin de valoriser les sous-produits issus des grandes plantations de caoutchouc. Les responsables de la fédération professionnelle nationale ont validé le déploiement d'une filière de valorisation des semences végétales",
+      "url": "https://www.afrique-sur7.fr/cote-divoire-lhevea-diversifie-ses-revenus",
+      "source": "Afrique-Sur7.fr",
+      "date": "2026-08-24T12:57:37Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-25T04:08:10.852516+00:00"
+    },
+    {
+      "id": "6e82ace7f766956f",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "\"Le mercato n'est pas fini du tout\" : Barcola, Mbaye, un nouveau gardien... Faut-il s'attendre à du mouvement au PSG d'ici la fermeture du marché des transferts ?",
+      "extrait": "TITRE: \"Le mercato n'est pas fini du tout\" : Barcola, Mbaye, un nouveau gardien... Faut-il s'attendre à du mouvement au PSG d'ici la fermeture du marché des transferts ? SOURCE: RTL.fr DATE: 2026-08-24T10:32:19Z URL: https://www.rtl.fr/sport/football/le-mercato-n-est-pas-fini-du-tout-barcola-mbaye-un-nouveau-gardien-faut-il-s-attendre-a-du-mouvement-au-psg-d-ici-la-fermeture-du-marche-des-transferts-7900664356 \"Le mercato n'est pas fini du tout.\" En marge du déplacement improvisé à la dernière m",
+      "url": "https://www.rtl.fr/sport/football/le-mercato-n-est-pas-fini-du-tout-barcola-mbaye-un-nouveau-gardien-faut-il-s-attendre-a-du-mouvement-au-psg-d-ici-la-fermeture-du-marche-des-transferts-7900664356",
+      "source": "RTL.fr",
+      "date": "2026-08-24T10:32:19Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-25T04:08:16.323733+00:00"
+    },
+    {
+      "id": "34f37e08df1453f7",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "TÉMOIGNAGES. Plus de distributeur, frais bancaires, bus obligatoire... dans ce quartier d'Albi, la fermeture de La Poste passe très mal",
+      "extrait": "TITRE: TÉMOIGNAGES. Plus de distributeur, frais bancaires, bus obligatoire... dans ce quartier d'Albi, la fermeture de La Poste passe très mal SOURCE: Ladepeche.fr DATE: 2026-08-24T10:01:05Z URL: https://www.ladepeche.fr/2026/08/24/temoignages-plus-de-distributeur-frais-bancaires-bus-obligatoire-dans-ce-quartier-dalbi-la-fermeture-de-la-poste-passe-tres-mal-13517307.php l'essentiel Le rideau est définitivement tombé sur le bureau de poste de La Madeleine. Entre la perte du distributeur de billet",
+      "url": "https://www.ladepeche.fr/2026/08/24/temoignages-plus-de-distributeur-frais-bancaires-bus-obligatoire-dans-ce-quartier-dalbi-la-fermeture-de-la-poste-passe-tres-mal-13517307.php",
+      "source": "Ladepeche.fr",
+      "date": "2026-08-24T10:01:05Z",
+      "score": 3,
+      "raison": "fermeture non publiée: garde entrée/sortie: fermeture postale temporaire ou circonstancielle; garde entrée/sortie: fermeture postale temporaire ou circonstancielle",
+      "created_at": "2026-08-25T04:08:23.527354+00:00"
+    },
+    {
+      "id": "a3a45122431a01b2",
+      "banque": "Banque Populaire",
+      "departement": "",
+      "titre": "Le Thread de la Semaine : Détenez-vous assez d'or ?",
+      "extrait": "TITRE: Le Thread de la Semaine : Détenez-vous assez d'or ? SOURCE: zonebourse DATE: 2026-08-24T09:29:45Z URL: https://www.zonebourse.com/actualite-bourse/le-thread-de-la-semaine-detenez-vous-assez-d-or--ce7858dbd88ff724 Dix jours plus tôt, Pékin avait publié l'autre versant de l'équation. La Banque populaire de Chine (PBoC) a ajouté 20 tonnes d'or à ses réserves en juillet, son plus gros achat mensuel en près de trois ans et son 21e mois consécutif d'achats. Prisme 1 : la Banque populaire de Chi",
+      "url": "https://www.zonebourse.com/actualite-bourse/le-thread-de-la-semaine-detenez-vous-assez-d-or--ce7858dbd88ff724",
+      "source": "zonebourse",
+      "date": "2026-08-24T09:29:45Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-25T04:08:24.793600+00:00"
+    },
+    {
+      "id": "76993fc74df0dd1e",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "20 arnaques courantes et comment les repérer",
+      "extrait": "TITRE: 20 arnaques courantes et comment les repérer SOURCE: Epoch Times DATE: 2026-08-24T09:09:41Z URL: https://www.epochtimes.fr/20-arnaques-courantes-et-comment-les-reperer-3331301.html L'émergence de l'intelligence artificielle a fourni des outils toujours plus perfectionnés aux réseaux de cybercriminalité, qui ont su développé des escroqueries plus audacieuses et élaborées. Voici la synthèse par Epoch Times des 20 escroqueries les plus courantes. Les escrocs aux sentiments peuvent cibler des",
+      "url": "https://www.epochtimes.fr/20-arnaques-courantes-et-comment-les-reperer-3331301.html",
+      "source": "Epoch Times",
+      "date": "2026-08-24T09:09:41Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-25T04:08:18.941757+00:00"
+    },
+    {
+      "id": "dda45a97c3023b7c",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "PSG : la confidence de Torres sur Ruiz, et la petite phrase de Campos qui relance tout - Sport.fr",
+      "extrait": "TITRE: PSG : la confidence de Torres sur Ruiz, et la petite phrase de Campos qui relance tout - Sport.fr SOURCE: Sport.fr DATE: 2026-08-24T07:40:54Z URL: https://www.sport.fr/football/psg-la-confidence-de-torres-sur-ruiz-et-la-petite-phrase-de-campos-qui-relance-tout-1476376.shtm Le Roazhon Park venait à peine de se vider que déjà, les langues se déliaient du côté parisien. Entre un sauveur inattendu et un directeur sportif qui refuse de fermer une porte, la soirée de Rennes aura laissé bien plu",
+      "url": "https://www.sport.fr/football/psg-la-confidence-de-torres-sur-ruiz-et-la-petite-phrase-de-campos-qui-relance-tout-1476376.shtm",
+      "source": "Sport.fr",
+      "date": "2026-08-24T07:40:54Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-24T07:42:38.637360+00:00"
+    },
+    {
+      "id": "edb9fb97b9435d5a",
+      "banque": "BNP Paribas",
+      "departement": "",
+      "titre": "Ouverture Paris : le CAC 40 repart dans le rouge!",
+      "extrait": "TITRE: Ouverture Paris : le CAC 40 repart dans le rouge! SOURCE: Boursier.com DATE: 2026-08-24T07:30:00Z URL: https://www.boursier.com/indices/actualites/news/ouverture-paris-le-cac-40-repart-dans-le-rouge-992383.html Ouverture Paris : le CAC 40 repart dans le rouge! Par Arnaud Bivès Publié le 24/08/2026 à 09h30 Ouverture Paris : le CAC 40 repart dans le rouge! LA TENDANCE (Boursier.com) -- La baisse a repris ce matin sur le marché parisien! Le CAC 40 recule de 0,30% à 8.460 points à 9h30. Vendr",
+      "url": "https://www.boursier.com/indices/actualites/news/ouverture-paris-le-cac-40-repart-dans-le-rouge-992383.html",
+      "source": "Boursier.com",
+      "date": "2026-08-24T07:30:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-24T07:42:41.161046+00:00"
+    },
+    {
+      "id": "5bc641f94459b037",
+      "banque": "LCL",
+      "departement": "",
+      "titre": "PSG Mercato : après Ruiz et Torres, un troisième champion du monde à Paris ?",
+      "extrait": "TITRE: PSG Mercato : après Ruiz et Torres, un troisième champion du monde à Paris ? SOURCE: But! Football Club DATE: 2026-08-24T07:20:00Z URL: https://www.butfootballclub.fr/1693052-psg-mercato-un-troisieme-champion-du-monde-en-vue-a-paris/ Luis Campos creuserait en secret la poste menant à un champion du monde espagnol pour renforcer le PSG. Le mercato du PSG pourrait-il encore prendre une tournure spectaculaire. Après Fabian Ruiz et Ferran Torres, Paris aurait dans son viseur un troisième cham",
+      "url": "https://www.butfootballclub.fr/1693052-psg-mercato-un-troisieme-champion-du-monde-en-vue-a-paris/",
+      "source": "But! Football Club",
+      "date": "2026-08-24T07:20:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-24T07:42:43.653429+00:00"
+    },
+    {
+      "id": "9aae6f2aa2fa76aa",
+      "banque": "BNP Paribas",
+      "departement": "",
+      "titre": "Préouverture Paris : le CAC 40 va tenter de poursuivre son rebond !",
+      "extrait": "TITRE: Préouverture Paris : le CAC 40 va tenter de poursuivre son rebond ! SOURCE: Bourse Direct DATE: 2026-08-24T06:51:05Z URL: https://www.boursedirect.fr/fr/actualites/categorie/marche-francais/preouverture-paris-le-cac-40-va-tenter-de-poursuivre-son-rebond-boursier-285f07ce27267c1bdc506192fe396df9a2ddcb5e Vendredi, le CAC 40 (+0,37%) a mis fin à une séquence de huit séances consécutives de baisse et devrait poursuivre le mouvement ce matin, à condition que les indicateurs de préséance, dans ",
+      "url": "https://www.boursedirect.fr/fr/actualites/categorie/marche-francais/preouverture-paris-le-cac-40-va-tenter-de-poursuivre-son-rebond-boursier-285f07ce27267c1bdc506192fe396df9a2ddcb5e",
+      "source": "Bourse Direct",
+      "date": "2026-08-24T06:51:05Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-24T07:42:55.647676+00:00"
+    },
+    {
+      "id": "5a07ef79890f380d",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "PSG : Barcola et Mbaye out du groupe pour Rennes, leur départ vers Liverpool se précise sérieusement - Sport.fr",
+      "extrait": "TITRE: PSG : Barcola et Mbaye out du groupe pour Rennes, leur départ vers Liverpool se précise sérieusement - Sport.fr SOURCE: Sport.fr DATE: 2026-08-24T06:41:42Z URL: https://www.sport.fr/football/psg-barcola-et-mbaye-out-du-groupe-pour-rennes-leur-depart-vers-liverpool-se-precise-serieusement-1476341.shtm L'entraîneur parisien a tranché : Bradley Barcola et Ibrahim Mbaye, tous deux annoncés proches d'un transfert vers Liverpool, ne figuraient pas dans le groupe retenu pour ce déplacement domin",
+      "url": "https://www.sport.fr/football/psg-barcola-et-mbaye-out-du-groupe-pour-rennes-leur-depart-vers-liverpool-se-precise-serieusement-1476341.shtm",
+      "source": "Sport.fr",
+      "date": "2026-08-24T06:41:42Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-24T07:42:57.133139+00:00"
+    },
+    {
+      "id": "050db7fe629192c1",
+      "banque": "BNP Paribas",
+      "departement": "",
+      "titre": "Préouverture Paris : le CAC 40 va tenter de poursuivre son rebond !",
+      "extrait": "TITRE: Préouverture Paris : le CAC 40 va tenter de poursuivre son rebond ! SOURCE: Boursier.com DATE: 2026-08-24T06:30:00Z URL: https://www.boursier.com/indices/actualites/news/preouverture-paris-le-cac-40-va-tenter-de-poursuivre-son-rebond-992376.html Préouverture Paris : le CAC 40 va tenter de poursuivre son rebond ! Par Arnaud Bivès Publié le 24/08/2026 à 08h30 Préouverture Paris : le CAC 40 va tenter de poursuivre son rebond ! LA TENDANCE (Boursier.com) -- Vendredi, le CAC 40 (+0,37%) a mis ",
+      "url": "https://www.boursier.com/indices/actualites/news/preouverture-paris-le-cac-40-va-tenter-de-poursuivre-son-rebond-992376.html",
+      "source": "Boursier.com",
+      "date": "2026-08-24T06:30:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-24T07:42:58.457844+00:00"
+    },
+    {
+      "id": "7a1400c4b6530426",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Le Bénin renforce ses filières techniques pour industrialiser l'agriculture",
+      "extrait": "TITRE: Le Bénin renforce ses filières techniques pour industrialiser l'agriculture SOURCE: Agence Ecofin DATE: 2026-08-24T06:02:04Z URL: https://www.agenceecofin.com/actualites-services/2408-140971-le-benin-renforce-ses-filieres-techniques-pour-industrialiser-l-agriculture Les nouveaux cursus conduisent au Diplôme de Technicien aux Métiers (DTM). Elles couvrent l'aviculture, la pisciculture, l'horticulture, la production céréalière, les fibres textiles et le palmier à huile. Chaque programme est",
+      "url": "https://www.agenceecofin.com/actualites-services/2408-140971-le-benin-renforce-ses-filieres-techniques-pour-industrialiser-l-agriculture",
+      "source": "Agence Ecofin",
+      "date": "2026-08-24T06:02:04Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-24T07:43:03.342526+00:00"
+    },
+    {
+      "id": "9aebbc2fa8b43e24",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "ROQUEMAURE Nathalie Nury : \" Je ne peux pas faire en six ans ce qui n'a pas été fait en trente ou quarante ans \"",
+      "extrait": "TITRE: ROQUEMAURE Nathalie Nury : \" Je ne peux pas faire en six ans ce qui n'a pas été fait en trente ou quarante ans \" SOURCE: ObjectifGard DATE: 2026-08-24T06:01:52Z URL: https://www.objectifgard.com/politique/roquemaure-nathalie-nury-je-ne-peux-pas-faire-en-six-ans-ce-qui-na-pas-ete-fait-en-trente-ou-quarante-ans-168216.php Réélue à la tête de Roquemaure, Nathalie Nury entame son deuxième mandat avec plusieurs chantiers importants pour la commune. École maternelle, voirie, commerces, végétali",
+      "url": "https://www.objectifgard.com/politique/roquemaure-nathalie-nury-je-ne-peux-pas-faire-en-six-ans-ce-qui-na-pas-ete-fait-en-trente-ou-quarante-ans-168216.php",
+      "source": "ObjectifGard",
+      "date": "2026-08-24T06:01:52Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-24T07:43:05.723539+00:00"
+    },
+    {
       "id": "aee9b9ee2d0fd84e",
       "banque": "La Banque Postale",
       "departement": "",
@@ -35120,6 +35643,19 @@
       "created_at": "2026-07-23T09:43:32.811098+00:00"
     },
     {
+      "id": "5629594fd3ca48a5",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "PORTRAIT. \"Pourquoi je devrais arrêter ?\"... en activité depuis un demi-siècle, ce kiné tarnais de 80 ans ne veut pas arrêter",
+      "extrait": "TITRE: PORTRAIT. \"Pourquoi je devrais arrêter ?\"... en activité depuis un demi-siècle, ce kiné tarnais de 80 ans ne veut pas arrêter SOURCE: Ladepeche.fr DATE: 2026-02-24T06:05:41Z URL: https://www.ladepeche.fr/2026/02/24/portrait-pourquoi-je-devrais-arreter-en-activite-depuis-un-demi-siecle-ce-kine-tarnais-de-80-ans-ne-veut-pas-arreter-13206713.php l'essentiel En poste depuis plus de cinquante ans, Claude Marty continue toujours d'exercer son métier de kinésithérapeute à Marssac-sur-Tarn. Et pa",
+      "url": "https://www.ladepeche.fr/2026/02/24/portrait-pourquoi-je-devrais-arreter-en-activite-depuis-un-demi-siecle-ce-kine-tarnais-de-80-ans-ne-veut-pas-arreter-13206713.php",
+      "source": "Ladepeche.fr",
+      "date": "2026-02-24T06:05:41Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-24T07:43:08.051635+00:00"
+    },
+    {
       "id": "32492d403d984bac",
       "banque": "La Banque Postale",
       "departement": "",
@@ -37993,6 +38529,32 @@
       "created_at": "2026-08-03T07:53:11.158088+00:00"
     },
     {
+      "id": "5bc409f8c7a221a0",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "TÉMOIGNAGES. Plus de distributeur, frais bancaires, bus obligatoire... dans ce quartier d'Albi, la fermeture de La Poste passe très mal - ladepeche.fr",
+      "extrait": "L’article (titre) évoque la « fermeture de La Poste » dans « ce quartier d’Albi », avec des impacts bancaires (« plus de distributeur, frais bancaires, bus obligatoire »), mais sans commune précise (au-delà d’Albi) ni date ni précision sur un transfert/retrait d’agences bancaires.",
+      "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxNQ2hfTXl1QnlLOVFtcjRQeFB0MDhjMzBLZkJSZHpvdzJWYm15ei1ZM0ZuQ2djZW1ORTZYbWhtcEE4TjRUT1NTMUQ3NWtNd05JT0FDcEtmbEpKbzlub0dhYWVOYlhlY09WT2JTYUllRENGbHYxUnBVS2hCU0F4NnRIV2xrR204UlNsckZnZmZOM0dtNV9JM0FUM21QNG52QXJBX2hzR0g0UmJmRHdxbUxqUlEzSUdWU1FmWGp2dTFyQnB4UUotOGd1aXFJMGJjQTdLVHhVWFdobkF2M05DLXN2TnJNaVJ4SVdCN2d1ZzdqbTduNmF0TDdFVUxTaHd5YXoyS3RNMHltTQ?oc=5",
+      "source": "Google News",
+      "date": "Mon, 24 Aug 2026 10:01:00 GMT",
+      "score": 2,
+      "raison": "signaux: vague(La Poste,regional,count=None)",
+      "created_at": "2026-08-25T04:07:14.460650+00:00"
+    },
+    {
+      "id": "7d54af609f8a234b",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Incendie à La Poste : le bureau fermé jusqu’à nouvel ordre - Haute Gironde",
+      "extrait": "« Incendie à La Poste : le bureau fermé jusqu’à nouvel ordre - Haute Gironde » (fermeture temporaire/inconnue, commune non précisée)",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPZzkwdERkZDdsbEpZRXA5TWFuLVdjZWM0VXFxbGE1Z3ZUNmtrRWdwN1VGajFpckxsMUxmZk9IM2ZGU0k0LTRlR29jcGxlcjY4OE15dERkeV9ab1ZLMTJIeG1uTVV0WUhYQjVpdFRLSFZSeUdtZXRUTlRFdTdSOWo5WERuM0x5cFRseVdsT2NpdFlnMjhBNFEyT3A5MGFMNDlSYnZuM1YyRTE3Wkhpa24tVThXZWFROWllRTgwSXZEZTVpdFJRdmc?oc=5",
+      "source": "Google News",
+      "date": "Mon, 24 Aug 2026 05:51:00 GMT",
+      "score": 2,
+      "raison": "signaux: vague(La Poste,regional,count=None)",
+      "created_at": "2026-08-25T04:07:16.991843+00:00"
+    },
+    {
       "id": "a2089691855df19f",
       "banque": "Société Générale",
       "departement": "",
@@ -38916,6 +39478,84 @@
       "created_at": "2026-06-25T15:43:41.960961+00:00"
     },
     {
+      "id": "fae3c172ee29bf11",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Mercato - Le RC Lens veut faire son marché en Arabie saoudite avec un Français à 20 M€",
+      "extrait": "TITRE: Mercato - Le RC Lens veut faire son marché en Arabie saoudite avec un Français à 20 M€ SOURCE: Top mercato DATE: 2026-08-24T16:36:00Z URL: https://www.topmercato.com/2127385-mercato-le-rc-lens-veut-faire-son-marche-en-arabie-saoudite-avec-un-francais-a-20-me/ Le RC Lens, qui a bien lancé sa saison, a l'intention de bien terminé son mercato, avec une opération ambitieuse liée à l'Arabie saoudite. Malgré le changement d'entraîneur, Dino Toppmöller remplaçant Pierre Sage, parti à Crystal Pal",
+      "url": "https://www.topmercato.com/2127385-mercato-le-rc-lens-veut-faire-son-marche-en-arabie-saoudite-avec-un-francais-a-20-me/",
+      "source": "Top mercato",
+      "date": "2026-08-24T16:36:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-25T04:07:51.490986+00:00"
+    },
+    {
+      "id": "356455a00219119f",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "La BIDC, bras financier de la CEDEAO, se déclare satisfaite de ses résultats macroéconomiques de 2025",
+      "extrait": "TITRE: La BIDC, bras financier de la CEDEAO, se déclare satisfaite de ses résultats macroéconomiques de 2025 SOURCE: lemagazinedumanager.com DATE: 2026-08-24T14:41:24Z URL: https://lemagazinedumanager.com/28733-la-bidc-bras-financier-de-la-cedeao-se-declare-satisfaite-de-ses-resultats-macroeconomiques-de-2025.html La direction de la Banque de développement de la CEDEAO (BIDC), basée à Lomé, la capitale togolaise, a exprimé ce lundi 24 août, sa satisfaction de ses résultats macroéconomiques de 20",
+      "url": "https://lemagazinedumanager.com/28733-la-bidc-bras-financier-de-la-cedeao-se-declare-satisfaite-de-ses-resultats-macroeconomiques-de-2025.html",
+      "source": "lemagazinedumanager.com",
+      "date": "2026-08-24T14:41:24Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-25T04:07:57.039121+00:00"
+    },
+    {
+      "id": "f9d405f204221604",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Cyberattaque de la DGFiP : l'électrochoc qui accélère la sécurisation des administrations",
+      "extrait": "TITRE: Cyberattaque de la DGFiP : l'électrochoc qui accélère la sécurisation des administrations SOURCE: Le journal du net DATE: 2026-08-24T14:36:15Z URL: https://www.journaldunet.com/cybersecurite/1553815-cyberattaque-de-la-dgfip-l-electrochoc-qui-accelere-la-securisation-des-administrations/ * la suppression de l'accès par Internet à certaines applications considérées comme sensibles ; Cette approche répond à un principe classique de cybersécurité : un utilisateur ne doit disposer que des droi",
+      "url": "https://www.journaldunet.com/cybersecurite/1553815-cyberattaque-de-la-dgfip-l-electrochoc-qui-accelere-la-securisation-des-administrations/",
+      "source": "Le journal du net",
+      "date": "2026-08-24T14:36:15Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-25T04:08:01.147881+00:00"
+    },
+    {
+      "id": "709a6bb749999135",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Equipe de France: Nouveau casse-tête pour Zinédine Zidane",
+      "extrait": "TITRE: Equipe de France: Nouveau casse-tête pour Zinédine Zidane SOURCE: Football.fr DATE: 2026-08-24T10:32:46Z URL: https://www.football.fr/equipe-de-france/equipe-de-france-nouveau-casse-tete-pour-zinedine-zidane-829293.html Nouveau sélectionneur de l'équipe de France, Zinédine Zidane a suivi avec attention le week-end de football européen et n'a certainement pas manqué certaines performances notables de la part des cracks offensifs des Bleus. Un engouement sans précédent a accompagné l'intron",
+      "url": "https://www.football.fr/equipe-de-france/equipe-de-france-nouveau-casse-tete-pour-zinedine-zidane-829293.html",
+      "source": "Football.fr",
+      "date": "2026-08-24T10:32:46Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-25T04:08:14.666290+00:00"
+    },
+    {
+      "id": "572054b665156918",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "La Matinale Senego : Sonko à Médina Baye, TAS relance l'ASER, Anta Babacar Ngom investie",
+      "extrait": "TITRE: La Matinale Senego : Sonko à Médina Baye, TAS relance l'ASER, Anta Babacar Ngom investie SOURCE: Senego.com - Actualité au Sénégal, toute actualité du jour DATE: 2026-08-24T06:03:43Z URL: https://senego.com/la-matinale-senego-sonko-a-medina-baye-tas-relance-laser-anta-babacar-ngom-investie_1996477.html Bonjour et bienvenue dans la matinale de Senego du lundi 24 août 2026. Cette nuit, l'actualité a été marquée par les propositions de Ousmane Sonko sur les fonds politiques et les relations ",
+      "url": "https://senego.com/la-matinale-senego-sonko-a-medina-baye-tas-relance-laser-anta-babacar-ngom-investie_1996477.html",
+      "source": "Senego.com - Actualité au Sénégal, toute actualité du jour",
+      "date": "2026-08-24T06:03:43Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-24T07:43:00.952348+00:00"
+    },
+    {
+      "id": "ddf7fe7e1a52657e",
+      "banque": "La Poste / service postal (bureaux de poste)",
+      "departement": "",
+      "titre": "Le comité de vigilance de Martigues inquiet de l'avenir du service postal",
+      "extrait": "Article décrit des fermetures/horaires dégradés : « Croix-Sainte… Jonquières a fermé tout l'été… la Couronne n'est pas accessible le lundi… Carry-le-Rouet et de Sausset-les-Pins fermés un samedi sur deux… »",
+      "url": "https://www.lamarseillaise.fr/societe/le-comite-de-vigilance-de-martigues-inquiet-de-l-avenir-du-service-postal-ME20606291",
+      "source": "www.lamarseillaise.fr",
+      "date": "2026-08-24T04:57:48Z",
+      "score": 2,
+      "raison": "signaux: vague(La Poste / service postal (bureaux de poste),regional,count=None)",
+      "created_at": "2026-08-24T07:43:12.541148+00:00"
+    },
+    {
       "id": "58b467418d3687ba",
       "banque": "Société Générale",
       "departement": "",
@@ -38927,6 +39567,19 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-08-24T04:12:40.371243+00:00"
+    },
+    {
+      "id": "e01cfee6d917d7d0",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Prix du Public : votez pour les Trophées des Français du Royaume-Uni 2026",
+      "extrait": "TITRE: Prix du Public : votez pour les Trophées des Français du Royaume-Uni 2026 SOURCE: Le Petit Journal DATE: 2026-08-23T16:00:00Z URL: https://lepetitjournal.com/trophees/royaume-uni/prix-public-votez-trophees-francais-royaume-uni-2026-451376 Moussa-Cavin Beye, Créateur de contenu (BeYourBeye) (Londres) Mais son parcours dépasse largement sa réussite professionnelle. Originaire de Sarcelles, il connaît les freins auxquels sont confrontés de nombreux jeunes lorsqu'il s'agit d'envisager une car",
+      "url": "https://lepetitjournal.com/trophees/royaume-uni/prix-public-votez-trophees-francais-royaume-uni-2026-451376",
+      "source": "Le Petit Journal",
+      "date": "2026-08-23T16:00:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-25T04:07:41.366151+00:00"
     },
     {
       "id": "da2fc66e2ea6e4b4",
