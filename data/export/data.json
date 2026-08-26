@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T04:18:51.078316+00:00",
+  "generated_at": "2026-08-26T04:21:45.730243+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -1818,9 +1818,9 @@
     },
     {
       "region": "Bretagne",
-      "articles": 38,
-      "fermetures": 15,
-      "projets": 10,
+      "articles": 39,
+      "fermetures": 16,
+      "projets": 9,
       "fusions": 0,
       "types": [
         "Fermeture",
@@ -8150,7 +8150,7 @@
       "type": "fermeture",
       "date_annonce": "Fri, 10 Jul 2026 07:00:00 GMT",
       "date_fermeture": "2026-07-10",
-      "statut": "projet",
+      "statut": "confirmé",
       "statut_temporel": "deja_fermee",
       "date_fermeture_approx": 1,
       "fiabilite": 3,
@@ -8173,6 +8173,13 @@
           "source": "Google News",
           "date": "Fri, 10 Jul 2026 07:00:00 GMT",
           "tier": "D"
+        },
+        {
+          "url": "https://www.letelegramme.fr/ille-et-vilaine/saint-malo-35400/dans-ce-quartier-populaire-de-saint-malo-le-bureau-de-poste-ferme-definitivement-ce-29-aout-2026-7104889.php",
+          "titre": "Dans ce quartier populaire de Saint-Malo, le bureau de poste ferme définitivement ce 29août 2026",
+          "source": "Le Telegramme",
+          "date": "2026-08-25T15:00:03Z",
+          "tier": "B"
         },
         {
           "url": "https://www.letelegramme.fr/ille-et-vilaine/saint-malo-35400/les-habitants-de-la-decouverte-a-saint-malo-stupefaits-par-lannonce-de-fermeture-du-bureau-de-poste-7081371.php",
@@ -10714,6 +10721,42 @@
       "created_at": "2026-07-22T08:57:50.403278+00:00"
     },
     {
+      "id": "28218b9aa6b25b64",
+      "banque": "La Banque Postale",
+      "commune": "Allauch",
+      "departement": "13",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "a_venir",
+      "fiabilite": 3,
+      "citation": "« C’est l’abandon d’un service public de proximité » : dans ce quartier de Saint-Malo, le bureau de poste va fermer définitivement - Le Télégramme",
+      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPNzBxWDRXaDBWSTYzUnBFTGN6RjlDQzg5Y3dpVlh3V2EyekotVWRiaERFM3dieHdoa19JcW9LZFY2LWJMTHhQUmkxbTVfbTNLRHBLTDl0bHFyWkxuT2ltejNxTmcyVUQ0SkVNdUluTm1rNHBYN0lCYzlQeHFYRFNGc2JmZkRRLUc5ZnVaWWxaY2lBb012YnREbnJxTUZZQUt2aU8tLUJxUjRiSUxZdWJVd3M4ZTBSdWRDakdKWXJVbk9ma1oxR1hobmZycHBVdW05UFU3X1MwckJ4b2t6bWdjOUlGVUktQVBpekNkWFpCWl8wZjI1YzZBX1piU1VJQQ?oc=5",
+      "titre": "« C’est l’abandon d’un service public de proximité » : dans ce quartier de Saint-Malo, le bureau de poste va fermer définitivement - Le Télégramme",
+      "source": "Google News",
+      "date": "Tue, 25 Aug 2026 15:00:03 GMT",
+      "raison": "garde entrée/sortie: commune/localisation de sortie absente de la source",
+      "created_at": "2026-08-26T04:09:51.979620+00:00"
+    },
+    {
+      "id": "f9c7eaf3ce871195",
+      "banque": "La Banque Postale",
+      "commune": "Dreux",
+      "departement": "28",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "Dreux : douze semaines de fermeture pour le bureau de poste - EVASION",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOa2VReTNsSzRmSkdJb09XZ19HNTZuRDFHZ3d1OTFYWVZJSzVERnhVYmN4LW5jcmxCUjZwdXNZQjR5UmwwVVM5d0lwdnlyX2ZNMWZTR3A5LUhIMU1UaTNYb29na1lzWVRaT2M0cEFoOEVtMHVxNlVkallKTi03NkZ1bmljWDFoYkZLeHVr?oc=5",
+      "titre": "Dreux : douze semaines de fermeture pour le bureau de poste - EVASION",
+      "source": "Google News",
+      "date": "Tue, 25 Aug 2026 10:00:00 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-08-26T04:09:53.104558+00:00"
+    },
+    {
       "id": "e65f9afebabddd98",
       "banque": "La Banque Postale",
       "commune": "Vivy",
@@ -10927,7 +10970,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-25T04:03:33.643541+00:00"
+      "created_at": "2026-08-26T04:06:24.394126+00:00"
     },
     {
       "id": "50895c042a984b7d",
@@ -10963,7 +11006,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 04:46:02 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-25T04:03:33.124550+00:00"
+      "created_at": "2026-08-26T04:06:23.981708+00:00"
     },
     {
       "id": "8c6a0cad14626d6f",
@@ -13339,7 +13382,7 @@
       "source": "Google News",
       "date": "Fri, 20 Jun 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-25T04:03:41.499283+00:00"
+      "created_at": "2026-08-26T04:06:31.402598+00:00"
     },
     {
       "id": "b70960ea48a1a247",
@@ -13465,7 +13508,7 @@
       "source": "Google News",
       "date": "Fri, 10 Jul 2026 10:12:00 GMT",
       "raison": "garde entrée/sortie: département source 44 incompatible avec la sortie 974",
-      "created_at": "2026-08-25T04:04:01.907112+00:00"
+      "created_at": "2026-08-26T04:06:47.427368+00:00"
     },
     {
       "id": "8c646081e1d69e81",
@@ -13645,7 +13688,7 @@
       "source": "Google News",
       "date": "Fri, 03 Jan 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-25T04:03:32.596820+00:00"
+      "created_at": "2026-08-26T04:06:23.545923+00:00"
     },
     {
       "id": "411db107f70f2387",
@@ -20028,6 +20071,45 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-07-02T07:08:24.773893+00:00"
+    },
+    {
+      "id": "924f866264ef6651",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "« Un sentiment d’abandon » : face aux fermetures successives des commerces quartier des Villages à Saint-Brieuc, ils tirent la sonnette d’alarme - Le Télégramme",
+      "extrait": "TITRE: « Un sentiment d’abandon » : face aux fermetures successives des commerces quartier des Villages à Saint-Brieuc, ils tirent la sonnette d’alarme - Le Télégramme SOURCE: Google News DATE: Tue, 25 Aug 2026 16:42:14 GMT URL: https://news.google.com/rss/articles/CBMisgJBVV95cUxNOVpfVEFTTjFJZjJ2SWxQZ0MxbEpBQVk4MUNiZkNnS2ZualBuc0c1dmdOcFFEdzJCWG9wNV9sN1JueU1SckRvd1oxa1pDQW51YldESVFOY3JhdnBsTjJSakJOcEwtUE1fRDNYT1dHQ1RZVUtFdkIzckw4TmNBSkhId3VyQjRVeUdrQjZBa3BFdGF4azZBME1Xbmt0S0NzY2Z6b1ZfYkEySDNaUV",
+      "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxNOVpfVEFTTjFJZjJ2SWxQZ0MxbEpBQVk4MUNiZkNnS2ZualBuc0c1dmdOcFFEdzJCWG9wNV9sN1JueU1SckRvd1oxa1pDQW51YldESVFOY3JhdnBsTjJSakJOcEwtUE1fRDNYT1dHQ1RZVUtFdkIzckw4TmNBSkhId3VyQjRVeUdrQjZBa3BFdGF4azZBME1Xbmt0S0NzY2Z6b1ZfYkEySDNaUVNlTHBlV1lEck9LRGFTZ3g4SW1ucHpHQnQ4R2pTTDFrTFNXYXY1dHZuWFJKNlg3NlB5WVFCeVJpeEpXZGtwbkVLV3RLUjhkaUs0a1ZCX0Z4TUpPYmlBODlBeVhsRndsaWVTS25zX3JPa2FqMXhzNzBJYl9ZcmphNjRzZmtWQllob2xtdDItSmc?oc=5",
+      "source": "Google News",
+      "date": "Tue, 25 Aug 2026 16:42:14 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-26T04:09:57.696665+00:00"
+    },
+    {
+      "id": "da1579ee25f3ea0d",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Rhône. Le bureau de Poste de Saint-Genis-Laval ferme temporairement pour travaux du 31 août jusqu’à octobre - Le Progrès",
+      "extrait": "TITRE: Rhône. Le bureau de Poste de Saint-Genis-Laval ferme temporairement pour travaux du 31 août jusqu’à octobre - Le Progrès SOURCE: Google News DATE: Tue, 25 Aug 2026 03:31:39 GMT URL: https://news.google.com/rss/articles/CBMi3gFBVV95cUxPYXBIUjVjNVlJLUFob3dFN1oxN04zbFl0dWhJdmlNOFR6b0lkek1NbFJMcWRCbWk3ZHI4VFpGZ2lENkFyNnVkN1FyZ09Rb2Z6Qkl3bGoyS1NUdGNWQlhTbFYyUG5EekhSVVRuSlliUDgxU1JTbzBBd05MTVBYRmNZOWlOZTg3ZUJ6T25SdElMWDVZZlJmU290M0NvS2tNRWJ1LUNTX292bW93MmtHamFJVFU3VktuaTByLV9lZ280ekJodDBQOVBySH",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPYXBIUjVjNVlJLUFob3dFN1oxN04zbFl0dWhJdmlNOFR6b0lkek1NbFJMcWRCbWk3ZHI4VFpGZ2lENkFyNnVkN1FyZ09Rb2Z6Qkl3bGoyS1NUdGNWQlhTbFYyUG5EekhSVVRuSlliUDgxU1JTbzBBd05MTVBYRmNZOWlOZTg3ZUJ6T25SdElMWDVZZlJmU290M0NvS2tNRWJ1LUNTX292bW93MmtHamFJVFU3VktuaTByLV9lZ280ekJodDBQOVBySHp5T251VkJsTVhuV3lkZ25RcXNuTmc?oc=5",
+      "source": "Google News",
+      "date": "Tue, 25 Aug 2026 03:31:39 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-26T04:09:49.327318+00:00"
+    },
+    {
+      "id": "42cc35814ee2425a",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Rioz. L’Intermarché, fermé depuis le 8 août, sera remplacé par un Super U à compter de janvier 2027 - L'Est Républicain",
+      "extrait": "TITRE: Rioz. L’Intermarché, fermé depuis le 8 août, sera remplacé par un Super U à compter de janvier 2027 - L'Est Républicain SOURCE: Google News DATE: Tue, 25 Aug 2026 00:42:20 GMT URL: https://news.google.com/rss/articles/CBMi2AFBVV95cUxPNDlUTkoxYkxiNHI1dGxzejJXV2pjU2l4SGxOY055cEw2cWFDZXhuZEQybzhXQm5uZU4yX1g1eG1sTmRpMTZ3OFplNTFGbk5fRVdrYTdraExjZ0NyZ0NMaS1WdS1Sb1ZfdFJwUFkyb0JKaE1zTUxuT2o5TkNDWmMwVzV6dlZBeGJTLW01ZV9NLTlyXzRiT1ROVm9NVlhUWERSVG9PNVgtNl9LQzl6VV95bUFBLWpueVdrSmJTLXJMZVppNUozblJyYWp",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPNDlUTkoxYkxiNHI1dGxzejJXV2pjU2l4SGxOY055cEw2cWFDZXhuZEQybzhXQm5uZU4yX1g1eG1sTmRpMTZ3OFplNTFGbk5fRVdrYTdraExjZ0NyZ0NMaS1WdS1Sb1ZfdFJwUFkyb0JKaE1zTUxuT2o5TkNDWmMwVzV6dlZBeGJTLW01ZV9NLTlyXzRiT1ROVm9NVlhUWERSVG9PNVgtNl9LQzl6VV95bUFBLWpueVdrSmJTLXJMZVppNUozblJyYWpLRUlTWHBSc2tCc05KWFo?oc=5",
+      "source": "Google News",
+      "date": "Tue, 25 Aug 2026 00:42:20 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-26T04:09:55.043226+00:00"
     },
     {
       "id": "8ebe65bd607a3edf",
@@ -30833,6 +30915,19 @@
       "created_at": "2026-08-23T04:07:41.213156+00:00"
     },
     {
+      "id": "11b5b13f60fa83c2",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Contrôle sanitaire dans le Val-d'Oise : fermeture administrative d'un traiteur travaillant avec des compagnies aériennes - Actu.fr",
+      "extrait": "TITRE: Contrôle sanitaire dans le Val-d'Oise : fermeture administrative d'un traiteur travaillant avec des compagnies aériennes - Actu.fr SOURCE: Google News DATE: Fri, 10 Jul 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMiiwJBVV95cUxQZnZFOXhYdk10ZkRtVEI4RzJrUHAyb0FiMkIwSUNUYnBkSGkyOWFKNWNjU0RnV2FldkhqOEctbkZLbGVZNXltT2ZNMGxvY3hxcUVnSEVuVXNGSzZuNGtEMzBnbUdha1oyWWtUZTZPZEdnOC1Gb1lUNUpPUjhTeE5Ud0JUVno4QllOTDlEQUo3TVZIakZQT1RDSklXdEV5bjRMdWwwWUduWkRCem40dko1X2VKMVpsQlRQWDlrdUFlOWl6",
+      "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxQZnZFOXhYdk10ZkRtVEI4RzJrUHAyb0FiMkIwSUNUYnBkSGkyOWFKNWNjU0RnV2FldkhqOEctbkZLbGVZNXltT2ZNMGxvY3hxcUVnSEVuVXNGSzZuNGtEMzBnbUdha1oyWWtUZTZPZEdnOC1Gb1lUNUpPUjhTeE5Ud0JUVno4QllOTDlEQUo3TVZIakZQT1RDSklXdEV5bjRMdWwwWUduWkRCem40dko1X2VKMVpsQlRQWDlrdUFlOWl6TGFTS2RaQW9CODNpMzlyUW4zdi1tV2l3b3VhbUhmX1FlNlU1Q1FLT2JXYl9EOHZQLV9VSEhnRnJ2c3BmSFV5R1lQMjVWa1NQYVE?oc=5",
+      "source": "Google News",
+      "date": "Fri, 10 Jul 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-26T04:09:59.309992+00:00"
+    },
+    {
       "id": "89e4b871933c1bc4",
       "banque": "La Banque Postale",
       "departement": "",
@@ -31533,6 +31628,149 @@
       "score": 3,
       "raison": "fermeture non publiée: hors fenêtre temporelle",
       "created_at": "2026-07-22T09:09:01.159244+00:00"
+    },
+    {
+      "id": "45c37271a883ee36",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Le mercato du Barça est loin d'être terminé : encore 5 dossiers à résoudre ?",
+      "extrait": "TITRE: Le mercato du Barça est loin d'être terminé : encore 5 dossiers à résoudre ? SOURCE: Top mercato DATE: 2026-08-25T20:31:00Z URL: https://www.topmercato.com/2127458-le-mercato-du-barca-est-loin-detre-termine-encore-5-dossiers-a-resoudre/ Le mercato estival entre dans sa dernière ligne droite, mais le Barça a encore de nombreux dossiers à régler. Le marché ferme le 1er septembre, et le club catalan doit encore finaliser plusieurs mouvements, aussi bien en termes d'arrivées que de départs. L",
+      "url": "https://www.topmercato.com/2127458-le-mercato-du-barca-est-loin-detre-termine-encore-5-dossiers-a-resoudre/",
+      "source": "Top mercato",
+      "date": "2026-08-25T20:31:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-26T04:10:12.466819+00:00"
+    },
+    {
+      "id": "6e921bfc3ad6a1a3",
+      "banque": "Crédit Mutuel",
+      "departement": "",
+      "titre": "\" Un sentiment d'abandon \" : face aux fermetures successives des commerces quartier des Villages à Saint-Brieuc, ils tirent la sonnette d'alarme",
+      "extrait": "TITRE: \" Un sentiment d'abandon \" : face aux fermetures successives des commerces quartier des Villages à Saint-Brieuc, ils tirent la sonnette d'alarme SOURCE: Le Telegramme DATE: 2026-08-25T16:42:14Z URL: https://www.letelegramme.fr/cotes-d-armor/saint-brieuc-22000/un-sentiment-dabandon-face-aux-fermetures-successives-des-commerces-quartier-des-villages-a-saint-brieuc-ils-tirent-la-sonnette-dalarme-7105003.php Les associations et habitants du quartier des Villages à Saint-Brieuc se sentent dému",
+      "url": "https://www.letelegramme.fr/cotes-d-armor/saint-brieuc-22000/un-sentiment-dabandon-face-aux-fermetures-successives-des-commerces-quartier-des-villages-a-saint-brieuc-ils-tirent-la-sonnette-dalarme-7105003.php",
+      "source": "Le Telegramme",
+      "date": "2026-08-25T16:42:14Z",
+      "score": 3,
+      "raison": "fermeture non publiée: garde entrée/sortie: mois de fermeture incompatible avec la source; garde entrée/sortie: mois de fermeture incompatible avec la source",
+      "created_at": "2026-08-26T04:10:19.178730+00:00"
+    },
+    {
+      "id": "ab08b800e829e926",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Camille Vivier, ses nuits au musée",
+      "extrait": "TITRE: Camille Vivier, ses nuits au musée SOURCE: GQ France DATE: 2026-08-25T16:05:00Z URL: https://www.gqmagazine.fr/article/camille-vivier-interview C'était l'un de ces lundis où l'on oublie que Paris se repose de son dimanche. Un lundi où l'on avait forcé notre chemin jusqu'à ce musée, la Maison européenne de la photographie, qui tranche avec la monotonie haussmannienne, par ses lignes, son jardin, ses vitres... Un air de Suisse. On réussit à passer cette porte malgré la fermeture, en insista",
+      "url": "https://www.gqmagazine.fr/article/camille-vivier-interview",
+      "source": "GQ France",
+      "date": "2026-08-25T16:05:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-26T04:10:22.770953+00:00"
+    },
+    {
+      "id": "b7973506ce1affce",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Inscription Unibet : comment ouvrir son compte et activer son offre ?",
+      "extrait": "TITRE: Inscription Unibet : comment ouvrir son compte et activer son offre ? SOURCE: Eurosport DATE: 2026-08-25T15:17:24Z URL: https://www.eurosport.fr/paris-sportifs/unibet/inscription/ Le justificatif de domicile peut être remplacé par un code d'activation à 5 chiffres envoyé chez vous par courrier. * Référence pour les cotes NBA, OM et PSG Le module de paiement m'a proposé de payer avec la carte bancaire (Visa, CB, Mastercard), le virement instantané, Paysafecard, PayPal et Apple Pay. Le comp",
+      "url": "https://www.eurosport.fr/paris-sportifs/unibet/inscription/",
+      "source": "Eurosport",
+      "date": "2026-08-25T15:17:24Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-26T04:10:27.551745+00:00"
+    },
+    {
+      "id": "f75ab8029922f0c4",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Air India : la situation ne s'arrange pas",
+      "extrait": "TITRE: Air India : la situation ne s'arrange pas SOURCE: Bourse Direct DATE: 2026-08-25T13:07:52Z URL: https://www.boursedirect.fr/fr/actualites/categorie/divers/air-india-la-situation-ne-s-arrange-pas-boursier-682e4bc1c37af4e23af96ed800dbd5ccace9a641 Le groupe aérien chercherait à lever environ 1,5 milliard de dollars auprès de ses actionnaires... Air India lutte toujours pour sa survie. La deuxième compagnie aérienne indienne chercherait à lever environ 1,5 milliard de dollars de nouveaux capi",
+      "url": "https://www.boursedirect.fr/fr/actualites/categorie/divers/air-india-la-situation-ne-s-arrange-pas-boursier-682e4bc1c37af4e23af96ed800dbd5ccace9a641",
+      "source": "Bourse Direct",
+      "date": "2026-08-25T13:07:52Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-26T04:10:38.709195+00:00"
+    },
+    {
+      "id": "92cb58cfad245092",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Air India : la situation ne s'arrange pas",
+      "extrait": "TITRE: Air India : la situation ne s'arrange pas SOURCE: Boursier.com DATE: 2026-08-25T12:48:01Z URL: https://www.boursier.com/actualites/news/air-india-la-situation-ne-s-arrange-pas-992480.html Air India : la situation ne s'arrange pas Par Jean-Baptiste André Publié le 25/08/2026 à 14h48 Air India : la situation ne s'arrange pas (Boursier.com) -- Air India lutte toujours pour sa survie. La deuxième compagnie aérienne indienne chercherait à lever environ 1,5 milliard de dollars de nouveaux capit",
+      "url": "https://www.boursier.com/actualites/news/air-india-la-situation-ne-s-arrange-pas-992480.html",
+      "source": "Boursier.com",
+      "date": "2026-08-25T12:48:01Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-26T04:10:40.021276+00:00"
+    },
+    {
+      "id": "595b335502b8216f",
+      "banque": "LCL",
+      "departement": "",
+      "titre": "RC Lens Mercato : un ancien du PSG ciblé pour oublier Malang Sarr !",
+      "extrait": "TITRE: RC Lens Mercato : un ancien du PSG ciblé pour oublier Malang Sarr ! SOURCE: But! Football Club DATE: 2026-08-25T10:35:00Z URL: https://www.butfootballclub.fr/1693473-rc-lens-mercato-un-ancien-du-psg-pour-remplacer-malang-sarr/ Le RC Lens continue d'explorer plusieurs pistes défensives dans cette fin de mercato estival. Notamment en Allemagne... Le RC Lens garde un œil attentif sur le marché dans le secteur défensif. Alors que Malang Sarr n'a toujours été remplacé poste pour poste, les dir",
+      "url": "https://www.butfootballclub.fr/1693473-rc-lens-mercato-un-ancien-du-psg-pour-remplacer-malang-sarr/",
+      "source": "But! Football Club",
+      "date": "2026-08-25T10:35:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-26T04:10:42.707491+00:00"
+    },
+    {
+      "id": "9ec3c5411b748d9d",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Rennes : Un défenseur quitte le loft pour 10 ME",
+      "extrait": "TITRE: Rennes : Un défenseur quitte le loft pour 10 ME SOURCE: foot01.com DATE: 2026-08-25T10:09:48Z URL: https://www.foot01.com/rennes/rennes-un-defenseur-quitte-le-loft-pour-10-me Titulaire indiscutable au Stade Rennais la saison dernière, Lilian Brassier a tapé dans l'oeil de l'Eintracht Francfort. Le club allemand travaille sur un accord avec la direction rennaise, alors qu'un transfert est encore possible d'ici à la fin du mercato. Le Stade Rennais a lancé sa saison de Ligue 1 avec quelques",
+      "url": "https://www.foot01.com/rennes/rennes-un-defenseur-quitte-le-loft-pour-10-me",
+      "source": "foot01.com",
+      "date": "2026-08-25T10:09:48Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-26T04:10:24.943334+00:00"
+    },
+    {
+      "id": "54d296235dbaa4bb",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "3 envies et une priorité pour le PSG d'ici la fin du mercato",
+      "extrait": "TITRE: 3 envies et une priorité pour le PSG d'ici la fin du mercato SOURCE: CulturePSG DATE: 2026-08-25T09:39:38Z URL: https://www.culturepsg.com/news/mercato/3-envies-et-une-priorite-pour-le-psg-d-ici-la-fin-du-mercato/60449 S'il va devoir gérer plusieurs dossiers chauds dans le sens des départs (Barcola et Mbaye), le PSG n'exclut pas de recruter encore un voire plusieurs joueurs d'ici la fin du mercato, avec une priorité clairement établie. J-7 avant la fermeture du mercato en France et dans d",
+      "url": "https://www.culturepsg.com/news/mercato/3-envies-et-une-priorite-pour-le-psg-d-ici-la-fin-du-mercato/60449",
+      "source": "CulturePSG",
+      "date": "2026-08-25T09:39:38Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-26T04:10:46.613221+00:00"
+    },
+    {
+      "id": "7c22f9b944751340",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Mercato PSG : Le transfert de Barcola pourrait être finalisé dimanche | Foot Sur 7",
+      "extrait": "TITRE: Mercato PSG : Le transfert de Barcola pourrait être finalisé dimanche | Foot Sur 7 SOURCE: Foot-sur7 DATE: 2026-08-25T09:16:00Z URL: https://www.foot-sur7.fr/774633-mercato-psg-le-transfert-de-barcola-pourrait-etre-finalise-dimanche Le transfert de Bradley Barcola vers Liverpool pourrait être finalisé dimanche, à quelques jours de la fin du mercato estival. Les deux parties ont repris langue et Foot Sur 7 vous dit tout. Mercato : De l'optimisme dans le camp Bradley Barcola Joueur formé à ",
+      "url": "https://www.foot-sur7.fr/774633-mercato-psg-le-transfert-de-barcola-pourrait-etre-finalise-dimanche",
+      "source": "Foot-sur7",
+      "date": "2026-08-25T09:16:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-26T04:10:48.603942+00:00"
+    },
+    {
+      "id": "46de2a80fe06c5d9",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Le PSG cible trois postes en cette fin de mercato",
+      "extrait": "TITRE: Le PSG cible trois postes en cette fin de mercato SOURCE: PSG Canal Supporters DATE: 2026-08-25T08:57:14Z URL: https://canal-supporters.com/le-psg-cible-trois-postes-en-cette-fin-de-mercato/ À une semaine de la fermeture du marché des transferts, le PSG s'attend encore à quelques mouvements au sein de son effectif, aussi bien dans le sens des départs que des arrivées. Le mercato estival 2026 du PSG n'est pas encore terminé. Après avoir recruté cinq joueurs cet été (Alessandro Longoni, Luc",
+      "url": "https://canal-supporters.com/le-psg-cible-trois-postes-en-cette-fin-de-mercato/",
+      "source": "PSG Canal Supporters",
+      "date": "2026-08-25T08:57:14Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-26T04:10:50.991976+00:00"
     },
     {
       "id": "51aa65b5cbbc98da",
@@ -38854,6 +39092,19 @@
       "created_at": "2026-08-21T04:08:44.457337+00:00"
     },
     {
+      "id": "a3dabccaf7905728",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Banco BPM met fin aux négociations de fusion avec Monte dei Paschi - Zonebourse Suisse",
+      "extrait": "TITRE: Banco BPM met fin aux négociations de fusion avec Monte dei Paschi - Zonebourse Suisse SOURCE: Google News DATE: Mon, 03 Aug 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMixAFBVV95cUxPLUpxOUNlcnMzc211R3hKakVXQ2szUUFCLTJzM2Z4a0xnRWJ1b1B3Um1RbkpmUkxBZ2xIUWI1SjQxazRkNGJjczk2aF9VZkhOVmJOY0tPazIxakEzWVRGWFBDYVlhY3o3SmVTaEtweG9oYzU3Qk1GSGljUHoyY0swWVB5WWhRT2JrOWFEQ1dsclkwR0Z2aWw5UkRHRl9EWkVtcGZMUGpiUGhpWkxET25wU0xHb1RUb21DWUpabDZFY2xjeTBW?oc=5 <a href=\"https://news.google.com/r",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPLUpxOUNlcnMzc211R3hKakVXQ2szUUFCLTJzM2Z4a0xnRWJ1b1B3Um1RbkpmUkxBZ2xIUWI1SjQxazRkNGJjczk2aF9VZkhOVmJOY0tPazIxakEzWVRGWFBDYVlhY3o3SmVTaEtweG9oYzU3Qk1GSGljUHoyY0swWVB5WWhRT2JrOWFEQ1dsclkwR0Z2aWw5UkRHRl9EWkVtcGZMUGpiUGhpWkxET25wU0xHb1RUb21DWUpabDZFY2xjeTBW?oc=5",
+      "source": "Google News",
+      "date": "Mon, 03 Aug 2026 07:00:00 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-26T04:09:46.939520+00:00"
+    },
+    {
       "id": "9cc2e2b09d9d5590",
       "banque": "La Banque Postale",
       "departement": "",
@@ -39476,6 +39727,19 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:43:41.960961+00:00"
+    },
+    {
+      "id": "52c52934d044b7cc",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Mercato PSG : Luis Campos lance l'offensive pour Guéla Doué",
+      "extrait": "TITRE: Mercato PSG : Luis Campos lance l'offensive pour Guéla Doué SOURCE: Foot-sur7 DATE: 2026-08-25T17:53:00Z URL: https://www.foot-sur7.fr/774770-mercato-psg-luis-campos-lance-loffensive-pour-guela-doue Selon le journaliste Sacha Tavolieri, le PSG s'intéresse à Guéla Doué, le latéral droit du RC Strasbourg. Luis Campos serait même déjà passé à l'offensive pour le frère de Désiré Doué. Explications. Mercato PSG : Discussions amorcées pour Guéla Doué Selon les informations de Sacha Tavolieri, G",
+      "url": "https://www.foot-sur7.fr/774770-mercato-psg-luis-campos-lance-loffensive-pour-guela-doue",
+      "source": "Foot-sur7",
+      "date": "2026-08-25T17:53:00Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-26T04:10:14.945449+00:00"
     },
     {
       "id": "fae3c172ee29bf11",
