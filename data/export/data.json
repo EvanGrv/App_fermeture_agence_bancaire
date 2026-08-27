@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T04:21:45.730243+00:00",
+  "generated_at": "2026-08-27T14:34:44.375080+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -641,11 +641,11 @@
     "69": {
       "nom": "Rhône",
       "region": "Auvergne-Rhône-Alpes",
-      "count": 2,
+      "count": 3,
       "total_agences": 184,
-      "precise_count": 2,
+      "precise_count": 3,
       "unlocated_count": 0,
-      "estimated_count": 2
+      "estimated_count": 3
     },
     "70": {
       "nom": "Haute-Saône",
@@ -1564,9 +1564,9 @@
     "69": {
       "departement": "69",
       "nom": "Rhône",
-      "precise_count": 2,
+      "precise_count": 3,
       "unlocated_count": 0,
-      "estimated_count": 2,
+      "estimated_count": 3,
       "department_signal_count": 0,
       "signals": []
     },
@@ -1873,9 +1873,9 @@
     },
     {
       "region": "Auvergne-Rhône-Alpes",
-      "articles": 18,
+      "articles": 19,
       "fermetures": 8,
-      "projets": 9,
+      "projets": 10,
       "fusions": 0,
       "types": [
         "Fermeture",
@@ -9925,6 +9925,47 @@
         "source": "SIRENE"
       },
       "region": "Hauts-de-France"
+    },
+    {
+      "id": "b2537c0026e0c531",
+      "banque": "Caisse d'Épargne",
+      "commune": "Quincieux",
+      "code_insee": "69163",
+      "departement": "69",
+      "type": "fermeture",
+      "date_annonce": "2026-08-27T08:11:00Z",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 1,
+      "fiabilite": 3,
+      "lat": 45.917308,
+      "lon": 4.771209,
+      "citation": "« la Caisse d'Epargne a informé la municipalité de fermer son agence bancaire à Quincieux » / « L’agence bancaire de la Caisse d’Epargne à Quincieux va fermer ses portes dans quelques semaines »",
+      "adresse": "non précisée",
+      "agence_localisation": "agence bancaire",
+      "commune_originale": null,
+      "service_impact": null,
+      "point_postal_avant": null,
+      "point_postal_apres": null,
+      "postal_point_id": null,
+      "evidence_level": null,
+      "created_at": "2026-08-27T14:23:14.972685+00:00",
+      "sources": [
+        {
+          "url": "https://www.lyonmag.com/article/153735/quincieux-fermeture-de-l-agence-bancaire-la-mairie-appelle-a-la-mobilisation",
+          "titre": "Quincieux : fermeture de l'agence bancaire, la mairie appelle à la mobilisation",
+          "source": "Lyonmag.com",
+          "date": "2026-08-27T08:11:00Z",
+          "tier": "B"
+        }
+      ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
+      "region": "Auvergne-Rhône-Alpes"
     }
   ],
   "closures_unlocated": [
@@ -10395,6 +10436,24 @@
       "date": "Wed, 12 Aug 2026 17:17:00 GMT",
       "raison": "hors fenêtre temporelle",
       "created_at": "2026-08-16T04:06:26.383740+00:00"
+    },
+    {
+      "id": "1da1cc8b0b8fe002",
+      "banque": "La Banque Postale",
+      "commune": "Mansigné",
+      "departement": "72",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "« On mérite quand même quelques égards » : au Mans, la riposte s’organise après la fermeture d’un bureau de poste - Maville Nantes",
+      "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxOTEJPVnpKQ0EwTGV2VXRRNENEWGpKZWxDWThuamRKcnBQTE92Vk5PejZkV0dWekxaMno3ek1VWXV2WHVSSGk1UHhCU3RoTHA1Zm82SjdhYzlkaXFSMV9HNWlmSzhjT0xuWFZSRTMwR3htVVNGYzduSmJIUktISVJ4ZURfNVYyY0RPdEE2cnNnWW5qRGIxcElrMDI3emlBVFE4SkdoZ1kxb3VaMDVBNlF3R2tBQmhEcEV3WjU5Wl9GaEZjcUEwbmhNSGJnOG1La2tScGpQTUFzYWppcHFrT09nN2FSZWVYUUMwb0YtVWswX25hNERDMlZqT1dNVE1LWW1p?oc=5",
+      "titre": "« On mérite quand même quelques égards » : au Mans, la riposte s’organise après la fermeture d’un bureau de poste - Maville Nantes",
+      "source": "Google News",
+      "date": "Wed, 12 Aug 2026 17:17:00 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-08-27T14:22:29.711906+00:00"
     },
     {
       "id": "a7f9e1ce252267a7",
@@ -10970,7 +11029,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-26T04:06:24.394126+00:00"
+      "created_at": "2026-08-27T14:18:28.677296+00:00"
     },
     {
       "id": "50895c042a984b7d",
@@ -11006,7 +11065,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 04:46:02 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-26T04:06:23.981708+00:00"
+      "created_at": "2026-08-27T14:18:28.245717+00:00"
     },
     {
       "id": "8c6a0cad14626d6f",
@@ -13382,7 +13441,7 @@
       "source": "Google News",
       "date": "Fri, 20 Jun 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-26T04:06:31.402598+00:00"
+      "created_at": "2026-08-27T14:18:37.539049+00:00"
     },
     {
       "id": "b70960ea48a1a247",
@@ -13508,7 +13567,7 @@
       "source": "Google News",
       "date": "Fri, 10 Jul 2026 10:12:00 GMT",
       "raison": "garde entrée/sortie: département source 44 incompatible avec la sortie 974",
-      "created_at": "2026-08-26T04:06:47.427368+00:00"
+      "created_at": "2026-08-27T14:18:56.305310+00:00"
     },
     {
       "id": "8c646081e1d69e81",
@@ -13688,7 +13747,7 @@
       "source": "Google News",
       "date": "Fri, 03 Jan 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-26T04:06:23.545923+00:00"
+      "created_at": "2026-08-27T14:18:27.748373+00:00"
     },
     {
       "id": "411db107f70f2387",
@@ -13761,6 +13820,24 @@
       "date": "Fri, 01 Aug 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
       "created_at": "2026-07-27T07:56:36.407534+00:00"
+    },
+    {
+      "id": "50b6535298607c26",
+      "banque": "La Banque Postale",
+      "commune": "Chanceaux-sur-Choisille",
+      "departement": "37",
+      "type": "fermeture",
+      "date_fermeture": "2026-06-17",
+      "statut": "rumeur",
+      "statut_temporel": "deja_fermee",
+      "fiabilite": 2,
+      "citation": "« Le bureau de Chanceaux-sur-Choisille a rouvert ses portes. Fermé depuis le 17 juin 2026, le bureau de Chanceaux-sur-Choisille a rouvert ses portes le 24 août 2026 » ; l'article parle d'un bureau de poste et de la crainte d'une « fermeture définitive » sans expliciter clairement les services bancaires/La Banque Postale.",
+      "url": "https://www.lanouvellerepublique.fr/indre-et-loire/commune/chanceaux-sur-choisille/apres-des-mois-de-silence-l-agence-postale-de-chanceaux-sur-choisille-a-enfin-rouvert-ses-portes-1787840212",
+      "titre": "Après des mois de silence, l'agence postale de Chanceaux-sur-Choisille a enfin rouvert ses portes",
+      "source": "lanouvellerepublique.fr",
+      "date": "2026-08-27T14:16:52Z",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-08-27T14:22:48.028675+00:00"
     },
     {
       "id": "9de6b49cda1e30fc",
@@ -15898,6 +15975,19 @@
       "created_at": "2026-08-04T06:10:34.623634+00:00"
     },
     {
+      "id": "a2b43ff02b778acd",
+      "banque": "La Poste",
+      "scope": "unknown",
+      "count": null,
+      "confidence": 0.35,
+      "evidence": "L'article évoque « Avec la fermeture de la Poste… la résidence HLM le Canigou est édifiée à sa place » sans commune précise ni détail de fermeture d’agence bancaire.",
+      "url": "https://www.lindependant.fr/2026/08/26/histoire-dun-lieu-au-fil-du-temps-13524507.php",
+      "titre": "Histoire d'un lieu au fil du temps",
+      "source": "lindependant.fr",
+      "date": "2026-08-26T20:44:48Z",
+      "created_at": "2026-08-27T14:23:27.623387+00:00"
+    },
+    {
       "id": "432f9116d157b219",
       "banque": "La Poste / service postal (bureaux de poste)",
       "scope": "regional",
@@ -16589,6 +16679,19 @@
       "created_at": "2026-07-31T06:44:53.014655+00:00"
     },
     {
+      "id": "1ead7b3da56848d3",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Quincieux : fermeture de l’agence bancaire, la mairie appelle à la mobilisation - Lyon Mag",
+      "extrait": "TITRE: Quincieux : fermeture de l’agence bancaire, la mairie appelle à la mobilisation - Lyon Mag SOURCE: Google News DATE: Thu, 27 Aug 2026 08:11:00 GMT URL: https://news.google.com/rss/articles/CBMitgFBVV95cUxPY0pVYnZmeHZkbVltRjZGRXZQSW8wVTliTlItUV9Vd1J5Q3RadUlPS3p2TTdibmxHeHB4ZGJHcGc5d0ZQcGtvcHE1T1dFQnE5azJpZ3E5RC1GQ3lZeXI3akE2VFd5Z2tBOTZyblMyaFY3NE01ZE9sSjJ3dlRLTWF0cElrVlZsaWpsejZZZ2tpNGlIX0dZWnRpZGczRnluWUVnSGFLcklWM0hWUWRlTVFPZUQ3My11Zw?oc=5 <a href=\"https://news.google.com/rss/articles/CB",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPY0pVYnZmeHZkbVltRjZGRXZQSW8wVTliTlItUV9Vd1J5Q3RadUlPS3p2TTdibmxHeHB4ZGJHcGc5d0ZQcGtvcHE1T1dFQnE5azJpZ3E5RC1GQ3lZeXI3akE2VFd5Z2tBOTZyblMyaFY3NE01ZE9sSjJ3dlRLTWF0cElrVlZsaWpsejZZZ2tpNGlIX0dZWnRpZGczRnluWUVnSGFLcklWM0hWUWRlTVFPZUQ3My11Zw?oc=5",
+      "source": "Google News",
+      "date": "Thu, 27 Aug 2026 08:11:00 GMT",
+      "score": 4,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-27T14:22:22.874096+00:00"
+    },
+    {
       "id": "42d4c9ec54ca4e7a",
       "banque": "Caisse d'Épargne",
       "departement": "",
@@ -16795,6 +16898,19 @@
       "score": 4,
       "raison": "signaux: dept(Crédit Agricole,Lot,count=None,communes=)",
       "created_at": "2026-07-02T07:06:46.865370+00:00"
+    },
+    {
+      "id": "454646a47aca60cf",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Promesses présidentielles non tenues",
+      "extrait": "TITRE: Promesses présidentielles non tenues SOURCE: Montceau News DATE: 2026-08-27T03:40:51Z URL: https://montceau-news.com/montceau_et_sa_region/886026-promesses-presidentielles-non-tenues.html Le chômage, qui concernait environ 400 000 personnes au début de la décennie, dépasse le million durant son mandat et poursuit ensuite son envolée. L'inflation, les restructurations industrielles et les fermetures d'entreprises effacent progressivement l'image du changement \" sans risque \". La promesse d",
+      "url": "https://montceau-news.com/montceau_et_sa_region/886026-promesses-presidentielles-non-tenues.html",
+      "source": "Montceau News",
+      "date": "2026-08-27T03:40:51Z",
+      "score": 4,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-27T14:23:24.278592+00:00"
     },
     {
       "id": "540d1f9e7f0c8a97",
@@ -17406,6 +17522,58 @@
       "score": 3,
       "raison": "score préfiltre bas (-2)",
       "created_at": "2026-07-27T07:56:20.312908+00:00"
+    },
+    {
+      "id": "b845e620849f0bfb",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "« Il n’y a plus rien du tout ici » : La Poste ferme son bureau dans ce quartier populaire de Saint-Malo - Ouest-France",
+      "extrait": "TITRE: « Il n’y a plus rien du tout ici » : La Poste ferme son bureau dans ce quartier populaire de Saint-Malo - Ouest-France SOURCE: Google News DATE: Wed, 26 Aug 2026 17:22:32 GMT URL: https://news.google.com/rss/articles/CBMilgJBVV95cUxOU19rYmZXajAzcVhPSlczSHJDNUFrRm5xTllkZHhLZ2RKaUNUMmE1N0hwbExDR2J2VFdyc1RzNmZJUngyaFQ5dmFzSHJPdk1ocXFxcTdaZ0pvMGNUM1RxMzVMdHhuenRWVzJ6NUpYckVTMzVTTzFlTk03dnBtV2NqZ1dpM3pNYkJJVDZmRlFSTWh3OFg0UGNja3E5cFlhdEhiSFcxa283cnJFUXJTVVdMcDJjNGxZVURUeW9vTTczMVJPYTg2YWRBNXFC",
+      "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxOU19rYmZXajAzcVhPSlczSHJDNUFrRm5xTllkZHhLZ2RKaUNUMmE1N0hwbExDR2J2VFdyc1RzNmZJUngyaFQ5dmFzSHJPdk1ocXFxcTdaZ0pvMGNUM1RxMzVMdHhuenRWVzJ6NUpYckVTMzVTTzFlTk03dnBtV2NqZ1dpM3pNYkJJVDZmRlFSTWh3OFg0UGNja3E5cFlhdEhiSFcxa283cnJFUXJTVVdMcDJjNGxZVURUeW9vTTczMVJPYTg2YWRBNXFCdFoyX2Yyb09NSGpUQm5HS0QtdVhobHN3VHFNcXdPQ3d5MF9rU3JvX0RUdkVNLXNLVUJrUENaQXRxVDBtNDI0ZWxUelNleUFHWGliUQ?oc=5",
+      "source": "Google News",
+      "date": "Wed, 26 Aug 2026 17:22:32 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-27T14:22:29.225203+00:00"
+    },
+    {
+      "id": "46cccabd2da802a6",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "La Poste envisage de fermer un bureau à Laon - L'Union",
+      "extrait": "TITRE: La Poste envisage de fermer un bureau à Laon - L'Union SOURCE: Google News DATE: Wed, 26 Aug 2026 16:30:00 GMT URL: https://news.google.com/rss/articles/CBMilwFBVV95cUxOV3MwVzIwRXd1X3FNYkRMbE1temhMRzQycWdCTlNRZ2FQc01TcTJrVlBUTVZrX0FhWklyTXBhTnVBMFpVTUkwNnNLQ05CUG9iM1c5LUJDSzhKc09xc1ZWc3JCLUI3bjNQODVCTTJsQnY3NFF4UWotWWZtNDRWVzA0Q2ZQU2JqV3lQTDg2clpzMURuSzczRllV?oc=5 <a href=\"https://news.google.com/rss/articles/CBMilwFBVV95cUxOV3MwVzIwRXd1X3FNYkRMbE1temhMRzQycWdCTlNRZ2FQc01TcTJrVlBUTVZrX0Fh",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOV3MwVzIwRXd1X3FNYkRMbE1temhMRzQycWdCTlNRZ2FQc01TcTJrVlBUTVZrX0FhWklyTXBhTnVBMFpVTUkwNnNLQ05CUG9iM1c5LUJDSzhKc09xc1ZWc3JCLUI3bjNQODVCTTJsQnY3NFF4UWotWWZtNDRWVzA0Q2ZQU2JqV3lQTDg2clpzMURuSzczRllV?oc=5",
+      "source": "Google News",
+      "date": "Wed, 26 Aug 2026 16:30:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-27T14:22:31.873215+00:00"
+    },
+    {
+      "id": "466718f3b1857b33",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "\"On parle plus de rendement que de service public\" : le malaise des territoires face à la fermeture des bureaux de poste - France 3 Régions",
+      "extrait": "TITRE: \"On parle plus de rendement que de service public\" : le malaise des territoires face à la fermeture des bureaux de poste - France 3 Régions SOURCE: Google News DATE: Wed, 26 Aug 2026 15:49:24 GMT URL: https://news.google.com/rss/articles/CBMimgJBVV95cUxOVFJucUgtdkNUYTFXTkhPeUVjM3daRFpzWnBteGVoQXdrUk9mQ0Y0SlNYT3ZMQ0puQnRucEstb21tVjAtOEtfTkRmOWN5dXJDakxnclJtX3BoT2NRT3I3TUJqZmhoVzhSU19Rc1k4djBkUXdlb3ZLTXZ2VGFubV9NcHFPRjNkb1FzVVFraTZmQ2VYbER3MlRQY0VCWWU3OE9jMmh4QVRIblhlSkE2LVBsd3ZQRW1PbDlmN0J",
+      "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxOVFJucUgtdkNUYTFXTkhPeUVjM3daRFpzWnBteGVoQXdrUk9mQ0Y0SlNYT3ZMQ0puQnRucEstb21tVjAtOEtfTkRmOWN5dXJDakxnclJtX3BoT2NRT3I3TUJqZmhoVzhSU19Rc1k4djBkUXdlb3ZLTXZ2VGFubV9NcHFPRjNkb1FzVVFraTZmQ2VYbER3MlRQY0VCWWU3OE9jMmh4QVRIblhlSkE2LVBsd3ZQRW1PbDlmN0JKWGdYS0R1Wlc2enQ3Y1B6UGM0dFVqVU0zRHp2SVVlejJSbzlYdERSdEZiUll2aFRCWHkyR2tSUDBCSEtrMXpZN25oVHN4dDRZMXA2bnFYbmFKTDM1UG1jdUUyU3FXaUE?oc=5",
+      "source": "Google News",
+      "date": "Wed, 26 Aug 2026 15:49:24 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-27T14:22:33.592329+00:00"
+    },
+    {
+      "id": "3026bff654f73594",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Banco BPM ne ferme pas la porte à l’offre de Monte dei Paschi - L'Agefi",
+      "extrait": "TITRE: Banco BPM ne ferme pas la porte à l’offre de Monte dei Paschi - L'Agefi SOURCE: Google News DATE: Wed, 26 Aug 2026 13:07:38 GMT URL: https://news.google.com/rss/articles/CBMipgFBVV95cUxOZm4zQlpFQ3hvR0FkREZuRDZ6ZnZQY3FoVlczMHYzUERsRzBlZFVJNExIM1RMZXZHa2ZWaFg3UHUtcUpOT3E1VFNIdzQ1aUduTXM2bEJnd2prNEQ2NkM3NkVUaDhXdEFtQ2hlVUFWWENBMjR5TmFuZXdOVTF2YnROWDFRVV9Gb1lCeFl1RHVMY1hLdTAwX3ZfOFJNSXpabHFESGpJWTJB?oc=5 <a href=\"https://news.google.com/rss/articles/CBMipgFBVV95cUxOZm4zQlpFQ3hvR0FkREZuRDZ6ZnZ",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOZm4zQlpFQ3hvR0FkREZuRDZ6ZnZQY3FoVlczMHYzUERsRzBlZFVJNExIM1RMZXZHa2ZWaFg3UHUtcUpOT3E1VFNIdzQ1aUduTXM2bEJnd2prNEQ2NkM3NkVUaDhXdEFtQ2hlVUFWWENBMjR5TmFuZXdOVTF2YnROWDFRVV9Gb1lCeFl1RHVMY1hLdTAwX3ZfOFJNSXpabHFESGpJWTJB?oc=5",
+      "source": "Google News",
+      "date": "Wed, 26 Aug 2026 13:07:38 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-27T14:22:25.313153+00:00"
     },
     {
       "id": "6ac11ad9c15153b1",
@@ -27522,6 +27690,19 @@
       "created_at": "2026-08-25T04:07:00.415457+00:00"
     },
     {
+      "id": "93febdeb785750f4",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Fermeture exceptionnelle du bureau de poste du quartier de La Peyrade - Frontignan la Peyrade",
+      "extrait": "TITRE: Fermeture exceptionnelle du bureau de poste du quartier de La Peyrade - Frontignan la Peyrade SOURCE: Google News DATE: Mon, 24 Aug 2026 14:05:04 GMT URL: https://news.google.com/rss/articles/CBMipAFBVV95cUxPb0Q2ZUM5VXFlMDU3UjN4MWJNeFE3VTB5SzNpYXRNNFAwXzU0dzhvMl90dXRMaXZpdF84eDNFREwzT2dJX3hjdlZBLThvUkRRbzVnaGdvQmdyX2ZVVllfNEROWDd6X0VJc0xDcC1OZEJlVi1XOWh2VEZRenpia3ljS0IzZXBFamw2Yy15TVdpZnR6TnBFV25XMnB0N1FPNy1DOUllaw?oc=5 <a href=\"https://news.google.com/rss/articles/CBMipAFBVV95cUxPb0Q2ZUM",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPb0Q2ZUM5VXFlMDU3UjN4MWJNeFE3VTB5SzNpYXRNNFAwXzU0dzhvMl90dXRMaXZpdF84eDNFREwzT2dJX3hjdlZBLThvUkRRbzVnaGdvQmdyX2ZVVllfNEROWDd6X0VJc0xDcC1OZEJlVi1XOWh2VEZRenpia3ljS0IzZXBFamw2Yy15TVdpZnR6TnBFV25XMnB0N1FPNy1DOUllaw?oc=5",
+      "source": "Google News",
+      "date": "Mon, 24 Aug 2026 14:05:04 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-27T14:22:35.133095+00:00"
+    },
+    {
       "id": "5f56015245da7456",
       "banque": "Société Générale",
       "departement": "",
@@ -31628,6 +31809,123 @@
       "score": 3,
       "raison": "fermeture non publiée: hors fenêtre temporelle",
       "created_at": "2026-07-22T09:09:01.159244+00:00"
+    },
+    {
+      "id": "f591b6e8fba2fedb",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Après des mois de silence, l'agence postale de Chanceaux-sur-Choisille a enfin rouvert ses portes",
+      "extrait": "TITRE: Après des mois de silence, l'agence postale de Chanceaux-sur-Choisille a enfin rouvert ses portes SOURCE: lanouvellerepublique.fr DATE: 2026-08-27T14:16:52Z URL: https://www.lanouvellerepublique.fr/indre-et-loire/commune/chanceaux-sur-choisille/apres-des-mois-de-silence-l-agence-postale-de-chanceaux-sur-choisille-a-enfin-rouvert-ses-portes-1787840212 L'avenir du bureau de poste de Chanceaux-sur-Choisille (Indre-et-Loire) a tenu en haleine les habitants, inquiets d'une fermeture définitive",
+      "url": "https://www.lanouvellerepublique.fr/indre-et-loire/commune/chanceaux-sur-choisille/apres-des-mois-de-silence-l-agence-postale-de-chanceaux-sur-choisille-a-enfin-rouvert-ses-portes-1787840212",
+      "source": "lanouvellerepublique.fr",
+      "date": "2026-08-27T14:16:52Z",
+      "score": 3,
+      "raison": "fermeture non publiée: hors fenêtre temporelle",
+      "created_at": "2026-08-27T14:22:48.033440+00:00"
+    },
+    {
+      "id": "64ef45f5be27261a",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Économie. Points relais, consignes... Mondial Relay veut investir 500 millions d'euros en France d'ici 2030",
+      "extrait": "TITRE: Économie. Points relais, consignes... Mondial Relay veut investir 500 millions d'euros en France d'ici 2030 SOURCE: Le Républicain Lorrain DATE: 2026-08-27T12:02:00Z URL: https://www.republicain-lorrain.fr/economie/2026/08/27/points-relais-consignes-mondial-relay-veut-investir-500-millions-d-euros-en-france-d-ici-2030 Mondial Relay, qui possède en France le plus important parc de consignes automatiques de colis, entend \" continuer de développer son réseau \" en investissant 500 millions d'",
+      "url": "https://www.republicain-lorrain.fr/economie/2026/08/27/points-relais-consignes-mondial-relay-veut-investir-500-millions-d-euros-en-france-d-ici-2030",
+      "source": "Le Républicain Lorrain",
+      "date": "2026-08-27T12:02:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-27T14:22:53.294110+00:00"
+    },
+    {
+      "id": "c2bfffdecfffc868",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Transfert de Bradley Barcola à 140 M€ : le PSG a-t-il plumé Liverpool ?",
+      "extrait": "TITRE: Transfert de Bradley Barcola à 140 M€ : le PSG a-t-il plumé Liverpool ? SOURCE: Top mercato DATE: 2026-08-27T10:06:55Z URL: https://www.topmercato.com/2127766-transfert-de-bradley-barcola-a-140-me-le-psg-a-t-il-plume-liverpool/ Un accord total est annoncé pour le transfert de Bradley Barcola du PSG à Liverpool pour un montant de 140 M€. Paris a-t-il déplumé les Reds dans ce dossier ? Tous les spécialistes du mercato l'annoncent : Bradley Barcola va rejoindre Liverpool. Alors que l'ailier ",
+      "url": "https://www.topmercato.com/2127766-transfert-de-bradley-barcola-a-140-me-le-psg-a-t-il-plume-liverpool/",
+      "source": "Top mercato",
+      "date": "2026-08-27T10:06:55Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-27T14:23:01.463705+00:00"
+    },
+    {
+      "id": "9a074b01f823046c",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Nvidia rassure mais les taux maintiennent Paris sous pression",
+      "extrait": "TITRE: Nvidia rassure mais les taux maintiennent Paris sous pression SOURCE: Boursorama DATE: 2026-08-27T09:49:00Z URL: https://www.boursorama.com/bourse/actualites/nvidia-rassure-mais-les-taux-maintiennent-paris-sous-pression-09f0f0ac0067e81aae30e2ae42c76068 La tendance est morose sur les principales places boursières européennes malgré les résultats de bonne facture présentés hier soir par Nvidia. Si la publication du géant de l'IA porte le secteur des semi-conducteurs, les valeurs bancaires s",
+      "url": "https://www.boursorama.com/bourse/actualites/nvidia-rassure-mais-les-taux-maintiennent-paris-sous-pression-09f0f0ac0067e81aae30e2ae42c76068",
+      "source": "Boursorama",
+      "date": "2026-08-27T09:49:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-27T14:23:03.983303+00:00"
+    },
+    {
+      "id": "0ced786c3fb85d5f",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Quel SSD interne Samsung choisir selon votre profil : gaming, IA, créateurs ou bureautique ?",
+      "extrait": "TITRE: Quel SSD interne Samsung choisir selon votre profil : gaming, IA, créateurs ou bureautique ? SOURCE: Jeuxvideo.com DATE: 2026-08-27T08:55:31Z URL: https://www.jeuxvideo.com/news/2096064/quel-ssd-interne-samsung-choisir-selon-votre-profil-gaming-ia-createurs-ou-bureautique.htm Concilier passion vidéoludique et création numérique exige d'anticiper le poids du multitâche. Si votre usage créatif est ponctuel et dissocié du jeu (par exemple retoucher une miniature sur Photoshop ou monter un pe",
+      "url": "https://www.jeuxvideo.com/news/2096064/quel-ssd-interne-samsung-choisir-selon-votre-profil-gaming-ia-createurs-ou-bureautique.htm",
+      "source": "Jeuxvideo.com",
+      "date": "2026-08-27T08:55:31Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-27T14:23:08.795376+00:00"
+    },
+    {
+      "id": "7b4d9320e6205533",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Malgré de bons résultats, Sodexo annonce un nouveau plan social et la suppression de près de 1 100 emplois",
+      "extrait": "TITRE: Malgré de bons résultats, Sodexo annonce un nouveau plan social et la suppression de près de 1 100 emplois SOURCE: Ouest France DATE: 2026-08-27T08:33:00Z URL: https://www.ouest-france.fr/economie/entreprises/malgre-de-bons-resultats-sodexo-annonce-un-nouveau-plan-social-et-la-suppression-de-pres-de-1-100-emplois-83b869ac-a1e6-11f1-bba4-fb5ac80a227f Le groupe français de restauration collective et de services Sodexo a annoncé mercredi 26 août 2026 prévoir la suppression de près de 1 100 p",
+      "url": "https://www.ouest-france.fr/economie/entreprises/malgre-de-bons-resultats-sodexo-annonce-un-nouveau-plan-social-et-la-suppression-de-pres-de-1-100-emplois-83b869ac-a1e6-11f1-bba4-fb5ac80a227f",
+      "source": "Ouest France",
+      "date": "2026-08-27T08:33:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-27T14:23:12.029994+00:00"
+    },
+    {
+      "id": "7260b391f6e70485",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "PERNOD RICARD (EPA:RI) |",
+      "extrait": "TITRE: PERNOD RICARD (EPA:RI) | SOURCE: Les Echos DATE: 2026-08-27T07:29:33Z URL: https://lesechos-comfi.lesechos.fr/press-release/pernod-ricard-epa-ri-informations-privilegiees-communique-sur-comptes-resultats-DDiKFmdmuVE * Le chiffre d'affaires 2025/26 est en déclin organique de -3,9%. Hors États-Unis et Chine, il progresse de +0,5%. Dans un environnement contrasté, l'exercice 2025/26 a été marqué par la faiblesse persistante des États-Unis, amplifiée par des ajustements de stocks, ainsi que p",
+      "url": "https://lesechos-comfi.lesechos.fr/press-release/pernod-ricard-epa-ri-informations-privilegiees-communique-sur-comptes-resultats-DDiKFmdmuVE",
+      "source": "Les Echos",
+      "date": "2026-08-27T07:29:33Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-27T14:23:17.307556+00:00"
+    },
+    {
+      "id": "b0b1605ff8453758",
+      "banque": "LCL",
+      "departement": "",
+      "titre": "PSG Mercato : une 6e et 7e recrue en approche, ça chauffe pour Guela Doué ? - But! Football Club",
+      "extrait": "TITRE: PSG Mercato : une 6e et 7e recrue en approche, ça chauffe pour Guela Doué ? - But! Football Club SOURCE: But! Football Club DATE: 2026-08-27T07:25:00Z URL: https://www.butfootballclub.fr/1693775-psg-mercato-une-6e-et-7e-recrue-en-approche-ca-chauffe-pour-guela-doue/ Le PSG, qui a déjà enregistré cinq recrues cet été, pourrait encore accueillir un ou deux renforts d'ici la fin du mercato. Guela Doué pourrait être l'un d'eux. Début août, le compte X @PSGInside_Actu avait annoncé que le PSG ",
+      "url": "https://www.butfootballclub.fr/1693775-psg-mercato-une-6e-et-7e-recrue-en-approche-ca-chauffe-pour-guela-doue/",
+      "source": "But! Football Club",
+      "date": "2026-08-27T07:25:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-27T14:23:20.001261+00:00"
+    },
+    {
+      "id": "aa979b0945d0c46a",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Déficit public : pourquoi la France vit à crédit depuis 50 ans",
+      "extrait": "TITRE: Déficit public : pourquoi la France vit à crédit depuis 50 ans SOURCE: Capital.fr DATE: 2026-08-27T05:30:00Z URL: https://www.capital.fr/economie-politique/deficit-public-pourquoi-la-france-vit-a-credit-depuis-50-ans-1529540 Alors comment lever cette épée de Damoclès d'une dette qui s'alourdit chaque année ? D'aucuns estiment que, l'inflation réduisant mécaniquement le coût des créances, elle va se rembourser d'elle-même. Ou que la BCE (Banque centrale européenne) pourrait faire fonctionn",
+      "url": "https://www.capital.fr/economie-politique/deficit-public-pourquoi-la-france-vit-a-credit-depuis-50-ans-1529540",
+      "source": "Capital.fr",
+      "date": "2026-08-27T05:30:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-27T14:23:22.396252+00:00"
     },
     {
       "id": "45c37271a883ee36",
@@ -36063,6 +36361,19 @@
       "created_at": "2026-07-22T08:58:13.864984+00:00"
     },
     {
+      "id": "76a286dc9910664e",
+      "banque": "BNP Paribas",
+      "departement": "",
+      "titre": "Fusion-acquisition bancaire à un milliard de dollars : BNP Paribas et KB Kookmin négocient-ils l’acquisition d’une participation de 15 % dans Techcombank ? - Vietnam.vn",
+      "extrait": "TITRE: Fusion-acquisition bancaire à un milliard de dollars : BNP Paribas et KB Kookmin négocient-ils l’acquisition d’une participation de 15 % dans Techcombank ? - Vietnam.vn SOURCE: Google News DATE: Wed, 26 Aug 2026 12:49:17 GMT URL: https://news.google.com/rss/articles/CBMitwFBVV95cUxNYW15M25wU2lRR3RrdkVHaTM3Qk9YZ29PZ29wc19mVmNtYWt2WmJDd3dmV054WGptV2NIMmJaOGFvMFpyYXg2bUVyT2hZQzYyWEJxQmxad04xNTdIU012OWhmVno4eHFGckZoeXB2M1NhdXJtQjRsTjEzdnhsSmVlUE81dElSLWFOaG5zYlBaNFYtdzVvOEdKYkV0RWRnRFR3dmJlRk",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNYW15M25wU2lRR3RrdkVHaTM3Qk9YZ29PZ29wc19mVmNtYWt2WmJDd3dmV054WGptV2NIMmJaOGFvMFpyYXg2bUVyT2hZQzYyWEJxQmxad04xNTdIU012OWhmVno4eHFGckZoeXB2M1NhdXJtQjRsTjEzdnhsSmVlUE81dElSLWFOaG5zYlBaNFYtdzVvOEdKYkV0RWRnRFR3dmJlRkJOd0lLQkdDOWVXZ3RzSFRkSjA?oc=5",
+      "source": "Google News",
+      "date": "Wed, 26 Aug 2026 12:49:17 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-27T14:22:26.974218+00:00"
+    },
+    {
       "id": "469ad2f84e054691",
       "banque": "Société Générale",
       "departement": "",
@@ -39727,6 +40038,110 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:43:41.960961+00:00"
+    },
+    {
+      "id": "cea3f33e22e4d676",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "\"Je l'ai fait avec ma copine\" : Bradley Barcola révèle un tatouage sur son poignet, juste en dessous d'une phrase gravée dans sa peau après \"des vacances à Dubaï\"",
+      "extrait": "TITRE: \"Je l'ai fait avec ma copine\" : Bradley Barcola révèle un tatouage sur son poignet, juste en dessous d'une phrase gravée dans sa peau après \"des vacances à Dubaï\" SOURCE: Closermag.fr DATE: 2026-08-27T14:00:39Z URL: https://www.closermag.fr/people/je-lai-fait-avec-ma-copine-bradley-barcola-revele-un-tatouage-sur-son-poignet-juste-en-dessous-dune-phrase-gravee-dans-sa-peau-apres-des-vacances-a-dubai-3655078 Ce résumé généré par IA a été validé par les journalistes de la rédaction. Le merca",
+      "url": "https://www.closermag.fr/people/je-lai-fait-avec-ma-copine-bradley-barcola-revele-un-tatouage-sur-son-poignet-juste-en-dessous-dune-phrase-gravee-dans-sa-peau-apres-des-vacances-a-dubai-3655078",
+      "source": "Closermag.fr",
+      "date": "2026-08-27T14:00:39Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-27T14:22:49.744006+00:00"
+    },
+    {
+      "id": "d4e5c48e0d33fb5c",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Nvidia rassure mais les taux maintiennent Paris sous pression - EasyBourse",
+      "extrait": "TITRE: Nvidia rassure mais les taux maintiennent Paris sous pression - EasyBourse SOURCE: EasyBourse DATE: 2026-08-27T11:48:58Z URL: https://www.easybourse.com/marches/point-tendance/67769/nvidia-rassure-mais-taux-maintiennent-paris-sous-pression.html (Zonebourse.com) - La tendance est morose sur les principales places boursières européennes malgré les résultats de bonne facture présentés hier soir par Nvidia. Si la publication du géant de l'IA porte le secteur des semi-conducteurs, les valeurs ",
+      "url": "https://www.easybourse.com/marches/point-tendance/67769/nvidia-rassure-mais-taux-maintiennent-paris-sous-pression.html",
+      "source": "EasyBourse",
+      "date": "2026-08-27T11:48:58Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-27T14:22:56.890180+00:00"
+    },
+    {
+      "id": "311d8a1e74935370",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Mercato PSG: Ça bouge aussi pour Mbaye !",
+      "extrait": "TITRE: Mercato PSG: Ça bouge aussi pour Mbaye ! SOURCE: Football.fr DATE: 2026-08-27T11:25:11Z URL: https://www.football.fr/mercato/mercato-psg-ca-bouge-aussi-pour-mbaye-829913.html Alors que le transfert de Bradley Barcola vers Liverpool est en phase de conclusion, les choses bougent aussi pour Ibrahim Mbaye, l'autre attaquant du PSG actuellement sur le marché. Ce sont deux longs feuilletons, parfois liés. Mais rien ne dit qu'ils se termineront de la même manière. Au Paris Saint-Germain, Bradle",
+      "url": "https://www.football.fr/mercato/mercato-psg-ca-bouge-aussi-pour-mbaye-829913.html",
+      "source": "Football.fr",
+      "date": "2026-08-27T11:25:11Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-27T14:22:58.506307+00:00"
+    },
+    {
+      "id": "0e188ca937e2e917",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Le transfert de Barcola fait déjà douter Liverpool !",
+      "extrait": "TITRE: Le transfert de Barcola fait déjà douter Liverpool ! SOURCE: Foot Mercato : Info Transferts Football - Actu Foot Transfert DATE: 2026-08-27T10:46:14Z URL: https://www.footmercato.net/a4872663118660572136-le-transfert-de-barcola-fait-deja-douter-liverpool Liverpool vient encore de lâcher une somme colossale pour recruter un élément offensif en la personne de Bradley Barcola, un an après Wirtz, Isak ou encore Ekitike. Mais du côté de l'Angleterre, tout le monde n'est pas convaincu par ce re",
+      "url": "https://www.footmercato.net/a4872663118660572136-le-transfert-de-barcola-fait-deja-douter-liverpool",
+      "source": "Foot Mercato : Info Transferts Football - Actu Foot Transfert",
+      "date": "2026-08-27T10:46:14Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-27T14:23:00.003827+00:00"
+    },
+    {
+      "id": "94b59f0a8a2ad995",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Bayern Munich. Une semaine après ses deux malaises, Jamal Musiala réagit bien à son traitement médical adapté",
+      "extrait": "TITRE: Bayern Munich. Une semaine après ses deux malaises, Jamal Musiala réagit bien à son traitement médical adapté SOURCE: Ouest France DATE: 2026-08-27T09:52:41Z URL: https://www.ouest-france.fr/sport/football/bayern-munich/bayern-munich-une-semaine-apres-ses-deux-malaises-jamal-musiala-reagit-bien-a-son-traitement-medical-adapte-75412eb2-a1fb-11f1-bba4-fb5ac80a227f Le meneur de jeu du Bayern Jamal Musiala (23 ans) sera absent du groupe munichois pour affronter Stuttgart, vendredi 28 août (20",
+      "url": "https://www.ouest-france.fr/sport/football/bayern-munich/bayern-munich-une-semaine-apres-ses-deux-malaises-jamal-musiala-reagit-bien-a-son-traitement-medical-adapte-75412eb2-a1fb-11f1-bba4-fb5ac80a227f",
+      "source": "Ouest France",
+      "date": "2026-08-27T09:52:41Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-27T14:23:05.814054+00:00"
+    },
+    {
+      "id": "f20f551925d93c38",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Nvidia rassure mais les taux maintiennent Paris sous pression",
+      "extrait": "TITRE: Nvidia rassure mais les taux maintiennent Paris sous pression SOURCE: zonebourse DATE: 2026-08-27T09:51:31Z URL: https://www.zonebourse.com/actualite-bourse/nvidia-rassure-mais-les-taux-maintiennent-paris-sous-pression-ce7858deda8cf222 Nvidia n'a pas déçu. Le géant de l'IA, dont les trimestriels font désormais office de baromètre de la santé du secteur, a dévoilé pour le troisième trimestre des prévisions de chiffre d'affaires supérieures aux attentes, témoignant d'une demande toujours ro",
+      "url": "https://www.zonebourse.com/actualite-bourse/nvidia-rassure-mais-les-taux-maintiennent-paris-sous-pression-ce7858deda8cf222",
+      "source": "zonebourse",
+      "date": "2026-08-27T09:51:31Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-27T14:23:07.208535+00:00"
+    },
+    {
+      "id": "d98ef7e7c4664ce3",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Pernod Ricard : décroche après une nouvelle déception",
+      "extrait": "TITRE: Pernod Ricard : décroche après une nouvelle déception SOURCE: Boursier.com DATE: 2026-08-27T08:50:02Z URL: https://www.boursier.com/actions/actualites/news/pernod-ricard-decroche-apres-une-nouvelle-deception-992581.html Pernod Ricard : décroche après une nouvelle déception Par Jean-Baptiste André Publié le 27/08/2026 à 10h50 Pernod Ricard : décroche après une nouvelle déception (Boursier.com) -- Pernod Ricard boit la tasse après sa présentation avec un titre qui abandonne désormais 6% à 6",
+      "url": "https://www.boursier.com/actions/actualites/news/pernod-ricard-decroche-apres-une-nouvelle-deception-992581.html",
+      "source": "Boursier.com",
+      "date": "2026-08-27T08:50:02Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-27T14:23:10.747896+00:00"
+    },
+    {
+      "id": "742af4fc35238d33",
+      "banque": "La Poste",
+      "departement": "",
+      "titre": "Histoire d'un lieu au fil du temps",
+      "extrait": "L'article évoque « Avec la fermeture de la Poste… la résidence HLM le Canigou est édifiée à sa place » sans commune précise ni détail de fermeture d’agence bancaire.",
+      "url": "https://www.lindependant.fr/2026/08/26/histoire-dun-lieu-au-fil-du-temps-13524507.php",
+      "source": "lindependant.fr",
+      "date": "2026-08-26T20:44:48Z",
+      "score": 2,
+      "raison": "signaux: vague(La Poste,unknown,count=None)",
+      "created_at": "2026-08-27T14:23:27.624153+00:00"
     },
     {
       "id": "52c52934d044b7cc",
