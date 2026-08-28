@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T14:34:44.375080+00:00",
+  "generated_at": "2026-08-28T15:43:27.317981+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -780,7 +780,7 @@
       "total_agences": 89,
       "precise_count": 1,
       "unlocated_count": 0,
-      "estimated_count": 1
+      "estimated_count": 9
     },
     "85": {
       "nom": "Vendée",
@@ -1405,9 +1405,24 @@
       "nom": "Vaucluse",
       "precise_count": 1,
       "unlocated_count": 0,
-      "estimated_count": 1,
-      "department_signal_count": 0,
-      "signals": []
+      "estimated_count": 9,
+      "department_signal_count": 8,
+      "signals": [
+        {
+          "id": "39246198fa719946",
+          "banque": "La Banque Postale",
+          "commune": "",
+          "departement": "84",
+          "titre": "Sud PTT 84 s'alarme après la fermeture annoncée de 8 bureaux de poste dans le Vaucluse - La Provence",
+          "source": "Google News",
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPYzg4MkIydlNoM2xJZ2NyYV9ubmxtMVMtU3dfRDNPeXJoSjlfbk1RZ0tYeHVwY3I5QzduN21sdzNHWEpmbzQtRDZob2dXM2hOMFpEUmplUzBfWnBIcEhSVzVlRUVkS2NMYkRpX0c4MDVMTlZtT180UUFBV2xHUE5zSExiQ1dUN2g2OENpR1ZBcnpLcXE2OFo5UEV4OW9pZmFId3F3VS01OUduZTBMZ3JlMzBfN3k5cXIzTzQzVTZSTjhOaDRKZXY4WWI5Qi0yQXo2aU45VWlhOHVWQQ?oc=5",
+          "score": 3,
+          "precision": "departement",
+          "reason": "« fermeture annoncée de 8 bureaux de poste dans le Vaucluse » (article : Sud PTT 84 s'alarme après la fermeture annoncée de 8 bureaux de poste dans le Vaucluse)",
+          "count": 8,
+          "date": "Fri, 28 Aug 2026 05:06:20 GMT"
+        }
+      ]
     },
     "22": {
       "departement": "22",
@@ -11029,7 +11044,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-27T14:18:28.677296+00:00"
+      "created_at": "2026-08-28T15:28:20.488017+00:00"
     },
     {
       "id": "50895c042a984b7d",
@@ -11065,7 +11080,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 04:46:02 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-27T14:18:28.245717+00:00"
+      "created_at": "2026-08-28T15:28:20.115992+00:00"
     },
     {
       "id": "8c6a0cad14626d6f",
@@ -13228,6 +13243,42 @@
       "created_at": "2026-07-06T08:46:48.139315+00:00"
     },
     {
+      "id": "56fa678125b37e36",
+      "banque": "La Banque Postale",
+      "commune": "Mers-les-Bains",
+      "departement": "80",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "Mers-les-Bains : fermeture du bureau de Poste, Goélia n’est pas responsable - Courrier picard",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPVzlpcFBBc1lGdFlzNDdrdjRPSzRObGYwb1hpRlVKc2JiY0dkU2hxOVdMVHdYVlVUcVdHenpXb3ktVEtSMmItT0Z1dmFDOTQxQ3lDWlh3VUdJcVhuOFRXbVd0cTdCYWtzd1hrWTVtZThKMDJaMkZDTzlQMExTcGFzUE0tc2lhSllaWHpIWnBadm5zVkJxY1VLaF9zZjZZVGV2dUh6d01fV2NTbDB3anoxSG5UeS1LWVU4MGVkWVcxbDQzNUgxQU9GdC1B?oc=5",
+      "titre": "Mers-les-Bains : fermeture du bureau de Poste, Goélia n’est pas responsable - Courrier picard",
+      "source": "Google News",
+      "date": "Fri, 28 Aug 2026 14:13:06 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-08-28T15:31:47.710691+00:00"
+    },
+    {
+      "id": "5d3b3ef838e610a9",
+      "banque": "La Banque Postale",
+      "commune": "Cosne-Cours-sur-Loire",
+      "departement": "42",
+      "type": "fermeture",
+      "date_fermeture": "2026-08-29",
+      "statut": "projet",
+      "statut_temporel": "a_venir",
+      "fiabilite": 3,
+      "citation": "« Cosne-Cours-sur-Loire : fermeture temporaire du bureau de poste pour rénovation à partir du 29 août » — article parle d’un bureau de poste, sans lien explicite avec une agence bancaire LBP.",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOX0R1T2szWGJsWndzSzVwWnR5dEZtZUxJb243S1VkTmpqRnBpQmdIYjhIYzF5X05lcmFMNlpNQ3FBTG9uZ0xKMEQ5MXkzSXhRM1hyTi1rUmtEUGE3LWR4TURGRHgxN24zVl9MTUwzMTFiS3FLNGFUdEpnSDY5emNuVl8yc0JrcDRiTDdHcDFpRWJQeHR5TGM5MXZsdjI1bVVrSWpDbkROalFIdUE3dGx1RzQyQnd6ZElLLVBSMmdtUU1CN2J2LTdrY09DSlB5Z2Nndktqcl9mRGYzdjdIRXcwYjFiYnJlTnllV2M5QnQ0ZVc3b1cxSDE0X1VzWQ?oc=5",
+      "titre": "Cosne-Cours-sur-Loire : fermeture temporaire du bureau de poste pour rénovation à partir du 29 août - Le Journal du Centre",
+      "source": "Google News",
+      "date": "Fri, 28 Aug 2026 03:58:00 GMT",
+      "raison": "garde entrée/sortie: fermeture postale temporaire ou circonstancielle",
+      "created_at": "2026-08-28T15:31:46.987523+00:00"
+    },
+    {
       "id": "a5c7f9c4e3e842d8",
       "banque": "La Banque Postale",
       "commune": "Carpentras",
@@ -13441,7 +13492,7 @@
       "source": "Google News",
       "date": "Fri, 20 Jun 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-27T14:18:37.539049+00:00"
+      "created_at": "2026-08-28T15:28:26.696194+00:00"
     },
     {
       "id": "b70960ea48a1a247",
@@ -13567,7 +13618,7 @@
       "source": "Google News",
       "date": "Fri, 10 Jul 2026 10:12:00 GMT",
       "raison": "garde entrée/sortie: département source 44 incompatible avec la sortie 974",
-      "created_at": "2026-08-27T14:18:56.305310+00:00"
+      "created_at": "2026-08-28T15:28:41.563471+00:00"
     },
     {
       "id": "8c646081e1d69e81",
@@ -13747,7 +13798,7 @@
       "source": "Google News",
       "date": "Fri, 03 Jan 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-27T14:18:27.748373+00:00"
+      "created_at": "2026-08-28T15:28:19.742396+00:00"
     },
     {
       "id": "411db107f70f2387",
@@ -13820,6 +13871,24 @@
       "date": "Fri, 01 Aug 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
       "created_at": "2026-07-27T07:56:36.407534+00:00"
+    },
+    {
+      "id": "ebee38a846f2f63c",
+      "banque": "La Banque Postale",
+      "commune": "Paray-Vieille-Poste",
+      "departement": "91",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "fermeture du bureau de Poste, Goélia n’est pas responsable",
+      "url": "https://www.paris-normandie.fr/id741306/article/2026-08-28/mers-les-bains-fermeture-du-bureau-de-poste-goelia-nest-pas-responsable",
+      "titre": "fermeture du bureau de Poste, Goélia n’est pas responsable",
+      "source": "paris-normandie.fr",
+      "date": "2026-08-28",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-08-28T15:32:14.443757+00:00"
     },
     {
       "id": "50b6535298607c26",
@@ -14388,6 +14457,20 @@
       "source": "Google News",
       "date": "Mon, 04 Nov 2024 08:00:00 GMT",
       "created_at": "2026-07-06T08:45:16.807756+00:00"
+    },
+    {
+      "id": "39246198fa719946",
+      "banque": "La Banque Postale",
+      "departement": "84",
+      "count": 8,
+      "communes_mentioned": "",
+      "confidence": 0.55,
+      "evidence": "« fermeture annoncée de 8 bureaux de poste dans le Vaucluse » (article : Sud PTT 84 s'alarme après la fermeture annoncée de 8 bureaux de poste dans le Vaucluse)",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPYzg4MkIydlNoM2xJZ2NyYV9ubmxtMVMtU3dfRDNPeXJoSjlfbk1RZ0tYeHVwY3I5QzduN21sdzNHWEpmbzQtRDZob2dXM2hOMFpEUmplUzBfWnBIcEhSVzVlRUVkS2NMYkRpX0c4MDVMTlZtT180UUFBV2xHUE5zSExiQ1dUN2g2OENpR1ZBcnpLcXE2OFo5UEV4OW9pZmFId3F3VS01OUduZTBMZ3JlMzBfN3k5cXIzTzQzVTZSTjhOaDRKZXY4WWI5Qi0yQXo2aU45VWlhOHVWQQ?oc=5",
+      "titre": "Sud PTT 84 s'alarme après la fermeture annoncée de 8 bureaux de poste dans le Vaucluse - La Provence",
+      "source": "Google News",
+      "date": "Fri, 28 Aug 2026 05:06:20 GMT",
+      "created_at": "2026-08-28T15:31:58.055276+00:00"
     },
     {
       "id": "b77390d749fa034d",
@@ -15050,6 +15133,32 @@
       "source": "Google News",
       "date": "Thu, 27 Feb 2025 08:00:00 GMT",
       "created_at": "2026-07-22T08:53:05.261164+00:00"
+    },
+    {
+      "id": "81db1e6a1304e95f",
+      "banque": "Crédit Agricole",
+      "scope": "regional",
+      "count": null,
+      "confidence": 0.35,
+      "evidence": "Le Télégramme évoque une « réorganisation du Crédit Agricole et du CMB » dans le Pays de Morlaix, sans détailler de fermetures/noms de communes dans le texte fourni.",
+      "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPN3RDY01hN1hENHZDSzdOZi1VbFNwNEFlcnZLRHBFbzRXMlI5SFNLMTVKQ0NfaWtrekpzTmJmNHpVOVF1ZVB4MVhiS042RnBSVGZYRDhlMjB4ejlrNlppRlYzYzZ2NDJXQ2loSmhqMVhlTTNaeGF0eHBVSG1WdjlnX2lOSnZxaGhsZzQwdW1UalkwZGtrYmdnZlJTczJvLWlyVGczOFJid0Y2V1pZSXdZSUg3Rm1DM3Zud1dOQWNwMmJvSkZ5RWpZTWNWNTlJcmhpMkxtWTk1azB3YUI4NjVjSWZEWkUxZWJzbjh1cl9obUJjMFZQMHdlSmtySlhvNk1hOVE?oc=5",
+      "titre": "« On répond à une tendance » : la réorganisation du Crédit Agricole et du CMB fait tousser dans le Pays de Morlaix - Le Télégramme",
+      "source": "Google News",
+      "date": "Thu, 27 Aug 2026 17:10:06 GMT",
+      "created_at": "2026-08-28T15:31:42.870079+00:00"
+    },
+    {
+      "id": "00c413e0b83bf064",
+      "banque": "Crédit Mutuel",
+      "scope": "regional",
+      "count": null,
+      "confidence": 0.35,
+      "evidence": "Le Télégramme évoque une « réorganisation du Crédit Agricole et du CMB » dans le Pays de Morlaix, sans détailler de fermetures/noms de communes dans le texte fourni.",
+      "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPN3RDY01hN1hENHZDSzdOZi1VbFNwNEFlcnZLRHBFbzRXMlI5SFNLMTVKQ0NfaWtrekpzTmJmNHpVOVF1ZVB4MVhiS042RnBSVGZYRDhlMjB4ejlrNlppRlYzYzZ2NDJXQ2loSmhqMVhlTTNaeGF0eHBVSG1WdjlnX2lOSnZxaGhsZzQwdW1UalkwZGtrYmdnZlJTczJvLWlyVGczOFJid0Y2V1pZSXdZSUg3Rm1DM3Zud1dOQWNwMmJvSkZ5RWpZTWNWNTlJcmhpMkxtWTk1azB3YUI4NjVjSWZEWkUxZWJzbjh1cl9obUJjMFZQMHdlSmtySlhvNk1hOVE?oc=5",
+      "titre": "« On répond à une tendance » : la réorganisation du Crédit Agricole et du CMB fait tousser dans le Pays de Morlaix - Le Télégramme",
+      "source": "Google News",
+      "date": "Thu, 27 Aug 2026 17:10:06 GMT",
+      "created_at": "2026-08-28T15:31:42.871192+00:00"
     },
     {
       "id": "fa331ee9c7eb18fd",
@@ -15793,6 +15902,19 @@
       "created_at": "2026-08-03T07:53:49.779636+00:00"
     },
     {
+      "id": "94df713114d19e03",
+      "banque": "La Banque Postale",
+      "scope": "regional",
+      "count": 8,
+      "confidence": 0.45,
+      "evidence": "« huit bureaux de poste font fermer en 2027 dans le Vaucluse » (Sud PTT via ici.fr)",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPUy1uaU1XbWZvNU9acTRjMEY0Ul9xazE4b2tjejdXVGVMZ2x1OTJoVkhPTVQ2cG9qb3gzbzFVclZHMWttTmotM0FWeUc5MnJ1V3BfX25SbWZub1ZBRmZZeDA4SFIzNU1ENDlxVWhOUlZ2aXF1V0F3dXpTNHpGN3dJTWZzZVVwZzVWc0x4SEhwMWJFNzlCbTU2X2pvankyeDZ2enJNTGlxRjJPTGFjSUNjbWZuakozX3BXV2FmaTZlMGtQNk9TSGV4TlNEMTBHWDYzclRjbm5vSQ?oc=5",
+      "titre": "Selon Sud PTT, huit bureaux de poste font fermer en 2027 dans le Vaucluse - ici.fr",
+      "source": "Google News",
+      "date": "Fri, 28 Aug 2026 05:47:00 GMT",
+      "created_at": "2026-08-28T15:31:50.762156+00:00"
+    },
+    {
       "id": "f7f44a86a8bbdc4d",
       "banque": "Crédit Agricole",
       "scope": "regional",
@@ -15973,6 +16095,19 @@
       "source": "Google News",
       "date": "Fri, 05 Jun 2026 07:00:00 GMT",
       "created_at": "2026-08-04T06:10:34.623634+00:00"
+    },
+    {
+      "id": "0304e7b0e29f549f",
+      "banque": "Mondial Relay (InPost)",
+      "scope": "national",
+      "count": null,
+      "confidence": 0.55,
+      "evidence": "L'article indique : « Mondial Relay compte également 7.000 points relais... après la fermeture de quelque 3.500 l'an dernier » et prévoit « 3.500 “lockers” supplémentaires en 2026 ». Aucun nom de commune ni détail de fermetures d’agences bancaires physiques.",
+      "url": "https://lecourrier.vn/mondial-relay-souhaite-investir-500-millions-deuros-en-france-dici-2030/1354320.html",
+      "titre": "Mondial Relay souhaite investir 500 millions d'euros en France d'ici 2030",
+      "source": "lecourrier.vn",
+      "date": "2026-08-28T01:19:22Z",
+      "created_at": "2026-08-28T15:32:47.003547+00:00"
     },
     {
       "id": "a2b43ff02b778acd",
@@ -18876,6 +19011,19 @@
       "created_at": "2026-08-15T04:00:33.084547+00:00"
     },
     {
+      "id": "c6d783270873298e",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Manque d’effectif, la Maison France Service et la Poste de ce village des Ardennes fermées jusqu’à la fin du mois - L'Ardennais",
+      "extrait": "TITRE: Manque d’effectif, la Maison France Service et la Poste de ce village des Ardennes fermées jusqu’à la fin du mois - L'Ardennais SOURCE: Google News DATE: Wed, 12 Aug 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMizwFBVV95cUxORWpFUXFGY1dwVEFJR1JZTkdVREh6ekNxaU1nNmVhSTZaQ1RjOEFMbGpZNGNPVTJYUmFmX1Rob2lnUXJ0ZUp0d2RUQWhlLS0tTHM3WmYyNnZ6T1VYRnR4VEJxRjV4cFJLR2pMNHpQaWZZYzN2SjI5b3N0UEJsdDhENmtscmF3aGl0UVZhQWJDaEdUbGtYajdoZ1dZaFBxcWZxSHJ0ZGxGLU1SWUtVWmpyNk1oZlRnOHBJaGVuV0ZDbV9WTnR",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxORWpFUXFGY1dwVEFJR1JZTkdVREh6ekNxaU1nNmVhSTZaQ1RjOEFMbGpZNGNPVTJYUmFmX1Rob2lnUXJ0ZUp0d2RUQWhlLS0tTHM3WmYyNnZ6T1VYRnR4VEJxRjV4cFJLR2pMNHpQaWZZYzN2SjI5b3N0UEJsdDhENmtscmF3aGl0UVZhQWJDaEdUbGtYajdoZ1dZaFBxcWZxSHJ0ZGxGLU1SWUtVWmpyNk1oZlRnOHBJaGVuV0ZDbV9WTnRxQmxRY2Z6a1h2NDQ?oc=5",
+      "source": "Google News",
+      "date": "Wed, 12 Aug 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-28T15:32:00.124071+00:00"
+    },
+    {
       "id": "50fb7fc6e95bae74",
       "banque": "HSBC",
       "departement": "",
@@ -20642,6 +20790,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-08-03T07:53:53.618336+00:00"
+    },
+    {
+      "id": "f1bf7a39f382eeeb",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "\"Une mesure radicale\" : le tunnel de Saint-Cloud va fermer pendant près d'un an dans le sens Paris-province - Actu.fr",
+      "extrait": "TITRE: \"Une mesure radicale\" : le tunnel de Saint-Cloud va fermer pendant près d'un an dans le sens Paris-province - Actu.fr SOURCE: Google News DATE: Tue, 21 Jul 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMihAJBVV95cUxNOUtkU0JXUlV5ZU9fYlloVGpBWU5RenNaUmdKNzJReDFZczZJemh5WmhXVDZJQ25zc1JuQmdSZVlJNlZwWEoweld3MUhEWTdSUndtOTBSNDNNV3VsQVQyVkg1dlNQUWRmTmhoVElJZi1CYTExM2hCTWNwWmZFWkhJbGhlME5RMWlSM1RLMkdacl81RUs5QlVINS1CbXM4MHJ6N3BsWUNKZzNOOGZIdTVQSGQ4VlMtRXVOWmNFVHM0U1hkVkpZSE5XTnpGc",
+      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxNOUtkU0JXUlV5ZU9fYlloVGpBWU5RenNaUmdKNzJReDFZczZJemh5WmhXVDZJQ25zc1JuQmdSZVlJNlZwWEoweld3MUhEWTdSUndtOTBSNDNNV3VsQVQyVkg1dlNQUWRmTmhoVElJZi1CYTExM2hCTWNwWmZFWkhJbGhlME5RMWlSM1RLMkdacl81RUs5QlVINS1CbXM4MHJ6N3BsWUNKZzNOOGZIdTVQSGQ4VlMtRXVOWmNFVHM0U1hkVkpZSE5XTnpGcmxGVFMwNVA0amxtQ3ZvR3BIbGtxdnVHYTRQQTktUUw2STFuRUk0dmZHeVpHWGFCVzlaeVNMRHRBeQ?oc=5",
+      "source": "Google News",
+      "date": "Tue, 21 Jul 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-28T15:31:53.073710+00:00"
     },
     {
       "id": "1be161e167506613",
@@ -22633,6 +22794,19 @@
       "created_at": "2026-06-25T15:29:15.644569+00:00"
     },
     {
+      "id": "5469637f58d076e7",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Fermeture partielle du Duplex A86 pour la rentrée : où et quand ça va coincer dans les Yvelines ? - Actu.fr",
+      "extrait": "TITRE: Fermeture partielle du Duplex A86 pour la rentrée : où et quand ça va coincer dans les Yvelines ? - Actu.fr SOURCE: Google News DATE: Thu, 27 Aug 2026 17:16:01 GMT URL: https://news.google.com/rss/articles/CBMiywFBVV95cUxQQXlkcVBMTXRaanZXQnZkR2g4YktYQjloQkJrZWxVWHhwUmp6RGlJWkpkRXlBZXY4RDNndlo3SVJEaUFNb1hldnVTX0tyTDEwLURMSGtoQW5PU3l3cjQxV0ZlTl9jMnFBbk1DbXpxRGNyUkZMeTNXNkVXOU05dGVubTJoZEllWVJVWHJweF96M1pjZFJjVUhhYWJoVm1IWUJfZ2otYld0UkF3U1pPSGE0bFNEZjRFRUdlNmw0ME5NVVppU3I2bFVoempFRQ?oc=5 <a ",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQQXlkcVBMTXRaanZXQnZkR2g4YktYQjloQkJrZWxVWHhwUmp6RGlJWkpkRXlBZXY4RDNndlo3SVJEaUFNb1hldnVTX0tyTDEwLURMSGtoQW5PU3l3cjQxV0ZlTl9jMnFBbk1DbXpxRGNyUkZMeTNXNkVXOU05dGVubTJoZEllWVJVWHJweF96M1pjZFJjVUhhYWJoVm1IWUJfZ2otYld0UkF3U1pPSGE0bFNEZjRFRUdlNmw0ME5NVVppU3I2bFVoempFRQ?oc=5",
+      "source": "Google News",
+      "date": "Thu, 27 Aug 2026 17:16:01 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-28T15:31:55.398136+00:00"
+    },
+    {
       "id": "d0e21a69f22c8e23",
       "banque": "Société Générale",
       "departement": "",
@@ -23320,6 +23494,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-08-03T07:54:54.013223+00:00"
+    },
+    {
+      "id": "d72b293776d284b5",
+      "banque": "Caisse d'Épargne",
+      "departement": "",
+      "titre": "Centre de loisirs fermé à Lunéville : la préfecture pointe de graves manquements - France 3 Régions",
+      "extrait": "TITRE: Centre de loisirs fermé à Lunéville : la préfecture pointe de graves manquements - France 3 Régions SOURCE: Google News DATE: Thu, 20 Aug 2026 07:00:00 GMT URL: https://news.google.com/rss/articles/CBMi9gFBVV95cUxQQkFsbk5mcElCS1pPTjNrTjZmSk84dE9RT0NQNUpYcENEUVlPSVJxUjhIX0hiUldxSkJ4U2pyRjY3Q1drRFhCcnRVdkRCdWtSUF9ESWZPVFpxWjBZZ0JrYlB3Uy1BaFBoeS1EWXVJbWh3WHduVW9lU3BpeGRPUlNwVGlhajRwSDRWVUt4ajRYYnFNUlVrZUJNMi1Fc0w3OHlfZXJVVkZIQXhXdDNLYVVmTEVOdWdfaFczUUVOWXRPVUZZSGRRWVVRRTNMYklZV3dCTm1rSF9xRzN",
+      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQQkFsbk5mcElCS1pPTjNrTjZmSk84dE9RT0NQNUpYcENEUVlPSVJxUjhIX0hiUldxSkJ4U2pyRjY3Q1drRFhCcnRVdkRCdWtSUF9ESWZPVFpxWjBZZ0JrYlB3Uy1BaFBoeS1EWXVJbWh3WHduVW9lU3BpeGRPUlNwVGlhajRwSDRWVUt4ajRYYnFNUlVrZUJNMi1Fc0w3OHlfZXJVVkZIQXhXdDNLYVVmTEVOdWdfaFczUUVOWXRPVUZZSGRRWVVRRTNMYklZV3dCTm1rSF9xRzNOdlZRUVFrVjJvMlpmZlJ6UEZiMTlWR3FiS1UxSGc?oc=5",
+      "source": "Google News",
+      "date": "Thu, 20 Aug 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-28T15:32:03.913885+00:00"
     },
     {
       "id": "9c7f3db3d3dad07b",
@@ -29497,6 +29684,45 @@
       "created_at": "2026-06-25T15:21:12.668853+00:00"
     },
     {
+      "id": "7f38f7c01a5fcc19",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "« Elle est en mille morceaux » : salariées traumatisées et longue fermeture après le saccage de La Poste par des gens du voyage - Le Parisien",
+      "extrait": "TITRE: « Elle est en mille morceaux » : salariées traumatisées et longue fermeture après le saccage de La Poste par des gens du voyage - Le Parisien SOURCE: Google News DATE: Fri, 28 Aug 2026 07:31:24 GMT URL: https://news.google.com/rss/articles/CBMiowJBVV95cUxPS25mNy1WcTE4YmFDeEo4SHF4cjUyd2Rod2lOZzYyWjBYMVphVzd4WWQtWFJWdkpyVlVvQjVfeHBmcENFS2NITGc0YUFWVGMwRjhKemtTaGxxT1NkOVQyaV9kX2dpOXNTQ3pSRlhOYzMwZ2Y2eDM5ZkNaWXhJa1VKeVE3Zk9mRlg5bjBYR2hPNDYwbmo3OXRBblcyN3JuZE5MeUJlVzRhMzQ4N1dPTFRLSjRUaXBOblNmT",
+      "url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxPS25mNy1WcTE4YmFDeEo4SHF4cjUyd2Rod2lOZzYyWjBYMVphVzd4WWQtWFJWdkpyVlVvQjVfeHBmcENFS2NITGc0YUFWVGMwRjhKemtTaGxxT1NkOVQyaV9kX2dpOXNTQ3pSRlhOYzMwZ2Y2eDM5ZkNaWXhJa1VKeVE3Zk9mRlg5bjBYR2hPNDYwbmo3OXRBblcyN3JuZE5MeUJlVzRhMzQ4N1dPTFRLSjRUaXBOblNmT1ZJQWpyMzh4YjluVEVqUVdKc2phbUxyMmlkaDdlSTFGS2J3UmhQZ1QwZWItcnl4THJoako0SHNtYXNSaFotYi11Rk1BeFhUanFfQUNuYWJ2NUxNSWdHeW9yOWJpcHRBQUR2bzJyYXVucW8?oc=5",
+      "source": "Google News",
+      "date": "Fri, 28 Aug 2026 07:31:24 GMT",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-28T15:32:01.903162+00:00"
+    },
+    {
+      "id": "85bb88d710985222",
+      "banque": "La Banque Postale",
+      "departement": "84",
+      "titre": "Sud PTT 84 s'alarme après la fermeture annoncée de 8 bureaux de poste dans le Vaucluse - La Provence",
+      "extrait": "« fermeture annoncée de 8 bureaux de poste dans le Vaucluse » (article : Sud PTT 84 s'alarme après la fermeture annoncée de 8 bureaux de poste dans le Vaucluse)",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPYzg4MkIydlNoM2xJZ2NyYV9ubmxtMVMtU3dfRDNPeXJoSjlfbk1RZ0tYeHVwY3I5QzduN21sdzNHWEpmbzQtRDZob2dXM2hOMFpEUmplUzBfWnBIcEhSVzVlRUVkS2NMYkRpX0c4MDVMTlZtT180UUFBV2xHUE5zSExiQ1dUN2g2OENpR1ZBcnpLcXE2OFo5UEV4OW9pZmFId3F3VS01OUduZTBMZ3JlMzBfN3k5cXIzTzQzVTZSTjhOaDRKZXY4WWI5Qi0yQXo2aU45VWlhOHVWQQ?oc=5",
+      "source": "Google News",
+      "date": "Fri, 28 Aug 2026 05:06:20 GMT",
+      "score": 3,
+      "raison": "signaux: dept(La Banque Postale,Vaucluse,count=8,communes=)",
+      "created_at": "2026-08-28T15:31:58.056341+00:00"
+    },
+    {
+      "id": "3eb011562c3cfe26",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Cosne-Cours-sur-Loire : fermeture temporaire du bureau de poste pour rénovation à partir du 29 août - Le Journal du Centre",
+      "extrait": "TITRE: Cosne-Cours-sur-Loire : fermeture temporaire du bureau de poste pour rénovation à partir du 29 août - Le Journal du Centre SOURCE: Google News DATE: Fri, 28 Aug 2026 03:58:00 GMT URL: https://news.google.com/rss/articles/CBMi-wFBVV95cUxOX0R1T2szWGJsWndzSzVwWnR5dEZtZUxJb243S1VkTmpqRnBpQmdIYjhIYzF5X05lcmFMNlpNQ3FBTG9uZ0xKMEQ5MXkzSXhRM1hyTi1rUmtEUGE3LWR4TURGRHgxN24zVl9MTUwzMTFiS3FLNGFUdEpnSDY5emNuVl8yc0JrcDRiTDdHcDFpRWJQeHR5TGM5MXZsdjI1bVVrSWpDbkROalFIdUE3dGx1RzQyQnd6ZElLLVBSMmdtUU1CN2J2LTdr",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOX0R1T2szWGJsWndzSzVwWnR5dEZtZUxJb243S1VkTmpqRnBpQmdIYjhIYzF5X05lcmFMNlpNQ3FBTG9uZ0xKMEQ5MXkzSXhRM1hyTi1rUmtEUGE3LWR4TURGRHgxN24zVl9MTUwzMTFiS3FLNGFUdEpnSDY5emNuVl8yc0JrcDRiTDdHcDFpRWJQeHR5TGM5MXZsdjI1bVVrSWpDbkROalFIdUE3dGx1RzQyQnd6ZElLLVBSMmdtUU1CN2J2LTdrY09DSlB5Z2Nndktqcl9mRGYzdjdIRXcwYjFiYnJlTnllV2M5QnQ0ZVc3b1cxSDE0X1VzWQ?oc=5",
+      "source": "Google News",
+      "date": "Fri, 28 Aug 2026 03:58:00 GMT",
+      "score": 3,
+      "raison": "fermeture non publiée: garde entrée/sortie: fermeture postale temporaire ou circonstancielle",
+      "created_at": "2026-08-28T15:31:46.990063+00:00"
+    },
+    {
       "id": "b99d59ae98bcf8ce",
       "banque": "Société Générale",
       "departement": "",
@@ -31809,6 +32035,136 @@
       "score": 3,
       "raison": "fermeture non publiée: hors fenêtre temporelle",
       "created_at": "2026-07-22T09:09:01.159244+00:00"
+    },
+    {
+      "id": "e2fc3eb7812624d0",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Arianespace lance avec succès le satellite météorologique MTG-I2 à bord d'Ariane 6",
+      "extrait": "TITRE: Arianespace lance avec succès le satellite météorologique MTG-I2 à bord d'Ariane 6 SOURCE: Mer et Marine DATE: 2026-08-28T14:27:07Z URL: https://www.meretmarine.com/fr/science-et-environnement/arianespace-lance-avec-succes-le-satellite-meteorologique-mtg-i2-a-bord-d-ariane-6 Le 27 août 2026, Arianespace a lancé avec succès le 2ème satellite imageur Meteosat Troisième Génération (MTG-I2) à bord d'une Ariane 6. Désigné VA270, ce lancement représente la quatrième mission de l'année pour Aria",
+      "url": "https://www.meretmarine.com/fr/science-et-environnement/arianespace-lance-avec-succes-le-satellite-meteorologique-mtg-i2-a-bord-d-ariane-6",
+      "source": "Mer et Marine",
+      "date": "2026-08-28T14:27:07Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-28T15:32:24.440961+00:00"
+    },
+    {
+      "id": "7b25e17b0ee08f26",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Au milieu d'un tunnel sous les Alpes s'est immobilisé en 1999 un poids lourd que les secours n'ont pas pu atteindre",
+      "extrait": "TITRE: Au milieu d'un tunnel sous les Alpes s'est immobilisé en 1999 un poids lourd que les secours n'ont pas pu atteindre SOURCE: Sciencepost DATE: 2026-08-28T11:37:10Z URL: https://sciencepost.fr/au-milieu-d-un-tunnel-sous-les-alpes-s-est-immobilise-en-1999-un-poids-lourd-que-les-secours-n-ont-pas-pu-atteindre/ Onze heures du matin, un mardi de mars ordinaire. Un semi-remorque frigorifique belge, chargé de margarine et de farine, roule tranquillement dans le tunnel du Mont-Blanc quand sa cabin",
+      "url": "https://sciencepost.fr/au-milieu-d-un-tunnel-sous-les-alpes-s-est-immobilise-en-1999-un-poids-lourd-que-les-secours-n-ont-pas-pu-atteindre/",
+      "source": "Sciencepost",
+      "date": "2026-08-28T11:37:10Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-28T15:32:27.011603+00:00"
+    },
+    {
+      "id": "29f9a131411a2a90",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Strasbourg à un pas de boucler la signature d'Oso : Séville ouvre la porte - Sport.fr",
+      "extrait": "TITRE: Strasbourg à un pas de boucler la signature d'Oso : Séville ouvre la porte - Sport.fr SOURCE: Sport.fr DATE: 2026-08-28T11:20:20Z URL: https://www.sport.fr/football/strasbourg-a-un-pas-de-boucler-la-signature-doso-seville-ouvre-la-porte-1477568.shtm À Strasbourg, la fin du mercato ressemble de plus en plus à une course contre la montre. Et un nom pourrait bien s'y ajouter dans les tout prochains jours. Un accord de principe aurait été trouvé entre le Racing Club de Strasbourg et le FC Sév",
+      "url": "https://www.sport.fr/football/strasbourg-a-un-pas-de-boucler-la-signature-doso-seville-ouvre-la-porte-1477568.shtm",
+      "source": "Sport.fr",
+      "date": "2026-08-28T11:20:20Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-28T15:32:28.739034+00:00"
+    },
+    {
+      "id": "e6e7f349676ade04",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Le RC Lens sur les traces d'El Chadaille Bitshiabu, formé au PSG - Sport.fr",
+      "extrait": "TITRE: Le RC Lens sur les traces d'El Chadaille Bitshiabu, formé au PSG - Sport.fr SOURCE: Sport.fr DATE: 2026-08-28T09:41:28Z URL: https://www.sport.fr/football/le-rc-lens-sur-les-traces-del-chadaille-bitshiabu-forme-au-psg-1477550.shtm Il n'a que 20 ans, mais son parcours intrigue déjà tout un championnat. El Chadaille Bitshiabu pourrait s'apprêter à découvrir une nouvelle étape de sa jeune carrière, du côté du RC Lens. Le club sang et or travaille actuellement sur un prêt du défenseur central",
+      "url": "https://www.sport.fr/football/le-rc-lens-sur-les-traces-del-chadaille-bitshiabu-forme-au-psg-1477550.shtm",
+      "source": "Sport.fr",
+      "date": "2026-08-28T09:41:28Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-28T15:32:33.678002+00:00"
+    },
+    {
+      "id": "2ecd3c950017085b",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "2027 : à Roland-Garros, les candidats croisent le fer sur l'économie",
+      "extrait": "TITRE: 2027 : à Roland-Garros, les candidats croisent le fer sur l'économie SOURCE: euronews DATE: 2026-08-28T05:12:21Z URL: https://fr.euronews.com/business/2026/08/28/presidentielle-de-2027-a-roland-garros-les-candidats-croisent-le-fer-sur-leconomie L'économie, les retraites et la dette publique ont dominé le débat de plus de trois heures qui a réuni, jeudi, les sept principaux candidats à l'Élysée. Organisé par le MEDEF, la principale organisation patronale française, l'échange s'est déroulé ",
+      "url": "https://fr.euronews.com/business/2026/08/28/presidentielle-de-2027-a-roland-garros-les-candidats-croisent-le-fer-sur-leconomie",
+      "source": "euronews",
+      "date": "2026-08-28T05:12:21Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-28T15:32:37.231876+00:00"
+    },
+    {
+      "id": "5ff0b0971d3f55ed",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Présidentielle de 2027 : à Roland-Garros, les candidats croisent le fer sur l'économie",
+      "extrait": "TITRE: Présidentielle de 2027 : à Roland-Garros, les candidats croisent le fer sur l'économie SOURCE: euronews DATE: 2026-08-28T05:12:21Z URL: https://fr.euronews.com/my-europe/2026/08/28/presidentielle-de-2027-a-roland-garros-les-candidats-croisent-le-fer-sur-leconomie L'économie, les retraites et la dette publique ont dominé le débat de plus de trois heures qui a réuni, jeudi, les sept principaux candidats à l'Élysée. Organisé par le MEDEF, la principale organisation patronale française, l'éch",
+      "url": "https://fr.euronews.com/my-europe/2026/08/28/presidentielle-de-2027-a-roland-garros-les-candidats-croisent-le-fer-sur-leconomie",
+      "source": "euronews",
+      "date": "2026-08-28T05:12:21Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-28T15:32:42.720949+00:00"
+    },
+    {
+      "id": "50b933680a1e0a35",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Adèle Van Reeth : \"Il n'est pas vrai qu'à ce niveau de responsabilité, on peut s'interrompre à 19 heures\"",
+      "extrait": "TITRE: Adèle Van Reeth : \"Il n'est pas vrai qu'à ce niveau de responsabilité, on peut s'interrompre à 19 heures\" SOURCE: Madame Figaro DATE: 2026-08-28T04:50:00Z URL: https://madame.lefigaro.fr/bien-etre/psycho/adele-van-reeth-il-n-est-pas-vrai-qu-a-ce-niveau-de-responsabilite-on-peut-s-interrompre-a-19-heures-20260828 Concilier responsabilités professionnelles et familiales ? Adèle Van Reeth, philosophe, ex-directrice de France Inter, l'a tenté... Mais aujourd'hui, elle défend un espace vital, ",
+      "url": "https://madame.lefigaro.fr/bien-etre/psycho/adele-van-reeth-il-n-est-pas-vrai-qu-a-ce-niveau-de-responsabilite-on-peut-s-interrompre-a-19-heures-20260828",
+      "source": "Madame Figaro",
+      "date": "2026-08-28T04:50:00Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-28T15:32:44.250158+00:00"
+    },
+    {
+      "id": "57b82678ea436c4b",
+      "banque": "Mondial Relay (InPost)",
+      "departement": "",
+      "titre": "Mondial Relay souhaite investir 500 millions d'euros en France d'ici 2030",
+      "extrait": "L'article indique : « Mondial Relay compte également 7.000 points relais... après la fermeture de quelque 3.500 l'an dernier » et prévoit « 3.500 “lockers” supplémentaires en 2026 ». Aucun nom de commune ni détail de fermetures d’agences bancaires physiques.",
+      "url": "https://lecourrier.vn/mondial-relay-souhaite-investir-500-millions-deuros-en-france-dici-2030/1354320.html",
+      "source": "lecourrier.vn",
+      "date": "2026-08-28T01:19:22Z",
+      "score": 3,
+      "raison": "signaux: vague(Mondial Relay (InPost),national,count=None)",
+      "created_at": "2026-08-28T15:32:47.004677+00:00"
+    },
+    {
+      "id": "0552b7b3098be4f7",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Feuilleton Fernandez-Pardo, milieu de terrain décimé : Lille, attention chantier",
+      "extrait": "TITRE: Feuilleton Fernandez-Pardo, milieu de terrain décimé : Lille, attention chantier SOURCE: Eurosport DATE: 2026-08-27T22:08:22Z URL: https://www.eurosport.fr/football/ligue-1/2026-2027/feuilleton-fernandez-pardo-milieu-de-terrain-decime-lille-sagite-a-quelques-jours-de-la-fin-du-mercato_sto23331421/story.shtml Alors que le mercato estival entre dans ses derniers jours, Lille a encore plusieurs dossiers à régler. Après le départ d'Ayyoub Bouaddi vers Manchester City et avec l'avenir de Matia",
+      "url": "https://www.eurosport.fr/football/ligue-1/2026-2027/feuilleton-fernandez-pardo-milieu-de-terrain-decime-lille-sagite-a-quelques-jours-de-la-fin-du-mercato_sto23331421/story.shtml",
+      "source": "Eurosport",
+      "date": "2026-08-27T22:08:22Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-28T15:32:48.750839+00:00"
+    },
+    {
+      "id": "dfa7e675a8c6b518",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Mercato PSG : Le coach de Liverpool confirme pour Barcola !",
+      "extrait": "TITRE: Mercato PSG : Le coach de Liverpool confirme pour Barcola ! SOURCE: Foot-sur7 DATE: 2026-08-27T19:48:12Z URL: https://www.foot-sur7.fr/775402-mercato-psg-le-coach-de-liverpool-confirme-pour-barcola Alors que le PSG et Liverpool sont parvenus à un accord pour le transfert de Bradley Barcola, l'entraîneur du club anglais, Andoni Iraola, s'est prononcé sur le sujet ce jeudi soir. Le manager des Reds est impatient d'accueillir son futur ailier. Mercato PSG : Bradley Barcola pour 140M€ Mis à l",
+      "url": "https://www.foot-sur7.fr/775402-mercato-psg-le-coach-de-liverpool-confirme-pour-barcola",
+      "source": "Foot-sur7",
+      "date": "2026-08-27T19:48:12Z",
+      "score": 3,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-28T15:32:50.833713+00:00"
     },
     {
       "id": "f591b6e8fba2fedb",
@@ -37869,6 +38225,32 @@
       "created_at": "2026-07-22T09:07:36.951765+00:00"
     },
     {
+      "id": "0b116733d31bcd02",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Offres du jour-Fusions et acquisitions - Boursorama",
+      "extrait": "TITRE: Offres du jour-Fusions et acquisitions - Boursorama SOURCE: Google News DATE: Thu, 27 Aug 2026 19:37:54 GMT URL: https://news.google.com/rss/articles/CBMivAFBVV95cUxQSFdwaEhnTjR4SVkyUnhHSUVMOTFaZTB4S3g1dTVYaTNNNng0NmpFcW44Yk5qaEFfci1EajJMNFFUbmwya1ZmMExBaVBVTVltYkwzS3lPdzlwSG5TQWVRVDVRQnA2b0xvRldZMkxpQ2R5RDA3WXMydVJmYUctWmd3d3E4anVoX21hVXJhbjZrMV90ZVI0enUzM19HcmRUYzBMUFVpdWxKMDZHaU9JcmZBYV85UjA4X1hyazZ5VdIBvAFBVV95cUxQSFdwaEhnTjR4SVkyUnhHSUVMOTFaZTB4S3g1dTVYaTNNNng0NmpFcW44Yk5qaEFfci1EajJ",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQSFdwaEhnTjR4SVkyUnhHSUVMOTFaZTB4S3g1dTVYaTNNNng0NmpFcW44Yk5qaEFfci1EajJMNFFUbmwya1ZmMExBaVBVTVltYkwzS3lPdzlwSG5TQWVRVDVRQnA2b0xvRldZMkxpQ2R5RDA3WXMydVJmYUctWmd3d3E4anVoX21hVXJhbjZrMV90ZVI0enUzM19HcmRUYzBMUFVpdWxKMDZHaU9JcmZBYV85UjA4X1hyazZ5VdIBvAFBVV95cUxQSFdwaEhnTjR4SVkyUnhHSUVMOTFaZTB4S3g1dTVYaTNNNng0NmpFcW44Yk5qaEFfci1EajJMNFFUbmwya1ZmMExBaVBVTVltYkwzS3lPdzlwSG5TQWVRVDVRQnA2b0xvRldZMkxpQ2R5RDA3WXMydVJmYUctWmd3d3E4anVoX21hVXJhbjZrMV90ZVI0enUzM19HcmRUYzBMUFVpdWxKMDZHaU9JcmZBYV85UjA4X1hyazZ5VQ?oc=5",
+      "source": "Google News",
+      "date": "Thu, 27 Aug 2026 19:37:54 GMT",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-28T15:31:39.738192+00:00"
+    },
+    {
+      "id": "a9dbc232af9cf974",
+      "banque": "Crédit Agricole",
+      "departement": "",
+      "titre": "« On répond à une tendance » : la réorganisation du Crédit Agricole et du CMB fait tousser dans le Pays de Morlaix - Le Télégramme",
+      "extrait": "Le Télégramme évoque une « réorganisation du Crédit Agricole et du CMB » dans le Pays de Morlaix, sans détailler de fermetures/noms de communes dans le texte fourni. | Le Télégramme évoque une « réorganisation du Crédit Agricole et du CMB » dans le Pays de Morlaix, sans détailler de fermetures/noms de communes dans le texte fourni.",
+      "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPN3RDY01hN1hENHZDSzdOZi1VbFNwNEFlcnZLRHBFbzRXMlI5SFNLMTVKQ0NfaWtrekpzTmJmNHpVOVF1ZVB4MVhiS042RnBSVGZYRDhlMjB4ejlrNlppRlYzYzZ2NDJXQ2loSmhqMVhlTTNaeGF0eHBVSG1WdjlnX2lOSnZxaGhsZzQwdW1UalkwZGtrYmdnZlJTczJvLWlyVGczOFJid0Y2V1pZSXdZSUg3Rm1DM3Zud1dOQWNwMmJvSkZ5RWpZTWNWNTlJcmhpMkxtWTk1azB3YUI4NjVjSWZEWkUxZWJzbjh1cl9obUJjMFZQMHdlSmtySlhvNk1hOVE?oc=5",
+      "source": "Google News",
+      "date": "Thu, 27 Aug 2026 17:10:06 GMT",
+      "score": 2,
+      "raison": "signaux: vague(Crédit Agricole,regional,count=None); vague(Crédit Mutuel,regional,count=None)",
+      "created_at": "2026-08-28T15:31:42.872108+00:00"
+    },
+    {
       "id": "11977ff006f5f336",
       "banque": "Société Générale",
       "departement": "",
@@ -39546,6 +39928,19 @@
       "created_at": "2026-06-25T15:32:33.824252+00:00"
     },
     {
+      "id": "98284bd01f8508c9",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "Selon Sud PTT, huit bureaux de poste font fermer en 2027 dans le Vaucluse - ici.fr",
+      "extrait": "« huit bureaux de poste font fermer en 2027 dans le Vaucluse » (Sud PTT via ici.fr)",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPUy1uaU1XbWZvNU9acTRjMEY0Ul9xazE4b2tjejdXVGVMZ2x1OTJoVkhPTVQ2cG9qb3gzbzFVclZHMWttTmotM0FWeUc5MnJ1V3BfX25SbWZub1ZBRmZZeDA4SFIzNU1ENDlxVWhOUlZ2aXF1V0F3dXpTNHpGN3dJTWZzZVVwZzVWc0x4SEhwMWJFNzlCbTU2X2pvankyeDZ2enJNTGlxRjJPTGFjSUNjbWZuakozX3BXV2FmaTZlMGtQNk9TSGV4TlNEMTBHWDYzclRjbm5vSQ?oc=5",
+      "source": "Google News",
+      "date": "Fri, 28 Aug 2026 05:47:00 GMT",
+      "score": 2,
+      "raison": "signaux: vague(La Banque Postale,regional,count=8)",
+      "created_at": "2026-08-28T15:31:50.763045+00:00"
+    },
+    {
       "id": "013f8c2d5be88ea0",
       "banque": "Crédit Agricole",
       "departement": "",
@@ -40038,6 +40433,58 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:43:41.960961+00:00"
+    },
+    {
+      "id": "008d3c75db3a07bd",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Entre alignement avec le patronat et espoir d'un compromis : la campagne s'ouvre sous le signe du MEDEF",
+      "extrait": "TITRE: Entre alignement avec le patronat et espoir d'un compromis : la campagne s'ouvre sous le signe du MEDEF SOURCE: Révolution Permanente DATE: 2026-08-28T11:18:52Z URL: https://www.revolutionpermanente.fr/Entre-alignement-avec-le-patronat-et-espoir-d-un-compromis-la-campagne-s-ouvre-sous-le-signe-du Ce jeudi 27 août, le premier grand débat présidentiel était organisé par le Medef. Un exercice calibré par le grand patronat, dans lequel les candidats du patronat ont cherché à se présenter comm",
+      "url": "https://www.revolutionpermanente.fr/Entre-alignement-avec-le-patronat-et-espoir-d-un-compromis-la-campagne-s-ouvre-sous-le-signe-du",
+      "source": "Révolution Permanente",
+      "date": "2026-08-28T11:18:52Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-28T15:32:30.379546+00:00"
+    },
+    {
+      "id": "dca97d1a16810d43",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Ilimane Ndiaye : le Sénégalais échangé contre un joueur de Man City - Africa Top Sports",
+      "extrait": "TITRE: Ilimane Ndiaye : le Sénégalais échangé contre un joueur de Man City - Africa Top Sports SOURCE: Africa Top Sports DATE: 2026-08-28T11:01:49Z URL: https://africatopsports.com/football/ilimane-ndiaye-le-senegalais-echange-contre-un-joueur-de-man-city/ À la recherche d'un nouvel attaquant, Manchester City s'intéresse à Iliman Ndiaye. Selon le journaliste spécialisé dans les transferts, Ben Jacobs, l'ailier sénégalais d'Everton devrait coûter bien plus de 90 millions d'euros. Manchester City ",
+      "url": "https://africatopsports.com/football/ilimane-ndiaye-le-senegalais-echange-contre-un-joueur-de-man-city/",
+      "source": "Africa Top Sports",
+      "date": "2026-08-28T11:01:49Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-28T15:32:31.742128+00:00"
+    },
+    {
+      "id": "1a81d56ef0cac7ff",
+      "banque": "Crédit Agricole",
+      "departement": "",
+      "titre": "Sur la sécurité de la Prod IT, Crédit Agricole renforce ses compétences",
+      "extrait": "TITRE: Sur la sécurité de la Prod IT, Crédit Agricole renforce ses compétences SOURCE: ZDNet DATE: 2026-08-28T09:00:45Z URL: https://www.zdnet.fr/actualites/sur-la-securite-de-la-prod-it-credit-agricole-renforce-ses-competences-500775.htm CA-GIP, qui assure 80% de la production IT du groupe Crédit Agricole, annonce le renforcement des équipes Cyber Trust & Risk IT. Le plan de recrutement coïncide avec une stratégie de mutualisation et d'investissement dans l'IA. Directeur du pôle technologique C",
+      "url": "https://www.zdnet.fr/actualites/sur-la-securite-de-la-prod-it-credit-agricole-renforce-ses-competences-500775.htm",
+      "source": "ZDNet",
+      "date": "2026-08-28T09:00:45Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-28T15:32:35.637766+00:00"
+    },
+    {
+      "id": "a206d5563640c977",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Le PSG creuse une nouvelle piste défensive en Espagne",
+      "extrait": "TITRE: Le PSG creuse une nouvelle piste défensive en Espagne SOURCE: CulturePSG DATE: 2026-08-28T08:16:36Z URL: https://www.culturepsg.com/news/mercato/le-psg-creuse-une-nouvelle-piste-defensive-en-espagne/60488 Toujours intéressé par le recrutement d'un joueur offensif d'ici la fin du mercato, le PSG reste aussi à l'affût au poste de défenseur central et creuse une nouvelle piste en Liga selon la presse espagnole. La dernière ligne droite du mercato approche. Mardi prochain, les clubs ne pourro",
+      "url": "https://www.culturepsg.com/news/mercato/le-psg-creuse-une-nouvelle-piste-defensive-en-espagne/60488",
+      "source": "CulturePSG",
+      "date": "2026-08-28T08:16:36Z",
+      "score": 2,
+      "raison": "article pertinent sans fermeture publiable",
+      "created_at": "2026-08-28T15:32:41.224510+00:00"
     },
     {
       "id": "cea3f33e22e4d676",
