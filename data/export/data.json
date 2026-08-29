@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T15:43:27.317981+00:00",
+  "generated_at": "2026-08-29T10:27:00.392539+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -282,7 +282,7 @@
       "nom": "Finistère",
       "region": "Bretagne",
       "count": 9,
-      "total_agences": 157,
+      "total_agences": 156,
       "precise_count": 9,
       "unlocated_count": 0,
       "estimated_count": 9
@@ -570,7 +570,7 @@
       "nom": "Orne",
       "region": "Normandie",
       "count": 0,
-      "total_agences": 39,
+      "total_agences": 38,
       "precise_count": 0,
       "unlocated_count": 0,
       "estimated_count": 0
@@ -686,11 +686,11 @@
     "74": {
       "nom": "Haute-Savoie",
       "region": "Auvergne-Rhône-Alpes",
-      "count": 2,
+      "count": 3,
       "total_agences": 200,
-      "precise_count": 2,
+      "precise_count": 3,
       "unlocated_count": 0,
-      "estimated_count": 2
+      "estimated_count": 3
     },
     "75": {
       "nom": "Paris",
@@ -1597,9 +1597,9 @@
     "74": {
       "departement": "74",
       "nom": "Haute-Savoie",
-      "precise_count": 2,
+      "precise_count": 3,
       "unlocated_count": 0,
-      "estimated_count": 2,
+      "estimated_count": 3,
       "department_signal_count": 0,
       "signals": []
     },
@@ -1888,9 +1888,9 @@
     },
     {
       "region": "Auvergne-Rhône-Alpes",
-      "articles": 19,
+      "articles": 20,
       "fermetures": 8,
-      "projets": 10,
+      "projets": 11,
       "fusions": 0,
       "types": [
         "Fermeture",
@@ -9981,6 +9981,47 @@
         "source": "SIRENE"
       },
       "region": "Auvergne-Rhône-Alpes"
+    },
+    {
+      "id": "90121ca27e9a9e34",
+      "banque": "La Banque Postale",
+      "commune": "Menthon-Saint-Bernard",
+      "code_insee": "74176",
+      "departement": "74",
+      "type": "fermeture",
+      "date_annonce": "Sat, 29 Aug 2026 08:48:23 GMT",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "a_venir",
+      "date_fermeture_approx": 0,
+      "fiabilite": 3,
+      "lat": 45.864253,
+      "lon": 6.198529,
+      "citation": "Menthon-Saint-Bernard. Le dernier bureau de Poste de la rive Est du lac va fermer définitivement - Le Dauphiné Libéré",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "service_impact": "fermeture_lbp_complete",
+      "point_postal_avant": "Bureau de Poste",
+      "point_postal_apres": null,
+      "postal_point_id": "14070A",
+      "evidence_level": "presse+référentiel",
+      "created_at": "2026-08-29T10:14:35.745411+00:00",
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNTFZySTJRWWpNV09FamlOVEZZLWI0YVBHZUdUYVBPQTJnU3llZ2JmQ2lFTEJYUkE5LWpkZ0hHcko4NzRwbGtRUFFGR2ctYTNNRVhPYVNaQzRuU1Jfa3pDazR1c0pFVTkzVEZmZ2hyNVIwM1ppMFVDZnoxNWg4MUxvV2txZjVDTnBCeUtxYzNDamRoLXNFdTNWZTNkRHpLY2FnQlNkZ0pGUzV0bi1oa0gzWEtwX1J4akxjcld4Qg?oc=5",
+          "titre": "Menthon-Saint-Bernard. Le dernier bureau de Poste de la rive Est du lac va fermer définitivement - Le Dauphiné Libéré",
+          "source": "Google News",
+          "date": "Sat, 29 Aug 2026 08:48:23 GMT",
+          "tier": "D"
+        }
+      ],
+      "controle_sirene": {
+        "etat_administratif": null,
+        "siret": null,
+        "source": "SIRENE"
+      },
+      "region": "Auvergne-Rhône-Alpes"
     }
   ],
   "closures_unlocated": [
@@ -11044,7 +11085,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-28T15:28:20.488017+00:00"
+      "created_at": "2026-08-29T10:11:35.084100+00:00"
     },
     {
       "id": "50895c042a984b7d",
@@ -11080,7 +11121,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 04:46:02 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-28T15:28:20.115992+00:00"
+      "created_at": "2026-08-29T10:11:34.567417+00:00"
     },
     {
       "id": "8c6a0cad14626d6f",
@@ -13492,7 +13533,7 @@
       "source": "Google News",
       "date": "Fri, 20 Jun 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-28T15:28:26.696194+00:00"
+      "created_at": "2026-08-29T10:11:43.594809+00:00"
     },
     {
       "id": "b70960ea48a1a247",
@@ -13618,7 +13659,7 @@
       "source": "Google News",
       "date": "Fri, 10 Jul 2026 10:12:00 GMT",
       "raison": "garde entrée/sortie: département source 44 incompatible avec la sortie 974",
-      "created_at": "2026-08-28T15:28:41.563471+00:00"
+      "created_at": "2026-08-29T10:12:04.866831+00:00"
     },
     {
       "id": "8c646081e1d69e81",
@@ -13798,7 +13839,7 @@
       "source": "Google News",
       "date": "Fri, 03 Jan 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-28T15:28:19.742396+00:00"
+      "created_at": "2026-08-29T10:11:33.581143+00:00"
     },
     {
       "id": "411db107f70f2387",
@@ -13889,6 +13930,24 @@
       "date": "2026-08-28",
       "raison": "hors fenêtre temporelle",
       "created_at": "2026-08-28T15:32:14.443757+00:00"
+    },
+    {
+      "id": "1cc309488823ad4c",
+      "banque": "La Banque Postale",
+      "commune": "Paray-Vieille-Poste",
+      "departement": "91",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "fermeture du bureau de Poste, Goélia n’est pas responsable",
+      "url": "https://www.courrier-picard.fr/id741306/article/2026-08-28/mers-les-bains-fermeture-du-bureau-de-poste-goelia-nest-pas-responsable",
+      "titre": "fermeture du bureau de Poste, Goélia n’est pas responsable",
+      "source": "courrier-picard.fr",
+      "date": "2026-08-28",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-08-29T10:14:45.343709+00:00"
     },
     {
       "id": "50b6535298607c26",
