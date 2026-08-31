@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T10:06:47.868461+00:00",
+  "generated_at": "2026-08-31T11:16:44.542734+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -10602,6 +10602,24 @@
       "created_at": "2026-07-22T08:55:42.518034+00:00"
     },
     {
+      "id": "472de55d1417723c",
+      "banque": "La Banque Postale",
+      "commune": "Bras-Panon",
+      "departement": "974",
+      "type": "fermeture",
+      "date_fermeture": "2025-10-27",
+      "statut": "confirmé",
+      "statut_temporel": "deja_fermee",
+      "fiabilite": 3,
+      "citation": "Le bureau de Poste de Bras-Panon fermé jusqu' au 27 octobre - Free Dom",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPTkVfRzZfV3Y2SXRVZTNpWURFclhNekgtUTFDZW9vX0RVcUNmMjZGTUt4RU1wdlAyaHBKZmpZdS1DNFhkNWVKNlBuakZ6X05xMnVRbERMVmFCVTI5LURrcGhqYWdxTUVIX2xucWtCYTVtX0ZHeDVvd0RRWF9XNlpDS015dGR5RUZvY0lmWHlWX2RaYXQ1clE?oc=5",
+      "titre": "Le bureau de Poste de Bras-Panon fermé jusqu' au 27 octobre - Free Dom",
+      "source": "Google News",
+      "date": "Wed, 03 Sep 2025 07:00:00 GMT",
+      "raison": "garde entrée/sortie: fermeture postale temporaire ou circonstancielle",
+      "created_at": "2026-08-31T10:58:19.555924+00:00"
+    },
+    {
       "id": "177920c608f9b9b4",
       "banque": "La Banque Postale",
       "commune": "Saumur",
@@ -11085,7 +11103,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-31T09:52:36.349506+00:00"
+      "created_at": "2026-08-31T10:50:19.921600+00:00"
     },
     {
       "id": "50895c042a984b7d",
@@ -11121,7 +11139,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 04:46:02 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-31T09:52:35.643804+00:00"
+      "created_at": "2026-08-31T10:50:19.414234+00:00"
     },
     {
       "id": "8c6a0cad14626d6f",
@@ -13532,8 +13550,8 @@
       "titre": "La mobilisation des habitants a été vaine, le bureau de poste du quartier Saint-Marc, à Saint-Nazaire, ferme ses portes - ici.fr",
       "source": "Google News",
       "date": "Fri, 20 Jun 2025 07:00:00 GMT",
-      "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-31T09:52:45.515509+00:00"
+      "raison": "garde entrée/sortie: commune/localisation de sortie absente de la source",
+      "created_at": "2026-08-31T10:50:29.549858+00:00"
     },
     {
       "id": "b70960ea48a1a247",
@@ -13659,7 +13677,7 @@
       "source": "Google News",
       "date": "Fri, 10 Jul 2026 10:12:00 GMT",
       "raison": "garde entrée/sortie: département source 44 incompatible avec la sortie 974",
-      "created_at": "2026-08-31T09:53:06.750422+00:00"
+      "created_at": "2026-08-31T10:50:50.237893+00:00"
     },
     {
       "id": "8c646081e1d69e81",
@@ -13839,7 +13857,7 @@
       "source": "Google News",
       "date": "Fri, 03 Jan 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-31T09:52:35.052951+00:00"
+      "created_at": "2026-08-31T10:50:18.904534+00:00"
     },
     {
       "id": "411db107f70f2387",
@@ -14398,6 +14416,24 @@
       "date": "2026-07-08",
       "raison": "garde entrée/sortie: fermeture postale temporaire ou circonstancielle",
       "created_at": "2026-07-23T09:43:22.523096+00:00"
+    },
+    {
+      "id": "28872d0d7f7d8f64",
+      "banque": "La Banque Postale",
+      "commune": "Le Plessis-Patte-d'Oie",
+      "departement": "60",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "Ultime mobilisation contre la fermeture du bureau de poste de la Patte d’Oie (...) - Sud PTT",
+      "url": "https://www.sudptt.org/Ultime-mobilisation-contre-la-fermeture-du-bureau-de-poste-de-la-Patte-d-Oie-a",
+      "titre": "Ultime mobilisation contre la fermeture du bureau de poste de la Patte d’Oie (...) - Sud PTT",
+      "source": "www.sudptt.org",
+      "date": "2025-12-14",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-08-31T11:04:10.575649+00:00"
     },
     {
       "id": "412d9ef393339181",
@@ -16845,6 +16881,19 @@
       "score": 4,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:38:08.965383+00:00"
+    },
+    {
+      "id": "811a2fd670897331",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Auxelles-Haut : démission collective du conseil municipal après la fermeture des classes - Le Trois",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMiugFBVV95cUxORC1SX0xkZ3ZqdHBkSUVPNGZMdHpxSHo1VVJyajd2aGRSQUZEbzdtNUFTLWtWblNyWXpaNW9tazJHak1DZXUxcGpSeENRNU5aMGxVR2dKYUtoM1VKM2JfNDlBWlMyVm9CUVRMeEJDMGZ5OVM5eWNuWUplRW5EOUYycURrRUNabDR1Rmc4ei1YSG9xV0RMUmdCTXZ6QUxubnVwT3p6eUpGdldyeU1maHpOWmR3TkhwNW8tRGc?oc=5\" target=\"_blank\">Auxelles-Haut : démission collective du conseil municipal après la fermeture des classes</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Le Trois</font>",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxORC1SX0xkZ3ZqdHBkSUVPNGZMdHpxSHo1VVJyajd2aGRSQUZEbzdtNUFTLWtWblNyWXpaNW9tazJHak1DZXUxcGpSeENRNU5aMGxVR2dKYUtoM1VKM2JfNDlBWlMyVm9CUVRMeEJDMGZ5OVM5eWNuWUplRW5EOUYycURrRUNabDR1Rmc4ei1YSG9xV0RMUmdCTXZ6QUxubnVwT3p6eUpGdldyeU1maHpOWmR3TkhwNW8tRGc?oc=5",
+      "source": "Google News",
+      "date": "Tue, 02 Sep 2025 07:00:00 GMT",
+      "score": 4,
+      "raison": "score préfiltre bas (-2)",
+      "created_at": "2026-08-31T10:58:38.019945+00:00"
     },
     {
       "id": "018e7bf0170fe05b",
