@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T11:16:44.542734+00:00",
+  "generated_at": "2026-09-01T09:10:13.066192+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -4061,7 +4061,7 @@
         }
       ],
       "controle_sirene": {
-        "etat_administratif": "A",
+        "etat_administratif": null,
         "siret": null,
         "source": "SIRENE"
       },
@@ -6488,7 +6488,7 @@
         }
       ],
       "controle_sirene": {
-        "etat_administratif": "A",
+        "etat_administratif": null,
         "siret": null,
         "source": "SIRENE"
       },
@@ -9374,7 +9374,7 @@
         }
       ],
       "controle_sirene": {
-        "etat_administratif": "A",
+        "etat_administratif": null,
         "siret": null,
         "source": "SIRENE"
       },
@@ -11103,7 +11103,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-31T10:50:19.921600+00:00"
+      "created_at": "2026-09-01T08:44:38.257845+00:00"
     },
     {
       "id": "50895c042a984b7d",
@@ -11139,7 +11139,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 04:46:02 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-31T10:50:19.414234+00:00"
+      "created_at": "2026-09-01T08:44:37.762606+00:00"
     },
     {
       "id": "8c6a0cad14626d6f",
@@ -13550,8 +13550,8 @@
       "titre": "La mobilisation des habitants a été vaine, le bureau de poste du quartier Saint-Marc, à Saint-Nazaire, ferme ses portes - ici.fr",
       "source": "Google News",
       "date": "Fri, 20 Jun 2025 07:00:00 GMT",
-      "raison": "garde entrée/sortie: commune/localisation de sortie absente de la source",
-      "created_at": "2026-08-31T10:50:29.549858+00:00"
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-09-01T08:44:52.444892+00:00"
     },
     {
       "id": "b70960ea48a1a247",
@@ -13677,7 +13677,7 @@
       "source": "Google News",
       "date": "Fri, 10 Jul 2026 10:12:00 GMT",
       "raison": "garde entrée/sortie: département source 44 incompatible avec la sortie 974",
-      "created_at": "2026-08-31T10:50:50.237893+00:00"
+      "created_at": "2026-09-01T08:45:18.858490+00:00"
     },
     {
       "id": "8c646081e1d69e81",
@@ -13857,7 +13857,7 @@
       "source": "Google News",
       "date": "Fri, 03 Jan 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-31T10:50:18.904534+00:00"
+      "created_at": "2026-09-01T08:44:37.139131+00:00"
     },
     {
       "id": "411db107f70f2387",
