@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T09:10:13.066192+00:00",
+  "generated_at": "2026-09-02T08:12:32.851148+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -174,7 +174,7 @@
       "nom": "Cher",
       "region": "Centre-Val de Loire",
       "count": 2,
-      "total_agences": 68,
+      "total_agences": 67,
       "precise_count": 2,
       "unlocated_count": 0,
       "estimated_count": 2
@@ -300,7 +300,7 @@
       "nom": "Haute-Garonne",
       "region": "Occitanie",
       "count": 1,
-      "total_agences": 175,
+      "total_agences": 172,
       "precise_count": 1,
       "unlocated_count": 0,
       "estimated_count": 1
@@ -678,7 +678,7 @@
       "nom": "Savoie",
       "region": "Auvergne-Rhône-Alpes",
       "count": 0,
-      "total_agences": 90,
+      "total_agences": 92,
       "precise_count": 0,
       "unlocated_count": 0,
       "estimated_count": 0
@@ -740,11 +740,11 @@
     "80": {
       "nom": "Somme",
       "region": "Hauts-de-France",
-      "count": 0,
+      "count": 1,
       "total_agences": 83,
-      "precise_count": 0,
+      "precise_count": 1,
       "unlocated_count": 0,
-      "estimated_count": 0
+      "estimated_count": 1
     },
     "81": {
       "nom": "Tarn",
@@ -876,7 +876,7 @@
       "nom": "Val-d'Oise",
       "region": "Île-de-France",
       "count": 0,
-      "total_agences": 151,
+      "total_agences": 152,
       "precise_count": 0,
       "unlocated_count": 0,
       "estimated_count": 0
@@ -1731,6 +1731,15 @@
       "department_signal_count": 0,
       "signals": []
     },
+    "80": {
+      "departement": "80",
+      "nom": "Somme",
+      "precise_count": 1,
+      "unlocated_count": 0,
+      "estimated_count": 1,
+      "department_signal_count": 0,
+      "signals": []
+    },
     "11": {
       "departement": "11",
       "nom": "Aude",
@@ -1851,8 +1860,8 @@
     },
     {
       "region": "Hauts-de-France",
-      "articles": 27,
-      "fermetures": 11,
+      "articles": 28,
+      "fermetures": 12,
       "projets": 5,
       "fusions": 0,
       "types": [
@@ -1862,9 +1871,10 @@
       "departements": [
         "02",
         "59",
-        "62"
+        "62",
+        "80"
       ],
-      "nb_departements": 3
+      "nb_departements": 4
     },
     {
       "region": "Bourgogne-Franche-Comté",
@@ -4061,7 +4071,7 @@
         }
       ],
       "controle_sirene": {
-        "etat_administratif": null,
+        "etat_administratif": "A",
         "siret": null,
         "source": "SIRENE"
       },
@@ -6488,7 +6498,7 @@
         }
       ],
       "controle_sirene": {
-        "etat_administratif": null,
+        "etat_administratif": "A",
         "siret": null,
         "source": "SIRENE"
       },
@@ -9374,7 +9384,7 @@
         }
       ],
       "controle_sirene": {
-        "etat_administratif": null,
+        "etat_administratif": "A",
         "siret": null,
         "source": "SIRENE"
       },
@@ -10022,6 +10032,47 @@
         "source": "SIRENE"
       },
       "region": "Auvergne-Rhône-Alpes"
+    },
+    {
+      "id": "422899257584b19e",
+      "banque": "La Banque Postale",
+      "commune": "Mers-les-Bains",
+      "code_insee": "80533",
+      "departement": "80",
+      "type": "fermeture",
+      "date_annonce": "Tue, 01 Sep 2026 12:17:00 GMT",
+      "date_fermeture": "2026-09-01",
+      "statut": "confirmé",
+      "statut_temporel": "deja_fermee",
+      "date_fermeture_approx": 1,
+      "fiabilite": 3,
+      "lat": 50.065479,
+      "lon": 1.395233,
+      "citation": "Mers-les-Bains : alors qu’il devait rouvrir le 1er septembre, le bureau de Poste toujours fermé - courrier-picard.fr",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "service_impact": "fermeture_lbp_complete",
+      "point_postal_avant": "Bureau de Poste",
+      "point_postal_apres": null,
+      "postal_point_id": "15317A",
+      "evidence_level": "presse+référentiel",
+      "created_at": "2026-09-02T08:01:45.936959+00:00",
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOcmFvaHJOelExbkZ6N1ByMlpWMFdzRXhEZ0k1REZtYlJUSGtqdnhZVG1kUXc3aVVidDlDV2l6X3RRQjYwekJBN21taEJLN0ROdTVRYkRCSHFDYVZsa29ZV2JKMEpUc3lDNURTUlFESzVTcVFfN0hMSTJxUjJlaWVEX3NQU1JTSHdJSUNpSTdtUUxvVjllemhjVWRxR1p1UnhueGRBMEpkTDF0Y29GYlBUbUN6VlJWNDI1MjlRZlEwRXIyYTl0bm1odVZ2QTZIZw?oc=5",
+          "titre": "Mers-les-Bains : alors qu’il devait rouvrir le 1er septembre, le bureau de Poste toujours fermé - courrier-picard.fr",
+          "source": "Google News",
+          "date": "Tue, 01 Sep 2026 12:17:00 GMT",
+          "tier": "D"
+        }
+      ],
+      "controle_sirene": {
+        "etat_administratif": null,
+        "siret": null,
+        "source": "SIRENE"
+      },
+      "region": "Hauts-de-France"
     }
   ],
   "closures_unlocated": [
@@ -10656,6 +10707,24 @@
       "created_at": "2026-07-22T09:04:21.113803+00:00"
     },
     {
+      "id": "fc2ebbb660f3491c",
+      "banque": "La Banque Postale",
+      "commune": "Anthon",
+      "departement": "38",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "\"Les temps changent\" : à Villette d'Anthon, la fermeture du bureau de poste n'émeut guère les habitants - ici.fr",
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPdW5BR3lUeS1WNXdPN2FSNmhqR0p1RlZQM2lUUmNielVOUGtFMFRlR0hMVzlXZHJOTjNnaGZILXVqWVo1cVR1c2Q3WkwwQmtuZ1htYkdUM1ZheGgtanpldk9yY2Z1N3MzYlJJek9sM3RRX2p4ZGJKTUg3cHpSdEFqaWVWSkt1LTlwY3ZkdGlmMmF3Wi13MW55Sm5uNDRMOGptRG16QmpXRkJFa0c2ZWRlUjNYS3F3X2RLdmktYXZRYk9sVWktLU5mZkZma2Ztb0xLQWdXaENzU0VDRWljdjBaaUkzYkttNUJSLTMtRmxxRQ?oc=5",
+      "titre": "\"Les temps changent\" : à Villette d'Anthon, la fermeture du bureau de poste n'émeut guère les habitants - ici.fr",
+      "source": "Google News",
+      "date": "Wed, 02 Sep 2026 05:31:30 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-09-02T08:01:42.408688+00:00"
+    },
+    {
       "id": "0f6b220a41a4643c",
       "banque": "La Banque Postale",
       "commune": "Le Trait",
@@ -11103,7 +11172,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-01T08:44:38.257845+00:00"
+      "created_at": "2026-09-02T07:58:57.498611+00:00"
     },
     {
       "id": "50895c042a984b7d",
@@ -11139,7 +11208,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 04:46:02 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-01T08:44:37.762606+00:00"
+      "created_at": "2026-09-02T07:58:57.052906+00:00"
     },
     {
       "id": "8c6a0cad14626d6f",
@@ -11662,6 +11731,24 @@
       "date": "Thu, 20 Feb 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
       "created_at": "2026-07-23T09:40:07.515940+00:00"
+    },
+    {
+      "id": "6ffaf5128a74f2a6",
+      "banque": "La Banque Postale",
+      "commune": "Conques-en-Rouergue",
+      "departement": "12",
+      "type": "fermeture",
+      "date_fermeture": "2026-08-20",
+      "statut": "confirmé",
+      "statut_temporel": "deja_fermee",
+      "fiabilite": 3,
+      "citation": "En Gironde, un court-circuit provoque un incendie dans ce bureau de poste : il est fermé pour une durée indéterminée - Actu.fr",
+      "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxOTGt3NXRfT19hbi02SUJleDZHeXNsVnlBUkRCUTQyTVhPY0s3bmRobTR2WGd5cFZkbVh3bGFLaUl0SUE1eEZLN2RXdE9fQU1CNjZOMC1KVkhfblVXLVlpNE1EWTVSUmlMTkZneWlvRm9UcWVWZFJNZkdwZldtTVdtOFc5dGRWb0xzYTYtNF9peVVsUmg1OUU4QnlRanJtVUpPSTVXQjdybmNnenpmWk1pRWhmblVYa0JzSlRuUDdhakxxX082N2hXS2NCNDRxak9aZ0NNYzBpb0VLbFlzNDBBVzJBRTRuRG5IR2N3UnFid284ZXl3U0l0a0NyM0o3NWNyazRMaTVod1NsWmdTTGgxWjB4NC1ubmtUNVE?oc=5",
+      "titre": "En Gironde, un court-circuit provoque un incendie dans ce bureau de poste : il est fermé pour une durée indéterminée - Actu.fr",
+      "source": "Google News",
+      "date": "Thu, 20 Aug 2026 07:00:00 GMT",
+      "raison": "garde entrée/sortie: fermeture postale temporaire ou circonstancielle",
+      "created_at": "2026-09-02T08:01:47.984668+00:00"
     },
     {
       "id": "9eb1c123c4d439f8",
@@ -13302,24 +13389,6 @@
       "created_at": "2026-07-06T08:46:48.139315+00:00"
     },
     {
-      "id": "56fa678125b37e36",
-      "banque": "La Banque Postale",
-      "commune": "Mers-les-Bains",
-      "departement": "80",
-      "type": "fermeture",
-      "date_fermeture": null,
-      "statut": "projet",
-      "statut_temporel": "inconnu",
-      "fiabilite": 3,
-      "citation": "Mers-les-Bains : fermeture du bureau de Poste, Goélia n’est pas responsable - Courrier picard",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPVzlpcFBBc1lGdFlzNDdrdjRPSzRObGYwb1hpRlVKc2JiY0dkU2hxOVdMVHdYVlVUcVdHenpXb3ktVEtSMmItT0Z1dmFDOTQxQ3lDWlh3VUdJcVhuOFRXbVd0cTdCYWtzd1hrWTVtZThKMDJaMkZDTzlQMExTcGFzUE0tc2lhSllaWHpIWnBadm5zVkJxY1VLaF9zZjZZVGV2dUh6d01fV2NTbDB3anoxSG5UeS1LWVU4MGVkWVcxbDQzNUgxQU9GdC1B?oc=5",
-      "titre": "Mers-les-Bains : fermeture du bureau de Poste, Goélia n’est pas responsable - Courrier picard",
-      "source": "Google News",
-      "date": "Fri, 28 Aug 2026 14:13:06 GMT",
-      "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-28T15:31:47.710691+00:00"
-    },
-    {
       "id": "5d3b3ef838e610a9",
       "banque": "La Banque Postale",
       "commune": "Cosne-Cours-sur-Loire",
@@ -13551,7 +13620,7 @@
       "source": "Google News",
       "date": "Fri, 20 Jun 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-01T08:44:52.444892+00:00"
+      "created_at": "2026-09-02T07:59:04.518655+00:00"
     },
     {
       "id": "b70960ea48a1a247",
@@ -13677,7 +13746,7 @@
       "source": "Google News",
       "date": "Fri, 10 Jul 2026 10:12:00 GMT",
       "raison": "garde entrée/sortie: département source 44 incompatible avec la sortie 974",
-      "created_at": "2026-09-01T08:45:18.858490+00:00"
+      "created_at": "2026-09-02T07:59:20.990300+00:00"
     },
     {
       "id": "8c646081e1d69e81",
@@ -13857,7 +13926,7 @@
       "source": "Google News",
       "date": "Fri, 03 Jan 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-01T08:44:37.139131+00:00"
+      "created_at": "2026-09-02T07:58:56.680846+00:00"
     },
     {
       "id": "411db107f70f2387",
@@ -13930,6 +13999,42 @@
       "date": "Fri, 01 Aug 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
       "created_at": "2026-07-27T07:56:36.407534+00:00"
+    },
+    {
+      "id": "af676c6513283475",
+      "banque": "La Banque Postale",
+      "commune": "Paray-Vieille-Poste",
+      "departement": "91",
+      "type": "fermeture",
+      "date_fermeture": "2026-09-01",
+      "statut": "confirmé",
+      "statut_temporel": "deja_fermee",
+      "fiabilite": 3,
+      "citation": "alors qu’il devait rouvrir le 1er septembre, le bureau de Poste toujours fermé",
+      "url": "https://www.courrier-picard.fr/id742079/article/2026-09-01/mers-les-bains-le-bureau-de-poste-toujours-ferme-et-ce-jusqua-nouvel-ordre",
+      "titre": "alors qu’il devait rouvrir le 1er septembre, le bureau de Poste toujours fermé",
+      "source": "courrier-picard.fr",
+      "date": "2026-09-01",
+      "raison": "garde entrée/sortie: commune/localisation de sortie absente de la source",
+      "created_at": "2026-09-02T08:01:55.431898+00:00"
+    },
+    {
+      "id": "76bede829c8f66f0",
+      "banque": "La Banque Postale",
+      "commune": "Paray-Vieille-Poste",
+      "departement": "91",
+      "type": "fermeture",
+      "date_fermeture": "2026-09-01",
+      "statut": "confirmé",
+      "statut_temporel": "deja_fermee",
+      "fiabilite": 3,
+      "citation": "alors qu’il devait rouvrir le 1er septembre, le bureau de Poste toujours fermé",
+      "url": "https://www.paris-normandie.fr/id742079/article/2026-09-01/mers-les-bains-le-bureau-de-poste-toujours-ferme-et-ce-jusqua-nouvel-ordre",
+      "titre": "alors qu’il devait rouvrir le 1er septembre, le bureau de Poste toujours fermé",
+      "source": "paris-normandie.fr",
+      "date": "2026-09-01",
+      "raison": "garde entrée/sortie: commune/localisation de sortie absente de la source",
+      "created_at": "2026-09-02T08:01:55.676287+00:00"
     },
     {
       "id": "ebee38a846f2f63c",
