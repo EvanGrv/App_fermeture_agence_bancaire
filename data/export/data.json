@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T08:12:32.851148+00:00",
+  "generated_at": "2026-09-03T08:22:15.946528+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -345,7 +345,7 @@
       "nom": "Indre",
       "region": "Centre-Val de Loire",
       "count": 15,
-      "total_agences": 42,
+      "total_agences": 37,
       "precise_count": 15,
       "unlocated_count": 0,
       "estimated_count": 19
@@ -390,7 +390,7 @@
       "nom": "Loir-et-Cher",
       "region": "Centre-Val de Loire",
       "count": 2,
-      "total_agences": 56,
+      "total_agences": 55,
       "precise_count": 2,
       "unlocated_count": 0,
       "estimated_count": 2
@@ -10725,6 +10725,24 @@
       "created_at": "2026-09-02T08:01:42.408688+00:00"
     },
     {
+      "id": "d21db3ba2b31bada",
+      "banque": "La Banque Postale",
+      "commune": "Anthon",
+      "departement": "38",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "\"Les temps changent\" : à Villette d'Anthon, la fermeture du bureau de poste n'émeut guère les habitants - Radio France",
+      "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxOUFBOc1hYZThNcUZGTnNyNXhhUDhza093RXBQbE9tdFVSaTZZWWhZazBZVDBSelBlOVdOWXBHdzJPdUp2Smh0WlhDeXNxLVlpVU5vV19JdWlKLUpPVzh3R096T0dRSFlWNUprSzNvQTBHa0tIVE9KemtRZzVBNUxJS09wVC1vaE5Bek5Zc0VSaUkyeDdPMHdOOUN2TVRHZWE3eE0tdHlNanFVQ09idmgzZUw0MHNWOEpqQXZMX3pkaG14S01QUlM1bmpOWVNNODk3SDJCYXpBTE9yTDBpMVBlWFZrMlUwbU9XS0d6YTlzeC02eFdyZURZQUZRaGhzSTI1THZsQ0tPTQ?oc=5",
+      "titre": "\"Les temps changent\" : à Villette d'Anthon, la fermeture du bureau de poste n'émeut guère les habitants - Radio France",
+      "source": "Google News",
+      "date": "Wed, 02 Sep 2026 05:31:30 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-09-03T08:11:16.446793+00:00"
+    },
+    {
       "id": "0f6b220a41a4643c",
       "banque": "La Banque Postale",
       "commune": "Le Trait",
@@ -11172,7 +11190,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-02T07:58:57.498611+00:00"
+      "created_at": "2026-09-03T08:08:26.172455+00:00"
     },
     {
       "id": "50895c042a984b7d",
@@ -11208,7 +11226,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 04:46:02 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-02T07:58:57.052906+00:00"
+      "created_at": "2026-09-03T08:08:25.797262+00:00"
     },
     {
       "id": "8c6a0cad14626d6f",
@@ -11749,6 +11767,24 @@
       "date": "Thu, 20 Aug 2026 07:00:00 GMT",
       "raison": "garde entrée/sortie: fermeture postale temporaire ou circonstancielle",
       "created_at": "2026-09-02T08:01:47.984668+00:00"
+    },
+    {
+      "id": "9708f28ce3a89c1f",
+      "banque": "La Banque Postale",
+      "commune": "Wasquehal",
+      "departement": "59",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "A Wasquehal, le bureau de poste du Capreau pourrait fermer - BFM",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxObkJVQWhoRVBJYXhfSWVqcURvSjRBWjFhVmd6WkxJRURkcTVMWVBUeGdjdkhzUUFqR2ZlRHMxT214SGpwWVhOSDUxVlE4VGs2bjVLbVBDYUl4dlpwZlJVRWhMY1JDTXVJRGhwZHVobTJwNDM3VDhXdXZNZTJ1Zzh2eGVrT0hfbzR1Q2dRSU5xUkxqblQySGxGazlzSzBiTGEwUGNIYXJHM1ZJcmxfdHMtMnQydDZWR29LblptbU8yR3F5SXlrQ0FkX2VpNUVQbVdhZ0x4RlFPTktONVZHLWQyYTVxOA?oc=5",
+      "titre": "A Wasquehal, le bureau de poste du Capreau pourrait fermer - BFM",
+      "source": "Google News",
+      "date": "Thu, 20 Aug 2026 07:00:00 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-09-03T08:11:14.281002+00:00"
     },
     {
       "id": "9eb1c123c4d439f8",
@@ -13620,7 +13656,7 @@
       "source": "Google News",
       "date": "Fri, 20 Jun 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-02T07:59:04.518655+00:00"
+      "created_at": "2026-09-03T08:08:32.942683+00:00"
     },
     {
       "id": "b70960ea48a1a247",
@@ -13746,7 +13782,7 @@
       "source": "Google News",
       "date": "Fri, 10 Jul 2026 10:12:00 GMT",
       "raison": "garde entrée/sortie: département source 44 incompatible avec la sortie 974",
-      "created_at": "2026-09-02T07:59:20.990300+00:00"
+      "created_at": "2026-09-03T08:08:50.104790+00:00"
     },
     {
       "id": "8c646081e1d69e81",
@@ -13926,7 +13962,7 @@
       "source": "Google News",
       "date": "Fri, 03 Jan 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-02T07:58:56.680846+00:00"
+      "created_at": "2026-09-03T08:08:25.399503+00:00"
     },
     {
       "id": "411db107f70f2387",
