@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T08:22:15.946528+00:00",
+  "generated_at": "2026-09-04T08:25:37.326083+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -317,11 +317,11 @@
     "33": {
       "nom": "Gironde",
       "region": "Nouvelle-Aquitaine",
-      "count": 1,
+      "count": 2,
       "total_agences": 232,
-      "precise_count": 1,
+      "precise_count": 2,
       "unlocated_count": 0,
-      "estimated_count": 41
+      "estimated_count": 42
     },
     "34": {
       "nom": "Hérault",
@@ -1606,9 +1606,9 @@
     "33": {
       "departement": "33",
       "nom": "Gironde",
-      "precise_count": 1,
+      "precise_count": 2,
       "unlocated_count": 0,
-      "estimated_count": 41,
+      "estimated_count": 42,
       "department_signal_count": 40,
       "signals": [
         {
@@ -1942,8 +1942,8 @@
     },
     {
       "region": "Nouvelle-Aquitaine",
-      "articles": 14,
-      "fermetures": 5,
+      "articles": 15,
+      "fermetures": 6,
       "projets": 4,
       "fusions": 0,
       "types": [
@@ -4071,7 +4071,7 @@
         }
       ],
       "controle_sirene": {
-        "etat_administratif": "A",
+        "etat_administratif": null,
         "siret": null,
         "source": "SIRENE"
       },
@@ -9008,7 +9008,7 @@
         }
       ],
       "controle_sirene": {
-        "etat_administratif": "A",
+        "etat_administratif": null,
         "siret": null,
         "source": "SIRENE"
       },
@@ -10073,6 +10073,47 @@
         "source": "SIRENE"
       },
       "region": "Hauts-de-France"
+    },
+    {
+      "id": "4841e7970c90a1ed",
+      "banque": "La Banque Postale",
+      "commune": "Saint-André-de-Cubzac",
+      "code_insee": "33366",
+      "departement": "33",
+      "type": "fermeture",
+      "date_annonce": "Wed, 19 Aug 2026 07:00:00 GMT",
+      "date_fermeture": "2026-08-19",
+      "statut": "confirmé",
+      "statut_temporel": "deja_fermee",
+      "date_fermeture_approx": 1,
+      "fiabilite": 3,
+      "lat": 44.99533,
+      "lon": -0.439459,
+      "citation": "Saint-André-de-Cubzac : le bureau de poste fermé après un incendie - Sud Ouest",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "service_impact": "fermeture_lbp_complete",
+      "point_postal_avant": "Bureau de Poste",
+      "point_postal_apres": null,
+      "postal_point_id": "05951A",
+      "evidence_level": "presse+référentiel",
+      "created_at": "2026-09-04T08:06:23.719993+00:00",
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNSFQtM21IQWhGZzVob3dBbW9sZnBiRXU4b2VsdE9LbHcxT2xFSkxxRUsyNVhtZ2hnX1RqeDVKYU5pOUVSN2w1TlZtT2lSN2xsY0lQTnVtNEJqVE9WWnFlakJVRUFVQU9WbmFfcGpFTFVRc0FXSnhVcjJlQ3liNV9jMFRtd0haUlR2clo5bG5lekJKaWlLOW81OFkzZ0k0US1ZcUtqaGFJUFVWZ3Q3V0dBTWZkdmJ5a0YwMklJQ2hBdHZ4dmgzNW1CRHFPQQ?oc=5",
+          "titre": "Saint-André-de-Cubzac : le bureau de poste fermé après un incendie - Sud Ouest",
+          "source": "Google News",
+          "date": "Wed, 19 Aug 2026 07:00:00 GMT",
+          "tier": "D"
+        }
+      ],
+      "controle_sirene": {
+        "etat_administratif": null,
+        "siret": null,
+        "source": "SIRENE"
+      },
+      "region": "Nouvelle-Aquitaine"
     }
   ],
   "closures_unlocated": [
@@ -10743,6 +10784,24 @@
       "created_at": "2026-09-03T08:11:16.446793+00:00"
     },
     {
+      "id": "14f761d84bfd12ec",
+      "banque": "La Banque Postale",
+      "commune": "Anthon",
+      "departement": "38",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "\"Les temps changent\" : à Villette d'Anthon, la fermeture du bureau de poste n'émeut guère les habitants - ici.fr",
+      "url": "https://news.google.com/rss/articles/CBMi8AJBVV95cUxQMFNwZTB6QVl2V2hhT3VQM2piZTBwYVdQSkJ0UGdDZUQ3MnFQR1puM2JGMlFxOHo1RGdTYXY4ZUUxLUhCWi1JZlpFMHJGeF9wanVBRmxnWTN0MExPWi1sdjh2bTVaWjJBMlF3TnRWQklJT2tlbXJINmhNR2dhSlg0Y1dNelkzc1NES2VNZDFRYld0UHF4OFloOHREamhpSHZmOUVwVk9zejhCa1RVTTZNem5DeW8tYjlqYVJhOXMtYXJGVGFpM3g1SzZkSVlJekhBejViR3dxS3dhT3ZzSFlxRl9tcnQtaEhrd1lXM2JnZ05SbHhHNUxrQVF5R3Frc1lNcUJPSUNGQ2xxNmhKcURCZFA0VzJtRUVDRnltTUhjdHQtNnNLWnZ5TDM5d0tNRGxDd1dFTGtMNkI3Q192LUtRUk81UW9pWWRkYVhOa0Y2ZWhJTmN2TGN1b0FoN243NHpJNkExUkU5QW9CQXJSeUE2Vg?oc=5",
+      "titre": "\"Les temps changent\" : à Villette d'Anthon, la fermeture du bureau de poste n'émeut guère les habitants - ici.fr",
+      "source": "Google News",
+      "date": "Wed, 02 Sep 2026 05:31:30 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-09-04T08:06:18.906577+00:00"
+    },
+    {
       "id": "0f6b220a41a4643c",
       "banque": "La Banque Postale",
       "commune": "Le Trait",
@@ -11190,7 +11249,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-03T08:08:26.172455+00:00"
+      "created_at": "2026-09-04T08:03:13.128287+00:00"
     },
     {
       "id": "50895c042a984b7d",
@@ -11226,7 +11285,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 04:46:02 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-03T08:08:25.797262+00:00"
+      "created_at": "2026-09-04T08:03:12.777387+00:00"
     },
     {
       "id": "8c6a0cad14626d6f",
@@ -11787,6 +11846,24 @@
       "created_at": "2026-09-03T08:11:14.281002+00:00"
     },
     {
+      "id": "f37523173a081044",
+      "banque": "La Banque Postale",
+      "commune": "Wasquehal",
+      "departement": "59",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "A Wasquehal, le bureau de poste du Capreau pourrait fermer - BFM",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNaUFrOW1oZ3N5dU5lZ3QxcjJwSzJDV1hOQ01BMHBLZDNzTkxYVTFqbmtjSGFMTzZDUDB2LVYyS01qa1poay16RHZXeXJORTNrRHRoWFlnajNCNlBkbHR5cEVMajcwMEh0VFE3QU5yN3FMS0V5eHhyOHp4SWRKeDE3VGt4SGxJdDh3M1RESXdjYlRPTllfZnBpS0gtSG5sTGtySVZ1SEFaU21xbl9UNVkyR2RYaEtjQ1lud0RVb1BLYlJpNlRCOHExUmZzbVh1RkthVVZJV0s0SFlxUEpmcjFRWEtjdU5KSzFlY1Jz?oc=5",
+      "titre": "A Wasquehal, le bureau de poste du Capreau pourrait fermer - BFM",
+      "source": "Google News",
+      "date": "Thu, 20 Aug 2026 07:00:00 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-09-04T08:06:26.964249+00:00"
+    },
+    {
       "id": "9eb1c123c4d439f8",
       "banque": "La Banque Postale",
       "commune": "Saint-Antoine",
@@ -12235,6 +12312,24 @@
       "date": "Thu, 04 Sep 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
       "created_at": "2026-07-13T07:40:14.922540+00:00"
+    },
+    {
+      "id": "30db4594ea860d93",
+      "banque": "La Banque Postale",
+      "commune": "Avignon",
+      "departement": "84",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "La mairie d’Avignon s’oppose à la fermeture des bureaux de poste - lamarseillaise.fr",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOV2JHSmZ2dl8tSHJJMDZvMmlfWEJEQmphZVZPMkpnZkdYQzVFd2xpYmYzN2YwcWZvUnIyN1BWcHV5ekw0OThzWVB3OEktaExwd29Rb1RaU3JJa1RrU1M2Q3d6d2VhZzVOSTR0Z3VSY3BSbUtJS0k3LWFJV3BfYW02VHdiVzFqY18xSktqZkZmUENaXzFiaGdWNDJFWjdlU2NicUhfMFpVeFdRbm9VQnVxM0dB?oc=5",
+      "titre": "La mairie d’Avignon s’oppose à la fermeture des bureaux de poste - lamarseillaise.fr",
+      "source": "Google News",
+      "date": "Thu, 03 Sep 2026 08:09:00 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-09-04T08:06:21.974923+00:00"
     },
     {
       "id": "700cc9656d5d6620",
@@ -13656,7 +13751,7 @@
       "source": "Google News",
       "date": "Fri, 20 Jun 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-03T08:08:32.942683+00:00"
+      "created_at": "2026-09-04T08:03:19.959025+00:00"
     },
     {
       "id": "b70960ea48a1a247",
@@ -13782,7 +13877,7 @@
       "source": "Google News",
       "date": "Fri, 10 Jul 2026 10:12:00 GMT",
       "raison": "garde entrée/sortie: département source 44 incompatible avec la sortie 974",
-      "created_at": "2026-09-03T08:08:50.104790+00:00"
+      "created_at": "2026-09-04T08:03:38.617431+00:00"
     },
     {
       "id": "8c646081e1d69e81",
@@ -13962,7 +14057,7 @@
       "source": "Google News",
       "date": "Fri, 03 Jan 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-03T08:08:25.399503+00:00"
+      "created_at": "2026-09-04T08:03:12.438550+00:00"
     },
     {
       "id": "411db107f70f2387",
@@ -14035,6 +14130,24 @@
       "date": "Fri, 01 Aug 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
       "created_at": "2026-07-27T07:56:36.407534+00:00"
+    },
+    {
+      "id": "a6e9129c21b8cbda",
+      "banque": "La Banque Postale",
+      "commune": "Avignon",
+      "departement": "84",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "La mairie dâAvignon sâoppose Ã la fermeture des bureaux de poste",
+      "url": "https://www.lamarseillaise.fr/social/la-mairie-d-avignon-s-oppose-a-la-fermeture-des-bureaux-de-poste-HA20641688",
+      "titre": "La mairie dâAvignon sâoppose Ã la fermeture des bureaux de poste",
+      "source": "lamarseillaise.fr",
+      "date": "2026-09-03",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-09-04T08:06:39.074451+00:00"
     },
     {
       "id": "af676c6513283475",
@@ -14179,24 +14292,6 @@
       "date": "2026-08-22",
       "raison": "hors fenêtre temporelle",
       "created_at": "2026-08-23T04:07:47.621178+00:00"
-    },
-    {
-      "id": "30bcafb6c6ea23d6",
-      "banque": "La Banque Postale",
-      "commune": "Saint-André-de-Cubzac",
-      "departement": "33",
-      "type": "fermeture",
-      "date_fermeture": "2026-08-19",
-      "statut": "confirmé",
-      "statut_temporel": "deja_fermee",
-      "fiabilite": 3,
-      "citation": "Saint-André-de-Cubzac : le bureau de poste fermé après un incendie",
-      "url": "https://www.sudouest.fr/gironde/saint-andre-de-cubzac/saint-andre-de-cubzac-le-bureau-de-poste-ferme-apres-un-incendie-30305294.php",
-      "titre": "Saint-André-de-Cubzac : le bureau de poste fermé après un incendie",
-      "source": "SudOuest.fr",
-      "date": "2026-08-19T16:28:46Z",
-      "raison": "garde entrée/sortie: fermeture postale temporaire ou circonstancielle",
-      "created_at": "2026-08-20T04:06:38.736750+00:00"
     },
     {
       "id": "757b849369f53e6c",
@@ -26733,6 +26828,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-08-23T04:07:37.442620+00:00"
+    },
+    {
+      "id": "15b9b618f1aaa4a0",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Nord-Isère : après la fermeture des crèches Callihop, des salariés dans le flou - ici.fr",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMi2AFBVV95cUxNd0haa1lIUEgybzBLMmN3dHBkdThmcjg5TVJfUHExd0NlcHNTakE1Z2hobXVzRzlqYlVoMVdLbVNPTUsxQ3dsZ2swa1FRVjA0UXNRSHp4SDN1NV9OaHdNYVg3QmM4WHNfd1d2LTVhVUJkQ2JQMm1vNGVESWEwRnRiSG5CZllZVFozY0NfV3NtU3ZKbWNudkdjRlR2ejd5dU4zczQzMFJTYXdqUW9UQkdSMlVLTDNIYmEzaG4teDdaMTZUY3ZXVDJZYjR6aEN1S2VHc3VvODlta0Y?oc=5\" target=\"_blank\">Nord-Isère : après la fermeture des crèches Callihop, des salariés dans le flou</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">ici.fr</font>",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNd0haa1lIUEgybzBLMmN3dHBkdThmcjg5TVJfUHExd0NlcHNTakE1Z2hobXVzRzlqYlVoMVdLbVNPTUsxQ3dsZ2swa1FRVjA0UXNRSHp4SDN1NV9OaHdNYVg3QmM4WHNfd1d2LTVhVUJkQ2JQMm1vNGVESWEwRnRiSG5CZllZVFozY0NfV3NtU3ZKbWNudkdjRlR2ejd5dU4zczQzMFJTYXdqUW9UQkdSMlVLTDNIYmEzaG4teDdaMTZUY3ZXVDJZYjR6aEN1S2VHc3VvODlta0Y?oc=5",
+      "source": "Google News",
+      "date": "Sat, 22 Aug 2026 07:00:00 GMT",
+      "score": 3,
+      "raison": "score préfiltre bas (-2)",
+      "created_at": "2026-09-04T08:06:29.005311+00:00"
     },
     {
       "id": "ca3c3d8006191ab4",
