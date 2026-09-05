@@ -39,6 +39,7 @@ warning,citation_suspecte,3388ffe867356c0d,La Banque Postale,Lyon,69,69123,"cita
 warning,date_fermeture_absente,3388ffe867356c0d,La Banque Postale,Lyon,69,69123,article ancien sans date de fermeture explicite; à confirmer ou archiver
 warning,date_fermeture_absente,e34d7c62734d3987,La Banque Postale,Mâcon,71,71270,article ancien sans date de fermeture explicite; à confirmer ou archiver
 warning,date_fermeture_absente,9136bd7869e187ad,La Banque Postale,Crégy-lès-Meaux,77,77143,article ancien sans date de fermeture explicite; à confirmer ou archiver
+warning,date_fermeture_absente,efc900b34a01b667,La Banque Postale,Cherbourg-en-Cotentin,50,50129,article ancien sans date de fermeture explicite; à confirmer ou archiver
 warning,date_fermeture_absente,b07ae2916513fe2e,La Banque Postale,Gardanne,13,13041,article ancien sans date de fermeture explicite; à confirmer ou archiver
 warning,date_fermeture_absente,14c2fc2bc44eb609,Crédit Mutuel,Saint-Brieuc,22,22278,article ancien sans date de fermeture explicite; à confirmer ou archiver
 warning,date_fermeture_absente,a60eb2a1117b143a,Crédit Agricole,Fonsala,12,12174,article ancien sans date de fermeture explicite; à confirmer ou archiver

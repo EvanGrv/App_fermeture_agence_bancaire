@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T08:25:37.326083+00:00",
+  "generated_at": "2026-09-05T07:58:24.757156+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -723,7 +723,7 @@
       "nom": "Yvelines",
       "region": "Île-de-France",
       "count": 1,
-      "total_agences": 274,
+      "total_agences": 276,
       "precise_count": 1,
       "unlocated_count": 0,
       "estimated_count": 1
@@ -786,7 +786,7 @@
       "nom": "Vendée",
       "region": "Pays de la Loire",
       "count": 0,
-      "total_agences": 101,
+      "total_agences": 103,
       "precise_count": 0,
       "unlocated_count": 0,
       "estimated_count": 0
@@ -4071,7 +4071,7 @@
         }
       ],
       "controle_sirene": {
-        "etat_administratif": null,
+        "etat_administratif": "A",
         "siret": null,
         "source": "SIRENE"
       },
@@ -9008,7 +9008,7 @@
         }
       ],
       "controle_sirene": {
-        "etat_administratif": null,
+        "etat_administratif": "A",
         "siret": null,
         "source": "SIRENE"
       },
@@ -11249,7 +11249,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-04T08:03:13.128287+00:00"
+      "created_at": "2026-09-05T07:44:19.988393+00:00"
     },
     {
       "id": "50895c042a984b7d",
@@ -11285,7 +11285,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 04:46:02 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-04T08:03:12.777387+00:00"
+      "created_at": "2026-09-05T07:44:19.595490+00:00"
     },
     {
       "id": "8c6a0cad14626d6f",
@@ -12312,6 +12312,24 @@
       "date": "Thu, 04 Sep 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
       "created_at": "2026-07-13T07:40:14.922540+00:00"
+    },
+    {
+      "id": "1d01710f32c4dff4",
+      "banque": "La Banque Postale",
+      "commune": "Doyet",
+      "departement": "03",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "Aidez-moi à faire avancer ce combat : NON à la fermeture du Bureau de Poste de Burzet - MyPetition.org",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPVy1zTkdDQmhqQkpQd05NMm9JYkZpV2Z2X0NpWWNQbmRwUG5HYVBNYUZ6M2lPa0tDdE1GODlwN1lmQ0wtR2JTekR5a1R4NmZXTTBrQnBlRmFydl92WU81TlRmRUNwRFRJZzQyU0otVjl1bGNXb0lyQjBydkJ0X0lPSGo4MWk4eXdBamFfUzk2elE?oc=5",
+      "titre": "Aidez-moi à faire avancer ce combat : NON à la fermeture du Bureau de Poste de Burzet - MyPetition.org",
+      "source": "Google News",
+      "date": "Thu, 03 Sep 2026 12:56:51 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-09-05T07:47:34.267522+00:00"
     },
     {
       "id": "30db4594ea860d93",
@@ -13751,7 +13769,7 @@
       "source": "Google News",
       "date": "Fri, 20 Jun 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-04T08:03:19.959025+00:00"
+      "created_at": "2026-09-05T07:44:27.201983+00:00"
     },
     {
       "id": "b70960ea48a1a247",
@@ -13877,7 +13895,7 @@
       "source": "Google News",
       "date": "Fri, 10 Jul 2026 10:12:00 GMT",
       "raison": "garde entrée/sortie: département source 44 incompatible avec la sortie 974",
-      "created_at": "2026-09-04T08:03:38.617431+00:00"
+      "created_at": "2026-09-05T07:44:43.331912+00:00"
     },
     {
       "id": "8c646081e1d69e81",
@@ -14024,6 +14042,24 @@
       "created_at": "2026-07-22T09:07:03.339271+00:00"
     },
     {
+      "id": "098d0e467df56409",
+      "banque": "La Banque Postale",
+      "commune": "Ploeren",
+      "departement": "56",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "Après le cambriolage en avril, la fermeture du bureau de poste de Ploeren devrait se poursuivre jusqu’en fin d’année - Ouest-France",
+      "url": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxQM19FR09NQjFuemt1anVfbU9CNlBjR3pMSVJ3UjdhTFB5QWgzRjR0TWl6dEhOSnhvdE1EcWFILXpyRjVYQ0xIbEt0d01Ybk1MTDg3TEZ5bjdPVk1CVmRMdThWVGUyWjBNdHdua1dKV0RHUzFRXzk1M2FEdC12V1Y1cnRuSDktV3dVejV4Y3hXUy1ZckhRTnZTbmxNdFJ0d0psN05Ca1V4R1Btc0NEeGdxQ2luaHVxWnFKYTJXRHhHX0QwbFlLN0xJZzNUZVJrcjJZNWlweHNOMlc4b3JMTnR2Nnh3RkpiQnB2Rld4cUdRU09ySENqeW42VGFRV21vQ0RlUTU0RmJrMTNlTjN3RGxSbEtiS0ZMNHNUQ2ZMNjI3WFRVVXlyS2hLWg?oc=5",
+      "titre": "Après le cambriolage en avril, la fermeture du bureau de poste de Ploeren devrait se poursuivre jusqu’en fin d’année - Ouest-France",
+      "source": "Google News",
+      "date": "Fri, 04 Sep 2026 14:08:04 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-09-05T07:47:31.412700+00:00"
+    },
+    {
       "id": "e6473299eb4fadf2",
       "banque": "La Banque Postale",
       "commune": "Doyet",
@@ -14057,7 +14093,7 @@
       "source": "Google News",
       "date": "Fri, 03 Jan 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-04T08:03:12.438550+00:00"
+      "created_at": "2026-09-05T07:44:19.145332+00:00"
     },
     {
       "id": "411db107f70f2387",
@@ -14130,6 +14166,24 @@
       "date": "Fri, 01 Aug 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
       "created_at": "2026-07-27T07:56:36.407534+00:00"
+    },
+    {
+      "id": "36fe4be67bb84883",
+      "banque": "La Banque Postale",
+      "commune": "Ploeren",
+      "departement": "56",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "Après le cambriolage en avril, la fermeture du bureau de poste de Ploeren devrait se poursuivre jusqu’en fin d’année",
+      "url": "https://www.ouest-france.fr/bretagne/ploeren-56880/apres-le-cambriolage-en-avril-la-fermeture-du-bureau-de-poste-de-ploeren-devrait-se-poursuivre-jusquen-fin-dannee-847671ba-a842-11f1-9556-770e8387e7e9",
+      "titre": "Après le cambriolage en avril, la fermeture du bureau de poste de Ploeren devrait se poursuivre jusqu’en fin d’année",
+      "source": "ouest-france.fr",
+      "date": "2026-09-04",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-09-05T07:47:52.223657+00:00"
     },
     {
       "id": "a6e9129c21b8cbda",

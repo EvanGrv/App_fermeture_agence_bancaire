@@ -402,6 +402,16 @@
   {
     "severity": "warning",
     "type": "date_fermeture_absente",
+    "id": "efc900b34a01b667",
+    "banque": "La Banque Postale",
+    "commune": "Cherbourg-en-Cotentin",
+    "departement": "50",
+    "code_insee": "50129",
+    "message": "article ancien sans date de fermeture explicite; à confirmer ou archiver"
+  },
+  {
+    "severity": "warning",
+    "type": "date_fermeture_absente",
     "id": "b07ae2916513fe2e",
     "banque": "La Banque Postale",
     "commune": "Gardanne",
