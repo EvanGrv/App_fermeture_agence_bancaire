@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T07:58:24.757156+00:00",
+  "generated_at": "2026-09-06T08:13:15.328904+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -660,7 +660,7 @@
       "nom": "Saône-et-Loire",
       "region": "Bourgogne-Franche-Comté",
       "count": 3,
-      "total_agences": 97,
+      "total_agences": 98,
       "precise_count": 3,
       "unlocated_count": 0,
       "estimated_count": 3
@@ -10802,6 +10802,24 @@
       "created_at": "2026-09-04T08:06:18.906577+00:00"
     },
     {
+      "id": "6addcb5471a6b6f9",
+      "banque": "La Banque Postale",
+      "commune": "Villette-d'Anthon",
+      "departement": "38",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "\"Les temps changent\" : à Villette-d'Anthon, la fermeture du bureau de poste n'émeut guère les habitants - ici.fr",
+      "url": "https://news.google.com/rss/articles/CBMi8AJBVV95cUxONEJLdEVlTU91dmJSQTJGTEl0WnViR3BYNGZMVDJUMURWUFJPVEpmRlVKdXp1SkZHaDZsRGVpallXOGcza080Nmd1Z2NGaG9CbGFwRTE4WlpZTTh5NnphS2hYQ3E5SXdfWTh5aTExR2I0MWliRFk0a2pvUkpDcE5namR2U0s0SVBqQWNINm1nMC1ncmJYcWhrT0JGRE5UOWlFTUktSm5mVjJLdDlvZENQOUtUV0NfaW5oU2t2NEFPaDhQY3lHbFA3LVJsV09EaXk1TUFSaXJMT1dCTFF0WFY3MzhwdzVHejZISlVqUDJXTEg1TEFUN1l2ZHFuUklSY0VhekJVbFdzYmtFQU94TC0ydnY4djd6T1E4LW55c2dIbi1LMHFKbWY0Z1FxNE8tM1AwNEE2VlYtQ2dCczJTM3hRWVl3dFV5Nkc4YXc1NnIyejdxeVg5dk5PeVZGQlBpRDhYX1JCR1BqRkJ3a0ZBakFWdQ?oc=5",
+      "titre": "\"Les temps changent\" : à Villette-d'Anthon, la fermeture du bureau de poste n'émeut guère les habitants - ici.fr",
+      "source": "Google News",
+      "date": "Wed, 02 Sep 2026 05:31:30 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-09-06T08:02:28.885255+00:00"
+    },
+    {
       "id": "0f6b220a41a4643c",
       "banque": "La Banque Postale",
       "commune": "Le Trait",
@@ -11249,7 +11267,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-05T07:44:19.988393+00:00"
+      "created_at": "2026-09-06T07:58:58.327120+00:00"
     },
     {
       "id": "50895c042a984b7d",
@@ -11285,7 +11303,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 04:46:02 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-05T07:44:19.595490+00:00"
+      "created_at": "2026-09-06T07:58:57.860598+00:00"
     },
     {
       "id": "8c6a0cad14626d6f",
@@ -13769,7 +13787,7 @@
       "source": "Google News",
       "date": "Fri, 20 Jun 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-05T07:44:27.201983+00:00"
+      "created_at": "2026-09-06T07:59:05.754932+00:00"
     },
     {
       "id": "b70960ea48a1a247",
@@ -13895,7 +13913,7 @@
       "source": "Google News",
       "date": "Fri, 10 Jul 2026 10:12:00 GMT",
       "raison": "garde entrée/sortie: département source 44 incompatible avec la sortie 974",
-      "created_at": "2026-09-05T07:44:43.331912+00:00"
+      "created_at": "2026-09-06T07:59:22.966532+00:00"
     },
     {
       "id": "8c646081e1d69e81",
@@ -14093,7 +14111,7 @@
       "source": "Google News",
       "date": "Fri, 03 Jan 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-05T07:44:19.145332+00:00"
+      "created_at": "2026-09-06T07:58:57.405862+00:00"
     },
     {
       "id": "411db107f70f2387",
@@ -40844,6 +40862,19 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:43:41.960961+00:00"
+    },
+    {
+      "id": "50ab44443b152219",
+      "banque": "La Banque Postale",
+      "departement": "",
+      "titre": "\"Transférer les charges sociales vers une autre masse financière\", la proposition de Michel-Edouard Leclerc pour les salaires",
+      "extrait": "Il martèle sa proposition. Interrogé sur la manière d'augmenter les salaires, Michel-Edouard Leclerc a renouvelé son souhait de rapprocher le net du brut. Pour y parvenir, le président du comité stratégique du groupe a déclaré vouloir \"transférer les charges sociales vers une autre masse financière qui ne serait pas l'Etat\". S'il n'a pas précisé où il transférait l'argent, cela pourrait s'apparenter à envoyer l'argent vers la fiscalité générale (impôts, taxes) ou vers la consommation. \"Si on veu",
+      "url": "https://www.capital.fr/votre-carriere/transferer-les-charges-sociales-vers-une-autre-masse-financiere-la-proposition-de-michel-edouard-leclerc-pour-les-salaires-1529873",
+      "source": "Capital.fr",
+      "date": "2026-09-05T09:22:06Z",
+      "score": 2,
+      "raison": "score préfiltre bas (-2)",
+      "created_at": "2026-09-06T08:02:57.664463+00:00"
     },
     {
       "id": "008d3c75db3a07bd",
