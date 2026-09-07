@@ -63,8 +63,15 @@ reste résolu après l'IA.
 Nouveau schéma d'extraction (`article_type`, `closures[]`,
 `department_signals`, `vague_signals`, `needs_sonnet`, `confidence`), gestion
 des articles-listes, et **escalade vers Sonnet uniquement sur les cas
-ambigus**. Branches `cycle2c-extraction-schema` et
-`cycle2c-ii-sonnet-escalation`.
+ambigus**.
+
+Une première partie est déjà fusionnée dans `main` (les branches
+`cycle2c-extraction-schema` et `cycle2c-ii-sonnet-escalation` ont été
+intégrées puis supprimées) : le schéma structuré et l'escalade existent dans
+`backend/extractor.py`, pilotés par `STRUCTURED_SONNET_ESCALATION_ENABLED` et
+`STRUCTURED_SONNET_MIN_CONFIDENCE`. Ce qui reste à faire tient au
+comportement sur les articles-listes et au réglage des seuils, à valider sur
+un échantillon réel avant toute passe large.
 
 Deux points de vigilance sur ce cycle :
 - **Incrémenter `EXTRACTION_VERSION`** dès que le prompt ou le schéma change.
@@ -106,12 +113,14 @@ Quatre branches portent du travail non fusionné dans `main` :
 
 | Branche | Contenu |
 |---|---|
-| `cycle1-copilot-coverage` | Travail résiduel du Cycle 1 |
-| `cycle2b-prefilter-scoring` | Travail résiduel du Cycle 2b |
+| `cycle1-copilot-coverage` | Travail résiduel du Cycle 1 (le cycle lui-même est livré) |
+| `cycle2b-prefilter-scoring` | Travail résiduel du Cycle 2b (le cycle lui-même est livré) |
 | `docs/update-sources-page` | Mise à jour de la page Sources |
 | `fix/ambiguous-commune-geocoding` | Géocodage des communes homonymes |
 
-Les autres branches de cycle ont été fusionnées et supprimées.
+Les autres branches ont été fusionnées dans `main` puis supprimées le
+7 septembre 2026, en local comme sur le dépôt distant. Leur contenu est
+intégralement contenu dans `main` — rien n'a été perdu.
 
 ## Contraintes techniques à connaître
 
