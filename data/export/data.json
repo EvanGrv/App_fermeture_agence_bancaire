@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T08:13:15.328904+00:00",
+  "generated_at": "2026-09-07T08:37:33.999793+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -9261,7 +9261,7 @@
         }
       ],
       "controle_sirene": {
-        "etat_administratif": "A",
+        "etat_administratif": null,
         "siret": null,
         "source": "SIRENE"
       },
@@ -9384,7 +9384,7 @@
         }
       ],
       "controle_sirene": {
-        "etat_administratif": "A",
+        "etat_administratif": null,
         "siret": null,
         "source": "SIRENE"
       },
@@ -9514,7 +9514,7 @@
         }
       ],
       "controle_sirene": {
-        "etat_administratif": "A",
+        "etat_administratif": null,
         "siret": null,
         "source": "SIRENE"
       },
@@ -11267,7 +11267,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-06T07:58:58.327120+00:00"
+      "created_at": "2026-09-07T08:25:13.589152+00:00"
     },
     {
       "id": "50895c042a984b7d",
@@ -11303,7 +11303,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 04:46:02 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-06T07:58:57.860598+00:00"
+      "created_at": "2026-09-07T08:25:13.141086+00:00"
     },
     {
       "id": "8c6a0cad14626d6f",
@@ -12602,6 +12602,24 @@
       "created_at": "2026-07-23T06:13:01.332429+00:00"
     },
     {
+      "id": "f81dc0d6fe4e62c7",
+      "banque": "La Banque Postale",
+      "commune": "Saint-Saturnin-lès-Avignon",
+      "departement": "84",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "Fermeture du bureau de poste de Saint-Saturnin-lès-Avignon : mairie et opposition réagissent - La Provence",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPUGpIS1MtLXlUbnZodmYyTmIxVGRUUllLUU5tVmQwdWcwQnM0RlRHSUdrenVaSHJBcldvRWE4cjRuUU5KaEVaMjBNZU1JUmxMZEJ3UnlSc2JxY1JDQmVPalBzU25RNml6VXFlZW1CMWwzLXF5S2FRcjZpZkFSN3lQRllWck1HeE00RVdiYWNDcE8xVHRoS3BBSXQyZHJDVlB3Qm9nQ0F2SzFnY3lxTHdCUy1PZU00V1pmTC13VU5BU0p1aWloajRsQXBVOUgyeU9KZjJHZ3E2N3Y2dXFYb0JlWHN3?oc=5",
+      "titre": "Fermeture du bureau de poste de Saint-Saturnin-lès-Avignon : mairie et opposition réagissent - La Provence",
+      "source": "Google News",
+      "date": "Sun, 06 Sep 2026 22:01:00 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-09-07T08:28:16.276750+00:00"
+    },
+    {
       "id": "bbe03727e060c3bc",
       "banque": "La Banque Postale",
       "commune": "Caumont-sur-Durance",
@@ -13787,7 +13805,7 @@
       "source": "Google News",
       "date": "Fri, 20 Jun 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-06T07:59:05.754932+00:00"
+      "created_at": "2026-09-07T08:25:20.376588+00:00"
     },
     {
       "id": "b70960ea48a1a247",
@@ -13913,7 +13931,7 @@
       "source": "Google News",
       "date": "Fri, 10 Jul 2026 10:12:00 GMT",
       "raison": "garde entrée/sortie: département source 44 incompatible avec la sortie 974",
-      "created_at": "2026-09-06T07:59:22.966532+00:00"
+      "created_at": "2026-09-07T08:25:37.298618+00:00"
     },
     {
       "id": "8c646081e1d69e81",
@@ -14111,7 +14129,7 @@
       "source": "Google News",
       "date": "Fri, 03 Jan 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-06T07:58:57.405862+00:00"
+      "created_at": "2026-09-07T08:25:12.768123+00:00"
     },
     {
       "id": "411db107f70f2387",
@@ -14184,6 +14202,42 @@
       "date": "Fri, 01 Aug 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
       "created_at": "2026-07-27T07:56:36.407534+00:00"
+    },
+    {
+      "id": "4895ce094ba7a72a",
+      "banque": "La Banque Postale",
+      "commune": "Saint-Saturnin-lès-Avignon",
+      "departement": "84",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "Fermeture du bureau de poste de Saint-Saturnin-lès-Avignon : mairie et opposition réagissent",
+      "url": "https://www.laprovence.com/article/societe/17170408752104/fermeture-du-bureau-de-poste-de-saint-saturnin-les-avignon-mairie-et-opposition-reagissent?id=17170408752104",
+      "titre": "Fermeture du bureau de poste de Saint-Saturnin-lès-Avignon : mairie et opposition réagissent",
+      "source": "LaProvence.com",
+      "date": "2026-09-07T07:01:28Z",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-09-07T08:28:43.262993+00:00"
+    },
+    {
+      "id": "08196b1b7645de49",
+      "banque": "La Banque Postale",
+      "commune": "Saint-Saturnin-lès-Avignon",
+      "departement": "84",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "Fermeture du bureau de poste de Saint-Saturnin-lès-Avignon",
+      "url": "https://www.laprovence.com/article/societe/17170408752104/fermeture-du-bureau-de-poste-de-saint-saturnin-les-avignon-mairie-et-opposition-reagissent",
+      "titre": "Fermeture du bureau de poste de Saint-Saturnin-lès-Avignon",
+      "source": "laprovence.com",
+      "date": "2026-09-07",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-09-07T08:28:35.359495+00:00"
     },
     {
       "id": "36fe4be67bb84883",
