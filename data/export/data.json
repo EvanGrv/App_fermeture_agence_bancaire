@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T08:37:33.999793+00:00",
+  "generated_at": "2026-09-07T09:43:36.864330+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -9261,7 +9261,7 @@
         }
       ],
       "controle_sirene": {
-        "etat_administratif": null,
+        "etat_administratif": "A",
         "siret": null,
         "source": "SIRENE"
       },
@@ -9384,7 +9384,7 @@
         }
       ],
       "controle_sirene": {
-        "etat_administratif": null,
+        "etat_administratif": "A",
         "siret": null,
         "source": "SIRENE"
       },
@@ -9514,7 +9514,7 @@
         }
       ],
       "controle_sirene": {
-        "etat_administratif": null,
+        "etat_administratif": "A",
         "siret": null,
         "source": "SIRENE"
       },
@@ -10820,6 +10820,24 @@
       "created_at": "2026-09-06T08:02:28.885255+00:00"
     },
     {
+      "id": "a3493d0259c2e732",
+      "banque": "La Banque Postale",
+      "commune": "Arsac",
+      "departement": "33",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "Arsac : le maire Frédéric Aurier apporte des précisions sur la fermeture du bureau de Poste et la révision de l’adressage - Sud Ouest",
+      "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPOTZrRnJBZ3ppcG9nVUJyNW9oNDNfTE1RNjQxNDJXeG9QV3pKeExlbjZfN1lzY0stNUlpVDM2dm1ETE92bXh6WVAtRzVkWG5DejdqVUNhN3RSU015Z1VrU0R5MGlTWVJtR2RybUw5NnNiTzBSbk4xQ0Y4dm5kZVloMFdoVk11b3luQVBrZk80M3A2UXNYYmxGSkRwN2lyTm5vSGlZdHBQQ3E3TktYc3NhQnJSX0l3Y0FUdHhySlhvNzFDTXNoQlFMQmJtM21GWlRoV0RLc0JvS0hSR3NDdkVrdFZjdFBqN1pMMzFoQTV4SFJDZWk4VU1zMlNFWGR1T3c?oc=5",
+      "titre": "Arsac : le maire Frédéric Aurier apporte des précisions sur la fermeture du bureau de Poste et la révision de l’adressage - Sud Ouest",
+      "source": "Google News",
+      "date": "Wed, 02 Jul 2025 07:00:00 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-09-07T09:26:27.957187+00:00"
+    },
+    {
       "id": "0f6b220a41a4643c",
       "banque": "La Banque Postale",
       "commune": "Le Trait",
@@ -11267,7 +11285,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-07T08:25:13.589152+00:00"
+      "created_at": "2026-09-07T09:19:03.888927+00:00"
     },
     {
       "id": "50895c042a984b7d",
@@ -11303,7 +11321,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 04:46:02 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-07T08:25:13.141086+00:00"
+      "created_at": "2026-09-07T09:19:03.287356+00:00"
     },
     {
       "id": "8c6a0cad14626d6f",
@@ -13804,8 +13822,8 @@
       "titre": "La mobilisation des habitants a été vaine, le bureau de poste du quartier Saint-Marc, à Saint-Nazaire, ferme ses portes - ici.fr",
       "source": "Google News",
       "date": "Fri, 20 Jun 2025 07:00:00 GMT",
-      "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-07T08:25:20.376588+00:00"
+      "raison": "garde entrée/sortie: commune/localisation de sortie absente de la source",
+      "created_at": "2026-09-07T09:19:11.858598+00:00"
     },
     {
       "id": "b70960ea48a1a247",
@@ -13931,7 +13949,7 @@
       "source": "Google News",
       "date": "Fri, 10 Jul 2026 10:12:00 GMT",
       "raison": "garde entrée/sortie: département source 44 incompatible avec la sortie 974",
-      "created_at": "2026-09-07T08:25:37.298618+00:00"
+      "created_at": "2026-09-07T09:19:33.453881+00:00"
     },
     {
       "id": "8c646081e1d69e81",
@@ -13986,6 +14004,24 @@
       "date": "Fri, 10 Jul 2026 07:00:00 GMT",
       "raison": "garde entrée/sortie: département source 44 incompatible avec la sortie 974",
       "created_at": "2026-07-23T06:13:01.062681+00:00"
+    },
+    {
+      "id": "7d5aac16774fdba4",
+      "banque": "La Banque Postale",
+      "commune": "Rognac",
+      "departement": "13",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "Le quartier de Tamaris vent debout contre la potentielle fermeture du bureau de poste - Midi Libre",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOQWdwUUFqUW1UbE9aY3RkLWVuR2p6VEtscWRZUFRtVzM4YXlSWVU5MkI1Ni1uRVpfb2FHVjhsLXp0WndwZEI0bUlvUkpkejFqc3JBWTlHX2pmYUtWNGhuZFktLUdjaGQxS2VXY2RmNFN2cWJuaEhqU1R6aDlOaGJudVg4NkEwRjE3QjFmck96LUFOXzhIcnZUYVBvZjJNZUJ5ZzdEbDFwSGlxdVV2UGlwVTFvNXJweGpZNS1xUHR4UHRrSjdTYUtWOGI1YlB5RzQ?oc=5",
+      "titre": "Le quartier de Tamaris vent debout contre la potentielle fermeture du bureau de poste - Midi Libre",
+      "source": "Google News",
+      "date": "Fri, 08 Nov 2024 08:00:00 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-09-07T09:26:26.519281+00:00"
     },
     {
       "id": "9000c0f63436d5ab",
@@ -14129,7 +14165,7 @@
       "source": "Google News",
       "date": "Fri, 03 Jan 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-07T08:25:12.768123+00:00"
+      "created_at": "2026-09-07T09:19:02.931998+00:00"
     },
     {
       "id": "411db107f70f2387",
@@ -17464,6 +17500,19 @@
       "score": 4,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:22:15.569468+00:00"
+    },
+    {
+      "id": "71e6e83489596c3d",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "La fermeture d’une discothèque exigée à Agen après des affrontements - 20 Minutes",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMixgFBVV95cUxQaG1nXy1ubVlzcy1PanFfbDVNNGxiX2xpb2RMUGFPSEs2NVNCdjlvVklLNXpFckdKMUdabXJVc0UyZ2pSTE9QYzlsZksyYjh4UGxKbC15TU85ZHNxQlBxb1E2aElXb1prSGROazRHVk4xTDFsUXUwVVVBWUFWTlZSR01NM184MjJDb0FxcGlSYm1FMFhfcncwQWJFdDVyZzNEN2tJYUozQ3lYNmhKNzM0ZmZuVXh6dHZlWEVlZWxaeEs4SWZ4Wnc?oc=5\" target=\"_blank\">La fermeture d’une discothèque exigée à Agen après des affrontements</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">20 Minutes</font>",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQaG1nXy1ubVlzcy1PanFfbDVNNGxiX2xpb2RMUGFPSEs2NVNCdjlvVklLNXpFckdKMUdabXJVc0UyZ2pSTE9QYzlsZksyYjh4UGxKbC15TU85ZHNxQlBxb1E2aElXb1prSGROazRHVk4xTDFsUXUwVVVBWUFWTlZSR01NM184MjJDb0FxcGlSYm1FMFhfcncwQWJFdDVyZzNEN2tJYUozQ3lYNmhKNzM0ZmZuVXh6dHZlWEVlZWxaeEs4SWZ4Wnc?oc=5",
+      "source": "Google News",
+      "date": "Fri, 31 Oct 2025 07:00:00 GMT",
+      "score": 4,
+      "raison": "score préfiltre bas (-2)",
+      "created_at": "2026-09-07T09:26:41.575479+00:00"
     },
     {
       "id": "521af480711fd84f",
@@ -21325,6 +21374,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:21:58.937616+00:00"
+    },
+    {
+      "id": "408feef159820d63",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Bosch ferme son usine dans l’Allier, 265 emplois menacés - 20 Minutes",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMipAFBVV95cUxQSGM2TEl0Z0VIWDZhV2VReDJteEE0VWtvSU1BSlk2Nkp6REtkakQxSmd1WTNfZ0ZPeVA4cHE2MlBIVjl2Tk9iSHhrRG42Tk1HRWUzSktrbktVMkNRVHBSU29KRm5TQk9pQ2NRUHVrRXFDdnFlWHRqOVpuQnhITWlsSWNNM3lTU1FHbTFZWWZUel9tYUthdUZrNENtckVnbTdmMXhGUQ?oc=5\" target=\"_blank\">Bosch ferme son usine dans l’Allier, 265 emplois menacés</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">20 Minutes</font>",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQSGM2TEl0Z0VIWDZhV2VReDJteEE0VWtvSU1BSlk2Nkp6REtkakQxSmd1WTNfZ0ZPeVA4cHE2MlBIVjl2Tk9iSHhrRG42Tk1HRWUzSktrbktVMkNRVHBSU29KRm5TQk9pQ2NRUHVrRXFDdnFlWHRqOVpuQnhITWlsSWNNM3lTU1FHbTFZWWZUel9tYUthdUZrNENtckVnbTdmMXhGUQ?oc=5",
+      "source": "Google News",
+      "date": "Tue, 20 Jan 2026 08:00:00 GMT",
+      "score": 3,
+      "raison": "score préfiltre bas (-2)",
+      "created_at": "2026-09-07T09:26:43.042719+00:00"
     },
     {
       "id": "a972464ed1d19e7e",
@@ -37252,6 +37314,19 @@
       "created_at": "2026-07-22T09:09:31.319237+00:00"
     },
     {
+      "id": "a407d6dfea19ec55",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "\"Le groupe est solide, mais nous avons besoin d'agilité\" : le groupe Seb envisage de supprimer 500 emplois en France - France 3 Régions",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMimAJBVV95cUxNNVN5VkRQX25DcEdXRldhQTIzZVM4SnE3bElRMjZGZWdHYUQ0eDhnN09HYUdhTUFYY0RUVERoS3V2ekk1Ynp2bkt3Wng4VTB3NXhCemhyUjZIQTNFMXdLYi1ma0dCUHpRZkgwV1N6cUVhcE9MX19iVlVQbU5XNG5YRkhEcjU2V2lGNkx0UkFoSWxVVHk4SExrREVVemhVbzdiVmZHcGdyVUozYW93MjJsUFNiWVRzeG56Q20wR0N1SGRqdW5KU0hBZlNxV3pIVURyNXRtcjRIQzFGeHJZWnFFVHc1VXpQYXhnVHBQOGFkcVdsVWNWQkFZYVhPZXhaQURkT2swSmRaLXhadEI0RTVlYzB1dTU3Z0p5?oc=5\" target=\"_blank\">\"Le groupe est solide, mais nous avons besoin d'agi",
+      "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxNNVN5VkRQX25DcEdXRldhQTIzZVM4SnE3bElRMjZGZWdHYUQ0eDhnN09HYUdhTUFYY0RUVERoS3V2ekk1Ynp2bkt3Wng4VTB3NXhCemhyUjZIQTNFMXdLYi1ma0dCUHpRZkgwV1N6cUVhcE9MX19iVlVQbU5XNG5YRkhEcjU2V2lGNkx0UkFoSWxVVHk4SExrREVVemhVbzdiVmZHcGdyVUozYW93MjJsUFNiWVRzeG56Q20wR0N1SGRqdW5KU0hBZlNxV3pIVURyNXRtcjRIQzFGeHJZWnFFVHc1VXpQYXhnVHBQOGFkcVdsVWNWQkFZYVhPZXhaQURkT2swSmRaLXhadEI0RTVlYzB1dTU3Z0p5?oc=5",
+      "source": "Google News",
+      "date": "Wed, 25 Feb 2026 08:00:00 GMT",
+      "score": 2,
+      "raison": "score préfiltre bas (-2)",
+      "created_at": "2026-09-07T09:26:33.041886+00:00"
+    },
+    {
       "id": "5e7d7ae4961a706d",
       "banque": "LCL",
       "departement": "",
@@ -39460,6 +39535,19 @@
       "score": 2,
       "raison": "signaux: vague(La Poste (agence/relai postaux avec volet bancaire possible mais non explicitement documenté ici),regional,count=None)",
       "created_at": "2026-07-22T09:19:07.255539+00:00"
+    },
+    {
+      "id": "4e286c58a19caa38",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Écoles à Rennes : une grève le mardi 31 mars sur fond de suppressions de postes - Unidivers",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMiU0FVX3lxTE9Yd214ZnN6RE16bS1oZ3h4WVYwaXg0VGh5QnFLUU9ZNG1YVG8tSGdfUkFGRTRob01FT2lFLXFCYl9tODlFSDZhMjFHeWdtMmJqNkpN?oc=5\" target=\"_blank\">Écoles à Rennes : une grève le mardi 31 mars sur fond de suppressions de postes</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Unidivers</font>",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9Yd214ZnN6RE16bS1oZ3h4WVYwaXg0VGh5QnFLUU9ZNG1YVG8tSGdfUkFGRTRob01FT2lFLXFCYl9tODlFSDZhMjFHeWdtMmJqNkpN?oc=5",
+      "source": "Google News",
+      "date": "Sun, 29 Mar 2026 07:00:00 GMT",
+      "score": 2,
+      "raison": "score préfiltre bas (-2)",
+      "created_at": "2026-09-07T09:26:52.356426+00:00"
     },
     {
       "id": "a01223f7808593ad",
