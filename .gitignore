@@ -1,9 +1,30 @@
+# --- Python ---
 __pycache__/
 *.pyc
-data/*.db
-data/cache/
-.env
+*.egg-info/
 .venv/
+venv/
 
-# Claude Code (ne jamais committer)
+# --- Caches d'outillage ---
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# --- Secrets ---
+.env
+
+# --- Données locales (non versionnées) ---
+# La base SQLite de travail et le cache HTTP sont reconstruits par la pipeline.
+# Seul le dossier des exports publics est versionné : c'est ce que consomme le
+# frontend. Ne jamais l'ignorer ici (un test le vérifie).
+data/*.db
+data/*.db-journal
+data/cache/
+data/backups/
+
+# --- Outillage agent (ne jamais committer) ---
 .claude/
+.superpowers/
+
+# --- OS ---
+.DS_Store
