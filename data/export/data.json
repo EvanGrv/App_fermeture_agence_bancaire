@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T09:43:36.864330+00:00",
+  "generated_at": "2026-09-08T08:33:10.228383+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -84,7 +84,7 @@
       "nom": "Ardennes",
       "region": "Grand Est",
       "count": 0,
-      "total_agences": 54,
+      "total_agences": 53,
       "precise_count": 0,
       "unlocated_count": 0,
       "estimated_count": 0
@@ -128,11 +128,11 @@
     "13": {
       "nom": "Bouches-du-Rhône",
       "region": "Provence-Alpes-Côte d'Azur",
-      "count": 3,
+      "count": 4,
       "total_agences": 227,
-      "precise_count": 3,
+      "precise_count": 4,
       "unlocated_count": 0,
-      "estimated_count": 3
+      "estimated_count": 4
     },
     "14": {
       "nom": "Calvados",
@@ -174,7 +174,7 @@
       "nom": "Cher",
       "region": "Centre-Val de Loire",
       "count": 2,
-      "total_agences": 67,
+      "total_agences": 66,
       "precise_count": 2,
       "unlocated_count": 0,
       "estimated_count": 2
@@ -245,17 +245,17 @@
     "25": {
       "nom": "Doubs",
       "region": "Bourgogne-Franche-Comté",
-      "count": 8,
-      "total_agences": 87,
-      "precise_count": 8,
+      "count": 11,
+      "total_agences": 86,
+      "precise_count": 11,
       "unlocated_count": 0,
-      "estimated_count": 8
+      "estimated_count": 11
     },
     "26": {
       "nom": "Drôme",
       "region": "Auvergne-Rhône-Alpes",
       "count": 1,
-      "total_agences": 75,
+      "total_agences": 76,
       "precise_count": 1,
       "unlocated_count": 1,
       "estimated_count": 2
@@ -264,7 +264,7 @@
       "nom": "Eure",
       "region": "Normandie",
       "count": 1,
-      "total_agences": 80,
+      "total_agences": 78,
       "precise_count": 1,
       "unlocated_count": 1,
       "estimated_count": 2
@@ -291,7 +291,7 @@
       "nom": "Gard",
       "region": "Occitanie",
       "count": 0,
-      "total_agences": 160,
+      "total_agences": 159,
       "precise_count": 0,
       "unlocated_count": 0,
       "estimated_count": 0
@@ -300,7 +300,7 @@
       "nom": "Haute-Garonne",
       "region": "Occitanie",
       "count": 1,
-      "total_agences": 172,
+      "total_agences": 171,
       "precise_count": 1,
       "unlocated_count": 0,
       "estimated_count": 1
@@ -390,7 +390,7 @@
       "nom": "Loir-et-Cher",
       "region": "Centre-Val de Loire",
       "count": 2,
-      "total_agences": 55,
+      "total_agences": 54,
       "precise_count": 2,
       "unlocated_count": 0,
       "estimated_count": 2
@@ -398,17 +398,17 @@
     "42": {
       "nom": "Loire",
       "region": "Auvergne-Rhône-Alpes",
-      "count": 5,
+      "count": 6,
       "total_agences": 105,
-      "precise_count": 5,
+      "precise_count": 6,
       "unlocated_count": 1,
-      "estimated_count": 31
+      "estimated_count": 32
     },
     "43": {
       "nom": "Haute-Loire",
       "region": "Auvergne-Rhône-Alpes",
       "count": 4,
-      "total_agences": 56,
+      "total_agences": 55,
       "precise_count": 4,
       "unlocated_count": 0,
       "estimated_count": 16
@@ -416,11 +416,11 @@
     "44": {
       "nom": "Loire-Atlantique",
       "region": "Pays de la Loire",
-      "count": 5,
-      "total_agences": 171,
-      "precise_count": 5,
+      "count": 6,
+      "total_agences": 167,
+      "precise_count": 6,
       "unlocated_count": 0,
-      "estimated_count": 5
+      "estimated_count": 6
     },
     "45": {
       "nom": "Loiret",
@@ -462,7 +462,7 @@
       "nom": "Maine-et-Loire",
       "region": "Pays de la Loire",
       "count": 3,
-      "total_agences": 119,
+      "total_agences": 118,
       "precise_count": 3,
       "unlocated_count": 0,
       "estimated_count": 3
@@ -506,11 +506,11 @@
     "54": {
       "nom": "Meurthe-et-Moselle",
       "region": "Grand Est",
-      "count": 0,
-      "total_agences": 93,
-      "precise_count": 0,
+      "count": 2,
+      "total_agences": 92,
+      "precise_count": 2,
       "unlocated_count": 0,
-      "estimated_count": 0
+      "estimated_count": 2
     },
     "55": {
       "nom": "Meuse",
@@ -524,17 +524,17 @@
     "56": {
       "nom": "Morbihan",
       "region": "Bretagne",
-      "count": 6,
+      "count": 7,
       "total_agences": 135,
-      "precise_count": 6,
+      "precise_count": 7,
       "unlocated_count": 0,
-      "estimated_count": 6
+      "estimated_count": 7
     },
     "57": {
       "nom": "Moselle",
       "region": "Grand Est",
       "count": 1,
-      "total_agences": 118,
+      "total_agences": 117,
       "precise_count": 1,
       "unlocated_count": 0,
       "estimated_count": 1
@@ -542,26 +542,26 @@
     "58": {
       "nom": "Nièvre",
       "region": "Bourgogne-Franche-Comté",
-      "count": 0,
+      "count": 1,
       "total_agences": 61,
-      "precise_count": 0,
+      "precise_count": 1,
       "unlocated_count": 0,
-      "estimated_count": 0
+      "estimated_count": 1
     },
     "59": {
       "nom": "Nord",
       "region": "Hauts-de-France",
-      "count": 5,
-      "total_agences": 327,
-      "precise_count": 5,
+      "count": 7,
+      "total_agences": 325,
+      "precise_count": 7,
       "unlocated_count": 1,
-      "estimated_count": 6
+      "estimated_count": 8
     },
     "60": {
       "nom": "Oise",
       "region": "Hauts-de-France",
       "count": 0,
-      "total_agences": 131,
+      "total_agences": 130,
       "precise_count": 0,
       "unlocated_count": 0,
       "estimated_count": 0
@@ -588,7 +588,7 @@
       "nom": "Puy-de-Dôme",
       "region": "Auvergne-Rhône-Alpes",
       "count": 1,
-      "total_agences": 118,
+      "total_agences": 117,
       "precise_count": 1,
       "unlocated_count": 0,
       "estimated_count": 1
@@ -614,17 +614,17 @@
     "66": {
       "nom": "Pyrénées-Orientales",
       "region": "Occitanie",
-      "count": 0,
+      "count": 1,
       "total_agences": 87,
-      "precise_count": 0,
+      "precise_count": 1,
       "unlocated_count": 0,
-      "estimated_count": 0
+      "estimated_count": 1
     },
     "67": {
       "nom": "Bas-Rhin",
       "region": "Grand Est",
       "count": 5,
-      "total_agences": 257,
+      "total_agences": 255,
       "precise_count": 5,
       "unlocated_count": 0,
       "estimated_count": 5
@@ -686,11 +686,11 @@
     "74": {
       "nom": "Haute-Savoie",
       "region": "Auvergne-Rhône-Alpes",
-      "count": 3,
-      "total_agences": 200,
-      "precise_count": 3,
+      "count": 4,
+      "total_agences": 199,
+      "precise_count": 4,
       "unlocated_count": 0,
-      "estimated_count": 3
+      "estimated_count": 4
     },
     "75": {
       "nom": "Paris",
@@ -705,7 +705,7 @@
       "nom": "Seine-Maritime",
       "region": "Normandie",
       "count": 5,
-      "total_agences": 279,
+      "total_agences": 277,
       "precise_count": 5,
       "unlocated_count": 0,
       "estimated_count": 5
@@ -713,11 +713,11 @@
     "77": {
       "nom": "Seine-et-Marne",
       "region": "Île-de-France",
-      "count": 1,
-      "total_agences": 236,
-      "precise_count": 1,
+      "count": 2,
+      "total_agences": 235,
+      "precise_count": 2,
       "unlocated_count": 0,
-      "estimated_count": 1
+      "estimated_count": 2
     },
     "78": {
       "nom": "Yvelines",
@@ -732,7 +732,7 @@
       "nom": "Deux-Sèvres",
       "region": "Nouvelle-Aquitaine",
       "count": 1,
-      "total_agences": 58,
+      "total_agences": 57,
       "precise_count": 1,
       "unlocated_count": 0,
       "estimated_count": 1
@@ -750,7 +750,7 @@
       "nom": "Tarn",
       "region": "Occitanie",
       "count": 0,
-      "total_agences": 67,
+      "total_agences": 66,
       "precise_count": 0,
       "unlocated_count": 0,
       "estimated_count": 0
@@ -776,11 +776,11 @@
     "84": {
       "nom": "Vaucluse",
       "region": "Provence-Alpes-Côte d'Azur",
-      "count": 1,
+      "count": 2,
       "total_agences": 89,
-      "precise_count": 1,
+      "precise_count": 2,
       "unlocated_count": 0,
-      "estimated_count": 9
+      "estimated_count": 10
     },
     "85": {
       "nom": "Vendée",
@@ -812,11 +812,11 @@
     "88": {
       "nom": "Vosges",
       "region": "Grand Est",
-      "count": 0,
+      "count": 1,
       "total_agences": 53,
-      "precise_count": 0,
+      "precise_count": 1,
       "unlocated_count": 0,
-      "estimated_count": 0
+      "estimated_count": 1
     },
     "89": {
       "nom": "Yonne",
@@ -840,7 +840,7 @@
       "nom": "Essonne",
       "region": "Île-de-France",
       "count": 0,
-      "total_agences": 158,
+      "total_agences": 157,
       "precise_count": 0,
       "unlocated_count": 0,
       "estimated_count": 0
@@ -849,7 +849,7 @@
       "nom": "Hauts-de-Seine",
       "region": "Île-de-France",
       "count": 1,
-      "total_agences": 135,
+      "total_agences": 134,
       "precise_count": 1,
       "unlocated_count": 0,
       "estimated_count": 1
@@ -858,7 +858,7 @@
       "nom": "Seine-Saint-Denis",
       "region": "Île-de-France",
       "count": 0,
-      "total_agences": 139,
+      "total_agences": 138,
       "precise_count": 0,
       "unlocated_count": 0,
       "estimated_count": 0
@@ -867,7 +867,7 @@
       "nom": "Val-de-Marne",
       "region": "Île-de-France",
       "count": 0,
-      "total_agences": 138,
+      "total_agences": 137,
       "precise_count": 0,
       "unlocated_count": 0,
       "estimated_count": 0
@@ -876,7 +876,7 @@
       "nom": "Val-d'Oise",
       "region": "Île-de-France",
       "count": 0,
-      "total_agences": 152,
+      "total_agences": 151,
       "precise_count": 0,
       "unlocated_count": 0,
       "estimated_count": 0
@@ -885,7 +885,7 @@
       "nom": "Guadeloupe",
       "region": "Guadeloupe",
       "count": 0,
-      "total_agences": 51,
+      "total_agences": 54,
       "precise_count": 0,
       "unlocated_count": 0,
       "estimated_count": 0
@@ -931,9 +931,9 @@
     "42": {
       "departement": "42",
       "nom": "Loire",
-      "precise_count": 5,
+      "precise_count": 6,
       "unlocated_count": 1,
-      "estimated_count": 31,
+      "estimated_count": 32,
       "department_signal_count": 25,
       "signals": [
         {
@@ -1177,9 +1177,9 @@
     "59": {
       "departement": "59",
       "nom": "Nord",
-      "precise_count": 5,
+      "precise_count": 7,
       "unlocated_count": 1,
-      "estimated_count": 6,
+      "estimated_count": 8,
       "department_signal_count": 0,
       "signals": [
         {
@@ -1367,9 +1367,9 @@
     "56": {
       "departement": "56",
       "nom": "Morbihan",
-      "precise_count": 6,
+      "precise_count": 7,
       "unlocated_count": 0,
-      "estimated_count": 6,
+      "estimated_count": 7,
       "department_signal_count": 0,
       "signals": []
     },
@@ -1385,9 +1385,9 @@
     "25": {
       "departement": "25",
       "nom": "Doubs",
-      "precise_count": 8,
+      "precise_count": 11,
       "unlocated_count": 0,
-      "estimated_count": 8,
+      "estimated_count": 11,
       "department_signal_count": 0,
       "signals": []
     },
@@ -1403,9 +1403,9 @@
     "84": {
       "departement": "84",
       "nom": "Vaucluse",
-      "precise_count": 1,
+      "precise_count": 2,
       "unlocated_count": 0,
-      "estimated_count": 9,
+      "estimated_count": 10,
       "department_signal_count": 8,
       "signals": [
         {
@@ -1436,9 +1436,9 @@
     "44": {
       "departement": "44",
       "nom": "Loire-Atlantique",
-      "precise_count": 5,
+      "precise_count": 6,
       "unlocated_count": 0,
-      "estimated_count": 5,
+      "estimated_count": 6,
       "department_signal_count": 0,
       "signals": []
     },
@@ -1588,18 +1588,18 @@
     "13": {
       "departement": "13",
       "nom": "Bouches-du-Rhône",
-      "precise_count": 3,
+      "precise_count": 4,
       "unlocated_count": 0,
-      "estimated_count": 3,
+      "estimated_count": 4,
       "department_signal_count": 0,
       "signals": []
     },
     "74": {
       "departement": "74",
       "nom": "Haute-Savoie",
-      "precise_count": 3,
+      "precise_count": 4,
       "unlocated_count": 0,
-      "estimated_count": 3,
+      "estimated_count": 4,
       "department_signal_count": 0,
       "signals": []
     },
@@ -1671,9 +1671,9 @@
     "77": {
       "departement": "77",
       "nom": "Seine-et-Marne",
-      "precise_count": 1,
+      "precise_count": 2,
       "unlocated_count": 0,
-      "estimated_count": 1,
+      "estimated_count": 2,
       "department_signal_count": 0,
       "signals": []
     },
@@ -1734,6 +1734,42 @@
     "80": {
       "departement": "80",
       "nom": "Somme",
+      "precise_count": 1,
+      "unlocated_count": 0,
+      "estimated_count": 1,
+      "department_signal_count": 0,
+      "signals": []
+    },
+    "54": {
+      "departement": "54",
+      "nom": "Meurthe-et-Moselle",
+      "precise_count": 2,
+      "unlocated_count": 0,
+      "estimated_count": 2,
+      "department_signal_count": 0,
+      "signals": []
+    },
+    "58": {
+      "departement": "58",
+      "nom": "Nièvre",
+      "precise_count": 1,
+      "unlocated_count": 0,
+      "estimated_count": 1,
+      "department_signal_count": 0,
+      "signals": []
+    },
+    "66": {
+      "departement": "66",
+      "nom": "Pyrénées-Orientales",
+      "precise_count": 1,
+      "unlocated_count": 0,
+      "estimated_count": 1,
+      "department_signal_count": 0,
+      "signals": []
+    },
+    "88": {
+      "departement": "88",
+      "nom": "Vosges",
       "precise_count": 1,
       "unlocated_count": 0,
       "estimated_count": 1,
@@ -1842,8 +1878,8 @@
     },
     {
       "region": "Bretagne",
-      "articles": 39,
-      "fermetures": 16,
+      "articles": 40,
+      "fermetures": 17,
       "projets": 9,
       "fusions": 0,
       "types": [
@@ -1860,8 +1896,8 @@
     },
     {
       "region": "Hauts-de-France",
-      "articles": 28,
-      "fermetures": 12,
+      "articles": 30,
+      "fermetures": 14,
       "projets": 5,
       "fusions": 0,
       "types": [
@@ -1878,8 +1914,8 @@
     },
     {
       "region": "Bourgogne-Franche-Comté",
-      "articles": 25,
-      "fermetures": 19,
+      "articles": 29,
+      "fermetures": 23,
       "projets": 5,
       "fusions": 0,
       "types": [
@@ -1890,16 +1926,17 @@
         "21",
         "25",
         "39",
+        "58",
         "70",
         "71",
         "90"
       ],
-      "nb_departements": 6
+      "nb_departements": 7
     },
     {
       "region": "Auvergne-Rhône-Alpes",
-      "articles": 20,
-      "fermetures": 8,
+      "articles": 22,
+      "fermetures": 10,
       "projets": 11,
       "fusions": 0,
       "types": [
@@ -1920,8 +1957,8 @@
     },
     {
       "region": "Occitanie",
-      "articles": 16,
-      "fermetures": 2,
+      "articles": 17,
+      "fermetures": 3,
       "projets": 10,
       "fusions": 2,
       "types": [
@@ -1936,9 +1973,10 @@
         "46",
         "48",
         "65",
+        "66",
         "82"
       ],
-      "nb_departements": 7
+      "nb_departements": 8
     },
     {
       "region": "Nouvelle-Aquitaine",
@@ -1962,6 +2000,25 @@
       "nb_departements": 7
     },
     {
+      "region": "Grand Est",
+      "articles": 14,
+      "fermetures": 14,
+      "projets": 0,
+      "fusions": 0,
+      "types": [
+        "Fermeture"
+      ],
+      "departements": [
+        "54",
+        "55",
+        "57",
+        "67",
+        "68",
+        "88"
+      ],
+      "nb_departements": 6
+    },
+    {
       "region": "Normandie",
       "articles": 14,
       "fermetures": 7,
@@ -1981,8 +2038,8 @@
     },
     {
       "region": "Pays de la Loire",
-      "articles": 13,
-      "fermetures": 8,
+      "articles": 14,
+      "fermetures": 9,
       "projets": 3,
       "fusions": 0,
       "types": [
@@ -1997,26 +2054,9 @@
       "nb_departements": 3
     },
     {
-      "region": "Grand Est",
-      "articles": 11,
-      "fermetures": 11,
-      "projets": 0,
-      "fusions": 0,
-      "types": [
-        "Fermeture"
-      ],
-      "departements": [
-        "55",
-        "57",
-        "67",
-        "68"
-      ],
-      "nb_departements": 4
-    },
-    {
       "region": "Provence-Alpes-Côte d'Azur",
-      "articles": 6,
-      "fermetures": 2,
+      "articles": 8,
+      "fermetures": 4,
       "projets": 4,
       "fusions": 0,
       "types": [
@@ -2033,8 +2073,8 @@
     },
     {
       "region": "Île-de-France",
-      "articles": 4,
-      "fermetures": 2,
+      "articles": 5,
+      "fermetures": 3,
       "projets": 2,
       "fusions": 0,
       "types": [
@@ -5227,7 +5267,7 @@
         }
       ],
       "controle_sirene": {
-        "etat_administratif": "A",
+        "etat_administratif": null,
         "siret": null,
         "source": "SIRENE"
       },
@@ -8256,7 +8296,7 @@
         }
       ],
       "controle_sirene": {
-        "etat_administratif": "A",
+        "etat_administratif": null,
         "siret": null,
         "source": "SIRENE"
       },
@@ -10114,6 +10154,703 @@
         "source": "SIRENE"
       },
       "region": "Nouvelle-Aquitaine"
+    },
+    {
+      "id": "85e4f2e3828b609f",
+      "banque": "La Banque Postale",
+      "commune": "BOULBON",
+      "code_insee": "13017",
+      "departement": "13",
+      "type": "fermeture",
+      "date_annonce": "2026-09-08",
+      "date_fermeture": "2026-09-08",
+      "statut": "confirmé",
+      "statut_temporel": "deja_fermee",
+      "date_fermeture_approx": 1,
+      "fiabilite": 5,
+      "lat": 43.862991,
+      "lon": 4.693323,
+      "citation": "Le point BOULBON BP a disparu de deux révisions successives du référentiel officiel La Poste.",
+      "adresse": "8 PLACE VICTOR BARBERIN",
+      "agence_localisation": "BOULBON BP",
+      "commune_originale": null,
+      "service_impact": "fermeture_lbp_complete",
+      "point_postal_avant": "Bureau de Poste",
+      "point_postal_apres": null,
+      "postal_point_id": "01965A",
+      "evidence_level": "officiel",
+      "created_at": "2026-09-08T08:11:09.285481+00:00",
+      "sources": [
+        {
+          "url": "https://data.laposte.fr/datasets/laposte-poincont2",
+          "titre": "Liste officielle des points de contact La Poste",
+          "source": "La Poste Open Data",
+          "date": "2026-09-08",
+          "tier": "D"
+        }
+      ],
+      "controle_sirene": {
+        "etat_administratif": null,
+        "siret": null,
+        "source": "SIRENE"
+      },
+      "region": "Provence-Alpes-Côte d'Azur"
+    },
+    {
+      "id": "1579ea2bdaa8dd0c",
+      "banque": "La Banque Postale",
+      "commune": "BESANCON",
+      "code_insee": "25056",
+      "departement": "25",
+      "type": "fermeture",
+      "date_annonce": "2026-09-08",
+      "date_fermeture": "2026-09-08",
+      "statut": "confirmé",
+      "statut_temporel": "deja_fermee",
+      "date_fermeture_approx": 1,
+      "fiabilite": 5,
+      "lat": 47.243998,
+      "lon": 6.009595,
+      "citation": "Le point BESANCON DEMANGEL BP a disparu de deux révisions successives du référentiel officiel La Poste.",
+      "adresse": "4 RUE ROBERT DEMANGEL",
+      "agence_localisation": "BESANCON DEMANGEL BP",
+      "commune_originale": null,
+      "service_impact": "fermeture_lbp_complete",
+      "point_postal_avant": "Bureau de Poste",
+      "point_postal_apres": null,
+      "postal_point_id": "04330A",
+      "evidence_level": "officiel",
+      "created_at": "2026-09-08T08:11:09.290342+00:00",
+      "sources": [
+        {
+          "url": "https://data.laposte.fr/datasets/laposte-poincont2",
+          "titre": "Liste officielle des points de contact La Poste",
+          "source": "La Poste Open Data",
+          "date": "2026-09-08",
+          "tier": "D"
+        }
+      ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
+      "region": "Bourgogne-Franche-Comté"
+    },
+    {
+      "id": "5a84bf710184ecdb",
+      "banque": "La Banque Postale",
+      "commune": "L ISLE SUR LE DOUBS",
+      "code_insee": "25315",
+      "departement": "25",
+      "type": "fermeture",
+      "date_annonce": "2026-09-08",
+      "date_fermeture": "2026-09-08",
+      "statut": "confirmé",
+      "statut_temporel": "deja_fermee",
+      "date_fermeture_approx": 1,
+      "fiabilite": 5,
+      "lat": 47.448507,
+      "lon": 6.583802,
+      "citation": "Le point L ISLE SUR LE DOUBS BP a disparu de deux révisions successives du référentiel officiel La Poste.",
+      "adresse": "3 RUE LIEUTENANT HENRI BOURLIER",
+      "agence_localisation": "L ISLE SUR LE DOUBS BP",
+      "commune_originale": null,
+      "service_impact": "fermeture_lbp_complete",
+      "point_postal_avant": "Bureau de Poste",
+      "point_postal_apres": null,
+      "postal_point_id": "04385A",
+      "evidence_level": "officiel",
+      "created_at": "2026-09-08T08:11:09.294916+00:00",
+      "sources": [
+        {
+          "url": "https://data.laposte.fr/datasets/laposte-poincont2",
+          "titre": "Liste officielle des points de contact La Poste",
+          "source": "La Poste Open Data",
+          "date": "2026-09-08",
+          "tier": "D"
+        }
+      ],
+      "controle_sirene": {
+        "etat_administratif": null,
+        "siret": null,
+        "source": "SIRENE"
+      },
+      "region": "Bourgogne-Franche-Comté"
+    },
+    {
+      "id": "22328b35035c1a7c",
+      "banque": "La Banque Postale",
+      "commune": "MONTBELIARD",
+      "code_insee": "25388",
+      "departement": "25",
+      "type": "fermeture",
+      "date_annonce": "2026-09-08",
+      "date_fermeture": "2026-09-08",
+      "statut": "confirmé",
+      "statut_temporel": "deja_fermee",
+      "date_fermeture_approx": 1,
+      "fiabilite": 5,
+      "lat": 47.517599,
+      "lon": 6.792547,
+      "citation": "Le point MONTBELIARD LA CHIFFOGNE BP a disparu de deux révisions successives du référentiel officiel La Poste.",
+      "adresse": "36 BOULEVARD VICTOR HUGO",
+      "agence_localisation": "MONTBELIARD LA CHIFFOGNE BP",
+      "commune_originale": null,
+      "service_impact": "fermeture_lbp_complete",
+      "point_postal_avant": "Bureau de Poste",
+      "point_postal_apres": null,
+      "postal_point_id": "04468A",
+      "evidence_level": "officiel",
+      "created_at": "2026-09-08T08:11:09.297369+00:00",
+      "sources": [
+        {
+          "url": "https://data.laposte.fr/datasets/laposte-poincont2",
+          "titre": "Liste officielle des points de contact La Poste",
+          "source": "La Poste Open Data",
+          "date": "2026-09-08",
+          "tier": "D"
+        }
+      ],
+      "controle_sirene": {
+        "etat_administratif": null,
+        "siret": null,
+        "source": "SIRENE"
+      },
+      "region": "Bourgogne-Franche-Comté"
+    },
+    {
+      "id": "1dbf391de7e1e8af",
+      "banque": "La Banque Postale",
+      "commune": "ST JULIEN MOLIN MOLETTE",
+      "code_insee": "42246",
+      "departement": "42",
+      "type": "fermeture",
+      "date_annonce": "2026-09-08",
+      "date_fermeture": "2026-09-08",
+      "statut": "confirmé",
+      "statut_temporel": "deja_fermee",
+      "date_fermeture_approx": 1,
+      "fiabilite": 5,
+      "lat": 45.322645174737,
+      "lon": 4.6156347184628,
+      "citation": "Le point SAINT JEAN SOLEYMIEUX BP a disparu de deux révisions successives du référentiel officiel La Poste.",
+      "adresse": "RUE DU FAUBOURG",
+      "agence_localisation": "SAINT JEAN SOLEYMIEUX BP",
+      "commune_originale": null,
+      "service_impact": "fermeture_lbp_complete",
+      "point_postal_avant": "Bureau de Poste",
+      "point_postal_apres": null,
+      "postal_point_id": "07945A",
+      "evidence_level": "officiel",
+      "created_at": "2026-09-08T08:11:09.309075+00:00",
+      "sources": [
+        {
+          "url": "https://data.laposte.fr/datasets/laposte-poincont2",
+          "titre": "Liste officielle des points de contact La Poste",
+          "source": "La Poste Open Data",
+          "date": "2026-09-08",
+          "tier": "D"
+        }
+      ],
+      "controle_sirene": {
+        "etat_administratif": null,
+        "siret": null,
+        "source": "SIRENE"
+      },
+      "region": "Auvergne-Rhône-Alpes"
+    },
+    {
+      "id": "bb8b9bf9dc9b0fa0",
+      "banque": "La Banque Postale",
+      "commune": "PONT ST MARTIN",
+      "code_insee": "44130",
+      "departement": "44",
+      "type": "fermeture",
+      "date_annonce": "2026-09-08",
+      "date_fermeture": "2026-09-08",
+      "statut": "confirmé",
+      "statut_temporel": "deja_fermee",
+      "date_fermeture_approx": 1,
+      "fiabilite": 5,
+      "lat": 47.123696726,
+      "lon": -1.582526245,
+      "citation": "Le point PONT ST MARTIN BP a disparu de deux révisions successives du référentiel officiel La Poste.",
+      "adresse": "PLACE DU MARCHE",
+      "agence_localisation": "PONT ST MARTIN BP",
+      "commune_originale": null,
+      "service_impact": "fermeture_lbp_complete",
+      "point_postal_avant": "Bureau de Poste",
+      "point_postal_apres": null,
+      "postal_point_id": "08264A",
+      "evidence_level": "officiel",
+      "created_at": "2026-09-08T08:11:09.313575+00:00",
+      "sources": [
+        {
+          "url": "https://data.laposte.fr/datasets/laposte-poincont2",
+          "titre": "Liste officielle des points de contact La Poste",
+          "source": "La Poste Open Data",
+          "date": "2026-09-08",
+          "tier": "D"
+        }
+      ],
+      "controle_sirene": {
+        "etat_administratif": null,
+        "siret": null,
+        "source": "SIRENE"
+      },
+      "region": "Pays de la Loire"
+    },
+    {
+      "id": "abf67c788b5c5fe2",
+      "banque": "La Banque Postale",
+      "commune": "NANCY",
+      "code_insee": "54395",
+      "departement": "54",
+      "type": "fermeture",
+      "date_annonce": "2026-09-08",
+      "date_fermeture": "2026-09-08",
+      "statut": "confirmé",
+      "statut_temporel": "deja_fermee",
+      "date_fermeture_approx": 1,
+      "fiabilite": 5,
+      "lat": 48.6887,
+      "lon": 6.18388,
+      "citation": "Le point NANCY MARCHE BP a disparu de deux révisions successives du référentiel officiel La Poste.",
+      "adresse": "66 RUE SAINT DIZIER",
+      "agence_localisation": "NANCY MARCHE BP",
+      "commune_originale": null,
+      "service_impact": "fermeture_lbp_complete",
+      "point_postal_avant": "Bureau de Poste",
+      "point_postal_apres": null,
+      "postal_point_id": "09771A",
+      "evidence_level": "officiel",
+      "created_at": "2026-09-08T08:11:09.326261+00:00",
+      "sources": [
+        {
+          "url": "https://data.laposte.fr/datasets/laposte-poincont2",
+          "titre": "Liste officielle des points de contact La Poste",
+          "source": "La Poste Open Data",
+          "date": "2026-09-08",
+          "tier": "D"
+        }
+      ],
+      "controle_sirene": {
+        "etat_administratif": "A",
+        "siret": null,
+        "source": "SIRENE"
+      },
+      "region": "Grand Est"
+    },
+    {
+      "id": "ccb58e0521ba88e4",
+      "banque": "La Banque Postale",
+      "commune": "VANNES LE CHATEL",
+      "code_insee": "54548",
+      "departement": "54",
+      "type": "fermeture",
+      "date_annonce": "2026-09-08",
+      "date_fermeture": "2026-09-08",
+      "statut": "confirmé",
+      "statut_temporel": "deja_fermee",
+      "date_fermeture_approx": 1,
+      "fiabilite": 5,
+      "lat": 48.54624722,
+      "lon": 5.7800133056,
+      "citation": "Le point VANNES LE CHATEL BP a disparu de deux révisions successives du référentiel officiel La Poste.",
+      "adresse": "1 RUE DE LA POSTE",
+      "agence_localisation": "VANNES LE CHATEL BP",
+      "commune_originale": null,
+      "service_impact": "fermeture_lbp_complete",
+      "point_postal_avant": "Bureau de Poste",
+      "point_postal_apres": null,
+      "postal_point_id": "09898A",
+      "evidence_level": "officiel",
+      "created_at": "2026-09-08T08:11:09.330889+00:00",
+      "sources": [
+        {
+          "url": "https://data.laposte.fr/datasets/laposte-poincont2",
+          "titre": "Liste officielle des points de contact La Poste",
+          "source": "La Poste Open Data",
+          "date": "2026-09-08",
+          "tier": "D"
+        }
+      ],
+      "controle_sirene": {
+        "etat_administratif": null,
+        "siret": null,
+        "source": "SIRENE"
+      },
+      "region": "Grand Est"
+    },
+    {
+      "id": "b5b09ce893f11b52",
+      "banque": "La Banque Postale",
+      "commune": "LA GACILLY",
+      "code_insee": "56061",
+      "departement": "56",
+      "type": "fermeture",
+      "date_annonce": "2026-09-08",
+      "date_fermeture": "2026-09-08",
+      "statut": "confirmé",
+      "statut_temporel": "deja_fermee",
+      "date_fermeture_approx": 1,
+      "fiabilite": 5,
+      "lat": 47.765095,
+      "lon": -2.13212,
+      "citation": "Le point LA GACILLY BP a disparu de deux révisions successives du référentiel officiel La Poste.",
+      "adresse": "16 PLACE YVES ROCHER",
+      "agence_localisation": "LA GACILLY BP",
+      "commune_originale": null,
+      "service_impact": "fermeture_lbp_complete",
+      "point_postal_avant": "Bureau de Poste",
+      "point_postal_apres": null,
+      "postal_point_id": "10103A",
+      "evidence_level": "officiel",
+      "created_at": "2026-09-08T08:11:09.336657+00:00",
+      "sources": [
+        {
+          "url": "https://data.laposte.fr/datasets/laposte-poincont2",
+          "titre": "Liste officielle des points de contact La Poste",
+          "source": "La Poste Open Data",
+          "date": "2026-09-08",
+          "tier": "D"
+        }
+      ],
+      "controle_sirene": {
+        "etat_administratif": null,
+        "siret": null,
+        "source": "SIRENE"
+      },
+      "region": "Bretagne"
+    },
+    {
+      "id": "130d9c8b0cae3098",
+      "banque": "La Banque Postale",
+      "commune": "ST BENIN D AZY",
+      "code_insee": "58232",
+      "departement": "58",
+      "type": "fermeture",
+      "date_annonce": "2026-09-08",
+      "date_fermeture": "2026-09-08",
+      "statut": "confirmé",
+      "statut_temporel": "deja_fermee",
+      "date_fermeture_approx": 1,
+      "fiabilite": 5,
+      "lat": 46.99965,
+      "lon": 3.392825,
+      "citation": "Le point SAINT BENIN D AZY BP a disparu de deux révisions successives du référentiel officiel La Poste.",
+      "adresse": "AVENUE PIERRE PETIT",
+      "agence_localisation": "SAINT BENIN D AZY BP",
+      "commune_originale": null,
+      "service_impact": "fermeture_lbp_complete",
+      "point_postal_avant": "Bureau de Poste",
+      "point_postal_apres": null,
+      "postal_point_id": "10638A",
+      "evidence_level": "officiel",
+      "created_at": "2026-09-08T08:11:09.342269+00:00",
+      "sources": [
+        {
+          "url": "https://data.laposte.fr/datasets/laposte-poincont2",
+          "titre": "Liste officielle des points de contact La Poste",
+          "source": "La Poste Open Data",
+          "date": "2026-09-08",
+          "tier": "D"
+        }
+      ],
+      "controle_sirene": {
+        "etat_administratif": null,
+        "siret": null,
+        "source": "SIRENE"
+      },
+      "region": "Bourgogne-Franche-Comté"
+    },
+    {
+      "id": "1576bd0edd6cf3d7",
+      "banque": "La Banque Postale",
+      "commune": "AUBIGNY AU BAC",
+      "code_insee": "59026",
+      "departement": "59",
+      "type": "fermeture",
+      "date_annonce": "2026-09-08",
+      "date_fermeture": "2026-09-08",
+      "statut": "confirmé",
+      "statut_temporel": "deja_fermee",
+      "date_fermeture_approx": 1,
+      "fiabilite": 5,
+      "lat": 50.261358,
+      "lon": 3.165135,
+      "citation": "Le référentiel officiel La Poste signale la conversion de AUBIGNY AU BAC BP en Agence postale communale.",
+      "adresse": "5 RUE LEO LAGRANGE",
+      "agence_localisation": "AUBIGNY AU BAC BP",
+      "commune_originale": null,
+      "service_impact": "conversion_ap",
+      "point_postal_avant": "Bureau de Poste",
+      "point_postal_apres": "Agence postale communale",
+      "postal_point_id": "10694A",
+      "evidence_level": "officiel",
+      "created_at": "2026-09-08T08:11:09.345144+00:00",
+      "sources": [
+        {
+          "url": "https://data.laposte.fr/datasets/laposte-poincont2",
+          "titre": "Liste officielle des points de contact La Poste",
+          "source": "La Poste Open Data",
+          "date": "2026-09-08",
+          "tier": "D"
+        }
+      ],
+      "controle_sirene": {
+        "etat_administratif": null,
+        "siret": null,
+        "source": "SIRENE"
+      },
+      "region": "Hauts-de-France"
+    },
+    {
+      "id": "77d5f963856256d8",
+      "banque": "La Banque Postale",
+      "commune": "LAMBERSART",
+      "code_insee": "59328",
+      "departement": "59",
+      "type": "fermeture",
+      "date_annonce": "2026-09-08",
+      "date_fermeture": "2026-09-08",
+      "statut": "confirmé",
+      "statut_temporel": "deja_fermee",
+      "date_fermeture_approx": 1,
+      "fiabilite": 5,
+      "lat": 50.652492,
+      "lon": 3.016281,
+      "citation": "Le point LAMBERSART VILLAGE EN FLANDRE BP a disparu de deux révisions successives du référentiel officiel La Poste.",
+      "adresse": "155 RUE DE LOMPRET",
+      "agence_localisation": "LAMBERSART VILLAGE EN FLANDRE BP",
+      "commune_originale": null,
+      "service_impact": "fermeture_lbp_complete",
+      "point_postal_avant": "Bureau de Poste",
+      "point_postal_apres": null,
+      "postal_point_id": "11033A",
+      "evidence_level": "officiel",
+      "created_at": "2026-09-08T08:11:09.351072+00:00",
+      "sources": [
+        {
+          "url": "https://data.laposte.fr/datasets/laposte-poincont2",
+          "titre": "Liste officielle des points de contact La Poste",
+          "source": "La Poste Open Data",
+          "date": "2026-09-08",
+          "tier": "D"
+        }
+      ],
+      "controle_sirene": {
+        "etat_administratif": null,
+        "siret": null,
+        "source": "SIRENE"
+      },
+      "region": "Hauts-de-France"
+    },
+    {
+      "id": "f30fdb97c44e25f8",
+      "banque": "La Banque Postale",
+      "commune": "PERPIGNAN",
+      "code_insee": "66136",
+      "departement": "66",
+      "type": "fermeture",
+      "date_annonce": "2026-09-08",
+      "date_fermeture": "2026-09-08",
+      "statut": "confirmé",
+      "statut_temporel": "deja_fermee",
+      "date_fermeture_approx": 1,
+      "fiabilite": 5,
+      "lat": 42.667498,
+      "lon": 2.882049,
+      "citation": "Le point PERPIGNAN PORTE D ESPAGNE BP a disparu de deux révisions successives du référentiel officiel La Poste.",
+      "adresse": "22 AVENUE DE GERONE",
+      "agence_localisation": "PERPIGNAN PORTE D ESPAGNE BP",
+      "commune_originale": null,
+      "service_impact": "fermeture_lbp_complete",
+      "point_postal_avant": "Bureau de Poste",
+      "point_postal_apres": null,
+      "postal_point_id": "12437A",
+      "evidence_level": "officiel",
+      "created_at": "2026-09-08T08:11:09.358380+00:00",
+      "sources": [
+        {
+          "url": "https://data.laposte.fr/datasets/laposte-poincont2",
+          "titre": "Liste officielle des points de contact La Poste",
+          "source": "La Poste Open Data",
+          "date": "2026-09-08",
+          "tier": "D"
+        }
+      ],
+      "controle_sirene": {
+        "etat_administratif": null,
+        "siret": null,
+        "source": "SIRENE"
+      },
+      "region": "Occitanie"
+    },
+    {
+      "id": "6efd7340b6d34428",
+      "banque": "La Banque Postale",
+      "commune": "GROISY",
+      "code_insee": "74137",
+      "departement": "74",
+      "type": "fermeture",
+      "date_annonce": "2026-09-08",
+      "date_fermeture": "2026-09-08",
+      "statut": "confirmé",
+      "statut_temporel": "deja_fermee",
+      "date_fermeture_approx": 1,
+      "fiabilite": 5,
+      "lat": 46.0103,
+      "lon": 6.1729,
+      "citation": "Le point GROISY BP a disparu de deux révisions successives du référentiel officiel La Poste.",
+      "adresse": "280 RUE DE BOISY",
+      "agence_localisation": "GROISY BP",
+      "commune_originale": null,
+      "service_impact": "fermeture_lbp_complete",
+      "point_postal_avant": "Bureau de Poste",
+      "point_postal_apres": null,
+      "postal_point_id": "14052A",
+      "evidence_level": "officiel",
+      "created_at": "2026-09-08T08:11:09.364510+00:00",
+      "sources": [
+        {
+          "url": "https://data.laposte.fr/datasets/laposte-poincont2",
+          "titre": "Liste officielle des points de contact La Poste",
+          "source": "La Poste Open Data",
+          "date": "2026-09-08",
+          "tier": "D"
+        }
+      ],
+      "controle_sirene": {
+        "etat_administratif": null,
+        "siret": null,
+        "source": "SIRENE"
+      },
+      "region": "Auvergne-Rhône-Alpes"
+    },
+    {
+      "id": "2bb889bb6786b2e8",
+      "banque": "La Banque Postale",
+      "commune": "THOMERY",
+      "code_insee": "77463",
+      "departement": "77",
+      "type": "fermeture",
+      "date_annonce": "2026-09-08",
+      "date_fermeture": "2026-09-08",
+      "statut": "confirmé",
+      "statut_temporel": "deja_fermee",
+      "date_fermeture_approx": 1,
+      "fiabilite": 5,
+      "lat": 48.4102,
+      "lon": 2.7858,
+      "citation": "Le point THOMERY BP a disparu de deux révisions successives du référentiel officiel La Poste.",
+      "adresse": "PLACE GREFFULHE",
+      "agence_localisation": "THOMERY BP",
+      "commune_originale": null,
+      "service_impact": "fermeture_lbp_complete",
+      "point_postal_avant": "Bureau de Poste",
+      "point_postal_apres": null,
+      "postal_point_id": "14828A",
+      "evidence_level": "officiel",
+      "created_at": "2026-09-08T08:11:09.374510+00:00",
+      "sources": [
+        {
+          "url": "https://data.laposte.fr/datasets/laposte-poincont2",
+          "titre": "Liste officielle des points de contact La Poste",
+          "source": "La Poste Open Data",
+          "date": "2026-09-08",
+          "tier": "D"
+        }
+      ],
+      "controle_sirene": {
+        "etat_administratif": null,
+        "siret": null,
+        "source": "SIRENE"
+      },
+      "region": "Île-de-France"
+    },
+    {
+      "id": "5724cba43370ccf5",
+      "banque": "La Banque Postale",
+      "commune": "ST SATURNIN LES APT",
+      "code_insee": "84118",
+      "departement": "84",
+      "type": "fermeture",
+      "date_annonce": "2026-09-08",
+      "date_fermeture": "2026-09-08",
+      "statut": "confirmé",
+      "statut_temporel": "deja_fermee",
+      "date_fermeture_approx": 1,
+      "fiabilite": 5,
+      "lat": 43.942279,
+      "lon": 5.382306,
+      "citation": "Le point SAINT SATURNIN LES APT BP a disparu de deux révisions successives du référentiel officiel La Poste.",
+      "adresse": "1 PLACE DU SOUVENIR",
+      "agence_localisation": "SAINT SATURNIN LES APT BP",
+      "commune_originale": null,
+      "service_impact": "fermeture_lbp_complete",
+      "point_postal_avant": "Bureau de Poste",
+      "point_postal_apres": null,
+      "postal_point_id": "15924A",
+      "evidence_level": "officiel",
+      "created_at": "2026-09-08T08:11:09.385264+00:00",
+      "sources": [
+        {
+          "url": "https://data.laposte.fr/datasets/laposte-poincont2",
+          "titre": "Liste officielle des points de contact La Poste",
+          "source": "La Poste Open Data",
+          "date": "2026-09-08",
+          "tier": "D"
+        }
+      ],
+      "controle_sirene": {
+        "etat_administratif": null,
+        "siret": null,
+        "source": "SIRENE"
+      },
+      "region": "Provence-Alpes-Côte d'Azur"
+    },
+    {
+      "id": "db2bbb9974be8462",
+      "banque": "La Banque Postale",
+      "commune": "NOMEXY",
+      "code_insee": "88327",
+      "departement": "88",
+      "type": "fermeture",
+      "date_annonce": "2026-09-08",
+      "date_fermeture": "2026-09-08",
+      "statut": "confirmé",
+      "statut_temporel": "deja_fermee",
+      "date_fermeture_approx": 1,
+      "fiabilite": 5,
+      "lat": 48.305506,
+      "lon": 6.38326,
+      "citation": "Le point NOMEXY BP a disparu de deux révisions successives du référentiel officiel La Poste.",
+      "adresse": "6 RUE DU DOCTEUR LOUVARD",
+      "agence_localisation": "NOMEXY BP",
+      "commune_originale": null,
+      "service_impact": "fermeture_lbp_complete",
+      "point_postal_avant": "Bureau de Poste",
+      "point_postal_apres": null,
+      "postal_point_id": "16620A",
+      "evidence_level": "officiel",
+      "created_at": "2026-09-08T08:11:09.388111+00:00",
+      "sources": [
+        {
+          "url": "https://data.laposte.fr/datasets/laposte-poincont2",
+          "titre": "Liste officielle des points de contact La Poste",
+          "source": "La Poste Open Data",
+          "date": "2026-09-08",
+          "tier": "D"
+        }
+      ],
+      "controle_sirene": {
+        "etat_administratif": null,
+        "siret": null,
+        "source": "SIRENE"
+      },
+      "region": "Grand Est"
     }
   ],
   "closures_unlocated": [
@@ -11285,7 +12022,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-07T09:19:03.888927+00:00"
+      "created_at": "2026-09-08T08:10:18.303758+00:00"
     },
     {
       "id": "50895c042a984b7d",
@@ -11321,7 +12058,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 04:46:02 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-07T09:19:03.287356+00:00"
+      "created_at": "2026-09-08T08:10:17.951992+00:00"
     },
     {
       "id": "8c6a0cad14626d6f",
@@ -11412,24 +12149,6 @@
       "date": "Tue, 11 Feb 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
       "created_at": "2026-08-10T05:51:05.494421+00:00"
-    },
-    {
-      "id": "30b39fcbb7a0c276",
-      "banque": "La Banque Postale",
-      "commune": "Besançon",
-      "departement": "25",
-      "type": "fermeture",
-      "date_fermeture": null,
-      "statut": "projet",
-      "statut_temporel": "inconnu",
-      "fiabilite": 3,
-      "citation": "La colère monte face à la fermeture du bureau de Poste de la rue Demangel à Besançon - L'Est Républicain",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPZ09IZ1JnWEptWEFSWTBORWdZeFdSVTR5TVU3R0pnUWNRRHBOd1ZwY2VBNGJSVWFQR2JXYlRKbkU4blRoRlFEMHlUVnA4bjZ5dGVmMDhnNng5R0VZVmQwTDdscEJyN25ISnhNekVmQXpHbkxPVnpQZkVZN0RkOWpYaHpGUlFGblg0aVkwa3FEb0I4Y2M2UTVLbmtHMkIxNGVISURYU3VtTk50ZmdRcExOSzFqUVI?oc=5",
-      "titre": "La colère monte face à la fermeture du bureau de Poste de la rue Demangel à Besançon - L'Est Républicain",
-      "source": "Google News",
-      "date": "Tue, 10 Sep 2024 07:00:00 GMT",
-      "raison": "hors fenêtre temporelle",
-      "created_at": "2026-07-22T09:02:01.118029+00:00"
     },
     {
       "id": "da5fe6e44294ef77",
@@ -12582,24 +13301,6 @@
       "date": "Sun, 12 Oct 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
       "created_at": "2026-07-22T09:08:12.100499+00:00"
-    },
-    {
-      "id": "0c1fd1ce09ee93e0",
-      "banque": "La Banque Postale",
-      "commune": "Besançon",
-      "departement": "25",
-      "type": "fermeture",
-      "date_fermeture": null,
-      "statut": "projet",
-      "statut_temporel": "inconnu",
-      "fiabilite": 3,
-      "citation": "Besançon. Deux semaines de fermeture pour le bureau de poste de Planoise - L'Est Républicain",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOQ09EN2dEYWhJTmI1TEtUcGNWOFNDQ0tjOGtPWU1SMTVDRE5aUzlVdHV2U0ZUTHZ3RFdzbFJrVjlheTAxSXNyWTNNcnpWM1VZaEVjbU5mN1ZpcHpBeVVTYzdFM09HVkdMbWZiX05pb2NJT2dQMUtZQ1JLZWZSSnlic1ZIUlF3LUpSWVQyWXY1Vk1nX0ZUNVktV2tVSmtSaUtLM2I1aVd0UGJlUTJmN1BOdC1B?oc=5",
-      "titre": "Besançon. Deux semaines de fermeture pour le bureau de poste de Planoise - L'Est Républicain",
-      "source": "Google News",
-      "date": "Sun, 10 Nov 2024 08:00:00 GMT",
-      "raison": "hors fenêtre temporelle",
-      "created_at": "2026-07-22T09:07:20.948783+00:00"
     },
     {
       "id": "50b16c876d283ce3",
@@ -13822,8 +14523,8 @@
       "titre": "La mobilisation des habitants a été vaine, le bureau de poste du quartier Saint-Marc, à Saint-Nazaire, ferme ses portes - ici.fr",
       "source": "Google News",
       "date": "Fri, 20 Jun 2025 07:00:00 GMT",
-      "raison": "garde entrée/sortie: commune/localisation de sortie absente de la source",
-      "created_at": "2026-09-07T09:19:11.858598+00:00"
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-09-08T08:10:24.573308+00:00"
     },
     {
       "id": "b70960ea48a1a247",
@@ -13949,7 +14650,7 @@
       "source": "Google News",
       "date": "Fri, 10 Jul 2026 10:12:00 GMT",
       "raison": "garde entrée/sortie: département source 44 incompatible avec la sortie 974",
-      "created_at": "2026-09-07T09:19:33.453881+00:00"
+      "created_at": "2026-09-08T08:10:40.220687+00:00"
     },
     {
       "id": "8c646081e1d69e81",
@@ -14165,7 +14866,7 @@
       "source": "Google News",
       "date": "Fri, 03 Jan 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-07T09:19:02.931998+00:00"
+      "created_at": "2026-09-08T08:10:17.612214+00:00"
     },
     {
       "id": "411db107f70f2387",
@@ -14832,24 +15533,6 @@
       "date": "2025-12-14",
       "raison": "hors fenêtre temporelle",
       "created_at": "2026-08-31T11:04:10.575649+00:00"
-    },
-    {
-      "id": "412d9ef393339181",
-      "banque": "La Banque Postale",
-      "commune": "Besançon",
-      "departement": "25",
-      "type": "fermeture",
-      "date_fermeture": null,
-      "statut": "projet",
-      "statut_temporel": "inconnu",
-      "fiabilite": 3,
-      "citation": "\"On parle souvent des petites communes mais là on est à Besançon\" : ils s'opposent à la fermeture d'un bureau de poste en ville",
-      "url": "https://france3-regions.francetvinfo.fr/bourgogne-franche-comte/doubs/on-parle-souvent-des-petites-communes-mais-la-on-est-a-besancon-ils-s-opposent-a-la-fermeture-d-un-bureau-de-poste-en-ville-2973077.html",
-      "titre": "\"On parle souvent des petites communes mais là on est à Besançon\" : ils s'opposent à la fermeture d'un bureau de poste en ville",
-      "source": "france3-regions.francetvinfo.fr",
-      "date": "2024-09-20",
-      "raison": "hors fenêtre temporelle",
-      "created_at": "2026-08-10T05:56:54.400258+00:00"
     }
   ],
   "department_signals": [
@@ -16994,6 +17677,422 @@
     }
   ],
   "vigilances": [
+    {
+      "id": "b1c7bdd28e284ab9",
+      "banque": "La Banque Postale",
+      "departement": "08",
+      "titre": "Disparition à confirmer du bureau de poste VIVIER AU COURT BP",
+      "extrait": "Le bureau de poste n'apparaît plus dans la dernière révision du référentiel officiel. Une seconde révision ou une source locale est requise.",
+      "url": "https://data.laposte.fr/datasets/laposte-poincont2?point=01268A",
+      "source": "La Poste Open Data",
+      "date": "2026-09-08",
+      "score": 5,
+      "raison": "disparition officielle à confirmer",
+      "created_at": "2026-09-08T08:11:09.254714+00:00"
+    },
+    {
+      "id": "5228a4989fbf2ca5",
+      "banque": "La Banque Postale",
+      "departement": "18",
+      "titre": "Disparition à confirmer du bureau de poste VIERZON BOURGNEUF BP",
+      "extrait": "Le bureau de poste n'apparaît plus dans la dernière révision du référentiel officiel. Une seconde révision ou une source locale est requise.",
+      "url": "https://data.laposte.fr/datasets/laposte-poincont2?point=03135A",
+      "source": "La Poste Open Data",
+      "date": "2026-09-08",
+      "score": 5,
+      "raison": "disparition officielle à confirmer",
+      "created_at": "2026-09-08T08:11:09.288362+00:00"
+    },
+    {
+      "id": "4dae17960f5df7dd",
+      "banque": "La Banque Postale",
+      "departement": "25",
+      "titre": "Disparition à confirmer du bureau de poste DEVECEY BP",
+      "extrait": "Le bureau de poste n'apparaît plus dans la dernière révision du référentiel officiel. Une seconde révision ou une source locale est requise.",
+      "url": "https://data.laposte.fr/datasets/laposte-poincont2?point=04358A",
+      "source": "La Poste Open Data",
+      "date": "2026-09-08",
+      "score": 5,
+      "raison": "disparition officielle à confirmer",
+      "created_at": "2026-09-08T08:11:09.292651+00:00"
+    },
+    {
+      "id": "2497b41f94c92cc2",
+      "banque": "La Banque Postale",
+      "departement": "27",
+      "titre": "Disparition à confirmer du bureau de poste GASNY BP",
+      "extrait": "Le bureau de poste n'apparaît plus dans la dernière révision du référentiel officiel. Une seconde révision ou une source locale est requise.",
+      "url": "https://data.laposte.fr/datasets/laposte-poincont2?point=04718A",
+      "source": "La Poste Open Data",
+      "date": "2026-09-08",
+      "score": 5,
+      "raison": "disparition officielle à confirmer",
+      "created_at": "2026-09-08T08:11:09.299723+00:00"
+    },
+    {
+      "id": "d1f7c58d59f489e3",
+      "banque": "La Banque Postale",
+      "departement": "27",
+      "titre": "Disparition à confirmer du bureau de poste LA NEUVE LYRE BP",
+      "extrait": "Le bureau de poste n'apparaît plus dans la dernière révision du référentiel officiel. Une seconde révision ou une source locale est requise.",
+      "url": "https://data.laposte.fr/datasets/laposte-poincont2?point=04749A",
+      "source": "La Poste Open Data",
+      "date": "2026-09-08",
+      "score": 5,
+      "raison": "disparition officielle à confirmer",
+      "created_at": "2026-09-08T08:11:09.301400+00:00"
+    },
+    {
+      "id": "e6b86492491cd136",
+      "banque": "La Banque Postale",
+      "departement": "30",
+      "titre": "Disparition à confirmer du bureau de poste ALES TAMARIS BP",
+      "extrait": "Le bureau de poste n'apparaît plus dans la dernière révision du référentiel officiel. Une seconde révision ou une source locale est requise.",
+      "url": "https://data.laposte.fr/datasets/laposte-poincont2?point=05398A",
+      "source": "La Poste Open Data",
+      "date": "2026-09-08",
+      "score": 5,
+      "raison": "disparition officielle à confirmer",
+      "created_at": "2026-09-08T08:11:09.303118+00:00"
+    },
+    {
+      "id": "471814adc5c6742d",
+      "banque": "La Banque Postale",
+      "departement": "31",
+      "titre": "Disparition à confirmer du bureau de poste MONTGISCARD BP",
+      "extrait": "Le bureau de poste n'apparaît plus dans la dernière révision du référentiel officiel. Une seconde révision ou une source locale est requise.",
+      "url": "https://data.laposte.fr/datasets/laposte-poincont2?point=05542A",
+      "source": "La Poste Open Data",
+      "date": "2026-09-08",
+      "score": 5,
+      "raison": "disparition officielle à confirmer",
+      "created_at": "2026-09-08T08:11:09.305047+00:00"
+    },
+    {
+      "id": "7e9c82114a6601fa",
+      "banque": "La Banque Postale",
+      "departement": "41",
+      "titre": "Disparition à confirmer du bureau de poste SAINT CLAUDE DE DIRAY BP",
+      "extrait": "Le bureau de poste n'apparaît plus dans la dernière révision du référentiel officiel. Une seconde révision ou une source locale est requise.",
+      "url": "https://data.laposte.fr/datasets/laposte-poincont2?point=07777A",
+      "source": "La Poste Open Data",
+      "date": "2026-09-08",
+      "score": 5,
+      "raison": "disparition officielle à confirmer",
+      "created_at": "2026-09-08T08:11:09.307058+00:00"
+    },
+    {
+      "id": "051319aebb1b15f5",
+      "banque": "La Banque Postale",
+      "departement": "43",
+      "titre": "Disparition à confirmer du bureau de poste LOUDES BP",
+      "extrait": "Le bureau de poste n'apparaît plus dans la dernière révision du référentiel officiel. Une seconde révision ou une source locale est requise.",
+      "url": "https://data.laposte.fr/datasets/laposte-poincont2?point=08078A",
+      "source": "La Poste Open Data",
+      "date": "2026-09-08",
+      "score": 5,
+      "raison": "disparition officielle à confirmer",
+      "created_at": "2026-09-08T08:11:09.311656+00:00"
+    },
+    {
+      "id": "fab80dee4b63c419",
+      "banque": "La Banque Postale",
+      "departement": "44",
+      "titre": "Disparition à confirmer du bureau de poste SAINT ANDRE DES EAUX BP",
+      "extrait": "Le bureau de poste n'apparaît plus dans la dernière révision du référentiel officiel. Une seconde révision ou une source locale est requise.",
+      "url": "https://data.laposte.fr/datasets/laposte-poincont2?point=08281A",
+      "source": "La Poste Open Data",
+      "date": "2026-09-08",
+      "score": 5,
+      "raison": "disparition officielle à confirmer",
+      "created_at": "2026-09-08T08:11:09.316469+00:00"
+    },
+    {
+      "id": "a702c288d965a1fa",
+      "banque": "La Banque Postale",
+      "departement": "44",
+      "titre": "Disparition à confirmer du bureau de poste NANTES REPUBLIQUE BP",
+      "extrait": "Le bureau de poste n'apparaît plus dans la dernière révision du référentiel officiel. Une seconde révision ou une source locale est requise.",
+      "url": "https://data.laposte.fr/datasets/laposte-poincont2?point=08380A",
+      "source": "La Poste Open Data",
+      "date": "2026-09-08",
+      "score": 5,
+      "raison": "disparition officielle à confirmer",
+      "created_at": "2026-09-08T08:11:09.318715+00:00"
+    },
+    {
+      "id": "378f1d576e9856ae",
+      "banque": "La Banque Postale",
+      "departement": "44",
+      "titre": "Disparition à confirmer du bureau de poste SAINT NAZAIRE SAINT MARC BP",
+      "extrait": "Le bureau de poste n'apparaît plus dans la dernière révision du référentiel officiel. Une seconde révision ou une source locale est requise.",
+      "url": "https://data.laposte.fr/datasets/laposte-poincont2?point=08382A",
+      "source": "La Poste Open Data",
+      "date": "2026-09-08",
+      "score": 5,
+      "raison": "disparition officielle à confirmer",
+      "created_at": "2026-09-08T08:11:09.320459+00:00"
+    },
+    {
+      "id": "6d4423a555735b4a",
+      "banque": "La Banque Postale",
+      "departement": "44",
+      "titre": "Disparition à confirmer du bureau de poste SAINT NAZAIRE IMMACULEE BP",
+      "extrait": "Le bureau de poste n'apparaît plus dans la dernière révision du référentiel officiel. Une seconde révision ou une source locale est requise.",
+      "url": "https://data.laposte.fr/datasets/laposte-poincont2?point=08396A",
+      "source": "La Poste Open Data",
+      "date": "2026-09-08",
+      "score": 5,
+      "raison": "disparition officielle à confirmer",
+      "created_at": "2026-09-08T08:11:09.322549+00:00"
+    },
+    {
+      "id": "4b376be859e4e9f1",
+      "banque": "La Banque Postale",
+      "departement": "49",
+      "titre": "Disparition à confirmer du bureau de poste VIVY BP",
+      "extrait": "Le bureau de poste n'apparaît plus dans la dernière révision du référentiel officiel. Une seconde révision ou une source locale est requise.",
+      "url": "https://data.laposte.fr/datasets/laposte-poincont2?point=09149A",
+      "source": "La Poste Open Data",
+      "date": "2026-09-08",
+      "score": 5,
+      "raison": "disparition officielle à confirmer",
+      "created_at": "2026-09-08T08:11:09.324298+00:00"
+    },
+    {
+      "id": "4a4e030ac17d6bf4",
+      "banque": "La Banque Postale",
+      "departement": "54",
+      "titre": "Disparition à confirmer du bureau de poste LAXOU PRINCIPAL BP",
+      "extrait": "Le bureau de poste n'apparaît plus dans la dernière révision du référentiel officiel. Une seconde révision ou une source locale est requise.",
+      "url": "https://data.laposte.fr/datasets/laposte-poincont2?point=09832A",
+      "source": "La Poste Open Data",
+      "date": "2026-09-08",
+      "score": 5,
+      "raison": "disparition officielle à confirmer",
+      "created_at": "2026-09-08T08:11:09.328645+00:00"
+    },
+    {
+      "id": "e3228e9d9a8a2fb6",
+      "banque": "La Banque Postale",
+      "departement": "57",
+      "titre": "Disparition à confirmer du bureau de poste METZ LES HALLES BP",
+      "extrait": "Le bureau de poste n'apparaît plus dans la dernière révision du référentiel officiel. Une seconde révision ou une source locale est requise.",
+      "url": "https://data.laposte.fr/datasets/laposte-poincont2?point=10510A",
+      "source": "La Poste Open Data",
+      "date": "2026-09-08",
+      "score": 5,
+      "raison": "disparition officielle à confirmer",
+      "created_at": "2026-09-08T08:11:09.339894+00:00"
+    },
+    {
+      "id": "715e34c1623accd4",
+      "banque": "La Banque Postale",
+      "departement": "59",
+      "titre": "Disparition à confirmer du bureau de poste MONCHECOURT BP",
+      "extrait": "Le bureau de poste n'apparaît plus dans la dernière révision du référentiel officiel. Une seconde révision ou une source locale est requise.",
+      "url": "https://data.laposte.fr/datasets/laposte-poincont2?point=10895A",
+      "source": "La Poste Open Data",
+      "date": "2026-09-08",
+      "score": 5,
+      "raison": "disparition officielle à confirmer",
+      "created_at": "2026-09-08T08:11:09.348546+00:00"
+    },
+    {
+      "id": "73dac2da6d7be6b9",
+      "banque": "La Banque Postale",
+      "departement": "60",
+      "titre": "Disparition à confirmer du bureau de poste PLAILLY BP",
+      "extrait": "Le bureau de poste n'apparaît plus dans la dernière révision du référentiel officiel. Une seconde révision ou une source locale est requise.",
+      "url": "https://data.laposte.fr/datasets/laposte-poincont2?point=11244A",
+      "source": "La Poste Open Data",
+      "date": "2026-09-08",
+      "score": 5,
+      "raison": "disparition officielle à confirmer",
+      "created_at": "2026-09-08T08:11:09.354347+00:00"
+    },
+    {
+      "id": "7a4a45e9690c560b",
+      "banque": "La Banque Postale",
+      "departement": "63",
+      "titre": "Disparition à confirmer du bureau de poste CLERMONT FERRAND GARE BP",
+      "extrait": "Le bureau de poste n'apparaît plus dans la dernière révision du référentiel officiel. Une seconde révision ou une source locale est requise.",
+      "url": "https://data.laposte.fr/datasets/laposte-poincont2?point=11980A",
+      "source": "La Poste Open Data",
+      "date": "2026-09-08",
+      "score": 5,
+      "raison": "disparition officielle à confirmer",
+      "created_at": "2026-09-08T08:11:09.356304+00:00"
+    },
+    {
+      "id": "af2eb6bb6648ab59",
+      "banque": "La Banque Postale",
+      "departement": "67",
+      "titre": "Disparition à confirmer du bureau de poste STRASBOURG PL HALLES BP",
+      "extrait": "Le bureau de poste n'apparaît plus dans la dernière révision du référentiel officiel. Une seconde révision ou une source locale est requise.",
+      "url": "https://data.laposte.fr/datasets/laposte-poincont2?point=12722A",
+      "source": "La Poste Open Data",
+      "date": "2026-09-08",
+      "score": 5,
+      "raison": "disparition officielle à confirmer",
+      "created_at": "2026-09-08T08:11:09.361312+00:00"
+    },
+    {
+      "id": "138e38dd477bc83c",
+      "banque": "La Banque Postale",
+      "departement": "74",
+      "titre": "Disparition à confirmer du bureau de poste MARGENCEL BP",
+      "extrait": "Le bureau de poste n'apparaît plus dans la dernière révision du référentiel officiel. Une seconde révision ou une source locale est requise.",
+      "url": "https://data.laposte.fr/datasets/laposte-poincont2?point=14064A",
+      "source": "La Poste Open Data",
+      "date": "2026-09-08",
+      "score": 5,
+      "raison": "disparition officielle à confirmer",
+      "created_at": "2026-09-08T08:11:09.367062+00:00"
+    },
+    {
+      "id": "9dd1495f3e51f498",
+      "banque": "La Banque Postale",
+      "departement": "93",
+      "titre": "Disparition à confirmer du bureau de poste AULNAY O' PARINOR TOUT AUTOMATE BP",
+      "extrait": "Le bureau de poste n'apparaît plus dans la dernière révision du référentiel officiel. Une seconde révision ou une source locale est requise.",
+      "url": "https://data.laposte.fr/datasets/laposte-poincont2?point=14588D",
+      "source": "La Poste Open Data",
+      "date": "2026-09-08",
+      "score": 5,
+      "raison": "disparition officielle à confirmer",
+      "created_at": "2026-09-08T08:11:09.369007+00:00"
+    },
+    {
+      "id": "73e6176978254ca5",
+      "banque": "La Banque Postale",
+      "departement": "76",
+      "titre": "Disparition à confirmer du bureau de poste ROUEN HOTEL DE VILLE BP",
+      "extrait": "Le bureau de poste n'apparaît plus dans la dernière révision du référentiel officiel. Une seconde révision ou une source locale est requise.",
+      "url": "https://data.laposte.fr/datasets/laposte-poincont2?point=14614A",
+      "source": "La Poste Open Data",
+      "date": "2026-09-08",
+      "score": 5,
+      "raison": "disparition officielle à confirmer",
+      "created_at": "2026-09-08T08:11:09.370830+00:00"
+    },
+    {
+      "id": "678c655686a56984",
+      "banque": "La Banque Postale",
+      "departement": "76",
+      "titre": "Disparition à confirmer du bureau de poste ROUEN GRIEU BP",
+      "extrait": "Le bureau de poste n'apparaît plus dans la dernière révision du référentiel officiel. Une seconde révision ou une source locale est requise.",
+      "url": "https://data.laposte.fr/datasets/laposte-poincont2?point=14632A",
+      "source": "La Poste Open Data",
+      "date": "2026-09-08",
+      "score": 5,
+      "raison": "disparition officielle à confirmer",
+      "created_at": "2026-09-08T08:11:09.372491+00:00"
+    },
+    {
+      "id": "59df7d85d4481024",
+      "banque": "La Banque Postale",
+      "departement": "77",
+      "titre": "Disparition à confirmer du bureau de poste COMBS LA VILLE REPUBLIQUE BP",
+      "extrait": "Le bureau de poste n'apparaît plus dans la dernière révision du référentiel officiel. Une seconde révision ou une source locale est requise.",
+      "url": "https://data.laposte.fr/datasets/laposte-poincont2?point=14887A",
+      "source": "La Poste Open Data",
+      "date": "2026-09-08",
+      "score": 5,
+      "raison": "disparition officielle à confirmer",
+      "created_at": "2026-09-08T08:11:09.377116+00:00"
+    },
+    {
+      "id": "40cbfff5b6d3e812",
+      "banque": "La Banque Postale",
+      "departement": "79",
+      "titre": "Disparition à confirmer du bureau de poste NIORT SAINTE PEZENNE BP",
+      "extrait": "Le bureau de poste n'apparaît plus dans la dernière révision du référentiel officiel. Une seconde révision ou une source locale est requise.",
+      "url": "https://data.laposte.fr/datasets/laposte-poincont2?point=15206A",
+      "source": "La Poste Open Data",
+      "date": "2026-09-08",
+      "score": 5,
+      "raison": "disparition officielle à confirmer",
+      "created_at": "2026-09-08T08:11:09.379234+00:00"
+    },
+    {
+      "id": "4b98f1d37a4c91cf",
+      "banque": "La Banque Postale",
+      "departement": "81",
+      "titre": "Disparition à confirmer du bureau de poste DOURGNE BP",
+      "extrait": "Le bureau de poste n'apparaît plus dans la dernière révision du référentiel officiel. Une seconde révision ou une source locale est requise.",
+      "url": "https://data.laposte.fr/datasets/laposte-poincont2?point=15433A",
+      "source": "La Poste Open Data",
+      "date": "2026-09-08",
+      "score": 5,
+      "raison": "disparition officielle à confirmer",
+      "created_at": "2026-09-08T08:11:09.381081+00:00"
+    },
+    {
+      "id": "64a766da86c44578",
+      "banque": "La Banque Postale",
+      "departement": "94",
+      "titre": "Disparition à confirmer du bureau de poste NOGENT CORNER INSTANCES TEMPORAIRE BP",
+      "extrait": "Le bureau de poste n'apparaît plus dans la dernière révision du référentiel officiel. Une seconde révision ou une source locale est requise.",
+      "url": "https://data.laposte.fr/datasets/laposte-poincont2?point=15598D",
+      "source": "La Poste Open Data",
+      "date": "2026-09-08",
+      "score": 5,
+      "raison": "disparition officielle à confirmer",
+      "created_at": "2026-09-08T08:11:09.383073+00:00"
+    },
+    {
+      "id": "524134ac2fab8465",
+      "banque": "La Banque Postale",
+      "departement": "91",
+      "titre": "Disparition à confirmer du bureau de poste EVRY HOTEL DE VILLE BP",
+      "extrait": "Le bureau de poste n'apparaît plus dans la dernière révision du référentiel officiel. Une seconde révision ou une source locale est requise.",
+      "url": "https://data.laposte.fr/datasets/laposte-poincont2?point=16913A",
+      "source": "La Poste Open Data",
+      "date": "2026-09-08",
+      "score": 5,
+      "raison": "disparition officielle à confirmer",
+      "created_at": "2026-09-08T08:11:09.390740+00:00"
+    },
+    {
+      "id": "ab9528ad24677c17",
+      "banque": "La Banque Postale",
+      "departement": "92",
+      "titre": "Disparition à confirmer du bureau de poste VILLE D AVRAY BP",
+      "extrait": "Le bureau de poste n'apparaît plus dans la dernière révision du référentiel officiel. Une seconde révision ou une source locale est requise.",
+      "url": "https://data.laposte.fr/datasets/laposte-poincont2?point=17099A",
+      "source": "La Poste Open Data",
+      "date": "2026-09-08",
+      "score": 5,
+      "raison": "disparition officielle à confirmer",
+      "created_at": "2026-09-08T08:11:09.392823+00:00"
+    },
+    {
+      "id": "8252ad52ce113178",
+      "banque": "La Banque Postale",
+      "departement": "95",
+      "titre": "Disparition à confirmer du bureau de poste CHAMPAGNE SUR OISE BP",
+      "extrait": "Le bureau de poste n'apparaît plus dans la dernière révision du référentiel officiel. Une seconde révision ou une source locale est requise.",
+      "url": "https://data.laposte.fr/datasets/laposte-poincont2?point=17440A",
+      "source": "La Poste Open Data",
+      "date": "2026-09-08",
+      "score": 5,
+      "raison": "disparition officielle à confirmer",
+      "created_at": "2026-09-08T08:11:09.395455+00:00"
+    },
+    {
+      "id": "dfde52085205ea19",
+      "banque": "La Banque Postale",
+      "departement": "67",
+      "titre": "Disparition à confirmer du bureau de poste STRASBOURG PORTE BLANCHE BP",
+      "extrait": "Le bureau de poste n'apparaît plus dans la dernière révision du référentiel officiel. Une seconde révision ou une source locale est requise.",
+      "url": "https://data.laposte.fr/datasets/laposte-poincont2?point=50743A",
+      "source": "La Poste Open Data",
+      "date": "2026-09-08",
+      "score": 5,
+      "raison": "disparition officielle à confirmer",
+      "created_at": "2026-09-08T08:11:09.398695+00:00"
+    },
     {
       "id": "308842175c77299b",
       "banque": "La Banque Postale",
@@ -26329,6 +27428,19 @@
       "created_at": "2026-06-25T15:33:44.472161+00:00"
     },
     {
+      "id": "059dc8eb46bffb39",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "\"C'est toute une vie qui s'effondre\"... À Montauban, l'imprimerie Techni Print ferme ses portes : 18 salariés perdent leur emploi - ladepeche.fr",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMi-wFBVV95cUxNWTZOZmlwZDc4UUJOc0Q1OGJIbEljdHhTOHQyRVpsNW9JcmpTRlNoczhXdjE5bWZwQ3ptZUgxYjdOcWdielc1SUpoaGFrOWtqR01iNzl2cjR2WnFJc1NYd05kSGE4Rk9OVl92MUJFVlhXNkMxQmdrY0hoajZyZWRDU2pCQlM1djVwelN4bW9SOHhKU1lEMjItOGdxZ0txNWtWbXQyNi1MSU45MG4yMkxNZWxqZEViZTJuWDBYM1UxOVc0NzZoMEZBeVNtdEFmNWhPVTVJblp6WkV6cWl5SjlFc3pSLTdOUlNtSS1pY2ExZlZuT2ZSWHZFSFRoWQ?oc=5\" target=\"_blank\">\"C'est toute une vie qui s'effondre\"... À Montauban, l'imprimerie Techni Print ferme ses ",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNWTZOZmlwZDc4UUJOc0Q1OGJIbEljdHhTOHQyRVpsNW9JcmpTRlNoczhXdjE5bWZwQ3ptZUgxYjdOcWdielc1SUpoaGFrOWtqR01iNzl2cjR2WnFJc1NYd05kSGE4Rk9OVl92MUJFVlhXNkMxQmdrY0hoajZyZWRDU2pCQlM1djVwelN4bW9SOHhKU1lEMjItOGdxZ0txNWtWbXQyNi1MSU45MG4yMkxNZWxqZEViZTJuWDBYM1UxOVc0NzZoMEZBeVNtdEFmNWhPVTVJblp6WkV6cWl5SjlFc3pSLTdOUlNtSS1pY2ExZlZuT2ZSWHZFSFRoWQ?oc=5",
+      "source": "Google News",
+      "date": "Sun, 06 Sep 2026 18:01:00 GMT",
+      "score": 3,
+      "raison": "score préfiltre bas (-2)",
+      "created_at": "2026-09-08T08:13:14.799603+00:00"
+    },
+    {
       "id": "d373fca93351e659",
       "banque": "La Banque Postale",
       "departement": "",
@@ -32580,6 +33692,19 @@
       "score": 3,
       "raison": "fermeture non publiée: hors fenêtre temporelle",
       "created_at": "2026-07-22T09:09:01.159244+00:00"
+    },
+    {
+      "id": "a71306462cecdfec",
+      "banque": "BNP Paribas",
+      "departement": "",
+      "titre": "Face aux crises et aux transformations, les équipes de direction enfin accompagnées avec Calame",
+      "extrait": "Dans un environnement de plus en plus mouvant, la réussite d'une entreprise dépend directement de la cohésion de son sommet. Pourtant, les comités de direction restent souvent les grands oubliés de l'accompagnement. Pour rompre la solitude des décideurs et sécuriser les transformations stratégiques, le cabinet Calame bouscule les codes du coaching traditionnel. Le monde économique est en perpétuelle mutation, marqué par des crises successives et des ruptures technologiques majeures, le rôle des ",
+      "url": "https://www.challenges.fr/partenaires/face-aux-crises-et-aux-transformations-les-equipes-de-direction-enfin-accompagnees-avec-calame_645055",
+      "source": "Challenges",
+      "date": "2026-09-08T07:00:00Z",
+      "score": 3,
+      "raison": "score préfiltre bas (-2)",
+      "created_at": "2026-09-08T08:13:55.178545+00:00"
     },
     {
       "id": "e2fc3eb7812624d0",
@@ -41004,6 +42129,19 @@
       "score": 2,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-06-25T15:43:41.960961+00:00"
+    },
+    {
+      "id": "7553fb9c684392d2",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Épargne salariale : comment le gouvernement veut vous prélever pour financer la Sécurité Sociale",
+      "extrait": "Le gouvernement de Sébastien Lecornu a dévoilé les grandes lignes de son projet de budget pour la Sécu pour 2027 et, parmi les mesures, on en retrouve une qui cible particulièrement l'épargne salariale. L'épargne salariale est dans le viseur du gouvernement ! Le ministre de l'Économie et des Finances, Roland Lescure, a confirmé à RTL ce lundi que Sébastien Lecornu et ses ministres se penchaient actuellement sur le budget 2027 pour la Sécurité sociale avec la possibilité de prélever des cotisatio",
+      "url": "https://www.journaldugeek.com/2026/09/07/epargne-salariale-comment-le-gouvernement-veut-vous-prelever-pour-financer-la-securite-sociale/",
+      "source": "Journal du Geek",
+      "date": "2026-09-07T15:30:11Z",
+      "score": 2,
+      "raison": "score préfiltre bas (-2)",
+      "created_at": "2026-09-08T08:14:11.308302+00:00"
     },
     {
       "id": "50ab44443b152219",
