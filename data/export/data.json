@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-08T08:33:10.228383+00:00",
+  "generated_at": "2026-09-09T08:30:33.210136+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -552,7 +552,7 @@
       "nom": "Nord",
       "region": "Hauts-de-France",
       "count": 7,
-      "total_agences": 325,
+      "total_agences": 324,
       "precise_count": 7,
       "unlocated_count": 1,
       "estimated_count": 8
@@ -5267,7 +5267,7 @@
         }
       ],
       "controle_sirene": {
-        "etat_administratif": null,
+        "etat_administratif": "A",
         "siret": null,
         "source": "SIRENE"
       },
@@ -8296,7 +8296,7 @@
         }
       ],
       "controle_sirene": {
-        "etat_administratif": null,
+        "etat_administratif": "A",
         "siret": null,
         "source": "SIRENE"
       },
@@ -12022,7 +12022,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-08T08:10:18.303758+00:00"
+      "created_at": "2026-09-09T08:14:25.861869+00:00"
     },
     {
       "id": "50895c042a984b7d",
@@ -12058,7 +12058,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 04:46:02 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-08T08:10:17.951992+00:00"
+      "created_at": "2026-09-09T08:14:25.322545+00:00"
     },
     {
       "id": "8c6a0cad14626d6f",
@@ -14524,7 +14524,7 @@
       "source": "Google News",
       "date": "Fri, 20 Jun 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-08T08:10:24.573308+00:00"
+      "created_at": "2026-09-09T08:14:35.027067+00:00"
     },
     {
       "id": "b70960ea48a1a247",
@@ -14649,8 +14649,8 @@
       "titre": "Attention, le bureau de poste ferme ses portes en juillet et en août dans cette commune de Loire-Atlantique - MaVille.com",
       "source": "Google News",
       "date": "Fri, 10 Jul 2026 10:12:00 GMT",
-      "raison": "garde entrée/sortie: département source 44 incompatible avec la sortie 974",
-      "created_at": "2026-09-08T08:10:40.220687+00:00"
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-09-09T08:14:58.901479+00:00"
     },
     {
       "id": "8c646081e1d69e81",
@@ -14866,7 +14866,7 @@
       "source": "Google News",
       "date": "Fri, 03 Jan 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-08T08:10:17.612214+00:00"
+      "created_at": "2026-09-09T08:14:24.807153+00:00"
     },
     {
       "id": "411db107f70f2387",
@@ -33692,6 +33692,19 @@
       "score": 3,
       "raison": "fermeture non publiée: hors fenêtre temporelle",
       "created_at": "2026-07-22T09:09:01.159244+00:00"
+    },
+    {
+      "id": "eac01176657c2a34",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Grève illimitée à la cité scolaire Chantaco de Saint-Jean-de-Luz : \" Ils ne se rendent absolument pas compte de la pénibilité de notre travail \", déplorent les agents de catégorie C",
+      "extrait": "Les agents d'entretien et de restauration de la cité scolaire Chantaco de Saint-Jean-de-Luz ont remis le couvert, ce mardi 8 septembre, bien décidés à convaincre leurs autorités de tutelle (Département des Pyrénées-Atlantiques et Éducation nationale) de revenir sur la suppression de deux des 24 postes jusque-là affectés à leur établissement. Leur quatrième débrayage, décalé d'une trentaine de minutes par rapport à celui de lundi - \" pour entretenir l'effet de surprise \", relevait-on sur le pique",
+      "url": "https://www.sudouest.fr/pyrenees-atlantiques/saint-jean-de-luz/greve-illimitee-a-la-cite-scolaire-chantaco-de-saint-jean-de-luz-ils-ne-se-rendent-absolument-pas-compte-de-la-penibilite-de-notre-travail-deplorent-les-agents-de-categorie-c-30531576.php",
+      "source": "SudOuest.fr",
+      "date": "2026-09-08T14:56:26Z",
+      "score": 3,
+      "raison": "score préfiltre bas (-2)",
+      "created_at": "2026-09-09T08:19:03.099375+00:00"
     },
     {
       "id": "a71306462cecdfec",
