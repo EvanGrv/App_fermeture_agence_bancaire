@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T08:30:33.210136+00:00",
+  "generated_at": "2026-09-10T08:28:11.507247+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -11377,6 +11377,24 @@
       "created_at": "2026-07-23T06:13:04.223700+00:00"
     },
     {
+      "id": "a634ce1b6096fea9",
+      "banque": "La Banque Postale",
+      "commune": "Saint-Saturnin-lès-Avignon",
+      "departement": "84",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "“La fermeture du bureau de poste n’est pas du tout envisagée” à Saint-Saturnin-lès-Avignon - Le Dauphiné Libéré",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNNndwcGRrV3luQ1lxQjJvSjZCNGZJM2VmYTBDelFLYXBZaUJwcElyb3hqUjhKSUdoUjVOLUZTSkVfWktiYklPSDF0NU0tbGpXRjBDZ0VMWGNfbnB3OHQxNEh5T2x1S0FFWjN1cW5sbTh3RlZYOE4yZXFlMXJfYnloSTVpdkJpTzg5dFZsZVN6emFTWlpyR0JqbFBlQi0tRW43OUttX3BHVkVhamM?oc=5",
+      "titre": "“La fermeture du bureau de poste n’est pas du tout envisagée” à Saint-Saturnin-lès-Avignon - Le Dauphiné Libéré",
+      "source": "Google News",
+      "date": "Wed, 09 Sep 2026 06:54:36 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-09-10T08:16:36.255261+00:00"
+    },
+    {
       "id": "4555e1a7149d45f0",
       "banque": "La Banque Postale",
       "commune": "Dauphin",
@@ -12022,7 +12040,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-09T08:14:25.861869+00:00"
+      "created_at": "2026-09-10T08:13:38.622338+00:00"
     },
     {
       "id": "50895c042a984b7d",
@@ -12058,7 +12076,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 04:46:02 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-09T08:14:25.322545+00:00"
+      "created_at": "2026-09-10T08:13:38.277294+00:00"
     },
     {
       "id": "8c6a0cad14626d6f",
@@ -14524,7 +14542,7 @@
       "source": "Google News",
       "date": "Fri, 20 Jun 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-09T08:14:35.027067+00:00"
+      "created_at": "2026-09-10T08:13:44.468117+00:00"
     },
     {
       "id": "b70960ea48a1a247",
@@ -14650,7 +14668,7 @@
       "source": "Google News",
       "date": "Fri, 10 Jul 2026 10:12:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-09T08:14:58.901479+00:00"
+      "created_at": "2026-09-10T08:14:00.613605+00:00"
     },
     {
       "id": "8c646081e1d69e81",
@@ -14866,7 +14884,7 @@
       "source": "Google News",
       "date": "Fri, 03 Jan 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-09T08:14:24.807153+00:00"
+      "created_at": "2026-09-10T08:13:37.919620+00:00"
     },
     {
       "id": "411db107f70f2387",
@@ -14939,6 +14957,24 @@
       "date": "Fri, 01 Aug 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
       "created_at": "2026-07-27T07:56:36.407534+00:00"
+    },
+    {
+      "id": "457fc4f27c41b457",
+      "banque": "La Banque Postale",
+      "commune": "Saint-Saturnin-lès-Avignon",
+      "departement": "84",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "Vaucluse. \"La fermeture du bureau de poste n'est pas du tout envisagée\" à Saint-Saturnin-lès-Avignon",
+      "url": "https://www.ledauphine.com/politique/2026/09/09/la-fermeture-du-bureau-de-poste-n-est-pas-du-tout-envisagee",
+      "titre": "Vaucluse. \"La fermeture du bureau de poste n'est pas du tout envisagée\" à Saint-Saturnin-lès-Avignon",
+      "source": "Le Dauphiné Libéré",
+      "date": "2026-09-09T15:30:00Z",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-09-10T08:17:22.096500+00:00"
     },
     {
       "id": "4895ce094ba7a72a",
