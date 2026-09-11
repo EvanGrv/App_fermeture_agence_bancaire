@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T08:28:11.507247+00:00",
+  "generated_at": "2026-09-11T08:26:36.815389+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -362,11 +362,11 @@
     "38": {
       "nom": "Isère",
       "region": "Auvergne-Rhône-Alpes",
-      "count": 1,
+      "count": 2,
       "total_agences": 154,
-      "precise_count": 1,
+      "precise_count": 2,
       "unlocated_count": 0,
-      "estimated_count": 1
+      "estimated_count": 2
     },
     "39": {
       "nom": "Jura",
@@ -1314,9 +1314,9 @@
     "38": {
       "departement": "38",
       "nom": "Isère",
-      "precise_count": 1,
+      "precise_count": 2,
       "unlocated_count": 0,
-      "estimated_count": 1,
+      "estimated_count": 2,
       "department_signal_count": 0,
       "signals": []
     },
@@ -1935,8 +1935,8 @@
     },
     {
       "region": "Auvergne-Rhône-Alpes",
-      "articles": 22,
-      "fermetures": 10,
+      "articles": 23,
+      "fermetures": 11,
       "projets": 11,
       "fusions": 0,
       "types": [
@@ -10851,6 +10851,47 @@
         "source": "SIRENE"
       },
       "region": "Grand Est"
+    },
+    {
+      "id": "3af6cac771008c08",
+      "banque": "La Banque Postale",
+      "commune": "Villette-d'Anthon",
+      "code_insee": "38557",
+      "departement": "38",
+      "type": "fermeture",
+      "date_annonce": "Thu, 10 Sep 2026 04:01:59 GMT",
+      "date_fermeture": "2026-09-10",
+      "statut": "confirmé",
+      "statut_temporel": "deja_fermee",
+      "date_fermeture_approx": 1,
+      "fiabilite": 3,
+      "lat": 45.787463,
+      "lon": 5.104869,
+      "citation": "Villette-d’Anthon. Le bureau de poste fermé, les habitants tentent de s’habituer - Le Dauphiné Libéré",
+      "adresse": null,
+      "agence_localisation": null,
+      "commune_originale": null,
+      "service_impact": "fermeture_lbp_complete",
+      "point_postal_avant": "Bureau de Poste",
+      "point_postal_apres": null,
+      "postal_point_id": "07317A",
+      "evidence_level": "presse+référentiel",
+      "created_at": "2026-09-11T08:12:21.593551+00:00",
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOUDU2ak8ybXptRFNIOUo0b3F1NUxRMnZYbmF4RzRCOHNjODBvUmQ0cTVrbDlfV3BNNG4tMHlTcnBaTmIzOHdVNXBKQzdtOGU1ekx3ZzFWaHdoaUpmSkluTmxObi02aXBfMXlEbmFUNFQ4c0VyV044ZHA1T3hfajR0M1BwZzFlUHhJa3Y4MldlTVB6UTEyczhISzJkeW9wa3FJdDcxY2MyajBFT3h5dzdiS1c2VkpudEh1RHFkbEdkT254RW5RaVEyX291bw?oc=5",
+          "titre": "Villette-d’Anthon. Le bureau de poste fermé, les habitants tentent de s’habituer - Le Dauphiné Libéré",
+          "source": "Google News",
+          "date": "Thu, 10 Sep 2026 04:01:59 GMT",
+          "tier": "D"
+        }
+      ],
+      "controle_sirene": {
+        "etat_administratif": null,
+        "siret": null,
+        "source": "SIRENE"
+      },
+      "region": "Auvergne-Rhône-Alpes"
     }
   ],
   "closures_unlocated": [
@@ -11557,24 +11598,6 @@
       "created_at": "2026-09-04T08:06:18.906577+00:00"
     },
     {
-      "id": "6addcb5471a6b6f9",
-      "banque": "La Banque Postale",
-      "commune": "Villette-d'Anthon",
-      "departement": "38",
-      "type": "fermeture",
-      "date_fermeture": null,
-      "statut": "projet",
-      "statut_temporel": "inconnu",
-      "fiabilite": 3,
-      "citation": "\"Les temps changent\" : à Villette-d'Anthon, la fermeture du bureau de poste n'émeut guère les habitants - ici.fr",
-      "url": "https://news.google.com/rss/articles/CBMi8AJBVV95cUxONEJLdEVlTU91dmJSQTJGTEl0WnViR3BYNGZMVDJUMURWUFJPVEpmRlVKdXp1SkZHaDZsRGVpallXOGcza080Nmd1Z2NGaG9CbGFwRTE4WlpZTTh5NnphS2hYQ3E5SXdfWTh5aTExR2I0MWliRFk0a2pvUkpDcE5namR2U0s0SVBqQWNINm1nMC1ncmJYcWhrT0JGRE5UOWlFTUktSm5mVjJLdDlvZENQOUtUV0NfaW5oU2t2NEFPaDhQY3lHbFA3LVJsV09EaXk1TUFSaXJMT1dCTFF0WFY3MzhwdzVHejZISlVqUDJXTEg1TEFUN1l2ZHFuUklSY0VhekJVbFdzYmtFQU94TC0ydnY4djd6T1E4LW55c2dIbi1LMHFKbWY0Z1FxNE8tM1AwNEE2VlYtQ2dCczJTM3hRWVl3dFV5Nkc4YXc1NnIyejdxeVg5dk5PeVZGQlBpRDhYX1JCR1BqRkJ3a0ZBakFWdQ?oc=5",
-      "titre": "\"Les temps changent\" : à Villette-d'Anthon, la fermeture du bureau de poste n'émeut guère les habitants - ici.fr",
-      "source": "Google News",
-      "date": "Wed, 02 Sep 2026 05:31:30 GMT",
-      "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-06T08:02:28.885255+00:00"
-    },
-    {
       "id": "a3493d0259c2e732",
       "banque": "La Banque Postale",
       "commune": "Arsac",
@@ -12040,7 +12063,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-10T08:13:38.622338+00:00"
+      "created_at": "2026-09-11T08:08:27.799136+00:00"
     },
     {
       "id": "50895c042a984b7d",
@@ -12076,7 +12099,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 04:46:02 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-10T08:13:38.277294+00:00"
+      "created_at": "2026-09-11T08:08:27.280503+00:00"
     },
     {
       "id": "8c6a0cad14626d6f",
@@ -14542,7 +14565,7 @@
       "source": "Google News",
       "date": "Fri, 20 Jun 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-10T08:13:44.468117+00:00"
+      "created_at": "2026-09-11T08:08:35.579056+00:00"
     },
     {
       "id": "b70960ea48a1a247",
@@ -14668,7 +14691,7 @@
       "source": "Google News",
       "date": "Fri, 10 Jul 2026 10:12:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-10T08:14:00.613605+00:00"
+      "created_at": "2026-09-11T08:08:55.797624+00:00"
     },
     {
       "id": "8c646081e1d69e81",
@@ -14884,7 +14907,7 @@
       "source": "Google News",
       "date": "Fri, 03 Jan 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-10T08:13:37.919620+00:00"
+      "created_at": "2026-09-11T08:08:26.783285+00:00"
     },
     {
       "id": "411db107f70f2387",
@@ -18609,6 +18632,19 @@
       "score": 4,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-08-09T04:45:25.729008+00:00"
+    },
+    {
+      "id": "6c9306a5ceb7a287",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Ce restaurant bistronomique incontournable va fermer ses portes en Haute-Savoie - L'Essor Savoyard",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMi3gFBVV95cUxQdjRkTjhKNkhRVkxxSmI2ZW1PZjdvSWVFbGRmYWVxaDdGUlNITms3MkFEVjBmdWdhNGZDSGswLW1nRy1adXU3cVBPOFhiZ0NLVDZJZXN3cEpsTndEaTkyQ25hUlhfQVFGdjVmSG1lRnh3OHVzMkRwekhSM0ZMYjBnNVpSM3BRMUhPd0hydkVkVU5SNmJlRTUwTWlGZkVLUDg1TGRpcUpDWnFWMGhlX2Q3WGJfRG5nMlZKcmV0a0pHLU5PSE5GUHpiZ2huWlpmQ1RkM01YZmN5SURPcFlSeUE?oc=5\" target=\"_blank\">Ce restaurant bistronomique incontournable va fermer ses portes en Haute-Savoie</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">L'Essor Sav",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQdjRkTjhKNkhRVkxxSmI2ZW1PZjdvSWVFbGRmYWVxaDdGUlNITms3MkFEVjBmdWdhNGZDSGswLW1nRy1adXU3cVBPOFhiZ0NLVDZJZXN3cEpsTndEaTkyQ25hUlhfQVFGdjVmSG1lRnh3OHVzMkRwekhSM0ZMYjBnNVpSM3BRMUhPd0hydkVkVU5SNmJlRTUwTWlGZkVLUDg1TGRpcUpDWnFWMGhlX2Q3WGJfRG5nMlZKcmV0a0pHLU5PSE5GUHpiZ2huWlpmQ1RkM01YZmN5SURPcFlSeUE?oc=5",
+      "source": "Google News",
+      "date": "Mon, 20 Jul 2026 07:00:00 GMT",
+      "score": 4,
+      "raison": "score préfiltre bas (-2)",
+      "created_at": "2026-09-11T08:12:06.875297+00:00"
     },
     {
       "id": "2f942102b705ee7a",
@@ -30660,6 +30696,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-08-03T07:53:35.371042+00:00"
+    },
+    {
+      "id": "a0974e0861650ddc",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "La tour Eiffel fermée en raison d’une grève contre l’éviction du personnel féminin pour la visite d’un groupe hindou - Ouest-France",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMingJBVV95cUxNS2NjaXdDd3R2dFp3QjdnUFhBMlJZbDdnbWdtVnNmSTZZZ09ocVV0dS0xVzM2REpTMkpQYmJBYUtYakxFYmZMR25GMlF5aXZneUZHQXNTQ0Rwa0RBYVJNbDVSLTJBb2VkNlFhYnRoMlg1TXViYWVtM2ptOEcySGloNFBmOUxFRWoxVERaZ1NoR1QteTB3UVdMa3dvWjZOLTlidlN5YkR3dDVtY2RvLTZ6Y1oxQkZ5Rk1KM1BZZTJJRGE4QnJDNlNmbWh1S2JXZ1pzLTBSMjhQN1RHNUdwYlg2blppUkkxNU02OEd4b3pfT0xtbzhsUkhDem9ZUFp2TklLZEtyVG5qczl1dkFwRlZrb0tManVBZFZMemFpWUJ3?oc=5\" target=\"_blank\">La tour Eiffel fermée en raison d’une grève",
+      "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxNS2NjaXdDd3R2dFp3QjdnUFhBMlJZbDdnbWdtVnNmSTZZZ09ocVV0dS0xVzM2REpTMkpQYmJBYUtYakxFYmZMR25GMlF5aXZneUZHQXNTQ0Rwa0RBYVJNbDVSLTJBb2VkNlFhYnRoMlg1TXViYWVtM2ptOEcySGloNFBmOUxFRWoxVERaZ1NoR1QteTB3UVdMa3dvWjZOLTlidlN5YkR3dDVtY2RvLTZ6Y1oxQkZ5Rk1KM1BZZTJJRGE4QnJDNlNmbWh1S2JXZ1pzLTBSMjhQN1RHNUdwYlg2blppUkkxNU02OEd4b3pfT0xtbzhsUkhDem9ZUFp2TklLZEtyVG5qczl1dkFwRlZrb0tManVBZFZMemFpWUJ3?oc=5",
+      "source": "Google News",
+      "date": "Mon, 07 Sep 2026 17:07:53 GMT",
+      "score": 3,
+      "raison": "score préfiltre bas (-2)",
+      "created_at": "2026-09-11T08:12:17.714200+00:00"
     },
     {
       "id": "b1cdb74d28411f71",
