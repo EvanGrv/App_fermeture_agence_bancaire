@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T08:15:52.714432+00:00",
+  "generated_at": "2026-09-13T08:38:00.896028+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -12070,7 +12070,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-12T07:59:53.625740+00:00"
+      "created_at": "2026-09-13T08:24:06.352908+00:00"
     },
     {
       "id": "50895c042a984b7d",
@@ -12106,7 +12106,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 04:46:02 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-12T07:59:53.153493+00:00"
+      "created_at": "2026-09-13T08:24:05.830108+00:00"
     },
     {
       "id": "8c6a0cad14626d6f",
@@ -14572,7 +14572,7 @@
       "source": "Google News",
       "date": "Fri, 20 Jun 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-12T08:00:00.854900+00:00"
+      "created_at": "2026-09-13T08:24:14.178455+00:00"
     },
     {
       "id": "b70960ea48a1a247",
@@ -14698,7 +14698,7 @@
       "source": "Google News",
       "date": "Fri, 10 Jul 2026 10:12:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-12T08:00:18.480600+00:00"
+      "created_at": "2026-09-13T08:24:34.745773+00:00"
     },
     {
       "id": "8c646081e1d69e81",
@@ -14881,6 +14881,24 @@
       "created_at": "2026-09-05T07:47:31.412700+00:00"
     },
     {
+      "id": "b06afda0f4e4c5c5",
+      "banque": "La Banque Postale",
+      "commune": "Ploeren",
+      "departement": "56",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "Après le cambriolage en avril, la fermeture du bureau de poste de Ploeren devrait se poursuivre - MaVille.com",
+      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPRFROSTdvNHlXdmFma2xmXzBxNmZ2SDZzZFYyd1pkSWRrc20xRHV0QW53c0t5cFdGOUJVWnJQMEpIWm1odEJQYnZJemRtWDZCSHk0X0ZQVUwtREtaTXd4NDNBWU9ILW45X0MzQkxQWnJVdm5mcXlmRkNGZlVMQTViMVl5SXI3TGQ3WEhyMkhXMzFjRDJWSWxsRmFhY3I4WEhlZlVweW5hNDJ0Y0xfa3NuZjNaaG5CdWhwVi0xQzlvenZPTDBnQXNhZk1WQ3p1d2Q5c1JVTG5RYXRITG9GdGlqeE9rRV9MeFg5WG1YNS16QjdUalc4N3ZhRmh2RjJLMkczajhrSg?oc=5",
+      "titre": "Après le cambriolage en avril, la fermeture du bureau de poste de Ploeren devrait se poursuivre - MaVille.com",
+      "source": "Google News",
+      "date": "Fri, 04 Sep 2026 14:08:00 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-09-13T08:27:48.358169+00:00"
+    },
+    {
       "id": "e6473299eb4fadf2",
       "banque": "La Banque Postale",
       "commune": "Doyet",
@@ -14914,7 +14932,7 @@
       "source": "Google News",
       "date": "Fri, 03 Jan 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-12T07:59:52.686026+00:00"
+      "created_at": "2026-09-13T08:24:05.324919+00:00"
     },
     {
       "id": "411db107f70f2387",
