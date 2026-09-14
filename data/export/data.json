@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T09:17:22.090458+00:00",
+  "generated_at": "2026-09-14T10:25:24.305747+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -12070,7 +12070,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-14T09:03:05.340445+00:00"
+      "created_at": "2026-09-14T09:53:01.626153+00:00"
     },
     {
       "id": "50895c042a984b7d",
@@ -12106,7 +12106,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 04:46:02 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-14T09:03:04.820067+00:00"
+      "created_at": "2026-09-14T09:53:00.999851+00:00"
     },
     {
       "id": "8c6a0cad14626d6f",
@@ -12395,6 +12395,24 @@
       "date": "Tue, 01 Jul 2025 07:00:00 GMT",
       "raison": "garde entrée/sortie: fermeture postale temporaire ou circonstancielle",
       "created_at": "2026-07-23T06:13:03.949299+00:00"
+    },
+    {
+      "id": "d852a260de55a12b",
+      "banque": "La Banque Postale",
+      "commune": "Artigues-près-Bordeaux",
+      "departement": "33",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "Près de 50 fermetures en deux ans: le nombre de bureaux de poste ne cesse de diminuer en Alsace - BFM",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPWU0yTWtyVE1ZQzB0RGc2VjhQTFY4SElDMld0Q3BvVHdyRDBYS2M5SUJrWERsVlQ0R2ZYOGlJV1ZKTnNJc0xSR013YjRoTTZEcWtKRTNrYlVKY2xoUlVKNzltMXlQSlFQdlkzZGR1OGNiZXhiMklWdjFxOFppSjdBX21GYXJ6eFpVWXBXbml1MTk0c2d2cHZiWmk3TG8wN0JUalBoZFdPM2pQaFNkcm9yREFseVNCTzBHRmNQVFl0bmJ6QTQzY2JKNXA0T3hpWUFUVW1xQ0RManVMZThp?oc=5",
+      "titre": "Près de 50 fermetures en deux ans: le nombre de bureaux de poste ne cesse de diminuer en Alsace - BFM",
+      "source": "Google News",
+      "date": "Thu, 31 Oct 2024 07:00:00 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-09-14T10:05:29.933408+00:00"
     },
     {
       "id": "739a53fc37bf7521",
@@ -12737,6 +12755,24 @@
       "date": "Thu, 18 Dec 2025 08:00:00 GMT",
       "raison": "commune non géocodée",
       "created_at": "2026-07-23T09:40:27.367784+00:00"
+    },
+    {
+      "id": "9e258fe0c7491ce2",
+      "banque": "La Banque Postale",
+      "commune": "Paray-Vieille-Poste",
+      "departement": "91",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "La fermeture du bureau de Poste actée - Le Journal du Centre",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPOGxYRTh3NE5KdHNkYWEweXYyNm1UeElQNDBhRkh6bTNMeE5VY2FuMjhGUFBrZlUtZmhxcHJWc2FkdEZERFBZQ29YaUM3MVdiRUc0ejk4b0xlSUpLdVlwbUdtaENzUHdLaWVSdDZTWm5SSEVNWVlvNml0OXB3VDZTRHNVR0c0WDJyT2lwUkFNaU9tMkhqSVJla0ZrcFFDdkU5N2ZQM2dB?oc=5",
+      "titre": "La fermeture du bureau de Poste actée - Le Journal du Centre",
+      "source": "Google News",
+      "date": "Thu, 17 Oct 2024 07:00:00 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-09-14T10:05:29.477433+00:00"
     },
     {
       "id": "4d208bdc7b73f946",
@@ -13243,6 +13279,24 @@
       "created_at": "2026-07-27T06:48:36.461725+00:00"
     },
     {
+      "id": "0cefec318e8fb089",
+      "banque": "La Banque Postale",
+      "commune": "Vialas",
+      "departement": "48",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "Vialas. La fermeture d’un bureau de poste en août suscite l’opposition des élus locaux - lalozerenouvelle.com",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxObkJ2OW5zODBSQ0tvTHhaOEhqX3BDNVh3LS10aVpTdVFqSE5YZy1pd0djbVhpTXRkSUJReUczd3hLS0h2ZGtGRE83djRhWkNVdjZBQTJveVQ5X2ZGWUFsMzE0Sm80eE5TWDJ2VENmRFVTV0Vzb3NWNlFNbWZNNE1pdlRGU0lYemhPMWM4X3J0QzNTeHVKSWcwY1ZmVEJIWWZnMVgxZjU5ZHZyRC1mdFIzT1dCWG9nUW5MWTVMblF5RG9GYk5zeDVINldYUFJDQQ?oc=5",
+      "titre": "Vialas. La fermeture d’un bureau de poste en août suscite l’opposition des élus locaux - lalozerenouvelle.com",
+      "source": "Google News",
+      "date": "Sun, 21 Jun 2026 07:00:00 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-09-14T10:05:47.526244+00:00"
+    },
+    {
       "id": "6ea6113e37cc3dc0",
       "banque": "Crédit Agricole",
       "commune": "Langonnet",
@@ -13601,6 +13655,24 @@
       "date": "Sat, 14 Mar 2026 07:00:00 GMT",
       "raison": "garde entrée/sortie: fermeture postale temporaire ou circonstancielle",
       "created_at": "2026-07-23T06:13:01.714035+00:00"
+    },
+    {
+      "id": "2a8708e38107fe32",
+      "banque": "La Banque Postale",
+      "commune": "Pont-à-Mousson",
+      "departement": "54",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "Pont-à-Mousson. Agence fermée quartier Saint-Martin : quel avenir pour les bureaux de Poste en ville ? - L'Est Républicain",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQZERaTGJwZGFRVkMydUxCMDVGSHdubkhsSmJsbG9FcVNYMm5rY1ZMY1Zmc1NBYWJVZXV1ajBmWUxKR01JRklfWVZqQnJJTWRvLXZxNTNPaWdsRlhsa2Qxd2F3ZWhja0psZm4xVUtBWDYweUxWUFpsV0lUc2swcTJaQXptbzdDSE1pYjB1ZU1aODRDeFJMNHEtOU4zbVJKNjY3OWpCTGJETE1MRDdUc2JpaHNzTmlLZThvY1ZvTjhyVWpYZktPRk5mRl8tUlE?oc=5",
+      "titre": "Pont-à-Mousson. Agence fermée quartier Saint-Martin : quel avenir pour les bureaux de Poste en ville ? - L'Est Républicain",
+      "source": "Google News",
+      "date": "Sat, 09 Nov 2024 08:00:00 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-09-14T10:06:26.871858+00:00"
     },
     {
       "id": "f4c37adfebdecc61",
@@ -14589,8 +14661,8 @@
       "titre": "La mobilisation des habitants a été vaine, le bureau de poste du quartier Saint-Marc, à Saint-Nazaire, ferme ses portes - ici.fr",
       "source": "Google News",
       "date": "Fri, 20 Jun 2025 07:00:00 GMT",
-      "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-14T09:03:15.392138+00:00"
+      "raison": "garde entrée/sortie: commune/localisation de sortie absente de la source",
+      "created_at": "2026-09-14T09:53:34.366007+00:00"
     },
     {
       "id": "b70960ea48a1a247",
@@ -14715,8 +14787,8 @@
       "titre": "Attention, le bureau de poste ferme ses portes en juillet et en août dans cette commune de Loire-Atlantique - MaVille.com",
       "source": "Google News",
       "date": "Fri, 10 Jul 2026 10:12:00 GMT",
-      "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-14T09:03:40.744900+00:00"
+      "raison": "garde entrée/sortie: département source 44 incompatible avec la sortie 974",
+      "created_at": "2026-09-14T09:56:12.065057+00:00"
     },
     {
       "id": "8c646081e1d69e81",
@@ -14950,7 +15022,7 @@
       "source": "Google News",
       "date": "Fri, 03 Jan 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-14T09:03:04.021977+00:00"
+      "created_at": "2026-09-14T09:52:58.560566+00:00"
     },
     {
       "id": "411db107f70f2387",
@@ -18768,6 +18840,19 @@
       "created_at": "2026-07-02T07:06:46.865370+00:00"
     },
     {
+      "id": "33f275e1cceaee0a",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "\"Est-ce dû au fait que ma mère est une personne âgée?\": le compte en banque d'Antonia, 88 ans, fermé \"sans motif\" - RTL Info",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMi3wFBVV95cUxNM3RueGRqN0pBc1g1SUVLcGhmNVZSa003TFpuT01rU1ZHT1MtRGR5WVJHTWxqN2Zsc1J0X3psemVWY1AxSGlXem9PWE9RRTZ0d2tNcmFWVWs1OGJuQ3o2RU5TUTFwOTB6TTRCTVBVRURidXVfaFFDZkNWbFdmUmVfSVZWUkFQMXJSVXpIbDU2cXlkbGN0d0VIZkdnVzA1aV9PQ1pudUNPa2QxOGhOOUJBem5vdjNtUHBTY3VVemtGWGIwZWtZTWM2OXNWeXBzejlEZlZxMHhPT2xrTW1Ed05n?oc=5\" target=\"_blank\">\"Est-ce dû au fait que ma mère est une personne âgée?\": le compte en banque d'Antonia, 88 ans, fermé \"sans motif\"</a>&nbsp;&nbs",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNM3RueGRqN0pBc1g1SUVLcGhmNVZSa003TFpuT01rU1ZHT1MtRGR5WVJHTWxqN2Zsc1J0X3psemVWY1AxSGlXem9PWE9RRTZ0d2tNcmFWVWs1OGJuQ3o2RU5TUTFwOTB6TTRCTVBVRURidXVfaFFDZkNWbFdmUmVfSVZWUkFQMXJSVXpIbDU2cXlkbGN0d0VIZkdnVzA1aV9PQ1pudUNPa2QxOGhOOUJBem5vdjNtUHBTY3VVemtGWGIwZWtZTWM2OXNWeXBzejlEZlZxMHhPT2xrTW1Ed05n?oc=5",
+      "source": "Google News",
+      "date": "Fri, 02 May 2025 07:00:00 GMT",
+      "score": 4,
+      "raison": "score préfiltre bas (-2)",
+      "created_at": "2026-09-14T10:05:12.550191+00:00"
+    },
+    {
       "id": "454646a47aca60cf",
       "banque": "Société Générale",
       "departement": "",
@@ -20300,6 +20385,19 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-08-17T05:05:47.051542+00:00"
+    },
+    {
+      "id": "05ebe35d5e0fceaa",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Carte scolaire. Suppressions de classes : comment lutter contre ce phénomène dans le Cantal ? - Actu.fr",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMixAFBVV95cUxOeGVrRk1lZkZWVUVyX1RCMWQ1VS1Xek02NVJTR1JOUm4tRDFBWVJYUGluRzN6U3YwTnZMLTZmZnJjYUlQUEpSelpzTjk2MzlPRkkyZW1sMERUVDRyVmVfRm0waEhoV29YUFAtSUNydlhlTzVNemJzQ0VtOHBqLTE2NDRCSTFlRnpCLXAxZGtyVUp0elpmTUI2ekc4RmRDNlJIcEpWWnJnRkYyYkQyS2MzSG13Vk5GQUtWa2pieG56VDRKaUl5?oc=5\" target=\"_blank\">Carte scolaire. Suppressions de classes : comment lutter contre ce phénomène dans le Cantal ?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Actu.fr</font>",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOeGVrRk1lZkZWVUVyX1RCMWQ1VS1Xek02NVJTR1JOUm4tRDFBWVJYUGluRzN6U3YwTnZMLTZmZnJjYUlQUEpSelpzTjk2MzlPRkkyZW1sMERUVDRyVmVfRm0waEhoV29YUFAtSUNydlhlTzVNemJzQ0VtOHBqLTE2NDRCSTFlRnpCLXAxZGtyVUp0elpmTUI2ekc4RmRDNlJIcEpWWnJnRkYyYkQyS2MzSG13Vk5GQUtWa2pieG56VDRKaUl5?oc=5",
+      "source": "Google News",
+      "date": "Wed, 16 Jul 2025 07:00:00 GMT",
+      "score": 3,
+      "raison": "score préfiltre bas (-2)",
+      "created_at": "2026-09-14T10:06:50.766946+00:00"
     },
     {
       "id": "efab8edfe9a10cf2",
