@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T09:13:21.959681+00:00",
+  "generated_at": "2026-09-16T08:56:20.991765+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -5718,7 +5718,7 @@
         }
       ],
       "controle_sirene": {
-        "etat_administratif": null,
+        "etat_administratif": "C",
         "siret": null,
         "source": "SIRENE"
       },
@@ -11191,6 +11191,24 @@
       "created_at": "2026-07-23T06:13:04.575084+00:00"
     },
     {
+      "id": "38ac3cd4200e599e",
+      "banque": "La Banque Postale",
+      "commune": "Rouen",
+      "departement": "76",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "\"On va perdre la proximité avec nos habitants\" : près de Rouen, ce maire se bat contre la fermeture de son bureau de poste - France 3 Régions",
+      "url": "https://news.google.com/rss/articles/CBMipgJBVV95cUxNejNxMFN5SF83YTBkSU5kZS1zeVZEM2N5Yi1ZeTZvSlZQbU81aXVjOS1IN2k3Qk1LU1VNSkQ4SnVJT0ozcHFOSXp4VEJDcEVacmo4b09kODlXcTBWZUdTUDBuSF9jdDh4M2dhWTZhSGFvbVgwUWl4c3FwU2NmQnZvOHdiM01mOXBoUzNNTTNuOUF4S0dwTXNULTBYRDFUemtVeTBfdmFxbzdZMzVtUmF6VHd3aGU0bWVrclJORno0ZWRrXzQ3ZHhRU1FpRUw5dHFZT3NQLXFnWGpFcThhRXRoQ3RHWURpZzBrYlU3Y0g5VDMzNUdvaGpiZjRiOGg5YzQyOFZXdnhvV3BkZ0FYbUxRbjM3LUR1UlBVVVJiZVhRdFRHaEFfRkE?oc=5",
+      "titre": "\"On va perdre la proximité avec nos habitants\" : près de Rouen, ce maire se bat contre la fermeture de son bureau de poste - France 3 Régions",
+      "source": "Google News",
+      "date": "Wed, 16 Sep 2026 04:20:10 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-09-16T08:45:20.262561+00:00"
+    },
+    {
       "id": "01251b22c5f31a07",
       "banque": "La Banque Postale",
       "commune": "Demi-Quartier",
@@ -12070,7 +12088,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-15T08:46:44.174523+00:00"
+      "created_at": "2026-09-16T08:41:08.129051+00:00"
     },
     {
       "id": "50895c042a984b7d",
@@ -12106,7 +12124,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 04:46:02 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-15T08:46:43.643136+00:00"
+      "created_at": "2026-09-16T08:41:07.601995+00:00"
     },
     {
       "id": "8c6a0cad14626d6f",
@@ -14662,7 +14680,7 @@
       "source": "Google News",
       "date": "Fri, 20 Jun 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-15T08:46:53.733626+00:00"
+      "created_at": "2026-09-16T08:41:18.247157+00:00"
     },
     {
       "id": "b70960ea48a1a247",
@@ -14788,7 +14806,7 @@
       "source": "Google News",
       "date": "Fri, 10 Jul 2026 10:12:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-15T08:47:56.626037+00:00"
+      "created_at": "2026-09-16T08:41:41.297892+00:00"
     },
     {
       "id": "8c646081e1d69e81",
@@ -15022,7 +15040,7 @@
       "source": "Google News",
       "date": "Fri, 03 Jan 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-15T08:46:42.242957+00:00"
+      "created_at": "2026-09-16T08:41:07.095010+00:00"
     },
     {
       "id": "411db107f70f2387",
