@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T08:56:20.991765+00:00",
+  "generated_at": "2026-09-17T08:59:45.420322+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -11443,6 +11443,24 @@
       "created_at": "2026-07-23T06:13:04.223700+00:00"
     },
     {
+      "id": "1ec17a3f6afb6ff3",
+      "banque": "La Banque Postale",
+      "commune": "Pont-Saint-Esprit",
+      "departement": "30",
+      "type": "fermeture",
+      "date_fermeture": null,
+      "statut": "projet",
+      "statut_temporel": "inconnu",
+      "fiabilite": 3,
+      "citation": "La suppression des bureaux de poste agite l’Arizona - Le Soir",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPa0xkbVVjMTBjSFVQRkNxSnJSMWRSUGMyMmh3c0JidWVuQ3E2UzhtQ2M1WHZXbTItTTBGVm8tZ0o5bTRIYzh3MTJaaFJ6NWxUakhETEk2cG5wMWw5b2o4bV8xVGlQZG1NcHh0Sm00aWI3WU9lVzdkNEQzMklpZ2doQS1jUC1lUHMtR3NtNTY4ZVMxeVMxa1JFWk85UElHMUk?oc=5",
+      "titre": "La suppression des bureaux de poste agite l’Arizona - Le Soir",
+      "source": "Google News",
+      "date": "Wed, 09 Sep 2026 13:30:57 GMT",
+      "raison": "hors fenêtre temporelle",
+      "created_at": "2026-09-17T08:49:22.791569+00:00"
+    },
+    {
       "id": "a634ce1b6096fea9",
       "banque": "La Banque Postale",
       "commune": "Saint-Saturnin-lès-Avignon",
@@ -12088,7 +12106,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-16T08:41:08.129051+00:00"
+      "created_at": "2026-09-17T08:44:54.590702+00:00"
     },
     {
       "id": "50895c042a984b7d",
@@ -12124,7 +12142,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 04:46:02 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-16T08:41:07.601995+00:00"
+      "created_at": "2026-09-17T08:44:54.092898+00:00"
     },
     {
       "id": "8c6a0cad14626d6f",
@@ -14680,7 +14698,7 @@
       "source": "Google News",
       "date": "Fri, 20 Jun 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-16T08:41:18.247157+00:00"
+      "created_at": "2026-09-17T08:45:04.146154+00:00"
     },
     {
       "id": "b70960ea48a1a247",
@@ -14806,7 +14824,7 @@
       "source": "Google News",
       "date": "Fri, 10 Jul 2026 10:12:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-16T08:41:41.297892+00:00"
+      "created_at": "2026-09-17T08:45:25.017355+00:00"
     },
     {
       "id": "8c646081e1d69e81",
@@ -15040,7 +15058,7 @@
       "source": "Google News",
       "date": "Fri, 03 Jan 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-16T08:41:07.095010+00:00"
+      "created_at": "2026-09-17T08:44:53.560443+00:00"
     },
     {
       "id": "411db107f70f2387",
@@ -20325,6 +20343,32 @@
       "score": 3,
       "raison": "article pertinent sans fermeture publiable",
       "created_at": "2026-08-15T04:00:38.549847+00:00"
+    },
+    {
+      "id": "49485b0d1321d3b5",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Plan social à l’Afpa : Laon fait partie des cinq sites menacés de fermeture dans les Hauts-de-France - lardennais.fr",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMizgFBVV95cUxOUmZGRlRrNW05QnVXUEt1RmF4ZHRsdFZnQkFMMEpZbDJHdmJUQXBnbEV0MjV1SHFiQ2ota0FETjNZa3ZWdDVkZHM5ZE40MlJWSGw1Qm5UVmRDbjQzdF9icllTblBWMWtXYzJ5dVkyRUNGNU1XNzlWc0xUUXB6bm8zc0ZsRVZYWXBXZ2pFUXNLUjJNLVBORHpXdFNBeHlMbEUzR2NQMTAtYzhhN0w3U3NaZks3N1pSZlFNLTVfQV81VTRCNzY0RUJWRjd3WlBjZw?oc=5\" target=\"_blank\">Plan social à l’Afpa : Laon fait partie des cinq sites menacés de fermeture dans les Hauts-de-France</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">lardennais.",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOUmZGRlRrNW05QnVXUEt1RmF4ZHRsdFZnQkFMMEpZbDJHdmJUQXBnbEV0MjV1SHFiQ2ota0FETjNZa3ZWdDVkZHM5ZE40MlJWSGw1Qm5UVmRDbjQzdF9icllTblBWMWtXYzJ5dVkyRUNGNU1XNzlWc0xUUXB6bm8zc0ZsRVZYWXBXZ2pFUXNLUjJNLVBORHpXdFNBeHlMbEUzR2NQMTAtYzhhN0w3U3NaZks3N1pSZlFNLTVfQV81VTRCNzY0RUJWRjd3WlBjZw?oc=5",
+      "source": "Google News",
+      "date": "Wed, 16 Sep 2026 16:06:03 GMT",
+      "score": 3,
+      "raison": "score préfiltre bas (-2)",
+      "created_at": "2026-09-17T08:49:03.938516+00:00"
+    },
+    {
+      "id": "792949d9dda527af",
+      "banque": "Société Générale",
+      "departement": "",
+      "titre": "Plan social à l’Afpa et chez Alméa : le centre de Laon menacé de fermeture - L'Aisne nouvelle",
+      "extrait": "<a href=\"https://news.google.com/rss/articles/CBMixAFBVV95cUxQTXRBS00zUjI4cVdfV2tvSHBJQW1nRWk5X3BPSGFBMlB1cDF2ZG5ncTNuSWdGNXd4MnNYYlJMa01XOXNhbndHNTlqemJpN3ItazhKUWtvaEd5OWxqRjJ1RWRrUTZEc2ZPZ2tZSWZ5WGoxNkRWWFpWemtJUVRWV2JrX29mRUVqUVRKLXRsRWd1enZRcGItak12Wl9lZlcyaGFEUnZFbnA2NDVoVUM2dEpSRU9Vby1sazdmdkVnc3RYX3poUTZf?oc=5\" target=\"_blank\">Plan social à l’Afpa et chez Alméa : le centre de Laon menacé de fermeture</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">L'Aisne nouvelle</font>",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQTXRBS00zUjI4cVdfV2tvSHBJQW1nRWk5X3BPSGFBMlB1cDF2ZG5ncTNuSWdGNXd4MnNYYlJMa01XOXNhbndHNTlqemJpN3ItazhKUWtvaEd5OWxqRjJ1RWRrUTZEc2ZPZ2tZSWZ5WGoxNkRWWFpWemtJUVRWV2JrX29mRUVqUVRKLXRsRWd1enZRcGItak12Wl9lZlcyaGFEUnZFbnA2NDVoVUM2dEpSRU9Vby1sazdmdkVnc3RYX3poUTZf?oc=5",
+      "source": "Google News",
+      "date": "Wed, 16 Sep 2026 06:46:00 GMT",
+      "score": 3,
+      "raison": "score préfiltre bas (-2)",
+      "created_at": "2026-09-17T08:49:02.609341+00:00"
     },
     {
       "id": "92f5f21a1f59da72",
