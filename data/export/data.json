@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T08:59:45.420322+00:00",
+  "generated_at": "2026-09-18T08:43:53.998454+00:00",
   "enseignes": [
     "BNP Paribas",
     "Banque Populaire",
@@ -759,7 +759,7 @@
       "nom": "Tarn-et-Garonne",
       "region": "Occitanie",
       "count": 1,
-      "total_agences": 60,
+      "total_agences": 61,
       "precise_count": 1,
       "unlocated_count": 0,
       "estimated_count": 1
@@ -12106,7 +12106,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-17T08:44:54.590702+00:00"
+      "created_at": "2026-09-18T08:20:21.306773+00:00"
     },
     {
       "id": "50895c042a984b7d",
@@ -12142,7 +12142,7 @@
       "source": "Google News",
       "date": "Tue, 16 Jun 2026 04:46:02 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-17T08:44:54.092898+00:00"
+      "created_at": "2026-09-18T08:20:20.955442+00:00"
     },
     {
       "id": "8c6a0cad14626d6f",
@@ -14698,7 +14698,7 @@
       "source": "Google News",
       "date": "Fri, 20 Jun 2025 07:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-17T08:45:04.146154+00:00"
+      "created_at": "2026-09-18T08:20:28.312935+00:00"
     },
     {
       "id": "b70960ea48a1a247",
@@ -14824,7 +14824,7 @@
       "source": "Google News",
       "date": "Fri, 10 Jul 2026 10:12:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-17T08:45:25.017355+00:00"
+      "created_at": "2026-09-18T08:20:45.795287+00:00"
     },
     {
       "id": "8c646081e1d69e81",
@@ -15058,7 +15058,7 @@
       "source": "Google News",
       "date": "Fri, 03 Jan 2025 08:00:00 GMT",
       "raison": "hors fenêtre temporelle",
-      "created_at": "2026-09-17T08:44:53.560443+00:00"
+      "created_at": "2026-09-18T08:20:20.612359+00:00"
     },
     {
       "id": "411db107f70f2387",
@@ -33993,6 +33993,19 @@
       "score": 3,
       "raison": "fermeture non publiée: hors fenêtre temporelle",
       "created_at": "2026-07-22T09:09:01.159244+00:00"
+    },
+    {
+      "id": "2e4af5eb945ec431",
+      "banque": "CIC",
+      "departement": "",
+      "titre": "Menace sur la Poste à la Rouvière",
+      "extrait": "Une pétition a été lancée face à l'annonce de la fermeture du bureau de Poste de la Rouvière. Aucune décision n'est arrêtée selon le groupe. Tandis que les facteurs se mobilisent, ce vendredi matin, devant le centre financier de la Poste contre la réorganisation des tournées sur le site des Docks, l'annonce d'une possible fermeture du bureau de la Rouvière (9) suscite à son tour une levée de boucliers. Ce mardi 15 septembre, une pétition a été lancée pour protester contre cette décision, s'alarm",
+      "url": "https://www.lamarseillaise.fr/social/menace-sur-la-poste-a-la-rouviere-PN20694308",
+      "source": "www.lamarseillaise.fr",
+      "date": "2026-09-18T06:12:28Z",
+      "score": 3,
+      "raison": "score préfiltre bas (-2)",
+      "created_at": "2026-09-18T08:24:30.853594+00:00"
     },
     {
       "id": "eac01176657c2a34",
